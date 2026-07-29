@@ -1,5 +1,6 @@
 # 游戏目录（目录联接/junction，指向外部游戏安装目录，不纳入版本控制）
 /Game/
+/AiNieeOutput/
 
 # 备份与中间产物
 *.bak

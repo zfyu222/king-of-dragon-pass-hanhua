@@ -28,6 +28,7 @@ INTERNAL_KEY = re.compile(
     r")$"
 )
 FULLWIDTH_MARKERS = re.compile(r"[％＼ｘＸ]")
+OUTPUT_ARTIFACTS = re.compile(r"\[P\d+\]|</?textarea>|```|�", re.IGNORECASE)
 
 
 def load_single_column(path: Path):
@@ -49,6 +50,16 @@ def write_single_column(path: Path, rows):
 
 def multiset(pattern, text):
     return Counter(pattern.findall(text))
+
+
+def printf_tokens(text):
+    """Return printf tokens, excluding percent signs used inside Opal commands."""
+    opal_spans = [match.span() for match in OPAL_COMMAND.finditer(text)]
+    return [
+        match.group()
+        for match in PRINTF.finditer(text)
+        if not any(start <= match.start() < end for start, end in opal_spans)
+    ]
 
 
 def main():
@@ -119,7 +130,7 @@ def main():
             issues.append("Opal \\x01 命令不一致")
         if multiset(OPAL_BYTE, original) != multiset(OPAL_BYTE, translation):
             issues.append("Opal \\xNN 控制字节不一致")
-        if PRINTF.findall(original) != PRINTF.findall(translation):
+        if printf_tokens(original) != printf_tokens(translation):
             issues.append("printf 格式符或顺序不一致")
         if multiset(LITERAL_ESCAPE, original) != multiset(
             LITERAL_ESCAPE, translation
@@ -131,6 +142,8 @@ def main():
             issues.append("内部脚本键被修改")
         if FULLWIDTH_MARKERS.search(translation):
             issues.append("发现全角控制字符")
+        if OUTPUT_ARTIFACTS.search(translation):
+            issues.append("发现未还原占位符或模型输出包装")
         if "\n" in translation or "\r" in translation:
             issues.append("字段内存在真实换行")
 
@@ -152,6 +165,10 @@ def main():
         print(f"待重翻清单: {output_path}")
         return 1
 
+    output_path = translated_path.parent / args.retranslate_out
+    if output_path.exists():
+        output_path.unlink()
+        print(f"已移除过期的待重翻清单: {output_path}")
     print("校验通过。")
     return 0
 
