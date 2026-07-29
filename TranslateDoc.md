@@ -73,6 +73,11 @@ cd D:\StaticHanHua\Tools\AINiee
 5. 保留原文的句子片段性质。不要擅自补出主语、数字、人物名或句号。
 6. 第一人称复数 we/our 通常代表玩家氏族，统一译为“我们/我们的”。
 7. 不要将半角反斜杠、百分号和 ASCII 控制字符转换为全角字符。
+
+###以textarea标签输出译文
+<textarea>
+1.{target_language}文本
+</textarea>
 ```
 
 ## 四、术语建议
