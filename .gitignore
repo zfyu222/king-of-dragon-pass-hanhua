@@ -6,6 +6,9 @@
 *.bak
 *.bak0000
 *.tmp
+*.obj
+/hook/build/
+/release/KoDPCNHook/KoDPCNHook.log
 
 # Python
 __pycache__/

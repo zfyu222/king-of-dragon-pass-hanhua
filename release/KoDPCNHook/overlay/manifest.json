@@ -1,0 +1,19 @@
+{
+  "format": 1,
+  "strategy": "CreateFile IAT redirection; original game files remain untouched",
+  "generatedAt": "2026-07-29T17:40:39.276Z",
+  "sourceCsvRows": 34421,
+  "runtimeTranslationEntries": 34421,
+  "scenes": 1760,
+  "replacedOccurrences": 38320,
+  "original": {
+    "path": "KoDp/scenes.dat",
+    "bytes": 4939444,
+    "sha256": "C13F4071DA49B6F44A10CBD0D17347F61D244AB77A44112761809174910529C0"
+  },
+  "overlay": {
+    "path": "overlay/KoDp/scenes.dat",
+    "bytes": 4760482,
+    "sha256": "8CC881A14EEE4D226DD74F09E844CEBB0155858047C9F186EF5972E166943961"
+  }
+}
