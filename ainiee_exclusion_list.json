@@ -1,0 +1,37 @@
+[
+  {
+    "markers": "",
+    "info": "Opal 插值命令（\\x01 + 两个操作数字节）",
+    "regex": "\\\\x01(?:(?:\\\\x[0-9A-Fa-f]{2})|[^\\r\\n]){2}"
+  },
+  {
+    "markers": "",
+    "info": "Opal 转义控制字节",
+    "regex": "\\\\x[0-9A-Fa-f]{2}"
+  },
+  {
+    "markers": "",
+    "info": "printf 格式化符（含 %ld）",
+    "regex": "%(?:\\d+\\$)?[-+ #0']*(?:\\d+|\\*)?(?:\\.(?:\\d+|\\*))?(?:hh|h|ll|l|j|z|t|L)?[diuoxXfFeEgGaAcspn%]"
+  },
+  {
+    "markers": "",
+    "info": "字面换行与制表转义",
+    "regex": "\\\\[nrt]"
+  },
+  {
+    "markers": "",
+    "info": "Opal scene 内部键",
+    "regex": "^sceneR?\\d{3}[a-z]?$"
+  },
+  {
+    "markers": "",
+    "info": "Opal 事件节点内部键",
+    "regex": "^(?:H\\d+[a-z]{1,2}\\d?|Q\\d[A-Za-z]+|T\\d+)$"
+  },
+  {
+    "markers": "",
+    "info": "Opal 状态与资源内部键",
+    "regex": "^(?:RaidGoodNews|RaidBadNews|GoodNews|BadNews|EmissaryNews|GoExploringNews|MissionNews|BigBigTrouble|CallToArms|CouldBeBad|CouldBeGood|IsItAdventure|ItIsBad|ItIsGood|MightBeSad|QuiteAnAdventure|ReallyReallyGood|WeAreSad|WeDidIt|WoeAlasAlack|IntroOverture|MythMusic)$"
+  }
+]
