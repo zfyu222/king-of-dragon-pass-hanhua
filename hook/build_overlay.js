@@ -145,6 +145,149 @@ function readCatalog(sourceRows) {
   return records;
 }
 
+function readAllCatalog() {
+  const lines = fs
+    .readFileSync(catalogTsv, "utf8")
+    .replace(/^\uFEFF/, "")
+    .split(/\r?\n/);
+  const records = [];
+  for (const line of lines.slice(1)) {
+    if (!line) continue;
+    const [indexText, source, locator, kind] = line.split("\t");
+    records.push({
+      corpusIndex: Number(indexText),
+      source,
+      locator,
+      kind,
+    });
+  }
+  return records;
+}
+
+function xmlEscape(value) {
+  return value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&apos;");
+}
+
+function writeOverlay(relative, content) {
+  const outputPath = path.join(outputRoot, ...relative.split("/"));
+  fs.mkdirSync(path.dirname(outputPath), { recursive: true });
+  fs.writeFileSync(outputPath, content, "utf8");
+}
+
+function buildTextFileOverlays(translatedRows) {
+  const supported = new Set([
+    "UI caption",
+    "plist string",
+    "localization XML",
+    "help text",
+    "HTML text",
+  ]);
+  const byFile = new Map();
+  for (const record of readAllCatalog()) {
+    if (!supported.has(record.kind)) continue;
+    const records = byFile.get(record.source) || [];
+    records.push(record);
+    byFile.set(record.source, records);
+  }
+
+  let generatedFiles = 0;
+  let replacedRecords = 0;
+  for (const [relative, records] of byFile) {
+    const replacements = new Map(
+      records.map((record) => [
+        record.locator,
+        unescapeCorpusText(translatedRows[record.corpusIndex]),
+      ]),
+    );
+    let content = fs.readFileSync(
+      path.join(gameDir, ...relative.split("/")),
+      "utf8",
+    );
+
+    if (records[0].kind === "UI caption") {
+      let ordinal = 0;
+      content = content.replace(
+        /^(\s*(?!\/\/)\s*caption\s+")((?:\\.|[^"])*)(")/gm,
+        (whole, prefix, value, suffix) => {
+          ordinal += 1;
+          const translated = replacements.get(`caption=${ordinal}`);
+          if (translated === undefined) return whole;
+          replacedRecords += 1;
+          const escaped = translated
+            .replaceAll("\\", "\\\\")
+            .replaceAll("\r", "")
+            .replaceAll("\n", "\\n")
+            .replaceAll('"', '\\"');
+          return `${prefix}${escaped}${suffix}`;
+        },
+      );
+    } else if (records[0].kind === "plist string") {
+      let ordinal = 0;
+      content = content.replace(
+        /(<string>)([\s\S]*?)(<\/string>)/gi,
+        (whole, prefix, value, suffix) => {
+          ordinal += 1;
+          const translated = replacements.get(`string=${ordinal}`);
+          if (translated === undefined) return whole;
+          replacedRecords += 1;
+          return `${prefix}${xmlEscape(translated)}${suffix}`;
+        },
+      );
+    } else if (records[0].kind === "localization XML") {
+      let ordinal = 0;
+      content = content.replace(
+        /(<LocalizeString>)([\s\S]*?)(<\/LocalizeString>)/i,
+        (whole, rootPrefix, body, rootSuffix) => {
+          const translatedBody = body.replace(
+            /(<([A-Za-z][\w.-]*)>)([\s\S]*?)(<\/\2>)/g,
+            (innerWhole, prefix, tag, value, suffix) => {
+              ordinal += 1;
+              const translated = replacements.get(`${tag}=${ordinal}`);
+              if (translated === undefined) return innerWhole;
+              replacedRecords += 1;
+              return `${prefix}${xmlEscape(translated)}${suffix}`;
+            },
+          );
+          return `${rootPrefix}${translatedBody}${rootSuffix}`;
+        },
+      );
+    } else if (records[0].kind === "help text") {
+      const newline = content.includes("\r\n") ? "\r\n" : "\n";
+      const paragraphs = content.replace(/\r\n?/g, "\n").split(/\n\s*\n/);
+      content = paragraphs
+        .map((paragraph, index) => {
+          const translated = replacements.get(`paragraph=${index + 1}`);
+          if (translated === undefined) return paragraph;
+          replacedRecords += 1;
+          return translated;
+        })
+        .join(`${newline}${newline}`);
+    } else if (records[0].kind === "HTML text") {
+      let ordinal = 0;
+      content = content.replace(
+        /(<(title|h[1-6]|p|li|td|th)\b[^>]*>)([\s\S]*?)(<\/\2>)/gi,
+        (whole, prefix, tag, value, suffix) => {
+          ordinal += 1;
+          const translated = replacements.get(
+            `${tag.toLowerCase()}=${ordinal}`,
+          );
+          if (translated === undefined) return whole;
+          replacedRecords += 1;
+          return `${prefix}${xmlEscape(translated)}${suffix}`;
+        },
+      );
+    }
+    writeOverlay(relative, content);
+    generatedFiles += 1;
+  }
+  return { generatedFiles, replacedRecords };
+}
+
 function encodeStringRecord(text) {
   const payload = Buffer.from(unescapeCorpusText(text), "utf8");
   if (payload.length > 0xffff) {
@@ -251,6 +394,7 @@ function main() {
     (source, index) => `${source}\t${translatedRows[index]}`,
   );
   fs.writeFileSync(outputTranslations, `${translationLines.join("\n")}\n`, "utf8");
+  const textOverlays = buildTextFileOverlays(translatedRows);
 
   const manifest = {
     format: 1,
@@ -260,6 +404,7 @@ function main() {
     runtimeTranslationEntries: translationLines.length,
     scenes: sceneCount,
     replacedOccurrences,
+    textFileOverlays: textOverlays,
     original: {
       path: "KoDp/scenes.dat",
       bytes: input.length,
@@ -280,6 +425,9 @@ function main() {
     `scenes.dat: ${input.length} -> ${output.length} bytes (${manifest.overlay.sha256})`,
   );
   console.log(`Runtime translation database: ${outputTranslations}`);
+  console.log(
+    `Text overlays: ${textOverlays.generatedFiles} files, ${textOverlays.replacedRecords} records.`,
+  );
 }
 
 main();

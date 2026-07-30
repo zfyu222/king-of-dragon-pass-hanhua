@@ -1,31 +1,30 @@
-《龙隘之王》外挂式汉化启动器（技术测试版）
+《龙隘之王》中文 Hook 版
 
 使用方法
-1. 本目录可以放在任意位置，不要覆盖游戏文件。
-2. 用文本编辑器打开 KoDPCNHook.ini，确认 GameExe 指向游戏的
+1. 将本目录放在任意可写位置，不要覆盖游戏文件。
+2. 用文本编辑器打开 KoDPCNHook.ini，确认 GameExe 指向
    King of Dragon Pass.exe。
-3. 双击 KoDPCNLauncher.exe。
-4. 请勿同时从 Steam 再启动一个游戏实例。
+3. 退出已运行的游戏，再双击 KoDPCNLauncher.exe。
+4. 请勿同时从 Steam 启动第二个游戏实例。
 
 工作方式
-- 启动器向游戏进程注入 32 位 KoDPCNHook.dll。
-- DLL 将 KoDp\scenes.dat 的读取重定向到
-  overlay\KoDp\scenes.dat，覆盖 1760 个场景、38320 处剧情文本。
-- DLL 从 translations.tsv 读取翻译，并使用 x86 DR0–DR3 硬件断点
-  接管 .s86 中的 UI caption、顾问文本和字符串构造入口。
-- Steam 游戏目录中的 EXE、S86、scenes.dat 及其他原文件均不会修改。
+- 启动器正常启动 Steam 版游戏，待窗口稳定后注入 32 位
+  KoDPCNHook.dll。
+- DLL 从 translations.tsv 加载译文，Hook Marmalade UI 的文字绘制，
+  再用透明、鼠标穿透的 Windows GDI 图层显示简体中文。
+- 中文字体使用系统自带的 Microsoft YaHei。
+- 不覆盖 EXE、S86、group、scenes.dat 或其他原游戏文件。
 
-日志判断
-- loaded 33643 exact translations：翻译库加载成功。
-- installed hardware text breakpoints：运行时文本 Hook 已安装。
-- redirected ... scenes.dat：外置剧情资源已启用。
-- translated runtime text：某条运行时文本已经命中译文。
+已验证
+- 主菜单“游玩 / 设置 / 信息”可正常显示和点击。
+- 游戏内左侧导航、人口和资源、状态说明、顾问提示可显示中文。
+- 地图和“传说”页面可进入；带年份和换行的剧情正文可显示中文。
 
-当前限制
-- 这是技术测试版。原游戏使用不含中文字形的 .gxfont + .tga 位图字体，
-  中文字体 Hook 尚未完成；译文可能显示为空白或方框。
-- Map.opalmap、HTML 手册、帮助文件等非运行时来源尚未外置回填。
-- 当前硬件断点位置仅适配已分析的 Steam 2.4.0 版本。
+注意事项
+- 仅适配当前已分析的 Steam 2.4.0 版本；游戏更新后函数地址可能变化。
+- 少量地图专名、贴图内文字或翻译库未收录的动态键可能保留英文。
+- 汉化文字由外置图层绘制，极少数复杂界面可能存在轻微字号或对齐差异。
+- KoDPCNHook.log 是诊断日志；遇到问题时可连同截图一起反馈。
 
 恢复英文版
 - 退出游戏后直接从 Steam 启动原游戏即可。

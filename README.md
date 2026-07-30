@@ -55,19 +55,21 @@
 - 特别注意：不得加入通用方括号禁翻规则，玩家可见的 `[click “Proceed”]` 需要翻译。
 
 ## 回填
-- 方案：采用外挂式启动器，不修改 Steam 游戏目录。`KoDPCNLauncher.exe` 以挂起状态启动游戏并注入 32 位 `KoDPCNHook.dll`；直接从 Steam 启动仍为原版。
-- 剧情资源：`hook/build_overlay.js` 根据原文、译文及目录表完整重建 1760 个场景的偏移表和字节码长度，生成 `release/KoDPCNHook/overlay/KoDp/scenes.dat`；共回填 38,320 处字符串。
-- 资源重定向：DLL 挂接主程序 `CreateFileA/W`，把对 `KoDp/scenes.dat` 的只读访问重定向到外置资源。原文件 SHA-256 为 `C13F4071...`，外置文件 SHA-256 为 `8CC881A14EEE4D226DD74F09E844CEBB0155858047C9F186EF5972E166943961`。
-- 运行时文本：加载 33,643 条有变化的精确翻译及 54 条 printf 模式。Marmalade 的 `.s86` 映像禁止写代码页，因此 DLL不修改 `.s86`，而是在定位运行基址后为 UI caption、顾问文本、字符串构造起始和追加函数设置 x86 DR0–DR3 硬件执行断点，在异常处理器中替换字符串参数。
-- 构建命令：`node .\hook\build_overlay.js`；`powershell -ExecutionPolicy Bypass -File .\hook\build_hook.ps1`。
-- 验证：32 位启动器和 DLL 构建通过；游戏可启动且保持响应；日志确认 33,643 条翻译加载、硬件断点在 26 个游戏线程安装、`scenes.dat` 外置重定向成功。运行时译文命中与中文字体显示仍需游戏内人工验收。
-- 产物：`release/KoDPCNHook/`。双击 `KoDPCNLauncher.exe` 启动；直接从 Steam 启动即可恢复英文原版。
+- 最终方案：采用外置启动器与注入 DLL，不修改 Steam 游戏目录。`KoDPCNLauncher.exe` 正常启动游戏，检测到可见窗口并等待 2.5 秒后注入 `KoDPCNHook.dll`，避免过早注入干扰 Marmalade 字体缓存。
+- 文字接管：DLL 在 `.s86` 映像稳定后安装 x86 inline Hook，接管 `CIwUIDrawableText` 的绘制和 primitive 可见性判断。原英文 drawable 以透明色执行原始裁剪流程，中文则由鼠标穿透的 layered Win32 窗口使用 Microsoft YaHei 绘制。
+- 坐标与裁剪：读取 `CIwUIGraphics` 的变换矩阵和 frame region，将 Marmalade UI 子像素坐标换算为游戏客户区坐标；普通界面沿用原字号和边界，主菜单单独放宽。
+- 译文匹配：加载 33,643 条有变化的精确译文及 54 条格式模式，并支持空白归一化、末尾冒号变体和“年份 + 换行正文”等复合 caption。
+- 外置资源：曾生成重建版 `scenes.dat` 与 UI/HTML 资源用于试验；最终发布版禁用文件重定向，以避免原生位图字体缺字，运行时统一由 GDI 中文层显示。
+- 构建命令：`powershell -ExecutionPolicy Bypass -File .\hook\build_hook.ps1`。
+- 验证：已实机验证主菜单、氏族管理、地图和“传说”页面；“游玩 / 设置 / 信息”、导航、人口资源、状态说明、顾问帮助以及带年份和换行的剧情正文均能显示中文。
+- 产物：`release/KoDPCNHook/`。双击 `KoDPCNLauncher.exe` 启动汉化；直接从 Steam 启动即可恢复英文原版。
 
 ## 已知问题
 - 中文译文通常比英文占用更多 UTF-8 字节；回填 `scenes.dat` 时不能原位覆盖，必须重算字符串长度、场景字数及所有后续场景偏移。
 - `.s86` 中的硬编码字符串需要区分显示文本与内部键名，并评估定长引用或重新定位。
-- 当前版本仍使用原游戏 `.gxfont + .tga` 位图字体。中文字体 Hook 尚未完成，中文可能显示为空白或方框；因此本次产物标记为技术测试版，不视为最终可发布汉化。
-- 硬件断点依赖当前 Steam 版 `.s86` 布局（原文件 SHA-256：`BDC90ADACDE29B6E86ECE3886F28BA60C97A7A67F0E3BAB7A1D2BB1B641138C5`）；游戏更新后需重新确认 4 个函数 RVA。
+- 中文显示依赖 Windows 的 Microsoft YaHei 字体；外置层在少数复杂、快速变化的界面中可能存在轻微字号或对齐差异。
+- 地图专名、贴图内文字以及翻译库未收录的动态键可能保留英文。
+- inline Hook 依赖当前 Steam 2.4.0 版 `.s86` 布局（原文件 SHA-256：`BDC90ADACDE29B6E86ECE3886F28BA60C97A7A67F0E3BAB7A1D2BB1B641138C5`）；游戏更新后需要重新确认 RVA。
 
 ## 版本记录
 - 2026-07-29 - 初始化汉化项目工作区（start-translate skill）。
@@ -75,3 +77,4 @@
 - 2026-07-29 - 完成剧情、程序、UI、帮助、手册和地图文本提取，共 34,421 条唯一文本。
 - 2026-07-30 - 完成 AINiee 全量翻译，修复 32 行格式异常并通过项目专用校验。
 - 2026-07-30 - 生成外挂式技术测试包：外置重建 `scenes.dat`，并以 x86 硬件断点 Hook `.s86` 运行时显示文本；原游戏文件零修改。
+- 2026-07-31 - 完成透明 GDI 中文层、Marmalade 坐标/裁剪适配和多行正文匹配；实机验证主菜单、游戏管理、地图与传说页面。
