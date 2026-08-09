@@ -710,6 +710,13 @@ bool LoadTranslations() {
             u8"它们需要 %d 名牧人照料。",
         },
         {
+            "We need %d farmers and %d oxen to work all of our cropland. "
+            "We have %d healthy farmers, and %d of our cattle are strong "
+            "young oxen.",
+            u8"我们需要 %d 名农夫和 %d 头耕牛来耕种全部农田。"
+            u8"目前有 %d 名健康农夫，另有 %d 头牛是强壮的年轻耕牛。",
+        },
+        {
             "The pigs need %d hides of wildland, and the other livestock "
             "need to graze on %d hides of land. They need %d herder to "
             "tend them.",
@@ -744,14 +751,36 @@ bool LoadTranslations() {
                 return left->first.size() > right->first.size();
             });
     }
-    const char* compositeProbe =
+    const char* pigCompositeProbe =
         "The pigs need 23 hides of wildland, and the other livestock "
         "need to graze on 27 hides of land. They need 62 herders to "
         "tend them.";
-    const char* compositeProbeResult =
-        TranslateRuntimeText(compositeProbe);
+    const char* farmerCompositeProbe =
+        "We need 238 farmers and 210 oxen to work all of our cropland. "
+        "We have 411 healthy farmers, and 265 of our cattle are strong "
+        "young oxen.";
+    const char* genericCompositeProbe =
+        "We need 1 farmer and 1 ox to work all of our cropland. "
+        "We have 1 healthy farmers, and 1 of our cattle are strong "
+        "young oxen.";
+    const char* textOnlyCompositeProbe =
+        "farmers and oxen";
+    const char* pigCompositeResult =
+        TranslateRuntimeText(pigCompositeProbe);
+    const std::string pigCompositeTranslation(
+        pigCompositeResult ? pigCompositeResult : "");
+    const char* farmerCompositeResult =
+        TranslateRuntimeText(farmerCompositeProbe);
+    const char* genericCompositeResult =
+        TranslateRuntimeText(genericCompositeProbe);
+    const char* textOnlyCompositeResult =
+        TranslateRuntimeText(textOnlyCompositeProbe);
     WriteLog(
-        compositeProbeResult != compositeProbe
+        pigCompositeResult != pigCompositeProbe &&
+                !pigCompositeTranslation.empty() &&
+                farmerCompositeResult != farmerCompositeProbe &&
+                genericCompositeResult != genericCompositeProbe &&
+                textOnlyCompositeResult != textOnlyCompositeProbe
             ? L"runtime composite translation self-test passed"
             : L"runtime composite translation self-test failed");
     wchar_t message[256] = {};
@@ -821,7 +850,7 @@ std::string RenderFormat(
     return capture == captures.size() ? result : std::string();
 }
 
-bool TranslateNumericComposite(
+bool TranslateKnownComposite(
     const std::string& source, std::string* translated) {
     translated->clear();
     size_t cursor = 0;
@@ -848,26 +877,44 @@ bool TranslateNumericComposite(
             ++translatedFragments;
             continue;
         }
+        if (std::isspace(
+                static_cast<unsigned char>(source[cursor]))) {
+            translated->push_back(source[cursor++]);
+            continue;
+        }
         const size_t numberStart = cursor;
-        if (source[cursor] == '+' || source[cursor] == '-') {
-            ++cursor;
+        size_t numberCursor = cursor;
+        if (source[numberCursor] == '+' ||
+            source[numberCursor] == '-') {
+            ++numberCursor;
         }
-        const size_t digitStart = cursor;
-        while (cursor < source.size() &&
-               (std::isdigit(
-                    static_cast<unsigned char>(source[cursor])) ||
-                source[cursor] == ',')) {
-            ++cursor;
+        const size_t digitStart = numberCursor;
+        while (numberCursor < source.size() &&
+               (std::isdigit(static_cast<unsigned char>(
+                    source[numberCursor])) ||
+                source[numberCursor] == ',')) {
+            ++numberCursor;
         }
-        if (cursor == digitStart) {
-            translated->clear();
-            return false;
+        if (numberCursor != digitStart) {
+            translated->append(
+                source,
+                numberStart,
+                numberCursor - numberStart);
+            cursor = numberCursor;
+            ++numericCaptures;
+            continue;
         }
-        translated->append(
-            source, numberStart, cursor - numberStart);
-        ++numericCaptures;
+        if (static_cast<unsigned char>(source[cursor]) < 0x80 &&
+            std::ispunct(
+                static_cast<unsigned char>(source[cursor]))) {
+            translated->push_back(source[cursor++]);
+            continue;
+        }
+        translated->clear();
+        return false;
     }
-    if (translatedFragments < 2 || numericCaptures == 0) {
+    if (translatedFragments < 2 &&
+        !(translatedFragments >= 1 && numericCaptures >= 1)) {
         translated->clear();
         return false;
     }
@@ -986,7 +1033,7 @@ const char* TranslateRuntimeText(const char* source) {
             return formatted.c_str();
         }
     }
-    if (TranslateNumericComposite(text, &formatted)) {
+    if (TranslateKnownComposite(text, &formatted)) {
         return formatted.c_str();
     }
     return source;
