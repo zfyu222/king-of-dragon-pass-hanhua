@@ -152,6 +152,8 @@ using PropertySerialiseType = int(__thiscall*)(void*);
 using HashStringType = uint32_t(__cdecl*)(const char*);
 using ResolveResourceType = int(__cdecl*)(int*, const char*, int);
 using FontSerialiseType = short(__thiscall*)(void*);
+using FontPrepareStringType =
+    void(__cdecl*)(int, const char*, unsigned int);
 AdvisorTextType g_originalAdvisorText = nullptr;
 CaptionPrepareType g_originalCaptionPrepare = nullptr;
 CaptionDrawType g_originalCaptionDraw = nullptr;
@@ -166,6 +168,7 @@ PropertySerialiseType g_originalPropertySerialise = nullptr;
 uint32_t g_captionPropertyHash = 0;
 ResolveResourceType g_originalResolveResource = nullptr;
 FontSerialiseType g_originalFontSerialise = nullptr;
+FontPrepareStringType g_originalFontPrepareString = nullptr;
 void* g_originalFontFinalizeTail = nullptr;
 unsigned char* g_runtimeImageBase = nullptr;
 LONG g_fontOverrideLogCount = 0;
@@ -663,6 +666,7 @@ bool LoadTranslations() {
         return false;
     }
     std::string line;
+    std::vector<std::pair<std::string, std::string>> knownForAliases;
     while (std::getline(input, line)) {
         if (!line.empty() && line.back() == '\r') {
             line.pop_back();
@@ -700,7 +704,53 @@ bool LoadTranslations() {
         if (ParseFormatPattern(source, translated, &pattern)) {
             g_formatPatterns.push_back(std::move(pattern));
         }
+
+        // Clan descriptions are stored with a three-byte control prefix and
+        // later spliced into "They're known for ..." at runtime.  Derive the
+        // visible fragment automatically so every clan uses the translated
+        // database text, including descriptions added in other scenarios.
+        const std::string knownForMarker = ", known for ";
+        const size_t knownFor = source.find(knownForMarker);
+        if (knownFor != std::string::npos) {
+            std::string visibleSource =
+                source.substr(knownFor + knownForMarker.size());
+            std::string visibleTranslation = translated;
+            if (visibleTranslation.size() >= 3 &&
+                static_cast<unsigned char>(visibleTranslation[0]) == 0x01 &&
+                visibleTranslation[1] == '@') {
+                visibleTranslation.erase(0, 3);
+            }
+            const std::string chinesePossessive = u8"以其";
+            if (visibleTranslation.compare(
+                    0,
+                    chinesePossessive.size(),
+                    chinesePossessive) == 0) {
+                visibleTranslation.erase(0, chinesePossessive.size());
+            }
+            if (!visibleSource.empty() && !visibleTranslation.empty()) {
+                knownForAliases.emplace_back(
+                    visibleSource, visibleTranslation);
+                if (visibleSource.compare(0, 4, "its ") == 0) {
+                    knownForAliases.emplace_back(
+                        visibleSource.substr(4), visibleTranslation);
+                }
+            }
+        }
     }
+
+    for (const auto& alias : knownForAliases) {
+        g_translations.insert_or_assign(alias.first, alias.second);
+        g_translations.insert_or_assign(
+            alias.first + ".", alias.second + u8"。");
+        g_translatedValues.insert(alias.second);
+        g_translatedValues.insert(alias.second + u8"。");
+    }
+    // This source prefix is grammatically completed by the derived Chinese
+    // description above (for example: 他们因 + 巨石……而闻名).
+    g_translations.insert_or_assign("They're known for ", u8"他们因");
+    g_normalizedTranslations.insert_or_assign(
+        "They're known for", u8"他们因");
+    g_translatedValues.insert(u8"他们因");
     const std::pair<const char*, const char*> runtimePatterns[] = {
         {
             "The pigs need %d hides of wildland, and the other livestock "
@@ -765,6 +815,10 @@ bool LoadTranslations() {
         "young oxen.";
     const char* textOnlyCompositeProbe =
         "farmers and oxen";
+    const char* clanSuffixProbe = "Bachad N";
+    const char* clanDescriptionProbe =
+        "They're known for a large boulder with war powers. "
+        "Their chief is Fantarl. They owe us a favor.";
     const char* pigCompositeResult =
         TranslateRuntimeText(pigCompositeProbe);
     const std::string pigCompositeTranslation(
@@ -775,12 +829,19 @@ bool LoadTranslations() {
         TranslateRuntimeText(genericCompositeProbe);
     const char* textOnlyCompositeResult =
         TranslateRuntimeText(textOnlyCompositeProbe);
+    const std::string clanSuffixResult(
+        TranslateRuntimeText(clanSuffixProbe));
+    const std::string clanDescriptionResult(
+        TranslateRuntimeText(clanDescriptionProbe));
     WriteLog(
         pigCompositeResult != pigCompositeProbe &&
                 !pigCompositeTranslation.empty() &&
                 farmerCompositeResult != farmerCompositeProbe &&
                 genericCompositeResult != genericCompositeProbe &&
-                textOnlyCompositeResult != textOnlyCompositeProbe
+                textOnlyCompositeResult != textOnlyCompositeProbe &&
+                clanSuffixResult.find("Bachad") == std::string::npos &&
+                clanDescriptionResult.find("known for") == std::string::npos &&
+                clanDescriptionResult.find("Fantarl") == std::string::npos
             ? L"runtime composite translation self-test passed"
             : L"runtime composite translation self-test failed");
     wchar_t message[256] = {};
@@ -788,9 +849,10 @@ bool LoadTranslations() {
         message,
         _countof(message),
         _TRUNCATE,
-        L"loaded %u exact translations and %u format patterns",
+        L"loaded %u exact translations, %u format patterns, and %u clan description aliases",
         static_cast<unsigned>(g_translations.size()),
-        static_cast<unsigned>(g_formatPatterns.size()));
+        static_cast<unsigned>(g_formatPatterns.size()),
+        static_cast<unsigned>(knownForAliases.size()));
     WriteLog(message);
     return !g_translations.empty();
 }
@@ -929,6 +991,33 @@ const char* TranslateRuntimeText(const char* source) {
     if (exact != g_translations.end()) {
         return exact->second.c_str();
     }
+    const std::string text(source);
+    const std::string nearbySuffix = " N";
+    const std::string nearbySmallCapitalSuffix = " \xC9\xB4";
+    const std::string* matchedNearbySuffix = nullptr;
+    if (text.size() > nearbySuffix.size() &&
+        text.compare(
+            text.size() - nearbySuffix.size(),
+            nearbySuffix.size(),
+            nearbySuffix) == 0) {
+        matchedNearbySuffix = &nearbySuffix;
+    } else if (
+        text.size() > nearbySmallCapitalSuffix.size() &&
+        text.compare(
+            text.size() - nearbySmallCapitalSuffix.size(),
+            nearbySmallCapitalSuffix.size(),
+            nearbySmallCapitalSuffix) == 0) {
+        matchedNearbySuffix = &nearbySmallCapitalSuffix;
+    }
+    if (matchedNearbySuffix) {
+        const auto clan = g_translations.find(
+            text.substr(0, text.size() - matchedNearbySuffix->size()));
+        if (clan != g_translations.end()) {
+            thread_local std::string nearbyClan;
+            nearbyClan = clan->second + u8"（邻近）";
+            return nearbyClan.c_str();
+        }
+    }
 
     std::string normalizedSource;
     normalizedSource.reserve(std::strlen(source));
@@ -1023,7 +1112,6 @@ const char* TranslateRuntimeText(const char* source) {
 
     thread_local std::string formatted;
     std::vector<std::string> captures;
-    const std::string text(source);
     for (const FormatPattern& pattern : g_formatPatterns) {
         if (!MatchFormat(pattern, text, &captures)) {
             continue;
@@ -1802,6 +1890,58 @@ void __stdcall PrepareExternalFont(void* font) {
             L"created in-memory SimHei font (point size %d)",
             pointSize);
         WriteLog(message);
+    }
+}
+
+void __cdecl HookFontPrepareString(
+    int preparedData, const char* source, unsigned int length) {
+    if (!g_originalFontPrepareString || !source || !*source) {
+        if (g_originalFontPrepareString) {
+            g_originalFontPrepareString(preparedData, source, length);
+        }
+        return;
+    }
+
+    const size_t sourceLength = length == static_cast<unsigned int>(-1)
+        ? std::strlen(source)
+        : static_cast<size_t>(length);
+    const std::string original(source, sourceLength);
+    const char* translated = TranslateRuntimeText(original.c_str());
+    if (!translated || original == translated) {
+        g_originalFontPrepareString(preparedData, source, length);
+        return;
+    }
+
+    void* originalFont = nullptr;
+    void* replacementFont = nullptr;
+    if (g_runtimeImageBase) {
+        auto* context = *reinterpret_cast<unsigned char**>(
+            g_runtimeImageBase + 0x4DBAD8);
+        if (context) {
+            originalFont = *reinterpret_cast<void**>(context + 16);
+            PrepareExternalFont(originalFont);
+            const auto replacement =
+                g_externalFontReplacements.find(originalFont);
+            if (replacement != g_externalFontReplacements.end()) {
+                replacementFont = replacement->second;
+            }
+        }
+    }
+
+    using SelectFontType = int(__cdecl*)(void*);
+    auto selectFont = g_runtimeImageBase
+        ? reinterpret_cast<SelectFontType>(g_runtimeImageBase + 0x946A5)
+        : nullptr;
+    if (selectFont && replacementFont) {
+        selectFont(replacementFont);
+    }
+    LogTranslationHit(original.c_str(), translated);
+    g_originalFontPrepareString(
+        preparedData,
+        translated,
+        static_cast<unsigned int>(std::strlen(translated)));
+    if (selectFont && replacementFont && originalFont) {
+        selectFont(originalFont);
     }
 }
 
@@ -2609,6 +2749,9 @@ void TryInstallFinalRuntimeHooks(
     static const unsigned char captionPreparePattern[] = {
         0x55, 0x8B, 0xEC, 0x51, 0x51,
     };
+    static const unsigned char fontPrepareStringPattern[] = {
+        0x55, 0x8B, 0xEC, 0x83, 0x3D, 0, 0, 0, 0, 0,
+    };
     static const unsigned char captionDrawPattern[] = {
         0x55, 0x8B, 0xEC, 0x51, 0x56,
     };
@@ -2625,6 +2768,9 @@ void TryInstallFinalRuntimeHooks(
         !IsReadableCode(base + 0x931D8, sizeof(buttonFactoryPattern)) ||
         !IsReadableCode(base + 0x946CC, sizeof(captionDrawPattern)) ||
         !IsReadableCode(
+            base + 0x6D622,
+            sizeof(fontPrepareStringPattern)) ||
+        !IsReadableCode(
             base + 0xB49F1,
             sizeof(primitiveQueuePattern)) ||
         !IsReadableCode(base + 0x947DC, sizeof(captionPreparePattern)) ||
@@ -2638,6 +2784,10 @@ void TryInstallFinalRuntimeHooks(
             base + 0x931D8, buttonFactoryPattern, "xxxxx") ||
         !MatchMasked(
             base + 0x946CC, captionDrawPattern, "xxxxx") ||
+        !MatchMasked(
+            base + 0x6D622,
+            fontPrepareStringPattern,
+            "xxxxx????x") ||
         !MatchMasked(
             base + 0xB49F1,
             primitiveQueuePattern,
@@ -2670,6 +2820,12 @@ void TryInstallFinalRuntimeHooks(
     g_originalCaptionDraw =
         reinterpret_cast<CaptionDrawType>(
             InstallInlineHook(base + 0x946CC, &HookCaptionDraw, 5));
+    g_originalFontPrepareString =
+        reinterpret_cast<FontPrepareStringType>(
+            InstallInlineHook(
+                base + 0x6D622,
+                &HookFontPrepareString,
+                10));
     g_originalPrimitiveQueue =
         reinterpret_cast<PrimitiveQueueType>(
             InstallInlineHook(
@@ -2693,6 +2849,7 @@ void TryInstallFinalRuntimeHooks(
     const bool installed =
         propertySerialiseInstalled &&
         g_originalCaptionPrepare && g_originalCaptionDraw &&
+        g_originalFontPrepareString &&
         g_originalPrimitiveQueue &&
         g_originalLabelFactory && g_originalButtonFactory &&
         g_originalPropertyString &&

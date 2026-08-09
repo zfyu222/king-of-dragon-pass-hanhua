@@ -10,8 +10,8 @@
 工作方式
 - 启动器正常启动 Steam 版游戏，待窗口稳定后注入 32 位
   KoDPCNHook.dll。
-- DLL 从 translations.tsv 加载译文，在 Marmalade UI 排版前替换文字，
-  再由游戏自己的字体、对齐、裁剪和换行流程绘制简体中文。
+- DLL 从 translations.tsv 加载译文，在 Marmalade UI 与底层地图文字排版前
+  替换文字，再由游戏自己的字体、对齐、裁剪和换行流程绘制简体中文。
 - 中文字体从 Windows 的 simhei.ttf 读入内存，不会复制到游戏目录。
 - 不覆盖 EXE、S86、group、scenes.dat 或其他原游戏文件。
 
@@ -22,7 +22,7 @@
 
 注意事项
 - 仅适配当前已分析的 Steam 2.4.0 版本；游戏更新后函数地址可能变化。
-- 少量地图专名、贴图内文字或翻译库未收录的动态键可能保留英文。
+- 贴图内文字或翻译库未收录的动态键仍可能保留英文。
 - 若系统缺少 simhei.ttf，Hook 会保留英文并在 KoDPCNHook.log 中记录错误。
 - KoDPCNHook.log 是诊断日志；遇到问题时可连同截图一起反馈。
 
