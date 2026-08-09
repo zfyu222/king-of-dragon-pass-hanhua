@@ -83,6 +83,10 @@ LONG g_runtimeAllocationCount = 0;
 std::unordered_map<std::string, std::string> g_translations;
 std::unordered_map<std::string, std::string> g_normalizedTranslations;
 std::unordered_set<std::string> g_translatedValues;
+using TranslationEntry =
+    std::pair<const std::string, std::string>;
+std::vector<const TranslationEntry*>
+    g_compositeFragmentsByFirstByte[256];
 std::unordered_map<void*, void*> g_externalFontReplacements;
 std::unordered_map<int, void*> g_externalFontsByPointSize;
 std::unordered_map<void*, std::string> g_nativePreparedCaptions;
@@ -697,6 +701,59 @@ bool LoadTranslations() {
             g_formatPatterns.push_back(std::move(pattern));
         }
     }
+    const std::pair<const char*, const char*> runtimePatterns[] = {
+        {
+            "The pigs need %d hides of wildland, and the other livestock "
+            "need to graze on %d hides of land. They need %d herders to "
+            "tend them.",
+            u8"猪群需要 %d 张兽皮的荒地，其他牲畜需要在 %d 张兽皮的土地上放牧。"
+            u8"它们需要 %d 名牧人照料。",
+        },
+        {
+            "The pigs need %d hides of wildland, and the other livestock "
+            "need to graze on %d hides of land. They need %d herder to "
+            "tend them.",
+            u8"猪群需要 %d 张兽皮的荒地，其他牲畜需要在 %d 张兽皮的土地上放牧。"
+            u8"它们需要 %d 名牧人照料。",
+        },
+    };
+    for (const auto& runtimePattern : runtimePatterns) {
+        FormatPattern pattern;
+        if (ParseFormatPattern(
+                runtimePattern.first,
+                runtimePattern.second,
+                &pattern)) {
+            g_formatPatterns.push_back(std::move(pattern));
+        }
+    }
+    for (const auto& entry : g_translations) {
+        if (entry.first.size() < 2 ||
+            entry.first.find('%') != std::string::npos) {
+            continue;
+        }
+        const unsigned char first =
+            static_cast<unsigned char>(entry.first.front());
+        g_compositeFragmentsByFirstByte[first].push_back(&entry);
+    }
+    for (auto& fragments : g_compositeFragmentsByFirstByte) {
+        std::sort(
+            fragments.begin(),
+            fragments.end(),
+            [](const TranslationEntry* left,
+               const TranslationEntry* right) {
+                return left->first.size() > right->first.size();
+            });
+    }
+    const char* compositeProbe =
+        "The pigs need 23 hides of wildland, and the other livestock "
+        "need to graze on 27 hides of land. They need 62 herders to "
+        "tend them.";
+    const char* compositeProbeResult =
+        TranslateRuntimeText(compositeProbe);
+    WriteLog(
+        compositeProbeResult != compositeProbe
+            ? L"runtime composite translation self-test passed"
+            : L"runtime composite translation self-test failed");
     wchar_t message[256] = {};
     _snwprintf_s(
         message,
@@ -762,6 +819,59 @@ std::string RenderFormat(
         }
     }
     return capture == captures.size() ? result : std::string();
+}
+
+bool TranslateNumericComposite(
+    const std::string& source, std::string* translated) {
+    translated->clear();
+    size_t cursor = 0;
+    size_t translatedFragments = 0;
+    size_t numericCaptures = 0;
+    while (cursor < source.size()) {
+        const unsigned char first =
+            static_cast<unsigned char>(source[cursor]);
+        const TranslationEntry* matched = nullptr;
+        for (const TranslationEntry* candidate :
+             g_compositeFragmentsByFirstByte[first]) {
+            if (candidate->first.size() <= source.size() - cursor &&
+                source.compare(
+                    cursor,
+                    candidate->first.size(),
+                    candidate->first) == 0) {
+                matched = candidate;
+                break;
+            }
+        }
+        if (matched) {
+            *translated += matched->second;
+            cursor += matched->first.size();
+            ++translatedFragments;
+            continue;
+        }
+        const size_t numberStart = cursor;
+        if (source[cursor] == '+' || source[cursor] == '-') {
+            ++cursor;
+        }
+        const size_t digitStart = cursor;
+        while (cursor < source.size() &&
+               (std::isdigit(
+                    static_cast<unsigned char>(source[cursor])) ||
+                source[cursor] == ',')) {
+            ++cursor;
+        }
+        if (cursor == digitStart) {
+            translated->clear();
+            return false;
+        }
+        translated->append(
+            source, numberStart, cursor - numberStart);
+        ++numericCaptures;
+    }
+    if (translatedFragments < 2 || numericCaptures == 0) {
+        translated->clear();
+        return false;
+    }
+    return true;
 }
 
 const char* TranslateRuntimeText(const char* source) {
@@ -875,6 +985,9 @@ const char* TranslateRuntimeText(const char* source) {
         if (!formatted.empty()) {
             return formatted.c_str();
         }
+    }
+    if (TranslateNumericComposite(text, &formatted)) {
+        return formatted.c_str();
     }
     return source;
 }
