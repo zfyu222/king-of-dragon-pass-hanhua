@@ -85,6 +85,8 @@ std::unordered_map<std::string, std::string> g_normalizedTranslations;
 std::unordered_set<std::string> g_translatedValues;
 std::unordered_map<void*, void*> g_externalFontReplacements;
 std::unordered_map<int, void*> g_externalFontsByPointSize;
+std::unordered_map<void*, std::string> g_nativePreparedCaptions;
+std::vector<unsigned char> g_externalFontData;
 
 struct OverlayCaption {
     std::wstring text;
@@ -107,6 +109,11 @@ HWND g_overlayWindow = nullptr;
 HANDLE g_overlayThread = nullptr;
 const wchar_t kOverlayClassName[] = L"KoDPCNCaptionOverlay";
 const COLORREF kOverlayKeyColor = RGB(255, 0, 255);
+// 仅当 caption 数据真正变化或窗口移动时才请求重绘，避免每帧整窗
+// FillRect + 重画导致 color-key layered 窗口在 DWM 下持续闪烁。
+LONG g_overlayDirty = 0;
+RECT g_overlayWindowRect = {};
+BOOL g_overlayWindowVisible = FALSE;
 
 struct FormatPattern {
     std::vector<std::string> literals;
@@ -962,18 +969,9 @@ LRESULT CALLBACK OverlayWindowProcedure(
         SetBkMode(dc, TRANSPARENT);
 
         std::vector<OverlayCaption> captions;
-        const DWORD now = GetTickCount();
-        AcquireSRWLockExclusive(&g_overlayLock);
-        g_overlayCaptions.erase(
-            std::remove_if(
-                g_overlayCaptions.begin(),
-                g_overlayCaptions.end(),
-                [now](const OverlayCaption& caption) {
-                    return now - caption.updatedAt > 750;
-                }),
-            g_overlayCaptions.end());
+        AcquireSRWLockShared(&g_overlayLock);
         captions = g_overlayCaptions;
-        ReleaseSRWLockExclusive(&g_overlayLock);
+        ReleaseSRWLockShared(&g_overlayLock);
 
         for (const OverlayCaption& caption : captions) {
             const int savedDc = SaveDC(dc);
@@ -1078,21 +1076,66 @@ DWORD WINAPI RunCaptionOverlay(void*) {
         }
         RECT client = {};
         POINT origin = {};
-        if (IsWindowVisible(g_gameWindow) &&
+        const bool shouldShow =
+            IsWindowVisible(g_gameWindow) &&
             !IsIconic(g_gameWindow) &&
             GetClientRect(g_gameWindow, &client) &&
-            ClientToScreen(g_gameWindow, &origin)) {
-            SetWindowPos(
-                g_overlayWindow,
-                HWND_TOPMOST,
+            ClientToScreen(g_gameWindow, &origin);
+        if (shouldShow) {
+            const RECT target = {
                 origin.x,
                 origin.y,
-                client.right - client.left,
-                client.bottom - client.top,
-                SWP_NOACTIVATE | SWP_SHOWWINDOW);
-            InvalidateRect(g_overlayWindow, nullptr, FALSE);
-        } else {
+                origin.x + (client.right - client.left),
+                origin.y + (client.bottom - client.top),
+            };
+            // 位置/大小/可见性未变化时不再调用 SetWindowPos，
+            // 避免 color-key layered 窗口被反复重定位导致闪烁。
+            const bool rectChanged =
+                !g_overlayWindowVisible ||
+                g_overlayWindowRect.left != target.left ||
+                g_overlayWindowRect.top != target.top ||
+                g_overlayWindowRect.right != target.right ||
+                g_overlayWindowRect.bottom != target.bottom;
+            if (rectChanged) {
+                SetWindowPos(
+                    g_overlayWindow,
+                    HWND_TOPMOST,
+                    target.left,
+                    target.top,
+                    target.right - target.left,
+                    target.bottom - target.top,
+                    SWP_NOACTIVATE | SWP_SHOWWINDOW);
+                g_overlayWindowRect = target;
+                g_overlayWindowVisible = TRUE;
+                InterlockedExchange(&g_overlayDirty, 1);
+            }
+        } else if (g_overlayWindowVisible) {
             ShowWindow(g_overlayWindow, SW_HIDE);
+            g_overlayWindowVisible = FALSE;
+            g_overlayWindowRect = {};
+        }
+        // 过期 caption 清理移到主循环：停止无条件重绘后，
+        // 若仍放在 WM_PAINT 里，过期文字将残留无法清除。
+        const DWORD now = GetTickCount();
+        AcquireSRWLockExclusive(&g_overlayLock);
+        const size_t before = g_overlayCaptions.size();
+        g_overlayCaptions.erase(
+            std::remove_if(
+                g_overlayCaptions.begin(),
+                g_overlayCaptions.end(),
+                [now](const OverlayCaption& caption) {
+                    return now - caption.updatedAt > 750;
+                }),
+            g_overlayCaptions.end());
+        const bool expiredChanged =
+            g_overlayCaptions.size() != before;
+        ReleaseSRWLockExclusive(&g_overlayLock);
+        if (expiredChanged) {
+            InterlockedExchange(&g_overlayDirty, 1);
+        }
+        // 仅在 caption 数据或窗口状态真正变化时重绘，静态界面完全静止。
+        if (InterlockedExchange(&g_overlayDirty, 0)) {
+            InvalidateRect(g_overlayWindow, nullptr, FALSE);
         }
         Sleep(16);
     }
@@ -1382,12 +1425,29 @@ bool QueueTranslatedCaption(
                    std::abs(candidate.x - caption.x) <= 2 &&
                    std::abs(candidate.y - caption.y) <= 2;
         });
+    bool changed = false;
     if (existing != g_overlayCaptions.end()) {
-        *existing = caption;
+        changed =
+            existing->x != caption.x ||
+            existing->y != caption.y ||
+            existing->width != caption.width ||
+            existing->height != caption.height ||
+            existing->fontHeight != caption.fontHeight ||
+            existing->clipLeft != caption.clipLeft ||
+            existing->clipTop != caption.clipTop ||
+            existing->clipRight != caption.clipRight ||
+            existing->clipBottom != caption.clipBottom;
+        if (changed) {
+            *existing = caption;
+        }
     } else {
         g_overlayCaptions.push_back(std::move(caption));
+        changed = true;
     }
     ReleaseSRWLockExclusive(&g_overlayLock);
+    if (changed) {
+        InterlockedExchange(&g_overlayDirty, 1);
+    }
     return true;
 }
 
@@ -1409,6 +1469,55 @@ void LogTranslationHit(const char* source, const char* translated) {
     WriteLog(message.c_str());
 }
 
+bool LoadExternalFontData() {
+    if (!g_externalFontData.empty()) {
+        return true;
+    }
+    wchar_t windowsDirectory[MAX_PATH] = {};
+    if (!GetWindowsDirectoryW(
+            windowsDirectory, _countof(windowsDirectory))) {
+        return false;
+    }
+    std::wstring fontPath = windowsDirectory;
+    fontPath += L"\\Fonts\\simhei.ttf";
+    HANDLE file = g_originalCreateFileW(
+        fontPath.c_str(),
+        GENERIC_READ,
+        FILE_SHARE_READ,
+        nullptr,
+        OPEN_EXISTING,
+        FILE_ATTRIBUTE_NORMAL,
+        nullptr);
+    if (file == INVALID_HANDLE_VALUE) {
+        return false;
+    }
+    LARGE_INTEGER fileSize = {};
+    const bool validSize =
+        GetFileSizeEx(file, &fileSize) != FALSE &&
+        fileSize.QuadPart > 0 &&
+        fileSize.QuadPart <= 32 * 1024 * 1024;
+    if (!validSize) {
+        CloseHandle(file);
+        return false;
+    }
+    g_externalFontData.resize(
+        static_cast<size_t>(fileSize.QuadPart));
+    DWORD bytesRead = 0;
+    const bool loaded = g_originalReadFile(
+                            file,
+                            g_externalFontData.data(),
+                            static_cast<DWORD>(
+                                g_externalFontData.size()),
+                            &bytesRead,
+                            nullptr) != FALSE &&
+                        bytesRead == g_externalFontData.size();
+    CloseHandle(file);
+    if (!loaded) {
+        g_externalFontData.clear();
+    }
+    return loaded;
+}
+
 void __stdcall PrepareExternalFont(void* font) {
     if (!font || !g_runtimeImageBase ||
         g_externalFontReplacements.find(font) !=
@@ -1416,23 +1525,23 @@ void __stdcall PrepareExternalFont(void* font) {
         return;
     }
 
-    const char* fontPath = "KoDp\\fonts\\kodp_cn.ttf";
-    if (GetFileAttributesA(fontPath) == INVALID_FILE_ATTRIBUTES) {
+    if (!LoadExternalFontData()) {
         if (InterlockedCompareExchange(&g_fontOverrideLogCount, 1, 0) == 0) {
-            WriteLog(L"the prepared Chinese TrueType font was not found");
+            WriteLog(L"the Windows SimHei TrueType font was not found");
         }
         return;
     }
 
     auto* sourceFontBytes = static_cast<unsigned char*>(font);
-    int pointSize = *reinterpret_cast<int*>(sourceFontBytes + 52);
-    if (pointSize <= 0 || pointSize > 96) {
-        pointSize = static_cast<int>(
+    int sourcePointSize = *reinterpret_cast<int*>(sourceFontBytes + 52);
+    if (sourcePointSize <= 0 || sourcePointSize > 96) {
+        sourcePointSize = static_cast<int>(
             *reinterpret_cast<unsigned short*>(sourceFontBytes + 18));
-        if (pointSize < 12 || pointSize > 48) {
-            pointSize = 18;
+        if (sourcePointSize < 8 || sourcePointSize > 64) {
+            sourcePointSize = 18;
         }
     }
+    const int pointSize = (std::max)(5, (sourcePointSize + 1) / 3);
     const auto sharedFont =
         g_externalFontsByPointSize.find(pointSize);
     if (sharedFont != g_externalFontsByPointSize.end()) {
@@ -1441,52 +1550,96 @@ void __stdcall PrepareExternalFont(void* font) {
     }
 
     using CreateTTDescriptorType = void*(__cdecl*)();
-    using CreateFontType = void*(__cdecl*)();
+    using InitialiseFontFieldsType = int(__thiscall*)(void*);
+    using InitialiseFontContainerType = void(__thiscall*)(void*, int);
     using GameAllocateType = void*(__cdecl*)(size_t);
     auto createDescriptor = reinterpret_cast<CreateTTDescriptorType>(
         g_runtimeImageBase + 0x7089C);
-    auto createFont = reinterpret_cast<CreateFontType>(
-        g_runtimeImageBase + 0x708B2);
+    auto initialiseFontFields =
+        reinterpret_cast<InitialiseFontFieldsType>(
+            g_runtimeImageBase + 0x6C407);
+    auto initialiseContainer32 =
+        reinterpret_cast<InitialiseFontContainerType>(
+            g_runtimeImageBase + 0x6CE6A);
+    auto initialiseContainer68 =
+        reinterpret_cast<InitialiseFontContainerType>(
+            g_runtimeImageBase + 0x6CBA0);
+    auto initialiseContainer96 =
+        reinterpret_cast<InitialiseFontContainerType>(
+            g_runtimeImageBase + 0x6CBCA);
     auto gameAllocate = reinterpret_cast<GameAllocateType>(
         g_runtimeImageBase + 0xB77E0);
-    void* replacementFont = createFont();
+    void* replacementFontMemory = gameAllocate(120);
+    void* replacementFont = replacementFontMemory;
+    if (replacementFont) {
+        std::memset(replacementFont, 0, 120);
+        std::memcpy(replacementFont, sourceFontBytes, 16);
+        initialiseContainer32(
+            static_cast<unsigned char*>(replacementFont) + 32, 0);
+        initialiseContainer68(
+            static_cast<unsigned char*>(replacementFont) + 68, 0);
+        initialiseContainer96(
+            static_cast<unsigned char*>(replacementFont) + 96, 0);
+        initialiseFontFields(replacementFont);
+    }
     auto* descriptor =
         static_cast<unsigned char*>(createDescriptor());
-    const size_t pathBytes = std::strlen(fontPath) + 1;
-    auto* storedPath =
-        static_cast<char*>(gameAllocate(pathBytes));
-    if (!replacementFont || !descriptor || !storedPath) {
+    if (!replacementFont || !descriptor) {
         WriteLog(L"failed to allocate external TrueType font descriptor");
         return;
     }
-    std::memcpy(storedPath, fontPath, pathBytes);
-    *reinterpret_cast<char**>(descriptor + 16) = storedPath;
-    *reinterpret_cast<void**>(descriptor + 20) = nullptr;
-    *reinterpret_cast<unsigned int*>(descriptor + 24) = 0;
+    *reinterpret_cast<char**>(descriptor + 16) = nullptr;
+    *reinterpret_cast<void**>(descriptor + 20) =
+        g_externalFontData.data();
+    *reinterpret_cast<unsigned int*>(descriptor + 24) =
+        static_cast<unsigned int>(g_externalFontData.size());
     auto* replacementBytes =
         static_cast<unsigned char*>(replacementFont);
+    replacementBytes[16] = sourceFontBytes[16];
+    replacementBytes[17] = sourceFontBytes[17];
+    *reinterpret_cast<int*>(replacementBytes + 24) =
+        *reinterpret_cast<int*>(sourceFontBytes + 24);
     *reinterpret_cast<int*>(replacementBytes + 52) = pointSize;
-    *reinterpret_cast<int*>(replacementBytes + 56) = -2;
+    *reinterpret_cast<int*>(replacementBytes + 56) = 0;
     *reinterpret_cast<void**>(replacementBytes + 48) = descriptor;
-    using ResolveFontType = int(__thiscall*)(void*);
-    auto resolveFont = reinterpret_cast<ResolveFontType>(
-        g_runtimeImageBase + 0x6D563);
-    resolveFont(replacementFont);
+    using GetFontRendererType = void*(__cdecl*)();
+    using CreateFontRendererType =
+        void*(__thiscall*)(void*, const void*, int, int);
+    using FinaliseFontType = int(__thiscall*)(void*);
+    auto getFontRenderer = reinterpret_cast<GetFontRendererType>(
+        g_runtimeImageBase + 0x6D610);
+    auto createFontRenderer =
+        reinterpret_cast<CreateFontRendererType>(
+            g_runtimeImageBase + 0x70DB7);
+    auto finaliseFont = reinterpret_cast<FinaliseFontType>(
+        g_runtimeImageBase + 0x6CC6D);
+    void* rendererInterface = getFontRenderer();
+    void* renderer = rendererInterface
+        ? createFontRenderer(
+              rendererInterface,
+              g_externalFontData.data(),
+              static_cast<int>(g_externalFontData.size()),
+              pointSize)
+        : nullptr;
+    *reinterpret_cast<void**>(replacementBytes + 60) = renderer;
+    if (renderer) {
+        finaliseFont(replacementFont);
+    }
+    if (!*reinterpret_cast<void**>(replacementBytes + 60)) {
+        WriteLog(L"external TrueType font renderer creation failed");
+        return;
+    }
     g_externalFontsByPointSize.emplace(pointSize, replacementFont);
     g_externalFontReplacements.emplace(font, replacementFont);
 
     const LONG count = InterlockedIncrement(&g_fontOverrideLogCount);
     if (count <= 20) {
-        wchar_t widePath[MAX_PATH] = {};
-        MultiByteToWideChar(
-            CP_ACP, 0, fontPath, -1, widePath, _countof(widePath));
         wchar_t message[MAX_PATH + 80] = {};
         _snwprintf_s(
             message,
             _countof(message),
             _TRUNCATE,
-            L"created external TrueType font: %s (point size %d)",
-            widePath,
+            L"created in-memory SimHei font (point size %d)",
             pointSize);
         WriteLog(message);
     }
@@ -1504,7 +1657,64 @@ bool ReplaceDrawableFont(void* drawable) {
         *fontSlot = replacement->second;
         return true;
     }
+    for (const auto& entry : g_externalFontReplacements) {
+        if (entry.second == *fontSlot) {
+            return true;
+        }
+    }
     return false;
+}
+
+bool PrepareNativeTranslatedCaption(
+    void* drawable,
+    int preparedData,
+    int* size,
+    char oneLine,
+    int* nativeResult = nullptr) {
+    if (!drawable || !g_setPropertyString ||
+        !g_originalCaptionPrepare) {
+        return false;
+    }
+    auto* bytes = static_cast<unsigned char*>(drawable);
+    const auto* holder =
+        reinterpret_cast<const void* const*>(bytes + 4);
+    const char* source =
+        *holder ? *static_cast<const char* const*>(*holder) : "";
+    if (!source || !*source) {
+        return false;
+    }
+    const char* translated = TranslateRuntimeText(source);
+    const bool hasTranslation =
+        translated != source ||
+        g_translatedValues.find(source) != g_translatedValues.end();
+    if (!hasTranslation) {
+        return false;
+    }
+    static LONG nativePrepareLogs = 0;
+    if (InterlockedIncrement(&nativePrepareLogs) <= 12) {
+        WriteLog(L"native translated caption prepare requested");
+    }
+
+    if (!ReplaceDrawableFont(drawable)) {
+        void* sourceFont = *reinterpret_cast<void**>(bytes + 8);
+        PrepareExternalFont(sourceFont);
+        if (!ReplaceDrawableFont(drawable)) {
+            return false;
+        }
+    }
+
+    const std::string original(source);
+    const std::string nativeText(translated);
+    LogTranslationHit(original.c_str(), nativeText.c_str());
+    g_setPropertyString(bytes + 4, nativeText.c_str());
+    const int result = g_originalCaptionPrepare(
+        drawable, preparedData, size, oneLine);
+    g_setPropertyString(bytes + 4, original.c_str());
+    g_nativePreparedCaptions[drawable] = original;
+    if (nativeResult) {
+        *nativeResult = result;
+    }
+    return true;
 }
 
 int __cdecl HookResolveResource(int* resource, const char* type, int flags) {
@@ -1551,6 +1761,11 @@ int __fastcall HookCaptionPrepare(
     if (InterlockedIncrement(&g_captionPrepareCount) <= 40) {
         WriteLog(L"caption prepare hit");
     }
+    int nativeResult = 0;
+    if (PrepareNativeTranslatedCaption(
+            self, preparedData, size, oneLine, &nativeResult)) {
+        return nativeResult;
+    }
     return g_originalCaptionPrepare(
         self, preparedData, size, oneLine);
 }
@@ -1585,27 +1800,22 @@ int __fastcall HookCaptionDraw(
         return g_originalCaptionDraw(self, drawContext);
     }
 
-    const unsigned char originalAlpha = bytes[35];
-    bytes[35] = 0;
-    g_captionVisibilityAccepted = false;
-    ++g_captionVisibilityProbeDepth;
-    const int result =
-        g_originalCaptionDraw(self, drawContext);
-    --g_captionVisibilityProbeDepth;
-    bytes[35] = originalAlpha;
-    const bool isMainMenuCaption =
-        std::strcmp(source, "Play") == 0 ||
-        std::strcmp(source, "Settings") == 0 ||
-        std::strcmp(source, "Info") == 0;
-    const bool isMultilineCaption =
-        std::strchr(source, '\n') != nullptr ||
-        std::strchr(source, '\r') != nullptr;
-    if (g_captionVisibilityAccepted ||
-        isMainMenuCaption ||
-        isMultilineCaption) {
-        QueueTranslatedCaption(self, source, drawContext);
+    const auto prepared = g_nativePreparedCaptions.find(self);
+    if (prepared == g_nativePreparedCaptions.end() ||
+        prepared->second != source) {
+        int size[2] = {
+            *reinterpret_cast<int*>(bytes + 84),
+            *reinterpret_cast<int*>(bytes + 88),
+        };
+        PrepareNativeTranslatedCaption(
+            self,
+            static_cast<int>(
+                reinterpret_cast<uintptr_t>(bytes + 36)),
+            size,
+            std::strchr(source, '\n') == nullptr &&
+                std::strchr(source, '\r') == nullptr);
     }
-    return result;
+    return g_originalCaptionDraw(self, drawContext);
 }
 
 void RegisterUIElement(void* element) {
@@ -2974,14 +3184,7 @@ DWORD WINAPI InstallGameHooks(void*) {
     }
     InterlockedExchange(&g_translationsReady, 1);
     WriteLog(L"runtime translation worker ready");
-    g_overlayThread =
-        CreateThread(nullptr, 0, RunCaptionOverlay, nullptr, 0, nullptr);
-    if (g_overlayThread) {
-        CloseHandle(g_overlayThread);
-        g_overlayThread = nullptr;
-    } else {
-        WriteLog(L"failed to start the caption overlay thread");
-    }
+    WriteLog(L"native caption hook mode enabled; overlay disabled");
     unsigned char* runtimeBase = nullptr;
     for (int attempt = 0; attempt < 240 && !runtimeBase; ++attempt) {
         if (g_earlyTargetThreadId != 0 &&

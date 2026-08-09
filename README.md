@@ -26,7 +26,7 @@
 |------|------|------|
 | 提取 | IDA Pro + IDA MCP；项目脚本 `extract_text.js`；Node.js | Node.js v25.8.0 |
 | 翻译 | AINiee + 项目专用格式校验/修复脚本 | AINiee 具体接口/模型待补充 |
-| 回填 | x86 启动器 + 注入 DLL + `CreateFile` 外置资源重定向 + DR0–DR3 硬件文本 Hook | MSVC 19.50 / Node.js v25.8.0 |
+| 回填 | x86 启动器 + 注入 DLL + `CIwUIDrawableText` 原生排版 Hook + Marmalade 内存 TTF 渲染 | MSVC 19.50 |
 
 ## 文本提取
 - 输出：`king-of-dragon-pass_text.csv`，无表头、单列，共 34,421 条去重文本；标准 CSV 引号用于保护逗号和双引号。
@@ -56,18 +56,20 @@
 
 ## 回填
 - 最终方案：采用外置启动器与注入 DLL，不修改 Steam 游戏目录。`KoDPCNLauncher.exe` 正常启动游戏，检测到可见窗口并等待 2.5 秒后注入 `KoDPCNHook.dll`，避免过早注入干扰 Marmalade 字体缓存。
-- 文字接管：DLL 在 `.s86` 映像稳定后安装 x86 inline Hook，接管 `CIwUIDrawableText` 的绘制和 primitive 可见性判断。原英文 drawable 以透明色执行原始裁剪流程，中文则由鼠标穿透的 layered Win32 窗口使用 Microsoft YaHei 绘制。
-- 坐标与裁剪：读取 `CIwUIGraphics` 的变换矩阵和 frame region，将 Marmalade UI 子像素坐标换算为游戏客户区坐标；普通界面沿用原字号和边界，主菜单单独放宽。
+- 文字接管：DLL 在 `.s86` 映像稳定后 Hook `CIwUIDrawableText::Prepare/Draw`，在游戏计算字宽、换行和裁剪前把完整英文 caption 临时替换为译文，再交回 Marmalade 原生 UI 流程绘制。
+- 中文字体：Hook 从 Windows `simhei.ttf` 读取字体数据到内存，通过 Marmalade 的内存 TTF renderer 创建按字号缓存的 `CIwGxFont`；不再依赖外置 GDI 叠加窗口，也无需向游戏目录复制字体。
+- 字号映射：Steam 2.4.0 的旧位图字体高度映射为约三分之一的 Marmalade TTF 点值（实测 18–30 → 6–10），由原 drawable 保持锚点、边界、对齐、裁剪和自动换行。
 - 译文匹配：加载 33,643 条有变化的精确译文及 54 条格式模式，并支持空白归一化、末尾冒号变体和“年份 + 换行正文”等复合 caption。
-- 外置资源：曾生成重建版 `scenes.dat` 与 UI/HTML 资源用于试验；最终发布版禁用文件重定向，以避免原生位图字体缺字，运行时统一由 GDI 中文层显示。
+- 外置资源：曾生成重建版 `scenes.dat`、UI/HTML 资源和透明 GDI 叠加层用于试验；最终发布版均不启用，运行时统一走游戏原生文字管线。
 - 构建命令：`powershell -ExecutionPolicy Bypass -File .\hook\build_hook.ps1`。
-- 验证：已实机验证主菜单、氏族管理、地图和“传说”页面；“游玩 / 设置 / 信息”、导航、人口资源、状态说明、顾问帮助以及带年份和换行的剧情正文均能显示中文。
+- 验证：已在 1368×793 窗口实机验证主菜单与氏族管理页；“游玩 / 设置 / 信息”、人口分类和资源标签均由游戏原生绘制，按钮内居中、字号和 UI 锚点正常，窗口缩放后无叠加层漂移。
 - 产物：`release/KoDPCNHook/`。双击 `KoDPCNLauncher.exe` 启动汉化；直接从 Steam 启动即可恢复英文原版。
 
 ## 已知问题
+- 旧版透明 overlay 在窗口缩放时会出现坐标二次变换和 UI 错位；最终版已停用 overlay，改由游戏原生 drawable 排版和绘制。
 - 中文译文通常比英文占用更多 UTF-8 字节；回填 `scenes.dat` 时不能原位覆盖，必须重算字符串长度、场景字数及所有后续场景偏移。
 - `.s86` 中的硬编码字符串需要区分显示文本与内部键名，并评估定长引用或重新定位。
-- 中文显示依赖 Windows 的 Microsoft YaHei 字体；外置层在少数复杂、快速变化的界面中可能存在轻微字号或对齐差异。
+- 中文显示依赖 Windows 的 SimHei（`simhei.ttf`）；字体缺失时 Hook 会保留英文并在 `KoDPCNHook.log` 记录错误。
 - 地图专名、贴图内文字以及翻译库未收录的动态键可能保留英文。
 - inline Hook 依赖当前 Steam 2.4.0 版 `.s86` 布局（原文件 SHA-256：`BDC90ADACDE29B6E86ECE3886F28BA60C97A7A67F0E3BAB7A1D2BB1B641138C5`）；游戏更新后需要重新确认 RVA。
 
@@ -78,3 +80,5 @@
 - 2026-07-30 - 完成 AINiee 全量翻译，修复 32 行格式异常并通过项目专用校验。
 - 2026-07-30 - 生成外挂式技术测试包：外置重建 `scenes.dat`，并以 x86 硬件断点 Hook `.s86` 运行时显示文本；原游戏文件零修改。
 - 2026-07-31 - 完成透明 GDI 中文层、Marmalade 坐标/裁剪适配和多行正文匹配；实机验证主菜单、游戏管理、地图与传说页面。
+- 2026-07-31 - 修复中文 overlay 界面持续闪烁：`RunCaptionOverlay` 改为仅在窗口位置/可见性变化时 `SetWindowPos`、仅 caption 实际变化时重绘，并将过期清理移出 `WM_PAINT`；重新构建 `KoDPCNHook.dll`。
+- 2026-08-09 - 停用透明 overlay，改为 `CIwUIDrawableText` 排版前替换译文并使用 Marmalade 内存 TTF 原生绘制；修正 TTF 字号比例，在 1368×793 窗口验证 UI 对齐。
