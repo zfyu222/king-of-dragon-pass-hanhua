@@ -4,8 +4,10 @@
 1. 将本目录放在任意可写位置，不要覆盖游戏文件。
 2. 用文本编辑器打开 KoDPCNHook.ini，确认 GameExe 指向
    King of Dragon Pass.exe。
-3. 退出已运行的游戏，再双击 KoDPCNLauncher.exe。
-4. 请勿同时从 Steam 启动第二个游戏实例。
+3. 右键“InstallHtmlTranslation.ps1”，选择“使用 PowerShell 运行”；脚本
+   会备份并安装神话插图和手册页面。首次安装不要添加 -Restore 参数。
+4. 退出已运行的游戏，再双击 KoDPCNLauncher.exe。
+5. 请勿同时从 Steam 启动第二个游戏实例。
 
 工作方式
 - 启动器正常启动 Steam 版游戏，待窗口稳定后注入 32 位
@@ -13,8 +15,8 @@
 - DLL 从 translations.tsv 加载译文，在 Marmalade UI 与底层地图文字排版前
   替换文字，再由游戏自己的字体、对齐、裁剪和换行流程绘制简体中文。
 - 中文字体从 Windows 的 simhei.ttf 读入内存，不会复制到游戏目录。
-- 神话插图和手册的 HTML 页面从本目录 overlay 中读取译文；其他游戏
-  资源仍使用原文件。
+- 神话插图和手册使用带备份的静态 HTML 回填，避免内置查看器绕过
+  CreateFile Hook；其他游戏资源仍使用原文件。
 - 不覆盖 EXE、S86、group、scenes.dat 或其他原游戏文件。
 
 已验证
@@ -29,5 +31,6 @@
 - KoDPCNHook.log 是诊断日志；遇到问题时可连同截图一起反馈。
 
 恢复英文版
-- 退出游戏后直接从 Steam 启动原游戏即可。
-- 无需还原、校验或删除任何游戏文件。
+- 退出游戏后，在 PowerShell 中运行：
+  .\InstallHtmlTranslation.ps1 -Restore
+- 其他运行时文字直接从 Steam 启动原游戏即可恢复英文。

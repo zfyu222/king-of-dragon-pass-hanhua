@@ -8,6 +8,7 @@
 *.tmp
 *.obj
 /hook/build/
+/backups/
 /release/KoDPCNHook/KoDPCNHook.log
 
 # Python
