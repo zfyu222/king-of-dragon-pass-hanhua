@@ -724,6 +724,7 @@ bool LoadTranslations() {
     }
     std::string line;
     std::vector<std::pair<std::string, std::string>> knownForAliases;
+    std::vector<std::pair<std::string, std::string>> leadingSpaceAliases;
     while (std::getline(input, line)) {
         if (!line.empty() && line.back() == '\r') {
             line.pop_back();
@@ -736,6 +737,23 @@ bool LoadTranslations() {
         std::string translated = UnescapeCorpusText(line.substr(tab + 1));
         if (source.empty() || source == translated) {
             continue;
+        }
+        size_t sourceLeading = 0;
+        while (sourceLeading < source.size() &&
+               std::isspace(static_cast<unsigned char>(
+                   source[sourceLeading]))) {
+            ++sourceLeading;
+        }
+        size_t translatedLeading = 0;
+        while (translatedLeading < translated.size() &&
+               std::isspace(static_cast<unsigned char>(
+                   translated[translatedLeading]))) {
+            ++translatedLeading;
+        }
+        if (sourceLeading > 0 && sourceLeading < source.size()) {
+            leadingSpaceAliases.emplace_back(
+                source.substr(sourceLeading),
+                translated.substr(translatedLeading));
         }
         g_translations.emplace(source, translated);
         std::string normalizedSource;
@@ -809,6 +827,10 @@ bool LoadTranslations() {
             alias.first + ".", alias.second + u8"。");
         g_translatedValues.insert(alias.second);
         g_translatedValues.insert(alias.second + u8"。");
+    }
+    for (const auto& alias : leadingSpaceAliases) {
+        g_translations.insert_or_assign(alias.first, alias.second);
+        g_translatedValues.insert(alias.second);
     }
     // This source prefix is grammatically completed by the derived Chinese
     // description above (for example: 他们因 + 巨石……而闻名).
@@ -892,6 +914,10 @@ bool LoadTranslations() {
         "are not an offense against the gods. But she is betrothed to Jorator, "
         "a young thane of the Blackrock clan, and the wedding is scheduled for "
         "next season.";
+    const char* clanRelationshipProbe =
+        "They're known for keeping close ties with their former kin in "
+        "Heortland. Their chief is Hendrick. They're in the Colymar tribe. "
+        "They owe us a favor.";
     const char* pigCompositeResult =
         TranslateRuntimeText(pigCompositeProbe);
     const std::string pigCompositeTranslation(
@@ -908,6 +934,8 @@ bool LoadTranslations() {
         TranslateRuntimeText(clanDescriptionProbe));
     const std::string opalEventResult(
         TranslateRuntimeText(opalEventProbe));
+    const std::string clanRelationshipResult(
+        TranslateRuntimeText(clanRelationshipProbe));
     WriteLog(
         pigCompositeResult != pigCompositeProbe &&
                 !pigCompositeTranslation.empty() &&
@@ -919,7 +947,10 @@ bool LoadTranslations() {
                 clanDescriptionResult.find("Fantarl") == std::string::npos &&
                 opalEventResult.find("Everyone is gossiping") == std::string::npos &&
                 opalEventResult.find("Heran") == std::string::npos &&
-                opalEventResult.find("Blackrock") == std::string::npos
+                opalEventResult.find("Blackrock") == std::string::npos &&
+                clanRelationshipResult.find("known for") == std::string::npos &&
+                clanRelationshipResult.find("Hendrick") == std::string::npos &&
+                clanRelationshipResult.find("Colymar") == std::string::npos
             ? L"runtime composite translation self-test passed"
             : L"runtime composite translation self-test failed");
     wchar_t message[256] = {};
@@ -1101,6 +1132,61 @@ const char* TranslateRuntimeText(const char* source) {
             thread_local std::string nearbyClan;
             nearbyClan = clan->second + u8"（邻近）";
             return nearbyClan.c_str();
+        }
+    }
+    const std::string knownForPrefix = "They're known for ";
+    const std::string chiefSeparator = ". Their chief is ";
+    if (text.compare(0, knownForPrefix.size(), knownForPrefix) == 0) {
+        const size_t chiefStart = text.find(
+            chiefSeparator, knownForPrefix.size());
+        if (chiefStart != std::string::npos) {
+            const size_t chiefValueStart =
+                chiefStart + chiefSeparator.size();
+            const size_t chiefEnd = text.find('.', chiefValueStart);
+            if (chiefEnd != std::string::npos) {
+                const std::string description = text.substr(
+                    knownForPrefix.size(),
+                    chiefStart - knownForPrefix.size());
+                const std::string chief = text.substr(
+                    chiefValueStart, chiefEnd - chiefValueStart);
+                const std::string tail = chiefEnd + 1 < text.size()
+                    ? text.substr(chiefEnd + 1)
+                    : std::string();
+                const char* translatedDescription =
+                    TranslateRuntimeText(description.c_str());
+                const std::string chineseDescription(
+                    translatedDescription
+                        ? translatedDescription
+                        : description.c_str());
+                const char* translatedChief =
+                    TranslateRuntimeText(chief.c_str());
+                const std::string chineseChief(
+                    translatedChief ? translatedChief : chief.c_str());
+                const char* translatedTail = tail.empty()
+                    ? ""
+                    : TranslateRuntimeText(tail.c_str());
+                const std::string chineseTail(
+                    translatedTail ? translatedTail : tail.c_str());
+                if (chineseDescription != description &&
+                    chineseChief != chief &&
+                    (tail.empty() || chineseTail != tail)) {
+                    thread_local std::string clanSummary;
+                    clanSummary = u8"他们因" + chineseDescription;
+                    const std::string knownSuffix = u8"闻名";
+                    if (clanSummary.size() < knownSuffix.size() ||
+                        clanSummary.compare(
+                            clanSummary.size() - knownSuffix.size(),
+                            knownSuffix.size(),
+                            knownSuffix) != 0) {
+                        clanSummary += u8"而闻名";
+                    }
+                    clanSummary += u8"。他们的酋长是";
+                    clanSummary += chineseChief;
+                    clanSummary += u8"。";
+                    clanSummary += chineseTail;
+                    return clanSummary.c_str();
+                }
+            }
         }
     }
 
@@ -2061,9 +2147,9 @@ void __cdecl HookFontPrepareString(
         preparedData,
         translated,
         static_cast<unsigned int>(std::strlen(translated)));
-    if (selectFont && replacementFont && originalFont) {
-        selectFont(originalFont);
-    }
+    // Keep the replacement selected through the subsequent map draw.  The
+    // prepared glyphs reference its atlas; restoring the bitmap font here
+    // makes the renderer interpret Chinese glyph indices as Latin tiles.
 }
 
 bool ReplaceDrawableFont(void* drawable) {
