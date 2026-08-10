@@ -87,6 +87,8 @@ using TranslationEntry =
     std::pair<const std::string, std::string>;
 std::vector<const TranslationEntry*>
     g_compositeFragmentsByFirstByte[256];
+std::vector<const std::string*>
+    g_translatedFragmentsByFirstByte[256];
 std::unordered_map<void*, void*> g_externalFontReplacements;
 std::unordered_map<int, void*> g_externalFontsByPointSize;
 std::unordered_map<void*, std::string> g_nativePreparedCaptions;
@@ -888,6 +890,22 @@ bool LoadTranslations() {
                 return left->first.size() > right->first.size();
             });
     }
+    for (const std::string& value : g_translatedValues) {
+        if (value.size() < 2) {
+            continue;
+        }
+        const unsigned char first =
+            static_cast<unsigned char>(value.front());
+        g_translatedFragmentsByFirstByte[first].push_back(&value);
+    }
+    for (auto& fragments : g_translatedFragmentsByFirstByte) {
+        std::sort(
+            fragments.begin(),
+            fragments.end(),
+            [](const std::string* left, const std::string* right) {
+                return left->size() > right->size();
+            });
+    }
     const char* pigCompositeProbe =
         "The pigs need 23 hides of wildland, and the other livestock "
         "need to graze on 27 hides of land. They need 62 herders to "
@@ -921,6 +939,10 @@ bool LoadTranslations() {
     const char* clanDeityProbe =
         "They're known for their fine horses. Their main deity is Elmal. "
         "Their chief is Harran.";
+    const char* partiallyTranslatedClanProbe =
+        "They're known for keeping close ties with their former kin in\n"
+        "Heortland. Their chief is Elusu. They're in the Colymar tribe. "
+        u8"他们欠我们一个恩惠。";
     const char* pigCompositeResult =
         TranslateRuntimeText(pigCompositeProbe);
     const std::string pigCompositeTranslation(
@@ -941,6 +963,8 @@ bool LoadTranslations() {
         TranslateRuntimeText(clanRelationshipProbe));
     const std::string clanDeityResult(
         TranslateRuntimeText(clanDeityProbe));
+    const std::string partiallyTranslatedClanResult(
+        TranslateRuntimeText(partiallyTranslatedClanProbe));
     WriteLog(
         pigCompositeResult != pigCompositeProbe &&
                 !pigCompositeTranslation.empty() &&
@@ -958,7 +982,13 @@ bool LoadTranslations() {
                 clanRelationshipResult.find("Colymar") == std::string::npos &&
                 clanDeityResult.find("known for") == std::string::npos &&
                 clanDeityResult.find("Elmal") == std::string::npos &&
-                clanDeityResult.find("Harran") == std::string::npos
+                clanDeityResult.find("Harran") == std::string::npos &&
+                partiallyTranslatedClanResult.find("known for") ==
+                    std::string::npos &&
+                partiallyTranslatedClanResult.find("Elusu") ==
+                    std::string::npos &&
+                partiallyTranslatedClanResult.find("Colymar") ==
+                    std::string::npos
             ? L"runtime composite translation self-test passed"
             : L"runtime composite translation self-test failed");
     wchar_t message[256] = {};
@@ -1063,6 +1093,22 @@ bool TranslateKnownComposite(
             ++translatedFragments;
             continue;
         }
+        const std::string* translatedFragment = nullptr;
+        for (const std::string* candidate :
+             g_translatedFragmentsByFirstByte[first]) {
+            if (candidate->size() <= source.size() - cursor &&
+                source.compare(
+                    cursor, candidate->size(), *candidate) == 0) {
+                translatedFragment = candidate;
+                break;
+            }
+        }
+        if (translatedFragment) {
+            *translated += *translatedFragment;
+            cursor += translatedFragment->size();
+            ++translatedFragments;
+            continue;
+        }
         if (std::isspace(
                 static_cast<unsigned char>(source[cursor]))) {
             translated->push_back(source[cursor++]);
@@ -1143,15 +1189,30 @@ const char* TranslateRuntimeText(const char* source) {
         }
     }
     const std::string knownForPrefix = "They're known for ";
-    if (text.compare(0, knownForPrefix.size(), knownForPrefix) == 0) {
+    std::string clanText;
+    clanText.reserve(text.size());
+    bool clanPendingSpace = false;
+    for (unsigned char ch : text) {
+        if (std::isspace(ch)) {
+            clanPendingSpace = !clanText.empty();
+            continue;
+        }
+        if (clanPendingSpace) {
+            clanText.push_back(' ');
+            clanPendingSpace = false;
+        }
+        clanText.push_back(static_cast<char>(ch));
+    }
+    if (clanText.compare(
+            0, knownForPrefix.size(), knownForPrefix) == 0) {
         const size_t descriptionEnd =
-            text.find('.', knownForPrefix.size());
+            clanText.find('.', knownForPrefix.size());
         if (descriptionEnd != std::string::npos) {
-            const std::string description = text.substr(
+            const std::string description = clanText.substr(
                 knownForPrefix.size(),
                 descriptionEnd - knownForPrefix.size());
-            const std::string tail = descriptionEnd + 1 < text.size()
-                ? text.substr(descriptionEnd + 1)
+            const std::string tail = descriptionEnd + 1 < clanText.size()
+                ? clanText.substr(descriptionEnd + 1)
                 : std::string();
             const char* translatedDescription =
                 TranslateRuntimeText(description.c_str());
