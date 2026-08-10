@@ -198,10 +198,6 @@ bool GetOverlayPath(
     DWORD desiredAccess,
     wchar_t* overlayPath,
     size_t overlayCapacity) {
-    const bool useTranslatedFileOverlay = false;
-    if (!useTranslatedFileOverlay) {
-        return false;
-    }
     if (!requestedPath || (desiredAccess & (GENERIC_WRITE | DELETE)) != 0) {
         return false;
     }
@@ -229,6 +225,17 @@ bool GetOverlayPath(
         return false;
     }
     const std::wstring relative = normalized.substr(relativeStart);
+    // The illustrated lore/manual pages are rendered by the embedded HTML
+    // viewer and never enter Marmalade's caption/font pipeline.  Redirect only
+    // those translated HTML documents; keep scenes, UI, plist and group files
+    // on the native runtime-hook path so their layout behavior is unchanged.
+    const bool isTranslatedHtml =
+        EndsWith(relative, L".html") &&
+        (relative.rfind(L"kodp\\text\\", 0) == 0 ||
+         relative.rfind(L"kodp\\manual\\", 0) == 0);
+    if (!isTranslatedHtml) {
+        return false;
+    }
     const int written = _snwprintf_s(
         overlayPath,
         overlayCapacity,
