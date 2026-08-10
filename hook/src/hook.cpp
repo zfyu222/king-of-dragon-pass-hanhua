@@ -123,8 +123,10 @@ struct FormatPattern {
     std::vector<std::string> literals;
     std::vector<std::string> tokens;
     std::string translated;
+    bool translateCaptures = false;
 };
 std::vector<FormatPattern> g_formatPatterns;
+std::vector<FormatPattern> g_opalFormatPatternsByFirstByte[256];
 
 void WriteLog(const wchar_t* message);
 const char* TranslateRuntimeText(const char* source);
@@ -664,6 +666,54 @@ bool ParseFormatPattern(
     return literalBytes >= 3;
 }
 
+bool BuildOpalRuntimePattern(
+    const std::string& source,
+    const std::string& translated,
+    FormatPattern* pattern) {
+    auto replaceMarkers = [](
+        const std::string& input,
+        std::string* output,
+        std::vector<std::string>* markers) {
+        output->clear();
+        markers->clear();
+        for (size_t cursor = 0; cursor < input.size();) {
+            if (cursor + 2 < input.size() &&
+                static_cast<unsigned char>(input[cursor]) == 0x01 &&
+                input[cursor + 1] == '@') {
+                markers->push_back(input.substr(cursor, 3));
+                output->append("%s");
+                cursor += 3;
+                continue;
+            }
+            output->push_back(input[cursor++]);
+        }
+    };
+
+    std::string runtimeSource;
+    std::string runtimeTranslation;
+    std::vector<std::string> sourceMarkers;
+    std::vector<std::string> translatedMarkers;
+    replaceMarkers(source, &runtimeSource, &sourceMarkers);
+    replaceMarkers(translated, &runtimeTranslation, &translatedMarkers);
+    if (sourceMarkers.empty() || sourceMarkers != translatedMarkers ||
+        runtimeSource.empty() || runtimeSource.front() == '%') {
+        return false;
+    }
+    if (!ParseFormatPattern(
+            runtimeSource, runtimeTranslation, pattern)) {
+        return false;
+    }
+    size_t literalBytes = 0;
+    for (const std::string& literal : pattern->literals) {
+        literalBytes += literal.size();
+    }
+    if (literalBytes < 20) {
+        return false;
+    }
+    pattern->translateCaptures = true;
+    return true;
+}
+
 bool LoadTranslations() {
     const std::wstring databasePath =
         std::wstring(g_hookDirectory) + L"\\translations.tsv";
@@ -710,6 +760,14 @@ bool LoadTranslations() {
         FormatPattern pattern;
         if (ParseFormatPattern(source, translated, &pattern)) {
             g_formatPatterns.push_back(std::move(pattern));
+        }
+        FormatPattern opalPattern;
+        if (BuildOpalRuntimePattern(
+                source, translated, &opalPattern)) {
+            const unsigned char first = static_cast<unsigned char>(
+                opalPattern.literals.front().front());
+            g_opalFormatPatternsByFirstByte[first].push_back(
+                std::move(opalPattern));
         }
 
         // Clan descriptions are stored with a three-byte control prefix and
@@ -826,6 +884,14 @@ bool LoadTranslations() {
     const char* clanDescriptionProbe =
         "They're known for a large boulder with war powers. "
         "Their chief is Fantarl. They owe us a favor.";
+    const char* opalEventProbe =
+        "Everyone is gossiping about what happened a few hours ago. The young "
+        "woman Eonislara was found out in the forest, making love with Korol, "
+        "a notorious poet and troublemaking warrior of the Heran clan. Korol "
+        "left without a formal farewell. Eonislara is unmarried, so her actions "
+        "are not an offense against the gods. But she is betrothed to Jorator, "
+        "a young thane of the Blackrock clan, and the wedding is scheduled for "
+        "next season.";
     const char* pigCompositeResult =
         TranslateRuntimeText(pigCompositeProbe);
     const std::string pigCompositeTranslation(
@@ -840,6 +906,8 @@ bool LoadTranslations() {
         TranslateRuntimeText(clanSuffixProbe));
     const std::string clanDescriptionResult(
         TranslateRuntimeText(clanDescriptionProbe));
+    const std::string opalEventResult(
+        TranslateRuntimeText(opalEventProbe));
     WriteLog(
         pigCompositeResult != pigCompositeProbe &&
                 !pigCompositeTranslation.empty() &&
@@ -848,7 +916,10 @@ bool LoadTranslations() {
                 textOnlyCompositeResult != textOnlyCompositeProbe &&
                 clanSuffixResult.find("Bachad") == std::string::npos &&
                 clanDescriptionResult.find("known for") == std::string::npos &&
-                clanDescriptionResult.find("Fantarl") == std::string::npos
+                clanDescriptionResult.find("Fantarl") == std::string::npos &&
+                opalEventResult.find("Everyone is gossiping") == std::string::npos &&
+                opalEventResult.find("Heran") == std::string::npos &&
+                opalEventResult.find("Blackrock") == std::string::npos
             ? L"runtime composite translation self-test passed"
             : L"runtime composite translation self-test failed");
     wchar_t message[256] = {};
@@ -856,9 +927,16 @@ bool LoadTranslations() {
         message,
         _countof(message),
         _TRUNCATE,
-        L"loaded %u exact translations, %u format patterns, and %u clan description aliases",
+        L"loaded %u exact translations, %u format patterns, %u Opal runtime templates, and %u clan description aliases",
         static_cast<unsigned>(g_translations.size()),
         static_cast<unsigned>(g_formatPatterns.size()),
+        static_cast<unsigned>([]() {
+            size_t count = 0;
+            for (const auto& bucket : g_opalFormatPatternsByFirstByte) {
+                count += bucket.size();
+            }
+            return count;
+        }()),
         static_cast<unsigned>(knownForAliases.size()));
     WriteLog(message);
     return !g_translations.empty();
@@ -1124,6 +1202,42 @@ const char* TranslateRuntimeText(const char* source) {
             continue;
         }
         formatted = RenderFormat(pattern.translated, captures);
+        if (!formatted.empty()) {
+            return formatted.c_str();
+        }
+    }
+    const auto& opalPatterns =
+        g_opalFormatPatternsByFirstByte[
+            static_cast<unsigned char>(text.front())];
+    for (const FormatPattern& pattern : opalPatterns) {
+        if (!MatchFormat(pattern, text, &captures)) {
+            continue;
+        }
+        std::vector<std::string> translatedCaptures;
+        translatedCaptures.reserve(captures.size());
+        bool allCapturesCovered = true;
+        for (const std::string& capture : captures) {
+            const char* translatedCapture =
+                TranslateRuntimeText(capture.c_str());
+            const std::string value(
+                translatedCapture ? translatedCapture : capture.c_str());
+            if (value == capture &&
+                std::any_of(
+                    capture.begin(),
+                    capture.end(),
+                    [](unsigned char ch) {
+                        return ch < 0x80 && std::isalpha(ch);
+                    })) {
+                allCapturesCovered = false;
+                break;
+            }
+            translatedCaptures.push_back(value);
+        }
+        if (!allCapturesCovered) {
+            continue;
+        }
+        formatted = RenderFormat(
+            pattern.translated, translatedCaptures);
         if (!formatted.empty()) {
             return formatted.c_str();
         }
