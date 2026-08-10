@@ -918,6 +918,9 @@ bool LoadTranslations() {
         "They're known for keeping close ties with their former kin in "
         "Heortland. Their chief is Hendrick. They're in the Colymar tribe. "
         "They owe us a favor.";
+    const char* clanDeityProbe =
+        "They're known for their fine horses. Their main deity is Elmal. "
+        "Their chief is Harran.";
     const char* pigCompositeResult =
         TranslateRuntimeText(pigCompositeProbe);
     const std::string pigCompositeTranslation(
@@ -936,6 +939,8 @@ bool LoadTranslations() {
         TranslateRuntimeText(opalEventProbe));
     const std::string clanRelationshipResult(
         TranslateRuntimeText(clanRelationshipProbe));
+    const std::string clanDeityResult(
+        TranslateRuntimeText(clanDeityProbe));
     WriteLog(
         pigCompositeResult != pigCompositeProbe &&
                 !pigCompositeTranslation.empty() &&
@@ -950,7 +955,10 @@ bool LoadTranslations() {
                 opalEventResult.find("Blackrock") == std::string::npos &&
                 clanRelationshipResult.find("known for") == std::string::npos &&
                 clanRelationshipResult.find("Hendrick") == std::string::npos &&
-                clanRelationshipResult.find("Colymar") == std::string::npos
+                clanRelationshipResult.find("Colymar") == std::string::npos &&
+                clanDeityResult.find("known for") == std::string::npos &&
+                clanDeityResult.find("Elmal") == std::string::npos &&
+                clanDeityResult.find("Harran") == std::string::npos
             ? L"runtime composite translation self-test passed"
             : L"runtime composite translation self-test failed");
     wchar_t message[256] = {};
@@ -1135,57 +1143,42 @@ const char* TranslateRuntimeText(const char* source) {
         }
     }
     const std::string knownForPrefix = "They're known for ";
-    const std::string chiefSeparator = ". Their chief is ";
     if (text.compare(0, knownForPrefix.size(), knownForPrefix) == 0) {
-        const size_t chiefStart = text.find(
-            chiefSeparator, knownForPrefix.size());
-        if (chiefStart != std::string::npos) {
-            const size_t chiefValueStart =
-                chiefStart + chiefSeparator.size();
-            const size_t chiefEnd = text.find('.', chiefValueStart);
-            if (chiefEnd != std::string::npos) {
-                const std::string description = text.substr(
-                    knownForPrefix.size(),
-                    chiefStart - knownForPrefix.size());
-                const std::string chief = text.substr(
-                    chiefValueStart, chiefEnd - chiefValueStart);
-                const std::string tail = chiefEnd + 1 < text.size()
-                    ? text.substr(chiefEnd + 1)
-                    : std::string();
-                const char* translatedDescription =
-                    TranslateRuntimeText(description.c_str());
-                const std::string chineseDescription(
-                    translatedDescription
-                        ? translatedDescription
-                        : description.c_str());
-                const char* translatedChief =
-                    TranslateRuntimeText(chief.c_str());
-                const std::string chineseChief(
-                    translatedChief ? translatedChief : chief.c_str());
-                const char* translatedTail = tail.empty()
-                    ? ""
-                    : TranslateRuntimeText(tail.c_str());
-                const std::string chineseTail(
-                    translatedTail ? translatedTail : tail.c_str());
-                if (chineseDescription != description &&
-                    chineseChief != chief &&
-                    (tail.empty() || chineseTail != tail)) {
-                    thread_local std::string clanSummary;
-                    clanSummary = u8"他们因" + chineseDescription;
-                    const std::string knownSuffix = u8"闻名";
-                    if (clanSummary.size() < knownSuffix.size() ||
-                        clanSummary.compare(
-                            clanSummary.size() - knownSuffix.size(),
-                            knownSuffix.size(),
-                            knownSuffix) != 0) {
-                        clanSummary += u8"而闻名";
-                    }
-                    clanSummary += u8"。他们的酋长是";
-                    clanSummary += chineseChief;
-                    clanSummary += u8"。";
-                    clanSummary += chineseTail;
-                    return clanSummary.c_str();
+        const size_t descriptionEnd =
+            text.find('.', knownForPrefix.size());
+        if (descriptionEnd != std::string::npos) {
+            const std::string description = text.substr(
+                knownForPrefix.size(),
+                descriptionEnd - knownForPrefix.size());
+            const std::string tail = descriptionEnd + 1 < text.size()
+                ? text.substr(descriptionEnd + 1)
+                : std::string();
+            const char* translatedDescription =
+                TranslateRuntimeText(description.c_str());
+            const std::string chineseDescription(
+                translatedDescription
+                    ? translatedDescription
+                    : description.c_str());
+            const char* translatedTail = tail.empty()
+                ? ""
+                : TranslateRuntimeText(tail.c_str());
+            const std::string chineseTail(
+                translatedTail ? translatedTail : tail.c_str());
+            if (chineseDescription != description &&
+                (tail.empty() || chineseTail != tail)) {
+                thread_local std::string clanSummary;
+                clanSummary = u8"他们因" + chineseDescription;
+                const std::string knownSuffix = u8"闻名";
+                if (clanSummary.size() < knownSuffix.size() ||
+                    clanSummary.compare(
+                        clanSummary.size() - knownSuffix.size(),
+                        knownSuffix.size(),
+                        knownSuffix) != 0) {
+                    clanSummary += u8"而闻名";
                 }
+                clanSummary += u8"。";
+                clanSummary += chineseTail;
+                return clanSummary.c_str();
             }
         }
     }
