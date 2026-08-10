@@ -2033,6 +2033,14 @@ void __stdcall PrepareExternalFont(void* font) {
             g_externalFontReplacements.end()) {
         return;
     }
+    for (const auto& entry : g_externalFontReplacements) {
+        if (entry.second == font) {
+            // The low-level map path keeps the replacement selected until its
+            // glyph batch is drawn.  Never treat that replacement as a fresh
+            // bitmap source and divide its point size a second time.
+            return;
+        }
+    }
 
     if (!LoadExternalFontData()) {
         if (InterlockedCompareExchange(&g_fontOverrideLogCount, 1, 0) == 0) {
@@ -2180,11 +2188,20 @@ void __cdecl HookFontPrepareString(
             g_runtimeImageBase + 0x4DBAD8);
         if (context) {
             originalFont = *reinterpret_cast<void**>(context + 16);
-            PrepareExternalFont(originalFont);
-            const auto replacement =
-                g_externalFontReplacements.find(originalFont);
-            if (replacement != g_externalFontReplacements.end()) {
-                replacementFont = replacement->second;
+            for (const auto& entry : g_externalFontReplacements) {
+                if (entry.second == originalFont) {
+                    replacementFont = originalFont;
+                    originalFont = entry.first;
+                    break;
+                }
+            }
+            if (!replacementFont) {
+                PrepareExternalFont(originalFont);
+                const auto replacement =
+                    g_externalFontReplacements.find(originalFont);
+                if (replacement != g_externalFontReplacements.end()) {
+                    replacementFont = replacement->second;
+                }
             }
         }
     }
