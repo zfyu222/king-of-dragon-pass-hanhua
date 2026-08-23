@@ -2,6 +2,9 @@
 /Game/
 /AiNieeOutput/
 
+# 对外发布包仅作为 GitHub Release 资产上传，不提交到源代码仓库。
+/Dispatch/
+
 # 备份与中间产物
 *.bak
 *.bak0000
