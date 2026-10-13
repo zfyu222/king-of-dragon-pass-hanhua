@@ -1,0 +1,725 @@
+
+
+CIwUIElement
+{
+	name			"SacrificeController"
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    sizeToContent true
+    sizeToSpace true
+    
+    CIwUILayoutHorizontal
+    {
+        CIwUILayoutSpacer { sizeMin { 180 0} sizeMax {180 0} }
+        CIwUILayoutVertical
+        {
+            CIwUILayoutSpacer { sizeMin { 0 80} sizeMax {0 80} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 170 0} sizeMax {170 0} }
+                CIwUILayoutVertical
+                {
+                    spacing 5
+                    CIwUILayoutHorizontal
+                    {
+                        element { name "SacrificeToLabel" }
+                        element { name "SacrificeTypeLabel" }
+                    }
+		    element { name "cowsSlider" }
+                    element { name "goodsSlider" }
+                    element { name "thrallsSlider" }
+                    element { name "extraInfoLabel" }
+
+                }
+                CIwUILayoutSpacer { sizeMin { 40 0} sizeMax {40 0} }
+                CIwUILayoutVertical
+                {
+                   // spacing 5
+                    CIwUILayoutVertical
+                    {
+                            element { name "effect1Box" }
+                        element { name "effectDesc1Label" }
+                    }
+                    CIwUILayoutVertical
+                    {
+                            element { name "effect2Box" }
+                        element { name "effectDesc2Label" }
+                    }
+                    CIwUILayoutVertical
+                    {
+                            element { name "effect3Box" }
+                        element { name "effectDesc3Label" }
+                    }
+                    CIwUILayoutVertical
+                    {
+                           element { name "effect4Box" }
+                        element { name "effectDesc4Label" }
+                    }
+                    CIwUILayoutVertical
+                    {
+                            element { name "effect5Box" }
+                        element { name "effectDesc5Label" }
+                    }
+
+                }
+            }
+//            CIwUILayoutSpacer { sizeMin { 0 12} sizeMax {0 12} }
+//            CIwUILayoutHorizontal
+//            {
+//                CIwUILayoutSpacer { sizeMin { 140 0} sizeMax {140 0} }
+//                element { name "FCAdviceView" }
+//            }
+//            CIwUILayoutSpacer { sizeMin { 0 20} sizeMax {0 20} }
+//            CIwUILayoutHorizontal
+//            {
+//                CIwUILayoutSpacer { sizeMin { 150 20} sizeMax {150 20} }
+//                element { name "SacredGridLabels" }
+//                CIwUILayoutSpacer { sizeMin { 60 0} sizeMax {60 0} }
+//                element { name "sacrificeBut" }
+//                CIwUILayoutSpacer { sizeMin { 20 0} sizeMax {20 0} }
+//                element { name "FCcloseBut" }
+//            }
+        }
+
+    }
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture Clear64x64
+        //DialogBackground2
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+
+    CIwUIElement
+    {
+        sizeMin { 250, 75 }
+        sizeToContent true
+        name "cowsSlider"
+    }
+    CIwUIElement
+    {
+        sizeMin { 250, 75 }
+        sizeToContent true
+        name "goodsSlider"
+    }
+    CIwUIElement
+    {
+        sizeMin { 250, 75 }
+        sizeToContent true
+        name "thrallsSlider"
+    }
+    
+
+
+    CIwUILabel
+    {
+        alignH "left"
+        name "SacrificeToLabel"
+        caption "献祭给"
+        style	<ParchementLabel>
+        sizeMax {104 20}
+        sizeMin {144 25}
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        name "SacrificeTypeLabel"
+        caption "查拉娜·阿罗伊"
+        style	<label_medium>
+        font "DutchMediaevalBook24"
+        textColour  { 117 76 36 255 }
+        sizeMax {130 20}
+        sizeMin {180 25}
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        name "extraInfoLabel"
+        caption "7人生病，11人受伤。"
+        style	<SmallishLabel>
+        textColour { 0 0 0 255 }
+        sizeMax {171 40}
+        sizeMin {181 50}
+    }
+
+
+    //effect1Box
+    CCheckBox
+    {
+        name "effect1Box"
+        style <checkbox_radio>
+        checked "false"
+        caption "治愈"
+        sizeMax {165 35}
+        sizeMin {230 35}
+        tag "0"
+        OnCheckboxChecked { SacrificeController::radioButtonTapped }
+    }
+        CIwUILabel
+        {
+            alignV "top"
+            alignH "left"
+            name "effectDesc1Label"
+            caption "让我们的公牛能耕更多田地"
+            style	<SmallLabel>
+            sizeMin {280 20}
+            sizeMax {290 80}
+        }
+
+    //effect2Box
+    CCheckBox
+    {
+        name "effect2Box"
+        style <checkbox_radio>
+        checked "false"
+        caption "儿童"
+        sizeMax {165 35}
+        sizeMin {230 35}
+        tag "0"
+        OnCheckboxChecked { SacrificeController::radioButtonTapped }
+    }
+        CIwUILabel
+        {
+            alignV "top"
+            alignH "left"
+            name "effectDesc2Label"
+            caption "标签"
+            style	<SmallLabel>
+            sizeMin {280 20}
+            sizeMax {290 80}
+        }
+
+    //effect3Box
+    CCheckBox
+    {
+        name "effect3Box"
+        style <checkbox_radio>
+        checked "false"
+        caption "儿童"
+        sizeMax {165 35}
+        sizeMin {230 35}
+        tag "0"
+        OnCheckboxChecked { SacrificeController::radioButtonTapped }
+    }
+
+        CIwUILabel
+        {
+            alignV "top"
+            alignH "left"
+            name "effectDesc3Label"
+            caption "标签"
+            style	<SmallLabel>
+            sizeMin {280 20}
+            sizeMax {290 80}
+        }
+    
+    //effect4Box
+    CCheckBox
+    {
+        name "effect4Box"
+        style <checkbox_radio>
+        checked "false"
+        caption "儿童"
+        sizeMax {165 35}
+        sizeMin {230 35}
+        tag "0"
+        OnCheckboxChecked { SacrificeController::radioButtonTapped }
+    }
+
+        CIwUILabel
+        {
+            alignH "left"
+            alignV "top"
+            name "effectDesc4Label"
+            caption "标签"
+            style	<SmallLabel>
+            sizeMin {280 20}
+            sizeMax {290 80}
+        }
+
+    //effect5Box
+    CCheckBox
+    {
+        name "effect5Box"
+        style <checkbox_radio>
+        checked "false"
+        caption "儿童"
+        sizeMax {165 35}
+        sizeMin {230 35}
+        tag "0"
+        OnCheckboxChecked { SacrificeController::radioButtonTapped }
+    }
+
+        CIwUILabel
+        {
+            alignV "top"
+            alignH "left"
+            name "effectDesc5Label"
+            caption "标签"
+            style	<SmallLabel>
+            sizeMin {280 20}
+            sizeMax {290 80}
+        }
+
+
+
+    PickListView
+    {
+        alignV "top"
+        name "sacrificeTargetView"
+        CIwUILayoutVertical
+        {
+            spacing 5
+        }
+        colour { 255 255 255 255 }
+        sizeToSpace true
+        sizeToContent true
+
+        sizeMin  { 149 110 }
+        sizeMax  { 149 110 }
+    }
+    
+    CIwUIElement
+    {
+        name "FoodCresultDialog"
+        sizeMin { 480 125 }
+        sizeMax { 480 125 }
+        pos { 400 522 }
+        visible "false"
+        CIwUIImage
+        {
+            name "FoodCresultDialogImg"
+            drawableType "image"
+            sizeToSpace true
+            sizeToContent   true
+            texture SacrificeResults~ipad
+            sizeMin { 480 125 }
+            sizeMax { 480 125 }
+        }
+        CIwUIButton
+        {
+            name "FoodCresultDialogBut"
+            style <Btn_45x91>
+            sizeMin { 110 45 }
+            sizeMax { 110 45 }
+            caption "继续"
+			pos { 350 60 }
+            OnButtonClick {  SacrificeController::proceed }
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "FoodCresultDialogLabel"
+            caption "结果"
+            style	<StandartLabel>
+            textColour { 124 73 43 255 }
+            sizeMax {332 88}
+            sizeMin {332 88}
+            pos { 15 0 }
+        }
+    }
+    CIwUIElement
+    {
+        name "FCBottomView"
+        pos { 320 501 }
+        sizeMin { 100 100 }
+        sizeMax { 600 100 }
+        CIwUILayoutVertical
+        {
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 140 0} sizeMax {140 0} }
+                element { name "FCAdviceView" }
+            }
+            CIwUILayoutSpacer { sizeMin { 0 20} sizeMax {0 20} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 10 20} sizeMax {10 20} }
+				element { name "SacredGridLabels" }
+                CIwUILayoutSpacer { sizeMin { 60 0} sizeMax {60 0} }
+                element { name "sacrificeBut" }
+                CIwUILayoutSpacer { sizeMin { 20 0} sizeMax {20 0} }
+                element { name "FCcloseBut" }
+            }
+        }
+        CIwUIButton
+        {
+        name "FCcloseBut"
+        style <Btn_37x37>
+        caption ""
+        alignH "right"
+        OnButtonClick { ManagementController::cancelDialog }
+        CIwUIImage
+        {
+            name "FCcloseImg"
+            sizeToContent true
+            texture CloseX
+            pos { 2 2 }
+        }
+        }
+        
+        CIwUIButton
+        {
+            name "sacrificeBut"
+            enabled "false"
+            style <Btn_45x122>
+            caption "献祭"
+            OnButtonClick {  SacrificeController::performSacrifice }
+        }
+        
+        CIwUIElement
+        {
+            name "FCAdviceView"
+            sizeMin { 640 104 }
+            sizeMax { 640 104 }
+
+        }
+    }
+
+}
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                    Sacrifice A
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+CIwUIElement
+{
+	name			"Sacrifice_A"
+    sizeMin { 1280 800 }
+    sizeMax { 1280 800 }
+    sizeToContent true
+    sizeToSpace true
+    pos { 400 240 }
+    CIwUILayoutHorizontal
+    {
+        CIwUILayoutSpacer { sizeMin { 40 0} sizeMax {40 0} }
+        CIwUILayoutVertical
+        {
+            spacing 10
+            CIwUILayoutSpacer { sizeMin { 0 20} sizeMax {0 20} }
+            element { name "divinationLabel" }
+            CIwUILayoutVertical
+            {
+                element { name "radio1Box" }
+                CIwUILayoutVertical
+                {
+                  // element { name "radio1Label" }
+                    element { name "radioDesc1Label" }
+                }
+
+            }
+            CIwUILayoutVertical
+            {
+                element { name "radio2Box" }
+                CIwUILayoutVertical
+                {
+                   // element { name "radio2Label" }
+                    element { name "radioDesc2Label" }
+                }
+
+            }
+        }
+     }
+    CIwUIButton
+    {
+        name "butCenter"
+        style	<button>
+        font "font_medium"
+        sizeMin  { 1280 800 }
+        sizeMax  { 1280 800 }
+        pos { -400 -240 }
+        buttonUp
+        {
+            drawableType "image"
+            texture shadow50
+        }
+        buttonDown
+        {
+            drawableType "image"
+            texture shadow50
+        }
+        focus ""
+        caption ""
+    }
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture DialogBackground
+        sizeMin { 480 320 }
+        sizeMax { 480 320 }
+    }
+    
+    CIwUILabel
+    {
+        alignH "left"
+        name "divinationLabel"
+        caption "占卜"
+        alignH "left"
+        margin {0 0}
+        style	<ParchementLabel>
+        sizeMax {100 20}
+        sizeMin {140 25}
+    }
+
+    //radio1Box
+    CCheckBox
+    {
+        name "radio1Box"
+        style <checkbox_radio>
+        checked "false"
+        caption "诅咒"
+        sizeMax {165 35}
+        sizeMin {170 35}
+        tag "0"
+        OnCheckboxChecked { SacrificeController::radioButtonTapped }
+    }
+
+        CIwUILabel
+        {
+            alignH "left"
+            name "radioDesc1Label"
+            caption "了解影响我们的任何不良魔法"
+            style	<SmallLabel>
+            sizeMax {350 20}
+            sizeMin {350 25}
+        }
+
+    //radio2Box
+    CCheckBox
+    {
+        name "radio2Box"
+        style <checkbox_radio>
+        checked "false"
+        caption "土地"
+        sizeMax {165 35}
+        sizeMin {170 35}
+        tag "0"
+        OnCheckboxChecked { SacrificeController::radioButtonTapped }
+    }
+        CIwUILabel
+        {
+            alignH "left"
+            name "radioDesc2Label"
+            caption "了解我们的领地上是否仍有隐藏的宝藏"
+            style	<SmallLabel>
+            sizeMax {350 60}
+            sizeMin {350 70}
+        }
+
+    CIwUIButton
+    {
+        name "sacr_A_choose_But"
+        style <Btn_45x91>
+        caption "选择"
+        pos {349 255}
+        OnButtonClick {  SacrificeController::proceedFromExtra }
+    }
+    
+
+}
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                    Sacrifice LM
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+CIwUIElement
+{
+	name			"Sacrifice_LM"
+    sizeMin { 1280 800 }
+    sizeMax { 1280 800 }
+    sizeToContent true
+    sizeToSpace true
+    pos { 400 240 }
+    CIwUILayoutHorizontal
+    {
+        CIwUILayoutSpacer { sizeMin { 40 0} sizeMax {40 0} }
+        CIwUILayoutVertical
+        {
+            spacing 10
+            CIwUILayoutSpacer { sizeMin { 0 20} sizeMax {0 20} }
+            element { name "divinationLabel" }
+            CIwUILayoutVertical
+            {
+                element { name "radio1Box" }
+                CIwUILayoutVertical
+                {
+                 //   element { name "radio1Label" }
+                    element { name "radioDesc1Label" }
+                }
+
+            }
+            CIwUILayoutVertical
+            {
+                element { name "radio2Box" }
+                CIwUILayoutVertical
+                {
+                  //  element { name "radio2Label" }
+                    element { name "radioDesc2Label" }
+                }
+
+            }
+            CIwUILayoutVertical
+            {
+                element { name "radio3Box" }
+                CIwUILayoutVertical
+                {
+                 //   element { name "radio3Label" }
+                    element { name "radioDesc3Label" }
+                }
+
+            }
+        }
+     }
+     
+
+    CIwUIButton
+    {
+        name "butCenter"
+        style	<button>
+        font "font_medium"
+        sizeMin  { 1280 800 }
+        sizeMax  { 1280 800 }
+        pos { -400 -240 }
+        buttonUp
+        {
+            drawableType "image"
+            texture shadow50
+        }
+        buttonDown
+        {
+            drawableType "image"
+            texture shadow50
+        }
+        focus ""
+        caption ""
+    }
+
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture DialogBackground
+        sizeMin { 480 320 }
+        sizeMax { 480 320 }
+    }
+    
+    CIwUILabel
+    {
+        alignH "left"
+        name "divinationLabel"
+        caption "占卜"
+        style	<ParchementLabel>
+        margin { 0 0 }
+        sizeMax {100 20}
+        sizeMin {140 25}
+    }
+
+    //radio1Box
+    CCheckBox
+    {
+        name "radio1Box"
+        style <checkbox_radio>
+        checked "false"
+        caption "态度"
+        sizeMax {165 35}
+        sizeMin {170 35}
+        tag "0"
+        OnCheckboxChecked { SacrificeController::radioButtonTapped }
+    }
+
+        CIwUILabel
+        {
+            alignH "left"
+            name "radioDesc1Label"
+            caption "了解某个氏族的看法"
+            style	<SmallLabel>
+            sizeMax {240 20}
+            sizeMin {245 25}
+        }
+
+    //radio2Box
+    CCheckBox
+    {
+        name "radio2Box"
+        style <checkbox_radio>
+        checked "false"
+        caption "力量"
+        sizeMax {165 35}
+        sizeMin {170 35}
+        tag "0"
+        OnCheckboxChecked { SacrificeController::radioButtonTapped }
+    }
+        CIwUILabel
+        {
+            alignH "left"
+            name "radioDesc2Label"
+            caption "了解某个氏族"
+            style	<SmallLabel>
+            sizeMax {240 20}
+            sizeMin {245 25}
+        }
+
+    //radio3Box
+    CCheckBox
+    {
+        name "radio3Box"
+        style <checkbox_radio>
+        checked "false"
+        caption "威胁"
+        sizeMax {165 35}
+        sizeMin {170 35}
+        tag "0"
+        OnCheckboxChecked { SacrificeController::radioButtonTapped }
+    }
+        CIwUILabel
+        {
+            alignH "left"
+            name "radioDesc3Label"
+            caption "了解哪个外来者对我们的威胁最大"
+            style	<SmallLabel>
+            sizeMax {255 20}
+            sizeMin {265 50}
+        }
+
+    PickListView
+    {
+        alignV "top"
+        name "sacrLMTargetView"
+        CIwUILayoutVertical
+        {
+            spacing 5
+        }
+        colour { 255 255 255 255 }
+        sizeToSpace true
+        sizeToContent true
+
+        sizeMin  { 187 126 }
+        sizeMax  { 187 126 }
+        pos { 273 53 }
+    }
+
+    CIwUIButton
+    {
+        name "sacr_A_choose_But"
+        style <Btn_45x91>
+        caption "选择"
+        pos {349 255}
+        OnButtonClick {  SacrificeController::proceedFromExtra }
+    }
+}

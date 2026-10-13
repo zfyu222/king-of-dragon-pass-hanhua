@@ -1,0 +1,414 @@
+
+
+
+CIwUIElement
+{
+	name			"FoodController"
+
+    sizeToContent true
+    sizeToSpace true
+    
+    CIwUILayout
+    {
+        element { name "CCBackGround" }
+        CIwUILayoutHorizontal
+        {
+            element { name "MenuHolder" }
+            CIwUILayoutSpacer { sizeMin {45 0} sizeMax {45 0} }
+            CIwUILayoutVertical
+            {
+                CIwUILayoutSpacer { sizeMin {0 20} sizeMax {0 30} }
+                element { name "FCScreen" }
+                CIwUILayoutSpacer { sizeMin {0 7} sizeMax {0 7} }
+                element { name "CCBottomView" }
+            }
+        }
+    }
+
+
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture MenuBackground-big
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+    
+    CIwUIImage
+    {
+        name "farmingGrain"
+        sizeToContent true
+        texture Farming_Grain
+        imageColour { 255 255 255 51 }
+        pos { 535 342 }
+        size {462 119}
+    }
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                     Food View
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    CIwUIElement
+    {
+        name "FCScreen"
+        sizeMin { 980 490 }
+        sizeMax { 980 490 }
+        CIwUILayoutHorizontal
+        {
+            //First row
+            CIwUILayoutSpacer { sizeMin {15 0} sizeMax {15 0} }
+            CIwUILayoutVertical
+            {
+                element { name "FCLand" }
+                 CIwUILayoutSpacer { sizeMin {00 10} sizeMax {00 10} }
+                element { name "RingSlider1" }
+                element { name "RingSlider2" }
+
+                CIwUILayoutHorizontal
+                {
+                    element { name "FCWildlandsCount" }
+                    element { name "FCWildlands" }
+                }
+            }
+            CIwUILayoutSpacer { sizeMin {30 0} sizeMax {80 0} }
+            //Second row
+            CIwUILayoutVertical
+            {
+                element { name "FCExpectedFood" }
+                 CIwUILayoutSpacer { sizeMin {0 10} sizeMax {0 10} }
+                CIwUILayoutGrid
+                {
+
+                    column { widthMin 90 widthMax 90 }
+                    column { widthMin 120 widthMax 180 }
+                    row { }
+                    row { }
+                    row { }
+                    element { name "FCexpectedHarvest"  row 0 column 0 alignH "right"}
+                    element { name "FCharvestDesc"      row 0 column 1 }
+                    element { name "FCexpectedHerds"    row 1 column 0 column 0 alignH "right"}
+                    element { name "FCherdsDesc"        row 1 column 1 }
+                    element { name "FCexpectedHunting"  row 2 column 0 column 0 alignH "right"}
+                    element { name "FChuntingDesc"      row 2 column 1 }
+                }
+            }
+            //Third row 
+            CIwUILayoutSpacer { sizeMin {30 0} sizeMax {138 0} }
+            CIwUILayoutVertical
+            {
+                element { name "FCHerdsLabel" alignH "left" }
+                CIwUILayoutSpacer { sizeMin {0 10} sizeMax {0 10} }
+                CIwUILayoutGrid
+                {
+
+                    column { widthMin 90 widthMax 90 }
+                    column { widthMin 60 widthMax 100 }
+                    row { }
+                    row { }
+                    row { }
+                    row { }
+                    element { name "FCcattle"       row 0 column 0 column 0 alignH "right"}
+                    element { name "FChcattleDesc"  row 0 column 1 }
+                    element { name "FCsheep"        row 1 column 0 column 0 alignH "right"}
+                    element { name "FCsheepDesc"    row 1 column 1 }
+                    element { name "FCpigs"         row 2 column 0 column 0 alignH "right"}
+                    element { name "FCpigsDesc"     row 2 column 1 }
+                    element { name "FChorses"       row 3 column 0 column 0 alignH "right"}
+                    element { name "FChorsesDesc"   row 3 column 1 }
+                }
+                CIwUILayoutSpacer { sizeMin {0 30} sizeMax {0 30} }
+                element { name "FCslaughter" alignH "centre" }
+            }
+
+        }
+//First Row Elements
+        CIwUIElement
+        {
+            sizeMin { 250, 90 }
+            sizeMax { 250, 90 }
+            sizeToContent true
+            name "RingSlider1"
+        }
+        CIwUIElement
+        {
+            sizeMin { 250, 90 }
+            sizeMax { 250, 90 }
+            sizeToContent true
+            name "RingSlider2"
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "FCLand"
+            style	<ParchementLabel>
+            caption "土地"
+            sizeMax {150 30}
+            sizeMin {115 30}
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "FCWildlands"
+            style	<StandartLabel>
+            caption "荒野"
+            sizeMax {150 30}
+            sizeMin {120 30}
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "FCWildlandsCount"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            caption "9999"
+            sizeMax {50 30}
+            sizeMin {50 30}
+        }
+
+//Second Row Elemenst
+        CIwUILabel
+        {
+            alignH "left"
+            name "FCExpectedFood"
+            style	<ParchementLabel>
+            caption "预期食物"
+            sizeMax {180 30}
+            sizeMin {180 30}
+        }
+    //row 0
+        CIwUILabel
+        {
+            alignH "right"
+            name "FCexpectedHarvest"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            caption "999"
+            sizeMax {90 30}
+            sizeMin {90 30}
+        }
+        CIwUIElement
+        {
+            name "FCharvestDesc"
+            sizeToContent true
+            sizeMin { 140 80 }
+            CIwUILayoutVertical
+            {
+                element { name "FCexpectedHarvest0" alignH "left" }
+                element { name "FCexpectedHarvest1" alignH "left" }
+            }
+            CIwUILabel
+            {
+                alignH "left"
+                name "FCexpectedHarvest0"
+                style	<StandartLabel>
+                caption "收获"
+                sizeMax {110 30}
+                sizeMin {120 30}
+            }
+             CIwUILabel
+            {
+                alignH "left"
+                alignV "top"
+                name "FCexpectedHarvest1"
+                style	<SmallLabel>
+                caption "大麦、小麦、黑麦"
+                sizeMax {150 30}
+                sizeMin {200 30}
+            }
+        }
+    //row 1
+        CIwUILabel
+        {
+            alignH "right"
+            name "FCexpectedHerds"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            caption "9999"
+            sizeMax {90 30}
+            sizeMin {90 30}
+        }
+        CIwUIElement
+        {
+            name "FCherdsDesc"
+            sizeToContent true
+            sizeMin { 140 80 }
+            CIwUILayoutVertical
+            {
+                element { name "FCherdsDesc0" alignH "left" }
+                element { name "FCherdsDesc1" alignH "left" }
+            }
+            CIwUILabel
+            {
+                alignH "left"
+                name "FCherdsDesc0"
+                style	<StandartLabel>
+                caption "畜群"
+                sizeMax {110 30}
+                sizeMin {120 30}
+            }
+             CIwUILabel
+            {
+                alignH "left"
+                alignV "top"
+                name "FCherdsDesc1"
+                style	<SmallLabel>
+                caption "牧场中的牛和羊，以及荒野中的猪"
+                sizeMax {150 30}
+                sizeMin {250 80}
+            }
+        }
+    //row 2
+        CIwUILabel
+        {
+            alignH "right"
+            name "FCexpectedHunting"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            caption "9999"
+            sizeMax {90 30}
+            sizeMin {90 30}
+        }
+        CIwUIElement
+        {
+            name "FChuntingDesc"
+            sizeToContent true
+            sizeMin { 140 80 }
+            CIwUILayoutVertical
+            {
+                element { name "FChuntingDesc0" alignH "left" }
+                element { name "FChuntingDesc1" alignH "left" }
+            }
+            CIwUILabel
+            {
+                alignH "left"
+                name "FChuntingDesc0"
+                style	<StandartLabel>
+                caption "狩猎"
+                sizeMax {110 30}
+                sizeMin {120 30}
+            }
+             CIwUILabel
+            {
+                alignH "left"
+                alignV "top"
+                name "FChuntingDesc1"
+                style	<SmallLabel>
+                caption "荒野中的猎物"
+                sizeMax {150 30}
+                sizeMin {200 30}
+            }
+        }
+
+//Third row
+        CIwUILabel
+        {
+            alignH "left"
+            name "FCHerdsLabel"
+            style	<ParchementLabel>
+            caption "畜群"
+            sizeMax {100 30}
+            sizeMin {130 30}
+        }
+    // row 0
+        CIwUILabel
+        {
+            alignH "right"
+            name "FCcattle"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            caption "9999"
+            sizeMax {90 30}
+            sizeMin {90 30}
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "FChcattleDesc"
+            style	<StandartLabel>
+            caption "牛只"
+            sizeMax {60 30}
+            sizeMin {80 30}
+        }
+    // row 1
+        CIwUILabel
+        {
+            alignH "right"
+            name "FCsheep"
+            style	<SmallLabel>
+            textColour { 124 73 43 190 }
+            caption "9999"
+            sizeMax {90 30}
+            sizeMin {90 30}
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "FCsheepDesc"
+            style	<SmallLabel>
+            caption "羊"
+            sizeMax {60 30}
+            sizeMin {80 30}
+        }
+    // row 2
+        CIwUILabel
+        {
+            alignH "right"
+            name "FCpigs"
+            style	<SmallLabel>
+            textColour { 124 73 43 190 }
+            caption "9999"
+            sizeMax {90 30}
+            sizeMin {90 30}
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "FCpigsDesc"
+            style	<SmallLabel>
+            caption "猪"
+            sizeMax {60 30}
+            sizeMin {80 30}
+        }
+    // row 3
+        CIwUILabel
+        {
+            alignH "right"
+            name "FChorses"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            caption "9999"
+            sizeMax {90 30}
+            sizeMin {90 30}
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "FChorsesDesc"
+            style	<StandartLabel>
+            caption "马匹"
+            sizeMax {60 30}
+            sizeMin {100 30}
+        }
+        CIwUIButton
+        {
+            name "FCslaughter"
+            style <Btn_45x122>
+            caption "屠杀"
+            textColour { 84 41 25 255 }
+            OnButtonClick { FoodController::showSlaughterDialog }
+            CIwUIImage
+            {
+                name "FCslaughterImg"
+                sizeToContent true
+                texture Btn_Slaughter
+                pos { 8 -28 }
+            }
+        }
+
+    }
+}

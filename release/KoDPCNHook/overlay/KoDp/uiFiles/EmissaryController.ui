@@ -1,0 +1,294 @@
+
+
+CIwUIElement
+{
+	name			"EmissaryController"
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    sizeToContent true
+    sizeToSpace true
+    
+    CIwUILayoutHorizontal
+    {
+        CIwUILayoutSpacer { sizeMin { 180 0} sizeMax {180 0} }
+        CIwUILayoutVertical
+        {
+
+            CIwUILayoutSpacer { sizeMin { 0 533} sizeMax {0 533} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 140 0} sizeMax {140 0} }
+                element { name "FCAdviceView" }
+            }
+            CIwUILayoutSpacer { sizeMin { 0 20} sizeMax {0 20} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 150 20} sizeMax {150 20} }
+                element { name "SacredGridLabels" }
+                CIwUILayoutSpacer { sizeMin { 60 0} sizeMax {60 0} }
+                element { name "FoodCrecruitBut" }
+                CIwUILayoutSpacer { sizeMin { 20 0} sizeMax {20 0} }
+                element { name "FCcloseBut" }
+            }
+        }
+
+    }
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture Clear64x64
+        //Dialog768
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+    CIwUIElement
+    {
+        name "EmmiScreen"
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+        pos { 128 16 }
+        CIwUILabel
+        {
+            alignH "left"
+            name "sendTo"
+            caption "发送至"
+            style	<ParchementLabel>
+            sizeMax {142 20}
+            sizeMin {150 25}
+            pos { 86 37 }
+            margin { 0 0 }
+        }
+        PickListView
+        {
+            alignV "top"
+            name "clans"
+            CIwUILayoutVertical
+            {
+                spacing 5
+            }
+            colour { 255 255 255 255 }
+            sizeToSpace true
+            sizeToContent true
+
+            sizeMin  { 160 264 }
+            sizeMax  { 160 264 }
+            pos { 86 63}
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "goalLabel"
+            caption "目标"
+            style	<ParchementLabel>
+            sizeMax {142 20}
+            sizeMin {150 25}
+            pos { 86 347 }
+            margin { 0 0 }
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "bring"
+            caption "携带"
+            style	<ParchementLabel>
+            sizeMax {142 20}
+            sizeMin {150 25}
+            pos { 738 37 }
+            margin { 0 0 }
+        }
+        PickListView
+        {
+            alignV "top"
+            name "goal"
+            CIwUILayoutVertical
+            {
+                spacing 5
+            }
+            colour { 255 255 255 255 }
+            sizeToSpace true
+            sizeToContent true
+
+            sizeMin  { 160 135 }
+            sizeMax  { 160 135 }
+            pos { 86 373}
+        }
+        PickListView
+        {
+            alignV "top"
+            name "treasures"
+            CIwUILayoutVertical
+            {
+                spacing 5
+            }
+            colour { 255 255 255 255 }
+            sizeToSpace true
+            sizeToContent true
+
+            sizeMin  { 200 200 }
+            sizeMax  { 200 200 }
+            pos { 738 308}
+        }
+
+        CIwUILabel
+        {
+            alignH "left"
+            name "missons"
+            caption "奥尔卡思正在执行一项探索任务"
+            style	<SmallLabel>
+            sizeMax {432 20}
+            sizeMin {432 25}
+            pos { 263 336 }
+        }
+        CIwUIButton
+        {
+            name "leaderName"
+            style <Btn_37x105>
+            sizeMin { 115 37 }
+            sizeMax { 115 37 }
+
+            caption "领袖"
+            pos { 311 432 }
+            OnButtonClick {  ManagementController::chooseLeader }
+        }
+
+        CIwUIElement
+        {
+            sizeMin { 220, 90 }
+            sizeToContent true
+            name "weaponthanesSlider"
+            pos { 447 370 }
+        }
+        CIwUIElement
+        {
+            sizeMin { 220, 90 }
+            sizeToContent true
+            name "footMen"
+            pos { 447 430 }
+        }
+        
+        CIwUIElement
+        {
+            sizeMin { 220, 90 }
+            sizeToContent true
+            name "cattleSlider"
+            pos { 738 64 }
+        }
+        CIwUIElement
+        {
+            sizeMin { 220, 90 }
+            sizeToContent true
+            name "horseSlider"
+            pos { 738 124 }
+        }
+        CIwUIElement
+        {
+            sizeMin { 220, 90 }
+            sizeToContent true
+            name "goodsSlider"
+            pos { 738 184 }
+        }
+        CIwUIElement
+        {
+            sizeMin { 220, 90 }
+            sizeToContent true
+            name "foodsSlider"
+            pos { 738 244 }
+        }
+        CIwUIElement
+        {
+            name "mapView"
+             pos { 263 38 }
+//            CIwUIImage
+//            {
+//                name "MapCScreenBg"
+//                //style <bg>
+//                pos { -2 -2 }
+//                drawableType "image"
+//                sizeToSpace true
+//                sizeToContent   true
+//                texture MapFrameBig
+//                sizeMin { 459 293 }
+//                sizeMax { 459 293 }
+//            }
+            ZoomingScroll
+            {
+
+                name "MapScroll"
+                sizeToContent   true
+                sizeMin { 455 289 }
+                sizeMax { 455 289 }
+
+                CIwUILayout
+                {
+
+                }
+            }
+        }
+        CIwUIButton
+        {
+            name "leaderImage"
+            style	<button>
+            textColour { 255 255 255 255 }
+            font "font_medium"
+            sizeMin  { 38 50 }
+            sizeMax  { 38 50 }
+            pos {348 376}
+            buttonUp
+            {
+                drawableType "image"
+                texture Segleft
+            }
+            buttonDown
+            {
+                drawableType "image"
+                texture Segleft
+            }
+            focus ""
+            caption ""
+            alignH "centre"
+
+            OnButtonClick {  MapController::handleLeaderTap }
+        }
+
+    }
+
+    //****
+    CIwUIButton
+    {
+        name "FCcloseBut"
+        style <Btn_37x37>
+        caption ""
+        alignH "right"
+        OnButtonClick { ManagementController::cancelDialog }
+        CIwUIImage
+        {
+            name "FCcloseImg"
+            sizeToContent true
+            texture CloseX
+            pos { 2 2 }
+        }
+    }
+    
+    CIwUIButton
+    {
+        name "FoodCrecruitBut"
+        enabled "false"
+        style <Btn_45x91>
+        caption "发送"
+        OnButtonClick {  EmissaryController::sendMission }
+    }
+    
+    CIwUIElement
+    {
+        name "FCAdviceView"
+        sizeMin { 640 104 }
+        sizeMax { 640 104 }
+
+    }
+    
+    }

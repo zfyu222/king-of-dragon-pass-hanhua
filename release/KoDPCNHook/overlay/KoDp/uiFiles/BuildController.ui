@@ -1,0 +1,370 @@
+
+
+CIwUIElement
+{
+	name			"BuildController"
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    sizeToContent true
+    sizeToSpace true
+    
+    CIwUILayoutHorizontal
+    {
+        CIwUILayoutSpacer { sizeMin { 180 0} sizeMax {180 0} }
+        CIwUILayoutVertical
+        {
+            CIwUILayoutSpacer { sizeMin { 0 130} sizeMax {0 130} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 170 0} sizeMax {170 0} }
+                CIwUILayoutVertical
+                {
+                    CIwUILayoutHorizontal
+                    {
+                        element { name "runeImage" alignV "middle" }
+                        element { name "dietyName" alignV "middle" }
+                    }
+                    CIwUILayoutHorizontal
+                    {
+                        CIwUILayoutSpacer { sizeMin { 225 0} sizeMax {225 0} }
+                        element { name "tittleBlessing" }
+                        CIwUILayoutSpacer { sizeMin { 20 0} sizeMax {20 0} }
+                        element { name "tittleCost" }
+                        CIwUILayoutSpacer { sizeMin { 20 0} sizeMax {20 0} }
+                        element { name "tittleAnnual" }
+                    }
+                    CIwUILayoutSpacer { sizeMin { 0 15} sizeMax {0 15} }
+                    element { name "temple0" }
+                    CIwUILayoutSpacer { sizeMin { 0 10} sizeMax {0 10} }
+                    element { name "templeGroup" }
+                    CIwUILayoutSpacer { sizeMin { 0 10} sizeMax {0 10} }
+                    element { name "templeGreat" }
+
+                }
+
+            }
+            CIwUILayoutSpacer { sizeMin { 0 5} sizeMax {0 5} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 140 0} sizeMax {140 0} }
+                element { name "sizeExplorationLabel" }
+            }
+            CIwUILayoutSpacer { sizeMin { 0 18} sizeMax {0 18} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 140 0} sizeMax {140 0} }
+                element { name "FCAdviceView" }
+            }
+            CIwUILayoutSpacer { sizeMin { 0 20} sizeMax {0 20} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 150 20} sizeMax {150 20} }
+                element { name "SacredGridLabels" }
+                CIwUILayoutSpacer { sizeMin { 60 0} sizeMax {60 0} }
+                element { name "FoodCrecruitBut" }
+                CIwUILayoutSpacer { sizeMin { 142 0} sizeMax {142 0} }
+                element { name "FCcloseBut" }
+            }
+        }
+
+    }
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture Clear64x64
+        //DialogBackground1
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+
+    CIwUIImage
+    {
+        name "runeImage"
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture Clear64x64
+        //DialogBackground1
+        sizeMin { 19 18 }
+        sizeMax { 19 18 }
+
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        alignV "top"
+        name "dietyName"
+        caption "查拉娜·阿罗伊"
+        style	 <ParchementLabel>
+        sizeMax {145 20}
+        sizeMin {200 25}
+        margin { 0 0 }
+    }
+
+    CIwUILabel
+    {
+        alignH "centre"
+        name "sizeExplorationLabel"
+        caption "你没有足够的信徒来支持更大的神殿。"
+        style	<SmallishLabel>
+        textColour { 0 0 0 255 }
+        sizeMax {640 20}
+        sizeMin {640 25}
+    }
+
+    CIwUILabel
+    {
+        alignH "left"
+        name "tittleBlessing"
+        caption "祝福"
+        style	<SmallLabel>
+        sizeMax {95 20}
+        sizeMin {95 25}
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        name "tittleCost"
+        caption "花费"
+        style	<SmallLabel>
+        sizeMax {50 20}
+        sizeMin {60 25}
+    }
+    CIwUILabel
+    {
+        alignH "centre"
+        name "tittleAnnual"
+        caption "年度\n维护"
+        style	<SmallLabel>
+        sizeMax {110 20}
+        sizeMin {140 45}
+    }
+    //Temple Shrine
+    CIwUIElement
+    {
+        name "temple0"
+        CIwUILayoutHorizontal
+        {
+            element { name "buildShrineBut" }
+            CIwUILayoutSpacer { sizeMin { 20 0} sizeMax {20 0} }
+            element { name "shrineImg" }
+            CIwUILayoutSpacer { sizeMin { 70 0} sizeMax {70 0} }
+            element { name "shrineBless" }
+             CIwUILayoutSpacer { sizeMin { 65 0} sizeMax {65 0} }
+            element { name "shrineCost" }
+            CIwUILayoutSpacer { sizeMin { 35 0} sizeMax {35 0} }
+            element { name "shrineAnnual" }
+        }
+        CUIButton
+        {
+            name "buildShrineBut"
+            style <Btn_45x91>
+            caption "建造"
+            OnButtonClick {  BuildController::setTempleCode }
+        }
+        CIwUIImage
+        {
+            name "shrineImg"
+            sizeToContent true
+            texture CloseX
+            sizeMin { 79 52 }
+            sizeMax { 79 52 }
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "shrineBless"
+            caption "1"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            sizeMax {24 20}
+            sizeMin {24 25}
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "shrineCost"
+            caption "10"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            sizeMax {34 20}
+            sizeMin {34 25}
+        }
+        CIwUILabel
+        {
+            alignH "right"
+            name "shrineAnnual"
+            caption "4货物\n2牛"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            sizeMax {120 20}
+            sizeMin {120 45}
+        }
+
+    }
+    
+    //Temple Group
+    CIwUIElement
+    {
+        name "templeGroup"
+        CIwUILayoutHorizontal
+        {
+            element { name "buildTempleBut" }
+            CIwUILayoutSpacer { sizeMin { 20 0} sizeMax {20 0} }
+            element { name "templeImg" }
+            CIwUILayoutSpacer { sizeMin { 70 0} sizeMax {70 0} }
+            element { name "templeBless" }
+            CIwUILayoutSpacer { sizeMin { 65 0} sizeMax {65 0} }
+            element { name "templeCost" }
+            CIwUILayoutSpacer { sizeMin { 35 0} sizeMax {35 0} }
+            element { name "templeAnnual" }
+        }
+        CUIButton
+        {
+            name "buildTempleBut"
+            style <Btn_45x91>
+            caption "建造"
+            OnButtonClick {  BuildController::setTempleCode }
+        }
+        CIwUIImage
+        {
+            name "templeImg"
+            sizeToContent true
+            texture CloseX
+            sizeMin { 79 52 }
+            sizeMax { 79 52 }
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "templeBless"
+            caption "2"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            sizeMax {24 20}
+            sizeMin {24 25}
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "templeCost"
+            caption "50"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            sizeMax {34 20}
+            sizeMin {34 25}
+        }
+        CIwUILabel
+        {
+            alignH "right"
+            name "templeAnnual"
+            caption "10货物\n5牛"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            sizeMax {120 20}
+            sizeMin {120 45}
+        }
+
+    }
+    //Temple Group
+    CIwUIElement
+    {
+        name "templeGreat"
+        CIwUILayoutHorizontal
+        {
+            element { name "buildGreatTempleBut" }
+            CIwUILayoutSpacer { sizeMin { 20 0} sizeMax {20 0} }
+            element { name "greatTempleImg" }
+            CIwUILayoutSpacer { sizeMin { 70 0} sizeMax {70 0} }
+            element { name "greatTempleBless" }
+            CIwUILayoutSpacer { sizeMin { 60 0} sizeMax {60 0} }
+            element { name "greatTempleCost" }
+            CIwUILayoutSpacer { sizeMin { 31 0} sizeMax {31 0} }
+            element { name "greatTempleAnnual" }
+        }
+        CUIButton
+        {
+            name "buildGreatTempleBut"
+            style <Btn_45x91>
+            caption "建造"
+            OnButtonClick {  BuildController::setTempleCode }
+        }
+        CIwUIImage
+        {
+            name "greatTempleImg"
+            sizeToContent true
+            texture CloseX
+            sizeMin { 79 52 }
+            sizeMax { 79 52 }
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "greatTempleBless"
+            caption "3"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            sizeMax {24 20}
+            sizeMin {24 25}
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "greatTempleCost"
+            caption "100"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            sizeMax {44 20}
+            sizeMin {44 25}
+        }
+        CIwUILabel
+        {
+            alignH "right"
+            name "greatTempleAnnual"
+            caption "20货物\n11牛"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            sizeMax {120 20}
+            sizeMin {120 45}
+        }
+
+    }
+    //****
+    CIwUIButton
+    {
+        name "FCcloseBut"
+        style <Btn_37x37>
+        caption ""
+        alignH "right"
+        OnButtonClick { ManagementController::cancelDialog }
+        CIwUIImage
+        {
+            name "FCcloseImg"
+            sizeToContent true
+            texture CloseX
+            pos { 2 2 }
+        }
+    }
+    
+//    CIwUIButton
+//    {
+//        name "FoodCrecruitBut"
+//        enabled "false"
+//        style <Btn_45x122>
+//        caption "Slaughter"
+//        OnButtonClick {  SlaughterController::slaughter }
+//    }
+
+    CIwUIElement
+    {
+        name "FCAdviceView"
+        sizeMin { 640 104 }
+        sizeMax { 640 104 }
+
+    }
+}

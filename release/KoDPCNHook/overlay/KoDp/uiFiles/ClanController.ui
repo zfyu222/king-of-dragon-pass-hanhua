@@ -1,0 +1,540 @@
+
+CIwUIPropertySet
+{
+	name	"<clan_but>"
+    font "DutchMediaeval21"
+	style	<button>
+    alignH "left"
+    margin {10 0}
+	sizeMin  { 105 37 }
+    sizeMax  { 105 37 }
+    textColour { 103 56 33 255 }
+    downCaptionColour {255 255 255 255}
+    buttonUp
+    {
+        drawableType "image"
+        texture Btn_37x105
+    }
+	buttonDown
+    {
+        drawableType "image"
+        texture Btn_37x105
+    }
+    focus ""
+}
+
+CIwUIElement
+{
+	name			"ClanController"
+
+    sizeToContent true
+    sizeToSpace true
+    
+    CIwUILayout
+    {
+        element { name "CCBackGround" }
+        CIwUILayoutHorizontal
+        {
+            element { name "MenuHolder" }
+            CIwUILayoutSpacer { sizeMin {45 0} sizeMax {45 0} }
+            CIwUILayoutVertical
+            {
+                CIwUILayoutSpacer { sizeMin {0 20} sizeMax {0 30} }
+                CIwUILayoutHorizontal
+                {
+                    CIwUILayoutSpacer { sizeMin {30 0} sizeMax {78 0} }
+                    element { name "CCScreen" }
+                    CIwUILayoutSpacer { sizeMin {100 0} sizeMax {130 0} }
+                    element { name "CCRigthView" }
+                }
+                CIwUILayoutSpacer { sizeMin {0 103} sizeMax {0 103} }
+                element { name "CCBottomView" }
+            }
+        }
+    }
+
+
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture MenuBackground-big
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+    
+     CIwUIImage
+    {
+        drawableType "image"
+        sizeToContent   true
+        texture ClanVerticalLine
+        sizeMin { 5 258 }
+        sizeMax { 5 258 }
+        pos { 630 70 }
+    }
+     CIwUIImage
+    {
+        drawableType "image"
+        sizeToContent   true
+        texture ClanVerticalLine
+        sizeMin { 5 258 }
+        sizeMax { 5 258 }
+        pos { 670 70 }
+    }
+    
+
+    
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                     Right View
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+    CIwUIElement
+    {
+        name "CCRigthView"
+        CIwUILayoutVertical
+        {   
+            spacing 10
+            element { name "CCtypeText" alignH "centre"}
+            element { name "CCReorganize" alignH "centre" }
+            CIwUILayoutSpacer { sizeMin {0 40} sizeMax {0 40} }
+            element { name "CCmoodText" }
+            element { name "CCfarmerAttitudeText" }
+            element { name "CCweaponthaneAttitudeText" }
+            CIwUILayoutSpacer { sizeMin {0 80} sizeMax {0 80} }
+            CIwUILayoutHorizontal
+            {
+                alignH "centre"
+                sizeToContent true
+                element { name "CCFeast" }
+                CIwUILayoutSpacer { sizeMin {30 0} sizeMax {50 0} }
+                element { name "CCGifts" }
+            }
+        }
+        CIwUILabel
+        {
+            alignH "centre"
+            name "CCtypeText"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            caption "这是一个平衡氏族。"
+            sizeMin { 280 26 }
+        }
+        CIwUIButton
+        {
+            name "CCReorganize"
+            style	<Btn_45x154>
+            textColour { 84 41 25 255 }
+            caption "重组"
+            alignH "right"
+            OnButtonClick { ClanController::showReorganizeDialog }
+            CIwUIImage
+            {
+                name "CCReorganizeImg"
+                sizeToContent true
+                texture Btn_Reorganize
+                pos { -25 0 }
+            }
+        }
+        CIwUILabel
+        {
+            alignH "centre"
+            name "CCmoodText"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            caption "氏族情绪为克制。"
+            sizeMin { 360 26 }
+            sizeMax { 360 26 }
+        }
+        CIwUILabel
+        {
+            alignH "centre"
+            name "CCfarmerAttitudeText"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            caption "农夫们感到坚定。"
+            sizeMin { 360 26 }
+            sizeMax { 360 26 }
+        }
+        CIwUILabel
+        {
+            alignH "centre"
+            name "CCweaponthaneAttitudeText"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            caption "武器领主们感到坚定。"
+            sizeMin { 360 26 }
+            sizeMax { 360 26 }
+        }
+        
+        CIwUIButton
+        {
+            name "CCFeast"
+            style	<Btn_45x122>
+            textColour { 84 41 25 255 }
+            caption "宴席"
+            alignH "right"
+
+            OnButtonClick { ClanController::showFeastDialog }
+            CIwUIImage
+            {
+                name "CCFeastImg"
+                sizeToContent true
+                texture Btn_Feast
+                pos { 0 -24 }
+            }
+        }
+        
+        CIwUIButton
+        {
+            name "CCGifts"
+            style	<Btn_45x91>
+            textColour { 84 41 25 255 }
+            caption "礼物"
+            alignH "centre"
+            OnButtonClick { ClanController::showGiftsDialog }
+            CIwUIImage
+            {
+                name "CCGiftsImg"
+                sizeToContent true
+                texture Btn_Gifts
+                pos { 15 -29 }
+            }
+        }
+    }
+    
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                     Screen View
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    CIwUIElement
+    {
+        name "CCScreen"
+        CIwUILayoutGrid
+        {
+            name ""
+            column { widthMin 220 widthMax 220 }
+            column { }
+            column { }
+            column { }
+            row { }
+            row { }
+            row { }
+            row { }
+            row { }
+            row { }
+            row { }
+            row { }
+            row { }
+        //row 0
+            element { name "CCPopulation"   row 0 column 0 }
+            element { name "CCSick"         row 0 column 2 alignH "right"}
+            element { name "CCWounded"      row 0 column 3 alignH "right"}
+        //row 1
+            element { name "CCFarmers"          row 1 column 0 }
+            element { name "CCFarmersLabel"     row 1 column 1 alignH "right"}
+            element { name "CCFarmersSick"      row 1 column 2 alignH "right" }
+            element { name "CCFarmersWounded"   row 1 column 3 alignH "right"}
+        //row 2
+            element { name "CCChildren"          row 2 column 0 }
+            element { name "CCChildrenLabel"     row 2 column 1 alignH "right"}
+        //row 3
+            element { name "CCWeaponthanes"          row 3 column 0 }
+            element { name "CCWeaponthanesLabel"     row 3 column 1 alignH "right"}
+            element { name "CCWeaponthanesSick"      row 3 column 2 alignH "right"}
+            element { name "CCWeaponthanesWounded"   row 3 column 3 alignH "right"}
+        //row 4
+            element { name "CCNobles"          row 4 column 0 }
+            element { name "CCNoblesLabel"     row 4 column 1 alignH "right"}
+            element { name "CCNoblesSick"      row 4 column 2 alignH "right"}
+            element { name "CCNoblesWounded"   row 4 column 3 alignH "right"}
+       //row 5
+            element { name "CCCrafters"          row 5 column 0 }
+            element { name "CCCraftersLabel"     row 5 column 1 alignH "right"}
+            element { name "CCCraftersSick"      row 5 column 2 alignH "right"}
+            element { name "CCCraftersWounded"   row 5 column 3 alignH "right"}
+       //row 6
+            element { name "CCHunters"          row 6 column 0 }
+            element { name "CCHuntersLabel"     row 6 column 1 alignH "right"}
+            element { name "CCHuntersSick"      row 6 column 2 alignH "right"}
+            element { name "CCHuntersWounded"   row 6 column 3 alignH "right"}
+        //row 7
+            element { name "CCThralls"          row 7 column 0 }
+            element { name "CCThrallsLabel"     row 7 column 1 alignH "right"}
+            element { name "CCThrallsSick"      row 7 column 2 alignH "right"}
+            element { name "CCThrallsWounded"   row 7 column 3 alignH "right"}
+        //row 8
+            element { name "CCHealthyLabel"     row 8 column 1 alignH "right"}
+            element { name "CCHealthySick"      row 8 column 2 alignH "right"}
+            element { name "CCHealthyWounded"   row 8 column 3 alignH "right"}
+        }
+//Row 0
+        CIwUILabel
+        {
+            name "CCPopulation"
+            style	<ParchementLabel>
+            caption "人口"
+        }
+        CIwUILabel
+        {
+            name "CCSick"
+            style	<label_medium>
+            font        "DutchMediaeval16"
+            textColour { 103 56 33 255 }
+            caption "生病"
+            sizeMin { 40 25 }
+            sizeMax { 50 35 }
+        }
+        CIwUILabel
+        {
+            name "CCWounded"
+            style	<label_medium>
+            font        "DutchMediaeval16"
+            textColour { 103 56 33 255 }
+            caption "受伤"
+            sizeMin { 40 25 }
+            sizeMax { 110 35 }
+        }
+//Row 1
+        CIwUIButton
+        {
+            name "CCFarmers"
+            style <clan_but>
+            caption "农夫"
+            OnButtonClick { ClanController::showFarmersDialog }
+        }
+        CIwUILabel
+        {
+            name "CCFarmersLabel"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            caption "9999"
+        }
+        CIwUILabel
+        {
+            name "CCFarmersSick"
+            style	<StandartLabel>
+            textColour { 160 122 87 255 }
+            caption "999"
+        }
+        CIwUILabel
+        {
+            name "CCFarmersWounded"
+            style	<StandartLabel>
+            textColour { 160 122 87 255 }
+            caption "88"
+        }
+//Row 2
+        CIwUILabel
+        {
+            name "CCChildren"
+
+            style	<StandartLabel>
+            caption "儿童"
+        }
+        CIwUILabel
+        {
+            name "CCChildrenLabel"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            caption "9999"
+        }
+//Row 3
+        CIwUIButton
+        {
+            name "CCWeaponthanes"
+            style	<clan_but>
+            sizeMin  { 180 37 }
+            sizeMax  { 180 37 }
+            buttonUp
+            {
+                drawableType "image"
+                texture Btn_37x155
+            }
+            buttonDown
+            {
+                drawableType "image"
+                texture Btn_37x155
+            }
+            caption "武器领主"
+            OnButtonClick { ClanController::showWeaponthanesDialog }
+        }
+        CIwUILabel
+        {
+            name "CCWeaponthanesLabel"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            caption "9999"
+        }
+        CIwUILabel
+        {
+            name "CCWeaponthanesSick"
+            style	<StandartLabel>
+            textColour { 160 122 87 255 }
+            caption "99"
+        }
+        CIwUILabel
+        {
+            name "CCWeaponthanesWounded"
+            style	<StandartLabel>
+            textColour { 160 122 87 255 }
+            caption "999"
+        }
+//Row 4
+        CIwUILabel
+        {
+            name "CCNobles"
+            style	<StandartLabel>
+            caption "贵族"
+        }
+        CIwUILabel
+        {
+            name "CCNoblesLabel"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            caption "999"
+        }
+        CIwUILabel
+        {
+            name "CCNoblesSick"
+            style	<StandartLabel>
+            textColour { 160 122 87 255 }
+            caption "99"
+        }
+        CIwUILabel
+        {
+            name "CCNoblesWounded"
+            style	<StandartLabel>
+            textColour { 160 122 87 255 }
+            caption "99"
+        }
+//Row 5
+        CIwUILabel
+        {
+            name "CCCrafters"
+            style	<StandartLabel>
+            caption "工匠"
+        }
+        CIwUILabel
+        {
+            name "CCCraftersLabel"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            caption "999"
+        }
+        CIwUILabel
+        {
+            name "CCCraftersSick"
+            style	<StandartLabel>
+            textColour { 160 122 87 255 }
+            caption "99"
+        }
+        CIwUILabel
+        {
+            name "CCCraftersWounded"
+            style	<StandartLabel>
+            textColour { 160 122 87 255 }
+            caption "99"
+        }
+//Row 6
+        CIwUIButton
+        {
+            name "CCHunters"
+            style <clan_but>
+            caption "猎人"
+            OnButtonClick { ClanController::showHuntersDialog }
+        }
+        CIwUILabel
+        {
+            name "CCHuntersLabel"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            caption "999"
+        }
+        CIwUILabel
+        {
+            name "CCHuntersSick"
+            style	<StandartLabel>
+            textColour { 160 122 87 255 }
+            caption "99"
+        }
+        CIwUILabel
+        {
+            name "CCHuntersWounded"
+            style	<StandartLabel>
+            textColour { 160 122 87 255 }
+            caption "99"
+        }
+//Row 7
+        CIwUIElement
+        {
+            name "CCThralls"
+            CIwUIButton
+            {
+                name "CCThrallsBut"
+                style <clan_but>
+                caption "奴隶"
+                OnButtonClick { ClanController::showThrallsDialog }
+            }
+            CIwUILabel
+            {
+                name "CCThrallsButLabel"
+                style	<StandartLabel>
+                caption "奴隶"
+            }
+        }
+        CIwUILabel
+        {
+            name "CCThrallsLabel"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            caption "999"
+        }
+        CIwUILabel
+        {
+            name "CCThrallsSick"
+            style	<StandartLabel>
+            textColour { 160 122 87 255 }
+            caption "99"
+        }
+        CIwUILabel
+        {
+            name "CCThrallsWounded"
+            style	<StandartLabel>
+            textColour { 160 122 87 255 }
+            caption "99"
+        }
+//Row 8
+        CIwUILabel
+        {
+            name "CCHealthyLabel"
+            style	<StandartLabel>
+            textColour { 160 122 87 255 }
+            caption "999"
+        }
+        CIwUILabel
+        {
+            name "CCHealthySick"
+            style	<StandartLabel>
+            textColour { 160 122 87 255 }
+            caption "99"
+        }
+        CIwUILabel
+        {
+            name "CCHealthyWounded"
+            style	<StandartLabel>
+            textColour { 160 122 87 255 }
+            caption "99"
+        }
+    }
+
+
+
+}

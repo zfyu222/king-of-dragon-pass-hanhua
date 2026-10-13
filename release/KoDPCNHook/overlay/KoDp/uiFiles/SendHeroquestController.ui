@@ -1,0 +1,233 @@
+
+
+CIwUIElement
+{
+	name			"SendHeroquestController"
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    sizeToContent true
+    sizeToSpace true
+    
+    CIwUILayoutHorizontal
+    {
+        CIwUILayoutSpacer { sizeMin { 180 0} sizeMax {180 0} }
+        CIwUILayoutVertical
+        {
+            CIwUILayoutSpacer { sizeMin { 0 501} sizeMax {0 501} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 140 0} sizeMax {140 0} }
+                element { name "FCAdviceView" }
+            }
+            CIwUILayoutSpacer { sizeMin { 0 20} sizeMax {0 20} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 150 20} sizeMax {150 20} }
+                element { name "SacredGridLabels" }
+                CIwUILayoutSpacer { sizeMin { 60 0} sizeMax {60 0} }
+                element { name "FoodCrecruitBut" }
+                CIwUILayoutSpacer { sizeMin { 22 0} sizeMax {22 0} }
+                element { name "FCcloseBut" }
+            }
+        }
+
+    }
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture Clear64x64
+        //DialogBackground2
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+    CIwUIElement
+    {
+        
+        pos {0, 32}
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+        CIwUIButton
+        {
+            name "leaderImg"
+            buttonUp
+            {
+                drawableType "image"
+                texture Segleft
+            }
+            buttonDown
+            {
+                drawableType "image"
+                texture Segleft
+            }
+            focus ""
+            OnButtonClick { SendHeroquestController::handleLeaderTap }
+            sizeToContent   true
+            sizeMin { 38 50 }
+            sizeMax { 38 50 }
+            pos { 891 56 }
+        }
+
+        CIwUILabel
+        {
+            alignH "left"
+            name "heroquestLabel"
+            caption "神圣探索"
+            style	<ParchementLabel>
+            sizeMax {115 20}
+            sizeMin {145 25}
+            pos { 320 48}
+
+        }
+        PickListView
+        {
+            alignV "top"
+            name "questsView"
+            CIwUILayoutVertical
+            {
+                spacing 5
+            }
+            colour { 255 255 255 255 }
+            sizeToSpace true
+            sizeToContent true
+
+            sizeMin  { 204 335 }
+            sizeMax  { 204 335 }
+            size        { 204 335 }
+            pos { 320 79}
+        }
+        CCommonScrollView
+        {
+            alignV "top"
+            name "scroller"
+            CIwUILayout
+            {
+                element { name "questText" alignV "top" }
+            }
+            sizeToSpace true
+            sizeToContent true
+
+            sizeMin  { 263 335 }
+            sizeMax  { 263 335 }
+            pos { 533 79}
+            CIwUILabel
+            {
+                alignH "left"
+                alignV "top"
+                name "questText"
+                caption "在厄娜尔达的帮助下，奥兰斯召集他的亲族和盟友，建立了第一个部落。这个任务可以改善我们部落的情绪，调和我们的部落与另一个氏族，重获国王的恩宠，获得部落徽记，抵御叛乱，使我们氏族成为王位拥立者，提升我们的政治声誉，或使探索者成为一位强有力的领袖。"
+                style	<SmallishLabel>
+                sizeMax {263 330}
+                sizeMin {263 330}
+            }
+
+        }
+        CIwUIButton
+        {
+            name "leaderButton"
+            style <Btn_37x105>
+            caption "领袖"
+            OnButtonClick {  ManagementController::chooseLeader }
+            pos { 858 114}
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "helperCaption"
+            caption "呼唤"
+            style	<ParchementLabel>
+            sizeMax {160 20}
+            sizeMin {165 25}
+            pos { 810 169}
+
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "questUnavalaible"
+            caption "在举行神圣探索前进一步了解这一神话。"
+            style	<SmallishLabel>
+            textColour { 0 0 0 255 }
+            sizeMax {400 20}
+            sizeMin {400 55}
+            pos { 367 415}
+
+        }
+
+        PickListView
+        {
+            alignV "top"
+            name "clansView"
+            CIwUILayoutVertical
+            {
+                spacing 5
+            }
+            colour { 255 255 255 255 }
+            sizeToSpace true
+            sizeToContent true
+
+            sizeMin  { 200 187 }
+            sizeMax  { 200 187 }
+            pos { 810 230}
+        }
+        ListFilter
+        {
+            margin { 0 0 }
+            name "filter"
+            sizeMin  { 200 30 }
+            sizeMax  { 200 30 }
+            pos { 810 198}
+        }
+
+
+    }
+        //****
+    CIwUIButton
+    {
+        name "FCcloseBut"
+        style <Btn_37x37>
+        caption ""
+        alignH "right"
+        OnButtonClick { ManagementController::cancelDialog }
+        CIwUIImage
+        {
+            name "FCcloseImg"
+            sizeToContent true
+            texture CloseX
+            pos { 2 2 }
+        }
+    }
+    CCheckBox
+    {
+        name "useHelpres"
+        style <checkbox_sacred>
+        checked "false"
+        caption "请求协助"
+        sizeMax {165 35}
+        sizeMin {170 35}
+        tag "0"
+        //OnCheckboxChecked { FarmerController::checkboxTapped }
+        pos { 807 228 }
+    }
+
+
+    CIwUIButton
+    {
+        name "FoodCrecruitBut"
+		style <Btn_45x122>
+        caption "举行"
+        OnButtonClick {  SendHeroquestController::performQuest }
+    }
+
+    CIwUIElement
+    {
+        name "FCAdviceView"
+        sizeMin { 640 104 }
+        sizeMax { 640 104 }
+
+    }
+}

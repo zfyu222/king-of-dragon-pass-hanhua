@@ -1,0 +1,191 @@
+
+
+
+CIwUIPropertySet 
+{
+	name "<mainmenu_button_up>"
+	drawableType "image"
+	texture Home_Btn@2x
+	//border  { 12 12 }
+}
+
+CIwUIPropertySet 
+{
+	name "<mainmenu_button_up_right>"
+	drawableType "image"
+	texture Home_BtnRight@2x
+	//border  { 12 12 }
+}
+
+CIwUIPropertySet 
+{
+	name "<mainmenu_button_down>"
+	drawableType "image"
+	texture Home_Btn@2x
+	//border  { 12 12 }
+}
+
+CIwUIPropertySet
+{
+	name	<mainmenubut>
+	style	<button>
+	sizeMin  { 163 81 }
+	//sizeMax  { 100 100 }
+    downCaptionColour {190 190 255 255}
+    buttonUp <mainmenu_button_up>
+	buttonDown <mainmenu_button_down>
+    focus ""
+	//sizeHint { 300 300 }
+    textColour { 255 255 255 255 }
+}
+
+CIwUIPropertySet
+{
+	name	<mainmenubut_right>
+	style	<button>
+	sizeMin  { 163 81 }
+	//sizeMax  { 100 100 }
+    downCaptionColour {190 190 255 255}
+    buttonUp <mainmenu_button_up_right>
+	buttonDown 
+    {
+        drawableType "image"
+        texture Home_BtnRight@2x
+
+    }
+    focus ""
+	//sizeHint { 300 300 }
+    textColour { 255 255 255 255 }
+}
+
+CIwUIElement
+{
+	name			"MenuController"
+    sizeToContent true
+    sizeToSpace true
+    CIwUILayout
+	{
+        sizeToSpace true
+        element { name "Background" }
+        //CIwUILayoutVertical
+        CIwUILayoutForm
+        {
+            formSize { 100 100 }
+             sizeToSpace true
+             sizeToContent true
+            element 
+            {
+                sizeToSpace true
+                sizeToContent false
+                name "Logo"
+                alignH "left"
+                left { val 0 }
+                top { val 0 }
+                right { val 64 }
+                bottom { val 26 }
+            }
+                sizeToSpace true
+                element
+                {
+                    name "Button_buy_fv"
+                    sizeToSpace true
+                    sizeToContent false
+                    alignH "left"
+                    alignV "bottom"
+                    left { val 0 }
+                    top { val 90 }
+                    right { val 11 }
+                    bottom { val 97 }
+                }
+                element
+                {
+                    name "Button_play"
+                    sizeToSpace true
+                    sizeToContent false
+                    alignH "left"
+                    alignV "bottom"
+                    left { val 0 }
+                    top { val 90 }
+                    right { val 11 }
+                    bottom { val 97 }
+                }
+                element
+                {
+                    name "Button_settings"
+                    sizeToSpace true
+                    sizeToContent false
+                    alignH "left"
+                    alignV "bottom"
+                    left { val 0 }
+                    top { val 90 }
+                    right { val 11 }
+                    bottom { val 97 }
+                }
+                element
+                {
+                    name "Button_info"
+                    alignH "right"
+                    alignV "bottom"
+                    sizeToSpace true
+                    sizeToContent false
+                    left { val 89 }
+                    top { val 90 }
+                    right { val 100 }
+                    bottom { val 97 }
+               }
+            //}
+        }
+    }
+    
+
+    CIwUIImage
+    {
+        name "Background"
+        drawableType "image"
+        texture MenuBackground-568@2x
+    }
+
+    CIwUIImage
+    {
+        name "Logo"
+        drawableType "image"
+        texture Logo@2x
+//        sizeToContent   false
+  //      sizeToSpace true
+        sizeMax { -1 -1 }
+    }
+
+    CIwUIButton
+    {
+        name "Button_buy_fv"
+        style <mainmenubut>
+        caption "GGGGGGGGGGGGG"
+        font "DutchMediaevalBookBold18"
+        OnButtonClick { MenuController::OnClickButton_Buy_FV }
+    //    sizeToContent   true
+        sizeMax {-1 -1}
+    }
+
+    CIwUIButton
+    {
+        name "Button_play"
+        style <mainmenubut>
+        caption "游玩"
+        font "DutchMediaevalBookBold18"
+        OnButtonClick { MenuController::OnClickButton_Play }
+    //    sizeToContent   true
+        sizeMax {-1 -1}
+    }
+
+    CIwUIButton
+    {
+        name "Button_info"
+        style <mainmenubut_right>
+       // colour { 255 0 0 }
+        caption "信息"
+        font "DutchMediaevalBookBold18"
+       // sizeToContent   true
+       sizeMax {-1 -1}
+        OnButtonClick { MenuController::OnClickButton_Info }
+    }
+}

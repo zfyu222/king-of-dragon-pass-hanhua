@@ -1,0 +1,252 @@
+
+
+CIwUIElement
+{
+	name			"WeaponthaneController"
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    sizeToContent true
+    sizeToSpace true
+    
+    CIwUILayoutHorizontal
+    {
+        CIwUILayoutSpacer { sizeMin { 180 0} sizeMax {180 0} }
+        CIwUILayoutVertical
+        {
+            CIwUILayoutSpacer { sizeMin { 0 140} sizeMax {0 140} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 170 0} sizeMax {170 0} }
+                CIwUILayoutVertical
+                {
+                    spacing 10
+                    element { name "WeaponthanesLabel" }
+                    element { name "WeaponthanesSlider" }
+                    element { name "WeaponthanesDescLabel" }
+                }
+                CIwUILayoutSpacer { sizeMin { 40 0} sizeMax {40 0} }
+                CIwUILayoutVertical
+                {
+                    spacing 10
+                    element { name "RecruitLabel" }
+                        element { name "recruiteFarmerBox" }
+                        element { name "recruiteOutsideBox" }
+                        element { name "offerGiftsBox" }
+                    CIwUILayoutSpacer { sizeMin { 0 20} sizeMax {0 20} }
+                    element { name "DismissLabel" }
+                    CIwUILayoutHorizontal
+                    {
+                        element { name "severancePlayBox" }
+                        element { name "severancePlayLabel" }
+                    }
+                }
+            }
+            CIwUILayoutSpacer { sizeMin { 0 19} sizeMax {0 19} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 140 0} sizeMax {140 0} }
+                element { name "FCAdviceView" }
+            }
+            CIwUILayoutSpacer { sizeMin { 0 20} sizeMax {0 20} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 150 20} sizeMax {150 20} }
+                element { name "SacredGridLabels" }
+                CIwUILayoutSpacer { sizeMin { 60 0} sizeMax {60 0} }
+                element { name "FoodCrecruitBut" }
+                CIwUILayoutSpacer { sizeMin { 20 0} sizeMax {20 0} }
+                element { name "FCcloseBut" }
+            }
+        }
+
+    }
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture Clear64x64
+        //DialogBackground1
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+
+    CIwUIElement
+    {
+        sizeMin { 250, 90 }
+        sizeToContent true
+        name "WeaponthanesSlider"
+    }
+
+    CIwUILabel
+    {
+        alignH "left"
+        name "WeaponthanesLabel"
+        caption "武器领主"
+        style	 <ParchementLabel>
+        sizeMax {194 20}
+        sizeMin {198 25}
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        name "WeaponthanesDescLabel"
+        caption "武器领主是专职战士。他们需要一匹马，两倍于农夫的食物，以及价值1头牛的年度礼物。\n\n新武器领主需要价值3头牛的装备。"
+        style	 <SmallLabel>
+        sizeMax {250 140}
+        sizeMin {255 145}
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        name "DismissLabel"
+        caption "解职"
+        style	 <ParchementLabel>
+        sizeMax {120 20}
+        sizeMin {127 25}
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        name "RecruitLabel"
+        caption "招募"
+        style	 <ParchementLabel>
+        sizeMax {120 20}
+        sizeMin {127 25}
+    }
+
+
+    //recruiteFarmerBox
+    CCheckBox
+    {
+        name "recruiteFarmerBox"
+        style <checkbox_sacred>
+        checked "false"
+        alignH "left"
+        tag "0"
+        caption "从有前途的自由民中选拔"
+        sizeMax {165 35}
+        sizeMin {300 35}
+        OnCheckboxChecked { WeaponthaneController::recruitingChanged }
+    }
+
+    //recruiteOutsideBox
+    CCheckBox
+    {
+        name "recruiteOutsideBox"
+        style <checkbox_sacred>
+        checked "false"
+        alignH "left"
+        tag "0"
+        caption "从氏族外部招募"
+        sizeMax {165 35}
+        sizeMin {280 35}
+        OnCheckboxChecked { WeaponthaneController::recruitingChanged }
+    }
+
+
+    //offerGiftsBox
+    CCheckBox
+    {
+        name "offerGiftsBox"
+        style <checkbox_sacred>
+        checked "false"
+        alignH "left"
+        tag "0"
+        caption "提供额外价值1头牛的礼物"
+        sizeMax {165 35}
+        sizeMin {390 35}
+     //   OnCheckboxChecked { FarmerController::checkboxTapped }
+    }
+
+    //severancePlayBox
+    CCheckBox
+    {
+        name "severancePlayBox"
+        style <checkbox_sacred>
+        checked "false"
+        alignH "left"
+        tag "0"
+        caption "赠送价值1头牛的告别礼物"
+        sizeMax {250 35}
+        sizeMin {370 35}
+       // OnCheckboxChecked { FarmerController::checkboxTapped }
+    }
+
+
+    //****
+    CIwUIButton
+    {
+        name "FCcloseBut"
+        style <Btn_37x37>
+        caption ""
+        alignH "right"
+        OnButtonClick { ManagementController::cancelDialog }
+        CIwUIImage
+        {
+            name "FCcloseImg"
+            sizeToContent true
+            texture CloseX
+            pos { 2 2 }
+        }
+    }
+    
+    CIwUIButton
+    {
+        name "FoodCrecruitBut"
+        enabled "false"
+        style <Btn_45x91>
+        caption "招募"
+        OnButtonClick {  WeaponthaneController::changeValue }
+    }
+    
+    CIwUIElement
+    {
+        name "FCAdviceView"
+        sizeMin { 640 104 }
+        sizeMax { 640 104 }
+
+    }
+    
+    CIwUIElement
+    {
+        name "FoodCresultDialog"
+        sizeMin { 480 125 }
+        sizeMax { 480 125 }
+        pos { 400 522 }
+        visible "false"
+        CIwUIImage
+        {
+            name "FoodCresultDialogImg"
+            drawableType "image"
+            sizeToSpace true
+            sizeToContent   true
+            texture SacrificeResults~ipad
+            sizeMin { 480 125 }
+            sizeMax { 480 125 }
+        }
+        CIwUIButton
+        {
+            name "FoodCresultDialogBut"
+            style <Btn_45x91>
+            sizeMax { 100 45 }
+            sizeMin { 100 45 }
+            caption "继续"
+			pos { 360 60 }
+            OnButtonClick {  WeaponthaneController::proceed }
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "FoodCresultDialogLabel"
+            caption "结果"
+            style	<StandartLabel>
+            sizeMax {332 88}
+            sizeMin {332 88}
+            pos { 15 0 }
+        }
+    }
+}

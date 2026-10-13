@@ -1,0 +1,191 @@
+
+
+
+CIwUIElement
+{
+    name "SagaView"
+    sizeToContent true
+    sizeToSpace true
+
+    CIwUILayout
+    {
+        CIwUILayoutHorizontal
+        {
+            CIwUILayoutSpacer { sizeMin { 50 0} sizeMax {50 0} }
+            CIwUILayoutVertical
+            {
+                CIwUILayoutSpacer { sizeMin { 0 20} sizeMax {0 20} }
+                element { name "SVYearsView" }
+            }
+            CIwUILayoutSpacer { sizeMin { 40 0} sizeMax {40 0} }
+            CIwUILayoutVertical
+            {
+                 CIwUILayoutSpacer { sizeMin { 0 20} sizeMax {0 20} }
+                element { name "SVclanNameLabel" }
+                element { name "SVsagaTextScroll" }
+            }
+            CIwUILayoutSpacer { sizeMin { 30 0} sizeMax {30 0} }
+            CIwUILayoutVertical
+            {
+                CIwUILayoutSpacer { sizeMin {0 342} sizeMax {0 342} }
+                element { name "SVemailBut" }
+                CIwUILayoutSpacer { sizeMin {0 252} sizeMax {0 252} }
+                element { name "SVcloseBut" }
+            }
+        }
+    }
+
+    CIwUIButton
+    {
+        name "whiteBg"
+        style <button>
+        modulatesColour true
+        colour { 0 0 0 60}
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+        buttonUp
+        {
+            drawableType "image"
+            texture White64x64
+        }
+        buttonDown
+        {
+            drawableType "image"
+            texture White64x64
+        }
+        focus ""
+        caption ""
+    }
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent true
+        texture Clear64x64
+        sizeMin { 780 720 }
+        sizeMax { 780 720 }
+    }
+    CIwUIImage
+    {
+        name "SVDividerYears"
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent true
+        texture Divider_years
+        sizeMin { 8 640 }
+        sizeMax { 8 640 }
+        pos { 122 24 }
+    }
+    PickListView
+    {
+        alignV "top"
+        name "SVYearsView"
+        CIwUILayoutVertical
+        {
+            spacing 20
+        }
+        colour { 255 255 255 255 }
+        sizeToSpace true
+        sizeToContent true
+
+        sizeMin  { 66 625 }
+        sizeMax  { 66 625 }
+    }
+    CIwUILabel
+    {
+        alignH "centre"
+        name "SVclanNameLabel"
+        caption "安曼加恩"
+        style <ParchementLabel>
+        sizeMax {514 54}
+        sizeMin {514 54}
+    }
+
+    CCommonScrollView
+    {
+        sizeMin { 514 600 }
+        sizeMax { 514 600 }
+        name "SVsagaTextScroll"
+        sizeToContent true
+        CIwUILayoutVertical
+        {
+            element { name "sagaTextWraper" }
+        }
+        CIwUIElement
+        {
+            name "sagaTextWraper"
+            CIwUILabel
+            {
+                alignH "left"
+                alignV "top"
+                name "SVsagaText"
+                caption "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adiapisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."
+                style <label_medium>
+                font "font_medium"
+                textColour { 0 0 0 255 }
+                sizeMin {514 25}
+                sizeMax {514 25}
+                sizeToContent "true"
+            }
+        }
+    }
+    CIwUIButton
+    {
+        name "SVemailBut"
+        style <Btn_37x37>
+        caption ""
+        alignH "right"
+        OnButtonClick { SagaController::shareSaga }
+        visible "false"
+        CIwUIImage
+        {
+            name "SVemailImg"
+            sizeToContent true
+            texture ShareSaga
+            pos { 6 10 }
+        }
+    }
+    CIwUIButton
+    {
+        name "SVcloseBut"
+        style <Btn_37x37>
+        caption ""
+        alignH "right"
+        OnButtonClick { SagaView::closeSaga }
+        CIwUIImage
+        {
+            name "SVcloseImg"
+            sizeToContent true
+            texture CloseX
+            pos { 2 2 }
+        }
+    }
+    CIwUIButton
+    {
+        pos { 597 17 }
+        name "butRestore"
+        style <button>
+        textColour { 255 255 255 255 }
+        font "DutchMediaeval21"
+        sizeMin { 161 66 }
+        sizeMax { 161 66 }
+        buttonUp
+        {
+            drawableType "image"
+            texture SagaButton_1280
+        }
+        buttonDown
+        {
+            drawableType "image"
+            texture SagaButton_1280
+        }
+        focus ""
+        caption "恢复"
+        alignH "centre"
+
+        OnButtonClick { SagaView::restoreGame }
+    }
+}

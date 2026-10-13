@@ -1,0 +1,336 @@
+CIwUIElement
+{
+	name			"ChooseLeader"
+    pos {128 220}
+    CIwUILayout
+    {
+        CIwUILayoutHorizontal
+        {
+            CIwUILayoutSpacer { sizeMin {12 0} sizeMax {12 0} }
+            CIwUILayoutVertical
+            {
+                CIwUILayoutSpacer { sizeMin {0 30} sizeMax {0 30} }
+                CIwUILayoutHorizontal
+                {   
+                    CIwUILayoutSpacer { sizeMin {22 0} sizeMax {22 0} }
+                    element { name "QestionLabel" }
+                    CIwUILayoutSpacer { sizeMin {23 0} sizeMax {23 0} }
+                    element { name "ChooseBut" }
+                }
+                CIwUILayoutSpacer { sizeMin {0 2} sizeMax {0 2} }
+                element { name "ParentChPListFilter" alignH "centre" }
+                CIwUILayoutSpacer { sizeMin {0 10} sizeMax {0 10} }
+                element { name "ChPPersonView" alignH "centre" }
+            }
+        }
+    }
+    CIwUIButton
+    {
+        name "LeaderShadow"
+        pos { -128 -220 }
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+        sizetoContent "true"
+            buttonUp
+            {
+                drawableType "image"
+                texture shadow50
+            }
+            buttonDown
+            {
+                drawableType "image"
+                texture shadow50
+            }
+    }
+
+    CIwUIImage
+    {
+        name "PickleaderBGImg"
+        drawableType "image"
+        texture PickleaderBG~ipad
+        sizeMin { 1024 378 }
+        sizeMax { 1024 378 }
+        sizetoContent "true"
+        CIwUIImage
+        {
+            name "bgPickLeader"
+            pos { 15 17 }
+            drawableType "image"
+            texture PickleaderBG~ipad_label
+            sizeMin { 893 60 }
+            sizeMax { 893 60 }
+            sizetoContent "true"
+            visible "false"
+        }
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        alignV "middle"
+        name "QestionLabel"
+        style	<StandartLabel>
+        caption ""
+        sizeMax {862 23}
+        sizeMin {862 30}
+        visible "false"
+    }
+
+
+    CIwUIButton
+    {
+        name "ChooseBut"
+        style	<button>
+        textColour { 124 73 43 255 }
+        font "DutchMediaeval21"
+        sizeMin  { 85 37 }
+        sizeMax  { 85 37 }
+        visible "false"
+        buttonUp
+        {
+            drawableType "image"
+            texture Grey_37x75
+        }
+        buttonDown
+        {
+            drawableType "image"
+            texture Grey_37x75
+        }
+        caption "选择"
+        alignH "centre"
+
+        OnButtonClick { MapController::leaderPicked }
+    }
+    CIwUIElement
+    {
+        name  "ParentChPListFilter"
+        sizeMin  { 1000 25 }
+        sizeMax  { 1000 25 }
+        ListFilter
+        {
+            margin { 0 0 }
+            name "ChPListFilter"
+            sizeMin  { 1000 25 }
+            sizeMax  { 1000 25 }
+        }
+    }
+    CPersonListView
+    {
+        name "ChPPersonView"
+        sizeMin  { 1000 268 }
+        sizeMax  { 1000 268 }
+        sizeToContent "true"
+        CIwUILayoutGrid
+        { 
+            row { heightMin 240 heightMax 268 }
+        }
+    }
+    
+}
+
+
+CIwUIElement
+{
+	name			"MapController"
+
+    sizeToContent true
+    sizeToSpace true
+    
+    CIwUILayout
+    {
+        element { name "CCBackGround" }
+        CIwUILayoutHorizontal
+        {
+            element { name "MenuHolder" }
+            CIwUILayoutSpacer { sizeMin { 50 0} sizeMax {75 0} }
+            CIwUILayoutVertical
+            {
+                CIwUILayoutSpacer { sizeMin {0 10} sizeMax {0 10} }
+                element { name "MapCScreen" }
+                CIwUILayoutSpacer { sizeMin {0 10} sizeMax {0 10} }
+                element { name "MapCBottomView" }
+            }
+        }
+    }
+
+
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        style <Background>
+        texture MenuBackground-big
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+    CIwUIElement
+    {
+        name "MapCScreen"
+        sizeMin { 780 524 }
+        sizeMax { 780 524 }
+
+        ZoomingScroll
+        {
+
+            name "MapCScroll"
+            sizeToContent   true
+            sizeMin { 950 524 }
+            sizeMax { 950 524 }
+            CIwUILayout
+            {
+
+            }
+           
+        }
+//        CIwUIImage
+//        {
+//            name "MapCScreenBg"
+//            //style <bg>
+//            pos { -3 -3 }
+//            drawableType "image"
+//            sizeToSpace true
+//            sizeToContent   true
+//            texture MapFrameBig
+//            sizeMin { 956 530 }
+//            sizeMax { 956 530 }
+//        }
+
+    }
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                     Bottom View
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    CIwUIElement
+    {
+        name "MapCBottomView"
+        sizeMin { 815 200 }
+        sizeMax { 950 250 }
+
+        CIwUILayoutHorizontal
+        {
+
+            CIwUILayoutVertical
+            {
+                CIwUILayoutSpacer { sizeMin {0 20} sizeMax {0 50} }
+
+                CIwUILayoutHorizontal
+                {
+                    CIwUILayoutVertical
+                    {
+                        CIwUILayoutSpacer { sizeMin {0 15} sizeMax {0 15} }
+                        element { name "MapCExploreBut" }
+
+                    }
+                    element { name "MapCmissions" }
+                }
+                CIwUILayoutSpacer { sizeMin {0 10} sizeMax {0 20} }
+                CIwUILayoutHorizontal
+                {
+                    CIwUILayoutSpacer { sizeMin {10 0} sizeMax {10 0} }
+                    element { name "SacredGridLabels" }
+                }
+            }
+            CIwUILayoutVertical
+            {
+                element { name "MapCShowLabel" }
+                    element { name "MapCClanCheckBox" }
+                    element { name "MapCTribeCheckBox" }
+            }
+            CIwUILayoutSpacer { sizeMin {20 0} sizeMax {20 0} }
+            CIwUILayoutVertical
+            {
+                element { name "MapCscaleInMiles" }
+                element { name "MapCmapScaleImg" }
+                element { name "MapCscaleInKM" }
+            }
+            CIwUILayoutSpacer { sizeMin {10 0} sizeMax {10 0} }
+            CIwUILayoutVertical
+            {
+                sizeToSpace true    
+                sizeToContent true
+                element { name "CCBlessing" }
+                
+            }
+        }
+        CIwUIButton
+        {
+            name "MapCExploreBut"
+            style	<Btn_45x91>
+            textColour { 124 73 43 255 }
+            caption "探索"
+            alignH "centre"
+
+            OnButtonClick { MapController::showExploreDialog }
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            alignV "middle"
+            name "MapCmissions"
+            style	<SmallLabel>
+            caption "奥尔卡思正在执行一项探索任务"
+            sizeMax {283 75}
+            sizeMin {273 65}
+        }
+        CIwUILabel
+            {
+                alignH "left"
+                name "MapCShowLabel"
+                style	 <ParchementLabel>
+                caption "显示"
+                sizeMax {75 24}
+                sizeMin {85 29}
+            }
+        CCheckBox
+            {
+                name "MapCClanCheckBox"
+                style <checkbox_sacred>
+                checked "false"
+                caption "氏族"
+                sizeMax {60 35}
+                sizeMin {110 35}
+                tag "0"
+                OnCheckboxChecked { MapController::checkboxTapped }
+            }
+        CCheckBox
+            {
+                name "MapCTribeCheckBox"
+                style <checkbox_sacred>
+                checked "false"
+                caption "部落"
+                sizeMax {60 35}
+                sizeMin {110 35}
+                tag "0"
+                OnCheckboxChecked { MapController::checkboxTapped }
+            }
+       CIwUILabel
+        {
+            alignH "right"
+            name "MapCscaleInMiles"
+            style	<label_medium>
+            font "font_medium"
+            textColour { 0 0 0 255 }
+            caption "10mi"
+            sizeMax {59 21}
+            sizeMin {59 21}
+        }
+        CIwUIImage
+            {
+                name "MapCmapScaleImg"
+                sizeToContent true
+                texture MapScale
+                pos { 63 11 }
+            }
+        CIwUILabel
+        {
+            alignH "right"
+            name "MapCscaleInKM"
+            style	<label_medium>
+            font "font_medium"
+            textColour { 0 0 0 255 }
+            caption "16km"
+            sizeMax {59 21}
+            sizeMin {59 21}
+        }
+
+
+    }
+}

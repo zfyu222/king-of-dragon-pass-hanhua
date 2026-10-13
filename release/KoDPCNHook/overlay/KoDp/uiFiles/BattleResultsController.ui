@@ -1,0 +1,151 @@
+
+
+CIwUIElement
+{
+	name			"BattleResultsController"
+        sizeMin { 1024 768 }
+        sizeMax { 1024 768 }
+    sizeToContent true
+    sizeToSpace true
+
+	CIwUIButton
+	{
+		name "blackdrop"
+		style	<button>
+		font "font_medium"
+		sizeMin  { 1280 800 }
+		sizeMax  { 1280 800 }
+		sizeToContent true
+		sizeToSpace true
+		pos { -128 0 }
+		buttonUp
+		{
+			drawableType "image"
+			texture shadow50
+		}
+		buttonDown
+		{
+			drawableType "image"
+			texture shadow50
+		}
+		focus ""
+		caption ""
+	}
+
+    pos { 128 0 }
+    CIwUIImage
+    {
+        name "leftResult"
+        drawableType "image"
+        sizeToContent   true
+        texture  Btn_SceneSaga
+        pos { 167 282 }
+        size { 129 418}
+        sizeMin { 129 418}
+        sizeMax { 129 418}
+    }
+    CIwUIImage
+    {
+        name "rightResult"
+        drawableType "image"
+        sizeToContent   true
+        texture  Btn_SceneSaga
+        pos { 739 282 }
+        size { 129 418}
+        sizeMin { 129 418}
+        sizeMax { 129 418}
+    }
+
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        texture TriptychBig
+        size { 773 678 }
+        pos {132 44}
+    }
+
+
+
+    CIwUILabel
+    {
+        alignH "centre"
+        name "speakerName"
+        caption "乌马斯卡"
+        style	<SmallLabel>
+        font "DutchMediaevalBook23"
+        sizeMax {115 25}
+        sizeMin {115 25}
+        pos {462 197}
+    }
+     CIwUIButton
+    {
+        name "speakerFace"
+        style	<button>
+        pos { 478 94 }
+        size { 77 101}
+        sizeMin { 77 101}
+        sizeMax { 77 101}
+        sizeToContent true
+        buttonUp
+        {
+            drawableType "image"
+            texture FaceBackground
+        }
+        buttonDown
+        {
+            drawableType "image"
+            texture FaceBackground
+        }
+        focus ""
+        OnButtonClick { NewsController::handleLeaderTap }
+    }
+
+
+    CCommonScrollView
+    {
+        pos { 328 230 }
+        sizeMin { 381 452 }
+        sizeMin { 381 452 }
+        size { 381 452 }
+        name "scroller"
+        CIwUILayoutVertical
+        {
+            element { name "scrollerView" }
+        }
+        CIwUIElement
+        {
+            name "scrollerView"
+            CIwUILabel
+            {
+                alignH "left"
+                alignV "top"
+                name "introText"
+                caption "乌马斯卡"
+                style	 <label_medium>
+                font        "DutchMediaevalBook23"
+                textColour { 0 0 0 255 }
+                sizeMax {381 25}
+                sizeMin {381 800}
+                pos {6 2}
+            }
+            CIwUIButton
+            {
+                name "closeBut"
+                style <Btn_45x44>
+                alignH "right"
+                //OnButtonClick { ManagementController::cancelDialog }
+                CIwUIImage
+                {
+                    name "FCcloseImg"
+                    sizeToContent true
+                    texture CloseX
+                    pos { 6 6 }
+                }
+            }
+        }
+    }
+
+}

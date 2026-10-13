@@ -1,0 +1,829 @@
+
+CIwUIPropertySet 
+{
+	name "<scrowable_vert>"
+//: extraclass "IIwUIDrawable"
+	drawableType "border"
+	texture "scroller"
+	border  { 16 16 }
+}
+
+
+CIwUIPropertySet
+{
+        name <Background>
+        drawableType "border"
+		sizeToSpace true
+		sizeToContent   true
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+}
+
+CIwUIPropertySet
+{
+    name <Btn_45x154>
+    sizeMin { 154 45 }
+    sizeMax { 154 45 }
+    sizeToContent true
+    alignV "top"
+    margin { 4 10 }
+    style <button>
+    font "Lorenzo19pt"
+    textColour { 84 41 25 255 }
+    disabledCaptionColour { 84 41 25 190 }
+    downCaptionColour {255 255 255 255}
+    buttonUp
+    {
+        drawableType "image"
+        texture Button45x154
+
+    }
+    buttonDown
+    {
+        drawableType "image"
+        texture Button45x154
+    }
+    focus ""
+
+}
+
+
+CIwUIPropertySet
+{
+    name <Btn_45x182>
+    sizeToContent true
+    sizeMin { 182 45 }
+    sizeMax { 182 45 }
+    margin { 4 10 }
+    alignV "middle"
+    style <button>
+    font "Lorenzo19pt"
+    downCaptionColour {255 255 255 255}
+    buttonUp
+    {
+        drawableType "image"
+        texture Button45x182
+
+    }
+    buttonDown
+    {
+        drawableType "image"
+        texture Button45x182
+    }
+    focus ""
+
+}
+
+
+CIwUIPropertySet
+{
+    name <Btn_37x155>
+    sizeToContent true
+    sizeMin { 155 37 }
+    sizeMax { 155 37 }
+    alignV "top"
+    margin { 4 10 }
+    style <button>
+    font "Lorenzo19pt"
+    downCaptionColour {255 255 255 255}
+    buttonUp
+    {
+        drawableType "image"
+        texture Btn_37x155
+
+    }
+    buttonDown
+    {
+        drawableType "image"
+        texture Btn_37x155
+    }
+    focus ""
+
+}
+
+
+
+CIwUIPropertySet
+{
+    name <Btn_45x91>
+    sizeToContent true
+    sizeMin { 91 45 }
+    sizeMax { 91 45 }
+    alignV "top"
+    margin { 4 10 }
+    style <button>
+    font "Lorenzo19pt"
+    textColour { 84 41 25 255 }
+    disabledCaptionColour { 84 41 25 190 }
+    downCaptionColour {255 255 255 255}
+    buttonUp
+    {
+        drawableType "image"
+        texture Button45x91
+
+    }
+    buttonDown
+    {
+        drawableType "image"
+        texture Button45x91
+    }
+    focus ""
+
+}
+
+CIwUIPropertySet
+{
+    name <Btn_37x105>
+    alignH "centre"
+    sizeToContent true
+    sizeMin { 105 37 }
+    sizeMax { 105 37 }
+    alignV "top"
+    margin { 4 10 }
+    style <button>
+    font "Lorenzo19pt"
+    textColour { 84 41 25 255 }
+    disabledCaptionColour { 84 41 25 190 }
+    downCaptionColour {255 255 255 255}
+    buttonUp
+    {
+        drawableType "image"
+        texture Btn_37x105
+
+    }
+    buttonDown
+    {
+        drawableType "image"
+        texture Btn_37x105
+    }
+    focus ""
+
+}
+CIwUIPropertySet
+{
+    name <Btn_45x44>
+    alignH "centre"
+    sizeToContent true
+    sizeMin { 44 45 }
+    sizeMax { 44 45 }
+    alignV "top"
+    margin { 4 10 }
+    style <button>
+    font "Trebuchet19"
+    downCaptionColour {255 255 255 255}
+    buttonUp
+    {
+        drawableType "image"
+        texture Button45x44
+
+    }
+    buttonDown
+    {
+        drawableType "image"
+        texture Button45x44
+    }
+    focus ""
+
+}
+
+CIwUIPropertySet
+{
+    name <Btn_45x122>
+    sizeToContent true
+    sizeMin { 122 45 }
+    sizeMax { 122 45 }
+    alignV "top"
+    margin { 4 10 }
+    style <button>
+    font "Lorenzo19pt"
+    textColour { 84 41 25 255 }
+//  disabledCaptionColour { 84 41 25 190 }
+    downCaptionColour {255 255 255 255}
+    buttonUp
+   {
+        drawableType "image"
+        texture Button45x122
+
+    }
+    buttonDown
+    {
+        drawableType "image"
+        texture Button45x122
+    }
+//    buttonDisabled
+//    {
+//        drawableType "image"
+//        texture Button45x122
+//    }
+
+   focus ""
+
+}
+
+CIwUIPropertySet
+{
+    name <Btn_37x37>
+    sizeToContent true
+    sizeMin { 37 37 }
+    sizeMax { 37 37 }
+    alignV "top"
+    margin { 4 10 }
+    style <button>
+    font "Trebuchet19"
+    downCaptionColour {255 255 255 255}
+    buttonUp
+    {
+        drawableType "image"
+        texture Btn_37x37
+
+    }
+    buttonDown
+    {
+        drawableType "image"
+        texture Btn_37x37
+    }
+    focus ""
+}
+
+CIwUIPropertySet
+{
+    name        <ParchementLabel>
+    style       <label_medium>
+    font        "Lorenzo22"
+     margin     { 0 0 }
+    textColour  { 117 76 36 255 }
+}
+
+CIwUIPropertySet
+{
+    name        <SmallLabel>
+    style       <label_medium>
+    font        "DutchMediaeval17"
+    textColour  { 104 56 33 255 }
+}
+
+CIwUIPropertySet
+{
+    name        <VerySmallLabel>
+    style       <label_medium>
+    font        "DutchMediaeval17"
+    textColour  { 104 56 33 255 }
+}
+
+CIwUIPropertySet
+{
+    name        <SmallishLabel>
+    style       <label_medium>
+    font        "DutchMediaeval21"
+    //??? was 17
+    textColour  { 104 56 33 255 }
+}
+
+
+CIwUIPropertySet
+{
+    name        <StandartLabel>
+    style       <label_medium>
+    font        "DutchMediaeval21"
+    textColour  { 104 56 33 255 }
+}
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                     Bottom View
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    CIwUIElement
+    {
+        name "CCBottomView"
+        sizeMin { 815 200 }
+        sizeMax { 950 250 }
+
+        CIwUILayoutHorizontal
+        {
+
+            CIwUILayoutVertical
+            {
+                CIwUILayoutSpacer { sizeMin {0 20} sizeMax {0 50} }
+                element { name "SacredAdviceView" }
+                CIwUILayoutSpacer { sizeMin {0 10} sizeMax {0 20} }
+                CIwUILayoutHorizontal
+                {
+                    CIwUILayoutSpacer { sizeMin {10 0} sizeMax {10 0} }
+                    element { name "SacredGridLabels" }
+                }
+            }
+            CIwUILayoutVertical
+            {
+                sizeToSpace true    
+                sizeToContent true
+                element { name "CCBlessing" }
+                
+            }
+        }
+        CIwUIElement
+        {
+            name "SacredAdviceView"
+            sizeMin { 640 104 }
+            sizeMax { 640 104 }
+
+        }
+       
+
+    }
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                     Menu Holder View
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+CIwUIPropertySet
+{
+	name	<MHbutton>
+	style	<button>
+    buttonUp {
+        drawableType "image"
+        texture Clear64x64
+    }
+    buttonDown ""
+    focus ""
+    textColour { 103 56 33 255 }
+    downCaptionColour { 255 255 255 255 }
+    alignH "left"
+    alignV "top"
+    margin { 42 8 }
+    sizeMin { 240 37 }
+    sizeMax { 240 37 }
+    font "Lorenzo19pt"
+}
+
+
+CIwUIElement
+{
+	name			"MenuHolder"
+
+    sizeToContent true
+    sizeToSpace true
+    sizeMin { 240 800 }
+    sizeMax { 240 800 }
+    CIwUILayoutVertical
+    {
+        element { name "MHFireSeason" alignH "left" }
+        CIwUILayoutHorizontal
+        {
+            CIwUILayoutSpacer { sizeMin {10 0} sizeMax {10 0} }
+//            CIwUILayoutVertical
+//            {
+//                spacing 7
+//                CIwUILayoutSpacer { sizeMin {0 0} sizeMax {0 0} }
+//
+//                element { name "MHButClan" }
+//                element { name "MHButFarming" }
+//                element { name "MHButMagic" }
+//                element { name "MHButRelations" }
+//                element { name "MHButTrade" }
+//                element { name "MHButWar" }
+//                element { name "MHButMap" }
+//                element { name "MHButLore" }
+//                element { name "MHButSaga" }
+//                element { name "MHButManual" }
+//                element { name "MHButControls" }
+//            }
+        }
+    }
+    CIwUIImage
+    {
+        name "MHCurrentItem"
+        sizeToContent true
+        texture Selection_1
+    }
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                     Season Image
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    CIwUIImage
+    {
+        sizeToContent true
+        name "MHFireSeason"
+        texture FireSeason
+        CIwUILayout
+        {
+
+            CIwUILayoutVertical
+            {
+//                CIwUILayoutSpacer { sizeMin {0 00} sizeMax {0 10} }
+                element { name "MHSeasonsScroll" }
+
+				CIwUILayoutSpacer { sizeMin {0 144} sizeMax {0 144} }
+				element { name "MHPlayerName" alignH "centre" }
+				CIwUILayoutSpacer { sizeMin {0 -10} sizeMax {0 -10} }
+            }
+        }
+
+//Seasons Scroll
+        CIwUIImage
+        {
+            sizeToContent false
+            sizeMax { 186 75 }
+            name "MHSeasonsScroll"
+            texture Seasons_scrollPaper
+            CIwUILayoutVertical
+            {
+                alignV "middle"
+                CIwUILayoutSpacer { sizeMin {0 6} sizeMax {0 6} }
+                CIwUILayoutHorizontal
+                {
+
+                    sizeToContent false
+                    element { name "MHStorm" alignH "right" alignV "middle" }
+                   // CIwUILayoutSpacer { sizeMin {51 0} sizeMax {51 0} }
+					element { name "MHSeasonWheel" alignH "centre" alignV "middle" }
+					element { name "MHSeason" alignH "left" alignV "middle"}
+
+                }
+                CIwUILayoutHorizontal
+                {
+                    sizeToContent true
+                    CIwUILayoutSpacer { sizeMin {53 0} sizeMax {53 0} }
+					element { name "MHData" alignH "left" }
+                }
+            }
+            CIwUILabel
+            {
+                name "MHStorm"
+                style	<label_large>
+				margin { 0 0 }
+                font "DutchMediaeval16" //DutchMediaevalBook15
+                textColour { 103 56 33 255 }
+                caption "斯特罗姆"
+                alignH "right"
+                sizeMin { 58, 25 }
+                sizeMax { 58, 25 }
+            }
+
+            CIwUILabel
+            {
+                name "MHSeason"
+
+                style	<label_large>
+                margin { 0 0 }
+                alignH "left"
+                font "DutchMediaeval16" //DutchMediaevalBook15
+                textColour { 103 56 33 255 }
+                caption "季节"
+				sizeMin { 58, 25 }
+				sizeMax { 58, 25 }
+            }
+            CIwUIButton
+            {
+                sizeToContent false
+                pos { 23 0 }
+                sizeMax { 51 52 }
+                sizeMin { 51 52 }
+               // alignH "centre"
+               // alignV "middle"
+                name "MHSeasonWheel"
+                style <button>
+                //font "font_medium"
+                buttonUp 
+                {
+                    drawableType "image"
+                    texture SeasonWheel
+                }
+                buttonDown
+                {
+                    drawableType "image"
+                    texture SeasonWheel
+                }
+                focus ""
+                caption ""
+                OnButtonClick { ManagementController::seasonWheel }
+            }
+             CIwUILabel
+            {
+                alignH "centre"
+                name "MHData"
+                style	<label_large>
+                font "Trebuchet27"
+                textColour { 123 73 45 255 }
+                sizeMin { 60 30 }
+                sizeMax { 60 30 }
+                caption "1330"
+            }
+
+        } //Seasons Scroll
+        
+        CIwUILabel
+        {
+            alignH "centre"
+            name "MHPlayerName"
+            style	<StandartLabel>
+            caption "阿拉科林"
+            oneLine true
+        }
+    }
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                     Menu Buttons
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+//Clan
+        CUIButton
+        {
+            name "MHButClan"
+            pos { 10 262 }
+            style <MHbutton>
+            caption "氏族"
+            OnButtonClick { ManagementController::switchScreen }
+            CIwUILayout
+            {
+                element { name "MHButImgClan" }
+            }
+            CIwUIImage
+            {
+                sizeToContent true
+                name "MHButImgClan"
+                texture Icon_Clan
+            }
+            tag "5"
+        }
+//Farming
+        CUIButton
+        {
+            name "MHButFarming"
+            style <MHbutton>
+            pos { 10 306 }
+            caption "农耕"
+            OnButtonClick { ManagementController::switchScreen }
+            CIwUILayout
+            {
+                element { name "MHButImgFarming" }
+            }
+            CIwUIImage
+            {
+                sizeToContent true
+                name "MHButImgFarming"
+                texture Icon_Farming
+            }
+            tag "1"
+        }
+//Magic
+        CUIButton
+        {
+            name "MHButMagic"
+            style <MHbutton>
+             pos { 10 350 }
+            caption "魔法"
+            OnButtonClick { ManagementController::switchScreen }
+            CIwUILayout
+            {
+                element { name "MHButImgMagic" }
+            }
+            CIwUIImage
+            {
+                sizeToContent true
+                name "MHButImgMagic"
+                texture Icon_Magic
+            }
+            tag "6"
+        }
+//Relations
+        CUIButton
+        {
+            oneLine true
+            name "MHButRelations"
+             pos { 10 394 }
+            style <MHbutton>
+            caption "关系"
+            OnButtonClick { ManagementController::switchScreen }
+            CIwUILayout
+            {
+                element { name "MHButImgRelations" }
+            }
+            CIwUIImage
+            {
+                sizeToContent true
+                name "MHButImgRelations"
+                texture Icon_Relations
+            }
+            tag "2"
+        }
+//Trade
+        CUIButton
+        {
+            name "MHButTrade"
+            style <MHbutton>
+             pos { 10 438 }
+            caption "贸易"
+            OnButtonClick { ManagementController::switchScreen }
+            CIwUILayout
+            {
+                element { name "MHButImgTrade" }
+            }
+            CIwUIImage
+            {
+                sizeToContent true
+                name "MHButImgTrade"
+                texture Icon_Trade
+            }
+            tag "3"
+        }
+//War
+        CUIButton
+        {
+            name "MHButWar"
+            style <MHbutton>
+            caption "战争"
+             pos { 10 482 }
+            OnButtonClick { ManagementController::switchScreen }
+            CIwUILayout
+            {
+                element { name "MHButImgWar" }
+            }
+            CIwUIImage
+            {
+                sizeToContent true
+                name "MHButImgWar"
+                texture Icon_War
+            }
+            tag "4"
+        }
+//Map
+        CUIButton
+        {   
+            name "MHButMap"
+            style <MHbutton>
+            caption "地图"
+             pos { 10 526 }
+            OnButtonClick { ManagementController::switchScreen }
+            CIwUILayout
+            {
+                element { name "MHButImgMap" }
+            }
+            CIwUIImage
+            {
+                sizeToContent true
+                name "MHButImgMap"
+                texture Icon_Map
+            }
+            tag "7"
+        }
+//Lore
+        CUIButton
+        {
+            name "MHButLore"
+            style <MHbutton>
+            caption "学识"
+             pos { 10 570 }
+            OnButtonClick { ManagementController::switchScreen }
+            CIwUILayout
+            {
+                element { name "MHButImgLore" }
+            }
+            CIwUIImage
+            {
+                sizeToContent true
+                name "MHButImgLore"
+                texture Icon_Lore
+            }
+            tag "8"
+        }
+//Saga
+        CUIButton
+        {
+            name "MHButSaga"
+            style <MHbutton>
+            caption "传说"
+             pos { 10 614 }
+            OnButtonClick { ManagementController::switchScreen }
+            CIwUILayout
+            {
+                element { name "MHButImgSaga" }
+            }
+            CIwUIImage
+            {
+                sizeToContent true
+                name "MHButImgSaga"
+                texture Icon_Saga
+            }
+            tag "9"
+        }
+//Manual
+        CUIButton
+        {
+            name "MHButManual"
+            style <MHbutton>
+            caption "手册"
+             pos { 10 658 }
+            OnButtonClick { ManagementController::switchScreen }
+            CIwUILayout
+            {
+                element { name "MHButImgManual" }
+            }
+            CIwUIImage
+            {
+                sizeToContent true
+                name "MHButImgManual"
+                texture Icon_Manual
+            }
+            tag "222"
+        }
+//Controls
+        CUIButton
+        {
+            name "MHButControls"
+            style <MHbutton>
+             pos { 10 702 }
+            caption "控制"
+            oneLine true
+            sizeToContent true
+            sizeToSpace true
+            sizeMin { 240 37 }
+            sizeMax { 240 37 }
+            OnButtonClick { ManagementController::switchScreen }
+            CIwUILayout
+            {
+                element { name "MHButImgControls" }
+            }
+            CIwUIImage
+            {
+                sizeToContent true
+                name "MHButImgControls"
+                texture Icon_Controls
+            }
+            tag "10"
+        }
+}
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                     Alert View
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+CIwUIElement
+{
+    name "AlertView"
+    CIwUIButton
+    {
+        name "LeaderShadow"
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+        sizetoContent "true"
+            buttonUp
+            {
+                drawableType "image"
+                texture Clear64x64
+            }
+            buttonDown
+            {
+                drawableType "image"
+                texture Clear64x64
+            }
+    }
+    CIwUIImage
+    {
+        pos { 423 320 }
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture MessageBackground_ipad
+        sizeMin { 434 160 }
+        sizeMax { 434 160 }
+        
+        CIwUILabel
+        {
+            alignH "centre"
+            name "title"
+            caption ""
+            style	<SmallLabel>
+            textColour { 0 0 0 255 }
+            sizeMax {414 25}
+            sizeMin {414 30}
+            pos { 10 5 }
+        }
+        CIwUILabel
+        {
+            alignH "centre"
+            name "caption"
+            caption ""
+            style	<SmallLabel>
+            textColour { 0 0 0 255 }
+            sizeMax {414 80}
+            sizeMin {414 80}
+            pos { 10 30 }
+        }
+
+        CIwUIButton
+        {
+            name "Button1"
+            style <Btn_37x105>
+            font "DutchMediaeval17"
+            caption ""
+            OnButtonClick {  CMessageView::didDismissWithButtonIndex }
+        }
+        CIwUIButton
+        {
+            name "Button2"
+            style <Btn_37x105>
+            font "DutchMediaeval17"
+            caption ""
+            OnButtonClick {  CMessageView::didDismissWithButtonIndex }
+        }
+    }
+
+}

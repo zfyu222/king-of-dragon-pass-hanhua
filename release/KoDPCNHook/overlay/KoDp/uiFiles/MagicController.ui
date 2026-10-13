@@ -1,0 +1,461 @@
+
+
+
+CIwUIElement
+{
+	name			"MagicController"
+
+    sizeToContent true
+    sizeToSpace true
+    
+    CIwUILayout
+    {
+        element { name "CCBackGround" }
+        CIwUILayoutHorizontal
+        {
+            element { name "MenuHolder" }
+            CIwUILayoutSpacer { sizeMin { 45 0} sizeMax {45 0} }
+            CIwUILayoutVertical
+            {
+                CIwUILayoutSpacer { sizeMin {0 17} sizeMax {0 17} }
+                element { name "MCScreen" }
+                CIwUILayoutSpacer { sizeMin {0 0} sizeMax {0 0} }
+                element { name "CCBottomView" }
+            }
+        }
+    }
+
+
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture MenuBackground-big
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+    
+//    CIwUIImage
+//    {
+//        name "farmingGrain"
+//        sizeToContent true
+//        texture Farming_Grain
+//        imageColour { 255 255 255 51 }
+//        pos { 401 342 }
+//    }
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                     Magic View
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    CIwUIElement
+    {
+        name "MCScreen"
+        CIwUILayoutHorizontal
+        {
+            CIwUILayoutSpacer { sizeMin {50 0} sizeMax {50 0} }
+            CIwUILayoutVertical
+            {
+                element { name "MCDietyLabel" }
+                element { name "MCDietyView" }
+            }
+            CIwUILayoutSpacer { sizeMin {40 0} sizeMax {40 0} }
+            CIwUILayoutVertical
+            {
+                CIwUILayoutSpacer { sizeMin {0 20} sizeMax {0 20} }
+                CIwUILayoutHorizontal
+                {
+                    CIwUILayoutVertical
+                    {
+                        element { name "MCdietyName" }
+                        CIwUILayoutSpacer { sizeMin {0 5} sizeMax {0 5} }
+                        element { name "MCdietyDesc" }
+                    }
+                    element { name "MCtempleImage" }
+                }
+                CIwUILayoutSpacer { sizeMin {0 10} sizeMax {0 10} }
+                 CIwUILayoutGrid
+                {
+
+                    column { widthMin 200 widthMax 230 }
+                    column { widthMin 200 widthMax 230 }
+                    row { heightMin 80 heightMax 150 }
+                    row { heightMin 80 heightMax 150 }
+                    element { name "MCeffect1"  row 0 column 0 }
+                    element { name "MCeffect2"  row 0 column 1 }
+                    element { name "MCeffect3"  row 1 column 0 }
+                    element { name "MCeffect4"  row 1 column 1 }
+                }
+            }
+            CIwUILayoutSpacer { sizeMin {20 0} sizeMax {20 0} }
+            CIwUILayoutVertical
+            {
+                CIwUILayoutSpacer { sizeMin {0 20} sizeMax {0 20} }
+                element { name "MCbuildButton" }
+                CIwUILayoutSpacer { sizeMin {0 20} sizeMax {0 30} }
+                element { name "MCtempleSizeInfo" }
+                CIwUILayoutSpacer { sizeMin {0 40} sizeMax {0 60} }
+                element { name "MCsacrificeButton" }
+                CIwUILayoutSpacer { sizeMin {0 150} sizeMax {0 160} }
+                element { name "MCquestButton" }
+            }
+            
+           // CIwUILayoutSpacer { sizeMin {0 50} sizeMax {0 50} }
+              //  element { name "CCBottomView" }
+
+        }
+    //First Column
+        CIwUILabel
+        {
+            alignH "left"
+            name "MCDietyLabel"
+            style	<ParchementLabel>
+            caption "神祇"
+            sizeMax {150 30}
+            sizeMin {115 30}
+        }
+        PickListView
+        {
+            alignV "top"
+            name "MCDietyView"
+            CIwUILayoutVertical
+            {
+                spacing 5
+            }
+            colour { 255 255 255 255 }
+            sizeToSpace true
+            sizeToContent true
+
+            sizeMin  { 200 480 }
+            sizeMax  { 200 480 }
+
+        }
+    //Second Column
+        CIwUILabel
+        {
+            alignH "left"
+            name "MCdietyName"
+            style	<ParchementLabel>
+            caption "奥兰斯"
+            sizeMax {180 30}
+            sizeMin {155 30}
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            alignV "top"
+            name "MCdietyDesc"
+            style	<SmallishLabel>
+            caption "描述"
+            sizeMax {290 80}
+            sizeMin {370 140}
+            margin { 0 0 }
+        }
+        CIwUIImage
+        {
+            name "MCtempleImage"
+            sizeToContent true
+            texture Farming_Grain
+            visible "false"
+            imageColour { 255 255 255 255 }
+            sizeMin { 79 53 }
+            sizeMax { 79 53 }
+        }
+    //Cell 0
+        CIwUIElement
+        {
+            name  "MCeffect1"
+            CIwUILayoutVertical
+            {
+                    element { name "MCeffect1CheckBox" }
+                element { name "MCeffect1Label" }
+
+            }
+            CCheckBox
+            {
+                name "MCeffect1CheckBox"
+                style <checkbox_sacred>
+                checked "false"
+
+                caption "让我们的公牛能耕更多田地"
+                sizeMax {160 35}
+                sizeMin {200 35}
+                tag "1"
+                visible "false"
+               OnCheckboxChecked { MagicController::checkboxChanged }
+            }
+            CIwUILabel
+            {
+                alignH "left"
+                alignV "top"
+                name "MCeffect1Label"
+                style	<SmallLabel>
+                caption "让我们的公牛能耕更多田地"
+                sizeMax {160 70}
+                sizeMin {200 70}
+                margin { 0 0 }
+                visible "false"
+            }
+        }
+    //Cell 1
+        CIwUIElement
+        {
+            name  "MCeffect2"
+            CIwUILayoutVertical
+            {
+                    element { name "MCeffect2CheckBox" }
+                element { name "MCeffect2Label" }
+
+            }
+            CCheckBox
+            {
+                name "MCeffect2CheckBox"
+                style <checkbox_sacred>
+                checked "false"
+                caption "标签"
+                sizeMax {160 35}
+                sizeMin {200 35}
+                tag "2"
+                 visible "false"
+                OnCheckboxChecked { MagicController::checkboxChanged }
+            }
+            CIwUILabel
+            {
+                alignH "left"
+                alignV "top"
+                name "MCeffect2Label"
+                style	<SmallLabel>
+                caption "标签"
+                sizeMax {160 70}
+                sizeMin {200 70}
+                margin { 0 4 }
+                 visible "false"
+            }
+        }
+    //Cell 2
+        CIwUIElement
+        {
+            name  "MCeffect3"
+            CIwUILayoutVertical
+            {
+                    element { name "MCeffect3CheckBox" }
+                element { name "MCeffect3Label" }
+
+            }
+            CCheckBox
+            {
+                name "MCeffect3CheckBox"
+                style <checkbox_sacred>
+                checked "false"
+                caption "标签"
+                sizeMax {160 35}
+                sizeMin {200 35}
+                tag "3"
+                 visible "false"
+                OnCheckboxChecked { MagicController::checkboxChanged }
+            }
+            CIwUILabel
+            {
+                alignH "left"
+                alignV "top"
+                name "MCeffect3Label"
+                style	<SmallLabel>
+                caption "提高我们防守时的胜算"
+                sizeMax {160 70}
+                sizeMin {200 70}
+                margin { 0 4 }
+                visible "false"
+            }
+        }
+    //Cell 3
+        CIwUIElement
+        {
+            name  "MCeffect4"
+            CIwUILayoutVertical
+            {
+                    element { name "MCeffect4CheckBox" }
+                element { name "MCeffect4Label" }
+
+            }
+            CCheckBox
+            {
+                name "MCeffect4CheckBox"
+                style <checkbox_sacred>
+                checked "false"
+                caption "标签"
+                sizeMax {160 35}
+                sizeMin {200 35}
+                tag "4"
+                visible "false"
+                OnCheckboxChecked { MagicController::checkboxChanged }
+            }
+            CIwUILabel
+            {
+                alignH "left"
+                alignV "top"
+                name "MCeffect4Label"
+                style	<SmallLabel>
+                caption "减少我方武器领主的死亡和受伤"
+                sizeMax {160 70}
+                sizeMin {200 70}
+                margin { 0 4 }
+                 visible "false"
+            }
+        }
+        
+     //Third Column
+        CIwUIButton
+        {
+            alignH "right"
+            alignV "middle"
+            margin { 5 0 }
+            name "MCbuildButton"
+            style <Btn_45x122>
+            textColour { 84 41 25 255 }
+            caption "建造"
+            OnButtonClick {  MagicController::build }
+            CIwUIImage
+            {
+                name "MCbuildButtonImg"
+                sizeToContent true
+                texture Btn_Build
+                pos { -31 -6 }
+            }
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            alignV "middle"
+            name "MCtempleSizeInfo"
+            style	<SmallLabel>
+            caption "建造神龛前先学习奥秘。"
+            sizeMax {130 75}
+            sizeMin {130 90}
+        }
+        CIwUIButton
+        {
+            alignH "right"
+            alignV "middle"
+            name "MCsacrificeButton"
+            style <Btn_45x122>
+            textColour { 84 41 25 255 }
+            caption "献祭"
+            margin { 5 0 }
+            OnButtonClick { MagicController::sacrifice }
+            CIwUIImage
+            {
+                name "MCsacrificeButtonImg"
+                sizeToContent true
+                texture Btn_Sacrifice
+                pos { -40 -3 }
+            }
+        }
+        CIwUIButton
+        {
+            alignH "right"
+            alignV "middle"
+            margin { 5 0 }
+            name "MCquestButton"
+            style <Btn_45x122>
+            textColour { 84 41 25 255 }
+            caption "任务"
+            OnButtonClick { MagicController::showQuestDialog }
+            CIwUIImage
+            {
+                name "MCsacrificeButtonImg"
+                sizeToContent true
+                texture SmallStele
+                pos { 5 -4 }
+            }
+        }
+    //Magic results -- At The TOP!!!!
+        CIwUIElement
+        {
+            pos { 209 340 }
+            name "MCresult"
+            sizeToContent "true"
+
+            CIwUIImage
+            {
+                CIwUIButton
+                {
+                    pos { -209 -340 }
+                    name "blackdrop"
+                    style	<button>
+                    font "font_medium"
+                    sizeMin  { 1280 800 }
+                    sizeMax  { 1280 800 }
+                    buttonUp
+                    {
+                        drawableType "image"
+                        texture Clear64x64
+                    }
+                    buttonDown
+                    {
+                        drawableType "image"
+                        texture Clear64x64
+                    }
+                    focus ""
+                    caption ""
+                }
+                name "MCresultImage"
+                sizeToContent true
+                texture Clear64x64
+                imageColour { 255 255 255 255 }
+                sizeMin { 646 126 }
+                sizeMax { 656 126 }
+                visible "false"
+            }
+            CIwUILabel
+            {
+                alignH "left"
+                alignV "middle"
+                name "MCresultLabel"
+                style	<label_medium>
+                font "Trebuchet19"
+                textColour { 103 56 33 255 }
+                caption "结果"
+                sizeMax {570 114}
+                sizeMin {570 114}
+                visible "false"
+            }
+            CIwUIButton
+            {
+                pos {582 59}
+                sizeToContent true
+                sizeMin { 44 45 }
+                sizeMax { 44 45 }
+                margin { 0 0 }
+                name "MCresultBut"
+                style <button>
+                visible "false"
+                caption ""
+                OnButtonClick { MagicController::closeResults }
+                buttonUp 
+                {
+                    drawableType "image"
+                    texture Button45x44
+
+                }
+                buttonDown
+                {
+                    drawableType "image"
+                    texture Button45x44
+                }
+                focus ""
+                CIwUIImage
+                {
+                    pos { 6 6 }
+                    name "MCresultButX"
+                    sizeToContent true
+                    texture CloseX
+                    sizeMin { 32 32 }
+                    sizeMax { 32 32 }
+                }
+            }
+        }
+
+    }
+}

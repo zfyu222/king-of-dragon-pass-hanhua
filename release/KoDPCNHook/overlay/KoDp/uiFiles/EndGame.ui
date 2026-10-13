@@ -1,0 +1,435 @@
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                     VictoryController
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+CIwUIElement
+{
+    name "VictoryController"
+    CIwUIImage
+    {
+        name "BackGround"
+        sizeToContent   true
+        drawableType "image"
+        texture Clear64x64
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+    CIwUIImage
+    {
+        name "image2"
+        drawableType "image"
+        sizeToContent   true
+        texture Clear64x64
+        //DialogBackground1
+        sizeMin { 640 480 }
+        sizeMax { 640 480 }
+        pos { 320 136 }
+    }
+    CIwUIImage
+    {
+        name "image1"
+        drawableType "image"
+        sizeToContent   true
+        texture Clear64x64
+        //DialogBackground1
+        sizeMin { 640 480 }
+        sizeMax { 640 480 }
+        pos { 320 136 }
+    }
+}
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                     Won Controller
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+CIwUIElement
+{
+    name "WonController"
+    CIwUILayoutHorizontal
+    {
+        CIwUILayoutSpacer { sizeMin { 376 0} sizeMax {376 0} }
+        CIwUILayoutVertical
+        {
+            spacing 40
+            CIwUILayoutSpacer { sizeMin { 0 149} sizeMax {0 149} }
+            CIwUILayout
+            {
+                CIwUILayoutHorizontal
+                {
+                    element { name "replayButton" }
+                    element { name "replayCaption" }
+                }
+                element { name "shortHead" }
+            }
+            CIwUILayoutHorizontal
+            {
+                element { name "showSaga" }
+                element { name "showSagaCaption" }
+            }
+            CIwUILayoutHorizontal
+            {
+                element { name "emailSaga" }
+                element { name "emailSagaCaption" }
+            }
+            element { name "descriptionLabel" }
+//            CIwUILayoutHorizontal
+//            {
+//                CIwUILayoutSpacer { sizeMin { 30 0} sizeMax {30 0} }
+//                element { name "twitterButton" }
+//                CIwUILayoutSpacer { sizeMin { 20 0} sizeMax {20 0} }
+//                element { name "facebookButton" }
+//                CIwUILayoutSpacer { sizeMin { 40 0} sizeMax {40 0} }
+//                element { name "twitterFollCaption" }
+//            }
+            CIwUILayoutHorizontal
+            {
+                element { name "restartGame" }
+                element { name "restartCaption" }
+            }
+        }
+    }
+    CIwUIImage
+    {
+        name "BackGround"
+        sizeToContent   true
+        drawableType "image"
+        texture Clear64x64
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+    CIwUIImage
+    {
+        name "imageBg"
+        drawableType "image"
+        sizeToContent   true
+        texture Clear64x64
+        //DialogBackground1
+        sizeMin { 640 480 }
+        sizeMax { 640 480 }
+        pos { 320 136 }
+    }
+
+    CIwUIButton
+    {
+        name "replayButton"
+        style <Btn_37x155>
+        caption "重播胜利"
+        sizeMin { 185 37 }
+        sizeMax { 185 37 }
+        OnButtonClick {  WonController::replayVictory }
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        alignV "middle"
+        name "replayCaption"
+        caption "再次观看你的王国未来"
+        style	<SmallishLabel>
+        sizeMax {400 37}
+        sizeMin {400 37}
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        alignV "middle"
+        name "shortHead"
+        caption "恭喜获得十年之环！"
+        style	<ParchementLabel>
+        sizeMax {465 37}
+        sizeMin {465 37}
+    }
+
+    CIwUIButton
+    {
+        name "showSaga"
+        style <Btn_37x155>
+        caption "回顾传说"
+        OnButtonClick {  LostController::showSaga }
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        alignV "middle"
+        name "showSagaCaption"
+        caption "重读你的传说（或恢复并尝试不同选择）"
+        style	<SmallishLabel>
+        sizeMax {400 37}
+        sizeMin {400 37}
+    }
+    
+    CIwUIButton
+    {
+        name "emailSaga"
+        style <Btn_37x155>
+        caption "邮件发送传说"
+        OnButtonClick {  LostController::emailSaga }
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        alignV "middle"
+        name "emailSagaCaption"
+        caption "将一份副本发送到您的邮箱以保存"
+        style	<SmallishLabel>
+        sizeMax {400 37}
+        sizeMin {400 37}
+    }
+    
+    CIwUILabel
+    {
+        alignH "left"
+        alignV "middle"
+        name "descriptionLabel"
+        caption "在开始新游戏之前，请花点时间帮忙宣传。感谢您的支持！"
+        style	<SmallishLabel>
+        sizeMax {526 40}
+        sizeMin {526 60}
+        visible "false"
+    }
+    
+    CIwUIButton
+    {
+        name "restartGame"
+
+        style <Btn_37x155>
+        caption "重新开始游戏"
+        OnButtonClick {  LostController::restartGame }
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        alignV "middle"
+        name "restartCaption"
+        caption "开始另一局游戏"
+        style	<SmallishLabel>
+        sizeMax {400 37}
+        sizeMin {400 37}
+    }
+
+    
+//    CIwUILabel
+//    {
+//        alignH "left"
+//        alignV "middle"
+//        name "twitterFollCaption"
+//        caption "Let your Twitter followers know"
+//        style	<SmallishLabel>
+//        sizeMax {400 37}
+//        sizeMin {400 37}
+//    }
+//    
+//    CIwUIButton
+//    {
+//        sizeToContent true
+//        sizeMin { 37 37 }
+//        sizeMax { 37 37 }
+//        name "twitterButton"
+//        style <button>
+//        font "font_medium"
+//        caption ""
+//        //OnButtonClick { LostController::twitter }
+//        buttonUp 
+//        {
+//            drawableType "image"
+//            texture Btn_Twitter_37x37
+//
+//        }
+//        buttonDown
+//        {
+//            drawableType "image"
+//            texture Btn_Twitter_37x37
+//        }
+//        focus ""
+//    }
+//    CIwUIButton
+//    {
+//        sizeToContent true
+//        sizeMin { 37 37 }
+//        sizeMax { 37 37 }
+//        name "facebookButton"
+//        style <button>
+//        font "font_medium"
+//        caption ""
+//        //OnButtonClick { LostController::facebook }
+//        buttonUp 
+//        {
+//            drawableType "image"
+//            texture Btn_FB_37x37
+//
+//        }
+//        buttonDown
+//        {
+//            drawableType "image"
+//            texture Btn_FB_37x37
+//        }
+//        focus ""
+//    }
+}
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                     Lost Controller
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+CIwUIElement
+{
+    name "LostController"
+    CIwUILayoutHorizontal
+    {
+        CIwUILayoutSpacer { sizeMin { 376 0} sizeMax {376 0} }
+        CIwUILayoutVertical
+        {
+            spacing 40
+            CIwUILayoutSpacer { sizeMin { 0 180} sizeMax {0 180} }
+            CIwUILayoutHorizontal
+            {
+                element { name "showSaga" }
+                element { name "showSagaCaption" }
+            }
+            CIwUILayoutHorizontal
+            {
+                element { name "emailSaga" }
+                element { name "emailSagaCaption" }
+            }
+            element { name "descriptionLabel" }
+//            CIwUILayoutHorizontal
+//            {
+//                CIwUILayoutSpacer { sizeMin { 30 0} sizeMax {30 0} }
+//                element { name "twitterButton" }
+//                CIwUILayoutSpacer { sizeMin { 93 0} sizeMax {93 0} }
+//                element { name "twitterFollCaption" }
+//            }
+            CIwUILayoutHorizontal
+            {
+                element { name "restartGame" }
+                element { name "restartCaption" }
+            }
+        }
+    }
+    CIwUIImage
+    {
+        name "BackGround"
+        sizeToContent   true
+        drawableType "image"
+        texture Clear64x64
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+    CIwUIImage
+    {
+        name "imageBg"
+        drawableType "image"
+        sizeToContent   true
+        texture Clear64x64
+        //DialogBackground1
+        sizeMin { 640 480 }
+        sizeMax { 640 480 }
+        pos { 320 136 }
+    }
+
+
+    CIwUIButton
+    {
+        name "showSaga"
+        style <Btn_37x155>
+        caption "回顾传说"
+        OnButtonClick {  LostController::showSaga }
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        alignV "middle"
+        name "showSagaCaption"
+        caption "重读您的传说（或恢复存档后重试）"
+        style	<SmallishLabel>
+        sizeMax {400 37}
+        sizeMin {400 37}
+    }
+    
+    CIwUIButton
+    {
+        name "emailSaga"
+
+        style <Btn_37x155>
+        caption "邮件发送传说"
+        OnButtonClick {  LostController::emailSaga }
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        alignV "middle"
+        name "emailSagaCaption"
+        caption "将一份副本发送到您的邮箱以保存"
+        style	<SmallishLabel>
+        sizeMax {400 37}
+        sizeMin {400 37}
+    }
+    
+    CIwUILabel
+    {
+        alignH "left"
+        alignV "middle"
+        name "descriptionLabel"
+        caption "在开始新游戏之前，请花点时间帮忙宣传。感谢您的支持！"
+        style	<SmallishLabel>
+        sizeMax {526 40}
+        sizeMin {526 60}
+        visible "false"
+    }
+    
+    CIwUIButton
+    {
+        name "restartGame"
+        style <Btn_37x155>
+        caption "重新开始游戏"
+        OnButtonClick {  LostController::restartGame }
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        alignV "middle"
+        name "restartCaption"
+        caption "开始另一局游戏"
+        style	<SmallishLabel>
+        sizeMax {400 37}
+        sizeMin {400 37}
+    }
+
+    
+//    CIwUILabel
+//    {
+//        alignH "left"
+//        alignV "middle"
+//        name "twitterFollCaption"
+//        caption "Let your Twitter followers know"
+//        style	<SmallishLabel>
+//        sizeMax {400 37}
+//        sizeMin {400 37}
+//    }
+//    
+//    CIwUIButton
+//    {
+//        sizeToContent true
+//        sizeMin { 37 37 }
+//        sizeMax { 37 37 }
+//        name "twitterButton"
+//        style <button>
+//        font "font_medium"
+//        caption ""
+//        //OnButtonClick { LostController::twitter }
+//        buttonUp 
+//        {
+//            drawableType "image"
+//            texture Btn_Twitter_37x37
+//
+//        }
+//        buttonDown
+//        {
+//            drawableType "image"
+//            texture Btn_Twitter_37x37
+//        }
+//        focus ""
+//    }
+}
+

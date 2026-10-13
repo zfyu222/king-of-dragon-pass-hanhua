@@ -1,0 +1,270 @@
+
+
+CIwUIElement
+{
+	name			"ReorganizeController"
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+        pos {128 0}
+        colour { 255 255 255 255 }
+    sizeToContent true
+    sizeToSpace true
+
+    CIwUILayoutVertical //CIwUILayoutHorizontal CIwUILayoutVertical CIwUILayoutHorizontal
+    {
+        CIwUILayoutSpacer { sizeMin { 0 20} sizeMax {0 20} }
+        CIwUILayoutHorizontal
+        {
+            CIwUILayoutSpacer { sizeMin { 185 30} sizeMax {185 30} }
+            CIwUILayoutVertical
+            {
+                CIwUILayoutSpacer { sizeMin { 0 10} sizeMax {0 10} }
+                element { name "ReoCChoose" }
+            }
+            element { name "ReoCPersonsimg" }
+        }
+        CIwUILayoutSpacer { sizeMin { 0 10} sizeMax {0 10} }
+        CIwUILayoutHorizontal
+        {
+            CIwUILayoutSpacer { sizeMin { 12 0} sizeMax {12 0} }
+            CIwUILayoutVertical
+            {
+                CIwUILayoutSpacer { sizeMin { 0 30} sizeMax {0 30} }
+              //  element { name "ReoCfilter"}
+//                element { name "CCListline" }
+                element { name "ReoCpersonList"}
+            }
+        }
+        CIwUILayoutSpacer { sizeMin { 0 15} sizeMax {0 15} }
+        CIwUILayoutHorizontal
+        {
+            CIwUILayoutSpacer { sizeMin { 25 0} sizeMax {25 0} }
+            element { name "ReoCclantypeLabel" }
+             CIwUILayoutSpacer { sizeMin { 10 0} sizeMax {10 0} }
+            element { name "UISegmentBar" }
+            CIwUILayoutSpacer { sizeMin { 390 0} sizeMax {390 0} }
+            element { name "ReoCreorganize" }
+            CIwUILayoutSpacer { sizeMin { 20 0} sizeMax {20 0} }
+            element { name "ReoCcloseBut" }
+        }
+    }
+     CIwUIImage
+        {
+            name "BackGround"
+            sizeToContent   true
+            drawableType "image"
+            texture Clear64x64
+            pos { -128 0 }
+            sizeMin { 1280 800 }
+            sizeMax { 1280 800 }
+        }
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture Clear64x64
+        sizeMin { 1024 480 }
+        sizeMax { 1024 480 }
+    }
+    CIwUIElement
+    {
+        name "ReoCPersonsimg"
+        CIwUILayoutHorizontal
+        {
+            spacing 12
+        }
+         CIwUIImage
+        {
+            
+            name "Ring"
+            drawableType "image"
+            sizeToSpace true
+            sizeToContent   true
+            texture ChiefTorcGrey
+            sizeMin { 20 18 }
+            sizeMax { 20 18 }
+            pos { 8 15 }
+        }
+    }
+
+    ListFilter
+    {
+
+        margin { 0 0 }
+        name "ReoCfilter"
+        sizeMin  { 1000 20 }
+        //sizeToContent   true
+        sizeMax  { 1000 55 }
+        pos { 10 80}
+    }
+
+    CPersonListView
+    {
+
+        name "ReoCpersonList"
+        sizeMin  { 1000 306 }
+        sizeMax  { 1000 306 }
+        sizeToContent "true"
+        CIwUILayoutGrid
+        { 
+            row { heightMin 260 heightMax 306 }
+        }
+    }
+
+
+    CIwUILabel
+    {
+        alignH "left"
+        name "ReoCChoose"
+        caption "选择七位氏族议会议员"
+        style	 <StandartLabel>
+        sizeMax {310 20}
+        sizeMin {330 25}
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        name "ReoCclantypeLabel"
+        caption "氏族类型"
+        style	 <StandartLabel>
+        sizeMax {90 20}
+        sizeMin {140 25}
+    }
+
+    CIwUIButton
+    {
+        name "ReoCcloseBut"
+        style <Btn_37x37>
+        caption ""
+        buttonUp
+        {
+            drawableType "image"
+            texture Grey_37x37
+
+        }
+        buttonDown
+        {
+            drawableType "image"
+            texture Grey_37x37
+        }
+        alignH "right"
+        OnButtonClick { ManagementController::cancelDialog }
+        CIwUIImage
+        {
+            name "FCcloseImg"
+            sizeToContent true
+            texture CloseX
+            pos { 2 2 }
+        }
+    }
+    
+    CIwUIButton
+    {
+        name "ReoCreorganize"
+        style <Btn_37x105>
+        caption "重组"
+        buttonUp
+        {
+            drawableType "image"
+            texture Grey_37x105
+
+        }
+        buttonDown
+        {
+            drawableType "image"
+            texture Grey_37x105
+        }
+        sizeMin { 135 37 }
+        sizeMax { 135 37 }
+        margin { 0 6 }
+        OnButtonClick {  ReorganizeController::reorganize }
+    }
+    
+    CIwUIElement
+    {
+        name "UISegmentBar"
+        CIwUILayoutHorizontal
+        {
+            element { name "butLeft" }
+            element { name "butCenter" }
+            element { name "butRight" }
+        }
+
+        CIwUIButton
+        {
+            name "butLeft"
+            style	<button>
+            textColour { 255 255 255 255 }
+            font "Trebuchet17b" // HelveticaB15pt
+            sizeMin  { 70 29 }
+            sizeMax  { 70 29 }
+            buttonUp
+            {
+                drawableType "image"
+                texture Segleft
+            }
+            buttonDown
+            {
+                drawableType "image"
+                texture Segleft
+            }
+            focus ""
+            caption "战争"
+            alignH "centre"
+
+            OnButtonClick { ReorganizeController::SegmentBar }
+        }
+        CIwUIButton
+        {
+            name "butCenter"
+            style	<button>
+            textColour { 255 255 255 255 }
+            font "Trebuchet17b" //HelveticaB15pt
+            sizeMin  { 95 29 }
+            sizeMax  { 95 29 }
+            buttonUp
+            {
+                drawableType "image"
+                texture Segmiddle
+            }
+            buttonDown
+            {
+                drawableType "image"
+                texture Segmiddle_
+            }
+            focus ""
+            caption "平衡型"
+            alignH "centre"
+
+            OnButtonClick { ReorganizeController::SegmentBar }
+        }
+        CIwUIButton
+        {
+            name "butRight"
+            style	<button>
+            textColour { 255 255 255 255 }
+            font "Trebuchet17b" //HelveticaB15pt
+            sizeMin  { 70 29 }
+            sizeMax  { 70 29 }
+            buttonUp
+            {
+                drawableType "image"
+                texture Segright
+            }
+            buttonDown
+            {
+                drawableType "image"
+                texture Segright
+            }
+            focus ""
+            caption "和平型"
+            alignH "centre"
+
+            OnButtonClick { ReorganizeController::SegmentBar }
+        }
+
+    }
+}

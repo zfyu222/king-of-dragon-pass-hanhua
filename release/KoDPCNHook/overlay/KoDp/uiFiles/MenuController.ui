@@ -1,0 +1,188 @@
+// MenuController.ui
+// Example Stylesheets
+
+
+CIwUIPropertySet 
+{
+	name "<logo>"
+    //: extraclass "IIwUIDrawable"
+	drawableType "image"
+	texture Clear64x64
+}
+
+CIwUIPropertySet 
+{
+	name "<mainmenu_button_up>"
+	drawableType "image"
+	texture Clear64x64
+    //Home_Btn@2x
+	//border  { 12 12 }
+}
+
+CIwUIPropertySet 
+{
+	name "<mainmenu_button_up_right>"
+	drawableType "image"
+	texture Clear64x64
+    //Home_BtnRight@2x
+	//border  { 12 12 }
+}
+
+CIwUIPropertySet 
+{
+	name "<mainmenu_button_down>"
+	drawableType "image"
+	texture Clear64x64
+    //Home_Btn@2x
+	//border  { 12 12 }
+}
+
+CIwUIPropertySet
+{
+	name	<mainmenubut>
+	style	<button>
+    sizeMin  { 244 121 }
+	sizeMax  { 244 121 }
+    downCaptionColour {160 160 255 255}
+    buttonUp <mainmenu_button_up>
+	buttonDown <mainmenu_button_down>
+    focus ""
+	//sizeHint { 300 300 }
+    textColour { 255 255 255 255 }
+}
+
+CIwUIPropertySet
+{
+	name	<mainmenubut_right>
+	style	<button>
+	sizeMin  { 244 121 }
+	sizeMax  { 244 121 }
+    downCaptionColour {160 160 255 255}
+    buttonUp <mainmenu_button_up_right>
+	buttonDown 
+    {
+        drawableType "image"
+        texture Clear64x64
+        //Home_BtnRight@2x
+
+    }
+    focus ""
+	//sizeHint { 300 300 }
+    textColour { 255 255 255 255 }
+}
+
+CIwUIElement
+{
+	name			"MenuController"
+
+    sizeToContent true
+    sizeToSpace true
+
+
+
+    CIwUIImage
+    {
+        name "Background"
+    	drawableType "image"
+        texture Clear64x64
+    }
+
+    CIwUIImage
+    {
+        name "Logo"
+        style <logo>
+//        sizeToSpace false
+        sizeToContent   true
+    }
+    CIwUIButton
+    {
+        name "Button_play"
+        style <mainmenubut>
+        sizeMin  { 281 154 }
+        sizeMax  { 281 154 }
+
+      //  colour { 255 255 0 }
+        caption "游玩"
+        font "DutchMediaevalBookBold20"
+        OnButtonClick { MenuController::OnClickButton_Play }
+        sizeToContent   true
+    }
+
+    CIwUIButton
+    {
+        name "Button_settings"
+        style <mainmenubut>
+        sizeMin  { 241 124 }
+        sizeMax  { 241 124 }
+
+        //  colour { 255 255 0 }
+        caption "设置"
+        font "DutchMediaevalBookBold20"
+        OnButtonClick { MenuController::OnClickButton_Settings }
+        sizeToContent   true
+    }
+
+    CIwUIButton
+    {
+        name "Button_info"
+        style <mainmenubut>
+        sizeMin  { 211 104 }
+        sizeMax  { 211 104 }
+       // colour { 255 0 0 }
+        caption "信息"
+        font "DutchMediaevalBookBold20"
+        sizeToContent   true
+        OnButtonClick { MenuController::OnClickButton_Info }
+    }
+    CIwUIButton
+    {
+        name "Button_resolution"
+        style <mainmenubut>
+      //  colour { 255 255 0 }
+        caption "分辨率\n800x600"
+        sizeMin  { 281 154 }
+        sizeMax  { 281 154 }
+
+        font "DutchMediaevalBookBold20"
+        OnButtonClick { MenuController::OnClickButton_Resolution }
+        sizeToContent   true
+    }
+    CIwUIButton
+    {
+        name "Button_fullscreen"
+        style <mainmenubut>
+      //  colour { 255 255 0 }
+        caption "全屏：关"
+        sizeMin  { 241 124 }
+        sizeMax  { 241 124 }
+
+        font "DutchMediaevalBookBold20"
+        OnButtonClick { MenuController::OnClickButton_Fullscreen }
+        sizeToContent   true
+    }
+    CIwUIButton
+    {
+        name "Button_back"
+        style <mainmenubut>
+       // colour { 255 0 0 }
+        caption "返回"
+        sizeMin  { 211 104 }
+        sizeMax  { 211 104 }
+        font "DutchMediaevalBookBold20"
+        sizeToContent   true
+        OnButtonClick { MenuController::OnClickButton_Back }
+    }
+	CIwUIButton
+	{
+		name "Button_buy_fv"
+		style <mainmenubut>
+		sizeMin { 281 154 }
+		sizeMax { 281 154 }
+		//colour { 255 255 0 }
+		caption "获取\n完整版！"
+		font "DutchMediaevalBookBold20"
+		sizeToContent true
+		OnButtonClick { MenuController::OnClickButton_Buy_FV }
+	}
+
+}

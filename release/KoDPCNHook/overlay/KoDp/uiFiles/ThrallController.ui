@@ -1,0 +1,164 @@
+
+
+CIwUIElement
+{
+	name			"ThrallController"
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    sizeToContent true
+    sizeToSpace true
+    
+    CIwUILayoutHorizontal
+    {
+        CIwUILayoutSpacer { sizeMin { 180 0} sizeMax {180 0} }
+        CIwUILayoutVertical
+        {
+            CIwUILayoutSpacer { sizeMin { 0 439} sizeMax {0 439} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 140 0} sizeMax {140 0} }
+                element { name "FCAdviceView" }
+            }
+            CIwUILayoutSpacer { sizeMin { 0 20} sizeMax {0 20} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 150 20} sizeMax {150 20} }
+                element { name "SacredGridLabels" }
+                CIwUILayoutSpacer { sizeMin { 60 0} sizeMax {60 0} }
+                element { name "FoodCrecruitBut" }
+                CIwUILayoutSpacer { sizeMin { 20 0} sizeMax {20 0} }
+                element { name "FCcloseBut" }
+            }
+        }
+
+    }
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture Clear64x64
+        //DialogBackground1
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+    CIwUIElement
+    {
+        pos { 128 12 }
+        CIwUILabel
+        {
+            alignH "left"
+            name "thrallsLabel"
+            caption "奴隶"
+            style	 <ParchementLabel>
+            sizeMax {90 20}
+            sizeMin {100 25}
+            pos { 212 114 }
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "thrallsDescLabel"
+            caption "奴隶的食量是自由民的一半，但劳作强度几乎相同。奴隶的子女一出生即为自由民，而非奴隶。"
+            style	<SmallLabel>
+            sizeMax {299 99}
+            sizeMin {299 105}
+            pos { 495 143 }
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "freeCaption"
+            caption "释放0名奴隶。"
+            style	<StandartLabel>
+            sizeMax {193 20}
+            sizeMin {200 25}
+            pos { 212 269 }
+        }
+        CIwUIElement
+        {
+            sizeMin { 250, 90 }
+            sizeToContent true
+            pos {210 175}
+            name "thrallSlider"
+        }
+        //CheckBoxes
+        CCheckBox
+        {
+            name "adoptBox"
+            style <checkbox_radio>
+            checked "false"
+            caption "收养他们为佃农"
+            sizeMax {213 35}
+            sizeMin {290 35}
+            tag "0"
+            pos { 212 304 }
+            OnCheckboxChecked { ThrallController::radioButtonTapped }
+        }
+
+        CCheckBox
+        {
+            name "encourageBox"
+            style <checkbox_radio>
+            checked "false"
+            caption "鼓励他们离开"
+            sizeMax {299 35}
+            sizeMin {295 35}
+            tag "0"
+            pos { 212 337 }
+            OnCheckboxChecked { ThrallController::radioButtonTapped }
+        }
+
+        CCheckBox
+        {
+            name "letThemBox"
+            style <checkbox_radio>
+            checked "false"
+            caption "让他们自己决定"
+            sizeMax {299 35}
+            sizeMin {295 35}
+            tag "0"
+            pos { 212 370 }
+            OnCheckboxChecked { ThrallController::radioButtonTapped }
+        }
+    }
+  
+
+
+    //****
+    CIwUIButton
+    {
+        name "FCcloseBut"
+        style <Btn_37x37>
+        caption ""
+        alignH "right"
+        OnButtonClick { ManagementController::cancelDialog }
+        CIwUIImage
+        {
+            name "FCcloseImg"
+            sizeToContent true
+            texture CloseX
+            pos { 2 2 }
+        }
+    }
+    
+    CIwUIButton
+    {
+        name "FoodCrecruitBut"
+        enabled "false"
+        style <Btn_45x91>
+        caption "招募"
+        OnButtonClick {  ThrallController::freeThralls }
+    }
+    
+    CIwUIElement
+    {
+        name "FCAdviceView"
+        sizeMin { 640 104 }
+        sizeMax { 640 104 }
+
+    }
+}

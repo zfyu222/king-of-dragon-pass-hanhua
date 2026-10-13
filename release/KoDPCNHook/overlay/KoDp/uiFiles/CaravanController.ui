@@ -1,0 +1,545 @@
+
+
+CIwUIElement
+{
+	name			"CaravanController"
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    sizeToContent true
+    sizeToSpace true
+    
+    CIwUILayoutHorizontal
+    {
+        CIwUILayoutSpacer { sizeMin { 180 0} sizeMax {180 0} }
+        CIwUILayoutVertical
+        {
+
+            CIwUILayoutSpacer { sizeMin { 0 533} sizeMax {0 533} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 140 0} sizeMax {140 0} }
+                element { name "FCAdviceView" }
+            }
+            CIwUILayoutSpacer { sizeMin { 0 20} sizeMax {0 20} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 150 20} sizeMax {150 20} }
+                element { name "SacredGridLabels" }
+                CIwUILayoutSpacer { sizeMin { 60 0} sizeMax {60 0} }
+                element { name "FoodCrecruitBut" }
+                CIwUILayoutSpacer { sizeMin { 20 0} sizeMax {20 0} }
+                element { name "FCcloseBut" }
+            }
+        }
+
+    }
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture Clear64x64
+        //Dialog768
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+    CIwUIElement
+    {
+        name "CaravanScreen"
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+        pos { 128 16 }
+        CIwUILabel
+        {
+            alignH "left"
+            name "sendTo"
+            caption "发送至"
+            style	 <ParchementLabel>
+            sizeMax {142 20}
+            sizeMin {170 25}
+            pos { 86 37 }
+            margin { 0 0 }
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "goalLabel"
+            caption "目标"
+            style	 <ParchementLabel>
+            sizeMax {142 20}
+            sizeMin {150 25}
+            pos { 771 37 }
+            margin { 0 0 }
+        }
+        PickListView
+        {
+            alignV "top"
+            name "clans"
+            CIwUILayoutVertical
+            {
+                spacing 5
+            }
+            colour { 255 255 255 255 }
+            sizeToSpace true
+            sizeToContent true
+
+            sizeMin  { 142 404 }
+            sizeMax  { 142 404 }
+            pos { 86 63}
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "missions"
+            caption "奥尔卡思正在执行一项探索任务"
+            style	<SmallLabel>
+            sizeMax {314 20}
+            sizeMin {330 25}
+            pos { 86 477 }
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "carsize"
+            caption "商队规模"
+            style	<ParchementLabel>
+            sizeMax {182 20}
+            sizeMin {150 25}
+            pos { 248 375 }
+            margin { 0 0 }
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "treasuresLabel"
+            caption "宝藏"
+            style	 <ParchementLabel>
+            sizeMax {172 20}
+            sizeMin {170 25}
+            pos { 771 328 }
+            margin { 0 0 }
+        }
+        PickListView
+        {
+            alignV "top"
+            name "treasures"
+            CIwUILayoutVertical
+            {
+                spacing 5
+            }
+            colour { 255 255 255 255 }
+            sizeToSpace true
+            sizeToContent true
+
+            sizeMin  { 142 150 }
+            sizeMax  { 142 150 }
+            pos { 771 354}
+        }
+
+
+
+
+        CIwUIButton
+        {
+            name "leaderName"
+            style <Btn_37x105>
+            sizeMin { 115 37 }
+            sizeMax { 115 37 }
+
+            caption "领袖"
+            pos { 397 432 }
+            OnButtonClick {  ManagementController::chooseLeader }
+        }
+
+        CIwUIElement
+        {
+            sizeMin { 220, 90 }
+            sizeToContent true
+            name "weaponthanesSlider"
+            pos { 533 376 }
+        }
+        CIwUIElement
+        {
+            sizeMin { 220, 90 }
+            sizeToContent true
+            name "footMen"
+            pos { 533 436 }
+        }
+        
+        CIwUIElement
+        {
+            pos { 248 42 }
+            name "mapView"
+//            CIwUIImage
+//            {
+//                name "MapCScreenBg"
+//                //style <bg>
+//                pos { -3 -3 }
+//                drawableType "image"
+//                sizeToSpace true
+//                sizeToContent   true
+//                texture MapFrameBig
+//                sizeMin { 509 320 }
+//                sizeMax { 509 320 }
+//            }
+            ZoomingScroll
+            {
+
+                name "MapScroll"
+                sizeToContent   true
+                sizeMin { 503 314 }
+                sizeMax { 503 314 }
+
+                CIwUILayout
+                {
+
+                }
+            }
+        }
+        //Caraven Size Segment
+        CIwUIElement
+        {
+            name "CaravanSegment"
+            pos { 248 405 }
+            CIwUIImage
+            {
+                name "CravanSegBg"
+                drawableType "image"
+                sizeToContent   true
+                texture Donkey_BtnBase
+                sizeMin { 128 29 }
+                sizeMax { 128 29 }
+            }
+            CIwUIButton
+            {
+                name "CravanSegLeft"
+                style	<button>
+                modulatesColour "true"
+                font "font_medium"
+                sizeMin  { 43 29 }
+                sizeMax  { 43 29 }
+                pos {0 0}
+                buttonUp
+                {
+                    drawableType "image"
+                    texture Donkey_BtnLeft
+                }
+                buttonDown
+                {
+                    drawableType "image"
+                    texture Donkey_BtnLeft
+                }
+                focus ""
+                caption ""
+                OnButtonClick { CaravanController::SegmentTapped }
+            }
+            CIwUIButton
+            {
+                name "CravanSegMiddle"
+                style	<button>
+                modulatesColour "true"
+                font "font_medium"
+                sizeMin  { 42 29 }
+                sizeMax  { 42 29 }
+                pos {43 0}
+                buttonUp
+                {
+                    drawableType "image"
+                    texture Donkey_BtnMiddle
+                }
+                buttonDown
+                {
+                    drawableType "image"
+                    texture Donkey_BtnMiddle
+                }
+                focus ""
+                caption ""
+                OnButtonClick { CaravanController::SegmentTapped }
+            }
+            CIwUIButton
+            {
+                name "CravanSegRight"
+                style	<button>
+                modulatesColour "true"
+                font "font_medium"
+                sizeMin  { 43 29 }
+                sizeMax  { 43 29 }
+                pos { 85 0 }
+                buttonUp
+                {
+                    drawableType "image"
+                    texture Donkey_BtnRight
+                }
+                buttonDown
+                {
+                    drawableType "image"
+                    texture Donkey_BtnRight
+                }
+                focus ""
+                caption ""
+                OnButtonClick { CaravanController::SegmentTapped }
+            }
+
+        }
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                     CheckBoxes
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        CCheckBox
+        {
+            name "esteblishRoute"
+            style <checkbox_radio>
+            checked "false"
+            caption "建立路线"
+            sizeMax {138 35}
+            sizeMin {198 35}
+            tag "0"
+            pos {771 63}
+            OnCheckboxChecked { CaravanController::radioButtonTapped }
+        }
+
+        CCheckBox
+        {
+            name "sellBuy"
+            style <checkbox_radio>
+            checked "false"
+            caption "买卖"
+            sizeMax {138 35}
+            sizeMin {198 35}
+            tag "0"
+            pos {771 103}
+            OnCheckboxChecked { CaravanController::radioButtonTapped }
+        }
+
+        //Cattle
+        CCheckBox
+        {
+            name "sellCattle"
+            style <checkbox_sacred>
+            checked "false"
+            alignH "left"
+            margin { 0 0 }
+            tag "0"
+            pos {801 136}
+            OnCheckboxChecked { CaravanController::checkboxTapped }
+        }
+        CCheckBox
+        {
+            name "buyCattle"
+            style <checkbox_sacred>
+            checked "false"
+            alignH "left"
+            margin { 0 0 }
+            tag "0"
+            pos {834 136}
+            OnCheckboxChecked { CaravanController::checkboxTapped }
+        }
+            CIwUILabel
+            {
+                alignH "left"
+                name "CattleLabel"
+                caption "牛只"
+                style	<StandartLabel>
+                sizeMax {60 20}
+                sizeMin {85 25}
+                pos { 863 136 }
+            }
+        //Food
+        CCheckBox
+        {
+            name "sellFood"
+            style <checkbox_sacred>
+            checked "false"
+            alignH "left"
+            margin { 0 0 }
+            tag "0"
+            pos {801 174}
+            OnCheckboxChecked { CaravanController::checkboxTapped }
+        }
+        CCheckBox
+        {
+            name "buyFood"
+            style <checkbox_sacred>
+            checked "false"
+            alignH "left"
+            margin { 0 0 }
+            tag "0"
+            pos {834 174}
+            OnCheckboxChecked { CaravanController::checkboxTapped }
+        }
+            CIwUILabel
+            {
+                alignH "left"
+                name "FoodLabel"
+                caption "食物"
+                style	<StandartLabel>
+                sizeMax {60 20}
+                sizeMin {85 25}
+                pos { 863 174 }
+            }
+
+        //Goods
+        CCheckBox
+        {
+            name "sellGoods"
+            style <checkbox_sacred>
+            checked "false"
+            alignH "left"
+            margin { 0 0 }
+            tag "0"
+            pos {801 212}
+            OnCheckboxChecked { CaravanController::checkboxTapped }
+        }
+        CCheckBox
+        {
+            name "buyGoods"
+            style <checkbox_sacred>
+            checked "false"
+            alignH "left"
+            margin { 0 0 }
+            tag "0"
+            pos {834 212}
+            OnCheckboxChecked { CaravanController::checkboxTapped }
+        }
+            CIwUILabel
+            {
+                alignH "left"
+                name "GoodsLabel"
+                caption "货物"
+                style	<StandartLabel>
+                sizeMax {60 20}
+                sizeMin {85 25}
+                pos { 863 212 }
+            }
+
+        //Horses
+        CCheckBox
+        {
+            name "sellHorses"
+            style <checkbox_sacred>
+            checked "false"
+            alignH "left"
+            margin { 0 0 }
+            tag "0"
+            pos {801 250}
+            OnCheckboxChecked { CaravanController::checkboxTapped }
+        }
+        CCheckBox
+        {
+            name "buyHorses"
+            style <checkbox_sacred>
+            checked "false"
+            alignH "left"
+            margin { 0 0 }
+            tag "0"
+            pos {834 250}
+            OnCheckboxChecked { CaravanController::checkboxTapped }
+        }
+            CIwUILabel
+            {
+                alignH "left"
+                name "HorsesLabel"
+                caption "马匹"
+                style	<StandartLabel>
+                sizeMax {60 20}
+                sizeMin {85 25}
+                pos { 863 250 }
+            }
+
+        //Treasure
+        CCheckBox
+        {
+            name "sellTreasure"
+            style <checkbox_sacred>
+            checked "false"
+            alignH "left"
+            margin { 0 0 }
+            tag "0"
+            pos {801 288}
+            OnCheckboxChecked { CaravanController::checkboxTapped }
+        }
+        CCheckBox
+        {
+            name "buyTreasure"
+            style <checkbox_sacred>
+            checked "false"
+            alignH "left"
+            margin { 0 0 }
+            tag "0"
+            pos {834 288}
+            OnCheckboxChecked { CaravanController::checkboxTapped }
+        }
+            CIwUILabel
+            {
+                alignH "left"
+                name "TreasureLabel"
+                caption "宝藏"
+                style	<StandartLabel>
+                sizeMax {90 20}
+                sizeMin {110 25}
+                pos { 863 288 }
+            }
+        CIwUIButton
+        {
+            name "leaderImage"
+            style	<button>
+            textColour { 255 255 255 255 }
+            font "font_medium"
+            sizeMin  { 38 50 }
+            sizeMax  { 38 50 }
+            pos {434 376}
+            buttonUp
+            {
+                drawableType "image"
+                texture Segleft
+            }
+            buttonDown
+            {
+                drawableType "image"
+                texture Segleft
+            }
+            focus ""
+            caption ""
+            alignH "centre"
+
+            OnButtonClick {  MapController::handleLeaderTap }
+        }
+    }
+
+    //****
+    CIwUIButton
+    {
+        name "FCcloseBut"
+        style <Btn_37x37>
+        caption ""
+        alignH "right"
+        OnButtonClick { ManagementController::cancelDialog }
+        CIwUIImage
+        {
+            name "FCcloseImg"
+            sizeToContent true
+            texture CloseX
+            pos { 2 2 }
+        }
+    }
+    
+    CIwUIButton
+    {
+        name "FoodCrecruitBut"
+      //  enabled "false"
+        style <Btn_45x91>
+        caption "发送"
+        OnButtonClick {  CaravanController::sendCaravan }
+    }
+    
+    CIwUIElement
+    {
+        name "FCAdviceView"
+        sizeMin { 640 104 }
+        sizeMax { 640 104 }
+
+    }
+    
+    }

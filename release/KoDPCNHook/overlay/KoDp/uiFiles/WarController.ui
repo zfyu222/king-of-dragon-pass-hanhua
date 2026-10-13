@@ -1,0 +1,310 @@
+
+
+
+CIwUIElement
+{
+	name			"WarController"
+
+    sizeToContent true
+    sizeToSpace true
+    
+    CIwUILayout
+    {
+        element { name "CCBackGround" }
+        CIwUILayoutHorizontal
+        {
+            element { name "MenuHolder" }
+            CIwUILayoutSpacer { sizeMin { 45 0} sizeMax {45 0} }
+            CIwUILayoutVertical
+            {
+                CIwUILayoutSpacer { sizeMin {0 20} sizeMax {0 30} }
+                element { name "WCScreen" }
+                CIwUILayoutSpacer { sizeMin {0 80} sizeMax {0 80} }
+                element { name "CCBottomView" }
+            }
+        }
+    }
+
+
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture MenuBackground-big
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+
+    CIwUIElement
+    {
+        name "WCScreen"
+        CIwUILayout
+        {
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin {10 0} sizeMax {10 0} }
+                CIwUILayoutVertical
+                {
+                    element { name "WCRaidsLabel" }
+                    element { name "WCRaidsView" }
+                    CIwUILayoutSpacer { sizeMin {0 20} sizeMax {0 20} }
+                    element { name "WCRaidedByLabel" }
+                    element { name "WCRaidedByView" }
+                }
+                CIwUILayoutSpacer { sizeMin {165 0} sizeMax {165 0} }
+                CIwUILayoutVertical
+                {
+                    element { name "WCWariosLabel" }
+                    CIwUILayoutSpacer { sizeMin {0 10} sizeMax {0 10} }
+                    CIwUILayoutGrid
+                    {
+                        name ""
+                        column { widthMin 165 widthMax 165 }
+                        column { widthMin 105 widthMax 160 }
+                        row { }
+                        row { }
+                        element { name "WCFootmenLabel" row 0 column 0 }
+                        element { name "WCFootMen" row 0 column 1 }
+                        element { name "WCWeaponthanesBut" row 1 column 0 }
+                        element { name "WCWeaponthanes" row 1 column 1 }
+                    }
+                     CIwUILayoutSpacer { sizeMin {0 50} sizeMax {0 50} }
+                    CIwUILayoutHorizontal
+                    {
+                        CIwUILayoutSpacer { sizeMin {0 0} sizeMax {0 0} }
+                        CIwUILayoutVertical
+                        {
+                            element { name "WCCattleRaidBut" }
+                            CIwUILayoutSpacer { sizeMin {0 10} sizeMax {0 10} }
+                            element { name "WCCattleRaidLabel" }
+                            CIwUILayoutSpacer { sizeMin {0 40} sizeMax {0 40} }
+                            element { name "WCRaidBut" }
+                            CIwUILayoutSpacer { sizeMin {0 10} sizeMax {0 10} }
+                            element { name "WCRaidLabel" }
+                        }
+                    }
+                }
+                CIwUILayoutSpacer { sizeMin {135 0} sizeMax {135 0} }
+                CIwUILayoutVertical
+                {
+                    element { name "WCFortificationLabel" }
+                    element { name "WCFortificationView" }
+                    CIwUILayoutSpacer { sizeMin {0 20} sizeMax {0 20} }
+                    element { name "WCFortifyBut" }
+                }
+            }
+        }
+        CCommonScrollView
+        {
+            alignV "top"
+            name "WCRaidsView"
+            CIwUILayoutVertical
+            {
+                spacing 5
+            }
+            colour { 255 255 255 255 }
+            sizeToSpace true
+            sizeToContent true
+
+            sizeMin  { 200 139 }
+            sizeMax  { 200 139 }
+        }
+        CCommonScrollView
+        {
+            alignV "top"
+            name "WCRaidedByView"
+            CIwUILayoutVertical
+            {
+                spacing 5
+            }
+            colour { 255 255 255 255 }
+            sizeToSpace true
+            sizeToContent true
+
+            sizeMin  { 200 139 }
+            sizeMax  { 200 139 }
+        }
+        CCommonScrollView
+        {
+            alignV "top"
+            name "WCFortificationView"
+            CIwUILayoutVertical
+            {
+                spacing 5
+            }
+            colour { 255 255 255 255 }
+            sizeToSpace true
+            sizeToContent true
+
+            sizeMin  { 190 168 }
+            sizeMax  { 200 168 }
+        }
+
+        CIwUIButton
+        {
+            name "WCFortifyBut"
+            style <Btn_45x122>
+            caption "筑防"
+            textColour { 84 41 25 255 }
+            alignH "right"
+            alignV "middle"
+            margin { 10 0 }
+            OnButtonClick {  WarController::showFortificationsDialog }
+            CIwUIImage
+            {
+                name "WCFortifyImg"
+                sizeToContent true
+                texture Btn_Fortify
+                pos { -25 -10 }
+            }
+        }
+
+
+
+        CIwUILabel
+        {
+            alignH "left"
+            name "WCRaidsLabel"
+            caption "袭击"
+            style	<ParchementLabel>
+            sizeMax {80 20}
+            sizeMin {90 25}
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "WCRaidedByLabel"
+            caption "被以下氏族袭击"
+            style	<ParchementLabel>
+            sizeMax {155 20}
+            sizeMin {165 25}
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "WCFortificationLabel"
+            caption "防御工事"
+            style	<ParchementLabel>
+            sizeMax {150 20}
+            sizeMin {180 25}
+        }
+
+        CIwUILabel
+        {
+            alignH "left"
+            name "WCWariosLabel"
+            caption "战士"
+            style	<ParchementLabel>
+            sizeMax {130 20}
+            sizeMin {150 25}
+        }
+        
+        CIwUILabel
+        {
+            alignH "left"
+            name "WCFootmenLabel"
+            caption "步兵"
+            style	<label_medium>
+            font "font_medium"
+            textColour { 124 73 43 255 }
+            sizeMax {105 20}
+            sizeMin {110 25}
+        }
+        CIwUILabel
+        {
+            alignH "right"
+            name "WCFootMen"
+            caption "999"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            sizeMax {50 20}
+            sizeMin {80 25}
+        }
+        
+        CIwUIButton
+        {
+            name "WCWeaponthanesBut"
+            style <Btn_37x155>
+            sizeMin { 165 37 }
+            sizeMax { 165 37 }
+            caption "武器领主"
+            textColour { 124 73 43 255 }
+            alignH "centre"
+
+            OnButtonClick {  WarController::showWeaponthanesDialog }
+        }
+        CIwUILabel
+        {
+            alignH "right"
+            alignV "middle"
+            name "WCWeaponthanes"
+            caption "999"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            sizeMax {50 36}
+            sizeMin {80 36}
+        }
+
+        
+        CIwUIButton
+        {
+            name "WCCattleRaidBut"
+            style <Btn_45x182>
+            caption "劫牛袭击"
+            alignH "right"
+            alignV "middle"
+            margin { 10 0 }
+            textColour { 84 41 25 255 }
+            OnButtonClick {  WarController::showCattleRaidDialog }
+            CIwUIImage
+            {
+                name "WCCattleRaidImg"
+                sizeToContent true
+                texture Btn_CattleRaid
+                pos { -26 -3 }
+            }
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "WCCattleRaidLabel"
+            caption "偷牛袭击旨在在不被发觉的情况下偷走牛只。"
+            style	<VerySmallLabel>
+            sizeMax {160 60}
+            sizeMin {170 70}
+        }
+
+        
+        CIwUIButton
+        {
+            name "WCRaidBut"
+            style <Btn_45x182>
+            caption "袭击"
+            alignH "right"
+            alignV "middle"
+            margin { 10 0 }
+            textColour { 84 41 25 255 }
+            OnButtonClick {  WarController::showRaidDialog }
+            CIwUIImage
+            {
+                name "WCRaidImg"
+                sizeToContent true
+                texture Btn_Raid
+                pos { -1 -7 }
+            }
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "WCRaidLabel"
+            caption "突袭是对其他氏族的全面攻击。"
+            style	<VerySmallLabel>
+            sizeMax {160 40}
+            sizeMin {170 50}
+        }
+    }
+}

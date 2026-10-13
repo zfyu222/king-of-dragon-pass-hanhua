@@ -1,0 +1,284 @@
+
+
+CIwUIElement
+{
+	name			"FarmerController"
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    sizeToContent true
+    sizeToSpace true
+    
+    CIwUILayoutHorizontal
+    {
+        CIwUILayoutSpacer { sizeMin { 180 0} sizeMax {180 0} }
+        CIwUILayoutVertical
+        {
+            CIwUILayoutSpacer { sizeMin { 0 140} sizeMax {0 140} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 170 0} sizeMax {170 0} }
+                CIwUILayoutVertical
+                {
+                    spacing 10
+                    element { name "FoodCFarmersLabel" }
+                    element { name "FoodCAdoptLabel" }
+                        element { name "FoodCfromNearbyBox" }
+                        element { name "FoodCfromAnyBox" }
+                        element { name "FoodCfromTribeBox" }
+                        element { name "FoodCfromHeoBox" }
+                        element { name "FoodCfromVegaBox" }
+                }
+                CIwUILayoutSpacer { sizeMin { 80 0} sizeMax {80 0} }
+                CIwUILayoutVertical
+                {
+                    spacing 10
+                    CIwUILayoutSpacer { sizeMin { 0 30} sizeMax {0 30} }
+                    element { name "FoodCOfferLabel" }
+                        element { name "FoodClandCattleBox" }
+                        element { name "FoodClandSheepBox" }
+                        element { name "FoodClandBox" }
+                }
+            }
+            CIwUILayoutSpacer { sizeMin { 0 14} sizeMax {0 14} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 140 0} sizeMax {140 0} }
+                element { name "FCAdviceView" }
+            }
+            CIwUILayoutSpacer { sizeMin { 0 20} sizeMax {0 20} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 150 20} sizeMax {150 20} }
+                element { name "SacredGridLabels" }
+                CIwUILayoutSpacer { sizeMin { 60 0} sizeMax {60 0} }
+                element { name "FoodCrecruitBut" }
+                CIwUILayoutSpacer { sizeMin { 20 0} sizeMax {20 0} }
+                element { name "FCcloseBut" }
+            }
+        }
+
+    }
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture Clear64x64
+        //DialogBackground1
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+    
+
+
+
+    CIwUILabel
+    {
+        alignH "left"
+        name "FoodCFarmersLabel"
+        caption "农夫"
+        style	<ParchementLabel>
+        sizeMax {194 20}
+        sizeMin {198 25}
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        name "FoodCAdoptLabel"
+        caption "从以下地方收养新农夫"
+        style	<StandartLabel>
+        margin {0 0 }
+        sizeMax {230 20}
+        sizeMin {280 25}
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        name "FoodCOfferLabel"
+        caption "提供"
+        style	<StandartLabel>
+        sizeMax {230 20}
+        sizeMin {240 25}
+    }
+
+    //FoodCfromNearbyBox
+    CCheckBox
+    {
+        name "FoodCfromNearbyBox"
+        style <checkbox_sacred>
+        checked "false"
+        tag "0"
+        caption "邻近氏族"
+        sizeMax {165 35}
+        sizeMin {190 35}
+        OnCheckboxChecked { FarmerController::checkboxTapped }
+    }
+
+    //FoodCfromAnyBox
+    CCheckBox
+    {
+        name "FoodCfromAnyBox"
+        style <checkbox_sacred>
+        checked "false"
+        caption "任意氏族"
+        sizeMax {165 35}
+        sizeMin {190 35}
+        tag "0"
+        OnCheckboxChecked { FarmerController::checkboxTapped }
+    }
+
+    //FoodCfromTribeBox
+    CCheckBox
+    {
+        name "FoodCfromTribeBox"
+        style <checkbox_sacred>
+        checked "false"
+        caption "我们的部落"
+        sizeMax {165 35}
+        sizeMin {190 35}
+        tag "0"
+        OnCheckboxChecked { FarmerController::checkboxTapped }
+    }
+
+    //FoodCfromHeoBox
+    CCheckBox
+    {
+        name "FoodCfromHeoBox"
+        style <checkbox_sacred>
+        checked "false"
+        caption "我们在赫奥兰的远亲"
+        sizeMax {250 35}
+        sizeMin {350 35}
+        tag "0"
+        OnCheckboxChecked { FarmerController::checkboxTapped }
+    }
+
+    //FoodCfromVegaBox
+    CCheckBox
+    {
+        name "FoodCfromVegaBox"
+        style <checkbox_sacred>
+        checked "false"
+        caption "流浪者和漂泊者"
+        sizeMax {250 35}
+        sizeMin {350 35}
+        tag "0"
+        OnCheckboxChecked { FarmerController::checkboxTapped }
+    }
+
+    //FoodClandCattleBox
+    CCheckBox
+    {
+        name "FoodClandCattleBox"
+        style <checkbox_radio>
+        checked "false"
+        caption "土地与牛只"
+        sizeMax {160 35}
+        sizeMin {200 35}
+        tag "0"
+       OnCheckboxChecked { FarmerController::radioButtonTapped }
+    }
+
+    //FoodClandSheepBox
+    CCheckBox
+    {
+        name "FoodClandSheepBox"
+        style <checkbox_radio>
+        checked "false"
+        caption "土地与羊群"
+        sizeMax {160 35}
+        sizeMin {200 35}
+        tag "0"
+        OnCheckboxChecked { FarmerController::radioButtonTapped }
+    }
+
+    //FoodClandBox
+    CCheckBox
+    {
+        name "FoodClandBox"
+        style <checkbox_radio>
+        checked "false"
+        caption "仅土地"
+        sizeMax {160 35}
+        sizeMin {170 35}
+        tag "0"
+        OnCheckboxChecked { FarmerController::radioButtonTapped }
+    }
+
+    //****
+    CIwUIButton
+    {
+        name "FCcloseBut"
+        style <Btn_37x37>
+        caption ""
+        alignH "right"
+        OnButtonClick { ManagementController::cancelDialog }
+        CIwUIImage
+        {
+            name "FCcloseImg"
+            sizeToContent true
+            texture CloseX
+            pos { 2 2 }
+        }
+    }
+    
+    CIwUIButton
+    {
+        name "FoodCrecruitBut"
+        enabled "false"
+        style <Btn_45x91>
+        caption "招募"
+        OnButtonClick {  FarmerController::recruit }
+    }
+    
+    CIwUIElement
+    {
+        name "FCAdviceView"
+        sizeMin { 640 104 }
+        sizeMax { 640 104 }
+
+    }
+    
+    CIwUIElement
+    {
+        name "FoodCresultDialog"
+        sizeMin { 480 125 }
+        sizeMax { 480 125 }
+        pos { 400 522 }
+        visible "false"
+        CIwUIImage
+        {
+            name "FoodCresultDialogImg"
+            drawableType "image"
+            sizeToSpace true
+            sizeToContent   true
+            texture SacrificeResults~ipad
+            sizeMin { 480 125 }
+            sizeMax { 480 125 }
+        }
+        CIwUIButton
+        {
+            name "FoodCresultDialogBut"
+            style <Btn_45x91>
+            sizeMin { 100 45 }
+            sizeMax { 100 45 }
+            caption "继续"
+            pos { 360 60 }
+            OnButtonClick {  FarmerController::proceed }
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "FoodCresultDialogLabel"
+            caption "结果"
+            style	<SmallLabel>
+            textColour { 124 73 43 255 }
+            sizeMax {332 88}
+            sizeMin {332 88}
+            pos { 15 0 }
+        }
+    }
+}

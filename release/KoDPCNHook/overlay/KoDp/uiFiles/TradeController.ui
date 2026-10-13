@@ -1,0 +1,226 @@
+
+
+
+CIwUIElement
+{
+	name			"TradeController"
+
+    sizeToContent true
+    sizeToSpace true
+    
+    CIwUILayout
+    {
+        element { name "CCBackGround" }
+        CIwUILayoutHorizontal
+        {
+            element { name "MenuHolder" }
+            CIwUILayoutSpacer { sizeMin { 45 0} sizeMax {45 0} }
+            CIwUILayoutVertical
+            {
+                CIwUILayoutSpacer { sizeMin {0 20} sizeMax {0 30} }
+                element { name "TCScreen" }
+                CIwUILayoutSpacer { sizeMin {0 28} sizeMax {0 28} }
+                element { name "CCBottomView" }
+            }
+        }
+    }
+
+
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        style <Background>
+        texture MenuBackground-big
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+    CIwUIImage
+    {
+
+        name "TCTradeTreasures"
+        pos { 1050  67 }
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture Trade_Treasures
+        sizeMin { 218 107 }
+        sizeMax { 218 107 }
+    }
+
+
+    CIwUIElement
+    {
+        name "TCScreen"
+        CIwUILayout
+        {
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin {0 0} sizeMax {0 0} }
+                CIwUILayoutVertical
+                {
+                    element { name "TCTredingPartLabel" }
+                    element { name "TCTrade" }
+
+                    CIwUILayoutSpacer { sizeMin {0 20} sizeMax {0 30} }
+                    CIwUILayoutHorizontal
+                    {
+                        CIwUILayoutSpacer { sizeMin {11 0} sizeMax {11 0} }
+                        element { name "TCCaravan" }
+                    }
+                    CIwUILayoutSpacer { sizeMin {0 10} sizeMax {0 10} }
+                    CIwUILayoutHorizontal
+                    {
+                        element { name "TCMarketLabel"}
+                        element { name "TCMarketSizeLabel"}
+                    }
+
+                }
+                element { name "mapView" }
+                CIwUILayoutVertical
+                {
+                    element { name "TCTreasuresLabel" }
+                    element { name "TCTreasuresView" }
+                    element { name "TCExoticLabel" }
+                    element { name "TCExoticTextLabel" }
+                }
+            }
+        }
+        CIwUIElement
+        {
+            name "mapView"
+            sizeMin { 584 469 }
+            sizeMax { 584 469 }
+//            CIwUIImage
+//            {
+//                name "MapCScreenBg"
+//                //style <bg>
+//                pos { -2 -2 }
+//                drawableType "image"
+//                sizeToSpace true
+//                sizeToContent   true
+//                texture MapFrameBig
+//                sizeMin { 582 467 }
+//                sizeMax { 582 467 }
+//            }
+            ZoomingScroll
+            {
+
+                name "TCMapScroll"
+                sizeToContent   true
+                sizeMin { 578 463 }
+                sizeMax { 578 463 }
+                CIwUILayout
+                {
+
+                }
+            }
+        }
+
+        PickListView
+        {
+            alignV "top"
+            name "TCTrade"
+            CIwUILayoutVertical
+            {
+                spacing 5
+            }
+            colour { 255 255 255 255 }
+            sizeToSpace true
+            sizeToContent true
+
+            sizeMin  { 162 309 }
+            sizeMax  { 162 309 }
+        }
+        CCommonScrollView
+        {
+            alignV "top"
+            name "TCTreasuresView"
+            CIwUILayoutVertical
+            {
+                spacing 5
+            }
+            colour { 255 255 255 255 }
+            sizeToSpace true
+            sizeToContent true
+
+            sizeMin  { 215 314 }
+            sizeMax  { 215 314 }
+        }
+
+        CIwUIButton
+        {
+            name "TCCaravan"
+            style <Btn_45x154>
+            caption "车队"
+            alignH "right"
+            OnButtonClick {  TradeController::showCaravanDialog }
+            CIwUIImage
+            {
+                name "TCCaravanImg"
+                sizeToContent true
+                texture Btn_Mission
+                pos { -6 -16 }
+            }
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "TCTredingPartLabel"
+            caption "贸易伙伴"
+            style	<ParchementLabel>
+            sizeMax {190 20}
+            sizeMin {230 25}
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "TCTreasuresLabel"
+            caption "宝藏"
+            style	<ParchementLabel>
+            sizeMax {170 20}
+            sizeMin {175 25}
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "TCMarketLabel"
+            caption "市场"
+            style	<ParchementLabel>
+            sizeMax {80 20}
+            sizeMin {105 25}
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "TCMarketSizeLabel"
+            caption "每季"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            sizeMax {120 20}
+            sizeMin {110 25}
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "TCExoticLabel"
+            caption "异域商品"
+            style	<ParchementLabel>
+            sizeMax {160 20}
+            sizeMin {165 25}
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            alignV "top"
+            name "TCExoticTextLabel"
+            caption "每季"
+            style	<StandartLabel>
+            textColour { 0 0 0 255 }
+            sizeMax {210 45}
+            sizeMin {214 105}
+            margin { 0 0 }
+        }
+    }
+}

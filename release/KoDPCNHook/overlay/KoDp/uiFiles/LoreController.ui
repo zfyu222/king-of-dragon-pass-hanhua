@@ -1,0 +1,164 @@
+
+
+
+CIwUIElement
+{
+	name			"LoreController"
+
+    sizeToContent true
+    sizeToSpace true
+    
+    CIwUILayout
+    {
+        element { name "CCBackGround" }
+        CIwUILayoutHorizontal
+        {
+            element { name "MenuHolder" }
+            CIwUILayoutSpacer { sizeMin { 50 0} sizeMax {55 0} }
+            CIwUILayoutVertical
+            {
+                CIwUILayoutSpacer { sizeMin {0 20} sizeMax {0 30} }
+                element { name "LCScreen" }
+                CIwUILayoutSpacer { sizeMin {0 50} sizeMax {0 50} }
+                element { name "LCStatsView" }
+            }
+        }
+    }
+
+
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture MenuBackground-big
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+    CIwUIElement
+    {
+        name "LCStatsView"
+        sizeMin { 280 50 }
+        sizeMax { 300 80 }
+    }
+    CIwUIElement
+    {
+        name "LCScreen"
+        CIwUILayout
+        {
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin {120 0} sizeMax {130 0} }
+                CIwUILayoutVertical
+                {
+                    element { name "LCMythLabel" }
+                    element { name "LCMythView" }
+                    CIwUILayoutSpacer { sizeMin {0 10} sizeMax {0 10} }
+                    element { name "LCKeyLabel" }
+                    element { name "LCKeyLabelBot" }
+
+                }
+                CIwUILayoutSpacer { sizeMin {40 0} sizeMax {40 0} }
+                CIwUILayoutVertical
+                {
+                    element { name "LCHistoryLabel" }
+                    element { name "LCHistoryView" }
+                }
+            }
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "LCMythLabel"
+            caption "神话"
+            style	<ParchementLabel>
+            sizeMax {90 20}
+            sizeMin {130 25}
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "LCHistoryLabel"
+            caption "历史与文化"
+            style	<ParchementLabel>
+            sizeMax {175 20}
+            sizeMin {245 25}
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "LCKeyLabel"
+            caption "= 详情"
+            style	<label_medium>
+            font "font_medium"
+            textColour { 124 73 43 255 }
+            sizeMax {100 20}
+            sizeMin {100 25}
+            CIwUIImage
+            {
+                name "WCFortifyImg"
+                sizeToContent true
+                texture LoreFull
+                sizeMin { 20 20 }
+                sizeMax { 20 20 }
+                pos { -16 4 }
+            }
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "LCKeyLabelBot"
+            caption "= 秘密"
+            style	<label_medium>
+            font "font_medium"
+            textColour { 124 73 43 255 }
+            sizeMax {100 20}
+            sizeMin {100 25}
+            CIwUIImage
+            {
+                name "WCFortifyImg"
+                sizeToContent true
+                texture LoreSecret
+                sizeMin { 20 20 }
+                sizeMax { 20 20 }
+                pos { -16 4 }
+            }
+        }
+
+
+        PickListView
+        {
+            alignV "top"
+            name "LCMythView"
+            CIwUILayoutVertical
+            {
+                spacing 10
+            }
+            colour { 255 255 255 255 }
+            sizeToSpace true
+            sizeToContent true
+
+            sizeMin  { 340 528 }
+            sizeMax  { 340 528 }
+        }
+        PickListView
+        {
+            alignV "top"
+            name "LCHistoryView"
+            CIwUILayoutVertical
+            {
+                spacing 10
+            }
+            colour { 255 255 255 255 }
+            sizeToSpace true
+            sizeToContent true
+
+            sizeMin  { 180 528 }
+            sizeMax  { 180 528 }
+        }
+
+    }
+}

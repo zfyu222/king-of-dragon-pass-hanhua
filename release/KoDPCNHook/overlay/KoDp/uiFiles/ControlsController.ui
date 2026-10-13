@@ -1,0 +1,302 @@
+
+
+
+CIwUIElement
+{
+	name			"ControlsController"
+
+    sizeToContent true
+    sizeToSpace true
+    
+    CIwUILayout
+    {
+        element { name "CCBackGround" }
+        CIwUILayoutHorizontal
+        {
+            element { name "MenuHolder" }
+            CIwUILayoutSpacer { sizeMin { 149 0} sizeMax {149 0} }
+            CIwUILayoutVertical
+            {
+                CIwUILayoutSpacer { sizeMin {0 20} sizeMax {0 30} }
+                element { name "ControlsScreen" }
+            }
+        }
+    }
+
+
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture MenuBackground-big
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+    CIwUIElement
+    {
+        name "ControlsScreen"
+        CIwUILayoutHorizontal
+        {   
+            CIwUILayoutVertical
+            {
+                CIwUILayoutHorizontal
+                {
+                    element { name "KoDPLabel" }
+                     CIwUILayoutSpacer { sizeMin {65 0} sizeMax {65 0} }
+                    element { name "CntCversionLabel" }
+                }
+                element { name "CntCCopyrightLabel" }
+             //   CIwUILayoutSpacer { sizeMin {0 30} sizeMax {0 30} }
+                element { name "CntCMissionScroll" }
+            }
+            CIwUILayoutSpacer { sizeMin {110 0} sizeMax {110 0} }
+            CIwUILayoutVertical
+            {
+                element { name "CntCSoundLabel" }
+                CIwUILayoutSpacer { sizeMin {0 20} sizeMax {0 20} }
+                    element { name "CntCBackGroundBox" }
+                CIwUILayoutSpacer { sizeMin {0 20} sizeMax {0 20} }
+                    element { name "CntCAdventureBox" }
+                CIwUILayoutSpacer { sizeMin {0 20} sizeMax {0 20} }
+                    element { name "CntCSndBox" }
+                CIwUILayoutSpacer { sizeMin {0 20} sizeMax {0 20} }
+                element { name "CntCTutBut"}
+                CIwUILayoutSpacer { sizeMin {0 5} sizeMax {0 5} }
+                element { name "CntCRestartBut" }
+                CIwUILayoutSpacer { sizeMin {0 5} sizeMax {0 5} }
+                element { name "CntCMenuBut" }
+                CIwUILayoutSpacer { sizeMin {0 20} sizeMax {0 20} }
+                element { name "CntCGameInfoLabel" }
+//                CIwUILayoutHorizontal
+//                {
+//                    spacing 20
+//                    element { name "CntCTwitterBut" }
+//                    element { name "CntCShareBut" }
+//                    element { name "CntCGameCenterBut" }
+//                }
+                CIwUILayoutSpacer { sizeMin {0 230} sizeMax {0 230} }
+                element { name "CntCDebugInfoBut" }
+            }
+
+        }
+        //Elements creation
+        CIwUILabel
+        {
+            alignH "left"
+            name "KoDPLabel"
+            caption "龙隘之王"
+            style	<ParchementLabel>
+            sizeMax {210 25}
+            sizeMin {245 25}
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "CntCversionLabel"
+            caption "2.3.1"
+            style	 <StandartLabel>
+            sizeMax {65 20}
+            sizeMin {75 25}
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            alignV "middle"
+            name "CntCCopyrightLabel"
+            caption "版权©1999-2023 A Sharp, LLC，©HeroCraft, 2023"
+            style	 <StandartLabel>
+            sizeMax {420 60}
+            sizeMin {420 60}
+            margin { 0 3 }
+        }
+        
+        CCommonScrollView
+        {
+            sizeMin  { 315 664 }
+            sizeMax  { 315 664 }
+            name "CntCMissionScroll"
+            sizeToContent true
+            verticalScrollBar <scrowable_vert>
+            scrollBarSize { 5 0 }
+            CIwUILabel
+            {
+                alignH "left"
+                alignV "top"
+                name "CntCMissionLabel"
+                caption "你的使者接近瓦尔曼迪氏族，该氏族以其军事狂热和疯狂酋长的历史而闻名。疯血奥尔甘迪说：“我怎么知道这不是诡计？我们瓦尔曼迪没有部落反而更好，你不觉得吗？”\n格洛兰萨是Issaries, Inc.的商标。格洛兰萨材料版权©1997-1999归A Sharp, LLC和Issaries, Inc.所有。格洛兰萨是格雷格·斯塔福德的创作，并经其许可使用。"
+                style	 <StandartLabel>
+                sizeMin {315 25}
+                sizeMax {315 25}
+                margin { 0 0 }
+                sizeToContent "true"
+            }
+        }
+        
+        CIwUILabel
+        {
+            alignH "left"
+            name "CntCSoundLabel"
+            caption "音效"
+            style	<ParchementLabel>
+            sizeMax {155 20}
+            sizeMin {165 25}
+        }
+        
+        CCheckBox
+        {
+            name "CntCBackGroundBox"
+            style <checkbox_sacred>
+            checked "false"
+            caption "背景音乐"
+            sizeMax {165 35}
+            sizeMin {240 35}
+            tag "0"
+            OnCheckboxChecked { ControlsController::toggleBackgroundMusic }
+        }
+
+        CCheckBox
+        {
+            name "CntCAdventureBox"
+            style <checkbox_sacred>
+            checked "false"
+            caption "冒险音乐"
+            sizeMax {165 35}
+            sizeMin {240 35}
+            tag "0"
+            OnCheckboxChecked { ControlsController::toggleAdventureMusic }
+        }
+
+        CCheckBox
+        {
+            name "CntCSndBox"
+            style <checkbox_sacred>
+            checked "false"
+            caption "音效"
+            sizeMin {165 35}
+            sizeMax {240 35}
+            tag "0"
+           OnCheckboxChecked { ControlsController::toggleSoundEffects }
+        }
+
+        CIwUIButton
+        {
+            name "CntCRestartBut"
+            style <Btn_45x154>
+            caption "新游戏"
+            alignH "centre"
+            OnButtonClick {  ControlsController::restartGame }
+        }
+        CIwUIButton
+        {
+            name "CntCTutBut"
+            style <Btn_45x154>
+            caption "教程"
+            alignH "centre"
+            OnButtonClick {  ControlsController::restartToTutorial }
+        }
+        CIwUIButton
+        {
+            name "CntCMenuBut"
+            style <Btn_45x154>
+            caption "主菜单"
+            alignH "centre"
+            OnButtonClick {  ControlsController::toMainMenu }
+        }
+
+        CIwUILabel
+        {
+            alignH "left"
+            name "CntCGameInfoLabel"
+            caption "你目前以较高难度游玩短游戏。"
+            style	<VerySmallLabel>
+            sizeMax {175 50}
+            sizeMin {185 90}
+        }
+        
+//        CIwUIButton
+//        {
+//            sizeToContent true
+//            sizeMin { 37 37 }
+//            sizeMax { 37 37 }
+//            name "CntCTwitterBut"
+//            style <button>
+//            font "font_medium"
+//            caption ""
+////            OnButtonClick { FoodController::showSlaughterDialog }
+//            buttonUp 
+//            {
+//                drawableType "image"
+//                texture Btn_Twitter_37x37
+//
+//            }
+//            buttonDown
+//            {
+//                drawableType "image"
+//                texture Btn_Twitter_37x37
+//            }
+//            focus ""
+//        }
+
+//        CIwUIButton
+//        {
+//            sizeToContent true
+//            sizeMin { 37 37 }
+//            sizeMax { 37 37 }
+//            name "CntCGameCenterBut"
+//            style <button>
+//            font "font_medium"
+//            caption ""
+////            OnButtonClick { FoodController::showSlaughterDialog }
+//            buttonUp 
+//            {
+//                drawableType "image"
+//                texture Btn_GC_37x37
+//
+//            }
+//            buttonDown
+//            {
+//                drawableType "image"
+//                texture Btn_GC_37x37
+//            }
+//            focus ""
+//        }
+//
+//        CIwUIButton
+//        {
+//            name "CntCShareBut"
+//            style <Btn_37x37>
+//            caption ""
+//            alignH "right"
+//            //OnButtonClick { SagaController::shareSaga }
+//            visible "false"
+//            CIwUIImage
+//            {
+//                name "CntCShareImg"
+//                sizeToContent true
+//                texture ShareIcon
+//                pos { 7 9 }
+//            }
+//        }
+        CIwUIButton
+        {
+            sizeToContent true
+            sizeMin { 155 41 }
+            sizeMax { 155 41 }
+            name "CntCDebugInfoBut"
+            style <button>
+            visible "true"
+            font "font_medium"
+            caption "调试窗口"
+            OnButtonClick { ControlsController::showDebugWindow }
+            buttonUp ""
+            buttonDown ""
+            focus ""
+        }
+
+    }
+
+}

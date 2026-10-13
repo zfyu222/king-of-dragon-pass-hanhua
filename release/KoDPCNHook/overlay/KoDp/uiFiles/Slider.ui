@@ -1,0 +1,148 @@
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                     Slider
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+CIwUIElement
+    {
+        name			"RingSlider"
+        CIwUILayoutVertical
+        {
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin {40 0} sizeMax {40 00} }
+                CIwUILayoutVertical
+                {
+                    CIwUILayoutSpacer { sizeMin {0 10} sizeMax {0 10} }
+                    element { name "SliderCaption" alignH "left"}
+                }
+            }
+            CIwUILayoutHorizontal
+            {
+                element { name "SliderButtonMinus" alignH "left" }
+                element { name "SliderBody" alignV "middle" }
+                element { name "SliderButtonPlus" alignH "right"}
+            }
+        }
+        CIwUIElement
+        {
+            name "SpacerForMax"
+            sizeMin { 0 0 }
+            sizeMax { 10 1}
+        }
+        CIwUILabel
+        {
+            alignH "centre"
+            alignV "middle"
+            name "SliderMin"
+            style	<label_medium>
+            font "DutchMediaeval21"
+            textColour { 0 0 0 255 }
+            caption "0"
+            sizeMax {40 20}
+            sizeMin {40 20}
+            margin { 0  0 }
+            pos { 0 10 }
+            oneLine "true"
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "SliderCaption"
+            style	<label_medium>
+            font "DutchMediaeval21"
+            textColour { 124 73 43 255 }
+            caption "标题"
+            sizeMax {150 15}
+            sizeMin {5 15}
+             oneLine "true"
+        }
+         CIwUILabel
+        {
+            alignH "centre"
+            alignV "top"
+            name "SliderMax"
+            style	<label_medium>
+            font "DutchMediaeval21"
+            textColour { 124 73 43 190 }
+            caption "100"
+            sizeMin {60 20}
+            sizeMax {60 20}
+            oneLine "true"
+            margin { 0  5 }
+        }
+        CButtonTap
+        {
+            sizeToContent true
+            sizeMin { 32 32 }
+            sizeMax { 32 32 }
+            margin { 0 0 }
+            name "SliderButtonMinus"
+            style <button>
+            font "font_medium"
+            buttonUp 
+            {
+                drawableType "image"
+                texture SliderMinus //SliderPlus
+
+            }
+            buttonDown
+            {
+                drawableType "image"
+                texture SliderMinus
+            }
+            focus ""
+        }
+        
+        CIwUISlider
+        {
+            sizeToContent true
+            name "SliderBody"
+            style <slider>
+            sizeMin { 7 7 }
+            sizeMax { 7 7 }
+            background
+            {
+                drawableType "image"
+                texture SliderLeft
+            }
+            marker
+            {
+                
+                drawableType "image"
+                texture SliderRing
+            }
+            bar ""
+            focus ""
+            sliderMax "100"
+            sliderMin "0"
+            sliderStep "5"
+            markerSize { 20 45 } //16 19
+            markerOverlaps "false"
+            margin { 0 0 }
+            OnSliderChanged { RingSliderReceiver::SliderPosChanged }
+        }
+
+        CButtonTap
+        {
+            sizeToContent true
+            sizeMin { 32 32 }
+            sizeMax { 32 32 }
+            margin { 0 -2 }
+            name "SliderButtonPlus"
+            style <button>
+            font "font_medium"
+            buttonUp 
+            {
+                drawableType "image"
+                texture SliderPlus
+
+            }
+            buttonDown
+            {
+                drawableType "image"
+                texture SliderPlus
+            }
+            focus ""
+        }
+    }

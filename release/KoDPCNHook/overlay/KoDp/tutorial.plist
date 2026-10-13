@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>corner</key>
+		<string>BL</string>
+		<key>text</key>
+		<string>（要缩小此教程框，请点击它。再次点击可展开。）
+
+你掌管一个刚移居到
+龙隘的氏族。我们从
+选择氏族的背景故事开始。
+阅读完文字后，点击“继续”。</string>
+	</dict>
+	<dict>
+		<key>text</key>
+		<string>没有正确或错误的
+回答；选择会塑造
+氏族的传说形象
+。（在龙隘开始游戏前，你可以回顾所有选择。）</string>
+	</dict>
+	<dict>
+		<key>text</key>
+		<string>在任何一个此类画面中，点击图片可隐藏文字。再次点击可显示文字。
+
+每个早期事件都会为你的氏族带来一种不同神祇祝福的知识。同样，没有最佳答案。</string>
+	</dict>
+	<dict>
+		<key>text</key>
+		<string>如果你决定你的
+祖先曾将纳尔达·宾
+收为奴隶，他们便认为这种做法
+无可非议。
+否则，他们厌恶
+奴隶制度。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BR</string>
+		<key>text</key>
+		<string>你的祖先期望你
+对其宿敌保持敌意，这些敌人至今仍在作祟。</string>
+	</dict>
+	<dict>
+		<key>text</key>
+		<string>战争氏族可将更多
+氏族魔法用于战争
+，更多农夫
+也能征召作战。和平氏族
+可将更多氏族魔法
+用于农田和牧群
+。平衡氏族则介于
+两者之间。</string>
+	</dict>
+	<dict>
+		<key>text</key>
+		<string>你将以你最初唤醒或延续
+崇拜的神祇
+的神龛
+开始。一如既往，不同的
+选择会略微改变游戏
+，但没有一个“最好”。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BR</string>
+		<key>text</key>
+		<string>无论你的祖先如何选择，你将以同样的方式对待龙及其亲族。</string>
+	</dict>
+	<dict>
+		<key>text</key>
+		<string>越大的边界越难守卫——敌人更容易避开你的巡逻队。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TL</string>
+		<key>text</key>
+		<string>首次游戏请坚持使用普通难度
+和短时长
+。
+向下滚动以回顾你的
+回答。“重启”可让你
+重新开始并做出新选择。点击“开始”在龙隘展开故事。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BR</string>
+		<key>text</key>
+		<string>神圣时间回顾过去一年……【点击“继续”】</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TL</string>
+		<key>text</key>
+		<string>……为期两周的魔法
+仪式，
+于每个新年前举行。在这里，你
+为来年分配氏族的魔法
+资源。氏族议会
+（即氏族环）的成员可以建言。
+点击顾问按钮（下方的人脸图标）查看。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BR</string>
+		<key>text</key>
+		<string>点击另一位顾问获取
+其建议，或点击向下
+箭头隐藏它。
+
+点击方框，将
+一点氏族魔法分配至
+农田、畜群和战争，然后
+点击“继续”。（这会留下
+一个储备，以备日后需
+要。）</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TR</string>
+		<key>text</key>
+		<string>我们看看邻居的情况。
+点击菜单按钮
+（位于右下角），
+然后点击“关系”。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BR</string>
+		<key>text</key>
+		<string>与其他
+龙之隘口部族的关系是
+获胜的重要条件。
+通常最好是
+让他人欠我们恩惠，但我们会向某人索要牛。
+
+滑动顶部的控制条
+直到“欠下的恩惠”处于
+中央位置。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TR</string>
+		<key>text</key>
+		<string>在部族列表中点击“戈林德”。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TR</string>
+		<key>text</key>
+		<string>（如果你
+想隐藏它，点击信息气泡。）点击
+“使者”按钮派遣一位使者。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TL</string>
+		<key>text</key>
+		<string>对话选择了库尔布拉斯特作为我们最优秀的外交官。点击他的小头像。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BR</string>
+		<key>text</key>
+		<string>果然，他拥有
+卓越的议价技能，
+以及不错的领导力；
+就选他吧。点击“索要牛只”（作为目标）。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TR</string>
+		<key>text</key>
+		<string>如果我们送上几件礼物，戈林德氏族就更可能给出有利回应。调整货物滑块，带来价值10头牛的货物……</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TR</string>
+		<key>text</key>
+		<string>……然后点击几次“+”，带来8名步兵协助保护我们的礼物。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BL</string>
+		<key>text</key>
+		<string>点击“派遣”派出
+任务。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BR</string>
+		<key>text</key>
+		<string>在任务出发期间，各种事件需要你关注。长老会会为你提供建议——当你点击某人时，他们推荐的操作会高亮显示为蓝色。点击顾问按钮。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TL</string>
+		<key>text</key>
+		<string>库尔布拉斯特无法提供建议（点击他的图片查看原因）。要查看完整插图，点击它（再次点击显示文本）。
+
+选择任意回复——通常没有错误选项。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TR</string>
+		<key>text</key>
+		<string>库尔布拉斯特到达戈林德
+氏族。（注意只有库尔布拉斯特
+能够提供建议。）选择一个
+符合习俗的回复，支付
+20头牛。你会看到
+你获得了牛只。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TL</string>
+		<key>text</key>
+		<string>氏族通过崇拜格洛兰萨的众多神明获得最强大的
+魔法。
+点击右下角的菜单按钮，然后选择“魔法”。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TR</string>
+		<key>text</key>
+		<string>在神祇列表中，选择战争之神胡马克特。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TL</string>
+		<key>text</key>
+		<string>右侧显示供奉胡马克特的神庙能够提供的魔法增益。
+
+点击“建造”。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BR</string>
+		<key>text</key>
+		<string>建造时，战斗运气祝福会被自动选择，不过你可以更改。
+
+点击“建造”建造一座胡马克特的神龛。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BR</string>
+		<key>text</key>
+		<string>又一场危机！这里的抉择会影响与其他两个氏族的往来，以及你自己氏族的情绪。无视你的顾问们，坚持让科罗尔娶她。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TR</string>
+		<key>text</key>
+		<string>此事尚未
+解决……
+
+在袭击科罗尔的氏族
+赫拉尼之前，通过点击右下角的信息按钮了解他们更多
+信息。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TL</string>
+		<key>text</key>
+		<string>在列表中找到赫拉尼
+并点击它。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BL</string>
+		<key>text</key>
+		<string>至少你没有与赫拉尼结盟！再次点击信息按钮返回事件。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TR</string>
+		<key>text</key>
+		<string>选择发动
+一次报复性袭击。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TR</string>
+		<key>text</key>
+		<string>现在决定谁去参加
+这次袭击：步兵（大多是
+农夫，他们相当
+能战斗），
+武器领主（全职战士），以及女性
+辅助者，她们负责治疗和
+鼓舞士气。然后向下滚动
+并点击“继续”。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TR</string>
+		<key>text</key>
+		<string>两股力量即将
+交锋。点击“＋”分配一点魔力来
+提高胜算。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BR</string>
+		<key>text</key>
+		<string>不在战前献祭，你便可在敌人准备就绪前发起冲锋。向下滚动并点击“继续”开始战斗。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TR</string>
+		<key>text</key>
+		<string>点击战斗结果末尾的“×”查看氏族对这个消息的反应。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BR</string>
+		<key>text</key>
+		<string>完成。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TR</string>
+		<key>text</key>
+		<string>你不会马上收到
+赫拉尼的消息，但他们很可能
+对这次袭击
+不太高兴，即使他们
+击败了你。
+
+因为没有更多
+选择，点击“完成”。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BL</string>
+		<key>text</key>
+		<string>即便没有
+武器领主战死或受伤，增强你的
+战斗力也
+无妨。点击菜单
+按钮，然后切换到战争界面
+招募更多战士。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BR</string>
+		<key>text</key>
+		<string>点击“武器领主”按钮招募更多战士。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BL</string>
+		<key>text</key>
+		<string>使用滑块或点击“＋”选择最大的武器领主数量，然后点击“招募”。你未必总能招募到
+想要的那么多。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BL</string>
+		<key>text</key>
+		<string>点击菜单按钮，然后切换到知识界面，那里提供关于格洛兰萨世界的信息。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TR</string>
+		<key>text</key>
+		<string>你无需现在就了解所有
+内容，但要赢
+得游戏，就要熟悉
+这些神话。向合适的
+神明献祭以了解
+其详情。这些将在你作为英雄探险重现神话时
+
+提供帮助（英雄探险复制诸神的伟业从而获得魔法好处）。点击“剑的故事”。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BL</string>
+		<key>text</key>
+		<string>照常点击图片可隐藏或再次显示文本。
+
+显示简要概览。点击“⊝”按钮显示详细版本。点击“×”返回知识界面。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TL</string>
+		<key>text</key>
+		<string>龙隘的大部分区域仍是
+未知，因为你的氏族
+刚刚抵达。根据以前人们生活在此的
+记忆，你对地理有一个基本
+了解。
+点击菜单按钮，然后
+切换到地图界面
+查看你对
+新家园的了解。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TL</string>
+		<key>text</key>
+		<string>你可以用通常的方式滚动或缩放
+地图。点击
+“探索”装备一支
+探险队，了解更多
+关于龙隘的信息。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BL</string>
+		<key>text</key>
+		<string>探索标记默认指向
+氏族的北方。保留
+在那里，或点击你想探索的地方。然后点击
+“派遣”按钮。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BL</string>
+		<key>text</key>
+		<string>氏族正遭受攻击！消耗
+点魔力，并向胡玛克特献祭
+头牛以换取他的恩惠。点击“继续”开始
+战斗。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BR</string>
+		<key>text</key>
+		<string>有时，一场战役会有一个
+关键时刻，此时一名
+领袖有机会
+英勇行事。这就是这样的
+时刻。做出决定，然后
+继续主线战役。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TL</string>
+		<key>text</key>
+		<string>你可能有一些
+伤兵需要照料。
+快速治愈伤员
+的方法是呼唤治愈
+女神查拉娜·阿罗伊，因此点击
+菜单按钮并切换
+到魔法界面。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TR</string>
+		<key>text</key>
+		<string>在神灵列表中选择“查拉娜·阿罗伊”……</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BR</string>
+		<key>text</key>
+		<string>点击“治愈”按钮
+选择该祝福。如果你
+没有伤员，只需点击
+“×”关闭对话框。
+否则，选择至少
+15份谢礼以祈求
+女神，然后点击
+“献祭”。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TR</string>
+		<key>text</key>
+		<string>有时，你只想让时间流逝。点击
+菜单按钮，可以看到当前是
+地季，此时
+氏族正进行收获。你
+不会想在此时召集
+农夫去突袭。而应
+点击“季节轮盘”以
+推进到下一个季节。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TR</string>
+		<key>text</key>
+		<string>早先的决定有
+滞后效果。看看
+你的顾问们有何见解。
+有时提交到
+氏族议会面前的事情并非真正需要议会
+
+解决，因此选择“将此事
+交由她的族人处理”。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TL</string>
+		<key>text</key>
+		<string>你的远征队已经返回
+带着另一个机遇。
+决定如何处理它（你的
+氏族议会可以给你建议）。
+新探索的领土将
+在下一次你
+查看地图时显示。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BL</string>
+		<key>text</key>
+		<string>现在是黑暗季，米娜拉
+报告了
+收成的最终统计。（值得关注农业
+历法
+，即使这个教程没有
+这样做。）点击“×.”</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BL</string>
+		<key>text</key>
+		<string>游戏会记录所发生的事情。点击菜单按钮，然后切换到史卷界面，那里展示你氏族的历史。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>CR</string>
+		<key>text</key>
+		<string>稍后，你可能会决定
+使用每一
+完整年结束时的
+按钮恢复游戏。
+
+点击菜单按钮，然后
+点击季节轮盘以让更多时间流逝</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TR</string>
+		<key>text</key>
+		<string>虽然氏族长老会
+成员在某种意义上是你
+的棋子，但他们确实有自己的
+想法。让一个恶作剧者加入长老会
+有
+可靠的传说理由
+，但有时也有实际的
+理由不这样做。将
+巴斯塔科斯从长老会移除。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BL</string>
+		<key>text</key>
+		<string>长老会现在只有六
+位成员，因此请点击菜单
+按钮，然后前往
+部落界面。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BR</string>
+		<key>text</key>
+		<string>点击“重组”来挑选新的氏族议会。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BL</string>
+		<key>text</key>
+		<string>你可以通过多种方式对氏族领袖进行排序
+。点击某位领袖
+了解其意见。注意
+巴斯塔科斯暂时无法回到
+长老会。找到布伦娜
+（她拥有很高的议价技能），然后
+勾选她的框来选中她。
+点击“重组”来任命
+长老会。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BL</string>
+		<key>text</key>
+		<string>虽然长老会重组仪式需要花费
+一些时间，但没有新的
+事件需要处理，所以点击
+菜单按钮，然后点击
+季节轮盘。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TR</string>
+		<key>text</key>
+		<string>氏族内部出现了一个问题
+。选择第一个
+选项，尝试缓和
+局势。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TR</string>
+		<key>text</key>
+		<string>那样行不通——即使是最能言善辩的首领也无法总是赢得人心。试试别的办法。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BR</string>
+		<key>text</key>
+		<string>你已经游玩了整整一年
+！教程至此结束。
+从每个界面的
+“更多信息”（可从
+菜单按钮找到）或手册
+（在知识界面）中了解更多。
+
+点击“继续”。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BR</string>
+		<key>text</key>
+		<string>继续游玩（承担此前
+决策的
+后果），或从控制界面
+开始新游戏。
+祝你好运！</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>TR</string>
+		<key>text</key>
+		<string>……然后点击“献祭”选择祭品。</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BR</string>
+		<key>text</key>
+		<string>如果你尚未在 App Store 中评价此游戏，请考虑一下。多谢！</string>
+	</dict>
+	<dict>
+		<key>corner</key>
+		<string>BC</string>
+		<key>text</key>
+		<string>点击“信息”了解如何游玩这款独特的叙事游戏。</string>
+	</dict>
+</array>
+</plist>

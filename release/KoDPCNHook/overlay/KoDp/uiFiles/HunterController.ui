@@ -1,0 +1,125 @@
+
+
+CIwUIElement
+{
+	name			"HunterController"
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    sizeToContent true
+    sizeToSpace true
+    
+    CIwUILayoutHorizontal
+    {
+        CIwUILayoutSpacer { sizeMin { 180 0} sizeMax {180 0} }
+        CIwUILayoutVertical
+        {
+            CIwUILayoutSpacer { sizeMin { 0 160} sizeMax {0 160} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 170 0} sizeMax {170 0} }
+                CIwUILayoutVertical
+                {
+                    spacing 10
+                    element { name "HunterLabel" }
+                    element { name "HunterSlider" }
+                }
+                CIwUILayoutSpacer { sizeMin { 40 0} sizeMax {40 0} }
+                CIwUILayoutVertical
+                {
+                    element { name "hunterDescLabel" }
+                }
+            }
+            CIwUILayoutSpacer { sizeMin { 0 154} sizeMax {0 154} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 140 0} sizeMax {140 0} }
+                element { name "FCAdviceView" }
+            }
+            CIwUILayoutSpacer { sizeMin { 0 20} sizeMax {0 20} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 150 20} sizeMax {150 20} }
+                element { name "SacredGridLabels" }
+                CIwUILayoutSpacer { sizeMin { 60 0} sizeMax {60 0} }
+                element { name "FoodCrecruitBut" }
+                CIwUILayoutSpacer { sizeMin { 20 0} sizeMax {20 0} }
+                element { name "FCcloseBut" }
+            }
+        }
+
+    }
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture Clear64x64
+        //DialogBackground1
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+
+    CIwUIElement
+    {
+        sizeMin { 250, 90 }
+        sizeToContent true
+        name "HunterSlider"
+    }
+
+    CIwUILabel
+    {
+        alignH "left"
+        name "HunterLabel"
+        caption "猎人"
+        style	<ParchementLabel>
+        sizeMax {194 20}
+        sizeMin {198 25}
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        name "hunterDescLabel"
+        caption "猎人为氏族提供额外肉类。农夫成为猎人，或猎人回归农夫身份。"
+        style	<SmallLabel>
+        sizeMax {302 70}
+        sizeMin {310 75}
+    }
+
+
+    //****
+    CIwUIButton
+    {
+        name "FCcloseBut"
+        style <Btn_37x37>
+        caption ""
+        alignH "right"
+        OnButtonClick { ManagementController::cancelDialog }
+        CIwUIImage
+        {
+            name "FCcloseImg"
+            sizeToContent true
+            texture CloseX
+            pos { 2 2 }
+        }
+    }
+    
+    CIwUIButton
+    {
+        name "FoodCrecruitBut"
+        enabled "false"
+        style <Btn_45x91>
+        caption "指派"
+        OnButtonClick {  HunterController::changeValue }
+    }
+    
+    CIwUIElement
+    {
+        name "FCAdviceView"
+        sizeMin { 640 104 }
+        sizeMax { 640 104 }
+
+    }
+}

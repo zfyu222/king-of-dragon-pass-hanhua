@@ -1,0 +1,373 @@
+
+
+
+
+
+CIwUIElement
+{
+	name			"ScenePicker"
+    pos { 100 0 }
+    CIwUILayoutVertical
+    {
+    
+
+        CIwUILayoutHorizontal
+        {
+            element {  name "fScenePicker" }
+
+            CIwUILayoutSpacer { sizeMin {90 0} sizeMax {90 0} }
+            CIwUILayoutVertical
+            {
+                element { name "queueButton" }
+                element { name "queueGoButton" }
+                element { name "tryButton" }
+            }
+        }
+        element { name "sceneName" }
+        CIwUILayoutHorizontal
+        {
+            element { name "scroller" }
+            CIwUILayoutVertical
+            {
+                element { name "combatLabel" }
+                element { name "forceField" }
+                element { name "forceDesc" }
+            }
+        }
+        CIwUILayoutSpacer { sizeMin {0 320} sizeMax {0 320} }
+        element { name "doItButton" }
+        CIwUILayoutHorizontal
+        {
+            element { name "switchButton" }
+            //CIwUILayoutSpacer { sizeMin {12 0} sizeMax {12 0} }
+            element { name "pushWinButton" }
+            element { name "pushLoseButton" }
+           // CIwUILayoutSpacer { sizeMin {50 0} sizeMax {50 0} }
+            element { name "cancelPickerButton" }
+        }
+    }
+
+    CIwUIImage
+    {
+        name "CCBGround"
+        drawableType "image"
+        sizeToSpace true
+        imageColour { 128 128 128 200 }
+        sizeToContent   true
+        texture Clear64x64
+        sizeMin { 526 800 }
+        sizeMax { 526 800 }
+    }
+
+
+    CIwUIElement
+    {
+        sizeMin { 150 110 }
+        sizeMax { 150 110 }
+        name "fScenePicker"
+        CIwUILayoutHorizontal
+        {
+            CIwUILayoutVertical
+            {
+                element { name "Digit1Plus" }
+                element { name "Digit1Label" }
+                element { name "Digit1Minus" }
+            }
+            CIwUILayoutVertical
+            {
+                element { name "Digit2Plus" }
+                element { name "Digit2Label" }
+                element { name "Digit2Minus" }
+            }
+            CIwUILayoutVertical
+            {
+                element { name "Digit3Plus" }
+                element { name "Digit3Label" }
+                element { name "Digit3Minus" }
+            }
+            CIwUILayoutVertical
+            {
+                element { name "Digit4Plus" }
+                element { name "Digit4Label" }
+                element { name "Digit4Minus" }
+            }
+        }
+
+        //Digit 1
+        CIwUIButton
+        {
+            name "Digit1Plus"
+            style <Btn_37x37>
+            caption "+"
+            OnButtonClick {  ScenePicker::Inc1 }
+        }
+        CIwUILabel
+        {
+            alignH "centre"
+            name "Digit1Label"
+            caption "0"
+            style	<SmallLabel>
+            sizeMax {37 20}
+            sizeMin {37 25}
+        }
+        CIwUIButton
+        {
+            name "Digit1Minus"
+
+            style <Btn_37x37>
+            caption "-"
+            OnButtonClick {  ScenePicker::Dec1 }
+        }
+        
+        //Digit 2
+        CIwUIButton
+        {
+            name "Digit2Plus"
+
+            style <Btn_37x37>
+            caption "+"
+            OnButtonClick {  ScenePicker::Inc2 }
+        }
+        CIwUILabel
+        {
+            alignH "centre"
+            name "Digit2Label"
+            caption "0"
+            style	<SmallLabel>
+            sizeMax {37 20}
+            sizeMin {37 25}
+        }
+        CIwUIButton
+        {
+            name "Digit2Minus"
+
+            style <Btn_37x37>
+            caption "-"
+            OnButtonClick {  ScenePicker::Dec2 }
+        }
+        
+        //Digit 3
+        CIwUIButton
+        {
+            name "Digit3Plus"
+
+            style <Btn_37x37>
+            caption "+"
+            OnButtonClick {  ScenePicker::Inc3 }
+        }
+        CIwUILabel
+        {
+            alignH "centre"
+            name "Digit3Label"
+            caption "0"
+            style	<SmallLabel>
+            sizeMax {37 20}
+            sizeMin {37 25}
+        }
+        CIwUIButton
+        {
+            name "Digit3Minus"
+
+            style <Btn_37x37>
+            caption "-"
+            OnButtonClick {  ScenePicker::Dec3 }
+        }
+
+        //Digit 4
+        CIwUIButton
+        {
+            name "Digit4Plus"
+
+            style <Btn_37x37>
+            caption "+"
+            OnButtonClick {  ScenePicker::Inc4 }
+        }
+        CIwUILabel
+        {
+            alignH "centre"
+            name "Digit4Label"
+            caption "0"
+            style	<SmallLabel>
+            sizeMax {37 20}
+            sizeMin {37 25}
+        }
+        CIwUIButton
+        {
+            name "Digit4Minus"
+
+            style <Btn_37x37>
+            caption "-"
+            OnButtonClick {  ScenePicker::Dec4 }
+        }
+    }
+    CIwUIButton
+    {
+        name "queueButton"
+
+        style <MHbutton>
+        caption "排队"
+        OnButtonClick {  ScenePicker::queueScene }
+    }
+    CIwUIButton
+    {
+        name "queueGoButton"
+
+        style <MHbutton>
+        sizeMin { 250 40 }
+        sizeMax { 250 40 }
+        caption "排队并前往"
+        OnButtonClick {  ScenePicker::queueSceneAndGo }
+    }
+    CIwUIButton
+    {
+        name "tryButton"
+
+        style <MHbutton>
+        caption "试炼条件"
+        sizeMin { 250 40 }
+        sizeMax { 250 40 }
+        OnButtonClick {  ScenePicker::tryScene }
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        name "sceneName"
+        caption "标签"
+        style	<ParchementLabel>
+        textColour { 255 255 255 255 }
+        sizeMax {480 20}
+        sizeMin {480 25}
+    }
+    
+    CCommonScrollView
+    {
+        alignV "top"
+        name "scroller"
+        sizeToSpace true
+        sizeToContent true
+
+        sizeMin  { 335 200 }
+        sizeMax  { 350 200 }
+
+        CIwUILabel
+        {
+            alignH "left"
+            name "clanInfo"
+            caption "氏族信息"
+            style	<StandartLabel>
+            textColour { 255 255 255 255 }
+            sizeMax {335 190}
+            sizeMin {350 400}
+        }
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        name "combatLabel"
+        caption "战斗"
+        style	<StandartLabel>
+        textColour { 255 255 255 255 }
+        sizeMax {100 20}
+        sizeMin {100 25}
+    }
+
+    CIwUITextField
+	{
+		name	"forceField"
+		style	<textField>
+		caption	"文本字段"
+		size { 50 37 }
+        caption ""
+	}
+    CIwUILabel
+    {
+        alignH "left"
+        name "forceDesc"
+        caption ">100=gForceHeroic\n>1000=gForceSituation"
+        style	<SmallLabel>
+        textColour { 255 255 255 255 }
+        sizeMax {180 40}
+        sizeMin {180 70}
+    }
+    CIwUIButton
+    {
+        name "doItButton"
+
+        style <MHbutton>
+        caption "执行"
+        textColour { 0 0 255 255 }
+        OnButtonClick {  ScenePicker::doDebug }
+    }
+    
+    CIwUIButton
+    {
+        name "switchButton"
+
+        style <MHbutton>
+        caption "调试"
+        textColour { 255 0 0 255 }
+        sizeMin { 100 30 }
+        sizeMax { 140 30 }
+         margin { 0 0 }
+        OnButtonClick {  ScenePicker::switchToDebug }
+    }
+    CIwUIButton
+    {
+        name "pushWinButton"
+        style <MHbutton>
+        caption "下次胜利 "
+        textColour { 255 0 0 255 }
+        sizeMin { 100 30 }
+        sizeMax { 140 30 }
+         margin { 0 0 }
+        OnButtonClick {  ScenePicker::pushWin }
+    }
+    CIwUIButton
+    {
+        name "pushLoseButton"
+        style <MHbutton>
+        caption " 下次失败"
+        textColour { 255 0 0 255 }
+        sizeMin { 100 30 }
+         margin { 0 0 }
+         sizeMax { 140 30 }
+        OnButtonClick {  ScenePicker::pushLose }
+    }
+    CIwUIButton
+    {
+        name "cancelPickerButton"
+        style <MHbutton>
+        caption "完成"
+        margin { 0 0 }
+        textColour { 255 0 0 255 }
+        sizeMin { 100 30 }
+        sizeMax { 140 30 }
+        OnButtonClick {  ScenePicker::cancelPicker }
+    }
+    PickListView
+    {
+        alignV "top"
+        name "debugPickerView"
+        CIwUILayoutVertical
+        {
+            spacing 5
+        }
+        colour { 255 255 255 255 }
+        sizeToSpace true
+        sizeToContent true
+
+        sizeMin  { 250 630 }
+        sizeMax  { 250 630 }
+        pos { 0 0}
+    }
+    CIwUIImage
+    {
+        name "fSeasonWheelIllo"
+        drawableType "image"
+        sizeToContent   true
+        texture SeasonWheel
+        visible "false"
+        sizeMin { 51 52 }
+        sizeMax { 51 52 }
+    }
+}

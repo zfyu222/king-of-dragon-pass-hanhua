@@ -1,0 +1,149 @@
+
+
+CIwUIElement
+{
+	name			"FortifyController"
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    sizeToContent true
+    sizeToSpace true
+    
+    CIwUILayoutHorizontal
+    {
+        CIwUILayoutSpacer { sizeMin { 180 0} sizeMax {180 0} }
+        CIwUILayoutVertical
+        {
+            CIwUILayoutSpacer { sizeMin { 0 439} sizeMax {0 439} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 140 0} sizeMax {140 0} }
+                element { name "FCAdviceView" }
+            }
+            CIwUILayoutSpacer { sizeMin { 0 20} sizeMax {0 20} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 150 20} sizeMax {150 20} }
+                element { name "SacredGridLabels" }
+                CIwUILayoutSpacer { sizeMin { 60 0} sizeMax {60 0} }
+                element { name "FoodCrecruitBut" }
+                CIwUILayoutSpacer { sizeMin { 20 0} sizeMax {20 0} }
+                element { name "FCcloseBut" }
+            }
+        }
+
+    }
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture Clear64x64
+        //DialogBackground1
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+    CIwUIElement
+    {
+        pos { 128 12 }
+        CIwUILabel
+        {
+            alignH "left"
+            name "fortifyLabel"
+            caption "防御工事"
+            style	<ParchementLabel>
+            sizeMax {170 20}
+            sizeMin {180 25}
+            pos { 212 143 }
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "buildA"
+            caption "建造一座"
+            style	<ParchementLabel>
+            sizeMax {104 20}
+            sizeMin {140 25}
+            pos { 436 143 }
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "cost"
+            caption "成本"
+            style	<StandartLabel>
+            sizeMax {120 20}
+            sizeMin {170 25}
+            pos { 580 144 }
+        }
+
+        PickListView
+        {
+            alignV "top"
+            name "fortificationView"
+            CIwUILayoutVertical
+            {
+                spacing 5
+            }
+            colour { 255 255 255 255 }
+            sizeToSpace true
+            sizeToContent true
+            sizeMin  { 200 225 }
+            sizeMax  { 200 225 }
+            pos { 212 177}
+        }
+
+        PickListView
+        {
+            alignV "top"
+            name "avalaibleView"
+            CIwUILayoutVertical
+            {
+                spacing 5
+            }
+            colour { 255 255 255 255 }
+            sizeToSpace true
+            sizeToContent true
+
+            sizeMin  { 200 225 }
+            sizeMax  { 200 225 }
+            pos { 436 177}
+        }
+    }
+
+    //****
+    CIwUIButton
+    {
+        name "FCcloseBut"
+        style <Btn_37x37>
+        caption ""
+        alignH "right"
+        OnButtonClick { ManagementController::cancelDialog }
+        CIwUIImage
+        {
+            name "FCcloseImg"
+            sizeToContent true
+            texture CloseX
+            pos { 2 2 }
+        }
+    }
+    
+    CIwUIButton
+    {
+        name "FoodCrecruitBut"
+        enabled "false"
+        style <Btn_45x91>
+        caption "筑防"
+        OnButtonClick {  FortifyController::fortify }
+    }
+    
+    CIwUIElement
+    {
+        name "FCAdviceView"
+        sizeMin { 640 104 }
+        sizeMax { 640 104 }
+
+    }
+}

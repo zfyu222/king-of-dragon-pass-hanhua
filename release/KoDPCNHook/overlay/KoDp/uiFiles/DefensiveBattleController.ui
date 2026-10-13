@@ -1,0 +1,128 @@
+
+
+CIwUIElement
+{
+	name			"DefensiveBattleController"
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    sizeToContent true
+    sizeToSpace true
+    pos { 133 0 }
+  
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture Clear64x64
+        pos { -133 0 }
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+	//------------------- <border> ---------------------
+	CIwUIElement
+	{
+	name "aroundFrame"
+	sizeToContent true
+	sizeToSpace true
+	pos {16 121}
+	sizeMin { 660 490 }
+	sizeMax { 660 490 }
+
+		CIwUIImage
+		{
+			name "aroundFrameT"
+			drawableType "image"
+			sizeToContent   true
+			texture topMap
+			pos {-3 -3}
+			sizeMin { 646 3 }
+			sizeMax { 646 3 }
+		}
+		CIwUIImage
+		{
+			name "aroundFrameB"
+			drawableType "image"
+			sizeToContent   true
+			texture topMap
+			pos {-3 480}
+			sizeMin { 646 3 }
+			sizeMax { 646 3 }
+		}
+		CIwUIImage
+		{
+			name "aroundFrameL"
+			drawableType "image"
+			sizeToContent   true
+			texture leftMap
+			pos {-3 0}
+			sizeMin { 3 480 }
+			sizeMax { 3 480 }
+		}
+		CIwUIImage
+		{
+			name "aroundFrameR"
+			drawableType "image"
+			sizeToContent   true
+			texture leftMap
+			pos {640 0}
+			sizeMin { 3 480 }
+			sizeMax { 3 480 }
+		}
+	}
+	//------------------- </border> ----------------------
+    CIwUIImage
+    {
+        name "background"
+        drawableType "image"
+        sizeToContent   true
+        texture  Btn_SceneSaga
+        pos { 16 121 }
+        size { 640 480}
+        sizeMin { 640 480 }
+        sizeMax { 640 480 }
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        name "introText"
+        caption "我们正在袭击棕野猪。"
+        style	<label_medium>
+        font "DutchMediaevalBook23"
+        textColour { 67 36 1 255 }
+        sizeMax {636 83}
+        sizeMin {636 90}
+        pos {16 30}
+    }
+
+
+    CIwUIElement
+    {
+        name "textHolder"
+        size {360 690}
+        pos {708 30}
+        CScrollDescription
+        {
+            name "scroller"
+            sizeMin {360 690}
+            sizeMax {360 690}
+            CIwUILayoutVertical
+            {
+                element { name "scrollerView" }
+            }
+            CIwUIElement
+            {
+                name "scrollerView"
+                sizeToSpace true
+                sizeToContent true
+                sizeMin {360 690}
+                sizeMax {360 690}
+            }
+
+        }
+
+    }
+
+}

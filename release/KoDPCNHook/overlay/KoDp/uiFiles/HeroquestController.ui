@@ -1,0 +1,77 @@
+
+
+
+CIwUIElement
+{
+	name			"HeroquestController"
+    sizeToContent true
+    sizeToSpace true
+    
+    CIwUILayout
+    {
+        CIwUILayoutHorizontal
+        {
+            CIwUILayoutSpacer { sizeMin { 20 0} sizeMax {20 0} }
+            CIwUILayoutVertical
+            {
+                CIwUILayoutSpacer { sizeMin { 0 136} sizeMax {0 136} }
+                element { name "backgroundImg"}
+            }
+            CIwUILayoutSpacer { sizeMin { 20 0} sizeMax {20 0} }
+            element { name "scroller"}
+        }
+    }
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture Clear64x64
+    }
+    CIwUIImage
+    {
+        name "backgroundImg"
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture Divider_years
+        sizeMin { 640 480 }
+        sizeMax { 640 480 }
+    }
+
+    CCommonScrollView
+    {
+        sizeMin  { 580 752 }
+        sizeMax  { 580 752 }
+        name "scroller"
+        sizeToContent true
+        CIwUILayoutVertical
+        {
+            element { name "scrollView"}
+        }
+        CIwUIElement
+        {
+            sizeMin  { 580 80 }
+            sizeMax  { 580 1000 }
+            name "scrollView"
+            CIwUILabel
+            {
+                alignH "left"
+                alignV "top"
+                name "infoText"
+                caption "你的使者接近瓦尔曼迪氏族，该氏族以尚武狂热和癫狂酋长的历史而闻名。疯血奥尔甘迪说：“我如何知道这不是一个诡计？我们瓦尔曼迪没有部落反而更好，你不这么认为吗？”"
+                style	<label_medium>
+                font "Trebuchet27"
+                textColour { 51 26 4 255 }
+                sizeMin {580 25}
+                sizeMax {580 800}
+                sizeToContent "true"
+                sizeToSpace true
+                margin { 0 0 }
+            }
+        }
+    }
+   }

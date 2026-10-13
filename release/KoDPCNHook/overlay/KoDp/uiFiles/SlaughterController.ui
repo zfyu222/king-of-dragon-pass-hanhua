@@ -1,0 +1,233 @@
+
+
+CIwUIElement
+{
+	name			"SlaughterController"
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    sizeToContent true
+    sizeToSpace true
+    
+    CIwUILayoutHorizontal
+    {
+        CIwUILayoutSpacer { sizeMin { 180 0} sizeMax {180 0} }
+        CIwUILayoutVertical
+        {
+            CIwUILayoutSpacer { sizeMin { 0 140} sizeMax {0 140} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 170 0} sizeMax {170 0} }
+                CIwUILayoutVertical
+                {
+
+                    element { name "SlaughterLabel" }
+                    CIwUILayoutSpacer { sizeMin { 0 10} sizeMax {0 10} }
+                    element { name "cattleSlider" }
+                    element { name "horseSlider" }
+                    CIwUILayoutHorizontal
+                    {
+                        element { name "FoodValLabel" }
+                        element { name "foodValueLabel" }
+                    }
+                }
+                CIwUILayoutSpacer { sizeMin { 100 0} sizeMax {10 0} }
+                CIwUILayoutVertical
+                {
+                    element { name "expFoodLabel" }
+                    CIwUILayoutSpacer { sizeMin { 0 10} sizeMax {0 10} }
+                    CIwUILayoutGrid
+                    {
+
+                        column { widthMin 75 widthMax 90 }
+                        column { widthMin 75 widthMax 90 }
+                        row { }
+                        row { }
+                        row { }
+                        element { name "SCexpectedHarvest"  row 0 column 0 }
+                        element { name "SCharvestDesc"      row 0 column 1 }
+                        element { name "SCexpectedHerds"    row 1 column 0 }
+                        element { name "SCherdsDesc"        row 1 column 1 }
+                        element { name "SCexpectedHunting"  row 2 column 0 }
+                        element { name "SChuntingDesc"      row 2 column 1 }
+                    }
+                }
+            }
+            CIwUILayoutSpacer { sizeMin { 0 59} sizeMax {0 59} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 140 0} sizeMax {140 0} }
+                element { name "FCAdviceView" }
+            }
+            CIwUILayoutSpacer { sizeMin { 0 20} sizeMax {0 20} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 150 20} sizeMax {150 20} }
+                element { name "SacredGridLabels" }
+                CIwUILayoutSpacer { sizeMin { 60 0} sizeMax {60 0} }
+                element { name "FoodCrecruitBut" }
+                CIwUILayoutSpacer { sizeMin { 20 0} sizeMax {20 0} }
+                element { name "FCcloseBut" }
+            }
+        }
+
+    }
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture Clear64x64
+        //DialogBackground1
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+
+    CIwUIElement
+    {
+        sizeMin { 250, 90 }
+        sizeToContent true
+        name "cattleSlider"
+    }
+     CIwUIElement
+    {
+        sizeMin { 250, 90 }
+        sizeToContent true
+        name "horseSlider"
+    }
+
+    CIwUILabel
+    {
+        alignH "left"
+        name "SlaughterLabel"
+        caption "屠杀"
+        style	<ParchementLabel>
+        sizeMax {194 20}
+        sizeMin {198 25}
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        name "FoodValLabel"
+        caption "食物价值"
+        style	<StandartLabel>
+        sizeMax {105 20}
+        sizeMin {135 25}
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        name "foodValueLabel"
+        caption "0"
+        style	<StandartLabel>
+        textColour { 0 0 0 255 }
+        sizeMax {105 20}
+        sizeMin {105 25}
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        name "expFoodLabel"
+        caption "预期食物"
+        style	<ParchementLabel>
+        sizeMax {190 20}
+        sizeMin {198 25}
+    }
+    
+    
+    CIwUILabel
+    {
+        alignH "left"
+        name "SCexpectedHarvest"
+        caption "收获"
+        style	<StandartLabel>
+        sizeMax {75 20}
+        sizeMin {100 25}
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        name "SCharvestDesc"
+        caption "0"
+        style	<StandartLabel>
+        textColour { 0 0 0 255 }
+        sizeMax {45 20}
+        sizeMin {100 25}
+    }
+    
+    CIwUILabel
+    {
+        alignH "left"
+        name "SCexpectedHerds"
+        caption "畜群"
+        style	<StandartLabel>
+        sizeMax {75 20}
+        sizeMin {100 25}
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        name "SCherdsDesc"
+        caption "0"
+        style	<StandartLabel>
+        textColour { 0 0 0 255 }
+        sizeMax {45 20}
+        sizeMin {100 25}
+    }
+    
+    CIwUILabel
+    {
+        alignH "left"
+        name "SCexpectedHunting"
+        caption "狩猎"
+        style	<StandartLabel>
+        sizeMax {75 20}
+        sizeMin {100 25}
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        name "SChuntingDesc"
+        caption "0"
+        style	<StandartLabel>
+        textColour { 0 0 0 255 }
+        sizeMax {45 20}
+        sizeMin {100 25}
+    }
+
+    //****
+    CIwUIButton
+    {
+        name "FCcloseBut"
+        style <Btn_37x37>
+        caption ""
+        alignH "right"
+        OnButtonClick { ManagementController::cancelDialog }
+        CIwUIImage
+        {
+            name "FCcloseImg"
+            sizeToContent true
+            texture CloseX
+            pos { 2 2 }
+        }
+    }
+    
+    CIwUIButton
+    {
+        name "FoodCrecruitBut"
+        enabled "false"
+        style <Btn_45x122>
+        caption "屠杀"
+        OnButtonClick {  SlaughterController::slaughter }
+    }
+    
+    CIwUIElement
+    {
+        name "FCAdviceView"
+        sizeMin { 640 104 }
+        sizeMax { 640 104 }
+
+    }
+}

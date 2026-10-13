@@ -1,0 +1,122 @@
+
+
+CIwUIElement
+{
+	name			"OffensiveBattleController"
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    sizeToContent true
+    sizeToSpace true
+    pos { 145 0 }
+  
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture Clear64x64
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+        pos { -145 0 }
+    }
+	//------------------- <border> ---------------------
+	CIwUIImage
+	{
+		name "aroundFrameT"
+		drawableType "image"
+		sizeToContent   true
+		texture topMap
+		pos {365 118}
+		sizeMin { 646 3 }
+		sizeMax { 646 3 }
+	}
+	CIwUIImage
+	{
+		name "aroundFrameB"
+		drawableType "image"
+		sizeToContent   true
+		texture topMap
+		pos {365 601}
+		sizeMin { 646 3 }
+		sizeMax { 646 3 }
+	}
+	CIwUIImage
+	{
+		name "aroundFrameL"
+		drawableType "image"
+		sizeToContent   true
+		texture leftMap
+		pos {365 121}
+		sizeMin { 3 480 }
+		sizeMax { 3 480 }
+	}
+	CIwUIImage
+	{
+		name "aroundFrameR"
+		drawableType "image"
+		sizeToContent   true
+		texture leftMap
+		pos {1008 121}
+		sizeMin { 3 480 }
+		sizeMax { 3 480 }
+	}
+	//------------------- </border> ----------------------
+    CIwUIImage
+    {
+        name "background"
+        drawableType "image"
+        sizeToContent   true
+        texture  Btn_SceneSaga
+        pos { 368 121 }
+        size { 640 480}
+        sizeMin { 640 480 }
+        sizeMax { 640 480 }
+    }
+    CIwUILabel
+    {
+        alignH "left"
+        name "introText"
+        caption "我们正在袭击棕野猪。"
+        style	<label_medium>
+        font "DutchMediaevalBook23"
+        textColour { 67 36 1 255 }
+        sizeMax {636 83}
+        sizeMin {636 90}
+        pos {368 30}
+    }
+
+
+    CIwUIElement
+    {
+        name "textHolder"
+        size {360 690}
+        pos {10 30}
+        CScrollDescription
+        {
+            sizeMin {360 690}
+            sizeMax {360 690}
+            size {360 690}
+            sizeToContent true
+            sizeToSpace true
+            name "scroller"
+            CIwUILayoutVertical
+            {
+                element { name "scrollerView" }
+            }
+            CIwUIElement
+            {
+                sizeToSpace true
+                sizeToContent true
+                name "scrollerView"
+                sizeMin {360 50}
+                sizeMax {360 690}
+
+            }
+
+        }
+
+    }
+
+}

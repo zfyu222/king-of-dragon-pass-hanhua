@@ -1,0 +1,51 @@
+<!--
+   Text.strings
+   KoDP
+
+   Created by David Dunham on 10-01-23.
+   Copyright ©2010-2013 A Sharp, LLC. All rights reserved.
+ -->
+<LocalizeString>
+<Credits>制作人：大卫·邓纳姆 联合制作人：伊莉斯·鲍迪奇 设计：大卫·邓纳姆、格雷格·斯塔福德、罗宾·D·劳斯 编程：伊莉斯·鲍迪奇、肖恩·斯蒂尔、大卫·邓纳姆 美术总监：斯特凡诺·高迪亚诺 美术：迈克·拉贝、达蒙·布朗、布莱恩·森德尔巴赫、迈克·克里斯蒂安、贾斯汀·诺曼、杰森·卢特斯、加里·阿马罗、西蒙·布雷、史蒂夫·克洛普夫施泰因、杰夫·哈辛、亚历山德罗·高迪亚诺、达里克·张伯林、加里·古德里奇、柯克·巴斯、埃德·布鲁贝克、迈克·明尼、贾斯汀·汉普顿、大卫·拉斯基、安德烈亚·高迪亚诺、贾尼·林图宁、尤哈·马科宁、扬·波什皮希尔 用户界面：贾尼·林图宁、布莱恩·福格尔、道尔顿·韦伯、克里斯蒂·米勒 写作与编辑：罗宾·D·劳斯、格雷格·斯塔福德、大卫·邓纳姆、罗布·海因索 音乐：斯坦·勒帕德 音效：迈克尔·托齐尔 额外设计：罗布·海因索、伊莉斯·鲍迪奇 额外编程：斯科特·施瓦茨 质量保证：罗布·海因索、布莱恩·坎贝尔、里克·埃尔斯伯里、莉安娜·克尔 传说地图：科林·德赖弗 iOS 适配：大卫·邓纳姆 鸣谢：让-保罗·卢利耶、肖恩·克利梅克、斯科特·本尼、奥利·西内尔马、本杰明·博罗夫斯基、我们的朋友与测试者 字体：Canada Type Android/Steam 适配：HeroCraft 制作人：帕维尔·科斯京、尤里·萨维茨基 编程：丹尼斯·布德尼科夫、鲍里斯·舍特金金、阿列克谢·萨皮加、伊利亚·巴尔迪诺夫 质量保证：亚历山大·马尔琴科、维塔利·迪亚琴科、德米特里·什利亚切特科 支持邮箱：support@herocraft.com 《龙隘之王》是 A Sharp, LLC 的商标。格洛兰萨是 Issaries, Inc. 的商标。格洛兰萨素材版权 ©1997-2019 归 A Sharp, LLC 和 Issaries, Inc. 所有。格洛兰萨由格雷格·斯塔福德创作，经其许可使用。部分美术作品版权 ©2010 归 Moon Design 所有，经许可使用。联系我们：www.a-sharp.com</Credits>
+
+<!-- For BuildController -->
+<BuildImpossible>这是 %s最大神庙的规模。</BuildImpossible>
+<CantAfford>我们没有足够的货物来建造。</CantAfford>
+<CantWorship>我们没有足够的信徒来支撑更大的神庙。</CantWorship>
+<CantRitual>我们没有足够的仪式知识来扩建神庙。</CantRitual>
+<BuildPossible></BuildPossible>
+
+<!--For ControlsController -->
+<BasicFB>我正在玩《龙隘之王》，一款独特的 iOS 叙事游戏 http://a-sharp.com/kodp</BasicFB>
+<BasicTweet>#KoDP 我正在玩《龙隘之王》，一款独特的 iOS 叙事游戏 http://a-sharp.com/kodp</BasicTweet>
+<DurationFB>我正在玩《龙隘之王》，一款独特的 iOS 叙事游戏 http://a-sharp.com/kodp。 %s 氏族已在龙之隘口 %d 年。</DurationFB>
+<DurationTweet> %s 氏族已在龙之隘口 %d 年。#KoDP，一款独特的 iOS 叙事游戏 http://a-sharp.com/kodp</DurationTweet>
+<FacebookPage>http://www.facebook.com/ASharpLLC</FacebookPage>
+<TwitterFeed>http://twitter.com/KingDragonPass</TwitterFeed>
+
+<!--For HeroquestController -->
+<HintButton>提示 ╳ %d</HintButton>
+
+<!--For IntroController -->
+<ShortGame>创建一个部落并维持王位10年</ShortGame>
+<LongGame>成为首位龙隘之王</LongGame>
+
+<!--For LostController -->
+<DragonTweet>#KoDP 龙人和他们的同族奋起反抗，摧毁了我的氏族… http://a-sharp.com/kodp</DragonTweet>
+<KoDPLossTweet>#KoDP 可悲的是，第一位龙隘之王并非来自我的氏族。 http://a-sharp.com/kodp</KoDPLossTweet>
+<TenYearLossTweet>#KoDP 我的氏族在《龙隘之王》中迎来了悲惨的结局… http://a-sharp.com/kodp</TenYearLossTweet>
+<TrollTweet>#KoDP 蛛岩巨兽和她的巨魔们消灭了我的氏族… http://a-sharp.com/kodp</TrollTweet>
+
+<!--For MootController -->
+<TribalMood>%s\n部落的心情是 %s。</TribalMood>
+
+<!--For WonController -->
+<KoDPFB>我刚刚成为龙隘之王，赢了《龙隘之王》这款游戏！ %s 氏族将永载传说。 http://a-sharp.com/kodp</KoDPFB>
+<KoDPTweet>我刚刚成为龙隘之王，赢了 #KoDP！ %s 氏族将永载传说。 http://a-sharp.com/kodp</KoDPTweet>
+<QoDPFB>我刚刚成为龙隘女王，赢了《龙隘之王》这款游戏！ %s 氏族将永载传说。 http://a-sharp.com/kodp</QoDPFB>
+<QoDPTweet>I just won #KoDP by becoming Queen of Dragon Pass! The %s clan will live in legend. http://a-sharp.com/kodp</
+<RestartAfterShort>再来一局——也许试试长游戏？</RestartAfterShort>
+<TenYearFB>我刚刚赢得十年之环，赢了《龙隘之王》这款游戏！ http://a-sharp.com/kodp</TenYearFB>
+<TenYearTweet>我刚刚赢得十年之环，赢了 #KoDP！ http://a-sharp.com/kodp</TenYearTweet>
+
+</LocalizeString>

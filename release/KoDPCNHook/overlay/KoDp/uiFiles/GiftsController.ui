@@ -1,0 +1,154 @@
+
+
+CIwUIElement
+{
+	name			"GiftsController"
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    sizeToContent true
+    sizeToSpace true
+    
+    CIwUILayoutHorizontal
+    {
+        CIwUILayoutSpacer { sizeMin { 180 0} sizeMax {180 0} }
+        CIwUILayoutVertical
+        {
+            CIwUILayoutSpacer { sizeMin { 0 140} sizeMax {0 140} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 140 0} sizeMax {140 0} }
+                CIwUILayoutVertical
+                {
+                    element { name "GCDistLabel" }
+                    CIwUILayoutSpacer { sizeMin { 0 20} sizeMax {0 20} }
+                    element { name "GCgoodsSlider" }
+                }
+                CIwUILayoutSpacer { sizeMin { 60 0} sizeMax {60 0} }
+                CIwUILayoutVertical
+                {
+                    CIwUILayoutSpacer { sizeMin { 0 31} sizeMax {0 31} }
+                    spacing 15
+                        element { name "GCfarmersBox" }
+                        element { name "GCweapBox" }
+                        element { name "GCbothBox" }
+                }
+            }
+            CIwUILayoutSpacer { sizeMin { 0 118} sizeMax {0 118} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 140 0} sizeMax {140 0} }
+                element { name "GCAdviceView" }
+            }
+            CIwUILayoutSpacer { sizeMin { 0 20} sizeMax {0 20} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 150 20} sizeMax {150 20} }
+                element { name "SacredGridLabels" }
+                CIwUILayoutSpacer { sizeMin { 38 0} sizeMax {38 0} }
+                element { name "GCdistributeBut" }
+                CIwUILayoutSpacer { sizeMin { 20 0} sizeMax {20 0} }
+                element { name "GCcloseBut" }
+            }
+        }
+
+    }
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture Clear64x64
+        //DialogBackground1
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+    
+    CIwUIElement
+    {
+        sizeMin { 250, 90 }
+        sizeToContent true
+        name "GCgoodsSlider"
+    }
+    
+    CIwUILabel
+    {
+        alignH "left"
+        name "GCDistLabel"
+        caption "分发礼物"
+        style	<ParchementLabel>
+        sizeMax {210 20}
+        sizeMin {220 25}
+    }
+
+
+    CCheckBox
+    {
+        name "GCfarmersBox"
+        style <checkbox_radio>
+        checked "false"
+        caption "农夫"
+        sizeMax {165 35}
+        sizeMin {170 35}
+        tag "0"
+        OnCheckboxChecked { GiftsController::radioButtonTapped }
+    }
+
+    CCheckBox
+    {
+        name "GCweapBox"
+        style <checkbox_radio>
+        checked "false"
+        caption "武器领主"
+        sizeMax {165 35}
+        sizeMin {200 35}
+        tag "0"
+        OnCheckboxChecked { GiftsController::radioButtonTapped }
+    }
+    CCheckBox
+    {
+        name "GCbothBox"
+        style <checkbox_radio>
+        checked "false"
+        caption "两者"
+        sizeMax {165 35}
+        sizeMin {170 35}
+        tag "0"
+        OnCheckboxChecked { GiftsController::radioButtonTapped }
+    }
+
+    CIwUIButton
+    {
+        name "GCcloseBut"
+        style <Btn_37x37>
+        caption ""
+        alignH "right"
+        OnButtonClick { ManagementController::cancelDialog }
+        CIwUIImage
+        {
+            name "FCcloseImg"
+            sizeToContent true
+            texture CloseX
+            pos { 2 2 }
+        }
+    }
+    
+    CIwUIButton
+    {
+        name "GCdistributeBut"
+        style <Btn_45x122>
+        caption "分发"
+        enabled "false"
+        OnButtonClick {  GiftsController::distributeGifts }
+    }
+    
+    CIwUIElement
+    {
+        name "GCAdviceView"
+        sizeMin { 640 104 }
+        sizeMax { 640 104 }
+
+    }
+}

@@ -1,0 +1,148 @@
+
+
+
+CIwUIElement
+{
+	name			"RelationsController"
+
+    sizeToContent true
+    sizeToSpace true
+    
+    CIwUILayout
+    {
+        element { name "CCBackGround" }
+        CIwUILayoutHorizontal
+        {
+            element { name "MenuHolder" }
+            CIwUILayoutSpacer { sizeMin { 45 0} sizeMax {45 0} }
+            CIwUILayoutVertical
+            {
+                CIwUILayoutSpacer { sizeMin {0 20} sizeMax {0 30} }
+                element { name "RCScreen" }
+                CIwUILayoutSpacer { sizeMin {0 23} sizeMax {0 23} }
+                element { name "CCBottomView" }
+            }
+        }
+    }
+
+
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture MenuBackground-big
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+    CIwUIElement
+    {
+        name "RCScreen"
+        CIwUILayout
+        {
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin {30 0} sizeMax {30 0} }
+                CIwUILayoutVertical
+                {
+                    element { name "ParentRCClansListFilter" }
+                    CIwUILayoutSpacer { sizeMin {0 10} sizeMax {0 10} }
+                    element { name "RCClansView" }
+                    CIwUILayoutSpacer { sizeMin {0 20} sizeMax {0 30} }
+                    element { name "RCEmissary" }
+                }
+                CIwUILayoutSpacer { sizeMin {30 0} sizeMax {30 0} }
+                element { name "mapView" }
+            }
+        }
+        CIwUIElement
+        {
+            name "mapView"
+//            CIwUIImage
+//            {
+//                name "MapCScreenBg"
+//                //style <bg>
+//                pos { -2 -2 }
+//                drawableType "image"
+//                sizeToSpace true
+//                sizeToContent   true
+//                texture MapFrameBig
+//                sizeMin { 710 467 }
+//                sizeMax { 710 467 }
+//            }
+
+            ZoomingScroll
+            {
+
+                name "RCMapScroll"
+                sizeToContent   true
+                sizeMin { 706 463 }
+                sizeMax { 706 463 }
+                CIwUILayout
+                {
+
+                }
+            }
+        }
+        CIwUIElement
+        {
+            name "ParentRCClansListFilter"
+            sizeMin  { 192 25 }
+            sizeMax  { 192 25 }
+            ListFilter
+            {
+                margin { 0 0 }
+                name "RCClansListFilter"
+                sizeMin  { 192 25 }
+                sizeMax  { 192 25 }
+            }
+        }
+        
+        PickListView
+        {
+            alignV "top"
+            name "RCClansView"
+            CIwUILayoutVertical
+            {
+                spacing 5
+            }
+            colour { 255 255 255 255 }
+            sizeToSpace true
+            sizeToContent true
+
+            sizeMin  { 192 359 }
+            sizeMax  { 192 359 }
+        }
+        CIwUIButton
+        {
+            name "RCEmissary"
+            style <Btn_45x122>
+            caption "使者"
+            alignH "right"
+            OnButtonClick {  RelationsController::showEmissaryDialog }
+            alignV "top"
+            margin { 4 10 }
+            CIwUIImage
+            {
+                name "RCEmissaryImg"
+                sizeToContent true
+                texture Btn_Emissary
+                pos { -1 -2 }
+            }
+        }
+        CIwUIButton
+        {
+            pos { 31 481 }
+            name "RCTribe"
+            style <Btn_45x91>
+            caption "氏族"
+            OnButtonClick {  RelationsController::showMootDialog }
+        }
+        
+
+
+    }
+}

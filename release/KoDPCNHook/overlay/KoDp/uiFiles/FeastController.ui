@@ -1,0 +1,158 @@
+
+
+CIwUIElement
+{
+	name			"FeastController"
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    sizeToContent true
+    sizeToSpace true
+    
+    CIwUILayoutHorizontal
+    {
+        CIwUILayoutSpacer { sizeMin { 180 0} sizeMax {180 0} }
+        CIwUILayoutVertical
+        {
+            CIwUILayoutSpacer { sizeMin { 0 140} sizeMax {0 140} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 200 0} sizeMax {200 0} }
+                CIwUILayoutVertical
+                {
+                    spacing 10
+                    element { name "FCfeastLabel" }
+                        element { name "FCsmallBox" }
+                        element { name "FCmediumBox" }
+                        element { name "FClargeBox" }
+                        element { name "FClargeLabel" }
+                    CIwUILayoutSpacer { sizeMin { 0 20} sizeMax {0 20} }
+                        element { name "FCneighborsBox" }
+                }
+            }
+            CIwUILayoutSpacer { sizeMin { 0 54} sizeMax {0 54} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 140 0} sizeMax {140 0} }
+                element { name "FCAdviceView" }
+            }
+            CIwUILayoutSpacer { sizeMin { 0 20} sizeMax {0 20} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 150 20} sizeMax {150 20} }
+                element { name "SacredGridLabels" }
+                CIwUILayoutSpacer { sizeMin { 60 0} sizeMax {60 0} }
+                element { name "FCfeastBut" }
+                CIwUILayoutSpacer { sizeMin { 20 0} sizeMax {20 0} }
+                element { name "FCcloseBut" }
+            }
+        }
+
+    }
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture Clear64x64
+        //DialogBackground1
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+    
+    CIwUILabel
+    {
+        alignH "left"
+        name "FCfeastLabel"
+        caption "宴席"
+        style	<ParchementLabel>
+        margin {0 0}
+        sizeMax {104 20}
+        sizeMin {110 25}
+    }
+    
+    CCheckBox
+    {
+        name "FCsmallBox"
+        style <checkbox_radio>
+        checked "false"
+        caption "小型"
+        sizeMax {165 35}
+        sizeMin {170 35}
+        tag "0"
+        OnCheckboxChecked { FeastController::radioButtonTapped }
+    }
+
+    CCheckBox
+    {
+        name "FCmediumBox"
+        style <checkbox_radio>
+        checked "false"
+        caption "中型"
+        sizeMax {165 35}
+        sizeMin {170 35}
+        tag "0"
+        OnCheckboxChecked { FeastController::radioButtonTapped }
+    }
+
+
+    
+    CCheckBox
+    {
+        name "FClargeBox"
+        style <checkbox_radio>
+        checked "false"
+        caption "大型"
+        sizeMax {165 35}
+        sizeMin {170 35}
+        tag "0"
+        OnCheckboxChecked { FeastController::radioButtonTapped }
+    }
+
+
+    CCheckBox
+    {
+        name "FCneighborsBox"
+        style <checkbox_sacred>
+        checked "false"
+        caption "邀请邻居"
+        sizeMax {165 35}
+        sizeMin {200 35}
+        tag "0"
+       // OnCheckboxChecked { FeastController::radioButtonTapped }
+    }
+
+    CIwUIButton
+    {
+        name "FCcloseBut"
+        style <Btn_37x37>
+        caption ""
+        alignH "right"
+        OnButtonClick { ManagementController::cancelDialog }
+        CIwUIImage
+        {
+            name "FCcloseImg"
+            sizeToContent true
+            texture CloseX
+            pos { 2 2 }
+        }
+    }
+    
+    CIwUIButton
+    {
+        name "FCfeastBut"
+        style <Btn_45x91>
+        caption "宴席"
+        OnButtonClick {  FeastController::holdFeast }
+    }
+    
+    CIwUIElement
+    {
+        name "FCAdviceView"
+        sizeMin { 640 104 }
+        sizeMax { 640 104 }
+
+    }
+}

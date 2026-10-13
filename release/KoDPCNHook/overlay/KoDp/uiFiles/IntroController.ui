@@ -1,0 +1,153 @@
+//// MenuController.ui
+//// Example Stylesheets
+//
+CIwUIPropertySet
+{
+	name "<bg>"
+    //: extraclass "IIwUIDrawable"
+	drawableType "image"
+	texture Clear64x64
+}
+
+CIwUIPropertySet 
+{
+	name "<button_skip_up>"
+	drawableType "image"
+	texture BtnGold_39x62
+	//border  { 12 12 }
+}
+
+
+CIwUIPropertySet 
+{
+	name "<button_skip_down>"
+	drawableType "image"
+	texture BtnGold_39x62
+	//border  { 12 12 }
+}
+
+CIwUIPropertySet
+{
+	name	"<button_skip>"
+	style	<button>
+    font "DutchMediaevalBookBold18"
+	sizeMin  { 75 45 }
+    buttonUp <button_skip_up>
+	buttonDown <button_skip_down>
+    focus ""
+    textColour { 0 0 0 255 }
+    downCaptionColour { 255 255 255 255 }
+    alignH "centre"
+    alignV "top"
+    margin  { 0 12 }
+}
+CIwUIPropertySet
+{
+	name	<introlabel>
+	style	<label_large>
+	sizeMin  { 365 512 }
+	sizeMax  { -1 -1}
+	alignH 	"left"
+    textColour { 255 255 255 255 }
+}
+
+
+CIwUIElement
+{
+	name			"IntroController"
+
+    sizeToContent true
+    sizeToSpace true
+
+    CIwUILayout
+	{
+        sizeToSpace	true
+        CIwUILayoutHorizontal
+        {
+            sizeToSpace	true
+            CIwUILayoutVertical
+            {
+                CIwUILayoutSpacer { sizeMin {340 136} sizeMax {340 136} }
+                element
+                {
+                    name "IntroBg" 
+                    alignH "left"
+                    alignV "middle"
+                }
+                CIwUILayoutSpacer { sizeMin {0 80} sizeMax {0 80} }
+                element
+                {
+                    name "Button_skip"
+                    alignH "centre"
+                }
+            }
+            CIwUILayoutSpacer { sizeMin {20 0} sizeMax {20 0} }
+            CIwUILayoutVertical
+            {
+                CIwUILayoutSpacer { sizeMin {0 20} sizeMax {0 20} }
+                element { name "IntroScrollView" }
+            }
+        }
+    }
+    
+    CIwUIImage
+    {
+        name "BackGround"
+        sizeToContent   true
+        drawableType "image"
+        texture Clear64x64
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+
+    CIwUIImage
+    {
+        name "IntroBg"
+        style <bg>
+//        sizeToSpace false
+        sizeToContent   true
+    }
+    CIwUIButton
+    {
+        name "Button_skip"
+        style <button_skip>
+      //  colour { 255 255 0 }
+        caption "跳过"
+        OnButtonClick { IntroController::skipButton }
+        sizeToContent   true
+    }
+    
+    CCommonScrollView
+    {
+        scrollToFocus true
+        name "IntroScrollView"
+		VerticalScrollBar <scrowable_vert>
+		scrollBarSize { 5 0 }
+        sizeMin  { 580 752 }
+        sizeMax  { 580 752 }
+        sizeToSpace true
+        sizeToContent true
+        CIwUILayoutVertical
+        {
+            sizeToSpace true
+            sizeToContent true
+            element { name "IntroLabelWraper" }
+        }
+        CIwUIElement
+        {
+            name "IntroLabelWraper"
+            CIwUILabel
+            {
+                name "IntroLabel"
+                style	<label_medium>
+                font "font_medium"
+                caption ""
+                sizeMin { 580 100 }
+                margin { 0 0 }
+                textColour { 255 255 255 255 }
+            }
+
+        }
+
+    }
+}

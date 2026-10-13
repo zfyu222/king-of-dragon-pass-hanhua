@@ -1,0 +1,834 @@
+
+CIwUIPropertySet 
+{
+	name "<checkbox_style_sacred>"
+//: extraclass "IIwUIDrawable"
+	drawableType "image"
+	texture "Checkbox"
+}
+CIwUIPropertySet 
+{
+	name "<checkbox_style_sacred_cross>"
+//: extraclass "IIwUIDrawable"
+	drawableType "image"
+	texture "CheckboxSelected"
+
+}
+CIwUIPropertySet
+{
+
+	name "<checkbox_sacred>"
+    style <checkbox>
+    boxStyle <checkbox_style_sacred>
+	crossStyle <checkbox_style_sacred_cross>
+    focus ""
+    boxSize  { 32 32 }
+    sizeMin { 32 32 }
+    sizeMax { 32 32 }
+    alignH "left"
+
+    margin { 8 145 }
+    textColour  { 104 56 33 255 }
+    font "DutchMediaeval21"
+
+}
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                      SacredGridLabels
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    CIwUIElement 
+    {
+        name "SacredGridLabels"
+		position { -20 0 }
+        CIwUILayoutGrid
+        {
+            name ""
+            column { widthMin 120 widthMax 140 }
+            column { widthMin 120 widthMax 140 }
+            column { widthMin 120 widthMax 140 }
+            row { }
+            row { }
+            element { name "SacredCows" row 0 column 0 }
+            element { name "SacredFood" row 0 column 1 }
+            element { name "SacredPopulation" row 0 column 2 }
+            element { name "SacredGoods" row 1 column 0 }
+            element { name "SacredMagic" row 1 column 1 }
+            element { name "SacredWeaponthanes" row 1 column 2 }
+        }
+        QuantityLabel
+        {
+            name "SacredCows"
+//            style	<label_medium>
+//            font "font_medium"
+//            textColour { 124 73 43 255 }
+//            caption "Cows: 365"
+        }
+        QuantityLabel
+        {
+            name "SacredFood"
+//            style	<label_medium>
+//            font "font_medium"
+//            textColour { 124 73 43 255 }
+//            caption "Food: 1365"
+        }
+        QuantityLabel
+        {
+            name "SacredPopulation"
+//            style	<label_medium>
+//            font "font_medium"
+//            textColour { 124 73 43 255 }
+//            caption "Population: 811"
+        }
+        QuantityLabel
+        {
+            name "SacredGoods"
+//            style	<label_medium>
+//            font "font_medium"
+//            textColour { 124 73 43 255 }
+//            caption "Goods: 539"
+        }
+        QuantityLabel
+        {
+            name "SacredMagic"
+//            style	<label_medium>
+//            font "font_medium"
+//            textColour { 124 73 43 255 }
+//            caption "Magic: 10"
+        }
+        QuantityLabel
+        {
+            name "SacredWeaponthanes"
+//            style	<label_medium>
+//            font "font_medium"
+//            textColour { 124 73 43 255 }
+//            caption "Weaponthanes: 14"
+        }
+
+    }
+
+
+CIwUIElement
+{
+	name			"SacredTimeController"
+
+    sizeToContent true
+    sizeToSpace true
+
+    CIwUILayout
+	{
+        sizeToSpace	true
+     //   element { name "SacredBackGround" }
+        CIwUILayoutHorizontal
+        {
+            sizeToSpace	true
+            sizeToContent true
+            CIwUILayoutSpacer { sizeMin {3 0} sizeMax {3 0} }
+            CIwUILayoutVertical
+            {
+                CIwUILayoutSpacer { sizeMin {0 7} sizeMax {0 7} }
+                element { name "SacredTimeImage" }
+                CIwUILayoutSpacer { sizeMin {0 30} sizeMax {0 30} }
+                CIwUILayoutHorizontal
+                {
+                    CIwUILayoutSpacer { sizeMin {5 0} sizeMax {5 0} }
+                    CIwUILayoutVertical
+                    {
+                        element { name "SacredrecapHeading" }
+                        element { name "SacredrecapScroller" }
+                    }
+                }
+            }
+            CIwUILayoutSpacer { sizeMin {10 0} sizeMax {10 0} }
+            CIwUILayoutVertical
+            {
+                name "SacredLayoutVertical"
+                sizeMin { 930 800 }
+                sizeToSpace	true
+                sizeToContent true
+                 CIwUILayoutSpacer { sizeMin {0 10} sizeMax {0 10} }
+                CIwUILayoutHorizontal
+                {
+                    CIwUILayoutVertical
+                    {
+                        element { name "SacredForecast"}
+                        element { name "SacredScrollerForecast"}
+                    }
+                    CIwUILayoutSpacer { sizeMin {90 0} sizeMax {90 0} }
+                    element { name "SacredGridCheckBox" }
+                }
+                CIwUILayoutSpacer { sizeMin {0 30} sizeMax {0 30} }
+                element { name "SacredAdviceView" }
+                CIwUILayoutSpacer { sizeMin {0 10} sizeMax {0 10} }
+                element { name "SacredGridLabelsView" }
+              // element { name "SacredImageProceed" alignH "right" }
+
+            }
+        }
+    }
+    CIwUIImage
+    {
+        name "SacredBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture Clear64x64
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+    CIwUIElement
+    {
+        name "SacredGridLabelsView"
+        sizeMin { 600 50 }
+    }
+
+    CIwUIImage
+    {
+        name "SacredImageProceed"
+        
+        texture SacredTime_bg2
+        sizeMax { 263 207 }
+        sizeMin { 263 207 }
+        position { 1017 525 }
+         alignH "right"
+         
+
+        CIwUIButton
+        {
+            position { 70 160 }
+            alignH "centre"
+            alignV "middle"
+            name "SacredButtonProceed"
+            style <Btn_45x122>
+            caption "继续"
+            OnButtonClick { SacredTimeController::proceed }
+        }
+    }
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                      Right Top Site
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        CIwUILabel
+        {
+            name "SacredForecast"
+            style	<ParchementLabel>
+            caption "预测"
+        }
+        CCommonScrollView
+        {
+            alignV "top"
+            name "SacredScrollerForecast"
+            sizeMax  { 324 357 }
+            sizeMin  { 324 357 }
+            CIwUILayoutVertical
+            {
+                sizeToSpace true
+                sizeToContent true
+                element { name "ForecastWraper" }
+            }
+            CIwUIElement
+            {
+                name "ForecastWraper"
+                CIwUILabel
+                {
+                    name "SacredForecastText"
+                    style	<label_medium>
+                    font "font_medium"
+                    textColour { 0 0 0 255 }
+                    caption ""
+                    margin { 0 0 }
+                }
+            }
+        }
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                      Grid With CheckBoxes
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        CIwUIElement 
+        {
+            name "SacredGridCheckBox"
+            CIwUILayoutGrid
+            {
+                name ""
+                column { widthMin 120 widthMax 140 }
+                column { widthMin 120 widthMax 140 }
+                row { }
+                row { }
+                row { }
+                row { }
+                row { }
+                row { }
+                element { name "SacredGridMagic" row 0 column 0 }
+                element { name "SacredGridReserve" row 0 column 1 }
+                element { name "SacredCrops" row 1 column 0 }
+                element { name "SacredMysteries" row 1 column 1 }
+                element { name "SacredDiplomacy" row 2 column 0 }
+                element { name "SacredQuests" row 2 column 1 }
+                element { name "SacredHealth" row 3 column 0 }
+                element { name "SacredTrade" row 3 column 1 }
+                element { name "SacredHerds" row 4 column 0 }
+                element { name "SacredWar" row 4 column 1 }
+                element { name "SacredDestiny" row 5 column 0 }
+                element { name "SacredHeroism" row 5 column 1 }
+
+
+            }
+            CIwUILabel
+            {
+                name "SacredGridMagic"
+                style	<ParchementLabel>
+                caption "魔法"
+            }
+            CIwUILabel
+            {
+                name "SacredGridReserve"
+                style	<StandartLabel>
+                caption "储备"
+            }
+//Crops
+            CIwUIElement
+            {
+                name "SacredCrops"
+                CIwUILayoutVertical
+                {   
+                    element { name "SacredCropsLabel" }
+                    CIwUILayoutHorizontal
+                    {
+                        spacing 10
+                        element { name "SacredCrops0" }
+                        element { name "SacredCrops1" }
+                        element { name "SacredCrops2" }
+                    }
+                }
+                CIwUILabel
+                {
+                    name "SacredCropsLabel"
+                    style	<StandartLabel>
+                    alignH "left"
+                    sizeMin {100 30}
+                    sizeMax {100 30}
+                    margin {0 0}
+                    caption "庄稼"
+                }
+                CCheckBox
+                {
+                    name "SacredCrops0"
+                    style <checkbox_sacred>
+                    checked "false"
+                    OnCheckboxChecked { SacredTimeController::checkboxTapped }
+                }
+                CCheckBox
+                {
+                    name "SacredCrops1"
+                    style <checkbox_sacred>
+                    checked "false"
+                    OnCheckboxChecked { SacredTimeController::checkboxTapped }
+                }
+                CCheckBox
+                {
+                    name "SacredCrops2"
+                    style <checkbox_sacred>
+                    checked "false"
+                    OnCheckboxChecked { SacredTimeController::checkboxTapped }
+                }
+
+            }
+//Mysteries
+            CIwUIElement
+            {
+                name "SacredMysteries"
+                CIwUILayoutVertical
+                {   
+                    element { name "SacredMysteriesLabel" }
+                    CIwUILayoutHorizontal
+                    {
+                        spacing 10
+                        element { name "SacredMysteries0" }
+                        element { name "SacredMysteries1" }
+                        element { name "SacredMysteries2" }
+                    }
+                }
+                CIwUILabel
+                {
+                    name "SacredMysteriesLabel"
+                    style	<StandartLabel>
+                    caption "奥秘"
+                    alignH "left"
+                    margin {0 0}
+                }
+                CCheckBox
+                {
+                    name "SacredMysteries0"
+                    style <checkbox_sacred>
+                    checked "false"
+                    OnCheckboxChecked { SacredTimeController::checkboxTapped }
+                }
+                CCheckBox
+                {
+                    name "SacredMysteries1"
+                    style <checkbox_sacred>
+                    checked "false"
+                    OnCheckboxChecked { SacredTimeController::checkboxTapped }
+                }
+                CCheckBox
+                {
+                    name "SacredMysteries2"
+                    style <checkbox_sacred>
+                    checked "false"
+                    OnCheckboxChecked { SacredTimeController::checkboxTapped }
+                }
+
+            }
+//Diplomacy
+            CIwUIElement
+            {
+                name "SacredDiplomacy"
+                CIwUILayoutVertical
+                {   
+                    element { name "SacredDiplomacyLabel" }
+                    CIwUILayoutHorizontal
+                    {
+                        spacing 10
+                        element { name "SacredDiplomacy0" }
+                        element { name "SacredDiplomacy1" }
+                        element { name "SacredDiplomacy2" }
+                    }
+                }
+                CIwUILabel
+                {
+                    name "SacredDiplomacyLabel"
+                    style	<StandartLabel>
+                    caption "外交"
+                    alignH "left"
+                    margin {0 0}
+                }
+                CCheckBox
+                {
+                    name "SacredDiplomacy0"
+                    style <checkbox_sacred>
+                    checked "false"
+                    OnCheckboxChecked { SacredTimeController::checkboxTapped }
+                }
+                CCheckBox
+                {
+                    name "SacredDiplomacy1"
+                    style <checkbox_sacred>
+                    checked "false"
+                    OnCheckboxChecked { SacredTimeController::checkboxTapped }
+                }
+                CCheckBox
+                {
+                    name "SacredDiplomacy2"
+                    style <checkbox_sacred>
+                    checked "false"
+                    OnCheckboxChecked { SacredTimeController::checkboxTapped }
+                }
+
+            }
+//SacredQuests
+            CIwUIElement
+            {
+                name "SacredQuests"
+                CIwUILayoutVertical
+                {   
+                    element { name "SacredQuestsLabel" }
+                    CIwUILayoutHorizontal
+                    {
+                        spacing 10
+                        element { name "SacredQuests0" }
+                        element { name "SacredQuests1" }
+                        element { name "SacredQuests2" }
+                    }
+                }
+                CIwUILabel
+                {
+                    name "SacredQuestsLabel"
+                    style	<StandartLabel>
+                    caption "任务"
+                    alignH "left"
+                    margin {0 0}
+                }
+                CCheckBox
+                {
+                    name "SacredQuests0"
+                    style <checkbox_sacred>
+                    checked "false"
+                    OnCheckboxChecked { SacredTimeController::checkboxTapped }
+                }
+                CCheckBox
+                {
+                    name "SacredQuests1"
+                    style <checkbox_sacred>
+                    checked "false"
+                    OnCheckboxChecked { SacredTimeController::checkboxTapped }
+                }
+                CCheckBox
+                {
+                    name "SacredQuests2"
+                    style <checkbox_sacred>
+                    checked "false"
+                    OnCheckboxChecked { SacredTimeController::checkboxTapped }
+                }
+
+            }
+//SacredHealth
+            CIwUIElement
+            {
+                name "SacredHealth"
+                CIwUILayoutVertical
+                {   
+                    element { name "SacredHealthLabel" }
+                    CIwUILayoutHorizontal
+                    {
+                        spacing 10
+                        element { name "SacredHealth0" }
+                        element { name "SacredHealth1" }
+                    }
+                }
+                CIwUILabel
+                {
+                    name "SacredHealthLabel"
+                    style	<StandartLabel>
+                    caption "健康"
+                    alignH "left"
+                    margin {0 0}
+                }
+                CCheckBox
+                {
+                    name "SacredHealth0"
+                    style <checkbox_sacred>
+                    checked "false"
+                    OnCheckboxChecked { SacredTimeController::checkboxTapped }
+                }
+                CCheckBox
+                {
+                    name "SacredHealth1"
+                    style <checkbox_sacred>
+                    checked "false"
+                    OnCheckboxChecked { SacredTimeController::checkboxTapped }
+                }
+            }
+//SacredTrade
+            CIwUIElement
+            {
+                name "SacredTrade"
+                CIwUILayoutVertical
+                {   
+                    element { name "SacredTradeLabel" }
+                    CIwUILayoutHorizontal
+                    {
+                        spacing 10
+                        element { name "SacredTrade0" }
+                        element { name "SacredTrade1" }
+                    }
+                }
+                CIwUILabel
+                {
+                    name "SacredTradeLabel"
+                    style	<StandartLabel>
+                    caption "贸易"
+                    alignH "left"
+                    margin {0 0}
+                }
+                CCheckBox
+                {
+                    name "SacredTrade0"
+                    style <checkbox_sacred>
+                    checked "false"
+                    OnCheckboxChecked { SacredTimeController::checkboxTapped }
+                }
+                CCheckBox
+                {
+                    name "SacredTrade1"
+                    style <checkbox_sacred>
+                    checked "false"
+                    OnCheckboxChecked { SacredTimeController::checkboxTapped }
+                }
+            }
+//Herds
+            CIwUIElement
+            {
+                name "SacredHerds"
+                CIwUILayoutVertical
+                {   
+                    element { name "SacredHerdsLabel" }
+                    CIwUILayoutHorizontal
+                    {
+                        spacing 10
+                        element { name "SacredHerds0" }
+                        element { name "SacredHerds1" }
+                        element { name "SacredHerds2" }
+                    }
+                }
+                CIwUILabel
+                {
+                    name "SacredHerdsLabel"
+                    style	<StandartLabel>
+                    caption "畜群"
+                    alignH "left"
+                    margin {0 0}
+                }
+                CCheckBox
+                {
+                    name "SacredHerds0"
+                    style <checkbox_sacred>
+                    checked "false"
+                    OnCheckboxChecked { SacredTimeController::checkboxTapped }
+                }
+                CCheckBox
+                {
+                    name "SacredHerds1"
+                    style <checkbox_sacred>
+                    checked "false"
+                    OnCheckboxChecked { SacredTimeController::checkboxTapped }
+                }
+                CCheckBox
+                {
+                    name "SacredHerds2"
+                    style <checkbox_sacred>
+                    checked "false"
+                    OnCheckboxChecked { SacredTimeController::checkboxTapped }
+                }
+            }
+//War
+            CIwUIElement
+            {
+                name "SacredWar"
+                CIwUILayoutVertical
+                {   
+                    element { name "SacredWarLabel" }
+                    CIwUILayoutHorizontal
+                    {
+                        spacing 10
+                        element { name "SacredWar0" }
+                        element { name "SacredWar1" }
+                        element { name "SacredWar2" }
+                    }
+                }
+                CIwUILabel
+                {
+                    name "SacredWarLabel"
+                    style	<StandartLabel>
+                    caption "战争"
+                    alignH "left"
+                    margin {0 0}
+                }
+                CCheckBox
+                {
+                    name "SacredWar0"
+                    style <checkbox_sacred>
+                    checked "false"
+                    OnCheckboxChecked { SacredTimeController::checkboxTapped }
+                }
+                CCheckBox
+                {
+                    name "SacredWar1"
+                    style <checkbox_sacred>
+                    checked "false"
+                    OnCheckboxChecked { SacredTimeController::checkboxTapped }
+                }
+                CCheckBox
+                {
+                    name "SacredWar2"
+                    style <checkbox_sacred>
+                    checked "false"
+                    OnCheckboxChecked { SacredTimeController::checkboxTapped }
+                }
+            }
+//Destiny
+            CIwUIElement
+            {
+                name "SacredDestiny"
+                CIwUILayoutVertical
+                {   
+                    element { name "SacredDestinyLabel" }
+                    CIwUILayoutHorizontal
+                    {
+                        spacing 10
+                        element { name "SacredDestiny0" }
+                        element { name "SacredDestiny1" }
+                        element { name "SacredDestiny2" }
+                    }
+                }
+                CIwUILabel
+                {
+                    name "SacredDestinyLabel"
+                    style	<StandartLabel>
+                    caption "命运"
+                    alignH "left"
+                    margin {0 0}
+                }
+                CCheckBox
+                {
+                    name "SacredDestiny0"
+                    style <checkbox_sacred>
+                    checked "false"
+                    OnCheckboxChecked { SacredTimeController::checkboxTapped }
+                }
+                CCheckBox
+                {
+                    name "SacredDestiny1"
+                    style <checkbox_sacred>
+                    checked "false"
+                    OnCheckboxChecked { SacredTimeController::checkboxTapped }
+                }
+                CCheckBox
+                {
+                    name "SacredDestiny2"
+                    style <checkbox_sacred>
+                    checked "false"
+                    OnCheckboxChecked { SacredTimeController::checkboxTapped }
+                }
+            }
+//Heroism
+            CIwUIElement
+            {
+                name "SacredHeroism"
+                CIwUILayoutVertical
+                {   
+                    element { name "SacredHeroismLabel" }
+                    CIwUILayoutHorizontal
+                    {
+                        spacing 10
+                        element { name "SacredHeroism0" }
+                        element { name "SacredHeroism1" }
+                    }
+                }
+                CIwUILabel
+                {
+                    name "SacredHeroismLabel"
+                    style	<StandartLabel>
+                    caption "英雄主义"
+                    alignH "left"
+                    margin {0 0}
+                }
+                CCheckBox
+                {
+                    name "SacredHeroism0"
+                    style <checkbox_sacred>
+                    checked "false"
+                    OnCheckboxChecked { SacredTimeController::checkboxTapped }
+                }
+                CCheckBox
+                {
+                    name "SacredHeroism1"
+                    style <checkbox_sacred>
+                    checked "false"
+                    OnCheckboxChecked { SacredTimeController::checkboxTapped }
+                }
+            }
+        }
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                      Left Site
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        CIwUILabel
+        {
+            name "SacredrecapHeading"
+            style	<ParchementLabel>
+            caption "去年"
+        }
+        CCommonScrollView
+        {
+
+            name "SacredrecapScroller"
+            sizeMin  { 353 400 }
+            sizeMax  { 353 400 }
+            CIwUILayoutVertical
+            {
+                element { name "RecapWraper" }
+            }
+             CIwUIElement
+            {
+                name "RecapWraper"
+                CIwUILabel
+                {
+                    name "SacredrecapText"
+                    style	<label_medium>
+                    font "font_medium"
+                    textColour { 0 0 0 255 }
+                    caption "您的"
+                    margin { 0  0 }
+                    sizeMin  { 353 200 }
+                }
+            }
+
+        }
+
+        //Reputation Image
+        CIwUIImage
+        {
+            name "SacredTimeImage"
+            style <bg>
+    //        sizeToSpace false
+            sizeToContent   true
+            sizeMax { 247 265 }
+            texture clanType_Balanced
+            CIwUILayout
+            {
+                CIwUILayoutVertical
+                {
+                    CIwUILayoutHorizontal
+                    {
+                        CIwUILayoutSpacer { sizeMin { 12  0 } sizeMax { 12 0 } }
+                        element { name "SacredYear" }
+                        CIwUILayoutSpacer { sizeMin { 8  0 } sizeMax { 8 0 } }
+                        element { name "SacredSeason" }
+                    }
+                    CIwUILayoutSpacer { sizeMin { 0  110 } sizeMax { 0 110 } }
+                    element { name "SacredReputation" alignH "centre"}
+                    element { name "SacredReputationArc" alignH "centre" }
+//                    CIwUILayoutSpacer { sizeMin { 0 40 } sizeMax { 0 40 } }
+                    CIwUILayoutHorizontal
+                    {
+                        element { name "SacredReputationMin" }
+                        CIwUILayoutSpacer { sizeMin {62 0} sizeMax {62 0} }
+                        element { name "SacredReputationMax" }
+                    }
+                }
+            }
+            CIwUILabel
+            {
+                name "SacredYear"
+                style	<ParchementLabel>
+                caption "1330"
+            }
+            CIwUILabel
+            {
+                name "SacredSeason"
+                style	<ParchementLabel>
+                caption "神圣时间"
+            }
+            CIwUILabel
+            {
+                name "SacredReputation"
+                style	<ParchementLabel>
+                caption "声望"
+            }
+            CIwUILabel
+            {
+                name "SacredReputationMin"
+                style	<StandartLabel>
+                caption "拾柴人"
+            }
+            CIwUILabel
+            {
+                name "SacredReputationMax"
+                style	<StandartLabel>
+                caption "国王"
+            }
+            CIwUIImage
+            {
+                name "SacredReputationArc"
+                sizeToContent   true
+                texture arc
+            }
+        }
+
+        CIwUIElement
+        {
+            name "SacredAdviceView"
+            sizeMin { 640 104 }
+            sizeMax { 640 104 }
+
+        }
+}

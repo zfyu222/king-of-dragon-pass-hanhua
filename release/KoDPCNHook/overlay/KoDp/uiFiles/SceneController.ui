@@ -1,0 +1,207 @@
+
+
+CIwUIElement
+{
+	name			"SeceneController"
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    sizeToContent true
+    sizeToSpace true
+    pos { 20 0 }
+  
+    CIwUIImage
+    {
+        pos { -20 0 }
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture SceneBackground
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+    CIwUIElement
+    {
+        name "fakeBorder"
+		//------------------- <border> ---------------------
+		CIwUIImage
+		{
+			name "aroundFrameT"
+			drawableType "image"
+			sizeToContent   true
+			texture topMap
+			pos {-3 -3}
+			sizeMin { 646 3 }
+			sizeMax { 646 3 }
+		}
+		CIwUIImage
+		{
+			name "aroundFrameB"
+			drawableType "image"
+			sizeToContent   true
+			texture topMap
+			pos {-3 360}
+			sizeMin { 646 3 }
+			sizeMax { 646 3 }
+		}
+		CIwUIImage
+		{
+			name "aroundFrameL"
+			drawableType "image"
+			sizeToContent   true
+			texture leftMap
+			pos {-3 0}
+			sizeMin { 3 360 }
+			sizeMax { 3 360 }
+		}
+		CIwUIImage
+		{
+			name "aroundFrameR"
+			drawableType "image"
+			sizeToContent   true
+			texture leftMap
+			pos {640 0}
+			sizeMin { 3 360 }
+			sizeMax { 3 360 }
+		}
+		//------------------- </border> ----------------------
+        CIwUIImage
+        {
+            name "background"
+            drawableType "image"
+            sizeToSpace true
+            sizeToContent   true
+            texture Clear64x64
+        //DialogBackground1
+            sizeMin { 642 362 }
+            sizeMax { 642 362 }
+        }
+        pos {8 18}
+        sizeMin { 642 362 }
+        sizeMax { 642 362 }
+    }
+    CIwUIButton
+    {
+        name "sagaButton"
+        style <Btn_45x91>
+        caption "传说"
+        pos {52 680}
+        OnButtonClick {  SceneController::tappedSaga }
+        CIwUIImage
+        {
+            drawableType "image"
+            sizeToContent   true
+            texture  Btn_SceneSaga
+            pos { -32 -4 }
+        }
+    }
+    CIwUIButton
+    {
+        name "manualButton"
+        alignH "right"
+        style <Btn_45x122>
+        caption "手册 "
+        pos {244 680}
+        OnButtonClick {  MythController::tappedManual }
+        CIwUIImage
+        {
+            drawableType "image"
+            sizeToContent   true
+            texture  Btn_Help
+            pos { -13 -2 }
+        }
+    }
+
+    CIwUILabel
+    {
+        alignH "centre"
+        name "seasonName"
+        caption "风暴季"
+        style	 <SmallLabel>
+        sizeMax {116 20}
+        sizeMin {125 25}
+        pos {132 609}
+    }
+    
+
+    CIwUIElement
+    {
+        name "statsHolder"
+        sizeToContent "true"
+        sizeToSpace "true"
+        pos {40 509}
+        sizeMin {420 40}
+        sizeMax {440 60}
+    }
+
+    CIwUIElement
+    {
+        name "textHolder"
+        size {540 690}
+        pos {683 39}
+        CScrollDescription
+        {
+            name "scroller"
+            size {349 690}
+            sizeMin { 540 700 }
+            sizeMax { 540 700 }
+
+            CIwUILayoutVertical
+            {
+                element { name "scrollerView" }
+            }
+            CIwUIElement
+            {
+                name "scrollerView"
+                CIwUILabel
+                {
+                    alignH "left"
+                    alignV "top"
+                    name "infoText"
+                    caption "您的使者们接近了以好战狂热和历代疯狂酋长而闻名的瓦尔曼迪氏族。 "
+                    style	<label_medium>
+                    font "DutchMediaevalBook24"
+                    textColour { 51 26 4 255 }
+                    //{ 67 36 1 255 }
+                    size {410 200}
+                    sizeMin {540 50}
+                    sizeMax {540 500}
+                    margin {0 0}
+                }
+            }
+        }
+
+    }
+    ListFilter
+    {
+        margin { 0 0 }
+        name "filter"
+        sizeMin  { 180 25 }
+        sizeMax  { 180 25 }
+        pos {470 518}
+    }
+    PickListView
+    {
+        alignV "top"
+        name "clansView"
+        CIwUILayoutVertical
+        {
+            spacing 5
+        }
+        colour { 255 255 255 255 }
+        sizeToSpace true
+        sizeToContent true
+
+        sizeMin  { 180 181 }
+        sizeMax  { 180 181 }
+        pos { 470 547}
+    }
+    CIwUIElement
+    {
+        name "FCAdviceView"
+        sizeMin { 640 104 }
+        sizeMax { 640 104 }
+        pos {9 397}
+    }
+}

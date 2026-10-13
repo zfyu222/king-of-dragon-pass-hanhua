@@ -1,11 +1,15 @@
 {
   "format": 1,
   "strategy": "CreateFile IAT redirection; original game files remain untouched",
-  "generatedAt": "2026-07-29T17:40:39.276Z",
+  "generatedAt": "2026-07-30T01:03:08.983Z",
   "sourceCsvRows": 34421,
   "runtimeTranslationEntries": 34421,
   "scenes": 1760,
   "replacedOccurrences": 38320,
+  "textFileOverlays": {
+    "generatedFiles": 284,
+    "replacedRecords": 3375
+  },
   "original": {
     "path": "KoDp/scenes.dat",
     "bytes": 4939444,

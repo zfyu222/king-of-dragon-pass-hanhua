@@ -1,0 +1,130 @@
+
+
+CIwUIElement
+{
+	name			"NewsController"
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    sizeToContent true
+    sizeToSpace true
+
+    CIwUIButton
+    {
+        name "blackdrop"
+        style	<button>
+        font "font_medium"
+        sizeMin  { 1280 800 }
+        sizeMax  { 1280 800 }
+        pos { 0 0 }
+        buttonUp
+        {
+            drawableType "image"
+            texture shadow50
+        }
+        buttonDown
+        {
+            drawableType "image"
+            texture shadow50
+        }
+        focus ""
+        caption ""
+    }
+    CIwUIElement
+    {
+        name "contents"
+        pos { 408 0 }
+        CIwUIImage
+        {
+            name "CCBackGround"
+            //style <bg>
+            drawableType "image"
+            texture NewsBig
+            sizeToSpace true
+            sizeToContent true
+            size { 463 666 }
+           // pos {18 51}
+        }
+        CIwUILabel
+        {
+            alignH "centre"
+            name "speakerName"
+            caption "乌马斯卡"
+            style	<label_medium>
+            font "DutchMediaevalBook23"
+            textColour { 124 73 43 255 }
+            sizeMax {125 25}
+            sizeMin {125 25}
+            pos {168 144}
+        }
+
+        CIwUIButton
+        {
+            name "speakerFace"
+            style	<button>
+            pos { 192 38 }
+            size { 77 101}
+            sizeMin { 77 101}
+            sizeMax { 77 101}
+            buttonUp
+            {
+                drawableType "image"
+				texture FaceBackground
+            }
+            buttonDown
+            {
+                drawableType "image"
+              texture FaceBackground
+            }
+            focus ""
+            OnButtonClick { NewsController::handleLeaderTap }
+        }
+
+        CCommonScrollView
+        {
+            pos { 42 169 }
+            sizeMin { 384 100 }
+            sizeMax { 384 435 }
+            size { 338 460 }
+            sizeToContent true
+            sizeToSpace true
+            name "scroller"
+            CIwUILayoutVertical
+            {
+                element { name "scrollerView" alignV "top" }
+            }
+            CIwUIElement
+            {
+                name "scrollerView"
+                CIwUILabel
+                {
+                    alignH "left"
+                    alignV "top"
+                    name "introText"
+                    caption "乌马斯卡"
+                    style	<label_medium>
+                    font "DutchMediaevalBook24"
+                    textColour { 0 0 0 255 }
+                    sizeMax {384 25}
+                    sizeMin {384 800}
+                }
+            }
+        }
+        CIwUIButton
+        {
+            name "closeBut"
+            style <Btn_37x37>
+            caption ""
+            visible "false"
+            alignH "right"
+            OnButtonClick { NewsController::tappedCancel }
+            pos { 380 580 }
+            CIwUIImage
+            {
+                name "FCcloseImg"
+                sizeToContent true
+                texture CloseX
+                pos { 2 2 }
+            }
+        }
+    }
+}

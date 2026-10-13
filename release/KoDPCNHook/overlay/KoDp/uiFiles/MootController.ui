@@ -1,0 +1,191 @@
+
+
+CIwUIElement
+{
+	name			"MootController"
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    sizeToContent true
+    sizeToSpace true
+    
+    CIwUILayoutHorizontal
+    {
+        CIwUILayoutSpacer { sizeMin { 180 0} sizeMax {180 0} }
+        CIwUILayoutVertical
+        {
+
+            CIwUILayoutSpacer { sizeMin { 0 439} sizeMax {0 439} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 140 0} sizeMax {140 0} }
+                element { name "FCAdviceView" }
+            }
+            CIwUILayoutSpacer { sizeMin { 0 20} sizeMax {0 20} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 150 20} sizeMax {150 20} }
+                element { name "SacredGridLabels" }
+                CIwUILayoutSpacer { sizeMin { 60 0} sizeMax {60 0} }
+                element { name "FoodCrecruitBut" }
+                CIwUILayoutSpacer { sizeMin { 20 0} sizeMax {20 0} }
+                element { name "FCcloseBut" }
+            }
+        }
+
+    }
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture Clear64x64
+        //DialogBackground1
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+
+    CIwUIElement
+    {
+        pos {128 0}
+        CIwUILabel
+        {
+            alignH "left"
+            name "tribalMood"
+            caption "氏族"
+            style	<SmallishLabel>
+
+            sizeMax {434 69}
+            sizeMin {434 69}
+            pos { 372 139 }
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "TribeLabel"
+            caption "氏族"
+            style <ParchementLabel>
+            sizeMax {106 20}
+            sizeMin {115 25}
+            pos { 214 139 }
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "tribeName"
+            caption "埃斯塔雷尔德"
+            style	<StandartLabel>
+
+            sizeMax {150 20}
+            sizeMin {150 25}
+            pos { 214 169 }
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "tribeDescMoot"
+            caption "您通常如何处理提交到部落大会的案件？"
+            style	<StandartLabel>
+            sizeMax {692 50}
+            sizeMin {692 55}
+            pos { 214 211 }
+        }
+
+        //merits
+        CCheckBox
+        {
+            name "merits"
+            style <checkbox_radio>
+            checked "false"
+            alignH "left"
+            caption "按案情本身裁决"
+            sizeMax {346 35}
+            sizeMin {346 35}
+            tag "0"
+            pos {214 269}
+            OnCheckboxChecked { MootController::radioButtonTapped }
+        }
+
+
+        //generous
+        CCheckBox
+        {
+            name "generous"
+            style <checkbox_radio>
+            checked "false"
+            alignH "left"
+                caption "支持最慷慨的一方"
+                sizeMax {386 35}
+                sizeMin {386 35}
+            tag "0"
+            pos {214 302}
+            OnCheckboxChecked { MootController::radioButtonTapped }
+        }
+
+        // ill
+        CCheckBox
+        {
+            name "ill"
+            style <checkbox_radio>
+            checked "false"
+            alignH "left"
+                caption "支持对您怀有恶意的那些人"
+                sizeMax {386 35}
+                sizeMin {386 35}
+            tag "0"
+            pos {214 335}
+            OnCheckboxChecked { MootController::radioButtonTapped }
+        }
+
+        // friends
+        CCheckBox
+        {
+            name "friends"
+            style <checkbox_radio>
+            checked "false"
+            alignH "left"
+                caption "支持您的朋友"
+                sizeMax {346 35}
+                sizeMin {346 35}
+            tag "0"
+            pos {214 368}
+            OnCheckboxChecked { MootController::radioButtonTapped }
+        }
+    }
+
+    //****
+    CIwUIButton
+    {
+        name "FCcloseBut"
+        style <Btn_37x37>
+        caption ""
+        alignH "right"
+        OnButtonClick { ManagementController::cancelDialog }
+        CIwUIImage
+        {
+            name "FCcloseImg"
+            sizeToContent true
+            texture CloseX
+            pos { 2 2 }
+        }
+    }
+    
+    CIwUIButton
+    {
+        name "FoodCrecruitBut"
+        style <Btn_45x91>
+        caption "设定"
+        OnButtonClick {  MootController::setPolicy }
+    }
+    
+    CIwUIElement
+    {
+        name "FCAdviceView"
+        sizeMin { 640 104 }
+        sizeMax { 640 104 }
+
+    }
+    
+    }

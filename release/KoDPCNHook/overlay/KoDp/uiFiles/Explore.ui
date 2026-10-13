@@ -1,0 +1,255 @@
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                     Speed Segments
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+        CIwUIElement
+        {
+            name "ExpSpeedSeg"
+            sizeMin { 128 29 }
+            sizeMax { 128 29 }
+            CIwUILayout
+            {
+                element { name "SpdSegBg" }
+                CIwUILayoutHorizontal
+                {
+                    element { name "SpdSegLeft" }
+                    element { name "SpdSegMiddle" }
+                    element { name "SpdSegRight" }
+                }
+            }
+            CIwUIImage
+            {
+                name "SpdSegBg"
+                texture Speed_BtnBase
+                drawableType "image"
+                sizeMin { 128 29 }
+                sizeMax { 128 29 }
+            }
+            CIwUIButton
+            {
+                sizeToContent true
+                sizeMin { 43 29 }
+                sizeMax { 43 29 }
+                margin { 0 0 }
+                name "SpdSegLeft"
+                style <button>
+                OnButtonClick {  SegmentHolder::segmentTapped }
+                buttonUp 
+                {
+                    drawableType "image"
+                    texture Speed_BtnLeft
+
+                }
+                buttonDown
+                {
+                    drawableType "image"
+                    texture Speed_BtnLeft
+                }
+                focus ""
+            }
+             CIwUIButton
+            {
+                sizeToContent true
+                sizeMin { 42 29 }
+                sizeMax { 42 29 }
+                margin { 0 0 }
+                name "SpdSegMiddle"
+                style <button>
+                OnButtonClick { SegmentHolder::segmentTapped }
+                buttonUp 
+                {
+                    drawableType "image"
+                    texture Speed_BtnMiddle
+
+                }
+                buttonDown
+                {
+                    drawableType "image"
+                    texture Speed_BtnMiddle
+                }
+                focus ""
+            }
+            CIwUIButton
+            {
+                sizeToContent true
+                sizeMin { 43 29 }
+                sizeMax { 43 29 }
+                margin { 0 0 }
+                name "SpdSegRight"
+                style <button>
+                OnButtonClick {  SegmentHolder::segmentTapped }
+                buttonUp 
+                {
+                    drawableType "image"
+                    texture Speed_BtnRight
+
+                }
+                buttonDown
+                {
+                    drawableType "image"
+                    texture Speed_BtnRight
+                }
+                focus ""
+            }
+        }
+
+
+
+
+CIwUIElement
+{
+	name			"ExploreController"
+     sizeMin { 560 160 }
+     sizeMax { 560 160 }
+    sizeToContent true
+    sizeToSpace true
+    
+    CIwUILayout
+    {
+        element { name "CCBackGround" }
+        CIwUILayoutHorizontal
+        {
+            CIwUILayoutSpacer { sizeMin { 30 0} sizeMax {30 0} }
+            CIwUILayoutVertical
+            {
+                 CIwUILayoutSpacer { sizeMin { 0 30} sizeMax {0 30} }
+                 element { name "ExpleaderImg" alignH "centre" }
+                 CIwUILayoutSpacer { sizeMin { 0 5} sizeMax {0 5} }
+                 element { name "ExpleaderName" }
+            }
+            CIwUILayoutSpacer { sizeMin { 10 0} sizeMax {10 0} }
+            CIwUILayoutVertical
+            {
+                 CIwUILayoutSpacer { sizeMin { 0 10} sizeMax {0 10} }
+                 element { name "Expweaponthanes" }
+                 element { name "Expfootmen" }
+            }
+            CIwUILayoutSpacer { sizeMin { 10 0} sizeMax {10 0} }
+            CIwUILayoutVertical
+            {
+                CIwUILayoutSpacer { sizeMin { 0 30} sizeMax {0 30} }
+                 element { name "ExpSpeedSegP" }
+                 CIwUILayoutSpacer { sizeMin { 0 30} sizeMax {0 30} }
+                 CIwUILayoutHorizontal
+                 {
+                    element { name "ExpSend" }
+                    CIwUILayoutSpacer { sizeMin { 10 0} sizeMax { 10 0 } }
+                    element { name "ExpCancel" }
+                 }
+            }
+        }
+    }
+
+//    CIwUIButton
+//    {
+//        name "blackdrop"
+//        style	<button>
+//        font "font_medium"
+//        sizeMin  { 1280 800 }
+//        sizeMax  { 1280 800 }
+//        pos { 0 0 }
+//        buttonUp
+//        {
+//            drawableType "image"
+//            texture Clear64x64
+//        }
+//        buttonDown
+//        {
+//            drawableType "image"
+//            texture Clear64x64
+//        }
+//        focus ""
+//        caption ""
+//    }
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture Clear64x64
+        sizeMin { 560 160 }
+        sizeMax { 560 160 }
+    }
+
+        CIwUIElement
+        {
+            sizeMin { 231, 60 }
+            sizeToContent true
+            name "Expweaponthanes"
+        }
+        CIwUIElement
+        {
+            sizeMin { 231, 60 }
+            sizeToContent true
+            name "Expfootmen"
+        }
+        CIwUIButton
+        {
+            style <Btn_37x105>
+            colour { 255 255 255 255 }
+            name "ExpleaderName"
+            caption "领袖"
+            OnButtonClick {  MapController::chooseLeader }
+        }
+
+        CIwUIButton
+        {
+            name "ExpleaderImg"
+            sizeToContent true
+            sizeMin { 38 50 }
+            sizeMax { 38 50 }
+            margin { 0 0 }
+            style <button>
+            OnButtonClick {  MapController::handleLeaderTap }
+            buttonUp 
+            {
+                drawableType "image"
+                texture craft1m
+
+            }
+            buttonDown
+            {
+                drawableType "image"
+                texture craft1m
+            }
+            focus ""
+        }
+
+
+        CIwUIButton
+        {
+            name "ExpSend"
+            style <Btn_45x91>
+            caption "发送"
+            OnButtonClick {  MapController::goExploring }
+        }
+        CIwUIButton
+        {
+            name "ExpCancel"
+            style <Btn_45x44>
+            caption ""
+            OnButtonClick {  MapController::cancelExploreDialog }
+            CIwUIImage
+            {
+                pos { 6 6 }
+               // name "MCresultButX"
+                sizeToContent true
+                texture CloseX
+                sizeMin { 32 32 }
+                sizeMax { 32 32 }
+            }
+        }
+
+        CIwUIElement
+        {
+            name "ExpSpeedSegP"
+            sizeMin { 128 29 }
+            sizeMax { 128 29 }
+            sizeToContent true
+        }
+
+}

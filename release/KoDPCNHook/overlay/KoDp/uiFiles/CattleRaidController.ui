@@ -1,0 +1,188 @@
+
+
+CIwUIElement
+{
+	name			"CattleRaidController"
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    sizeToContent true
+    sizeToSpace true
+    
+    CIwUILayoutHorizontal
+    {
+        CIwUILayoutSpacer { sizeMin { 180 0} sizeMax {180 0} }
+        CIwUILayoutVertical
+        {
+
+            CIwUILayoutSpacer { sizeMin { 0 501} sizeMax {0 501} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 140 0} sizeMax {140 0} }
+                element { name "FCAdviceView" }
+            }
+            CIwUILayoutSpacer { sizeMin { 0 20} sizeMax {0 20} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 150 20} sizeMax {150 20} }
+                element { name "SacredGridLabels" }
+                CIwUILayoutSpacer { sizeMin { 39 0} sizeMax {39 0} }
+                element { name "FoodCrecruitBut" }
+                CIwUILayoutSpacer { sizeMin { 20 0} sizeMax {20 0} }
+                element { name "FCcloseBut" }
+            }
+        }
+
+    }
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture Clear64x64
+        //DialogBackground2
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+    CIwUIElement
+    {
+        name "CattleRaidScreen"
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+        pos { 128 16 }
+        CIwUILabel
+        {
+            alignH "left"
+            name "cattleraidLabel"
+            caption "劫牛袭击"
+            style	<ParchementLabel>
+            sizeMax {104 20}
+            sizeMin {150 25}
+            pos { 162 51 }
+        }
+
+        CIwUILabel
+        {
+            alignH "left"
+            name "raidersLabel"
+            caption "袭击者"
+            style	<ParchementLabel>
+            sizeMax {142 20}
+            sizeMin {150 25}
+            pos { 333 321 }
+        }
+        CIwUILabel
+        {
+            alignH "right"
+            name "season"
+            caption "海之季"
+            style	<SmallishLabel>
+            textColour { 0 0 0 255 }
+            sizeMax {200 20}
+            sizeMin {200 25}
+            pos { 655 326 }
+        }
+        PickListView
+        {
+            alignV "top"
+            name "targetClans"
+            CIwUILayoutVertical
+            {
+                spacing 5
+            }
+            colour { 255 255 255 255 }
+            sizeToSpace true
+            sizeToContent true
+
+            sizeMin  { 159 380 }
+            sizeMax  { 159 380 }
+            pos { 162 78}
+        }
+
+
+        CIwUIElement
+        {
+            sizeMin { 220, 90 }
+            sizeToContent true
+            name "weaponthanesSlider"
+            pos { 333 368 }
+        }
+        CIwUIElement
+        {
+            sizeMin { 220, 90 }
+            sizeToContent true
+            name "footMen"
+            pos { 638 368 }
+        }
+        
+        CIwUIElement
+        {
+            name "mapView"
+            pos { 336 52 }
+//            CIwUIImage
+//            {
+//                name "MapCScreenBg"
+//                //style <bg>
+//                pos { -3 -2 }
+//                drawableType "image"
+//                sizeToSpace true
+//                sizeToContent   true
+//                texture MapFrameBig
+//                sizeMin { 525 272 }
+//                sizeMax { 525 272 }
+//            }
+
+            ZoomingScroll
+            {
+
+                name "MapScroll"
+                sizeToContent   true
+                sizeMin { 519 268 }
+                sizeMax { 519 268 }
+
+                CIwUILayout
+                {
+
+                }
+            }
+        }
+
+    }
+
+    //****
+    CIwUIButton
+    {
+        name "FCcloseBut"
+        style <Btn_37x37>
+        caption ""
+        alignH "right"
+        OnButtonClick { ManagementController::cancelDialog }
+        CIwUIImage
+        {
+            name "FCcloseImg"
+            sizeToContent true
+            texture CloseX
+            pos { 2 2 }
+        }
+    }
+    
+    CIwUIButton
+    {
+        name "FoodCrecruitBut"
+        enabled "false"
+        style <Btn_45x122>
+        caption "劫牛袭击"
+        OnButtonClick {  CattleRaidController::raid }
+    }
+    
+    CIwUIElement
+    {
+        name "FCAdviceView"
+        sizeMin { 640 104 }
+        sizeMax { 640 104 }
+
+    }
+    
+}

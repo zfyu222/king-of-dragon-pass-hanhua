@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>pages</key>
+	<array>
+		<dict>
+			<key>image</key>
+			<string>B1</string>
+			<key>text</key>
+			<string>曾有一个时代，神祇与凡人一同行走在大地上。您的氏族将其血统追溯至那些岁月。
+
+您的氏族历史始于您加入风暴神奥兰斯的阵营之时。彼时，奥兰斯只是众多野心勃勃、叛逆不羁、意图征服世界的神祇之一。奥兰斯在那时独有的贡献是个人的荣誉，以及与那些似乎站在胜利一方其他神祇的密切亲缘。</string>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>B3</string>
+			<key>text</key>
+			<string>历经无数磨难、冒险与发现之后，奥兰斯证明了自己配得上迎娶大地母亲厄娜尔达。两者共同缔结了婚姻之环，并通过这一神圣纽带在世界中建立了伟大的和谐。您的氏族参加了这场婚礼。大多数氏族要么为奥兰斯欢呼，要么从厄娜尔达那里得知了一个秘密。少数氏族则站在骏马与太阳之神埃尔玛一边，作为荣誉卫队。
+
+您是如何为这场伟大婚礼做准备的？</string>
+			<key>responses</key>
+			<array>
+				<string>你的男男女女穿上闪亮铠甲，与埃尔玛一同守卫，保护庆典者免受奥兰斯
+众多敌人的侵害。</string>
+				<string>你的男人们与奥兰斯一同欢呼，畅饮八种已知饮品，好让仪式上你们的头痛欲裂。</string>
+				<string>你的女人们与埃尔纳达一同退避，习得一册名录，并承诺绝不向男人们泄露。</string>
+			</array>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>B2</string>
+			<key>text</key>
+			<string>奥兰斯重塑世界的斗争才刚刚开始，众多神祇也加入了他的行列。奥兰斯与光明皇帝耶尔姆交战，发动了多场征服战争。其他更温和的功绩同样重要。你们最早的名事迹是：</string>
+			<key>responses</key>
+			<array>
+				<string>奥兰斯之愈，慈悲女神查拉纳·阿罗伊正是在此时加入奥兰斯部落。</string>
+				<string>百日狩猎，奥兰斯与其子奥达拉追踪天熊之时。</string>
+				<string>杰斯泰德之约，奥兰斯与谈判之神伊萨里斯在一次艰难谈判中用智谋胜过异邦神祇。</string>
+				<string>动物行列，母牛女神乌拉尔达
+带领神圣兽群进入
+奥兰斯的农庄。   </string>
+				<string>当巴恩塔——奥兰斯与埃尔纳达之子——学会用牛拉犁之时。</string>
+				<string>当全知之神兰科·米学会使用标记骨，能在任何物件上刻下力量符号之时。</string>
+				<string>当陶器女神佩拉制成第一只贮存谷物的陶罐之时。</string>
+				<string>当舞蹈女神罗伊蒂娜首次跳起部落创立之舞之时。</string>
+			</array>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>B4</string>
+			<key>text</key>
+			<string>奥兰斯成功重塑了世界。由此开启了名为风暴时代的黄金纪元。奥兰斯之子文戈特是这一时期著名的军阀。地区内大多数人都是他的追随者。他引入了新的准则，例如好客之规：一旦你邀请他人进入你的农庄，便不得攻击或伤害他们。如此，奥兰斯社会中的大量背信弃义行为被杜绝。许多本无法存活的人为了获得他的庇护而接受了这些新规矩。他是一位伟大的组织者，帮助许多分散的族群组建成新的氏族和部落。你们的氏族正是文戈特王所扶持的氏族之一。在你们证明了自己强健且具备生存能力之后，文戈特将一个残余族群置于你们的保护之下。他们就是纳尔达·宾人，或称“棍棒农夫”。你们可以选择将他们变为奴隶，或者接纳他们为氏族成员。
+
+你们是如何安置这些外人的？</string>
+			<key>responses</key>
+			<array>
+				<string>作为奴隶。</string>
+				<string>作为收养的家人。</string>
+			</array>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>B5</string>
+			<key>text</key>
+			<string>文戈特子民的敌人众多，你们的人民与他们英勇作战。你们与之交战的主要是哪一支敌人？</string>
+			<key>responses</key>
+			<array>
+				<string>食人魔领主博兹塔康。</string>
+				<string>巴什莫利兽人之王乌卡尔·格拉。</string>
+				<string>精灵军阀金基斯·莫尔。</string>
+				<string>绿色塔达，平原
+普拉克斯的冠军。</string>
+				<string>维斯·文娜，冰族军阀。</string>
+			</array>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>B6</string>
+			<key>text</key>
+			<string>风暴时代终结于一场灾难——混沌的诸神与生灵降临，几乎摧毁了一切。奥兰斯及其盟友奋力作战，但混沌几乎总是获胜。众多神祇陨落，新的神祇崛起。无数凡人也随之丧命。灾祸震撼世界：太阳坠落、血雨、以及可怕的狂笑海啸。黑暗愈发严重，连奥兰斯与他的同伴也不得不将人类抛弃，任其自生自灭。仅剩少数弱小神祇留守。世界停滞、死亡。你们的氏族萎缩成一簇衣衫褴褛的顽强幸存者。</string>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>B7</string>
+			<key>text</key>
+			<string>国王赫奥尔特是在黑暗时代动荡中涌现的领袖。赫奥尔特及其同伴的努力帮助世界重新走向秩序。他制定了我们至今遵循的法律。赫奥尔特在其氏族中辨识出的一个重大区别是：有些氏族倾向于和平或战争，而另一些则在这两种原则之间保持平衡。
+
+你们的氏族属于哪一类？</string>
+			<key>responses</key>
+			<array>
+				<string>战争。</string>
+				<string>平衡。</string>
+				<string>和平。</string>
+			</array>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>B8</string>
+			<key>text</key>
+			<string>终于，太阳再次升起。当社会其余成员努力自卫、觅食或仅仅为求生存时，初代祭司们致力于重建与古老神祇的联系。随着人与神之间达成新的和谐，世界逐渐好转。一旦复苏过程开始，随着诸神彼此唤醒，事情变得更容易、更迅速。
+
+你们的氏族首先帮助唤醒的是哪一位神祇？</string>
+			<key>responses</key>
+			<array>
+				<string>没有。我们的祖先已经足够好。</string>
+				<string>~没有。我们保留了对现存神祇的崇拜：</string>
+				<string>    埃尔玛，忠诚侍从。</string>
+				<string>    乌洛克斯，风暴公牛。</string>
+				<string>    奥达拉，猎人。</string>
+				<string>厄尔纳达，母神。</string>
+				<string>奥兰斯，父神。</string>
+				<string>伊萨里斯，谈判之神。</string>
+				<string>兰科·米，全知之神。</string>
+				<string>查拉纳·阿罗伊，治愈女神。</string>
+				<string>乌拉尔达，母牛女神。</string>
+			</array>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>B12</string>
+			<key>text</key>
+			<string>自一千三百年前的黎明时代起，一切就不同了。奥兰斯与其他众神退离了世间，将天地留给了凡人。你依然能通过仪式与献祭联系他们，或通过重演蕴含强大魔法的诸神事迹，进入他们的领域。但他们不再行走在你身旁。当你定居于新地时，你以一位与你一样的凡人之名来命名这片土地，以此纪念世界的巨变。你称它为赫奥特兰，以纪念那位教会你在黑暗时代幸存之道的国王。</string>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>B9</string>
+			<key>text</key>
+			<string>大约六百年前，一条龙以龙形或人形（其体内有龙魂）接近了你。龙族向来怀有敌意，或至少全然漠不关心。奥兰斯一直是屠龙者。你必须选择是否相信它、与之合作并学习龙所知之事，还是保持中立。
+
+你对龙族的态度如何？</string>
+			<key>responses</key>
+			<array>
+				<string>敌对。我们绝不会相信一条龙。</string>
+				<string>中立。我们未与其同行。</string>
+				<string>友善。我们融入了他们的龙之知识。</string>
+			</array>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>B13</string>
+			<key>text</key>
+			<string>大多数对龙说“是”的人迁往龙隘——你们家园北部的一片土地。你们留在了赫奥特兰，这也是件好事，因为大约两百多年前，龙群崛起并吃掉了龙隘的所有居民。它们吃掉了奥兰斯人，以及其他所有愚蠢的人类龙友。很长一段时间里，没有人类敢去龙隘；他们确信龙也会吃掉他们。</string>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>B10</string>
+			<key>text</key>
+			<string>近期的事件让你对那片被遗弃的龙隘之地重新思量。一代人之前，一个自称法老的篡位者来到赫奥特兰，挑起了一场内战。你的氏族内部爆发争执，有时甚至诉诸暴力，争论是否支持法老。最终，你们这群异见者认定，与其留下杀害自己的亲族——奥兰斯人所能犯下的最大罪行——不如冒险前往龙隘。那些无法在法老治下生活的人将北迁至龙隘。其他氏族中抱有相似信念的人早已做出同样的决定，并在那里定居。于是你们组建了一个新氏族，正如你们的祖先在赫奥特王时代所做的那样。</string>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>B11</string>
+			<key>text</key>
+			<string>你的新氏族历经艰险来到龙隘，选定了一处居所。与其他来自赫奥特兰的奥兰斯难民一样，你们定居在奎维尼兰——龙隘东南部的一片山区。你们将称这片土地为家园，或称图拉领地。传统要求你正式提出土地主张。
+
+你要求多少土地？</string>
+			<key>responses</key>
+			<array>
+				<string>按需索取，不多不少。</string>
+				<string>略多于所需，以备发展。</string>
+				<string>远超所需，留有余地。</string>
+				<string>大片领地，绰绰有余。</string>
+			</array>
+		</dict>
+		<dict>
+			<key>image</key>
+			<string>B14</string>
+		</dict>
+	</array>
+</dict>
+</plist>

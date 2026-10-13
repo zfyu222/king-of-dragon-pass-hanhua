@@ -1,0 +1,229 @@
+
+
+CIwUIElement
+{
+	name			"RaidController"
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    sizeToContent true
+    sizeToSpace true
+    
+    CIwUILayoutHorizontal
+    {
+        CIwUILayoutSpacer { sizeMin { 180 0} sizeMax {180 0} }
+        CIwUILayoutVertical
+        {
+
+            CIwUILayoutSpacer { sizeMin { 0 533} sizeMax {0 533} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 140 0} sizeMax {140 0} }
+                element { name "FCAdviceView" }
+            }
+            CIwUILayoutSpacer { sizeMin { 0 20} sizeMax {0 20} }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 150 20} sizeMax {150 20} }
+                element { name "SacredGridLabels" }
+                CIwUILayoutSpacer { sizeMin { 60 0} sizeMax {60 0} }
+                element { name "FoodCrecruitBut" }
+                CIwUILayoutSpacer { sizeMin { 20 0} sizeMax {20 0} }
+                element { name "FCcloseBut" }
+            }
+        }
+
+    }
+
+    CIwUIImage
+    {
+        name "CCBackGround"
+        //style <bg>
+        drawableType "image"
+        sizeToSpace true
+        sizeToContent   true
+        texture Clear64x64
+        //Dialog768
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+    CIwUIElement
+    {
+        name "RaidScreen"
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+        pos { 128 16 }
+        CIwUILabel
+        {
+            alignH "left"
+            name "raidLabel"
+            caption "袭击"
+            style	 <ParchementLabel>
+            sizeMax {142 20}
+            sizeMin {150 25}
+            pos { 86 37 }
+        }
+
+        CIwUILabel
+        {
+            alignH "left"
+            name "raidersLabel"
+            caption "袭击者"
+            style	 <ParchementLabel>
+            sizeMax {142 20}
+            sizeMin {150 25}
+            pos { 718 37 }
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "callOnLabel"
+            caption "召唤"
+            style	 <ParchementLabel>
+            sizeMax {142 20}
+            sizeMin {150 25}
+            pos { 718 271 }
+        }
+        CIwUILabel
+        {
+            alignH "left"
+            name "season"
+            caption "海季"
+            style	<SmallishLabel>
+            textColour { 0 0 0 255 }
+            sizeMax {304 20}
+            sizeMin {310 25}
+            pos { 720 471 }
+        }
+        PickListView
+        {
+            alignV "top"
+            name "targetClans"
+            CIwUILayoutVertical
+            {
+                spacing 5
+            }
+            colour { 255 255 255 255 }
+            sizeToSpace true
+            sizeToContent true
+
+            sizeMin  { 159 428 }
+            sizeMax  { 159 428 }
+            pos { 86 64}
+        }
+        PickListView
+        {
+            alignV "top"
+            name "helperClans"
+            CIwUILayoutVertical
+            {
+                spacing 5
+            }
+            colour { 255 255 255 255 }
+            sizeToSpace true
+            sizeToContent true
+
+            sizeMin  { 220 135 }
+            sizeMax  { 220 135 }
+            pos { 718 326}
+        }
+
+        CIwUIElement
+        {
+            sizeMin { 220, 90 }
+            sizeToContent true
+            name "weaponthanesSlider"
+            pos { 718 74 }
+        }
+        CIwUIElement
+        {
+            sizeMin { 220, 90 }
+            sizeToContent true
+            name "footMen"
+            pos { 718 134 }
+        }
+        CIwUIElement
+        {
+            sizeMin { 220, 90 }
+            sizeToContent true
+            name "auxiliaries"
+            pos { 718 194 }
+        }
+        
+        CIwUIElement
+        {
+            name "mapView"
+            pos { 260 38 }
+//            CIwUIImage
+//            {
+//                name "MapCScreenBg"
+//                //style <bg>
+//                pos { -2 -2 }
+//                drawableType "image"
+//                sizeToSpace true
+//                sizeToContent   true
+//                texture MapFrameBig
+//                sizeMin { 439 457 }
+//                sizeMax { 439 457 }
+//            }
+            ZoomingScroll
+            {
+
+                name "MapScroll"
+                sizeToContent   true
+                sizeMin { 435 453 }
+                sizeMax { 435 453 }
+
+                CIwUILayout
+                {
+
+                }
+            }
+        }
+
+        ListFilter
+        {
+            margin { 0 0 }
+            name "helperFilter"
+            sizeMin  { 220 25 }
+            sizeMax  { 220 25 }
+            pos { 718 297 }
+        }
+
+
+    }
+
+    //****
+    CIwUIButton
+    {
+        name "FCcloseBut"
+        style <Btn_37x37>
+        caption ""
+        alignH "right"
+        OnButtonClick { ManagementController::cancelDialog }
+        CIwUIImage
+        {
+            name "FCcloseImg"
+            sizeToContent true
+            texture CloseX
+            pos { 2 2 }
+        }
+    }
+    
+    CIwUIButton
+    {
+        name "FoodCrecruitBut"
+        enabled "false"
+        style <Btn_45x91>
+        caption "袭击"
+        OnButtonClick {  RaidController::raid }
+    }
+    
+    CIwUIElement
+    {
+        name "FCAdviceView"
+        sizeMin { 640 104 }
+        sizeMax { 640 104 }
+
+    }
+    
+}

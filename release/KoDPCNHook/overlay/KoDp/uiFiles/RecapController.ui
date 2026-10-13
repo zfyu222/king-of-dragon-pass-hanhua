@@ -1,0 +1,402 @@
+// MenuController.ui
+// Example Stylesheets
+
+CIwUIPropertySet 
+{
+	name "<button_recap_up>"
+	drawableType "image"
+	texture BtnGold_39x62
+	//border  { 12 12 }
+}
+
+
+CIwUIPropertySet 
+{
+	name "<button_recap_down>"
+	drawableType "image"
+	texture BtnGold_39x62
+	//border  { 12 12 }
+}
+
+CIwUIPropertySet
+{
+	name	"<recap_button>"
+	style	<button>
+    font "DutchMediaevalBookBold18"
+    alignV "top"
+    margin  { 0 12 }
+	sizeMin  { 100 45 }
+    sizeMax  { 100 45 }
+
+	//sizeMax  { 100 100 }
+    buttonUp <button_recap_up>
+	buttonDown <button_recap_down>
+    focus ""
+	//sizeHint { 300 300 }
+    textColour { 0 0 0 255 }
+    downCaptionColour { 255 255 255 255 }
+}
+
+CIwUIPropertySet 
+{
+	name "<checkbox_style_radio>"
+//: extraclass "IIwUIDrawable"
+	drawableType "image"
+	texture "Radio-Off"
+}
+CIwUIPropertySet 
+{
+	name "<checkbox_cross_radio>"
+//: extraclass "IIwUIDrawable"
+	drawableType "image"
+	texture "Radio-On"
+}
+CIwUIPropertySet 
+{
+	name "<checkbox_radio>"
+    style <checkbox>
+    boxStyle <checkbox_style_radio>
+	crossStyle <checkbox_cross_radio>
+    focus ""
+    boxSize  { 32 32 }
+    sizeMin { 32 32 }
+    sizeMax { 32 32 }
+    alignH "left"
+    margin { 6 0 }
+    textColour  { 104 56 33 255 }
+    font "DutchMediaeval21"
+}
+
+
+
+CIwUIElement
+{
+	name			"RecapController"
+
+    sizeToContent true
+    sizeToSpace true
+
+    CIwUILayout
+	{
+        sizeToSpace	true
+        CIwUILayoutHorizontal
+        {
+            sizeToSpace	true
+            sizeToContent true
+            CIwUILayoutVertical
+            {
+
+                CIwUILayoutSpacer { sizeMin {0 136} sizeMax {0 136} }
+                element { name "RecapBg" }
+                CIwUILayoutSpacer { sizeMin {0 60} sizeMax {0 60} }
+                CIwUILayoutHorizontal
+                {
+                    CIwUILayoutSpacer { sizeMin {100 0} sizeMax {100 0} }
+                    element { name "RecapButton_Restart" }
+                    CIwUILayoutSpacer { sizeMin {240 0} sizeMax {240 0} }
+					element { name "RecapButton_Play"  }
+                }
+            }
+            CIwUILayoutVertical
+            {
+                CIwUILayoutSpacer { sizeMin {0 10} sizeMax {0 10} }
+                element { name "RecapSrollView"}
+            }
+
+
+        }
+    }
+     CIwUIImage
+    {
+        name "BackGround"
+        sizeToContent   true
+        drawableType "image"
+        texture Clear64x64
+        sizeMin { 1280 800 }
+        sizeMax { 1280 800 }
+    }
+    
+        CIwUIButton
+        {
+            name "RecapButton_Play"
+            style <recap_button>
+            caption "游玩"
+            OnButtonClick { IntroController::RecapButton_Play }
+        }
+         CIwUIButton
+        {
+            name "RecapButton_Restart"
+            style <recap_button>
+            caption "重新开始"
+            OnButtonClick { IntroController::RecapButton_Restart }
+        }
+         CIwUIImage
+        {
+            name "RecapBg"
+            style <bg>
+    //        sizeToSpace false
+            sizeToContent   true
+        }
+
+
+  CCommonScrollView
+    {
+        sizeMin  { 365 300 }
+        sizeMax  { 600 742 }
+        name "RecapSrollView"
+        sizeToContent true
+        sizeToSpace false
+        CIwUILayoutVertical
+        {
+            spacing 5
+            CIwUILayoutSpacer { sizeMin { 0 20 } sizeMax { 0 20 } }
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 144 0 } sizeMax { 144 0 } }
+                element { name "RecapClanName" }
+				element { name "RecapUITextField" }
+            }
+            CIwUILayoutSpacer { sizeMin { 0 10 } sizeMax { 0 10 } }
+            element { name "RecapVictCaption" }
+            element { name "RecapLenghtCaption" }
+
+            CIwUILayoutHorizontal
+            {
+                CIwUILayoutSpacer { sizeMin { 165 0 } sizeMax { 165 0 } }
+                element { name "difficultyEl" }
+                CIwUILayoutSpacer { sizeMin { 40 0 } sizeMax { 40 0 } }
+                element { name "lengthEl" }
+            }
+            element { name "RecapIntroText" }
+        }
+        CIwUILabel
+        {
+            name "RecapLenghtCaption"
+            style	<label_medium>
+            font "Trebuchet19"
+            sizeMin { 600 30}
+            sizeMax { 600 30}
+            alignH "centre"
+            caption "创建一个部落并维持王位10年"
+            textColour { 255 147 0 255 }
+        }
+        CIwUILabel
+        {
+            alignH "centre"
+            name "RecapVictCaption"
+            style	<label_medium>
+            //font "Trebuchet17b"
+            font "Trebuchet27"
+            caption "胜利条件"
+            sizeMin { 600 30}
+            sizeMax { 600 30}
+
+            textColour { 255 255 255 255 }
+        }
+        CIwUILabel
+        {
+            name "RecapIntroText"
+            style	<label_medium>
+            caption "历经无数磨难、冒险与发现之后，奥兰斯证明了自己配得上迎娶大地母亲厄娜尔达。两者共同缔结了婚姻之环，并通过这一神圣纽带在世界中建立了伟大的和谐。您的氏族参加了这场婚礼。大多数氏族要么为奥兰斯欢呼，要么从厄娜尔达那里得知了一个秘密。少数"
+            sizeMin  { 600 320 }
+            sizeMax  { -1 -1}
+            alignH 	"left"
+            textColour { 255 255 255 255 }
+        }
+        CIwUIElement
+        {
+            sizeMin { 115 70 }
+            sizeMax { 115 70 }
+            name "difficultyEl"
+
+            CIwUIImage
+            {
+                drawableType "image"
+                sizeToContent   true
+                texture RadioLine_3options
+                sizeMin { 74 3 }
+                sizeMax { 74 3 }
+                pos { 20 35 }
+            }
+            CIwUILabel
+            {
+                alignH "centre"
+                name "RecapDifficulty"
+                style	<label_medium>
+                caption "难度"
+                //font "Trebuchet17b"
+                font "Trebuchet27"
+                textColour { 255 255 255 255 }
+                sizeMin {115 20}
+                sizeMax {125 25}
+                pos { 0 -5 }
+            }
+            CCheckBox
+            {
+                name "RecapEasyBox"
+                style <checkbox_radio>
+                checked "true"
+                alignH "left"
+                margin { 0 0 }
+                OnCheckboxChecked { IntroController::RecapdifficultyButtonTapped }
+                pos { -5 21 }
+            }
+            
+            CCheckBox
+            {
+                name "RecapMediumBox"
+                style <checkbox_radio>
+                 checked "false"
+                alignH "left"
+                margin { 0 0 }
+                OnCheckboxChecked { IntroController::RecapdifficultyButtonTapped }
+                pos { 42 21 }
+            }
+            CCheckBox
+            {
+                name "RecapHardBox"
+                style <checkbox_radio>
+                checked "false"
+                alignH "left"
+                margin { 0 0 }
+                OnCheckboxChecked { IntroController::RecapdifficultyButtonTapped }
+                pos { 88 21 }
+            }
+            CIwUILabel
+            {
+                alignH "left"
+                style	<label_small>
+                font "DutchMediaeval16"
+                caption "普通"
+                textColour { 255 255 255 255 }
+                sizeMin {65 20}
+                sizeMax {65 25}
+                pos { -16 52 }
+            }
+            CIwUILabel
+            {
+                alignH "left"
+                style	<label_small>
+                font "DutchMediaeval16"
+                caption "困难"
+                textColour { 255 255 255 255 }
+                sizeMin {45 20}
+                sizeMax {45 25}
+                pos { 88 52 }
+            }
+
+        }
+        CIwUIElement
+        {
+            name "lengthEl"
+            sizeMin { 115 70 }
+            sizeMax { 115 70 }
+            CIwUIImage
+            {
+                drawableType "image"
+                sizeToContent   true
+                texture RadioLine_2options
+                sizeMin { 74 3 }
+                sizeMax { 74 3 }
+                pos { 20 35 }
+            }
+            CIwUILabel
+            {  
+                alignH "centre"
+                name "RecapLength"
+                style	<label_medium>
+               // font "Trebuchet17b"
+                font "Trebuchet27"
+                caption "时长"
+                textColour { 255 255 255 255 }
+                sizeMin {115 20}
+                sizeMax {115 25}
+                pos { 0 -5 }
+            }
+
+            CCheckBox
+            {
+                name "RecapShortGameBox"
+                style <checkbox_radio>
+                checked "true"
+                alignH "left"
+                margin { 0 0 }
+                OnCheckboxChecked { IntroController::RecaplengthButtonTapped }
+                pos { -5 21 }
+            }
+            CCheckBox
+            {
+                name "RecapLongGameBox"
+                style <checkbox_radio>
+                checked "false"
+                alignH "left"
+                margin { 0 0 }
+                OnCheckboxChecked { IntroController::RecaplengthButtonTapped }
+                pos { 88 21 }
+            }
+            CIwUILabel
+            {
+                alignH "left"
+                style	<label_small>
+                font "DutchMediaeval16"
+                caption "短"
+                textColour { 255 255 255 255 }
+                sizeMin {45 20}
+                sizeMax {45 25}
+                pos { -9 52 }
+            }
+            CIwUILabel
+            {
+                alignH "left"
+                style	<label_small>
+                font "DutchMediaeval16"
+                caption "长"
+                textColour { 255 255 255 255 }
+                sizeMin {45 20}
+                sizeMax {45 25}
+                pos { 88 52 }
+            }
+        }
+
+
+        CIwUILabel
+        {
+            sizeToContent true
+            name "RecapClanName"
+            style	<label_medium>
+            //font "Trebuchet17b"
+            font "Trebuchet27"
+            caption "氏族名称"
+            sizeMin { 100 36 }
+            sizeMax { 140 36 }
+            textColour { 255 255 255 255 }
+        }
+
+		CIwUITextField
+		{
+			name "RecapUITextField"
+			textColour { 0 0 0 255 }
+			font "Trebuchet17"
+
+			alignH left
+			alignV middle
+			margin { 4 4 }
+			sizeMin { 200 32 }
+			sizeMax { 200 32 }
+			pos { 20, 20 }
+
+			style <textField_inline>
+
+			clipped true
+			enabled true
+			oneLine true
+
+			caption "氏族名"
+			OnTextFieldComplete { IntroController::SelectClanName }
+			OnTextFieldChanged { IntroController::OnUpdateClanName }
+		}
+    }
+
+
+
+}

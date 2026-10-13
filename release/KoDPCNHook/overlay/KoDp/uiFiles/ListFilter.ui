@@ -1,0 +1,68 @@
+CIwUIElement
+    {
+        name "CCBlessing"
+        sizeMax { 318 220 }
+        sizeMin { 318 220 }
+        
+        CIwUIImage
+        {
+            pos { -1 33 }
+            drawableType "image"
+            sizeToContent   true
+            texture BlessingBorder
+            sizeMin { 1 150 }
+            sizeMax { 1 150 }
+        }
+
+        CIwUILayoutVertical
+        {
+            sizeToSpace true
+            sizeToContent true
+            element { name "ParentCCListFilter" }
+            CIwUILayoutSpacer { sizeMin {0 5} sizeMax {0 5} }
+            element { name "CCListView" alignV "top" }
+            CIwUILayoutSpacer { sizeMin {0 5} sizeMax {0 5} }
+            element { name "CCblessingLabel" alignV "bottom" }
+        }
+        CIwUIElement
+        {
+            name "ParentCCListFilter"
+            sizeMin  { 318 30 }
+            sizeMax  { 318 30 }
+            ListFilter
+            {
+                name "CCListFilter"
+                sizeMin  { 318 30 }
+                sizeMax  { 318 30 }
+            }
+        }
+
+
+
+        PickListView
+        {
+            alignV "top"
+            name "CCListView"
+            CIwUILayoutVertical
+            {
+                spacing 5
+            }
+            colour { 255 255 255 255 }
+            sizeToSpace true
+            sizeToContent true
+            sizeMin { 318 150 }
+            sizeMax { 318 150 }
+        }
+
+        CIwUILabel
+        {
+            alignH "right"
+            alignV "bottom"
+            name "CCblessingLabel"
+            style	<VerySmallLabel>
+            caption "这些祝福影响食物。请在魔法界面中选择。"
+            sizeMin { 305 30 }
+            sizeMax { 305 90 }
+            margin { 3 0 }
+        }
+    }
