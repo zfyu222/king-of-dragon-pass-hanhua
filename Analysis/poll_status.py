@@ -11,6 +11,12 @@ for status, n in c.execute(
         "select status, count(*) from tasks where stage='review' group by status order by 2 desc"):
     print(f"  {status:10s} {n}")
 
+print("review failures:")
+for error, n in c.execute(
+        "select error, count(*) from tasks where stage='review' and status='failed' "
+        "group by error order by 2 desc limit 8"):
+    print(f"  {str(error)[:80]:82s} {n}")
+
 print("review api calls:")
 for status, n in c.execute(
         "select c.status, count(*) from api_calls c join tasks t on t.id=c.task_id "

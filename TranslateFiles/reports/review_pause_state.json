@@ -1,0 +1,36 @@
+{
+  "paused_at": "2026-10-28T14:40:00+08:00",
+  "reason": "user-stopped: API peak pricing; resume on request",
+  "runner_processes": "none (no run-api python process alive; residual python processes belong to Projects/paradigm image workflow)",
+  "flows_paused": true,
+  "review_tasks": {
+    "done": 622,
+    "pending": 1432,
+    "running_lease_expired": 11,
+    "total": 2065
+  },
+  "review_candidates_pending": 10461,
+  "api_usage_this_stage": {
+    "requests_reported": 850,
+    "project_api_requests_total": 1903,
+    "prompt_tokens": 3839297,
+    "completion_tokens": 7226627,
+    "total_tokens": 11065924,
+    "unknown_usage_requests": 113,
+    "failed_attempts": 138
+  },
+  "reserved_api_calls": 25,
+  "reserved_sessions": 25,
+  "running_tasks_with_lease": 11,
+  "unfinished_handoff": "A restart attempt was refused with 'Unfinished API handoff: verify the old request stopped, then batch-finish or batch-retry its session'. The 25 reserved calls (distinct session ids) and 11 running tasks must be settled first.",
+  "resume_steps": [
+    "translation_workflow.py --project . resume",
+    "for each leftover session: translation_workflow.py --project . batch-retry --session <id> --worker <worker> --reason '<why>'  (or batch-finish when a result file exists)",
+    "translation_workflow.py --project . run-api --stage review"
+  ],
+  "current_usage_limits": {
+    "api_max_requests": 10000,
+    "api_requests_used": 1903,
+    "note": "resolve handoff before restarting; do not raise request or token limits without user approval"
+  }
+}

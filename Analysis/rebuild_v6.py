@@ -26,7 +26,7 @@ styles_path = proj / "ImagePatch" / "texture_styles.json"
 mapping_path = proj / "king-of-dragon-pass_image_text.mapping.json"
 source_csv = proj / "king-of-dragon-pass_image_text.csv"
 translated_csv = proj / "TranslateFiles/image-text/king-of-dragon-pass_image_text_translated.csv"
-dest = proj / "ImagePatch" / "build-v9"
+dest = proj / "ImagePatch" / "build-v11"
 
 BODY_FONT = Path(r"C:\Windows\Fonts\simhei.ttf")
 TITLE_FONT = Path(r"C:\Windows\Fonts\simsun.ttc")
@@ -34,6 +34,9 @@ TITLE_FONT = Path(r"C:\Windows\Fonts\simsun.ttc")
 LOGO_PATHS = {"Menu/Logo.png", "Menu/Logo@2x.png", "Menu/Logo~ipad.png", "Menu/Logo~ipad@2x.png"}
 MAP_PATHS = {"Lore/background-map.png", "Lore/background-map1024.png",
              "Lore/background-map1024@2x.png", "Lore/background-map@2x.png"}
+# Flat caption plates: the caption is drawn by the engine at runtime, the PNG has no
+# baked lettering. Inking a label here would duplicate or misplace the runtime text.
+SKIP_PATHS = {"M/RecruitCaption.png", "M/DismissCaption.png"}
 
 digest = lambda data: hashlib.sha256(data).hexdigest()
 
@@ -126,6 +129,12 @@ def main():
 
     grouped, preserved = {}, []
     for region in mapping["regions"]:
+        path = region["sources"][0]["path"]
+        if path in SKIP_PATHS:
+            preserved.append({"image_id": region["image_id"], "box": region["box"],
+                              "csv_row": region["csv_row"], "sources": region["sources"],
+                              "reason": "flat caption plate; caption is drawn by the engine at runtime"})
+            continue
         if target[region["csv_row"] - 1] == original[region["csv_row"] - 1]:
             preserved.append({"image_id": region["image_id"], "box": region["box"],
                               "csv_row": region["csv_row"], "sources": region["sources"],
@@ -162,12 +171,15 @@ def main():
                 limit = style.get("max_font_size", 96)
             else:
                 want_dark = not style.get("erase_light_ink", False)
-                sensitivity = 1.0 if (is_map or is_arch) else 1.5
-                im, cleaned = clean_strokes(im, rect, want_dark, rounds=2, sensitivity=sensitivity)
+                sensitivity = 0.75 if is_map else 0.9 if is_arch else 1.2
+                im, cleaned = clean_strokes(im, rect, want_dark, rounds=3, sensitivity=sensitivity)
                 font_file = BODY_FONT
                 stroke = style.get("stroke_width", 1)
                 ink = tuple(style.get("text_rgba", (255, 255, 255, 255)))
                 limit = style.get("max_font_size", 96)
+                if is_map:
+                    ink = (26, 34, 20, 255)
+                    stroke = 1
                 if is_arch:
                     ink = (92, 60, 26, 255)
                     stroke = 2
