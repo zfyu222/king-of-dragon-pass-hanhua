@@ -1,0 +1,565 @@
+{
+  "read_only": true,
+  "calls": [
+    {
+      "id": 61,
+      "task_id": "extract-r2-00051-2a322dc6",
+      "session_id": "74cbf5e886d344b5bea006a2c376ccc1",
+      "time": 1793118316.5209258,
+      "usage": "{}",
+      "stage": "extract",
+      "task_status": "obsolete",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\extract-r2-00051-2a322dc6\\handoffs\\74cbf5e886d344b5bea006a2c376ccc1\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "6079ec2c04424f0097bc261438f17494",
+          "stage": "extract",
+          "time_utc": "2026-10-27T16:25:39.286681+00:00"
+        }
+      ],
+      "result_exists": false
+    },
+    {
+      "id": 323,
+      "task_id": "glossary_review-r3-00138-5a357f6d",
+      "session_id": "23c1fddd412c4c99a8ed29179c8bb77c",
+      "time": 1793123167.0089889,
+      "usage": "{}",
+      "stage": "glossary_review",
+      "task_status": "done",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\glossary_review-r3-00138-5a357f6d\\handoffs\\23c1fddd412c4c99a8ed29179c8bb77c\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "0e5b023fff2b4477bd126d122b15b502",
+          "stage": "glossary_review",
+          "time_utc": "2026-10-27T17:46:07.072725+00:00"
+        }
+      ],
+      "result_exists": false
+    },
+    {
+      "id": 340,
+      "task_id": "glossary_review-r3-00155-091bc5a0",
+      "session_id": "00e2d973882c4dd584c38f530f79a126",
+      "time": 1793123236.2790594,
+      "usage": "{}",
+      "stage": "glossary_review",
+      "task_status": "done",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\glossary_review-r3-00155-091bc5a0\\handoffs\\00e2d973882c4dd584c38f530f79a126\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "0e5b023fff2b4477bd126d122b15b502",
+          "stage": "glossary_review",
+          "time_utc": "2026-10-27T17:47:16.328765+00:00"
+        }
+      ],
+      "result_exists": false
+    },
+    {
+      "id": 341,
+      "task_id": "glossary_review-r3-00156-13dbb790",
+      "session_id": "cc25157f283f45fb809df1d8b8b19999",
+      "time": 1793123245.7021697,
+      "usage": "{}",
+      "stage": "glossary_review",
+      "task_status": "done",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\glossary_review-r3-00156-13dbb790\\handoffs\\cc25157f283f45fb809df1d8b8b19999\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "0e5b023fff2b4477bd126d122b15b502",
+          "stage": "glossary_review",
+          "time_utc": "2026-10-27T17:47:25.761814+00:00"
+        }
+      ],
+      "result_exists": false
+    },
+    {
+      "id": 361,
+      "task_id": "glossary_review-r3-00175-78e86ca3",
+      "session_id": "14bcaed39d7a453fa3ca70bfe31b0cd1",
+      "time": 1793123309.3830929,
+      "usage": "{}",
+      "stage": "glossary_review",
+      "task_status": "done",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\glossary_review-r3-00175-78e86ca3\\handoffs\\14bcaed39d7a453fa3ca70bfe31b0cd1\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "0e5b023fff2b4477bd126d122b15b502",
+          "stage": "glossary_review",
+          "time_utc": "2026-10-27T17:48:29.736814+00:00"
+        }
+      ],
+      "result_exists": false
+    },
+    {
+      "id": 365,
+      "task_id": "glossary_review-r3-00178-a0b6a560",
+      "session_id": "76706273977d43bba0fbbb91d87b11d5",
+      "time": 1793123313.5204484,
+      "usage": "{}",
+      "stage": "glossary_review",
+      "task_status": "done",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\glossary_review-r3-00178-a0b6a560\\handoffs\\76706273977d43bba0fbbb91d87b11d5\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "0e5b023fff2b4477bd126d122b15b502",
+          "stage": "glossary_review",
+          "time_utc": "2026-10-27T17:48:33.568917+00:00"
+        }
+      ],
+      "result_exists": false
+    },
+    {
+      "id": 366,
+      "task_id": "glossary_review-r3-00179-bba73acc",
+      "session_id": "c1a18a5cbc884017ad518a54064f9ccc",
+      "time": 1793123314.1459246,
+      "usage": "{}",
+      "stage": "glossary_review",
+      "task_status": "done",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\glossary_review-r3-00179-bba73acc\\handoffs\\c1a18a5cbc884017ad518a54064f9ccc\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "0e5b023fff2b4477bd126d122b15b502",
+          "stage": "glossary_review",
+          "time_utc": "2026-10-27T17:48:34.186899+00:00"
+        }
+      ],
+      "result_exists": false
+    },
+    {
+      "id": 367,
+      "task_id": "glossary_review-r3-00180-54f41a6e",
+      "session_id": "982e7db868414278b4d5b4d6b21a88f5",
+      "time": 1793123315.403524,
+      "usage": "{}",
+      "stage": "glossary_review",
+      "task_status": "done",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\glossary_review-r3-00180-54f41a6e\\handoffs\\982e7db868414278b4d5b4d6b21a88f5\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "0e5b023fff2b4477bd126d122b15b502",
+          "stage": "glossary_review",
+          "time_utc": "2026-10-27T17:48:35.447084+00:00"
+        }
+      ],
+      "result_exists": false
+    },
+    {
+      "id": 368,
+      "task_id": "glossary_review-r3-00181-64c3a7fc",
+      "session_id": "ca9b0701eb6f4f3f8cd0c99a445178c4",
+      "time": 1793123316.3180838,
+      "usage": "{}",
+      "stage": "glossary_review",
+      "task_status": "done",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\glossary_review-r3-00181-64c3a7fc\\handoffs\\ca9b0701eb6f4f3f8cd0c99a445178c4\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "0e5b023fff2b4477bd126d122b15b502",
+          "stage": "glossary_review",
+          "time_utc": "2026-10-27T17:48:36.363468+00:00"
+        }
+      ],
+      "result_exists": false
+    },
+    {
+      "id": 369,
+      "task_id": "glossary_review-r3-00182-524ece43",
+      "session_id": "846a0be11c4e4d0b8d99b6db23c4b60f",
+      "time": 1793123317.5851467,
+      "usage": "{}",
+      "stage": "glossary_review",
+      "task_status": "done",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\glossary_review-r3-00182-524ece43\\handoffs\\846a0be11c4e4d0b8d99b6db23c4b60f\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "0e5b023fff2b4477bd126d122b15b502",
+          "stage": "glossary_review",
+          "time_utc": "2026-10-27T17:48:37.623046+00:00"
+        }
+      ],
+      "result_exists": false
+    },
+    {
+      "id": 370,
+      "task_id": "glossary_review-r3-00183-64b65d36",
+      "session_id": "1aa0e65e71cd44578980cc2f530e6676",
+      "time": 1793123319.5287502,
+      "usage": "{}",
+      "stage": "glossary_review",
+      "task_status": "done",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\glossary_review-r3-00183-64b65d36\\handoffs\\1aa0e65e71cd44578980cc2f530e6676\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "0e5b023fff2b4477bd126d122b15b502",
+          "stage": "glossary_review",
+          "time_utc": "2026-10-27T17:48:39.574352+00:00"
+        }
+      ],
+      "result_exists": false
+    },
+    {
+      "id": 371,
+      "task_id": "glossary_review-r3-00184-998f4c2f",
+      "session_id": "8a4948cd53f94573b0f848a79c77aff4",
+      "time": 1793123319.7943265,
+      "usage": "{}",
+      "stage": "glossary_review",
+      "task_status": "done",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\glossary_review-r3-00184-998f4c2f\\handoffs\\8a4948cd53f94573b0f848a79c77aff4\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "0e5b023fff2b4477bd126d122b15b502",
+          "stage": "glossary_review",
+          "time_utc": "2026-10-27T17:48:39.840558+00:00"
+        }
+      ],
+      "result_exists": false
+    },
+    {
+      "id": 372,
+      "task_id": "glossary_review-r3-00185-b46e2229",
+      "session_id": "e7f0fb83a96f405d9475c44eb63ebb29",
+      "time": 1793123320.3278337,
+      "usage": "{}",
+      "stage": "glossary_review",
+      "task_status": "done",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\glossary_review-r3-00185-b46e2229\\handoffs\\e7f0fb83a96f405d9475c44eb63ebb29\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "0e5b023fff2b4477bd126d122b15b502",
+          "stage": "glossary_review",
+          "time_utc": "2026-10-27T17:48:40.365358+00:00"
+        }
+      ],
+      "result_exists": false
+    },
+    {
+      "id": 373,
+      "task_id": "glossary_review-r3-00186-b8dae027",
+      "session_id": "8ee128584c2f4e419b093e0b5c0ab89f",
+      "time": 1793123324.8846996,
+      "usage": "{}",
+      "stage": "glossary_review",
+      "task_status": "done",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\glossary_review-r3-00186-b8dae027\\handoffs\\8ee128584c2f4e419b093e0b5c0ab89f\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "0e5b023fff2b4477bd126d122b15b502",
+          "stage": "glossary_review",
+          "time_utc": "2026-10-27T17:48:44.927533+00:00"
+        }
+      ],
+      "result_exists": false
+    },
+    {
+      "id": 374,
+      "task_id": "glossary_review-r3-00187-b0900654",
+      "session_id": "d62f8eced7f8407297a066d05272b369",
+      "time": 1793123325.7788281,
+      "usage": "{}",
+      "stage": "glossary_review",
+      "task_status": "done",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\glossary_review-r3-00187-b0900654\\handoffs\\d62f8eced7f8407297a066d05272b369\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "0e5b023fff2b4477bd126d122b15b502",
+          "stage": "glossary_review",
+          "time_utc": "2026-10-27T17:48:45.822663+00:00"
+        }
+      ],
+      "result_exists": false
+    },
+    {
+      "id": 375,
+      "task_id": "glossary_review-r3-00188-eabfe438",
+      "session_id": "436c6a23c56c424897a46023a013295c",
+      "time": 1793123326.681616,
+      "usage": "{}",
+      "stage": "glossary_review",
+      "task_status": "done",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\glossary_review-r3-00188-eabfe438\\handoffs\\436c6a23c56c424897a46023a013295c\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "0e5b023fff2b4477bd126d122b15b502",
+          "stage": "glossary_review",
+          "time_utc": "2026-10-27T17:48:46.721806+00:00"
+        }
+      ],
+      "result_exists": false
+    },
+    {
+      "id": 376,
+      "task_id": "glossary_review-r3-00189-4c7382f9",
+      "session_id": "4ba33f32076d4f97a5f5eb16502df7c4",
+      "time": 1793123326.954244,
+      "usage": "{}",
+      "stage": "glossary_review",
+      "task_status": "done",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\glossary_review-r3-00189-4c7382f9\\handoffs\\4ba33f32076d4f97a5f5eb16502df7c4\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "0e5b023fff2b4477bd126d122b15b502",
+          "stage": "glossary_review",
+          "time_utc": "2026-10-27T17:48:46.994926+00:00"
+        }
+      ],
+      "result_exists": false
+    },
+    {
+      "id": 377,
+      "task_id": "glossary_review-r3-00190-722e2e6d",
+      "session_id": "8cb866f3b07043a2a7158f82f38100ca",
+      "time": 1793123328.2294314,
+      "usage": "{}",
+      "stage": "glossary_review",
+      "task_status": "done",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\glossary_review-r3-00190-722e2e6d\\handoffs\\8cb866f3b07043a2a7158f82f38100ca\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "0e5b023fff2b4477bd126d122b15b502",
+          "stage": "glossary_review",
+          "time_utc": "2026-10-27T17:48:48.266527+00:00"
+        }
+      ],
+      "result_exists": false
+    },
+    {
+      "id": 378,
+      "task_id": "glossary_review-r3-00191-efb6cb43",
+      "session_id": "2125675f6fac425d8d2c7f12768ab4ce",
+      "time": 1793123332.2233782,
+      "usage": "{}",
+      "stage": "glossary_review",
+      "task_status": "done",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\glossary_review-r3-00191-efb6cb43\\handoffs\\2125675f6fac425d8d2c7f12768ab4ce\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "0e5b023fff2b4477bd126d122b15b502",
+          "stage": "glossary_review",
+          "time_utc": "2026-10-27T17:48:52.259974+00:00"
+        }
+      ],
+      "result_exists": false
+    },
+    {
+      "id": 379,
+      "task_id": "glossary_review-r3-00192-fc21e007",
+      "session_id": "5fe4cc428eef491781c07fc3431a2577",
+      "time": 1793123332.393415,
+      "usage": "{}",
+      "stage": "glossary_review",
+      "task_status": "done",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\glossary_review-r3-00192-fc21e007\\handoffs\\5fe4cc428eef491781c07fc3431a2577\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "0e5b023fff2b4477bd126d122b15b502",
+          "stage": "glossary_review",
+          "time_utc": "2026-10-27T17:48:52.431192+00:00"
+        }
+      ],
+      "result_exists": false
+    },
+    {
+      "id": 380,
+      "task_id": "glossary_review-r3-00193-cba7c0ff",
+      "session_id": "c39af4e0c9324c36bb18a75bd996b58c",
+      "time": 1793123332.7737129,
+      "usage": "{}",
+      "stage": "glossary_review",
+      "task_status": "done",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\glossary_review-r3-00193-cba7c0ff\\handoffs\\c39af4e0c9324c36bb18a75bd996b58c\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "0e5b023fff2b4477bd126d122b15b502",
+          "stage": "glossary_review",
+          "time_utc": "2026-10-27T17:48:52.813294+00:00"
+        }
+      ],
+      "result_exists": false
+    },
+    {
+      "id": 381,
+      "task_id": "glossary_review-r3-00194-c08cdb46",
+      "session_id": "2cd04a0603ad4993b6c68b17173be02b",
+      "time": 1793123333.544721,
+      "usage": "{}",
+      "stage": "glossary_review",
+      "task_status": "done",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\glossary_review-r3-00194-c08cdb46\\handoffs\\2cd04a0603ad4993b6c68b17173be02b\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "0e5b023fff2b4477bd126d122b15b502",
+          "stage": "glossary_review",
+          "time_utc": "2026-10-27T17:48:53.582041+00:00"
+        }
+      ],
+      "result_exists": false
+    },
+    {
+      "id": 382,
+      "task_id": "glossary_review-r3-00195-f426ddca",
+      "session_id": "6c3c7bbded564d6dbce3064c1d337428",
+      "time": 1793123334.1363175,
+      "usage": "{}",
+      "stage": "glossary_review",
+      "task_status": "done",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\glossary_review-r3-00195-f426ddca\\handoffs\\6c3c7bbded564d6dbce3064c1d337428\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "0e5b023fff2b4477bd126d122b15b502",
+          "stage": "glossary_review",
+          "time_utc": "2026-10-27T17:48:54.173932+00:00"
+        }
+      ],
+      "result_exists": false
+    },
+    {
+      "id": 383,
+      "task_id": "glossary_review-r3-00196-2183869c",
+      "session_id": "41a49b3215874d0b8a581cc03ac8fdd5",
+      "time": 1793123335.3238502,
+      "usage": "{}",
+      "stage": "glossary_review",
+      "task_status": "done",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\glossary_review-r3-00196-2183869c\\handoffs\\41a49b3215874d0b8a581cc03ac8fdd5\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "0e5b023fff2b4477bd126d122b15b502",
+          "stage": "glossary_review",
+          "time_utc": "2026-10-27T17:48:55.359902+00:00"
+        }
+      ],
+      "result_exists": false
+    },
+    {
+      "id": 384,
+      "task_id": "glossary_review-r3-00197-af6f19ef",
+      "session_id": "69f61e0f1af54975a56fe3453d3c65b9",
+      "time": 1793123338.5769496,
+      "usage": "{}",
+      "stage": "glossary_review",
+      "task_status": "done",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\glossary_review-r3-00197-af6f19ef\\handoffs\\69f61e0f1af54975a56fe3453d3c65b9\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "0e5b023fff2b4477bd126d122b15b502",
+          "stage": "glossary_review",
+          "time_utc": "2026-10-27T17:48:58.613132+00:00"
+        }
+      ],
+      "result_exists": false
+    },
+    {
+      "id": 385,
+      "task_id": "glossary_review-r3-00198-5a0c8ca8",
+      "session_id": "e14cfa48915e413bb7b5f69965f971c7",
+      "time": 1793123342.198162,
+      "usage": "{}",
+      "stage": "glossary_review",
+      "task_status": "done",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\glossary_review-r3-00198-5a0c8ca8\\handoffs\\e14cfa48915e413bb7b5f69965f971c7\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "0e5b023fff2b4477bd126d122b15b502",
+          "stage": "glossary_review",
+          "time_utc": "2026-10-27T17:49:02.238971+00:00"
+        }
+      ],
+      "result_exists": false
+    },
+    {
+      "id": 2514,
+      "task_id": "review-r3-00637-1b560063",
+      "session_id": "50d59b0be1714ac88bd9c3b7d269b68a",
+      "time": 1793181582.5857906,
+      "usage": "{}",
+      "stage": "review",
+      "task_status": "done",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\review-r3-00637-1b560063\\handoffs\\50d59b0be1714ac88bd9c3b7d269b68a\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "7667b5c33c894d6bb9599037ebfd343d",
+          "stage": "review",
+          "time_utc": "2026-10-28T09:59:42.690939+00:00"
+        }
+      ],
+      "result_exists": false
+    },
+    {
+      "id": 4269,
+      "task_id": "review-r3-01283-7d203db6",
+      "session_id": "dab5d2b2c00b4389ab1c86fd24e1f199",
+      "time": 1793188086.8695831,
+      "usage": "{}",
+      "stage": "review",
+      "task_status": "done",
+      "session_status": "waiting",
+      "result_file": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\tasks\\review-r3-01283-7d203db6\\handoffs\\dab5d2b2c00b4389ab1c86fd24e1f199\\result.json",
+      "events": [
+        {
+          "event": "request_started",
+          "run_id": "6dc93501a8064363a2b1eff7961feeab",
+          "stage": "review",
+          "time_utc": "2026-10-28T11:48:06.938811+00:00"
+        }
+      ],
+      "result_exists": false
+    }
+  ]
+}

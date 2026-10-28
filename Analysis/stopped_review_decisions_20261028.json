@@ -1,0 +1,231 @@
+{
+  "worker_stopped": true,
+  "stage": "review",
+  "reviewer": "standard:review_resolution",
+  "reason": "标准档逐条核对完整原文、现译、候选与冻结术语，保留旧证据及累计预算；候选仍须经 review-scan。",
+  "records": [
+    {
+      "id": "R0015011_3ed5cd1f0c",
+      "source_sha256": "3ed5cd1f0c2b7b65f87502acec9e0cbd13652651c011a52bae7289ca88d810f0",
+      "live_sha256": "deb41ed33b7a27b15cf621f762d00662660391b871228a07ee9eaf4ba82ea32b",
+      "candidate_sha256": "7368125979bcf1d56d38ea6ec0fee995518d0f439eca8a3d8182133282f64d66",
+      "item": {
+        "changes": [],
+        "checks": {
+          "accuracy": {
+            "status": "pass",
+            "evidence": "\\x01@\\x0B 是来访者；of the \\x01Á 表出身；came to our tribe’s moot 表来到本族大会；with Saraska Bright-Eyes at \\x04 side 表萨拉斯卡在动态人物身旁陪同，现译未指定动态人物性别身份。"
+          },
+          "completeness": {
+            "status": "pass",
+            "evidence": "来访者、出身、萨拉斯卡及动态人物身旁关系、目的地均在现译中，未漏掉独立叙事事件。"
+          },
+          "logic": {
+            "status": "pass",
+            "evidence": "原文 at \\x04 side 修饰 Saraska 的相对位置；“在\\x04身旁的萨拉斯卡明眸陪同下”保留此关系，未把来访者误写为动态人物。"
+          },
+          "placeholders": {
+            "status": "pass",
+            "evidence": "逐字保留\\x01@\\x0B、\\x01Á,、\\x04。原始字节 01 C3 81 2C 尚不能证明逗号属于命令或正文；本次按当前保守规则不删改受保护片段。"
+          },
+          "terminology": {
+            "status": "pass",
+            "evidence": "tribe 译为“部族”，Saraska Bright-Eyes 译为“萨拉斯卡明眸”；动态控制串保留。"
+          },
+          "tone": {
+            "status": "pass",
+            "evidence": "现译保持事件纪事语气；半角逗号造成排版瑕疵，但在命令长度未查明前保留受保护字节。"
+          }
+        },
+        "exceptions": [],
+        "id": "R0015011_3ed5cd1f0c",
+        "issues": [
+          {
+            "severity": "warning",
+            "reason": "\\x01Á, 中逗号是否为命令操作数尚缺引擎语法证据；保留现译的受保护字节，待回填/实机进一步验证显示。"
+          }
+        ],
+        "reason": "逐句核对后保留现译：原文是来访者出自动态族群，Saraska Bright-Eyes 位于动态人物身旁并陪同来大会；动态指代未被具体化。当前保护规则包含\\x01Á,，其引擎操作数长度仍待证实，故保守保留原字节并标明排版疑点。",
+        "reviewed": true,
+        "source_excerpt": "\\x01@\\x0B, of the \\x01Á, came to our tribe’s moot with Saraska Bright-Eyes at \\x04 side.",
+        "translation": "\\x01@\\x0B，来自\\x01Á,，在\\x04身旁的萨拉斯卡明眸陪同下，来到我们部族的大会。"
+      }
+    },
+    {
+      "id": "R0022351_4fa2ed7c50",
+      "source_sha256": "4fa2ed7c50f2969dfde49b1b2ce79d9596c2a87d31660032566183e2754385c8",
+      "live_sha256": "41105e215254505073ea4885711a7067ae899aa181fad2d39843ac2341a0f9e5",
+      "candidate_sha256": "a9ed14c6b1134596c0a2f730c546ec1c3e1f28f108bab74310cf622ab2488f56",
+      "item": {
+        "changes": [
+          {
+            "after": "你的探险者遭到胡马科特战士的袭击；这些战士认为自己的教派和神明受到了侮辱，要为此复仇。他们的攻击迅速而高效；只留下一名探险者活命。他们饶过\\x01@\\x01只有一个原因——让他把这件事讲给氏族的其他人听。",
+            "before": "你的探险者遭到胡马科特信徒战士的袭击，他们要为自己视为对教派和神明的侮辱复仇。他们的攻击迅速而高效；只留下一名探险者活命。他们饶过\\x01@\\x01只有一个原因——让他把这件事讲给氏族的其他人听。",
+            "category": "terminology",
+            "reason": "在 Humakti warriors 中，Humakti 作定语修饰 warriors，按 t1 应译“胡马科特”；clan 按 t3 应译“氏族”。",
+            "severity": "minor",
+            "source_excerpt": "Your explorers are attacked by Humakti warriors, who mean to avenge what they see as insults against their cult and their god. Their attack is swift and efficient; they leave but one explorer alive. They spare \\x01@\\x01 for one reason only — to tell the tale to the rest of the clan."
+          },
+          {
+            "after": "你的探险者遭到胡马科特战士的袭击；这些战士认为自己的教派和神明受到了侮辱，要为此复仇。他们的攻击迅速而高效；只留下一名探险者活命。他们饶过\\x01@\\x01只有一个原因——让他把这件事讲给氏族的其他人听。",
+            "before": "你的探险者遭到胡马科特信徒战士的袭击，他们要为自己视为对教派和神明的侮辱复仇。他们的攻击迅速而高效；只留下一名探险者活命。他们饶过\\x01@\\x01只有一个原因——让他把这件事讲给氏族的其他人听。",
+            "category": "tone",
+            "reason": "原译“为自己视为对教派和神明的侮辱复仇”搭配生硬；改为“认为自己的教派和神明受到了侮辱，要为此复仇”，不改变原意，且口吻更自然。",
+            "severity": "minor",
+            "source_excerpt": "Your explorers are attacked by Humakti warriors, who mean to avenge what they see as insults against their cult and their god. Their attack is swift and efficient; they leave but one explorer alive. They spare \\x01@\\x01 for one reason only — to tell the tale to the rest of the clan."
+          }
+        ],
+        "checks": {
+          "accuracy": {
+            "evidence": "原文说胡马科特战士认为教派和神明受辱而复仇，攻击迅速有效，只留一名探险者，并饶过 X 让他向氏族传话。译文保留了主体、因果、数量和目的。",
+            "status": "pass"
+          },
+          "completeness": {
+            "evidence": "原文说胡马科特战士认为教派和神明受辱而复仇，攻击迅速有效，只留一名探险者，并饶过 X 让他向氏族传话。译文保留了主体、因果、数量和目的。",
+            "status": "pass"
+          },
+          "logic": {
+            "evidence": "原文说胡马科特战士认为教派和神明受辱而复仇，攻击迅速有效，只留一名探险者，并饶过 X 让他向氏族传话。译文保留了主体、因果、数量和目的。",
+            "status": "pass"
+          },
+          "placeholders": {
+            "evidence": "原文的 \\x01@\\x01 在译文中完整保留一次，未增删或移动。",
+            "status": "pass"
+          },
+          "terminology": {
+            "evidence": "原文 Humakti warriors 的 Humakti 是 warriors 的定语；冻结 term_reason 指定定语“胡马科特”，候选“胡马科特战士”正确；本句 exceptions 明确记录而不改全局名词译名。",
+            "status": "corrected"
+          },
+          "tone": {
+            "evidence": "原译“为自己视为对教派和神明的侮辱复仇”搭配生硬；改为“认为自己的教派和神明受到了侮辱，要为此复仇”，不改变原意，且口吻更自然。",
+            "status": "corrected"
+          }
+        },
+        "exceptions": [
+          {
+            "source": "Humakti",
+            "reason": "本句 Humakti warriors 中 Humakti 作定语修饰 warriors；冻结 term_reason 明定定语用“胡马科特”，因此“胡马科特战士”符合本句含义，不采用名词形式“胡马科特信徒”。"
+          }
+        ],
+        "id": "R0022351_4fa2ed7c50",
+        "issues": [],
+        "reason": "按术语表修正 Humakti 的定语译法，并理顺复仇句的中文搭配；主体、数量、目的和占位符均保留。 本句按冻结 term_reason 记录 Humakti 定语例外，不调整全局 required 条目。",
+        "reviewed": true,
+        "source_excerpt": "Your explorers are attacked by Humakti warriors, who mean to avenge what they see as insults against their cult and their god. Their attack is swift and efficient; they leave but one explorer alive. They spare \\x01@\\x01 for one reason only — to tell the tale to the rest of the clan.",
+        "translation": "你的探险者遭到胡马科特战士的袭击；这些战士认为自己的教派和神明受到了侮辱，要为此复仇。他们的攻击迅速而高效；只留下一名探险者活命。他们饶过\\x01@\\x01只有一个原因——让他把这件事讲给氏族的其他人听。"
+      }
+    },
+    {
+      "id": "R0022352_891fd7af41",
+      "source_sha256": "891fd7af412cb9e8033ec0f1477888905f3d86fee6e61a290fb7bc7be88f67d2",
+      "live_sha256": "800f9ad85d9eed827475009e3bb085cf299e6343b1a51fdf7683b80095bb3154",
+      "candidate_sha256": "8f618f718d87e7a79c47a17a177e2652beaee93d10e2d61d77a626ef62262990",
+      "item": {
+        "changes": [
+          {
+            "after": "胡马科特战士几乎杀光了我们一支探险队的全部成员。他们对唯一幸存的\\x01@\\x01说，我们侮辱了他们和他们的神，因此活该遭到攻击。",
+            "before": "胡马科特信徒战士几乎杀光了我们一支探险队的全部成员。他们对唯一幸存的\\x01@\\x01说，我们侮辱了他们和他们的神，因此活该遭到攻击。",
+            "category": "terminology",
+            "reason": "在 Humakti warriors 中，Humakti 作定语修饰 warriors；按 t1 的定语用法应译“胡马科特”。译文用“胡马科特战士”，没有误用名词形式“胡马科特信徒”。",
+            "severity": "minor",
+            "source_excerpt": "Humakti warriors slew almost every member of one of our exploration parties. They told \\x01@\\x01, who was the only one left alive, that we had insulted them and their god, and thus deserved their attack."
+          }
+        ],
+        "checks": {
+          "accuracy": {
+            "evidence": "原文动作链是胡马科特战士几乎杀死整支探险队，只留一个活口，并告诉这个幸存者我方侮辱其神、理应遭到攻击。译文保留了动作主体、几乎全部成员、唯一幸存者和因果。",
+            "status": "pass"
+          },
+          "completeness": {
+            "evidence": "原文动作链是胡马科特战士几乎杀死整支探险队，只留一个活口，并告诉这个幸存者我方侮辱其神、理应遭到攻击。译文保留了动作主体、几乎全部成员、唯一幸存者和因果。",
+            "status": "pass"
+          },
+          "logic": {
+            "evidence": "原文动作链是胡马科特战士几乎杀死整支探险队，只留一个活口，并告诉这个幸存者我方侮辱其神、理应遭到攻击。译文保留了动作主体、几乎全部成员、唯一幸存者和因果。",
+            "status": "pass"
+          },
+          "placeholders": {
+            "evidence": "原文的 \\x01@\\x01 在译文中完整保留一次，位置对应唯一幸存者。",
+            "status": "pass"
+          },
+          "terminology": {
+            "evidence": "原文 Humakti warriors 的 Humakti 是 warriors 的定语；冻结 term_reason 指定定语“胡马科特”，候选“胡马科特战士”正确；本句 exceptions 明确记录而不改全局名词译名。",
+            "status": "corrected"
+          },
+          "tone": {
+            "evidence": "叙述冷峻直接，“活该遭到攻击”保留了原文的谴责语气，也没有添加解释。",
+            "status": "pass"
+          }
+        },
+        "exceptions": [
+          {
+            "source": "Humakti",
+            "reason": "本句 Humakti warriors 中 Humakti 作定语修饰 warriors；冻结 term_reason 明定定语用“胡马科特”，因此“胡马科特战士”符合本句含义，不采用名词形式“胡马科特信徒”。"
+          }
+        ],
+        "id": "R0022352_891fd7af41",
+        "issues": [],
+        "reason": "按术语表把修饰 warriors 的 Humakti 改为“胡马科特”；其余含义、数量、逻辑和占位符均与原文一致。 本句按冻结 term_reason 记录 Humakti 定语例外，不调整全局 required 条目。",
+        "reviewed": true,
+        "source_excerpt": "Humakti warriors slew almost every member of one of our exploration parties. They told \\x01@\\x01, who was the only one left alive, that we had insulted them and their god, and thus deserved their attack.",
+        "translation": "胡马科特战士几乎杀光了我们一支探险队的全部成员。他们对唯一幸存的\\x01@\\x01说，我们侮辱了他们和他们的神，因此活该遭到攻击。"
+      }
+    },
+    {
+      "id": "R0024905_c6a3265d6e",
+      "source_sha256": "c6a3265d6e4db779e0c92b2dce220601cbf30b7b5fda2c20057ae06ad89a60c9",
+      "live_sha256": "bebdb522c7df7db1abedad5843132da6e67777c115af664bdd3fdd30d95175f4",
+      "candidate_sha256": "1fe4b5dd762ec6c185aafaeb98bd1b728e93456fb26c31d1c0c1f6747154f98e",
+      "item": {
+        "changes": [
+          {
+            "after": "但我们自己的胡马科特战士对这个结果极为不满。他们说给他任何东西都是错的；我们妄自承认他们做错了事，使他们蒙羞。",
+            "before": "但我们自己的胡马科特信徒战士对这个结果极为不满。他们说给他任何东西都是错的；我们妄自承认他们做错了事，使他们蒙羞。",
+            "category": "terminology",
+            "reason": "在 Humakti warriors 中，Humakti 作定语修饰 warriors；按 t1 的定语用法应译“胡马科特”。译文用“胡马科特战士”，没有误用名词形式“胡马科特信徒”。",
+            "severity": "minor",
+            "source_excerpt": "But our own Humakti warriors were most dissatisfied with this outcome. They said that it was wrong to give him anything; we had dishonored them by falsely admitting that what they had done was wrong."
+          }
+        ],
+        "checks": {
+          "accuracy": {
+            "evidence": "原句说本族胡马科特战士对结果极为不满，认为给他任何东西都是错的；我们妄自承认他们做错，等于使他们蒙羞。译文保留了主体、指责和因果。",
+            "status": "pass"
+          },
+          "completeness": {
+            "evidence": "原句说本族胡马科特战士对结果极为不满，认为给他任何东西都是错的；我们妄自承认他们做错，等于使他们蒙羞。译文保留了主体、指责和因果。",
+            "status": "pass"
+          },
+          "logic": {
+            "evidence": "原句说本族胡马科特战士对结果极为不满，认为给他任何东西都是错的；我们妄自承认他们做错，等于使他们蒙羞。译文保留了主体、指责和因果。",
+            "status": "pass"
+          },
+          "placeholders": {
+            "evidence": "原文没有变量、控制符或标签，因此占位符检查不适用。",
+            "status": "not_applicable"
+          },
+          "terminology": {
+            "evidence": "原文 Humakti warriors 的 Humakti 是 warriors 的定语；冻结 term_reason 指定定语“胡马科特”，候选“胡马科特战士”正确；本句 exceptions 明确记录而不改全局名词译名。",
+            "status": "corrected"
+          },
+          "tone": {
+            "evidence": "译文保留“极为不满”“任何东西都是错的”“蒙羞”的强烈口吻。",
+            "status": "pass"
+          }
+        },
+        "exceptions": [
+          {
+            "source": "Humakti",
+            "reason": "本句 Humakti warriors 中 Humakti 作定语修饰 warriors；冻结 term_reason 明定定语用“胡马科特”，因此“胡马科特战士”符合本句含义，不采用名词形式“胡马科特信徒”。"
+          }
+        ],
+        "id": "R0024905_c6a3265d6e",
+        "issues": [],
+        "reason": "按术语表修正 Humakti 的定语译法；其余指责、因果和羞辱关系均与原文一致。 本句按冻结 term_reason 记录 Humakti 定语例外，不调整全局 required 条目。",
+        "reviewed": true,
+        "source_excerpt": "But our own Humakti warriors were most dissatisfied with this outcome. They said that it was wrong to give him anything; we had dishonored them by falsely admitting that what they had done was wrong.",
+        "translation": "但我们自己的胡马科特战士对这个结果极为不满。他们说给他任何东西都是错的；我们妄自承认他们做错了事，使他们蒙羞。"
+      }
+    }
+  ]
+}

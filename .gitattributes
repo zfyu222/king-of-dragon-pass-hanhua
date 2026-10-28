@@ -1,0 +1,2 @@
+# Preserve the exported delivery bytes so validation SHA-256 survives checkout.
+/king-of-dragon-pass_text_translated.csv -text

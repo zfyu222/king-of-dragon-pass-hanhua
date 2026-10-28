@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e",
+  "translation_sha256": "cd90ffc6a0dc395535f244709bd99ef171ae0d0884c1c280d54f2be29d193e50",
+  "records": 34421,
+  "semantic_review": "full",
+  "polish": false,
+  "revision": 3,
+  "glossary": {
+    "hash": "4822e7bd99ed60fc76fbb98300e2035b15fc52497be5653d066e3ce9a3d0e21e",
+    "path": "glossary\\r3\\freeze_c04a1e8d\\built\\glossary_reviewed.json",
+    "revision": 3
+  },
+  "ainiee": {
+    "actual_commit": "c50570c1dee7df7bd51316a253f0b42d10a8ca4c",
+    "expected_commit": "c50570c1dee7df7bd51316a253f0b42d10a8ca4c",
+    "license": "AGPL-3.0; Tools/AINiee/LICENSE",
+    "modules": {
+      "Domain/PromptBuilder/GlossaryHelper.py": "6b3072989b77c84787774439c79aaea7d4727fcda104667d8833b53bb490446f",
+      "Domain/TextProcessor/TextProcessor.py": "805f49f68302fab2c5832aad8c7597fb4c3382cea131618765248f30a5963eed",
+      "Infrastructure/LLMRequester/LLMClientFactory.py": "70d43af749640604813887241604edf0472a75afbbf106fb5e69cfd3753a1a4b",
+      "Infrastructure/LLMRequester/OpenaiRequester.py": "b2b1f5e6fd3a31727b2e1d2597e1bcca3e5e4db2cfec550ff6cfcd6a6cff3f79"
+    }
+  },
+  "path": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\king-of-dragon-pass_text_translated.csv",
+  "quality_review": {
+    "report_hash": "0424b1d851e0559df3000a0d9b153512a0c02e47b8c0d86ee5aa001f29550b9c",
+    "reviewer": "workflow:no-disputes"
+  },
+  "in_game_check": "pending_repack",
+  "mixed_language_audit": {
+    "path": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\reports\\mixed_language_audit.json",
+    "candidate_records": 463,
+    "status": "candidates_only"
+  }
+}

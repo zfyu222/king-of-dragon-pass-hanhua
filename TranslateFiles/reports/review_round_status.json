@@ -1,0 +1,106 @@
+{
+  "stage": "review",
+  "phase": "round_checked",
+  "scope": "review_round",
+  "checked_records": 8,
+  "checks": [
+    {
+      "id": "R0033646_63dbccc3ad",
+      "instance": "api-review-df24de17c9b04915990205128bf7acbe",
+      "task_id": "review-round-edb4d96502164f71",
+      "result": "passed",
+      "diagnostic": null,
+      "diagnostic_detail": null,
+      "regressed_terms": []
+    },
+    {
+      "id": "R0033705_f54d140223",
+      "instance": "api-review-df24de17c9b04915990205128bf7acbe",
+      "task_id": "review-round-edb4d96502164f71",
+      "result": "passed",
+      "diagnostic": null,
+      "diagnostic_detail": null,
+      "regressed_terms": []
+    },
+    {
+      "id": "R0005214_0c68a9abba",
+      "instance": "api-review-a1641002ce434776875cd8e72470f7db",
+      "task_id": "review-round-a9e6907c44f24aa0",
+      "result": "passed",
+      "diagnostic": null,
+      "diagnostic_detail": null,
+      "regressed_terms": []
+    },
+    {
+      "id": "R0006322_13d5df2260",
+      "instance": "api-review-a1641002ce434776875cd8e72470f7db",
+      "task_id": "review-round-a9e6907c44f24aa0",
+      "result": "passed",
+      "diagnostic": null,
+      "diagnostic_detail": null,
+      "regressed_terms": []
+    },
+    {
+      "id": "R0009889_107dd36aaa",
+      "instance": "api-review-a1641002ce434776875cd8e72470f7db",
+      "task_id": "review-round-a9e6907c44f24aa0",
+      "result": "passed",
+      "diagnostic": null,
+      "diagnostic_detail": null,
+      "regressed_terms": []
+    },
+    {
+      "id": "R0010120_0d45823e14",
+      "instance": "api-review-a1641002ce434776875cd8e72470f7db",
+      "task_id": "review-round-a9e6907c44f24aa0",
+      "result": "passed",
+      "diagnostic": null,
+      "diagnostic_detail": null,
+      "regressed_terms": []
+    },
+    {
+      "id": "R0021317_dc25559b32",
+      "instance": "api-review-a1641002ce434776875cd8e72470f7db",
+      "task_id": "review-round-a9e6907c44f24aa0",
+      "result": "passed",
+      "diagnostic": null,
+      "diagnostic_detail": null,
+      "regressed_terms": []
+    },
+    {
+      "id": "R0029107_d7dfca2a43",
+      "instance": "api-review-a1641002ce434776875cd8e72470f7db",
+      "task_id": "review-round-a9e6907c44f24aa0",
+      "result": "passed",
+      "diagnostic": null,
+      "diagnostic_detail": null,
+      "regressed_terms": []
+    }
+  ],
+  "passed_ids": [
+    "R0033646_63dbccc3ad",
+    "R0033705_f54d140223",
+    "R0005214_0c68a9abba",
+    "R0006322_13d5df2260",
+    "R0009889_107dd36aaa",
+    "R0010120_0d45823e14",
+    "R0021317_dc25559b32",
+    "R0029107_d7dfca2a43"
+  ],
+  "failure_summary": {
+    "basis": "first_failing_gate_in_this_scan; later checks may be blocked; not translation accuracy",
+    "checked_failures": {},
+    "outstanding_failures": {},
+    "regression_overlap": 0
+  },
+  "failed_records": 0,
+  "problems": {},
+  "repair_tasks": [],
+  "repair_dispatch": [],
+  "needs_attention_ids": [],
+  "clean": true,
+  "repair_stop_reasons": {},
+  "status": "clean",
+  "round": 11,
+  "round_report": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\reports\\review_rounds\\review_00011.json"
+}

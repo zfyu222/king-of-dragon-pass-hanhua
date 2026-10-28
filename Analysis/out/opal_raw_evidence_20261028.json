@@ -1,0 +1,13 @@
+[
+  {
+    "source_path": "D:\\Program Files (x86)\\Steam\\steamapps\\common\\King of Dragon Pass\\KoDp\\scenes.dat",
+    "sha256": "c13f4071da49b6f44a10cbd0d17347f61d244ab77a44112761809174910529c0",
+    "record_id": "R0015011_3ed5cd1f0c",
+    "length_field_offset": "0x2836ca",
+    "text_offset": "0x2836cc",
+    "length": 79,
+    "hex": "01 40 0b 2c 20 6f 66 20 74 68 65 20 01 c3 81 2c 20 63 61 6d 65 20 74 6f 20 6f 75 72 20 74 72 69 62 65 e2 80 99 73 20 6d 6f 6f 74 20 77 69 74 68 20 53 61 72 61 73 6b 61 20 42 72 69 67 68 74 2d 45 79 65 73 20 61 74 20 04 20 73 69 64 65 2e",
+    "utf8": "\u0001@\u000b, of the \u0001Á, came to our tribe’s moot with Saraska Bright-Eyes at \u0004 side.",
+    "observed": "The sequence is 01 c3 81 2c; U+00C1 is encoded as c3 81. This alone does not prove the engine command grammar."
+  }
+]

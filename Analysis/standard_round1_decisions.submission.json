@@ -1,0 +1,147 @@
+{
+  "report_hash": "81fb1191fcf0221fdc6e6eddab3dd198f236577721efcef0ee45803012fde6ec",
+  "reviewer": "standard",
+  "summary": "固定23项逐项裁决；依据输入包、catalog定位及相关 scenes.dat 同一scene文本，Opal原字节证据；仅列定向返修与术语协调要求。 Actual reviewer: standard:/root/final_disputes",
+  "decisions": [
+    {
+      "id": "R0003020_186661282b",
+      "disposition": "contextual",
+      "reason": "their 在本句未指明性别，现译“他们”不额外限定；Blood never healed a wound 与 Only time can cure their sorrow 的否定及排他关系保留。"
+    },
+    {
+      "id": "R0004941_e40db86443",
+      "disposition": "pass",
+      "reason": "scene=507 同一事件明说“a barley rust is affecting our most important crop”，后续有“The rust fell off the barley”，故断续说出的 rust 确指大麦锈病；“锈病”及惊愕的 No 均成立。"
+    },
+    {
+      "id": "R0005214_0c68a9abba",
+      "disposition": "repair",
+      "reason": "one of our weaponthanes 指一名 weaponthane，复数与单数为同一职业；本句“武器武士”与冻结单数“战团武士”异名。须正式协调单复数冻结项或本句提出有据例外，使此职业译名与单数用例一致，保留接受挑战者及两个控制符。",
+      "record_ids": [
+        "R0005214_0c68a9abba"
+      ]
+    },
+    {
+      "id": "R0005944_00b2dac97a",
+      "disposition": "contextual",
+      "reason": "scene=551 从“Spirits of our most noble ancestors appear”开始，贯穿祖灵现身与祝福；此处 Not sp — sp — again 的 sp 在同一事件中有 spirits 的直接语境，“灵——灵——”可保留，不把它推定为 spells。"
+    },
+    {
+      "id": "R0006322_13d5df2260",
+      "disposition": "repair",
+      "reason": "Her mother says ... and insists 两个现在时谓语并列，共同主语为 Her mother；scene=570 前文又说母亲私下讲女儿怪异言行、被进一步追问。现译“还坚称自己出生时被掉了包”把坚称者及“自己”指向女孩，须明确母亲坚称女儿出生时被掉包，保留该说法 provably false 与控制符。",
+      "record_ids": [
+        "R0006322_13d5df2260"
+      ]
+    },
+    {
+      "id": "R0009889_107dd36aaa",
+      "disposition": "repair",
+      "reason": "同一句 Humakt the Champion 与 Orlanth and Humakt 的 Humakt 是同一神；现译“胡马卡特/胡马科特”同句异写。冻结复合称谓与独立神名冲突，须先正式统一有关冻结项或为本句记录有据例外，再使两处音译一致，不改 Orlanth 所指。",
+      "record_ids": [
+        "R0009889_107dd36aaa"
+      ]
+    },
+    {
+      "id": "R0010120_0d45823e14",
+      "disposition": "repair",
+      "reason": "scene=719 本句紧接“Allow them to contribute less to tribal warfare than other clans”，同场景 Clan \\x01@! 与“the \\x01@! ring”表明该控制符是氏族名；How many \\x01@! warriors? 是询问该氏族须出多少战士。现译把氏族名置于“派出”前作施事并增补动词，须明确“该氏族的战士”数量，保留控制符。",
+      "record_ids": [
+        "R0010120_0d45823e14"
+      ]
+    },
+    {
+      "id": "R0010275_d1509076ee",
+      "disposition": "contextual",
+      "reason": "scene=722 中 \\x01@\\x13 为发话首领，\\x04 在 fingernails 和 knife 前均为其所有格标记；现译保留两个标记及刀尖、指甲。展开值尚未核实，暂保留现译，回填时检查所有格与“的”的叠加显示。"
+    },
+    {
+      "id": "R0011386_b840b01839",
+      "disposition": "contextual",
+      "reason": "scene=763 是氏族结盟大会，\\x01@\\x1A of the clans 明指部分氏族；译文保留控制符和“氏族尤其不满”，未损害整体事实。具体数值/量词须在引擎展开时验证，当前没有其展开证据，不凭空断言错误。"
+    },
+    {
+      "id": "R0014229_2601fa92db",
+      "disposition": "pass",
+      "reason": "catalog 将 sceneR181 定位于 scenes.dat 的 scene=928，且后接巨魔崽仆役事件正文；这是 scene 标识，原样保留符合用途。"
+    },
+    {
+      "id": "R0015011_3ed5cd1f0c",
+      "disposition": "contextual",
+      "reason": "原始 scenes.dat 字节证据显示 01 c3 81 2c，文本为 \\x01Á,；命令边界/逗号是否操作数没有证明。恢复保留现译，不据猜测修改控制序列；引擎回填时再核显示。"
+    },
+    {
+      "id": "R0015157_fbace98b79",
+      "disposition": "contextual",
+      "reason": "同为 \\x01Á 的控制序列已见于原始 scenes.dat 记录 R0015011，独特形式本身不证明此句损坏；本句原译原样保留。原文“among the \\x01Á”对应投奔该群体，实际展开待显示验证。"
+    },
+    {
+      "id": "R0021317_dc25559b32",
+      "disposition": "repair",
+      "reason": "“the urgers of the movement of points”字面为推动点数移动者，现译“锱铢必较的人”将其定性为吝啬贪财，原句 Rock-faced 与 demand their pride-tokens 不支持此性格判断。须在不臆定身份的前提下重译其称谓和 pride-tokens，保留面无表情及索要动作。",
+      "record_ids": [
+        "R0021317_dc25559b32"
+      ]
+    },
+    {
+      "id": "R0025895_9fd90b7555",
+      "disposition": "pass",
+      "reason": "H3d 是 scenes.dat 内 scene=1512 的短段标识，后接 Chalana Arroy 英雄探索事件描述；原样保留。"
+    },
+    {
+      "id": "R0025933_0c8ee97f78",
+      "disposition": "pass",
+      "reason": "H3f 是 scenes.dat 内 scene=1516 的短段标识，后接不洁三神与风暴公牛事件；原样保留。"
+    },
+    {
+      "id": "R0025973_19f10873d0",
+      "disposition": "pass",
+      "reason": "H3h 与同系列 H3d/H3f 的英雄探索段标识格式相同；独立字母数字串原样保留，不臆译成玩家文本。"
+    },
+    {
+      "id": "R0026786_f768782344",
+      "disposition": "pass",
+      "reason": "H8e 是 scenes.dat 内 scene=1592 的段标识，后接守护居所与旧爱遭遇事件；原样保留。"
+    },
+    {
+      "id": "R0026959_c07c3daeec",
+      "disposition": "pass",
+      "reason": "H9d 是 scenes.dat 内 scene=1606 的段标识，后接知晓之神困于石立方体事件；原样保留。"
+    },
+    {
+      "id": "R0029107_d7dfca2a43",
+      "disposition": "repair",
+      "reason": "The Honing of Humakt 是含神名 Humakt 的仪式名；现译“胡马卡特砺剑礼”与独立冻结神名“胡马科特”冲突。须正式统一复合仪式名与神名冻结项，或记录本句有据例外，并确保同一神名称一致，仪式名含义保留。",
+      "record_ids": [
+        "R0029107_d7dfca2a43"
+      ]
+    },
+    {
+      "id": "R0031419_a2e6bdd3f1",
+      "disposition": "contextual",
+      "reason": "catalog 指向 King of Dragon Pass.s86 的硬编码短串 San；单独 San 没有可证实的汉语词义或角色对象，保留原文，不强制音译。"
+    },
+    {
+      "id": "R0032941_22ca9cf39e",
+      "disposition": "contextual",
+      "reason": "catalog 指向 KoDp/tutorial.plist 的 string=22，TR 是孤立两字母串；缺少展开语义，保留原缩写有据，不凭猜测译成界面词。"
+    },
+    {
+      "id": "R0033646_63dbccc3ad",
+      "disposition": "repair",
+      "reason": "本段先明说 Spirit Fetches 是捕捉失落 Magic 点的小药囊，后文 a Spirit Fetch’s use、a Fetch 及末句复数均回指同一宝物；“精魂护符/缚灵体”同段异名。须正式协调单复数冻结项或逐句提出有据例外，统一这一物件译名；保留一点魔法与氏族运气的机制。",
+      "record_ids": [
+        "R0033646_63dbccc3ad"
+      ]
+    },
+    {
+      "id": "R0033705_f54d140223",
+      "disposition": "repair",
+      "reason": "同段 how many weaponthanes、each weaponthane、four weaponthanes 是同一兵种，且 each one counts as five footmen 与 four 对 twenty 构成直接换算；现译“武器武士/战团武士”造成两兵种错觉。须正式协调单复数冻结项或本句有据例外，使同段职业名一致并保留一比五换算。",
+      "record_ids": [
+        "R0033705_f54d140223"
+      ]
+    }
+  ],
+  "reviewer_instance": "standard:/root/final_disputes"
+}

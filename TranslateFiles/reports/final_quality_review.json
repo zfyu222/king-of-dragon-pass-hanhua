@@ -1,0 +1,187 @@
+{
+  "schema": 2,
+  "kind": "final",
+  "pilot_key": "a26d1a16f775ae33a9bf83086cb12aa4d3b427e31d65a634d91294688632211a",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e",
+  "glossary": {
+    "hash": "4822e7bd99ed60fc76fbb98300e2035b15fc52497be5653d066e3ce9a3d0e21e",
+    "path": "glossary\\r3\\freeze_c04a1e8d\\built\\glossary_reviewed.json",
+    "revision": 3
+  },
+  "snapshot_hash": "4201baf650b3a9373f0fb7ea3eba725446e8f87a9e0d355bb4333fc906b89363",
+  "coverage": {
+    "records": 34421,
+    "text_types": {
+      "unknown": 34421
+    },
+    "missing_context": 34421,
+    "risk_records": 21007,
+    "ordinary_sample": 0,
+    "standard_records": 15
+  },
+  "risk_detection": "Heuristic candidates plus reviewer findings; absence of flags is not proof of correctness.",
+  "records_to_check": [],
+  "consistency": [],
+  "glossary_checks": [],
+  "pilot_batch_summaries": {},
+  "check_signatures": {
+    "R0003020_186661282b": "da242d853a3ce04994aeef1565f3703f088662455e49eb5f5ffd9f24c123d6b2",
+    "R0004941_e40db86443": "bf3717d85ac55b0d5ab5a0c8b5d7403cdde262abee5f71fe1e34c9dca12a4281",
+    "R0005944_00b2dac97a": "698796b938466e8c2c874bf0c4b8a9422d50caa92c1ff7006a891c740273cacb",
+    "R0010275_d1509076ee": "ac646088e78955060cfadd33bc626e4526ecd68c2a3c31b3d18db00b2ef39bac",
+    "R0011386_b840b01839": "b8832306db4e1895c2fab0d8271eeb9ef805c7bc5696b8e3517a6550507925ec",
+    "R0014229_2601fa92db": "f770e42b91e5caa7edf13ed0b4121579f1ed68dc3af039e85b62bed3de7082bf",
+    "R0015011_3ed5cd1f0c": "111fead7d2dc319fdce085434e6ef3f54adeb6a48d61ea930f1e2f4b18644528",
+    "R0015157_fbace98b79": "b6498a1a6ec1f1c2d98a548e0a68d1029e78f887c5abb1a23c1673b20d2ffe8b",
+    "R0025895_9fd90b7555": "e2bbd703bc1e2b9258b087147b49d68ac3b78ea74fef2d04947000a7ab6c3262",
+    "R0025933_0c8ee97f78": "7c6d2dcee2164d2794b1c2e15196d511a9df03ec159c0d1b7d3f70bef71cccc2",
+    "R0025973_19f10873d0": "aaaf792c9351b17ab0d6be7b224d3d77a7ee5e560eb7df6a6c4aa3bea2f03374",
+    "R0026786_f768782344": "1be2f6f4cc6172237df11cd543179fb7c4f15e777556a636659abfc0f1856650",
+    "R0026959_c07c3daeec": "8238afe27f0a954babc90f413b813ee49e594760b262e857c07ed4485b8b509f",
+    "R0031419_a2e6bdd3f1": "d8ce283618b385028819ac9f8ac950299ca791190297c61899024a13884ca2a0",
+    "R0032941_22ca9cf39e": "6a80b3f9c635d9bf9844bf183d0bde6eaa74e274435f225056572d55f0f317c3"
+  },
+  "reused_decisions": {
+    "R0003020_186661282b": {
+      "decision": {
+        "disposition": "contextual",
+        "id": "R0003020_186661282b",
+        "reason": "their 在本句未指明性别，现译“他们”不额外限定；Blood never healed a wound 与 Only time can cure their sorrow 的否定及排他关系保留。"
+      },
+      "report_hash": "81fb1191fcf0221fdc6e6eddab3dd198f236577721efcef0ee45803012fde6ec",
+      "signature": "da242d853a3ce04994aeef1565f3703f088662455e49eb5f5ffd9f24c123d6b2"
+    },
+    "R0004941_e40db86443": {
+      "decision": {
+        "disposition": "pass",
+        "id": "R0004941_e40db86443",
+        "reason": "scene=507 同一事件明说“a barley rust is affecting our most important crop”，后续有“The rust fell off the barley”，故断续说出的 rust 确指大麦锈病；“锈病”及惊愕的 No 均成立。"
+      },
+      "report_hash": "81fb1191fcf0221fdc6e6eddab3dd198f236577721efcef0ee45803012fde6ec",
+      "signature": "bf3717d85ac55b0d5ab5a0c8b5d7403cdde262abee5f71fe1e34c9dca12a4281"
+    },
+    "R0005944_00b2dac97a": {
+      "decision": {
+        "disposition": "contextual",
+        "id": "R0005944_00b2dac97a",
+        "reason": "scene=551 从“Spirits of our most noble ancestors appear”开始，贯穿祖灵现身与祝福；此处 Not sp — sp — again 的 sp 在同一事件中有 spirits 的直接语境，“灵——灵——”可保留，不把它推定为 spells。"
+      },
+      "report_hash": "81fb1191fcf0221fdc6e6eddab3dd198f236577721efcef0ee45803012fde6ec",
+      "signature": "698796b938466e8c2c874bf0c4b8a9422d50caa92c1ff7006a891c740273cacb"
+    },
+    "R0010275_d1509076ee": {
+      "decision": {
+        "disposition": "contextual",
+        "id": "R0010275_d1509076ee",
+        "reason": "scene=722 中 \\x01@\\x13 为发话首领，\\x04 在 fingernails 和 knife 前均为其所有格标记；现译保留两个标记及刀尖、指甲。展开值尚未核实，暂保留现译，回填时检查所有格与“的”的叠加显示。"
+      },
+      "report_hash": "81fb1191fcf0221fdc6e6eddab3dd198f236577721efcef0ee45803012fde6ec",
+      "signature": "ac646088e78955060cfadd33bc626e4526ecd68c2a3c31b3d18db00b2ef39bac"
+    },
+    "R0011386_b840b01839": {
+      "decision": {
+        "disposition": "contextual",
+        "id": "R0011386_b840b01839",
+        "reason": "scene=763 是氏族结盟大会，\\x01@\\x1A of the clans 明指部分氏族；译文保留控制符和“氏族尤其不满”，未损害整体事实。具体数值/量词须在引擎展开时验证，当前没有其展开证据，不凭空断言错误。"
+      },
+      "report_hash": "81fb1191fcf0221fdc6e6eddab3dd198f236577721efcef0ee45803012fde6ec",
+      "signature": "b8832306db4e1895c2fab0d8271eeb9ef805c7bc5696b8e3517a6550507925ec"
+    },
+    "R0014229_2601fa92db": {
+      "decision": {
+        "disposition": "pass",
+        "id": "R0014229_2601fa92db",
+        "reason": "catalog 将 sceneR181 定位于 scenes.dat 的 scene=928，且后接巨魔崽仆役事件正文；这是 scene 标识，原样保留符合用途。"
+      },
+      "report_hash": "81fb1191fcf0221fdc6e6eddab3dd198f236577721efcef0ee45803012fde6ec",
+      "signature": "f770e42b91e5caa7edf13ed0b4121579f1ed68dc3af039e85b62bed3de7082bf"
+    },
+    "R0015011_3ed5cd1f0c": {
+      "decision": {
+        "disposition": "contextual",
+        "id": "R0015011_3ed5cd1f0c",
+        "reason": "原始 scenes.dat 字节证据显示 01 c3 81 2c，文本为 \\x01Á,；命令边界/逗号是否操作数没有证明。恢复保留现译，不据猜测修改控制序列；引擎回填时再核显示。"
+      },
+      "report_hash": "81fb1191fcf0221fdc6e6eddab3dd198f236577721efcef0ee45803012fde6ec",
+      "signature": "111fead7d2dc319fdce085434e6ef3f54adeb6a48d61ea930f1e2f4b18644528"
+    },
+    "R0015157_fbace98b79": {
+      "decision": {
+        "disposition": "contextual",
+        "id": "R0015157_fbace98b79",
+        "reason": "同为 \\x01Á 的控制序列已见于原始 scenes.dat 记录 R0015011，独特形式本身不证明此句损坏；本句原译原样保留。原文“among the \\x01Á”对应投奔该群体，实际展开待显示验证。"
+      },
+      "report_hash": "81fb1191fcf0221fdc6e6eddab3dd198f236577721efcef0ee45803012fde6ec",
+      "signature": "b6498a1a6ec1f1c2d98a548e0a68d1029e78f887c5abb1a23c1673b20d2ffe8b"
+    },
+    "R0025895_9fd90b7555": {
+      "decision": {
+        "disposition": "pass",
+        "id": "R0025895_9fd90b7555",
+        "reason": "H3d 是 scenes.dat 内 scene=1512 的短段标识，后接 Chalana Arroy 英雄探索事件描述；原样保留。"
+      },
+      "report_hash": "81fb1191fcf0221fdc6e6eddab3dd198f236577721efcef0ee45803012fde6ec",
+      "signature": "e2bbd703bc1e2b9258b087147b49d68ac3b78ea74fef2d04947000a7ab6c3262"
+    },
+    "R0025933_0c8ee97f78": {
+      "decision": {
+        "disposition": "pass",
+        "id": "R0025933_0c8ee97f78",
+        "reason": "H3f 是 scenes.dat 内 scene=1516 的短段标识，后接不洁三神与风暴公牛事件；原样保留。"
+      },
+      "report_hash": "81fb1191fcf0221fdc6e6eddab3dd198f236577721efcef0ee45803012fde6ec",
+      "signature": "7c6d2dcee2164d2794b1c2e15196d511a9df03ec159c0d1b7d3f70bef71cccc2"
+    },
+    "R0025973_19f10873d0": {
+      "decision": {
+        "disposition": "pass",
+        "id": "R0025973_19f10873d0",
+        "reason": "H3h 与同系列 H3d/H3f 的英雄探索段标识格式相同；独立字母数字串原样保留，不臆译成玩家文本。"
+      },
+      "report_hash": "81fb1191fcf0221fdc6e6eddab3dd198f236577721efcef0ee45803012fde6ec",
+      "signature": "aaaf792c9351b17ab0d6be7b224d3d77a7ee5e560eb7df6a6c4aa3bea2f03374"
+    },
+    "R0026786_f768782344": {
+      "decision": {
+        "disposition": "pass",
+        "id": "R0026786_f768782344",
+        "reason": "H8e 是 scenes.dat 内 scene=1592 的段标识，后接守护居所与旧爱遭遇事件；原样保留。"
+      },
+      "report_hash": "81fb1191fcf0221fdc6e6eddab3dd198f236577721efcef0ee45803012fde6ec",
+      "signature": "1be2f6f4cc6172237df11cd543179fb7c4f15e777556a636659abfc0f1856650"
+    },
+    "R0026959_c07c3daeec": {
+      "decision": {
+        "disposition": "pass",
+        "id": "R0026959_c07c3daeec",
+        "reason": "H9d 是 scenes.dat 内 scene=1606 的段标识，后接知晓之神困于石立方体事件；原样保留。"
+      },
+      "report_hash": "81fb1191fcf0221fdc6e6eddab3dd198f236577721efcef0ee45803012fde6ec",
+      "signature": "8238afe27f0a954babc90f413b813ee49e594760b262e857c07ed4485b8b509f"
+    },
+    "R0031419_a2e6bdd3f1": {
+      "decision": {
+        "disposition": "contextual",
+        "id": "R0031419_a2e6bdd3f1",
+        "reason": "catalog 指向 King of Dragon Pass.s86 的硬编码短串 San；单独 San 没有可证实的汉语词义或角色对象，保留原文，不强制音译。"
+      },
+      "report_hash": "81fb1191fcf0221fdc6e6eddab3dd198f236577721efcef0ee45803012fde6ec",
+      "signature": "d8ce283618b385028819ac9f8ac950299ca791190297c61899024a13884ca2a0"
+    },
+    "R0032941_22ca9cf39e": {
+      "decision": {
+        "disposition": "contextual",
+        "id": "R0032941_22ca9cf39e",
+        "reason": "catalog 指向 KoDp/tutorial.plist 的 string=22，TR 是孤立两字母串；缺少展开语义，保留原缩写有据，不凭猜测译成界面词。"
+      },
+      "report_hash": "81fb1191fcf0221fdc6e6eddab3dd198f236577721efcef0ee45803012fde6ec",
+      "signature": "6a80b3f9c635d9bf9844bf183d0bde6eaa74e274435f225056572d55f0f317c3"
+    }
+  },
+  "required_decisions": [],
+  "standard_scope_policy": "disputes_only_v1",
+  "carried_findings": {},
+  "selection_explanation": "Only explicit unresolved reviewer issues need standard-tier adjudication. Risk flags, corrections, ordinary samples, duplicate-source groups and speaker groups do not trigger standard-tier review. Known standard-tier repair findings are carried to cheap-tier repair without re-reading; exhausted or regressing repairs use the existing targeted standard-tier escalation route.",
+  "report_hash": "0424b1d851e0559df3000a0d9b153512a0c02e47b8c0d86ee5aa001f29550b9c",
+  "round_scope": []
+}
