@@ -1,0 +1,3144 @@
+{
+  "schema": 2,
+  "csv_sha256": "bd24085038cf262d475274e7ce582db0344bed1421d8f8d57ea545c54397fb1c",
+  "records": 30,
+  "regions": [
+    {
+      "csv_row": 1,
+      "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+      "region_id": "confirmed-59f050c50a106f99-0",
+      "box": [
+        0.0,
+        13.44,
+        61.44,
+        35.04
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map.png",
+          "file_sha256": "dcfddf35fa18b4464c9d0295680101f96acaac693e6df28102c13dd598665836",
+          "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+          "width": 640,
+          "height": 480,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图（Sartar/Prax 一带），沙色底图上烘印了大量英文地名，逐一核对 Paddle 与 Qwen 两路识别结果后在图上确认：AGGAR、SAIRD、Stinking Forest、Spider Mt.、DAGORI INKARTH、Skyfall Lake、Indigo Mts.、Rockwood Mts.、Hydra Mts.、Quivin Mt.、Dragon Pass、Kero Fin、RALIOS、PRAX、Mislari Mts.、Arstola Forest、Arrowmound、The Block、HEORTLAND、Stormwalk Mt.、Devil's Marsh、ESROLIA、Shadow Plateau、Nochet。'+++++5++'、'yng'、'Vas'、'Ea'、'Mts' 等为山脊线与图例符号噪声，不登记。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\1.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 2,
+      "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+      "region_id": "confirmed-59f050c50a106f99-1",
+      "box": [
+        136.32,
+        13.44,
+        186.24,
+        35.04
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map.png",
+          "file_sha256": "dcfddf35fa18b4464c9d0295680101f96acaac693e6df28102c13dd598665836",
+          "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+          "width": 640,
+          "height": 480,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图（Sartar/Prax 一带），沙色底图上烘印了大量英文地名，逐一核对 Paddle 与 Qwen 两路识别结果后在图上确认：AGGAR、SAIRD、Stinking Forest、Spider Mt.、DAGORI INKARTH、Skyfall Lake、Indigo Mts.、Rockwood Mts.、Hydra Mts.、Quivin Mt.、Dragon Pass、Kero Fin、RALIOS、PRAX、Mislari Mts.、Arstola Forest、Arrowmound、The Block、HEORTLAND、Stormwalk Mt.、Devil's Marsh、ESROLIA、Shadow Plateau、Nochet。'+++++5++'、'yng'、'Vas'、'Ea'、'Mts' 等为山脊线与图例符号噪声，不登记。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\1.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 3,
+      "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+      "region_id": "confirmed-59f050c50a106f99-2",
+      "box": [
+        326.4,
+        7.68,
+        449.92,
+        33.12
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map.png",
+          "file_sha256": "dcfddf35fa18b4464c9d0295680101f96acaac693e6df28102c13dd598665836",
+          "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+          "width": 640,
+          "height": 480,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图（Sartar/Prax 一带），沙色底图上烘印了大量英文地名，逐一核对 Paddle 与 Qwen 两路识别结果后在图上确认：AGGAR、SAIRD、Stinking Forest、Spider Mt.、DAGORI INKARTH、Skyfall Lake、Indigo Mts.、Rockwood Mts.、Hydra Mts.、Quivin Mt.、Dragon Pass、Kero Fin、RALIOS、PRAX、Mislari Mts.、Arstola Forest、Arrowmound、The Block、HEORTLAND、Stormwalk Mt.、Devil's Marsh、ESROLIA、Shadow Plateau、Nochet。'+++++5++'、'yng'、'Vas'、'Ea'、'Mts' 等为山脊线与图例符号噪声，不登记。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\1.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 4,
+      "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+      "region_id": "confirmed-59f050c50a106f99-3",
+      "box": [
+        471.68,
+        0.0,
+        516.48,
+        33.12
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map.png",
+          "file_sha256": "dcfddf35fa18b4464c9d0295680101f96acaac693e6df28102c13dd598665836",
+          "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+          "width": 640,
+          "height": 480,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图（Sartar/Prax 一带），沙色底图上烘印了大量英文地名，逐一核对 Paddle 与 Qwen 两路识别结果后在图上确认：AGGAR、SAIRD、Stinking Forest、Spider Mt.、DAGORI INKARTH、Skyfall Lake、Indigo Mts.、Rockwood Mts.、Hydra Mts.、Quivin Mt.、Dragon Pass、Kero Fin、RALIOS、PRAX、Mislari Mts.、Arstola Forest、Arrowmound、The Block、HEORTLAND、Stormwalk Mt.、Devil's Marsh、ESROLIA、Shadow Plateau、Nochet。'+++++5++'、'yng'、'Vas'、'Ea'、'Mts' 等为山脊线与图例符号噪声，不登记。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\1.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 5,
+      "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+      "region_id": "confirmed-59f050c50a106f99-4",
+      "box": [
+        559.36,
+        9.6,
+        631.04,
+        52.32
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map.png",
+          "file_sha256": "dcfddf35fa18b4464c9d0295680101f96acaac693e6df28102c13dd598665836",
+          "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+          "width": 640,
+          "height": 480,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图（Sartar/Prax 一带），沙色底图上烘印了大量英文地名，逐一核对 Paddle 与 Qwen 两路识别结果后在图上确认：AGGAR、SAIRD、Stinking Forest、Spider Mt.、DAGORI INKARTH、Skyfall Lake、Indigo Mts.、Rockwood Mts.、Hydra Mts.、Quivin Mt.、Dragon Pass、Kero Fin、RALIOS、PRAX、Mislari Mts.、Arstola Forest、Arrowmound、The Block、HEORTLAND、Stormwalk Mt.、Devil's Marsh、ESROLIA、Shadow Plateau、Nochet。'+++++5++'、'yng'、'Vas'、'Ea'、'Mts' 等为山脊线与图例符号噪声，不登记。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\1.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 6,
+      "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+      "region_id": "confirmed-59f050c50a106f99-5",
+      "box": [
+        482.56,
+        41.76,
+        539.52,
+        80.64
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map.png",
+          "file_sha256": "dcfddf35fa18b4464c9d0295680101f96acaac693e6df28102c13dd598665836",
+          "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+          "width": 640,
+          "height": 480,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图（Sartar/Prax 一带），沙色底图上烘印了大量英文地名，逐一核对 Paddle 与 Qwen 两路识别结果后在图上确认：AGGAR、SAIRD、Stinking Forest、Spider Mt.、DAGORI INKARTH、Skyfall Lake、Indigo Mts.、Rockwood Mts.、Hydra Mts.、Quivin Mt.、Dragon Pass、Kero Fin、RALIOS、PRAX、Mislari Mts.、Arstola Forest、Arrowmound、The Block、HEORTLAND、Stormwalk Mt.、Devil's Marsh、ESROLIA、Shadow Plateau、Nochet。'+++++5++'、'yng'、'Vas'、'Ea'、'Mts' 等为山脊线与图例符号噪声，不登记。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\1.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 7,
+      "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+      "region_id": "confirmed-59f050c50a106f99-6",
+      "box": [
+        516.48,
+        75.36,
+        609.92,
+        144.96
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map.png",
+          "file_sha256": "dcfddf35fa18b4464c9d0295680101f96acaac693e6df28102c13dd598665836",
+          "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+          "width": 640,
+          "height": 480,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图（Sartar/Prax 一带），沙色底图上烘印了大量英文地名，逐一核对 Paddle 与 Qwen 两路识别结果后在图上确认：AGGAR、SAIRD、Stinking Forest、Spider Mt.、DAGORI INKARTH、Skyfall Lake、Indigo Mts.、Rockwood Mts.、Hydra Mts.、Quivin Mt.、Dragon Pass、Kero Fin、RALIOS、PRAX、Mislari Mts.、Arstola Forest、Arrowmound、The Block、HEORTLAND、Stormwalk Mt.、Devil's Marsh、ESROLIA、Shadow Plateau、Nochet。'+++++5++'、'yng'、'Vas'、'Ea'、'Mts' 等为山脊线与图例符号噪声，不登记。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\1.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 8,
+      "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+      "region_id": "confirmed-59f050c50a106f99-7",
+      "box": [
+        24.96,
+        78.72,
+        193.92,
+        211.2
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map.png",
+          "file_sha256": "dcfddf35fa18b4464c9d0295680101f96acaac693e6df28102c13dd598665836",
+          "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+          "width": 640,
+          "height": 480,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图（Sartar/Prax 一带），沙色底图上烘印了大量英文地名，逐一核对 Paddle 与 Qwen 两路识别结果后在图上确认：AGGAR、SAIRD、Stinking Forest、Spider Mt.、DAGORI INKARTH、Skyfall Lake、Indigo Mts.、Rockwood Mts.、Hydra Mts.、Quivin Mt.、Dragon Pass、Kero Fin、RALIOS、PRAX、Mislari Mts.、Arstola Forest、Arrowmound、The Block、HEORTLAND、Stormwalk Mt.、Devil's Marsh、ESROLIA、Shadow Plateau、Nochet。'+++++5++'、'yng'、'Vas'、'Ea'、'Mts' 等为山脊线与图例符号噪声，不登记。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\1.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 9,
+      "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+      "region_id": "confirmed-59f050c50a106f99-8",
+      "box": [
+        165.76,
+        77.28,
+        262.4,
+        98.88
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map.png",
+          "file_sha256": "dcfddf35fa18b4464c9d0295680101f96acaac693e6df28102c13dd598665836",
+          "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+          "width": 640,
+          "height": 480,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图（Sartar/Prax 一带），沙色底图上烘印了大量英文地名，逐一核对 Paddle 与 Qwen 两路识别结果后在图上确认：AGGAR、SAIRD、Stinking Forest、Spider Mt.、DAGORI INKARTH、Skyfall Lake、Indigo Mts.、Rockwood Mts.、Hydra Mts.、Quivin Mt.、Dragon Pass、Kero Fin、RALIOS、PRAX、Mislari Mts.、Arstola Forest、Arrowmound、The Block、HEORTLAND、Stormwalk Mt.、Devil's Marsh、ESROLIA、Shadow Plateau、Nochet。'+++++5++'、'yng'、'Vas'、'Ea'、'Mts' 等为山脊线与图例符号噪声，不登记。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\1.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 10,
+      "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+      "region_id": "confirmed-59f050c50a106f99-9",
+      "box": [
+        439.04,
+        164.16,
+        492.16,
+        203.52
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map.png",
+          "file_sha256": "dcfddf35fa18b4464c9d0295680101f96acaac693e6df28102c13dd598665836",
+          "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+          "width": 640,
+          "height": 480,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图（Sartar/Prax 一带），沙色底图上烘印了大量英文地名，逐一核对 Paddle 与 Qwen 两路识别结果后在图上确认：AGGAR、SAIRD、Stinking Forest、Spider Mt.、DAGORI INKARTH、Skyfall Lake、Indigo Mts.、Rockwood Mts.、Hydra Mts.、Quivin Mt.、Dragon Pass、Kero Fin、RALIOS、PRAX、Mislari Mts.、Arstola Forest、Arrowmound、The Block、HEORTLAND、Stormwalk Mt.、Devil's Marsh、ESROLIA、Shadow Plateau、Nochet。'+++++5++'、'yng'、'Vas'、'Ea'、'Mts' 等为山脊线与图例符号噪声，不登记。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\1.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 11,
+      "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+      "region_id": "confirmed-59f050c50a106f99-10",
+      "box": [
+        224.64,
+        181.44,
+        323.84,
+        210.72
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map.png",
+          "file_sha256": "dcfddf35fa18b4464c9d0295680101f96acaac693e6df28102c13dd598665836",
+          "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+          "width": 640,
+          "height": 480,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图（Sartar/Prax 一带），沙色底图上烘印了大量英文地名，逐一核对 Paddle 与 Qwen 两路识别结果后在图上确认：AGGAR、SAIRD、Stinking Forest、Spider Mt.、DAGORI INKARTH、Skyfall Lake、Indigo Mts.、Rockwood Mts.、Hydra Mts.、Quivin Mt.、Dragon Pass、Kero Fin、RALIOS、PRAX、Mislari Mts.、Arstola Forest、Arrowmound、The Block、HEORTLAND、Stormwalk Mt.、Devil's Marsh、ESROLIA、Shadow Plateau、Nochet。'+++++5++'、'yng'、'Vas'、'Ea'、'Mts' 等为山脊线与图例符号噪声，不登记。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\1.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 12,
+      "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+      "region_id": "confirmed-59f050c50a106f99-11",
+      "box": [
+        339.84,
+        178.08,
+        396.8,
+        196.8
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map.png",
+          "file_sha256": "dcfddf35fa18b4464c9d0295680101f96acaac693e6df28102c13dd598665836",
+          "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+          "width": 640,
+          "height": 480,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图（Sartar/Prax 一带），沙色底图上烘印了大量英文地名，逐一核对 Paddle 与 Qwen 两路识别结果后在图上确认：AGGAR、SAIRD、Stinking Forest、Spider Mt.、DAGORI INKARTH、Skyfall Lake、Indigo Mts.、Rockwood Mts.、Hydra Mts.、Quivin Mt.、Dragon Pass、Kero Fin、RALIOS、PRAX、Mislari Mts.、Arstola Forest、Arrowmound、The Block、HEORTLAND、Stormwalk Mt.、Devil's Marsh、ESROLIA、Shadow Plateau、Nochet。'+++++5++'、'yng'、'Vas'、'Ea'、'Mts' 等为山脊线与图例符号噪声，不登记。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\1.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 13,
+      "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+      "region_id": "confirmed-59f050c50a106f99-12",
+      "box": [
+        1.28,
+        188.64,
+        60.16,
+        211.68
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map.png",
+          "file_sha256": "dcfddf35fa18b4464c9d0295680101f96acaac693e6df28102c13dd598665836",
+          "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+          "width": 640,
+          "height": 480,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图（Sartar/Prax 一带），沙色底图上烘印了大量英文地名，逐一核对 Paddle 与 Qwen 两路识别结果后在图上确认：AGGAR、SAIRD、Stinking Forest、Spider Mt.、DAGORI INKARTH、Skyfall Lake、Indigo Mts.、Rockwood Mts.、Hydra Mts.、Quivin Mt.、Dragon Pass、Kero Fin、RALIOS、PRAX、Mislari Mts.、Arstola Forest、Arrowmound、The Block、HEORTLAND、Stormwalk Mt.、Devil's Marsh、ESROLIA、Shadow Plateau、Nochet。'+++++5++'、'yng'、'Vas'、'Ea'、'Mts' 等为山脊线与图例符号噪声，不登记。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\1.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 14,
+      "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+      "region_id": "confirmed-59f050c50a106f99-13",
+      "box": [
+        561.92,
+        217.44,
+        636.16,
+        249.12
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map.png",
+          "file_sha256": "dcfddf35fa18b4464c9d0295680101f96acaac693e6df28102c13dd598665836",
+          "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+          "width": 640,
+          "height": 480,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图（Sartar/Prax 一带），沙色底图上烘印了大量英文地名，逐一核对 Paddle 与 Qwen 两路识别结果后在图上确认：AGGAR、SAIRD、Stinking Forest、Spider Mt.、DAGORI INKARTH、Skyfall Lake、Indigo Mts.、Rockwood Mts.、Hydra Mts.、Quivin Mt.、Dragon Pass、Kero Fin、RALIOS、PRAX、Mislari Mts.、Arstola Forest、Arrowmound、The Block、HEORTLAND、Stormwalk Mt.、Devil's Marsh、ESROLIA、Shadow Plateau、Nochet。'+++++5++'、'yng'、'Vas'、'Ea'、'Mts' 等为山脊线与图例符号噪声，不登记。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\1.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 15,
+      "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+      "region_id": "confirmed-59f050c50a106f99-14",
+      "box": [
+        10.24,
+        236.64,
+        104.96,
+        261.6
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map.png",
+          "file_sha256": "dcfddf35fa18b4464c9d0295680101f96acaac693e6df28102c13dd598665836",
+          "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+          "width": 640,
+          "height": 480,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图（Sartar/Prax 一带），沙色底图上烘印了大量英文地名，逐一核对 Paddle 与 Qwen 两路识别结果后在图上确认：AGGAR、SAIRD、Stinking Forest、Spider Mt.、DAGORI INKARTH、Skyfall Lake、Indigo Mts.、Rockwood Mts.、Hydra Mts.、Quivin Mt.、Dragon Pass、Kero Fin、RALIOS、PRAX、Mislari Mts.、Arstola Forest、Arrowmound、The Block、HEORTLAND、Stormwalk Mt.、Devil's Marsh、ESROLIA、Shadow Plateau、Nochet。'+++++5++'、'yng'、'Vas'、'Ea'、'Mts' 等为山脊线与图例符号噪声，不登记。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\1.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 16,
+      "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+      "region_id": "confirmed-59f050c50a106f99-15",
+      "box": [
+        8.96,
+        253.92,
+        140.8,
+        318.24
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map.png",
+          "file_sha256": "dcfddf35fa18b4464c9d0295680101f96acaac693e6df28102c13dd598665836",
+          "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+          "width": 640,
+          "height": 480,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图（Sartar/Prax 一带），沙色底图上烘印了大量英文地名，逐一核对 Paddle 与 Qwen 两路识别结果后在图上确认：AGGAR、SAIRD、Stinking Forest、Spider Mt.、DAGORI INKARTH、Skyfall Lake、Indigo Mts.、Rockwood Mts.、Hydra Mts.、Quivin Mt.、Dragon Pass、Kero Fin、RALIOS、PRAX、Mislari Mts.、Arstola Forest、Arrowmound、The Block、HEORTLAND、Stormwalk Mt.、Devil's Marsh、ESROLIA、Shadow Plateau、Nochet。'+++++5++'、'yng'、'Vas'、'Ea'、'Mts' 等为山脊线与图例符号噪声，不登记。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\1.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 17,
+      "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+      "region_id": "confirmed-59f050c50a106f99-16",
+      "box": [
+        211.2,
+        244.8,
+        307.2,
+        269.28
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map.png",
+          "file_sha256": "dcfddf35fa18b4464c9d0295680101f96acaac693e6df28102c13dd598665836",
+          "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+          "width": 640,
+          "height": 480,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图（Sartar/Prax 一带），沙色底图上烘印了大量英文地名，逐一核对 Paddle 与 Qwen 两路识别结果后在图上确认：AGGAR、SAIRD、Stinking Forest、Spider Mt.、DAGORI INKARTH、Skyfall Lake、Indigo Mts.、Rockwood Mts.、Hydra Mts.、Quivin Mt.、Dragon Pass、Kero Fin、RALIOS、PRAX、Mislari Mts.、Arstola Forest、Arrowmound、The Block、HEORTLAND、Stormwalk Mt.、Devil's Marsh、ESROLIA、Shadow Plateau、Nochet。'+++++5++'、'yng'、'Vas'、'Ea'、'Mts' 等为山脊线与图例符号噪声，不登记。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\1.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 18,
+      "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+      "region_id": "confirmed-59f050c50a106f99-17",
+      "box": [
+        556.16,
+        249.6,
+        635.52,
+        287.04
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map.png",
+          "file_sha256": "dcfddf35fa18b4464c9d0295680101f96acaac693e6df28102c13dd598665836",
+          "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+          "width": 640,
+          "height": 480,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图（Sartar/Prax 一带），沙色底图上烘印了大量英文地名，逐一核对 Paddle 与 Qwen 两路识别结果后在图上确认：AGGAR、SAIRD、Stinking Forest、Spider Mt.、DAGORI INKARTH、Skyfall Lake、Indigo Mts.、Rockwood Mts.、Hydra Mts.、Quivin Mt.、Dragon Pass、Kero Fin、RALIOS、PRAX、Mislari Mts.、Arstola Forest、Arrowmound、The Block、HEORTLAND、Stormwalk Mt.、Devil's Marsh、ESROLIA、Shadow Plateau、Nochet。'+++++5++'、'yng'、'Vas'、'Ea'、'Mts' 等为山脊线与图例符号噪声，不登记。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\1.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 19,
+      "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+      "region_id": "confirmed-59f050c50a106f99-18",
+      "box": [
+        421.76,
+        305.28,
+        480.0,
+        396.96
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map.png",
+          "file_sha256": "dcfddf35fa18b4464c9d0295680101f96acaac693e6df28102c13dd598665836",
+          "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+          "width": 640,
+          "height": 480,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图（Sartar/Prax 一带），沙色底图上烘印了大量英文地名，逐一核对 Paddle 与 Qwen 两路识别结果后在图上确认：AGGAR、SAIRD、Stinking Forest、Spider Mt.、DAGORI INKARTH、Skyfall Lake、Indigo Mts.、Rockwood Mts.、Hydra Mts.、Quivin Mt.、Dragon Pass、Kero Fin、RALIOS、PRAX、Mislari Mts.、Arstola Forest、Arrowmound、The Block、HEORTLAND、Stormwalk Mt.、Devil's Marsh、ESROLIA、Shadow Plateau、Nochet。'+++++5++'、'yng'、'Vas'、'Ea'、'Mts' 等为山脊线与图例符号噪声，不登记。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\1.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 20,
+      "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+      "region_id": "confirmed-59f050c50a106f99-19",
+      "box": [
+        487.68,
+        307.68,
+        561.28,
+        346.56
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map.png",
+          "file_sha256": "dcfddf35fa18b4464c9d0295680101f96acaac693e6df28102c13dd598665836",
+          "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+          "width": 640,
+          "height": 480,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图（Sartar/Prax 一带），沙色底图上烘印了大量英文地名，逐一核对 Paddle 与 Qwen 两路识别结果后在图上确认：AGGAR、SAIRD、Stinking Forest、Spider Mt.、DAGORI INKARTH、Skyfall Lake、Indigo Mts.、Rockwood Mts.、Hydra Mts.、Quivin Mt.、Dragon Pass、Kero Fin、RALIOS、PRAX、Mislari Mts.、Arstola Forest、Arrowmound、The Block、HEORTLAND、Stormwalk Mt.、Devil's Marsh、ESROLIA、Shadow Plateau、Nochet。'+++++5++'、'yng'、'Vas'、'Ea'、'Mts' 等为山脊线与图例符号噪声，不登记。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\1.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 21,
+      "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+      "region_id": "confirmed-59f050c50a106f99-20",
+      "box": [
+        568.32,
+        319.2,
+        628.48,
+        360.0
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map.png",
+          "file_sha256": "dcfddf35fa18b4464c9d0295680101f96acaac693e6df28102c13dd598665836",
+          "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+          "width": 640,
+          "height": 480,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图（Sartar/Prax 一带），沙色底图上烘印了大量英文地名，逐一核对 Paddle 与 Qwen 两路识别结果后在图上确认：AGGAR、SAIRD、Stinking Forest、Spider Mt.、DAGORI INKARTH、Skyfall Lake、Indigo Mts.、Rockwood Mts.、Hydra Mts.、Quivin Mt.、Dragon Pass、Kero Fin、RALIOS、PRAX、Mislari Mts.、Arstola Forest、Arrowmound、The Block、HEORTLAND、Stormwalk Mt.、Devil's Marsh、ESROLIA、Shadow Plateau、Nochet。'+++++5++'、'yng'、'Vas'、'Ea'、'Mts' 等为山脊线与图例符号噪声，不登记。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\1.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 22,
+      "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+      "region_id": "confirmed-59f050c50a106f99-21",
+      "box": [
+        115.84,
+        326.4,
+        204.16,
+        352.32
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map.png",
+          "file_sha256": "dcfddf35fa18b4464c9d0295680101f96acaac693e6df28102c13dd598665836",
+          "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+          "width": 640,
+          "height": 480,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图（Sartar/Prax 一带），沙色底图上烘印了大量英文地名，逐一核对 Paddle 与 Qwen 两路识别结果后在图上确认：AGGAR、SAIRD、Stinking Forest、Spider Mt.、DAGORI INKARTH、Skyfall Lake、Indigo Mts.、Rockwood Mts.、Hydra Mts.、Quivin Mt.、Dragon Pass、Kero Fin、RALIOS、PRAX、Mislari Mts.、Arstola Forest、Arrowmound、The Block、HEORTLAND、Stormwalk Mt.、Devil's Marsh、ESROLIA、Shadow Plateau、Nochet。'+++++5++'、'yng'、'Vas'、'Ea'、'Mts' 等为山脊线与图例符号噪声，不登记。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\1.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 23,
+      "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+      "region_id": "confirmed-59f050c50a106f99-22",
+      "box": [
+        297.6,
+        331.68,
+        364.8,
+        372.0
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map.png",
+          "file_sha256": "dcfddf35fa18b4464c9d0295680101f96acaac693e6df28102c13dd598665836",
+          "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+          "width": 640,
+          "height": 480,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图（Sartar/Prax 一带），沙色底图上烘印了大量英文地名，逐一核对 Paddle 与 Qwen 两路识别结果后在图上确认：AGGAR、SAIRD、Stinking Forest、Spider Mt.、DAGORI INKARTH、Skyfall Lake、Indigo Mts.、Rockwood Mts.、Hydra Mts.、Quivin Mt.、Dragon Pass、Kero Fin、RALIOS、PRAX、Mislari Mts.、Arstola Forest、Arrowmound、The Block、HEORTLAND、Stormwalk Mt.、Devil's Marsh、ESROLIA、Shadow Plateau、Nochet。'+++++5++'、'yng'、'Vas'、'Ea'、'Mts' 等为山脊线与图例符号噪声，不登记。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\1.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 24,
+      "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+      "region_id": "confirmed-59f050c50a106f99-23",
+      "box": [
+        216.96,
+        377.28,
+        280.96,
+        402.72
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map.png",
+          "file_sha256": "dcfddf35fa18b4464c9d0295680101f96acaac693e6df28102c13dd598665836",
+          "image_id": "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766",
+          "width": 640,
+          "height": 480,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图（Sartar/Prax 一带），沙色底图上烘印了大量英文地名，逐一核对 Paddle 与 Qwen 两路识别结果后在图上确认：AGGAR、SAIRD、Stinking Forest、Spider Mt.、DAGORI INKARTH、Skyfall Lake、Indigo Mts.、Rockwood Mts.、Hydra Mts.、Quivin Mt.、Dragon Pass、Kero Fin、RALIOS、PRAX、Mislari Mts.、Arstola Forest、Arrowmound、The Block、HEORTLAND、Stormwalk Mt.、Devil's Marsh、ESROLIA、Shadow Plateau、Nochet。'+++++5++'、'yng'、'Vas'、'Ea'、'Mts' 等为山脊线与图例符号噪声，不登记。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\1.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 1,
+      "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+      "region_id": "confirmed-7e3ca9ba51f0e425-0",
+      "box": [
+        0.0,
+        21.504,
+        98.304,
+        56.064
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024.png",
+          "file_sha256": "de221d73374b08ffd23015f4746f7922e5b7bd8ec44ca39fddca48626901ca21",
+          "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+          "width": 1024,
+          "height": 768,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 1 同一张 Glorantha 区域地图（更大尺寸副本），地名位置按归一化坐标完全重合，可读文字集合与 id 1 相同，逐条确认后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\18.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 2,
+      "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+      "region_id": "confirmed-7e3ca9ba51f0e425-1",
+      "box": [
+        218.112,
+        21.504,
+        297.984,
+        56.064
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024.png",
+          "file_sha256": "de221d73374b08ffd23015f4746f7922e5b7bd8ec44ca39fddca48626901ca21",
+          "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+          "width": 1024,
+          "height": 768,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 1 同一张 Glorantha 区域地图（更大尺寸副本），地名位置按归一化坐标完全重合，可读文字集合与 id 1 相同，逐条确认后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\18.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 3,
+      "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+      "region_id": "confirmed-7e3ca9ba51f0e425-2",
+      "box": [
+        522.24,
+        12.288,
+        719.872,
+        52.992
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024.png",
+          "file_sha256": "de221d73374b08ffd23015f4746f7922e5b7bd8ec44ca39fddca48626901ca21",
+          "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+          "width": 1024,
+          "height": 768,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 1 同一张 Glorantha 区域地图（更大尺寸副本），地名位置按归一化坐标完全重合，可读文字集合与 id 1 相同，逐条确认后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\18.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 4,
+      "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+      "region_id": "confirmed-7e3ca9ba51f0e425-3",
+      "box": [
+        754.688,
+        0.0,
+        826.368,
+        52.992
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024.png",
+          "file_sha256": "de221d73374b08ffd23015f4746f7922e5b7bd8ec44ca39fddca48626901ca21",
+          "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+          "width": 1024,
+          "height": 768,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 1 同一张 Glorantha 区域地图（更大尺寸副本），地名位置按归一化坐标完全重合，可读文字集合与 id 1 相同，逐条确认后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\18.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 5,
+      "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+      "region_id": "confirmed-7e3ca9ba51f0e425-4",
+      "box": [
+        894.976,
+        15.36,
+        1009.664,
+        83.712
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024.png",
+          "file_sha256": "de221d73374b08ffd23015f4746f7922e5b7bd8ec44ca39fddca48626901ca21",
+          "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+          "width": 1024,
+          "height": 768,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 1 同一张 Glorantha 区域地图（更大尺寸副本），地名位置按归一化坐标完全重合，可读文字集合与 id 1 相同，逐条确认后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\18.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 6,
+      "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+      "region_id": "confirmed-7e3ca9ba51f0e425-5",
+      "box": [
+        772.096,
+        66.816,
+        863.232,
+        129.024
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024.png",
+          "file_sha256": "de221d73374b08ffd23015f4746f7922e5b7bd8ec44ca39fddca48626901ca21",
+          "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+          "width": 1024,
+          "height": 768,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 1 同一张 Glorantha 区域地图（更大尺寸副本），地名位置按归一化坐标完全重合，可读文字集合与 id 1 相同，逐条确认后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\18.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 7,
+      "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+      "region_id": "confirmed-7e3ca9ba51f0e425-6",
+      "box": [
+        826.368,
+        120.576,
+        975.872,
+        231.936
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024.png",
+          "file_sha256": "de221d73374b08ffd23015f4746f7922e5b7bd8ec44ca39fddca48626901ca21",
+          "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+          "width": 1024,
+          "height": 768,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 1 同一张 Glorantha 区域地图（更大尺寸副本），地名位置按归一化坐标完全重合，可读文字集合与 id 1 相同，逐条确认后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\18.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 8,
+      "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+      "region_id": "confirmed-7e3ca9ba51f0e425-7",
+      "box": [
+        39.936,
+        125.952,
+        310.272,
+        337.92
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024.png",
+          "file_sha256": "de221d73374b08ffd23015f4746f7922e5b7bd8ec44ca39fddca48626901ca21",
+          "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+          "width": 1024,
+          "height": 768,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 1 同一张 Glorantha 区域地图（更大尺寸副本），地名位置按归一化坐标完全重合，可读文字集合与 id 1 相同，逐条确认后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\18.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 9,
+      "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+      "region_id": "confirmed-7e3ca9ba51f0e425-8",
+      "box": [
+        265.216,
+        123.648,
+        419.84,
+        158.208
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024.png",
+          "file_sha256": "de221d73374b08ffd23015f4746f7922e5b7bd8ec44ca39fddca48626901ca21",
+          "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+          "width": 1024,
+          "height": 768,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 1 同一张 Glorantha 区域地图（更大尺寸副本），地名位置按归一化坐标完全重合，可读文字集合与 id 1 相同，逐条确认后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\18.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 10,
+      "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+      "region_id": "confirmed-7e3ca9ba51f0e425-9",
+      "box": [
+        702.464,
+        262.656,
+        787.456,
+        325.632
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024.png",
+          "file_sha256": "de221d73374b08ffd23015f4746f7922e5b7bd8ec44ca39fddca48626901ca21",
+          "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+          "width": 1024,
+          "height": 768,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 1 同一张 Glorantha 区域地图（更大尺寸副本），地名位置按归一化坐标完全重合，可读文字集合与 id 1 相同，逐条确认后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\18.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 11,
+      "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+      "region_id": "confirmed-7e3ca9ba51f0e425-10",
+      "box": [
+        359.424,
+        290.304,
+        518.144,
+        337.152
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024.png",
+          "file_sha256": "de221d73374b08ffd23015f4746f7922e5b7bd8ec44ca39fddca48626901ca21",
+          "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+          "width": 1024,
+          "height": 768,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 1 同一张 Glorantha 区域地图（更大尺寸副本），地名位置按归一化坐标完全重合，可读文字集合与 id 1 相同，逐条确认后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\18.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 12,
+      "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+      "region_id": "confirmed-7e3ca9ba51f0e425-11",
+      "box": [
+        543.744,
+        284.928,
+        634.88,
+        314.88
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024.png",
+          "file_sha256": "de221d73374b08ffd23015f4746f7922e5b7bd8ec44ca39fddca48626901ca21",
+          "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+          "width": 1024,
+          "height": 768,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 1 同一张 Glorantha 区域地图（更大尺寸副本），地名位置按归一化坐标完全重合，可读文字集合与 id 1 相同，逐条确认后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\18.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 13,
+      "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+      "region_id": "confirmed-7e3ca9ba51f0e425-12",
+      "box": [
+        2.048,
+        301.824,
+        96.256,
+        338.688
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024.png",
+          "file_sha256": "de221d73374b08ffd23015f4746f7922e5b7bd8ec44ca39fddca48626901ca21",
+          "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+          "width": 1024,
+          "height": 768,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 1 同一张 Glorantha 区域地图（更大尺寸副本），地名位置按归一化坐标完全重合，可读文字集合与 id 1 相同，逐条确认后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\18.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 14,
+      "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+      "region_id": "confirmed-7e3ca9ba51f0e425-13",
+      "box": [
+        899.072,
+        347.904,
+        1017.856,
+        398.592
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024.png",
+          "file_sha256": "de221d73374b08ffd23015f4746f7922e5b7bd8ec44ca39fddca48626901ca21",
+          "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+          "width": 1024,
+          "height": 768,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 1 同一张 Glorantha 区域地图（更大尺寸副本），地名位置按归一化坐标完全重合，可读文字集合与 id 1 相同，逐条确认后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\18.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 15,
+      "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+      "region_id": "confirmed-7e3ca9ba51f0e425-14",
+      "box": [
+        16.384,
+        378.624,
+        167.936,
+        418.56
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024.png",
+          "file_sha256": "de221d73374b08ffd23015f4746f7922e5b7bd8ec44ca39fddca48626901ca21",
+          "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+          "width": 1024,
+          "height": 768,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 1 同一张 Glorantha 区域地图（更大尺寸副本），地名位置按归一化坐标完全重合，可读文字集合与 id 1 相同，逐条确认后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\18.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 16,
+      "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+      "region_id": "confirmed-7e3ca9ba51f0e425-15",
+      "box": [
+        14.336,
+        406.272,
+        225.28,
+        509.184
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024.png",
+          "file_sha256": "de221d73374b08ffd23015f4746f7922e5b7bd8ec44ca39fddca48626901ca21",
+          "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+          "width": 1024,
+          "height": 768,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 1 同一张 Glorantha 区域地图（更大尺寸副本），地名位置按归一化坐标完全重合，可读文字集合与 id 1 相同，逐条确认后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\18.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 17,
+      "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+      "region_id": "confirmed-7e3ca9ba51f0e425-16",
+      "box": [
+        337.92,
+        391.68,
+        491.52,
+        430.848
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024.png",
+          "file_sha256": "de221d73374b08ffd23015f4746f7922e5b7bd8ec44ca39fddca48626901ca21",
+          "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+          "width": 1024,
+          "height": 768,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 1 同一张 Glorantha 区域地图（更大尺寸副本），地名位置按归一化坐标完全重合，可读文字集合与 id 1 相同，逐条确认后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\18.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 18,
+      "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+      "region_id": "confirmed-7e3ca9ba51f0e425-17",
+      "box": [
+        889.856,
+        399.36,
+        1016.832,
+        459.264
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024.png",
+          "file_sha256": "de221d73374b08ffd23015f4746f7922e5b7bd8ec44ca39fddca48626901ca21",
+          "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+          "width": 1024,
+          "height": 768,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 1 同一张 Glorantha 区域地图（更大尺寸副本），地名位置按归一化坐标完全重合，可读文字集合与 id 1 相同，逐条确认后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\18.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 19,
+      "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+      "region_id": "confirmed-7e3ca9ba51f0e425-18",
+      "box": [
+        674.816,
+        488.448,
+        768.0,
+        635.136
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024.png",
+          "file_sha256": "de221d73374b08ffd23015f4746f7922e5b7bd8ec44ca39fddca48626901ca21",
+          "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+          "width": 1024,
+          "height": 768,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 1 同一张 Glorantha 区域地图（更大尺寸副本），地名位置按归一化坐标完全重合，可读文字集合与 id 1 相同，逐条确认后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\18.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 20,
+      "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+      "region_id": "confirmed-7e3ca9ba51f0e425-19",
+      "box": [
+        780.288,
+        492.288,
+        898.048,
+        554.496
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024.png",
+          "file_sha256": "de221d73374b08ffd23015f4746f7922e5b7bd8ec44ca39fddca48626901ca21",
+          "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+          "width": 1024,
+          "height": 768,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 1 同一张 Glorantha 区域地图（更大尺寸副本），地名位置按归一化坐标完全重合，可读文字集合与 id 1 相同，逐条确认后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\18.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 21,
+      "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+      "region_id": "confirmed-7e3ca9ba51f0e425-20",
+      "box": [
+        909.312,
+        510.72,
+        1005.568,
+        576.0
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024.png",
+          "file_sha256": "de221d73374b08ffd23015f4746f7922e5b7bd8ec44ca39fddca48626901ca21",
+          "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+          "width": 1024,
+          "height": 768,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 1 同一张 Glorantha 区域地图（更大尺寸副本），地名位置按归一化坐标完全重合，可读文字集合与 id 1 相同，逐条确认后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\18.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 22,
+      "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+      "region_id": "confirmed-7e3ca9ba51f0e425-21",
+      "box": [
+        185.344,
+        522.24,
+        326.656,
+        563.712
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024.png",
+          "file_sha256": "de221d73374b08ffd23015f4746f7922e5b7bd8ec44ca39fddca48626901ca21",
+          "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+          "width": 1024,
+          "height": 768,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 1 同一张 Glorantha 区域地图（更大尺寸副本），地名位置按归一化坐标完全重合，可读文字集合与 id 1 相同，逐条确认后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\18.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 23,
+      "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+      "region_id": "confirmed-7e3ca9ba51f0e425-22",
+      "box": [
+        476.16,
+        530.688,
+        583.68,
+        595.2
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024.png",
+          "file_sha256": "de221d73374b08ffd23015f4746f7922e5b7bd8ec44ca39fddca48626901ca21",
+          "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+          "width": 1024,
+          "height": 768,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 1 同一张 Glorantha 区域地图（更大尺寸副本），地名位置按归一化坐标完全重合，可读文字集合与 id 1 相同，逐条确认后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\18.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 24,
+      "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+      "region_id": "confirmed-7e3ca9ba51f0e425-23",
+      "box": [
+        347.136,
+        603.648,
+        449.536,
+        644.352
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024.png",
+          "file_sha256": "de221d73374b08ffd23015f4746f7922e5b7bd8ec44ca39fddca48626901ca21",
+          "image_id": "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9",
+          "width": 1024,
+          "height": 768,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 1 同一张 Glorantha 区域地图（更大尺寸副本），地名位置按归一化坐标完全重合，可读文字集合与 id 1 相同，逐条确认后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\18.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 1,
+      "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+      "region_id": "confirmed-e71c97a6d2217c18-0",
+      "box": [
+        14.336,
+        41.472,
+        194.56,
+        105.984
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024@2x.png",
+          "file_sha256": "1d3b218a2b5b3000a99b6aa1f2914768fe1892babfe8fc5cfa6833d9fd24e1f2",
+          "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+          "width": 2048,
+          "height": 1536,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图的高分辨率副本，地名与 id 1（上一批）完全一致，逐一核对后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\10.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 2,
+      "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+      "region_id": "confirmed-e71c97a6d2217c18-1",
+      "box": [
+        444.416,
+        47.616,
+        589.824,
+        102.912
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024@2x.png",
+          "file_sha256": "1d3b218a2b5b3000a99b6aa1f2914768fe1892babfe8fc5cfa6833d9fd24e1f2",
+          "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+          "width": 2048,
+          "height": 1536,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图的高分辨率副本，地名与 id 1（上一批）完全一致，逐一核对后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\10.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 3,
+      "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+      "region_id": "confirmed-e71c97a6d2217c18-2",
+      "box": [
+        1046.528,
+        30.72,
+        1409.024,
+        93.696
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024@2x.png",
+          "file_sha256": "1d3b218a2b5b3000a99b6aa1f2914768fe1892babfe8fc5cfa6833d9fd24e1f2",
+          "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+          "width": 2048,
+          "height": 1536,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图的高分辨率副本，地名与 id 1（上一批）完全一致，逐一核对后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\10.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 4,
+      "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+      "region_id": "confirmed-e71c97a6d2217c18-3",
+      "box": [
+        1511.424,
+        1.536,
+        1650.688,
+        99.84
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024@2x.png",
+          "file_sha256": "1d3b218a2b5b3000a99b6aa1f2914768fe1892babfe8fc5cfa6833d9fd24e1f2",
+          "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+          "width": 2048,
+          "height": 1536,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图的高分辨率副本，地名与 id 1（上一批）完全一致，逐一核对后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\10.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 5,
+      "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+      "region_id": "confirmed-e71c97a6d2217c18-4",
+      "box": [
+        1810.432,
+        36.864,
+        2019.328,
+        148.992
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024@2x.png",
+          "file_sha256": "1d3b218a2b5b3000a99b6aa1f2914768fe1892babfe8fc5cfa6833d9fd24e1f2",
+          "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+          "width": 2048,
+          "height": 1536,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图的高分辨率副本，地名与 id 1（上一批）完全一致，逐一核对后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\10.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 6,
+      "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+      "region_id": "confirmed-e71c97a6d2217c18-5",
+      "box": [
+        1548.288,
+        133.632,
+        1726.464,
+        251.904
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024@2x.png",
+          "file_sha256": "1d3b218a2b5b3000a99b6aa1f2914768fe1892babfe8fc5cfa6833d9fd24e1f2",
+          "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+          "width": 2048,
+          "height": 1536,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图的高分辨率副本，地名与 id 1（上一批）完全一致，逐一核对后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\10.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 7,
+      "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+      "region_id": "confirmed-e71c97a6d2217c18-6",
+      "box": [
+        1669.12,
+        247.296,
+        1945.6,
+        462.336
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024@2x.png",
+          "file_sha256": "1d3b218a2b5b3000a99b6aa1f2914768fe1892babfe8fc5cfa6833d9fd24e1f2",
+          "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+          "width": 2048,
+          "height": 1536,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图的高分辨率副本，地名与 id 1（上一批）完全一致，逐一核对后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\10.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 8,
+      "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+      "region_id": "confirmed-e71c97a6d2217c18-7",
+      "box": [
+        86.016,
+        253.44,
+        608.256,
+        675.84
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024@2x.png",
+          "file_sha256": "1d3b218a2b5b3000a99b6aa1f2914768fe1892babfe8fc5cfa6833d9fd24e1f2",
+          "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+          "width": 2048,
+          "height": 1536,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图的高分辨率副本，地名与 id 1（上一批）完全一致，逐一核对后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\10.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 9,
+      "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+      "region_id": "confirmed-e71c97a6d2217c18-8",
+      "box": [
+        569.344,
+        247.296,
+        839.68,
+        310.272
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024@2x.png",
+          "file_sha256": "1d3b218a2b5b3000a99b6aa1f2914768fe1892babfe8fc5cfa6833d9fd24e1f2",
+          "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+          "width": 2048,
+          "height": 1536,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图的高分辨率副本，地名与 id 1（上一批）完全一致，逐一核对后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\10.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 10,
+      "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+      "region_id": "confirmed-e71c97a6d2217c18-9",
+      "box": [
+        1404.928,
+        529.92,
+        1576.96,
+        651.264
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024@2x.png",
+          "file_sha256": "1d3b218a2b5b3000a99b6aa1f2914768fe1892babfe8fc5cfa6833d9fd24e1f2",
+          "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+          "width": 2048,
+          "height": 1536,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图的高分辨率副本，地名与 id 1（上一批）完全一致，逐一核对后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\10.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 11,
+      "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+      "region_id": "confirmed-e71c97a6d2217c18-10",
+      "box": [
+        733.184,
+        588.288,
+        1026.048,
+        651.264
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024@2x.png",
+          "file_sha256": "1d3b218a2b5b3000a99b6aa1f2914768fe1892babfe8fc5cfa6833d9fd24e1f2",
+          "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+          "width": 2048,
+          "height": 1536,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图的高分辨率副本，地名与 id 1（上一批）完全一致，逐一核对后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\10.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 12,
+      "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+      "region_id": "confirmed-e71c97a6d2217c18-11",
+      "box": [
+        1093.632,
+        566.784,
+        1269.76,
+        625.152
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024@2x.png",
+          "file_sha256": "1d3b218a2b5b3000a99b6aa1f2914768fe1892babfe8fc5cfa6833d9fd24e1f2",
+          "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+          "width": 2048,
+          "height": 1536,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图的高分辨率副本，地名与 id 1（上一批）完全一致，逐一核对后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\10.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 13,
+      "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+      "region_id": "confirmed-e71c97a6d2217c18-12",
+      "box": [
+        14.336,
+        612.864,
+        192.512,
+        677.376
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024@2x.png",
+          "file_sha256": "1d3b218a2b5b3000a99b6aa1f2914768fe1892babfe8fc5cfa6833d9fd24e1f2",
+          "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+          "width": 2048,
+          "height": 1536,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图的高分辨率副本，地名与 id 1（上一批）完全一致，逐一核对后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\10.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 14,
+      "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+      "region_id": "confirmed-e71c97a6d2217c18-13",
+      "box": [
+        1798.144,
+        695.808,
+        2035.712,
+        797.184
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024@2x.png",
+          "file_sha256": "1d3b218a2b5b3000a99b6aa1f2914768fe1892babfe8fc5cfa6833d9fd24e1f2",
+          "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+          "width": 2048,
+          "height": 1536,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图的高分辨率副本，地名与 id 1（上一批）完全一致，逐一核对后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\10.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 15,
+      "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+      "region_id": "confirmed-e71c97a6d2217c18-14",
+      "box": [
+        32.768,
+        757.248,
+        335.872,
+        837.12
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024@2x.png",
+          "file_sha256": "1d3b218a2b5b3000a99b6aa1f2914768fe1892babfe8fc5cfa6833d9fd24e1f2",
+          "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+          "width": 2048,
+          "height": 1536,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图的高分辨率副本，地名与 id 1（上一批）完全一致，逐一核对后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\10.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 16,
+      "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+      "region_id": "confirmed-e71c97a6d2217c18-15",
+      "box": [
+        28.672,
+        812.544,
+        450.56,
+        1018.368
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024@2x.png",
+          "file_sha256": "1d3b218a2b5b3000a99b6aa1f2914768fe1892babfe8fc5cfa6833d9fd24e1f2",
+          "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+          "width": 2048,
+          "height": 1536,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图的高分辨率副本，地名与 id 1（上一批）完全一致，逐一核对后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\10.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 17,
+      "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+      "region_id": "confirmed-e71c97a6d2217c18-16",
+      "box": [
+        675.84,
+        783.36,
+        983.04,
+        861.696
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024@2x.png",
+          "file_sha256": "1d3b218a2b5b3000a99b6aa1f2914768fe1892babfe8fc5cfa6833d9fd24e1f2",
+          "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+          "width": 2048,
+          "height": 1536,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图的高分辨率副本，地名与 id 1（上一批）完全一致，逐一核对后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\10.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 18,
+      "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+      "region_id": "confirmed-e71c97a6d2217c18-17",
+      "box": [
+        1779.712,
+        798.72,
+        2033.664,
+        918.528
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024@2x.png",
+          "file_sha256": "1d3b218a2b5b3000a99b6aa1f2914768fe1892babfe8fc5cfa6833d9fd24e1f2",
+          "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+          "width": 2048,
+          "height": 1536,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图的高分辨率副本，地名与 id 1（上一批）完全一致，逐一核对后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\10.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 19,
+      "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+      "region_id": "confirmed-e71c97a6d2217c18-18",
+      "box": [
+        1349.632,
+        976.896,
+        1536.0,
+        1270.272
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024@2x.png",
+          "file_sha256": "1d3b218a2b5b3000a99b6aa1f2914768fe1892babfe8fc5cfa6833d9fd24e1f2",
+          "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+          "width": 2048,
+          "height": 1536,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图的高分辨率副本，地名与 id 1（上一批）完全一致，逐一核对后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\10.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 20,
+      "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+      "region_id": "confirmed-e71c97a6d2217c18-19",
+      "box": [
+        1560.576,
+        984.576,
+        1796.096,
+        1108.992
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024@2x.png",
+          "file_sha256": "1d3b218a2b5b3000a99b6aa1f2914768fe1892babfe8fc5cfa6833d9fd24e1f2",
+          "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+          "width": 2048,
+          "height": 1536,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图的高分辨率副本，地名与 id 1（上一批）完全一致，逐一核对后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\10.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 21,
+      "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+      "region_id": "confirmed-e71c97a6d2217c18-20",
+      "box": [
+        1818.624,
+        1021.44,
+        2011.136,
+        1152.0
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024@2x.png",
+          "file_sha256": "1d3b218a2b5b3000a99b6aa1f2914768fe1892babfe8fc5cfa6833d9fd24e1f2",
+          "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+          "width": 2048,
+          "height": 1536,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图的高分辨率副本，地名与 id 1（上一批）完全一致，逐一核对后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\10.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 22,
+      "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+      "region_id": "confirmed-e71c97a6d2217c18-21",
+      "box": [
+        370.688,
+        1044.48,
+        653.312,
+        1127.424
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024@2x.png",
+          "file_sha256": "1d3b218a2b5b3000a99b6aa1f2914768fe1892babfe8fc5cfa6833d9fd24e1f2",
+          "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+          "width": 2048,
+          "height": 1536,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图的高分辨率副本，地名与 id 1（上一批）完全一致，逐一核对后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\10.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 23,
+      "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+      "region_id": "confirmed-e71c97a6d2217c18-22",
+      "box": [
+        952.32,
+        1061.376,
+        1167.36,
+        1190.4
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024@2x.png",
+          "file_sha256": "1d3b218a2b5b3000a99b6aa1f2914768fe1892babfe8fc5cfa6833d9fd24e1f2",
+          "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+          "width": 2048,
+          "height": 1536,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图的高分辨率副本，地名与 id 1（上一批）完全一致，逐一核对后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\10.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 24,
+      "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+      "region_id": "confirmed-e71c97a6d2217c18-23",
+      "box": [
+        694.272,
+        1207.296,
+        899.072,
+        1288.704
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map1024@2x.png",
+          "file_sha256": "1d3b218a2b5b3000a99b6aa1f2914768fe1892babfe8fc5cfa6833d9fd24e1f2",
+          "image_id": "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9",
+          "width": 2048,
+          "height": 1536,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "Glorantha 区域地图的高分辨率副本，地名与 id 1（上一批）完全一致，逐一核对后登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\10.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 1,
+      "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+      "region_id": "confirmed-e7a6e3f465b99cd4-0",
+      "box": [
+        8.96,
+        25.92,
+        121.6,
+        66.24
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map@2x.png",
+          "file_sha256": "653c2acf75bb6f9def0b1c7c871f3a0679c4c5c98e1c2fdf5776c6ae0df1cdaa",
+          "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+          "width": 1280,
+          "height": 960,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 10 同一张区域地图的另一尺寸副本，地名一致，登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\12.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 2,
+      "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+      "region_id": "confirmed-e7a6e3f465b99cd4-1",
+      "box": [
+        277.76,
+        29.76,
+        368.64,
+        64.32
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map@2x.png",
+          "file_sha256": "653c2acf75bb6f9def0b1c7c871f3a0679c4c5c98e1c2fdf5776c6ae0df1cdaa",
+          "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+          "width": 1280,
+          "height": 960,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 10 同一张区域地图的另一尺寸副本，地名一致，登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\12.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 3,
+      "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+      "region_id": "confirmed-e7a6e3f465b99cd4-2",
+      "box": [
+        654.08,
+        19.2,
+        880.64,
+        58.56
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map@2x.png",
+          "file_sha256": "653c2acf75bb6f9def0b1c7c871f3a0679c4c5c98e1c2fdf5776c6ae0df1cdaa",
+          "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+          "width": 1280,
+          "height": 960,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 10 同一张区域地图的另一尺寸副本，地名一致，登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\12.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 4,
+      "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+      "region_id": "confirmed-e7a6e3f465b99cd4-3",
+      "box": [
+        944.64,
+        0.96,
+        1031.68,
+        62.4
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map@2x.png",
+          "file_sha256": "653c2acf75bb6f9def0b1c7c871f3a0679c4c5c98e1c2fdf5776c6ae0df1cdaa",
+          "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+          "width": 1280,
+          "height": 960,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 10 同一张区域地图的另一尺寸副本，地名一致，登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\12.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 5,
+      "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+      "region_id": "confirmed-e7a6e3f465b99cd4-4",
+      "box": [
+        1131.52,
+        23.04,
+        1262.08,
+        93.12
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map@2x.png",
+          "file_sha256": "653c2acf75bb6f9def0b1c7c871f3a0679c4c5c98e1c2fdf5776c6ae0df1cdaa",
+          "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+          "width": 1280,
+          "height": 960,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 10 同一张区域地图的另一尺寸副本，地名一致，登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\12.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 6,
+      "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+      "region_id": "confirmed-e7a6e3f465b99cd4-5",
+      "box": [
+        967.68,
+        83.52,
+        1079.04,
+        157.44
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map@2x.png",
+          "file_sha256": "653c2acf75bb6f9def0b1c7c871f3a0679c4c5c98e1c2fdf5776c6ae0df1cdaa",
+          "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+          "width": 1280,
+          "height": 960,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 10 同一张区域地图的另一尺寸副本，地名一致，登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\12.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 7,
+      "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+      "region_id": "confirmed-e7a6e3f465b99cd4-6",
+      "box": [
+        1043.2,
+        154.56,
+        1216.0,
+        288.96
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map@2x.png",
+          "file_sha256": "653c2acf75bb6f9def0b1c7c871f3a0679c4c5c98e1c2fdf5776c6ae0df1cdaa",
+          "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+          "width": 1280,
+          "height": 960,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 10 同一张区域地图的另一尺寸副本，地名一致，登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\12.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 8,
+      "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+      "region_id": "confirmed-e7a6e3f465b99cd4-7",
+      "box": [
+        53.76,
+        158.4,
+        380.16,
+        422.4
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map@2x.png",
+          "file_sha256": "653c2acf75bb6f9def0b1c7c871f3a0679c4c5c98e1c2fdf5776c6ae0df1cdaa",
+          "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+          "width": 1280,
+          "height": 960,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 10 同一张区域地图的另一尺寸副本，地名一致，登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\12.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 9,
+      "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+      "region_id": "confirmed-e7a6e3f465b99cd4-8",
+      "box": [
+        355.84,
+        154.56,
+        524.8,
+        193.92
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map@2x.png",
+          "file_sha256": "653c2acf75bb6f9def0b1c7c871f3a0679c4c5c98e1c2fdf5776c6ae0df1cdaa",
+          "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+          "width": 1280,
+          "height": 960,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 10 同一张区域地图的另一尺寸副本，地名一致，登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\12.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 10,
+      "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+      "region_id": "confirmed-e7a6e3f465b99cd4-9",
+      "box": [
+        878.08,
+        331.2,
+        985.6,
+        407.04
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map@2x.png",
+          "file_sha256": "653c2acf75bb6f9def0b1c7c871f3a0679c4c5c98e1c2fdf5776c6ae0df1cdaa",
+          "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+          "width": 1280,
+          "height": 960,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 10 同一张区域地图的另一尺寸副本，地名一致，登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\12.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 11,
+      "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+      "region_id": "confirmed-e7a6e3f465b99cd4-10",
+      "box": [
+        458.24,
+        367.68,
+        641.28,
+        407.04
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map@2x.png",
+          "file_sha256": "653c2acf75bb6f9def0b1c7c871f3a0679c4c5c98e1c2fdf5776c6ae0df1cdaa",
+          "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+          "width": 1280,
+          "height": 960,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 10 同一张区域地图的另一尺寸副本，地名一致，登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\12.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 12,
+      "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+      "region_id": "confirmed-e7a6e3f465b99cd4-11",
+      "box": [
+        683.52,
+        354.24,
+        793.6,
+        390.72
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map@2x.png",
+          "file_sha256": "653c2acf75bb6f9def0b1c7c871f3a0679c4c5c98e1c2fdf5776c6ae0df1cdaa",
+          "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+          "width": 1280,
+          "height": 960,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 10 同一张区域地图的另一尺寸副本，地名一致，登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\12.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 13,
+      "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+      "region_id": "confirmed-e7a6e3f465b99cd4-12",
+      "box": [
+        8.96,
+        383.04,
+        120.32,
+        423.36
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map@2x.png",
+          "file_sha256": "653c2acf75bb6f9def0b1c7c871f3a0679c4c5c98e1c2fdf5776c6ae0df1cdaa",
+          "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+          "width": 1280,
+          "height": 960,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 10 同一张区域地图的另一尺寸副本，地名一致，登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\12.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 14,
+      "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+      "region_id": "confirmed-e7a6e3f465b99cd4-13",
+      "box": [
+        1123.84,
+        434.88,
+        1272.32,
+        498.24
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map@2x.png",
+          "file_sha256": "653c2acf75bb6f9def0b1c7c871f3a0679c4c5c98e1c2fdf5776c6ae0df1cdaa",
+          "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+          "width": 1280,
+          "height": 960,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 10 同一张区域地图的另一尺寸副本，地名一致，登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\12.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 15,
+      "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+      "region_id": "confirmed-e7a6e3f465b99cd4-14",
+      "box": [
+        20.48,
+        473.28,
+        209.92,
+        523.2
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map@2x.png",
+          "file_sha256": "653c2acf75bb6f9def0b1c7c871f3a0679c4c5c98e1c2fdf5776c6ae0df1cdaa",
+          "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+          "width": 1280,
+          "height": 960,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 10 同一张区域地图的另一尺寸副本，地名一致，登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\12.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 16,
+      "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+      "region_id": "confirmed-e7a6e3f465b99cd4-15",
+      "box": [
+        17.92,
+        507.84,
+        281.6,
+        636.48
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map@2x.png",
+          "file_sha256": "653c2acf75bb6f9def0b1c7c871f3a0679c4c5c98e1c2fdf5776c6ae0df1cdaa",
+          "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+          "width": 1280,
+          "height": 960,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 10 同一张区域地图的另一尺寸副本，地名一致，登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\12.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 17,
+      "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+      "region_id": "confirmed-e7a6e3f465b99cd4-16",
+      "box": [
+        422.4,
+        489.6,
+        614.4,
+        538.56
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map@2x.png",
+          "file_sha256": "653c2acf75bb6f9def0b1c7c871f3a0679c4c5c98e1c2fdf5776c6ae0df1cdaa",
+          "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+          "width": 1280,
+          "height": 960,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 10 同一张区域地图的另一尺寸副本，地名一致，登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\12.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 18,
+      "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+      "region_id": "confirmed-e7a6e3f465b99cd4-17",
+      "box": [
+        1112.32,
+        499.2,
+        1271.04,
+        574.08
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map@2x.png",
+          "file_sha256": "653c2acf75bb6f9def0b1c7c871f3a0679c4c5c98e1c2fdf5776c6ae0df1cdaa",
+          "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+          "width": 1280,
+          "height": 960,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 10 同一张区域地图的另一尺寸副本，地名一致，登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\12.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 19,
+      "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+      "region_id": "confirmed-e7a6e3f465b99cd4-18",
+      "box": [
+        843.52,
+        610.56,
+        960.0,
+        793.92
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map@2x.png",
+          "file_sha256": "653c2acf75bb6f9def0b1c7c871f3a0679c4c5c98e1c2fdf5776c6ae0df1cdaa",
+          "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+          "width": 1280,
+          "height": 960,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 10 同一张区域地图的另一尺寸副本，地名一致，登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\12.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 20,
+      "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+      "region_id": "confirmed-e7a6e3f465b99cd4-19",
+      "box": [
+        975.36,
+        615.36,
+        1122.56,
+        693.12
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map@2x.png",
+          "file_sha256": "653c2acf75bb6f9def0b1c7c871f3a0679c4c5c98e1c2fdf5776c6ae0df1cdaa",
+          "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+          "width": 1280,
+          "height": 960,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 10 同一张区域地图的另一尺寸副本，地名一致，登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\12.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 21,
+      "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+      "region_id": "confirmed-e7a6e3f465b99cd4-20",
+      "box": [
+        1136.64,
+        638.4,
+        1256.96,
+        720.0
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map@2x.png",
+          "file_sha256": "653c2acf75bb6f9def0b1c7c871f3a0679c4c5c98e1c2fdf5776c6ae0df1cdaa",
+          "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+          "width": 1280,
+          "height": 960,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 10 同一张区域地图的另一尺寸副本，地名一致，登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\12.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 22,
+      "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+      "region_id": "confirmed-e7a6e3f465b99cd4-21",
+      "box": [
+        231.68,
+        652.8,
+        408.32,
+        704.64
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map@2x.png",
+          "file_sha256": "653c2acf75bb6f9def0b1c7c871f3a0679c4c5c98e1c2fdf5776c6ae0df1cdaa",
+          "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+          "width": 1280,
+          "height": 960,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 10 同一张区域地图的另一尺寸副本，地名一致，登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\12.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 23,
+      "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+      "region_id": "confirmed-e7a6e3f465b99cd4-22",
+      "box": [
+        595.2,
+        663.36,
+        729.6,
+        744.0
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map@2x.png",
+          "file_sha256": "653c2acf75bb6f9def0b1c7c871f3a0679c4c5c98e1c2fdf5776c6ae0df1cdaa",
+          "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+          "width": 1280,
+          "height": 960,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 10 同一张区域地图的另一尺寸副本，地名一致，登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\12.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 24,
+      "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+      "region_id": "confirmed-e7a6e3f465b99cd4-23",
+      "box": [
+        433.92,
+        754.56,
+        561.92,
+        805.44
+      ],
+      "sources": [
+        {
+          "path": "Lore/background-map@2x.png",
+          "file_sha256": "653c2acf75bb6f9def0b1c7c871f3a0679c4c5c98e1c2fdf5776c6ae0df1cdaa",
+          "image_id": "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3",
+          "width": 1280,
+          "height": 960,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "与 id 10 同一张区域地图的另一尺寸副本，地名一致，登记同一套 24 个地名。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\12.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 25,
+      "image_id": "f9f2ca4d8c9fcc2f6d85d4533db90075d071d88cae143063e4eb36f5656c1202",
+      "region_id": "confirmed-f9f2ca4d8c9fcc2f-0",
+      "box": [
+        49.0,
+        11.0,
+        92.0,
+        28.0
+      ],
+      "sources": [
+        {
+          "path": "M/ClanButton.png",
+          "file_sha256": "ef614efd090a48d109224d780cf4b990f9faa3e32febee6842268a378b5bd792",
+          "image_id": "f9f2ca4d8c9fcc2f6d85d4533db90075d071d88cae143063e4eb36f5656c1202",
+          "width": 144,
+          "height": 40,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "氏族按钮贴图（羊皮纸底 + 两个人形纹章）：右侧衬线字 'Clan' 清晰可读，左侧为图标，需要汉化。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\483c6fbac33de32decb95a38ef88198f223359b37a4c2e422508f99f54ea72d9\\6.png",
+        "package_hash": "998ec6c7825ff9aa7cc760eb0a6684e96a2dfbb599fa2f454f1a9bfffda53fc6"
+      }
+    },
+    {
+      "csv_row": 11,
+      "image_id": "42505a0a03254b513d1d6a74bb6f3bce45ff84595e5f1a47d2f1dcbc0f6d1414",
+      "region_id": "confirmed-42505a0a03254b51-0",
+      "box": [
+        46.0,
+        15.0,
+        87.0,
+        51.0
+      ],
+      "sources": [
+        {
+          "path": "M/MapArch.png",
+          "file_sha256": "3670dbd11f69f7bd8236b1fe4f6ecae06d3bc9d6f28d5f1310573095b4fff737",
+          "image_id": "42505a0a03254b513d1d6a74bb6f3bce45ff84595e5f1a47d2f1dcbc0f6d1414",
+          "width": 236,
+          "height": 89,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "地图拱形特写：沙色地图上手写两行字，清晰可读 'Dragon Pass'（像素化手写体），位于地图左中部；Paddle 的 'jagon' 为对同一处文字的错误识别。这是需要汉化的贴图文字。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\714d445fda850cb1cefb383efc0dcb50b51cfe3452e01b640dac46440322cbdc\\10.png",
+        "package_hash": "0fda215bfb482bc6caf606f050ba76b625c93e39d9ad6988d12f92d8b1c95f15"
+      }
+    },
+    {
+      "csv_row": 28,
+      "image_id": "d6fae21d780e32becd3f55ef08a67c95fcca4a64e46cdb5d06e19c2e171887a2",
+      "region_id": "confirmed-d6fae21d780e32be-0",
+      "box": [
+        99.687,
+        1.62,
+        244.776,
+        46.62
+      ],
+      "sources": [
+        {
+          "path": "Menu/Logo.png",
+          "file_sha256": "95907e16faf5afe3ef6a475eae4111e9aeaf27457ba23afb3a6a6862d7a14ca5",
+          "image_id": "d6fae21d780e32becd3f55ef08a67c95fcca4a64e46cdb5d06e19c2e171887a2",
+          "width": 329,
+          "height": 90,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "小尺寸游戏标题画（329x90）：同样为白字黑描边手写艺术字 'KING OF' 与 'DRAGON PASS'，需要汉化。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\483c6fbac33de32decb95a38ef88198f223359b37a4c2e422508f99f54ea72d9\\4.png",
+        "package_hash": "998ec6c7825ff9aa7cc760eb0a6684e96a2dfbb599fa2f454f1a9bfffda53fc6"
+      }
+    },
+    {
+      "csv_row": 29,
+      "image_id": "d6fae21d780e32becd3f55ef08a67c95fcca4a64e46cdb5d06e19c2e171887a2",
+      "region_id": "confirmed-d6fae21d780e32be-1",
+      "box": [
+        0.0,
+        29.25,
+        328.342,
+        89.64
+      ],
+      "sources": [
+        {
+          "path": "Menu/Logo.png",
+          "file_sha256": "95907e16faf5afe3ef6a475eae4111e9aeaf27457ba23afb3a6a6862d7a14ca5",
+          "image_id": "d6fae21d780e32becd3f55ef08a67c95fcca4a64e46cdb5d06e19c2e171887a2",
+          "width": 329,
+          "height": 90,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "小尺寸游戏标题画（329x90）：同样为白字黑描边手写艺术字 'KING OF' 与 'DRAGON PASS'，需要汉化。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\483c6fbac33de32decb95a38ef88198f223359b37a4c2e422508f99f54ea72d9\\4.png",
+        "package_hash": "998ec6c7825ff9aa7cc760eb0a6684e96a2dfbb599fa2f454f1a9bfffda53fc6"
+      }
+    },
+    {
+      "csv_row": 28,
+      "image_id": "43584de2921553cf1dcdd273839550f8d522b8458d99e4e735f1bb0b90c1e466",
+      "region_id": "confirmed-43584de2921553cf-0",
+      "box": [
+        201.348,
+        5.4,
+        486.92,
+        91.98
+      ],
+      "sources": [
+        {
+          "path": "Menu/Logo@2x.png",
+          "file_sha256": "24ee44c8cb129a38ed567f14d0ebfdf3fa8f7646b47fffa2c51f0a2599594b28",
+          "image_id": "43584de2921553cf1dcdd273839550f8d522b8458d99e4e735f1bb0b90c1e466",
+          "width": 658,
+          "height": 180,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "宽版游戏标题画：白字黑描边手写艺术字 'KING OF'（上行小字）与 'DRAGON PASS'（下行大字），清晰可读，需要汉化。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\483c6fbac33de32decb95a38ef88198f223359b37a4c2e422508f99f54ea72d9\\3.png",
+        "package_hash": "998ec6c7825ff9aa7cc760eb0a6684e96a2dfbb599fa2f454f1a9bfffda53fc6"
+      }
+    },
+    {
+      "csv_row": 29,
+      "image_id": "43584de2921553cf1dcdd273839550f8d522b8458d99e4e735f1bb0b90c1e466",
+      "region_id": "confirmed-43584de2921553cf-1",
+      "box": [
+        0.0,
+        62.46,
+        657.342,
+        178.38
+      ],
+      "sources": [
+        {
+          "path": "Menu/Logo@2x.png",
+          "file_sha256": "24ee44c8cb129a38ed567f14d0ebfdf3fa8f7646b47fffa2c51f0a2599594b28",
+          "image_id": "43584de2921553cf1dcdd273839550f8d522b8458d99e4e735f1bb0b90c1e466",
+          "width": 658,
+          "height": 180,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "宽版游戏标题画：白字黑描边手写艺术字 'KING OF'（上行小字）与 'DRAGON PASS'（下行大字），清晰可读，需要汉化。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\483c6fbac33de32decb95a38ef88198f223359b37a4c2e422508f99f54ea72d9\\3.png",
+        "package_hash": "998ec6c7825ff9aa7cc760eb0a6684e96a2dfbb599fa2f454f1a9bfffda53fc6"
+      }
+    },
+    {
+      "csv_row": 28,
+      "image_id": "98fc4e10620d4464a981299048be857b5fc3e0c06fb164b023c7ddccd794e04a",
+      "region_id": "confirmed-98fc4e10620d4464-0",
+      "box": [
+        208.059,
+        10.962,
+        492.384,
+        96.39
+      ],
+      "sources": [
+        {
+          "path": "Menu/Logo~ipad.png",
+          "file_sha256": "49a2795ede821f6445f4b9aa0753df02023d930e6792b435a63ca120aedda7f1",
+          "image_id": "98fc4e10620d4464a981299048be857b5fc3e0c06fb164b023c7ddccd794e04a",
+          "width": 669,
+          "height": 189,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "游戏标题横幅：白字黑描边的手写艺术字 'KING OF'（上）与 'DRAGON PASS'（下），清晰可读，是较窄尺寸的 Logo 变体，需要汉化。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5953c5d38c1b85ad3bf7facc487eac56bcfef95c604d61076127fcba47b3d408\\8.png",
+        "package_hash": "c5a4fb829ffb77b1b51b574dd7bfe4ccdfd63bd4fec3fe141ed07f425f8f6a79"
+      }
+    },
+    {
+      "csv_row": 29,
+      "image_id": "98fc4e10620d4464a981299048be857b5fc3e0c06fb164b023c7ddccd794e04a",
+      "region_id": "confirmed-98fc4e10620d4464-1",
+      "box": [
+        9.366,
+        72.954,
+        660.972,
+        180.873
+      ],
+      "sources": [
+        {
+          "path": "Menu/Logo~ipad.png",
+          "file_sha256": "49a2795ede821f6445f4b9aa0753df02023d930e6792b435a63ca120aedda7f1",
+          "image_id": "98fc4e10620d4464a981299048be857b5fc3e0c06fb164b023c7ddccd794e04a",
+          "width": 669,
+          "height": 189,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "游戏标题横幅：白字黑描边的手写艺术字 'KING OF'（上）与 'DRAGON PASS'（下），清晰可读，是较窄尺寸的 Logo 变体，需要汉化。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5953c5d38c1b85ad3bf7facc487eac56bcfef95c604d61076127fcba47b3d408\\8.png",
+        "package_hash": "c5a4fb829ffb77b1b51b574dd7bfe4ccdfd63bd4fec3fe141ed07f425f8f6a79"
+      }
+    },
+    {
+      "csv_row": 28,
+      "image_id": "693210c955d757c2ee504a173b15e8f00358e0c9075c6b37ace86f250cb84217",
+      "region_id": "confirmed-693210c955d757c2-0",
+      "box": [
+        414.78,
+        21.924,
+        984.768,
+        192.78
+      ],
+      "sources": [
+        {
+          "path": "Menu/Logo~ipad@2x.png",
+          "file_sha256": "16f9be385ff5c8a96585ca66abf13c342ed6680060bde6e5c45b4c01f1719c92",
+          "image_id": "693210c955d757c2ee504a173b15e8f00358e0c9075c6b37ace86f250cb84217",
+          "width": 1338,
+          "height": 378,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "游戏标题画：白字黑描边的手写艺术字 'KING OF'（第一行）与 'DRAGON PASS'（第二行），清晰可读，属需要汉化的核心贴图文字。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\10.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 29,
+      "image_id": "693210c955d757c2ee504a173b15e8f00358e0c9075c6b37ace86f250cb84217",
+      "region_id": "confirmed-693210c955d757c2-1",
+      "box": [
+        8.028,
+        133.056,
+        1331.31,
+        376.866
+      ],
+      "sources": [
+        {
+          "path": "Menu/Logo~ipad@2x.png",
+          "file_sha256": "16f9be385ff5c8a96585ca66abf13c342ed6680060bde6e5c45b4c01f1719c92",
+          "image_id": "693210c955d757c2ee504a173b15e8f00358e0c9075c6b37ace86f250cb84217",
+          "width": 1338,
+          "height": 378,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "游戏标题画：白字黑描边的手写艺术字 'KING OF'（第一行）与 'DRAGON PASS'（第二行），清晰可读，属需要汉化的核心贴图文字。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\5e0f6c53edc39e235f450085846f8c44ab4ce1492c5cdbae86ab05edfac35dd7\\10.png",
+        "package_hash": "2791a7b40e6c3e0a35f37fe488df02fed74cffebe3dc23814bb101f7c2f0691c"
+      }
+    },
+    {
+      "csv_row": 30,
+      "image_id": "17473c8ce745bd0e6451e517c7d2ca20a88d9647b159658c7658282da563a159",
+      "region_id": "confirmed-17473c8ce745bd0e-0",
+      "box": [
+        127.2,
+        236.79,
+        359.04,
+        259.74
+      ],
+      "sources": [
+        {
+          "path": "Scenes/scene226.jpg",
+          "file_sha256": "1549f66d2cc94619b90ab19f22de3e4a47124ac415855ebf5cfef3abc1e6b3c4",
+          "image_id": "17473c8ce745bd0e6451e517c7d2ca20a88d9647b159658c7658282da563a159",
+          "width": 480,
+          "height": 270,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "缺失美术的占位图：黑到白渐变底，右下角有一行紫红色小字 'Theya artwork not available'，清晰可读，属游戏内会显示的提示文字，需要汉化。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\4b5d4b6f08401cd48d98c282e21002a4b9ba983f57f93215cdf9ef4894c382ca\\19.png",
+        "package_hash": "b1640f3299ff908b5ff038364e962a02f09c0234bb84d25e92d5149be75a0a42"
+      }
+    },
+    {
+      "csv_row": 30,
+      "image_id": "351fabf715381a6ac6e2c2acb6862511f96ea3191fde842100f1f209431cedfb",
+      "region_id": "confirmed-351fabf715381a6a-0",
+      "box": [
+        168.32,
+        317.16,
+        476.16,
+        345.96
+      ],
+      "sources": [
+        {
+          "path": "Scenes~ipad/scene226.jpg",
+          "file_sha256": "0418d1f40523233af13f498acc00930c5688bb39da2d3c7747da067720fa876f",
+          "image_id": "351fabf715381a6ac6e2c2acb6862511f96ea3191fde842100f1f209431cedfb",
+          "width": 640,
+          "height": 360,
+          "provenance": {}
+        }
+      ],
+      "confirmation": {
+        "status": "agent_visual_confirmed",
+        "reason": "缺失美术占位图（640x360 尺寸副本）：黑到白渐变底，左下偏中有一行紫红色小字 'Theya artwork not available'，清晰可读，需要汉化。",
+        "reviewer_type": "conversation_agent",
+        "model_label": "deepseek-v4.1-flash",
+        "evidence": "tiered\\agent\\483c6fbac33de32decb95a38ef88198f223359b37a4c2e422508f99f54ea72d9\\1.png",
+        "package_hash": "998ec6c7825ff9aa7cc760eb0a6684e96a2dfbb599fa2f454f1a9bfffda53fc6"
+      }
+    }
+  ],
+  "scan_hash": "ac7b18e7f66388a1aaee63e7123e675edbe8c65775b085f8852f0226a03e75d6",
+  "plan_hash": "b0062e252cffdac84e8d0acdd315951b88fc5808f3a74fd6485c141c5204eb6b",
+  "unresolved_image_ids": [],
+  "scope": "visually_confirmed_subset",
+  "human_approval": false
+}

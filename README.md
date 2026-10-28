@@ -88,6 +88,8 @@
 
 ## 图片文字汉化（进行中）
 
+- 2026-10-29 最新流程试建：已用 `image_workflow.py build --look matched` 生成 `ImagePatch/build-v11/`（12 图 / 108 区域），采用 NotoSerifSC/NotoSansSC 可变字体；独立配置与映射快照在 `ImagePatch/matched-20261029/`，移除了所有触发 legacy 的旧样式字段。初步联系表复核发现地图修补斑块，**未通过视觉验收、未安装**。Logo 黑色英文轮廓问题较 v10 改善，但不因此签收全套图片。详细记录见该目录 `REVIEW.md`。以下 v10 记录为旧版历史。
+
 - 范围：先从 2,121 张贴图中挑出 14 张关键贴图（地图 4 个分辨率、Logo 4 个尺寸、占位图 2 张、Clan 按钮、MapArch、两张按钮底板）做精确重确认，人工/视觉确认 30 条原文，其中 2 张（`M/RecruitCaption.png`、`M/DismissCaption.png`）经放大核对为**无烘焙文字的纯色底板**，已排除，实际重绘 12 张 / 108 个区域。
 - 坐标：区域框存 `king-of-dragon-pass_image_text.mapping.json`；地图标签框按 640×480 基准核过，其余分辨率各自存像素框（变体之间归一化值相差可达 13/1000，不能只用一套换算）。
 - 错框修正：`M/ClanButton.png` 原框覆盖了绘制图标（导致图标被擦除），已收窄为 `[49,11,92,28]`；`M/MapArch.png` 原框落在右侧空白，英文完全未覆盖，已改为 `[46,15,87,51]`。
