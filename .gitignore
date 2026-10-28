@@ -41,6 +41,7 @@
 /ImagePatch/build-v6/
 /ImagePatch/build-v7/
 /ImagePatch/build-v8/
+/ImagePatch/build-v9/
 /ImagePatch/**/compare/
 
 # 项目内联 hook 链接中间产物

@@ -79,6 +79,18 @@
 - 贴图内文字以及翻译库未收录的动态键仍可能保留英文；地图矢量标签已纳入底层字体准备 Hook，词库已收录的地图专名会动态替换。
 - inline Hook 依赖当前 Steam 2.4.0 版 `.s86` 布局（原文件 SHA-256：`BDC90ADACDE29B6E86ECE3886F28BA60C97A7A67F0E3BAB7A1D2BB1B641138C5`）；游戏更新后需要重新确认 RVA。
 
+## 图片文字汉化（进行中）
+
+- 范围：先从 2,121 张贴图中挑出 14 张关键贴图（地图 4 个分辨率、Logo 4 个尺寸、占位图 2 张、Clan 按钮、MapArch、两张按钮底板）做精确重确认，人工/视觉确认 30 条原文，其中 2 张（`M/RecruitCaption.png`、`M/DismissCaption.png`）经放大核对为**无烘焙文字的纯色底板**，已排除，实际重绘 12 张 / 108 个区域。
+- 坐标：区域框存 `king-of-dragon-pass_image_text.mapping.json`；地图标签框按 640×480 基准核过，其余分辨率各自存像素框（变体之间归一化值相差可达 13/1000，不能只用一套换算）。
+- 错框修正：`M/ClanButton.png` 原框覆盖了绘制图标（导致图标被擦除），已收窄为 `[49,11,92,28]`；`M/MapArch.png` 原框落在右侧空白，英文完全未覆盖，已改为 `[46,15,87,51]`。
+- 重绘方式：**笔画级掩膜 + inpaint**（地图深色字用 black-hat、Logo/浅色字用 top-hat），mask 全透明，不做整块高斯模糊或不透明色块；避免早期版本出现的灰带与遮图。
+- Logo：文字位于纯黑底，按亮度清除拉丁字母（含抗锯齿边缘），再用宋体重排"龙隘 / 之王"并保留原有白色装饰框。
+- 字体：正文 `simhei.ttf`，标题 `simsun.ttc`；与回填阶段 Hook 使用的中文字体不同源，贴图为静态位图，不受运行时字体影响。
+- 产物：`ImagePatch/build-v10/`（12 张 PNG、108 条区域清单、`preview.html`、`compare/` 原图对照）。`status=ready_for_engine_adapter`，`installed=false`。
+- 已知问题：地图中文在深色森林地形上对比仍偏弱；`DAGORI`/`INKARTH`、`Spider Mt.` 等相邻标签存在挤压；少数标签残留淡英文痕迹；Logo 的宋体字形与原手绘衬线风格差异明显，属可读但不等同原设计。
+- 未完成：引擎侧导入（Marmalade 无通用贴图适配器，需运行时 PNG 替换或 overlay 方案）；视觉复核尚未逐图签收。
+
 ## 对外发布
 - 补丁：`Dispatch/King of Dragon Pass_子非鱼汉化1.0.zip`
 - 支持版本/平台：Steam v2.4.0（Windows）。
