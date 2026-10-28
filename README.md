@@ -40,6 +40,7 @@
 - 注意事项：`.s86` 中仍可能混有少量运行时键名，翻译阶段应结合目录表制作禁翻表。当前 `.gxfont` + `.tga` 位图字体不含完整中文字符，回填前必须解决中文字库。
 
 ## 翻译
+- **本次重汉化接手核验（2026-10-28）**：以下 AINiee 完成情况、根目录正式译文及历史回填/发布记录属于旧版成果。本次采用 `custom/api`，当前成果保存在 `TranslateFiles/state/workflow.sqlite3`，尚未完成正式导出；根目录译文与数据库有 31,048 条不同。接手审计见 `Analysis/TAKEOVER_AUDIT_20261028.md`。
 - 状态：AINiee 全量翻译及格式校验已完成。
 - 译文：`king-of-dragon-pass_text_translated.csv`，34,421 条、无表头、单列标准 CSV。
 - 工具：AINiee；具体接口/模型待补充。
@@ -53,6 +54,9 @@
 - 校验：项目专用 `validate_translation_kodp.py --fix-newlines` 检查 CSV 对齐、Opal 命令、控制字节、随机短语分支、printf、内部键、残留 `[P数字]`、`textarea` 包装与异常字符；最终结果为 0 个问题。
 - 译文 SHA-256：`3997974294D29060C1DA2F4FF46E55C2CB3E2F525E043B663ADE73D3521AB1EF`。
 - 特别注意：不得加入通用方括号禁翻规则，玩家可见的 `[click “Proceed”]` 需要翻译。
+- 语义校审断点（2026-10-28）：`review` 轮次跑到第 9 轮后停止，未通过 4 条，全部 `standard_no_progress`，无待派修复任务。其余 34,417 条已 `stage=review`，4 条留在 `translate`。
+- 这 4 条的现有译文（`records.translation`）同时通过结构门禁与术语门禁：`R0015011_3ed5cd1f0c` 保留 `\x01@\x0B`、`\x01Á,`、`\x04`；`R0022351`、`R0022352`、`R0024905` 保留 required 术语「胡马科特信徒」。被拒的都是审校候选的改写：改动 `\x01` 后当前规则保护的标点，或把「胡马科特信徒战士」简化为「胡马科特战士」而丢掉 required 字面。非 `@` 命令的真实长度仍待引擎证据确认，不能把标点已属于操作数写成定论。
+- 上述 4 条未经人工改判，`reports/review_round_status.json` 仍为 `needs_attention`；保留现译或调整术语条目需人工决定，程序不自动改写审校结论。
 
 ## 回填
 - 最终方案：采用外置启动器与注入 DLL，不修改 Steam 游戏目录。`KoDPCNLauncher.exe` 正常启动游戏，检测到可见窗口并等待 2.5 秒后注入 `KoDPCNHook.dll`，避免过早注入干扰 Marmalade 字体缓存。
