@@ -1,0 +1,533 @@
+{
+  "review_complete": true,
+  "review_summary": "本批 12 条均为 sceneRxxx 形式的内部场景标识，单独成条且无嵌入用例。逐条补 whole_record 适用范围后保留原文，不新增术语或翻译；已核对 f1–f12。",
+  "acknowledged_findings": [
+    "F0095",
+    "F0096",
+    "F0097",
+    "F0098",
+    "F0099",
+    "F0100",
+    "F0101",
+    "F0102",
+    "F0103",
+    "F0104",
+    "F0105",
+    "F0106"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 7722 的原文仅为独立场景标识 sceneR024，全文无嵌入用例；作为内部标识须整条保留，不译。"
+        }
+      },
+      "reason": "原文是完整内部场景标识而非可译台词，限定 whole_record 以避免把 scene 组件全局禁翻。",
+      "evidence_rows": [
+        7722
+      ],
+      "table": "non_translate",
+      "index": 153
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 7766 的原文仅为独立场景标识 sceneR025，全文无嵌入用例；作为内部标识须整条保留，不译。"
+        }
+      },
+      "reason": "原文是完整内部场景标识而非可译台词，限定 whole_record 以避免把 scene 组件全局禁翻。",
+      "evidence_rows": [
+        7766
+      ],
+      "table": "non_translate",
+      "index": 154
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 7794 的原文仅为独立场景标识 sceneR026，全文无嵌入用例；作为内部标识须整条保留，不译。"
+        }
+      },
+      "reason": "原文是完整内部场景标识而非可译台词，限定 whole_record 以避免把 scene 组件全局禁翻。",
+      "evidence_rows": [
+        7794
+      ],
+      "table": "non_translate",
+      "index": 155
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 7847 的原文仅为独立场景标识 sceneR027，全文无嵌入用例；作为内部标识须整条保留，不译。"
+        }
+      },
+      "reason": "原文是完整内部场景标识而非可译台词，限定 whole_record 以避免把 scene 组件全局禁翻。",
+      "evidence_rows": [
+        7847
+      ],
+      "table": "non_translate",
+      "index": 156
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 7892 的原文仅为独立场景标识 sceneR028，全文无嵌入用例；作为内部标识须整条保留，不译。"
+        }
+      },
+      "reason": "原文是完整内部场景标识而非可译台词，限定 whole_record 以避免把 scene 组件全局禁翻。",
+      "evidence_rows": [
+        7892
+      ],
+      "table": "non_translate",
+      "index": 157
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 7931 的原文仅为独立场景标识 sceneR029，全文无嵌入用例；作为内部标识须整条保留，不译。"
+        }
+      },
+      "reason": "原文是完整内部场景标识而非可译台词，限定 whole_record 以避免把 scene 组件全局禁翻。",
+      "evidence_rows": [
+        7931
+      ],
+      "table": "non_translate",
+      "index": 158
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 8020 的原文仅为独立场景标识 sceneR031，全文无嵌入用例；作为内部标识须整条保留，不译。"
+        }
+      },
+      "reason": "原文是完整内部场景标识而非可译台词，限定 whole_record 以避免把 scene 组件全局禁翻。",
+      "evidence_rows": [
+        8020
+      ],
+      "table": "non_translate",
+      "index": 159
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 8148 的原文仅为独立场景标识 sceneR033，全文无嵌入用例；作为内部标识须整条保留，不译。"
+        }
+      },
+      "reason": "原文是完整内部场景标识而非可译台词，限定 whole_record 以避免把 scene 组件全局禁翻。",
+      "evidence_rows": [
+        8148
+      ],
+      "table": "non_translate",
+      "index": 160
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 8199 的原文仅为独立场景标识 sceneR034，全文无嵌入用例；作为内部标识须整条保留，不译。"
+        }
+      },
+      "reason": "原文是完整内部场景标识而非可译台词，限定 whole_record 以避免把 scene 组件全局禁翻。",
+      "evidence_rows": [
+        8199
+      ],
+      "table": "non_translate",
+      "index": 161
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 8759 的原文仅为独立场景标识 sceneR046，全文无嵌入用例；作为内部标识须整条保留，不译。"
+        }
+      },
+      "reason": "原文是完整内部场景标识而非可译台词，限定 whole_record 以避免把 scene 组件全局禁翻。",
+      "evidence_rows": [
+        8759
+      ],
+      "table": "non_translate",
+      "index": 167
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 8831 的原文仅为独立场景标识 sceneR047，全文无嵌入用例；作为内部标识须整条保留，不译。"
+        }
+      },
+      "reason": "原文是完整内部场景标识而非可译台词，限定 whole_record 以避免把 scene 组件全局禁翻。",
+      "evidence_rows": [
+        8831
+      ],
+      "table": "non_translate",
+      "index": 168
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 8883 的原文仅为独立场景标识 sceneR048，全文无嵌入用例；作为内部标识须整条保留，不译。"
+        }
+      },
+      "reason": "原文是完整内部场景标识而非可译台词，限定 whole_record 以避免把 scene 组件全局禁翻。",
+      "evidence_rows": [
+        8883
+      ],
+      "table": "non_translate",
+      "index": 169
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:153",
+      "evidence_rows": [
+        7722
+      ],
+      "source_excerpt": "sceneR024",
+      "reason": "原文为独立内部场景标识 sceneR024，应保留原文并限定 whole_record；无嵌入用例需保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 7722 的完整原文就是 sceneR024，属于内部场景标识而非可译正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无译文，原文标识 sceneR024 原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；原缺少适用范围，已补充 whole_record，避免全局禁翻 scene 或数字。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 sceneR025–sceneR048 同型标识一致，均按完整 ID 保留；无共享译名问题。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:154",
+      "evidence_rows": [
+        7766
+      ],
+      "source_excerpt": "sceneR025",
+      "reason": "原文为独立内部场景标识 sceneR025，应保留原文并限定 whole_record；无嵌入用例需保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 7766 的完整原文就是 sceneR025，属于内部场景标识而非可译正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无译文，原文标识 sceneR025 原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；原缺少适用范围，已补充 whole_record，避免全局禁翻 scene 或数字。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 sceneR024、sceneR026–sceneR048 同型标识一致，均按完整 ID 保留；无共享译名问题。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:155",
+      "evidence_rows": [
+        7794
+      ],
+      "source_excerpt": "sceneR026",
+      "reason": "原文为独立内部场景标识 sceneR026，应保留原文并限定 whole_record；无嵌入用例需保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 7794 的完整原文就是 sceneR026，属于内部场景标识而非可译正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无译文，原文标识 sceneR026 原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；原缺少适用范围，已补充 whole_record，避免全局禁翻 scene 或数字。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 sceneR024–sceneR025、sceneR027–sceneR048 同型标识一致，均按完整 ID 保留；无共享译名问题。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:156",
+      "evidence_rows": [
+        7847
+      ],
+      "source_excerpt": "sceneR027",
+      "reason": "原文为独立内部场景标识 sceneR027，应保留原文并限定 whole_record；无嵌入用例需保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 7847 的完整原文就是 sceneR027，属于内部场景标识而非可译正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无译文，原文标识 sceneR027 原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；原缺少适用范围，已补充 whole_record，避免全局禁翻 scene 或数字。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 sceneR024–sceneR026、sceneR028–sceneR048 同型标识一致，均按完整 ID 保留；无共享译名问题。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:157",
+      "evidence_rows": [
+        7892
+      ],
+      "source_excerpt": "sceneR028",
+      "reason": "原文为独立内部场景标识 sceneR028，应保留原文并限定 whole_record；无嵌入用例需保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 7892 的完整原文就是 sceneR028，属于内部场景标识而非可译正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无译文，原文标识 sceneR028 原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；原缺少适用范围，已补充 whole_record，避免全局禁翻 scene 或数字。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 sceneR024–sceneR027、sceneR029–sceneR048 同型标识一致，均按完整 ID 保留；无共享译名问题。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:158",
+      "evidence_rows": [
+        7931
+      ],
+      "source_excerpt": "sceneR029",
+      "reason": "原文为独立内部场景标识 sceneR029，应保留原文并限定 whole_record；无嵌入用例需保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 7931 的完整原文就是 sceneR029，属于内部场景标识而非可译正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无译文，原文标识 sceneR029 原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；原缺少适用范围，已补充 whole_record，避免全局禁翻 scene 或数字。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 sceneR024–sceneR028、sceneR031–sceneR048 同型标识一致，均按完整 ID 保留；无共享译名问题。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:159",
+      "evidence_rows": [
+        8020
+      ],
+      "source_excerpt": "sceneR031",
+      "reason": "原文为独立内部场景标识 sceneR031，应保留原文并限定 whole_record；无嵌入用例需保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 8020 的完整原文就是 sceneR031，属于内部场景标识而非可译正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无译文，原文标识 sceneR031 原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；原缺少适用范围，已补充 whole_record，避免全局禁翻 scene 或数字。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 sceneR024–sceneR029、sceneR033–sceneR048 同型标识一致，均按完整 ID 保留；无共享译名问题。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:160",
+      "evidence_rows": [
+        8148
+      ],
+      "source_excerpt": "sceneR033",
+      "reason": "原文为独立内部场景标识 sceneR033，应保留原文并限定 whole_record；无嵌入用例需保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 8148 的完整原文就是 sceneR033，属于内部场景标识而非可译正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无译文，原文标识 sceneR033 原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；原缺少适用范围，已补充 whole_record，避免全局禁翻 scene 或数字。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 sceneR024–sceneR031、sceneR034–sceneR048 同型标识一致，均按完整 ID 保留；无共享译名问题。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:161",
+      "evidence_rows": [
+        8199
+      ],
+      "source_excerpt": "sceneR034",
+      "reason": "原文为独立内部场景标识 sceneR034，应保留原文并限定 whole_record；无嵌入用例需保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 8199 的完整原文就是 sceneR034，属于内部场景标识而非可译正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无译文，原文标识 sceneR034 原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；原缺少适用范围，已补充 whole_record，避免全局禁翻 scene 或数字。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 sceneR024–sceneR033、sceneR046–sceneR048 同型标识一致，均按完整 ID 保留；无共享译名问题。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:167",
+      "evidence_rows": [
+        8759
+      ],
+      "source_excerpt": "sceneR046",
+      "reason": "原文为独立内部场景标识 sceneR046，应保留原文并限定 whole_record；无嵌入用例需保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 8759 的完整原文就是 sceneR046，属于内部场景标识而非可译正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无译文，原文标识 sceneR046 原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；原缺少适用范围，已补充 whole_record，避免全局禁翻 scene 或数字。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 sceneR024–sceneR034、sceneR047–sceneR048 同型标识一致，均按完整 ID 保留；无共享译名问题。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:168",
+      "evidence_rows": [
+        8831
+      ],
+      "source_excerpt": "sceneR047",
+      "reason": "原文为独立内部场景标识 sceneR047，应保留原文并限定 whole_record；无嵌入用例需保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 8831 的完整原文就是 sceneR047，属于内部场景标识而非可译正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无译文，原文标识 sceneR047 原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；原缺少适用范围，已补充 whole_record，避免全局禁翻 scene 或数字。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 sceneR024–sceneR034、sceneR046、sceneR048 同型标识一致，均按完整 ID 保留；无共享译名问题。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:169",
+      "evidence_rows": [
+        8883
+      ],
+      "source_excerpt": "sceneR048",
+      "reason": "原文为独立内部场景标识 sceneR048，应保留原文并限定 whole_record；无嵌入用例需保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 8883 的完整原文就是 sceneR048，属于内部场景标识而非可译正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无译文，原文标识 sceneR048 原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 正确；原缺少适用范围，已补充 whole_record，避免全局禁翻 scene 或数字。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 sceneR024–sceneR034、sceneR046–sceneR047 同型标识一致，均按完整 ID 保留；无共享译名问题。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:153",
+    "non_translate:154",
+    "non_translate:155",
+    "non_translate:156",
+    "non_translate:157",
+    "non_translate:158",
+    "non_translate:159",
+    "non_translate:160",
+    "non_translate:161",
+    "non_translate:167",
+    "non_translate:168",
+    "non_translate:169"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

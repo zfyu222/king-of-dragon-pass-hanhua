@@ -1,0 +1,196 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e5 及 f1/f2：统一 Odaylan/Odaylans 为“奥达兰信徒”，修正相关 term_kind；将 Wind Lords 归为 game_term 并与 Wind Lord 共用“风领主”；Dawn Age 作为历史时代名保留，f1 的共享译名按语境区分，f2 为合法单复数变体。",
+  "acknowledged_findings": [
+    "F0361",
+    "F0362"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_kind": "game_term",
+        "term_reason": "第549条以 Odaylan champion 指信奉 Odayla 的敌方冠军；Odaylan 为游戏特定信徒身份，非唯一专名。"
+      },
+      "reason": "Odaylan 是由神名派生的信徒身份，不应按唯一专名分类；改为 game_term 并说明实际含义。",
+      "evidence_rows": [
+        549
+      ],
+      "table": "terms",
+      "index": 10
+    },
+    {
+      "patch": {
+        "recommended_translation": "奥达兰信徒",
+        "term_kind": "game_term",
+        "term_reason": "第21328、21336条指支持 Odayla 信徒群体的人；Odaylans 为该群体复数称呼，统一译作奥达兰信徒。"
+      },
+      "reason": "修正与单数 Odaylan 同源的译名，统一为“奥达兰信徒”；该词是信徒群体称谓而非唯一专名。",
+      "evidence_rows": [
+        21328,
+        21336
+      ],
+      "table": "terms",
+      "index": 580
+    },
+    {
+      "patch": {
+        "term_kind": "game_term",
+        "term_reason": "第12015、12044等条以 wind lords 指 Orlanth 的神圣武士/风领主称号，可复数；非唯一专名。"
+      },
+      "reason": "Wind Lords 是游戏内战士称号而非唯一专名；改为 game_term，并与单数 Wind Lord 的“风领主”保持一致。",
+      "evidence_rows": [
+        12015,
+        12044
+      ],
+      "table": "terms",
+      "index": 241
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:10",
+      "evidence_rows": [
+        549
+      ],
+      "source_excerpt": "Odaylan champion with an inexhaustible quiver of arrows",
+      "reason": "Odaylan 指信奉 Odayla 的冠军身份；统一译作“奥达兰信徒”，并把 term_kind 改为 game_term。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第549条“Odaylan champion with an inexhaustible quiver of arrows”显示 Odaylan 修饰冠军，是 Odayla 相关信徒身份。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“奥达兰信徒”表达 Odayla 信徒身份，且与复数形式修正后一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "category_path 身份适用于单数信徒身份；term_kind 由 proper_name 改为 game_term，因 Odaylan 非唯一专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与复数 Odaylans 统一为同一词根译名；单数修饰用法与复数群体称谓不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:580",
+      "evidence_rows": [
+        21328,
+        21336
+      ],
+      "source_excerpt": "those who had supported the Odaylans",
+      "reason": "Odaylans 指 Odayla 信徒群体；修正译名为“奥达兰信徒”，term_kind 改为 game_term。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第21328、21336条“those who had supported the Odaylans”表明 Odaylans 是被支持的信徒群体。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "将“奥达伊拉信徒”改为“奥达兰信徒”，与单数 Odaylan 同源统一。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "category_path 组织适用于复数群体；term_kind 由 proper_name 改为 game_term。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与单数 Odaylan 统一词根译名；Odaylan/Odaylans 单复数变体共用译名不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:13",
+      "evidence_rows": [
+        490
+      ],
+      "source_excerpt": "heroes of the Dawn Age",
+      "reason": "Dawn Age 是格洛兰萨历史时代名；译名“黎明时代”保留，f1 中与 the Dawn 的区别按语境处理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第490条“heroes of the Dawn Age”明确 Dawn Age 是历史时代名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“黎明时代”对应 Dawn Age，符合历史时代专名译法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name/required 合理；category_path 其他用于历史时代。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "核对 f1：本条 Dawn Age 是历史时代名；关联的 the Dawn 是历史开端事件/时期，语境不同，不能据共享字符串判定本条错误。本条不改。"
+        }
+      }
+    },
+    {
+      "ref": "terms:17",
+      "evidence_rows": [
+        7561,
+        9027
+      ],
+      "source_excerpt": "Illator is a mighty Wind Lord",
+      "reason": "Wind Lord 是 Orlanth 教派神圣武士称号，game_term/身份，译名“风领主”；f2 的单复数共用译名不冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第7561、9027条均称 Illator 为 mighty Wind Lord，显示这是战士称号。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“风领主”作为 Wind Lord 称号译名简洁，保留专名感。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "game_term/required 与 category_path 身份匹配；不是唯一专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "核对 f2：复数 Wind Lords 是同一称号复数，共用“风领主”为合法单复数变体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:241",
+      "evidence_rows": [
+        12015,
+        12044
+      ],
+      "source_excerpt": "Three great Orlanthi wind lords, or holy warriors",
+      "reason": "Wind Lords 是 Orlanthi 神圣武士称号复数；维持译名“风领主”，并把 term_kind 改为 game_term。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第12015条称“wind lords, or holy warriors”，第12044条称其 powerful，确认为复数战士称号。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“风领主”与单数 Wind Lord 一致；中文无需区分复数。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "category_path 身份正确；term_kind 由 proper_name 改为 game_term，因是称号而非唯一专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "核对 f2：Wind Lords 是 Wind Lord 的复数，共用译名合法；与单数条目的 game_term 分类对齐。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:10",
+    "terms:580",
+    "terms:13",
+    "terms:17",
+    "terms:241"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

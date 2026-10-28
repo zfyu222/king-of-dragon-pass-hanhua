@@ -1,0 +1,401 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 e1-e12 的来源、译名、分类与一致性审校。保留 Chaos Striker=混沌之击、Long-Noses=长鼻族、wergild=赎杀金、Daga=达加、Ragnaglar=拉格纳格拉尔、Summons of Evil=召唤邪恶；将 e7 类别改为地名，并修正 e6/e11/e12 的 term_reason。f1 中 god-plane/God Plane/Godplane 共用“神界”属同一神话领域的大小写/连写变体，非错误。",
+  "acknowledged_findings": [
+    "F0363"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "宝藏列表中的具名宝物；红色皮革制成的面具。"
+      },
+      "reason": "原文未提“小胸针”，删除无据描述。",
+      "evidence_rows": [
+        14698,
+        32466
+      ],
+      "table": "terms",
+      "index": 479
+    },
+    {
+      "patch": {
+        "category_path": "地名"
+      },
+      "reason": "该词指神灵层面/领域，应为地名而非其他。",
+      "evidence_rows": [
+        2820,
+        15980
+      ],
+      "table": "terms",
+      "index": 223
+    },
+    {
+      "patch": {
+        "term_reason": "不洁三神之一、Storm Bull 的兄弟与背叛者，布鲁兽之父；引发亲族相残，曾险些被 Storm Bull 杀死。"
+      },
+      "reason": "原 term_reason 称其被杀不准确；原文有 Chalana Arroy 阻拦。",
+      "evidence_rows": [
+        33842,
+        33878
+      ],
+      "table": "terms",
+      "index": 230
+    },
+    {
+      "patch": {
+        "term_reason": "仪式名；将古代敌人的某种形态召来以便击败，胜利可获其他氏族尊重与魔法利益。"
+      },
+      "reason": "原文未提冰魔；按 33333 的仪式效果修正。",
+      "evidence_rows": [
+        20223,
+        33333
+      ],
+      "table": "terms",
+      "index": 235
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:219",
+      "evidence_rows": [
+        2956,
+        8239
+      ],
+      "source_excerpt": "great sword like Chaos Striker",
+      "reason": "原文多处指同一把具名宝剑；保留“混沌之击”，分类与必用级别不变。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2956、8239 等均以 Chaos Striker 指同一把可购买/被诅咒的剑。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“混沌之击”作为剑名简洁，且覆盖全部候选用法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文明确为 sword，归入物品正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各出处均为同一传奇宝剑，无其他义项。"
+        }
+      }
+    },
+    {
+      "ref": "terms:220",
+      "evidence_rows": [
+        3170
+      ],
+      "source_excerpt": "famous Blue Boar of legend",
+      "reason": "3170 的 famous Blue Boar of legend 指传说个体野猪；译名和分类成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3170 明确 famous Blue Boar of legend。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "蓝野猪直译且可作传说生物名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他：个体传说生物，不是种族或组织。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅见一处，无同名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:221",
+      "evidence_rows": [
+        2916,
+        9152
+      ],
+      "source_excerpt": "reconciliation of Long-Nose and Leather-Wings",
+      "reason": "2916 将 Long-Nose 与 Leather-Wings 并列，属神话人物；单数译“长鼻”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2916 的 reconciliation of Long-Nose and Leather-Wings 显示其为专名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "长鼻保留专名简洁性，未误作复数民族。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他：神话人物名，非物品/地名/技能。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e4 的复数民族 Long-Noses 区分：单数人物“长鼻”，复数“长鼻族”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:585",
+      "evidence_rows": [
+        21600,
+        26437,
+        34065
+      ],
+      "source_excerpt": "priestess of the Long-Noses",
+      "reason": "Long-Noses 是以 Oriska 为代表的族群；长鼻族与种族分类合适。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26437 称 Oriska 为 priestess of the Long-Noses。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "长鼻族体现族群而非单个长鼻人物。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族：原文以 peoples/族群方式描述。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e3 单数 Long-Nose 区分，长鼻/长鼻族不混用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:222",
+      "evidence_rows": [
+        2916
+      ],
+      "source_excerpt": "Long-Nose and Leather-Wings",
+      "reason": "Leather-Wings 是 2916 中与 Long-Nose 并列的神话人物；皮翼可作专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2916 明确 Long-Nose and Leather-Wings 并列。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "皮翼直译并保留专名感。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他：神话人物名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Red Leather Mask 仅共享 leather 词素，不是同一术语，不强制同形。"
+        }
+      }
+    },
+    {
+      "ref": "terms:479",
+      "evidence_rows": [
+        14698,
+        32466
+      ],
+      "source_excerpt": "Red Leather Mask",
+      "reason": "14698/32466 证明其为具名宝物；已删去无据的“小胸针”。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "14698/32466 仅见 Red Leather Mask 于宝物列表，未提小胸针；term_reason 已修正。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "红皮面具对应 Red Leather Mask。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品：宝藏/宝物列表项。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e5 仅共享 leather，不构成同义术语。"
+        }
+      }
+    },
+    {
+      "ref": "terms:223",
+      "evidence_rows": [
+        2820,
+        5498,
+        15980
+      ],
+      "source_excerpt": "dare the god-plane",
+      "reason": "god-plane 指英雄探索进入的神话领域；译名神界，类别应为地名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2820、15980 等均以 god-plane 指神灵层面。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "神界简明且与 God Plane/Godplane 统一。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "由其他改为地名：该词指可进入的神话领域/层面。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 God Plane/Godplane 变体同义，f1 的共用译名属同一概念。"
+        }
+      }
+    },
+    {
+      "ref": "terms:389",
+      "evidence_rows": [
+        10165
+      ],
+      "source_excerpt": "enter the God Plane",
+      "reason": "10165 的 God Plane 指神话领域；神界与地名分类成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "10165 明确 enter the God Plane。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "神界与 god-plane 变体统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名：英雄探索进入的神话领域。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e7/Godplane 共用译名是同一概念的大小写/连写变体，f1 非冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:224",
+      "evidence_rows": [
+        15734,
+        24088
+      ],
+      "source_excerpt": "a carl’s wergild",
+      "reason": "wergild 在全部出处均为命案法定赔偿；统一“赎杀金”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "15734、24088 等均指按 carl/贵族身份计算的 wergild。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "赎杀金是 wergild 的专门译法，能覆盖赔偿与命价用法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他：法律赔偿机制，非人物/地点/物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各候选（血偿金/偿命金/命价/血钱）同义，统一为赎杀金；与 ransom 赎金区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:229",
+      "evidence_rows": [
+        25997,
+        34257
+      ],
+      "source_excerpt": "Daga, god of Drought",
+      "reason": "Daga 多处明确为旱灾之神、奥兰斯之敌；达加统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25997 称 Daga, god of Drought；34257 补充其为 Molanni 与 Yelm 之子。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "达加为稳定音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他：神祇专名，非地名/种族/技能。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各出处均同一旱灾/饥荒之神，无别名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:230",
+      "evidence_rows": [
+        33842,
+        33878
+      ],
+      "source_excerpt": "Ragnaglar, father of broos",
+      "reason": "Ragnaglar 为不洁三神之一、Storm Bull 兄弟与布鲁兽之父；已修正“被杀”表述。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "33878/33842 显示其为 Ragnaglar, father of broos，且 Chalana Arroy 介入后当日未被杀；term_reason 已修正。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "拉格纳格拉尔音译完整，优于拉格纳格拉。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他：神祇专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "3454、20393、33842 等均同一神祇，无别名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:235",
+      "evidence_rows": [
+        20223,
+        33333
+      ],
+      "source_excerpt": "The Summons of Evil draws some aspect of your ancient enemy upon you.",
+      "reason": "Summons of Evil 是召唤古代敌人的仪式；已删去无据的“冰魔”。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "33333/20223 只说明召唤古代敌人的某种形态，未提冰魔；term_reason 已修正。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "召唤邪恶对应仪式名，简洁统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "技能：可执行的仪式/能力名，归入技能可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "3661、8026、33333 均同一仪式，无其他义项。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:219",
+    "terms:220",
+    "terms:221",
+    "terms:585",
+    "terms:222",
+    "terms:479",
+    "terms:223",
+    "terms:389",
+    "terms:224",
+    "terms:229",
+    "terms:230",
+    "terms:235"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

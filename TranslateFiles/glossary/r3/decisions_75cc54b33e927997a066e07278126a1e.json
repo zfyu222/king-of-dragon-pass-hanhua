@@ -1,0 +1,379 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e12 的来源、译名、分类与一致性；保留多数界面及专名译法，修正 e7 为冬顶山、e8 为光辉部族、e9 为七位光明使者。f1 为同一帝国专名的拼写/所有格变体，f2 为 Storm Clan/Storm Clans 单复数变体，均不构成必须隔离的冲突。",
+  "acknowledged_findings": [
+    "F0359",
+    "F0409"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "冬顶山"
+      },
+      "reason": "mountain 为普通通名，山名核心为 Wintertop；改为“冬顶山”以避免“峰”造成同类山名不一致。",
+      "evidence_rows": [
+        33876
+      ],
+      "table": "terms",
+      "index": 819
+    },
+    {
+      "patch": {
+        "recommended_translation": "光辉部族"
+      },
+      "reason": "Tribe 在游戏层级中固定译“部族”，与 All Tribes→全部部族 一致；改为“光辉部族”。",
+      "evidence_rows": [
+        33942,
+        33956
+      ],
+      "table": "terms",
+      "index": 820
+    },
+    {
+      "patch": {
+        "recommended_translation": "七位光明使者",
+        "term_reason": "神话中的七位光明使者团体，文中将金纳贾尔列为其中一员。"
+      },
+      "reason": "Lightbringers 统一译“光明使者”，Seven 为数量修饰；改为“七位光明使者”并同步术语说明。",
+      "evidence_rows": [
+        33876
+      ],
+      "table": "terms",
+      "index": 823
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:805",
+      "evidence_rows": [
+        33766
+      ],
+      "source_excerpt": "The Tactics Screen",
+      "reason": "战术界面 UI 标题，译名简洁且符合界面标签。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33766 原文标题为 The Tactics Screen，明确指战术界面。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“战术界面”对应 Tactics screen，作为 UI 标签准确且简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于游戏界面术语，category_path=其他 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同类界面标签均采用“XX界面”格式，风格一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:806",
+      "evidence_rows": [
+        33772
+      ],
+      "source_excerpt": "the Battle screen",
+      "reason": "战斗界面 UI 术语，译名准确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33772 原文提到 Battle screen 的顶部滑条，明确为界面名称。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“战斗界面”对应 Battle screen，符合界面标签短词要求。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于游戏界面术语，category_path=其他 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同类界面标签格式一致，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:808",
+      "evidence_rows": [
+        33718
+      ],
+      "source_excerpt": "slide the filter to All Tribes",
+      "reason": "关系界面筛选器选项，译名直接。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33718 原文说明将筛选器滑到 All Tribes 以查看其他部族。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“全部部族”准确表达 All Tribes 的筛选范围。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于界面筛选器术语，category_path=其他 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Tribe 在相关术语中译“部族”，此处保持一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:809",
+      "evidence_rows": [
+        33668
+      ],
+      "source_excerpt": "the Sacred Time recap screen provides a Kingship indicator",
+      "reason": "圣时后回顾界面，Sacred Time 按既有译名作圣时。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33668 原文说明 Sacred Time recap screen 提供王者声望指示。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“圣时回顾界面”对应 Sacred Time recap screen，含义完整。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于游戏界面术语，category_path=其他 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Sacred Time 按常用译名作“圣时”，界面名保持该译法。"
+        }
+      }
+    },
+    {
+      "ref": "terms:814",
+      "evidence_rows": [
+        33840
+      ],
+      "source_excerpt": "the Storm Clan",
+      "reason": "神话氏族专名；单数形式译为风暴氏族可接受。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33840 原文提及战争在奥兰斯追随者与 the Storm Clan 之间爆发。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“风暴氏族”对应 Storm Clan，作氏族专名简洁明确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指神话氏族集团，category_path=组织 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "单数 Storm Clan 译“风暴氏族”；与复数变体共用基础译名不构成错误。"
+        }
+      }
+    },
+    {
+      "ref": "terms:818",
+      "evidence_rows": [
+        33918
+      ],
+      "source_excerpt": "the place called Centaur Cross",
+      "reason": "龙隘边界地名，音意结合译名可用。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33918 原文明确称 Centaur Cross 为一个地方。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“半人马十字”保留 Centaur 与 Cross 的核心含义，可作地名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "明确为地名，category_path=地名 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "地名构词直接，未发现同名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:819",
+      "evidence_rows": [
+        33876
+      ],
+      "source_excerpt": "Kero Fin, goddess of great Wintertop mountain",
+      "reason": "原为山名，mountain 作通名，统一为冬顶山。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33876 原文称 Kero Fin 为 great Wintertop mountain 的女神。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "mountain 为通名，山名核心应作“冬顶山”，原“冬顶峰”已修正。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "明确为山名，category_path=地名 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "mountain 作通名，核心山名统一为“冬顶”，不宜另改为“峰”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:820",
+      "evidence_rows": [
+        33942
+      ],
+      "source_excerpt": "I once left the Bright Tribe to serve Orlanth",
+      "reason": "Tribe 在游戏层级中固定译部族，改为光辉部族。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33942 原文称埃尔马尔曾离开 Bright Tribe 转而侍奉奥兰斯。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "Tribe 在游戏层级中对应“部族”，改为“光辉部族”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指部族集团，category_path=组织 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "同类 Tribe 术语应统一为“部族”，避免“部落/部族”混用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:823",
+      "evidence_rows": [
+        33876
+      ],
+      "source_excerpt": "Ginna Jar the most mysterious of the Seven Lightbringers",
+      "reason": "Lightbringers 统一为光明使者，改为七位光明使者。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33876 原文将金纳贾尔列为 Seven Lightbringers 中最神秘者。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "Lightbringers 统一译“光明使者”，改为“七位光明使者”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指神话团体，category_path=组织 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "Lightbringers 相关名称应共用“光明使者”核心译名，避免另造“携光者”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:824",
+      "evidence_rows": [
+        33886
+      ],
+      "source_excerpt": "the Ring of Dragons slew him with fire",
+      "reason": "龙友帝国议会专名，龙环简洁可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33886 原文称 Ring of Dragons 以火杀死奥尔曼丹。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“龙环”对应 Ring of Dragons，作议会集团专名简洁可用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指统治集团/议会，category_path=组织 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现同名冲突，保留“龙环”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:825",
+      "evidence_rows": [
+        33887,
+        33890
+      ],
+      "source_excerpt": "was called the Empire of Wyrm's Friends",
+      "reason": "历史帝国专名，拼写/所有格变体统一为龙友帝国。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33887 原文明确新国家被称为 Empire of Wyrm's Friends。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“龙友帝国”准确表达 Wyrm's Friends 与 Empire，译名稳定。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指历史帝国政权，category_path=组织 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "33890 同段又称 The Dragon Empire；拼写及所有格变体应统一为“龙友帝国”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:826",
+      "evidence_rows": [
+        33890
+      ],
+      "source_excerpt": "called the Dara Happan Empire",
+      "reason": "北方帝国专名，音译稳定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33890 原文称北方强大帝国为 Dara Happan Empire。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“达拉哈潘帝国”音译 Dara Happan 并保留 Empire，含义明确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指帝国政权，category_path=组织 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与龙友帝国为不同帝国，译名独立且不冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:805",
+    "terms:806",
+    "terms:808",
+    "terms:809",
+    "terms:814",
+    "terms:818",
+    "terms:819",
+    "terms:820",
+    "terms:823",
+    "terms:824",
+    "terms:825",
+    "terms:826"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

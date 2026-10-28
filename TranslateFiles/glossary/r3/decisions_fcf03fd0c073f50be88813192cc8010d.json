@@ -1,0 +1,101 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 e1、e2 的来源、译名、分类与一致性审校：god-talkers 与单数 god-talker 统一为“神语者”，Vingans 与单数 Vingan 统一为“温加信徒”；单复数同译不构成冲突，并补全术语理由。",
+  "acknowledged_findings": [
+    "F0365",
+    "F0366"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "原文中 god-talkers 是氏族宗教专家：他们占卜、解读预兆与神意、主持献祭并判断仪式结果（如 4999、17325、20231）。"
+      },
+      "reason": "原术语理由只取 110、516，且范围过窄；现补为可证实的宗教职责，译名不变。",
+      "evidence_rows": [
+        4999,
+        17325,
+        20231
+      ],
+      "table": "terms",
+      "index": 23
+    },
+    {
+      "patch": {
+        "term_reason": "Vingans 指 Vinga 的信徒群体，通常为女战士；303 与 Orlanthi 并列，32627 说明其受 Vinga 在场加成。"
+      },
+      "reason": "补足群体身份及原文机制依据，避免只写“专名性群体”。",
+      "evidence_rows": [
+        303,
+        32627
+      ],
+      "table": "terms",
+      "index": 27
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:23",
+      "evidence_rows": [
+        4999,
+        17325,
+        20231
+      ],
+      "source_excerpt": "The god-talkers conducted a divination",
+      "reason": "本批中，god-talkers 指主持占卜、仪式并解释神意的氏族宗教专家；标准译名统一为“神语者”，并与单数 god-talker 同词根。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4999 的 god-talkers 主持 divination，17325 主持仪式，20231 判断祭品是否被接受，均指宗教专家。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "采用“神语者”；“神言者”“神谕者”只是少数候选，未形成更可靠的标准，且与 e4 单数译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "身份：氏族祭司/宗教专家角色，不是普通动作或物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "e1 的 god-talkers 与 e4 的 god-talker 为单复数变体，共享“神语者”；f1 已核对，不构成不同实体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:27",
+      "evidence_rows": [
+        303,
+        32627
+      ],
+      "source_excerpt": "We struck down two Vingans and an Orlanthi who had been cheering the loudest.",
+      "reason": "Vingans 指 Vinga 的信徒群体，通常为女战士；与单数 Vingan 统一译作“温加信徒”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "303 的 Vingans 与 Orlanthi 并列，32627 的 Vingans 受 Vinga 在场加成，均指同一信徒群体。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“温加信徒”保留 Vinga 词根；e3 单数同译，符合个体/群体变体。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "身份：Vinga 信徒/女战士群体，不是地名或技能。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "e2 的 Vingans 与 e3 的 Vingan 为单复数变体，共享译名，不构成冲突；f2 已核对。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:23",
+    "terms:27"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

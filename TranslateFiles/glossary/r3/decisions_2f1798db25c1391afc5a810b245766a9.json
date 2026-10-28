@@ -1,0 +1,551 @@
+{
+  "review_complete": true,
+  "review_summary": "已复核本批 12 条 non_translate：为控制字节/占位串补精确 text 作用域；BigBigTrouble 仅见完整记录，收窄为 whole_record。未新增、隔离或合并条目。",
+  "acknowledged_findings": [
+    "F0094"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确控制串 \\x01@\\x13 表示动态数值，嵌入事件句中（如 6722、20029），须在任意出现处原样保留。"
+        }
+      },
+      "reason": "补明确作用域，避免无范围禁翻；该串是句中运行时数值占位符。",
+      "evidence_rows": [
+        6722,
+        20029
+      ],
+      "table": "non_translate",
+      "index": 130
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确控制串 \\x01@\\x15 可替换数量或人物名（6725、28922），嵌入句中，须在任意出现处原样保留。"
+        }
+      },
+      "reason": "补明确作用域；该串为运行时替换占位符，不应进入译文。",
+      "evidence_rows": [
+        6725,
+        28922
+      ],
+      "table": "non_translate",
+      "index": 131
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确控制串 \\x01@\\x18 出现在牛数与氏族相关片段中（6858、6986、24611），须在任意嵌入位置保留。"
+        }
+      },
+      "reason": "补明确作用域；按精确控制串保护，不扩展为普通字符禁翻。",
+      "evidence_rows": [
+        6858,
+        6986,
+        24611
+      ],
+      "table": "non_translate",
+      "index": 132
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确控制串 \\x01@\\x19 表示牲畜数量或男孩群体（6859、20069、20664），嵌入句中，须原样保留。"
+        }
+      },
+      "reason": "补明确作用域；该串为运行时数量/群体占位符。",
+      "evidence_rows": [
+        6859,
+        20069,
+        20664
+      ],
+      "table": "non_translate",
+      "index": 133
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确控制串 \\x01@\\x05 用于人物名或主语占位（7156、20884、24371），嵌入句中，须在任意出现处保留。"
+        }
+      },
+      "reason": "补明确作用域；该串是人物名称运行时占位符。",
+      "evidence_rows": [
+        7156,
+        20884,
+        24371
+      ],
+      "table": "non_translate",
+      "index": 134
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确控制串 \\x01@\\x07 用于神祇/人物名占位（7195、7235），嵌入句中，须原样保留。"
+        }
+      },
+      "reason": "补明确作用域；避免无范围全局禁翻，按精确控制串处理。",
+      "evidence_rows": [
+        7195,
+        7235
+      ],
+      "table": "non_translate",
+      "index": 135
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "本批仅见完整记录 7661，无嵌入用例；作为内部标识按完整记录匹配，避免全局保留普通词。"
+        }
+      },
+      "reason": "按审计提示收窄作用域；无嵌入证据，不能采用全局 text。",
+      "evidence_rows": [
+        7661
+      ],
+      "table": "non_translate",
+      "index": 147
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确控制串 \\x01Bq 位于人物名/领袖位置（7569、7570），嵌入句中，须原样保留。"
+        }
+      },
+      "reason": "补明确作用域；按精确控制串保护，不把裸字母扩为全局禁翻。",
+      "evidence_rows": [
+        7569,
+        7570
+      ],
+      "table": "non_translate",
+      "index": 148
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确控制串 \\x02\\x03 为随机短语起始标记，出现在 7234、7657 等句中分支前，须原样保留。"
+        }
+      },
+      "reason": "补明确作用域；该控制字节与结束标记配对，不能翻译或拆开。",
+      "evidence_rows": [
+        7234,
+        7657
+      ],
+      "table": "non_translate",
+      "index": 149
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确控制串 \\x02\\x02 为随机短语/嵌套分支标记（7253、7810），嵌入句中，须原样保留。"
+        }
+      },
+      "reason": "补明确作用域；按精确控制字节保护。",
+      "evidence_rows": [
+        7253,
+        7810
+      ],
+      "table": "non_translate",
+      "index": 150
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确控制串 \\x02\\x04 为随机短语起始标记（7702、8190、20210），嵌入句中，须原样保留。"
+        }
+      },
+      "reason": "补明确作用域；该标记与结束标记共同构成随机分支结构。",
+      "evidence_rows": [
+        7702,
+        8190
+      ],
+      "table": "non_translate",
+      "index": 151
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确控制串 \\x02\\x07 为随机短语起始标记（7610、19470），嵌入句中，须原样保留。"
+        }
+      },
+      "reason": "补明确作用域；按精确控制字节保护，避免普通字符误伤。",
+      "evidence_rows": [
+        7610,
+        19470
+      ],
+      "table": "non_translate",
+      "index": 152
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:130",
+      "evidence_rows": [
+        6722,
+        20029
+      ],
+      "source_excerpt": "feed \\x01@\\x13 of our people",
+      "reason": "运行时数值占位符，见 6722、20029；应原样保留并补 text 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "6722 中紧接 feed，20029 中位于价格后，均为精确控制串 \\x01@\\x13。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "控制串不翻译，保持原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属运行时数值占位符，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补 text 作用域，覆盖句中嵌入出现，且不扩展为普通字符禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:131",
+      "evidence_rows": [
+        6725,
+        19419,
+        28922
+      ],
+      "source_excerpt": "One of the prominent carls, \\x01@\\x15, comes to the ring.",
+      "reason": "运行时占位符，可替换数量或人物名；应原样保留并补 text 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "6725 用于人数占位，19419 作 follow through 的主语，28922 作人物名。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "运行时替换串不进入译文，按原文保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属运行时人物/数量占位符，non_translate 分类合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补精确 text 作用域，覆盖所有句中嵌入实例。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:132",
+      "evidence_rows": [
+        6858,
+        6986,
+        24611
+      ],
+      "source_excerpt": "Blacktail is worth \\x01@\\x18 cows over his lifetime.",
+      "reason": "运行时占位符，见牛数与氏族相关片段；应原样保留并补 text 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "6858/24611 位于牛数位置，6986 位于氏族相关片段，均含 \\x01@\\x18。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "控制串不翻译，保持原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "运行时占位符归入 non_translate，而非可译普通词。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补 text 作用域；只保护精确控制串，不保护裸字母或数字。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:133",
+      "evidence_rows": [
+        6859,
+        20069,
+        20664
+      ],
+      "source_excerpt": "Blacktail is worth \\x01@\\x19 cows over his lifetime.",
+      "reason": "运行时数量/群体占位符；应原样保留并补 text 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "6859/20664 为牲畜数量，20069 为男孩群体，均使用 \\x01@\\x19。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "该串仅作运行时替换，不翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属动态数量/群体占位符，non_translate 正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补精确 text 作用域，避免无范围全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:134",
+      "evidence_rows": [
+        7156,
+        20884,
+        24371
+      ],
+      "source_excerpt": "\\x01@\\x05 said the omens were favorable",
+      "reason": "运行时人物名/主语占位符；应原样保留并补 text 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7156/7157 作发言主语，20884/24371 作人物名或受事，均含 \\x01@\\x05。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "人物名占位符不翻译，由运行时填入。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属运行时人物占位符，non_translate 分类合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补 text 作用域；控制串精确匹配，不泛化到普通文本。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:135",
+      "evidence_rows": [
+        7195,
+        7235
+      ],
+      "source_excerpt": "The god-talkers said that \\x01@\\x07 had accepted our sacrifice.",
+      "reason": "运行时名称占位符；应原样保留并补 text 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7195 位于神祇/人物主语，7235 位于 carl 人名位置，均含 \\x01@\\x07。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "不需要翻译占位符本身。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属运行时名称占位符，non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补精确 text 作用域，保留嵌入使用。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:147",
+      "evidence_rows": [
+        7661
+      ],
+      "source_excerpt": "BigBigTrouble",
+      "reason": "仅见独立完整记录，无嵌入上下文；作为内部标识按 whole_record 保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7661 为独立完整记录 BigBigTrouble，无嵌入句例。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "按内部标识处理，不翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "仅能证明为完整不可译标识，归入 non_translate 可接受。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "按 finding f1 收窄为 whole_record，避免全局匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:148",
+      "evidence_rows": [
+        7569,
+        7570
+      ],
+      "source_excerpt": "The weaponthanes, led by \\x01Bq, complain",
+      "reason": "运行时人物名/领袖占位符；应原样保留并补 text 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7569/7570 均位于 led by 后，\\x01Bq 为人名/领袖占位串。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "控制串不翻译，由运行时填入名称。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属人物占位控制串，non_translate 正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补精确 text 作用域，不扩展为裸字母 B/q 禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:149",
+      "evidence_rows": [
+        7234,
+        7657
+      ],
+      "source_excerpt": "\\x02\\x03Genevra/Asandra/Chella\\x02",
+      "reason": "随机短语起始控制标记；应原样保留并补 text 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7234 包裹 Genevra/Asandra/Chella 分支，7657 包裹 Yet again/Somehow/Once more 分支。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "标记本身不翻译，仅保留随机分支结构。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属随机短语控制标记，non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补 text 作用域；保持与结束标记配对，不拆分分支。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:150",
+      "evidence_rows": [
+        7253,
+        7810
+      ],
+      "source_excerpt": "\\x02\\x02afterwards/next\\x02",
+      "reason": "随机短语/嵌套分支标记；应原样保留并补 text 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7253 包裹 afterwards/next 与 isn’t very useful 等分支，7810 包裹抱怨措辞分支。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "控制标记不翻译，保留随机结构。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属随机短语控制标记，non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补精确 text 作用域，避免误匹配普通正文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:151",
+      "evidence_rows": [
+        7702,
+        8190
+      ],
+      "source_excerpt": "Until we \\x02\\x04defeat these zombies for good",
+      "reason": "随机短语起始控制标记；应原样保留并补 text 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7702/8190 包裹动词短语随机分支，20210 包裹恶作剧选项分支。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "标记本身不翻译，只保留分支结构。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属随机短语控制标记，non_translate 正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补 text 作用域；与对应结束标记保持配对。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:152",
+      "evidence_rows": [
+        7610,
+        19470
+      ],
+      "source_excerpt": "\\x02\\x07Red-Eye/the Mighty/the Stubborn/the Keen/the Rowdy/the Noisy/Scorpion-Killer\\x02",
+      "reason": "随机短语起始控制标记；应原样保留并补 text 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7610 包裹随机称号，19470 包裹女性诉求随机分支，均含 \\x02\\x07。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "控制标记不翻译，保留随机分支结构。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属随机短语控制标记，non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补精确 text 作用域；不将控制字节与普通词合并。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:130",
+    "non_translate:131",
+    "non_translate:132",
+    "non_translate:133",
+    "non_translate:134",
+    "non_translate:135",
+    "non_translate:147",
+    "non_translate:148",
+    "non_translate:149",
+    "non_translate:150",
+    "non_translate:151",
+    "non_translate:152"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

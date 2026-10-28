@@ -1,0 +1,370 @@
+{
+  "review_complete": true,
+  "review_summary": "复核本批 12 条专名条目：确认 10 条译名与分类可用；修正 e2 的“Sofala the Turtle”为“海龟索法拉”，修正 e8 的“Oakneedle the Woodlord”为“林主橡针”。f1 涉及 e4/e5 同译“龟祖母”，经核对二者均为 Sofala/受 Orlanth 帮助的神话巨龟别称，属同一实体别名，不构成冲突。",
+  "acknowledged_findings": [
+    "F0417"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "海龟索法拉"
+      },
+      "reason": "Sofala the Turtle 指渡人过海的海龟索法拉；“乌龟”偏口语且易带贬义，改为“海龟索法拉”，保留核心名“索法拉”。",
+      "evidence_rows": [
+        25230
+      ],
+      "table": "characters",
+      "index": 266
+    },
+    {
+      "patch": {
+        "recommended_translation": "林主橡针"
+      },
+      "reason": "Woodlord 为林木领主称号；“木主”易与木制神主牌混淆，改为“林主橡针”。",
+      "evidence_rows": [
+        28386
+      ],
+      "table": "characters",
+      "index": 190
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:187",
+      "evidence_rows": [
+        28400,
+        34120,
+        34123
+      ],
+      "source_excerpt": "Sofala, the ancient Turtle Grandmother",
+      "reason": "Sofala 为古老海龟女性，译名索法拉；与 e2 的 Sofala the Turtle 及 e4/e5 的龟祖母别称同指。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28400、34120、34123 均称 Sofala 为 ancient Turtle Grandmother，且 34120 有 she 指代。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "索法拉为稳定音译，保留核心专名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 专名，性别女性与原文 she/her 相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e2 核心名索法拉一致，e4/e5 为同一实体别称，未发现冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:266",
+      "evidence_rows": [
+        25230
+      ],
+      "source_excerpt": "Sofala the Turtle",
+      "reason": "Sofala the Turtle 是海龟索法拉的称号；修正为海龟索法拉，避免“乌龟”的口语/贬义色彩。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25230 明确 Sofala the Turtle 因 Orlanth 曾救她而欠情，并渡其过海。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“乌龟索法拉”偏口语，改为“海龟索法拉”，核心名不变。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 专名，her 表明女性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1 的“索法拉”核心一致，与 e5 同指 Sofala，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:155",
+      "evidence_rows": [
+        2400,
+        2401
+      ],
+      "source_excerpt": "missionaries from the Grandmother Lands",
+      "reason": "Grandmother Lands 为地名，指否定 Orlanth 首席地位、强调 Ernalda 的地区；祖母之地保留祖母意象。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2400/2401 均以 the Grandmother Lands 指称一个地区及其传教士来源。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "祖母之地为可理解的地名译法，保留祖母意象。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms/地名，符合地区名分类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同源地名变体，未发现冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:509",
+      "evidence_rows": [
+        16934
+      ],
+      "source_excerpt": "Grandmother Turtle",
+      "reason": "Grandmother Turtle 是受 Orlanth 帮助的神话巨龟，与 Sofala 因被鸟啄伤而欠情对应，为同一实体别称；译龟祖母。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "16934 称 Orlanth 击退伤害 Grandmother Turtle 的鸟群。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "龟祖母保留 Grandmother Turtle 的称谓感。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms/其他，作为神话实体专名可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e5 Turtle Grandmother 同指 Sofala，共用“龟祖母”属别名一致；f1 已核。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1146",
+      "evidence_rows": [
+        34120,
+        34123
+      ],
+      "source_excerpt": "Sofala, the ancient Turtle Grandmother",
+      "reason": "Turtle Grandmother 是 Sofala 的古老海龟称谓；译龟祖母。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34120/34123 均称 Sofala 为 ancient Turtle Grandmother，并因欠情渡 Orlanth 过海。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "龟祖母准确传达 Turtle Grandmother 的称号含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms/身份，作为 Sofala 的别称/身份称谓合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e4 Grandmother Turtle 同指同一实体，共用译名不冲突；f1 已核。"
+        }
+      }
+    },
+    {
+      "ref": "characters:188",
+      "evidence_rows": [
+        28121
+      ],
+      "source_excerpt": "Nipper",
+      "reason": "Nipper 是灵语者螯虾伙伴的名字，音译尼珀；原文未明性别，记为其他。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28121 中说话者对 her crayfish 称 Nipper。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "尼珀为简短音译，适合动物伙伴名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 专名；crayfish 非人类，性别记其他合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他译名变体。"
+        }
+      }
+    },
+    {
+      "ref": "characters:189",
+      "evidence_rows": [
+        28236,
+        33878
+      ],
+      "source_excerpt": "Telmor, god of wolves",
+      "reason": "Telmor 为狼之神/狼人之神，男性，音译泰尔莫。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28236 称 Telmor, god of wolves；33878 称 Telmor the werewolf god。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "泰尔莫为稳定音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 专名，神祇且男性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两条原文指同一神祇，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "characters:190",
+      "evidence_rows": [
+        28386
+      ],
+      "source_excerpt": "Oakneedle the Woodlord",
+      "reason": "Oakneedle 为名字，Woodlord 为林木领主称号；修正为林主橡针，避免“木主”与木制神主牌混淆。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28386 称 Kallyr 与 Oakneedle the Woodlord 交友并救下 Green Vale 孩子。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“木主橡针”中“木主”歧义明显，改为“林主橡针”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 专名，Woodlord 为男性称号。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "无其他变体，核心名“橡针”保留。"
+        }
+      }
+    },
+    {
+      "ref": "characters:191",
+      "evidence_rows": [
+        28374
+      ],
+      "source_excerpt": "fought the Bone Bear",
+      "reason": "Bone Bear 是 Kallyr 在彼岸战斗的生物名，译骨熊。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28374 明确 Kallyr fought the Bone Bear。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "骨熊直译简洁，保留专名特征。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 专名；生物实体性别未明，记其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他译名变体。"
+        }
+      }
+    },
+    {
+      "ref": "characters:193",
+      "evidence_rows": [
+        28374
+      ],
+      "source_excerpt": "freed the Moth Princess",
+      "reason": "Moth Princess 是被 Kallyr 解救的女性专名，译蛾公主。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28374 明确 Kallyr freed the Moth Princess。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "蛾公主保留 Moth 与 Princess 的称谓含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 专名，性别女性与 Princess 相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他译名变体。"
+        }
+      }
+    },
+    {
+      "ref": "characters:194",
+      "evidence_rows": [
+        28373
+      ],
+      "source_excerpt": "She befriended Calla",
+      "reason": "Calla 是 Kallyr 在彼岸结识的对象，原文未明性别；音译卡拉。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28373 称 Kallyr befriended Calla 并找到 Red City。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "卡拉为常用音译，适合作为人名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 专名；原文无性别依据，记其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他译名变体。"
+        }
+      }
+    },
+    {
+      "ref": "characters:196",
+      "evidence_rows": [
+        28745,
+        28765
+      ],
+      "source_excerpt": "Her name is Jenela",
+      "reason": "Jenela 是西娅之女，女性，译珍妮拉。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28745 明确孩子名为 Jenela；28765 继续称 Jenela。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "珍妮拉为自然音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 专名，女性与 her/女儿语境相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两处原文同一人物，译名统一。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:187",
+    "characters:266",
+    "terms:155",
+    "terms:509",
+    "terms:1146",
+    "characters:188",
+    "characters:189",
+    "characters:190",
+    "characters:191",
+    "characters:193",
+    "characters:194",
+    "characters:196"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

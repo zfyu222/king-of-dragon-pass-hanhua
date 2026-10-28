@@ -1,0 +1,125 @@
+{
+  "review_complete": true,
+  "review_summary": "已审 e1-e3：Mount Wintertop 译名与缩写形式一致；Earth season、Sea season 统一为土季、海季，并将季节名分类由 proper_name 修正为 game_term。已核对 f1，共享译名对应同一山的全称与缩写，未发现冲突。",
+  "acknowledged_findings": [
+    "F0360"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_kind": "game_term"
+      },
+      "reason": "Earth season 是格洛兰萨历法中的季节机制名，不是人物或地名专名；保持 required。",
+      "evidence_rows": [
+        118,
+        33283
+      ],
+      "table": "terms",
+      "index": 14
+    },
+    {
+      "patch": {
+        "term_kind": "game_term"
+      },
+      "reason": "Sea season 是格洛兰萨历法中的季节机制名，不是人物或地名专名；保持 required。",
+      "evidence_rows": [
+        121,
+        33283
+      ],
+      "table": "terms",
+      "index": 15
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:12",
+      "evidence_rows": [
+        262
+      ],
+      "source_excerpt": "lost a toe to frostbite while climbing Mount Wintertop",
+      "reason": "Mount Wintertop 是山名专名，译名与缩写形式一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第262条将 Mount Wintertop 作为攀爬时冻伤失趾的地点。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "冬顶山由 Mount（山）与 Wintertop（冬顶）构成，符合地名译法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=地名，term_kind=proper_name；原文明确为山名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同形山名缩写译名冬顶山一致，属同一地名缩写，未发现冲突，回应 f1。"
+        }
+      }
+    },
+    {
+      "ref": "terms:14",
+      "evidence_rows": [
+        118,
+        33283
+      ],
+      "source_excerpt": "if there was any raiding to be done during Earth season",
+      "reason": "Earth season 是历法季节名，统一译土季；分类修正为 game_term。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第118条与第33283条均出现 Earth season，分别用于劫掠与收获语境。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "土季作为季节短名，与原文 Earth season 的历法义一致，符合 UI 短词风格。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "category_path=其他正确；term_kind 原为 proper_name，实为历法机制名，改为 game_term 并保持 required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "全部候选均指向同一季节；土季与海季等季节短名体系一致，无多义冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:15",
+      "evidence_rows": [
+        121,
+        33283
+      ],
+      "source_excerpt": "if there was any raiding to be done during Sea season",
+      "reason": "Sea season 是历法季节名，统一译海季；分类修正为 game_term。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第121条与第33283条均出现 Sea season，分别用于劫掠与播种语境。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "海季准确表达 Sea season，并与季节短名风格一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "category_path=其他正确；term_kind 原为 proper_name，实为历法机制名，改为 game_term 并保持 required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选一致为海季；与土季等季节名构成同一历法体系，无冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:12",
+    "terms:14",
+    "terms:15"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

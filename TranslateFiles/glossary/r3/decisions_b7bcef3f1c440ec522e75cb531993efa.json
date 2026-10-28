@@ -1,0 +1,433 @@
+{
+  "review_complete": true,
+  "review_summary": "已审 e1-e12：源形、译名、分类与同批一致性均已核对；修正 e3/e5/e6/e8/e10/e11/e12 的 term_reason、e6 applicability 与 e12 source，未发现需隔离条目。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "原文称其有四狼兄弟，宣称将接受泰尔莫里试炼并成为酋长。"
+      },
+      "reason": "原 term_reason 称‘仪式造出的新泰尔莫里酋长’超出 22577 原文；改为原文可证的试炼与酋长表述。",
+      "evidence_rows": [
+        22577
+      ],
+      "table": "characters",
+      "index": 159
+    },
+    {
+      "patch": {
+        "term_reason": "氏族战士 Odgarl 在帐篷中过夜后变得像泰尔莫里，并被介绍为 Ostling Four-Wolf。"
+      },
+      "reason": "原文只述 Odgarl 过夜后变得像泰尔莫里并被介绍为 Ostling Four-Wolf，未明说‘施法改造’，修正 term_reason。",
+      "evidence_rows": [
+        22586,
+        22600
+      ],
+      "table": "characters",
+      "index": 161
+    },
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "text",
+          "reason": "原文两处均作 Brass Man（首字母大写），指特定黄铜人。"
+        },
+        "term_reason": "原文称需赢得 Brass Man 的青睐，并担心其袭击；指一个特定的黄铜人。"
+      },
+      "reason": "22628/22712 均作 Brass Man（首字母大写），无小写变体证据；且原 term_reason 的‘奎维尼山道’不在本批原文。改为大小写敏感并仅保留可证内容。",
+      "evidence_rows": [
+        22628,
+        22712
+      ],
+      "table": "characters",
+      "index": 162
+    },
+    {
+      "patch": {
+        "term_reason": "原文称有矮人自称 Brass Mostali，是一支莫斯塔利矮人群体。"
+      },
+      "reason": "原文仅称有矮人自称 Brass Mostali；删除未证实的‘黄铜人身份线索’推断。",
+      "evidence_rows": [
+        22714
+      ],
+      "table": "terms",
+      "index": 600
+    },
+    {
+      "patch": {
+        "term_reason": "原文称其为被派往 \\x01@O 的 weaponthane，报告龙人神庙与银龙像。"
+      },
+      "reason": "原 term_reason 的‘战斗如受附身之女’不在本批 evidence_rows；改为仅述 23656/23657 可见的报告内容。",
+      "evidence_rows": [
+        23656,
+        23657
+      ],
+      "table": "characters",
+      "index": 165
+    },
+    {
+      "patch": {
+        "term_reason": "原文称其为氏族商人，报告 Prax 探险中遇到的骑鸟游牧者。"
+      },
+      "reason": "原文未明示性别而 row 的 gender 为其他；term_reason 改用‘其’避免‘他’。",
+      "evidence_rows": [
+        23714
+      ],
+      "table": "characters",
+      "index": 166
+    },
+    {
+      "patch": {
+        "source": "Helganna the Knowing",
+        "term_reason": "原文称 Helganna the Knowing 是氏族中 Lhankor Mhy 的信徒，讲述 Kero Fin 山的风灵并建议献祭。"
+      },
+      "reason": "23773/23774 均作 Helganna the Knowing，source 应补全全称；term_reason 去除未在本批明示的性别代词并保留可证身份。",
+      "evidence_rows": [
+        23773,
+        23774
+      ],
+      "table": "characters",
+      "index": 167
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:155",
+      "evidence_rows": [
+        21873
+      ],
+      "source_excerpt": "The marriage of Leibarth and Olfreda brought only misfortune",
+      "reason": "原文仅以婚姻典故出现 Leibarth，未说明性别；译名音译可，分类为人物专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "21873 原文含 'Leibarth'，源形完整。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "莱巴尔斯为 Leibarth 的音译，未发现同批竞争译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、proper_name、required，符合婚姻典故中的人名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无 Leibarth 变体或冲突译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:158",
+      "evidence_rows": [
+        22572
+      ],
+      "source_excerpt": "Kostajor Many-Whelps",
+      "reason": "原文仅为独立姓名，无更多身份；按专名保留，译名可。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "22572 原文仅作 'Kostajor Many-Whelps'，源形完整。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "科斯塔约尔众崽对应 Kostajor Many-Whelps；Many-Whelps 作称号直译，暂无冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters/proper_name/required，符合独立人物名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形变体或竞争译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:159",
+      "evidence_rows": [
+        22577
+      ],
+      "source_excerpt": "Ostling said he would undergo the tests of the Telmori and become their chieftain",
+      "reason": "原文称其有四狼兄弟，将接受泰尔莫里试炼并成为酋长；已修正原 term_reason 的过度表述。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "22577 原文含 'Ostling Four-Wolf'，源形完整。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "奥斯特林四狼对应 Ostling Four-Wolf，与 e4 的 Ostling/奥斯特林一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "characters/proper_name/required 不变；term_reason 已改为 22577 可证的试炼与酋长表述。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e4 短称、e5 变形后同名共享奥斯特林四狼译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:160",
+      "evidence_rows": [
+        22577
+      ],
+      "source_excerpt": "Ostling said he would undergo the tests",
+      "reason": "Ostling 为 Ostling Four-Wolf 的短称，译名与 e3 一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "22577 在全名后径称 'Ostling said'，源形完整。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "奥斯特林为 Ostling 音译，与 e3 前缀一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters/proper_name/required，符合人物短称。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e3 奥斯特林四狼共享核心译名奥斯特林。"
+        }
+      }
+    },
+    {
+      "ref": "characters:161",
+      "evidence_rows": [
+        22586,
+        22600
+      ],
+      "source_excerpt": "Odgarl now looked like a young Telmori",
+      "reason": "Odgarl 为氏族战士，过夜后变得像泰尔莫里并被介绍为 Ostling Four-Wolf；已修正 term_reason。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "22586 原文含 'Odgarl'，22600 再述其变化，源形完整。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "奥德加尔为 Odgarl 音译，未与 Ostling 混淆。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "characters/proper_name/required 不变；term_reason 已改为原文可见的过夜后变形及被介绍为 Ostling Four-Wolf。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Odgarl 与 Ostling Four-Wolf 为两个专名；后者译名与 e3/e4 一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:162",
+      "evidence_rows": [
+        22628,
+        22712
+      ],
+      "source_excerpt": "you must win the favor of the Brass Man",
+      "reason": "Brass Man 为特定黄铜人；原 applicability 的小写变体说法无据，已改为大小写敏感并修正 term_reason。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "22628/22712 均作 'Brass Man'，源形完整。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "黄铜人对应 Brass Man，保留专名意译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "characters/proper_name/required 正确；applicability 改为 case_sensitive=true 的 text，term_reason 仅保留原文可见的青睐与袭击。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e8 黄铜莫斯塔利共享黄铜修饰，但二者非同一词。"
+        }
+      }
+    },
+    {
+      "ref": "terms:461",
+      "evidence_rows": [
+        12867,
+        33995
+      ],
+      "source_excerpt": "Mostali, or dwarfs",
+      "reason": "Mostali 为矮人族名；译为莫斯塔利，与 Brass Mostali 核心一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "12867 明确 'Mostali, or dwarfs'，33995 又称 stone people，源形完整。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "莫斯塔利为 Mostali 音译，与 e8 前缀一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms/种族/proper_name/required，符合族名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e8 黄铜莫斯塔利共享莫斯塔利译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:600",
+      "evidence_rows": [
+        22714
+      ],
+      "source_excerpt": "dwarfs who call themselves Brass Mostali",
+      "reason": "Brass Mostali 是自称此名的矮人群体；保留组织分类，已修正 term_reason。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "22714 原文含 'Brass Mostali'，源形完整。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "黄铜莫斯塔利对应 Brass Mostali，与 Mostali 译名一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "terms/组织/proper_name/required 可保留；term_reason 已改为仅述自称该名的矮人群体。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e7 莫斯塔利、e6 黄铜人共享词根，未混同。"
+        }
+      }
+    },
+    {
+      "ref": "characters:164",
+      "evidence_rows": [
+        23587,
+        23588
+      ],
+      "source_excerpt": "Mosgrain, one of the weaponthanes you sent on the exploration party",
+      "reason": "Mosgrain 为被派去探险的 weaponthane，被混沌术士斩手；译名音译可。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "23587 含 'Mosgrain'，23588 再述其手被夺，源形完整。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "莫斯格雷恩为 Mosgrain 音译，无同批冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters/proper_name/required，符合人物。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无 Mosgrain 变体或竞争译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:165",
+      "evidence_rows": [
+        23656,
+        23657
+      ],
+      "source_excerpt": "Alirene, one of the weaponthanes you sent on that mission",
+      "reason": "Alirene 为报告龙人神庙与银龙像的 weaponthane；已删除本批未见的 term_reason 内容。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "23656/23657 均含 'Alirene'，源形完整。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "阿莉蕾妮为 Alirene 音译，无同批冲突。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "characters/proper_name/required 不变；term_reason 已删除本批未见‘战斗如受附身之女’的表述。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无 Alirene 变体或竞争译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:166",
+      "evidence_rows": [
+        23714
+      ],
+      "source_excerpt": "Lesarli, a trader of your clan",
+      "reason": "Lesarli 为氏族商人，报告 Prax 探险；term_reason 改用无性别指代。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "23714 原文含 'Lesarli'，源形完整。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "莱萨利为 Lesarli 音译，无同批冲突。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "characters/proper_name/required 不变；term_reason 改用‘其’以匹配 gender=其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无 Lesarli 变体或竞争译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:167",
+      "evidence_rows": [
+        23773,
+        23774
+      ],
+      "source_excerpt": "Helganna the Knowing, a Lhankor Mhy devotee of your clan",
+      "reason": "原文全称为 Helganna the Knowing；已补全 source 并修正 term_reason。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "23773/23774 均作 'Helganna the Knowing'，原 source 仅 Helganna 不完整，已补全。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "博识者赫尔甘娜对应 Helganna the Knowing，the Knowing 意译作博识者。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "characters/proper_name/required 不变；term_reason 已改为仅依据本批原文并可避免未明示性别代词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无 Helganna 变体或竞争译名。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:155",
+    "characters:158",
+    "characters:159",
+    "characters:160",
+    "characters:161",
+    "characters:162",
+    "terms:461",
+    "terms:600",
+    "characters:164",
+    "characters:165",
+    "characters:166",
+    "characters:167"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

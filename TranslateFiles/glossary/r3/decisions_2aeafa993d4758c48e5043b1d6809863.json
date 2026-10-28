@@ -1,0 +1,369 @@
+{
+  "review_complete": true,
+  "review_summary": "完成12个条目的来源、译名、分类与一致性复核；确认整体译名与词族关系一致，修正 e1、e2 的 term_reason 以严格贴合原文，未发现需隔离或新增的条目。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "鱼王；原文称他试图淹没奥兰斯一行，但欧尔玛说服海老人相信他们是亲属。"
+      },
+      "reason": "原文以“they”指称奥兰斯一行，本条证据未直接出现“光使者”；按证据修正说明。",
+      "evidence_rows": [
+        34121,
+        34122
+      ],
+      "table": "characters",
+      "index": 279
+    },
+    {
+      "patch": {
+        "term_reason": "西方之门女神、卢阿瑟拉女王，耶尔姆之女；因奥兰斯杀其父而恨他，却放他穿门入冥界，认为他会死。"
+      },
+      "reason": "原文34127称其为西方之门女神、Yelm之女，34135又称其为Luathela女王；原说明“公主”不准确。",
+      "evidence_rows": [
+        34127,
+        34135
+      ],
+      "table": "characters",
+      "index": 280
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:279",
+      "evidence_rows": [
+        34121,
+        34122
+      ],
+      "source_excerpt": "Golod, the King of Fishes, tried to swamp them",
+      "reason": "原文可确认 Golod 为鱼王；已将 term_reason 中未见于本条证据的“光使者”改为“奥兰斯一行”，译名保留。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "34121/34122只称Golod为鱼王并说其试图淹没一行人，未直接出现“光使者”；已修正term_reason。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“戈洛德”为Golod的音译，未与同批其他专名冲突，可保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "角色专名、男性（King of Fishes），term_kind=proper_name、enforcement=required合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同批无其他Golod译名；鱼王身份说明与原文一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:280",
+      "evidence_rows": [
+        34127,
+        34128,
+        34135
+      ],
+      "source_excerpt": "This was Rausa, goddess of the Western Gates.",
+      "reason": "原文确认Rausa为西方之门女神、Yelm之女，34135又称其为Luathela女王；原term_reason的“公主”改为“卢阿瑟拉女王”。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "34127称其为goddess of the Western Gates、Yelm之女；34135称Their queen, Rausa，原“公主”不准确，已修正term_reason。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“劳萨”为Rausa音译，本批无冲突，可保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "女性角色专名，term_kind=proper_name、enforcement=required合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批Rausa译名一致，无需因“女王/女神”身份另译。"
+        }
+      }
+    },
+    {
+      "ref": "characters:281",
+      "evidence_rows": [
+        34131
+      ],
+      "source_excerpt": "ordered the gate keepers, Vamth and Rhylor, to wrench the great doors open",
+      "reason": "原文确认Vamth为西方之门守门者之一；译名音译可保留，性别原文未明，标“其他”不冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34131将Vamth与Rhylor并列为gate keepers，受命开闭大门。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“瓦姆思”为Vamth音译，与同批Rhylor区分清楚。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "角色专名；原文未明性别，gender=其他，term_kind=proper_name合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同批无其他Vamth译名；与Rhylor同场景并列但译名不同。"
+        }
+      }
+    },
+    {
+      "ref": "characters:282",
+      "evidence_rows": [
+        34131
+      ],
+      "source_excerpt": "Vamth and Rhylor",
+      "reason": "原文确认Rhylor为西方之门守门者之一；译名音译可保留，性别原文未明，标“其他”不冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34131将Rhylor与Vamth并列为gate keepers，共同执行开门与锁门。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“瑞洛尔”为Rhylor音译，与同场景Vamth区分清楚。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "角色专名；原文未明性别，gender=其他，term_kind=proper_name合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同批无其他Rhylor译名；与Vamth同场景并列但译名不同。"
+        }
+      }
+    },
+    {
+      "ref": "characters:283",
+      "evidence_rows": [
+        34136,
+        34148
+      ],
+      "source_excerpt": "Canis Chaos attacked them",
+      "reason": "原文确认Canis Chaos为在旅程中反复袭击的混沌犬；现有译名保留其称号/名号，无同批冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34136/34148称Canis Chaos攻击诸神，且容易击退但会反复来袭。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“混沌犬卡尼斯”保留Chaos意译与Canis音译，作为特定怪物名可理解；未发现必须统一的其他译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "角色/怪物专名，gender=其他；term_kind=proper_name、enforcement=required合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同批无Canis Chaos其他译名；term_reason的“混沌犬”与译名核心一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:284",
+      "evidence_rows": [
+        34137
+      ],
+      "source_excerpt": "They were named Kaldar and Sinjota.",
+      "reason": "原文确认Kaldar为Kaldar's Gate守卫，被Orlanth挑战击败；译名与e7核心一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34137称两名守卫为Kaldar与Sinjota，Orlanth挑战Kaldar并获胜。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“卡尔达”为Kaldar音译，与e7“卡尔达之门”核心一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "角色专名；男性可由战斗/守卫语境及与Sinjota对照理解，proper_name合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "e6/e7共享Kaldar核心译名“卡尔达”，一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1158",
+      "evidence_rows": [
+        34137
+      ],
+      "source_excerpt": "After some time they reached Kaldar's Gate.",
+      "reason": "原文确认Kaldar's Gate为冥界旅程中的门户地名；译名与e6守卫名一致，category_path=地名合法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34137明确写到reached Kaldar's Gate，且由Kaldar与Sinjota守护。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“卡尔达之门”直译Kaldar's Gate，并与e6的“卡尔达”一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=地名符合门户/地点性质，term_kind=proper_name、required合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e6的Kaldar译名“卡尔达”保持词族核心一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:285",
+      "evidence_rows": [
+        34137
+      ],
+      "source_excerpt": "Eurmal seduced Sinjota to divert her",
+      "reason": "原文确认Sinjota为Kaldar's Gate女守护者，被Eurmal引诱分散；译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34137称Sinjota与Kaldar同守门，Eurmal seduced Sinjota to divert her。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“辛乔塔”为Sinjota音译，与同场景Kaldar译名不冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "女性角色专名，term_kind=proper_name、required合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同批无其他Sinjota译名；与e7门名不共享译名，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:286",
+      "evidence_rows": [
+        34139
+      ],
+      "source_excerpt": "Issaries negotiated with Jeset the Ferryman",
+      "reason": "原文确认Jeset the Ferryman为剑之河摆渡人；译名保留身份限定，语义准确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34139写到River of Swords处Issaries与Jeset the Ferryman议价渡活人过河。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“摆渡人杰塞特”对应Jeset the Ferryman，身份与名字均保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "男性角色专名；Ferryman指身份，proper_name、required合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同批无其他Jeset译名；摆渡人身份说明与原文一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:287",
+      "evidence_rows": [
+        34154,
+        34163
+      ],
+      "source_excerpt": "The porter was King Gryphon",
+      "reason": "原文确认King Gryphon为亡者之厅守门者/搬运者，原文又见其金色称呼；译名“狮鹫王”与e11的“金狮鹫”共享核心“狮鹫”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34154称The porter was King Gryphon，并说他仍拖着破碎翅膀；34163写Gryphon stepped aside。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“狮鹫王”对应King Gryphon，保留王号与Gryphon意译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "男性角色专名，proper_name、required合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e11 Gold-Gryphon“金狮鹫”共享“狮鹫”核心；两个原文称谓不同，分开翻译合理。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1176",
+      "evidence_rows": [
+        34159
+      ],
+      "source_excerpt": "Step aside, Gold-Gryphon, or announce my presence.",
+      "reason": "原文中Gold-Gryphon是Orlanth对King Gryphon的当面称呼/别号，指同一人物；译名“金狮鹫”与e10核心一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34159是Orlanth对守门者狮鹫王的直接称呼Gold-Gryphon，指同一人物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“金狮鹫”对应Gold-Gryphon，作为别号简洁，与e10“狮鹫王”共享核心。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms表category_path=身份用于别号/称号可接受；proper_name、required合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e10的Gryphon核心译名“狮鹫”一致，未把同一人物误拆成不同专名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:288",
+      "evidence_rows": [
+        34164
+      ],
+      "source_excerpt": "Donandar sat with his broken harp.",
+      "reason": "原文确认Donandar为亡者之厅中抱破损竖琴的神；男性由his可证，译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34164称Donandar sat with his broken harp，位于亡者之厅场景中。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“多南达尔”为Donandar音译，与同批神名不冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "男性角色专名，term_kind=proper_name、required合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同批无其他Donandar译名；无词族冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:279",
+    "characters:280",
+    "characters:281",
+    "characters:282",
+    "characters:283",
+    "characters:284",
+    "terms:1158",
+    "characters:285",
+    "characters:286",
+    "characters:287",
+    "terms:1176",
+    "characters:288"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

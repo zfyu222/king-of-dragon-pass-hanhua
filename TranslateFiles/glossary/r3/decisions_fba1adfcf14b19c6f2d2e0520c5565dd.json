@@ -1,0 +1,447 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e12：区分 the Dawn 与 Dawn Age（f1），统一 Seeing Winds/Seeing Wind 为“观风之灵”，纠正 e5 的技能归类，并按原文对象调整 Hall of Understanding、bloodlines 的分类；其余译名与分类保留。",
+  "acknowledged_findings": [
+    "F0361"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "原文称这些名为 Rubble Runners 的生物繁殖极快且十分危险。"
+      },
+      "reason": "删除本批原文未支持的“装甲啮齿类”细节，保留可证实的生物名与危险繁殖特征。",
+      "evidence_rows": [
+        23982,
+        23984
+      ],
+      "table": "terms",
+      "index": 615
+    },
+    {
+      "patch": {
+        "recommended_translation": "黎明",
+        "term_kind": "proper_name",
+        "term_reason": "原文第34032条称历史开端的时期为 the Dawn；指格洛兰萨历史纪元，不是普通黎明。"
+      },
+      "reason": "f1：the Dawn 与 Dawn Age 共用“黎明时代”会造成混同；改为“黎明”，并按历史纪元专名处理。",
+      "evidence_rows": [
+        34032,
+        23896
+      ],
+      "table": "terms",
+      "index": 616
+    },
+    {
+      "patch": {
+        "term_reason": "原文第34032条称历史开端的那段时期为 the Dawn；是格洛兰萨历史纪元的名称。"
+      },
+      "reason": "删除本批证据未出现的 Arachne Solara 细节，使 term_reason 与本条原文一致。",
+      "evidence_rows": [
+        34032
+      ],
+      "table": "terms",
+      "index": 853
+    },
+    {
+      "patch": {
+        "recommended_translation": "观风之灵"
+      },
+      "reason": "“观视之风”生硬且与 e5 的 Seeing Wind 译名分裂；统一为“观风之灵”。",
+      "evidence_rows": [
+        23773
+      ],
+      "table": "terms",
+      "index": 618
+    },
+    {
+      "patch": {
+        "recommended_translation": "观风之灵",
+        "category_path": "其他",
+        "term_kind": "proper_name",
+        "term_reason": "原文第30533条称向其献祭以获助议价；按献祭对象判断为风灵名，不归技能。"
+      },
+      "reason": "原文是 sacrifice to the Seeing Wind，指献祭对象/风灵而非技能；同时与 e4 统一。",
+      "evidence_rows": [
+        30533
+      ],
+      "table": "terms",
+      "index": 733
+    },
+    {
+      "patch": {
+        "category_path": "其他",
+        "term_reason": "原文第34339条称此厅供人通过交谈解决分歧，是赠予对方的具名厅堂/场所。"
+      },
+      "reason": "Hall 是具名厅堂/场所，不是可携带物品；改归其他并收紧 term_reason。",
+      "evidence_rows": [
+        34339
+      ],
+      "table": "terms",
+      "index": 881
+    },
+    {
+      "patch": {
+        "term_reason": "原文指游戏神话世界 Glorantha；第34303条称由五元素构成，第33876条亦作世界女神之名，译文统一为格洛兰萨。"
+      },
+      "reason": "原 term_reason 只提“遭受诅咒的族群”，未覆盖世界/女神同形关系；按证据补足义域。",
+      "evidence_rows": [
+        34303,
+        33876
+      ],
+      "table": "terms",
+      "index": 623
+    },
+    {
+      "patch": {
+        "recommended_translation": "家族支系",
+        "category_path": "其他",
+        "term_reason": "原文指氏族内家族支系，涉及议事环代表权与分家，不是抽象血统。"
+      },
+      "reason": "bloodlines 在此指可派代表的家族分支；由抽象“血统”改为“家族支系”，分类改为其他。",
+      "evidence_rows": [
+        24824,
+        24843
+      ],
+      "table": "terms",
+      "index": 625
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:615",
+      "evidence_rows": [
+        23982,
+        23984
+      ],
+      "source_excerpt": "These things are called Rubble Runners.",
+      "reason": "译名与种族归类可用；仅收紧 term_reason，去除本批原文未出现的装甲/啮齿描述。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第23982条明确称这些生物为 Rubble Runners，专名来源清楚。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "瓦砾奔兽保留 Rubble 与 Runner 的意象，作为生物名自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文称其会繁殖且危险，属于生物/种族，归入种族合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已修正 term_reason，去掉本批原文未支持的“装甲啮齿类”描述；译名不变。"
+        }
+      }
+    },
+    {
+      "ref": "terms:616",
+      "evidence_rows": [
+        34032,
+        23896
+      ],
+      "source_excerpt": "The period at the start of history was called the Dawn.",
+      "reason": "f1：区分 the Dawn 与 Dawn Age；并规范为历史纪元专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第34032条把历史开端时期称为 the Dawn，来源明确。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "改为“黎明”，避免与 Dawn Age 的“黎明时代”共用译名，解决 f1。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "category_path 仍为其他；term_kind 由 game_term 改为 proper_name，按历史纪元专名处理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "the Dawn 与 Dawn Age 区分：前者黎明，后者黎明时代。"
+        }
+      }
+    },
+    {
+      "ref": "terms:853",
+      "evidence_rows": [
+        34032
+      ],
+      "source_excerpt": "The period at the start of history was called the Dawn.",
+      "reason": "译名可用；修正 term_reason 中本批证据未出现的 Arachne Solara 细节。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第34032条称历史开端时期为 the Dawn，专名成立。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“黎明”保留纪元名，且与 Dawn Age“黎明时代”区分。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "历史纪元无专类，归入其他可接受。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已修正 term_reason；译名与 the Dawn 同源统一为黎明，Dawn Age 另作黎明时代。"
+        }
+      }
+    },
+    {
+      "ref": "terms:618",
+      "evidence_rows": [
+        23773
+      ],
+      "source_excerpt": "Some of them are called the Listening Winds; others are called the Seeing Winds.",
+      "reason": "“观视之风”生硬且与 Seeing Wind 分裂；统一为“观风之灵”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第23773条明确 Some ... called the Seeing Winds，是风灵群体名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "改为“观风之灵”，保留 Seeing 的观/看核心并明确风灵身份。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为 Kero Fin 风灵名归入其他。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e5 的 Seeing Wind 统一为“观风之灵”，单复数同形。"
+        }
+      }
+    },
+    {
+      "ref": "terms:733",
+      "evidence_rows": [
+        30533
+      ],
+      "source_excerpt": "if we sacrifice to the Seeing Wind.",
+      "reason": "原文是献祭对象而非技能；与 e4 统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第30533条说 sacrifice to the Seeing Wind，表明是献祭对象/风灵，不是技能。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "改为“观风之灵”，与 e4 的 Seeing Winds 一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "由技能改为其他，term_kind 改为 proper_name，按风灵名归类。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e4 同核；单数 the Seeing Wind 与复数 the Seeing Winds 均作观风之灵。"
+        }
+      }
+    },
+    {
+      "ref": "terms:619",
+      "evidence_rows": [
+        23786
+      ],
+      "source_excerpt": "A spirit which called itself an Understanding Wind",
+      "reason": "无需改动；名称与用途在原文中清楚。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第23786条称一个灵自称 an Understanding Wind。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "理解之风自然，保留理解核心。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "风灵名归入其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e7 的 Hall of Understanding 共用理解核心，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:881",
+      "evidence_rows": [
+        34339
+      ],
+      "source_excerpt": "She brought the Hall of Understanding, where people would settle their differences by talking them out.",
+      "reason": "Hall 是厅堂/场所，改为其他并收紧 term_reason。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第34339条明确 the Hall of Understanding 及其用途。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "理解之厅保留 Hall 与 Understanding 的意涵。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文是供人交谈解决分歧的具名厅堂/场所，不是可携带物品，改归其他并修正 term_reason。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e6 的理解核心一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:621",
+      "evidence_rows": [
+        24016,
+        24033
+      ],
+      "source_excerpt": "her prize stallion, Tempest, has been stolen.",
+      "reason": "马名与限定语境均可接受，无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第24016条称 Glendara 的 prize stallion, Tempest，是马名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "暴风作为马名自然；applicability 限定同形普通词的风险。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "动物名归入其他合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各证据中的 Tempest 均指同一匹马；literal_context 保留，不扩为全局替换。"
+        }
+      }
+    },
+    {
+      "ref": "terms:623",
+      "evidence_rows": [
+        34303,
+        33876
+      ],
+      "source_excerpt": "Glorantha is made of five Elements.",
+      "reason": "术语兼指世界与世界女神；统一译名并补足 term_reason。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第34303条称 Glorantha 由五元素构成，是世界名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "格洛兰萨符合背景既定译名，全批一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "以世界名为主，归入地名；第33876条的世界女神同形同译，不另拆条目。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已修正 term_reason 说明世界/女神同形关系；译名统一为格洛兰萨。"
+        }
+      }
+    },
+    {
+      "ref": "terms:624",
+      "evidence_rows": [
+        24894
+      ],
+      "source_excerpt": "an informal Outer Ring made up of twenty or so wise folk.",
+      "reason": "术语和分类均贴合原文。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第24894条定义 informal Outer Ring 为二十来名智者组成的机构。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "外环作为该非正式议事机构的简称可接受。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "是氏族内部非正式议事机构，归组织合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Outer Ring 与 formal ring 对举，译名稳定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:625",
+      "evidence_rows": [
+        24824,
+        24843
+      ],
+      "source_excerpt": "many bloodlines are unrepresented on the clan ring.",
+      "reason": "bloodlines 在此指可派代表的家族分支；由抽象血统改为家族支系并调整分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第24824条称 many bloodlines 在 clan ring 无代表，确指氏族内家族支系。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "血统偏抽象，改为家族支系，更贴合代表权语境。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "是血缘家族分支而非正式组织，改归其他。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 term_reason 的氏族血缘分支一致；reference 保留暂定性质。"
+        }
+      }
+    },
+    {
+      "ref": "terms:629",
+      "evidence_rows": [
+        25972
+      ],
+      "source_excerpt": "the King Who Made The Laws",
+      "reason": "称号译名与身份分类均可接受。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第25972条以 the King Who Made The Laws 指 Heort，Heort’s laws 可证。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "制定律法之王准确表达称号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "是 Heort 的称号，归入身份合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Heort’s laws/lawspeakers 语境一致，无同形冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:615",
+    "terms:616",
+    "terms:853",
+    "terms:618",
+    "terms:733",
+    "terms:619",
+    "terms:881",
+    "terms:621",
+    "terms:623",
+    "terms:624",
+    "terms:625",
+    "terms:629"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

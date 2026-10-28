@@ -1,0 +1,4 @@
+usage: cli.py [-h]
+              {inventory,local-vlm,local-pipeline,scan,review,queue,screen-report,triage,import-findings,export,benchmark}
+              ...
+cli.py: error: argument command: invalid choice: 'qwen' (choose from inventory, local-vlm, local-pipeline, scan, review, queue, screen-report, triage, import-findings, export, benchmark)

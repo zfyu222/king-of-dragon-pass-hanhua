@@ -1,0 +1,340 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 e1-e12 的来源、译名、分类和同批一致性核对；未发现需修改、隔离或新增的条目。",
+  "acknowledged_findings": [],
+  "edits": [],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:231",
+      "evidence_rows": [
+        34093
+      ],
+      "source_excerpt": "his mother was Harana Ilor, Goddess of Harmony",
+      "reason": "原文明确其为 Issaries 之母、和谐女神；译名与女性神祇身份一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34093 原文：'his mother was Harana Ilor, Goddess of Harmony'，身份与条目一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'Harana Ilor' 译为'哈拉纳伊洛尔'，音节完整且与候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表，gender=女性，term_kind=proper_name，符合原文女性神祇。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同名变体；保留'哈拉纳伊洛尔'作为统一译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:232",
+      "evidence_rows": [
+        34090
+      ],
+      "source_excerpt": "One time Jagrekriand ambushed him",
+      "reason": "原文表明其为伏击 Orlanth 的敌对专名；采用音节较完整的译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34090 原文：'One time Jagrekriand ambushed him' 表明其为伏击 Orlanth 的敌对专名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'Jagrekriand' 译'贾格瑞克里安德'，比'贾格瑞克兰德'更保留 -i- 音节。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、gender=男性、proper_name；作为敌对神祇专名处理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同批候选有'贾格瑞克兰德'，采用音节更完整的'贾格瑞克里安德'，避免混用。"
+        }
+      }
+    },
+    {
+      "ref": "characters:233",
+      "evidence_rows": [
+        34094
+      ],
+      "source_excerpt": "Konagog and Vonagog, with their variant army",
+      "reason": "原文明确二者率变异军伏击三人组；与同句另一专名分开处理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34094 原文：'Konagog and Vonagog, with their variant army' 明确两者率变异军伏击三人组。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'Konagog' 音译'科纳戈格'，与同句 Vonagog 的译名区分。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、gender=其他、proper_name；原文未明示性别，用其他保守归类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e4 为不同专名；译名首字'科/沃'区分，未合并。"
+        }
+      }
+    },
+    {
+      "ref": "characters:234",
+      "evidence_rows": [
+        34094
+      ],
+      "source_excerpt": "Konagog and Vonagog, with their variant army",
+      "reason": "原文明确二者率变异军伏击三人组；与同句另一专名分开处理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34094 原文：'Konagog and Vonagog, with their variant army' 明确两者率变异军伏击三人组。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'Vonagog' 音译'沃纳戈格'，与同句 Konagog 的译名区分。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、gender=其他、proper_name；原文未明示性别，用其他保守归类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e3 成对出现但各自独立；保留'沃纳戈格'，不与'科纳戈格'混同。"
+        }
+      }
+    },
+    {
+      "ref": "characters:235",
+      "evidence_rows": [
+        34096
+      ],
+      "source_excerpt": "The army of darkness was commanded by Shankgaro, Uzlord of the West.",
+      "reason": "原文明确其为黑暗军统领；Uzlord of the West 作为称号不并入人名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34096 原文：'The army of darkness was commanded by Shankgaro, Uzlord of the West.' 明确其黑暗军统领身份。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'Shankgaro' 译'尚卡罗'，音节对应；'Uzlord of the West' 作为称号不并入人名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、gender=男性、proper_name，原文用 he 指称。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此一条 Shankgaro；与 34108 同形，译名保持一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:236",
+      "evidence_rows": [
+        34092
+      ],
+      "source_excerpt": "his lover, the Light of Knowledge, had been killed",
+      "reason": "原文表明其为被杀害的女性存在；直译保留称号性质。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34092 原文：'his lover, the Light of Knowledge, had been killed' 表明其为被杀害的女性存在。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'Light of Knowledge' 直译'知识之光'，保留称号性质。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、gender=女性、proper_name，符合原文 lover/her 指称。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e7 共享 'Light of' 结构但修饰语不同，不视为同一实体；分别译作'知识之光'/'交流之光'。"
+        }
+      }
+    },
+    {
+      "ref": "terms:856",
+      "evidence_rows": [
+        34093
+      ],
+      "source_excerpt": "seeking the Light of Communication",
+      "reason": "原文表明 Issaries 在寻找该称号所指；直译保留 'Light of' 结构。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34093 原文：'seeking the Light of Communication' 表明 Issaries 在寻找该称号所指。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'Light of Communication' 直译'交流之光'，保留 Light of 结构。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms 表、category_path=其他、proper_name；作为神话称号而非人物表条目。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e6 '知识之光' 结构相同但所指不同，保持区别，不强行同义。"
+        }
+      }
+    },
+    {
+      "ref": "characters:238",
+      "evidence_rows": [
+        34273
+      ],
+      "source_excerpt": "Harand Boardick, the son of Harast the Brave and Ornay",
+      "reason": "原文明确其父母与身份；按音译处理全名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34273 原文：'Harand Boardick, the son of Harast the Brave and Ornay' 明确其父母与身份。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'Harand Boardick' 译'哈兰德博迪克'，按音译且不加间隔号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、gender=男性、proper_name，符合原文人物。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e9 Ornay、e10 Urgkronika 同场；各自译名无冲突，保留完整音译。"
+        }
+      }
+    },
+    {
+      "ref": "characters:240",
+      "evidence_rows": [
+        34273
+      ],
+      "source_excerpt": "Ornay daughter of King Drorgalar Orlanthsson",
+      "reason": "原文明确其父系身份；译名与同场人物区分。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34273 原文：'Ornay daughter of King Drorgalar Orlanthsson' 明确其父系身份。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'Ornay' 译'奥尔奈'，保留 r 音节的音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、gender=女性、proper_name，符合原文 daughter。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e8/e10 同场，'奥尔奈'与'哈兰德博迪克'、'乌尔格罗尼卡'互不混淆。"
+        }
+      }
+    },
+    {
+      "ref": "characters:242",
+      "evidence_rows": [
+        34273
+      ],
+      "source_excerpt": "Urgkronika, the sow wife",
+      "reason": "原文明确其为 Harand 之妻；音译保留完整音节。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34273 原文：'Urgkronika, the sow wife' 明确其为 Harand 之妻。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'Urgkronika' 译'乌尔格罗尼卡'，音节完整。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、gender=女性、proper_name，符合 wife 指称。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e8 Harand、e9 Ornay 同场；译名未与其他条目冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:243",
+      "evidence_rows": [
+        34278,
+        34279
+      ],
+      "source_excerpt": "He gave his son to Jogo Zaramzil",
+      "reason": "原文明确 Jogo Zaramzil 是 Harand 求助的黑暗军领袖；译名在同批重复出现时保持一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34278 原文：'He gave his son to Jogo Zaramzil' 明确 Jogo 是 Harand 求助的黑暗军领袖。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'Jogo Zaramzil' 译'乔戈扎拉姆齐尔'，两个词均音译且不加间隔号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、gender=男性、proper_name；原文以率领军队的敌对首领处理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "34279 再次出现同一拼写；译名统一，未与 e8 Harand 混同。"
+        }
+      }
+    },
+    {
+      "ref": "characters:244",
+      "evidence_rows": [
+        34272
+      ],
+      "source_excerpt": "Jarani is the son of Ragorn, the son of Jorganos Archer",
+      "reason": "原文明确 Ragorn 为 Jarani 之父；译名作为专名保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34272 原文：'Jarani is the son of Ragorn, the son of Jorganos Archer' 明确 Ragorn 为 Jarani 之父。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'Ragorn' 译'拉戈恩'，音节对应且不扩展为完整称谓。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、gender=男性、proper_name，符合原文人物。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此条 Ragorn；与 Jarani/Jorganos Archer 的父子关系一致，无译名冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:231",
+    "characters:232",
+    "characters:233",
+    "characters:234",
+    "characters:235",
+    "characters:236",
+    "terms:856",
+    "characters:238",
+    "characters:240",
+    "characters:242",
+    "characters:243",
+    "characters:244"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

@@ -1,0 +1,540 @@
+{
+  "review_complete": true,
+  "review_summary": "完成 12 个 non_translate 条目的来源、保留必要性、分类与一致性复核；将内部标记、代码、数据类型名、键名及资源名统一收窄为 whole_record，处理 f1-f11，未新增或隔离条目。",
+  "acknowledged_findings": [
+    "F0292",
+    "F0293",
+    "F0294",
+    "F0295",
+    "F0296",
+    "F0297",
+    "F0298",
+    "F0299",
+    "F0300",
+    "F0301",
+    "F0302"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31183 原文仅为独立内部标记 E@，无嵌入自然文本证据。"
+        }
+      },
+      "reason": "补明确 applicability，避免将短标记默认全局禁翻。",
+      "evidence_rows": [
+        31183
+      ],
+      "table": "non_translate",
+      "index": 409
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31184 原文仅为独立内部代码 HC，嵌入用例为 0。"
+        }
+      },
+      "reason": "将内部代码 HC 限定为完整记录保护。",
+      "evidence_rows": [
+        31184
+      ],
+      "table": "non_translate",
+      "index": 410
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31185 原文仅为独立内部代码 KC，嵌入用例为 0。"
+        }
+      },
+      "reason": "将内部代码 KC 限定为完整记录保护。",
+      "evidence_rows": [
+        31185
+      ],
+      "table": "non_translate",
+      "index": 411
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31186 原文仅为独立内部数据类型名 dict，嵌入用例为 0。"
+        }
+      },
+      "reason": "将内部数据类型名 dict 限定为完整记录保护。",
+      "evidence_rows": [
+        31186
+      ],
+      "table": "non_translate",
+      "index": 412
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31187 为独立数据类型名 array；11730 的 vast array of spirits 显示普通名词嵌入用法，不能全局保护。"
+        }
+      },
+      "reason": "array 作为数据类型名仅保护完整记录，不覆盖普通名词。",
+      "evidence_rows": [
+        31187,
+        11730
+      ],
+      "table": "non_translate",
+      "index": 413
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31188 为独立小写数据类型名 string；31414 的 Internal String Error 为不同大写嵌入形式，不能证明小写 string 应全局保护。"
+        }
+      },
+      "reason": "string 作为数据类型名仅保护精确完整记录。",
+      "evidence_rows": [
+        31188,
+        31414
+      ],
+      "table": "non_translate",
+      "index": 414
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31189 原文仅为独立内部数据类型名 plist，嵌入用例为 0。"
+        }
+      },
+      "reason": "将内部数据类型名 plist 限定为完整记录保护。",
+      "evidence_rows": [
+        31189
+      ],
+      "table": "non_translate",
+      "index": 415
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31190 原文仅为独立内部键名 missons（原文拼写），嵌入用例为 0。"
+        }
+      },
+      "reason": "将内部键名 missons 限定为完整记录保护。",
+      "evidence_rows": [
+        31190
+      ],
+      "table": "non_translate",
+      "index": 416
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31191 为精确小写内部键名 goal；32573 的 battle goal 为普通名词，32696 的 Goal 为不同大小写 UI 标签，需收窄保护。"
+        }
+      },
+      "reason": "goal 仅在精确小写完整记录时作为内部键名保护，不覆盖普通名词或 UI 标签。",
+      "evidence_rows": [
+        31191,
+        32573,
+        32696
+      ],
+      "table": "non_translate",
+      "index": 417
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31209 原文仅为独立内部资源键名 FCcattle，嵌入用例为 0。"
+        }
+      },
+      "reason": "将内部资源键名 FCcattle 限定为完整记录保护。",
+      "evidence_rows": [
+        31209
+      ],
+      "table": "non_translate",
+      "index": 418
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31210 原文仅为独立内部资源键名 FChorses，嵌入用例为 0。"
+        }
+      },
+      "reason": "将内部资源键名 FChorses 限定为完整记录保护。",
+      "evidence_rows": [
+        31210
+      ],
+      "table": "non_translate",
+      "index": 419
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31211 原文仅为独立内部资源键名 FCsheep，嵌入用例为 0。"
+        }
+      },
+      "reason": "将内部资源键名 FCsheep 限定为完整记录保护。",
+      "evidence_rows": [
+        31211
+      ],
+      "table": "non_translate",
+      "index": 420
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:409",
+      "evidence_rows": [
+        31183
+      ],
+      "source_excerpt": "E@",
+      "reason": "独立内部标记；归 non_translate 正确，但原条目未限定保护范围，现补为 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31183 原文为独立 E@，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保持原样，无目标译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "内部标记应归 non_translate；已通过 applicability 限定为 whole_record，不再默认全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批内部标识符策略一致，仅保护完整记录，不扩展到普通文本。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:410",
+      "evidence_rows": [
+        31184
+      ],
+      "source_excerpt": "HC",
+      "reason": "独立内部代码；采用 whole_record 避免将 HC 作为全局禁翻词。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31184 原文仅为独立 HC，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保持原样，无目标译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "内部代码归 non_translate 正确；已补 whole_record 限定，不再全局保护。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批内部代码保护策略一致，仅匹配完整记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:411",
+      "evidence_rows": [
+        31185
+      ],
+      "source_excerpt": "KC",
+      "reason": "独立内部代码；采用 whole_record 避免将 KC 作为全局禁翻词。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31185 原文仅为独立 KC，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保持原样，无目标译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "内部代码归 non_translate 正确；已补 whole_record 限定，不再全局保护。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批内部代码保护策略一致，仅匹配完整记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:412",
+      "evidence_rows": [
+        31186
+      ],
+      "source_excerpt": "dict",
+      "reason": "独立内部数据类型名；采用 whole_record 避免普通词 dict 被全局冻结。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31186 原文仅为独立 dict，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保持原样，无目标译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "内部数据类型名归 non_translate 正确；已补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅保护完整记录 dict，与同批数据类型名策略一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:413",
+      "evidence_rows": [
+        31187,
+        11730
+      ],
+      "source_excerpt": "array",
+      "reason": "独立数据类型名；11730 中 array 为普通名词，故仅保护完整记录本身。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31187 为独立 array；11730 的 vast array of spirits 显示普通名词嵌入用法。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保持原样，无目标译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "array 作为数据类型名归 non_translate 正确；已收窄为 whole_record，避免误保护普通名词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "whole_record 与 corpus 证据一致，不保护 11730 中的普通 array。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:414",
+      "evidence_rows": [
+        31188,
+        31414
+      ],
+      "source_excerpt": "string",
+      "reason": "独立数据类型名；31414 的 Internal String Error 不能证明小写 string 应全局保护，故限定 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31188 为独立小写 string；31414 的 Internal String Error 为不同大写嵌入形式。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保持原样，无目标译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "string 作为数据类型名归 non_translate 正确；已收窄为精确完整记录保护。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "whole_record + case_sensitive 仅匹配小写 string，不影响 Internal String Error 或其他文本。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:415",
+      "evidence_rows": [
+        31189
+      ],
+      "source_excerpt": "plist",
+      "reason": "独立内部数据类型名；采用 whole_record 避免 plist 被全局冻结。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31189 原文仅为独立 plist，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保持原样，无目标译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "内部数据类型名归 non_translate 正确；已补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅保护完整记录 plist，与同批数据类型名策略一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:416",
+      "evidence_rows": [
+        31190
+      ],
+      "source_excerpt": "missons",
+      "reason": "独立内部键名（原文拼写 missons）；采用 whole_record 避免该短词被全局冻结。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31190 原文仅为独立 missons，与条目 source 及原文拼写一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保持原样，无目标译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "内部键名归 non_translate 正确；已补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅保护完整记录 missons，不推断或覆盖其他拼写。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:417",
+      "evidence_rows": [
+        31191,
+        32573,
+        32696
+      ],
+      "source_excerpt": "goal",
+      "reason": "小写内部键名；32573 的 battle goal 与 32696 的 Goal 说明需按大小写和完整记录限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31191 为独立小写 goal；32573 含普通名词 battle goal，32696 为不同大小写 Goal。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保持原样，无目标译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "小写 goal 作为内部键名归 non_translate 正确；已收窄为 whole_record 且区分大小写。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅保护精确小写完整记录 goal，不覆盖 battle goal 或 UI 标签 Goal。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:418",
+      "evidence_rows": [
+        31209
+      ],
+      "source_excerpt": "FCcattle",
+      "reason": "独立内部资源键名；采用 whole_record 避免资源键片段被全局冻结。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31209 原文仅为独立 FCcattle，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保持原样，无目标译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "内部资源键名归 non_translate 正确；已补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅保护完整记录 FCcattle，与同批资源键策略一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:419",
+      "evidence_rows": [
+        31210
+      ],
+      "source_excerpt": "FChorses",
+      "reason": "独立内部资源键名；采用 whole_record 避免资源键片段被全局冻结。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31210 原文仅为独立 FChorses，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保持原样，无目标译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "内部资源键名归 non_translate 正确；已补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅保护完整记录 FChorses，与同批资源键策略一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:420",
+      "evidence_rows": [
+        31211
+      ],
+      "source_excerpt": "FCsheep",
+      "reason": "独立内部资源键名；采用 whole_record 避免资源键片段被全局冻结。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31211 原文仅为独立 FCsheep，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保持原样，无目标译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "内部资源键名归 non_translate 正确；已补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅保护完整记录 FCsheep，与同批资源键策略一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:409",
+    "non_translate:410",
+    "non_translate:411",
+    "non_translate:412",
+    "non_translate:413",
+    "non_translate:414",
+    "non_translate:415",
+    "non_translate:416",
+    "non_translate:417",
+    "non_translate:418",
+    "non_translate:419",
+    "non_translate:420"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

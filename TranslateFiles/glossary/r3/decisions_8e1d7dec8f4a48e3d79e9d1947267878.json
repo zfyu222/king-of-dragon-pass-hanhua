@@ -1,0 +1,228 @@
+{
+  "review_complete": true,
+  "review_summary": "共审校 e1-e6。确认 Humakt’s Raven Banner、Godplane、Orlanthi、Orlanthi greeting、Greeting、Orlanthi pantheon 的译名与分类；统一 Orlanthi 词根为“奥兰斯”，修正 e4 礼仪译名及 e6 分类。audit f1 中 Godplane/god-plane/God Plane 共享“神界”系同一神话层面的不同拼写，判定合理，不冲突。",
+  "acknowledged_findings": [
+    "F0363"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "奥兰斯人",
+        "term_reason": "原文多处以 Orlanthi 指崇奉 Orlanth 的族群/文化群体；统一译作“奥兰斯人”，与神名“奥兰斯”对应。"
+      },
+      "reason": "统一候选译名分歧，并修正 term_reason 中未附原文的引用。",
+      "evidence_rows": [
+        247,
+        286,
+        1187,
+        1731,
+        13774
+      ],
+      "table": "terms",
+      "index": 24
+    },
+    {
+      "patch": {
+        "recommended_translation": "奥兰斯问候礼",
+        "term_reason": "原文中为确认奥兰斯人身份的礼仪；统一译作“奥兰斯问候礼”，与 Greeting“问候礼”对应。"
+      },
+      "reason": "将“奥兰斯式问候”统一为名词化的“奥兰斯问候礼”，与 e5“问候礼”保持一致。",
+      "evidence_rows": [
+        4098,
+        27731
+      ],
+      "table": "terms",
+      "index": 258
+    },
+    {
+      "patch": {
+        "category_path": "其他"
+      },
+      "reason": "Orlanthi pantheon 是神祇群体而非组织，category_path 由“组织”改为合法且更贴切的“其他”。",
+      "evidence_rows": [
+        33280
+      ],
+      "table": "terms",
+      "index": 1101
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:18",
+      "evidence_rows": [
+        403,
+        404
+      ],
+      "source_excerpt": "Humakt’s Raven Banner",
+      "reason": "Humakt’s Raven Banner 是需由人扛举的独特战旗，属专名物品；统一采用“胡马卡特的渡鸦旗”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "403/404 原文均作 Humakt’s Raven Banner，拼写一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Humakt 统一译“胡马卡特”，Raven Banner 译“渡鸦旗”，与多数候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品类专名，指战旗本身。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "采用统一的“胡马卡特”，排除“胡马科特”非标准候选；条目内无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:21",
+      "evidence_rows": [
+        243,
+        33281
+      ],
+      "source_excerpt": "Enter the Godplane to confront",
+      "reason": "Godplane 指英雄探索进入的神话层面，译作“神界”；与 god-plane/God Plane 为同概念不同拼写。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "243 原文作 Enter the Godplane，33281 说明其与 Time 世界相对。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“神界”准确表达 timeless Godplane，且与同批 god-plane/God Plane 统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名/领域，非普通词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "e2、e7、e8 为同一神界概念的不同拼写，共享“神界”合理，非错误别名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:24",
+      "evidence_rows": [
+        247,
+        286,
+        1187,
+        1731,
+        13774
+      ],
+      "source_excerpt": "They want to be respected as proper Orlanthi",
+      "reason": "Orlanthi 指崇奉 Orlanth 的族群/文化群体；统一采用“奥兰斯人”，排除“奥兰斯提/奥尔兰斯人/奥兰斯信徒”等候选分歧。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "247/286/1187/1731/13774 均以 Orlanthi 指与 Orlanth 相关的族群或文化成员。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "候选存在“奥兰斯提”“奥尔兰斯人”“奥兰斯信徒”等，统一为多数且与 Orlanth“奥兰斯”对应的“奥兰斯人”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入种族/族群称谓可接受；作为专名性文化群体统一为 required。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "消除候选译名分歧，统一“奥兰斯人”；与 e4“奥兰斯问候礼”、e6“奥兰斯神系”共享“奥兰斯”词根。"
+        }
+      }
+    },
+    {
+      "ref": "terms:258",
+      "evidence_rows": [
+        4098,
+        27731
+      ],
+      "source_excerpt": "they gave the Orlanthi greeting",
+      "reason": "Orlanthi greeting 是确认奥兰斯人身份的礼仪；统一为“奥兰斯问候礼”，与 e5“问候礼”一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4098 作 the Orlanthi greeting，27731 作 the Orlanthi Greeting，均指该礼仪。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由“奥兰斯式问候”改为更统一、名词化的“奥兰斯问候礼”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入其他/礼俗术语合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e5“问候礼”共享核心译名，避免“式问候”与“问候礼”两套说法。"
+        }
+      }
+    },
+    {
+      "ref": "terms:937",
+      "evidence_rows": [
+        27325,
+        27345
+      ],
+      "source_excerpt": "If they are Orlanthi, they will know the Greeting.",
+      "reason": "Greeting 在此为奥兰斯人确认身份的特定礼仪，非普通问候；受 applicability 限定为“the Greeting”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "27325/27345 均以 the Greeting 指该礼仪。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译“问候礼”，与 e4 的“奥兰斯问候礼”核心一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "游戏内礼俗术语，归其他合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "applicability 限定 literal_context“the ”前缀且区分大小写，避免误匹配普通 greeting；与 e4 一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1101",
+      "evidence_rows": [
+        33280
+      ],
+      "source_excerpt": "You worship the Orlanthi pantheon",
+      "reason": "Orlanthi pantheon 指以 Orlanth 为首的神祇群体，译“奥兰斯神系”，属专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33280 原文明确 the group of gods headed by Orlanth。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“奥兰斯神系”准确，且与 Orlanth/Orlanthi 词根统一。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "神系是神祇群体而非组织，category_path 由“组织”改为“其他”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e3“奥兰斯人”、e4“奥兰斯问候礼”共享“奥兰斯”。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:18",
+    "terms:21",
+    "terms:24",
+    "terms:258",
+    "terms:937",
+    "terms:1101"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

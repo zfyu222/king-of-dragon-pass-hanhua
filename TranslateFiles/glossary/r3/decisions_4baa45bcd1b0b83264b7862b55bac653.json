@@ -1,0 +1,426 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对全部12条术语；保留原有主要译名，修正e2、e3、e4、e5、e6、e8的术语说明，并将e10的term_kind修正为proper_name；未发现需隔离项。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "初始交战四种战术之一，与 Skirmish、Maneuver、Charge 并列；本批原文仅列出名称，未给出具体效果说明。"
+      },
+      "reason": "原说明称“完全避开战斗”，超出33791仅列战术名的证据，收窄为可证范围。",
+      "evidence_rows": [
+        33791
+      ],
+      "table": "terms",
+      "index": 793
+    },
+    {
+      "patch": {
+        "term_reason": "部族政治/大会相关标题；本批原文仅见标题 War-whooping，未给出具体机制说明。"
+      },
+      "reason": "原说明含“部族大会影响裁决”细节，但33704仅提供标题，删除无据内容。",
+      "evidence_rows": [
+        33704
+      ],
+      "table": "terms",
+      "index": 794
+    },
+    {
+      "patch": {
+        "term_reason": "界面标题 The Clan Mood，指氏族情绪；与 Tribal Mood（部族情绪）不同。"
+      },
+      "reason": "保留译名，修正说明以避免把 Tribal Mood 的原文误当 Clan Mood 定义。",
+      "evidence_rows": [
+        33168,
+        33712
+      ],
+      "table": "terms",
+      "index": 796
+    },
+    {
+      "patch": {
+        "term_reason": "部族大会上裁决案件所采用的政策。"
+      },
+      "reason": "33713只说明其用于裁决提交部族大会的案件，删除“常规/默认”等未明说限定。",
+      "evidence_rows": [
+        33713
+      ],
+      "table": "terms",
+      "index": 797
+    },
+    {
+      "patch": {
+        "term_reason": "部族政治章节标题，指围绕部族王权的政治玩法；本批原文仅见标题。"
+      },
+      "reason": "原说明含王位选举等细节，但33682仅提供章节标题，收窄为可证范围。",
+      "evidence_rows": [
+        33682
+      ],
+      "table": "terms",
+      "index": 799
+    },
+    {
+      "patch": {
+        "term_reason": "游戏模式；胜利需完成 Making of the Storm Tribe 及随后七次成功的英雄探索。"
+      },
+      "reason": "依据33429、33441的胜利条件改写，删除原文未明说的“继续扩张”。",
+      "evidence_rows": [
+        33429,
+        33441
+      ],
+      "table": "terms",
+      "index": 811
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "term_reason": "诸神在黎明订立的宇宙协议，由 Arachne Solara 促成；诸神共享世界与生死时间并不得随意干涉，破坏它将使混沌回归。"
+      },
+      "reason": "34187明称其为 agreement between the gods 且大写命名，分类应为 proper_name；说明按34030/34187收紧。",
+      "evidence_rows": [
+        34030,
+        34187
+      ],
+      "table": "terms",
+      "index": 837
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:791",
+      "evidence_rows": [
+        33791,
+        33793
+      ],
+      "source_excerpt": "The four possible tactics are Skirmish, Maneuver, Charge, and Evade.",
+      "reason": "源文与译名一致，分类可接受；无需修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33791将 Maneuver 列为四种初始战术之一，拼写与条目一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "33793说明 maneuvering 是寻找高地、侧翼包抄或诱敌不利地形；“机动”能覆盖该战术义，且符合短 UI 词。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为战斗战术选项，归入技能类游戏机制可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同列 Evade 区分，未混用“机动/回避”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:793",
+      "evidence_rows": [
+        33791
+      ],
+      "source_excerpt": "The four possible tactics are Skirmish, Maneuver, Charge, and Evade.",
+      "reason": "译名可保留；术语说明已收窄为33791可证的战术名称。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33791将 Evade 列为四种初始战术之一。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“回避”为常用短译，符合战术选项的 UI 语体；本批未给具体效果。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "战斗战术选项归入技能类游戏机制可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同列 Maneuver 的“机动”区分明确。"
+        }
+      }
+    },
+    {
+      "ref": "terms:794",
+      "evidence_rows": [
+        33704
+      ],
+      "source_excerpt": "War-whooping",
+      "reason": "标题可译；术语说明已按33704收紧。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33704原文即为标题 War-whooping，本批无更多上下文。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“战吼”直译可作标题，未添加原文没有的机制描述。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为部族政治相关标题，归入其他类合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形变体，译名无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:796",
+      "evidence_rows": [
+        33168,
+        33712
+      ],
+      "source_excerpt": "The Clan Mood",
+      "reason": "保留译名；修正术语说明，避免用 Tribal Mood 原文定义 Clan Mood。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33168提供标题 The Clan Mood；33712实际是 Tribal Mood，不能作为本条定义。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“氏族情绪”保留 clan 与 tribe 的区别。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为界面/状态指标标题，归入其他类合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "33712的 Tribal Mood 应作“部族情绪”，与本条“氏族情绪”区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:797",
+      "evidence_rows": [
+        33713
+      ],
+      "source_excerpt": "Moot Policy: How you judge cases that come before the tribal moot",
+      "reason": "译名可保留；术语说明收紧为原文所述裁决政策。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33713明确说明 Moot Policy 是裁决提交部族大会案件的方式。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“大会政策”短而可作 UI 标签，moot 译作“大会”与原文 tribal moot 相合。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为政策设置项，归入其他类合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形变体，译名无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:799",
+      "evidence_rows": [
+        33682
+      ],
+      "source_excerpt": "Tribal Politics & The Game of Kings",
+      "reason": "标题译名保留；删除无本批原文支持的细节。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33682原文仅为章节标题 Tribal Politics & The Game of Kings。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“王者游戏”可作该章节/玩法标题，未增补设定。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为章节标题及政治玩法名，归入其他类合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形变体，译名无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:807",
+      "evidence_rows": [
+        33729
+      ],
+      "source_excerpt": "When More Info is chock-full of War blessings",
+      "reason": "UI 标签译名一致，无需修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33729在界面提示语境中使用 More Info。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“更多信息”是直接、简短的 UI 标签译法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为界面控件文字，归入其他类合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形变体，译名无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:811",
+      "evidence_rows": [
+        33429,
+        33441,
+        33805
+      ],
+      "source_excerpt": "Winning the Long Game requires the Making of the Storm Tribe quest and seven subsequent successful heroquests.",
+      "reason": "译名保留；术语说明改为33429/33441明确支持的胜利条件。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33429、33441说明 Long Game 的胜利条件；33805为标题。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“长局”与33429中的 Short Game 形成简短模式名对。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为游戏模式名，归入其他类合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "33429、33441中 Long Game 用法一致，译名无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:813",
+      "evidence_rows": [
+        33813
+      ],
+      "source_excerpt": "In the beginning, the great powers of the goddess Glorantha's Cosmic Court created the world.",
+      "reason": "专名译名与组织分类保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33813明称 Glorantha's Cosmic Court，并说明其八位神祇创造世界。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“宇宙宫廷”对应 Cosmic Court，符合专名与组织语境。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "由八位大神组成的神廷，归入组织类合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条为所有格专名 Glorantha's Cosmic Court，无同形歧义。"
+        }
+      }
+    },
+    {
+      "ref": "terms:837",
+      "evidence_rows": [
+        34030,
+        34187
+      ],
+      "source_excerpt": "This agreement between the gods is called the Cosmic Compromise.",
+      "reason": "保留“宇宙妥协”；将 term_kind 修正为 proper_name 并收紧说明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34030、34187均以专名形式说明 Cosmic Compromise 是诸神协议。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“宇宙妥协”直译 Compromise，并与34030的“Time is the Cosmic Compromise”一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "34187明称其为 agreement between the gods 且大写命名，term_kind 应为 proper_name；category_path 其他仍适合协议/概念。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "34030中的 Compromise 简称与全称一致，未泛化为普通“妥协”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:878",
+      "evidence_rows": [
+        34311
+      ],
+      "source_excerpt": "Said to symbolize members of the Celestial Court",
+      "reason": "专名译名与组织分类保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34311明称 Power runes 象征 Celestial Court 成员。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“天界宫廷”对应 Celestial Court，符合专名与组织语境。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为神廷成员所属组织，归入组织类合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形变体，译名无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:815",
+      "evidence_rows": [
+        33686
+      ],
+      "source_excerpt": "The king bears the crown of the Mastery rune.",
+      "reason": "专名与分类保留，无需修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33686说明国王佩戴带有 Mastery rune 的王冠。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“统御符文”对应 Mastery rune，符合王权语境。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为具名符文/象征物，归入其他类合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形变体，译名无冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:791",
+    "terms:793",
+    "terms:794",
+    "terms:796",
+    "terms:797",
+    "terms:799",
+    "terms:807",
+    "terms:811",
+    "terms:813",
+    "terms:837",
+    "terms:878",
+    "terms:815"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

@@ -1,0 +1,426 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐项核对 e1-e12 的原文、译名、分类与一致性；确认 f1 为同一 heroquest 词族的词形变化，保持“英雄探索”；f2 通过将 e12 的 Death Lord 改译“死亡之主”与 Deathlord 的“死亡领主”区分。修订 e3、e4、e8、e11、e12，其余条目保留。",
+  "acknowledged_findings": [
+    "F0364",
+    "F0400"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "精魂魔法",
+        "term_reason": "原文 23288 将争议称为 spirit magic，并提及祖先精魂；指与精魂相关的魔法体系。"
+      },
+      "reason": "统一精魂相关术语的用字，并使译名更贴近 Glorantha 魔法体系。",
+      "evidence_rows": [
+        23288
+      ],
+      "table": "terms",
+      "index": 610
+    },
+    {
+      "patch": {
+        "recommended_translation": "诡术师",
+        "term_reason": "原文 23299、23303 指与 Eurmal 相关的诡术师群体；统一译为诡术师。"
+      },
+      "reason": "与同一角色/术语的既有译名保持一致，避免“诡计者/诡术师”分裂。",
+      "evidence_rows": [
+        23299,
+        23303
+      ],
+      "table": "terms",
+      "index": 612
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "enforcement": "required",
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "called ",
+          "suffix": "",
+          "reason": "原文在 called Death 结构中指名为 Death 的武器/死亡法则专名，普通 death 不适用。"
+        },
+        "term_reason": "原文 26138、33865、34044、34045 在 called Death 结构中指名为 Death 的武器；仅限武器命名语境，区别于普通词“死亡”。"
+      },
+      "reason": "Death 在此是武器专名，应标为 proper_name，并扩展 literal_context 覆盖所有 called Death 用例而不误伤普通词。",
+      "evidence_rows": [
+        26138,
+        33865,
+        34044,
+        34045
+      ],
+      "table": "terms",
+      "index": 628
+    },
+    {
+      "patch": {
+        "recommended_translation": "死神",
+        "term_reason": "原文 26247、26273 的 Death God’s cult 指胡马特教团，Death God 即胡马特；中文称号译作死神。"
+      },
+      "reason": "“死亡神”生硬，改为更自然且明确的“死神”。",
+      "evidence_rows": [
+        26247,
+        26273
+      ],
+      "table": "terms",
+      "index": 634
+    },
+    {
+      "patch": {
+        "recommended_translation": "死亡之主",
+        "term_reason": "原文 26302 以 the Death Lord 指 Humakti 所奉的死亡之主（胡马特）；译作死亡之主，以区别于 Deathlord 头衔。"
+      },
+      "reason": "f2：Death Lord 与 Deathlord 共享译名，改译死亡之主以作区分。",
+      "evidence_rows": [
+        26302
+      ],
+      "table": "terms",
+      "index": 635
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:608",
+      "evidence_rows": [
+        23097
+      ],
+      "source_excerpt": "golden armband",
+      "reason": "原文指十环仪式中先知赠予并收回的金色臂环，译名与物品分类一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "23097 明确出现 golden armband，指该具体臂环。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "金臂环直译准确，符合物品名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为具体物品，归入物品；game_term 可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条证据内无同形普通词冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:609",
+      "evidence_rows": [
+        27551,
+        33306,
+        33427
+      ],
+      "source_excerpt": "heroquests",
+      "reason": "heroquests 为英雄探索机制的复数/标题形式，统一译作英雄探索。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "27551、33306、33427 均以 heroquests 指英雄探索机制，复数不改变术语。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作英雄探索，与证据中的机制含义一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "33306 为帮助主题、33427 说明其为重大行动；沿用游戏机制分类技能。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "27551 与 33306 的 heroquests 同指该机制，复数统一译英雄探索；f1 为同术语词形变化，不构成冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:610",
+      "evidence_rows": [
+        23288
+      ],
+      "source_excerpt": "spirit magic",
+      "reason": "原文指与祖先精魂相关的魔法体系，改译为精魂魔法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "23288 明确将争议称为 spirit magic，并提及祖先精魂。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原文指与祖先精魂相关的魔法体系，改为精魂魔法以统一 spirit 的精魂译法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于魔法体系/技能，归入技能。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与精魂相关术语的用字保持一致，避免灵魂/精魂混用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:612",
+      "evidence_rows": [
+        23299,
+        23303
+      ],
+      "source_excerpt": "tricksters",
+      "reason": "复数 tricksters 指与 Eurmal 相关的角色群体，统一译作诡术师。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "23299、23303 均以 tricksters 指同一群体，原文可证。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "该身份/角色统一译为诡术师，纠正诡计者。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指 Eurmal 相关的角色群体，归入身份。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "复数 tricksters 统一为诡术师，避免与同术语的诡计者译名分裂。"
+        }
+      }
+    },
+    {
+      "ref": "terms:620",
+      "evidence_rows": [
+        23881
+      ],
+      "source_excerpt": "Ore Digging Tribe",
+      "reason": "原文指与无腿王 Fynin 交战的部族专名，译作掘矿部族。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "23881 明确称与 Fynin 交战的 Ore Digging Tribe。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "掘矿部族为字面且可识别的部族名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "是部族专名，归入组织。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "专名统一，无同形普通词冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:626",
+      "evidence_rows": [
+        25861,
+        25862
+      ],
+      "source_excerpt": "realm of the gods",
+      "reason": "原文指英雄探索进入的神话异界，译作诸神领域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25861、25862 均以 realm of the gods 指神话异界。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "诸神领域符合地点含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指神话地点，归入地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "大小写/单复形式一致，适用 text 范围可覆盖。"
+        }
+      }
+    },
+    {
+      "ref": "terms:627",
+      "evidence_rows": [
+        25899,
+        25900
+      ],
+      "source_excerpt": "realm of mortals",
+      "reason": "原文指英雄探索结束后返回的现实世界，译作凡人领域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25899、25900 均以 realm of mortals 指返回的现实世界。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "凡人领域准确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指现实世界地点，归入地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 realm of the gods 形成凡人/诸神领域对应。"
+        }
+      }
+    },
+    {
+      "ref": "terms:628",
+      "evidence_rows": [
+        26138,
+        33865,
+        34044,
+        34045
+      ],
+      "source_excerpt": "weapon called Death",
+      "reason": "Death 在 called Death 结构中为武器专名，需限定 applicability 并标为 proper_name。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26138、33865、34044、34045 均在 called Death 结构中指同一武器/死亡法则。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "死亡作为武器名可保留；普通 death 由 literal_context 排除。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文为名为 Death 的武器，category_path 物品正确，term_kind 应为 proper_name。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "applicability 改为 prefix called、suffix 空，覆盖所有武器命名用例而不误伤普通词死亡。"
+        }
+      }
+    },
+    {
+      "ref": "terms:631",
+      "evidence_rows": [
+        25983
+      ],
+      "source_excerpt": "Northern Empire",
+      "reason": "原文指其语言被角色使用的北方帝国，译作北方帝国。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25983 明确提到 Northern Empire 的语言。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "北方帝国为直接且可识别的专名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指帝国政体，归入组织。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "专名统一，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:633",
+      "evidence_rows": [
+        26253,
+        26254
+      ],
+      "source_excerpt": "Storm God",
+      "reason": "原文以 Storm God 指奥兰斯，译作风暴神。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26253、26254 均以 Storm God 指奥兰斯及其信徒。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "风暴神符合神祇称号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神祇身份/称号，归入身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与风暴相关专名用字一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:634",
+      "evidence_rows": [
+        26247,
+        26273
+      ],
+      "source_excerpt": "Death God",
+      "reason": "原文 Death God’s cult 指胡马特教团，Death God 即胡马特，改译死神。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26247、26273 的 Death God’s cult 指胡马特教团，Death God 即胡马特。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "改为死神，符合死亡神祇称号的中文习惯，同时保留 Death God’s cult 的教团义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指神祇身份/称号，归入身份。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与死亡之主、死亡领主等称号区分，避免死亡神生硬直译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:635",
+      "evidence_rows": [
+        26302
+      ],
+      "source_excerpt": "Death Lord",
+      "reason": "原文以 the Death Lord 指 Humakti 所奉的死亡之主，改译死亡之主以区别于 Deathlord 头衔。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26302 以 the Death Lord 指 Humakti 所奉的死亡之主。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "改为死亡之主，避免与 Deathlord 头衔死亡领主同译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指神祇称号/身份，归入身份。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "f2 中同译名冲突已通过改译死亡之主解决。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:608",
+    "terms:609",
+    "terms:610",
+    "terms:612",
+    "terms:620",
+    "terms:626",
+    "terms:627",
+    "terms:628",
+    "terms:631",
+    "terms:633",
+    "terms:634",
+    "terms:635"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

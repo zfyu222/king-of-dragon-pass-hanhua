@@ -1,0 +1,403 @@
+{
+  "review_complete": true,
+  "review_summary": "本批 12 条分配条目均已完成来源、译名、分类与一致性审校；统一了 Orlkensor、Oskul、Oskulsson 的词干以及 the Brave 的称号译法，共修正 5 条译名；没有新增条目、隔离条目，也没有未匹配条目。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "奥克尔肯索"
+      },
+      "reason": "统一 Orlkensor 的音译，避免与全名条及后续引用不一致。",
+      "evidence_rows": [
+        14578,
+        14579
+      ],
+      "table": "characters",
+      "index": 111
+    },
+    {
+      "patch": {
+        "recommended_translation": "勇者奥斯库尔"
+      },
+      "reason": "the Brave 统一译作“勇者”，与同称号条目保持一致。",
+      "evidence_rows": [
+        13812
+      ],
+      "table": "characters",
+      "index": 107
+    },
+    {
+      "patch": {
+        "recommended_translation": "瓦玛奥斯库尔松"
+      },
+      "reason": "Oskulsson 统一译作“奥斯库尔松”，并去除间隔号。",
+      "evidence_rows": [
+        24212
+      ],
+      "table": "characters",
+      "index": 264
+    },
+    {
+      "patch": {
+        "recommended_translation": "公正者奥斯库尔"
+      },
+      "reason": "Oskul 词干统一为“奥斯库尔”，修正原“奥斯科尔”。",
+      "evidence_rows": [
+        25251
+      ],
+      "table": "characters",
+      "index": 267
+    },
+    {
+      "patch": {
+        "recommended_translation": "奥斯库尔奥斯库尔松"
+      },
+      "reason": "随机分支人名沿用 Oskul/Oskulsson 的统一译名。",
+      "evidence_rows": [
+        14305
+      ],
+      "table": "terms",
+      "index": 474
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:104",
+      "evidence_rows": [
+        13801,
+        13823
+      ],
+      "source_excerpt": "Orlkensor Bronzebones",
+      "reason": "保留人物全名译法，并将它作为短名条的统一词干。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "13801 给出全名 Orlkensor Bronzebones，13823 以 him 指称，可确认其为男性战士。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "全名按音译加意译处理为“奥克尔肯索青铜骨”，Bronzebones 译“青铜骨”与别名义相符。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、proper_name；原文为具名战士，13823 的 him 支持男性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "短名条已统一为同一词干“奥克尔肯索”，全名条保留该基础译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:111",
+      "evidence_rows": [
+        14578,
+        14579,
+        15415,
+        15419
+      ],
+      "source_excerpt": "eventually she identifies him as Orlkensor",
+      "reason": "确认与全名条同指，统一基础译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "14578、14579 称其为 Orlkensor，并以 him/he 指称；15419 称其为前亡命徒。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原提案“奥肯索尔/奥肯索”与全名条不一致，改为“奥克尔肯索”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、proper_name；14578/14579 的 he、his 支持男性。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e1 的 Orlkensor Bronzebones 同指，采用同一词干“奥克尔肯索”。"
+        }
+      }
+    },
+    {
+      "ref": "characters:105",
+      "evidence_rows": [
+        13429
+      ],
+      "source_excerpt": "Magnus Bare-Arms",
+      "reason": "来源、分类与译名均无冲突，保留“赤臂马格努斯”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "13429 明确 Bad King Urgrain 派 outlaws 杀害 Magnus Bare-Arms。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Magnus 音译“马格努斯”，Bare-Arms 意译“赤臂”，组合可读。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、proper_name；原文为被杀害的具名人物。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形或同词干专名冲突，译名可独立使用。"
+        }
+      }
+    },
+    {
+      "ref": "characters:106",
+      "evidence_rows": [
+        13390
+      ],
+      "source_excerpt": "In Airvant’s Saga, Airvant resists pressure to fight a superior foe",
+      "reason": "保留“艾尔万特”，与原文男性指称一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "13390 以 Airvant’s Saga 引出人物，并以 his former wife 表明男性。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Airvant 音译“艾尔万特”，符合专名音译要求。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、proper_name；原文为萨迦中的具名人物。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形专名冲突，译名可独立使用。"
+        }
+      }
+    },
+    {
+      "ref": "characters:107",
+      "evidence_rows": [
+        13812
+      ],
+      "source_excerpt": "Oskul the Brave",
+      "reason": "统一 Oskul 词干与 the Brave 称号译法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "13812 明确 Oskul the Brave 杀死七夜之泣，并以 he 指称。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "the Brave 统一译作“勇者”，改为“勇者奥斯库尔”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、proper_name；13812 的 he 支持男性。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 Oskul 系列统一词干“奥斯库尔”，并保留称号“勇者”。"
+        }
+      }
+    },
+    {
+      "ref": "characters:132",
+      "evidence_rows": [
+        15883,
+        15927,
+        24101
+      ],
+      "source_excerpt": "Good King Oskul was born outside the marriage bond.",
+      "reason": "保留基础名“奥斯库尔”，作为 Oskul 系列的统一词干。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "15883 称 Good King Oskul，15927 称 Oskul’s Saga，24101 称 King Oskul。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "基础名 Oskul 统一音译“奥斯库尔”，未额外添加称号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、proper_name；24101 明确其为 King Oskul。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Oskul 系列均以“奥斯库尔”为词干，e7/e10 仅附加称号。"
+        }
+      }
+    },
+    {
+      "ref": "characters:153",
+      "evidence_rows": [
+        21202
+      ],
+      "source_excerpt": "Good King Oskul was born to an outlaw woman who once captured his father.",
+      "reason": "保留称号加统一词干“善王奥斯库尔”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "21202 明确 Good King Oskul 为被 outlaw 女子所生，his father 表明男性。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Good King 译“善王”，Oskul 统一为“奥斯库尔”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、proper_name；原文为具名国王。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e6 同指 Oskul，采用“称号+统一词干”形式。"
+        }
+      }
+    },
+    {
+      "ref": "characters:239",
+      "evidence_rows": [
+        34273
+      ],
+      "source_excerpt": "Harast the Brave",
+      "reason": "保留“勇者哈拉斯特”，并统一 the Brave 的译法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34273 称 Harast the Brave 为 Harand 之父。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Harast 音译“哈拉斯特”，the Brave 统一译“勇者”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、proper_name；原文为 Harand 之父，男性人物。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "the Brave 与同批称号统一为“勇者”，词干“哈拉斯特”无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:264",
+      "evidence_rows": [
+        24212
+      ],
+      "source_excerpt": "Vamar Oskulsson waited until the boy who had killed his father was a man.",
+      "reason": "统一 Oskulsson 后缀并去除间隔号。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "24212 明确 Vamar Oskulsson 为 Oskul 之子，并以 his father 指称。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "Oskulsson 统一译“奥斯库尔松”，改为“瓦玛奥斯库尔松”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、proper_name；原文以 his father 表明男性。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 Oskul 词干及 e11 的 Oskulsson 后缀保持一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:267",
+      "evidence_rows": [
+        25251
+      ],
+      "source_excerpt": "After Oskul the Just slew Bad King Urgrain and took his throne",
+      "reason": "修正 Oskul 词干并保留称号“公正者”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25251 明确 Oskul the Just 杀死 Bad King Urgrain 并夺取王位，后文 he 指其本人。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原“奥斯科尔”与 Oskul 系列不一致，改为“奥斯库尔”；the Just 译“公正者”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、proper_name；原文为夺位的具名国王。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "Oskul 词干统一为“奥斯库尔”，称号“公正者”保留。"
+        }
+      }
+    },
+    {
+      "ref": "terms:474",
+      "evidence_rows": [
+        14305
+      ],
+      "source_excerpt": "the nose-ring of Oskul Oskulsson",
+      "reason": "随机分支人名沿用 Oskul/Oskulsson 的统一译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "14305 的随机分支中，鼻环所属人名为 Oskul Oskulsson。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "Oskulsson 统一译“奥斯库尔松”，改为“奥斯库尔奥斯库尔松”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms 表、proper_name；category_path 为“其他”，符合仅作随机分支人名的归类。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 Oskul 词干及 e9 的 Oskulsson 后缀保持一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:110",
+      "evidence_rows": [
+        13973,
+        15208
+      ],
+      "source_excerpt": "Jaldon Goldentooth",
+      "reason": "保留无间隔号译名“贾尔登金牙”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "13973 称 Jaldon Goldentooth 为 Praxian hero，15208 称其为 deadly hero。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Jaldon 音译“贾尔登”，Goldentooth 意译“金牙”，且不加间隔号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、proper_name；原文为 Praxian 的具名英雄。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选“贾尔登·金牙”统一为无间隔号形式“贾尔登金牙”。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:104",
+    "characters:111",
+    "characters:105",
+    "characters:106",
+    "characters:107",
+    "characters:132",
+    "characters:153",
+    "characters:239",
+    "characters:264",
+    "characters:267",
+    "terms:474",
+    "characters:110"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

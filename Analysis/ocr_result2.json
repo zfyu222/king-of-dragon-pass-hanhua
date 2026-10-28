@@ -1,0 +1,3127 @@
+[
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\scene027.jpg",
+  "hits": [
+   {
+    "text": "福",
+    "score": 0.772,
+    "box": [
+     43,
+     214,
+     58,
+     235
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\scene042l.jpg",
+  "hits": [
+   {
+    "text": "XO",
+    "score": 0.585,
+    "box": [
+     320,
+     264,
+     336,
+     291
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\scene042m.jpg",
+  "hits": [
+   {
+    "text": "?",
+    "score": 0.666,
+    "box": [
+     265,
+     137,
+     283,
+     159
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\scene042s.jpg",
+  "hits": [
+   {
+    "text": "?",
+    "score": 0.682,
+    "box": [
+     371,
+     156,
+     390,
+     179
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\scene042s_OLD.jpg",
+  "hits": [
+   {
+    "text": "?",
+    "score": 0.653,
+    "box": [
+     292,
+     156,
+     312,
+     180
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\scene043L.jpg",
+  "hits": [
+   {
+    "text": "?",
+    "score": 0.755,
+    "box": [
+     400,
+     86,
+     422,
+     103
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\scene049.jpg",
+  "hits": [
+   {
+    "text": "2",
+    "score": 0.709,
+    "box": [
+     249,
+     202,
+     268,
+     226
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\scene215@2x.jpg",
+  "hits": [
+   {
+    "text": "米",
+    "score": 0.913,
+    "box": [
+     68,
+     390,
+     101,
+     417
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\scene226.jpg",
+  "hits": [
+   {
+    "text": "Theya artworknotavailable",
+    "score": 0.98,
+    "box": [
+     129,
+     239,
+     358,
+     260
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR008.jpg",
+  "hits": [
+   {
+    "text": "AAR",
+    "score": 0.872,
+    "box": [
+     207,
+     150,
+     263,
+     196
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR013.jpg",
+  "hits": [
+   {
+    "text": "5",
+    "score": 0.615,
+    "box": [
+     215,
+     157,
+     232,
+     167
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR035.jpg",
+  "hits": [
+   {
+    "text": "m",
+    "score": 0.961,
+    "box": [
+     198,
+     163,
+     236,
+     241
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR036.jpg",
+  "hits": [
+   {
+    "text": "AAA",
+    "score": 0.555,
+    "box": [
+     5,
+     249,
+     33,
+     258
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR049.jpg",
+  "hits": [
+   {
+    "text": "C",
+    "score": 0.986,
+    "box": [
+     131,
+     16,
+     177,
+     67
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR056.jpg",
+  "hits": [
+   {
+    "text": "9",
+    "score": 0.767,
+    "box": [
+     264,
+     58,
+     369,
+     126
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR058.jpg",
+  "hits": [
+   {
+    "text": "22827",
+    "score": 0.625,
+    "box": [
+     18,
+     195,
+     55,
+     220
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR062.jpg",
+  "hits": [
+   {
+    "text": "39",
+    "score": 0.774,
+    "box": [
+     44,
+     251,
+     64,
+     266
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR069.jpg",
+  "hits": [
+   {
+    "text": "E",
+    "score": 0.68,
+    "box": [
+     446,
+     209,
+     469,
+     236
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR070.jpg",
+  "hits": [
+   {
+    "text": "购",
+    "score": 0.631,
+    "box": [
+     295,
+     37,
+     310,
+     55
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR117.jpg",
+  "hits": [
+   {
+    "text": "天",
+    "score": 0.713,
+    "box": [
+     97,
+     176,
+     158,
+     231
+    ]
+   },
+   {
+    "text": "3805",
+    "score": 0.577,
+    "box": [
+     52,
+     206,
+     81,
+     250
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR122.jpg",
+  "hits": [
+   {
+    "text": "加",
+    "score": 0.627,
+    "box": [
+     151,
+     98,
+     169,
+     118
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR123.jpg",
+  "hits": [
+   {
+    "text": "4",
+    "score": 0.834,
+    "box": [
+     244,
+     39,
+     267,
+     61
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR132.jpg",
+  "hits": [
+   {
+    "text": "A",
+    "score": 0.623,
+    "box": [
+     352,
+     32,
+     395,
+     50
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR168.jpg",
+  "hits": [
+   {
+    "text": "以",
+    "score": 0.634,
+    "box": [
+     165,
+     154,
+     192,
+     180
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR176.jpg",
+  "hits": [
+   {
+    "text": "a",
+    "score": 0.85,
+    "box": [
+     160,
+     235,
+     205,
+     266
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR185.jpg",
+  "hits": [
+   {
+    "text": "V",
+    "score": 0.567,
+    "box": [
+     390,
+     73,
+     413,
+     84
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR217.jpg",
+  "hits": [
+   {
+    "text": "R8",
+    "score": 0.581,
+    "box": [
+     36,
+     222,
+     82,
+     253
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR222.jpg",
+  "hits": [
+   {
+    "text": "7下NEO",
+    "score": 0.604,
+    "box": [
+     145,
+     117,
+     228,
+     133
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR225.jpg",
+  "hits": [
+   {
+    "text": "金",
+    "score": 0.552,
+    "box": [
+     214,
+     40,
+     225,
+     50
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR226.jpg",
+  "hits": [
+   {
+    "text": "3",
+    "score": 0.776,
+    "box": [
+     396,
+     30,
+     461,
+     81
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR229.jpg",
+  "hits": [
+   {
+    "text": "8",
+    "score": 0.557,
+    "box": [
+     385,
+     184,
+     395,
+     194
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR252.jpg",
+  "hits": [
+   {
+    "text": "250",
+    "score": 0.69,
+    "box": [
+     203,
+     143,
+     242,
+     165
+    ]
+   },
+   {
+    "text": "7",
+    "score": 0.677,
+    "box": [
+     206,
+     157,
+     228,
+     174
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR253.jpg",
+  "hits": [
+   {
+    "text": "9",
+    "score": 0.583,
+    "box": [
+     369,
+     194,
+     377,
+     201
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR256.jpg",
+  "hits": [
+   {
+    "text": "?",
+    "score": 0.67,
+    "box": [
+     180,
+     216,
+     209,
+     247
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR259.jpg",
+  "hits": [
+   {
+    "text": "ONOY",
+    "score": 0.574,
+    "box": [
+     276,
+     227,
+     324,
+     256
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR342.jpg",
+  "hits": [
+   {
+    "text": "2",
+    "score": 0.678,
+    "box": [
+     30,
+     241,
+     46,
+     258
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR359.jpg",
+  "hits": [
+   {
+    "text": "90",
+    "score": 0.798,
+    "box": [
+     243,
+     136,
+     261,
+     152
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR367.jpg",
+  "hits": [
+   {
+    "text": "R",
+    "score": 0.705,
+    "box": [
+     304,
+     38,
+     311,
+     48
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR398.jpg",
+  "hits": [
+   {
+    "text": "G",
+    "score": 0.906,
+    "box": [
+     366,
+     245,
+     384,
+     260
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR405.jpg",
+  "hits": [
+   {
+    "text": "3:03:03",
+    "score": 0.76,
+    "box": [
+     416,
+     148,
+     445,
+     220
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR414.jpg",
+  "hits": [
+   {
+    "text": "Siy",
+    "score": 0.55,
+    "box": [
+     25,
+     103,
+     99,
+     167
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes\\sceneR419.jpg",
+  "hits": [
+   {
+    "text": "G",
+    "score": 0.908,
+    "box": [
+     72,
+     155,
+     80,
+     166
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\scene002.jpg",
+  "hits": [
+   {
+    "text": "37",
+    "score": 0.648,
+    "box": [
+     255,
+     156,
+     290,
+     179
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\scene018.jpg",
+  "hits": [
+   {
+    "text": "-",
+    "score": 0.785,
+    "box": [
+     43,
+     242,
+     59,
+     296
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\scene027.jpg",
+  "hits": [
+   {
+    "text": "福",
+    "score": 0.847,
+    "box": [
+     58,
+     284,
+     79,
+     314
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\scene041.jpg",
+  "hits": [
+   {
+    "text": "NNM",
+    "score": 0.762,
+    "box": [
+     350,
+     264,
+     389,
+     282
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\scene042l.jpg",
+  "hits": [
+   {
+    "text": "?",
+    "score": 0.656,
+    "box": [
+     282,
+     171,
+     296,
+     187
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\scene042s.jpg",
+  "hits": [
+   {
+    "text": "?",
+    "score": 0.682,
+    "box": [
+     371,
+     156,
+     390,
+     179
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\scene049.jpg",
+  "hits": [
+   {
+    "text": "p",
+    "score": 0.6,
+    "box": [
+     317,
+     235,
+     348,
+     273
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\scene052.jpg",
+  "hits": [
+   {
+    "text": "33:",
+    "score": 0.786,
+    "box": [
+     91,
+     277,
+     132,
+     304
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\scene103.jpg",
+  "hits": [
+   {
+    "text": "?",
+    "score": 0.599,
+    "box": [
+     453,
+     326,
+     469,
+     347
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\scene215@2x.jpg",
+  "hits": [
+   {
+    "text": "米",
+    "score": 0.931,
+    "box": [
+     92,
+     520,
+     134,
+     557
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\scene222.jpg",
+  "hits": [
+   {
+    "text": "$",
+    "score": 0.686,
+    "box": [
+     466,
+     245,
+     485,
+     268
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\scene226.jpg",
+  "hits": [
+   {
+    "text": "Theya artwork not available",
+    "score": 0.99,
+    "box": [
+     171,
+     319,
+     475,
+     346
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR003.jpg",
+  "hits": [
+   {
+    "text": "yoratos",
+    "score": 0.563,
+    "box": [
+     545,
+     258,
+     626,
+     309
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR008.jpg",
+  "hits": [
+   {
+    "text": "AAA",
+    "score": 0.612,
+    "box": [
+     275,
+     201,
+     350,
+     261
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR010.jpg",
+  "hits": [
+   {
+    "text": "-06",
+    "score": 0.669,
+    "box": [
+     328,
+     63,
+     368,
+     97
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR013.jpg",
+  "hits": [
+   {
+    "text": "75",
+    "score": 0.754,
+    "box": [
+     287,
+     209,
+     307,
+     223
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR034.jpg",
+  "hits": [
+   {
+    "text": "OL",
+    "score": 0.607,
+    "box": [
+     156,
+     321,
+     176,
+     342
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR046.jpg",
+  "hits": [
+   {
+    "text": "6",
+    "score": 0.73,
+    "box": [
+     205,
+     31,
+     216,
+     43
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR049.jpg",
+  "hits": [
+   {
+    "text": "C",
+    "score": 0.984,
+    "box": [
+     176,
+     21,
+     236,
+     90
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR052.jpg",
+  "hits": [
+   {
+    "text": "8117",
+    "score": 0.607,
+    "box": [
+     248,
+     66,
+     285,
+     93
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR053.jpg",
+  "hits": [
+   {
+    "text": "?",
+    "score": 0.643,
+    "box": [
+     352,
+     116,
+     382,
+     149
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR055.jpg",
+  "hits": [
+   {
+    "text": "1",
+    "score": 0.713,
+    "box": [
+     100,
+     258,
+     113,
+     278
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR062.jpg",
+  "hits": [
+   {
+    "text": "G",
+    "score": 0.63,
+    "box": [
+     50,
+     221,
+     89,
+     270
+    ]
+   },
+   {
+    "text": "56",
+    "score": 0.695,
+    "box": [
+     56,
+     332,
+     89,
+     358
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR063.jpg",
+  "hits": [
+   {
+    "text": "O",
+    "score": 0.636,
+    "box": [
+     35,
+     216,
+     51,
+     237
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR086.jpg",
+  "hits": [
+   {
+    "text": "CMVA",
+    "score": 0.599,
+    "box": [
+     223,
+     312,
+     266,
+     330
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR087.jpg",
+  "hits": [
+   {
+    "text": "E",
+    "score": 0.85,
+    "box": [
+     435,
+     79,
+     480,
+     139
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR140.jpg",
+  "hits": [
+   {
+    "text": "3",
+    "score": 0.566,
+    "box": [
+     488,
+     77,
+     563,
+     94
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR157.jpg",
+  "hits": [
+   {
+    "text": "27",
+    "score": 0.641,
+    "box": [
+     547,
+     264,
+     584,
+     289
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR161.jpg",
+  "hits": [
+   {
+    "text": "385",
+    "score": 0.58,
+    "box": [
+     515,
+     46,
+     546,
+     60
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR164.jpg",
+  "hits": [
+   {
+    "text": "n.10",
+    "score": 0.617,
+    "box": [
+     191,
+     197,
+     235,
+     219
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR171.jpg",
+  "hits": [
+   {
+    "text": "6",
+    "score": 0.823,
+    "box": [
+     460,
+     106,
+     469,
+     114
+    ]
+   },
+   {
+    "text": "623",
+    "score": 0.757,
+    "box": [
+     400,
+     208,
+     424,
+     224
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR203.jpg",
+  "hits": [
+   {
+    "text": "5454",
+    "score": 0.778,
+    "box": [
+     578,
+     168,
+     603,
+     242
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR214.jpg",
+  "hits": [
+   {
+    "text": "1.0",
+    "score": 0.813,
+    "box": [
+     83,
+     37,
+     113,
+     83
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR217.jpg",
+  "hits": [
+   {
+    "text": "28",
+    "score": 0.619,
+    "box": [
+     48,
+     296,
+     105,
+     335
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR222.jpg",
+  "hits": [
+   {
+    "text": "7TNEO",
+    "score": 0.558,
+    "box": [
+     193,
+     156,
+     304,
+     177
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR227.jpg",
+  "hits": [
+   {
+    "text": "M",
+    "score": 0.716,
+    "box": [
+     231,
+     202,
+     316,
+     290
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR252.jpg",
+  "hits": [
+   {
+    "text": "219",
+    "score": 0.675,
+    "box": [
+     274,
+     198,
+     303,
+     217
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR254.jpg",
+  "hits": [
+   {
+    "text": "美",
+    "score": 0.601,
+    "box": [
+     103,
+     189,
+     158,
+     235
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR278.jpg",
+  "hits": [
+   {
+    "text": "63",
+    "score": 0.555,
+    "box": [
+     271,
+     292,
+     291,
+     327
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR279.jpg",
+  "hits": [
+   {
+    "text": "50",
+    "score": 0.625,
+    "box": [
+     527,
+     249,
+     544,
+     260
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR282.jpg",
+  "hits": [
+   {
+    "text": "9.09",
+    "score": 0.665,
+    "box": [
+     17,
+     272,
+     59,
+     301
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR323.jpg",
+  "hits": [
+   {
+    "text": "161",
+    "score": 0.585,
+    "box": [
+     455,
+     344,
+     465,
+     353
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR331.jpg",
+  "hits": [
+   {
+    "text": "PF:",
+    "score": 0.558,
+    "box": [
+     301,
+     331,
+     315,
+     338
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR354.jpg",
+  "hits": [
+   {
+    "text": "165",
+    "score": 0.555,
+    "box": [
+     424,
+     187,
+     466,
+     209
+    ]
+   },
+   {
+    "text": "A",
+    "score": 0.583,
+    "box": [
+     107,
+     283,
+     116,
+     308
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR359.jpg",
+  "hits": [
+   {
+    "text": "00",
+    "score": 0.81,
+    "box": [
+     322,
+     180,
+     350,
+     204
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR365.jpg",
+  "hits": [
+   {
+    "text": "416",
+    "score": 0.633,
+    "box": [
+     365,
+     337,
+     380,
+     349
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR396.jpg",
+  "hits": [
+   {
+    "text": "古",
+    "score": 0.954,
+    "box": [
+     115,
+     98,
+     137,
+     127
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR398.jpg",
+  "hits": [
+   {
+    "text": "G",
+    "score": 0.938,
+    "box": [
+     488,
+     325,
+     515,
+     348
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR419.jpg",
+  "hits": [
+   {
+    "text": "C",
+    "score": 0.569,
+    "box": [
+     98,
+     209,
+     106,
+     219
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Scenes~ipad\\sceneR429.jpg",
+  "hits": [
+   {
+    "text": "?",
+    "score": 0.884,
+    "box": [
+     338,
+     204,
+     359,
+     250
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Heroquests\\H3a.jpg",
+  "hits": [
+   {
+    "text": "de",
+    "score": 0.609,
+    "box": [
+     241,
+     52,
+     290,
+     68
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Heroquests\\H3f.jpg",
+  "hits": [
+   {
+    "text": "M6",
+    "score": 0.725,
+    "box": [
+     326,
+     134,
+     368,
+     162
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Heroquests\\H4d.jpg",
+  "hits": [
+   {
+    "text": "十回",
+    "score": 0.896,
+    "box": [
+     194,
+     148,
+     221,
+     223
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Heroquests\\H4f.jpg",
+  "hits": [
+   {
+    "text": "E",
+    "score": 0.661,
+    "box": [
+     279,
+     173,
+     320,
+     221
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Heroquests\\H6i.jpg",
+  "hits": [
+   {
+    "text": "Po",
+    "score": 0.62,
+    "box": [
+     396,
+     112,
+     405,
+     127
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Heroquests\\H7a.jpg",
+  "hits": [
+   {
+    "text": "972",
+    "score": 0.622,
+    "box": [
+     157,
+     184,
+     176,
+     199
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Heroquests\\H7c.jpg",
+  "hits": [
+   {
+    "text": "72",
+    "score": 0.551,
+    "box": [
+     377,
+     101,
+     403,
+     118
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Heroquests\\H7f1.jpg",
+  "hits": [
+   {
+    "text": "72",
+    "score": 0.551,
+    "box": [
+     377,
+     101,
+     403,
+     118
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Heroquests\\H8f.jpg",
+  "hits": [
+   {
+    "text": "on:",
+    "score": 0.565,
+    "box": [
+     130,
+     163,
+     152,
+     188
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Heroquests\\H8g.jpg",
+  "hits": [
+   {
+    "text": "2",
+    "score": 0.62,
+    "box": [
+     320,
+     55,
+     376,
+     76
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Heroquests\\H8h.jpg",
+  "hits": [
+   {
+    "text": "(G",
+    "score": 0.764,
+    "box": [
+     183,
+     110,
+     245,
+     159
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Heroquests~ipad\\H11c.jpg",
+  "hits": [
+   {
+    "text": "十",
+    "score": 0.79,
+    "box": [
+     337,
+     406,
+     358,
+     430
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Heroquests~ipad\\H1a.jpg",
+  "hits": [
+   {
+    "text": "cte",
+    "score": 0.618,
+    "box": [
+     271,
+     309,
+     295,
+     378
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Heroquests~ipad\\H3d.jpg",
+  "hits": [
+   {
+    "text": "KIOERU",
+    "score": 0.598,
+    "box": [
+     498,
+     199,
+     634,
+     335
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Heroquests~ipad\\H3e.jpg",
+  "hits": [
+   {
+    "text": "ey",
+    "score": 0.735,
+    "box": [
+     514,
+     132,
+     535,
+     157
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Heroquests~ipad\\H4a.jpg",
+  "hits": [
+   {
+    "text": "8",
+    "score": 0.738,
+    "box": [
+     380,
+     130,
+     392,
+     147
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Heroquests~ipad\\H4c.jpg",
+  "hits": [
+   {
+    "text": "0",
+    "score": 0.596,
+    "box": [
+     584,
+     263,
+     599,
+     278
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Heroquests~ipad\\H4d.jpg",
+  "hits": [
+   {
+    "text": "十回",
+    "score": 0.831,
+    "box": [
+     292,
+     222,
+     331,
+     333
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Heroquests~ipad\\H4f.jpg",
+  "hits": [
+   {
+    "text": "E",
+    "score": 0.785,
+    "box": [
+     417,
+     258,
+     480,
+     332
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Heroquests~ipad\\H6i.jpg",
+  "hits": [
+   {
+    "text": "MM",
+    "score": 0.671,
+    "box": [
+     277,
+     279,
+     334,
+     343
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Heroquests~ipad\\H7c.jpg",
+  "hits": [
+   {
+    "text": "AT1",
+    "score": 0.559,
+    "box": [
+     565,
+     152,
+     604,
+     177
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Heroquests~ipad\\H7f1.jpg",
+  "hits": [
+   {
+    "text": "AT1",
+    "score": 0.559,
+    "box": [
+     565,
+     152,
+     604,
+     177
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Heroquests~ipad\\H8g.jpg",
+  "hits": [
+   {
+    "text": "26",
+    "score": 0.702,
+    "box": [
+     480,
+     87,
+     544,
+     114
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Heroquests~ipad\\H9e.jpg",
+  "hits": [
+   {
+    "text": "28",
+    "score": 0.648,
+    "box": [
+     366,
+     190,
+     378,
+     203
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Lore\\background-map.png",
+  "hits": [
+   {
+    "text": "Spider",
+    "score": 0.996,
+    "box": [
+     474,
+     1,
+     514,
+     18
+    ]
+   },
+   {
+    "text": "AGGAR.",
+    "score": 0.912,
+    "box": [
+     4,
+     15,
+     61,
+     35
+    ]
+   },
+   {
+    "text": "SAIRD",
+    "score": 0.982,
+    "box": [
+     137,
+     15,
+     185,
+     35
+    ]
+   },
+   {
+    "text": "Stinking Forest",
+    "score": 0.969,
+    "box": [
+     332,
+     15,
+     449,
+     32
+    ]
+   },
+   {
+    "text": "Mt.",
+    "score": 0.978,
+    "box": [
+     481,
+     17,
+     506,
+     32
+    ]
+   },
+   {
+    "text": "DAGORI",
+    "score": 0.996,
+    "box": [
+     564,
+     14,
+     627,
+     33
+    ]
+   },
+   {
+    "text": "INKARTH",
+    "score": 0.983,
+    "box": [
+     559,
+     35,
+     630,
+     53
+    ]
+   },
+   {
+    "text": "Skyfall",
+    "score": 0.933,
+    "box": [
+     488,
+     49,
+     541,
+     67
+    ]
+   },
+   {
+    "text": "Lake",
+    "score": 0.988,
+    "box": [
+     491,
+     65,
+     528,
+     81
+    ]
+   },
+   {
+    "text": "Hydra Mts.",
+    "score": 0.982,
+    "box": [
+     169,
+     81,
+     252,
+     98
+    ]
+   },
+   {
+    "text": "Indigo Mts.",
+    "score": 0.96,
+    "box": [
+     520,
+     82,
+     605,
+     145
+    ]
+   },
+   {
+    "text": "Quivin",
+    "score": 0.992,
+    "box": [
+     449,
+     173,
+     488,
+     187
+    ]
+   },
+   {
+    "text": "RALIOS",
+    "score": 0.977,
+    "box": [
+     4,
+     192,
+     59,
+     208
+    ]
+   },
+   {
+    "text": "Dragon Pass ye.",
+    "score": 0.838,
+    "box": [
+     225,
+     185,
+     347,
+     217
+    ]
+   },
+   {
+    "text": "KeroFin",
+    "score": 0.996,
+    "box": [
+     343,
+     183,
+     390,
+     197
+    ]
+   },
+   {
+    "text": "Mt.",
+    "score": 0.824,
+    "box": [
+     457,
+     190,
+     473,
+     200
+    ]
+   },
+   {
+    "text": "PRAX",
+    "score": 0.991,
+    "box": [
+     565,
+     222,
+     634,
+     248
+    ]
+   },
+   {
+    "text": "Mislari Mts.",
+    "score": 0.976,
+    "box": [
+     14,
+     244,
+     103,
+     262
+    ]
+   },
+   {
+    "text": "Arrowmound",
+    "score": 0.998,
+    "box": [
+     213,
+     255,
+     288,
+     270
+    ]
+   },
+   {
+    "text": "TheBlock",
+    "score": 0.995,
+    "box": [
+     558,
+     269,
+     634,
+     287
+    ]
+   },
+   {
+    "text": "Arstola Forest",
+    "score": 0.978,
+    "box": [
+     19,
+     261,
+     138,
+     316
+    ]
+   },
+   {
+    "text": "Stormwalk",
+    "score": 0.993,
+    "box": [
+     497,
+     318,
+     561,
+     333
+    ]
+   },
+   {
+    "text": "ESROLIA",
+    "score": 0.996,
+    "box": [
+     120,
+     330,
+     203,
+     350
+    ]
+   },
+   {
+    "text": "Devil's",
+    "score": 0.954,
+    "box": [
+     565,
+     323,
+     628,
+     338
+    ]
+   },
+   {
+    "text": "Shadow",
+    "score": 0.989,
+    "box": [
+     303,
+     335,
+     361,
+     350
+    ]
+   },
+   {
+    "text": "Mt.",
+    "score": 0.961,
+    "box": [
+     516,
+     333,
+     535,
+     346
+    ]
+   },
+   {
+    "text": "Marsh",
+    "score": 0.995,
+    "box": [
+     573,
+     342,
+     621,
+     359
+    ]
+   },
+   {
+    "text": "Plateau",
+    "score": 0.983,
+    "box": [
+     301,
+     352,
+     363,
+     371
+    ]
+   },
+   {
+    "text": "Nochet",
+    "score": 0.998,
+    "box": [
+     223,
+     384,
+     277,
+     400
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Lore\\background-map1024.png",
+  "hits": [
+   {
+    "text": "Spider",
+    "score": 0.998,
+    "box": [
+     760,
+     5,
+     824,
+     29
+    ]
+   },
+   {
+    "text": "AGGAR",
+    "score": 0.983,
+    "box": [
+     12,
+     25,
+     97,
+     52
+    ]
+   },
+   {
+    "text": "SAIRD",
+    "score": 0.982,
+    "box": [
+     225,
+     27,
+     293,
+     52
+    ]
+   },
+   {
+    "text": "Stinking Forest",
+    "score": 0.989,
+    "box": [
+     527,
+     18,
+     705,
+     47
+    ]
+   },
+   {
+    "text": "Mt.r",
+    "score": 0.855,
+    "box": [
+     767,
+     25,
+     820,
+     56
+    ]
+   },
+   {
+    "text": "DAGORI",
+    "score": 0.991,
+    "box": [
+     916,
+     21,
+     1006,
+     45
+    ]
+   },
+   {
+    "text": "VINKARTH",
+    "score": 0.931,
+    "box": [
+     888,
+     47,
+     1011,
+     76
+    ]
+   },
+   {
+    "text": "Skyfall",
+    "score": 0.986,
+    "box": [
+     777,
+     72,
+     862,
+     100
+    ]
+   },
+   {
+    "text": "Lake",
+    "score": 0.991,
+    "box": [
+     780,
+     100,
+     845,
+     128
+    ]
+   },
+   {
+    "text": "Hydra Mts.",
+    "score": 0.996,
+    "box": [
+     289,
+     129,
+     420,
+     156
+    ]
+   },
+   {
+    "text": "Indigo Mts.",
+    "score": 0.989,
+    "box": [
+     841,
+     129,
+     970,
+     229
+    ]
+   },
+   {
+    "text": "Quivin",
+    "score": 0.996,
+    "box": [
+     706,
+     269,
+     786,
+     296
+    ]
+   },
+   {
+    "text": "Dragon Pass",
+    "score": 0.979,
+    "box": [
+     369,
+     296,
+     516,
+     327
+    ]
+   },
+   {
+    "text": "Kero Fin",
+    "score": 0.98,
+    "box": [
+     549,
+     287,
+     635,
+     313
+    ]
+   },
+   {
+    "text": "Mt.",
+    "score": 0.877,
+    "box": [
+     728,
+     300,
+     764,
+     322
+    ]
+   },
+   {
+    "text": "RALIOS",
+    "score": 0.98,
+    "box": [
+     10,
+     310,
+     95,
+     337
+    ]
+   },
+   {
+    "text": "PRAX",
+    "score": 0.987,
+    "box": [
+     925,
+     354,
+     1011,
+     389
+    ]
+   },
+   {
+    "text": "Mislari Mts.",
+    "score": 0.994,
+    "box": [
+     22,
+     382,
+     158,
+     409
+    ]
+   },
+   {
+    "text": "Arrowmound",
+    "score": 0.997,
+    "box": [
+     361,
+     395,
+     489,
+     418
+    ]
+   },
+   {
+    "text": "The Block",
+    "score": 0.927,
+    "box": [
+     919,
+     401,
+     1012,
+     427
+    ]
+   },
+   {
+    "text": "Arstola Forest",
+    "score": 0.993,
+    "box": [
+     21,
+     411,
+     206,
+     491
+    ]
+   },
+   {
+    "text": "Stormwalk",
+    "score": 0.993,
+    "box": [
+     781,
+     496,
+     891,
+     522
+    ]
+   },
+   {
+    "text": "Devil's",
+    "score": 0.942,
+    "box": [
+     907,
+     513,
+     1000,
+     540
+    ]
+   },
+   {
+    "text": "ESROLIA",
+    "score": 0.992,
+    "box": [
+     197,
+     531,
+     320,
+     561
+    ]
+   },
+   {
+    "text": "Mt.",
+    "score": 0.986,
+    "box": [
+     821,
+     524,
+     853,
+     543
+    ]
+   },
+   {
+    "text": "Marsh",
+    "score": 0.991,
+    "box": [
+     916,
+     544,
+     990,
+     569
+    ]
+   },
+   {
+    "text": "Nochet",
+    "score": 0.999,
+    "box": [
+     355,
+     613,
+     435,
+     637
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Lore\\background-map1024@2x.png",
+  "hits": [
+   {
+    "text": "Spider",
+    "score": 1.0,
+    "box": [
+     1521,
+     11,
+     1643,
+     56
+    ]
+   },
+   {
+    "text": "Stinking Forest",
+    "score": 0.999,
+    "box": [
+     1057,
+     41,
+     1401,
+     88
+    ]
+   },
+   {
+    "text": "AGGAR",
+    "score": 0.984,
+    "box": [
+     28,
+     54,
+     185,
+     99
+    ]
+   },
+   {
+    "text": "DAGORI",
+    "score": 0.992,
+    "box": [
+     1835,
+     44,
+     2007,
+     86
+    ]
+   },
+   {
+    "text": "SAIRD",
+    "score": 0.976,
+    "box": [
+     452,
+     56,
+     583,
+     99
+    ]
+   },
+   {
+    "text": "Mt.",
+    "score": 0.946,
+    "box": [
+     1545,
+     60,
+     1603,
+     99
+    ]
+   },
+   {
+    "text": "MINKARTH",
+    "score": 0.871,
+    "box": [
+     1753,
+     100,
+     2013,
+     146
+    ]
+   },
+   {
+    "text": "Skyfall",
+    "score": 0.94,
+    "box": [
+     1556,
+     141,
+     1722,
+     197
+    ]
+   },
+   {
+    "text": "Lake",
+    "score": 0.984,
+    "box": [
+     1564,
+     199,
+     1686,
+     252
+    ]
+   },
+   {
+    "text": "Hydra Mts.",
+    "score": 0.991,
+    "box": [
+     581,
+     262,
+     836,
+     307
+    ]
+   },
+   {
+    "text": "Indigo Mts.",
+    "score": 0.997,
+    "box": [
+     1690,
+     269,
+     1926,
+     450
+    ]
+   },
+   {
+    "text": "Quivin",
+    "score": 0.92,
+    "box": [
+     1418,
+     543,
+     1568,
+     589
+    ]
+   },
+   {
+    "text": "Kero",
+    "score": 0.998,
+    "box": [
+     1102,
+     582,
+     1196,
+     617
+    ]
+   },
+   {
+    "text": "Fir",
+    "score": 0.987,
+    "box": [
+     1205,
+     582,
+     1254,
+     611
+    ]
+   },
+   {
+    "text": "Dragon Pass",
+    "score": 0.969,
+    "box": [
+     744,
+     598,
+     1026,
+     645
+    ]
+   },
+   {
+    "text": "Mt",
+    "score": 0.997,
+    "box": [
+     1456,
+     599,
+     1524,
+     643
+    ]
+   },
+   {
+    "text": "RALIOS",
+    "score": 0.986,
+    "box": [
+     23,
+     625,
+     184,
+     669
+    ]
+   },
+   {
+    "text": "PRAX",
+    "score": 0.99,
+    "box": [
+     1854,
+     713,
+     2014,
+     770
+    ]
+   },
+   {
+    "text": "Mislari Mts.",
+    "score": 0.972,
+    "box": [
+     47,
+     768,
+     310,
+     813
+    ]
+   },
+   {
+    "text": "Arrowmound",
+    "score": 0.998,
+    "box": [
+     724,
+     791,
+     973,
+     831
+    ]
+   },
+   {
+    "text": "The Block",
+    "score": 0.956,
+    "box": [
+     1842,
+     808,
+     2018,
+     848
+    ]
+   },
+   {
+    "text": "Arstola Forest",
+    "score": 0.986,
+    "box": [
+     45,
+     827,
+     404,
+     977
+    ]
+   },
+   {
+    "text": "ttf+tf+t",
+    "score": 0.643,
+    "box": [
+     1152,
+     913,
+     1366,
+     939
+    ]
+   },
+   {
+    "text": "1",
+    "score": 0.581,
+    "box": [
+     1489,
+     935,
+     1512,
+     951
+    ]
+   },
+   {
+    "text": "O",
+    "score": 0.663,
+    "box": [
+     1498,
+     963,
+     1520,
+     990
+    ]
+   },
+   {
+    "text": "Stormwalk",
+    "score": 0.999,
+    "box": [
+     1571,
+     998,
+     1773,
+     1036
+    ]
+   },
+   {
+    "text": "Devil's",
+    "score": 0.983,
+    "box": [
+     1803,
+     1029,
+     1994,
+     1076
+    ]
+   },
+   {
+    "text": "Mt.",
+    "score": 0.995,
+    "box": [
+     1642,
+     1045,
+     1705,
+     1084
+    ]
+   },
+   {
+    "text": "ESROLIA",
+    "score": 0.994,
+    "box": [
+     395,
+     1066,
+     634,
+     1120
+    ]
+   },
+   {
+    "text": "RTL",
+    "score": 0.995,
+    "box": [
+     1412,
+     1085,
+     1474,
+     1166
+    ]
+   },
+   {
+    "text": "Marsh",
+    "score": 0.994,
+    "box": [
+     1835,
+     1090,
+     1975,
+     1132
+    ]
+   },
+   {
+    "text": "AND",
+    "score": 0.995,
+    "box": [
+     1445,
+     1159,
+     1510,
+     1237
+    ]
+   },
+   {
+    "text": "Nochet",
+    "score": 0.998,
+    "box": [
+     681,
+     1225,
+     869,
+     1270
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Lore\\background-map@2x.png",
+  "hits": [
+   {
+    "text": "Spider",
+    "score": 0.999,
+    "box": [
+     950,
+     6,
+     1029,
+     37
+    ]
+   },
+   {
+    "text": "AGGAR",
+    "score": 0.979,
+    "box": [
+     17,
+     33,
+     119,
+     64
+    ]
+   },
+   {
+    "text": "SAIRD",
+    "score": 0.973,
+    "box": [
+     280,
+     33,
+     367,
+     65
+    ]
+   },
+   {
+    "text": "Stinking Forest",
+    "score": 0.992,
+    "box": [
+     661,
+     26,
+     878,
+     56
+    ]
+   },
+   {
+    "text": "DAGORI",
+    "score": 0.988,
+    "box": [
+     1144,
+     26,
+     1256,
+     57
+    ]
+   },
+   {
+    "text": "Mt.r",
+    "score": 0.827,
+    "box": [
+     965,
+     38,
+     1019,
+     64
+    ]
+   },
+   {
+    "text": "MINKARTH",
+    "score": 0.924,
+    "box": [
+     1102,
+     64,
+     1260,
+     91
+    ]
+   },
+   {
+    "text": "Skyfall",
+    "score": 0.972,
+    "box": [
+     968,
+     88,
+     1077,
+     125
+    ]
+   },
+   {
+    "text": "Lake",
+    "score": 0.989,
+    "box": [
+     979,
+     126,
+     1056,
+     157
+    ]
+   },
+   {
+    "text": "Hydra Mts.",
+    "score": 0.998,
+    "box": [
+     361,
+     161,
+     524,
+     194
+    ]
+   },
+   {
+    "text": "Indigo Mts.",
+    "score": 0.97,
+    "box": [
+     1054,
+     162,
+     1212,
+     286
+    ]
+   },
+   {
+    "text": "Quivin",
+    "score": 0.993,
+    "box": [
+     883,
+     337,
+     982,
+     371
+    ]
+   },
+   {
+    "text": "Dragon Pass",
+    "score": 0.965,
+    "box": [
+     462,
+     371,
+     644,
+     408
+    ]
+   },
+   {
+    "text": "Kero Fin",
+    "score": 0.98,
+    "box": [
+     687,
+     360,
+     789,
+     390
+    ]
+   },
+   {
+    "text": "Mt.",
+    "score": 0.994,
+    "box": [
+     908,
+     373,
+     956,
+     404
+    ]
+   },
+   {
+    "text": "RALIOS",
+    "score": 0.989,
+    "box": [
+     15,
+     391,
+     118,
+     419
+    ]
+   },
+   {
+    "text": "PRAX",
+    "score": 0.986,
+    "box": [
+     1156,
+     442,
+     1263,
+     486
+    ]
+   },
+   {
+    "text": "Mislari Mts.",
+    "score": 0.99,
+    "box": [
+     27,
+     479,
+     196,
+     511
+    ]
+   },
+   {
+    "text": "Arrowmound",
+    "score": 0.998,
+    "box": [
+     453,
+     496,
+     609,
+     520
+    ]
+   },
+   {
+    "text": "The,Block",
+    "score": 0.959,
+    "box": [
+     1150,
+     503,
+     1264,
+     533
+    ]
+   },
+   {
+    "text": "Arstola Forest",
+    "score": 0.996,
+    "box": [
+     29,
+     518,
+     253,
+     611
+    ]
+   },
+   {
+    "text": "Stormwalk",
+    "score": 0.995,
+    "box": [
+     981,
+     622,
+     1111,
+     651
+    ]
+   },
+   {
+    "text": "Devil's",
+    "score": 0.975,
+    "box": [
+     1120,
+     643,
+     1248,
+     674
+    ]
+   },
+   {
+    "text": "Mt.",
+    "score": 0.994,
+    "box": [
+     1026,
+     653,
+     1067,
+     680
+    ]
+   },
+   {
+    "text": "ESROLIA",
+    "score": 0.992,
+    "box": [
+     248,
+     665,
+     399,
+     702
+    ]
+   },
+   {
+    "text": "Marsh",
+    "score": 0.991,
+    "box": [
+     1145,
+     680,
+     1236,
+     711
+    ]
+   },
+   {
+    "text": "Nochet",
+    "score": 0.998,
+    "box": [
+     444,
+     767,
+     544,
+     795
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Lore\\EarlySettlements.jpg",
+  "hits": [
+   {
+    "text": "X",
+    "score": 0.699,
+    "box": [
+     82,
+     148,
+     111,
+     174
+    ]
+   },
+   {
+    "text": "daq?",
+    "score": 0.632,
+    "box": [
+     359,
+     209,
+     424,
+     249
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Lore\\ErnaldaFeeds.jpg",
+  "hits": [
+   {
+    "text": "?",
+    "score": 0.567,
+    "box": [
+     459,
+     289,
+     468,
+     299
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Lore\\IssariesConciliator~ipad.jpg",
+  "hits": [
+   {
+    "text": "MM",
+    "score": 0.671,
+    "box": [
+     277,
+     279,
+     334,
+     343
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Lore\\LBQ2.jpg",
+  "hits": [
+   {
+    "text": "Am",
+    "score": 0.583,
+    "box": [
+     422,
+     195,
+     467,
+     235
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Lore\\LBQ4~ipad.jpg",
+  "hits": [
+   {
+    "text": "V",
+    "score": 0.756,
+    "box": [
+     67,
+     211,
+     92,
+     239
+    ]
+   },
+   {
+    "text": "2",
+    "score": 0.59,
+    "box": [
+     98,
+     215,
+     117,
+     237
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Lore\\LBQ6~ipad.jpg",
+  "hits": [
+   {
+    "text": "欢",
+    "score": 0.704,
+    "box": [
+     70,
+     121,
+     94,
+     143
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Lore\\LBQ7.jpg",
+  "hits": [
+   {
+    "text": "G",
+    "score": 0.905,
+    "box": [
+     58,
+     148,
+     95,
+     181
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Lore\\OrlanthJustice.jpg",
+  "hits": [
+   {
+    "text": "BIOiDIQ",
+    "score": 0.555,
+    "box": [
+     242,
+     265,
+     286,
+     281
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Lore\\UraldasBlessing~ipad.jpg",
+  "hits": [
+   {
+    "text": "AT1",
+    "score": 0.559,
+    "box": [
+     565,
+     152,
+     604,
+     177
+    ]
+   }
+  ]
+ }
+]

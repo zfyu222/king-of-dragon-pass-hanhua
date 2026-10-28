@@ -1,0 +1,115 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e3 与 f1。34024 以 council, or ring 说明 ring 是氏族议事圈，33584 说明 ring members 是议事圈成员；保留 e1/e2 的“议事圈”，将 e3 从“议事会成员”改为“议事圈成员”。f1 的共享译名确认为同一术语的冠词形式，不是冲突。",
+  "acknowledged_findings": [
+    "F0371"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "议事圈成员"
+      },
+      "reason": "与 e1/e2 的“议事圈”及本条 term_reason 的“议事圈成员”统一；原“议事会成员”与氏族议事圈术语不一致。",
+      "evidence_rows": [
+        110,
+        33584
+      ],
+      "table": "terms",
+      "index": 39
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:38",
+      "evidence_rows": [
+        11060,
+        34024
+      ],
+      "source_excerpt": "council, or ring",
+      "reason": "ring 在 34024 被 council 定义，11060 的 the ring’s decisions 指其决策；保留“议事圈”以体现氏族议事圈的比喻义，不按环状物直译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34024: 'advised by a council, or ring, which he appoints from the leading people'；11060: 'the ring’s decisions' 均指氏族议事圈。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“议事圈”保留 ring 的比喻义，同时表达 council/议事组织，不是物理环状物。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "34024/11060 的 ring 为氏族领导组织，category_path=组织成立。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "e1 与 e2 同指，与 e3 的“议事圈成员”一致；f1 属同一术语冠词形式共享译名，非冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:121",
+      "evidence_rows": [
+        1664,
+        1690
+      ],
+      "source_excerpt": "criticized the ring for sending explorers",
+      "reason": "the ring 为 ring 的定冠词形式，1664/1690 中因派探索队受批评，指氏族议事圈；保留“议事圈”并与 e1 统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1664/1690: 'criticized the ring for sending explorers'，the ring 指氏族议事圈。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“议事圈”与 e1 同指，定冠词不译出，符合中文组织名表达。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该 ring 能派探索队并受批评，属组织；category_path=组织成立。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "e2 与 e1 为同一术语的带冠词形式，共享“议事圈”译名；f1 经核对为同指别名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:39",
+      "evidence_rows": [
+        110,
+        33211,
+        33584
+      ],
+      "source_excerpt": "all the ring members",
+      "reason": "ring members 指议事圈成员身份；33584 说明成员各拜不同神，110 与 thanes 并列；译名由“议事会成员”改为“议事圈成员”，与 e1/e2 统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33584: 'all the ring members worship different gods'；110: 'ring members' 与 thanes 并列，均指议事圈成员。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "将“议事会成员”改为“议事圈成员”，与 ring=议事圈 及 term_reason 统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "33211 以 ring members 与 non-ring members 对照，33584 述其成员身份；category_path=身份成立。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "修正后与 e1/e2 的“议事圈”一致；“议事圈成员”是成员身份，不是另一个组织译名。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:38",
+    "terms:121",
+    "terms:39"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

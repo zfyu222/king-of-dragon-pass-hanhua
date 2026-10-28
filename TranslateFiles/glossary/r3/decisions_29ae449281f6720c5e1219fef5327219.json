@@ -1,0 +1,377 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对全部 12 条术语：保留多数专名与游戏术语；修正 e10 分类为其他并完善说明，e12 译名改为辉光面包并完善说明。无隔离或新增。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "category_path": "其他",
+        "term_reason": "Orlanth 装入袋中并释放，用来刺瞎 Aroka 的四方之风。"
+      },
+      "reason": "34249 显示 Four Winds 被释放后自行投掷武器，归类为其他比物品更准确。",
+      "evidence_rows": [
+        34249
+      ],
+      "table": "terms",
+      "index": 899
+    },
+    {
+      "patch": {
+        "recommended_translation": "辉光面包",
+        "term_reason": "Ernalda 的魔法面包，25641 称其为 renewing Splendorbread；Orlanth 对抗 Aroka 前食用。"
+      },
+      "reason": "Splendorbread 为具名魔法面包；“辉光面包”比“辉煌面包”更贴合词义与中文搭配，term_reason 依 25641 补充 renewing。",
+      "evidence_rows": [
+        25641,
+        34243
+      ],
+      "table": "terms",
+      "index": 902
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:871",
+      "evidence_rows": [
+        34337
+      ],
+      "source_excerpt": "make his Traveling Clan part of the Storm Tribe",
+      "reason": "专名与证据一致，无需修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34337 明确出现 Traveling Clan，且语境为 Talking God 的氏族名称。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“旅行氏族”可对应 Traveling Clan，作为氏族专名简洁可辨。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=组织，符合其为氏族的身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "term_kind=proper_name、enforcement=required 与专名性质一致；term_reason 有 34337 原文依据。"
+        }
+      }
+    },
+    {
+      "ref": "terms:872",
+      "evidence_rows": [
+        34337
+      ],
+      "source_excerpt": "the Cow Clan should join the Storm Tribe",
+      "reason": "专名与证据一致，无需修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34337 出现 Cow Clan，语境为 Uralda 同意加入 Storm Tribe 的氏族。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“牛氏族”可对应 Cow Clan，作为氏族专名简洁可辨。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=组织，符合其为氏族的身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "term_kind=proper_name、enforcement=required 与专名性质一致；term_reason 有 34337 原文依据。"
+        }
+      }
+    },
+    {
+      "ref": "terms:875",
+      "evidence_rows": [
+        34277
+      ],
+      "source_excerpt": "the Harandings have not been friends with the Vingkotlings",
+      "reason": "专名与证据一致，无需修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34277 出现 Harandings，语境为与 Vingkotlings 不再友好的群体。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“哈兰丁族”可对应 Harandings，作为族称简洁可辨。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=组织，符合其作为氏族/群体的身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "term_kind=proper_name、enforcement=required 与专名性质一致；term_reason 有 34277 原文依据。"
+        }
+      }
+    },
+    {
+      "ref": "terms:880",
+      "evidence_rows": [
+        34339
+      ],
+      "source_excerpt": "She brought him the Chest of Torcs",
+      "reason": "专名与证据一致，无需修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34339 出现 Chest of Torcs，语境为赠予氏族首领的礼器。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“颈环宝箱”可对应 Chest of Torcs，保留容器与 torc 的含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=物品，符合其具名礼器性质。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "term_kind=proper_name、enforcement=required 与具名物品性质一致；term_reason 有 34339 原文依据。"
+        }
+      }
+    },
+    {
+      "ref": "terms:887",
+      "evidence_rows": [
+        34272,
+        34274
+      ],
+      "source_excerpt": "by right of Possession",
+      "reason": "法律术语及限定范围合理，无需修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34272 出现 by right of Possession；34274 说明 Orlanth 将 Possession 确立为法律。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“占有权”可表达 by right of Possession 的法律权利含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他，符合其作为土地权利法则的概念性质。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "applicability 以 right of 前缀限定，避免命中 16945 的普通 possession；term_kind=game_term、enforcement=required 与法律概念相符。"
+        }
+      }
+    },
+    {
+      "ref": "terms:888",
+      "evidence_rows": [
+        34273,
+        34274
+      ],
+      "source_excerpt": "by right of Establishment",
+      "reason": "法律术语及限定范围合理，无需修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34273 出现 by right of Establishment；34274 说明 Orlanth 将 Establishment 确立为法律。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“建业权”可表达 by right of Establishment 的法律权利含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他，符合其作为土地权利法则的概念性质。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "applicability 以 right of 前缀限定，避免误匹配普通 establishment；term_kind=game_term、enforcement=required 与法律概念相符。"
+        }
+      }
+    },
+    {
+      "ref": "terms:889",
+      "evidence_rows": [
+        34278,
+        34284
+      ],
+      "source_excerpt": "prove the natural and ageless Law of Violence",
+      "reason": "游戏术语与证据一致，无需修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34278 与 34284 均出现 the natural and ageless Law of Violence。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“暴力法则”可对应 Law of Violence，保留法则含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他，符合其作为神话法则的概念性质。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "term_kind=game_term、enforcement=required 与具名法则性质一致；term_reason 有 34278/34284 原文依据。"
+        }
+      }
+    },
+    {
+      "ref": "terms:891",
+      "evidence_rows": [
+        34300
+      ],
+      "source_excerpt": "Runes are the building blocks of Glorantha.",
+      "reason": "核心游戏术语与证据一致，无需修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34300 明确以 Runes are the building blocks of Glorantha 定义符文。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“符文”是 Runes 在奇幻/游戏语境中的常用对应译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他，符合其作为世界构成单位与象征体系的概念性质。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "term_kind=game_term、enforcement=required 与核心机制术语性质一致；term_reason 有 34300 原文依据。"
+        }
+      }
+    },
+    {
+      "ref": "terms:898",
+      "evidence_rows": [
+        34317,
+        34324
+      ],
+      "source_excerpt": "fight off the Giggling Ticks",
+      "reason": "专名与证据一致，无需修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34317 与 34324 均出现 Uralda 对抗 Giggling Ticks 的叙述。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“咯咯蜱虫”保留 Giggling 的拟声/发笑意味与 Ticks 的蜱虫义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他，作为特定害虫群名可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "term_kind=proper_name、enforcement=required 与具名生物群性质一致；term_reason 有 34317/34324 原文依据。"
+        }
+      }
+    },
+    {
+      "ref": "terms:899",
+      "evidence_rows": [
+        34243,
+        34249
+      ],
+      "source_excerpt": "released the Four Winds and they cast their weapons",
+      "reason": "分类与说明已按原文修正。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34243 出现袋中的 Four Winds；34249 出现 Four Winds 被释放并投掷武器。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“四方之风”可对应 Four Winds，保留四方/四风之意。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "由物品改为其他；34249 表明 Four Winds 是被释放并自行投掷武器的风之群体，不是实体箱袋物品。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "term_kind=proper_name、enforcement=required 保留；term_reason 改为释放后攻击的风之群体，与修正分类一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:900",
+      "evidence_rows": [
+        25548,
+        25550,
+        32403,
+        34244,
+        34248,
+        34265,
+        34266
+      ],
+      "source_excerpt": "took their weapon, the Darkwind",
+      "reason": "专名与证据一致，无需修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25548/25550 出现 soul-cutting Darkwind 与 took their weapon, the Darkwind；34244/34248/34265/34266 补充其作为风被释放的叙述。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“暗风”可对应 Darkwind，作为具名风/武器简洁可辨。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=物品，结合 25550 的 weapon 与 32403 的宝藏列表语境可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "term_kind=proper_name、enforcement=required 与具名宝物/武器性质一致；term_reason 有 34265/34266 等原文依据。"
+        }
+      }
+    },
+    {
+      "ref": "terms:902",
+      "evidence_rows": [
+        25641,
+        34243
+      ],
+      "source_excerpt": "We gained the renewing Splendorbread.",
+      "reason": "译名与说明已按原文修正。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25641 出现 renewing Splendorbread；34243 出现 Ernalda's Splendorbread 与食用叙述。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由“辉煌面包”改为“辉光面包”；Splendorbread 是具名魔法面包，“辉光”更贴合 splendor 的光辉义且与“面包”搭配自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=物品，符合其作为具名食物/魔法面包的性质。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "term_kind=proper_name、enforcement=required 保留；term_reason 依 25641/34243 补充魔法与 renewing 依据。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:871",
+    "terms:872",
+    "terms:875",
+    "terms:880",
+    "terms:887",
+    "terms:888",
+    "terms:889",
+    "terms:891",
+    "terms:898",
+    "terms:899",
+    "terms:900",
+    "terms:902"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

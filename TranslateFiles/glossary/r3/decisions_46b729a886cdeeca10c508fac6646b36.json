@@ -1,0 +1,534 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对12个 sceneR 场景资源标识：均为非正文完整标识，需以 whole_record 限定保护范围，不进行全局禁翻；e12 同时补齐 term_reason。未发现译名或场景标识一致性冲突。",
+  "acknowledged_findings": [
+    "F0021",
+    "F0022",
+    "F0023",
+    "F0024",
+    "F0025",
+    "F0026",
+    "F0027",
+    "F0028",
+    "F0029",
+    "F0030",
+    "F0032",
+    "F0052"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整原文 sceneR077 为场景资源标识，非正文；仅按完整记录保留。"
+        }
+      },
+      "reason": "限定为完整记录，避免将 sceneR077 作为普通词全局禁翻。",
+      "evidence_rows": [
+        1031
+      ],
+      "table": "non_translate",
+      "index": 21
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整原文 sceneR090 为场景资源标识，非正文；仅按完整记录保留。"
+        }
+      },
+      "reason": "限定为完整记录，避免将 sceneR090 作为普通词全局禁翻。",
+      "evidence_rows": [
+        1032
+      ],
+      "table": "non_translate",
+      "index": 22
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整原文 sceneR083 为场景资源标识，非正文；仅按完整记录保留。"
+        }
+      },
+      "reason": "限定为完整记录，避免将 sceneR083 作为普通词全局禁翻。",
+      "evidence_rows": [
+        1033
+      ],
+      "table": "non_translate",
+      "index": 23
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整原文 sceneR084 为场景资源标识，非正文；仅按完整记录保留。"
+        }
+      },
+      "reason": "限定为完整记录，避免将 sceneR084 作为普通词全局禁翻。",
+      "evidence_rows": [
+        1034
+      ],
+      "table": "non_translate",
+      "index": 24
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整原文 sceneR081 为场景资源标识，非正文；仅按完整记录保留。"
+        }
+      },
+      "reason": "限定为完整记录，避免将 sceneR081 作为普通词全局禁翻。",
+      "evidence_rows": [
+        1035
+      ],
+      "table": "non_translate",
+      "index": 25
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整原文 sceneR088 为场景资源标识，非正文；仅按完整记录保留。"
+        }
+      },
+      "reason": "限定为完整记录，避免将 sceneR088 作为普通词全局禁翻。",
+      "evidence_rows": [
+        1036
+      ],
+      "table": "non_translate",
+      "index": 26
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整原文 sceneR079 为场景资源标识，非正文；仅按完整记录保留。"
+        }
+      },
+      "reason": "限定为完整记录，避免将 sceneR079 作为普通词全局禁翻。",
+      "evidence_rows": [
+        1037
+      ],
+      "table": "non_translate",
+      "index": 27
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整原文 sceneR082 为场景资源标识，非正文；仅按完整记录保留。"
+        }
+      },
+      "reason": "限定为完整记录，避免将 sceneR082 作为普通词全局禁翻。",
+      "evidence_rows": [
+        1038
+      ],
+      "table": "non_translate",
+      "index": 28
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整原文 sceneR091 为场景资源标识，非正文；仅按完整记录保留。"
+        }
+      },
+      "reason": "限定为完整记录，避免将 sceneR091 作为普通词全局禁翻。",
+      "evidence_rows": [
+        1039
+      ],
+      "table": "non_translate",
+      "index": 29
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整原文 sceneR085 为场景资源标识，非正文；仅按完整记录保留。"
+        }
+      },
+      "reason": "限定为完整记录，避免将 sceneR085 作为普通词全局禁翻。",
+      "evidence_rows": [
+        1040
+      ],
+      "table": "non_translate",
+      "index": 30
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整原文 sceneR001 为场景资源标识，非正文；仅按完整记录保留。"
+        }
+      },
+      "reason": "限定为完整记录，避免将 sceneR001 作为普通词全局禁翻。",
+      "evidence_rows": [
+        1106
+      ],
+      "table": "non_translate",
+      "index": 32
+    },
+    {
+      "patch": {
+        "term_reason": "关卡/场景标识，非正文。",
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整原文 sceneR305 为场景资源标识，非正文；仅按完整记录保留。"
+        }
+      },
+      "reason": "补齐 term_reason，并将保护范围限定为完整记录。",
+      "evidence_rows": [
+        4357
+      ],
+      "table": "non_translate",
+      "index": 93
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:21",
+      "evidence_rows": [
+        1031
+      ],
+      "source_excerpt": "sceneR077",
+      "reason": "确认为场景资源标识而非正文，应保留原文并按完整记录限定保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1031 原文为 sceneR077，格式为场景资源标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，无需提供译文，保留 sceneR077。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 合适；已补 applicability=whole_record，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该标识保持原样，未发现同形普通词或译名变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:22",
+      "evidence_rows": [
+        1032
+      ],
+      "source_excerpt": "sceneR090",
+      "reason": "确认为场景资源标识而非正文，应保留原文并按完整记录限定保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1032 原文为 sceneR090，格式为场景资源标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，无需提供译文，保留 sceneR090。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 合适；已补 applicability=whole_record，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该标识保持原样，未发现同形普通词或译名变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:23",
+      "evidence_rows": [
+        1033
+      ],
+      "source_excerpt": "sceneR083",
+      "reason": "确认为场景资源标识而非正文，应保留原文并按完整记录限定保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1033 原文为 sceneR083，格式为场景资源标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，无需提供译文，保留 sceneR083。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 合适；已补 applicability=whole_record，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该标识保持原样，未发现同形普通词或译名变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:24",
+      "evidence_rows": [
+        1034
+      ],
+      "source_excerpt": "sceneR084",
+      "reason": "确认为场景资源标识而非正文，应保留原文并按完整记录限定保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1034 原文为 sceneR084，格式为场景资源标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，无需提供译文，保留 sceneR084。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 合适；已补 applicability=whole_record，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该标识保持原样，未发现同形普通词或译名变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:25",
+      "evidence_rows": [
+        1035
+      ],
+      "source_excerpt": "sceneR081",
+      "reason": "确认为场景资源标识而非正文，应保留原文并按完整记录限定保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1035 原文为 sceneR081，格式为场景资源标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，无需提供译文，保留 sceneR081。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 合适；已补 applicability=whole_record，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该标识保持原样，未发现同形普通词或译名变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:26",
+      "evidence_rows": [
+        1036
+      ],
+      "source_excerpt": "sceneR088",
+      "reason": "确认为场景资源标识而非正文，应保留原文并按完整记录限定保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1036 原文为 sceneR088，格式为场景资源标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，无需提供译文，保留 sceneR088。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 合适；已补 applicability=whole_record，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该标识保持原样，未发现同形普通词或译名变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:27",
+      "evidence_rows": [
+        1037
+      ],
+      "source_excerpt": "sceneR079",
+      "reason": "确认为场景资源标识而非正文，应保留原文并按完整记录限定保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1037 原文为 sceneR079，格式为场景资源标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，无需提供译文，保留 sceneR079。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 合适；已补 applicability=whole_record，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该标识保持原样，未发现同形普通词或译名变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:28",
+      "evidence_rows": [
+        1038
+      ],
+      "source_excerpt": "sceneR082",
+      "reason": "确认为场景资源标识而非正文，应保留原文并按完整记录限定保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1038 原文为 sceneR082，格式为场景资源标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，无需提供译文，保留 sceneR082。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 合适；已补 applicability=whole_record，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该标识保持原样，未发现同形普通词或译名变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:29",
+      "evidence_rows": [
+        1039
+      ],
+      "source_excerpt": "sceneR091",
+      "reason": "确认为场景资源标识而非正文，应保留原文并按完整记录限定保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1039 原文为 sceneR091，格式为场景资源标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，无需提供译文，保留 sceneR091。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 合适；已补 applicability=whole_record，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该标识保持原样，未发现同形普通词或译名变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:30",
+      "evidence_rows": [
+        1040
+      ],
+      "source_excerpt": "sceneR085",
+      "reason": "确认为场景资源标识而非正文，应保留原文并按完整记录限定保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1040 原文为 sceneR085，格式为场景资源标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，无需提供译文，保留 sceneR085。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 合适；已补 applicability=whole_record，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该标识保持原样，未发现同形普通词或译名变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:32",
+      "evidence_rows": [
+        1106
+      ],
+      "source_excerpt": "sceneR001",
+      "reason": "确认为场景资源标识而非正文，应保留原文并按完整记录限定保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1106 原文为 sceneR001，格式为场景资源标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，无需提供译文，保留 sceneR001。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 合适；已补 applicability=whole_record，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该标识保持原样，未发现同形普通词或译名变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:93",
+      "evidence_rows": [
+        4357
+      ],
+      "source_excerpt": "sceneR305",
+      "reason": "确认为场景资源标识而非正文，需保留原文、补齐含义并限定保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 4357 原文为 sceneR305，格式为场景资源标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，无需提供译文，保留 sceneR305。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归入 non_translate 合适；已补 whole_record applicability 和 term_reason，避免无范围保护。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "sceneR305 与同批场景标识格式一致，保留原文即可。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:21",
+    "non_translate:22",
+    "non_translate:23",
+    "non_translate:24",
+    "non_translate:25",
+    "non_translate:26",
+    "non_translate:27",
+    "non_translate:28",
+    "non_translate:29",
+    "non_translate:30",
+    "non_translate:32",
+    "non_translate:93"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

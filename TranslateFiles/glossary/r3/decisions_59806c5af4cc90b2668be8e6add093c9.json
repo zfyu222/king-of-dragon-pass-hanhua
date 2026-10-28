@@ -1,0 +1,383 @@
+{
+  "review_complete": true,
+  "review_summary": "已审 e1-e11：维持 e2、e3、e5、e9、e10、e11；补正 e1、e4、e6 的 term_reason；将 e7 统一为“远古种族”并设为 required；将 e8 分类改为“其他”，并按 34098 重写说明。f1 已核：Dark time 与 Dark season 同指“暗季”。",
+  "acknowledged_findings": [
+    "F0404"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "Lhankor Mhy 的称号，指通晓法律判例与一切知识的神；33377 明言 Lhankor Mhy is called the Knowing God。"
+      },
+      "reason": "以 corpus 定义补正术语说明，明确 Knowing God 是 Lhankor Mhy 的称号。",
+      "evidence_rows": [
+        33377
+      ],
+      "table": "terms",
+      "index": 437
+    },
+    {
+      "patch": {
+        "term_reason": "矮人的已死之神与造物者（the Maker），Orlanth 的敌手；34034 称 God Learners 仿造其形象造出 Zistor。"
+      },
+      "reason": "以完整原文补正神名说明，明确 Mostal 为矮人已死之神与造物者。",
+      "evidence_rows": [
+        12905,
+        13583,
+        34034
+      ],
+      "table": "terms",
+      "index": 441
+    },
+    {
+      "patch": {
+        "term_reason": "与氏族魔法相对的敌对魔法体系；11640 称 Our magic is powerless against sorcery。"
+      },
+      "reason": "删除无直接出处的推断，按 11640 限定为与氏族魔法对立的魔法体系。",
+      "evidence_rows": [
+        11640
+      ],
+      "table": "terms",
+      "index": 449
+    },
+    {
+      "patch": {
+        "recommended_translation": "远古种族",
+        "enforcement": "required",
+        "term_reason": "格洛兰萨的非人类远古种族群体；33882 明言龙人（dragonewts）是 Elder Races 之一。"
+      },
+      "reason": "合并大小写候选，按 33882 定义统一为“远古种族”并固定为 required。",
+      "evidence_rows": [
+        12097,
+        33882,
+        33916
+      ],
+      "table": "terms",
+      "index": 451
+    },
+    {
+      "patch": {
+        "category_path": "其他",
+        "term_reason": "指格洛兰萨所生的古老神祇群体；34098 称格洛兰萨为古神之母。"
+      },
+      "reason": "Elder Gods 是神祇群体而非组织；以 34098 重写说明并删除无出处神名。",
+      "evidence_rows": [
+        34098
+      ],
+      "table": "terms",
+      "index": 839
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:437",
+      "evidence_rows": [
+        33377
+      ],
+      "source_excerpt": "Lhankor Mhy is called the Knowing God",
+      "reason": "以 33377 定义补正术语说明；译名“知晓之神”与分类“其他”维持。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33377 明言 Lhankor Mhy is called the Knowing God，确认其为称号而非普通形容词。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“知晓之神”保留 Knowing 的称号感，简短适合术语，并与 called the Knowing God 对应。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为 Lhankor Mhy 的神号，归入“其他”可避免与普通身份词混淆。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "全条统一为“知晓之神”；候选“知识神/知识之神/智慧之神/博识之神”均指同一 Lhankor Mhy 称号，已择定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:438",
+      "evidence_rows": [
+        11824
+      ],
+      "source_excerpt": "Hendriki fight Heortlanders",
+      "reason": "原译名与分类可保留；无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11824 以 Hendriki 与 Heortlanders 交战说明其族群身份。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“亨德里基人”以音译加“人”表明族群，符合专名译法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Hendriki 是部族/族群名，归入“种族”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "单条专名，无同一英文其他译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:440",
+      "evidence_rows": [
+        11890,
+        32454
+      ],
+      "source_excerpt": "Magnet of Mostal",
+      "reason": "确认其为具名宝物，维持 proper_name/required；无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11890 称其为矮人赠予、名为 Magnet of Mostal 的宝物；32454 亦以该名列出。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“莫斯塔尔磁石”保留所属神名 Mostal，物品名清楚。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名宝物，归入“物品”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e4 的 Mostal 译名“莫斯塔尔”一致；与 32454 单独条目同名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:441",
+      "evidence_rows": [
+        12905,
+        13583,
+        34034
+      ],
+      "source_excerpt": "The dwarf’s dead god Mostal was foe to Orlanth.",
+      "reason": "补正 term_reason，明确其为矮人已死之神/造物者；译名与分类维持。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "12905 称 Mostal 为矮人的已死之神、Orlanth 的敌手；34034 又称其为 the Maker。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“莫斯塔尔”为音译，且与 e3 的 Magnet of Mostal 用法一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为神名归入“其他”，可涵盖神祇专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e3 复合词中的 Mostal 译名一致；不因同时可作角色而改分类。"
+        }
+      }
+    },
+    {
+      "ref": "terms:448",
+      "evidence_rows": [
+        11814
+      ],
+      "source_excerpt": "grain-sacks hang limp in Dark time",
+      "reason": "维持“暗季”；f1 已核，Dark time 与 Dark season 同指暗季。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11814 以收获后谷袋空瘪说明 Dark time 是历法中的时段。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“暗季”与相关 Dark season 的通行短译一致，适合季节标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "历法季节名，归入“其他”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与只读 e12 的“暗季”同指该季节；f1 的共享译名经核为同一历法概念，非误合并。"
+        }
+      }
+    },
+    {
+      "ref": "terms:449",
+      "evidence_rows": [
+        11640
+      ],
+      "source_excerpt": "Our magic is powerless against sorcery",
+      "reason": "补正 term_reason，删除无出处推断；译名与分类维持。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11640 以 Our magic 与 sorcery 对举，说明其为敌对魔法体系。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“术法”可区别于一般“魔法”，保留 sorcery 的专名感。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为魔法技能/体系归入“技能”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "单条术语，无同形专名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:451",
+      "evidence_rows": [
+        12097,
+        33882,
+        33916
+      ],
+      "source_excerpt": "The dragonewts are one of the Elder Races",
+      "reason": "统一大小写变体为“远古种族”，并按 33882 的定义固定为 required。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33882 明言 dragonewts 是 Elder Races 之一；33916 又以 Elder Races 指龙隘原住民的非人类种族。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "统一为“远古种族”，比“古老种族”更贴合 Elder 所指的原初非人类种族群体。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为非人类种族集合，归入“种族”。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "合并大小写变体，统一 Elder Races/elder races 为“远古种族”，并提升为 required 以固定该游戏术语。"
+        }
+      }
+    },
+    {
+      "ref": "terms:839",
+      "evidence_rows": [
+        34098
+      ],
+      "source_excerpt": "Chalana Arroy was the daughter of Glorantha, the mother of the Elder Gods",
+      "reason": "修正分类为“其他”，并以 34098 重写 term_reason，删除无出处神名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34098 以 Glorantha 为古神之母，说明 Elder Gods 是神祇群体。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“古神”简洁，适合作为该神祇群体的称号。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "Elder Gods 是神祇群体而非组织，改为“其他”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e7“远古种族”、e9“古树”为不同复合词，不强行统一 Elder 的字面译法。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1155",
+      "evidence_rows": [
+        34138
+      ],
+      "source_excerpt": "it was a secret which had to do with the Elder Tree",
+      "reason": "维持 proper_name/required；无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34138 称离开寂静之路的秘密与 the Elder Tree 有关，确认其为具名对象。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“古树”作为神话专名简洁；未误作植物学“接骨木”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神话中的具名树，归入“其他”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e7/e8 的 Elder 复合词为不同专名，允许语境差异。"
+        }
+      }
+    },
+    {
+      "ref": "terms:453",
+      "evidence_rows": [
+        12288,
+        34205
+      ],
+      "source_excerpt": "gooey Chaos creature called a gorp",
+      "reason": "确认“高尔普”为标准译名；无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "12288 称 gorp 为黏糊糊的混沌生物；34205 将其列入 Urox 消灭的混沌兽。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“高尔普”为音译专名，能区别于普通生物词。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为混沌生物种类，归入“种族”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "合并 12288 与 34205 的用例，统一“高尔普”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:454",
+      "evidence_rows": [
+        12495
+      ],
+      "source_excerpt": "Queen Ingban first distinguished herself by finding the Climbing Sand",
+      "reason": "维持 proper_name/required；无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "12495 称英班女王因发现 Climbing Sand 而扬名，确认其为具名事物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“攀爬之沙”直译保留其功能意象，作为物品名可懂。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入“物品”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "单条专名，无其他译名冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:437",
+    "terms:438",
+    "terms:440",
+    "terms:441",
+    "terms:448",
+    "terms:449",
+    "terms:451",
+    "terms:839",
+    "terms:1155",
+    "terms:453",
+    "terms:454"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

@@ -1,0 +1,104 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1、e2 的来源、译名、分类与一致性；f1 为 Quivin Mountains 与 Quivin Mts. 的全称/缩写同指，f2 为 Tusk Riders/Tusk Rider 的单复数同指。保留现有译名，仅补全 term_reason。",
+  "acknowledged_findings": [
+    "F0373",
+    "F0374"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "原文中的山脉地名；用于可探索地区、东北方位参照，并在氏族新家园中央升起，指龙隘东南的奎文山脉。"
+      },
+      "reason": "补全地名依据，不改变译名。",
+      "evidence_rows": [
+        903,
+        4148,
+        33913
+      ],
+      "table": "terms",
+      "index": 51
+    },
+    {
+      "patch": {
+        "term_reason": "原文中的敌对族群专名；以复数 Tusk Riders 指骑乘巨型野猪的群体，单数 Tusk Rider 同指。"
+      },
+      "reason": "补全族群依据，不改变译名。",
+      "evidence_rows": [
+        24350,
+        24559,
+        30728
+      ],
+      "table": "terms",
+      "index": 55
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:51",
+      "evidence_rows": [
+        903,
+        4148,
+        33913
+      ],
+      "source_excerpt": "the Quivin Mountains",
+      "reason": "保留“奎文山脉”；原文将该名用作可探索地区、奥兰斯胜利之丘东北的方位参照及新家园中央的陡峭山脉，译名与地名属性相符。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "903 原文出现 'the Quivin Mountains' 并在地区列表；4148 以它作山脉方位；33913 写 'the steep Quivin Mountains'。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'Quivin' 音译为“奎文”，'Mountains' 译为“山脉”，符合专名音译与山地特征。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "903 为可探索地区、4148 为地理方位、33913 为中央山脉，归入地名合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条目各证据均指同一山脉；与只读关联 e4 的 Quivin Mts. 为全称/缩写同指关系。"
+        }
+      }
+    },
+    {
+      "ref": "terms:55",
+      "evidence_rows": [
+        24350,
+        24559,
+        24644,
+        30728
+      ],
+      "source_excerpt": "the cruel enemies known as Tusk Riders",
+      "reason": "保留“獠牙骑士”；原文称其为骑乘巨型野猪的敌对族群，复数群体名 Tusk Riders 与单数 Tusk Rider 同指。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "24350 有 'known as Tusk Riders'；24559 描述其骑 giant boar mounts 来袭；30728 写其游荡 Dragon Pass。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'Tusk'=獠牙，'Riders'作族群专名译为“骑士”；不按普通动作词处理，译名可作群体名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "24350/24559 将其描述为骑猪的敌对族群，24644 又出现其圣殿；归入种族合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "复数 Tusk Riders 与只读关联 e3 的单数 Tusk Rider 为同一族群变体；审计 f2 的共用译名不构成多义冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:51",
+    "terms:55"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

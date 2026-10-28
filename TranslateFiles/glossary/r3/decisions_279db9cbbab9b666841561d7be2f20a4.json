@@ -1,0 +1,391 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 12 个分配条目：确认专名身份、性别、分类与译名一致性；将 Cragspider 统一为“峭壁蜘蛛”、Cragspider the Firewitch 为“火女巫峭壁蜘蛛”，并补正 Isidilian 的术语说明；其余条目通过。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "矮人地下王国“矮人矿场”（Dwarf Mine）的国王，12855/12867 明确称其为 King of the Dwarfs；12880 中矮人使者以其名义传话。"
+      },
+      "reason": "原 term_reason 只说“矮人矿场的领袖”，未点明其为矮人国王；按原文补正身份范围。",
+      "evidence_rows": [
+        12855,
+        12867,
+        12880
+      ],
+      "table": "characters",
+      "index": 97
+    },
+    {
+      "patch": {
+        "recommended_translation": "峭壁蜘蛛",
+        "term_reason": "巨魔的女首领与女巫，原文以 she/her 指称，14962 被称为 Mistress Cragspider；Cragspider 按峭壁+蜘蛛的称号义译为“峭壁蜘蛛”。"
+      },
+      "reason": "统一 Cragspider 的意译，避免“岩蜘蛛/峭壁蛛/岩蛛/崖蛛/克拉格斯派德”等候选混用，并与 e10 称号条目一致。",
+      "evidence_rows": [
+        12103,
+        12122,
+        13467,
+        14962,
+        14963,
+        24644
+      ],
+      "table": "characters",
+      "index": 98
+    },
+    {
+      "patch": {
+        "recommended_translation": "火女巫峭壁蜘蛛",
+        "term_reason": "传说中的巨魔女巫首领；13886 率巨魔大军来袭，其火焰杀死约三分之一人口。"
+      },
+      "reason": "与 e9 统一核心名“峭壁蜘蛛”，修正原译“峭壁蛛”的截短形式。",
+      "evidence_rows": [
+        13886
+      ],
+      "table": "characters",
+      "index": 108
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:91",
+      "evidence_rows": [
+        10461
+      ],
+      "source_excerpt": "Fuldram Fulthamson made peace with his worst enemies",
+      "reason": "原文明确出现 Fuldram Fulthamson，并称其与宿敌议和、后来成为国王；父名形式指向男性人物。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "10461 明确 In Fulthamsaga, Fuldram Fulthamson 与宿敌议和并成为国王；patronymic 显示男性。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“富尔德拉姆富尔塔姆森”对应 Fuldram Fulthamson，音译完整，按风格不加间隔号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 下的 proper_name，enforcement=required，符合人名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未见同形异义或跨批冲突；与《Fulthamsaga》人物名一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:92",
+      "evidence_rows": [
+        10582,
+        10583
+      ],
+      "source_excerpt": "Mad-Blood",
+      "reason": "Mad-Blood 在原文中作为有名字的说话者出现，是可独立识别的短称；与全称人物条对应。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "10582/10583 中 Mad-Blood 作为说话者出现，10583 还提及其氏族历史位置；短称本身可确认。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“疯血”意译 Mad-Blood，保留暴烈绰号色彩。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 下的 proper_name，enforcement=required；属于人物短称而非普通形容词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与全称“疯血奥尔甘迪”的“疯血”部分一致；与“血雨”仅共享字面 Blood，不混同。"
+        }
+      }
+    },
+    {
+      "ref": "characters:274",
+      "evidence_rows": [
+        31872
+      ],
+      "source_excerpt": "Mad-Blood Orlgandi says",
+      "reason": "原文给出全名 Mad-Blood Orlgandi，属于 Varmandi 氏族语境；译名将绰号与个人名组合。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "31872 明确全名 Mad-Blood Orlgandi，属于 Varmandi 氏族；“Mad-Blood”为绰号。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“疯血奥尔甘迪”对应绰号+个人名，和短称“疯血”、个人名“奥尔甘迪”一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 下的 proper_name，enforcement=required，符合人物全名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e2 短称“疯血”、e4 名“奥尔甘迪”组合一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:276",
+      "evidence_rows": [
+        32718
+      ],
+      "source_excerpt": "Mad-Blood Orlgandi",
+      "reason": "32718 与 31872 同文，出现 Orlgandi；作为 Mad-Blood Orlgandi 的个人名使用。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32718 与 31872 同文，出现 Orlgandi；作为 Mad-Blood Orlgandi 的个人名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“奥尔甘迪”音译 Orlgandi，与全名条目中的个人名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 下的 proper_name，enforcement=required，符合人物名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "作为 e3 全名中的个人名，与“疯血奥尔甘迪”一致；单独出现时不加绰号。"
+        }
+      }
+    },
+    {
+      "ref": "terms:745",
+      "evidence_rows": [
+        32905
+      ],
+      "source_excerpt": "the Rain of Blood",
+      "reason": "32905 将 Rain of Blood 与 Sun Fall、Laughing Tsunami 并列为具名灾难，属于事件专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32905 将 Rain of Blood 与 Sun Fall、Laughing Tsunami 并列为 Chaos 时代灾难，属具名灾劫。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“血雨”准确对应 Rain of Blood，简洁且符合神话灾劫语感。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms 下 category_path=其他 是合法类别；作为具名事件而非人物/地点。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "独立灾劫名；与 Mad-Blood 的 Blood 仅为字面共用，不构成同义术语。"
+        }
+      }
+    },
+    {
+      "ref": "characters:95",
+      "evidence_rows": [
+        11532
+      ],
+      "source_excerpt": "Uvuli Urgrainsdottir used magic",
+      "reason": "原文出现 Uvuli Urgrainsdottir，并以 her husband/her beloved brother 指称；-dottir 亦表女性。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11532 出现 Uvuli Urgrainsdottir，并以 her husband/her beloved brother 指称，-dottir 亦表女性。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“乌武莉乌尔格莱恩斯多蒂尔”音译 Uvuli Urgrainsdottir，按风格不加间隔号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 下的 proper_name，enforcement=required，女性人物。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未见异译或同形冲突；dottir 父名形式保留音译。"
+        }
+      }
+    },
+    {
+      "ref": "characters:96",
+      "evidence_rows": [
+        11737,
+        12781
+      ],
+      "source_excerpt": "Sir Ethilrist",
+      "reason": "11737 称黑马团侍奉名为 Sir Ethilrist 的英雄；12781 称其为该团领袖并保留 Sir 头衔。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11737 称黑马团侍奉名为 Sir Ethilrist 的英雄；12781 称其为该团领袖。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“埃西尔里斯特爵士”对应 Sir Ethilrist，Sir 作爵士处理。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 下的 proper_name，enforcement=required，符合人物名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "11737 与 12781/12782 指同一黑马团领袖，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:97",
+      "evidence_rows": [
+        12855,
+        12867,
+        12880
+      ],
+      "source_excerpt": "Isidilian, King of the Dwarfs",
+      "reason": "12855/12867 明确 Isidilian 为 King of the Dwarfs，统治矮人地下王国 Dwarf Mine；原 term_reason 不足，已补正。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "12855/12867 明确 Isidilian 为 King of the Dwarfs；原 term_reason 只写“矮人矿场领袖”，已补正为矮人国王。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“伊西迪利安”音译 Isidilian，与各出处一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 下的 proper_name，enforcement=required；King of the Dwarfs 表明男性角色。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "11861/11866/12880 均指同一矮人领袖；译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "characters:98",
+      "evidence_rows": [
+        12103,
+        12122,
+        13467,
+        14962,
+        14963,
+        24644
+      ],
+      "source_excerpt": "the terrifying Cragspider",
+      "reason": "多条原文均指同一巨魔女首领/女巫，she/her 指称明确；候选译名差异较大，需统一意译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "12103/12122/13467/14963/24644 均指同一巨魔女首领与女巫，she/her 指称，14962 称 Mistress Cragspider。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "候选有岩蜘蛛、峭壁蛛、岩蛛、崖蛛、克拉格斯派德、峭壁蜘蛛；按 Crag+spider 的称号义与史诗风格统一为“峭壁蜘蛛”，替换暂定“岩蜘蛛”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 下的 proper_name，enforcement=required；不是地点或普通蜘蛛。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e10 的称号条目统一为“峭壁蜘蛛”；所有候选均指同一存在，不采用音译“克拉格斯派德”。"
+        }
+      }
+    },
+    {
+      "ref": "characters:108",
+      "evidence_rows": [
+        13886
+      ],
+      "source_excerpt": "Cragspider the Firewitch",
+      "reason": "13886 出现 legendary Cragspider the Firewitch，率巨魔大军，her bolts of flame 指称女性；作为 e9 的称号变体处理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "13886 出现 legendary Cragspider the Firewitch，率巨魔大军，her bolts of flame 指称女性。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原“火女巫峭壁蛛”与 e9 标准不一致；改为“火女巫峭壁蜘蛛”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 下的 proper_name，enforcement=required；the Firewitch 是称号，不另立地点/技能类。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "作为 e9 的称号变体，核心名统一为“峭壁蜘蛛”，保留“火女巫”称号。"
+        }
+      }
+    },
+    {
+      "ref": "characters:100",
+      "evidence_rows": [
+        12061
+      ],
+      "source_excerpt": "Windfriend",
+      "reason": "12061 的随机名分支包含 Windfriend，称其为三位 Orlanthi 圣武士之一，随后用 He 指称。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "12061 的随机名分支包含 Windfriend，称其为三位 Orlanthi 圣武士之一，随后用 He 指称。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“风之友”意译 Windfriend，简洁且符合人物名号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 下的 proper_name，enforcement=required；是随机名分支中的人物名号。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "随机分支中的专名，未与其他分支合并；同句其他分支应各自翻译，不将本名泛化。"
+        }
+      }
+    },
+    {
+      "ref": "characters:103",
+      "evidence_rows": [
+        12495
+      ],
+      "source_excerpt": "Queen Ingban first distinguished herself",
+      "reason": "12495 明确 Queen Ingban，并用 herself 指称女性；Queen 为头衔，Ingban 为人物名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "12495 明确 Queen Ingban，并用 herself 指称女性。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“英班”音译 Ingban，女王身份在正文中体现。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 下的 proper_name，enforcement=required，女性人物。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未见异译；Queen 作为头衔不入本条 source，译名“英班”独立。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:91",
+    "characters:92",
+    "characters:274",
+    "characters:276",
+    "terms:745",
+    "characters:95",
+    "characters:96",
+    "characters:97",
+    "characters:98",
+    "characters:108",
+    "characters:100",
+    "characters:103"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

@@ -1,0 +1,408 @@
+{
+  "review_complete": true,
+  "review_summary": "共审校 12 条。统一 e2/e3 的 The Only Old One / Only Old One 译名为“唯一古老者”，修正 e3 分类为“身份”；修正 e2、e6、e7、e12 中未由本批原文直接支持或表述不够准确的 term_reason。其余条目译名、性别、专名分类及一致性检查通过。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "Kethaela 的古老国王，统治近八百年；原文 32170 称其为交易之神的儿子。"
+      },
+      "reason": "原 term_reason 提到本批原文未出现的 Belintar；改为仅依据 32170/34290 可证内容。",
+      "evidence_rows": [
+        32170,
+        34290
+      ],
+      "table": "characters",
+      "index": 249
+    },
+    {
+      "patch": {
+        "recommended_translation": "唯一古老者",
+        "category_path": "身份",
+        "term_reason": "Kethaela 的古老国王，统治近八百年；黑曜石城堡中曾接待来客，其精神被铁钉针对。"
+      },
+      "reason": "统一与 e2 相同的专名译名；原文表明其为古老国王/统治者，应归“身份”而非“其他”；term_reason 改为可证身份。",
+      "evidence_rows": [
+        16939,
+        34140,
+        34290
+      ],
+      "table": "terms",
+      "index": 510
+    },
+    {
+      "patch": {
+        "term_reason": "原文称其为 Heinvar Humaktskin 所羞辱之女的父亲（Advast Hard-Mouth）。"
+      },
+      "reason": "原 term_reason 含 9503 未直接支持的“有婚配权”推断，删除该推断。",
+      "evidence_rows": [
+        9503
+      ],
+      "table": "characters",
+      "index": 252
+    },
+    {
+      "patch": {
+        "term_reason": "原文称 Heinvar Humaktskin 羞辱了 Advast Hard-Mouth 的女儿；此事引发与 Damasti 氏族的仇怨。"
+      },
+      "reason": "原 term_reason 将婚配主体表述为 Heinvar 本人，9503 原文为“he married the girl to Humaktskin”，语义不够确定；改为仅陈述可证事件。",
+      "evidence_rows": [
+        9503
+      ],
+      "table": "characters",
+      "index": 253
+    },
+    {
+      "patch": {
+        "term_reason": "原文称他为富裕 carl 家族成员，遭两兄弟攻击后杀死其中一人 Burthalor。"
+      },
+      "reason": "原 term_reason 称“决斗”，24180 原文是遭两兄弟袭击后的打斗；改为准确表述。",
+      "evidence_rows": [
+        24180,
+        24184
+      ],
+      "table": "characters",
+      "index": 258
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:248",
+      "evidence_rows": [
+        34376
+      ],
+      "source_excerpt": "Ironman, the dwarf hero",
+      "reason": "专名、性别与原文一致；译名无冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34376 明确称 Ironman 为 dwarf hero，并叙述其取得武器、砍杀精灵。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“铁人”作为 Ironman 的专名译法简洁，无其他候选冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "角色条目，性别男性，term_kind proper_name，符合人物专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Ironman 译名变体，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "characters:249",
+      "evidence_rows": [
+        32170,
+        34290
+      ],
+      "source_excerpt": "Kethaela used to be ruled by a king called The Only Old One.",
+      "reason": "保留译名；修正 term_reason 删除本批未出现的 Belintar 依据。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "source“The Only Old One”与 34290 一致；原 term_reason 提 Belintar 无本批证据，已改为只据 32170/34290。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“唯一古老者”与 e3 统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，男性，term_kind proper_name。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "e3 已统一为“唯一古老者”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:510",
+      "evidence_rows": [
+        16939,
+        34140,
+        34290
+      ],
+      "source_excerpt": "the Only Old One",
+      "reason": "统一专名译名并修正分类；term_reason 改为可证身份。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "16939/34140/34290 均指同一古老统治者“Only Old One”。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原“唯一旧者”与 e2“唯一古老者”不一致；统一为“唯一古老者”。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原 category_path 为“其他”，但原文表明其为古老国王/统治者，应归“身份”。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e2“The Only Old One”统一译名“唯一古老者”，不再使用“唯一旧者/独一旧神”。"
+        }
+      }
+    },
+    {
+      "ref": "characters:250",
+      "evidence_rows": [
+        9509
+      ],
+      "source_excerpt": "introduces herself as Leika",
+      "reason": "专名、性别与原文一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9509 原文出现“introduces herself as Leika”，指带来女婴的老妇。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“莱卡”为 Leika 的音译，无其他候选冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，女性，term_kind proper_name。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Leika 译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:251",
+      "evidence_rows": [
+        9677
+      ],
+      "source_excerpt": "His name is Redtail",
+      "reason": "译名与原文名称及人物指称一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9677 称鸭人名 Redtail，来自 Upland Marsh 并带来不死者警告。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“红尾”对应 Redtail 的词义，作为鸭人专名可统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，男性，term_kind proper_name。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Redtail 译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:252",
+      "evidence_rows": [
+        9503
+      ],
+      "source_excerpt": "the daughter of Advast Hard-Mouth",
+      "reason": "保留译名；修正 term_reason 删除原文未直接支持的“有婚配权”推断。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "9503 原文只支持其为被羞辱女子之父；原 term_reason 的婚配权推断已删除。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“阿德瓦斯特硬嘴”保留名与绰号；无其他候选冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，男性，term_kind proper_name。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Advast Hard-Mouth 译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:253",
+      "evidence_rows": [
+        9503
+      ],
+      "source_excerpt": "Heinvar Humaktskin dishonored the daughter of Advast Hard-Mouth.",
+      "reason": "保留译名；修正 term_reason，避免把“he married the girl to Humaktskin”误解为 Heinvar 本人娶她。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "9503 原文支持 Heinvar Humaktskin 羞辱 Advast Hard-Mouth 之女；婚配主体语义不够确定，term_reason 已改。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“海因瓦尔胡马科特斯金”为音译；无其他候选冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，男性，term_kind proper_name。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Heinvar Humaktskin 译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:254",
+      "evidence_rows": [
+        9722
+      ],
+      "source_excerpt": "Asmund Grey-Locks learns that a large force of warriors can tilt legal decisions in his favor.",
+      "reason": "译名和人物指称一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9722 引 Ormad 传奇，出现 Asmund Grey-Locks。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“阿斯蒙德灰发”音译名加意译绰号，无其他候选冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，男性，term_kind proper_name。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Asmund Grey-Locks 译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:255",
+      "evidence_rows": [
+        24113,
+        24114
+      ],
+      "source_excerpt": "Brodasart, son of Glendara",
+      "reason": "专名、性别与原文一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "24113/24114 均称 Brodasart 为 Glendara 之子并被 Rangarda 亲属所杀。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“布罗达萨特”为 Brodasart 音译，无其他候选冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，男性，term_kind proper_name。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Brodasart 译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:256",
+      "evidence_rows": [
+        24070,
+        24148
+      ],
+      "source_excerpt": "Norpent Rangardasson, who was slain by Domasa and her late brother Brodasart",
+      "reason": "专名、性别与原文一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "24148 称 Norpent Rangardasson 被 Domasa 与其亡兄 Brodasart 所杀；24070 称其为 Rangarda Dark-Eyes 之子。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“诺尔彭特·兰加尔达松”对应 Norpent Rangardasson；本批无其他候选。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，男性，term_kind proper_name。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Norpent Rangardasson 译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:257",
+      "evidence_rows": [
+        24148,
+        24220
+      ],
+      "source_excerpt": "Domasa Glendarasdaughter",
+      "reason": "译名与原文人物关系一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "24148/24220 均出现 Domasa Glendarasdaughter，称其为 Glendara 之女并参与相关世仇。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“多玛莎·格伦达拉之女”表达给定名与父称；无其他候选冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，女性，term_kind proper_name。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Domasa Glendarasdaughter 译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:258",
+      "evidence_rows": [
+        24180,
+        24184
+      ],
+      "source_excerpt": "Robarth, a member of one of your most prosperous families of carls",
+      "reason": "保留译名；修正 term_reason 中“决斗”等不够准确的表述。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "24180 出现 Robarth 并称其为富裕 carl 家族成员；24184 提及 Burthalor 之死；term_reason 的“决斗”已改为遭攻击后的打斗。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“罗巴尔斯”为 Robarth 音译，无其他候选冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，男性，term_kind proper_name。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Robarth 译名。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:248",
+    "characters:249",
+    "terms:510",
+    "characters:250",
+    "characters:251",
+    "characters:252",
+    "characters:253",
+    "characters:254",
+    "characters:255",
+    "characters:256",
+    "characters:257",
+    "characters:258"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

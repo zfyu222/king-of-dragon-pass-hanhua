@@ -1,0 +1,413 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对本批12条。e1-e3、e6、e8-e9、e11-e12保留；e5统一为“巴碧丝特戈尔”；e7改归物品类游戏术语；e10按特定天体专名处理；e4为普通描述，建议隔离。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "巴碧丝特戈尔",
+        "term_reason": "厄纳尔达之女、大地/复仇女神；6826、7503、12419、33876 等均同指该神，采用统一音译且不加间隔号。"
+      },
+      "reason": "综合候选与出处，统一采用更贴合 Babeester Gor 音节的译名，并补充该专名的实际指称范围。",
+      "evidence_rows": [
+        6826,
+        7503,
+        12419,
+        33876
+      ],
+      "table": "terms",
+      "index": 316
+    },
+    {
+      "patch": {
+        "term_kind": "game_term",
+        "term_reason": "原文以大写 Glass Coin 指由远方美人鱼铸造、可作交换获得的特定宝物钱币；6843 作 a Glass Coin，属物品类游戏术语而非唯一专名。"
+      },
+      "reason": "a Glass Coin 表明其为特定钱币类型/宝物物品，改归 game_term 更准确；译名不变。",
+      "evidence_rows": [
+        6842,
+        6843,
+        32423
+      ],
+      "table": "terms",
+      "index": 324
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "term_reason": "指格洛兰萨天空中特定的红色月亮/混沌天象；22946、34036 以大写 Red Moon 称之，7301、7431 同指该天体。"
+      },
+      "reason": "大写 Red Moon 明确指特定天体，按专名处理；译名不变。",
+      "evidence_rows": [
+        7301,
+        7431,
+        22946,
+        34036,
+        33856
+      ],
+      "table": "terms",
+      "index": 333
+    }
+  ],
+  "quarantine": [
+    {
+      "reason": "原文 famed Chaos-fighters 仅是描述这些人以抗击混沌闻名，属普通描述性复合词，不是稳定游戏术语或专名；保留会误冻结普通短语。",
+      "evidence_rows": [
+        6024
+      ],
+      "table": "terms",
+      "index": 315
+    }
+  ],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:310",
+      "evidence_rows": [
+        6205
+      ],
+      "source_excerpt": "strangers from Sorcerer’s Town",
+      "reason": "地名专名，译名与原文语境一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "6205 原文将 Sorcerer’s Town 作为陌生人来自的地点。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“术士镇”按 Sorcerer 的常见奇幻译法处理，且保持地名简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为地名，term_kind proper_name，enforcement required，符合专名要求。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此一处该地名，无冲突译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:311",
+      "evidence_rows": [
+        6036,
+        6041
+      ],
+      "source_excerpt": "Ruthakran and His Chicken Bride",
+      "reason": "篇名专名，保留音译与字面标题。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "6036、6041 均以引号标出该故事/诗曲名，含 Ruthakran 与鸡新娘。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“鲁萨克兰与他的鸡新娘”保留标题结构；Chicken Bride 直译以维持原文怪诞感。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为作品/故事标题归入其他，proper_name required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两处同名，译名统一；与 bride price 仅共享普通词 bride，标题中的“鸡新娘”与聘礼术语不强行等同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:475",
+      "evidence_rows": [
+        14757,
+        14764,
+        9507
+      ],
+      "source_excerpt": "Pay the bride price.",
+      "reason": "婚姻财礼术语，译名与嫁妆区分。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "14757、14764 以 bride price 指男方支付的婚姻财礼；9507 与 dowry 对举。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“聘礼”对应男方支付给女方氏族的财物，与“嫁妆”区分。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "游戏婚姻机制中的特定文化术语，归其他 game_term required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "14757、14764 及 9507 同指 bride price，译名统一；与 e2 标题中的 bride 属不同复合词，语境差异合理。"
+        }
+      }
+    },
+    {
+      "ref": "terms:315",
+      "evidence_rows": [
+        6024
+      ],
+      "source_excerpt": "famed Chaos-fighters",
+      "reason": "普通描述性短语，建议隔离不冻结。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "6024 原文 these famed Chaos-fighters 是对来访者抗击混沌名声的描述。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“混沌斗士”可表达字面含义，但不构成需冻结的游戏术语。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文为普通描述性复合词，并非稳定身份或专名；应 quarantine，不作为术语保留。"
+        },
+        "consistency": {
+          "status": "not_applicable",
+          "evidence": "隔离后无同形专名需统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:316",
+      "evidence_rows": [
+        6826,
+        7503,
+        7509,
+        12419,
+        12420,
+        21127,
+        33876
+      ],
+      "source_excerpt": "Babeester Gor",
+      "reason": "神祇专名，统一音译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "6826、7503、7509、12419、12420、21127、33876 均指厄纳尔达之女/大地复仇女神 Babeester Gor。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "综合各候选，采用“巴碧丝特戈尔”更贴合 Babeester Gor 音节，并遵从不加间隔号；原“巴比斯特戈尔”改为统一译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为神祇专名归其他、proper_name required 合理；非组织名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "各出处同指一位女神，统一采用“巴碧丝特戈尔”，消除“巴比斯特戈尔/巴贝斯特戈尔”等候选差异。"
+        }
+      }
+    },
+    {
+      "ref": "terms:321",
+      "evidence_rows": [
+        6641,
+        6643,
+        18760
+      ],
+      "source_excerpt": "becoming stickpickers or worse",
+      "reason": "贫困身份标签，译名保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "6641、6643 警告氏族可能沦为 stickpickers or worse；18760 又用 stickpickers 作侮辱性身份标签。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“拾柴者”保留以拾柴为生的贫困含义，也适用于侮辱语境。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为氏族衰败后的低微身份归身份类 game_term required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "三处同指该身份，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:324",
+      "evidence_rows": [
+        6842,
+        6843,
+        32423
+      ],
+      "source_excerpt": "Glass Coin",
+      "reason": "特定宝物钱币，分类修正。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "6842、6843、32423 均指远方美人鱼铸造的 Glass Coin 宝物钱币。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“玻璃币”直译且可作物品名，未见与同批其他译名冲突。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "6843 作 a Glass Coin，表明是特定钱币类型/宝物物品，宜改 term_kind 为 game_term；category_path 物品仍合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各出处均用“玻璃币”，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:325",
+      "evidence_rows": [
+        7086
+      ],
+      "source_excerpt": "Six Social Virtues",
+      "reason": "特定美德集合，保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7086 中 Mathrania 询问六项社会美德中最重要者，Six Social Virtues 为特定集合名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“六项社会美德”准确表达数量与含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为游戏内文化概念归其他 game_term required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此一处，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:326",
+      "evidence_rows": [
+        7089,
+        7092
+      ],
+      "source_excerpt": "Parting Words",
+      "reason": "仪式性套语，保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7089、7092 均称其为 archaic form of the Parting Words，是特定告别套语。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“临别赠言”可表达告别时所说套语，符合古朴语境。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为游戏内仪式/习俗用语归其他 game_term required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两处同指 Parting Words，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:333",
+      "evidence_rows": [
+        7301,
+        7431,
+        22946,
+        34036,
+        33856
+      ],
+      "source_excerpt": "Red Moon",
+      "reason": "特定天体专名，分类修正。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7301、7431、22946、33856、34036 均指格洛兰萨天空中特定的红色月亮/混沌天象。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“红月”直译且与各出处一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "22946、34036 以大写 Red Moon 指特定天体，宜改 term_kind 为 proper_name；category_path 其他、required 保持。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "大小写变体同指一物，统一译作“红月”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:335",
+      "evidence_rows": [
+        7501,
+        7504
+      ],
+      "source_excerpt": "women’s sheds",
+      "reason": "厄纳尔达圣所，保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7501、7504 均指与厄纳尔达秘仪相关的 women’s sheds，男性进入被视为亵渎。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“妇女圣棚”表达其女性专属且神圣的属性，未增具体情节。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为宗教性场所/习俗术语归其他 game_term required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两处同指该圣棚，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:337",
+      "evidence_rows": [
+        7789
+      ],
+      "source_excerpt": "Daga the drought god",
+      "reason": "神祇专名，保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7789 中 Orlanth 在英雄探索里俘获旱神 Daga，Daga 为神名，drought god 为称号。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“旱神达加”将称号与音译名组合，简洁且符合专名要求。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为神祇专名归其他 proper_name required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此一处，无冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:310",
+    "terms:311",
+    "terms:475",
+    "terms:315",
+    "terms:316",
+    "terms:321",
+    "terms:324",
+    "terms:325",
+    "terms:326",
+    "terms:333",
+    "terms:335",
+    "terms:337"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

@@ -1,0 +1,366 @@
+{
+  "review_complete": true,
+  "review_summary": "已审校 e1–e12 共 12 条术语，核对原文、译名、分类及与 term_families/related_terms 的一致性；e5 修正为“移动符文”并归入其他，其余保留。未发现 audit findings。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "移动符文",
+        "category_path": "其他",
+        "term_reason": "原文指旗上发光、可借其施法的魔法符文（motion rune）；作为符文概念归入其他，统一译作移动符文。"
+      },
+      "reason": "motion rune 在 21685 是施法所借的魔法符文，非实体物品；统一核心译名为“移动符文”，与 Motion Rune banner 的“移动符文旗”一致。",
+      "evidence_rows": [
+        21228,
+        21386,
+        21685
+      ],
+      "table": "terms",
+      "index": 583
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:571",
+      "evidence_rows": [
+        20598,
+        20614
+      ],
+      "source_excerpt": "disease spirits will grow stronger",
+      "reason": "源文、译名、分类及术语一致性均核对通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "20598 明言 disease spirits 会增强并侵染牲畜；20614 要求萨满驱赶。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“疫病精魂”，对应 disease spirits 的超自然病原含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "disease spirits 为超自然病原/精魂，非普通动物或物品，归入其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 related term Spirit fetches 共享“精魂”用字，但 disease spirits 独立成词，不扩展为同义。"
+        }
+      }
+    },
+    {
+      "ref": "terms:574",
+      "evidence_rows": [
+        20971
+      ],
+      "source_excerpt": "Battle of Kanda Fant",
+      "reason": "源文、译名、分类及术语一致性均核对通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "20971 原文有 Battle of Kanda Fant。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Kanda Fant 音译作“坎达凡特”，不加间隔号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Battle of Kanda Fant 表明 Kanda Fant 是战役地点，地名分类准确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Battle of Kanda Fant 的核心地名一致，均作坎达凡特。"
+        }
+      }
+    },
+    {
+      "ref": "terms:578",
+      "evidence_rows": [
+        21068
+      ],
+      "source_excerpt": "Black Havoc/Doubleshadow the Worthless",
+      "reason": "源文、译名、分类及术语一致性均核对通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "21068 原文围绕该名有控制字节，名称本体连续出现。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“黑祸/无用双影”保留斜杠并分别翻译两个分支。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为受检视的灵猫血脉祖先名，非组织/地名，其他可容纳。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Black Havoc 与 Doubleshadow 两分支各自成译，斜杠保留；未与 Black Spear 混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:579",
+      "evidence_rows": [
+        21128,
+        33869
+      ],
+      "source_excerpt": "Yelm the Emperor",
+      "reason": "源文、译名、分类及术语一致性均核对通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "21128 称 Yelm the Emperor 为 Orlanth 之敌；33869 亦作 Yelm the Emperor。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Yelm the Emperor 译作“耶尔姆皇帝”，神名与称号均保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Yelm the Emperor 为神祇/皇帝称号，身份分类可容纳。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Yelm the Emperor 的 Emperor 与 related term Emperor 的“皇帝”一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:583",
+      "evidence_rows": [
+        21228,
+        21386,
+        21685,
+        21686
+      ],
+      "source_excerpt": "the motion rune",
+      "reason": "核对为魔法符文概念，修正译名与分类，并与复合词统一核心词。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "21228/21386 出现 motion rune；21685 说明借其魔法行事。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "将“运动符文”改为“移动符文”，避免“运动”的体育义并贴合 motion 的移动义。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "21685 说明是 drawing on the magic of the motion rune，属魔法符文概念而非实体物品，改为其他。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与同族复合词 Motion Rune banner 的“移动符文旗”统一核心词“移动符文”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:586",
+      "evidence_rows": [
+        21600
+      ],
+      "source_excerpt": "the Long-Noses and Big-Tooths",
+      "reason": "源文、译名、分类及术语一致性均核对通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "21600 将 Long-Noses 与 Big-Tooths 对举。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Big-Tooths 译作“大牙族”，符合神话民族称谓。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Big-Tooths 与 Long-Noses 对举，是神话民族名，种族分类准确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Big-Teeth 变体共享“大牙”核心；族/人后缀差异不构成冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:590",
+      "evidence_rows": [
+        22221,
+        25867,
+        25868
+      ],
+      "source_excerpt": "you are Storm People",
+      "reason": "源文、译名、分类及术语一致性均核对通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "22221 明言 As Orlanthi, you are Storm People；25867 写成为 Storm People 一员。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Storm People 译作“风暴之民”，保留族称含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "As Orlanthi, you are Storm People 表明族称，种族分类准确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Orlanthi 族称一致，未与 Storm Bull 等含 Storm 的专名混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:592",
+      "evidence_rows": [
+        22527,
+        22537
+      ],
+      "source_excerpt": "the Trading God",
+      "reason": "源文、译名、分类及术语一致性均核对通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "22527/22537 称 Trading God 赐福或未赐福。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Trading God 译作“交易之神”，对应 Issaries 的称号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Trading God 为神祇称号，非物品/地名，其他可容纳。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "作为 Issaries 的固定称号统一译“交易之神”，无同形普通词冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:598",
+      "evidence_rows": [
+        22602,
+        22622
+      ],
+      "source_excerpt": "the Hidden Temple",
+      "reason": "源文、译名、分类及术语一致性均核对通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "22602/22622 均指 Hidden Temple。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Hidden Temple 译作“隐秘神殿”，保留特定神殿名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "与 Hidden Temple 有外交关系，指特定神殿/组织，组织分类可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Great Earthshaker Temple 的“神殿/大神殿”用字可区分，不混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:599",
+      "evidence_rows": [
+        22614
+      ],
+      "source_excerpt": "the Earth-Shaking Goddess",
+      "reason": "源文、译名、分类及术语一致性均核对通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "22614 原文有 Earth-Shaking Goddess。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Earth-Shaking Goddess 译作“撼地女神”，保留称号的威能意象。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Earth-Shaking Goddess 为女神称号，其他可容纳。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "作为女神称号统一译“撼地女神”，与 Earth season“土季”区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:601",
+      "evidence_rows": [
+        22763,
+        22807,
+        32459
+      ],
+      "source_excerpt": "Motion Rune banner",
+      "reason": "核对为具名旗帜，译名与 motion rune 核心词一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "22763/22807 出现 Motion Rune banner；32459 为同名标题。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Motion Rune banner 译作“移动符文旗”，与 motion rune 统一核心词。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Motion Rune banner 可展开披作斗篷，是具名物品，物品分类准确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "保留“移动符文旗”，与统一后的 motion rune 核心词一致；未采纳“运动”候选。"
+        }
+      }
+    },
+    {
+      "ref": "terms:606",
+      "evidence_rows": [
+        23190
+      ],
+      "source_excerpt": "the Red Tongue Clan",
+      "reason": "源文、译名、分类及术语一致性均核对通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "23190 称 Red Tongue Clan 曾虐待 Urgrain。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Red Tongue Clan 译作“红舌氏族”，保留氏族名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Red Tongue Clan 是氏族名，组织分类准确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Silver Tongue 的“舌”用字可区分，氏族名独立。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:571",
+    "terms:574",
+    "terms:578",
+    "terms:579",
+    "terms:583",
+    "terms:586",
+    "terms:590",
+    "terms:592",
+    "terms:598",
+    "terms:599",
+    "terms:601",
+    "terms:606"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

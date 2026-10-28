@@ -1,0 +1,405 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对本批 12 条术语及其原文证据，确认多数专名和物品译名；修正 Thunderbeasts 的分类、armored ducks 与 Protection 的依据说明，并将 Plowsong 定为 required 专名。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_kind": "game_term",
+        "enforcement": "reference",
+        "term_reason": "30896/30899 以普通复数指在战斗中冲锋并战死的兽类，非专名。"
+      },
+      "reason": "30899 使用小写复数 thunderbeasts，表明是普通兽类称谓，不应冻结为专名。",
+      "evidence_rows": [
+        30896,
+        30899
+      ],
+      "table": "terms",
+      "index": 964
+    },
+    {
+      "patch": {
+        "term_reason": "30837 为披甲鸭人单位的简短称谓。"
+      },
+      "reason": "原 term_reason 中的 spears 与来袭语境不在本条证据中，按现有原文收紧。",
+      "evidence_rows": [
+        30837
+      ],
+      "table": "terms",
+      "index": 974
+    },
+    {
+      "patch": {
+        "term_reason": "30974 为独立标签，暂译保护；9713/9714 中 protection 为普通名词，故仅按整条记录匹配。",
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "whole_record",
+          "reason": "30974 为独立标签；9714 中 protection 为普通名词，故仅匹配完整记录。"
+        }
+      },
+      "reason": "移除未附原文的 30933 定义，并用现有语料说明整条匹配依据。",
+      "evidence_rows": [
+        30974,
+        9714
+      ],
+      "table": "terms",
+      "index": 986
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "enforcement": "required",
+        "term_reason": "33336 明确其为巴恩塔的祝福名，牛群不足、耕牛不够时有用。"
+      },
+      "reason": "命名祝福属于专名，且原 term_reason 引用了未附原文的 30934；改按 33336 说明。",
+      "evidence_rows": [
+        33336
+      ],
+      "table": "terms",
+      "index": 987
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:946",
+      "evidence_rows": [
+        29197
+      ],
+      "source_excerpt": "Grazelands",
+      "reason": "地名专名，译名和分类无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "29197 为地图标签 Grazeland，作为放牧地区名可确认。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“牧原”保留放牧地语义，简短适合地图标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地图地名归入 地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅一候选，译名与地名类专名处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:950",
+      "evidence_rows": [
+        29134
+      ],
+      "source_excerpt": "When Bad King Urgrain was attacked by the Hopping Army, he had his god-talkers perform every ceremony that might help.",
+      "reason": "确认专名及组织分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "29134 出现 Bad King Urgrain 遭 Hopping Army 攻击，后者为命名军队。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“跳跃军团”对应 Hopping Army，语序自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "军队/军团归入 组织。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅一候选，无冲突译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:963",
+      "evidence_rows": [
+        31048,
+        32478
+      ],
+      "source_excerpt": "Our ancestors say the Sorcerous Implements are cursed with vile magic.",
+      "reason": "保留 proper_name/required 与译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "31048 中 Sorcerous Implements 带定冠词并被称受邪恶魔法诅咒，指具名器物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“巫术法器”兼顾 sorcerous 与 implements 的器物义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "宝藏/具名器物归入 物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选“巫术器具”为同义直译；统一用“巫术法器”更贴合法器义。"
+        }
+      }
+    },
+    {
+      "ref": "terms:964",
+      "evidence_rows": [
+        30896,
+        30899
+      ],
+      "source_excerpt": "Sadly, the thunderbeasts were killed in the frenzy of the battle.",
+      "reason": "依小写复数用例修正分类，译名保留。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "30899 用小写复数 thunderbeasts，表明是普通兽类称谓而非专名；已改为 game_term/reference。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“雷兽”同时对应 30896 的 Thunderbeasts 和 30899 的 thunderbeasts。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "兽类名称留在 其他，不强行归入种族。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "候选译名一致；按小写普通名词统一为 reference，避免冻结同形普通词。"
+        }
+      }
+    },
+    {
+      "ref": "terms:968",
+      "evidence_rows": [
+        30921,
+        30922,
+        32457
+      ],
+      "source_excerpt": "We burned the Mist Paper, and hid in the dense smoke it produced.",
+      "reason": "确认物品专名及译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30921 表明 Mist Paper 是可燃烧并产生浓烟的具名物品。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“雾纸”保留 mist 与 paper 的构词，适合物品名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名物品归入 物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选译名均为“雾纸”，与宝藏列表一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:969",
+      "evidence_rows": [
+        30881,
+        30882,
+        32428
+      ],
+      "source_excerpt": "The Grey Net helped us capturing prisoners, but it became torn in the process.",
+      "reason": "确认物品专名及译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30881 中 Grey Net 用于捕获俘虏并撕裂，指具名网。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“灰网”直译 Grey Net，简短适合作物品名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名网具归入 物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选译名均为“灰网”，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:974",
+      "evidence_rows": [
+        30837
+      ],
+      "source_excerpt": "armored ducks",
+      "reason": "收紧 term_reason，保留游戏单位称谓译名。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "30837 仅给出 armored ducks 这一简短称谓；已移除原 term_reason 中无本批原文的 spears/来袭描述。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“披甲鸭人”自然表达 armored 与鸭人种族。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "鸭人单位/种族称谓归入 种族可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅一候选，未见跨条冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:975",
+      "evidence_rows": [
+        31872,
+        32718
+      ],
+      "source_excerpt": "Your emissaries approach the Varmandi clan, known for its martial fervor, and for a history of mad chieftains.",
+      "reason": "确认氏族专名及音译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "31872 明确 Varmandi 是以武勇和疯狂首领史闻名的氏族。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“瓦尔曼迪”音译稳定，符合氏族名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "氏族归入 组织。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "32718 同一氏族语境重复出现，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:980",
+      "evidence_rows": [
+        31355
+      ],
+      "source_excerpt": "Skyfall Lake",
+      "reason": "确认地名专名及译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "31355 为地图标签 Skyfall Lake，指湖泊地名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“天落湖”保留 skyfall 意象，简短适合作地图名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "湖泊地名归入 地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅一候选，无冲突译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:982",
+      "evidence_rows": [
+        31824,
+        31947
+      ],
+      "source_excerpt": "when Lhankor Mhy, the Knowing God, learned how to use the Marking Bone, which could mark signs of power upon anything.",
+      "reason": "确认物品专名及译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "31824 中 Marking Bone 带定冠词并能标记力量符号，指具名骨器。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“标记骨”对应 marking bone 的功能与器物义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名骨器归入 物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "31947 小写 marking bone 指同一器物，译名保持一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:986",
+      "evidence_rows": [
+        30974,
+        9714
+      ],
+      "source_excerpt": "Protection",
+      "reason": "修正 term_reason 与 applicability 依据，保留 reference 降噪。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "30974 仅为独立标签 Protection；9714 中 protection 是普通名词，原 term_reason 的 30933 不在本批原文。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“保护”对应 Protection，作为短标签可接受。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "独立能力/祝福标签归入 技能，未见分类冲突。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已改为整条记录匹配，避免影响 9713/9714 中普通 protection；译名保持“保护”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:987",
+      "evidence_rows": [
+        30975,
+        33336
+      ],
+      "source_excerpt": "Of Barntar’s blessings, Plowsong is useful when your cattle herds are in bad shape and you can’t muster enough oxen to plow the fields properly.",
+      "reason": "修正命名祝福分类并更新依据。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "33336 明确 Plowsong 是 Barntar 的祝福名，应作 proper_name/required。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“犁歌”保留 plow 与 song 的构词，适合作技能名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福归入 技能。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "候选分类 game_term 与 proper_name 冲突；依 33336 统一为 proper_name，译名“犁歌”一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:946",
+    "terms:950",
+    "terms:963",
+    "terms:964",
+    "terms:968",
+    "terms:969",
+    "terms:974",
+    "terms:975",
+    "terms:980",
+    "terms:982",
+    "terms:986",
+    "terms:987"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

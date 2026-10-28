@@ -1,0 +1,61 @@
+{
+  "review_complete": true,
+  "review_summary": "审校 e1：确认 Elmal 为神祇专名，保留标准译名“埃尔马尔”；将 terms 分类由“身份”修正为“其他”，并补充可核实的 term_reason。本批无隔离、新增或 allow_no_match 项。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "category_path": "其他",
+        "term_reason": "Elmal 是原文中的太阳神与守护者（33874 称 Elmal god of the Sun；33476 称 Sun Defender），2243 的英雄任务名“Elmal Guards the Stead”也指他。"
+      },
+      "reason": "原文明确称其为太阳神/守护者，归入“其他”比“身份”更准确；原 term_reason 含未附原文的 507 条，改为本批可核实依据。",
+      "evidence_rows": [
+        2243,
+        33476,
+        33874
+      ],
+      "table": "terms",
+      "index": 4
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:4",
+      "evidence_rows": [
+        172,
+        2243,
+        33346,
+        33476,
+        33874
+      ],
+      "source_excerpt": "Elmal Guards the Stead",
+      "reason": "确认 Elmal 为神祇专名，保留“埃尔马尔”，分类改为“其他”，并补充可核实的 term_reason；候选异译应统一到该标准名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文以 Elmal 拼写出现；172 为向 Elmal 祈求指引战斗，2243 为“Elmal Guards the Stead”，拼写与专名形式一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "33346 给出读音“(EL-mahl)”，本条目采用“埃尔马尔”，与多数候选及复合名译法一致；未发现需改译的原文依据。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "33874 称其为 god of the Sun、33476 称其为 Sun Defender，说明是神祇；terms 分类由“身份”改为“其他”更准确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批候选出现“艾尔玛”“埃尔玛”等暂译，但标准专名统一为“埃尔马尔”；与 2243 的复合名“Elmal Guards the Stead”等译名方向一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:4"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

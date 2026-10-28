@@ -1,0 +1,447 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e12 的原文、译名、分类与跨批一致性。确认 thane/thanes 与 spirit-talker/spirit-talkers 的单复数共用译名合理；修正 Eurmal 故事名核心译名，并补正若干 term_reason 中超出证据的表述。",
+  "acknowledged_findings": [
+    "F0369",
+    "F0401"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "通过灵与厄纳尔达沟通、掌握大地秘密知识的灵语者传统；原文称其保守大地的秘识。"
+      },
+      "reason": "原 term_reason 将“秘密知识”扩大为“魔法常保密”，改为原文可证的表述。",
+      "evidence_rows": [
+        5099,
+        5138
+      ],
+      "table": "terms",
+      "index": 290
+    },
+    {
+      "patch": {
+        "term_reason": "与灵体而非神祇打交道的宗教专家；可受雇训练或治疗氏族成员，原文称其无单一氏族归属且属可信任的外来者。"
+      },
+      "reason": "删除未在证据中出现的“包括祖先灵”及与商人、战士并列说法，按 11699 定义和 6328/6332 用途概括。",
+      "evidence_rows": [
+        5545,
+        6328,
+        6332,
+        11699
+      ],
+      "table": "terms",
+      "index": 298
+    },
+    {
+      "patch": {
+        "term_reason": "氏族的领导阶层成员；原文定义为可承担户主、神语者或首领战士等领导角色，11146 亦以 nobles 代指被绑架的 thanes。"
+      },
+      "reason": "原 term_reason 仅覆盖求赠礼场景，改为覆盖 34005 定义及 11146 的 nobles 同义用法。",
+      "evidence_rows": [
+        11146,
+        26278,
+        34005
+      ],
+      "table": "terms",
+      "index": 299
+    },
+    {
+      "patch": {
+        "term_reason": "可供交易、赠予或请求祝福的货物资源；原文两次以 trade goods 指所请求的物资。"
+      },
+      "reason": "删除证据中未出现的“仓库充满 new goods/trade goods”描述，按 5911/5912 表述。",
+      "evidence_rows": [
+        5911,
+        5912
+      ],
+      "table": "terms",
+      "index": 300
+    },
+    {
+      "patch": {
+        "recommended_translation": "欧尔马尔洗澡",
+        "term_reason": "神话故事名；原文以“我的……秘密”形式提及，核心神名 Eurmal 译作欧尔马尔。"
+      },
+      "reason": "将 Eurmal 核心名与已见统一译名“欧尔马尔”对齐，并去掉书名号以避免嵌入原文引号时重复。",
+      "evidence_rows": [
+        5849
+      ],
+      "table": "terms",
+      "index": 306
+    },
+    {
+      "patch": {
+        "term_reason": "Urox/风暴公牛的战斗信徒群体；常成群游荡、饮酒闹事，并讨伐混沌，原文称激怒他们会遭传奇狂战士攻击。"
+      },
+      "reason": "原 term_reason 的“不属于任何氏族、易受骗”缺少本条目证据支持，改为 6958/6975/20338/29301/7625 可证内容。",
+      "evidence_rows": [
+        6958,
+        6975,
+        7624,
+        7625,
+        20338,
+        29301
+      ],
+      "table": "terms",
+      "index": 317
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:259",
+      "evidence_rows": [
+        4249,
+        4250,
+        29839,
+        32500
+      ],
+      "source_excerpt": "White Calf",
+      "reason": "确认 White Calf 为受乌拉尔达祝福的具名特殊牛犊；译名、分类与候选一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4249/4250/29839 表明 White Calf 是受乌拉尔达祝福的著名牛犊；32500 亦以同名列出。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“白犊”准确表达 White Calf；三条提取候选均一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为特殊牛犊/宝物列入物品，分类可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各候选译名一致，未与相关 White-Clad Goddess 混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:285",
+      "evidence_rows": [
+        4601,
+        4904,
+        33680,
+        16815
+      ],
+      "source_excerpt": "You need at least three other clans to form a viable tribe.",
+      "reason": "确认 tribe 为高于氏族的政治单位；译名部族、分类组织合适。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33680 明确 tribe 由至少三个其他氏族组成；16815 说明 tribe 由多个 clan 构成。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“部族”符合高于氏族、可求援且禁止内斗的政治单位含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为多个氏族结成的政治单位，分类组织合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各候选均以“部族”为核心译名，与 tribe-mates 等派生用法一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:290",
+      "evidence_rows": [
+        5099,
+        5138
+      ],
+      "source_excerpt": "a member of the Earth Witch spirit tradition",
+      "reason": "确认大地女巫为通过灵与厄纳尔达沟通的灵语者传统；修正 term_reason 中过宽的魔法保密表述。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "5099 称其为 Earth Witch spirit tradition 成员；5138 定义其为可通过灵接触厄纳尔达的灵语者。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“大地女巫”对应 Earth Witch，且保留大地元素与女巫传统。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指灵语者传统中的身份，分类身份合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选译名一致；与 Earth rune 的大地元素词根一致但为独立术语。"
+        }
+      }
+    },
+    {
+      "ref": "terms:291",
+      "evidence_rows": [
+        4998,
+        17284,
+        33814
+      ],
+      "source_excerpt": "marked with the Earth rune and several others",
+      "reason": "确认 Earth rune 为大地元素形状的符文标记；译名与分类一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4998 称旧神龛有 Earth rune 标记；17284/33814 分别说明其力量与形状。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“大地符文”准确表达 Earth rune。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为符文标记列入其他，分类可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各候选均译“大地符文”，与 Earth Witch 的大地词根区分明确。"
+        }
+      }
+    },
+    {
+      "ref": "terms:298",
+      "evidence_rows": [
+        5545,
+        6328,
+        6332,
+        11699
+      ],
+      "source_excerpt": "they deal with spirits, not gods.",
+      "reason": "确认与灵打交道的宗教专家；修正 term_reason 删除未证成的并列关系。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11699 定义 spirit-talkers 与 spirits 而非 gods 打交道，且无单一氏族归属。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“灵语者”准确表达与灵沟通的专家。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为宗教专家身份，分类身份合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "单复数 spirit-talker/spirit-talkers 共用“灵语者”合理；f2 已核。"
+        }
+      }
+    },
+    {
+      "ref": "terms:299",
+      "evidence_rows": [
+        11146,
+        26278,
+        34005,
+        33958
+      ],
+      "source_excerpt": "thane: someone with a leadership role",
+      "reason": "确认 thane 为氏族领导阶层；保留“贵族”，并修正 term_reason 以覆盖定义与 nobles 用例。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34005 定义为领导角色；26278 将 thane 与 weaponthane/ring 地位并列。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "11146 以 nobles 作 thanes 的替代表述，支持“贵族”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指氏族领导阶层成员，分类身份合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 thanes 单复数同义，共用“贵族”不构成冲突；f1 已核。"
+        }
+      }
+    },
+    {
+      "ref": "terms:300",
+      "evidence_rows": [
+        5911,
+        5912
+      ],
+      "source_excerpt": "Ask for a blessing on our trade goods.",
+      "reason": "确认为可交易、赠予或请求祝福的货物资源；修正 term_reason 去除未在证据中的仓库表述。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "5911 请求祝福 trade goods；5912 直接请求“Grant us trade goods”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“贸易货物”表达 trade goods，语义清楚。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为可交易物资，分类物品合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选译名一致，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:303",
+      "evidence_rows": [
+        5494,
+        5565
+      ],
+      "source_excerpt": "we must become king of the tribe",
+      "reason": "确认部族之王为预言目标中的部族最高首领；译名与分类一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "5494 称预言要求氏族成为 king of the tribe；5565 强调尚未达到该地位。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“部族之王”准确对应 king of the tribe。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为部族最高首领身份，分类身份合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 tribe 译“部族”一致，且区别于 King of Dragon Pass。"
+        }
+      }
+    },
+    {
+      "ref": "terms:306",
+      "evidence_rows": [
+        5849
+      ],
+      "source_excerpt": "Eurmal Takes A Bath",
+      "reason": "确认为故事名；修正 Eurmal 核心译名并统一标题处理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "5849 以“my ‘Eurmal Takes A Bath’ secrets”形式明确其为故事名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“欧尔马”与已见 Eurmal 译名“欧尔马尔”不一致；改为“欧尔马尔洗澡”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为神话故事名列入其他，分类合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "Eurmal 核心名统一为“欧尔马尔”；去掉书名号以便嵌入原文引号。"
+        }
+      }
+    },
+    {
+      "ref": "terms:312",
+      "evidence_rows": [
+        6381
+      ],
+      "source_excerpt": "The Badger and the Snake",
+      "reason": "确认为讽刺争吵的动物故事名；译名、分类与标题处理一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "6381 称其为 ridiculed pointless sparring 并以森林动物灾难收场的故事。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“獾与蛇”对应 The Badger and the Snake。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为故事名列入其他，分类合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与修正后的 Eurmal 故事名均采用无书名号处理，便于嵌入原句引号。"
+        }
+      }
+    },
+    {
+      "ref": "terms:317",
+      "evidence_rows": [
+        6958,
+        6975,
+        7624,
+        7625,
+        20338,
+        29301
+      ],
+      "source_excerpt": "Storm Bulls are not exactly lawless.",
+      "reason": "确认指 Urox/风暴公牛的战士信徒群体；修正 term_reason 删除无据表述。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "6958/6975 描述 Storm Bulls 的行为与饮酒闹事；20338/29301 说明其讨伐混沌。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“风暴公牛信徒”明确为信徒群体，避免与神名 Storm Bull 混淆。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文多指 Urox 信徒群体，作为身份称谓分类可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与单数神名 Storm Bull 的“风暴公牛”区分明确，复数加“信徒”合理。"
+        }
+      }
+    },
+    {
+      "ref": "terms:318",
+      "evidence_rows": [
+        6996,
+        8770,
+        8771,
+        9645
+      ],
+      "source_excerpt": "proving themselves to be Storm Khans, powerful holy warriors of their god.",
+      "reason": "确认 Storm Khans 为 Uroxi 强大圣战士称号；译名、分类一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "6996 明确定义 Storm Khans 为 Urox 的强大圣战士；8770/8771/9645 指其可被招来作战。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "各候选均作“风暴可汗”，译名统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为战士称号/身份，分类身份合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "三条提取候选译名一致，未与 Storm Bulls 或 Storm Bull 混淆。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:259",
+    "terms:285",
+    "terms:290",
+    "terms:291",
+    "terms:298",
+    "terms:299",
+    "terms:300",
+    "terms:303",
+    "terms:306",
+    "terms:312",
+    "terms:317",
+    "terms:318"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

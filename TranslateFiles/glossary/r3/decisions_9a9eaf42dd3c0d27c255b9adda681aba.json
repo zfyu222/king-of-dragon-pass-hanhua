@@ -1,0 +1,388 @@
+{
+  "review_complete": true,
+  "review_summary": "审校 11 条分配条目：e2 修正译名与释义，e4 修正 Bondsman 的被动语义，e8/e9 修正无据或方向错误的 term_reason，e10 统一分类；其余条目保留。审计 f1 为同一书名的撇号形态差异，f2 为单复数同词变体，均非译名冲突。",
+  "acknowledged_findings": [
+    "F0422",
+    "F0423"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "窸窣叶脉",
+        "term_reason": "植物部族的斗士；多足为其提供养分，在争夺猎场时被击败（26922、26926、34334）。"
+      },
+      "reason": "‘Veins’在植物斗士语境取‘叶脉’更准确；原 term_reason 的‘汲取对手养分’与 26926‘其多足提供养分’不符。",
+      "evidence_rows": [
+        26922,
+        26926,
+        34334
+      ],
+      "table": "terms",
+      "index": 660
+    },
+    {
+      "patch": {
+        "recommended_translation": "受缚者誓言"
+      },
+      "reason": "Bondsman 指受誓言约束者，非施缚者；‘束缚者誓言’造成主动/被动倒置。",
+      "evidence_rows": [
+        27547,
+        27548
+      ],
+      "table": "terms",
+      "index": 664
+    },
+    {
+      "patch": {
+        "term_reason": "自然的神秘女神；在黎明诞生时间，织网束缚魔鬼（33876、34030、34192）。"
+      },
+      "reason": "原 term_reason 的‘龙人赠礼’无原文依据；按原文改为自然女神、黎明诞生时间、织网束缚魔鬼。",
+      "evidence_rows": [
+        33876,
+        34030,
+        34192
+      ],
+      "table": "terms",
+      "index": 670
+    },
+    {
+      "patch": {
+        "term_reason": "能变成熊的荒野之人；杀死熊行者可能招致诅咒（28018）。"
+      },
+      "reason": "原 term_reason‘死后化为人的熊’方向错误；bearwalker 指能变成熊的人。",
+      "evidence_rows": [
+        28018
+      ],
+      "table": "terms",
+      "index": 672
+    },
+    {
+      "patch": {
+        "category_path": "其他"
+      },
+      "reason": "28051 只称其为住在荒野、能变成熊的人，未证明独立种族；改为‘其他’与单数形式统一。",
+      "evidence_rows": [
+        28051
+      ],
+      "table": "terms",
+      "index": 678
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:659",
+      "evidence_rows": [
+        26984,
+        26992,
+        34336
+      ],
+      "source_excerpt": "who heads the Hurt Everything Clan.",
+      "reason": "氏族名、首领与归属关系均有原文支撑，译名和分类保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26984 称 Vadrus 统领 Hurt Everything Clan；26992/34336 继续以该名指同一氏族。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘伤尽万物氏族’保留 Hurt Everything 的暴力/敌对语义，作为氏族名可统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文是 Vadrus 统领的氏族，归‘组织’。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Vadrus 及 Storm Tribe 语境一致，本批无同词族冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:660",
+      "evidence_rows": [
+        26922,
+        26926,
+        34334
+      ],
+      "source_excerpt": "tore off the many feet of Rustling Veins, which gave it sustenance.",
+      "reason": "译名由‘脉络’改为更贴合植物属性的‘叶脉’，并修正 term_reason 的多足养分描述。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "26922/26926/34334 均指 Plant Tribe 的斗士 Rustling Veins；26926 说明其多足提供养分；原 term_reason 的‘汲取对手养分’不确。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "‘Veins’在植物斗士语境取‘叶脉’更准确，故将‘窸窣脉络’改为‘窸窣叶脉’；候选人物译名也作‘窸窣叶脉’。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为具名植物斗士，terms 表下‘其他’可保留；原文未给出可证实的种族/组织归类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Sharp Green 并列，无共享译名冲突；名称核心意象统一为植物叶脉。"
+        }
+      }
+    },
+    {
+      "ref": "terms:663",
+      "evidence_rows": [
+        27413,
+        27415,
+        27470,
+        27471
+      ],
+      "source_excerpt": "called “Belintar’s Book,” and is a compilation of myths and legends written by the Pharaoh himself.",
+      "reason": "书名、物品分类和与同指条目的共用译名均确认无误。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "27413/27415/27470/27471 均指同一部被法老术士寻找的书卷。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘贝林塔之书’准确；词条名不加书名号，正文可按中文习惯加《》。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品，符合书卷实体。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "审计 f1 所指另一条目与本书名仅撇号形态不同，同指一书；共用译名不构成异名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:664",
+      "evidence_rows": [
+        27547,
+        27548
+      ],
+      "source_excerpt": "The Bondsman’s Oath means the Trickster will be obedient to the chief.",
+      "reason": "修正 Bondsman 的被动语义，保留仪式誓言这一游戏机制分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "27547/27548 明确定义该誓言使 Trickster 服从族长；27539/27542 展示立誓场景。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "Bondsman 是被誓言约束的一方，不是‘束缚者’（施缚者）；改为‘受缚者誓言’避免主动/被动倒置。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "仪式誓言属于游戏机制术语，归‘其他’。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Trickster 统一为诡术师；本批无同名词族冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:665",
+      "evidence_rows": [
+        27567
+      ],
+      "source_excerpt": "Buf Gart bloodline asked if they could worship at our Maran Gor shrine.",
+      "reason": "血统名成立，音译与派生词干一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "27567 明确 Buf Gart 是 clan 内的 bloodline 名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "布夫加特为稳定音译，保留血统名词干。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "组织可涵盖氏族内部的血统群体。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Buf Gartings 共享‘布夫加特’词干，派生关系一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:666",
+      "evidence_rows": [
+        27577,
+        27578
+      ],
+      "source_excerpt": "The Buf Gartings are not numerous.",
+      "reason": "派生群体名与血统名一致，无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "27577/27578 指 Buf Gart 血统成员，人数不多且不影响氏族魔法。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘布夫加特人’保留词干，作群体称谓自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为血统成员群体，归‘组织’可保留。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Buf Gart 的‘布夫加特’核心译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:667",
+      "evidence_rows": [
+        27585
+      ],
+      "source_excerpt": "she divided up her earthly goods between her most important daughters: Maran Gor, Esrola, and Ernalda.",
+      "reason": "神名、亲属关系和分类均有原文支撑。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "27585 明确 Esrola 是 Asrelia 的重要女儿之一。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "埃斯罗拉为稳定音译，可与 Maran Gor、Ernalda 并列。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神祇名归‘其他’，不误作地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同句神名并列无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:670",
+      "evidence_rows": [
+        33876,
+        34030,
+        34192
+      ],
+      "source_excerpt": "It brings into being a new goddess, Arachne Solara, who weaves a net and shows the gods how to use it.",
+      "reason": "统一译名并删除无据的‘龙人赠礼’释义，改用原文的时间/织网定义。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "33876 称其为自然的神秘女神；34030/34192 说明她在黎明诞生时间、织网束缚魔鬼；原 term_reason 的‘龙人赠礼’无据。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "统一为‘阿拉克涅索拉拉’，不取‘索拉腊’等候选微差。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神祇名归‘其他’。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各候选指向同一女神，核心译名已统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:672",
+      "evidence_rows": [
+        28018
+      ],
+      "source_excerpt": "People worried that we might be cursed for killing a bearwalker.",
+      "reason": "修正 term_reason 的错误变形方向；单数词条与复数变体统一。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "28018 只显示有人因杀死 bearwalker 担心受诅咒；原 term_reason‘死后化为人的熊’方向错误。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘熊行者’与复数形式同形，保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文未证明独立种族，归‘其他’更稳妥。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "审计 f2 为单复数同词变体，共用‘熊行者’正确。"
+        }
+      }
+    },
+    {
+      "ref": "terms:678",
+      "evidence_rows": [
+        28051
+      ],
+      "source_excerpt": "There are many stories of bearwalkers, who live in the wilderness and transform into bears, prowling the woods and hills.",
+      "reason": "将分类从‘种族’改为原文可支撑的‘其他’，并与单数词条统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28051 直接定义 bearwalkers 为住在荒野、能变成熊的人。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘熊行者’与单数同形，保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文只说‘人’能变形，未证明其为独立种族；改为‘其他’与单数一致。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "审计 f2 为单复数变体，共用译名正确。"
+        }
+      }
+    },
+    {
+      "ref": "terms:673",
+      "evidence_rows": [
+        27508
+      ],
+      "source_excerpt": "Or maybe they’re from Nochet. One of those southern lands.",
+      "reason": "地名、音译和分类均通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "27508 明确 Nochet 是南方地名，并说法老术士可能来自那里。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "诺切特为音译地名，保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:659",
+    "terms:660",
+    "terms:663",
+    "terms:664",
+    "terms:665",
+    "terms:666",
+    "terms:667",
+    "terms:670",
+    "terms:672",
+    "terms:678",
+    "terms:673"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

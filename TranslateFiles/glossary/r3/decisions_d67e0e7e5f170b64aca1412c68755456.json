@@ -1,0 +1,369 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1-e11 的原文来源、译名、分类与一致性；修正 e3、e5、e6 的译名或释义，并将 e10 的分类改为种族。f1 的 Tarshites/Tarshite 共享译名经核对为同一族称的单复数变体，不构成异名冲突。",
+  "acknowledged_findings": [
+    "F0380"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "沼泽亡灵领主"
+      },
+      "reason": "Undead 统一为亡灵，Marsh 作地点限定；修正原译的亡者与修饰歧义。",
+      "evidence_rows": [
+        2234
+      ],
+      "table": "terms",
+      "index": 161
+    },
+    {
+      "patch": {
+        "recommended_translation": "亡灵"
+      },
+      "reason": "原文 the undead/undead creatures 作集合类别；统一为亡灵，避免与 e3/e4 的亡灵领主使用不同词根。",
+      "evidence_rows": [
+        7663,
+        8802
+      ],
+      "table": "terms",
+      "index": 332
+    },
+    {
+      "patch": {
+        "recommended_translation": "眼之镜",
+        "term_reason": "原文宝藏列表中的具名镜子；Eye 为名称限定，不指外形。"
+      },
+      "reason": "Eye Mirror 是具名宝物，原译眼形镜将 Eye 误作外形；改眼之镜并修正释义。",
+      "evidence_rows": [
+        14698,
+        32415
+      ],
+      "table": "terms",
+      "index": 481
+    },
+    {
+      "patch": {
+        "category_path": "种族",
+        "term_reason": "Tarsh 的居民/族称；原文以 Tarshite magicians、Tarshite raiding party 作定语。"
+      },
+      "reason": "Tarshite 与 Tarshites 同为 Tarsh 居民/族称，分类应统一为种族而非身份。",
+      "evidence_rows": [
+        2163,
+        9584
+      ],
+      "table": "terms",
+      "index": 139
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:76",
+      "evidence_rows": [
+        29191
+      ],
+      "source_excerpt": "Upland Marsh",
+      "reason": "地名 Upland Marsh 译名与分类一致，保留高地沼泽。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 29191 地图标签为 Upland Marsh，与词条 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "高地沼泽对应 Upland Marsh，Upland 作地名限定，Marsh 为沼泽。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为地图标签中的地点，归入地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条各出处均指同一 Upland Marsh，未出现异名或分类冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:147",
+      "evidence_rows": [
+        2217
+      ],
+      "source_excerpt": "frogs of the Mirror Marshes",
+      "reason": "Mirror Marshes 译镜沼，地名简洁且与原文相符。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2217 原文有 frogs of the Mirror Marshes，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "镜沼对应 Mirror Marshes，Mirror 为镜，Marshes 为沼泽。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为英雄任务途经地点，归入地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Mirror Marshes 在本条仅指该沼泽地名，译名统一，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:161",
+      "evidence_rows": [
+        2234
+      ],
+      "source_excerpt": "Undead Marsh Lord",
+      "reason": "原译亡者沼泽领主表意偏歧，改为沼泽亡灵领主以贴合原文并统一 Undead。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2234 原文有 make a deal with the Undead Marsh Lord，与 source 一致。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译亡者沼泽领主；Undead 应作亡灵，Marsh 为地点限定，改为沼泽亡灵领主。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为可与氏族交易的亡灵统治者称号，归入身份。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e4 高地沼泽的亡灵领主共享亡灵领主核心；修正亡者与亡灵混用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:305",
+      "evidence_rows": [
+        5707
+      ],
+      "source_excerpt": "Undead Lord of the Upland Marsh",
+      "reason": "称号译名准确，与 Upland Marsh 及亡灵领主核心一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "5707 原文有 Undead Lord of the Upland Marsh，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "高地沼泽的亡灵领主准确对应 Undead Lord of the Upland Marsh。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文称氏族曾试图与此领主交易，属统治者称号/身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1 高地沼泽、e3 修正后的亡灵领主核心一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:332",
+      "evidence_rows": [
+        7663,
+        8802
+      ],
+      "source_excerpt": "fight the undead",
+      "reason": "undead 作集合类别，改译亡灵以统一 e3/e4 的 Undead 核心。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7663 的 fight the undead 与 8802 的 attracts the undead 均指亡灵类别。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译不死者；原文 the undead 作集合名词，改为亡灵，与 e3/e4 的亡灵领主一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文作为敌军/生物类别使用，归入其他。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e3/e4 的 Undead 统一为亡灵；corpus 9713/9714 的 the undead 同义。"
+        }
+      }
+    },
+    {
+      "ref": "terms:481",
+      "evidence_rows": [
+        14698,
+        32415
+      ],
+      "source_excerpt": "the Eye Mirror",
+      "reason": "Eye Mirror 是具名宝物，眼之镜比眼形镜更贴合名称含义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "14698 宝藏列表与 32415 标签均为 Eye Mirror，与 source 一致。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译眼形镜将 Eye 解作外形；原文为具名宝物，改为眼之镜并修正释义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为宝藏列表中的具名镜子，归入物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条无其他 Eye Mirror 译名冲突；与 e2 的镜用字一致但不指同一事物。"
+        }
+      }
+    },
+    {
+      "ref": "terms:640",
+      "evidence_rows": [
+        26400
+      ],
+      "source_excerpt": "Marsh of Ink",
+      "reason": "Marsh of Ink 译墨沼，保留地名意象且与穿越染黑情节相符。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26400 原文有 walk through the Marsh of Ink，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "墨沼对应 Marsh of Ink，穿越后三人全身染黑，意译准确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为英雄任务途经地，归入地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Marsh of Ink 是特定地名，与 Upland Marsh、Mirror Marshes 区分，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:78",
+      "evidence_rows": [
+        1732,
+        1750
+      ],
+      "source_excerpt": "The customs of these Tarshites are different from ours",
+      "reason": "Tarshites 为 Tarsh 居民族称，塔什人译名与 e10 单数变体一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1732/1750 原文均出现 Tarshites，指 Tarsh 的居民，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "塔什人对应 Tarshites，Tarsh 音译塔什，-ites 表居民/族称。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文以 Tarshites 指族群/居民，归入种族。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e10 的 Tarshite 为同一族称单复数变体，均译塔什人；f1 的共享译名经核对不构成异名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:114",
+      "evidence_rows": [
+        1780,
+        32485
+      ],
+      "source_excerpt": "Tarshite woad",
+      "reason": "Tarshite woad 译塔什菘蓝，woad 为菘蓝类皮肤涂剂。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1780 与 32485 均出现 Tarshite woad/Woad，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "塔什菘蓝对应 Tarshite woad，woad 为菘蓝/皮肤制剂，符合原文说明。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为可赋予英雄气场的皮肤制剂，归入物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Tarshite 与 e8/e10 的塔什人同源；大小写变体同译，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:139",
+      "evidence_rows": [
+        2163,
+        9584
+      ],
+      "source_excerpt": "Tarshite magicians",
+      "reason": "Tarshite 指 Tarsh 居民/族称，分类应由身份改为种族以统一 e8。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2163 的 Tarshite magicians 与 9584 的 Tarshite raiding party 均指 Tarsh 方人员。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "塔什人可覆盖族称；作定语时可译塔什的，但词条核心为塔什人。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原分类身份过窄；Tarshite 与 Tarshites 同指 Tarsh 居民/族称，改为种族。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e8 的 Tarshites 单复数同译塔什人，f1 核对为同一族称变体；分类修正后一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:81",
+      "evidence_rows": [
+        1461
+      ],
+      "source_excerpt": "accursed Wood Folk",
+      "reason": "Wood Folk 为敌对族群名，林木民译名与种族分类一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1461 原文有 accursed Wood Folk，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "林木民对应 Wood Folk，保留族群称谓；accursed 由上下文另译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文指敌对林木族群，归入种族。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条无其他 Wood Folk 译名冲突，与 Tarshites 等族称并列使用不矛盾。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:76",
+    "terms:147",
+    "terms:161",
+    "terms:305",
+    "terms:332",
+    "terms:481",
+    "terms:640",
+    "terms:78",
+    "terms:114",
+    "terms:139",
+    "terms:81"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

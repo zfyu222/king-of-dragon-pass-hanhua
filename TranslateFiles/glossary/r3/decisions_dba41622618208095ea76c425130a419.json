@@ -1,0 +1,506 @@
+{
+  "review_complete": true,
+  "review_summary": "已审阅本批 12 条术语：核对标签原文、译名、分类与相关条目一致性；修正 e6/e7/e10 译名，统一 e10 的 Earthshaker 核心译名，补齐 e8-e12 的整条标签适用范围，并将 e1-e9 中引用未提供行号的术语理由改为可核实依据。audit.findings 为空，无隔离、新增或免匹配项。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "30992 为祝福列表独立标签；本条按整条标签译作“市场”，不覆盖叙述中普通小写 market。"
+      },
+      "reason": "原术语理由引用了本批未提供的 30951，改为仅依据当前标签及同形普通文例说明范围。",
+      "evidence_rows": [
+        30992,
+        2363
+      ],
+      "table": "terms",
+      "index": 1001
+    },
+    {
+      "patch": {
+        "term_reason": "30994 为祝福列表独立标签；本条按整条标签译作“贸易”，不覆盖普通语境中的 trading。"
+      },
+      "reason": "原术语理由引用未提供的 30953，改为依据当前标签和普通贸易文例。",
+      "evidence_rows": [
+        30994,
+        33211
+      ],
+      "table": "terms",
+      "index": 1002
+    },
+    {
+      "patch": {
+        "term_reason": "30998 为祝福列表独立标签；作为祝福名译作“识字”。"
+      },
+      "reason": "原术语理由引用未提供的 30957，改为依据当前标签。",
+      "evidence_rows": [
+        30998
+      ],
+      "table": "terms",
+      "index": 1004
+    },
+    {
+      "patch": {
+        "term_reason": "31002 为祝福名称，含神名 Yinkin；译名“因金之友”与相关条目 Yinkin（因金）一致。"
+      },
+      "reason": "原术语理由引用未提供的 30961，改为依据当前名称及相关专名。",
+      "evidence_rows": [
+        31002
+      ],
+      "table": "terms",
+      "index": 1008
+    },
+    {
+      "patch": {
+        "term_reason": "31003 为祝福列表独立标签；29104 中另有同名标枪，本条按整条标签译作“闪电”。"
+      },
+      "reason": "原术语理由引用未提供的 30962，并补充同形武器名以限定本条范围。",
+      "evidence_rows": [
+        31003,
+        29104
+      ],
+      "table": "terms",
+      "index": 1009
+    },
+    {
+      "patch": {
+        "recommended_translation": "牛奶祝福",
+        "term_reason": "31009 为祝福名称；Milk 按常用“牛奶”义，译作“牛奶祝福”。"
+      },
+      "reason": "将生硬直译“乳汁祝福”改为更自然且符合标签风格的“牛奶祝福”，并移除未提供行号的机制说明。",
+      "evidence_rows": [
+        31009
+      ],
+      "table": "terms",
+      "index": 1014
+    },
+    {
+      "patch": {
+        "recommended_translation": "狂战士",
+        "term_reason": "31011 为独立祝福标签；Berserker 在此作祝福名，译作“狂战士”。"
+      },
+      "reason": "与相关条目 Berserker blessing（狂战士祝福）统一核心译名，并移除未提供行号的机制说明。",
+      "evidence_rows": [
+        31011
+      ],
+      "table": "terms",
+      "index": 1016
+    },
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "whole_record",
+          "reason": "原文为祝福列表独立标签"
+        },
+        "term_reason": "31013 为祝福名称；Fyrdwomen 指民团女兵，与相关条目 Vinga's Fyrdwomen blessing 的核心译名一致。"
+      },
+      "reason": "补充整条标签适用范围，并将术语理由改为可核实依据。",
+      "evidence_rows": [
+        31013
+      ],
+      "table": "terms",
+      "index": 1018
+    },
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "whole_record",
+          "reason": "原文为祝福列表独立标签"
+        },
+        "term_reason": "31014 为祝福名称；Pathfinder 作为祝福名译作“寻路者”，整条标签匹配。"
+      },
+      "reason": "补充整条标签适用范围，并将术语理由改为可核实依据。",
+      "evidence_rows": [
+        31014
+      ],
+      "table": "terms",
+      "index": 1019
+    },
+    {
+      "patch": {
+        "recommended_translation": "大地震者战团",
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "whole_record",
+          "reason": "原文为宝藏列表独立标签"
+        },
+        "term_reason": "32390 为宝藏列表中的具名战团；Earthshaker 与相关条目 Great Earthshaker Temple 的“大地震者”保持一致。"
+      },
+      "reason": "统一 Earthshaker 核心译名，并补充宝藏标签的整条匹配范围。",
+      "evidence_rows": [
+        32390
+      ],
+      "table": "terms",
+      "index": 1037
+    },
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "whole_record",
+          "reason": "原文为宝藏列表独立标签"
+        },
+        "term_reason": "32401 为宝藏列表中的具名物品；整条标签译作“被俘之灵”。"
+      },
+      "reason": "补充宝藏标签的整条匹配范围，避免把普通短语一并冻结。",
+      "evidence_rows": [
+        32401
+      ],
+      "table": "terms",
+      "index": 1040
+    },
+    {
+      "patch": {
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "whole_record",
+          "reason": "原文为宝藏列表独立标签"
+        },
+        "term_reason": "32405 为宝藏列表中的具名长矛；与相关条目 Black Spear 的“矛”译名一致。"
+      },
+      "reason": "补充宝藏标签的整条匹配范围，并记录与相关长矛名称的一致性。",
+      "evidence_rows": [
+        32405
+      ],
+      "table": "terms",
+      "index": 1042
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:1001",
+      "evidence_rows": [
+        30992,
+        2363
+      ],
+      "source_excerpt": "Market",
+      "reason": "标签原文、译名和类别已核对；术语理由改按当前标签及普通小写文例说明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30992 原文仅为独立标签“Market”，与 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“市场”符合该祝福标签的字面义，且保持短标签风格。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为祝福列表标签归入“技能”，category_path 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "30992 为独立标签，2363 的小写 market 是普通叙述；whole_record 范围可避免混用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1002",
+      "evidence_rows": [
+        30994,
+        33211
+      ],
+      "source_excerpt": "Trading",
+      "reason": "标签原文、译名和类别已核对；术语理由改按当前标签及普通贸易文例说明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30994 原文为独立标签“Trading”，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“贸易”是 Trading 的常用短译，适合作为标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为祝福列表标签归入“技能”，category_path 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "33211 的 trading missions 为普通语境；whole_record 只匹配独立标签。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1004",
+      "evidence_rows": [
+        30998
+      ],
+      "source_excerpt": "Literacy",
+      "reason": "标签原文、译名和类别已核对；术语理由改按当前标签说明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30998 原文为独立标签“Literacy”，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“识字”准确对应 Literacy，且符合短标签风格。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为祝福列表标签归入“技能”，category_path 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与相关条目 Literacy blessing（识字祝福）的核心译名“识字”一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1008",
+      "evidence_rows": [
+        31002
+      ],
+      "source_excerpt": "Friend of Yinkin",
+      "reason": "名称原文、译名和类别已核对；术语理由改按当前名称说明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "31002 原文为独立名称“Friend of Yinkin”，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“因金之友”保留神名并符合中文名称结构。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为祝福名称归入“技能”，category_path 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "神名 Yinkin 与相关条目译名“因金”一致，整体译名“因金之友”可统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1009",
+      "evidence_rows": [
+        31003,
+        29104
+      ],
+      "source_excerpt": "Lightning",
+      "reason": "标签原文、译名和类别已核对；术语理由补充同名标枪语境。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "31003 原文为独立标签“Lightning”，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“闪电”可同时对应祝福标签与 29104 中名为 Lightning 的标枪。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "本条按祝福列表标签归入“技能”，category_path 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与相关条目 Lightning Sword Feat（闪电剑绝技）的核心词“闪电”一致；29104 的同名武器不改变本条整条匹配范围。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1014",
+      "evidence_rows": [
+        31009
+      ],
+      "source_excerpt": "Milk Blessing",
+      "reason": "译名与术语理由已修正，标签原文和类别核对无异常。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "31009 原文为独立名称“Milk Blessing”，与 source 一致。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由“乳汁祝福”改为“牛奶祝福”，更符合 Milk 的常用义和短标签风格。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为祝福名称归入“技能”，category_path 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该名称未见必须沿用的相关异译；采用自然短名“牛奶祝福”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1016",
+      "evidence_rows": [
+        31011
+      ],
+      "source_excerpt": "Berserker",
+      "reason": "译名已与相关祝福统一，术语理由改按当前标签说明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "31011 原文为独立标签“Berserker”，与 source 一致。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由“狂战”改为“狂战士”，更完整且符合常见游戏译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为祝福列表标签归入“技能”，category_path 合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与相关条目 Berserker blessing（狂战士祝福）统一核心译名为“狂战士”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1018",
+      "evidence_rows": [
+        31013
+      ],
+      "source_excerpt": "Fyrdwomen",
+      "reason": "补充整条标签范围并改按可核实名称说明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "31013 原文为独立标签“Fyrdwomen”，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“民团女兵”准确表达 Fyrdwomen 的群体含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为祝福列表标签归入“技能”，category_path 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与相关条目 Vinga's Fyrdwomen blessing 的“民团女兵”核心译名一致；新增 whole_record 限定为标签用法。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1019",
+      "evidence_rows": [
+        31014
+      ],
+      "source_excerpt": "Pathfinder",
+      "reason": "补充整条标签范围并改按可核实名称说明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "31014 原文为独立标签“Pathfinder”，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“寻路者”准确对应 Pathfinder，且作为短标签自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为祝福列表标签归入“技能”，category_path 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与相关条目 Pathfinder blessing（寻路者祝福）的核心译名一致；新增 whole_record 限定为标签用法。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1037",
+      "evidence_rows": [
+        32390
+      ],
+      "source_excerpt": "Earthshaker Battle Unit",
+      "reason": "统一 Earthshaker 核心译名并补充宝藏标签范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32390 原文为宝藏列表条目“Earthshaker Battle Unit”，与 source 一致。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由“撼地者战团”改为“大地震者战团”，以统一 Earthshaker 的核心译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为宝藏列表中的战团物品归入“物品”，category_path 合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与相关条目 Great Earthshaker Temple（大地震者大神殿）的“大地震者”保持一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1040",
+      "evidence_rows": [
+        32401
+      ],
+      "source_excerpt": "Captured Spirit",
+      "reason": "补充宝藏标签范围并改按当前名称说明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32401 原文为宝藏列表条目“Captured Spirit”，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“被俘之灵”简洁对应 Captured Spirit，适合物品名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为宝藏列表物品归入“物品”，category_path 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该名称与相关条目 Spirit fetches（精魂护符）所指不同；新增 whole_record 避免把普通 spirit 一并冻结。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1042",
+      "evidence_rows": [
+        32405
+      ],
+      "source_excerpt": "Dragontooth Spear",
+      "reason": "补充宝藏标签范围并记录与相关长矛名称的一致性。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32405 原文为宝藏列表条目“Dragontooth Spear”，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“龙牙矛”准确对应 Dragontooth Spear，且简练。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为宝藏列表中的长矛归入“物品”，category_path 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与相关条目 Black Spear（黑矛）共用“矛”的译法一致；新增 whole_record 限定为物品标签。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:1001",
+    "terms:1002",
+    "terms:1004",
+    "terms:1008",
+    "terms:1009",
+    "terms:1014",
+    "terms:1016",
+    "terms:1018",
+    "terms:1019",
+    "terms:1037",
+    "terms:1040",
+    "terms:1042"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

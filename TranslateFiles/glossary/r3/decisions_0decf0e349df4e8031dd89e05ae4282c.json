@@ -1,0 +1,381 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对e1-e12的原文出处、译名、分类与一致性。保留多数专名和祝福译名；修正e2、e4、e11中缺少原文直接支持的term_reason；将e11从社会组织改归其他，并把适用域从全局大小写文本收窄为literal_context，避免普通ancestors被当作专名。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "把包括猪在内的所有畜群合计后的氏族财富统计值。"
+      },
+      "reason": "33357仅明确Cows value包括pigs和all herds，未单列羊；将term_reason改为原文可支持的表述。",
+      "evidence_rows": [
+        33357
+      ],
+      "table": "terms",
+      "index": 1103
+    },
+    {
+      "patch": {
+        "term_reason": "在33246中作为牛群不足时可学习的祝福选项列出；名称指向马匹，原文未展开具体效果。"
+      },
+      "reason": "原term_reason称可降低马匹死亡率，但33246仅将Elmal’s Horsefriend列为畜群不足时可学习的祝福之一，未说明该效果。",
+      "evidence_rows": [
+        33246
+      ],
+      "table": "terms",
+      "index": 1117
+    },
+    {
+      "patch": {
+        "category_path": "其他",
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "the ",
+          "suffix": ".",
+          "reason": "33328中the Ancestors与诸神并列，特指可通过献祭获得祝福的神性祖先集体；正文小写ancestors为普通祖先。"
+        },
+        "term_reason": "33328中与诸神并列，指可通过献祭获得专属祝福的神性祖先集体；普通ancestors不属此专名。"
+      },
+      "reason": "原文将其列为神祇而非社会组织，故分类改为其他；同时把全局大小写文本匹配收窄到33328的the Ancestors上下文，并删除原文未直接支持的占卜、护灵机制描述。",
+      "evidence_rows": [
+        33328
+      ],
+      "table": "terms",
+      "index": 1126
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:1099",
+      "evidence_rows": [
+        33299
+      ],
+      "source_excerpt": "On an island just off the map is the City of Wonders, the magical home of the Pharaoh",
+      "reason": "原文明确City of Wonders是地图外岛屿上法老的魔法居城，译名与地名分类一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33299: the City of Wonders, the magical home of the Pharaoh 表明其为地名兼居城。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "City of Wonders译作奇迹之城，简洁并保留专名意象。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为地图外岛屿上的城市，category_path=地名合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条无同形普通词或其他候选冲突，专名可独立统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1103",
+      "evidence_rows": [
+        33357
+      ],
+      "source_excerpt": "pigs — and all your herds — are included in your clan’s Cows value.",
+      "reason": "原文说明Cows value统计包括猪在内的所有畜群，是氏族财富值；已修正term_reason中未明确支持的羊。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "33357明确Cows value包括pigs及all herds，未单列羊；已把term_reason改为原文可支持的表述。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Cows value译牛只总值，保留游戏内Cows资源名，并与所有畜群的说明配合。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为氏族财富统计值，category_path=其他合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条与Cows资源名保持一致，无其他候选冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1116",
+      "evidence_rows": [
+        33246
+      ],
+      "source_excerpt": "Uralda’s Calf Blessing",
+      "reason": "作为可学习的牛犊祝福专名，Uralda统一译乌拉尔达，技能分类合适。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33246列出Uralda’s Calf Blessing为畜群不足时可学习的祝福。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Uralda译乌拉尔达，Calf Blessing译牛犊祝福，符合专名结构。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该条为可学习祝福，category_path=技能合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条神名乌拉尔达保持独立统一，无冲突候选。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1117",
+      "evidence_rows": [
+        33246
+      ],
+      "source_excerpt": "Elmal’s Horsefriend",
+      "reason": "Elmal统一作埃尔玛，Horsefriend直译马友可作祝福名；原term_reason的降低马匹死亡率无33246支持，已修正。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "33246仅列出Elmal’s Horsefriend作为畜群不足时可学习的祝福，未说明降低马匹死亡率；已修正term_reason。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Elmal译埃尔玛，Horsefriend译马友，作为祝福专名可接受。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该条为可学习祝福，category_path=技能合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条Elmal与同批Elmal’s Sun统一为埃尔玛。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1118",
+      "evidence_rows": [
+        33246
+      ],
+      "source_excerpt": "Ernalda’s Pig Blessing",
+      "reason": "Ernalda统一作厄纳尔达，Pig Blessing译猪之祝福，作为技能祝福分类合适。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33246将Ernalda’s Pig Blessing列为畜群不足时可学习的祝福之一。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Ernalda译厄纳尔达，Pig Blessing译猪之祝福，专名结构清楚。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该条为可学习祝福，category_path=技能合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条Ernalda与同批Ernalda’s Bless Crops统一为厄纳尔达。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1119",
+      "evidence_rows": [
+        33249
+      ],
+      "source_excerpt": "Orlanth’s Rain and Elmal’s Sun help all crops equally",
+      "reason": "Orlanth’s Rain是农业祝福专名，译奥兰斯之雨简洁且与原文作物效果说明相符。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33249明确Orlanth’s Rain与Elmal’s Sun均等帮助作物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Orlanth’s Rain译奥兰斯之雨，保留神名加自然意象的祝福名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该条为农业祝福，category_path=技能合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条Orlanth译名独立统一，无冲突候选。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1120",
+      "evidence_rows": [
+        33249
+      ],
+      "source_excerpt": "Elmal’s Sun",
+      "reason": "Elmal’s Sun与Orlanth’s Rain并列，译埃尔玛之阳保留祝福名风格，Elmal统一埃尔玛。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33249将Elmal’s Sun列为与Orlanth’s Rain并列的农业祝福。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Elmal’s Sun译埃尔玛之阳，简洁且保留专名意象。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该条为农业祝福，category_path=技能合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条Elmal与同批Elmal’s Horsefriend统一为埃尔玛。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1121",
+      "evidence_rows": [
+        33249
+      ],
+      "source_excerpt": "Ernalda’s Bless Crops does the most good for barley.",
+      "reason": "Ernalda统一厄纳尔达，Bless Crops译护佑庄稼表达祝福效果，技能分类合适。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33249明确Ernalda’s Bless Crops对大麦最有益。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Ernalda’s Bless Crops译厄纳尔达的护佑庄稼，能表达农业祝福效果。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该条为农业祝福，category_path=技能合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条Ernalda与同批Ernalda’s Pig Blessing统一为厄纳尔达。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1122",
+      "evidence_rows": [
+        33170
+      ],
+      "source_excerpt": "Lhankor Mhy’s Lawspeaker blessing",
+      "reason": "原文明确该祝福是少数直接影响氏族情绪的例外，译名保留Lhankor Mhy与Lawspeaker。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33170称Lhankor Mhy’s Lawspeaker blessing为影响氏族情绪的例外之一。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Lhankor Mhy译兰科尔米，Lawspeaker blessing译法言者祝福，专名结构清楚。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该条为神赐祝福，category_path=技能合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条神名译法独立统一，无冲突候选。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1123",
+      "evidence_rows": [
+        33170
+      ],
+      "source_excerpt": "Chalana Arroy’s Hope blessing",
+      "reason": "原文明确该祝福是少数直接影响氏族情绪的例外，译名保留Chalana Arroy与Hope。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33170称Chalana Arroy’s Hope blessing为影响氏族情绪的例外之一。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Chalana Arroy译查拉娜阿罗伊，Hope blessing译希望祝福，专名结构清楚。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该条为神赐祝福，category_path=技能合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条神名译法独立统一，无冲突候选。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1126",
+      "evidence_rows": [
+        33328
+      ],
+      "source_excerpt": "Other gods with sacrifice-only blessings include Eurmal, Malia, Maran Gor, Lhankor Mhy, and the Ancestors.",
+      "reason": "原文将the Ancestors列入受献祭神祇，确认其为神性祖先集体；已收窄适用域并修正分类与term_reason。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "33328仅支持the Ancestors作为受献祭神祇之一；原term_reason的占卜、护灵描述无本条直接证据，已删。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Ancestors在神祇语境译作祖先，保留原词字面且可理解。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文列为神祇而非社会组织，category_path由组织改为其他。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "applicability改为literal_context，prefix为the、suffix为句点，仅匹配33328的the Ancestors，避免全局匹配普通ancestors。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1127",
+      "evidence_rows": [
+        33513
+      ],
+      "source_excerpt": "The winner is crowned High King or High Queen of Dragon Pass.",
+      "reason": "High King是龙隘统治者头衔，译至高王符合身份分类，并与High Queen构成可派生称呼。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33513明确胜者被加冕为High King或High Queen of Dragon Pass。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "High King译至高王，简洁并保留头衔含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该条为统治者头衔，category_path=身份合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条头衔译法可统一，High Queen可按至高女王派生，无冲突候选。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:1099",
+    "terms:1103",
+    "terms:1116",
+    "terms:1117",
+    "terms:1118",
+    "terms:1119",
+    "terms:1120",
+    "terms:1121",
+    "terms:1122",
+    "terms:1123",
+    "terms:1126",
+    "terms:1127"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

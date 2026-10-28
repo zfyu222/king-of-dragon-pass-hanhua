@@ -1,0 +1,460 @@
+{
+  "review_complete": true,
+  "review_summary": "已复核 e1-e12：确认 e1-e3 为具名宝物并改为 proper_name/required；e7 修正为“战团武士士气”；其余界面与属性术语保留译名，并按原文收窄 term_reason。f1 已核对：e4 的 Cross Line 与 e13 的 Crossline/crossline 同指龙族屏障，共用“十字线”不是不同实体冲突。",
+  "acknowledged_findings": [
+    "F0413"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "enforcement": "required"
+      },
+      "reason": "Voriof's Flute 是具名物品，应作为专有名称强制统一；保留物品分类。",
+      "evidence_rows": [
+        32497
+      ],
+      "table": "terms",
+      "index": 1091
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "enforcement": "required"
+      },
+      "reason": "Wyter's Staff 是具名法杖，应作为专有名称强制统一。",
+      "evidence_rows": [
+        32504
+      ],
+      "table": "terms",
+      "index": 1093
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "enforcement": "required"
+      },
+      "reason": "Vingkot's Ale Horn 是具名酒角，应作为专有名称强制统一。",
+      "evidence_rows": [
+        32510
+      ],
+      "table": "terms",
+      "index": 1098
+    },
+    {
+      "patch": {
+        "term_reason": "与战团武士士气并列的农民士气标签。"
+      },
+      "reason": "依同一行并列标签收窄说明，避免加入原文未给出的整体情绪对比。",
+      "evidence_rows": [
+        33175
+      ],
+      "table": "terms",
+      "index": 1104
+    },
+    {
+      "patch": {
+        "recommended_translation": "战团武士士气",
+        "term_reason": "与农民士气并列的战团武士士气标签；Weaponthane 为战士称号，不应拆作“武器”。"
+      },
+      "reason": "Weaponthane 是氏族战士称号，原译“武器武士”误解构词；统一为“战团武士”。",
+      "evidence_rows": [
+        33175
+      ],
+      "table": "terms",
+      "index": 1105
+    },
+    {
+      "patch": {
+        "term_reason": "农业管理界面的标签。"
+      },
+      "reason": "原文仅为 Farming Screen 标签，移除未由本批原文支持的具体农业操作列表。",
+      "evidence_rows": [
+        33227
+      ],
+      "table": "terms",
+      "index": 1106
+    },
+    {
+      "patch": {
+        "term_reason": "用于向神祇献祭的界面；33317、33585 说明献祭在 Magic screen 进行。"
+      },
+      "reason": "依据 corpus_evidence_rows 中献祭机制收窄术语说明。",
+      "evidence_rows": [
+        33317,
+        33585
+      ],
+      "table": "terms",
+      "index": 1107
+    },
+    {
+      "patch": {
+        "term_reason": "显示神话知识细节、秘密标记及英雄任务信息的界面。"
+      },
+      "reason": "依据 33422、33424 对神话秘密与 Lore screen 标记的说明收窄术语说明。",
+      "evidence_rows": [
+        33422,
+        33424
+      ],
+      "table": "terms",
+      "index": 1108
+    },
+    {
+      "patch": {
+        "term_reason": "查看游戏地图的界面标签。"
+      },
+      "reason": "原文仅为 Map Screen 标签，移除未由本批原文支持的显示内容。",
+      "evidence_rows": [
+        33202
+      ],
+      "table": "terms",
+      "index": 1109
+    },
+    {
+      "patch": {
+        "term_reason": "游戏控制/设置界面的标签。"
+      },
+      "reason": "原文仅为 Controls Screen 标签，移除未由本批原文支持的音频设置说明。",
+      "evidence_rows": [
+        33184
+      ],
+      "table": "terms",
+      "index": 1110
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:1091",
+      "evidence_rows": [
+        32497
+      ],
+      "source_excerpt": "Voriof's Flute",
+      "reason": "核对具名长笛及其物品分类；修正 term_kind/enforcement。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32497 原文为单独具名的物品名 Voriof's Flute。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“沃里奥夫长笛”保留 Voriof 音译与 Flute 物品类别。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文为具名物品，category_path 仍为物品；term_kind 修正为 proper_name，enforcement 设为 required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条无其他译名变体，Voriof 音译方向稳定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1093",
+      "evidence_rows": [
+        32504
+      ],
+      "source_excerpt": "Wyter's Staff",
+      "reason": "核对具名法杖及其物品分类；修正 term_kind/enforcement。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32504 原文为具名法杖 Wyter's Staff。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“守护灵法杖”对应 Wyter 的既有守护灵义与 Staff 法杖义。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文为具名物品，category_path 仍为物品；term_kind 修正为 proper_name，enforcement 设为 required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条无其他译名变体，守护灵/法杖语义稳定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1098",
+      "evidence_rows": [
+        32510
+      ],
+      "source_excerpt": "Vingkot's Ale Horn",
+      "reason": "核对具名酒角及其物品分类；修正 term_kind/enforcement。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32510 原文为具名酒角 Vingkot's Ale Horn。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“温科特麦酒角”保留 Vingkot 音译与 Ale Horn 物品义。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文为具名物品，category_path 仍为物品；term_kind 修正为 proper_name，enforcement 设为 required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条无其他译名变体，Vingkot 音译稳定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1100",
+      "evidence_rows": [
+        33299
+      ],
+      "source_excerpt": "The line above Heortland is the Cross Line, a magical barrier the dragons erected after the Dragonkill War.",
+      "reason": "核对 Cross Line 为具名魔法屏障；共享译名核对见 f1。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33299 明确出现专名 Cross Line。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“十字线”作为具名魔法界线简洁，符合 UI/地名短词风格。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "33299 说明其为地图上方由巨龙设下的魔法屏障，归入地名可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "33299 中 Cross Line 拼写固定；与 crossline 的共享译名核对见 f1，本条内无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1102",
+      "evidence_rows": [
+        33264
+      ],
+      "source_excerpt": "And the greatest god is the storm king, Orlanth.",
+      "reason": "核对风暴之王为奥兰斯称号，译名与身份分类稳定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33264 出现 storm king，并与 Orlanth 并列。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“风暴之王”对应 storm king，作为神祇称号自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "33264 将 storm king 作为 Orlanth 的称号，归入身份合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "称号唯一，且与 Orlanth 神名并列，无译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1104",
+      "evidence_rows": [
+        33175
+      ],
+      "source_excerpt": "Farmer Morale",
+      "reason": "核对农民士气为并列属性标签，译名保留并收窄说明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33175 出现 Farmer Morale。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“农民士气”直接对应 Farmer Morale，作为属性标签可读。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "33175 显示其与 Weaponthane Morale 并列，属游戏属性标签，其他/required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一行与战团武士士气并列；term_reason 已按并列关系收窄，译名不变。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1105",
+      "evidence_rows": [
+        33175
+      ],
+      "source_excerpt": "Weaponthane Morale",
+      "reason": "Weaponthane 是战士称号，修正误拆为“武器”的译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33175 出现 Weaponthane Morale。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“武器武士士气”把 Weaponthane 拆作“武器+武士”；应改为“战团武士士气”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "33175 显示其为与 Farmer Morale 并列的属性标签，其他/game_term/required 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "Weaponthane 为战士称号，统一译作“战团武士”，与同一行“农民士气”并列格式一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1106",
+      "evidence_rows": [
+        33227
+      ],
+      "source_excerpt": "Farming Screen",
+      "reason": "核对农业界面标签，译名保留并收窄说明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33227 原文为 Farming Screen。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“农业界面”对应 Farming Screen，短词 UI 可接受。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为游戏界面标签，归入其他且 game_term/required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "单条 UI 标签，Farming 语义一致；term_reason 已收窄。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1107",
+      "evidence_rows": [
+        33317,
+        33585
+      ],
+      "source_excerpt": "Sacrificing to the gods on the Magic screen doesn’t always succeed.",
+      "reason": "核对魔法界面，依献祭原文收窄说明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33317 与 33585 均出现 Magic screen；33300 为标题式 Magic Screen。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“魔法界面”对应 Magic Screen，短词 UI 可接受。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为游戏主界面标签，归入其他且 game_term/required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Magic Screen 与 Magic screen 大小写变体同译一致；term_reason 已依献祭说明收窄。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1108",
+      "evidence_rows": [
+        33422,
+        33424
+      ],
+      "source_excerpt": "marked on the Lore Screen with ⊜ beside their titles",
+      "reason": "核对传说界面及大小写变体，译名保留并收窄说明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33422 与 33424 均出现 Lore Screen/Lore screen。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“传说界面”对应 Lore screen，短词 UI 可接受。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为游戏界面标签，归入其他且 game_term/required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Lore Screen 与 Lore screen 大小写变体同译一致；term_reason 已收窄至神话秘密/英雄任务信息。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1109",
+      "evidence_rows": [
+        33202
+      ],
+      "source_excerpt": "Map Screen",
+      "reason": "核对地图界面标签，译名保留并收窄说明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33202 原文为 Map Screen。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“地图界面”对应 Map Screen，短词 UI 可接受。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为游戏界面标签，归入其他且 game_term/required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "单条 UI 标签，译名稳定；term_reason 已收窄。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1110",
+      "evidence_rows": [
+        33184
+      ],
+      "source_excerpt": "Controls Screen",
+      "reason": "核对控制界面标签，译名保留并收窄说明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33184 原文为 Controls Screen。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“控制界面”对应 Controls Screen，短词 UI 可接受。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为游戏界面标签，归入其他且 game_term/required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "单条 UI 标签，译名稳定；term_reason 已收窄。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:1091",
+    "terms:1093",
+    "terms:1098",
+    "terms:1100",
+    "terms:1102",
+    "terms:1104",
+    "terms:1105",
+    "terms:1106",
+    "terms:1107",
+    "terms:1108",
+    "terms:1109",
+    "terms:1110"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

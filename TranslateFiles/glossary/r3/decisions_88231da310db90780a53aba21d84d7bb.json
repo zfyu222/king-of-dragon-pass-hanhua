@@ -1,0 +1,431 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e12 全部 12 条 non_translate 条目，确认控制字节、按钮标记和内部状态标签均不应翻译。为回应未限定保护范围的问题，给 e11、e12 补上 whole_record 适用范围；并修正 e4、e5、e8、e9 中过窄或不准确的运行时占位说明。",
+  "acknowledged_findings": [
+    "F0043",
+    "F0044"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "运行时占位控制字节；可表示牛只数量或人物名等，必须原样保留。"
+      },
+      "reason": "第2615行中该字节位于数量前缀后，表示牛只数量；第23505行中紧接人物前缀后，指人物名。原说明只写牛只数量，范围过窄。",
+      "evidence_rows": [
+        2615,
+        23505
+      ],
+      "table": "non_translate",
+      "index": 67
+    },
+    {
+      "patch": {
+        "term_reason": "运行时人物占位控制字节；可指人物名或人物称谓，必须原样保留。"
+      },
+      "reason": "第2473行中该字节作叹气的主语，第8483行中与 better 连用，指人物或首领。原说明只限定为人物名替换，范围过窄。",
+      "evidence_rows": [
+        2473,
+        8483
+      ],
+      "table": "non_translate",
+      "index": 68
+    },
+    {
+      "patch": {
+        "term_reason": "运行时数量占位控制字节；可表示货物、儿童、战士等数量，必须原样保留。"
+      },
+      "reason": "第2488行表示货物数量，第20069行表示小男孩数量，第23224行表示战士数量。原说明只写货物数量，范围过窄。",
+      "evidence_rows": [
+        2488,
+        20069,
+        23224
+      ],
+      "table": "non_translate",
+      "index": 71
+    },
+    {
+      "patch": {
+        "term_reason": "运行时占位控制字节；可表示人口、牛只、战士数量或人物名等，必须原样保留。"
+      },
+      "reason": "第2774行表示人口数量，第20401行表示牛只价值，第8310行指人物名。原说明只写人口数量，范围过窄。",
+      "evidence_rows": [
+        2774,
+        8310,
+        20401
+      ],
+      "table": "non_translate",
+      "index": 72
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "第2964行整条记录仅为内部状态或表情标签 ItIsGood；已提供语料中只见独立用例，未见嵌入证据，因此按整条记录保留。"
+        }
+      },
+      "reason": "为没有限定保护范围的 non_translate 标签补上 whole_record 范围，避免全局禁翻。",
+      "evidence_rows": [
+        2964
+      ],
+      "table": "non_translate",
+      "index": 84
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "第2992行整条记录仅为内部状态或表情标签 WeAreSad；已提供语料中只见独立用例，未见嵌入证据，因此按整条记录保留。"
+        }
+      },
+      "reason": "为没有限定保护范围的 non_translate 标签补上 whole_record 范围，避免全局禁翻。",
+      "evidence_rows": [
+        2992
+      ],
+      "table": "non_translate",
+      "index": 85
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:64",
+      "evidence_rows": [
+        1158
+      ],
+      "source_excerpt": "\\x01@\\r.",
+      "reason": "第1158行句末的控制序列，作为字面回车转义保留，不翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第1158行句末含本条控制序列，且其后紧接句点，source 为对应的字面转义片段。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 控制序列，没有译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "字面换行或回车控制序列，归入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与字面控制转义保留规则一致；未发现同源变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:473",
+      "evidence_rows": [
+        32663
+      ],
+      "source_excerpt": "R@",
+      "reason": "第32663行整条记录仅为运行时按钮标记 R@，保留不译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第32663行原文仅为 R@，与本条 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "运行时按钮标记，没有译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "整条记录为按钮运行标记，归入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "按整条记录标记保留，与运行时按钮标记规则一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:66",
+      "evidence_rows": [
+        2508
+      ],
+      "source_excerpt": "\\x01@\\x0B.",
+      "reason": "第2508行首领名位置的控制字节，保留不译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第2508行首领名位置含本条控制字节并紧接句点，source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 人物名占位控制字节，没有译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物名替换控制字节，归入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与人物名占位控制字节的保留规则一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:67",
+      "evidence_rows": [
+        2615,
+        23505
+      ],
+      "source_excerpt": "\\x01A\\x10 cattle",
+      "reason": "同一控制字节在第2615行表示牛只数量，在第23505行指人物，需要写成多上下文占位说明后再保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第2615行含本条控制字节及其后的 cattle，第23505行另有该字节用于人物名的用例，source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 运行时占位控制字节，没有译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "运行时占位控制字节，归入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原说明只涵盖牛只数量，未涵盖第23505行的人物名用法；已改为多上下文占位说明，避免后续误判。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:68",
+      "evidence_rows": [
+        2473,
+        8483
+      ],
+      "source_excerpt": "\\x01@\\x15 sighed",
+      "reason": "第2473行作叹气的主语，第8483行与 better 连用指人物或首领，因此按人物占位控制保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第2473行含本条控制字节及 sighed，第8483行另有 better 后的用法，source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 人物占位控制字节，没有译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物占位控制字节，归入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原说明只写人物名替换，未涵盖第8483行 better 后的角色称谓用法；已改为人物占位说明。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:69",
+      "evidence_rows": [
+        2466,
+        28587
+      ],
+      "source_excerpt": "\\x01@\\x16 cows",
+      "reason": "第2466行表示牛只价格数量，第28587行表示婴儿数量，两者均为数值占位。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第2466行含本条控制字节及其后的 cows，第28587行另有该字节用于数值位置，source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 数值占位控制字节，没有译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "数值替换控制字节，归入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与数值占位控制字节的保留规则一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:70",
+      "evidence_rows": [
+        2466,
+        20405
+      ],
+      "source_excerpt": "\\x01@\\x17.",
+      "reason": "第2466行表示价格，第20405行表示牛只价值，两者均为数值占位。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第2466行价格位置含本条控制字节并紧接句点，第20405行另有该字节用于价值数量，source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 数值占位控制字节，没有译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "数值替换控制字节，归入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与数值占位控制字节的保留规则一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:71",
+      "evidence_rows": [
+        2488,
+        20069,
+        23224
+      ],
+      "source_excerpt": "\\x01@\\x19 goods",
+      "reason": "第2488行表示货物数量，第20069行表示小男孩数量，第23224行表示战士数量，三者均为数量占位。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第2488行含本条控制字节及其后的 goods，第20069行和第23224行另有该字节用于不同数量对象，source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 数量占位控制字节，没有译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "数量占位控制字节，归入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原说明只写货物数量，未涵盖第20069行儿童数量和第23224行战士数量；已改为通用数量占位说明。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:72",
+      "evidence_rows": [
+        2774,
+        8310,
+        20401
+      ],
+      "source_excerpt": "\\x01B\\x1A people",
+      "reason": "第2774行表示人口数量，第20401行表示牛只价值，第8310行指人物名，因此需要按多上下文占位保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第2774行含本条控制字节及其后的 people，第8310行和第20401行另有该字节用于人物和数量，source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 运行时占位控制字节，没有译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "运行时占位控制字节，归入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原说明只写人口数量，未涵盖第20401行牛只价值、第8310行人物名等用法；已改为多上下文说明。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:73",
+      "evidence_rows": [
+        2501
+      ],
+      "source_excerpt": "\\x01@\\x1E clan",
+      "reason": "第2501行氏族名位置的控制字节，保留不译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第2501行含本条控制字节及其后的 clan，source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 氏族名占位控制字节，没有译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "氏族名替换控制字节，归入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 clan 前缀的氏族名占位用法一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:84",
+      "evidence_rows": [
+        2964
+      ],
+      "source_excerpt": "ItIsGood",
+      "reason": "第2964行整条记录仅为内部状态或表情标签，作为 non_translate 整条保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第2964行原文仅为 ItIsGood，与本条 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "内部状态或表情标签，没有译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "内部状态或表情标识符，归入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原先没有 applicability；语料中只见独立整条记录，未见嵌入用例，已补上 whole_record，避免全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:85",
+      "evidence_rows": [
+        2992
+      ],
+      "source_excerpt": "WeAreSad",
+      "reason": "第2992行整条记录仅为内部状态或表情标签，作为 non_translate 整条保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第2992行原文仅为 WeAreSad，与本条 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "内部状态或表情标签，没有译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "内部状态或表情标识符，归入 non_translate 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原先没有 applicability；语料中只见独立整条记录，未见嵌入用例，已补上 whole_record，避免全局禁翻。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:64",
+    "non_translate:473",
+    "non_translate:66",
+    "non_translate:67",
+    "non_translate:68",
+    "non_translate:69",
+    "non_translate:70",
+    "non_translate:71",
+    "non_translate:72",
+    "non_translate:73",
+    "non_translate:84",
+    "non_translate:85"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

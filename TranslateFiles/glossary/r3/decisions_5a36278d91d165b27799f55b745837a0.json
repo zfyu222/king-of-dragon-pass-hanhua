@@ -1,0 +1,478 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐一核对 e1-e11：均为运行时控制字节、转义标记或完整运行标记，归入 non_translate 正确，应原样保留；已为每条补全 applicability，未发现需隔离、新增或改译的条目。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "\\x04 在事件句中作为运行时变量或分支控制标记出现，应在所有嵌入位置原样保留。"
+        }
+      },
+      "reason": "补全控制字节的适用范围，避免默认全局禁翻或误译。",
+      "evidence_rows": [
+        1144
+      ],
+      "table": "non_translate",
+      "index": 54
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "\\x05 在事件句中作为运行时角色或分支控制标记出现，应在所有嵌入位置原样保留。"
+        }
+      },
+      "reason": "补全控制字节的适用范围。",
+      "evidence_rows": [
+        1166
+      ],
+      "table": "non_translate",
+      "index": 55
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "\\x06 在事件句中作为运行时角色或分支控制标记出现，应在所有嵌入位置原样保留。"
+        }
+      },
+      "reason": "补全控制字节的适用范围。",
+      "evidence_rows": [
+        1136
+      ],
+      "table": "non_translate",
+      "index": 56
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "\\x08 在事件句中作为运行时角色或分支控制标记出现，应在所有嵌入位置原样保留。"
+        }
+      },
+      "reason": "补全控制字节的适用范围。",
+      "evidence_rows": [
+        1198
+      ],
+      "table": "non_translate",
+      "index": 57
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "\\x0E 只出现在由控制字节组成的模板串中，作为运行时标记原样保留。"
+        }
+      },
+      "reason": "补全控制字节的适用范围。",
+      "evidence_rows": [
+        1247
+      ],
+      "table": "non_translate",
+      "index": 58
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "\\x0F 表示运行时数量或对象替换控制，在所有嵌入位置原样保留。"
+        }
+      },
+      "reason": "补全控制字节的适用范围。",
+      "evidence_rows": [
+        2514
+      ],
+      "table": "non_translate",
+      "index": 59
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "\\x18 表示运行时数量替换控制，在所有嵌入位置原样保留。"
+        }
+      },
+      "reason": "补全控制字节的适用范围。",
+      "evidence_rows": [
+        2499
+      ],
+      "table": "non_translate",
+      "index": 60
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "\\x7F 位于动态拼接句内，作为运行时控制标记原样保留。"
+        }
+      },
+      "reason": "补全控制字节的适用范围。",
+      "evidence_rows": [
+        1510
+      ],
+      "table": "non_translate",
+      "index": 61
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "\\t 为随机短语或拼接中的字面制表转义标记，原样保留，不转换为空格。"
+        }
+      },
+      "reason": "补全转义标记的适用范围。",
+      "evidence_rows": [
+        1552
+      ],
+      "table": "non_translate",
+      "index": 62
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "\\n 为动态拼接中的字面换行转义标记，原样保留。"
+        }
+      },
+      "reason": "补全转义标记的适用范围。",
+      "evidence_rows": [
+        1498
+      ],
+      "table": "non_translate",
+      "index": 63
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 32674 仅为运行标记 n@，按完整记录原样保留。"
+        }
+      },
+      "reason": "补全完整记录运行标记的适用范围。",
+      "evidence_rows": [
+        32674
+      ],
+      "table": "non_translate",
+      "index": 484
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:54",
+      "evidence_rows": [
+        1144
+      ],
+      "source_excerpt": "for \\x04 generosity",
+      "reason": "source 为运行时控制字节，记录 1144 中该字节紧邻普通文本嵌入；无需翻译，分类和一致性均正确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1144 原文含 for \\x04 generosity，与条目 source \\x04 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "运行时控制字节应原样保留，不产生中文译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于 non_translate 运行标记，分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与其他 \\xNN 控制字节一致，均原样保留，不参与术语译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:55",
+      "evidence_rows": [
+        1166
+      ],
+      "source_excerpt": "\\x05 said that we",
+      "reason": "source 为运行时角色控制字节，记录 1166 以该标记开头；分类为非翻译标记正确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1166 原文含 \\x05 said that we，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "运行时角色控制字节应保留，不译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入 non_translate 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "按同一运行标记处理，原样保留，不与普通词术语混同。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:56",
+      "evidence_rows": [
+        1136
+      ],
+      "source_excerpt": "said \\x06 would only consider",
+      "reason": "source 为动态人称/角色控制字节，记录 1136 中嵌入句中；应保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1136 原文含 said \\x06 would only consider，与条目 source \\x06 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "控制字节不翻译，保留原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "non_translate 分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同批 \\xNN 控制标记统一原样保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:57",
+      "evidence_rows": [
+        1198
+      ],
+      "source_excerpt": "expect \\x08 to help us",
+      "reason": "source 为运行时人称/角色控制字节，记录 1198 中嵌入句内；应保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1198 原文含 expect \\x08 to help us，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "控制字节不翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "non_translate 分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与其他控制字节一样保持原样。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:58",
+      "evidence_rows": [
+        1247
+      ],
+      "source_excerpt": "\\x02\\x02\\x0E",
+      "reason": "source 出现在由控制字节组成的模板串中，属于运行时控制标记，非普通文本。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1247 原文以 \\x02\\x02\\x0E 连续开头，包含条目 source \\x0E。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "运行标记保持原样，无译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "non_translate 分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "在控制字节串中保持原有字节顺序，不拆分不改写。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:59",
+      "evidence_rows": [
+        2514
+      ],
+      "source_excerpt": "\\x01A\\x0F cattle",
+      "reason": "source 表示运行时数量或对象替换控制，记录 2514 中与数量表达同现；应保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2514 原文含 \\x01A\\x0F cattle，与条目 source \\x0F 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "数量控制字节不翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "non_translate 分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与其他数量/变量控制标记一致原样保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:60",
+      "evidence_rows": [
+        2499
+      ],
+      "source_excerpt": "\\x01@\\x18 hunters",
+      "reason": "source 表示运行时数量替换控制，记录 2499 中嵌入数量短语；应保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2499 原文含 \\x01@\\x18 hunters，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "控制字节不翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "non_translate 分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "保持运行标记原样，不与普通数字替换混淆。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:61",
+      "evidence_rows": [
+        1510
+      ],
+      "source_excerpt": "\\x01A\\x7F tribe",
+      "reason": "source 为动态拼接中的运行时控制标记，记录 1510 中嵌入部族生成句；应保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1510 原文含 \\x01A\\x7F tribe，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "控制标记不翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "non_translate 分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与其他 \\xNN 标记一致原样保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:62",
+      "evidence_rows": [
+        1552
+      ],
+      "source_excerpt": "\\x02\\tdragonewts",
+      "reason": "source 为字面制表转义标记，记录 1552 中位于随机短语分支串前；必须原样保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1552 原文含 \\x02\\tdragonewts，与条目 source \\t 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "字面转义标记不翻译，不改为空格。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "non_translate 分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "保留转义写法，不破坏随机短语结构。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:63",
+      "evidence_rows": [
+        1498
+      ],
+      "source_excerpt": "\\n\\x01@\\x12.",
+      "reason": "source 为字面换行转义标记，记录 1498 中用于动态拼接换行；应保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1498 原文含 \\n\\x01@\\x12.，与条目 source \\n 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "换行转义标记不翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "non_translate 分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "保持字面换行标记，不替换为实际换行或删除。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:484",
+      "evidence_rows": [
+        32674
+      ],
+      "source_excerpt": "n@",
+      "reason": "整条记录仅为运行标记 n@，应完整保留；其与换行标记 e10 不是同一术语，不合并。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32674 原文为 n@，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "运行标记不翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "non_translate 分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "按完整记录保留；虽被候选词族关联到 e10，但并非同一标记，不统一译名。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:54",
+    "non_translate:55",
+    "non_translate:56",
+    "non_translate:57",
+    "non_translate:58",
+    "non_translate:59",
+    "non_translate:60",
+    "non_translate:61",
+    "non_translate:62",
+    "non_translate:63",
+    "non_translate:484"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

@@ -1,0 +1,335 @@
+{
+  "review_complete": true,
+  "review_summary": "完成 11 条 characters 专名审校；确认 Valensta、Vingulf、Eonislara、Korol、Jorator、Olfreda、Ukkur、King Voskath、Jotarth、Jerensta、Hairball 的译名、性别与分类。修正 Vingulf 条目 term_reason 中无本批原文依据的“抛下赎杀金”描述；无隔离或新增。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "乌洛克斯神圣战士，瓦伦斯塔的丈夫，杀死奥肯索尔。"
+      },
+      "reason": "原 term_reason 中的“抛下赎杀金”不在本批原文证据中，删去以免增补设定。",
+      "evidence_rows": [
+        14578,
+        14583
+      ],
+      "table": "characters",
+      "index": 113
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:112",
+      "evidence_rows": [
+        14578,
+        14579
+      ],
+      "source_excerpt": "Valensta breaks down, sobbing that the worst possible thing has happened.",
+      "reason": "确认女性人物专名与译名；无需修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "14578 明确 Valensta 是 young noblewoman 并询问 Orlkensor；14579 亦以 she/her 指代。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“瓦伦斯塔”音译稳定，且本批无其他译名候选。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表中的人物专名，term_kind=proper_name、enforcement=required 与 female 身份相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Vingulf 为夫妻的叙述不冲突；保留统一译名瓦伦斯塔。"
+        }
+      }
+    },
+    {
+      "ref": "characters:113",
+      "evidence_rows": [
+        14578,
+        14583
+      ],
+      "source_excerpt": "The Uroxi who killed Orlkensor was her husband, Vingulf.",
+      "reason": "保留译名；修正 term_reason 中无证据的赎杀金细节。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "14578 证实 Vingulf 是杀死 Orlkensor 的 Uroxi 战士、Valensta 的丈夫；term_reason 中“抛下赎杀金”无本批原文依据，已删除。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“温古夫”与 Vingulf 音译对应，无其他候选冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表人物专名，男性/required 符合原文 her husband 与 Uroxi warrior。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Valensta 的夫妻关系一致；修订 term_reason 后不再加入未证实情节。"
+        }
+      }
+    },
+    {
+      "ref": "characters:114",
+      "evidence_rows": [
+        14779,
+        15841
+      ],
+      "source_excerpt": "The young woman Eonislara was found out in the forest, making love with Korol",
+      "reason": "确认女性人物专名；译名统一为埃奥尼斯拉拉。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "14779 明确 Eonislara 为 young woman，与 Korol 有私情并与 Jorator 订婚；15841 亦证其怀孕与婚姻冲突。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“埃奥尼斯拉拉”保留首个候选；另一候选“伊奥尼斯拉拉”不采用以避免同人异译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表人物专名，女性/required 与原文一致。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "统一采用埃奥尼斯拉拉；与科罗尔、约拉托尔关系叙述一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:115",
+      "evidence_rows": [
+        14779,
+        15841
+      ],
+      "source_excerpt": "Korol, a notorious poet and troublemaking warrior",
+      "reason": "确认男性人物专名与译名；无需修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "14779 称 Korol 为 notorious poet and troublemaking warrior；15841 称其为孩子生父。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“科罗尔”与 Korol 对应，本批候选均同译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表人物专名，男性/required 与诗人战士及生父身份相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与埃奥尼斯拉拉、约拉托尔情节一致；保留科罗尔。"
+        }
+      }
+    },
+    {
+      "ref": "characters:116",
+      "evidence_rows": [
+        14779,
+        15841
+      ],
+      "source_excerpt": "But she is betrothed to Jorator",
+      "reason": "确认男性人物专名；统一译名为约拉托尔。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "14779 明确 Jorator 是 Eonislara 的 betrothed、young thane；15841 写其最终同意结婚。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“约拉托尔”保留首个候选；另一候选“乔拉托”不采用以避免同人异译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表人物专名，男性/required 与 young thane 相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "统一采用约拉托尔；与埃奥尼斯拉拉及 Korol 关系一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:118",
+      "evidence_rows": [
+        14614,
+        14656,
+        21873
+      ],
+      "source_excerpt": "Tragic King Errarth loved Olfreda, who was his brother’s wife.",
+      "reason": "确认女性人物专名；统一译名为奥尔芙蕾达。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "14614/14656 证实 Olfreda 为 Errarth 所爱、其兄弟之妻；21873 提及 Leibarth 与 Olfreda 的婚姻。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“奥尔芙蕾达”保留首个候选；另一候选“奥尔弗蕾达”不采用以统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表人物专名，女性/required 与兄弟之妻身份相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "统一采用奥尔芙蕾达；与 Errarth、Leibarth 婚姻叙述一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:119",
+      "evidence_rows": [
+        14975
+      ],
+      "source_excerpt": "The attendant, named Ukkur, received our peace-gift.",
+      "reason": "确认侍从专名；性别保持未知。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "14975 明确 Ukkur 是 Cragspider 的 attendant，代收和平礼物；未给性别。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“乌库尔”与 Ukkur 音译对应，本批无其他候选。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表人物专名，gender=其他/required 与原文未明示性别相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未与其他条目共享译名；保留乌库尔。"
+        }
+      }
+    },
+    {
+      "ref": "characters:121",
+      "evidence_rows": [
+        15320,
+        15370
+      ],
+      "source_excerpt": "Bad King Urgrain sent trolls against King Voskath.",
+      "reason": "确认男性统治者专名；保留沃斯卡斯王。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "15320 称 King Voskath 遭 Urgrain 派巨魔攻击，随后派精灵反击；15370 记载其与 Urgrain 缔约与毁约。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“沃斯卡斯王”与 King Voskath 对应，保留王号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表人物专名，男性/required 与 King 相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "王号与名字组合稳定；本批无冲突译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:122",
+      "evidence_rows": [
+        15400
+      ],
+      "source_excerpt": "Tragic King Errarth failed to outlaw his nephew, Jotarth",
+      "reason": "确认男性人物专名；无需修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "15400 明确 Jotarth 是 Errarth 的侄子，并起兵反抗。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“约塔尔斯”与 Jotarth 音译对应，本批无其他候选。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表人物专名，男性/required 与侄子身份相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Errarth 的亲属关系清楚；保留约塔尔斯。"
+        }
+      }
+    },
+    {
+      "ref": "characters:123",
+      "evidence_rows": [
+        15405,
+        15426
+      ],
+      "source_excerpt": "Jerensta, an explorer",
+      "reason": "确认女性人物专名；保留杰伦斯塔。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "15405 称 Jerensta 为 explorer，并以 she 指代；15426 建议奖赏她。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“杰伦斯塔”与 Jerensta 音译对应，本批无其他候选。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表人物专名，女性/required 与 she 指代相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "译名统一；与探索者报告冰封男女情节一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:124",
+      "evidence_rows": [
+        15495,
+        15501
+      ],
+      "source_excerpt": "Their representative is a beastman who introduces himself as Hairball",
+      "reason": "确认兽人代表专名；保留毛球。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "15495 明确 Hairball 为兽人代表，以 himself 指代；15501 续写其离开。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“毛球”作为 Hairball 的意译昵称，符合兽人自报名；本批无其他候选。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表人物专名，男性/required 与 himself 相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "作为 Bundalini 乐队代表，译名不与普通 hairball 混淆；保留毛球。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:112",
+    "characters:113",
+    "characters:114",
+    "characters:115",
+    "characters:116",
+    "characters:118",
+    "characters:119",
+    "characters:121",
+    "characters:122",
+    "characters:123",
+    "characters:124"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

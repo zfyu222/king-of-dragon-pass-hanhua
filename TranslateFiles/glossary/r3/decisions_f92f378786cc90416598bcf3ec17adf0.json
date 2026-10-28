@@ -1,0 +1,57 @@
+{
+  "review_complete": true,
+  "review_summary": "审校 e1“heroquest”：确认其指进入神界重演神祇事迹、获取魔法收益的游戏机制，统一译名维持“英雄探索”；category_path 由“技能”修正为“其他”。f1 中 heroquest/heroquests/heroquesting 属同词族变体，共享译名不构成不同专名冲突。",
+  "acknowledged_findings": [
+    "F0364"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "category_path": "其他"
+      },
+      "reason": "32973 将 heroquest 定义为复演神祇事迹以获魔法收益的仪式/机制，属于游戏机制而非角色技能，故修正类目。",
+      "evidence_rows": [
+        32973
+      ],
+      "table": "terms",
+      "index": 22
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:22",
+      "evidence_rows": [
+        32973,
+        11851
+      ],
+      "source_excerpt": "as a heroquest (a heroquest duplicates the feats of the gods to gain magical benefits)",
+      "reason": "确认 heroquest 为 Glorantha 背景下的游戏机制，统一译名“英雄探索”；类目应归“其他”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32973 明确定义 heroquest 为复演神祇事迹以获魔法收益；11851 亦以支持 heroquest 比喻参战，均指同一机制。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "本批候选以“英雄探索”为主，且该译名能覆盖进入神界重演神话的机制义；其他候选“英雄任务/探寻/探险”不另立为多义。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "32973 的定义表明它是仪式/游戏机制，不是角色技能；category_path 已从“技能”改为“其他”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "32973 的定义与 11851 的名词用法一致，均指危险且可能获益的英雄探索，未见需按字面拆分语境。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:22"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

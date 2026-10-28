@@ -1,0 +1,408 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 12 条术语审校：修正 e1 分类，e7 译名与分类，e9 分类，e11 译名，并将 e12 enforcement 改为 required；其余条目译名、分类与一致性通过。无新增、隔离或 allow_no_match。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "category_path": "身份"
+      },
+      "reason": "原文 within your own clan 表明 Chaos cultists 指氏族内部可被归咎的混沌信徒个体/成员，归为身份比组织更准确。",
+      "evidence_rows": [
+        22174
+      ],
+      "table": "terms",
+      "index": 591
+    },
+    {
+      "patch": {
+        "recommended_translation": "聆听之风",
+        "category_path": "其他",
+        "term_reason": "原文指被用于窥听、听见敌人计划的灵体；与同批 Listening Winds 同源，统一译名。"
+      },
+      "reason": "Listening Wind 与 Listening Winds 为单复数变体，应统一核心译名；且原义为灵体，不应归为技能。",
+      "evidence_rows": [
+        23260,
+        23261
+      ],
+      "table": "terms",
+      "index": 607
+    },
+    {
+      "patch": {
+        "category_path": "地名"
+      },
+      "reason": "clan hall 在原文中是 thralls 进攻和疏散的建筑/地点，归为地名比物品更准确。",
+      "evidence_rows": [
+        23220,
+        23233
+      ],
+      "table": "terms",
+      "index": 611
+    },
+    {
+      "patch": {
+        "recommended_translation": "龙友",
+        "term_reason": "原文指最后居住此地的龙友群体，留下的石头可能有恶灵；与单数 dragonfriend 统一译名。"
+      },
+      "reason": "dragonfriends 与 e12 的 dragonfriend 为单复数变体，核心译名应统一为“龙友”。",
+      "evidence_rows": [
+        23940,
+        23941
+      ],
+      "table": "terms",
+      "index": 614
+    },
+    {
+      "patch": {
+        "enforcement": "required"
+      },
+      "reason": "原文明确 dragonfriend 是可与 Orlanthi 身份并存的具体 game 身份，不是多义暂定术语，故 enforcement 改为 required。",
+      "evidence_rows": [
+        33888,
+        33900
+      ],
+      "table": "terms",
+      "index": 832
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:591",
+      "evidence_rows": [
+        22174
+      ],
+      "source_excerpt": "Blame Chaos cultists within your own clan.",
+      "reason": "确认指氏族内部崇拜 Chaos 的成员；分类由组织改为身份。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "22174 的 Blame Chaos cultists within your own clan 表明是氏族内可被归咎的 Chaos 信徒。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“混沌教徒”准确表达 Chaos cultists，且不把普通 cultist 误作专名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文 within your own clan 指个人/成员身份，category_path 应由组织改为身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Chaos 译“混沌”与术语用法一致；无其他冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:593",
+      "evidence_rows": [
+        22428
+      ],
+      "source_excerpt": "war between the Leibarthi and Jotarthi",
+      "reason": "确认 Leibarthi 为与 Jotarthi 交战的部族专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "22428 的 war between the Leibarthi and Jotarthi 明确 Leibarthi 是交战方部族名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“莱巴尔提”为稳定音译，未发现其他候选冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "部族名归入组织类别可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同句 Jotarthi 的译名体系一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:594",
+      "evidence_rows": [
+        22428
+      ],
+      "source_excerpt": "the Leibarthi and Jotarthi",
+      "reason": "确认 Jotarthi 为与 Leibarthi 交战的部族专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "22428 的 war between the Leibarthi and Jotarthi 明确 Jotarthi 是交战方部族名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“约塔尔提”为稳定音译，与同句 Leibarthi 译名体系一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "部族名归入组织类别可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e2 的 Leibarthi 保持同一音译体系。"
+        }
+      }
+    },
+    {
+      "ref": "terms:595",
+      "evidence_rows": [
+        22476
+      ],
+      "source_excerpt": "the Urlandi clan",
+      "reason": "确认 Urlandi 为被 Bad King Urgrain 造谣的氏族专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "22476 的 trustworthy weavers of the Urlandi clan 明确 Urlandi 是氏族名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“乌尔兰迪”音译稳定，符合专名译法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "氏族名归入组织类别可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现同形术语冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:596",
+      "evidence_rows": [
+        22120
+      ],
+      "source_excerpt": "Orlanth’s Bull-Roarer",
+      "reason": "确认该物为 Orlanth 的魔法器物，专名译法保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "22120 的 They have Orlanth’s Bull-Roarer 明确是敌人持有的魔法器物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“奥兰斯的牛吼器”保留 Orlanth 译名与 Bull-Roarer 的器物义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "魔法器物归入物品类别正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Orlanth 译“奥兰斯”与同批相关译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:597",
+      "evidence_rows": [
+        22278,
+        22310
+      ],
+      "source_excerpt": "the outlaw’s blue-flame blade",
+      "reason": "确认 blue-flame blade 为 outlaw women 使用的魔法武器。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "22278 与 22310 均出现 blue-flame blade，且 22310 说明其造成伤亡并被视为宝物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“蓝焰之刃”准确表达 blue-flame blade，并可与后文 blue blade 对应。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "武器归入物品类别正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一事件内 blue blade 指同一物，译名可统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:607",
+      "evidence_rows": [
+        23260,
+        23261
+      ],
+      "source_excerpt": "used a Listening Wind against",
+      "reason": "确认 Listening Wind 为可被使用的灵体/魔法名；按同族术语统一为“聆听之风”，分类改为其他。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "23260 与 23261 的 used a Listening Wind / his Listening Wind 表明其为可被施用的灵体或魔法名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由“听风”改为“聆听之风”，与同批 Listening Winds 的风灵名称统一，并避免与普通“听风”动作混淆。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原义为灵体，category_path 由技能改为其他。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e8 的 Listening Winds 统一核心译名“聆听之风”；中文单复数同形。"
+        }
+      }
+    },
+    {
+      "ref": "terms:617",
+      "evidence_rows": [
+        23773
+      ],
+      "source_excerpt": "Some of them are called the Listening Winds",
+      "reason": "确认 Listening Winds 为 Mount Kero Fin 所见风灵中的一类专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "23773 的 Some of them are called the Listening Winds 明确定义为风灵名称。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“聆听之风”符合 wind spirits 的专名译法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "风灵归入其他类别可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e7 的 Listening Wind 统一为“聆听之风”后一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:611",
+      "evidence_rows": [
+        23220,
+        23233
+      ],
+      "source_excerpt": "Evacuate the clan hall.",
+      "reason": "确认 clan hall 是 thralls 进攻和疏散的建筑/地点。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "23220 的 advancing on your clan hall 与 23233 的 Evacuate the clan hall 表明其是建筑/地点。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“氏族大厅”准确表达 clan hall，且与 clan 译“氏族”一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文将其作为可进攻、可疏散的目标，category_path 由物品改为地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "clan 译“氏族”与同批用法一致；无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:613",
+      "evidence_rows": [
+        23764,
+        31955
+      ],
+      "source_excerpt": "Tada the Green",
+      "reason": "确认 Tada 为神话人物名，采用稳定音译“塔达”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "23764 以 before the days of Tada 指远古；31955 明确 Tada the Green 为古代敌人/英雄。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“塔达”为稳定音译，符合专名译法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神话人物专名归入其他类别可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Tada the Green 的核心名 Tada 一致；无其他译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:614",
+      "evidence_rows": [
+        23940,
+        23941
+      ],
+      "source_excerpt": "inhabited by dragonfriends",
+      "reason": "确认 dragonfriends 指曾居住此地的龙友群体；与单数 dragonfriend 统一为“龙友”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "23940 与 23941 均以 dragonfriends 指曾居住此地并留下石头的群体。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由“龙之友”改为“龙友”，与单数 dragonfriend 统一核心译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "复数群体归入组织类别可接受，单数身份另见 e12。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e12 的 dragonfriend 统一为“龙友”；中文不区分单复数。"
+        }
+      }
+    },
+    {
+      "ref": "terms:832",
+      "evidence_rows": [
+        33888,
+        33900
+      ],
+      "source_excerpt": "be a dragonfriend and an Orlanthi",
+      "reason": "确认 dragonfriend 为可与 Orlanthi 身份并存的具体身份；将 enforcement 改为 required。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33888 与 33900 的 be a dragonfriend and an Orlanthi at the same time 明确定义该身份。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“龙友”准确表达 dragonfriend，并与 e11 统一。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "category_path 身份正确；同时将 enforcement 由 reference 修正为 required，原文明确是具体身份而非多义暂定术语。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e11 的 dragonfriends 统一为“龙友”，单数身份与复数群体一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:591",
+    "terms:593",
+    "terms:594",
+    "terms:595",
+    "terms:596",
+    "terms:597",
+    "terms:607",
+    "terms:617",
+    "terms:611",
+    "terms:613",
+    "terms:614",
+    "terms:832"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

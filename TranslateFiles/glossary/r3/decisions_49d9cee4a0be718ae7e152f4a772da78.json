@@ -1,0 +1,228 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1-e6：将 cottar/cottars 统一为“茅舍农”，保留 Heortling/Heortland 的“赫奥特林/赫奥特兰”词根，并将 Heortlanders 的分类修正为“种族”；未新增或隔离条目。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "茅舍农",
+        "term_reason": "原文 33141 将 cottars 定义为拥有较少土地、通常牧羊并承担繁重劳作的较贫农民，属于 carls 之下的农业身份阶层；统一译作“茅舍农”。"
+      },
+      "reason": "原暂译“佃农”泛化为租佃关系，未准确体现 33141 的社会阶层定义；与单数 cottar 统一为“茅舍农”。",
+      "evidence_rows": [
+        33141,
+        18689,
+        17777
+      ],
+      "table": "terms",
+      "index": 69
+    },
+    {
+      "patch": {
+        "recommended_translation": "茅舍农",
+        "term_reason": "原文 34000 定义为 lower-class farmer，通常牧羊并种菜园；26223/26224 用作奥兰斯对待外来者的身份比喻；与复数 cottars 统一译作“茅舍农”。"
+      },
+      "reason": "原暂译“科塔”仅为音译且不传达阶层含义；按 34000 的定义改为“茅舍农”，与复数形式一致。",
+      "evidence_rows": [
+        34000,
+        26223,
+        26224
+      ],
+      "table": "terms",
+      "index": 293
+    },
+    {
+      "patch": {
+        "category_path": "种族",
+        "term_reason": "原文 34021 明确 Heortlanders are an Orlanthi people，是以主神命名的族群；33915 指先到龙隘的赫奥特兰定居者；译作“赫奥特兰人”。"
+      },
+      "reason": "34021 直接说明 Heortlanders 是一个 Orlanthi people，category_path 应由“身份”改为“种族”。",
+      "evidence_rows": [
+        34021,
+        33915,
+        21559
+      ],
+      "table": "terms",
+      "index": 180
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:69",
+      "evidence_rows": [
+        33141,
+        18689
+      ],
+      "source_excerpt": "Cottars own less land, they generally tend sheep rather than cattle",
+      "reason": "将 cottars 统一为“茅舍农”；依据 33141 的社会阶层定义，而非按普通“佃农”泛化。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33141 明确说明 cottars 是低于 carls 的较贫农民，拥有较少土地并通常牧羊；18689 也显示其可作为被释放 thralls 的身份。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原暂译“佃农”会泛化为租佃关系；按 33141 的 lower-class farmer 定义改为“茅舍农”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该词指 farming population 内的身份阶层，category_path=身份 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与单数 cottar 共享核心译名“茅舍农”，不再保留“佃农/科塔”的分散译法。"
+        }
+      }
+    },
+    {
+      "ref": "terms:293",
+      "evidence_rows": [
+        34000,
+        26223
+      ],
+      "source_excerpt": "cottar: lower-class farmer",
+      "reason": "将单数 cottar 统一为“茅舍农”，与复数 cottars 保持同一阶层术语。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34000 直接定义为 lower-class farmer，通常牧羊并种菜园；26223 用作奥兰斯对待外来者的身份比喻。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原暂译“科塔”为音译且不传达阶层；按定义改“茅舍农”，与复数一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该词指身份阶层，category_path=身份 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "单复数统一“茅舍农”；“科塔”不保留。"
+        }
+      }
+    },
+    {
+      "ref": "terms:74",
+      "evidence_rows": [
+        1318,
+        16364
+      ],
+      "source_excerpt": "among us Heortlings",
+      "reason": "Heortlings 为族群专名，保留“赫奥特林人”译法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1318 以 among us Heortlings 指说话者所属族群；16364 也指与北方马民作战的族群。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“赫奥特林人”保留族群名并加复数群体后缀，与 Heortling 词根一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "族群名，category_path=种族 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e4 的 Heortling 共享“赫奥特林”词根；复数加“人”符合中文。"
+        }
+      }
+    },
+    {
+      "ref": "terms:237",
+      "evidence_rows": [
+        33876,
+        3710,
+        25315
+      ],
+      "source_excerpt": "Heort, founder of our Heortling culture",
+      "reason": "Heortling 作族群/文化专名时统一为“赫奥特林”，允许定语形态不加“人”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33876 说明 Heortling culture 由 Heort 创立；3710/25315 指该族群及其氏族。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作定语/族群名译“赫奥特林”，不强行加“人”，与 e3“赫奥特林人”一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "族群/文化专名，category_path=种族 可容纳。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Heortlings 共享“赫奥特林”，允许单复数/定语形态差异。"
+        }
+      }
+    },
+    {
+      "ref": "terms:75",
+      "evidence_rows": [
+        34289,
+        33925
+      ],
+      "source_excerpt": "Our part of it was called Heortland, after the legendary King Heort",
+      "reason": "Heortland 为地名，统一“赫奥特兰”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34289 说明 Heortland 是以 King Heort 命名的地区；33925 指龙隘以南的旧家园。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "统一“赫奥特兰”；不采用“希奥特兰/赫尔特兰”等异译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名，category_path=地名 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "作为 Heortland 地名统一；派生 Heortlanders 用“赫奥特兰人”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:180",
+      "evidence_rows": [
+        34021,
+        33915,
+        21559
+      ],
+      "source_excerpt": "Heortlanders are an Orlanthi people, named after their chief god.",
+      "reason": "Heortlanders 指赫奥特兰的 Orlanthi 族群，译“赫奥特兰人”，分类改“种族”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34021 定义 Heortlanders 为 an Orlanthi people；33915/21559 指来自 Heortland 的定居者。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“赫奥特兰人”准确表达 Heortland 的居民/族群，不混同 Heortling。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文 34021 明确其为 an Orlanthi people，故 category_path 由身份改为种族。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与地名 Heortland 的“赫奥特兰”保持一致；区别于 Heortling“赫奥特林”。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:69",
+    "terms:293",
+    "terms:74",
+    "terms:237",
+    "terms:75",
+    "terms:180"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

@@ -1,0 +1,414 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 e1-e12 的源文、译名、分类与一致性审校；保留全部条目，修正 e5 译名，并修正 e2/e4/e7/e9/e10 的 term_reason 证据表述。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "马斯塔科斯的称号；原文作 the chariot of Mastakos the Moving God，指载走义人的战车属于这位神。"
+      },
+      "reason": "补充该称号与 Mastakos 同指，说明使用范围，避免被视为独立神名。",
+      "evidence_rows": [
+        2315
+      ],
+      "table": "terms",
+      "index": 163
+    },
+    {
+      "patch": {
+        "term_reason": "马尔基翁，巫术之神；原文作 Malkion, god of Sorcery。"
+      },
+      "reason": "33878 仅能证明 Malkion 为巫术之神，未在本行原文中证明『奥兰斯的古老敌人』，删去未证实身份。",
+      "evidence_rows": [
+        33878
+      ],
+      "table": "characters",
+      "index": 218
+    },
+    {
+      "patch": {
+        "recommended_translation": "演说者罗斯坦德",
+        "term_reason": "原文作 Rostand the Speaker；一位听懂龙人语言、并得龙授歌的男子，称号 the Speaker。"
+      },
+      "reason": "中文称号应前置为『演说者罗斯坦德』；原 term_reason 含 33884 未出现的欧尔马尔信息，按原文改正。",
+      "evidence_rows": [
+        33884
+      ],
+      "table": "characters",
+      "index": 219
+    },
+    {
+      "patch": {
+        "term_reason": "科利马尔之妻、埃尔纳尔达的女祭司；迁徙时众人循其指引，并与科利马尔将出产冬葡萄的地方命名为 Clearwine。"
+      },
+      "reason": "33918/33919 可证其为科利马尔之妻和 Ernalda 女祭司，并循其指引；33919 命名的是一处地名为 Clearwine，不应写成『清酒』。",
+      "evidence_rows": [
+        33918,
+        33919
+      ],
+      "table": "characters",
+      "index": 221
+    },
+    {
+      "patch": {
+        "term_reason": "原文称坏人制造出名为 Nysalor 的存在，后世以 Gbaji 记得他并称其为混沌神；此时代称为第一纪。"
+      },
+      "reason": "34033 原文说该时代称为 First Age，不是 Second Age；并明确 Nysalor 被记忆为 Gbaji、Chaos god。",
+      "evidence_rows": [
+        34033
+      ],
+      "table": "characters",
+      "index": 226
+    },
+    {
+      "patch": {
+        "term_reason": "Issaries 请来协助的 Know-It-All；在帮助他人一事上以法律理由称无义务。"
+      },
+      "reason": "34064 只说明 Issaries 请其协助，34067 说明他以法律理由称无义务帮助；删去未直接见于原文的『提供知识』表述。",
+      "evidence_rows": [
+        34064,
+        34067
+      ],
+      "table": "characters",
+      "index": 227
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:216",
+      "evidence_rows": [
+        33876,
+        34090,
+        34105
+      ],
+      "source_excerpt": "Mastakos, Orlanth's charioteer",
+      "reason": "源文明确 Mastakos 为 Orlanth 的战车御者；译名、分类及与 e2 的称号关系均无冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33876 原文作 Mastakos, Orlanth's charioteer；34090/34105 亦以 Mastakos' chariot 指同一神。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "马斯塔科斯为稳定音译，与 e2 的『马斯塔科斯』一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name/required，男性；原文称其为 Orlanth 的战车御者。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "e2 的『移动之神马斯塔科斯』沿用同一专名，未产生异名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:163",
+      "evidence_rows": [
+        2315
+      ],
+      "source_excerpt": "chariot of Mastakos the Moving God",
+      "reason": "源文为 Mastakos 的称号；译名保留称号加专名，term_reason 已补充同指关系。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2315 原文作 the chariot of Mastakos the Moving God，源词完整。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "『移动之神马斯塔科斯』保留 Moving God 称号并沿用 e1 专名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name/required，category_path=其他 合法，指神祇称号。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "term_reason 已明确它是 e1 Mastakos 的称号，而非独立神名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:217",
+      "evidence_rows": [
+        33876
+      ],
+      "source_excerpt": "Uleria, goddess of Love",
+      "reason": "源文明确 Uleria 为爱情女神；译名乌莱里亚、女性分类合理，无跨条冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33876 原文作 Uleria, goddess of Love。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "乌莱里亚为音译，保留女性神名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name/required，女性；原文称 goddess of Love。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批未见同形异译。"
+        }
+      }
+    },
+    {
+      "ref": "characters:218",
+      "evidence_rows": [
+        33878
+      ],
+      "source_excerpt": "Malkion, god of Sorcery",
+      "reason": "源文仅支持 Malkion 为巫术之神；已删去 term_reason 中未见于 33878 的『古老敌人』表述。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "33878 原文仅作 Malkion, god of Sorcery；原 term_reason 的『奥兰斯的古老敌人之一』超出本行证据，已修正。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "马尔基翁为音译，符合专名要求。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name/required，男性；原文称 god of Sorcery。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批未见 Malkion 的异译或同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:219",
+      "evidence_rows": [
+        33884
+      ],
+      "source_excerpt": "The man, Rostand the Speaker, enjoyed the effect.",
+      "reason": "源文称 Rostand 为 the Speaker；中文称号前置；term_reason 按原文改为听懂龙人语言并得龙授歌。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "原 term_reason 含 33884 未出现的欧尔马尔信息；已按原句改为一位听懂龙人语言并得龙授歌的男子。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "称号 the Speaker 前置，改为『演说者罗斯坦德』，避免『罗斯坦德演说者』的生硬结构。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name/required，男性；原文称 The man, Rostand the Speaker。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "称号前置处理与同类专名一致，专名罗斯坦德保留音译。"
+        }
+      }
+    },
+    {
+      "ref": "characters:220",
+      "evidence_rows": [
+        33886,
+        33898
+      ],
+      "source_excerpt": "Orlmandan the Red, a righteous priest of Orlanth",
+      "reason": "源文明确 Orlmandan the Red 为 Orlanth 的正直祭司；译名与分类合理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33886 原文作 Orlmandan the Red, a righteous priest of Orlanth。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "红奥尔曼丹保留 the Red 称号并音译本名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name/required，男性；原文称 righteous priest of Orlanth。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批未见同形异译。"
+        }
+      }
+    },
+    {
+      "ref": "characters:221",
+      "evidence_rows": [
+        33918,
+        33919
+      ],
+      "source_excerpt": "Chief Colymar and his wife, Hareva",
+      "reason": "源文明确 Hareva 为 Colymar 之妻、Ernalda 女祭司；term_reason 已避免把 Clearwine 误作『清酒』。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "33918 称其为 Chief Colymar 之妻，33919 称其为 Ernalda 的女祭司；原 term_reason 的『命名清酒』易误导，已改为命名地点 Clearwine。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "哈雷瓦为音译，保留女性人名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name/required，女性；原文称 his wife, Hareva 及 her priestess Hareva。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批未见 Hareva 的异译。"
+        }
+      }
+    },
+    {
+      "ref": "characters:223",
+      "evidence_rows": [
+        33881
+      ],
+      "source_excerpt": "mighty dragons Aroka and Sh'hakarzeel",
+      "reason": "源文明确 Sh'hakarzeel 为被 Orlanth 杀死的巨龙之一；译名与『其他』性别分类合理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33881 原文作 mighty dragons Aroka and Sh'hakarzeel。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "沙哈卡泽尔为音译，保留龙名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name/required，性别其他；原文称其为 mighty dragon。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批未见同形异译。"
+        }
+      }
+    },
+    {
+      "ref": "characters:226",
+      "evidence_rows": [
+        34033
+      ],
+      "source_excerpt": "They created a being they called Nysalor.",
+      "reason": "源文明确 Nysalor 为被造出者、后世称 Gbaji 的混沌神；term_reason 已把错误的 Second Age 改为第一纪。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "34033 原文说该时代称为 First Age，不是 Second Age；原 term_reason 已改正。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "尼萨洛尔为音译，保留专名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name/required，男性；原文以 him 指称 Nysalor。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批未见 Nysalor 的异译。"
+        }
+      }
+    },
+    {
+      "ref": "characters:227",
+      "evidence_rows": [
+        34064,
+        34067
+      ],
+      "source_excerpt": "He convinced the Know-It-All God to come and assist him",
+      "reason": "源文明确 Know-It-All God 为 Issaries 请来协助者，并在 34067 以法律理由称无义务帮助；term_reason 已按此修正。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "34064 只说明 Issaries 请其协助，34067 说明他以法律理由称无义务帮助；原 term_reason 的『提供知识』未直接见于原文，已修正。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "全知神保留 Know-It-All God 的称号含义，简短可作专名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name/required，男性；原文以 He/Know-It-All 指称。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批未见同形异译。"
+        }
+      }
+    },
+    {
+      "ref": "characters:228",
+      "evidence_rows": [
+        34092
+      ],
+      "source_excerpt": "Acos the Lawgiver",
+      "reason": "源文明确 Acos 为 Lhankor Mhy 的双亲之一、称号 Lawgiver；译名立法者阿科斯合理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34092 原文作 Acos the Lawgiver，Lhankor Mhy was the son of two Elder Deities..."
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "立法者阿科斯称号前置，音译本名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name/required，男性；原文称其与 Orenoar 为 Lhankor Mhy 的双亲。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同类称号前置译法一致，本批未见异译。"
+        }
+      }
+    },
+    {
+      "ref": "characters:230",
+      "evidence_rows": [
+        34093
+      ],
+      "source_excerpt": "His father was Larnste, God of Change",
+      "reason": "源文明确 Larnste 为 Issaries 之父、变化之神；译名拉恩斯特与男性分类合理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34093 原文作 His father was Larnste, God of Change。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "拉恩斯特为音译，保留神名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name/required，男性；原文称其为 Issaries 的父亲。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批未见同形异译。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:216",
+    "terms:163",
+    "characters:217",
+    "characters:218",
+    "characters:219",
+    "characters:220",
+    "characters:221",
+    "characters:223",
+    "characters:226",
+    "characters:227",
+    "characters:228",
+    "characters:230"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

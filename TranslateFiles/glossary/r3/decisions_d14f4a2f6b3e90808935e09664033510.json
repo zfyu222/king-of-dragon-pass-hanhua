@@ -1,0 +1,413 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1-e12 的 source/translation/category/consistency。将 Iron Spike 统一为“铁尖刺”，更新 Kev 与 Grandbread 的身份归类及理由，并修正 Lead Eyes 说明中的交叉引用。已核对 f1：War of the Gods 与只读关联的 Gods War/God's War 指同一神话战争，共享“诸神之战”译名成立。未新增、隔离或放行条目。",
+  "acknowledged_findings": [
+    "F0418"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "铁尖刺",
+        "term_reason": "Lead Breaker 氏族托付保管的魔法宝物；15574 明言其名为 Iron Spike，16945 说明巨魔视其为大敌，32448 列为宝藏名。"
+      },
+      "reason": "将宝物名由普通“铁钉”改为更贴合 spike 的“铁尖刺”，并修正 term_reason 中不准确的“对付巨魔的武器”表述。",
+      "evidence_rows": [
+        15574,
+        16945,
+        32448
+      ],
+      "table": "terms",
+      "index": 493
+    },
+    {
+      "patch": {
+        "category_path": "身份",
+        "term_reason": "Ernalda 的别名“织者凯夫”；28496 明确二者等同，28654/28677 中作为赐予预视者出现。"
+      },
+      "reason": "Kev 并非无身份专名，而是 Ernalda 的具名别名，归为身份并补足原文依据。",
+      "evidence_rows": [
+        28496,
+        28654,
+        28677
+      ],
+      "table": "terms",
+      "index": 495
+    },
+    {
+      "patch": {
+        "category_path": "身份",
+        "term_reason": "以吞食真理/知识为喻的具名神祇；16123 称其自称知识之灵，34207/34220 讲述其与 Lhankor Mhy 的问答之战。"
+      },
+      "reason": "Grandbread 是具名神祇/灵，归为身份更准确，并删除未被原文直接支持的“已死”表述。",
+      "evidence_rows": [
+        16123,
+        34207,
+        34220
+      ],
+      "table": "terms",
+      "index": 505
+    },
+    {
+      "patch": {
+        "term_reason": "乌穆尔古克用来交换铁尖刺的宝物；16948/16949 称其能加速战士死后的灵魂，32453 列为宝藏名。"
+      },
+      "reason": "同步 Iron Spike 的统一译名，将说明中的交换物改为“铁尖刺”。",
+      "evidence_rows": [
+        16948,
+        16949,
+        32453
+      ],
+      "table": "terms",
+      "index": 515
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:493",
+      "evidence_rows": [
+        15574,
+        16945,
+        32448
+      ],
+      "source_excerpt": "It is called the Iron Spike.",
+      "reason": "核对为 Lead Breaker 托付的具名魔法宝物；将译名由“铁钉”改为“铁尖刺”，避免与普通钉子混淆。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "15574 明言“It is called the Iron Spike”；16945 与 32448 均指同一宝物/宝藏名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由“铁钉”改为“铁尖刺”，保留 spike 的尖刺/尖钉义，适合作为独特宝物名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "15574 称其为 magical treasure，32448 列入宝藏，归“物品”成立。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "条目内各出处统一为“铁尖刺”，不再混用候选“铁钉”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:812",
+      "evidence_rows": [
+        33813
+      ],
+      "source_excerpt": "We call the mountain \"The Spike,\" because it nailed all reality together with perfect Truth and Justice.",
+      "reason": "保持山名“尖峰”；33813 明确它是诸神所居、钉合现实的完美山峰。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33813 说明“The Spike”是诸神所居、以真理与正义钉合现实的完美山峰。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“尖峰”作为山名简洁，并与宝物 Iron Spike 的“铁尖刺”区分。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "33813 明称 mountain，归地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一句内 The Spike 均作山名；与 Iron Spike 的宝物义分属不同专名，保留差异。"
+        }
+      }
+    },
+    {
+      "ref": "terms:495",
+      "evidence_rows": [
+        28496,
+        28654,
+        28677
+      ],
+      "source_excerpt": "Ernalda is also known as Kev the Weaver, who sees the deep secrets of the Earth.",
+      "reason": "已确认 Kev 是 Ernalda 的别名；保留“凯夫”，并将类别改为身份、补足 term_reason。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28496 明言 Ernalda 又名 Kev the Weaver；28654/28677 中 Kev 赐予预视。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“凯夫”为 Kev 的音译，符合专名要求。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "由“其他”改为“身份”，因为 28496 明确其为 Ernalda 的别名/具名身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "凯夫与 Ernalda 的别名关系已写入 term_reason，译名不另设新名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:497",
+      "evidence_rows": [
+        15919
+      ],
+      "source_excerpt": "Eurmal launched a lawsuit against the Bird God for painting his arm white.",
+      "reason": "确认 Bird God 为神祇称号，保留“鸟神”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "15919 称 Eurmal 起诉 the Bird God。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“鸟神”对应 Bird God，简洁明确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Bird God 为神祇称号，归身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该条仅此专名，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:498",
+      "evidence_rows": [
+        15495,
+        24722
+      ],
+      "source_excerpt": "Their representative is a beastman who introduces himself as Hairball",
+      "reason": "确认 beastman/Beastman 为种族称谓，保留“兽人”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "15495 称 Hairball 是 beastman；24722 作 Beastman 指鸭人的盟友。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“兽人”对应 beastman，为格洛兰萨非人种族称谓。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "15495/24722 均为种族称谓，归种族。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "beastman/Beastman 的单复数与大小写差异不改变译名“兽人”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:499",
+      "evidence_rows": [
+        15430
+      ],
+      "source_excerpt": "Warriors who brave the Quivini Mountains will surely be eaten by frost demons.",
+      "reason": "保留“霜魔”及 reference 级别，作为奎文山脉的敌对生物称谓。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "15430 以 frost demons 指奎文山脉能吃掉战士的霜魔。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“霜魔”对应 frost demons，保留霜与魔物含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为生物/敌对种族名，归种族可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅有此复数形式，reference 级别可避免过度冻结。"
+        }
+      }
+    },
+    {
+      "ref": "terms:504",
+      "evidence_rows": [
+        15551,
+        16873
+      ],
+      "source_excerpt": "The time seemed to be right for tribemaking.",
+      "reason": "确认 tribemaking 指氏族联合成部族的进程，保留“组建部族”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "15551 与 16873 均以 tribemaking 指组建部族这一进程。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“组建部族”准确表达 tribemaking 的动作/进程。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属政治行动/事件机制，归其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两处均译“组建部族”，词性一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:505",
+      "evidence_rows": [
+        16123,
+        34207,
+        34220
+      ],
+      "source_excerpt": "That god was called Grandbread. He ate knowledge like it was food.",
+      "reason": "确认 Grandbread 为具名神祇/灵；保留音译“格兰德布雷德”，并修正类别与 term_reason。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "16123 称其自称知识之灵；34207/34220 称 Grandbread 为吞食知识/真理的神。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“格兰德布雷德”为专名音译，保留名称而非把 bread 意译进神名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "由“其他”改为“身份”，因其为具名神祇/灵。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各出处均指同一神祇，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:513",
+      "evidence_rows": [
+        16859,
+        34270,
+        34286
+      ],
+      "source_excerpt": "Orlanth was rejected every time by the Emperor, until the War of the Gods began.",
+      "reason": "确认 War of the Gods 为神话战争专名，保留“诸神之战”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "16859 以 the War of the Gods 指奥兰斯被皇帝拒绝后开始的神话战争；34270/34286 同指该战争。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“诸神之战”为通行的神话战争译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "为神话事件/时期，归其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "34270 与 34286 中同名战争语义一致，译名统一为“诸神之战”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:515",
+      "evidence_rows": [
+        16948,
+        16949,
+        32453
+      ],
+      "source_excerpt": "In return for it, she offered a set of Lead Eyes, which would speed the spirits of our warriors when they died.",
+      "reason": "确认 Lead Eyes 为独特宝物，保留“铅眼”；仅同步说明中的 Iron Spike 译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "16948/16949 称其为乌穆尔古克提出的交换物，能加速战士死后灵魂；32453 为宝藏名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“铅眼”对应 Lead Eyes，作为独特宝物名简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "16948/32453 均指向物品/宝藏，归物品。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "term_reason 中的交换物改用“铁尖刺”，与宝物 Iron Spike 的统一译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:517",
+      "evidence_rows": [
+        16726,
+        16727
+      ],
+      "source_excerpt": "which they called “The Shakes.”",
+      "reason": "确认 The Shakes 为萨满所称疾病名，保留“颤抖症”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "16726/16727 均称该疾病为“The Shakes”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“颤抖症”表达 disease called The Shakes，作为病名简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "为疾病/状态名，归其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两处均作病名，译名统一；不需把普通词义单独冻结。"
+        }
+      }
+    },
+    {
+      "ref": "terms:519",
+      "evidence_rows": [
+        16982,
+        27894,
+        34244,
+        34265
+      ],
+      "source_excerpt": "Orlanth was attacked by Krakos, the troll avenger, who was angry because Orlanth broke his father’s legs.",
+      "reason": "确认 Krakos 为巨魔复仇者，保留“克拉科斯”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "16982/27894/34244/34265 均指巨魔复仇者 Krakos，因 Orlanth 打断其父腿而阻挠。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“克拉科斯”为 Krakos 音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名巨魔角色，归身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各出处同一角色，译名统一。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:493",
+    "terms:812",
+    "terms:495",
+    "terms:497",
+    "terms:498",
+    "terms:499",
+    "terms:504",
+    "terms:505",
+    "terms:513",
+    "terms:515",
+    "terms:517",
+    "terms:519"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

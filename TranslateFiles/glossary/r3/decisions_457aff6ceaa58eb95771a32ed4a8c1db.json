@@ -1,0 +1,535 @@
+{
+  "review_complete": true,
+  "review_summary": "已复核 e1-e12：e1-e10 为完整记录形式的内部状态/表情代码，补 whole_record 作用域；e11-e12 为含控制字节的人名占位符，补 text 精确作用域。所有 non_translate 条目均保留原文，不产生译文。",
+  "acknowledged_findings": [
+    "F0251",
+    "F0252",
+    "F0253",
+    "F0254",
+    "F0255",
+    "F0256",
+    "F0257",
+    "F0258",
+    "F0259",
+    "F0260"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录仅由内部状态/表情代码 Q3Triumphant 构成，无叙事文本；仅当整条记录等于该代码时保留。"
+        }
+      },
+      "reason": "原 non_translate 条目缺少作用域；该代码仅作为完整记录出现，应限定 whole_record，避免误匹配正文。",
+      "evidence_rows": [
+        25622
+      ],
+      "table": "non_translate",
+      "index": 362
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录仅由内部状态/表情代码 Q2SadLost 构成，无叙事文本；仅当整条记录等于该代码时保留。"
+        }
+      },
+      "reason": "原 non_translate 条目缺少作用域；该代码仅作为完整记录出现，应限定 whole_record，避免误匹配正文。",
+      "evidence_rows": [
+        25624
+      ],
+      "table": "non_translate",
+      "index": 363
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录仅由内部状态/表情代码 H1h 构成，无叙事文本；仅当整条记录等于该代码时保留。"
+        }
+      },
+      "reason": "原 non_translate 条目缺少作用域；该代码仅作为完整记录出现，应限定 whole_record，避免误匹配正文。",
+      "evidence_rows": [
+        25626
+      ],
+      "table": "non_translate",
+      "index": 364
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录仅由内部状态/表情代码 H2a 构成，无叙事文本；仅当整条记录等于该代码时保留。"
+        }
+      },
+      "reason": "原 non_translate 条目缺少作用域；该代码仅作为完整记录出现，应限定 whole_record，避免误匹配正文。",
+      "evidence_rows": [
+        25653
+      ],
+      "table": "non_translate",
+      "index": 365
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录仅由内部状态/表情代码 H2b 构成，无叙事文本；仅当整条记录等于该代码时保留。"
+        }
+      },
+      "reason": "原 non_translate 条目缺少作用域；该代码仅作为完整记录出现，应限定 whole_record，避免误匹配正文。",
+      "evidence_rows": [
+        25666
+      ],
+      "table": "non_translate",
+      "index": 366
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录仅由内部状态/表情代码 H2d 构成，无叙事文本；仅当整条记录等于该代码时保留。"
+        }
+      },
+      "reason": "原 non_translate 条目缺少作用域；该代码仅作为完整记录出现，应限定 whole_record，避免误匹配正文。",
+      "evidence_rows": [
+        25720
+      ],
+      "table": "non_translate",
+      "index": 367
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录仅由内部状态/表情代码 H2e 构成，无叙事文本；仅当整条记录等于该代码时保留。"
+        }
+      },
+      "reason": "原 non_translate 条目缺少作用域；该代码仅作为完整记录出现，应限定 whole_record，避免误匹配正文。",
+      "evidence_rows": [
+        25740
+      ],
+      "table": "non_translate",
+      "index": 368
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录仅由内部状态/表情代码 H2f 构成，无叙事文本；仅当整条记录等于该代码时保留。"
+        }
+      },
+      "reason": "原 non_translate 条目缺少作用域；该代码仅作为完整记录出现，应限定 whole_record，避免误匹配正文。",
+      "evidence_rows": [
+        25767
+      ],
+      "table": "non_translate",
+      "index": 369
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录仅由内部状态/表情代码 H2g 构成，无叙事文本；仅当整条记录等于该代码时保留。"
+        }
+      },
+      "reason": "原 non_translate 条目缺少作用域；该代码仅作为完整记录出现，应限定 whole_record，避免误匹配正文。",
+      "evidence_rows": [
+        25780
+      ],
+      "table": "non_translate",
+      "index": 370
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录仅由内部状态/表情代码 H2h 构成，无叙事文本；仅当整条记录等于该代码时保留。"
+        }
+      },
+      "reason": "原 non_translate 条目缺少作用域；该代码仅作为完整记录出现，应限定 whole_record，避免误匹配正文。",
+      "evidence_rows": [
+        25804
+      ],
+      "table": "non_translate",
+      "index": 371
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "\\x01BI 含控制字节 \\x01，是运行时人名占位符；在 'represented by \\x01BI,' 与句首 '\\x01BI led...' 中均须原样代入，精确匹配该控制序列不会误伤普通英文。"
+        }
+      },
+      "reason": "原 non_translate 条目缺少作用域；该控制序列在独立句首和嵌入句中都作人名占位符，需以含控制字节的精确文本保护。",
+      "evidence_rows": [
+        25451,
+        25452
+      ],
+      "table": "non_translate",
+      "index": 372
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "\\x01E\\x04 是运行时人名占位符，与 \\x01E\\x05 并列出现于 '... and \\x01E\\x04 arrived...'；精确匹配含控制字节的序列并原样保留。"
+        }
+      },
+      "reason": "原 non_translate 条目缺少作用域；该控制序列在叙述句中作人名占位符，需以含控制字节的精确文本保护。",
+      "evidence_rows": [
+        25723,
+        25724
+      ],
+      "table": "non_translate",
+      "index": 373
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:362",
+      "evidence_rows": [
+        25622
+      ],
+      "source_excerpt": "Q3Triumphant",
+      "reason": "确认 Q3Triumphant 是完整记录形式的内部状态/表情代码；补 whole_record 作用域，不把同形字样当正文翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 25622 原文仅为 Q3Triumphant，记录完整，无叙事句。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不应提供译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；原缺 applicability，已补 whole_record，仅整条记录匹配。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该代码独立出现，不与其它 Q2/H2 代码合并或互译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:363",
+      "evidence_rows": [
+        25624
+      ],
+      "source_excerpt": "Q2SadLost",
+      "reason": "确认 Q2SadLost 是完整记录形式的内部状态/表情代码；补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 25624 原文仅为 Q2SadLost，记录完整，无叙事句。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不应提供译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；原缺 applicability，已补 whole_record，仅整条记录匹配。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该代码独立出现，不与其它 Q2/H2 代码合并或互译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:364",
+      "evidence_rows": [
+        25626
+      ],
+      "source_excerpt": "H1h",
+      "reason": "确认 H1h 是完整记录形式的内部状态/表情代码；补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 25626 原文仅为 H1h，记录完整，无叙事句。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不应提供译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；原缺 applicability，已补 whole_record，仅整条记录匹配。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该代码独立出现，不与其它 H 系列代码合并或互译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:365",
+      "evidence_rows": [
+        25653
+      ],
+      "source_excerpt": "H2a",
+      "reason": "确认 H2a 是完整记录形式的内部状态/表情代码；补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 25653 原文仅为 H2a，记录完整，无叙事句。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不应提供译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；原缺 applicability，已补 whole_record，仅整条记录匹配。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该代码独立出现，不与其它 H 系列代码合并或互译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:366",
+      "evidence_rows": [
+        25666
+      ],
+      "source_excerpt": "H2b",
+      "reason": "确认 H2b 是完整记录形式的内部状态/表情代码；补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 25666 原文仅为 H2b，记录完整，无叙事句。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不应提供译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；原缺 applicability，已补 whole_record，仅整条记录匹配。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该代码独立出现，不与其它 H 系列代码合并或互译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:367",
+      "evidence_rows": [
+        25720
+      ],
+      "source_excerpt": "H2d",
+      "reason": "确认 H2d 是完整记录形式的内部状态/表情代码；补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 25720 原文仅为 H2d，记录完整，无叙事句。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不应提供译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；原缺 applicability，已补 whole_record，仅整条记录匹配。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该代码独立出现，不与其它 H 系列代码合并或互译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:368",
+      "evidence_rows": [
+        25740
+      ],
+      "source_excerpt": "H2e",
+      "reason": "确认 H2e 是完整记录形式的内部状态/表情代码；补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 25740 原文仅为 H2e，记录完整，无叙事句。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不应提供译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；原缺 applicability，已补 whole_record，仅整条记录匹配。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该代码独立出现，不与其它 H 系列代码合并或互译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:369",
+      "evidence_rows": [
+        25767
+      ],
+      "source_excerpt": "H2f",
+      "reason": "确认 H2f 是完整记录形式的内部状态/表情代码；补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 25767 原文仅为 H2f，记录完整，无叙事句。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不应提供译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；原缺 applicability，已补 whole_record，仅整条记录匹配。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该代码独立出现，不与其它 H 系列代码合并或互译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:370",
+      "evidence_rows": [
+        25780
+      ],
+      "source_excerpt": "H2g",
+      "reason": "确认 H2g 是完整记录形式的内部状态/表情代码；补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 25780 原文仅为 H2g，记录完整，无叙事句。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不应提供译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；原缺 applicability，已补 whole_record，仅整条记录匹配。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该代码独立出现，不与其它 H 系列代码合并或互译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:371",
+      "evidence_rows": [
+        25804
+      ],
+      "source_excerpt": "H2h",
+      "reason": "确认 H2h 是完整记录形式的内部状态/表情代码；补 whole_record 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 25804 原文仅为 H2h，记录完整，无叙事句。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不应提供译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类成立；原缺 applicability，已补 whole_record，仅整条记录匹配。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该代码独立出现，不与其它 H 系列代码合并或互译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:372",
+      "evidence_rows": [
+        25451,
+        25452
+      ],
+      "source_excerpt": "\\x01BI led a delegation of carls to renew their protest against the ever-increasing sacrifices to Malia.",
+      "reason": "确认 \\x01BI 是运行时人名占位符，独立句首与嵌入 'represented by …,' 均须原样保留；补 text 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 25452 句首及 25451 'represented by \\x01BI,' 均显示其为可代入人名/称谓的占位符，非可译词。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留控制序列，不翻译成人名或普通代词。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "运行标记分类成立；原缺作用域，已补 text 且大小写敏感，因 \\x01 控制字节使精确匹配安全。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一 \\x01BI 在两处用法一致，均保留原名占位，不随上下文拆译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:373",
+      "evidence_rows": [
+        25723,
+        25724
+      ],
+      "source_excerpt": "\\x01E\\x05 and \\x01E\\x04 arrived in the ritual ground soon after, horrified by what they had seen in the realm of the gods.",
+      "reason": "确认 \\x01E\\x04 是运行时人名占位符，与 \\x01E\\x05 并列出现；补 text 作用域，保留控制序列。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 25723 的 '\\x01E\\x05 and \\x01E\\x04 arrived...' 及 25724 同句变体均显示其为人名占位符，不能当普通文本翻译。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目原样保留控制序列。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "运行标记分类成立；原缺作用域，已补 text 且大小写敏感，精确匹配含控制字节的序列。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "\\x01E\\x04 在两处并列用法中保持一致，均保留代码，不译作姓名。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:362",
+    "non_translate:363",
+    "non_translate:364",
+    "non_translate:365",
+    "non_translate:366",
+    "non_translate:367",
+    "non_translate:368",
+    "non_translate:369",
+    "non_translate:370",
+    "non_translate:371",
+    "non_translate:372",
+    "non_translate:373"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

@@ -1,0 +1,256 @@
+{
+  "review_complete": true,
+  "review_summary": "复核 e1-e6：将 Ten Year Ring/ten-year ring 统一为“十年环”；God Time=神代、Other Side=彼界、Uralda’s Blessing=乌拉尔达的祝福、clan ring=氏族议事会；修正 e1 分类、e2 译名，以及 e3/e4 适用范围；f1-f4 均为拼写变体、别名或同义共用译名，无冲突。",
+  "acknowledged_findings": [
+    "F0375",
+    "F0376",
+    "F0377",
+    "F0378"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "category_path": "其他"
+      },
+      "reason": "Ten Year Ring 是英雄探索所取得的资格/成就，不是组织；保留专名“十年环”。",
+      "evidence_rows": [
+        937,
+        33077
+      ],
+      "table": "terms",
+      "index": 57
+    },
+    {
+      "patch": {
+        "recommended_translation": "十年环"
+      },
+      "reason": "与 Ten Year Ring 同族统一为“十年环”；本条仍指金臂环实物。",
+      "evidence_rows": [
+        23025,
+        23030
+      ],
+      "table": "terms",
+      "index": 602
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "God Time 为格洛兰萨神话时代专名；原文独立出现于 to the God Time、God Time secrets、God Time history。"
+        }
+      },
+      "reason": "原 literal_context 仅覆盖句末 'the God Time.'，不足以覆盖条目所列独立用法；改为大小写敏感正文术语匹配。",
+      "evidence_rows": [
+        948,
+        2433
+      ],
+      "table": "terms",
+      "index": 58
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "Other Side 指英雄探索前往的神话彼界；原文有 travel to the Other Side、visit the Other Side too often 等。"
+        }
+      },
+      "reason": "原 literal_context 仅覆盖句末 'the Other Side.'，不足以覆盖条目所列用法；改为大小写敏感正文术语匹配。",
+      "evidence_rows": [
+        947,
+        30153
+      ],
+      "table": "terms",
+      "index": 59
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:57",
+      "evidence_rows": [
+        937,
+        941,
+        33077
+      ],
+      "source_excerpt": "to earn our Ten Year Ring",
+      "reason": "核对专名形式、译名、分类及与同族变体的一致性。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "937 作 'to earn our Ten Year Ring'，941 作 'our right to the Ten Year Ring'，均为同一大写专名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“十年环”，与 ten-year ring 实体条目统一；33077 的 'earning the Ten Year Ring' 支持此名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原分类“组织”不符；937/941 表明它是英雄探索取得的资格/成就，33077 称赢得它即通关，故改为“其他”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同形 ten-year ring 变体统一译作“十年环”；本条为成就/资格用法，实体义另条处理。"
+        }
+      }
+    },
+    {
+      "ref": "terms:602",
+      "evidence_rows": [
+        23025,
+        23030,
+        23097
+      ],
+      "source_excerpt": "our ten-year ring",
+      "reason": "核对具体物品义、译名统一及分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "23030 称先知带来 'great golden armband... our ten-year ring'，23097 又称 'the golden armband he gave you'，确为具体指环。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由“十年之环”改为“十年环”，与 Ten Year Ring 同族统一；本条仍指金臂环实物。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "23030/23097 明示为金色臂环，归“物品”正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原与 Ten Year Ring 条目译名分歧，统一为“十年环”；语境以物品义使用，不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:58",
+      "evidence_rows": [
+        948,
+        2433,
+        33831
+      ],
+      "source_excerpt": "to the God Time.",
+      "reason": "核对神话时代专名、适用范围及与 Godtime 变体的一致性。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "948 有 'to the God Time.'、2433 有 'God Time secrets'，原 literal_context 仅匹配句末 'the God Time.' 过窄；改为大小写敏感 text。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译“神代”与 33831 'Before that was the God Time.' 的神话时代义相符，并与 Godtime 变体一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属神话时代/历史时期，归“其他”；33831 说明时间开始前为 God Time。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Godtime 变体同译“神代”，f1 为拼写变体共用译名，不构成冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:59",
+      "evidence_rows": [
+        947,
+        30153,
+        30154,
+        33100,
+        33435
+      ],
+      "source_excerpt": "travel to the Other Side",
+      "reason": "核对神话彼界专名、适用范围及与 Otherworld 变体的一致性。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "947 有 'travel to the Other Side'，30153 有 'visit the Other Side too often'，原 literal_context 仅覆盖句末形式；改为大小写敏感 text。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译“彼界”与 30153/30154 神灵所居彼岸义一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "33100 称 heroquests 是 'on the Other Side' 重演神话，属神域/地名，归“地名”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Otherworld 同译“彼界”，f2 为同一彼岸领域的不同写法；本条证据均指神话空间。"
+        }
+      }
+    },
+    {
+      "ref": "terms:64",
+      "evidence_rows": [
+        963,
+        2244,
+        26514,
+        33246,
+        33444
+      ],
+      "source_excerpt": "Uralda’s Blessing",
+      "reason": "核对英雄探索专名、译名、分类及与 Blessings of Uralda 变体的一致性。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "963 作 heroquest of “Uralda’s Blessing.”，2244 单独列名，33246 称其为可学习并执行的 myth/heroquest。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译“乌拉尔达的祝福”保留神名与祝福义；33444 说明其效果为增加牛群生育并减少牛病。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "33246/26514 表明它是英雄探索/神话名，不是普通技能，归“其他”合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Blessings of Uralda 变体同译“乌拉尔达的祝福”，f3 为同一英雄探索的别名/变体，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:68",
+      "evidence_rows": [
+        33567,
+        2050,
+        2231,
+        29616
+      ],
+      "source_excerpt": "choose a chief along with six other advisors for your clan ring",
+      "reason": "核对七人议事机构义、译名、分类及与 clan council 别称的一致性。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33567 说明由首领与六名顾问组成 clan ring；2050/2231 显示其为议事决策机构。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译“氏族议事会”准确表达七人顾问/决策机构，不按字面作“环”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属氏族领导与决策组织，归“组织”正确；29616 称缺员需七人。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 clan council 同译“氏族议事会”，f4 为同一议事机构的别称；本条 33567/29616 均指七人议事会。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:57",
+    "terms:602",
+    "terms:58",
+    "terms:59",
+    "terms:64",
+    "terms:68"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

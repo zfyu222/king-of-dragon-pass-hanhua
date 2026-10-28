@@ -1,0 +1,426 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 e1-e12 的四维审校；修正 e2 的 Lhankor Mhy 译名、e5 的 Lunars 译名与分类、e7/e12 的术语说明；f1 已核对 e10 与 e13 共享译名，按白衣女神称号并存，未发现需隔离或新增的条目。",
+  "acknowledged_findings": [
+    "F0387"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "兰科尔米的胡须",
+        "term_reason": "镶珠宝半面具；帮助律法讲述者解释法律先例，名称含神名兰科尔米。"
+      },
+      "reason": "按既有 Lhankor Mhy=兰科尔米 统一神名，避免兰科米尔/兰科米之须混用。",
+      "evidence_rows": [
+        1649,
+        32391
+      ],
+      "table": "terms",
+      "index": 98
+    },
+    {
+      "patch": {
+        "recommended_translation": "月民",
+        "category_path": "身份",
+        "term_reason": "月帝国一方、臣民或军队的称谓；与 Lunar thralls=月民奴隶 的月民一致，语境可指士兵或俘虏。"
+      },
+      "reason": "Lunars 指人群/军队而非组织；采用更统一的月民，并将分类改为身份。",
+      "evidence_rows": [
+        1758,
+        1759,
+        1760,
+        7345,
+        7515,
+        9587
+      ],
+      "table": "terms",
+      "index": 104
+    },
+    {
+      "patch": {
+        "term_reason": "凯罗芬山（Kero Fin）的别称；Great Earthshaker Temple 所在的山，原文也直接作为地图标签。"
+      },
+      "reason": "32178/33298/33419 明确 Wintertop 是 Kero Fin 的别称；补全术语说明并统一为冬顶。",
+      "evidence_rows": [
+        1753,
+        32178,
+        33298,
+        33419
+      ],
+      "table": "terms",
+      "index": 108
+    },
+    {
+      "patch": {
+        "term_reason": "原文孤立标签，指波尔约尼的马民/游牧马民。"
+      },
+      "reason": "2094 仅见 the Poljoni Horse Nomads，未给 Derik Poljoni 关系；删除未证关联。",
+      "evidence_rows": [
+        2094
+      ],
+      "table": "terms",
+      "index": 127
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:90",
+      "evidence_rows": [
+        1622,
+        1623,
+        30519
+      ],
+      "source_excerpt": "Pathfinder blessing",
+      "reason": "Vinga 提供的祝福；两候选仅‘寻路者祝福/寻路祝福’差异，采用保留 Pathfinder 名词感的译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1622/1623 作 the Pathfinder blessing；30519 作 her Pathfinder blessing。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "寻路者祝福对应 Pathfinder blessing，保留祝福名称；与 Pathfinder=寻路者一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为 Vinga 的祝福/探索机制，category_path 其他合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各证据均指同一祝福，推荐译名统一；未采用省略‘者’的简式。"
+        }
+      }
+    },
+    {
+      "ref": "terms:98",
+      "evidence_rows": [
+        1649,
+        32391
+      ],
+      "source_excerpt": "Beard of Lhankor Mhy",
+      "reason": "1649 明言是镶珠宝半面具并助律法讲述者；32391 为同一物品标签；修正 Lhankor Mhy 标准译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1649 作 the Beard of Lhankor Mhy；32391 标签为 Beard of Lhankor Mhy。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译兰科米尔的胡须误合 Lhankor Mhy；按既有神名兰科尔米改为兰科尔米的胡须。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1649 明言 treasure/jewelled half-mask，归物品正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "32391 与 1649 同一物品；统一为兰科尔米的胡须，消除兰科米尔/兰科米之须变体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:102",
+      "evidence_rows": [
+        1731,
+        1733
+      ],
+      "source_excerpt": "Chaotic Red Empire",
+      "reason": "两行均指征服 Tarsh 先民北方家园的混沌红帝国。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1731/1733 均作 the Chaotic Red Empire。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "混沌红帝国逐词对应且专名顺序自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "为征服者政权/帝国专名，归组织正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两行同一专名，无变体；混沌/帝国词根一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:103",
+      "evidence_rows": [
+        1744,
+        1746,
+        1753,
+        7273,
+        7296,
+        7485,
+        7478,
+        9010
+      ],
+      "source_excerpt": "Lunar Empire",
+      "reason": "多行均指北方月帝国；与月民/月帝国军队区分。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1744/1746/1753/7273/7296/9010 作 Lunar Empire；7485/7478 也指月帝国难民来源。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "统一译月帝国，与月民/月帝国军队区分。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "帝国政权专名，归组织正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各证据均同一帝国；Lunar Empire 保持月帝国，Lunars 另作月民。"
+        }
+      }
+    },
+    {
+      "ref": "terms:104",
+      "evidence_rows": [
+        1758,
+        1759,
+        1760,
+        7345,
+        7515,
+        9587
+      ],
+      "source_excerpt": "Lunars",
+      "reason": "Lunars 指月帝国一方/军队或俘虏；采用月民并改为身份分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1758-1760、7345、7515、9587 均以 Lunars 指月帝国一方、军队或俘虏。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译月帝国人冗长；9587 候选作月民，且与 Lunar thralls=月民奴隶 的既有词根一致，改为月民。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "Lunars 是人群/军队称谓而非组织；由组织改为身份。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一月民，与 Lunar Empire=月帝国、Lunar thralls=月民奴隶 保持词根关系，不采用月帝国人/种族分类。"
+        }
+      }
+    },
+    {
+      "ref": "terms:107",
+      "evidence_rows": [
+        1753,
+        1754
+      ],
+      "source_excerpt": "Great Earthshaker Temple",
+      "reason": "Varstapoor 升任该神殿不朽守护者；两行同名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1753/1754 均作 the Great Earthshaker Temple in Wintertop。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "大地震者大神殿保留 Great/Earthshaker/Temple 专名结构。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具体神殿所在地，归地名正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两行同一名称；与 Wintertop 同现，地点关系一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:108",
+      "evidence_rows": [
+        1753,
+        1754,
+        29196,
+        32178,
+        33298,
+        33419
+      ],
+      "source_excerpt": "Wintertop",
+      "reason": "Wintertop 是 Kero Fin 的别称，也是 Great Earthshaker Temple 所在山；统一冬顶并补全说明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1753/1754 称 Temple in Wintertop；29196 地图标签；32178/33298/33419 说明其为 Kero Fin 别称。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "统一译冬顶；33419 候选冬巅不采用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "山名/地图地名，归地名正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "32178/33298/33419 均指 Kero Fin 的别称，采纳冬顶并补全 term_reason；消除冬巅变体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:115",
+      "evidence_rows": [
+        1781,
+        32495
+      ],
+      "source_excerpt": "Veil of Chalana Arroy",
+      "reason": "能安抚复仇欲望的面纱；两行同一物品。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1781 作 the Veil of Chalana Arroy；32495 标签为 Veil of Chalana Arroy。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "查拉娜阿罗伊的面纱保留神名与所属关系，与 Chalana Arroy 译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1781 明言 treasure，归物品正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两行同一物品；采用带‘的’的完整物品名，未采用无‘的’标签简式。"
+        }
+      }
+    },
+    {
+      "ref": "terms:123",
+      "evidence_rows": [
+        1848,
+        2205,
+        23773,
+        23776,
+        32044
+      ],
+      "source_excerpt": "Mount Kero Fin",
+      "reason": "氏族探险/朝圣目的地；多行均指同一圣山。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1848/2205/23773/23776/32044 均作 Mount Kero Fin。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "凯罗芬山准确对应 Mount Kero Fin，符合地名后缀。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "山名/朝圣地，归地名正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各条均指同一圣山；与 Wintertop 别称关系另见 e7。"
+        }
+      }
+    },
+    {
+      "ref": "terms:124",
+      "evidence_rows": [
+        1880
+      ],
+      "source_excerpt": "White-Clad Goddess",
+      "reason": "探险队有人受伤无人死亡，向 White-Clad Goddess 致谢；译白衣女神保留称号。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1880 作 the White-Clad Goddess，为致谢对象。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "白衣女神保留 White-Clad 的字面称号感；未见需改译的语境。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神祇称号，归其他合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "共享译名已在 f1 核对：与 White Goddess 的‘白衣女神’语境不同但均作称号，未显示需区分实体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:125",
+      "evidence_rows": [
+        1889,
+        2445
+      ],
+      "source_excerpt": "Yelm the Bad Emperor",
+      "reason": "Horse-Spawn 崇拜的 Orlanth 敌人；采用耶尔姆音译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1889/2445 均作 Yelm the Bad Emperor，指 Horse-Spawn 崇拜的 Orlanth 敌人。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "恶帝耶尔姆保留 Bad Emperor 称号与 Yelm 音译；采用耶尔姆而非伊尔姆。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神祇称号，归其他合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "1889/2445 指同一神；保留耶尔姆，伊尔姆仅为候选变体，不作为标准。"
+        }
+      }
+    },
+    {
+      "ref": "terms:127",
+      "evidence_rows": [
+        2094
+      ],
+      "source_excerpt": "Poljoni Horse Nomads",
+      "reason": "2094 为孤立标签，指波尔约尼的马民/游牧马民；原文未给 Derik Poljoni 关系。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2094 仅作 the Poljoni Horse Nomads，为孤立标签。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "波尔约尼游牧马民对应 Poljoni + Horse Nomads，保留专名与人群描述。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指部族/人群，归种族合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原文未给 Derik Poljoni 关系；已改 term_reason 去除未证关联，仅保留标签所示人群。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:90",
+    "terms:98",
+    "terms:102",
+    "terms:103",
+    "terms:104",
+    "terms:107",
+    "terms:108",
+    "terms:115",
+    "terms:123",
+    "terms:124",
+    "terms:125",
+    "terms:127"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

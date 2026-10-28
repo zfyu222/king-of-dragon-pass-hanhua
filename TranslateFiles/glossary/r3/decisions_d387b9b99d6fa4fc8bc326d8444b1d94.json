@@ -1,0 +1,341 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1–e12 的原文、译名、分类与一致性；e10/e11 的 Western Gates 与 Gates of the West 为同一西方门户的异名，共用“西方之门”合理，未发现需修订或隔离的条目。",
+  "acknowledged_findings": [
+    "F0430"
+  ],
+  "edits": [],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:1130",
+      "evidence_rows": [
+        33447
+      ],
+      "source_excerpt": "Mythic Hint",
+      "reason": "Mythic Hint 为英雄探索界面按钮，译名“神话提示”简洁且与原文功能一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第33447行原文出现“Mythic Hint button”，用于查看最匹配的神话选项。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“神话提示”保留按钮短标签特征，准确传达 hint 的提示义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属界面机制/按钮名，归入“其他”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无相反译名，game_term 用法一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1135",
+      "evidence_rows": [
+        33476
+      ],
+      "source_excerpt": "Sun Defender",
+      "reason": "Sun Defender 为可侍奉的神祇称号，指向 Elmal；“太阳守卫者”作为称号译名可成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第33476行将 Sun Defender 与 Earth Mother 并列为可侍奉的神祇，指 Elmal 的称号。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“太阳守卫者”作为神祇称号，语义与 Sun Defender 对应。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "称号/身份类专名，归入“身份”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批未出现冲突译名；与 Sun/Elmal 语境不矛盾。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1136",
+      "evidence_rows": [
+        33593
+      ],
+      "source_excerpt": "Ernaldan",
+      "reason": "Ernaldan 指信奉 Ernalda 的酋长身份，译名“厄纳尔达信徒”与该身份相符。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第33593行“an Ernaldan chief”指信奉 Ernalda 的酋长，Ernaldan 为由神名派生的身份词。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“厄纳尔达信徒”表达其信奉厄纳尔达的身份，可作定语使用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "宗教身份/归属，归入“身份”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与神名 Ernalda 的音译“厄纳尔达”保持一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1138",
+      "evidence_rows": [
+        33640
+      ],
+      "source_excerpt": "KoDP uses Goods as an abstraction",
+      "reason": "Goods 是超出氏族基本所需的有价值物资资源；“货物”作为资源短名可用，且 applicability 限定在特定字面语境。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第33640行明确“uses Goods as an abstraction”，Goods 是超出氏族基本所需的有价值物资资源。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“货物”作为游戏资源短名，能表达可交易/有价值的物资义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "游戏资源，归入“物品”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "applicability 限定为“uses Goods as an abstraction”字面语境，避免波及普通 goods。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1143",
+      "evidence_rows": [
+        34119
+      ],
+      "source_excerpt": "The Return",
+      "reason": "“The Return”是英雄探索阶段标题；“归返”保留标题的凝练与回归义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第34119行仅有标题“The Return”，属英雄探索阶段标题。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“归返”保留标题的凝练与回归义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "阶段标题，归入“其他”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同名冲突；作为标题使用不与其他普通 return 混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1144",
+      "evidence_rows": [
+        34121
+      ],
+      "source_excerpt": "At last they reached the western land, Luathela.",
+      "reason": "Luathela 是光使者渡海抵达的西方陆地；“卢阿塞拉”为可用音译地名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第34121行“the western land, Luathela”说明 Luathela 是西方陆地。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“卢阿塞拉”为音译地名，与 Luatha 的“卢阿萨族”族名可区分。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名，归入“地名”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批 Luathela 地名用名一致，无冲突译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1145",
+      "evidence_rows": [
+        34124
+      ],
+      "source_excerpt": "a race of demigods called the Luatha",
+      "reason": "Luatha 是居住于 Luathela 的半神种族；“卢阿萨族”作为族名译法清楚。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第34124行称 Luatha 为“a race of demigods”，是诸小神后代并具魔法能力。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“卢阿萨族”明确表达族属，符合种族名长度与风格。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族名，归入“种族”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Luathela 的“卢阿塞拉”共享词根但区分族名/地名，合理。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1147",
+      "evidence_rows": [
+        34121
+      ],
+      "source_excerpt": "the Old Man of the Sea",
+      "reason": "Old Man of the Sea 是海中长者/神性存在；“海老人”作为称号简洁可读。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第34121行“Eurmal convinced the Old Man of the Sea that they were kinsmen”表明其为海中存在。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“海老人”保留称号的简短形式，未添加原文没有的身份说明。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神性称号/身份，归入“身份”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无冲突译名，作为称号使用一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1148",
+      "evidence_rows": [
+        34121
+      ],
+      "source_excerpt": "Golod, the King of Fishes",
+      "reason": "King of Fishes 是 Golod 的称号；“鱼王”与其本名并用不冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第34121行“Golod, the King of Fishes”明确该称号指向 Golod。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“鱼王”简洁对应 King of Fishes，适合称号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "称号/身份，归入“身份”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Golod 本名并用，无译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1149",
+      "evidence_rows": [
+        34127
+      ],
+      "source_excerpt": "Rausa, goddess of the Western Gates",
+      "reason": "Western Gates 是劳萨掌管的西方门户；“西方之门”为地名化译法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第34127行“Rausa, goddess of the Western Gates”说明 Western Gates 是劳萨掌管的门户。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“西方之门”保留 Gates 的门户义，作为地名简洁明确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地点/门户名，归入“地名”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "第34127行同段同时出现 Western Gates 与 Gates of the West，均指同一西方门户，共用“西方之门”合理。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1150",
+      "evidence_rows": [
+        34130
+      ],
+      "source_excerpt": "through the Gates of the West",
+      "reason": "Gates of the West 与 Western Gates 同指西方门户；“西方之门”作为统一译名合理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第34130行“through the Gates of the West”指奥兰斯要求穿过的西方门户。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“西方之门”准确表达 Gates of the West 的门户义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地点/门户名，归入“地名”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该异名沿用同一西方门户的统一译名，未产生新译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1152",
+      "evidence_rows": [
+        34102
+      ],
+      "source_excerpt": "the trail led to Sorcerer's Town",
+      "reason": "Sorcerer's Town 是光使者一行抵达的地点；“巫师镇”为简洁地名译法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第34102行“the trail led to Sorcerer's Town”表明其为事件发生地点。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“巫师镇”保留 Sorcerer 与 Town 的核心义，适合短地名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名，归入“地名”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无冲突译名，专名译法统一。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:1130",
+    "terms:1135",
+    "terms:1136",
+    "terms:1138",
+    "terms:1143",
+    "terms:1144",
+    "terms:1145",
+    "terms:1147",
+    "terms:1148",
+    "terms:1149",
+    "terms:1150",
+    "terms:1152"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

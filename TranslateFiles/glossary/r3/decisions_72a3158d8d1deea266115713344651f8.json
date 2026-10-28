@@ -1,0 +1,533 @@
+{
+  "review_complete": true,
+  "review_summary": "复核 e1-e12 全部 non_translate 条目：网址、社交账号和 H/Q 类短标识均按原文保留；为 e1、e3-e12 补齐 whole_record 适用范围，为 e2 补齐基于真实上下文的 literal_context，未发现需要翻译或隔离的普通正文。",
+  "acknowledged_findings": [
+    "F0240",
+    "F0241",
+    "F0243",
+    "F0244",
+    "F0245",
+    "F0246",
+    "F0247",
+    "F0248",
+    "F0249",
+    "F0250"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 33065 仅为该完整网址，无嵌入用例；仅保护完整记录，避免误改链接。"
+        }
+      },
+      "reason": "为完整网址补齐明确适用范围。",
+      "evidence_rows": [
+        33065
+      ],
+      "table": "non_translate",
+      "index": 337
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "Twitter ",
+          "suffix": ".",
+          "reason": "记录 33087 中该账号以“Twitter @KingDragonPass.”形式出现；仅保留此紧邻上下文中的账号串。"
+        }
+      },
+      "reason": "账号句柄嵌在句子中，需限定实际上下文而非全局禁翻。",
+      "evidence_rows": [
+        33087
+      ],
+      "table": "non_translate",
+      "index": 340
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 25487 仅为短标识符 H1a，无嵌入用例；按完整记录保留。"
+        }
+      },
+      "reason": "补齐短标识符的完整记录级适用范围。",
+      "evidence_rows": [
+        25487
+      ],
+      "table": "non_translate",
+      "index": 351
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 25500 仅为短标识符 H1b，无嵌入用例；按完整记录保留。"
+        }
+      },
+      "reason": "补齐短标识符的完整记录级适用范围。",
+      "evidence_rows": [
+        25500
+      ],
+      "table": "non_translate",
+      "index": 352
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 25510 仅为短标识符 H1c，无嵌入用例；按完整记录保留。"
+        }
+      },
+      "reason": "补齐短标识符的完整记录级适用范围。",
+      "evidence_rows": [
+        25510
+      ],
+      "table": "non_translate",
+      "index": 354
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 25513 仅为短标识符 Q4Danger，无嵌入用例；按完整记录保留，不拆译 Danger。"
+        }
+      },
+      "reason": "补齐含普通词的短标识符适用范围，避免误译其内部词。",
+      "evidence_rows": [
+        25513
+      ],
+      "table": "non_translate",
+      "index": 355
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 25537 仅为短标识符 H1d，无嵌入用例；按完整记录保留。"
+        }
+      },
+      "reason": "补齐短标识符的完整记录级适用范围。",
+      "evidence_rows": [
+        25537
+      ],
+      "table": "non_translate",
+      "index": 356
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 25583 仅为短标识符 H1e，无嵌入用例；按完整记录保留。"
+        }
+      },
+      "reason": "补齐短标识符的完整记录级适用范围。",
+      "evidence_rows": [
+        25583
+      ],
+      "table": "non_translate",
+      "index": 357
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 25585 仅为短标识符 Q1Hopeful，无嵌入用例；按完整记录保留，不拆译 Hopeful。"
+        }
+      },
+      "reason": "补齐含普通词的短标识符适用范围，避免误译其内部词。",
+      "evidence_rows": [
+        25585
+      ],
+      "table": "non_translate",
+      "index": 358
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 25597 仅为短标识符 H1f，无嵌入用例；按完整记录保留。"
+        }
+      },
+      "reason": "补齐短标识符的完整记录级适用范围。",
+      "evidence_rows": [
+        25597
+      ],
+      "table": "non_translate",
+      "index": 359
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 25601 仅为短标识符 H1fc，无嵌入用例；按完整记录保留。"
+        }
+      },
+      "reason": "补齐短标识符的完整记录级适用范围。",
+      "evidence_rows": [
+        25601
+      ],
+      "table": "non_translate",
+      "index": 360
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 25617 仅为短标识符 H1g，无嵌入用例；按完整记录保留。"
+        }
+      },
+      "reason": "补齐短标识符的完整记录级适用范围。",
+      "evidence_rows": [
+        25617
+      ],
+      "table": "non_translate",
+      "index": 361
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:337",
+      "evidence_rows": [
+        33065
+      ],
+      "source_excerpt": "http://twitter.com/KingDragonPass",
+      "reason": "保留完整网址并限定为完整记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 33065 的原文与该条 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，无需翻译，保留原始网址。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "完整网址属于需原样保留的外部链接，归入 non_translate。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 applicability=whole_record；与 e2 的 KingDragonPass 账号标识一致保留，不拆译品牌串。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:340",
+      "evidence_rows": [
+        33087
+      ],
+      "source_excerpt": "@KingDragonPass",
+      "reason": "保留账号句柄并限定于 Twitter 后的实际上下文。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 33087 的原文含“Twitter @KingDragonPass.”，账号串逐字一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，账号句柄不翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "@ 开头的社交账号句柄属于需原样保留的品牌账号标识。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 literal_context：prefix“Twitter ”、suffix“.”；与 e1 同保留 KingDragonPass。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:351",
+      "evidence_rows": [
+        25487
+      ],
+      "source_excerpt": "H1a",
+      "reason": "保留短标识符并限定为完整记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 25487 的原文为 H1a，与 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 短标识符，无译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "由大写字母和数字组成的独立短标识，按标识符保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 applicability=whole_record；与 e4-e12 同类短标识均按完整记录保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:352",
+      "evidence_rows": [
+        25500
+      ],
+      "source_excerpt": "H1b",
+      "reason": "保留短标识符并限定为完整记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 25500 的原文为 H1b，与 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 短标识符，无译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "由大写字母和数字组成的独立短标识，按标识符保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 applicability=whole_record；与 e3、e5-e12 同类短标识均按完整记录保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:354",
+      "evidence_rows": [
+        25510
+      ],
+      "source_excerpt": "H1c",
+      "reason": "保留短标识符并限定为完整记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 25510 的原文为 H1c，与 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 短标识符，无译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "由大写字母和数字组成的独立短标识，按标识符保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 applicability=whole_record；与 e3-e4、e6-e12 同类短标识均按完整记录保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:355",
+      "evidence_rows": [
+        25513
+      ],
+      "source_excerpt": "Q4Danger",
+      "reason": "保留完整短标识符，避免把内部 Danger 当作正文翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 25513 的原文为 Q4Danger，与 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 标识符整体保留，无译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "字母数字组合且独立成条，按整体标识符保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 applicability=whole_record；与同类 Q/H 短标识均不拆译内部成分。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:356",
+      "evidence_rows": [
+        25537
+      ],
+      "source_excerpt": "H1d",
+      "reason": "保留短标识符并限定为完整记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 25537 的原文为 H1d，与 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 短标识符，无译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "由大写字母和数字组成的独立短标识，按标识符保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 applicability=whole_record；与 e3-e6、e8-e12 同类短标识均按完整记录保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:357",
+      "evidence_rows": [
+        25583
+      ],
+      "source_excerpt": "H1e",
+      "reason": "保留短标识符并限定为完整记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 25583 的原文为 H1e，与 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 短标识符，无译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "由大写字母和数字组成的独立短标识，按标识符保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 applicability=whole_record；与 e3-e7、e9-e12 同类短标识均按完整记录保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:358",
+      "evidence_rows": [
+        25585
+      ],
+      "source_excerpt": "Q1Hopeful",
+      "reason": "保留完整短标识符，避免把内部 Hopeful 当作正文翻译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 25585 的原文为 Q1Hopeful，与 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 标识符整体保留，无译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "字母数字组合且独立成条，按整体标识符保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 applicability=whole_record；与 e6 等 Q/H 短标识均不拆译内部成分。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:359",
+      "evidence_rows": [
+        25597
+      ],
+      "source_excerpt": "H1f",
+      "reason": "保留短标识符并限定为完整记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 25597 的原文为 H1f，与 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 短标识符，无译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "由大写字母和数字组成的独立短标识，按标识符保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 applicability=whole_record；与 e3-e9、e11-e12 同类短标识均按完整记录保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:360",
+      "evidence_rows": [
+        25601
+      ],
+      "source_excerpt": "H1fc",
+      "reason": "保留短标识符并限定为完整记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 25601 的原文为 H1fc，与 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 短标识符，无译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "由大写字母和数字组成的独立短标识，按标识符保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 applicability=whole_record；与 e3-e10、e12 同类短标识均按完整记录保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:361",
+      "evidence_rows": [
+        25617
+      ],
+      "source_excerpt": "H1g",
+      "reason": "保留短标识符并限定为完整记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 25617 的原文为 H1g，与 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 短标识符，无译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "由大写字母和数字组成的独立短标识，按标识符保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 applicability=whole_record；与 e3-e11 同类短标识均按完整记录保留。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:337",
+    "non_translate:340",
+    "non_translate:351",
+    "non_translate:352",
+    "non_translate:354",
+    "non_translate:355",
+    "non_translate:356",
+    "non_translate:357",
+    "non_translate:358",
+    "non_translate:359",
+    "non_translate:360",
+    "non_translate:361"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

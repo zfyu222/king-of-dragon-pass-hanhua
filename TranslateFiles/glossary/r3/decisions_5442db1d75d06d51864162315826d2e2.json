@@ -1,0 +1,385 @@
+{
+  "review_complete": true,
+  "review_summary": "已审校 e1-e12：保留神话故事标题及 Great Darkness 的稳定译名；修正 e6 漏译 His、e10 将 Sacred Way 误归地名、e12 将定语 Praxian 误作“普拉克斯人”的问题；核对 f1、f2 后分别以拆分单复数用法、确认同指灾厄期处理。",
+  "acknowledged_findings": [
+    "F0379",
+    "F0390"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "奥兰斯赠予他的战团武士"
+      },
+      "reason": "原文 His War-Thanes 含物主代词，原译漏“他的”；补出以保持故事标题语义完整。",
+      "evidence_rows": [
+        2288
+      ],
+      "table": "terms",
+      "index": 172
+    },
+    {
+      "patch": {
+        "category_path": "其他",
+        "term_reason": "聆听或传述神话的圣道/仪式语境，原文有 listening to a tale in the Sacred Way；非地理地名。"
+      },
+      "reason": "2209/2260 的 in the Sacred Way 指聆听神话的圣道/仪式语境，不是地理地名，改归“其他”。",
+      "evidence_rows": [
+        2209,
+        2260
+      ],
+      "table": "terms",
+      "index": 177
+    },
+    {
+      "patch": {
+        "recommended_translation": "普拉克斯",
+        "category_path": "种族",
+        "term_reason": "原文三处均作定语（Praxian foe/tribes/hero），指普拉克斯地区族群；单数定语译“普拉克斯”，复数名词 Praxians 另译“普拉克斯人”。"
+      },
+      "reason": "2259/2267/13973 中 Praxian 均作定语，译“普拉克斯人”会形成“普拉克斯人部族/英雄/敌人”；改“普拉克斯”并归族群“种族”，与复数 Praxians“普拉克斯人”区分。",
+      "evidence_rows": [
+        2259,
+        2267,
+        13973
+      ],
+      "table": "terms",
+      "index": 179
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:166",
+      "evidence_rows": [
+        2353
+      ],
+      "source_excerpt": "How Elmal Lit the Way",
+      "reason": "标题、译名与分类核对无误。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2353 的故事列表逐字含“How Elmal Lit the Way”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“How Elmal Lit the Way”译“埃尔马尔如何照亮道路”，Elmal 与“照亮道路”均对应。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神话故事标题归“其他”，proper_name/required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Elmal 与 term_families 中 e22“埃尔马尔”统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:168",
+      "evidence_rows": [
+        2353
+      ],
+      "source_excerpt": "Elmal Finds the Horses",
+      "reason": "标题、译名与分类核对无误。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2353 的故事列表逐字含“Elmal Finds the Horses”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Elmal Finds the Horses”译“埃尔马尔找到马群”，复数 Horses 译为“马群”自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神话故事标题归“其他”，proper_name/required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Elmal 与 e22“埃尔马尔”统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:169",
+      "evidence_rows": [
+        2353
+      ],
+      "source_excerpt": "Orlanth Makes the Corpse-Road",
+      "reason": "标题、译名与分类核对无误。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2353 的故事列表逐字含“Orlanth Makes the Corpse-Road”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Orlanth Makes the Corpse-Road”译“奥兰斯开辟尸骨之路”，动作与道路名对应。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神话故事标题归“其他”，proper_name/required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Orlanth 与 e21“奥兰斯”统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:170",
+      "evidence_rows": [
+        2353
+      ],
+      "source_excerpt": "Vinga the Subtracter",
+      "reason": "称号、译名与分类核对无误。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2353 的故事列表逐字含“Vinga the Subtracter”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Vinga the Subtracter”译“削减者温加”，称号与神名对应。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神话故事标题归“其他”，proper_name/required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Vinga 与 e18“温加”统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:171",
+      "evidence_rows": [
+        2288
+      ],
+      "source_excerpt": "Eurmal Steals The Wheat",
+      "reason": "标题、译名与分类核对无误。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2288 的秘密故事列表逐字含“Eurmal Steals The Wheat”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Eurmal Steals The Wheat”译“欧尔马尔偷小麦”，专名与动作对应。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "秘密故事标题归“其他”，proper_name/required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Eurmal 与 e15“欧尔马尔”统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:172",
+      "evidence_rows": [
+        2288
+      ],
+      "source_excerpt": "Orlanth Gifts His War-Thanes",
+      "reason": "补出 His，保持标题完整。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2288 的秘密故事列表逐字含“Orlanth Gifts His War-Thanes”。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原文含 His War-Thanes，原译漏“他的”；补为“奥兰斯赠予他的战团武士”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "秘密故事标题归“其他”，proper_name/required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Orlanth 与 e21“奥兰斯”一致；War-Thanes 作复合称号译“战团武士”，与 thanes 的“贵族”允许语境差异。"
+        }
+      }
+    },
+    {
+      "ref": "terms:173",
+      "evidence_rows": [
+        2288
+      ],
+      "source_excerpt": "Dancing With the Dark Tribe",
+      "reason": "标题、译名与分类核对无误。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2288 的秘密故事列表逐字含“Dancing With the Dark Tribe”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Dancing With the Dark Tribe”译“与黑暗部族共舞”，介词与部族名对应。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "秘密故事标题归“其他”，proper_name/required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Dark Tribe 与 Dark Woman 为不同专名，不混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:175",
+      "evidence_rows": [
+        2288
+      ],
+      "source_excerpt": "Ernalda Watches Young Orlanth Bathing",
+      "reason": "标题、译名与分类核对无误。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2288 的秘密故事列表逐字含“Ernalda Watches Young Orlanth Bathing”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Ernalda Watches Young Orlanth Bathing”译“厄纳尔达观看年轻的奥兰斯沐浴”，人物与动作对应。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "秘密故事标题归“其他”，proper_name/required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Ernalda、Orlanth 分别与 e24、e21 的译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:176",
+      "evidence_rows": [
+        2288
+      ],
+      "source_excerpt": "The Seduction of the Fire Tribe Women",
+      "reason": "标题、译名与分类核对无误。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2288 的秘密故事列表逐字含“The Seduction of the Fire Tribe Women”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“The Seduction of the Fire Tribe Women”译“引诱火部族女子”，名词化标题可成立。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "秘密故事标题归“其他”，proper_name/required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Fire Tribe 为描述性部族名，未发现同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:177",
+      "evidence_rows": [
+        2209,
+        2260
+      ],
+      "source_excerpt": "listening to the story in the Sacred Way.",
+      "reason": "按仪式语境修正分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2260 逐字含“listening to the story in the Sacred Way.”；2209 同短语支持。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Sacred Way”译“神圣之路”，保留圣道/路径意象，未误作普通道路。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文 in the Sacred Way 是聆听神话的圣道/仪式语境，非地理地名，改归“其他”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Sacred Time（e25）共享 Sacred 但为不同概念，不混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:178",
+      "evidence_rows": [
+        3264
+      ],
+      "source_excerpt": "When the Great Darkness came, all seemed lost.",
+      "reason": "灾厄期专名与译名核对无误。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3264 逐字含“Great Darkness”，且本条目其余出处均作同一神话灾厄期使用。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“大黑暗”为神话灾厄期的通行译名，保留专名感。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神话时代/灾厄归“其他”，game_term/required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f2 中 the Darkness 与此条同指该灾厄期，共用“大黑暗”可接受；未误并其他词。"
+        }
+      }
+    },
+    {
+      "ref": "terms:179",
+      "evidence_rows": [
+        2259,
+        2267,
+        13973
+      ],
+      "source_excerpt": "the terrible Praxian hero Jaldon Goldentooth",
+      "reason": "修正定语译法与族群分类，解决 f1。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2259、2267、13973 均含 Praxian，且均作定语修饰 foe/tribes/hero。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“普拉克斯人”在“Praxian tribes/hero/foe”中搭配生硬；改“普拉克斯”，保留族群定语义。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文指普拉克斯族群及其定语用法，由“身份”改“种族”，与 e13 Praxians 的族群义一致。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "f1 中与 e13 共用译名已拆分：单数定语用“普拉克斯”，复数名词 Praxians 用“普拉克斯人”，避免混用。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:166",
+    "terms:168",
+    "terms:169",
+    "terms:170",
+    "terms:171",
+    "terms:172",
+    "terms:173",
+    "terms:175",
+    "terms:176",
+    "terms:177",
+    "terms:178",
+    "terms:179"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

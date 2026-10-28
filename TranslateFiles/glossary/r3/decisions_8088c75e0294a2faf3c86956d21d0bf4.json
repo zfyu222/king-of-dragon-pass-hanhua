@@ -1,0 +1,455 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 12 个角色专名条目，保留全部条目。修正 e12 译名中的间隔号以符合风格，并按原文收窄 e1、e2/e3、e4-e9、e12 的 term_reason，去除无本批原文依据的剧情或用途断言；未发现需隔离或新增项。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "Kitori 的英雄，曾从神域取回 Band of One Hundred；Kallyr 提议前去与他战斗并夺取该物。"
+      },
+      "reason": "原 term_reason 中的『同归于尽』无本批原文依据，按 17598/17600 修正。",
+      "evidence_rows": [
+        17598,
+        17600
+      ],
+      "table": "characters",
+      "index": 138
+    },
+    {
+      "patch": {
+        "term_reason": "原文 \\x02\\x03Nallindia/Alarandra/Astella\\x02 中的女性人名候选，用作女子名。"
+      },
+      "reason": "原文仅见名称列表，无 Heortland 女子语境，删去未证实的范围。",
+      "evidence_rows": [
+        18569
+      ],
+      "table": "characters",
+      "index": 142
+    },
+    {
+      "patch": {
+        "term_reason": "原文 \\x02\\x03Nallindia/Alarandra/Astella\\x02 中的女性人名候选，用作女子名。"
+      },
+      "reason": "原文仅见名称列表，无 Heortland 女子语境，删去未证实的范围。",
+      "evidence_rows": [
+        18569
+      ],
+      "table": "characters",
+      "index": 143
+    },
+    {
+      "patch": {
+        "term_reason": "原文 \\x02\\x06Brolli/Genedros/Harli/Tastanim/Vostor/Yend\\x02 中的男性人名候选，用作男子名。"
+      },
+      "reason": "原文仅见名称列表，无 Tarsh 商人语境，删去未证实的范围。",
+      "evidence_rows": [
+        18800
+      ],
+      "table": "characters",
+      "index": 144
+    },
+    {
+      "patch": {
+        "term_reason": "原文 \\x02\\x06Brolli/Genedros/Harli/Tastanim/Vostor/Yend\\x02 中的男性人名候选，用作男子名。"
+      },
+      "reason": "原文仅见名称列表，无 Tarsh 商人语境，删去未证实的范围。",
+      "evidence_rows": [
+        18800
+      ],
+      "table": "characters",
+      "index": 145
+    },
+    {
+      "patch": {
+        "term_reason": "原文 \\x02\\x06Brolli/Genedros/Harli/Tastanim/Vostor/Yend\\x02 中的男性人名候选，用作男子名。"
+      },
+      "reason": "原文仅见名称列表，无 Tarsh 商人语境，删去未证实的范围。",
+      "evidence_rows": [
+        18800
+      ],
+      "table": "characters",
+      "index": 146
+    },
+    {
+      "patch": {
+        "term_reason": "原文 \\x02\\x06Brolli/Genedros/Harli/Tastanim/Vostor/Yend\\x02 中的男性人名候选，用作男子名。"
+      },
+      "reason": "原文仅见名称列表，无 Tarsh 商人语境，删去未证实的范围。",
+      "evidence_rows": [
+        18800
+      ],
+      "table": "characters",
+      "index": 147
+    },
+    {
+      "patch": {
+        "term_reason": "原文 \\x02\\x06Brolli/Genedros/Harli/Tastanim/Vostor/Yend\\x02 中的男性人名候选，用作男子名。"
+      },
+      "reason": "原文仅见名称列表，无 Tarsh 商人语境，删去未证实的范围。",
+      "evidence_rows": [
+        18800
+      ],
+      "table": "characters",
+      "index": 148
+    },
+    {
+      "patch": {
+        "term_reason": "原文 \\x02\\x06Brolli/Genedros/Harli/Tastanim/Vostor/Yend\\x02 中的男性人名候选，用作男子名。"
+      },
+      "reason": "原文仅见名称列表，无 Tarsh 商人语境，删去未证实的范围。",
+      "evidence_rows": [
+        18800
+      ],
+      "table": "characters",
+      "index": 149
+    },
+    {
+      "patch": {
+        "recommended_translation": "豪伯克乔恩",
+        "term_reason": "原文称其为部族联合推举的战争领袖；另一句提到他可同意与 Telmori 议和。"
+      },
+      "reason": "按风格去除音译间隔号；term_reason 依 21575/21583 限定为战争领袖与议和语境。",
+      "evidence_rows": [
+        21575,
+        21583
+      ],
+      "table": "characters",
+      "index": 154
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:138",
+      "evidence_rows": [
+        17598,
+        17600
+      ],
+      "source_excerpt": "Warlan Darkbreath",
+      "reason": "原文明确 Warlan Darkbreath 是 Kitori 英雄，男性；译名沃兰暗息无间隔号，term_reason 已删去无原文依据的『同归于尽』。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "17598/17600 均称 Warlan Darkbreath 为 Kitori 英雄，且 Kallyr 要与他战斗并夺取 Band of One Hundred。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "沃兰暗息采用音译加意译，符合专名且不使用间隔号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、proper_name、男性，与原文男性英雄一致。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未见同形冲突或需统一的异译。"
+        }
+      }
+    },
+    {
+      "ref": "characters:142",
+      "evidence_rows": [
+        18569
+      ],
+      "source_excerpt": "Alarandra",
+      "reason": "18569 名称列表中 Alarandra 为女性人名候选；原 term_reason 的 Heortland 范围无本批原文依据，已收窄。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "18569 显示 Nallindia/Alarandra/Astella 的斜杠分隔名称列表。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "阿拉兰德拉为对应音译，性别女性。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters，proper_name，女性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同列表 Astella/Nallindia 区分，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:143",
+      "evidence_rows": [
+        18569
+      ],
+      "source_excerpt": "Astella",
+      "reason": "18569 名称列表中 Astella 为女性人名候选；原 term_reason 的 Heortland 范围无本批原文依据，已收窄。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "18569 显示 Nallindia/Alarandra/Astella 的斜杠分隔名称列表。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "阿斯特拉为对应音译，性别女性。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters，proper_name，女性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同列表 Alarandra/Nallindia 区分，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:144",
+      "evidence_rows": [
+        18800
+      ],
+      "source_excerpt": "Brolli",
+      "reason": "18800 名称列表中 Brolli 为男性人名候选；原 term_reason 的 Tarsh 商人范围无本批原文依据，已收窄。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "18800 显示 Brolli/Genedros/Harli/Tastanim/Vostor/Yend 的斜杠分隔名称列表。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "布罗利为对应音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters，proper_name，男性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同列表其他名称区分，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:145",
+      "evidence_rows": [
+        18800
+      ],
+      "source_excerpt": "Genedros",
+      "reason": "18800 名称列表中 Genedros 为男性人名候选；原 term_reason 的 Tarsh 商人范围无本批原文依据，已收窄。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "18800 显示 Brolli/Genedros/Harli/Tastanim/Vostor/Yend 的斜杠分隔名称列表。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "格内德罗斯为对应音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters，proper_name，男性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同列表其他名称区分，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:146",
+      "evidence_rows": [
+        18800
+      ],
+      "source_excerpt": "Harli",
+      "reason": "18800 名称列表中 Harli 为男性人名候选；原 term_reason 的 Tarsh 商人范围无本批原文依据，已收窄。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "18800 显示 Brolli/Genedros/Harli/Tastanim/Vostor/Yend 的斜杠分隔名称列表。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "哈利为对应音译，男性。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters，proper_name，男性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同列表其他名称区分，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:147",
+      "evidence_rows": [
+        18800
+      ],
+      "source_excerpt": "Tastanim",
+      "reason": "18800 名称列表中 Tastanim 为男性人名候选；原 term_reason 的 Tarsh 商人范围无本批原文依据，已收窄。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "18800 显示 Brolli/Genedros/Harli/Tastanim/Vostor/Yend 的斜杠分隔名称列表。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "塔斯塔尼姆为对应音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters，proper_name，男性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同列表其他名称区分，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:148",
+      "evidence_rows": [
+        18800
+      ],
+      "source_excerpt": "Vostor",
+      "reason": "18800 名称列表中 Vostor 为男性人名候选；原 term_reason 的 Tarsh 商人范围无本批原文依据，已收窄。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "18800 显示 Brolli/Genedros/Harli/Tastanim/Vostor/Yend 的斜杠分隔名称列表。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "沃斯托尔为对应音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters，proper_name，男性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同列表其他名称区分，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:149",
+      "evidence_rows": [
+        18800
+      ],
+      "source_excerpt": "Yend",
+      "reason": "18800 名称列表中 Yend 为男性人名候选；原 term_reason 的 Tarsh 商人范围无本批原文依据，已收窄。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "18800 显示 Brolli/Genedros/Harli/Tastanim/Vostor/Yend 的斜杠分隔名称列表。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "延德为对应音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters，proper_name，男性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同列表其他名称区分，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:150",
+      "evidence_rows": [
+        19235
+      ],
+      "source_excerpt": "Skirri the Bear-man",
+      "reason": "19235 明确 Skirri 是 Bear-man、Storm Bull 之友；译名熊人斯基里保留意译加音译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "19235 称 Skirri the Bear-man 为 Storm Bull 之友，并以 the Bear-man 回指。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "熊人斯基里以意译『熊人』加音译『斯基里』表达，且无间隔号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters，proper_name，男性，符合 Bear-man 指称。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Storm Bull 等既有术语未见冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:151",
+      "evidence_rows": [
+        20971
+      ],
+      "source_excerpt": "Doruskul",
+      "reason": "20971 明确 Doruskul 被 Bad King Urgrain 宣布为兄弟后又投入峡谷；译名多鲁斯库尔为音译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "20971 称 Bad King Urgrain 宣布 Doruskul 为兄弟，后将其投入峡谷。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "多鲁斯库尔为对应音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters，proper_name，男性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未见同形冲突或需统一的异译。"
+        }
+      }
+    },
+    {
+      "ref": "characters:154",
+      "evidence_rows": [
+        21575,
+        21583
+      ],
+      "source_excerpt": "Hauberk Jon",
+      "reason": "21575/21583 明确 Hauberk Jon 为 war leader、以 he 指代；原译含间隔号，按风格改为豪伯克乔恩，并收窄 term_reason。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "21575 称部族联合推举 Hauberk Jon 为战争领袖，21583 以 he 指代他。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译『豪伯克·乔恩』含音译间隔号，按风格改为『豪伯克乔恩』。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters，proper_name，男性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Telmori 等术语分开，未见同形冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:138",
+    "characters:142",
+    "characters:143",
+    "characters:144",
+    "characters:145",
+    "characters:146",
+    "characters:147",
+    "characters:148",
+    "characters:149",
+    "characters:150",
+    "characters:151",
+    "characters:154"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

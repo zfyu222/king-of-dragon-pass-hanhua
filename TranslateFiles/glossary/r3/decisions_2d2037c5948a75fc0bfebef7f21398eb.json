@@ -1,0 +1,114 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1-e3 的来源、译名、分类与一致性；e2 统一为“塞恩斯特赖克”，e1、e3 维持现有译名。f1 中 e3 与只读关联 e4 的“阿罗因之泪”经核对为同一宝物的撇号变体，同译成立。",
+  "acknowledged_findings": [
+    "F0358"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "塞恩斯特赖克",
+        "term_reason": "第3117、6839条均称 Thanestriker 为 legendary sword，是同一把传奇宝剑的专名；采用音译“塞恩斯特赖克”。"
+      },
+      "reason": "统一同一武器专名的译法，避免“弑领主/萨内斯特赖克/塞恩斯特赖克/杀武卫者”并用；保留物品分类与 required。",
+      "evidence_rows": [
+        3117,
+        6839
+      ],
+      "table": "terms",
+      "index": 0
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:294",
+      "evidence_rows": [
+        34144
+      ],
+      "source_excerpt": "When the Greater Ungoron came it spared them all for her sake.",
+      "reason": "来源、译名、分类与一致性均核对通过；Greater Ungoron 作为冥界实体，现译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第34144条原文明确出现 Greater Ungoron，是冥界中因 Chalana Arroy 而放过众人的实体。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“大昂戈隆”对应 Greater Ungoron，保留“Greater”修饰与名称音译，未改变指称。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "列为 characters/其他性别；原文将其作为有行动的冥界怪物，符合人物/实体条目。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此一处该专名，无其他译名冲突；术语表内无需改并。"
+        }
+      }
+    },
+    {
+      "ref": "terms:0",
+      "evidence_rows": [
+        3117,
+        6839
+      ],
+      "source_excerpt": "We accepted the legendary sword, Thanestriker.",
+      "reason": "来源与物品分类成立；暂定“弑领主”不宜作武器专名，按音译统一为“塞恩斯特赖克”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第78、3117、6839、6840条均以 Thanestriker 指同一把剑，第3117、6839条明称 legendary sword。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "暂定“弑领主”把 thane 意译为“领主”并加入“弑”，不适合作为武器专名；按专名音译统一为“塞恩斯特赖克”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "第3117、6839条称其为 legendary sword，归入 terms/物品，term_kind=proper_name 且 required 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "候选出现“弑领主/萨内斯特赖克/塞恩斯特赖克/杀武卫者”；本批统一采用“塞恩斯特赖克”，并与传奇宝剑语境一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1",
+      "evidence_rows": [
+        86,
+        87
+      ],
+      "source_excerpt": "Our treasure, Arroin’s Tear, was finally used up, healing its last warrior.",
+      "reason": "来源、译名、分类与一致性均核对通过；与 e4 的同名变体同译不构成冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第86、87条均出现 Arroin’s Tear，分别指可治疗伤员的水晶宝物及已耗尽的宝物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“阿罗因之泪”保留专名 Arroin 音译与 Tear 的字面义，符合水晶宝物的名称。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "第86条称 crystal、第87条称 treasure，归入 terms/物品，proper_name/required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与只读关联 e4 的 Arroin's Tear 为同一宝物的撇号变体，译文“阿罗因之泪”一致；未发现需改并的冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:294",
+    "terms:0",
+    "terms:1"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

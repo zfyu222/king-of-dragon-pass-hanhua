@@ -1,0 +1,132 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 entries 中 e1-e3 的来源、译名、分类与一致性审校。Uralda、Vinga 均为神祇专名，保留统一音译“乌拉尔达”“温加”，并将 terms 分类由“身份”修正为“其他”；Empire of Wyrms Friends 保留“龙友帝国”。f1 核对为同一 Vinga 的扩展名称共享译名，f2 核对为同一帝国的拼写异体共享译名，均不构成冲突。",
+  "acknowledged_findings": [
+    "F0357",
+    "F0359"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "category_path": "其他",
+        "term_reason": "牛之女神与牛母；3386称其为 Uralda, the Cow Mother，6231称其为 cow goddess，33405称其为 Ernalda 之女、众牛之母。"
+      },
+      "reason": "Uralda 是神祇专名，不应归入“身份”类；依据原文改为“其他”并补全可核实的术语含义。",
+      "evidence_rows": [
+        3386,
+        6231,
+        33405
+      ],
+      "table": "terms",
+      "index": 7
+    },
+    {
+      "patch": {
+        "category_path": "其他",
+        "term_reason": "女性战争与冒险神祇；2727称 Vinga is also a war deity，33414称其为 Orlanth 的孙女，在黑暗中保护女性并证明女性可上战场。"
+      },
+      "reason": "Vinga 是神祇专名，不应归入“身份”类；依据原文改为“其他”并补全可核实的术语含义。",
+      "evidence_rows": [
+        2727,
+        33414
+      ],
+      "table": "terms",
+      "index": 8
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:7",
+      "evidence_rows": [
+        3386,
+        6231,
+        33405
+      ],
+      "source_excerpt": "Sacrifice the calf to Uralda, the Cow Mother.",
+      "reason": "核对 Uralda 在各记录中均为同一牛之女神/牛母专名，保留译名“乌拉尔达”，并修正 terms 分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3386、6231、33405均以 Uralda 指牛之女神或牛母；3386原文为 Sacrifice the calf to Uralda, the Cow Mother."
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“乌拉尔达”与 Uralda 的音译及本批各 Uralda 派生组合一致，无需改动。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "3386/6231称其为 Cow Mother/cow goddess，33405称其为 mother of all cattle，属神祇专名，应改列“其他”而非“身份”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批均指同一牛之女神；Uralda’s Blessing、Uralda’s Milk-Pot 等派生形式的核心名统一为“乌拉尔达”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:8",
+      "evidence_rows": [
+        2727,
+        33413,
+        33414
+      ],
+      "source_excerpt": "Vinga is a granddaughter of Orlanth. She travelled widely during the Darkness, protecting women, serving her king, and showing that women could flourish on the field of battle.",
+      "reason": "核对 Vinga 为女性战争/冒险神祇专名，保留译名“温加”，并修正 terms 分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2727明确称 Vinga is also a war deity；33413给出 Vinga (VING-gah)；33414称其为 Orlanth 的孙女并保护女性。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“温加”按 VING-gah 音译并沿用统一提案；本批未见需要另立译名的冲突。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "2727/33414表明其为战争及女冒险者神祇，属神祇专名，应改列“其他”而非“身份”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Vinga’s、Vingan 等派生形式均以“温加”为核心，指向同一女神，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:11",
+      "evidence_rows": [
+        416,
+        4138
+      ],
+      "source_excerpt": "Alakoring Dragonbreaker came from Ralios to fight the Empire of Wyrms Friends.",
+      "reason": "核对该历史帝国专名的译名、分类及与其他拼写变体的一致性。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "416以帝国时代旗帜说明其历史政权身份；4138记 Alakoring 从 Ralios 来对抗该帝国。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“龙友帝国”对应 Empire of Wyrms Friends 这一历史帝国专名，并与本批异体拼写共享译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "416/4138均指历史国家或帝国，归入“组织”合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "e3的 Wyrms Friends 与相关异体 Wyrm’s Friends/Wyrm's Friends 指同一帝国，均译“龙友帝国”，共享译名不构成冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:7",
+    "terms:8",
+    "terms:11"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

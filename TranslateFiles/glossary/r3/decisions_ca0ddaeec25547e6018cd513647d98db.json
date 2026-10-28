@@ -1,0 +1,341 @@
+{
+  "review_complete": true,
+  "review_summary": "本批 12 条术语均核对原文与上下文，确认现有译名、分类与适用范围；e10/e11 为 hide 的单复数变体，共用“海德”合法，f1 非冲突。无新增、隔离或修订。",
+  "acknowledged_findings": [
+    "F0426"
+  ],
+  "edits": [],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:736",
+      "evidence_rows": [
+        32885
+      ],
+      "source_excerpt": "drank the Eight Known Drinks",
+      "reason": "核对婚礼庆典语境，Eight Known Drinks 为与奥兰斯同饮的特定饮品名；译名保留数量与“已知”这一专名成分，分类与强制级别无需调整。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32885 原文明确是婚礼中与 Orlanth 同饮的 Eight Known Drinks，专名成立。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“八种已知饮品”对应 Eight Known Drinks，未增删专名成分。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文指一套特定饮品，归入“物品”合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同义异名冲突；译名与 term_reason 一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:737",
+      "evidence_rows": [
+        32886
+      ],
+      "source_excerpt": "learned a List of Names",
+      "reason": "核对秘密名录语境，List of Names 为女性随厄纳尔达学得且不得向男子复述的特定名录；“名讳录”准确且具专名感。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32886 原文说明女性学到 List of Names 并承诺不向男子复述，专名成立。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“名讳录”表达秘密名录的含义，符合原文禁忌语境。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "名录/秘传知识归入“其他”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "无同批异名冲突；译名与 term_reason 一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:740",
+      "evidence_rows": [
+        32890
+      ],
+      "source_excerpt": "Jested’s Settlement, where Orlanth and Issaries the Talking God outwitted foreign deities in a difficult negotiation.",
+      "reason": "核对谈判事件语境，Settlement 在此指谈判达成的和解/协议，不是定居点；专名“杰斯特德的和解”可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32890 原文以 negotiation 说明这是奥兰斯与伊萨里斯智胜异族神祇的事件。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“和解”对应 negotiation 后的 settlement；杰斯特德音译稳定。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神话事件，归入“其他”合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "无同批异名冲突；专名性质与 required 一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:741",
+      "evidence_rows": [
+        32891
+      ],
+      "source_excerpt": "The Procession of the Animals, where Uralda",
+      "reason": "核对乌拉尔达引领圣畜进入奥兰斯居所的仪式事件，Procession 译为“巡行”符合游行、巡游事件名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32891 原文说明 Uralda 引领 sacred herds 进入 Orlanth’s stead，事件名成立。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“动物巡行”保留专名结构与事件性质。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神话仪式事件，归入“其他”合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "无同批异名冲突；专名性质与 required 一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:744",
+      "evidence_rows": [
+        32905
+      ],
+      "source_excerpt": "the Sun Fall",
+      "reason": "核对混沌时代灾难列表，Sun Fall 为特定灾难名；“太阳坠落”准确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32905 将 the Sun Fall 与 Rain of Blood、Laughing Tsunami 并列为灾难。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“太阳坠落”对应 Sun Fall，保留灾难名意象。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "灾难名归入“其他”合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同段其他灾难名并列，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:746",
+      "evidence_rows": [
+        32905
+      ],
+      "source_excerpt": "the terrible Laughing Tsunami",
+      "reason": "核对混沌时代灾难列表，Laughing Tsunami 为特定灾难名；“狂笑海啸”保留其可怖意象。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32905 原文以 terrible Laughing Tsunami 列出该灾难。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“狂笑海啸”对应 Laughing Tsunami，并体现 terrible 的修饰。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "灾难名归入“其他”合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同段 Sun Fall 等灾难名并列，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:750",
+      "evidence_rows": [
+        32944
+      ],
+      "source_excerpt": "Click “Gorind” in the clan list.",
+      "reason": "核对氏族列表点击项，Gorind 为可交涉的邻近氏族名；“戈林德”音译稳定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32944 原文在 clan list 中把 Gorind 作为点击项，氏族名成立。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“戈林德”为 Gorind 的音译，作为氏族名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "氏族归入“组织”合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "无同批异名冲突；专名性质与 required 一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:751",
+      "evidence_rows": [
+        32959
+      ],
+      "source_excerpt": "the Herani",
+      "reason": "核对科罗尔所属 clan the Herani；Herani 为氏族名，“赫拉尼”音译稳定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32959 原文说明 Korol 的 clan 是 the Herani，氏族名成立。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“赫拉尼”为 Herani 的音译，作为氏族名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "clan 归入“组织”合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "无同批异名冲突；专名性质与 required 一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:754",
+      "evidence_rows": [
+        33088
+      ],
+      "source_excerpt": "Food is measured in Ernalda’s Bushels.",
+      "reason": "核对食物计量说明，Ernalda’s Bushels 为厄纳尔达相关的蒲式耳计量单位；“厄纳尔达蒲式耳”保留神名与单位。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33088 原文以 Ernalda’s Bushels 计量食物，并说明一蒲式耳供一人一年。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“蒲式耳”对应 Bushel，“厄纳尔达”对应 Ernalda；作为复合单位名不加“的”可接受。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "计量单位归入“其他”合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与普通 Bushel 区分明确，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:755",
+      "evidence_rows": [
+        33091
+      ],
+      "source_excerpt": "Land is measured in hides. One hide is enough land to support a family.",
+      "reason": "核对土地计量定义；hides 在此为 hide 的复数土地单位，非动词“藏匿”。现有 applicability 限定 measured in hides.，译名“海德”与 e11 单数一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33091 原文 Land is measured in hides. One hide...；34240/34262 的 hides 为动词，不能作为本条证据。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“海德”对应 hide 土地单位，且 33091 定义一海德足以供养一家。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "土地面积计量单位，归入“其他”合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e11 的 hide 为同一词单复数变体，共用“海德”不构成异名冲突；f1 已核对。"
+        }
+      }
+    },
+    {
+      "ref": "terms:834",
+      "evidence_rows": [
+        34003
+      ],
+      "source_excerpt": "hide: a unit of land, loosely defined as enough to support a family.",
+      "reason": "核对词表定义；hide 为土地单位，大致足够供养一家；“海德”为通行单位译名，并以 applicability 限定定义句式。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34003 直接定义 hide: a unit of land, loosely defined as enough to support a family."
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“海德”准确对应 hide 土地单位，未按动词“藏”处理。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "土地计量单位，归入“其他”合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e10 的复数 hides 同词异形，共用“海德”正确；f1 已核对。"
+        }
+      }
+    },
+    {
+      "ref": "terms:756",
+      "evidence_rows": [
+        32947
+      ],
+      "source_excerpt": "excellent Bargaining skill",
+      "reason": "核对使者任务中技能说明，Bargaining skill 为影响外交/议价的游戏技能；“议价技能”准确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32947 原文 excellent Bargaining skill 与 Leadership 并列，表明是技能名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“议价技能”对应 Bargaining skill，语义与游戏技能一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "技能归入“技能”合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "无同批冲突；与 Leadership 等技能名区分明确。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:736",
+    "terms:737",
+    "terms:740",
+    "terms:741",
+    "terms:744",
+    "terms:746",
+    "terms:750",
+    "terms:751",
+    "terms:754",
+    "terms:755",
+    "terms:834",
+    "terms:756"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

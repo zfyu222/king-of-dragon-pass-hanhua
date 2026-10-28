@@ -1,0 +1,60 @@
+{
+  "review_complete": true,
+  "review_summary": "审校 e1：确认 Elmali 指信奉太阳神 Elmal 的个人或氏族，保留“埃尔马尔信徒”、身份分类与 required；修正 term_reason 中未证实的条号和过窄表述，并注明定语用法。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "原文以 Elmal worshipper 解释 Elmali（第33585行）；第11825、13694、20575行分别指其圣武士、氏族与信众，故为信奉太阳神 Elmal 的个人或群体身份；作定语时可简作“埃尔马尔”。"
+      },
+      "reason": "原 term_reason 引用了未列入证据的第605条，且“神系施法者”不足以说明 Elmal 信徒/氏族这一实际范围；据第33585行及第11825/13694/20575行修正。",
+      "evidence_rows": [
+        33585,
+        11825,
+        13694,
+        20575
+      ],
+      "table": "terms",
+      "index": 26
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:26",
+      "evidence_rows": [
+        33585,
+        11825,
+        13694,
+        20575
+      ],
+      "source_excerpt": "Your Elmal worshipper (also known as an Elmali)",
+      "reason": "确认 Elmali 指 Elmal 的信奉者/氏族，保留“埃尔马尔信徒”与身份分类；仅修正 term_reason 的证据与范围表述。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "第33585行明确将 Elmal worshipper 称为 an Elmali；原 term_reason 引用了未在证据中的第605条且“神系施法者”表述过窄，已修正为 Elmal 的信奉者/氏族。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保留“埃尔马尔信徒”：可覆盖 the Elmali 与 an Elmali 的名词用法；Elmali clans / Elmali magician 等定语搭配按中文简作“埃尔马尔”，不改变专名核心。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "证据指向宗教身份/信众而非组织，category_path“身份”合法且准确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与神名 Elmal 对应为“埃尔马尔”，Elmali 加“信徒”区分神祇与信徒；“埃尔马尔派”偏派系，“埃尔马利”音译不统一，故不采用。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:26"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

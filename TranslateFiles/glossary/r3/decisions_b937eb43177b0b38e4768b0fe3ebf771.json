@@ -1,0 +1,402 @@
+{
+  "review_complete": true,
+  "review_summary": "完成 e1-e12 共12条术语审校；确认 Krarsht、Chaos Gods、Rending Song、Bushel、shaman、Dorastor、Aggar 等，统一 Kethaela 为“凯塞拉”、God Learners/God Learner 为“神知者”，并将 God Learner 单数改为身份、Law 的匹配范围收窄为 literal_context。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "凯塞拉",
+        "term_reason": "赫奥特兰所属的旧国名，位于龙隘以南；后由法老改称“圣国”。"
+      },
+      "reason": "同一 Kethaela 的两个候选译名统一为“凯塞拉”；原文显示它是包含赫奥特兰的旧国名，并有旧王统治及改名信息。",
+      "evidence_rows": [
+        33914,
+        33925,
+        34289,
+        34290
+      ],
+      "table": "terms",
+      "index": 817
+    },
+    {
+      "patch": {
+        "recommended_translation": "神知者",
+        "term_reason": "第二纪来自远西的术士团体，试图奴役各族并以伪神取代真神，制造了 Zistor。"
+      },
+      "reason": "与单数条目 e5 的“神知者”统一，并避免“神学者”与普通神学家/职业义混淆。",
+      "evidence_rows": [
+        34034,
+        34039
+      ],
+      "table": "terms",
+      "index": 822
+    },
+    {
+      "patch": {
+        "category_path": "身份",
+        "term_reason": "指第二纪西方术士团体 God Learners 的一员；原文推测其试图窃取氏族秘密知识。"
+      },
+      "reason": "27353 的 God Learner 是单数成员用法，分类应为“身份”而非“组织”；译名保持“神知者”与 e4 一致。",
+      "evidence_rows": [
+        27353
+      ],
+      "table": "terms",
+      "index": 936
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "power of ",
+          "suffix": ".",
+          "reason": "此处大写 Law 指被诸神争斗削弱的宇宙法则；用紧邻 'power of ' 与句点限定，避免覆盖普通法律义。"
+        }
+      },
+      "reason": "将宽泛的大小写文本匹配收窄到有原文证据的宇宙法则用例，避免普通 law 受同一全局规则影响。",
+      "evidence_rows": [
+        34011
+      ],
+      "table": "terms",
+      "index": 838
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:816",
+      "evidence_rows": [
+        33856
+      ],
+      "source_excerpt": "in the name of Krarsht",
+      "reason": "确认 Krarsht 为被秘密崇拜、策划阴谋的混沌神专名，保留音译“克拉什特”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33856 将 Krarsht 列为被秘密崇拜、策划阴谋的混沌神名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“克拉什特”为对应音译，未见同源异译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为神祇专名归入“其他”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同源冲突，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:817",
+      "evidence_rows": [
+        33914,
+        34289
+      ],
+      "source_excerpt": "Heortland is part of a nation once called Kethaela.",
+      "reason": "确认 Kethaela 为旧国名，已将候选统一为“凯塞拉”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33914/33925 说明 Kethaela 是包含赫奥特兰的旧国名；34289/34290 补充其位于龙隘以南及旧王统治。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "候选“凯塔埃拉”和“凯塞拉”经比较后统一为“凯塞拉”，已写入 edits。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "旧国/地区名，归“地名”正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "同源两个候选译名已统一，消除跨条目不一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:821",
+      "evidence_rows": [
+        33936
+      ],
+      "source_excerpt": "the hunger of the Chaos Gods",
+      "reason": "确认 Chaos Gods 为敌对神群，保留“混沌诸神”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33936 将 Chaos Gods 描述为渴望摧毁 Orlanth 居地的敌对神群。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“混沌诸神”保留复数神群义，且与文中 chaos 概念一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为有共同行动的特定神群，归“组织”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同源异译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:822",
+      "evidence_rows": [
+        34034,
+        34039
+      ],
+      "source_excerpt": "The bad people of the Second Age were the God Learners.",
+      "reason": "确认 God Learners 为第二纪术士团体，并将译名统一为“神知者”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34034/34039 说明 God Learners 是第二纪远西术士团体，奴役各族并制造 Zistor。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由“神学者”改为“神知者”，与 e5 统一并避免普通神学家义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "复数形式指团体，归“组织”合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e5 的单数成员条目统一使用“神知者”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:936",
+      "evidence_rows": [
+        27353
+      ],
+      "source_excerpt": "Maybe they are some sort of God Learner, trying to steal our secret knowledge!",
+      "reason": "确认 God Learner 在原文为单数成员用法，改为“身份”分类，译名与 e4 统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "27353 以 God Learner 指可能窃取秘密知识的成员。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“神知者”与 e4 复数团体译名一致，也能表达成员。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "单数 God Learner 指团体成员，分类由“组织”改为“身份”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "译名已与 e4 统一；单数成员与复数组织按语境区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:831",
+      "evidence_rows": [
+        33932,
+        33949
+      ],
+      "source_excerpt": "The Eater of Skin came singing the Rending Song, the one that made people bleed.",
+      "reason": "确认 Rending Song 是使人流血的魔法歌曲名，保留“撕裂之歌”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33932/33949 明确 Rending Song 是使人流血的魔法歌曲。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“撕裂之歌”贴合 Rending 的伤害意象。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为魔法歌曲/能力，归“技能”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同源异译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:833",
+      "evidence_rows": [
+        33998,
+        33230
+      ],
+      "source_excerpt": "the amount of food which feeds one person for one year",
+      "reason": "确认 Bushel 为游戏内食物计量单位，保留“蒲式耳”并保留 Ernalda's Bushel 背景。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33998 直接定义 Bushel 为一人一年食量；33230 补充源于 Ernalda 的神界篮。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“蒲式耳”对应单位译名，term_reason 已说明游戏内特殊定义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "食物计量单位归“其他”符合分类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "大小写形式对应同一单位，未见同源异译冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:835",
+      "evidence_rows": [
+        34004
+      ],
+      "source_excerpt": "shaman: someone practiced in dealing with spirits.",
+      "reason": "确认 shaman 为处理灵魂者的游戏身份，保留“萨满”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34004 直接定义 shaman 为 practiced in dealing with spirits。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“萨满”是规范中文对应。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为身份/职业，归“身份”正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同源异译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:838",
+      "evidence_rows": [
+        34011
+      ],
+      "source_excerpt": "had weakened the power of Law",
+      "reason": "确认大写 Law 指宇宙法则，并将 applicability 收窄到有证据的 literal_context。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34011 以大写 Law 指被诸神争斗削弱的宇宙法则。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“法则”贴合宇宙法则义，与普通法律义区分。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为抽象宇宙机制归“其他”。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "将 applicability 从全局大小写文本改为 literal_context，仅覆盖 'power of Law.' 的原文证据。"
+        }
+      }
+    },
+    {
+      "ref": "terms:841",
+      "evidence_rows": [
+        34095,
+        34107
+      ],
+      "source_excerpt": "attacked by the Lesser Kajaboori, Orlanth's new enemy",
+      "reason": "确认 Lesser Kajaboori 为敌对部族专名，保留“小卡贾布里”并采用“种族”分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34095/34107 说明 Lesser Kajaboori 是 Orlanth 的新敌人，被风暴神击退。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“小卡贾布里”保留 Lesser 修饰及专名音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文作为敌对族群/部族使用，归“种族”比“组织”准确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "无同源异译；部族整体与成员形式不构成冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:844",
+      "evidence_rows": [
+        34033
+      ],
+      "source_excerpt": "People moved from Dragon Pass to a place called Dorastor",
+      "reason": "确认 Dorastor 为地名，保留“多拉斯托”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34033 说明 Dorastor 是 Dragon Pass 居民迁往并试图造神的地方。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“多拉斯托”为对应音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名归“地名”正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同源异译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:845",
+      "evidence_rows": [
+        33997
+      ],
+      "source_excerpt": "past Aggar and Saird",
+      "reason": "确认 Aggar 为地名，保留“阿加尔”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33997 将 Aggar 与 Saird 并列为北方旧帝国所在地之外的地名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“阿加尔”为对应音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名归“地名”正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同源异译。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:816",
+    "terms:817",
+    "terms:821",
+    "terms:822",
+    "terms:936",
+    "terms:831",
+    "terms:833",
+    "terms:835",
+    "terms:838",
+    "terms:841",
+    "terms:844",
+    "terms:845"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

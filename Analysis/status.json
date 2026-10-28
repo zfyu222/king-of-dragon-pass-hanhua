@@ -1,0 +1,257 @@
+{
+  "revision": 3,
+  "paused": false,
+  "quality": {
+    "pilot": {
+      "report_hash": "c83b12dcdac1e5da3b32c64416f85bab77382534161483d6e91bfe58d2fb3e98",
+      "reviewer": "main"
+    }
+  },
+  "workflow": "custom",
+  "glossary_frozen": true,
+  "records": {
+    "source": 13047,
+    "translate": 21374
+  },
+  "tasks": [
+    {
+      "stage": "extract",
+      "status": "done",
+      "n": 71
+    },
+    {
+      "stage": "extract",
+      "status": "obsolete",
+      "n": 106
+    },
+    {
+      "stage": "glossary_review",
+      "status": "done",
+      "n": 199
+    },
+    {
+      "stage": "pilot_translate",
+      "status": "done",
+      "n": 3
+    },
+    {
+      "stage": "translate",
+      "status": "done",
+      "n": 413
+    },
+    {
+      "stage": "translate",
+      "status": "pending",
+      "n": 260
+    },
+    {
+      "stage": "translate",
+      "status": "running",
+      "n": 25
+    }
+  ],
+  "attention": [
+    {
+      "id": "translate-r3-00392-8773b99a",
+      "stage": "translate",
+      "status": "running",
+      "attempt": 1,
+      "error": null,
+      "lease_until": 1793129088.7558732
+    },
+    {
+      "id": "translate-r3-00403-07c8fa92",
+      "stage": "translate",
+      "status": "running",
+      "attempt": 1,
+      "error": null,
+      "lease_until": 1793129111.8668182
+    },
+    {
+      "id": "translate-r3-00404-9248ee8f",
+      "stage": "translate",
+      "status": "running",
+      "attempt": 1,
+      "error": null,
+      "lease_until": 1793129115.0361001
+    },
+    {
+      "id": "translate-r3-00411-f3f7fe6f",
+      "stage": "translate",
+      "status": "running",
+      "attempt": 1,
+      "error": null,
+      "lease_until": 1793129123.7711754
+    },
+    {
+      "id": "translate-r3-00416-d52c4564",
+      "stage": "translate",
+      "status": "running",
+      "attempt": 1,
+      "error": null,
+      "lease_until": 1793129131.8590999
+    },
+    {
+      "id": "translate-r3-00418-424c5025",
+      "stage": "translate",
+      "status": "running",
+      "attempt": 1,
+      "error": null,
+      "lease_until": 1793129134.7258003
+    },
+    {
+      "id": "translate-r3-00419-5c917662",
+      "stage": "translate",
+      "status": "running",
+      "attempt": 1,
+      "error": null,
+      "lease_until": 1793129135.931781
+    },
+    {
+      "id": "translate-r3-00420-e05f9b15",
+      "stage": "translate",
+      "status": "running",
+      "attempt": 1,
+      "error": null,
+      "lease_until": 1793129136.4795988
+    },
+    {
+      "id": "translate-r3-00421-c3afbc32",
+      "stage": "translate",
+      "status": "running",
+      "attempt": 1,
+      "error": null,
+      "lease_until": 1793129138.3285856
+    },
+    {
+      "id": "translate-r3-00422-5ce1ecc8",
+      "stage": "translate",
+      "status": "running",
+      "attempt": 1,
+      "error": null,
+      "lease_until": 1793129138.8785856
+    },
+    {
+      "id": "translate-r3-00423-02c5b481",
+      "stage": "translate",
+      "status": "running",
+      "attempt": 1,
+      "error": null,
+      "lease_until": 1793129142.9410293
+    },
+    {
+      "id": "translate-r3-00424-42d78745",
+      "stage": "translate",
+      "status": "running",
+      "attempt": 1,
+      "error": null,
+      "lease_until": 1793129145.4873734
+    },
+    {
+      "id": "translate-r3-00425-c999e50c",
+      "stage": "translate",
+      "status": "running",
+      "attempt": 1,
+      "error": null,
+      "lease_until": 1793129146.140061
+    },
+    {
+      "id": "translate-r3-00426-5084a1cb",
+      "stage": "translate",
+      "status": "running",
+      "attempt": 1,
+      "error": null,
+      "lease_until": 1793129147.3399715
+    },
+    {
+      "id": "translate-r3-00427-57e8ea66",
+      "stage": "translate",
+      "status": "running",
+      "attempt": 1,
+      "error": null,
+      "lease_until": 1793129149.294743
+    },
+    {
+      "id": "translate-r3-00429-e1866c62",
+      "stage": "translate",
+      "status": "running",
+      "attempt": 1,
+      "error": null,
+      "lease_until": 1793129152.7411542
+    },
+    {
+      "id": "translate-r3-00430-92bea8f0",
+      "stage": "translate",
+      "status": "running",
+      "attempt": 1,
+      "error": null,
+      "lease_until": 1793129155.2308435
+    },
+    {
+      "id": "translate-r3-00431-355436c6",
+      "stage": "translate",
+      "status": "running",
+      "attempt": 1,
+      "error": null,
+      "lease_until": 1793129158.2380588
+    },
+    {
+      "id": "translate-r3-00432-99b09997",
+      "stage": "translate",
+      "status": "running",
+      "attempt": 1,
+      "error": null,
+      "lease_until": 1793129159.8446689
+    },
+    {
+      "id": "translate-r3-00433-0d1bab58",
+      "stage": "translate",
+      "status": "running",
+      "attempt": 1,
+      "error": null,
+      "lease_until": 1793129164.5939357
+    },
+    {
+      "id": "translate-r3-00434-7e1aee84",
+      "stage": "translate",
+      "status": "running",
+      "attempt": 1,
+      "error": null,
+      "lease_until": 1793129165.4509418
+    },
+    {
+      "id": "translate-r3-00435-10c3b679",
+      "stage": "translate",
+      "status": "running",
+      "attempt": 1,
+      "error": null,
+      "lease_until": 1793129167.8156676
+    },
+    {
+      "id": "translate-r3-00436-f7eb753b",
+      "stage": "translate",
+      "status": "running",
+      "attempt": 1,
+      "error": null,
+      "lease_until": 1793129169.4134922
+    },
+    {
+      "id": "translate-r3-00437-44b26b4a",
+      "stage": "translate",
+      "status": "running",
+      "attempt": 1,
+      "error": null,
+      "lease_until": 1793129170.5810158
+    },
+    {
+      "id": "translate-r3-00438-7e042e83",
+      "stage": "translate",
+      "status": "running",
+      "attempt": 1,
+      "error": null,
+      "lease_until": 1793129171.131458
+    }
+  ],
+  "api_requests": 787,
+  "api_budget_requests": 786
+}

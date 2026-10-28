@@ -1,0 +1,390 @@
+{
+  "review_complete": true,
+  "review_summary": "已审校 e1-e12 全部条目；修正 Eurmal 两件宝物的译名用字及 Golden Horseshoes 的“马蹄铁”译法，并将与 e14 同名的 Heort's Balm 分类对齐为 proper_name/required；核对 f1/f2，确认 f1 为种名与具体马名共用译名、f2 为同一宝物变体。",
+  "acknowledged_findings": [
+    "F0419",
+    "F0421"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "欧尔马尔之球",
+        "term_reason": "32413 宝藏列表中以欧尔马尔命名的球。"
+      },
+      "reason": "关联 Eurmal 的冻结译名为欧尔马尔，原译“欧尔马”漏字，term_reason 同步修正。",
+      "evidence_rows": [
+        32413
+      ],
+      "table": "terms",
+      "index": 1048
+    },
+    {
+      "patch": {
+        "recommended_translation": "欧尔马尔之盾",
+        "term_reason": "32414 宝藏列表中以欧尔马尔命名的盾。"
+      },
+      "reason": "关联 Eurmal 的冻结译名为欧尔马尔，原译“欧尔马”漏字，term_reason 同步修正。",
+      "evidence_rows": [
+        32414
+      ],
+      "table": "terms",
+      "index": 1049
+    },
+    {
+      "patch": {
+        "recommended_translation": "金马蹄铁"
+      },
+      "reason": "Horseshoes 指马蹄铁，原译“金马蹄”易误解为马足。",
+      "evidence_rows": [
+        32426
+      ],
+      "table": "terms",
+      "index": 1055
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "enforcement": "required"
+      },
+      "reason": "与关联条目 e14 的 Heort’s Balm 为同一宝物变体，分类应对齐为 proper_name/required。",
+      "evidence_rows": [
+        32435
+      ],
+      "table": "terms",
+      "index": 1062
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:1046",
+      "evidence_rows": [
+        32410
+      ],
+      "source_excerpt": "Ernalda's Boots",
+      "reason": "条目来源与宝藏列表一致；译名沿用 Ernalda 的厄纳尔达；物品分类合理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32410 原文为 Ernalda's Boots，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "厄纳尔达之靴与关联 Ernalda 的译名厄纳尔达一致，Boots 译靴。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "宝藏列表中的具名靴，归入物品合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Ernalda 的译名一致，未发现同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1048",
+      "evidence_rows": [
+        32413
+      ],
+      "source_excerpt": "Eurmal's Balls",
+      "reason": "已修正 Eurmal 的译名用字并同步 term_reason。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32413 原文为 Eurmal's Balls，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译欧尔马之球漏“尔”，按关联 Eurmal 的译名欧尔马尔改为欧尔马尔之球。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "宝藏列表中的具名球，归入物品合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "Eurmal 相关译名为欧尔马尔，原词条用欧尔马不一致，已修正。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1049",
+      "evidence_rows": [
+        32414
+      ],
+      "source_excerpt": "Eurmal's Shield",
+      "reason": "已修正 Eurmal 的译名用字并同步 term_reason。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32414 原文为 Eurmal's Shield，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译欧尔马之盾漏“尔”，按关联 Eurmal 的译名欧尔马尔改为欧尔马尔之盾。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "宝藏列表中的具名盾，归入物品合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "Eurmal 相关译名为欧尔马尔，原词条用欧尔马不一致，已修正。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1051",
+      "evidence_rows": [
+        32417
+      ],
+      "source_excerpt": "Fear Spirits",
+      "reason": "来源、译名与分类均按宝藏列表语境核对。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32417 原文为 Fear Spirits，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "恐惧灵作为宝藏名保留；中文不标复数，Fear Spirits 译作恐惧灵可接受。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "宝藏列表中的灵体类宝物，归入物品可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现同形译名冲突；作为独立宝藏名保留。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1052",
+      "evidence_rows": [
+        32418
+      ],
+      "source_excerpt": "First Arrow",
+      "reason": "来源与译名一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32418 原文为 First Arrow，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "第一箭对应 First Arrow，短名符合物品标签习惯。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "宝藏列表中的具名箭，归入物品合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现同形译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1054",
+      "evidence_rows": [
+        32425
+      ],
+      "source_excerpt": "Goldeneye Horse",
+      "reason": "来源与译名一致；已核对与 Goldeneyes 的共用译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32425 原文为 Goldeneye Horse，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "金眼马对应 Goldeneye Horse，Goldeneye 译金眼。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "宝藏列表中的具名马，归入物品合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "已核对 f1：与 e13 Goldeneyes 同译金眼马；e13 指魔法兽种，本条指宝藏中的具体金眼马，语境可区分，不修改。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1055",
+      "evidence_rows": [
+        32426
+      ],
+      "source_excerpt": "Golden Horseshoes",
+      "reason": "已修正 Horseshoes 的误译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32426 原文为 Golden Horseshoes，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译金马蹄易理解为马足；Horseshoes 是马蹄铁，改为金马蹄铁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "宝藏列表中的具名马蹄铁，归入物品合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 Golden Horseshoes 的字面及物品义一致，原译已修正。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1056",
+      "evidence_rows": [
+        32427
+      ],
+      "source_excerpt": "Golden Wheat Sheaf",
+      "reason": "来源与译名一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32427 原文为 Golden Wheat Sheaf，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "金麦束对应 Golden Wheat Sheaf，麦束为 sheaf 的短译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "宝藏列表中的具名麦束，归入物品合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现同形译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1062",
+      "evidence_rows": [
+        32435
+      ],
+      "source_excerpt": "Heort's Balm",
+      "reason": "分类对齐同一术语变体，译名不变。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32435 原文为 Heort's Balm，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "赫奥特香膏与关联 e14 的同名宝物译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "宝藏列表中的具名香膏，归入物品合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已核对 f2：与 e14 Heort’s Balm 为同一宝物变体，译名一致；原 game_term/reference 与 e14 的 proper_name/required 不一致，已对齐为 proper_name/required。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1063",
+      "evidence_rows": [
+        32436
+      ],
+      "source_excerpt": "Heort's Stone",
+      "reason": "来源与译名一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32436 原文为 Heort's Stone，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "赫奥特之石与关联 Heort 的译名赫奥特一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "宝藏列表中的具名石头，归入物品合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Heort 的译名一致，未发现同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1064",
+      "evidence_rows": [
+        32437
+      ],
+      "source_excerpt": "Horse Skull",
+      "reason": "来源与译名一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32437 原文为 Horse Skull，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "马头骨对应 Horse Skull。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "宝藏列表中的具名头骨，归入物品合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现同形译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1065",
+      "evidence_rows": [
+        32438
+      ],
+      "source_excerpt": "Horse-Spawn Bowl",
+      "reason": "来源与译名一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32438 原文为 Horse-Spawn Bowl，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "马裔之碗与关联 Horse-Spawn 的译名马裔一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "宝藏列表中的具名碗，归入物品合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Horse-Spawn 的译名一致，未发现冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:1046",
+    "terms:1048",
+    "terms:1049",
+    "terms:1051",
+    "terms:1052",
+    "terms:1054",
+    "terms:1055",
+    "terms:1056",
+    "terms:1062",
+    "terms:1063",
+    "terms:1064",
+    "terms:1065"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

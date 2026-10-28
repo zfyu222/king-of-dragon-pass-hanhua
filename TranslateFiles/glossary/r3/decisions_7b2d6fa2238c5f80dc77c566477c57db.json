@@ -1,0 +1,357 @@
+{
+  "review_complete": true,
+  "review_summary": "已审校 e1-e12，逐一核对来源、译名、分类与跨批共享译名。f1-f5 均为同一人物或神祇的全名/短名、称号与核心名共用译名，未发现不同实体误合。修正 e1 的 Nallindia 音译为女性名用字娜林迪娅，保留 Trailblazer 译作开路者；其余条目保留原推荐译名。",
+  "acknowledged_findings": [
+    "F0350",
+    "F0354",
+    "F0355",
+    "F0356",
+    "F0357"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "开路者娜林迪娅"
+      },
+      "reason": "原文以 her map、her clan 明确 Nallindia 为女性英雄；采用女性名用字并与相关 Nallindia 条目统一为娜林迪娅，保留 Trailblazer 的开路者称号。",
+      "evidence_rows": [
+        28285
+      ],
+      "table": "characters",
+      "index": 185
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:185",
+      "evidence_rows": [
+        28285
+      ],
+      "source_excerpt": "the hero Nallindia Trailblazer, who explored the realm of the gods with Vinga’s myths as her map.",
+      "reason": "将 Nallindia 音译统一为女性名用字娜林迪娅；Trailblazer 保留为开路者。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文明确为英雄 Nallindia Trailblazer，并以 her map、her clan 指代女性。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“开路者纳林迪亚”的称号正确；Nallindia 按女性名用字及相关 Nallindia 条目统一改为“娜林迪娅”，故改为“开路者娜林迪娅”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表 proper_name/required；为具名英雄角色，女性性别有 her 证据。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与相关 Nallindia 名统一为娜林迪娅；Trailblazer 与开路者卡莉尔等称号用法一致，未修改只读关联项。"
+        }
+      }
+    },
+    {
+      "ref": "characters:192",
+      "evidence_rows": [
+        28374
+      ],
+      "source_excerpt": "fought the Bone Bear, and endured the Snake Poet’s taunts.",
+      "reason": "审校通过，未修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文以 the Snake Poet’s taunts 指 Kallyr 英雄探索中遭遇的具名角色。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Snake Poet 直译为“蛇诗人”，与原文称号义一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表 proper_name/required；为神话中的具名角色，原文未给性别，其他合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现同源译名冲突；“蛇诗人”作为称号保持稳定。"
+        }
+      }
+    },
+    {
+      "ref": "characters:195",
+      "evidence_rows": [
+        28311
+      ],
+      "source_excerpt": "I know she has to find a path past the Mountain Man.",
+      "reason": "审校通过，未修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文称 Vinga 需绕过 the Mountain Man，为神话中的具名障碍角色。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Mountain Man 译“山中人”，保留字面山地人物义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表 proper_name/required；为具名神话角色，Man 支持男性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现同源译名冲突；与 Vinga 神话语境一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:200",
+      "evidence_rows": [
+        32902
+      ],
+      "source_excerpt": "Chinkis Mor, the Elf Warlord.",
+      "reason": "审校通过，未修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文为具名精灵军阀 Chinkis Mor，the Elf Warlord。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "核心专名 Chinkis Mor 译为“钦基斯莫尔”，与短名条目共用译名，title 由 term_reason 说明。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表 proper_name/required；为具名角色，性别字段与相关全名/短名证据一致。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与短名 Chinkis Mor 同译属全名/短名别名共用，非不同实体；audit f1 已核对。"
+        }
+      }
+    },
+    {
+      "ref": "characters:202",
+      "evidence_rows": [
+        32904
+      ],
+      "source_excerpt": "Ves Venna, Warlord of the Ice Tribe.",
+      "reason": "审校通过，未修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文为冰部族军阀 Ves Venna 的具名条目。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Ves Venna 译为“维斯文纳”，与短名条目共用核心译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表 proper_name/required；角色身份明确，性别与冰族领主相关证据一致。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与短名 Ves Venna 同译属别名共用，非不同实体；audit f2 已核对。"
+        }
+      }
+    },
+    {
+      "ref": "characters:203",
+      "evidence_rows": [
+        32887
+      ],
+      "source_excerpt": "Orlanth fought Yelm the Bright Emperor, and undertook many wars of conquest.",
+      "reason": "审校通过，未修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文明确 Yelm the Bright Emperor 与 Orlanth 交战。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Yelm 译“耶尔姆”，与短名条目共用核心译名；Bright Emperor 为称号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表 proper_name/required；太阳神/皇帝角色，Emperor 支持男性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与短名 Yelm 同译属别名共用，非不同实体；audit f3 已核对。"
+        }
+      }
+    },
+    {
+      "ref": "characters:204",
+      "evidence_rows": [
+        32914
+      ],
+      "source_excerpt": "Urox, the Storm Bull.",
+      "reason": "审校通过，未修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文明确 Urox, the Storm Bull，即风暴公牛神。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Urox 译“乌罗克斯”，与短名条目及典故译名一致；the Storm Bull 为称号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表 proper_name/required；神祇角色，Storm Bull 支持男性/公牛属性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与短名 Urox 同译属别名共用，非不同实体；audit f4 已核对。"
+        }
+      }
+    },
+    {
+      "ref": "characters:205",
+      "evidence_rows": [
+        32955
+      ],
+      "source_excerpt": "choose Humakt, the god of war.",
+      "reason": "审校通过，未修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文明确 Humakt 为 the god of war。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Humakt 译“胡马卡特”，为稳定音译；god of war 由 term_reason 说明。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表 proper_name/required；战争之神角色，god 支持男性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "无同源译名冲突；音译形式单一。"
+        }
+      }
+    },
+    {
+      "ref": "characters:206",
+      "evidence_rows": [
+        33139
+      ],
+      "source_excerpt": "if the clan worships Vinga, goddess of adventurers.",
+      "reason": "审校通过，未修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文明确 Vinga 为 goddess of adventurers，并影响武士性别比例。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Vinga 译“温加”，与短名条目共用核心译名；goddess of adventurers 为称号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表 proper_name/required；女性神祇，goddess 支持女性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与短名 Vinga 同译属别名共用，非不同实体；audit f5 已核对。"
+        }
+      }
+    },
+    {
+      "ref": "characters:222",
+      "evidence_rows": [
+        33960
+      ],
+      "source_excerpt": "Although my son, Voriof, is flesh of my flesh and a protector of sheep, I cannot trust him to protect the people, for he is not steadfast enough to withstand the onslaught of Chaos.",
+      "reason": "审校通过，未修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文明确 Voriof 为 Orlanth 之子、羊群保护者，并称 him。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Voriof 译“沃里奥夫”，音译稳定，无同形冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表 proper_name/required；男性角色，my son、him 支持男性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现同源译名冲突；与奥兰斯家族语境一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:224",
+      "evidence_rows": [
+        33889
+      ],
+      "source_excerpt": "His enemies woke up the Diamond Storm dragon, and sent it against Alakoring.",
+      "reason": "审校通过，未修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文明确敌人唤醒 Diamond Storm dragon 并派其对抗 Alakoring。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Diamond Storm dragon 译“钻石风暴龙”，保留名称与龙类身份。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表 proper_name/required；为具名巨龙个体，it 指代故性别其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现同源译名冲突；与 Alakoring 叙事中的敌对方巨龙一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:225",
+      "evidence_rows": [
+        33976
+      ],
+      "source_excerpt": "Uralda the Cow Mother, who told her children to provide milk and meat for Ernalda’s tribe, was missing.",
+      "reason": "审校通过，未修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文明确 Uralda the Cow Mother 为提供奶肉给 Ernalda 部族的牛母神。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Uralda 译“乌拉尔达”，the Cow Mother 译“母牛之母”，合为“母牛之母乌拉尔达”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表 proper_name/required；女性神祇，mother、her children 支持女性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与神祇表 Uralda the Cow Mother 用法一致，未发现同源冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:185",
+    "characters:192",
+    "characters:195",
+    "characters:200",
+    "characters:202",
+    "characters:203",
+    "characters:204",
+    "characters:205",
+    "characters:206",
+    "characters:222",
+    "characters:224",
+    "characters:225"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

@@ -1,0 +1,351 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1-e12 与对应原文：Nevala/Bell of Nevala、Kitori、Band of One Hundred、Hundred-Day Hunt、dragonkin、Heort’s Balm 及五个氏族名均无需修订；f1 的 dragonkin/dragon-kin 与 f2 的 Heort’s/Heort's 经核为拼写变体，共享译名成立。",
+  "acknowledged_findings": [
+    "F0420",
+    "F0421"
+  ],
+  "edits": [],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:533",
+      "evidence_rows": [
+        20643,
+        17787
+      ],
+      "source_excerpt": "Just as Uralda is the bountiful cow mother, Nevala is the ewe goddess.",
+      "reason": "核对为羊母神 Nevala，音译与分类通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "20643 明称 Nevala is the ewe goddess；17787 称其为 Sheep Mother，确认是神名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "音译‘内瓦拉’与同源物名中的 Nevala 一致，未见误译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为神祇专名收入 terms 的‘其他’类，符合现有分类项；非普通词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Nevala 在神名与 Bell of Nevala 中均译‘内瓦拉’，术语内部一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:572",
+      "evidence_rows": [
+        20650
+      ],
+      "source_excerpt": "We need the Bell of Nevala.",
+      "reason": "核对为 Nevala 的圣铃，译名与分类通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "20650 直接点名 the Bell of Nevala，为特定圣物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘内瓦拉之铃’保留 Nevala 音译与所属关系，语义完整。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品；原文称需要该物，未作抽象概念。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Nevala 译‘内瓦拉’，与 e1 神名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:534",
+      "evidence_rows": [
+        17598,
+        28222
+      ],
+      "source_excerpt": "there are a people called the Kitori.",
+      "reason": "核对为族称 Kitori，音译与分类通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "17598 称 a people called the Kitori，并说明其是人类而似巨魔；28222 复称 these Kitori。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "音译‘基托里’作为族称，未意译或拆分。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族/族群，符合 17598 的 people 指称。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "17598 与 28222 指同一 Kitori，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:535",
+      "evidence_rows": [
+        17598,
+        32389
+      ],
+      "source_excerpt": "brought back a band of cloth called the Band of One Hundred, which has one hundred different uses.",
+      "reason": "核对为百用布带，排除‘百人团’候选。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "17598 称其为 band of cloth 且有一百种用途；32389 宝藏列表单列同名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘百用布带’体现布带材质与百种用途；候选‘百人团’与 17598/32389 的布带义不合，不采用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品；原文明确为 treasure 和布料。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "32389 同名条目仍指该布带；与 Hundred-Day Hunt 仅共享 Hundred 词形，非同义，不据词族候选统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:739",
+      "evidence_rows": [
+        32889
+      ],
+      "source_excerpt": "The Hundred-Day Hunt, when Orlanth and his son Odayla tracked the Sky Bear.",
+      "reason": "核对为神话事件名，译名与分类通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32889 明确 Hundred-Day Hunt 是 Orlanth 与 Odayla 追踪 Sky Bear 的事件名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘百日狩猎’直译事件名，简洁且保留专名性质。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他；为特定神话事件名，非普通词组。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Band of One Hundred 仅共享 Hundred 词形，语义无关，不因词族候选统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:538",
+      "evidence_rows": [
+        17889
+      ],
+      "source_excerpt": "that the dragonkin confined their eating to a few farm animals.",
+      "reason": "核对为族类 game_term；f1 拼写变体共享译名成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "17889 以 the dragonkin 指称会进食 farm animals 的群体/族类。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘龙裔’作为 dragonkin 的族类译名可读；与 related dragon-kin 拼写变体共用译名不构成冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族/族类，符合原文群体指称。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "审计 f1 中 e6‘dragonkin’与 e13‘dragon-kin’为连字符变体，同译‘龙裔’一致，无需拆分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:540",
+      "evidence_rows": [
+        18140,
+        18148
+      ],
+      "source_excerpt": "a small tub of lotion called Heort’s Balm.",
+      "reason": "核对为具名香膏；f2 撇号变体共享译名成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "18140/18148 均称 small tub of lotion called Heort’s Balm，为具名香膏。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘赫奥特香膏’保留 Heort 音译与物品性质。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品；原文明确 lotion/treasure。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "审计 f2 中 e7‘Heort’s Balm’与 e14‘Heort's Balm’仅撇号形式不同，同译‘赫奥特香膏’一致；本条为具名物品，保持 required。"
+        }
+      }
+    },
+    {
+      "ref": "terms:541",
+      "evidence_rows": [
+        18425,
+        18426
+      ],
+      "source_excerpt": "Dirty Rag Clan",
+      "reason": "核对为侮辱性氏族名，句点变体一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "18425 单独列出 Dirty Rag Clan；18426 为带句点同形。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘脏布氏族’直译侮辱性氏族名，Clan 统一为‘氏族’。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "组织/氏族，符合原文。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "18426 句点变体同译；与同组 e9-e12 的‘氏族’后缀一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:542",
+      "evidence_rows": [
+        18427,
+        18428
+      ],
+      "source_excerpt": "Greasy Spoon Clan",
+      "reason": "核对为侮辱性氏族名，句点变体一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "18427 单独列出 Greasy Spoon Clan；18428 为带句点同形。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘油勺氏族’直译侮辱性氏族名，Clan 统一为‘氏族’。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "组织/氏族，符合原文。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "18428 句点变体同译；与同组 e8/e10-e12 的‘氏族’后缀一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:543",
+      "evidence_rows": [
+        18429,
+        18430
+      ],
+      "source_excerpt": "Rat-Dropping Soup Clan",
+      "reason": "核对为侮辱性氏族名，句点变体一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "18429 单独列出 Rat-Dropping Soup Clan；18430 为带句点同形。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘鼠粪汤氏族’直译侮辱性氏族名，Clan 统一为‘氏族’。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "组织/氏族，符合原文。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "18430 句点变体同译；与同组 e8/e9/e11/e12 的‘氏族’后缀一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:544",
+      "evidence_rows": [
+        18431,
+        18432
+      ],
+      "source_excerpt": "Cracked Bowl Clan",
+      "reason": "核对为侮辱性氏族名，句点变体一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "18431 单独列出 Cracked Bowl Clan；18432 为带句点同形。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘裂碗氏族’直译侮辱性氏族名，Clan 统一为‘氏族’。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "组织/氏族，符合原文。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "18432 句点变体同译；与同组 e8-e10/e12 的‘氏族’后缀一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:545",
+      "evidence_rows": [
+        18433,
+        18434
+      ],
+      "source_excerpt": "Bug Stew Clan",
+      "reason": "核对为侮辱性氏族名，句点变体一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "18433 单独列出 Bug Stew Clan；18434 为带句点同形。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘虫羹氏族’直译侮辱性氏族名，Clan 统一为‘氏族’。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "组织/氏族，符合原文。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "18434 句点变体同译；与同组 e8-e11 的‘氏族’后缀一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:533",
+    "terms:572",
+    "terms:534",
+    "terms:535",
+    "terms:739",
+    "terms:538",
+    "terms:540",
+    "terms:541",
+    "terms:542",
+    "terms:543",
+    "terms:544",
+    "terms:545"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

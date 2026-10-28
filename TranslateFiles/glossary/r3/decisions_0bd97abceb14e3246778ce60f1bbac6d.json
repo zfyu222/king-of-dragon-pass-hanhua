@@ -1,0 +1,134 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 e1-e3 的专名审校：Barntar 统一为“巴恩塔”，Lhankor Mhy 统一为“兰科尔米”，Orlanth Adventurous 采用“冒险者奥兰斯”；已补齐三条术语释义。f1 中 e3/e4 同译经核对为同一神祇面相的别名，可共用译名。",
+  "acknowledged_findings": [
+    "F0372"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "犁耕/农耕之神，奥兰斯与厄纳尔达之子；其神龛与祝福使农夫劳作更努力。"
+      },
+      "reason": "原释义只提神龛，未说明其神格与亲属关系；据 32171、33335 补齐。",
+      "evidence_rows": [
+        32171,
+        33335
+      ],
+      "table": "terms",
+      "index": 45
+    },
+    {
+      "patch": {
+        "term_reason": "知识之神，又称知晓之神，掌管法律先例、文字与真理，光明使者之一。"
+      },
+      "reason": "原释义仅提英雄探索标题，未说明其知识之神身份；据 30378、33377 补齐。",
+      "evidence_rows": [
+        30378,
+        33377
+      ],
+      "table": "terms",
+      "index": 47
+    },
+    {
+      "patch": {
+        "term_reason": "奥兰斯的冒险者面相；原文称外出探索可取悦他。"
+      },
+      "reason": "原释义已提到冒险者面相，补充探索取悦他的语境。",
+      "evidence_rows": [
+        901
+      ],
+      "table": "terms",
+      "index": 49
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:45",
+      "evidence_rows": [
+        32171
+      ],
+      "source_excerpt": "Barntar the Plowman is the peaceful farmer god, backbone of the clan.",
+      "reason": "确认 Barntar 为犁耕/农耕之神，统一采用“巴恩塔”，并补齐释义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32171 原文以 Barntar 为主名，并称其为 peaceful farmer god，与词条 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“巴恩塔”为 Barntar 的音译，候选多数同译；未加间隔号，符合专名风格。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms 表 category_path=其他；原文为神祇名而非身份、地名等，归入其他合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 term_families 中 Barntar the Plowman 的“巴恩塔”核心译名一致；个别候选“巴恩塔尔”不采用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:47",
+      "evidence_rows": [
+        33377
+      ],
+      "source_excerpt": "Lhankor Mhy is called the Knowing God, for he knows all the precedents of the law, and much more.",
+      "reason": "确认知识之神身份，统一采用“兰科尔米”，并补齐释义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33377 原文称 Lhankor Mhy is called the Knowing God，与词条 source 一致，确为神名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“兰科尔米”完整音译 Lhankor Mhy，符合不夹间隔号规则；候选中兰科米、兰克米等为简写变体，不采用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms 表 category_path=其他；知识之神名归其他合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Lhankor Mhy Finds the Truth、Beard of Lhankor Mhy 等词族候选的核心译名“兰科尔米”一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:49",
+      "evidence_rows": [
+        901
+      ],
+      "source_excerpt": "please Orlanth Adventurous",
+      "reason": "确认该专名指奥兰斯的冒险者面相，保留“冒险者奥兰斯”，并补齐释义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "901 原文出现 Orlanth Adventurous，与词条 source 一致，指奥兰斯的冒险者面相。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“冒险者奥兰斯”表达该面相，Orlanth 统一作“奥兰斯”，未加间隔号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms 表 category_path=其他；神祇面相名归其他合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与只读 e4 Orlanth the Adventurer 同译，经 f1 核对为同一面相的别名，可共用；与 Orlanth 的“奥兰斯”核心名一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:45",
+    "terms:47",
+    "terms:49"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

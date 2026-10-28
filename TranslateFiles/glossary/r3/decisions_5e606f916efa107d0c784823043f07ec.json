@@ -1,0 +1,461 @@
+{
+  "review_complete": true,
+  "review_summary": "审校 12 条术语。保留主要专名，修正 kinstrife、Whirlwind Jar、Snowflower、Gagarth 及四个氏族名的原文依据说明，并将 Trader’s Talk 与 Tradetalk 统一为“贸易语”。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "原文多次用其指亲属间的流血冲突与内斗：会随混沌而来，可能被煽动，并造成灾祸；译作亲族相残。"
+      },
+      "reason": "原 term_reason 中“undead”在本批原文无依据，按实际用例修正。",
+      "evidence_rows": [
+        8798,
+        11579,
+        25501,
+        34011
+      ],
+      "table": "terms",
+      "index": 254
+    },
+    {
+      "patch": {
+        "recommended_translation": "贸易语",
+        "term_reason": "原文指伊萨里斯祭司使用的贸易通用语，用于与外乡战车骑手沟通。"
+      },
+      "reason": "与同批 Tradetalk 的译名统一，避免同一贸易语言出现“商人语/贸易语”两种译法。",
+      "evidence_rows": [
+        4098
+      ],
+      "table": "terms",
+      "index": 257
+    },
+    {
+      "patch": {
+        "term_reason": "原文称伊萨里斯女祭司 Sora Goodseller 向氏族兜售名为 Whirlwind Jar 的宝物；32499 亦出现此名。"
+      },
+      "reason": "原 term_reason 中“困住旋风、战斗中释放”在本批原文无依据，按宝物名用例修正。",
+      "evidence_rows": [
+        4326,
+        32499
+      ],
+      "table": "terms",
+      "index": 260
+    },
+    {
+      "patch": {
+        "term_reason": "原文中索拉坚持买下一匹马，并给它取名 Snowflower。"
+      },
+      "reason": "本批原文未提“白色”，删除无依据描述。",
+      "evidence_rows": [
+        4231
+      ],
+      "table": "terms",
+      "index": 261
+    },
+    {
+      "patch": {
+        "term_reason": "原文称其为亡命徒之神、狂猎之神与恶风/左吹风，曾从奥兰斯处偷窃并被其击败；统一译作加加斯。"
+      },
+      "reason": "原 term_reason 仅提林中神龛，未说明其神格；按多条原文补足并统一译名。",
+      "evidence_rows": [
+        4965,
+        20910,
+        21320,
+        34245
+      ],
+      "table": "terms",
+      "index": 262
+    },
+    {
+      "patch": {
+        "term_reason": "原文列举的氏族名，Clan 表明其为组织名。"
+      },
+      "reason": "本批原文只有氏族名，删除无依据的“讽刺诗对象”。",
+      "evidence_rows": [
+        4638
+      ],
+      "table": "terms",
+      "index": 265
+    },
+    {
+      "patch": {
+        "term_reason": "原文列举的氏族名，Clan 表明其为组织名。"
+      },
+      "reason": "本批原文只有氏族名，删除无依据的“讽刺诗对象”。",
+      "evidence_rows": [
+        4639
+      ],
+      "table": "terms",
+      "index": 266
+    },
+    {
+      "patch": {
+        "term_reason": "原文列举的氏族名，Clan 表明其为组织名。"
+      },
+      "reason": "本批原文只有氏族名，删除无依据的“讽刺诗对象”。",
+      "evidence_rows": [
+        4640
+      ],
+      "table": "terms",
+      "index": 267
+    },
+    {
+      "patch": {
+        "term_reason": "原文列举的氏族名，Clan 表明其为组织名。"
+      },
+      "reason": "本批原文只有氏族名，删除无依据的“讽刺诗对象”。",
+      "evidence_rows": [
+        4641
+      ],
+      "table": "terms",
+      "index": 268
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:254",
+      "evidence_rows": [
+        8798,
+        11579,
+        25501,
+        34011
+      ],
+      "source_excerpt": "Chaos comes in the wake of kinstrife.",
+      "reason": "确认 kinstrife 为亲族间流血冲突与内斗；保留“亲族相残”，并修正原 term_reason 中无原文依据的 undead 说法。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "8798/11579/25501/34011 均指亲族间冲突；原 term_reason 的 undead 无依据，已删。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“亲族相残”贴合 kinstrife 的亲属相斗义，且与各候选主流一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "game_term，category_path=其他合法，enforcement=required 符合机制术语。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "全批统一为“亲族相残”，未出现需区分的其他义项。"
+        }
+      }
+    },
+    {
+      "ref": "terms:256",
+      "evidence_rows": [
+        4026,
+        4027
+      ],
+      "source_excerpt": "He proposes to perform the Salmon Rite, and bring that fish back to your waterways.",
+      "reason": "确认 Salmon Rite 为具名仪式，译名与分类可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4026/4027 均称 Arglain 可执行 Salmon Rite，使鲑鱼回到水道。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“鲑鱼仪式”对应仪式名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name required；归入技能（仪式）合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅此条，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:257",
+      "evidence_rows": [
+        4098
+      ],
+      "source_excerpt": "By using the Trader’s Talk used by Issaries priests, they manage to convey that they are travellers from distant Ralios.",
+      "reason": "确认 Trader’s Talk 是伊萨里斯祭司使用的贸易通用语，与同批 Tradetalk 同指，统一改译“贸易语”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4098 表明这是伊萨里斯祭司用于沟通的贸易语言。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原“商人语”与同批 Tradetalk 的“贸易语”不统一，改为“贸易语”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "语言名归入其他合法，proper_name required。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与同批 Tradetalk 统一为“贸易语”，避免同语异名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:260",
+      "evidence_rows": [
+        4326,
+        32499
+      ],
+      "source_excerpt": "asked if we wished to buy a treasure known as the Whirlwind Jar",
+      "reason": "确认 Whirlwind Jar 为 Sora 兜售的宝物名；保留“旋风罐”，修正原 term_reason 中未见于原文的“困住旋风/战斗释放”。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "4326/32499 只证明其为宝物名；原 term_reason 的“小陶罐、战斗中释放”无本批原文依据，已删。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“旋风罐”直译且与宝藏列表一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name required，物品分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "4326 与 32499 同名同译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:261",
+      "evidence_rows": [
+        4219,
+        4231
+      ],
+      "source_excerpt": "which she named Snowflower",
+      "reason": "确认 Snowflower 是索拉买下并命名的马；保留“雪花”，删除原 term_reason 中无依据的“白色”。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "4231 证明 Sora 买马并取名 Snowflower；本批原文未提“白色”，已修正说明。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“雪花”作为马名自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name required，归入其他合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "4219 与 4231 同指该马名，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:262",
+      "evidence_rows": [
+        4965,
+        20910,
+        21320,
+        34245
+      ],
+      "source_excerpt": "Gagarth, the Bad Wind, god of bandits and outlaws.",
+      "reason": "确认 Gagarth 为亡命徒/狂猎之神、恶风与左吹风；保留“加加斯”，补足神格说明。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "4965/20910/21320/34245 可证其为亡命徒与狂猎之神、恶风/左吹风；原说明过窄，已补。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“加加斯”为多数候选且与音译一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name required，神名归入其他合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各批候选仅音译差异，统一为“加加斯”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:263",
+      "evidence_rows": [
+        4797,
+        15495,
+        18180,
+        21238
+      ],
+      "source_excerpt": "why do they speak Tradetalk with a southern accent?",
+      "reason": "确认 Tradetalk 是通行贸易语言；保留“贸易语”，与同批 Trader’s Talk 统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4797/15495/18180/21238 均表明 Tradetalk 是跨群体使用的贸易语言。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“贸易语”简明对应 Tradetalk。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "语言名归入其他合法，proper_name required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 Trader’s Talk 统一为“贸易语”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:264",
+      "evidence_rows": [
+        4837,
+        9542,
+        14116
+      ],
+      "source_excerpt": "In Oskul’s Saga, the trade of a talking fox leads to six generations of peace.",
+      "reason": "确认 Oskul’s Saga 为被引述的传奇文本；保留“奥斯库尔传奇”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4837/9542/14116 均以 Oskul’s Saga 为可引述的传奇。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“奥斯库尔传奇”作为篇名自然，保留不加书名号以便嵌入。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name required，其他分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "全批译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:265",
+      "evidence_rows": [
+        4638
+      ],
+      "source_excerpt": "Foul Wind Clan",
+      "reason": "确认 Foul Wind Clan 为氏族名；保留“恶风氏族”，删除原说明中无本批依据的“讽刺诗对象”。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "4638 仅给出氏族名；原 term_reason 的“讽刺诗对象”无本批原文依据，已删。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“恶风氏族”对应 Foul Wind Clan。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name required，组织分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与其他氏族名同为“修饰语+氏族”结构。"
+        }
+      }
+    },
+    {
+      "ref": "terms:266",
+      "evidence_rows": [
+        4639
+      ],
+      "source_excerpt": "Old Beer Clan",
+      "reason": "确认 Old Beer Clan 为氏族名；保留“老啤酒氏族”，删除原说明中无本批依据的“讽刺诗对象”。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "4639 仅给出氏族名；原 term_reason 的“讽刺诗对象”无本批原文依据，已删。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“老啤酒氏族”对应 Old Beer Clan。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name required，组织分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同批氏族名结构一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:267",
+      "evidence_rows": [
+        4640
+      ],
+      "source_excerpt": "Sister Dog Clan",
+      "reason": "确认 Sister Dog Clan 为氏族名；保留“犬姐妹氏族”，删除原说明中无本批依据的“讽刺诗对象”。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "4640 仅给出氏族名；原 term_reason 的“讽刺诗对象”无本批原文依据，已删。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“犬姐妹氏族”保留为氏族名译法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name required，组织分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同批氏族名结构一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:268",
+      "evidence_rows": [
+        4641
+      ],
+      "source_excerpt": "Tail Chaser Clan",
+      "reason": "确认 Tail Chaser Clan 为氏族名；保留“追尾氏族”，删除原说明中无本批依据的“讽刺诗对象”。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "4641 仅给出氏族名；原 term_reason 的“讽刺诗对象”无本批原文依据，已删。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“追尾氏族”对应 Tail Chaser Clan。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name required，组织分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同批氏族名结构一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:254",
+    "terms:256",
+    "terms:257",
+    "terms:260",
+    "terms:261",
+    "terms:262",
+    "terms:263",
+    "terms:264",
+    "terms:265",
+    "terms:266",
+    "terms:267",
+    "terms:268"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

@@ -1,0 +1,140 @@
+[
+ {
+  "行号": "4378",
+  "原文": "\\x05 is a good friend of \\x01Bs, who is never happy unless she’s causing trouble for the clan.",
+  "当前译文": "\\x05是\\x01Bs的好朋友，而\\x01Bs不给氏族惹麻烦就不痛快。",
+  "问题": "Opal \\x01 命令不一致；Opal \\xNN 控制字节不一致"
+ },
+ {
+  "行号": "4438",
+  "原文": "Unfortunately, \\x01Bp does have more of a knack for leadership than does \\x01@\\x03, and will be able to maintain a strong anti-\\x01@\\x03 faction if we don’t ask \\x01@\\x03 to resign.",
+  "当前译文": "不幸的是，\\x01Bp确实比\\x01@\\x03更有领导力，而且如果我们不要求\\x01@\\x03辞职，\\x01Bp就能维持一个强大的、反对\\x01@\\x03的派系。",
+  "问题": "Opal \\x01 命令不一致；Opal \\xNN 控制字节不一致"
+ },
+ {
+  "行号": "8359",
+  "原文": "\\x02\\x03This clan, these greedy/What we really need/The last time this happened, it just\\x02 — what I mean to say is that \\x02\\x03they mean so much/to keep our heads up/hard work is not\\x02 — you can’t blame them for it.",
+  "当前译文": "这个氏族，这些贪婪的人/我们真正需要的/上次发生这种事时，它只是\\x02——我想说的是，\\x02\\x03他们如此重要/让我们抬起头来/辛苦劳作并不是\\x02——你不能为此怪他们。",
+  "问题": "Opal \\xNN 控制字节不一致"
+ },
+ {
+  "行号": "8444",
+  "原文": "The clan ring gathers around \\x01@\\x03, who has been struck down again by an old injury. The healers say that the wound never fully healed, and that this time it will take \\x04 life.",
+  "当前译文": "氏族议事会围在\\x01@\\x03身边；\\x01@\\x03又因旧伤倒下。医者说，那伤口从未完全愈合，这一次会夺走\\x04性命。",
+  "问题": "Opal \\x01 命令不一致；Opal \\xNN 控制字节不一致"
+ },
+ {
+  "行号": "8452",
+  "原文": "The ring gathers in sorrow around \\x01@\\x03, who was struck down by a weird Chaos monster \\x02\\x06that had the body of a giant snail and the head of a dragon/that looked like a deer but had the face of a troll/that had the body of a scorpion and a human head/that was hiding at the bottom of a pond/that was living inside one of our cows/that was lurking among the trees at the edge of our tula\\x02.",
+  "当前译文": "议事圈悲恸地围在\\x01@\\x03周围；\\x01@\\x03被一头怪异的混沌怪物击倒，那怪物\\x02\\x06长着巨型蜗牛的身体和龙的头/形似鹿却长着巨魔的脸/长着蝎子的身体和人的头/藏在池塘底部/住在我们的一头牛体内/潜伏在我们图拉边缘的树林间\\x02。",
+  "问题": "Opal \\x01 命令不一致；Opal \\xNN 控制字节不一致"
+ },
+ {
+  "行号": "9604",
+  "原文": "No thralls are worth this \\x02\\x03irritation/constant headache/repeated fighting\\x02.",
+  "当前译文": "没有哪个奴隶值得这份\\x02\\x03烦扰、持续的头痛或反复争斗\\x02。",
+  "问题": "Opal 随机短语分支数量不一致"
+ },
+ {
+  "行号": "9607",
+  "原文": "They are \\x02\\x03mighty/strong/magic-strengthened\\x02 where we are not; just surrender the thralls.",
+  "当前译文": "他们\\x02\\x03强大、强壮，还受魔法强化\\x02，而我们并非如此；交出奴隶吧。",
+  "问题": "Opal 随机短语分支数量不一致"
+ },
+ {
+  "行号": "10272",
+  "原文": "We spoke to \\x01@\\x13, chief of Clan \\x01@!, to see if \\x06 wanted to join our tribe. \\x05 asked us what we had to offer \\x08.",
+  "当前译文": "我们与\\x01@\\x13谈过，\\x01@\\x13是\\x01@!氏族的首领，想知道\\x06是否愿意加入我们的部族。\\x05问我们愿意向\\x08提供什么。",
+  "问题": "Opal \\x01 命令不一致；Opal \\xNN 控制字节不一致"
+ },
+ {
+  "行号": "10290",
+  "原文": "The \\x01@! clan has reason to fear if a tribe forms without it.",
+  "当前译文": "如果部族在没有\\x01@!氏族的情况下成立，\\x01@!氏族有理由感到恐惧。",
+  "问题": "Opal \\x01 命令不一致；Opal \\xNN 控制字节不一致"
+ },
+ {
+  "行号": "12184",
+  "原文": "\\x02\\x03Reimburse/Settle with/Compensate\\x02 them and lay this embarrassing matter to rest.",
+  "当前译文": "偿付/清偿/补偿\\x02他们，让这件尴尬的事就此了结。",
+  "问题": "Opal \\xNN 控制字节不一致"
+ },
+ {
+  "行号": "17200",
+  "原文": "Scold \\x01D\\x07 for embarrassing the clan.",
+  "当前译文": "因\\x01D\\x07令氏族蒙羞而斥责\\x01D\\x07。",
+  "问题": "Opal \\x01 命令不一致；Opal \\xNN 控制字节不一致"
+ },
+ {
+  "行号": "17201",
+  "原文": "We scolded \\x01D\\x07 for embarrassing the clan.",
+  "当前译文": "我们因\\x01D\\x07令氏族蒙羞而斥责了\\x01D\\x07。",
+  "问题": "Opal \\x01 命令不一致；Opal \\xNN 控制字节不一致"
+ },
+ {
+  "行号": "19018",
+  "原文": "One of them said, “Kill him, I want his testicles.” \\x01@t said his accuser was a trickster too, and so the man said, “Now I want his tongue, too.” They hung \\x01@t from a tree and mutilated him.",
+  "当前译文": "其中一人说：“杀了他，我要他的睾丸。”\\x01@t说他的指控者也是个诡术师，于是那人说：“现在我还要他的舌头。”他们把他吊在树上，将他残害。",
+  "问题": "Opal \\x01 命令不一致；Opal \\xNN 控制字节不一致"
+ },
+ {
+  "行号": "19019",
+  "原文": "One of them said, “Kill her, I want her ears and her toes.” \\x01@t said her accuser was a trickster too, and so the man said, “Now I want her tongue, too.” They hung \\x01@t from a tree and mutilated her.",
+  "当前译文": "其中一人说：“杀了她，我要她的耳朵和脚趾。”\\x01@t说她的指控者也是个诡术师，于是那男人说：“现在我还要她的舌头。”他们把她吊在树上，将她残害。",
+  "问题": "Opal \\x01 命令不一致；Opal \\xNN 控制字节不一致"
+ },
+ {
+  "行号": "21502",
+  "原文": "\\x01@\\nton",
+  "当前译文": "\\x01@\\恩顿",
+  "问题": "字面换行/制表转义不一致"
+ },
+ {
+  "行号": "21503",
+  "原文": "\\x01@\\rton",
+  "当前译文": "\\x01@\\尔顿",
+  "问题": "字面换行/制表转义不一致"
+ },
+ {
+  "行号": "23629",
+  "原文": "\\x01@\\x05, who led the party, seemed unharmed after we left the tunnels. But soon after \\x06 regurgitated something which was green and writhed, and died shortly thereafter.",
+  "当前译文": "\\x01@\\x05率领队伍。我们离开隧道后，\\x01@\\x05看上去安然无恙。但不久之后，\\x06吐出一团绿色、蠕动的东西，随后很快死去。",
+  "问题": "Opal \\x01 命令不一致；Opal \\xNN 控制字节不一致"
+ },
+ {
+  "行号": "25762",
+  "原文": "The first contest was proposed by the foreigner. It was a contest to see who could stand the most pain. The foreigner pushed a spearhead through the muscles of his chest, unflinching. Then handed another spear to \\x01@K, who was expected to do the same.",
+  "当前译文": "第一场比试由外邦人提出。这是一场看谁能忍受最大痛苦的比试。外邦人毫不畏缩地将矛头刺穿自己胸部的肌肉，然后把另一支矛递给\\x01@K，指望\\x01@K照样去做。",
+  "问题": "Opal \\x01 命令不一致；Opal \\xNN 控制字节不一致"
+ },
+ {
+  "行号": "26221",
+  "原文": "“It is good to have obedient thralls,” Orlanth said, and hauled \\x01@K off to serve him forever in the realm of the gods. \\x01@K never saw \\x04 people again. The god-talkers said that our clan magic would be weakened, and other misfortunes would likely befall us in the days and weeks ahead.",
+  "当前译文": "“有听话的奴隶是好事，”奥兰斯说，然后把\\x01@K拖走，让\\x01@K永远在诸神领域服侍他。\\x01@K此后再也没有见到\\x04族人。神语者说，我们的氏族魔法会变弱，今后数日乃至数周，恐怕还会有别的灾祸降临到我们头上。",
+  "问题": "Opal \\x01 命令不一致；Opal \\xNN 控制字节不一致"
+ },
+ {
+  "行号": "26222",
+  "原文": "Orlanth hauled \\x01@K off to serve him as a thrall forever in the realm of the gods. \\x01@K never saw \\x04 people again. The god-talkers predicted weaker clan magic and other misfortunes.",
+  "当前译文": "奥兰斯把\\x01@K拖走，让\\x01@K作为奴隶永远在诸神领域服侍他。\\x01@K此后再也没有见到\\x04族人。神语者预言氏族魔法会变弱，还会有其他灾祸。",
+  "问题": "Opal \\x01 命令不一致；Opal \\xNN 控制字节不一致"
+ },
+ {
+  "行号": "26271",
+  "原文": "Orlanth wounded \\x01@K, who was cast from the realm of the gods. The healers thought \\x01@K’s wounds would be fatal, but \\x01@K did not die. The god-talkers said that our clan magic had also been severely wounded.",
+  "当前译文": "奥兰斯打伤了\\x01@K，\\x01@K因此被逐出诸神领域。医者认为\\x01@K的伤会致命，但\\x01@K没有死。神语者说，我们的氏族魔法也受到了重创。",
+  "问题": "Opal \\x01 命令不一致；Opal \\xNN 控制字节不一致"
+ },
+ {
+  "行号": "26344",
+  "原文": "Lhankor Mhy refused, saying that he did not trust \\x01@K, who lost the Truth in the first place.",
+  "当前译文": "兰科尔米拒绝了，说他不信任\\x01@K，毕竟当初就是\\x01@K弄丢了真理。",
+  "问题": "Opal \\x01 命令不一致；Opal \\xNN 控制字节不一致"
+ },
+ {
+  "行号": "27542",
+  "原文": "When \\x01@\\x03 tried to administer the Bondsman’s Oath, \\x01@\\x14 kept bursting into uncontrollable laughter. Finally he dropped his trousers, squatted, and dropped a turd in the clan hall. As onlookers recoiled from a horrible odor, he ran off and was not seen again.",
+  "当前译文": "当\\x01@\\x03试图让\\x01@\\x14立下受缚者誓言时，\\x01@\\x14却一次次忍不住狂笑。最后他脱下裤子，蹲下，在氏族大厅里拉了一坨屎。围观者被一股恶臭熏得连连后退，他却跑掉了，再也没人见过他。",
+  "问题": "Opal \\x01 命令不一致；Opal \\xNN 控制字节不一致"
+ }
+]

@@ -1,0 +1,446 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1-e12 的原文、译名、分类与一致性；统一 Gbaji、Aldryami、Clearwine、wyrm/dragonkind 及氏族职衔译名，补齐关键 term_reason，并确认 f1 为同一职衔的合理共用译名。",
+  "acknowledged_findings": [
+    "F0402"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "混沌神/欺骗者；33965 记谎言之神以 Gbaji 之名入世，34033 称 Nysalor 被后世记为 Gbaji；23015 记其诅咒泰尔莫里。"
+      },
+      "reason": "原 term_reason 仅述一次英雄探索，未说明 Gbaji 的身份与多次出现的核心含义。",
+      "evidence_rows": [
+        33878,
+        33965,
+        34033,
+        23015
+      ],
+      "table": "terms",
+      "index": 338
+    },
+    {
+      "patch": {
+        "term_reason": "植物民族/精灵的族名；原文以 Aldryami 与 elves 互释，并称其为 Ernalda 的孙辈。"
+      },
+      "reason": "补全该族名与 elves、Ernalda 孙辈的关系，明确适用含义。",
+      "evidence_rows": [
+        8025,
+        26019,
+        33993
+      ],
+      "table": "terms",
+      "index": 341
+    },
+    {
+      "patch": {
+        "enforcement": "required",
+        "term_reason": "氏族中负责战争的领袖职衔；7976 直接以 Their war leader is 引出该职位。"
+      },
+      "reason": "该职衔与 warleader 同指军事领袖，应作为必统一术语而非仅参考译名。",
+      "evidence_rows": [
+        7976,
+        8215
+      ],
+      "table": "terms",
+      "index": 342
+    },
+    {
+      "patch": {
+        "term_reason": "氏族议事会（ring）的首领；32203 说明其须为氏族守护学识与传说。"
+      },
+      "reason": "补明 ring-leader 指议事会首领，而非普通“ringleader”含义。",
+      "evidence_rows": [
+        32191,
+        32203
+      ],
+      "table": "terms",
+      "index": 1020
+    },
+    {
+      "patch": {
+        "recommended_translation": "宣布为法外者",
+        "term_reason": "将人宣布为法外者的法律惩罚；8232 称其严酷，需占卜确认是否施行。"
+      },
+      "reason": "“宣布不法”搭配不准确；改为明确玩家可施行的法外惩罚。",
+      "evidence_rows": [
+        8232
+      ],
+      "table": "terms",
+      "index": 346
+    },
+    {
+      "patch": {
+        "term_reason": "该地因冬季葡萄所酿、色淡味冷的酒得名；后成为城镇及埃尔纳尔达大神殿所在地。"
+      },
+      "reason": "补明 Clearwine 的命名依据及作为城镇、神殿所在地的用法。",
+      "evidence_rows": [
+        28485,
+        33919,
+        33922
+      ],
+      "table": "terms",
+      "index": 349
+    },
+    {
+      "patch": {
+        "recommended_translation": "龙族",
+        "term_reason": "龙类/龙族的统称；8422 称 Wyrms 是 dragonkind 中最弱者，33906 记人类与 dragonkind 共建帝国。"
+      },
+      "reason": "“龙族”更自然，并可覆盖 dragons、dragonewts 等龙类总称，与 wyrm 的具体译名区分。",
+      "evidence_rows": [
+        8422,
+        33906
+      ],
+      "table": "terms",
+      "index": 352
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:338",
+      "evidence_rows": [
+        33878,
+        33965,
+        34033,
+        23015
+      ],
+      "source_excerpt": "Gbaji the Deceiver",
+      "reason": "核对专名、神祇身份及跨条一致性；拓展 term_reason。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7788、21622、33878、34033 均以 Gbaji 指混沌神或欺骗者，拼写稳定。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "候选仅有“格巴吉/加巴吉”，依据 33878 与 34033 的同一指称，统一取“格巴吉”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "33878 称 Gbaji the Deceiver，21622 称 Chaos god，作为神祇专名归入 terms 的“其他”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与“Gbaji Wars”共享“格巴吉”，专名部分一致；不使用“加巴吉”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:921",
+      "evidence_rows": [
+        25112
+      ],
+      "source_excerpt": "since the Gbaji Wars",
+      "reason": "核对历史战争专名及 Gbaji 组成部分一致性。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25112 中 the Gbaji Wars 指泰尔莫里肇乱以来的历史战争，拼写固定。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保留 Gbaji 的统一译名“格巴吉”，全名译作“格巴吉战争”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "战争事件不属身份/地名/组织等类，category_path=其他合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Gbaji 部分统一为“格巴吉”，与“格巴吉战争”整体译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:341",
+      "evidence_rows": [
+        8025,
+        26019,
+        33993
+      ],
+      "source_excerpt": "the plant people called Aldryami, or elves",
+      "reason": "核对种族专名、植物民族/精灵别称及大小写变体。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8025/8035 明称 plant people called Aldryami, or elves；33993 反向称 elves, or Aldryami。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "多数候选作“阿尔德里亚米”，且与 elves 互释；统一采用“阿尔德里亚米”，不用“奥尔德亚米”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文明确其为植物民族/精灵族，category_path=种族正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各条 Aldryami/aldryami 大小写变体统一为“阿尔德里亚米”；与神名 Aldrya 区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:342",
+      "evidence_rows": [
+        7976,
+        8215,
+        21575
+      ],
+      "source_excerpt": "Their war leader is",
+      "reason": "核对军事领袖职衔、译名共享及 enforcement。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7976/8215 均以 war leader 指氏族军事首领；21575 亦以该短语指 Hauberk Jon。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“战争领袖”符合职衔含义；共享译名用于同一职衔，不构成冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "8215 称其为追猎法外者的我方 war leader，属身份/职衔，category_path=身份正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与无空格变体 warleader 同指军事领袖，统一“战争领袖”；已将 enforcement 提升为 required 以确保一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1020",
+      "evidence_rows": [
+        32191,
+        32203
+      ],
+      "source_excerpt": "We need a ring-leader first thing.",
+      "reason": "核对 ring-leader 的议事会首领含义及职责说明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32191 称氏族首先需要 ring-leader；32203 说明其须为氏族守护学识与传说。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“议事会首领”体现 ring 为氏族议事会，不是普通 ringleader；保留该职衔译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "32203 明确其为习俗要求的职位，category_path=身份正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两处 ring-leader 均指同一议事会职衔，统一“议事会首领”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:343",
+      "evidence_rows": [
+        7966,
+        7969
+      ],
+      "source_excerpt": "their clan trader",
+      "reason": "核对氏族商人职衔及两处相同用法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7966/7969 均以 their clan trader 引出负责交涉的氏族成员。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“氏族商人”对应 clan trader，保留身份职衔含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文作为氏族中的交涉职衔，category_path=身份合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两条仅措辞上下文略异，clan trader 均统一为“氏族商人”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:346",
+      "evidence_rows": [
+        8232
+      ],
+      "source_excerpt": "Outlawing is harsh",
+      "reason": "核对法外惩罚机制并修正生硬译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8232 中 Outlawing is harsh 表明其是一种可占卜确认是否施行的严酷处置。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原“宣布不法”搭配生硬；“宣布为法外者”准确表达将人置于法律保护之外的惩罚。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属法律惩罚/机制，非一般动作；category_path=其他并保留 reference 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一为“宣布为法外者”，避免与普通“宣布非法”义混淆。"
+        }
+      }
+    },
+    {
+      "ref": "terms:347",
+      "evidence_rows": [
+        8246
+      ],
+      "source_excerpt": "sacrificing to Enemy Gods",
+      "reason": "核对敌对神祇类别与 proper gods 的对照。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8246 以 sacrificing to Enemy Gods 与 the proper gods 对照，指敌对神祇类别。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“敌神”简洁保留类别性质；全称可理解为敌对神祇。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其为神祇类别而非单个地名/组织，category_path=其他合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅此条，Enemy Gods 统一作“敌神”，与 proper gods 的“正统神祇”形成对照。"
+        }
+      }
+    },
+    {
+      "ref": "terms:349",
+      "evidence_rows": [
+        8364,
+        28485,
+        33919,
+        33922
+      ],
+      "source_excerpt": "So Colymar and Hareva called that place Clearwine, and made it their home.",
+      "reason": "核对地名、命名由来及城镇/神殿用法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8364、28485、33919、33922 均指同一 Clearwine 地点，含城镇及大神殿语境。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "33919 明示由淡色冷酒得名；“清酒城”作为地名统一，未采用“克利尔温”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "28485 称 Great Ernalda temple in Clearwine，category_path=地名正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各条均统一为“清酒城”；8364 以北集结、33922 烧毁聚落均指同一地。"
+        }
+      }
+    },
+    {
+      "ref": "terms:351",
+      "evidence_rows": [
+        8391
+      ],
+      "source_excerpt": "Wyrms are dragon-like creatures the size of a small stead.",
+      "reason": "核对 wyrm 的生物类型及与 dragonkind 的层级区分。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8391 直接解释 Wyrms are dragon-like creatures the size of a small stead。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“龙兽”对应 dragon-like creature，保留具体生物名，不泛化为普通“龙”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文将其描述为生物种类，category_path=种族合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 dragonkind 的“龙族”总称区分：wyrm 译“龙兽”，不混用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:352",
+      "evidence_rows": [
+        8422,
+        33882,
+        33906
+      ],
+      "source_excerpt": "Wyrms are the weakest of dragonkind.",
+      "reason": "核对龙类总称、覆盖范围并统一译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8422/33882/33906 均以 dragonkind 指龙类整体，涵盖 Wyrms、dragonewts 等。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原“龙类”可保留，但统一为更自然且可覆盖 dragonkind 的“龙族”，区别于 wyrm“龙兽”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "33882 称 dragonewts 为其一支并属 Elder Races，category_path=种族正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "dragonkind 作为总称统一“龙族”；wyrm 作“龙兽”，层级清楚。"
+        }
+      }
+    },
+    {
+      "ref": "terms:356",
+      "evidence_rows": [
+        8448
+      ],
+      "source_excerpt": "Newtlings",
+      "reason": "核对随机族名分支中的种族专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8448 随机分支列出 Newtlings，与 Sea People、Tusk Riders 等族名并列。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“蝾螈人”对应 Newtling 的蝾螈形人种族，保留专名形象。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "与多个族名并列，category_path=种族正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅此条；Newtlings 复数形式统一为“蝾螈人”。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:338",
+    "terms:921",
+    "terms:341",
+    "terms:342",
+    "terms:1020",
+    "terms:343",
+    "terms:346",
+    "terms:347",
+    "terms:349",
+    "terms:351",
+    "terms:352",
+    "terms:356"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

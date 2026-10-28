@@ -1,0 +1,377 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1–e12 的原文、译名、分类与一致性。保留 e1/e2/e3/e5–e10 现有译名；统一 Humakt 音译为“胡马卡特”（e4/e12）；补全 e11“死亡符文”的符号与宝物两义。f1 中 Storm Bull/StormBull 为同一神祇变体，共用“风暴公牛”成立。",
+  "acknowledged_findings": [
+    "F0352"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "死亡制造者胡马卡特"
+      },
+      "reason": "Humakt 核心音译按同词族统一为“胡马卡特”，保留“死亡制造者”称号。",
+      "evidence_rows": [
+        2230
+      ],
+      "table": "terms",
+      "index": 140
+    },
+    {
+      "patch": {
+        "term_reason": "游戏中的死亡符文符号；也指银制死亡符文宝物，能在亡灵接近时示警。"
+      },
+      "reason": "原文同时有符文符号与银制宝物两种用法，补全 term_reason 的实际使用范围。",
+      "evidence_rows": [
+        2168,
+        26305
+      ],
+      "table": "terms",
+      "index": 162
+    },
+    {
+      "patch": {
+        "recommended_translation": "净化者胡马卡特"
+      },
+      "reason": "神话故事名中的 Humakt 统一为“胡马卡特”，保留“净化者”称号。",
+      "evidence_rows": [
+        2353
+      ],
+      "table": "terms",
+      "index": 165
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:129",
+      "evidence_rows": [
+        2084
+      ],
+      "source_excerpt": "become King of Dragon Pass.",
+      "reason": "头衔与游戏标题均指向龙隘之王；身份类用于该统治头衔。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2084 明确以竞赛决定谁娶羽马女王并成为 King of Dragon Pass。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "游戏背景已定中文名“龙隘之王”，与头衔语义一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "King 在此为统治者头衔，归入身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 33067 的“成为首位龙隘之王”用法一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:135",
+      "evidence_rows": [
+        2227
+      ],
+      "source_excerpt": "hated Red Empire of the north",
+      "reason": "北方敌对帝国；组织专名，译名直译且统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2227 以 hated Red Empire of the north 指敌对帝国势力。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Red Empire 直译为“红色帝国”，符合专名用法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为帝国势力归入组织。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 2286 的 Red Empire People 用法一致，未误作普通形容词。"
+        }
+      }
+    },
+    {
+      "ref": "terms:136",
+      "evidence_rows": [
+        24697
+      ],
+      "source_excerpt": "also called the Storm Bull.",
+      "reason": "乌罗克斯的别称/神性身份；与无空格变体同指，共用译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "24697 将 Urox 称为 Storm Bull，确立别称关系。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“风暴公牛”为通行直译，符合同一神祇别名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为 Urox 的称号/身份归入身份，未误作普通牛。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同形无空格变体同指该神祇，共享“风暴公牛”译名，非误译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:140",
+      "evidence_rows": [
+        2230
+      ],
+      "source_excerpt": "holy warriors of Humakt the Death Maker",
+      "reason": "Humakt 称号；按同词族统一音译为胡马卡特，保留死亡制造者。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2230 以 Humakt the Death Maker 指胡马卡特的死亡战士神职称号。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原拟“胡马克特”；依同词族 Humakt 统一为“胡马卡特”，改为“死亡制造者胡马卡特”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "称号用于神祇身份，归入身份。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "Humakt 核心音译统一为“胡马卡特”；“死亡制造者”保留称号差异。"
+        }
+      }
+    },
+    {
+      "ref": "terms:142",
+      "evidence_rows": [
+        2182
+      ],
+      "source_excerpt": "keeps the Creekstream River from going dry.",
+      "reason": "河流专名；“溪流河”保留 Creekstream 的描写性构词。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2182 明示 Creekstream River 为需要保持不枯竭的河流。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“溪流河”作为河流专名可读且对应原词。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "河流名归入地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "无同形普通词冲突，地名译法保持一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:143",
+      "evidence_rows": [
+        2210
+      ],
+      "source_excerpt": "rival the Fire Tribe.",
+      "reason": "神话部族专名；统一为“火部族”，避免变体混用。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2210 以 rival the Fire Tribe 指 Orlanth 需要抗衡的部族。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“火部族”简洁对应 Fire Tribe，符合部族名风格。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "部族群体归入组织。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选中的“火焰部族/火之部落”均为未定变体；本批统一“火部族”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:145",
+      "evidence_rows": [
+        2213
+      ],
+      "source_excerpt": "half in the Realm of Orlanth.",
+      "reason": "奥兰斯的神界领域；地名专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2213 明示奖励为一半在此世界、一半在 Realm of Orlanth。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“奥兰斯之域”保留领域含义，Orlanth 统一为“奥兰斯”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神界领域归入地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Orlanth 的既有音译一致，未另造新名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:149",
+      "evidence_rows": [
+        2217
+      ],
+      "source_excerpt": "striking down the Dog-Bringing People",
+      "reason": "神话群体名；“携犬之民”保留 Dog-Bringing 的主动构词。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2217 将 Dog-Bringing People 列为被击倒的群体。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“携犬之民”对应 Dog-Bringing People 的群体称谓。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为神话群体名归入组织。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批群体名采用简短“之民”式译法一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:152",
+      "evidence_rows": [
+        2217
+      ],
+      "source_excerpt": "winning the blessing of the Milk Pail Spirits",
+      "reason": "奶桶相关精灵群体；其他类因非组织/种族专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2217 以 Milk Pail Spirits 指可赐福的精灵群体。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“奶桶精灵”对应 Milk Pail Spirits，语义可辨。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "精灵群体不宜归组织/种族，保留其他类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Milk Pail 统一作“奶桶”，Spirits 作精灵群体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:160",
+      "evidence_rows": [
+        2283
+      ],
+      "source_excerpt": "Horse-Spawn and Wasp Riders",
+      "reason": "敌对群体名；“黄蜂骑手”保留骑乘者含义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2283 将 Wasp Riders 与 Horse-Spawn 并列为掠夺者群体。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“黄蜂骑手”对应 Wasp Riders 的骑乘者含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为群体/种族名归入种族。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与并列群体名保持简短称谓，未误作普通职业。"
+        }
+      }
+    },
+    {
+      "ref": "terms:162",
+      "evidence_rows": [
+        2168,
+        26305
+      ],
+      "source_excerpt": "a silver Death rune",
+      "reason": "符文符号与银制宝物两义并存；补全 term_reason 的使用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2168 为额上 Death Rune 符号，26305 为银制 Death rune 宝物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“死亡符文”同时适配符号与实物。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "保留其他类以涵盖符文机制；实物用法在 term_reason 说明。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补全 term_reason，避免只记录象征义而遗漏宝物义；译名不变。"
+        }
+      }
+    },
+    {
+      "ref": "terms:165",
+      "evidence_rows": [
+        2353
+      ],
+      "source_excerpt": "Humakt the Cleanser",
+      "reason": "神话故事名；Humakt 统一胡马卡特，保留净化者称号。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2353 以 story of ... 列出 Humakt the Cleanser 为可讲述的神话名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原拟“胡马克特”；按同词族统一为“胡马卡特”，改为“净化者胡马卡特”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为可讲述的神话故事名归入其他。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "Humakt 核心音译统一为“胡马卡特”，与死亡制造者条一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:129",
+    "terms:135",
+    "terms:136",
+    "terms:140",
+    "terms:142",
+    "terms:143",
+    "terms:145",
+    "terms:149",
+    "terms:152",
+    "terms:160",
+    "terms:162",
+    "terms:165"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

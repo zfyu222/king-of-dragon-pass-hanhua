@@ -1,0 +1,275 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对本批6条非译条目及f1-f6：均为资源名、内部控件名、字段名、输入占位变量或调试占位串，原文均为独立完整记录，保留原形成立；但原条均缺少明确适用域，现统一补为whole_record、区分大小写，避免全局禁翻普通词或片段。",
+  "acknowledged_findings": [
+    "F0342",
+    "F0343",
+    "F0344",
+    "F0345",
+    "F0346",
+    "F0347"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文该条完整记录仅为资源标识 image1，系独立资源名；只按整条记录精确保留，不将 image 或 image1 作为全局禁翻。"
+        }
+      },
+      "reason": "补齐资源名的适用范围，避免全局保护普通词。",
+      "evidence_rows": [
+        32675
+      ],
+      "table": "non_translate",
+      "index": 485
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文该条完整记录仅为资源标识 image2，系独立资源名；只按整条记录精确保留，不将 image 或 image2 作为全局禁翻。"
+        }
+      },
+      "reason": "补齐资源名的适用范围，避免全局保护普通词。",
+      "evidence_rows": [
+        32676
+      ],
+      "table": "non_translate",
+      "index": 486
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文完整记录为内部控件名 WCWeaponthanes，独立出现；仅按整条记录精确保留，不拆分保护 WC 或 Weaponthanes。"
+        }
+      },
+      "reason": "内部控件名需限定为整条记录匹配。",
+      "evidence_rows": [
+        32677
+      ],
+      "table": "non_translate",
+      "index": 487
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文完整记录为内部数据字段名 clanInfo，camelCase 具有标识意义；仅按整条记录精确保留，不全局禁止 clan 或 info。"
+        }
+      },
+      "reason": "内部字段名需限定为整条记录匹配。",
+      "evidence_rows": [
+        32852
+      ],
+      "table": "non_translate",
+      "index": 488
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文完整记录为输入占位变量名 ClanName，独立出现；仅按整条记录且区分大小写保留，不作为普通氏族名称全局禁翻。"
+        }
+      },
+      "reason": "输入占位变量名需限定为整条记录匹配。",
+      "evidence_rows": [
+        32818
+      ],
+      "table": "non_translate",
+      "index": 489
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文完整记录为占位/调试字符串 GGGGGGGGGGGGG，无正文语义；仅按整条记录精确保留，避免把普通 G 字母串全局禁翻。"
+        }
+      },
+      "reason": "占位/调试串需限定为整条记录匹配。",
+      "evidence_rows": [
+        32798
+      ],
+      "table": "non_translate",
+      "index": 490
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:485",
+      "evidence_rows": [
+        32675
+      ],
+      "source_excerpt": "image1",
+      "reason": "资源标识保留不译，补齐整条记录级适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 32675 为完整记录 image1，独立出现，无附加语境。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为资源标识保留原形 image1，未作翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归为 non_translate 成立，但原条缺少适用域；已用 edits 限定为 whole_record、区分大小写。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 image2 为并列但不同的资源标识，保留各自编号，不合并为全局术语。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:486",
+      "evidence_rows": [
+        32676
+      ],
+      "source_excerpt": "image2",
+      "reason": "资源标识保留不译，补齐整条记录级适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 32676 为完整记录 image2，独立出现，无附加语境。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为资源标识保留原形 image2，未作翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归为 non_translate 成立，但原条缺少适用域；已用 edits 限定为 whole_record、区分大小写。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 image1 为并列但不同的资源标识，保留各自编号，不合并为全局术语。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:487",
+      "evidence_rows": [
+        32677
+      ],
+      "source_excerpt": "WCWeaponthanes",
+      "reason": "内部控件名保留不译，补齐整条记录级适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 32677 为完整记录 WCWeaponthanes，独立出现。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为内部控件名保留原形 WCWeaponthanes。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归为 non_translate 成立；原条未限定范围，已补 whole_record 与大小写精确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "复合标识整体保留，不拆成 WC 与 Weaponthanes 两段保护。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:488",
+      "evidence_rows": [
+        32852
+      ],
+      "source_excerpt": "clanInfo",
+      "reason": "内部数据字段名保留不译，补齐整条记录级适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 32852 为完整记录 clanInfo，camelCase 内部字段名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保留原字段名 clanInfo，不译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归为 non_translate 成立；补 whole_record、区分大小写，避免全局禁翻 clan 或 info。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "保持 camelCase 与字段名整体一致，不转为普通“氏族信息”词义。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:489",
+      "evidence_rows": [
+        32818
+      ],
+      "source_excerpt": "ClanName",
+      "reason": "输入占位变量名保留不译，补齐整条记录级适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 32818 为完整记录 ClanName，独立出现。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为占位变量名保留原形 ClanName。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归为 non_translate 成立；补 whole_record、区分大小写，避免把普通“氏族名”词义全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "变量名整体保留，不与人物或氏族专名译名混同。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:490",
+      "evidence_rows": [
+        32798
+      ],
+      "source_excerpt": "GGGGGGGGGGGGG",
+      "reason": "占位/调试串保留不译，补齐整条记录级适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 32798 为完整记录 GGGGGGGGGGGGG，独立出现，无其他语义语境。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为占位/调试串保留原形，不赋予译义。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "归为 non_translate 成立；补 whole_record、区分大小写，避免裸 G 串被当全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "纯占位符独立保护，不与其他 G 串建立术语关系。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:485",
+    "non_translate:486",
+    "non_translate:487",
+    "non_translate:488",
+    "non_translate:489",
+    "non_translate:490"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

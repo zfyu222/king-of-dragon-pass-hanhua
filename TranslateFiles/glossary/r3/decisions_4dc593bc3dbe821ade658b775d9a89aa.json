@@ -1,0 +1,100 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1/e2 的原文及 34007 对 tula 的定义：tula/tulas 是同一“氏族家园领地”术语的单复数变体，统一保留音译“图拉”；e2 的分类与 e1 统一为“地名”，两条 term_reason 已精炼。f1 涉及的共用译名来自单复数变体，不构成不同专名冲突。",
+  "acknowledged_findings": [
+    "F0367"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "category_path": "地名",
+        "term_reason": "原文 34007 明确 tula 为 a clan's home territory；指氏族的家园领地，涉及探索、巡逻、入侵、设宴等，保留音译“图拉”。"
+      },
+      "reason": "最终行使用合法分类“地名”，不采用候选中的“地点”；补全实际含义与使用范围，并去掉原文未给出的条号引用。",
+      "evidence_rows": [
+        34007,
+        32923
+      ],
+      "table": "terms",
+      "index": 31
+    },
+    {
+      "patch": {
+        "category_path": "地名",
+        "term_reason": "tula 的复数形式，指多个氏族的家园领地；21577 的 weakened tulas、12613/12616 的 tulas of our tribe 均为此义，中文不标复数，统一译“图拉”。"
+      },
+      "reason": "与 e1 统一分类为“地名”，并明确复数义及中文不标复数的处理。",
+      "evidence_rows": [
+        21577,
+        12613
+      ],
+      "table": "terms",
+      "index": 589
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:31",
+      "evidence_rows": [
+        34007,
+        32923
+      ],
+      "source_excerpt": "tula: a clan's home territory.",
+      "reason": "34007 直接定义 tula；32923 以 home, or tula 说明其为氏族家园领地。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34007 明确定义 tula: a clan's home territory；32923 称 these lands your home, or tula，语义一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保留音译“图拉”作为游戏内术语；定义句可译为“图拉：氏族的家园领地”，避免与“氏族 X 的族地”重复。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "tula 指氏族领地或地理范围，使用合法分类“地名”；候选中的“地点”不进入最终行。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e2 的复数 tulas 同源；中文不标复数，统一译作“图拉”。f1 所述共用译名来自单复数变体，并非不同专名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:589",
+      "evidence_rows": [
+        21577,
+        12613
+      ],
+      "source_excerpt": "We raided their weakened tulas, which were full of mourners and wounded warriors.",
+      "reason": "21577 和 12613 均以 tulas 指多个氏族的家园领地。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "21577 的 their weakened tulas 与 12613 的 overran tulas of our tribe 均指多个氏族领地。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "tulas 为 tula 的复数；中文不标复数，仍译“图拉”，不译“图拉们”。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "由“其他”改为“地名”，与 e1 一致，符合其领地或地理范围义。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1 同源，统一译名“图拉”；复数由上下文体现。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:31",
+    "terms:589"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

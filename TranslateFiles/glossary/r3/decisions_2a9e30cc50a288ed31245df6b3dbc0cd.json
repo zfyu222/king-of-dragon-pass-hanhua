@@ -1,0 +1,490 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对本批 11 个 non_translate 条目及其原文、语料证据。所有条目均以 whole_record 限定：TCScreen、TCTrade、V@、f@Tutorial:Next、TL/BL/BR/CR/BC、updatable 仅保护完整记录，corner 仅保护独立布局 token，正文中作普通方位词的 corner 不纳入保护。未新增、删除或隔离术语条目。",
+  "acknowledged_findings": [
+    "F0333",
+    "F0334",
+    "F0335",
+    "F0336",
+    "F0337",
+    "F0338",
+    "F0339",
+    "F0340",
+    "F0341"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 32379 的完整源文仅为内部界面标识 TCScreen，没有嵌入正文用法证据；限定整条记录可保留标识且不误伤普通文本。"
+        }
+      },
+      "reason": "为内部界面标识补明确适用范围。",
+      "evidence_rows": [
+        32379
+      ],
+      "table": "non_translate",
+      "index": 471
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 32380 的完整源文仅为内部界面标识 TCTrade，没有嵌入正文用法证据；限定整条记录可保留标识且不误伤普通文本。"
+        }
+      },
+      "reason": "为内部界面标识补明确适用范围。",
+      "evidence_rows": [
+        32380
+      ],
+      "table": "non_translate",
+      "index": 472
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 32664 的完整源文为独立运行时按钮标记 V@，含 @ 且无嵌入正文用例；限定整条记录可保留标记。"
+        }
+      },
+      "reason": "为运行时按钮标记补明确适用范围。",
+      "evidence_rows": [
+        32664
+      ],
+      "table": "non_translate",
+      "index": 474
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 32665 的完整源文为独立教程跳转标记 f@Tutorial:Next，无嵌入正文用例；限定整条记录可保留标记。"
+        }
+      },
+      "reason": "为运行时教程跳转标记补明确适用范围。",
+      "evidence_rows": [
+        32665
+      ],
+      "table": "non_translate",
+      "index": 475
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 32666 为独立 corner 布局 token；ordinal 26664 显示 corner 在正文中可作普通方位词，因此只能保护整条记录而不能全局禁翻。"
+        }
+      },
+      "reason": "限定 corner 仅匹配独立布局 token，隔离正文普通词用法。",
+      "evidence_rows": [
+        32666,
+        26664
+      ],
+      "table": "non_translate",
+      "index": 476
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 32667 的完整源文为独立短标识 TL，没有嵌入正文用法证据；限定整条记录可避免误匹配正文缩写或普通词。"
+        }
+      },
+      "reason": "为独立图像角标短标识补明确适用范围。",
+      "evidence_rows": [
+        32667
+      ],
+      "table": "non_translate",
+      "index": 477
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 32668 的完整源文为独立短标识 BL，没有嵌入正文用法证据；限定整条记录可避免误匹配正文缩写或普通词。"
+        }
+      },
+      "reason": "为独立图像角标短标识补明确适用范围。",
+      "evidence_rows": [
+        32668
+      ],
+      "table": "non_translate",
+      "index": 478
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 32669 的完整源文为独立短标识 BR，没有嵌入正文用法证据；限定整条记录可避免误匹配正文缩写或普通词。"
+        }
+      },
+      "reason": "为独立图像角标短标识补明确适用范围。",
+      "evidence_rows": [
+        32669
+      ],
+      "table": "non_translate",
+      "index": 479
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 32670 的完整源文为独立短标识 CR，没有嵌入正文用法证据；限定整条记录可避免误匹配正文缩写或普通词。"
+        }
+      },
+      "reason": "为独立图像角标短标识补明确适用范围。",
+      "evidence_rows": [
+        32670
+      ],
+      "table": "non_translate",
+      "index": 480
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 32671 的完整源文为独立短标识 BC，没有嵌入正文用法证据；限定整条记录可避免误匹配正文缩写或普通词。"
+        }
+      },
+      "reason": "为独立图像角标短标识补明确适用范围。",
+      "evidence_rows": [
+        32671
+      ],
+      "table": "non_translate",
+      "index": 481
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 32672 的完整源文为内部状态标记 updatable，没有嵌入正文用法证据；限定整条记录可保留字段标识且不误伤普通文本。"
+        }
+      },
+      "reason": "为内部状态标记补明确适用范围。",
+      "evidence_rows": [
+        32672
+      ],
+      "table": "non_translate",
+      "index": 482
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:471",
+      "evidence_rows": [
+        32379
+      ],
+      "source_excerpt": "TCScreen",
+      "reason": "源文为独立内部界面标识；补 whole_record 范围后保留原文，避免误匹配正文。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32379 的完整原文为 TCScreen，是独立界面标识。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目按原文保留，无需中文替换。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "TCScreen 为内部界面标记/标识符，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少显式范围；现限定为整条记录匹配，避免全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:472",
+      "evidence_rows": [
+        32380
+      ],
+      "source_excerpt": "TCTrade",
+      "reason": "源文为独立内部界面标识；补 whole_record 范围后保留原文，避免误匹配正文。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32380 的完整原文为 TCTrade，是独立界面标识。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目按原文保留，无需中文替换。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "TCTrade 为内部界面标记/标识符，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少显式范围；现限定为整条记录匹配，避免全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:474",
+      "evidence_rows": [
+        32664
+      ],
+      "source_excerpt": "V@",
+      "reason": "源文为独立运行时按钮标记；补 whole_record 范围后保留原文，避免 @ 标记污染正文。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32664 的完整原文为 V@，是独立运行时按钮标记。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目按原文保留，无需中文替换。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "含 @ 的短标记属于运行时按钮/界面标识，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少显式范围；现限定为整条记录匹配，避免全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:475",
+      "evidence_rows": [
+        32665
+      ],
+      "source_excerpt": "f@Tutorial:Next",
+      "reason": "源文为独立教程跳转标记；补 whole_record 范围后保留原文，避免影响正文。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32665 的完整原文为 f@Tutorial:Next，是独立教程跳转标记。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目按原文保留，无需中文替换。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "f@Tutorial:Next 为运行时教程跳转/界面标识，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少显式范围；现限定为整条记录匹配，避免全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:476",
+      "evidence_rows": [
+        32666,
+        26664
+      ],
+      "source_excerpt": "corner",
+      "reason": "独立记录 corner 可作布局 token，但正文 ordinal 26664 证明其也可作普通方位词；必须以 whole_record 隔离。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32666 为独立记录 corner；ordinal 26664 原文 bulls hemmed her into a corner of the two-legs’ stead. 显示正文普通词用法。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "仅独立记录 corner 保留不译；正文中的普通词 corner 仍按语境翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "独立记录可作图像布局 token，归入 non_translate 仅在整条记录范围下成立。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 whole_record 范围，避免把同形普通词全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:477",
+      "evidence_rows": [
+        32667
+      ],
+      "source_excerpt": "TL",
+      "reason": "源文为独立短标识；补 whole_record 范围后保留原文，避免误匹配正文缩写或普通词。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32667 的完整原文为 TL，是独立短标识。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目按原文保留，无需中文替换。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "TL 为图像角标类短标识，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "短标识不能全局禁翻；现限定为整条记录匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:478",
+      "evidence_rows": [
+        32668
+      ],
+      "source_excerpt": "BL",
+      "reason": "源文为独立短标识；补 whole_record 范围后保留原文，避免误匹配正文缩写或普通词。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32668 的完整原文为 BL，是独立短标识。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目按原文保留，无需中文替换。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "BL 为图像角标类短标识，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "短标识不能全局禁翻；现限定为整条记录匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:479",
+      "evidence_rows": [
+        32669
+      ],
+      "source_excerpt": "BR",
+      "reason": "源文为独立短标识；补 whole_record 范围后保留原文，避免误匹配正文缩写或普通词。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32669 的完整原文为 BR，是独立短标识。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目按原文保留，无需中文替换。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "BR 为图像角标类短标识，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "短标识不能全局禁翻；现限定为整条记录匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:480",
+      "evidence_rows": [
+        32670
+      ],
+      "source_excerpt": "CR",
+      "reason": "源文为独立短标识；补 whole_record 范围后保留原文，避免误匹配正文缩写或普通词。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32670 的完整原文为 CR，是独立短标识。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目按原文保留，无需中文替换。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "CR 为图像角标类短标识，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "短标识不能全局禁翻；现限定为整条记录匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:481",
+      "evidence_rows": [
+        32671
+      ],
+      "source_excerpt": "BC",
+      "reason": "源文为独立短标识；补 whole_record 范围后保留原文，避免误匹配正文缩写或普通词。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32671 的完整原文为 BC，是独立短标识。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目按原文保留，无需中文替换。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "BC 为图像角标类短标识，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "短标识不能全局禁翻；现限定为整条记录匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:482",
+      "evidence_rows": [
+        32672
+      ],
+      "source_excerpt": "updatable",
+      "reason": "源文为内部状态标记；补 whole_record 范围后保留原文，避免误匹配普通英文词。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32672 的完整原文为 updatable，是独立内部状态标记。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目按原文保留，无需中文替换。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "updatable 为内部状态/字段标识符，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少显式范围；现限定为整条记录匹配，避免全局禁翻。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:471",
+    "non_translate:472",
+    "non_translate:474",
+    "non_translate:475",
+    "non_translate:476",
+    "non_translate:477",
+    "non_translate:478",
+    "non_translate:479",
+    "non_translate:480",
+    "non_translate:481",
+    "non_translate:482"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

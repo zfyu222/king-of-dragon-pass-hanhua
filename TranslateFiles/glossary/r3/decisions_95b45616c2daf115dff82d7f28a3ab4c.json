@@ -1,0 +1,531 @@
+{
+  "review_complete": true,
+  "review_summary": "复核 12 条 non_translate：4 条状态/调试标签收窄为整条记录，7 条控制字节/动态占位符按文本标记保留，单字母 K 限定于 \\x01@K 上下文；统一补 applicability，无新增专名/术语。",
+  "acknowledged_findings": [
+    "F0045",
+    "F0062",
+    "F0068",
+    "F0069",
+    "F0083",
+    "F0348"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文 3174 整条记录仅为内部状态/表情标签 MightBeSad，独立出现；普通短语 might be sad 不应被全局禁译。"
+        }
+      },
+      "reason": "将 MightBeSad 的 non_translate 作用域限定为整条记录，避免误伤普通英文短语。",
+      "evidence_rows": [
+        3174
+      ],
+      "table": "non_translate",
+      "index": 86
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "原文 4813、11482、29055 等显示 \\x07 嵌在 \\x01@\\x07 / \\x02\\x07... 运行时占位或随机分支标记中，是不可翻译控制字节；普通文本不会出现该控制字节。"
+        }
+      },
+      "reason": "为 \\x07 控制字节补明确保留范围，避免无作用域禁译。",
+      "evidence_rows": [
+        11482
+      ],
+      "table": "non_translate",
+      "index": 95
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "原文 4434/4435 的 \\x01Bq 显示 \\x01B 是动态姓名/对象占位前缀；作为控制序列在嵌入文本中须原样保留。"
+        }
+      },
+      "reason": "保留 \\x01B 动态姓名占位前缀并补明确作用域。",
+      "evidence_rows": [
+        4434
+      ],
+      "table": "non_translate",
+      "index": 96
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "原文 11006/11009 的 \\x01B_ 是完整动态姓名占位符，需连同控制前缀原样保留。"
+        }
+      },
+      "reason": "保留 \\x01B_ 完整占位符并补明确作用域。",
+      "evidence_rows": [
+        11009
+      ],
+      "table": "non_translate",
+      "index": 186
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "原文 25231/25232 的 \\x01B} 是完整动态姓名占位符，保留控制序列以免破坏名称插值。"
+        }
+      },
+      "reason": "保留 \\x01B} 完整占位符并补明确作用域。",
+      "evidence_rows": [
+        25231
+      ],
+      "table": "non_translate",
+      "index": 349
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文 4944 整条记录为运行状态标记 WeDidIt；仅整条匹配时保留，避免影响普通句子 We did it。"
+        }
+      },
+      "reason": "将 WeDidIt 的 non_translate 作用域限定为整条记录。",
+      "evidence_rows": [
+        4944
+      ],
+      "table": "non_translate",
+      "index": 105
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文 5501 整条记录为调试/占位字符串 ReallyReallyGood；仅整条匹配时保留。"
+        }
+      },
+      "reason": "将 ReallyReallyGood 的 non_translate 作用域限定为整条记录。",
+      "evidence_rows": [
+        5501
+      ],
+      "table": "non_translate",
+      "index": 111
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "\\x01@",
+          "suffix": "",
+          "reason": "原文 25670 为 \\x01@K，K 仅在紧接 \\x01@ 的动态占位符中作为控制参数保留；独立 K 证据不足，不作全局禁译。"
+        }
+      },
+      "reason": "将单字母 K 限定于 \\x01@K 动态占位符上下文。",
+      "evidence_rows": [
+        5713,
+        25670
+      ],
+      "table": "non_translate",
+      "index": 112
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文 6762 整条记录为调试/占位字符串 QuiteAnAdventure；仅整条匹配时保留，避免影响普通短语 quite an adventure。"
+        }
+      },
+      "reason": "将 QuiteAnAdventure 的 non_translate 作用域限定为整条记录。",
+      "evidence_rows": [
+        6762
+      ],
+      "table": "non_translate",
+      "index": 126
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "原文 6639/6640 的 \\x01Bs 是动态 NPC 姓名占位符，作为控制序列在句中保留。"
+        }
+      },
+      "reason": "保留 \\x01Bs 动态姓名占位符并补明确作用域。",
+      "evidence_rows": [
+        6639
+      ],
+      "table": "non_translate",
+      "index": 127
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "原文 6793/6807 的 \\x01B3 是动态 NPC 姓名占位符，保留控制序列及名称代码。"
+        }
+      },
+      "reason": "保留 \\x01B3 动态姓名占位符并补明确作用域。",
+      "evidence_rows": [
+        6793
+      ],
+      "table": "non_translate",
+      "index": 128
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "原文 6834/6845/20035/28872/28873 的 \\x01@\\x08 是动态名称占位符，嵌入句中时整体保留。"
+        }
+      },
+      "reason": "保留 \\x01@\\x08 动态名称占位符并补明确作用域。",
+      "evidence_rows": [
+        6834
+      ],
+      "table": "non_translate",
+      "index": 129
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:86",
+      "evidence_rows": [
+        3174
+      ],
+      "source_excerpt": "MightBeSad",
+      "reason": "保留 MightBeSad 为内部状态标签，但限定整条记录匹配，避免误护普通短语。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3174 原文仅为 MightBeSad，是独立内部状态标签而非叙事词。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，无译文；保留原文标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属内部状态/表情标签，列入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原作用域未限定；已按整条记录 whole_record 收窄，避免误护普通短语 might be sad。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:95",
+      "evidence_rows": [
+        11482
+      ],
+      "source_excerpt": "\\x07",
+      "reason": "保留 \\x07 控制字节并明确其文本内保留范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11482 等原文显示 \\x07 嵌于 \\x02\\x07... 随机分支标记中，是控制字节。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 控制字节，无译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "运行时控制字节，非自然语言词，non_translate 分类正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 text 作用域；控制字节不具普通词义，任何出现处均须原样保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:96",
+      "evidence_rows": [
+        4434
+      ],
+      "source_excerpt": "\\x01Bq",
+      "reason": "保留 \\x01B 动态姓名占位前缀。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4434 原文为 think \\x01Bq，\\x01B 是动态姓名占位前缀。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 控制前缀，无译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "控制/占位前缀，属运行标记。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 text 作用域；与 e4/e5 的 \\x01B_、\\x01B} 同属姓名占位系列，核心前缀一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:186",
+      "evidence_rows": [
+        11009
+      ],
+      "source_excerpt": "\\x01B_",
+      "reason": "保留 \\x01B_ 完整占位符并明确其文本内保留范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11006/11009 原文含 \\x01B_，为完整动态姓名占位符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 占位符，无译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "运行时姓名占位符，非自然语言词。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 text 作用域；与 e3/e5 同属 \\x01B 姓名占位变体，完整占位符保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:349",
+      "evidence_rows": [
+        25231
+      ],
+      "source_excerpt": "\\x01B}",
+      "reason": "保留 \\x01B} 完整占位符并明确其文本内保留范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25231/25232 原文含 \\x01B}，为完整动态姓名占位符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 占位符，无译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "运行时姓名占位符，非自然语言词。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 text 作用域；与 e3/e4 同属 \\x01B 姓名占位变体，完整占位符保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:105",
+      "evidence_rows": [
+        4944
+      ],
+      "source_excerpt": "WeDidIt",
+      "reason": "将 WeDidIt 的 non_translate 作用域限定为整条记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4944 原文仅为 WeDidIt，是运行状态标记。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 状态标记，无译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "运行状态标记，列入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原作用域未限定；已改为 whole_record，避免影响普通句子 We did it。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:111",
+      "evidence_rows": [
+        5501
+      ],
+      "source_excerpt": "ReallyReallyGood",
+      "reason": "将 ReallyReallyGood 的 non_translate 作用域限定为整条记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "5501 原文仅为 ReallyReallyGood，是调试/占位字符串。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 调试字符串，无译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "调试/占位字符串，列入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原作用域未限定；已改为 whole_record，避免误护普通短语 really really good。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:112",
+      "evidence_rows": [
+        5713,
+        25670
+      ],
+      "source_excerpt": "K",
+      "reason": "将单字母 K 限定于 \\x01@K 动态占位符上下文，避免全局禁译 K。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "5713 原文为独立 K；25670 为 \\x01@K，表明该字母可作动态占位控制参数，但独立 K 语义不足。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 控制参数，无译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "仅在 \\x01@K 中作为控制参数时属运行标记；未把普通字母 K 全局列为禁译。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目无作用域；已改为 literal_context，仅匹配紧接 \\x01@ 的 K，独立 K 不纳入。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:126",
+      "evidence_rows": [
+        6762
+      ],
+      "source_excerpt": "QuiteAnAdventure",
+      "reason": "将 QuiteAnAdventure 的 non_translate 作用域限定为整条记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "6762 原文仅为 QuiteAnAdventure，是调试/占位字符串。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 调试字符串，无译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "调试/占位字符串，列入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原作用域未限定；已改为 whole_record，避免误护普通短语 quite an adventure。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:127",
+      "evidence_rows": [
+        6639
+      ],
+      "source_excerpt": "\\x01Bs",
+      "reason": "保留 \\x01Bs 动态姓名占位符并明确其文本内保留范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "6639/6640 原文以 \\x01Bs 指代人物，是动态 NPC 姓名占位符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 占位符，无译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "运行时姓名占位符，属运行标记。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 text 作用域；与 \\x01B 系列占位前缀一致，保留控制序列。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:128",
+      "evidence_rows": [
+        6793
+      ],
+      "source_excerpt": "\\x01B3",
+      "reason": "保留 \\x01B3 动态姓名占位符并明确其文本内保留范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "6793/6807 原文以 \\x01B3 指代寡妇，是动态 NPC 姓名占位符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 占位符，无译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "运行时姓名占位符，属运行标记。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 text 作用域；与 \\x01B 系列占位前缀一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:129",
+      "evidence_rows": [
+        6834
+      ],
+      "source_excerpt": "\\x01@\\x08",
+      "reason": "保留 \\x01@\\x08 动态名称占位符并明确其文本内保留范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "6834/6845 等原文显示 \\x01@\\x08 为动态名称占位符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 占位符，无译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "运行时名称占位符，属运行标记。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 text 作用域；整体占位符保留，避免拆开后变量名被误译。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:86",
+    "non_translate:95",
+    "non_translate:96",
+    "non_translate:186",
+    "non_translate:349",
+    "non_translate:105",
+    "non_translate:111",
+    "non_translate:112",
+    "non_translate:126",
+    "non_translate:127",
+    "non_translate:128",
+    "non_translate:129"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

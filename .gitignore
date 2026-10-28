@@ -14,6 +14,39 @@
 /backups/
 /release/KoDPCNHook/KoDPCNHook.log
 
+# 翻译工作流运行时状态（数据库、任务快照、日志、缓存，体积大且可重建）
+/TranslateFiles/state/
+/TranslateFiles/cache/
+/TranslateFiles/logs/
+/TranslateFiles/tasks/
+/TranslateFiles/results/
+/TranslateFiles/backups/
+/TranslateFiles/history/
+/TranslateFiles/reports/api_runs/
+/TranslateFiles/reports/api_failover/
+/TranslateFiles/reports/pilot_rounds/
+/TranslateFiles/reports/pilot_feedback/
+
+# 图片文字抽取的输入快照与中间产物（原始贴图可从游戏重新导出）
+/ImageText/
+!/ImageText/image_text.csv
+!/ImageText/image_text.mapping.json
+
+# 贴图构建的历史迭代，只保留最新一版
+/ImagePatch/build-v1/
+/ImagePatch/build-v2/
+/ImagePatch/build-v3/
+/ImagePatch/build-v4/
+/ImagePatch/build-v5/
+/ImagePatch/build-v6/
+/ImagePatch/build-v7/
+/ImagePatch/build-v8/
+/ImagePatch/**/compare/
+
+# 项目内联 hook 链接中间产物
+*.exp
+*.lib
+
 # Python
 __pycache__/
 *.pyc

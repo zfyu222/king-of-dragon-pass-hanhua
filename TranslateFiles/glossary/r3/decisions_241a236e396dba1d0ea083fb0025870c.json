@@ -1,0 +1,368 @@
+{
+  "review_complete": true,
+  "review_summary": "共审 e1-e12：修正 e2 为“科利马氏族”、e3 为“奎维尼人”，其余条目的来源、译名、分类与一致性通过。确认 f1 龙友帝国各拼写变体同指，f2 heroquest/heroquests/heroquesting 同根词统一译名，f3 Darkness tribe 与 Dark Tribe 同指，均无需隔离。",
+  "acknowledged_findings": [
+    "F0359",
+    "F0364",
+    "F0427"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "科利马氏族",
+        "term_reason": "由科利马创立的氏族，后来被改为科利马部族。"
+      },
+      "reason": "统一 Colymar 专名译法，避免“科利马尔氏族”与相关 Colymar tribe 的“科利马部族”不一致。",
+      "evidence_rows": [
+        33922
+      ],
+      "table": "terms",
+      "index": 828
+    },
+    {
+      "patch": {
+        "recommended_translation": "奎维尼人",
+        "term_reason": "迁居奎文峰周边的各氏族统称，族名源自 Quivin peaks。"
+      },
+      "reason": "保留 Quivini 专名的“奎维尼”词干，避免改写为“奎文+人”，并与相关 Quivini 派生名保持词干一致。",
+      "evidence_rows": [
+        33921
+      ],
+      "table": "terms",
+      "index": 829
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:827",
+      "evidence_rows": [
+        33893
+      ],
+      "source_excerpt": "From the four quarters, an army of a million people called the Invincible Golden Horde marched into Dragon Pass to kill the dragonewts.",
+      "reason": "无敌金帐大军为特定军队名，译名与分类均成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33893 原文作 called the Invincible Golden Horde，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“无敌金帐大军”，保留 Invincible、Golden Horde 的军队名含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文称其为 army，属于有组织的军队，category_path=组织 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同源异体冲突，译名可统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:828",
+      "evidence_rows": [
+        33922
+      ],
+      "source_excerpt": "When Colymar died, his advisors decided to make the Colymar clan into the Colymar tribe.",
+      "reason": "将 Colymar 统一为“科利马”，避免与相关 Colymar tribe 的译名冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33922 出现 the Colymar clan，source 与原文一致。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“科利马尔氏族”与该专名相关条目“科利马部族”不一致；改为“科利马氏族”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文明确为 Chief Colymar 的 clan，category_path=组织 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "33922 同时提到 Colymar clan 和 Colymar tribe；同一专名应统一为“科利马”，与相关条目“科利马部族”一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:829",
+      "evidence_rows": [
+        33921
+      ],
+      "source_excerpt": "The tribes which moved north were collectively called the Quivini, after the Quivin peaks in the region.",
+      "reason": "Quivini 为族群专名，改译“奎维尼人”以保留专名音译词干。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33921 原文作 collectively called the Quivini, after the Quivin peaks，source 一致。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“奎文人”把 Quivini 改写成 Quivin+人；改作“奎维尼人”更忠实专名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "33921 称这些部落统称为 Quivini，作为族群/种族分类合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "Quivini 保留“奎维尼”词干，避免与 Quivin peaks 的“奎文”混同；相关派生名可统一为“奎维尼”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:836",
+      "evidence_rows": [
+        34030
+      ],
+      "source_excerpt": "We call on them for aid through prayer, ritual, and heroquesting.",
+      "reason": "heroquesting 为游戏机制名，统一译“英雄探索”，与同根词一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34030 原文作 through prayer, ritual, and heroquesting，source 与机制名一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译“英雄探索”保留重演神话以求助的机制义，与 e14/e18 的 heroquest/heroquests 同根译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "34030 将其与 prayer、ritual 并列，是游戏机制/技能，category_path=技能 可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f2 提醒与 e14/e18 共享译名；三者分别是 heroquesting/heroquest/heroquests，同根词统一为“英雄探索”正确。"
+        }
+      }
+    },
+    {
+      "ref": "terms:840",
+      "evidence_rows": [
+        34095
+      ],
+      "source_excerpt": "The living army was from the Darkness tribe, Orlanth's old enemy.",
+      "reason": "Darkness tribe 与同段 Dark Tribe 同指，译“黑暗部族”并与 e20 一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34095 原文作 the Darkness tribe, Orlanth's old enemy，source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译“黑暗部族”保留部族专名；同段 Dark Tribe 亦作“黑暗部族”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文称其为 living army/old enemy 的部族，category_path=组织 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f3 指出与 e20 共享译名；34095 同段 Darkness tribe 与 Dark Tribe 为同一神话部族，统一译名正确。"
+        }
+      }
+    },
+    {
+      "ref": "terms:842",
+      "evidence_rows": [
+        33996
+      ],
+      "source_excerpt": "They were trouble in the early days of the Empire of the Wyrm's Friends, but then they moved further east.",
+      "reason": "龙友帝国为同一历史帝国各拼写变体统一译名，f1 共享译名正确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33996 原文作 the Empire of the Wyrm's Friends，source 为该拼写。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译“龙友帝国”符合专名；其他拼写变体同指该帝国。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文称 Second Age 的帝国，category_path=组织 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f1 列 e13/e15/e16/e17/e19 等拼写变体；均为同一历史帝国，共享“龙友帝国”不是冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:850",
+      "evidence_rows": [
+        34011
+      ],
+      "source_excerpt": "The Great Mountain exploded and Chaos smashed through the hole it left behind.",
+      "reason": "Great Mountain 为神话地点专名，译“大山”保留字面；分类地名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34011 原文作 The Great Mountain exploded，source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译“大山”对应 Great Mountain 的字面专名，未增删神话信息。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文称其爆炸并留下 Chaos 涌入的洞，是神话地点，category_path=地名 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形专名冲突；与普通词 mountain 的翻译依赖原词大小写区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:860",
+      "evidence_rows": [
+        34034
+      ],
+      "source_excerpt": "They made a parody of the god Mostal, who is the Maker.",
+      "reason": "Maker 为 Mostal 的称号，译“造物主”，分类身份。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34034 原文作 the god Mostal, who is the Maker，source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译“造物主”作为 the Maker 的称号，保留 Mostal 的 Maker 神职含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Maker 是神祇称号/身份，category_path=身份 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同称号冲突；与 Mostal 专名区分清晰。"
+        }
+      }
+    },
+    {
+      "ref": "terms:862",
+      "evidence_rows": [
+        34291
+      ],
+      "source_excerpt": "To the east, there were the Storm Mountains.",
+      "reason": "Storm Mountains 为山脉专名，译“风暴山脉”，分类地名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34291 原文作 the Storm Mountains，source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译“风暴山脉”对应 Storm Mountains，简洁准确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文明确为山脉，category_path=地名 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同源冲突，译名可统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:865",
+      "evidence_rows": [
+        34271
+      ],
+      "source_excerpt": "Orlanth was called to Arrowmound, that mountain in the Skyreach range.",
+      "reason": "Arrowmound 为 Skyreach 山脉中的山名，译“箭丘”，分类地名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34271 原文作 called to Arrowmound, that mountain in the Skyreach range，source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译“箭丘”保留 Arrowmound 的专名成分，未改指称。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文明确称其为 mountain，category_path=地名 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形专名冲突；与 34272 的同一地名用法一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:867",
+      "evidence_rows": [
+        34281
+      ],
+      "source_excerpt": "The altar is called the Jarani Stones.",
+      "reason": "Jarani Stones 为纪念碑/祭坛地名，译“贾拉尼石阵”，分类地名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34281 原文作 The altar is called the Jarani Stones，source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译“贾拉尼石阵”保留 Jarani 专名与 Stones 的纪念石/祭坛含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文称其为 altar/monument 并作为地点前往，category_path=地名 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "34282 的 Jarani Stones 指同一地点，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:868",
+      "evidence_rows": [
+        34240
+      ],
+      "source_excerpt": "Your old enemy, the Blue Tribe, my lord, have called upon the powers of the deep.",
+      "reason": "Blue Tribe 为特定神话部族，译“蓝部族”，分类组织。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34240 原文作 the Blue Tribe，source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译“蓝部族”作为部族专名，简洁且与 Dark Tribe 等部族名格式一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文称其召唤 deep powers、与 Orlanth 为敌，是有组织的部族，category_path=组织 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "27042 随机分支及 34240/34241/34262/34263 均作 Blue Tribe；统一“蓝部族”，无同源冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:827",
+    "terms:828",
+    "terms:829",
+    "terms:836",
+    "terms:840",
+    "terms:842",
+    "terms:850",
+    "terms:860",
+    "terms:862",
+    "terms:865",
+    "terms:867",
+    "terms:868"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

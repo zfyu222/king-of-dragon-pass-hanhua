@@ -1,0 +1,533 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对本批 12 个 non_translate 条目，均为 sceneR### 形式的场景内部标识，整条记录即标识本身，不含正文语义，应保留原文。已为每条补充 whole_record 适用域及区分大小写设置，避免作为普通词全局禁翻；无需改名或隔离。",
+  "acknowledged_findings": [
+    "F0006",
+    "F0010",
+    "F0011",
+    "F0012",
+    "F0013",
+    "F0014",
+    "F0015",
+    "F0016",
+    "F0017",
+    "F0018",
+    "F0019",
+    "F0020"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 394 的完整记录为场景内部标识 sceneR064，记录中无其他正文；仅应对完整标签保留原文。"
+        }
+      },
+      "reason": "补充明确适用域，防止 sceneR064 作为普通词全局禁翻。",
+      "evidence_rows": [
+        394
+      ],
+      "table": "non_translate",
+      "index": 6
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 1020 的完整记录为场景内部标识 sceneR030，记录中无其他正文；仅应对完整标签保留原文。"
+        }
+      },
+      "reason": "补充明确适用域，防止 sceneR030 作为普通词全局禁翻。",
+      "evidence_rows": [
+        1020
+      ],
+      "table": "non_translate",
+      "index": 10
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 1021 的完整记录为场景内部标识 sceneR003，记录中无其他正文；仅应对完整标签保留原文。"
+        }
+      },
+      "reason": "补充明确适用域，防止 sceneR003 作为普通词全局禁翻。",
+      "evidence_rows": [
+        1021
+      ],
+      "table": "non_translate",
+      "index": 11
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 1022 的完整记录为场景内部标识 sceneR089，记录中无其他正文；仅应对完整标签保留原文。"
+        }
+      },
+      "reason": "补充明确适用域，防止 sceneR089 作为普通词全局禁翻。",
+      "evidence_rows": [
+        1022
+      ],
+      "table": "non_translate",
+      "index": 12
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 1023 的完整记录为场景内部标识 sceneR092，记录中无其他正文；仅应对完整标签保留原文。"
+        }
+      },
+      "reason": "补充明确适用域，防止 sceneR092 作为普通词全局禁翻。",
+      "evidence_rows": [
+        1023
+      ],
+      "table": "non_translate",
+      "index": 13
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 1024 的完整记录为场景内部标识 sceneR185，记录中无其他正文；仅应对完整标签保留原文。"
+        }
+      },
+      "reason": "补充明确适用域，防止 sceneR185 作为普通词全局禁翻。",
+      "evidence_rows": [
+        1024
+      ],
+      "table": "non_translate",
+      "index": 14
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 1025 的完整记录为场景内部标识 sceneR076，记录中无其他正文；仅应对完整标签保留原文。"
+        }
+      },
+      "reason": "补充明确适用域，防止 sceneR076 作为普通词全局禁翻。",
+      "evidence_rows": [
+        1025
+      ],
+      "table": "non_translate",
+      "index": 15
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 1026 的完整记录为场景内部标识 sceneR087，记录中无其他正文；仅应对完整标签保留原文。"
+        }
+      },
+      "reason": "补充明确适用域，防止 sceneR087 作为普通词全局禁翻。",
+      "evidence_rows": [
+        1026
+      ],
+      "table": "non_translate",
+      "index": 16
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 1027 的完整记录为场景内部标识 sceneR073，记录中无其他正文；仅应对完整标签保留原文。"
+        }
+      },
+      "reason": "补充明确适用域，防止 sceneR073 作为普通词全局禁翻。",
+      "evidence_rows": [
+        1027
+      ],
+      "table": "non_translate",
+      "index": 17
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 1028 的完整记录为场景内部标识 sceneR080，记录中无其他正文；仅应对完整标签保留原文。"
+        }
+      },
+      "reason": "补充明确适用域，防止 sceneR080 作为普通词全局禁翻。",
+      "evidence_rows": [
+        1028
+      ],
+      "table": "non_translate",
+      "index": 18
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 1029 的完整记录为场景内部标识 sceneR086，记录中无其他正文；仅应对完整标签保留原文。"
+        }
+      },
+      "reason": "补充明确适用域，防止 sceneR086 作为普通词全局禁翻。",
+      "evidence_rows": [
+        1029
+      ],
+      "table": "non_translate",
+      "index": 19
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 1030 的完整记录为场景内部标识 sceneR078，记录中无其他正文；仅应对完整标签保留原文。"
+        }
+      },
+      "reason": "补充明确适用域，防止 sceneR078 作为普通词全局禁翻。",
+      "evidence_rows": [
+        1030
+      ],
+      "table": "non_translate",
+      "index": 20
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:6",
+      "evidence_rows": [
+        394
+      ],
+      "source_excerpt": "sceneR064",
+      "reason": "sceneR064 是整条场景内部标识，现有条目的来源、保留归类与一致性均成立；需补适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 394 的原文为 sceneR064，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，作为场景标识保留原文，不产生译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "sceneR064 是场景内部标识而非正文词句，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批其他 sceneR### 场景标识同类，均按整条标识保留原文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:10",
+      "evidence_rows": [
+        1020
+      ],
+      "source_excerpt": "sceneR030",
+      "reason": "sceneR030 是整条场景内部标识，现有条目的来源、保留归类与一致性均成立；需补适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1020 的原文为 sceneR030，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，作为场景标识保留原文，不产生译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "sceneR030 是场景内部标识而非正文词句，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批其他 sceneR### 场景标识同类，均按整条标识保留原文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:11",
+      "evidence_rows": [
+        1021
+      ],
+      "source_excerpt": "sceneR003",
+      "reason": "sceneR003 是整条场景内部标识，现有条目的来源、保留归类与一致性均成立；需补适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1021 的原文为 sceneR003，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，作为场景标识保留原文，不产生译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "sceneR003 是场景内部标识而非正文词句，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批其他 sceneR### 场景标识同类，均按整条标识保留原文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:12",
+      "evidence_rows": [
+        1022
+      ],
+      "source_excerpt": "sceneR089",
+      "reason": "sceneR089 是整条场景内部标识，现有条目的来源、保留归类与一致性均成立；需补适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1022 的原文为 sceneR089，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，作为场景标识保留原文，不产生译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "sceneR089 是场景内部标识而非正文词句，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批其他 sceneR### 场景标识同类，均按整条标识保留原文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:13",
+      "evidence_rows": [
+        1023
+      ],
+      "source_excerpt": "sceneR092",
+      "reason": "sceneR092 是整条场景内部标识，现有条目的来源、保留归类与一致性均成立；需补适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1023 的原文为 sceneR092，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，作为场景标识保留原文，不产生译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "sceneR092 是场景内部标识而非正文词句，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批其他 sceneR### 场景标识同类，均按整条标识保留原文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:14",
+      "evidence_rows": [
+        1024
+      ],
+      "source_excerpt": "sceneR185",
+      "reason": "sceneR185 是整条场景内部标识，现有条目的来源、保留归类与一致性均成立；需补适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1024 的原文为 sceneR185，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，作为场景标识保留原文，不产生译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "sceneR185 是场景内部标识而非正文词句，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批其他 sceneR### 场景标识同类，均按整条标识保留原文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:15",
+      "evidence_rows": [
+        1025
+      ],
+      "source_excerpt": "sceneR076",
+      "reason": "sceneR076 是整条场景内部标识，现有条目的来源、保留归类与一致性均成立；需补适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1025 的原文为 sceneR076，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，作为场景标识保留原文，不产生译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "sceneR076 是场景内部标识而非正文词句，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批其他 sceneR### 场景标识同类，均按整条标识保留原文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:16",
+      "evidence_rows": [
+        1026
+      ],
+      "source_excerpt": "sceneR087",
+      "reason": "sceneR087 是整条场景内部标识，现有条目的来源、保留归类与一致性均成立；需补适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1026 的原文为 sceneR087，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，作为场景标识保留原文，不产生译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "sceneR087 是场景内部标识而非正文词句，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批其他 sceneR### 场景标识同类，均按整条标识保留原文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:17",
+      "evidence_rows": [
+        1027
+      ],
+      "source_excerpt": "sceneR073",
+      "reason": "sceneR073 是整条场景内部标识，现有条目的来源、保留归类与一致性均成立；需补适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1027 的原文为 sceneR073，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，作为场景标识保留原文，不产生译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "sceneR073 是场景内部标识而非正文词句，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批其他 sceneR### 场景标识同类，均按整条标识保留原文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:18",
+      "evidence_rows": [
+        1028
+      ],
+      "source_excerpt": "sceneR080",
+      "reason": "sceneR080 是整条场景内部标识，现有条目的来源、保留归类与一致性均成立；需补适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1028 的原文为 sceneR080，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，作为场景标识保留原文，不产生译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "sceneR080 是场景内部标识而非正文词句，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批其他 sceneR### 场景标识同类，均按整条标识保留原文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:19",
+      "evidence_rows": [
+        1029
+      ],
+      "source_excerpt": "sceneR086",
+      "reason": "sceneR086 是整条场景内部标识，现有条目的来源、保留归类与一致性均成立；需补适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1029 的原文为 sceneR086，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，作为场景标识保留原文，不产生译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "sceneR086 是场景内部标识而非正文词句，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批其他 sceneR### 场景标识同类，均按整条标识保留原文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:20",
+      "evidence_rows": [
+        1030
+      ],
+      "source_excerpt": "sceneR078",
+      "reason": "sceneR078 是整条场景内部标识，现有条目的来源、保留归类与一致性均成立；需补适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1030 的原文为 sceneR078，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，作为场景标识保留原文，不产生译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "sceneR078 是场景内部标识而非正文词句，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批其他 sceneR### 场景标识同类，均按整条标识保留原文。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:6",
+    "non_translate:10",
+    "non_translate:11",
+    "non_translate:12",
+    "non_translate:13",
+    "non_translate:14",
+    "non_translate:15",
+    "non_translate:16",
+    "non_translate:17",
+    "non_translate:18",
+    "non_translate:19",
+    "non_translate:20"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

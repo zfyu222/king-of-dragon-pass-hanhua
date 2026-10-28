@@ -1,0 +1,531 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1-e12 的原文、保留理由、分类与一致性；这些条目均为内部资源名、控件名、格式串或标记，保留原文正确。已为全部 12 条补充 whole_record 适用域，其中 f1-f10 所指出的未限定适用范围问题均已修正；无新增、隔离或允许无匹配项。",
+  "acknowledged_findings": [
+    "F0315",
+    "F0316",
+    "F0317",
+    "F0318",
+    "F0319",
+    "F0320",
+    "F0321",
+    "F0322",
+    "F0323",
+    "F0324"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 31325 的完整原文仅为内部资源名 MHData，未出现在正文句子中，故只匹配整条记录。"
+        }
+      },
+      "reason": "内部资源名缺适用域；补为 whole_record，避免全局禁翻。",
+      "evidence_rows": [
+        31325
+      ],
+      "table": "non_translate",
+      "index": 433
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 31326 的完整原文是内部字段名 rotation，而非正文普通词，故只匹配整条记录。"
+        }
+      },
+      "reason": "内部字段名缺适用域；补为 whole_record，避免把同形普通词全局禁翻。",
+      "evidence_rows": [
+        31326
+      ],
+      "table": "non_translate",
+      "index": 434
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 31911 的完整原文仅为内部标记 p@，无可译正文语境，故只匹配整条记录。"
+        }
+      },
+      "reason": "内部标记缺适用域；补为 whole_record。",
+      "evidence_rows": [
+        31911
+      ],
+      "table": "non_translate",
+      "index": 435
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 31857 的完整原文仅为内部资源名 RCScreen，故只按整条记录保护。"
+        }
+      },
+      "reason": "内部资源名缺适用域；补为 whole_record。",
+      "evidence_rows": [
+        31857
+      ],
+      "table": "non_translate",
+      "index": 436
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 31858 的完整原文仅为内部资源名 RCTribe，故只按整条记录保护。"
+        }
+      },
+      "reason": "内部资源名缺适用域；补为 whole_record。",
+      "evidence_rows": [
+        31858
+      ],
+      "table": "non_translate",
+      "index": 437
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 31865 的完整原文仅为内部控件名 Segleft，故只按整条记录保护。"
+        }
+      },
+      "reason": "内部控件名缺适用域；补为 whole_record。",
+      "evidence_rows": [
+        31865
+      ],
+      "table": "non_translate",
+      "index": 438
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 31866 的完整原文仅为内部控件名 Segmiddle，故只按整条记录保护。"
+        }
+      },
+      "reason": "内部控件名缺适用域；补为 whole_record。",
+      "evidence_rows": [
+        31866
+      ],
+      "table": "non_translate",
+      "index": 439
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 31867 的完整原文仅为内部控件名 Segright，故只按整条记录保护。"
+        }
+      },
+      "reason": "内部控件名缺适用域；补为 whole_record。",
+      "evidence_rows": [
+        31867
+      ],
+      "table": "non_translate",
+      "index": 440
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 31870 的完整原文为内部控件格式串 RingSlider %d，%d 须原样保留，故只匹配整条记录。"
+        }
+      },
+      "reason": "内部格式串缺适用域；补为 whole_record 并保留 printf 占位符。",
+      "evidence_rows": [
+        31870
+      ],
+      "table": "non_translate",
+      "index": 441
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 31923 的完整原文仅为内部资源名 CCBGround，故只按整条记录保护。"
+        }
+      },
+      "reason": "内部资源名缺适用域；补为 whole_record。",
+      "evidence_rows": [
+        31923
+      ],
+      "table": "non_translate",
+      "index": 442
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 31924 的完整原文仅为内部控件名 Inc1，故只按整条记录保护。"
+        }
+      },
+      "reason": "内部控件名缺适用域；补为 whole_record。",
+      "evidence_rows": [
+        31924
+      ],
+      "table": "non_translate",
+      "index": 443
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ordinal 31925 的完整原文仅为内部控件名 Dec1，故只按整条记录保护。"
+        }
+      },
+      "reason": "内部控件名缺适用域；补为 whole_record。",
+      "evidence_rows": [
+        31925
+      ],
+      "table": "non_translate",
+      "index": 444
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:433",
+      "evidence_rows": [
+        31325
+      ],
+      "source_excerpt": "MHData",
+      "reason": "核对 ordinal 31325：完整记录为内部资源名 MHData，作为 non_translate 保留，并限定整条记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 31325 原文为 MHData，与 entry source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "内部资源名不翻译，保留 MHData；无需中文译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原文证据仅显示独立资源名，已通过 edits 将适用域补为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与批内内部标识一致，仅保护完整记录，不将 MHData 扩为全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:434",
+      "evidence_rows": [
+        31326
+      ],
+      "source_excerpt": "rotation",
+      "reason": "核对 ordinal 31326：完整记录为内部字段名 rotation，作为 non_translate 保留，并限定整条记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 31326 原文为 rotation，与 entry source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "内部字段名不翻译，保留 rotation。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；rotation 虽为普通词同形，但本条记录是独立字段名，已补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "作为字段名只按整条记录保护，避免误伤正文中的普通词 rotation。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:435",
+      "evidence_rows": [
+        31911
+      ],
+      "source_excerpt": "p@",
+      "reason": "核对 ordinal 31911：完整记录为内部标记 p@，作为 non_translate 保留，并限定整条记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 31911 原文为 p@，与 entry source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "内部标记不翻译，保留 p@。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原文仅独立标记 p@，已补 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅保护完整标记 p@，不扩展到其他含 p 或 @ 的正文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:436",
+      "evidence_rows": [
+        31857
+      ],
+      "source_excerpt": "RCScreen",
+      "reason": "核对 ordinal 31857：完整记录为内部资源名 RCScreen，作为 non_translate 保留，并限定整条记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 31857 原文为 RCScreen，与 entry source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "内部资源名不翻译，保留 RCScreen。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原文为独立资源名，已补 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与批内内部资源名一致，仅保护完整记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:437",
+      "evidence_rows": [
+        31858
+      ],
+      "source_excerpt": "RCTribe",
+      "reason": "核对 ordinal 31858：完整记录为内部资源名 RCTribe，作为 non_translate 保留，并限定整条记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 31858 原文为 RCTribe，与 entry source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "内部资源名不翻译，保留 RCTribe。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原文为独立资源名，已补 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与批内内部资源名一致，仅保护完整记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:438",
+      "evidence_rows": [
+        31865
+      ],
+      "source_excerpt": "Segleft",
+      "reason": "核对 ordinal 31865：完整记录为内部控件名 Segleft，作为 non_translate 保留，并限定整条记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 31865 原文为 Segleft，与 entry source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "内部控件名不翻译，保留 Segleft。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原文为独立控件名，已补 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同组控件标识一致，仅保护完整记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:439",
+      "evidence_rows": [
+        31866
+      ],
+      "source_excerpt": "Segmiddle",
+      "reason": "核对 ordinal 31866：完整记录为内部控件名 Segmiddle，作为 non_translate 保留，并限定整条记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 31866 原文为 Segmiddle，与 entry source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "内部控件名不翻译，保留 Segmiddle。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原文为独立控件名，已补 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同组控件标识一致，仅保护完整记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:440",
+      "evidence_rows": [
+        31867
+      ],
+      "source_excerpt": "Segright",
+      "reason": "核对 ordinal 31867：完整记录为内部控件名 Segright，作为 non_translate 保留，并限定整条记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 31867 原文为 Segright，与 entry source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "内部控件名不翻译，保留 Segright。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原文为独立控件名，已补 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同组控件标识一致，仅保护完整记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:441",
+      "evidence_rows": [
+        31870
+      ],
+      "source_excerpt": "RingSlider %d",
+      "reason": "核对 ordinal 31870：完整记录为内部控件格式串 RingSlider %d，作为 non_translate 保留，并限定整条记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 31870 原文为 RingSlider %d，与 entry source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "内部控件格式串不翻译，保留 RingSlider 和 printf 占位符 %d。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原文仅为独立格式串，已补 whole_record，%d 原样保留。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅保护本条完整格式串，不扩展到其他正文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:442",
+      "evidence_rows": [
+        31923
+      ],
+      "source_excerpt": "CCBGround",
+      "reason": "核对 ordinal 31923：完整记录为内部资源名 CCBGround，作为 non_translate 保留，并限定整条记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 31923 原文为 CCBGround，与 entry source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "内部资源名不翻译，保留 CCBGround。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原文为独立资源名，已补 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与批内内部资源名一致，仅保护完整记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:443",
+      "evidence_rows": [
+        31924
+      ],
+      "source_excerpt": "Inc1",
+      "reason": "核对 ordinal 31924：完整记录为内部控件名 Inc1，作为 non_translate 保留，并限定整条记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 31924 原文为 Inc1，与 entry source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "内部控件名不翻译，保留 Inc1。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原文为独立控件名，已补 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅保护完整控件标识，不扩展到普通词或数字。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:444",
+      "evidence_rows": [
+        31925
+      ],
+      "source_excerpt": "Dec1",
+      "reason": "核对 ordinal 31925：完整记录为内部控件名 Dec1，作为 non_translate 保留，并限定整条记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 31925 原文为 Dec1，与 entry source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "内部控件名不翻译，保留 Dec1。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原文为独立控件名，已补 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅保护完整控件标识，不扩展到普通词或数字。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:433",
+    "non_translate:434",
+    "non_translate:435",
+    "non_translate:436",
+    "non_translate:437",
+    "non_translate:438",
+    "non_translate:439",
+    "non_translate:440",
+    "non_translate:441",
+    "non_translate:442",
+    "non_translate:443",
+    "non_translate:444"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

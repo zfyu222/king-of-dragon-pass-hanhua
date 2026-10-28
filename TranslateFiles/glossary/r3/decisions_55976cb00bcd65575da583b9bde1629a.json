@@ -1,0 +1,416 @@
+{
+  "review_complete": true,
+  "review_summary": "审校 12 条：人物与神话专名译名均保持统一；修正 e5、e7、e8、e9、e10、e11 中无本批原文依据的术语说明，并将 e8 从“技能”改为“其他”。audit.findings 为空，未发现需隔离项。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "探险队战士；原文称 Thadart 被抓时他与 Thadart 在一起，后杀死入侵者。"
+      },
+      "reason": "原 term_reason 提到 Tusk Riders，但本条的 evidence_rows 不支持该信息；按 24349、24396 收敛为探险队战士、与 Thadart 的关系及杀死入侵者。",
+      "evidence_rows": [
+        24349,
+        24396
+      ],
+      "table": "characters",
+      "index": 263
+    },
+    {
+      "patch": {
+        "term_reason": "神话人物，最早驯服马匹；原文以 Hyalor Horsebreaker 称之，即‘驯马者海亚洛’。"
+      },
+      "reason": "原 term_reason 的‘救活马匹’在 evidence_rows 中无依据；按 29127、29132 保留最早驯马及 Horsebreaker 称号。",
+      "evidence_rows": [
+        29127,
+        29132
+      ],
+      "table": "characters",
+      "index": 269
+    },
+    {
+      "patch": {
+        "category_path": "其他",
+        "term_reason": "指‘驯马者海亚洛’神话；原文称‘enacted the Hyalor Horsebreaker myth’，即重演该神话。"
+      },
+      "reason": "Hyalor Horsebreaker myth 是可重演的神话名称，不是技能；将 category_path 改为合法且准确的‘其他’，并收敛无本行依据的‘救马、与马为伴’说明。",
+      "evidence_rows": [
+        29045
+      ],
+      "table": "terms",
+      "index": 943
+    },
+    {
+      "patch": {
+        "term_reason": "被称为‘母语’的神祇；仪式高潮是与她的婚配。"
+      },
+      "reason": "29124 只支持 Therelma 被称为 Mother Language，以及仪式高潮是与她的婚配；原 term_reason 的‘金舌仪式’无本行依据。",
+      "evidence_rows": [
+        29124
+      ],
+      "table": "characters",
+      "index": 271
+    },
+    {
+      "patch": {
+        "term_reason": "原文称其为‘uncle Sartar’，是身处赫奥特兰的叔父。"
+      },
+      "reason": "29720 的 back in Heortland 描述其身处地点，原‘赫奥特兰的叔父’易误解为所属关系；按原文改为身处赫奥特兰的叔父。",
+      "evidence_rows": [
+        29720
+      ],
+      "table": "characters",
+      "index": 272
+    },
+    {
+      "patch": {
+        "term_reason": "酿酒之神；原文称 Minlister 这类神祇与某些祝福不属于王者之路范围。"
+      },
+      "reason": "33305 讨论的是 Minlister 这类神祇及相关祝福不在王者之路范围内，原‘其祝福’把范围窄化到 Minlister 的祝福，故修正。",
+      "evidence_rows": [
+        33305
+      ],
+      "table": "characters",
+      "index": 277
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:259",
+      "evidence_rows": [
+        24180,
+        24184,
+        24185
+      ],
+      "source_excerpt": "manages to slay one of the brothers, Burthalor.",
+      "reason": "Burthalor 是原文中被 Robarth 杀死的来袭兄弟之一；译名伯萨洛尔按音译统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "24180 明确 Burthalor 是来袭两兄弟之一并被 Robarth 杀死；24184 提及其死亡赔偿；24185 称 Jakolorth 为其兄弟。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "伯萨洛尔为 Burthalor 的音译，符合专名统一译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "table=characters；原文为人名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形冲突，伯萨洛尔可直接用于该人物。"
+        }
+      }
+    },
+    {
+      "ref": "characters:260",
+      "evidence_rows": [
+        24185,
+        24186
+      ],
+      "source_excerpt": "Burthalor’s brother, Jakolorth, swore that the dispute would now end.",
+      "reason": "Jakolorth 是 Burthalor 的兄弟，并在原文中就以和解与愤怒立场表态；译名贾科洛尔斯保持音译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "24185 称 Jakolorth 为 Burthalor 之弟并誓言结束争端；24186 显示其愤怒立场。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "贾科洛尔斯为 Jakolorth 的音译，专名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "table=characters；原文为人名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与原文兄弟关系一致，未见同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:261",
+      "evidence_rows": [
+        24261,
+        24262
+      ],
+      "source_excerpt": "who were led by a woman named Iristha.",
+      "reason": "Iristha 是率队袭击并劫掠我方据点的女性；译名伊里斯塔按音译保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "24261 明确 Iristha 是率队袭击并劫掠据点的女子；24262 要求说服她结束家族争端。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "伊里斯塔为 Iristha 的音译，专名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "table=characters；原文明确为女性人物。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形冲突，译名可统一使用。"
+        }
+      }
+    },
+    {
+      "ref": "characters:262",
+      "evidence_rows": [
+        24264,
+        24265
+      ],
+      "source_excerpt": "as long as Janara’s family did the same.",
+      "reason": "Janara 是争端相关人物，原文以 Janara’s family 表示其家族；译名雅娜拉保持音译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "24264 说明 Janara 家族若罢手，Iristha 也不再制造麻烦；24265 要求说服 Janara 本人。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "雅娜拉为 Janara 的音译，专名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "table=characters；原文指向 Janara 本人及其家族。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与家族争端语境一致，未见同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:263",
+      "evidence_rows": [
+        24349,
+        24396
+      ],
+      "source_excerpt": "Wilkossi, one of the warriors you sent on your exploratory mission, reports on its unfortunate and premature end.",
+      "reason": "Wilkossi 是探险队战士，Thadart 被抓时他在场并最终杀死入侵者；原 term_reason 的 Tusk Riders 无本批依据，已修正。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "24349 称 Wilkossi 为探险队战士；24396 称 Thadart 被抓时他在场并杀死入侵者。原 term_reason 的 Tusk Riders 无本行依据，已修正。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "威尔科西为 Wilkossi 的音译，专名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "table=characters；原文为战士姓名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Thadart 同队关系清楚，未见同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:265",
+      "evidence_rows": [
+        24965
+      ],
+      "source_excerpt": "Skel speaks true!",
+      "reason": "Skel 是原文指控中援引的专名，本批未说明身份或性别；译名斯凯尔保持音译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "24965 以 Skel speaks true! 作为指控依据，Skel 是被援引的专名；原文未明确身份或性别。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "斯凯尔为 Skel 的音译，未补造身份或性别。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "table=characters；虽身份未明，但语境中为专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形冲突，暂按专名统一。"
+        }
+      }
+    },
+    {
+      "ref": "characters:269",
+      "evidence_rows": [
+        29127,
+        29132
+      ],
+      "source_excerpt": "perhaps even as well as Hyalor, who first tamed the horse.",
+      "reason": "Hyalor 是最早驯马的神话人物，原文以 Horsebreaker 称之；原 term_reason 的‘救活马匹’无本批依据，已修正。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "29127 称 Hyalor 最早驯马；29132 使用 Horsebreaker 称号。原 term_reason 的‘救活马匹’无本行依据，已修正。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "海亚洛为 Hyalor 的音译，专名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "table=characters；原文为神话人物名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Hyalor 统一译作海亚洛，Horsebreaker 对应驯马者，未见同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:943",
+      "evidence_rows": [
+        29045
+      ],
+      "source_excerpt": "enacted the Hyalor Horsebreaker myth.",
+      "reason": "该条是神话名称而非技能；分类改为其他，并按 29045 收敛无本行依据的‘救马、与马为伴’说明。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "29045 仅出现 Hyalor Horsebreaker myth 这一神话名；原 term_reason 的‘救马、与马为伴’无本行依据，已收敛。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "驯马者海亚洛神话对应 Hyalor Horsebreaker myth，核心专名一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原 category_path=技能 不准确；该词是可重演的神话名称，应改为其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "核心名 Hyalor 译作海亚洛，与 myth 组合为驯马者海亚洛神话，内部一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:271",
+      "evidence_rows": [
+        29124
+      ],
+      "source_excerpt": "marriage with Therelma, the “Mother Language.”",
+      "reason": "Therelma 是被称为‘母语’的神祇，仪式高潮是与她的婚配；原 term_reason 的‘金舌仪式’无本行依据，已修正。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "29124 只说明仪式高潮是与 Therelma 的婚配，并称她为 Mother Language；原‘金舌仪式’无本行依据，已修正。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "瑟雷尔玛为 Therelma 的音译，专名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "table=characters；原文指被称为 Mother Language 的神祇。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形冲突，瑟雷尔玛可统一使用。"
+        }
+      }
+    },
+    {
+      "ref": "characters:272",
+      "evidence_rows": [
+        29720
+      ],
+      "source_excerpt": "uncle Sartar, back in Heortland.",
+      "reason": "Sartar 是说话者的叔父，原文说明其身处赫奥特兰；原关系表述易误解，已修正。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "29720 称其为 uncle Sartar 并说 back in Heortland；原‘赫奥特兰的叔父’易误解为所属关系，已改为身处赫奥特兰的叔父。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "萨塔尔为 Sartar 的音译，专名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "table=characters；原文以亲属称谓指称该人物。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形冲突，萨塔尔可统一使用。"
+        }
+      }
+    },
+    {
+      "ref": "characters:277",
+      "evidence_rows": [
+        33305
+      ],
+      "source_excerpt": "gods like Minlister (god of brewing beer!)",
+      "reason": "Minlister 是酿酒之神；原文讨论此类神祇及相关祝福不属王者之路范围，原‘其祝福’表述已修正。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "33305 称 Minlister 为酿酒之神，并说此类神祇与某些祝福不在王者之路范围；原‘其祝福’把范围窄化，已修正。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "明利斯特为 Minlister 的音译，专名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "table=characters；原文明确其为神祇。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形冲突，明利斯特可统一使用。"
+        }
+      }
+    },
+    {
+      "ref": "characters:278",
+      "evidence_rows": [
+        33374
+      ],
+      "source_excerpt": "This blessing is associated with Issaries’ son Harst.",
+      "reason": "Harst 是 Issaries 之子，相关祝福让农民小额交易并额外获得食物；译名哈斯特按音译保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33374 称 Harst 为 Issaries 之子，并说明该祝福提供额外食物、允许农民自行小额交易。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "哈斯特为 Harst 的音译，专名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "table=characters；原文为神祇之子姓名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形冲突，哈斯特可统一使用。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:259",
+    "characters:260",
+    "characters:261",
+    "characters:262",
+    "characters:263",
+    "characters:265",
+    "characters:269",
+    "terms:943",
+    "characters:271",
+    "characters:272",
+    "characters:277",
+    "characters:278"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

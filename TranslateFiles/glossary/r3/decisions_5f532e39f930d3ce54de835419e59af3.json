@@ -1,0 +1,563 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对本批 12 条 non_translate 条目：控制字节与动态占位串均按原文保留并补齐显式 applicability；IntroOverture 与 H5f/H5g/H5h 仅见整条记录，作用域收窄为 whole_record，未作全局禁翻。f1-f4 均已核对并在 edits 中修正。",
+  "acknowledged_findings": [
+    "F0200",
+    "F0208",
+    "F0209",
+    "F0210"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "\\x01Dg 在 20084/20090 中均作动态人物名占位符；控制字节加角色标识不会作为普通正文出现，故按 text 原样保护。"
+        },
+        "term_reason": "控制字节 \\x01 加 Dg，在原文中作动态人物名占位符，必须在正文内原样保留。"
+      },
+      "reason": "补充作用域并说明动态人名占位性质。",
+      "evidence_rows": [
+        20084,
+        20090
+      ],
+      "table": "non_translate",
+      "index": 258
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "\\x02\\x06 后接斜杠分隔的随机地名/部族名列表，为随机短语起始控制串，正文内须原样保留。"
+        },
+        "term_reason": "\\x02\\x06 用于引出斜杠分隔的随机短语列表，并与末尾 \\x02 配对；属于运行时控制串。"
+      },
+      "reason": "明确随机短语起始控制串的正文作用域。",
+      "evidence_rows": [
+        20075,
+        24644
+      ],
+      "table": "non_translate",
+      "index": 259
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "\\x01@O 在 20845 中紧接 in the 并作探索地点的动态插槽，正文内须原样保留。"
+        },
+        "term_reason": "\\x01@O 是探索地点的动态占位标记，不是可翻译的地点名。"
+      },
+      "reason": "补充地点插槽的 text 作用域。",
+      "evidence_rows": [
+        20845
+      ],
+      "table": "non_translate",
+      "index": 268
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "\\x02\\x08 后接斜杠分隔的随机原因列表，为随机短语起始控制串，正文内须原样保留。"
+        },
+        "term_reason": "\\x02\\x08 用于引出斜杠分隔的随机短语列表，并与末尾 \\x02 配对；属于运行时控制串。"
+      },
+      "reason": "明确随机短语起始控制串的正文作用域。",
+      "evidence_rows": [
+        22436,
+        24608
+      ],
+      "table": "non_translate",
+      "index": 277
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "唯一原文即整条记录 IntroOverture，无嵌入正文用例；按运行/场景或资源标识保留时只匹配完整记录，避免误禁普通文本中的相同字母串。"
+        },
+        "term_reason": "唯一原文为整条记录 IntroOverture，无空格内部标签；按内部运行/资源标识保留，作用域限整条记录。"
+      },
+      "reason": "将未限定的 non_translate 收窄为整条记录，并说明无嵌入用例。",
+      "evidence_rows": [
+        22893
+      ],
+      "table": "non_translate",
+      "index": 291
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "\\x01Ý 在 23202/23204 中均作句首动态人物或群体占位符，正文内须原样保留。"
+        },
+        "term_reason": "\\x01Ý 是动态人物/群体占位符，原文两处均作主语，不翻译。"
+      },
+      "reason": "补充动态占位符的 text 作用域。",
+      "evidence_rows": [
+        23202,
+        23204
+      ],
+      "table": "non_translate",
+      "index": 292
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "\\x01@K 在多处作动态角色名或动作对象占位符，正文内须原样保留。"
+        },
+        "term_reason": "\\x01@K 是角色/动作对象的动态占位符，不能译成普通文字。"
+      },
+      "reason": "补充角色占位符的 text 作用域。",
+      "evidence_rows": [
+        25488,
+        25491,
+        25829,
+        25830,
+        28806,
+        28824
+      ],
+      "table": "non_translate",
+      "index": 300
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "\\x01E\\x05 在 25723/25726/25830/25831 中作动态角色占位符，并与 \\x01E\\x04 等并列，正文内须原样保留。"
+        },
+        "term_reason": "\\x01E\\x05 是动态角色占位符，和同系列 \\x01E\\x04 等区分，不翻译。"
+      },
+      "reason": "补充角色占位符的 text 作用域。",
+      "evidence_rows": [
+        25723,
+        25726,
+        25830,
+        25831
+      ],
+      "table": "non_translate",
+      "index": 301
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "\\x01@\\x02 在 26562/26572 中紧接 attacked by，作袭击者的动态占位符，正文内须原样保留。"
+        },
+        "term_reason": "\\x01@\\x02 是袭击者的动态占位符，原文两处均用于 attacked by 之后。"
+      },
+      "reason": "补充袭击者占位符的 text 作用域。",
+      "evidence_rows": [
+        26562,
+        26572
+      ],
+      "table": "non_translate",
+      "index": 302
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "唯一原文为整条记录 H5f，无嵌入正文用例；按短代码式内部标识保留时只匹配完整记录，避免误禁普通文本中的相同字母串。"
+        },
+        "term_reason": "仅有整条记录 H5f，无上下文说明其具体场景；按内部短代码标识保护，作用域限整条记录。"
+      },
+      "reason": "将未限定的 non_translate 收窄为整条记录，并说明无嵌入用例。",
+      "evidence_rows": [
+        26249
+      ],
+      "table": "non_translate",
+      "index": 303
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "唯一原文为整条记录 H5g，无嵌入正文用例；按短代码式内部标识保留时只匹配完整记录，避免误禁普通文本中的相同字母串。"
+        },
+        "term_reason": "仅有整条记录 H5g，无上下文说明其具体场景；按内部短代码标识保护，作用域限整条记录。"
+      },
+      "reason": "将未限定的 non_translate 收窄为整条记录，并说明无嵌入用例。",
+      "evidence_rows": [
+        26274
+      ],
+      "table": "non_translate",
+      "index": 304
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "唯一原文为整条记录 H5h，无嵌入正文用例；按短代码式内部标识保留时只匹配完整记录，避免误禁普通文本中的相同字母串。"
+        },
+        "term_reason": "仅有整条记录 H5h，无上下文说明其具体场景；按内部短代码标识保护，作用域限整条记录。"
+      },
+      "reason": "将未限定的 non_translate 收窄为整条记录，并说明无嵌入用例。",
+      "evidence_rows": [
+        26296
+      ],
+      "table": "non_translate",
+      "index": 305
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:258",
+      "evidence_rows": [
+        20084,
+        20090
+      ],
+      "source_excerpt": "\\x01Dg belonged to another",
+      "reason": "动态人名占位符，补 text 作用域后保持原样。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "20084、20090 中均为 \\x01Dg，紧邻 \\x01Df 或与其并列，形态与动态人物名占位符一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不提供译文，保留原控制串。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "分类为 non_translate 正确；原缺 applicability，已补为 text，理由见 patch。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批未见与 \\x01Dg 冲突的同形普通词；与其他角色占位符区分。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:259",
+      "evidence_rows": [
+        20075,
+        24644
+      ],
+      "source_excerpt": "\\x02\\x06Red Creek/Ardling",
+      "reason": "随机短语起始控制串，补 text 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "20075 和 24644 均以 \\x02\\x06 引出斜杠分隔随机列表，后由 \\x02 收束。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "控制串不翻译，斜杠分支结构由正文翻译处理。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；补 text applicability。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅作随机短语起始标记，与 \\x02\\x08 区分，不合并成普通文本。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:268",
+      "evidence_rows": [
+        20845
+      ],
+      "source_excerpt": "in the \\x01@O",
+      "reason": "地点动态插槽，补 text 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "20845 中 \\x01@O 紧接介词 in the，后接逗号，作地点动态插槽。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "地点插槽不翻译，保留原控制串。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；补 text applicability。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 \\x01@K、\\x01@\\x02 等 @ 系列占位符区分，不合并。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:277",
+      "evidence_rows": [
+        22436,
+        24608
+      ],
+      "source_excerpt": "\\x02\\x08trading watered beer",
+      "reason": "随机短语起始控制串，补 text 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "22436 与 24608 中 \\x02\\x08 后为斜杠分隔随机原因列表，并由 \\x02 收束。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "控制串不翻译，随机分支由正文分别翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；补 text applicability。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e2 的 \\x02\\x06 同为随机短语起始但后续控制字节不同，保留区分。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:291",
+      "evidence_rows": [
+        22893
+      ],
+      "source_excerpt": "IntroOverture",
+      "reason": "整条记录标识，收窄为 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "22893 全文仅 IntroOverture，无嵌句用法；形态为无空格内部标签。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "作为内部标识不翻译，保留原串。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类可保留；原缺作用域，已补为 whole_record，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 IntroOverture 变体；不与其他场景标识混同。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:292",
+      "evidence_rows": [
+        23202,
+        23204
+      ],
+      "source_excerpt": "The \\x01Ý accepted",
+      "reason": "动态人物或群体占位符，补 text 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "23202、23204 中 \\x01Ý 均作句首主语，后接 accepted/bargained，为动态人物或群体占位符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "占位符不翻译，保留原控制串。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；补 text applicability。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两处同形同义；未发现其他 \\x01Ý 用法。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:300",
+      "evidence_rows": [
+        25488,
+        25491,
+        25829,
+        25830,
+        28806,
+        28824
+      ],
+      "source_excerpt": "propel \\x01@K into",
+      "reason": "动态角色或动作对象占位符，补 text 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25488、25491、25829、25830、28806、28824 中 \\x01@K 均作角色或动作对象占位符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "角色占位符不翻译，保留原控制串。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；补 text applicability。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各出处保持同一占位符，与 \\x01E\\x05 等不同标识区分。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:301",
+      "evidence_rows": [
+        25723,
+        25726,
+        25830,
+        25831
+      ],
+      "source_excerpt": "\\x01E\\x05 and \\x01E\\x04",
+      "reason": "动态角色占位符，补 text 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25723、25726、25830、25831 中 \\x01E\\x05 与其他 \\x01E 系列占位符并列，作动态角色。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "角色占位符不翻译，保留原控制串。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；补 text applicability。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "保持 \\x01E\\x05 原样，和 \\x01E\\x04 等区分，不拆成普通文本。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:302",
+      "evidence_rows": [
+        26562,
+        26572
+      ],
+      "source_excerpt": "attacked by \\x01@\\x02",
+      "reason": "袭击者动态占位符，补 text 作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26562、26572 中 \\x01@\\x02 均紧接 attacked by，作袭击者动态占位符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "占位符不翻译，保留原控制串。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；补 text applicability。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两处一致；与其他 @ 系列占位符区分。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:303",
+      "evidence_rows": [
+        26249
+      ],
+      "source_excerpt": "H5f",
+      "reason": "短代码式整条记录标识，收窄为 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26249 全文仅为 H5f，无嵌入正文用例；形态为短代码标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "无译文，按内部标识保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原分类 non_translate 可保留为内部标识；因无上下文，作用域补为 whole_record 而非全局。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "H5f 与 H5g/H5h 分属不同记录，不合并。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:304",
+      "evidence_rows": [
+        26274
+      ],
+      "source_excerpt": "H5g",
+      "reason": "短代码式整条记录标识，收窄为 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26274 全文仅为 H5g，无嵌入正文用例；形态为短代码标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "无译文，按内部标识保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原分类 non_translate 可保留为内部标识；因无上下文，作用域补为 whole_record 而非全局。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "H5g 与 H5f/H5h 分属不同记录，不合并。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:305",
+      "evidence_rows": [
+        26296
+      ],
+      "source_excerpt": "H5h",
+      "reason": "短代码式整条记录标识，收窄为 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26296 全文仅为 H5h，无嵌入正文用例；形态为短代码标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "无译文，按内部标识保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原分类 non_translate 可保留为内部标识；因无上下文，作用域补为 whole_record 而非全局。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "H5h 与 H5f/H5g 分属不同记录，不合并。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:258",
+    "non_translate:259",
+    "non_translate:268",
+    "non_translate:277",
+    "non_translate:291",
+    "non_translate:292",
+    "non_translate:300",
+    "non_translate:301",
+    "non_translate:302",
+    "non_translate:303",
+    "non_translate:304",
+    "non_translate:305"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

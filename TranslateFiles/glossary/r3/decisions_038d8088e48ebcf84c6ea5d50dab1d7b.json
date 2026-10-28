@@ -1,0 +1,444 @@
+{
+  "review_complete": true,
+  "review_summary": "已审 e1-e12；将 the Darkness/Darkness 统一为神话大黑暗，Earthshakers 按物种归为种族并统一为撼地兽，divination 升级为 required，tribe-making 统一为部族组建；e7 补齐专名元数据并改为耕夫巴恩塔。f1-f4 均为同族、单复数或简称变体，按别名/变体处理。",
+  "acknowledged_findings": [
+    "F0382",
+    "F0390",
+    "F0391",
+    "F0403"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "source": "the Darkness",
+        "recommended_translation": "大黑暗",
+        "term_kind": "proper_name",
+        "enforcement": "required",
+        "category_path": "其他",
+        "term_reason": "Great Darkness 的简称；原文称祖先靠从其他氏族掠奴熬过该神话灾难。"
+      },
+      "reason": "按 Great Darkness 简称归为专名，保留大黑暗。",
+      "evidence_rows": [
+        6831
+      ],
+      "table": "terms",
+      "index": 319
+    },
+    {
+      "patch": {
+        "source": "Earthshakers",
+        "recommended_translation": "撼地兽",
+        "term_kind": "game_term",
+        "enforcement": "required",
+        "category_path": "种族",
+        "term_reason": "原文定义其为被称为 earthshakers 的巨型生物，可训练为战骑、役畜，并为玛兰戈尔抵御混沌的圣兽。"
+      },
+      "reason": "将物种义改为种族/game_term，统一撼地兽。",
+      "evidence_rows": [
+        33389
+      ],
+      "table": "terms",
+      "index": 327
+    },
+    {
+      "patch": {
+        "source": "Darkness",
+        "recommended_translation": "大黑暗",
+        "term_kind": "proper_name",
+        "enforcement": "required",
+        "category_path": "其他",
+        "term_reason": "神话大黑暗时期；原文称撼地兽在此期间助玛兰戈尔对抗恶魔瓦克博斯。"
+      },
+      "reason": "统一 Darkness 与 Great Darkness 的神话时期译名。",
+      "evidence_rows": [
+        7218
+      ],
+      "table": "terms",
+      "index": 328
+    },
+    {
+      "patch": {
+        "source": "Barntar the Plowman",
+        "recommended_translation": "耕夫巴恩塔",
+        "term_kind": "proper_name",
+        "enforcement": "required",
+        "category_path": "其他",
+        "term_reason": "奥兰斯之子、耕犁之神；原文称其通晓大地之道，后被玛兰戈尔掳为奴仆，由厄纳尔达讨回。"
+      },
+      "reason": "补齐专名元数据，统一为耕夫巴恩塔。",
+      "evidence_rows": [
+        33976,
+        33977
+      ],
+      "table": "terms",
+      "index": 336
+    },
+    {
+      "patch": {
+        "source": "tribe-making",
+        "recommended_translation": "部族组建",
+        "term_kind": "game_term",
+        "enforcement": "required",
+        "category_path": "其他",
+        "term_reason": "通过谈判联合多个氏族以创建部族的机制；可作 tribe-making demands、mission、Negotiations 的定语。"
+      },
+      "reason": "采用可作定语的部族组建，适配名词性机制。",
+      "evidence_rows": [
+        7997,
+        33671
+      ],
+      "table": "terms",
+      "index": 344
+    },
+    {
+      "patch": {
+        "source": "divination",
+        "recommended_translation": "占卜",
+        "term_kind": "game_term",
+        "enforcement": "required",
+        "category_path": "技能",
+        "term_reason": "向神祇或祖先求问的仪式；原文称占卜价值取决于占卜者技能，并用于探知征兆。"
+      },
+      "reason": "升级为 required 并去除暂定说明。",
+      "evidence_rows": [
+        8229
+      ],
+      "table": "terms",
+      "index": 345
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:319",
+      "evidence_rows": [
+        6831
+      ],
+      "source_excerpt": "survived the Darkness",
+      "reason": "按 Great Darkness 简称处理，保留大黑暗。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "6831 原文的 the Darkness 指祖先幸存的神话灾难时期，作为 Great Darkness 简称。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作大黑暗与 Great Darkness 的简称义相符；不是普通黑暗。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "将 term_kind 由 game_term 修为 proper_name，enforcement 保持 required，category_path=其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Great Darkness 共用大黑暗是简称/全称关系，非同名不同实体；f2 已核对。"
+        }
+      }
+    },
+    {
+      "ref": "terms:323",
+      "evidence_rows": [
+        6718
+      ],
+      "source_excerpt": "the duck people",
+      "reason": "确认鸭人种族译名及分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "6718 中的 duck people 有和平、歌曲荣誉，指鸭人种族。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "鸭人准确；f1 中 ducks/duck-people 为同族变体，共享译名不冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=种族，term_kind=game_term，enforcement=required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 ducks、duck-people 同指鸭人，可用同一译名；不是不同专名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:327",
+      "evidence_rows": [
+        33389
+      ],
+      "source_excerpt": "the creatures known as earthshakers",
+      "reason": "将物种义归为种族/game_term，统一撼地兽。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33389 定义 earthshakers 为玛兰戈尔所称的造物/巨兽；7211、8832 称可训为战骑。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "撼地兽准确，保留；不是地震或撼地者；e15 单数同义。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "改为 category_path=种族、term_kind=game_term，因原文为生物种类，不是专名事件。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Earthshakers 复数与 earthshaker 单数同指巨兽，统一撼地兽；f3 核对为变体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:328",
+      "evidence_rows": [
+        7218
+      ],
+      "source_excerpt": "During the Darkness",
+      "reason": "统一 Darkness 为神话大黑暗，修正译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7218 的 During the Darkness 指撼地兽助玛兰戈尔对抗恶魔的神话大黑暗。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由黑暗时代改为大黑暗，与 Great Darkness/the Darkness 同指一时期；f2 相关简称已核。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name/其他/required 符合神话时期专名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e1/e14 统一大黑暗，避免同一神话时期多种译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:331",
+      "evidence_rows": [
+        7356
+      ],
+      "source_excerpt": "Battle of Falling Hills",
+      "reason": "确认战役专名及译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7356 的 Battle of Falling Hills 是战役名，7390 同。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "落丘之战准确，简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name/其他/required，战役专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两处同指该战役，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:334",
+      "evidence_rows": [
+        7302
+      ],
+      "source_excerpt": "Chaotic",
+      "reason": "确认 Chaotic 为混沌阵营形容词。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7302/7431 的 Chaotic 指混沌阵营属性，非普通混乱的。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译混沌的可作定语；与 Chaos 阵营一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "game_term/其他/required；case_sensitive text 限定大写属性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同形普通形容词按大写游戏义处理，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:336",
+      "evidence_rows": [
+        33976,
+        33977
+      ],
+      "source_excerpt": "Barntar the Plowman, who knew the ways of the earth",
+      "reason": "补齐专名元数据，统一为耕夫巴恩塔。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33976 明确 Barntar the Plowman 通晓大地之道；33977 被玛兰戈尔掳为 thrall。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由犁夫巴恩塔统一为耕夫巴恩塔，与 Barntar=巴恩塔、Plowman=耕夫一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "补齐 proper_name、enforcement=required、category_path=其他；神祇专名保留在 terms。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Barntar 专名部分与既有巴恩塔一致，Plowman 采用耕夫；不并入普通词 The Plowman。"
+        }
+      }
+    },
+    {
+      "ref": "terms:339",
+      "evidence_rows": [
+        8058
+      ],
+      "source_excerpt": "Queen of Feathers",
+      "reason": "确认称号专名与译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8058/8107 的 Queen of Feathers 是预言中可联姻的称号/存在。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "羽后作为称号简洁，区别于 Feathered Horse Queen（羽马女王）。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name/其他/required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两处同指，译名一致；不与其他羽类称号混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:340",
+      "evidence_rows": [
+        7992
+      ],
+      "source_excerpt": "the Colymar tribe",
+      "reason": "确认部族专名及 tribe 译法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7992 原文称可成为 Colymar tribe 一员，指既有部族。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "科利马部族准确，tribe=部族，与 clan=氏族区分。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name/组织/required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各处 Colymar tribe 同指该部族，统一科利马部族；不取部落。"
+        }
+      }
+    },
+    {
+      "ref": "terms:344",
+      "evidence_rows": [
+        33671
+      ],
+      "source_excerpt": "Tribe-making Negotiations",
+      "reason": "统一为可作定语的机制名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7997/8001 指把氏族联合成部族的过程；33671 标题为 Tribe-making Negotiations。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由建部族改为部族组建，适配 demands/mission/Negotiations 等名词修饰。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "game_term/其他/required。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "候选建部族/组建部族/部族组建统一为部族组建。"
+        }
+      }
+    },
+    {
+      "ref": "terms:345",
+      "evidence_rows": [
+        8229
+      ],
+      "source_excerpt": "The value of a divination depends on the skill of the diviner.",
+      "reason": "升级为 required 并去除暂定说明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8229 将 divination 与 diviner 技能联系；11791 为占卜仪式。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "占卜为通行译名，动词/仪式皆可。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "由 reference 升级 required；game_term/技能，仪式机制明确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Divinations 复数与 divination 同指，统一占卜；f4 核对为单复数变体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:348",
+      "evidence_rows": [
+        8354
+      ],
+      "source_excerpt": "The Surprising Tribe",
+      "reason": "确认部族专名及译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8354/22976 的 Surprising Tribe 是向 Errarth 索贡、欲毁灭他的特定部族。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "惊异部族准确，保留专名直译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name/组织/required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两处同指一部族，译名统一。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:319",
+    "terms:323",
+    "terms:327",
+    "terms:328",
+    "terms:331",
+    "terms:334",
+    "terms:336",
+    "terms:339",
+    "terms:340",
+    "terms:344",
+    "terms:345",
+    "terms:348"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

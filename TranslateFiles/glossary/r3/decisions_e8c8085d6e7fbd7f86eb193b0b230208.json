@@ -1,0 +1,556 @@
+{
+  "review_complete": true,
+  "review_summary": "已审校 e1-e12 全部 12 条 non_translate 条目；确认均为运行时动态占位符或控制字节，需原样保留，并为各条补齐精确 text applicability 与原因，未新增、隔离或标记无匹配。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "reason": "动态人物/氏族成员名称占位符，必须原样保留。",
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "嵌入句中的动态名称占位符；按精确字串在任何出现处保留，不是可译普通词。"
+        }
+      },
+      "reason": "补齐 non_translate 适用域，避免默认全局禁翻或漏保护。",
+      "evidence_rows": [
+        16881,
+        16882,
+        20227
+      ],
+      "table": "non_translate",
+      "index": 222
+    },
+    {
+      "patch": {
+        "reason": "动态牛数/数值占位符，必须原样保留。",
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "嵌入句中的动态数值占位符；按精确字串在任何出现处保留。"
+        }
+      },
+      "reason": "补齐 non_translate 适用域，确保牛数占位符不被翻译。",
+      "evidence_rows": [
+        16730,
+        22368
+      ],
+      "table": "non_translate",
+      "index": 223
+    },
+    {
+      "patch": {
+        "reason": "动态人物名称占位符，必须原样保留。",
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "嵌入句中的动态人物名称占位符；大小写敏感，按精确字串在任何出现处保留。"
+        }
+      },
+      "reason": "补齐 non_translate 适用域，并保持大小写敏感。",
+      "evidence_rows": [
+        19055,
+        19056
+      ],
+      "table": "non_translate",
+      "index": 233
+    },
+    {
+      "patch": {
+        "reason": "动态人物名称占位符，必须原样保留。",
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "嵌入句中的动态人物名称占位符；按精确字串在任何出现处保留。"
+        }
+      },
+      "reason": "补齐 non_translate 适用域，确保人物名占位符不被翻译。",
+      "evidence_rows": [
+        19112,
+        19128
+      ],
+      "table": "non_translate",
+      "index": 234
+    },
+    {
+      "patch": {
+        "reason": "动态人物名称占位符，必须原样保留。",
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "嵌入句中的动态人物名称占位符；大小写敏感，按精确字串在任何出现处保留。"
+        }
+      },
+      "reason": "补齐 non_translate 适用域，并保持大小写敏感。",
+      "evidence_rows": [
+        19148,
+        19149
+      ],
+      "table": "non_translate",
+      "index": 235
+    },
+    {
+      "patch": {
+        "reason": "动态人物名称占位符，必须原样保留。",
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "嵌入句中的动态人物名称占位符；按精确字串在任何出现处保留。"
+        }
+      },
+      "reason": "补齐 non_translate 适用域，确保人物名占位符不被翻译。",
+      "evidence_rows": [
+        19484,
+        19486
+      ],
+      "table": "non_translate",
+      "index": 236
+    },
+    {
+      "patch": {
+        "reason": "动态人物名称占位符，必须原样保留。",
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "嵌入句中的动态人物名称占位符；大小写敏感，按精确字串在任何出现处保留。"
+        }
+      },
+      "reason": "补齐 non_translate 适用域，并保持大小写敏感。",
+      "evidence_rows": [
+        19488
+      ],
+      "table": "non_translate",
+      "index": 237
+    },
+    {
+      "patch": {
+        "reason": "动态人物名称占位符，必须原样保留。",
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "嵌入句中的动态人物名称占位符；按精确字串在任何出现处保留。"
+        }
+      },
+      "reason": "补齐 non_translate 适用域，确保人物名占位符不被翻译。",
+      "evidence_rows": [
+        19343,
+        19344
+      ],
+      "table": "non_translate",
+      "index": 238
+    },
+    {
+      "patch": {
+        "reason": "动态数值控制字节，必须原样保留。",
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "运行时数值控制字节；嵌入句中，按精确字串原样保留。"
+        }
+      },
+      "reason": "补齐 non_translate 适用域，避免控制字节被误译。",
+      "evidence_rows": [
+        20284
+      ],
+      "table": "non_translate",
+      "index": 253
+    },
+    {
+      "patch": {
+        "reason": "动态数值控制字节，必须原样保留。",
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "运行时数值控制字节；嵌入句中，按精确字串原样保留。"
+        }
+      },
+      "reason": "补齐 non_translate 适用域，避免控制字节被误译。",
+      "evidence_rows": [
+        20029,
+        20327
+      ],
+      "table": "non_translate",
+      "index": 254
+    },
+    {
+      "patch": {
+        "reason": "动态数值占位符，必须原样保留。",
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "运行时数值占位符；嵌入句中，按精确字串原样保留。"
+        }
+      },
+      "reason": "补齐 non_translate 适用域，确保数值占位符原样保留。",
+      "evidence_rows": [
+        20284,
+        22276,
+        24875
+      ],
+      "table": "non_translate",
+      "index": 255
+    },
+    {
+      "patch": {
+        "reason": "动态人物名称占位符，必须原样保留。",
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "嵌入句中的动态人物名称占位符；大小写敏感，按精确字串在任何出现处保留。"
+        }
+      },
+      "reason": "补齐 non_translate 适用域，并保持大小写敏感。",
+      "evidence_rows": [
+        20084,
+        20090
+      ],
+      "table": "non_translate",
+      "index": 257
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:222",
+      "evidence_rows": [
+        16881,
+        16882,
+        20227
+      ],
+      "source_excerpt": "\\x01@\\x01",
+      "reason": "确认该条为嵌入句中的动态名称占位符，需原样保留，并补精确适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "行16881、16882、20227原文均将该占位符嵌入句子使用，确认 source 为动态名称占位符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，不产出译文，保持原样即为正确处理。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "类别仍为 non_translate；原条目缺 applicability，已补为精确 text 匹配并说明运行标记依据。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一 e1 占位符在各证据中精确一致，按原样保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:223",
+      "evidence_rows": [
+        16730,
+        22368
+      ],
+      "source_excerpt": "\\x01@\\x16",
+      "reason": "确认该条为牛数/数值占位符，需原样保留，并补精确适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "行16730、22368原文均在牛数表达中使用该占位符，确认 source 为动态数值占位符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，不产出译文，保持原样即为正确处理。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "类别仍为 non_translate；原条目缺 applicability，已补为精确 text 匹配并说明运行标记依据。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一 e2 占位符在证据中精确一致，按原样保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:233",
+      "evidence_rows": [
+        19055,
+        19056
+      ],
+      "source_excerpt": "\\x01DC",
+      "reason": "确认该条为大小写敏感的动态人物名占位符，需原样保留，并补精确适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "行19055、19056原文以该大写占位符嵌入对话，确认 source 为动态人物名占位符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，不产出译文，保持原样即为正确处理。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "类别仍为 non_translate；已补精确且大小写敏感的 text applicability。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条按精确字符保留，不与大小写不同的形似项混同。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:234",
+      "evidence_rows": [
+        19112,
+        19128
+      ],
+      "source_excerpt": "\\x01DD",
+      "reason": "确认该条为动态人物名占位符，需原样保留，并补精确适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "行19112、19128原文均将该占位符作为人物名称使用。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，不产出译文，保持原样即为正确处理。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "类别仍为 non_translate；原条目缺 applicability，已补为精确 text 匹配。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一 e4 占位符在证据中精确一致，按原样保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:235",
+      "evidence_rows": [
+        19148,
+        19149
+      ],
+      "source_excerpt": "\\x01DE",
+      "reason": "确认该条为大小写敏感的动态人物名占位符，需原样保留，并补精确适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "行19148、19149原文均以该大写占位符指称人物，确认 source 为动态人物名占位符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，不产出译文，保持原样即为正确处理。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "类别仍为 non_translate；已补精确且大小写敏感的 text applicability。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条按精确字符保留，不与大小写不同的形似项混同。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:236",
+      "evidence_rows": [
+        19484,
+        19486
+      ],
+      "source_excerpt": "\\x01DO",
+      "reason": "确认该条为动态人物名占位符，需原样保留，并补精确适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "行19484、19486原文均将该占位符作为人物名称使用。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，不产出译文，保持原样即为正确处理。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "类别仍为 non_translate；原条目缺 applicability，已补为精确 text 匹配。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一 e6 占位符在证据中精确一致，按原样保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:237",
+      "evidence_rows": [
+        19488
+      ],
+      "source_excerpt": "\\x01DP",
+      "reason": "确认该条为大小写敏感的动态人物名占位符，需原样保留，并补精确适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "行19488原文以该大写占位符指称人物，确认 source 为动态人物名占位符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，不产出译文，保持原样即为正确处理。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "类别仍为 non_translate；已补精确且大小写敏感的 text applicability。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条按精确字符保留，不与大小写不同的形似项混同。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:238",
+      "evidence_rows": [
+        19343,
+        19344
+      ],
+      "source_excerpt": "\\x01Bl",
+      "reason": "确认该条为动态人物名占位符，需原样保留，并补精确适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "行19343、19344原文均将该占位符作为年轻农夫名称使用。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，不产出译文，保持原样即为正确处理。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "类别仍为 non_translate；原条目缺 applicability，已补为精确 text 匹配。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一 e8 占位符在证据中精确一致，按原样保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:253",
+      "evidence_rows": [
+        20284
+      ],
+      "source_excerpt": "\\x11",
+      "reason": "确认该条为动态数值控制字节，需原样保留，并补精确适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "行20284原文中该控制字节随数值表达出现，确认 source 为运行时数值控制字节。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，不产出译文，保持原样即为正确处理。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "类别仍为 non_translate；已补精确 text applicability，避免控制字节被翻译。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅保护精确控制字节字串，不扩展为普通文本替换。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:254",
+      "evidence_rows": [
+        20029,
+        20327
+      ],
+      "source_excerpt": "\\x13",
+      "reason": "确认该条为动态数值控制字节，需原样保留，并补精确适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "行20029、20327原文中该控制字节均出现在牛数表达内，确认 source 为运行时数值控制字节。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，不产出译文，保持原样即为正确处理。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "类别仍为 non_translate；已补精确 text applicability，避免控制字节被翻译。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一 e10 控制字节在证据中精确一致，按原样保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:255",
+      "evidence_rows": [
+        20284,
+        22276,
+        24875
+      ],
+      "source_excerpt": "\\x01@\\x11",
+      "reason": "确认该条为动态数值占位符，需原样保留，并补精确适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "行20284、22276、24875原文均使用该完整占位符插入数值，确认 source 为动态数值占位符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，不产出译文，保持原样即为正确处理。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "类别仍为 non_translate；原条目缺 applicability，已补为精确 text 匹配。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一 e11 完整占位符在证据中精确一致，按原样保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:257",
+      "evidence_rows": [
+        20084,
+        20090
+      ],
+      "source_excerpt": "\\x01Df",
+      "reason": "确认该条为大小写敏感的动态人物名占位符，需原样保留，并补精确适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "行20084、20090原文均以该占位符指称人物，确认 source 为动态人物名占位符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，不产出译文，保持原样即为正确处理。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "类别仍为 non_translate；已补精确且大小写敏感的 text applicability。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条按精确字符保留，不与大小写不同的形似项混同。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:222",
+    "non_translate:223",
+    "non_translate:233",
+    "non_translate:234",
+    "non_translate:235",
+    "non_translate:236",
+    "non_translate:237",
+    "non_translate:238",
+    "non_translate:253",
+    "non_translate:254",
+    "non_translate:255",
+    "non_translate:257"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

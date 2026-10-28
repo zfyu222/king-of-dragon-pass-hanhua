@@ -1,0 +1,125 @@
+{
+  "review_complete": true,
+  "review_summary": "已核 e1-e3 的原文、译名、分类与一致性；Dark Woman、Vevkoban the Chaos Horse、Ves Venna 均保留为 required 专名。补正 e1、e3 的 term_reason；f1 中 e3/e4 为同一人物 Ves Venna 的短名与完整头衔，不构成异名共用译名错误。",
+  "acknowledged_findings": [
+    "F0354"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "第三名敌人，被称作 the mysterious Dark Woman；奥兰斯在陌生人之地遇见她，后来生下名为 Crushing Noise 的孩子。"
+      },
+      "reason": "补全 term_reason，记录 34246 所示使用范围，避免只依据 25569 的单一句。",
+      "evidence_rows": [
+        25569,
+        34246
+      ],
+      "table": "characters",
+      "index": 268
+    },
+    {
+      "patch": {
+        "term_reason": "氏族的远古敌人，冰族领主瓦林德之子。"
+      },
+      "reason": "修正头衔归属：31956 的 Lord of the Ice Tribe 紧随 Valind，应说明维斯文纳为瓦林德之子，而非把冰族领主直接当作维斯文纳头衔。",
+      "evidence_rows": [
+        31956,
+        30767
+      ],
+      "table": "characters",
+      "index": 275
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:268",
+      "evidence_rows": [
+        25569,
+        34246
+      ],
+      "source_excerpt": "The third enemy is the mysterious Dark Woman.",
+      "reason": "确认 Dark Woman 为具名人物；采用“黑暗女子”与史诗叙述语体相符，候选“黑暗女人”不另立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25569 与 34246 均支持该专名及其使用范围；term_reason 已补全第二处语境。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Dark Woman 译为“黑暗女子”，保留 Dark 的暗黑/神秘色彩；“黑暗女人”为同义异译，未另立。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、proper_name、gender 女性，均与原文人物描述相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无 Dark Woman 的其他变体；候选译名已比较并统一为“黑暗女子”。"
+        }
+      }
+    },
+    {
+      "ref": "characters:270",
+      "evidence_rows": [
+        29121
+      ],
+      "source_excerpt": "Vevkoban the Chaos Horse",
+      "reason": "确认称号加名字的专名结构；保留“混沌之马”称号与“维夫科班”音译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "29121 原文以 Vevkoban the Chaos Horse 为主语，称其毁灭 Kev 的神谕，具名存在成立。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Vevkoban 音译“维夫科班”，the Chaos Horse 作称号译“混沌之马”，整体为“混沌之马维夫科班”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、proper_name、gender 其他；原文未给出人类性别，保留“其他”合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无 Vevkoban 其他写法；与 Feathered Horse Queen 的 Horse 成分不同义，不共用译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:275",
+      "evidence_rows": [
+        30767,
+        31956
+      ],
+      "source_excerpt": "Your ancient enemy is Ves Venna, son of Valind, Lord of the Ice Tribe.",
+      "reason": "确认 Ves Venna 译名，并与完整头衔条目保持同一人物一致；f1 非异名冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "31956 与 30767 均支持该人物及其敌对关系；term_reason 已按 31956 的紧邻结构修正头衔归属。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Ves Venna 音译“维斯文纳”，与关联完整头衔条目一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、proper_name、gender 男性；原文 son of Valind 及人名可证。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与关联条目为同一人物 Ves Venna，短名与完整头衔共用“维斯文纳”属合理一致，不是不同名称误共用。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:268",
+    "characters:270",
+    "characters:275"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

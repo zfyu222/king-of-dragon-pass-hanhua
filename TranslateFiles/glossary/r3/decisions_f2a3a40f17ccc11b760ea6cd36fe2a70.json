@@ -1,0 +1,533 @@
+{
+  "review_complete": true,
+  "review_summary": "复核 12 条 scene 前缀内部标签/资源标识：均为完整记录，非通用文本；补 whole_record 适用域，保持原样，不设译文。",
+  "acknowledged_findings": [
+    "F0228",
+    "F0229",
+    "F0230",
+    "F0231",
+    "F0232",
+    "F0269",
+    "F0270",
+    "F0271",
+    "F0272",
+    "F0273",
+    "F0274",
+    "F0275"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录完整内容为 scene223，属于内部场景标签；仅匹配完整记录并原样保留。"
+        }
+      },
+      "reason": "补齐非翻译适用域，避免 scene223 被当作全局禁翻文本。",
+      "evidence_rows": [
+        28521
+      ],
+      "table": "non_translate",
+      "index": 324
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录完整内容为 scene224，属于内部场景标签；仅匹配完整记录并原样保留。"
+        }
+      },
+      "reason": "补齐非翻译适用域，避免 scene224 被当作全局禁翻文本。",
+      "evidence_rows": [
+        28585
+      ],
+      "table": "non_translate",
+      "index": 325
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录完整内容为 scene225，属于内部场景标签；仅匹配完整记录并原样保留。"
+        }
+      },
+      "reason": "补齐非翻译适用域，避免 scene225 被当作全局禁翻文本。",
+      "evidence_rows": [
+        28650
+      ],
+      "table": "non_translate",
+      "index": 326
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录完整内容为 scene228，属于内部场景标签；仅匹配完整记录并原样保留。"
+        }
+      },
+      "reason": "补齐非翻译适用域，避免 scene228 被当作全局禁翻文本。",
+      "evidence_rows": [
+        28791
+      ],
+      "table": "non_translate",
+      "index": 327
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录完整内容为 scene229，属于内部场景标签；仅匹配完整记录并原样保留。"
+        }
+      },
+      "reason": "补齐非翻译适用域，避免 scene229 被当作全局禁翻文本。",
+      "evidence_rows": [
+        28856
+      ],
+      "table": "non_translate",
+      "index": 328
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录完整内容为 scene068，按 scene 前缀表现为内部场景标签；仅匹配完整记录并原样保留。"
+        }
+      },
+      "reason": "补齐非翻译适用域，避免 scene068 被当作全局禁翻文本。",
+      "evidence_rows": [
+        27242
+      ],
+      "table": "non_translate",
+      "index": 382
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录完整内容为 scene069，按 scene 前缀表现为内部场景标签；仅匹配完整记录并原样保留。"
+        }
+      },
+      "reason": "补齐非翻译适用域，避免 scene069 被当作全局禁翻文本。",
+      "evidence_rows": [
+        27309
+      ],
+      "table": "non_translate",
+      "index": 383
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录完整内容为 scene042s，属于内部场景资源标识；仅匹配完整记录并原样保留。"
+        }
+      },
+      "reason": "补齐非翻译适用域，避免 scene042s 被当作全局禁翻文本。",
+      "evidence_rows": [
+        30804
+      ],
+      "table": "non_translate",
+      "index": 385
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录完整内容为 scene043s，属于内部场景资源标识；仅匹配完整记录并原样保留。"
+        }
+      },
+      "reason": "补齐非翻译适用域，避免 scene043s 被当作全局禁翻文本。",
+      "evidence_rows": [
+        30805
+      ],
+      "table": "non_translate",
+      "index": 386
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录完整内容为 scene042m，属于内部场景资源标识；仅匹配完整记录并原样保留。"
+        }
+      },
+      "reason": "补齐非翻译适用域，避免 scene042m 被当作全局禁翻文本。",
+      "evidence_rows": [
+        30806
+      ],
+      "table": "non_translate",
+      "index": 387
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录完整内容为 scene043m，属于内部场景资源标识；仅匹配完整记录并原样保留。"
+        }
+      },
+      "reason": "补齐非翻译适用域，避免 scene043m 被当作全局禁翻文本。",
+      "evidence_rows": [
+        30807
+      ],
+      "table": "non_translate",
+      "index": 388
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录完整内容为 scene042l，属于内部场景资源标识；仅匹配完整记录并原样保留。"
+        }
+      },
+      "reason": "补齐非翻译适用域，避免 scene042l 被当作全局禁翻文本。",
+      "evidence_rows": [
+        30808
+      ],
+      "table": "non_translate",
+      "index": 389
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:324",
+      "evidence_rows": [
+        28521
+      ],
+      "source_excerpt": "scene223",
+      "reason": "确认 scene223 为完整内部场景标签，应限定 whole_record 原样保留；已补 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录原文为 scene223，与条目 source 完全一致，且本批记录仅此完整标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 内部场景标签，无译文需求，要求原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原为非翻译但缺适用域；该标识应仅按 whole_record 保留，已在 edits.patch 补 applicability，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "按完整 scene 标签原样保留，与本批同类场景标识处理一致；不涉及译文统一。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:325",
+      "evidence_rows": [
+        28585
+      ],
+      "source_excerpt": "scene224",
+      "reason": "确认 scene224 为完整内部场景标签，应限定 whole_record 原样保留；已补 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录原文为 scene224，与条目 source 完全一致，且本批记录仅此完整标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 内部场景标签，无译文需求，要求原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原为非翻译但缺适用域；该标识应仅按 whole_record 保留，已在 edits.patch 补 applicability，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "按完整 scene 标签原样保留，与本批同类场景标识处理一致；不涉及译文统一。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:326",
+      "evidence_rows": [
+        28650
+      ],
+      "source_excerpt": "scene225",
+      "reason": "确认 scene225 为完整内部场景标签，应限定 whole_record 原样保留；已补 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录原文为 scene225，与条目 source 完全一致，且本批记录仅此完整标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 内部场景标签，无译文需求，要求原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原为非翻译但缺适用域；该标识应仅按 whole_record 保留，已在 edits.patch 补 applicability，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "按完整 scene 标签原样保留，与本批同类场景标识处理一致；不涉及译文统一。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:327",
+      "evidence_rows": [
+        28791
+      ],
+      "source_excerpt": "scene228",
+      "reason": "确认 scene228 为完整内部场景标签，应限定 whole_record 原样保留；已补 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录原文为 scene228，与条目 source 完全一致，且本批记录仅此完整标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 内部场景标签，无译文需求，要求原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原为非翻译但缺适用域；该标识应仅按 whole_record 保留，已在 edits.patch 补 applicability，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "按完整 scene 标签原样保留，与本批同类场景标识处理一致；不涉及译文统一。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:328",
+      "evidence_rows": [
+        28856
+      ],
+      "source_excerpt": "scene229",
+      "reason": "确认 scene229 为完整内部场景标签，应限定 whole_record 原样保留；已补 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录原文为 scene229，与条目 source 完全一致，且本批记录仅此完整标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 内部场景标签，无译文需求，要求原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原为非翻译但缺适用域；该标识应仅按 whole_record 保留，已在 edits.patch 补 applicability，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "按完整 scene 标签原样保留，与本批同类场景标识处理一致；不涉及译文统一。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:382",
+      "evidence_rows": [
+        27242
+      ],
+      "source_excerpt": "scene068",
+      "reason": "确认 scene068 为完整内部场景标签，应限定 whole_record 原样保留；已补 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录原文为 scene068，与条目 source 完全一致，且本批记录仅此完整标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 内部场景标签，无译文需求，要求原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原为非翻译但缺适用域；该标识按 scene 前缀应仅按 whole_record 保留，已在 edits.patch 补 applicability。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "按完整 scene 标签原样保留，与同批 scene 标签处理一致；不涉及译文统一。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:383",
+      "evidence_rows": [
+        27309
+      ],
+      "source_excerpt": "scene069",
+      "reason": "确认 scene069 为完整内部场景标签，应限定 whole_record 原样保留；已补 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录原文为 scene069，与条目 source 完全一致，且本批记录仅此完整标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 内部场景标签，无译文需求，要求原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原为非翻译但缺适用域；该标识按 scene 前缀应仅按 whole_record 保留，已在 edits.patch 补 applicability。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "按完整 scene 标签原样保留，与同批 scene 标签处理一致；不涉及译文统一。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:385",
+      "evidence_rows": [
+        30804
+      ],
+      "source_excerpt": "scene042s",
+      "reason": "确认 scene042s 为完整内部场景资源标识，应限定 whole_record 原样保留；已补 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录原文为 scene042s，与条目 source 完全一致，且本批记录仅此完整标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 内部场景资源标识，无译文需求，要求原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原为非翻译但缺适用域；该资源标识应仅按 whole_record 保留，已在 edits.patch 补 applicability，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "按完整 scene 资源标识原样保留，与本批同类资源标识处理一致；不涉及译文统一。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:386",
+      "evidence_rows": [
+        30805
+      ],
+      "source_excerpt": "scene043s",
+      "reason": "确认 scene043s 为完整内部场景资源标识，应限定 whole_record 原样保留；已补 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录原文为 scene043s，与条目 source 完全一致，且本批记录仅此完整标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 内部场景资源标识，无译文需求，要求原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原为非翻译但缺适用域；该资源标识应仅按 whole_record 保留，已在 edits.patch 补 applicability，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "按完整 scene 资源标识原样保留，与本批同类资源标识处理一致；不涉及译文统一。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:387",
+      "evidence_rows": [
+        30806
+      ],
+      "source_excerpt": "scene042m",
+      "reason": "确认 scene042m 为完整内部场景资源标识，应限定 whole_record 原样保留；已补 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录原文为 scene042m，与条目 source 完全一致，且本批记录仅此完整标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 内部场景资源标识，无译文需求，要求原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原为非翻译但缺适用域；该资源标识应仅按 whole_record 保留，已在 edits.patch 补 applicability，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "按完整 scene 资源标识原样保留，与本批同类资源标识处理一致；不涉及译文统一。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:388",
+      "evidence_rows": [
+        30807
+      ],
+      "source_excerpt": "scene043m",
+      "reason": "确认 scene043m 为完整内部场景资源标识，应限定 whole_record 原样保留；已补 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录原文为 scene043m，与条目 source 完全一致，且本批记录仅此完整标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 内部场景资源标识，无译文需求，要求原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原为非翻译但缺适用域；该资源标识应仅按 whole_record 保留，已在 edits.patch 补 applicability，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "按完整 scene 资源标识原样保留，与本批同类资源标识处理一致；不涉及译文统一。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:389",
+      "evidence_rows": [
+        30808
+      ],
+      "source_excerpt": "scene042l",
+      "reason": "确认 scene042l 为完整内部场景资源标识，应限定 whole_record 原样保留；已补 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录原文为 scene042l，与条目 source 完全一致，且本批记录仅此完整标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 内部场景资源标识，无译文需求，要求原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原为非翻译但缺适用域；该资源标识应仅按 whole_record 保留，已在 edits.patch 补 applicability，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "按完整 scene 资源标识原样保留，与本批同类资源标识处理一致；不涉及译文统一。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:324",
+    "non_translate:325",
+    "non_translate:326",
+    "non_translate:327",
+    "non_translate:328",
+    "non_translate:382",
+    "non_translate:383",
+    "non_translate:385",
+    "non_translate:386",
+    "non_translate:387",
+    "non_translate:388",
+    "non_translate:389"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

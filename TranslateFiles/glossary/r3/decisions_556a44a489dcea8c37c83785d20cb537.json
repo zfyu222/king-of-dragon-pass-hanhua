@@ -1,0 +1,438 @@
+{
+  "review_complete": true,
+  "review_summary": "共审 12 个分配条目（e1–e12）。核对共享译名 f1：将裸 moot 改译“大会”，与 tribal moot“部族大会”区分；另修正 Marriage Ring、Living Deities 的译名及若干 term_reason，未新增或隔离条目。",
+  "acknowledged_findings": [
+    "F0395"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "为吸引其他氏族男子而举办的择偶竞赛。"
+      },
+      "reason": "删除未见于本批证据的竞赛项目细节，保留可证的择偶竞赛义。",
+      "evidence_rows": [
+        5279,
+        5280
+      ],
+      "table": "terms",
+      "index": 292
+    },
+    {
+      "patch": {
+        "recommended_translation": "婚姻之环"
+      },
+      "reason": "formed the Marriage Ring 宜译“结成婚姻之环”，统一为更自然的标准名。",
+      "evidence_rows": [
+        6400,
+        6401,
+        32883
+      ],
+      "table": "terms",
+      "index": 313
+    },
+    {
+      "patch": {
+        "term_reason": "外来者要求进行的正式会面比试。"
+      },
+      "reason": "term_reason 仅引行号，改为可复核的实际含义。",
+      "evidence_rows": [
+        25741,
+        25755
+      ],
+      "table": "terms",
+      "index": 931
+    },
+    {
+      "patch": {
+        "recommended_translation": "大会",
+        "category_path": "其他",
+        "term_reason": "部族或联盟层级的议事与裁决集会；具体搭配可作“部族大会”“联盟大会”。",
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": false,
+          "prefix": "the ",
+          "suffix": "",
+          "reason": "9045/19724 等以 the moot 指作出裁决、接受诉求的集会；避免把普通形容词 moot 一并替换。"
+        }
+      },
+      "reason": "裸 moot 与 tribal moot 需区分；按集会义改译“大会”，并限定匹配范围、修正类别。",
+      "evidence_rows": [
+        33700,
+        9045,
+        19724
+      ],
+      "table": "terms",
+      "index": 301
+    },
+    {
+      "patch": {
+        "recommended_translation": "存活神祇",
+        "term_reason": "黑暗时代仍保持清醒的神祇，UI 中与 Odayla、Elmal、Urox 同列。"
+      },
+      "reason": "Living Deities 指黑暗时代仍清醒的神祇，改译更贴合原文。",
+      "evidence_rows": [
+        33496
+      ],
+      "table": "terms",
+      "index": 1134
+    },
+    {
+      "patch": {
+        "term_reason": "植物之神，厄纳尔达的前夫；曾被杀死后复活，并偏爱精灵。"
+      },
+      "reason": "删除无本批证据的“牛病植物”，补入可证的植物神/前夫/复活义。",
+      "evidence_rows": [
+        10256,
+        15716,
+        34164
+      ],
+      "table": "terms",
+      "index": 309
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:292",
+      "evidence_rows": [
+        5279,
+        5280
+      ],
+      "source_excerpt": "Sponsor a Marriage Contest to draw men from other clans.",
+      "reason": "Marriage Contest 指为吸引其他氏族男子而举办的择偶竞赛；原定义中无证据的测试项目已删。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "5279、5280 均作 Marriage Contest；原 term_reason 的诗歌、唤猪、剑术、摔跤等细节未见于本批证据，已删去。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“婚姻竞赛”能表达为吸引外族男子而举办的竞赛，且与 Contest 词族一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属择偶竞赛/事件，归“其他”合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e3“诸神竞赛”、e4“会面比试”同词根按语境处理，无专名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:313",
+      "evidence_rows": [
+        6400,
+        6401,
+        32883
+      ],
+      "source_excerpt": "Orlanth and Ernalda formed the Marriage Ring",
+      "reason": "Marriage Ring 为奥兰斯与厄纳尔达神婚所结成的圣婚纽带，译“婚姻之环”比“婚姻环”自然。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "6400/6401/32883 均指奥兰斯与厄纳尔达形成 Marriage Ring，并非普通戒指。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由“婚姻环”改为“婚姻之环”，与 formed the Marriage Ring 的“结成婚姻之环”搭配更自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神话仪式/圣婚概念，归“其他”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e11/e12 的奥兰斯、厄纳尔达译名一致；未与 e1 的 Marriage Contest 混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:800",
+      "evidence_rows": [
+        33701,
+        33865
+      ],
+      "source_excerpt": "War-whooping derives from Orlanth’s dance in the “The Contests.”",
+      "reason": "The Contests 是奥兰斯参与的神话竞赛序列，译“诸神竞赛”可保留专名感。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33701 明言 Orlanth 在 The Contests 中舞蹈；33865 补充竞赛以武器比试结束。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“诸神竞赛”保持专名感，并与 Contest 词族一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神话事件/竞赛，归“其他”合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1“婚姻竞赛”、e4“会面比试”按语境处理，不构成异译冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:931",
+      "evidence_rows": [
+        25741,
+        25755
+      ],
+      "source_excerpt": "participate in a Meeting Contest",
+      "reason": "Meeting Contest 指外来者要求进行的正式会面比试；原 term_reason 仅复述行号，已改为释义。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "25741/25755 显示外来者要求进行 Meeting Contest；原 term_reason 仅复述行号，已补实际含义。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“会面比试”可表达会面场合的正式竞赛，保持短词。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "游戏事件/竞赛，归“其他”合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1/e3 的 Contest 词族语义相关；“比试”为语境化搭配，不判为冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:296",
+      "evidence_rows": [
+        5185
+      ],
+      "source_excerpt": "When the Kostarli offered rye to Bad King Urgrain during a famine",
+      "reason": "Kostarli 是饥荒中向恶王献黑麦的群体/氏族名，音译“科斯塔利”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "5185 出现 Kostarli，行为主体为饥荒中献黑麦的群体。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "音译“科斯塔利”稳定，未见异译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为氏族/群体名归“组织”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e6 同属氏族名，音译和类别处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:297",
+      "evidence_rows": [
+        5186
+      ],
+      "source_excerpt": "Bad King Urgrain talked the Red Arch clan into offering twice as many gifts",
+      "reason": "Red Arch 是氏族名，译“红拱”，与 clan 搭配时另加“氏族”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "5186 明言 the Red Arch clan，确为氏族名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“红拱”为简短氏族名；不把 clan 并入条目。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "氏族属“组织”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e5 的氏族名类别一致；未把普通 red/arch 当作术语。"
+        }
+      }
+    },
+    {
+      "ref": "terms:301",
+      "evidence_rows": [
+        33700,
+        9045,
+        19724
+      ],
+      "source_excerpt": "a gathering of the full tribe known as the tribal moot",
+      "reason": "moot 指部族/联盟层级的议事裁决集会；裸词译“大会”以便与 tribal moot“部族大会”区分。f1 已核对。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33700 定义 full tribe 的 gathering 为 tribal moot；9045/19724 显示 moot 作裁决集会。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由“部族大会”改为“大会”，避免与 e13/e14 的 tribal moot 共用同一译名；组合词可作部族大会/联盟大会。并加 literal_context 限定 the moot。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "moot 是集会/裁决机制而非组织，改为“其他”。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "核对 f1：裸 moot 与 tribal moot 为上下位搭配，分别译“大会”和“部族大会”，不再共享同一译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:304",
+      "evidence_rows": [
+        5492,
+        5494
+      ],
+      "source_excerpt": "reenact our main deity’s heroquest",
+      "reason": "main deity 指氏族主要崇拜的神，译“主神”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "5492/5494 均以 main deity’s heroquest 指本氏族主神的英雄探索。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“主神”简洁，符合机制/UI 用词。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "宗教/机制概念归“其他”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e9 神祇分组词区分；main deity 非具体神名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1134",
+      "evidence_rows": [
+        33496
+      ],
+      "source_excerpt": "are grouped as Living Deities on this screen",
+      "reason": "Living Deities 指黑暗时代仍保持清醒的一组神祇，改译“存活神祇”更贴合 remained awake。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33496 说明三神在 Darkness 中保持清醒，被归为 Living Deities。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由“现存神祇”改为“存活神祇”，对应 remained awake 的存活/清醒义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "UI 神祇分组，归“其他”合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e8“主神”区分；不把 Living 误作普通“现存”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:307",
+      "evidence_rows": [
+        5895
+      ],
+      "source_excerpt": "Orlanth cruelly bound in Skipeta’s snares",
+      "reason": "Skipeta 仅知为设下陷阱困住奥兰斯的存在，音译“斯基佩塔”，不补身份。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "5895 仅出现 Skipeta’s snares，能确认其陷阱困住奥兰斯。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "音译“斯基佩塔”稳定，未虚构头衔。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "身份不明，归“其他”保守。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e11/e12 的奥兰斯译名一致；未当作普通词。"
+        }
+      }
+    },
+    {
+      "ref": "terms:308",
+      "evidence_rows": [
+        5919,
+        13963,
+        28445
+      ],
+      "source_excerpt": "travelling the Path of the Dead to Orlanth’s Hall",
+      "reason": "Orlanth’s Hall 是奥兰斯的厅堂/死后归所，译“奥兰斯之厅”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "5919/13963/28445 均以 Orlanth’s Hall 指奥兰斯的厅堂，含死者之路终点。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“奥兰斯之厅”与 Orlanth 统一译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地点名归“地名”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e2/e12 的奥兰斯译名一致；三处候选译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:309",
+      "evidence_rows": [
+        10256,
+        15716,
+        34164
+      ],
+      "source_excerpt": "Flamal is the god of vegetation.",
+      "reason": "Flamal 为植物之神、厄纳尔达前夫，并曾死后复活；译名“弗拉马尔”。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "10256 明言植物之神及厄纳尔达前夫；15716 称其被杀后回归；原 term_reason 的“牛病植物”无本批证据，已删。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“弗拉马尔”音译一致，terms/characters 候选均同译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神名归“其他”可接受；作为专名 required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e2 婚姻之环、e11 奥兰斯/厄纳尔达译名体系一致；多表候选不造成异译。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:292",
+    "terms:313",
+    "terms:800",
+    "terms:931",
+    "terms:296",
+    "terms:297",
+    "terms:301",
+    "terms:304",
+    "terms:1134",
+    "terms:307",
+    "terms:308",
+    "terms:309"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

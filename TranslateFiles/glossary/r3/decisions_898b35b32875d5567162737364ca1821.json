@@ -1,0 +1,380 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e11 的原文、译名、分类与一致性；修正 e2 的族称与类别、e9 的译名及词类，并校正 e1/e4/e7 的 term_reason；f1 中 Otherworld 与 Other Side 在语境中同指神域，共用“彼界”可接受。",
+  "acknowledged_findings": [
+    "F0376"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "南方族群；原文说法老派他们追书，或来自诺切特等南方土地。"
+      },
+      "reason": "27508 仅支持这些 Esrolians 被法老派去追书并可能来自南方，未称其为术士。",
+      "evidence_rows": [
+        27508
+      ],
+      "table": "terms",
+      "index": 674
+    },
+    {
+      "patch": {
+        "recommended_translation": "埃斯罗利人",
+        "category_path": "种族",
+        "term_reason": "Esrolia 的族称/形容词；原文 Esrolian husband 与 Esrolian marriages 指埃斯罗利人（式）的婚姻习俗与丈夫身份。"
+      },
+      "reason": "28529/28547 显示 Esrolian 为族称/形容词；原译“埃斯罗林”与 e1 不一致，且类别应为种族。",
+      "evidence_rows": [
+        28529,
+        28547
+      ],
+      "table": "terms",
+      "index": 712
+    },
+    {
+      "patch": {
+        "term_reason": "鸭人自称的名号；原文释为给敌人带来争斗与喧哗。"
+      },
+      "reason": "27689 只支持鸭人自称 Humakt’s Wrath 并解释其含义，未提仪式之歌。",
+      "evidence_rows": [
+        27689
+      ],
+      "table": "terms",
+      "index": 677
+    },
+    {
+      "patch": {
+        "term_reason": "英雄任务中被击败的敌对团体，与 Yinkin 信徒为敌。"
+      },
+      "reason": "28275 说帮助 Yinkin 信徒后击败该团体，未明说其“袭击”信徒。",
+      "evidence_rows": [
+        28275
+      ],
+      "table": "terms",
+      "index": 684
+    },
+    {
+      "patch": {
+        "recommended_translation": "埃尔纳尔达的预见",
+        "term_kind": "proper_name",
+        "term_reason": "埃尔纳尔达赐予的命名天赋；Theya 入教时获得，其女未获。"
+      },
+      "reason": "28459/28519/28787 显示其为特定的 gift of Ernalda’s Foresight；原“预视”不自然，且应与 e8 同类作 proper_name。",
+      "evidence_rows": [
+        28459,
+        28519,
+        28787
+      ],
+      "table": "terms",
+      "index": 687
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:674",
+      "evidence_rows": [
+        27508
+      ],
+      "source_excerpt": "these Esrolians after his book",
+      "reason": "核对族称、译名与分类；term_reason 去除原文未明示的“术士”。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "27508 仅支持 these Esrolians 为法老追书的南方族群，未称其为术士；term_reason 已据此修正。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“埃斯罗利人”符合 Esrolians 的族称，并与 e2 统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族类别符合 Esrolians 的族称性质。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e2 同源族称；e2 已改为同根译名，族称一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:712",
+      "evidence_rows": [
+        28529,
+        28547
+      ],
+      "source_excerpt": "You will be an Esrolian husband.",
+      "reason": "修正族称译名、类别与 term_reason，使与 e1 一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28529/28547 显示 Esrolian 作族称/形容词，修饰 husband 与 marriages。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“埃斯罗林”与 e1“埃斯罗利人”不一致，已改为“埃斯罗利人”，作定语时可按语境作“埃斯罗利人的/式”。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "Esrolian 是 Esrolia 的族称/形容词，不应归为身份；已改为种族。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已与 e1 的“埃斯罗利人”统一，消除同源族称的译名分歧。"
+        }
+      }
+    },
+    {
+      "ref": "terms:675",
+      "evidence_rows": [
+        27508
+      ],
+      "source_excerpt": "The Pharaoh likes to call himself “God-King.”",
+      "reason": "法老自称的头衔；译名、类别与约束方式可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "27508 原文明确 The Pharaoh 自称 “God-King”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“神王”对应 God-King 头衔，保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "身份类别符合法老自称的头衔。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "无同批冲突；proper_name 且 required，符合专名要求。"
+        }
+      }
+    },
+    {
+      "ref": "terms:677",
+      "evidence_rows": [
+        27689
+      ],
+      "source_excerpt": "I am the one called Humakt’s Wrath.",
+      "reason": "名号译名可保留；term_reason 去除原文未明示内容。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "27689 只支持鸭人自称 Humakt’s Wrath 并解释带来争斗喧哗，未提“仪式之歌”；term_reason 已修正。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“胡马特之怒”对应 Humakt’s Wrath，保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他类别可容纳此自称名号。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "作为独立专名无同批冲突；proper_name 且 required。"
+        }
+      }
+    },
+    {
+      "ref": "terms:679",
+      "evidence_rows": [
+        28089
+      ],
+      "source_excerpt": "a war tree planted by the elves",
+      "reason": "精灵种下的战树；译名与分类可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28089 原文为“a war tree planted by the elves”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“战争树”对应 war tree，保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他类别可容纳此游戏特定植物概念。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "无同批冲突；game_term 且 required 可接受。"
+        }
+      }
+    },
+    {
+      "ref": "terms:680",
+      "evidence_rows": [
+        28285
+      ],
+      "source_excerpt": "journey to the Otherworld",
+      "reason": "核对 f1 后确认 Otherworld 与 Other Side 为同义异名，保留“彼界”及限定适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28285 原文为“journey to the Otherworld”，同段以 realm of the gods 说明其指神域。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“彼界”可指神祇所在的彼岸/神域；与 Other Side 共用译名属同义异名，不构成错误。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名类别符合神域/彼界作为场所的性质。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f1 已核对：the Otherworld 与 the Other Side 在本语境同指神域，共用“彼界”可接受；适用条件为 literal_context“the Otherworld,”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:684",
+      "evidence_rows": [
+        28275
+      ],
+      "source_excerpt": "defeat the entire Serpentbeast Brotherhood",
+      "reason": "组织名译名可保留；term_reason 去除原文未明示的“袭击”。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "28275 说帮助 Yinkin 信徒后击败该团体，未明说其“袭击”信徒；term_reason 已修正。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“蛇兽兄弟会”对应 Serpentbeast Brotherhood，保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "组织类别符合该团体名称。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "独立专名无同批冲突；proper_name 且 required。"
+        }
+      }
+    },
+    {
+      "ref": "terms:686",
+      "evidence_rows": [
+        28379
+      ],
+      "source_excerpt": "uses Vinga’s Mighty Leap feat",
+      "reason": "温加的神话特技名；译名与分类可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28379 原文为“uses Vinga’s Mighty Leap feat”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“温加的强力跳跃”对应 Vinga’s Mighty Leap，保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "技能类别符合该神话特技。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e9 同为神祇命名的天赋/特技，proper_name 处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:687",
+      "evidence_rows": [
+        28459,
+        28519,
+        28787
+      ],
+      "source_excerpt": "received the gift of Ernalda’s Foresight",
+      "reason": "修正译名与词类，使该命名天赋与同类专名一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28459/28519/28787 均作 the gift of Ernalda’s Foresight，是埃尔纳尔达赐予的命名天赋。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原“预视”不自然，已改为“埃尔纳尔达的预见”；Foresight 对应“预见”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "技能类别符合该天赋能力。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e8“Vinga’s Mighty Leap”同类，term_kind 已由 game_term 改为 proper_name；译名统一为“埃尔纳尔达的预见”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:690",
+      "evidence_rows": [
+        28373
+      ],
+      "source_excerpt": "located the Red City",
+      "reason": "Kallyr 在彼岸找到的城市；译名与分类可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28373 原文为“located the Red City”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“红城”对应 Red City，保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名类别符合该城市名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "独立专名无同批冲突；proper_name 且 required。"
+        }
+      }
+    },
+    {
+      "ref": "terms:691",
+      "evidence_rows": [
+        28375
+      ],
+      "source_excerpt": "stole the Edgeless Ring",
+      "reason": "Kallyr 从三眼氏族偷取的物品；译名与分类可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28375 原文为“stole the Edgeless Ring”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“无刃之环”对应 Edgeless Ring，保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品类别符合该环状物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "独立专名无同批冲突；proper_name 且 required。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:674",
+    "terms:712",
+    "terms:675",
+    "terms:677",
+    "terms:679",
+    "terms:680",
+    "terms:684",
+    "terms:686",
+    "terms:687",
+    "terms:690",
+    "terms:691"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

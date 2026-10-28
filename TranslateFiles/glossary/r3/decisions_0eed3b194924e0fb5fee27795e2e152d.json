@@ -1,0 +1,386 @@
+{
+  "review_complete": true,
+  "review_summary": "已审校 e1–e12；确认 wyter、Black Spear Clan、Goldeneyes、Chalice of Ernalda、Elmal 称号、clan council、Dragon Empire 等译名与分类；修正 e4 黑龙、e10 忠贞贵族及 e12 term_reason；核对 f1 clan council/clan ring 别名与 f2 Goldeneyes/Goldeneye Horse 共用译名。未新增或隔离条目。",
+  "acknowledged_findings": [
+    "F0378",
+    "F0419"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "黑龙"
+      },
+      "reason": "the Black Wyrm 是特定巨兽名；原推荐‘黑龙兽’添加‘兽’且搭配生硬，改为更准确自然的‘黑龙’。",
+      "evidence_rows": [
+        17878
+      ],
+      "table": "terms",
+      "index": 537
+    },
+    {
+      "patch": {
+        "recommended_translation": "忠贞贵族",
+        "term_reason": "Elmal 的固定称号；原句称其为 Horse-Friend、Loyal Thane，33958 又称他是 Orlanth 的 loyal thane。"
+      },
+      "reason": "Loyal Thane 是 Elmal 的固定称号；thane 应与 related thanes‘贵族’保持核心一致，Loyal 取‘忠贞’。",
+      "evidence_rows": [
+        19332,
+        33958
+      ],
+      "table": "terms",
+      "index": 553
+    },
+    {
+      "patch": {
+        "term_reason": "原文称祖先在 Dragon Empire 时代曾对抗或忽视该帝国（20165–20166、27784–27785），33890/33902 又在龙友帝国同一历史段中提及，指古代龙之帝国。"
+      },
+      "reason": "原 term_reason 引用了本批未提供的 20167/20168 并作过强等同；改为仅据现有证据说明其历史指向。",
+      "evidence_rows": [
+        20165,
+        20166,
+        27784,
+        27785,
+        33890,
+        33902
+      ],
+      "table": "terms",
+      "index": 569
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:530",
+      "evidence_rows": [
+        34009
+      ],
+      "source_excerpt": "wyter: the collective spirit of a group such as a clan or tribe.",
+      "reason": "源文定义清楚，译名取语义译‘守护灵’，分类为游戏机制术语。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34009 明确定义 wyter 为 a group such as a clan or tribe 的 collective spirit；17474/17482 也以 spirit of our tribe/this clan 直接说明。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作‘守护灵’符合‘氏族/部族之灵’的定义，较音译‘维特’更能在正文中表达机制含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "term_kind=game_term、category_path=其他、enforcement=required 与这是游戏机制的灵体术语相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与部族/氏族限定语境一致；候选‘维特’仅音译，不取。"
+        }
+      }
+    },
+    {
+      "ref": "terms:531",
+      "evidence_rows": [
+        17491
+      ],
+      "source_excerpt": "the Black Spear Clan, which will be part of your tribe.",
+      "reason": "新成立氏族专名，大小写变体同指，译名与黑矛核心一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "17491 明确 the Black Spear Clan 是找到黑矛者加入的新氏族并属于玩家部族；18202/18203 有大小写变体。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译名‘黑矛氏族’对应 Black Spear Clan；Black Spear 相关译名‘黑矛’一致，clan 作‘氏族’。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=组织、term_kind=proper_name、enforcement=required 符合新成立氏族专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "17491/17492 与 18202/18203 的大小写变体同指同一新氏族，统一作‘黑矛氏族’。"
+        }
+      }
+    },
+    {
+      "ref": "terms:536",
+      "evidence_rows": [
+        17856
+      ],
+      "source_excerpt": "this horse is one of the magnificent, magical beasts called Goldeneyes.",
+      "reason": "有名称的魔法马种，译名与相关 Goldeneye Horse 共用‘金眼马’；f2 已核对。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "17856 称 this horse 是 magnificent, magical beasts called Goldeneyes 之一，说明是有名称的魔法马种/类群。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作‘金眼马’与原文 horse 及 Goldeneyes 相合，且与相关 Goldeneye Horse 的暂定译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他可容纳非人物/组织类有名称的魔法兽类；term_kind=proper_name、required 保持专名冻结。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f2 核对：e3 Goldeneyes 与 e14 Goldeneye Horse 共用‘金眼马’属同一/相关马种的单复数与带 Horse 变体，未发现语义冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:537",
+      "evidence_rows": [
+        17878
+      ],
+      "source_excerpt": "a gigantic and dangerous creature called the Black Wyrm.",
+      "reason": "特定巨兽名，译名由‘黑龙兽’修正为‘黑龙’。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "17878 明确 the Black Wyrm 是一只 gigantic and dangerous creature，正恐吓某氏族的 tula。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原推荐‘黑龙兽’添加‘兽’且搭配生硬；原文 the Black Wyrm 是特定巨兽名，改为‘黑龙’更准确自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他、term_kind=proper_name、enforcement=required 符合特定巨兽专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现与 Black Spear 等其他‘Black’条目混淆；‘Black Wyrm’独立作‘黑龙’。"
+        }
+      }
+    },
+    {
+      "ref": "terms:539",
+      "evidence_rows": [
+        18103
+      ],
+      "source_excerpt": "created the earthshakers from the Sacred Mud",
+      "reason": "神话中唯一命名的物质，译‘圣泥’。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "18103 在 Maran Gor 神话变体中出现 the Sacred Mud，指 earthshakers 被造出的神圣材料。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作‘圣泥’直译 Sacred Mud，保留神话物质的具体含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他、term_kind=proper_name、required 符合神话中唯一命名的物质；不是普通 mud。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该随机神话分支中的专名独立，没有同形普通词或共享译名冲突需要另分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:548",
+      "evidence_rows": [
+        18838
+      ],
+      "source_excerpt": "lost the Chalice of Ernalda",
+      "reason": "具名神器，Ernalda 译名与相关条目一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "18838 称 Bad King Urgrain lost the Chalice of Ernalda，明确是厄纳尔达的具名圣杯。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Chalice of Ernalda 译‘厄纳尔达圣杯’，Chalice 作圣杯，Ernalda 与 e21 的‘厄纳尔达’一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=物品、term_kind=proper_name、required 符合具名神器。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Ernalda 译名与相关条目‘厄纳尔达’一致；圣杯为独立物品名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:549",
+      "evidence_rows": [
+        19032
+      ],
+      "source_excerpt": "in tribute to Eurmal the Trickster God.",
+      "reason": "Eurmal 的神格称号，译‘诡术之神’并与 Trickster‘诡术师’保持核心一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "19032 的 Eurmal the Trickster God 显示 Trickster God 是 Eurmal 的神格称号，不是普通名词。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译‘诡术之神’保留 Trickster 的‘诡术’核心并体现 God；与相关 Trickster‘诡术师’不冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他、term_kind=proper_name、required 符合神格称号。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e19 Trickster‘诡术师’共享‘诡术’；Trickster God 作为带 God 的称号译‘诡术之神’合理。"
+        }
+      }
+    },
+    {
+      "ref": "terms:551",
+      "evidence_rows": [
+        19308
+      ],
+      "source_excerpt": "Sacrifice to Elmal Horse-Friend for protection from horse-killers.",
+      "reason": "Elmal 的固定组合称号，姓名与称号分译且与 Horse-Friend 一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "19308/19309 均以 Elmal Horse-Friend 作为受祭对象，19332 也确认 Elmal is the Horse-Friend。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘埃尔马尔·马之友’对应 Elmal Horse-Friend；姓名与称号分开，Elmal 与 e17‘埃尔马尔’一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他、term_kind=proper_name、required 符合带固定称号的神名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e9 Horse-Friend‘马之友’及 e17 Elmal‘埃尔马尔’一致；组合名保持同核心译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:552",
+      "evidence_rows": [
+        19332
+      ],
+      "source_excerpt": "Elmal is the Horse-Friend, the Loyal Thane, and the benevolent Winter Sun.",
+      "reason": "埃尔马尔的固定称号，单独条目仍作‘马之友’。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "19332 明确 Elmal is the Horse-Friend，19308/19309 亦用作固定称号。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Horse-Friend 译‘马之友’直接对应固定称号，且与 e8 组合名中的称号一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他、term_kind=proper_name、required 符合埃尔马尔的固定称号。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e8‘埃尔马尔·马之友’一致；不因单独条目而改译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:553",
+      "evidence_rows": [
+        19332,
+        31961,
+        33958
+      ],
+      "source_excerpt": "You first awakened Elmal, the Loyal Thane.",
+      "reason": "固定神格称号；thane 按既有译名‘贵族’统一，修正为‘忠贞贵族’。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "19332/31961 明确 Elmal 是 the Loyal Thane；33958 又称 Orlanth 留下其 loyal thane Elmal，确为固定称号。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原‘忠贞侍卫’与 related thanes‘贵族’不一致；改为‘忠贞贵族’：Loyal 取忠贞，Thane 依既有译名作贵族。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他、term_kind=proper_name、required 符合神格固定称号。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已与 e20 thanes‘贵族’的 thane 核心统一，并与 Elmal‘埃尔马尔’、Horse-Friend‘马之友’等称号并列不冲突；33958 的 loyal thane 用例支持该范围。"
+        }
+      }
+    },
+    {
+      "ref": "terms:555",
+      "evidence_rows": [
+        19343
+      ],
+      "source_excerpt": "asks the clan council for help.",
+      "reason": "游戏内氏族领导机构；与 clan ring 共用译名按别名处理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "19343 中 farmer 向 clan council 求助，clan council 是处理氏族事务的议事机构。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "clan council 译‘氏族议事会’符合组织义；与 e13 clan ring 共用译名按同一机构别名处理。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=组织、term_kind=game_term、required 符合游戏内氏族领导机构。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f1 核对：clan council 与 clan ring 在语境中同指氏族议事机构，共用‘氏族议事会’不构成不同实体混淆。"
+        }
+      }
+    },
+    {
+      "ref": "terms:569",
+      "evidence_rows": [
+        20165,
+        33890
+      ],
+      "source_excerpt": "Our ancestors fought against the Dragon Empire.",
+      "reason": "古代帝国专名；译名保持‘龙帝国’，修正 term_reason 中未提供的行号与过强等同。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "20165 明确 Dragon Empire 是祖先曾对抗的古代帝国；27784/27785、33890/33902 提供其时代与历史语境。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Dragon Empire 译‘龙帝国’直译且作为专名可识别；与相关龙友帝国分开对应不同英文名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=组织、term_kind=proper_name、required 符合古代帝国专名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "译名保持‘龙帝国’；term_reason 原引未提供的 20167/20168，已改为仅据 20165/20166、27784/27785、33890/33902，且不将其无据等同于龙友帝国。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:530",
+    "terms:531",
+    "terms:536",
+    "terms:537",
+    "terms:539",
+    "terms:548",
+    "terms:549",
+    "terms:551",
+    "terms:552",
+    "terms:553",
+    "terms:555",
+    "terms:569"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

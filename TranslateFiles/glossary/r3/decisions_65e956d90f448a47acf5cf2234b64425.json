@@ -1,0 +1,355 @@
+{
+  "review_complete": true,
+  "review_summary": "audit.findings 为空；共审 12 条：e1-e5 为祝福/能力标签，e6-e12 为氏族专名。逐条核对来源、译名、类目与一致性；仅给 e1 补充 whole_record 适用域，其余确认，无需隔离或新增。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "31005 原文为祝福列表独立标签 Thunderstone，需限定完整记录以避免与普通名词混用。"
+        }
+      },
+      "reason": "该条是独立祝福标签，补 whole_record 适用域，不改变译名。",
+      "evidence_rows": [
+        31005
+      ],
+      "table": "terms",
+      "index": 1011
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:1011",
+      "evidence_rows": [
+        31005
+      ],
+      "source_excerpt": "Thunderstone",
+      "reason": "原文为独立祝福标签；译名“雷石”对应 thunder+stone，作短标签合适。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 31005 原文为 Thunderstone，来源明确。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译为“雷石”，与 Thunderstone 的字面及祝福标签用法相符。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为祝福/能力标签归入“技能”，类目合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原文为独立标签，已补 whole_record 适用域；译名与条目一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1012",
+      "evidence_rows": [
+        31006
+      ],
+      "source_excerpt": "Woad",
+      "reason": "原文为独立祝福标签；Woad 指菘蓝，译名准确且简短。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 31006 原文为 Woad，作为独立标签出现。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Woad 指菘蓝，译为“菘蓝”准确且简短。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福标签归入“技能”，与游戏内祝福机制相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "已限定 whole_record，避免把普通词 woad 全局替换；译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1013",
+      "evidence_rows": [
+        31007
+      ],
+      "source_excerpt": "Watchfulness",
+      "reason": "原文为独立祝福标签；译为“警戒”表达警觉、巡视状态，符合短标签。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 31007 原文为 Watchfulness，作为独立标签出现。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译为“警戒”，表达警觉/巡视状态，符合短标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福标签归入“技能”，类目合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "已限定 whole_record，避免普通词误替换；译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1015",
+      "evidence_rows": [
+        31010
+      ],
+      "source_excerpt": "Sense Chaos",
+      "reason": "原文为独立祝福标签；译为“感知混沌”，语义直接。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 31010 原文为 Sense Chaos，作为独立标签出现。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译为“感知混沌”，对应 sense+chaos，语义直接。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福/能力标签归入“技能”，类目合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Chaos 统一作“混沌”，本批无同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1017",
+      "evidence_rows": [
+        31012
+      ],
+      "source_excerpt": "Smite Chaos",
+      "reason": "原文为独立祝福标签；译为“痛击混沌”，保留 smite 的打击义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 31012 原文为 Smite Chaos，作为独立标签出现。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译为“痛击混沌”，保留 smite 的打击义，作短标签合适。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福/能力标签归入“技能”，类目合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Chaos 统一作“混沌”，本批无同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1022",
+      "evidence_rows": [
+        32727
+      ],
+      "source_excerpt": "We're raiding the Brown Boars.",
+      "reason": "原文为完整句，Brown Boars 是劫掠目标氏族名；译名“棕野猪”简短且保留构成。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32727 原文为完整句“We're raiding the Brown Boars.”，其中 Brown Boars 为氏族名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Brown Boars 译为“棕野猪”，保留 brown+boars 的氏族名构成，简短。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该名指劫掠目标氏族，归入“组织”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "句中作为氏族专名整体处理，译名不拆开，与条目一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1023",
+      "evidence_rows": [
+        32645
+      ],
+      "source_excerpt": "Aranwyth",
+      "reason": "原文为氏族列表中的专名；音译“阿兰威斯”符合专名处理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32645 原文为 Aranwyth，出现在氏族列表中。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "按音译作“阿兰威斯”，符合专名音译且不夹间隔号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "氏族名归入“组织”，类目合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "音译专名，格式统一，无同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1024",
+      "evidence_rows": [
+        32646
+      ],
+      "source_excerpt": "Balmyr",
+      "reason": "原文为氏族列表中的专名；音译“巴尔米尔”符合专名处理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32646 原文为 Balmyr，出现在氏族列表中。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "按音译作“巴尔米尔”，符合专名音译且简短。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "氏族名归入“组织”，类目合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "音译专名，格式统一，无同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1025",
+      "evidence_rows": [
+        32647
+      ],
+      "source_excerpt": "Culbrea",
+      "reason": "原文为氏族列表中的专名；音译“库尔布雷亚”符合专名处理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32647 原文为 Culbrea，出现在氏族列表中。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "按音译作“库尔布雷亚”，符合专名音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "氏族名归入“组织”，类目合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "音译专名，格式统一，无同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1026",
+      "evidence_rows": [
+        32648
+      ],
+      "source_excerpt": "Dundealos",
+      "reason": "原文为氏族列表中的专名；音译“敦德阿洛斯”符合专名处理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32648 原文为 Dundealos，出现在氏族列表中。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "按音译作“敦德阿洛斯”，符合专名音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "氏族名归入“组织”，类目合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "音译专名，格式统一，无同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1027",
+      "evidence_rows": [
+        32649
+      ],
+      "source_excerpt": "Estarelder",
+      "reason": "原文为氏族列表中的专名；音译“埃斯塔雷尔德”符合专名处理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32649 原文为 Estarelder，出现在氏族列表中。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "按音译作“埃斯塔雷尔德”，符合专名音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "氏族名归入“组织”，类目合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "音译专名，格式统一，无同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1028",
+      "evidence_rows": [
+        32650
+      ],
+      "source_excerpt": "Kheldon",
+      "reason": "原文为氏族列表中的专名；音译“凯尔登”符合专名处理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 32650 原文为 Kheldon，出现在氏族列表中。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "按音译作“凯尔登”，符合专名音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "氏族名归入“组织”，类目合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "音译专名，格式统一，无同形冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:1011",
+    "terms:1012",
+    "terms:1013",
+    "terms:1015",
+    "terms:1017",
+    "terms:1022",
+    "terms:1023",
+    "terms:1024",
+    "terms:1025",
+    "terms:1026",
+    "terms:1027",
+    "terms:1028"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

@@ -1,0 +1,387 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e12 的出处、译名、分类与一致性。e6 的 Rites of Kingship 是具名仪式/英雄探索而非技能，分类改为“其他”；e2、e12 的 term_reason 收窄到原文可证范围。f1：Quviniland/Quiviniland 共享“奎维尼兰”按同一地名拼写变体处理；f2：minotaur/minotaurs 与 bull-men 均指牛头人，11203 明确等同，译名一致。",
+  "acknowledged_findings": [
+    "F0405",
+    "F0408"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "原文在 dragonewts 尊重氏族的语境中提到 Wyrm Friends’ Empire 的秘密可能帮助氏族；为具名帝国/势力。"
+      },
+      "reason": "8751 未明说该帝国属于 dragonewts，原 term_reason 收窄为原文可证范围。",
+      "evidence_rows": [
+        8751
+      ],
+      "table": "terms",
+      "index": 362
+    },
+    {
+      "patch": {
+        "category_path": "其他"
+      },
+      "reason": "8907 的 Rites of Kingship 是具名王权仪式/英雄探索，不是技能；改为“其他”类。",
+      "evidence_rows": [
+        8907
+      ],
+      "table": "terms",
+      "index": 370
+    },
+    {
+      "patch": {
+        "term_reason": "原文以 Bad King Urgrain 与其 Urgraini 的传说作对比，指以 Urgrain 为名的群体；译名随 Urgrain 派生。"
+      },
+      "reason": "9861 只显示 tales of the Urgraini 与 Urgrain 相关，未明确称“后人”；收窄 term_reason 避免无据身份推断。",
+      "evidence_rows": [
+        9861
+      ],
+      "table": "terms",
+      "index": 386
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:361",
+      "evidence_rows": [
+        8744,
+        11934,
+        12759,
+        12761,
+        28951
+      ],
+      "source_excerpt": "Raiding our neighbors is not against Heort’s Law.",
+      "reason": "Heort’s Law 在各出处均指同一套 Heort 律法；采用候选中最常见的“赫奥特律法”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8744 原文明确出现 Heort’s Law；11934、12759、28951 同指该律法。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“赫奥特律法”与 Heort’s Law 的法律含义相符，并统一了“赫奥特法/赫奥特法典”等候选。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Heort’s Law 是具名律法/法律传统，归入“其他”合法且不误作组织或地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同条候选“赫奥特法/赫奥特律法/赫奥特法典”均指同一概念，选定“赫奥特律法”作为统一译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:362",
+      "evidence_rows": [
+        8751
+      ],
+      "source_excerpt": "Perhaps there are secrets of the Wyrm Friends’ Empire that could help us.",
+      "reason": "Wyrm Friends’ Empire 是具名势力/帝国；译文保留帝国名，category 为组织。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8751 原文出现 Wyrm Friends’ Empire，并称其秘密可能帮助氏族；未明确其归属，term_reason 已收窄。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“龙兽之友帝国”按 Wyrm Friends’ Empire 的帝国名结构处理；未发现同批冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文以 Empire 指具名政权/势力，归入“组织”合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条仅此形式，无内部变体需要统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:363",
+      "evidence_rows": [
+        8753
+      ],
+      "source_excerpt": "The flying staff of Theorben has been lost in the Quivini Mountains.",
+      "reason": "Theorben 为专名，修饰 flying staff；采用音译“瑟奥本”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8753 原文以所有格出现 Theorben，修饰 flying staff。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“瑟奥本”为音译专名，未与同批其他专名冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文未提供身份，仅可确认是专名；归入“其他”避免臆测人物/物品类别。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条只出现一次，无变体需要统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:365",
+      "evidence_rows": [
+        8758
+      ],
+      "source_excerpt": "The poor harvest has laid low not only you and your neighbors, but most of Quviniland.",
+      "reason": "Quviniland 为地区名；采用“奎维尼兰”，与同批 Quiviniland 拼写变体共享译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8758 原文明确称歉收影响大部分 Quviniland。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“奎维尼兰”作为地名音译；与同批 Quiviniland 条目共享译名，f1 已核对为同一地区拼写差异。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文以大部分 Quviniland 指地域，归入“地名”合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 Quiviniland 拼写变体按同一地名处理，不另造译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:369",
+      "evidence_rows": [
+        8760,
+        8789
+      ],
+      "source_excerpt": "Cathartic mourning will clear everyone’s souls and lift their spirits.",
+      "reason": "cathartic mourning 是事件中的具体哀悼机制；译作“宣泄式哀悼”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8789 原文说明 cathartic mourning 可清净灵魂、振奋精神以对抗 Chaos；8760 显示 ring 带领氏族进行该活动。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“宣泄式哀悼”表达 cathartic（宣泄）与 mourning（哀悼），且保留机制名称。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "这是事件中的仪式性状态/机制，归入“其他” game_term 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条仅一形式，无同批别名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:370",
+      "evidence_rows": [
+        8907
+      ],
+      "source_excerpt": "I have penetrated the secret of Gronan’s Rites of Kingship!",
+      "reason": "Gronan’s Rites of Kingship 是具名王权仪式，不是技能；分类改为“其他”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8907 原文明确出现 Gronan’s Rites of Kingship，并称已参透其秘密。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“格罗南的王权仪式”对应 Gronan’s Rites of Kingship，保留具名仪式。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文为 Rites（仪式/英雄探索），不是技能；将 category_path 由“技能”改为“其他”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条无其他译名变体，与“Gronan”音译一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:374",
+      "evidence_rows": [
+        9068,
+        9069
+      ],
+      "source_excerpt": "A young warrior of his rank is due a wergeld of 20 cows; Eindgar has increased the price because we forced this matter to the moot.",
+      "reason": "wergeld 是赔偿金/偿命金机制；采用“偿命金”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9068/9069 均以 wergeld of 20 cows 说明年轻战士应得的赔偿。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“偿命金”对应 wergeld 的命价赔偿义，并保留牛只数值。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "这是氏族法律赔偿机制，归入“其他” game_term 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "wergeld 为 wergild 的异体拼写；本条统一译“偿命金”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:376",
+      "evidence_rows": [
+        9080,
+        9100
+      ],
+      "source_excerpt": "their minotaur war leader",
+      "reason": "minotaur 为兽民种族牛头人；单数形式与同批复数及 bull-men 别名一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9080 原文称 minotaur war leader，9100 又称 minotaur 成为俘虏。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“牛头人”是 minotaur 的通用种族译名；与同批 minotaurs/bull-men 一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文将 minotaur 与 Centaur、duck 并列为 Beastfolk，归入“种族”合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "单数 minotaur 与同批 minotaurs/bull-men 的牛头人译名一致；不因单复数另立译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:430",
+      "evidence_rows": [
+        11203,
+        15495,
+        15502
+      ],
+      "source_excerpt": "The bull-men are called minotaurs. They are very tough, and very stubborn.",
+      "reason": "11203 明确 bull-men 即 minotaurs；统一译“牛头人”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11203 原文直接定义 The bull-men are called minotaurs，并描述其强壮固执。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“牛头人”同时对应 bull-men 与 minotaurs；15495/15502 的复数用法不改变译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文将其列为 Beastfolk/种族，归入“种族”合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "复数 minotaurs 与同批 minotaur/bull-men 共用“牛头人”；11203 明确等同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:383",
+      "evidence_rows": [
+        8958,
+        8959
+      ],
+      "source_excerpt": "When a hostage is held and blood has been spilled, we can offer ransom-rights to another clan.",
+      "reason": "ransom-rights 是可转交的赎金谈判权；译“赎金权”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8958/8959 原文定义在有人质且流血后，可向另一氏族提供 ransom-rights 由其谈判赎金。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“赎金权”对应 ransom-rights，保留权利可转让的含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "这是氏族间谈判机制，归入“其他” game_term 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条只出现 ransom-rights 一种形式，无变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:384",
+      "evidence_rows": [
+        8786,
+        8792
+      ],
+      "source_excerpt": "The connection between Chaos and kinslaying is not just poetic.",
+      "reason": "kinslaying 是具游戏/神话意义的亲族杀戮；译“亲族杀戮”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8792 将 kinslaying 与 Chaos 相连，8786 称对抗 kinslaying 无胜利。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“亲族杀戮”直译 kinslaying，保留亲族相残的禁忌义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "这是事件中的禁忌/Chaos 关联概念，归入“其他” game_term 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条仅一形式，无同批译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:386",
+      "evidence_rows": [
+        9861
+      ],
+      "source_excerpt": "This is why all the tales of the Urgraini are tales of woe.",
+      "reason": "Urgraini 指以 Urgrain 为名的群体；译“乌尔格雷尼人”，term_reason 已收窄。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9861 原文以 Bad King Urgrain 与 tales of the Urgraini 对照，指其相关群体；未明确称“后人”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“乌尔格雷尼人”随 Urgrain 音译派生，并保留群体后缀“人”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文未明确其为独立种族，仅称群体/族众；归入“其他”避免臆测。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条仅一形式；与 Urgrain 词干译名一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:361",
+    "terms:362",
+    "terms:363",
+    "terms:365",
+    "terms:369",
+    "terms:370",
+    "terms:374",
+    "terms:376",
+    "terms:430",
+    "terms:383",
+    "terms:384",
+    "terms:386"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

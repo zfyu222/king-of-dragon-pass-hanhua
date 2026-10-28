@@ -1,0 +1,21 @@
+25/511 36s hits=3
+50/511 67s hits=4
+75/511 104s hits=5
+100/511 164s hits=9
+125/511 179s hits=14
+150/511 201s hits=16
+175/511 210s hits=18
+200/511 227s hits=20
+225/511 235s hits=20
+250/511 263s hits=22
+275/511 280s hits=27
+300/511 290s hits=33
+325/511 300s hits=37
+350/511 314s hits=37
+375/511 340s hits=43
+400/511 441s hits=45
+425/511 501s hits=47
+450/511 540s hits=48
+475/511 584s hits=49
+500/511 639s hits=53
+done files=511 with_text=54 elapsed=709s -> .\Analysis\ocr_result.json

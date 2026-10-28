@@ -1,0 +1,497 @@
+{
+  "review_complete": true,
+  "review_summary": "已审阅全部 12 条。修正 e2 具名物品分类、e3 译名统一、e7-e9 缺失的专名元数据、e11 性别依据及 e12 出处表述；同时精炼 e1/e4-e6/e10 的 term_reason。未新增或隔离条目。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "半人马之王与兽民传说中的伟大英雄；原文称他沉睡于秘洞并将归来屠杀奥兰斯人，并用 he 指代。"
+      },
+      "reason": "删去 term_reason 中未在 evidence_rows 出现的 his，保留 he slept 的男性依据。",
+      "evidence_rows": [
+        1832,
+        1837
+      ],
+      "table": "characters",
+      "index": 21
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "enforcement": "required",
+        "term_reason": "Ironhoof 的具名锁链，32446 宝藏列表中的特定物品名。"
+      },
+      "reason": "具名宝藏应作为 proper_name/required，而非 game_term/reference。",
+      "evidence_rows": [
+        32446
+      ],
+      "table": "terms",
+      "index": 1070
+    },
+    {
+      "patch": {
+        "recommended_translation": "洛卡马亚顿",
+        "term_reason": "背叛奥兰斯、篡夺其应得崇拜的祭司，后被 Harmast Barefoot 摧毁；原文称 traitorous priest、usurper、evil Lokamayadon。"
+      },
+      "reason": "统一东/顿两种候选为洛卡马亚顿，并补足篡位与被毁的实际含义。",
+      "evidence_rows": [
+        1852,
+        16490,
+        17024,
+        28316
+      ],
+      "table": "characters",
+      "index": 22
+    },
+    {
+      "patch": {
+        "term_reason": "记录中仅以独立人名出现，未提供身份或性别；作为人物专名处理。"
+      },
+      "reason": "原 term_reason 称相关人物和部族标签列表，本批原文无此依据。",
+      "evidence_rows": [
+        2097
+      ],
+      "table": "characters",
+      "index": 25
+    },
+    {
+      "patch": {
+        "term_reason": "记录中仅以独立人名出现，未提供身份或性别；作为人物专名处理。"
+      },
+      "reason": "原 term_reason 称相关人物和部族标签列表，本批原文无此依据。",
+      "evidence_rows": [
+        2095
+      ],
+      "table": "characters",
+      "index": 26
+    },
+    {
+      "patch": {
+        "term_reason": "记录中仅以独立人名出现，未提供身份或性别；作为人物专名处理。"
+      },
+      "reason": "原 term_reason 称相关人物和部族标签列表，本批原文无此依据。",
+      "evidence_rows": [
+        2096
+      ],
+      "table": "characters",
+      "index": 27
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "enforcement": "required"
+      },
+      "reason": "characters 专名缺 term_kind/enforcement，补齐。",
+      "evidence_rows": [
+        2204
+      ],
+      "table": "characters",
+      "index": 29
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "enforcement": "required"
+      },
+      "reason": "characters 专名缺 term_kind/enforcement，补齐。",
+      "evidence_rows": [
+        2204
+      ],
+      "table": "characters",
+      "index": 30
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "enforcement": "required"
+      },
+      "reason": "characters 专名缺 term_kind/enforcement，补齐。",
+      "evidence_rows": [
+        2204
+      ],
+      "table": "characters",
+      "index": 31
+    },
+    {
+      "patch": {
+        "term_reason": "疾病、瘟疫与混沌女神，不洁三神之一；原文称 goddess of disease/pestilence and plague、Chaos goddess、one of the Unholy Trio，并用 she/her 指代。"
+      },
+      "reason": "以 17111 等原文定义替换事件化表述，明确神职与混沌身份。",
+      "evidence_rows": [
+        17111,
+        20697,
+        25914,
+        33841
+      ],
+      "table": "characters",
+      "index": 32
+    },
+    {
+      "patch": {
+        "gender": "男性",
+        "term_reason": "泰尔莫里（Telmori）被杀酋长，复活试炼的目标；22565 用 him 指代，故为男性。"
+      },
+      "reason": "22565 的 bring him back 明确指代 Vraling Creekleaper。",
+      "evidence_rows": [
+        22565,
+        22571
+      ],
+      "table": "characters",
+      "index": 33
+    },
+    {
+      "patch": {
+        "term_reason": "Vraling Creekleaper 的名字部分；本批仅见全名，未见独立短称。"
+      },
+      "reason": "原称记录中单独出现与 evidence_rows 不符。",
+      "evidence_rows": [
+        22565,
+        22571
+      ],
+      "table": "characters",
+      "index": 157
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:21",
+      "evidence_rows": [
+        1832,
+        1837
+      ],
+      "source_excerpt": "Ironhoof, the Centaur King",
+      "reason": "核对 1832/1837：Ironhoof 为半人马之王与兽民预言中的英雄，1837 以 he slept 指代；译名铁蹄保留，term_reason 删去无据的 his。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1832 称 Ironhoof, the Centaur King；1837 称 Ironhoof the Centaur，并用 he slept。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "铁蹄为 Ironhoof 的专名译法，且与 Ironhoof's Chain 的铁蹄一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 专名，proper_name/required 与半人马之王身份相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e2 共享 Ironhoof 核心译名铁蹄；term_reason 已在 edits 修正。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1070",
+      "evidence_rows": [
+        32446
+      ],
+      "source_excerpt": "Ironhoof's Chain",
+      "reason": "32446 为具名宝藏锁链；由 game_term/reference 改为 proper_name/required，译名铁蹄之链与 Ironhoof 统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32446 原文仅为 Ironhoof's Chain，属宝藏列表中的具名物品。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "铁蹄之链 = 铁蹄 + 链，保留所属关系，译名简洁。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "具名物品应作 proper_name/required；category_path 物品合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1 Ironhoof 的铁蹄一致，属同一专名复合形式。"
+        }
+      }
+    },
+    {
+      "ref": "characters:22",
+      "evidence_rows": [
+        1852,
+        16490,
+        17024,
+        28316
+      ],
+      "source_excerpt": "Lokamayadon, the traitorous priest who sought to eclipse Orlanth",
+      "reason": "1852/16490/17024/28316 均指背叛奥兰斯的祭司；候选东/顿择定洛卡马亚顿，性别因无代词而保留其他。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1852 称 traitorous priest，16490 称 usurper，17024 称 evil Lokamayadon，28316 称 traitorous Lokamayadon。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由洛卡马亚东统一为洛卡马亚顿；-don 以顿收尾，避免与方向词东混淆。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters/proper_name/required 适当；原文未给明确性别，gender=其他。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "候选洛卡马亚东/洛卡马亚顿并存，现统一为洛卡马亚顿。"
+        }
+      }
+    },
+    {
+      "ref": "characters:25",
+      "evidence_rows": [
+        2097
+      ],
+      "source_excerpt": "Thoreeta Spearstep",
+      "reason": "2097 仅为独立人名 Thoreeta Spearstep；译名保留，term_reason 改为不称列表。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2097 原文只有 Thoreeta Spearstep，未提供身份。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "索丽塔矛步对应 Thoreeta Spearstep，音译加短 epithet 译法可用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters/proper_name/required 适当；term_reason 已在 edits 改为仅据独立人名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该条无同批变体；不扩展身份或性别。"
+        }
+      }
+    },
+    {
+      "ref": "characters:26",
+      "evidence_rows": [
+        2095
+      ],
+      "source_excerpt": "Ilgrator",
+      "reason": "2095 仅为独立人名 Ilgrator；译名保留，term_reason 改为不称列表。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2095 原文只有 Ilgrator，未提供身份。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "伊尔格拉托对应 Ilgrator，音译可用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters/proper_name/required 适当；term_reason 已在 edits 改为仅据独立人名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该条无同批变体；不扩展身份或性别。"
+        }
+      }
+    },
+    {
+      "ref": "characters:27",
+      "evidence_rows": [
+        2096
+      ],
+      "source_excerpt": "Yathanda",
+      "reason": "2096 仅为独立人名 Yathanda；译名保留，term_reason 改为不称列表。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2096 原文只有 Yathanda，未提供身份。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "亚坦达对应 Yathanda，音译可用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters/proper_name/required 适当；term_reason 已在 edits 改为仅据独立人名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该条无同批变体；不扩展身份或性别。"
+        }
+      }
+    },
+    {
+      "ref": "characters:29",
+      "evidence_rows": [
+        2204
+      ],
+      "source_excerpt": "Ekril",
+      "reason": "2204 预言中未来成年儿童名 Ekril；补 proper_name/required，性别未明保留其他。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2204 原文称 some of whom will be named Ekril, Orvasta, and Yangath。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "埃克里尔对应 Ekril，与 Orvasta、Yangath 同批儿童名区分。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原 row 缺 term_kind/enforcement；补 proper_name/required，仍列 characters。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e8/e9 均为 2204 预言儿童名，译名各自独立，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:30",
+      "evidence_rows": [
+        2204
+      ],
+      "source_excerpt": "Orvasta",
+      "reason": "2204 预言中未来成年儿童名 Orvasta；补 proper_name/required，性别未明保留其他。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2204 原文称 some of whom will be named Ekril, Orvasta, and Yangath。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "奥瓦斯塔对应 Orvasta，与同段其他儿童名区分。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原 row 缺 term_kind/enforcement；补 proper_name/required，仍列 characters。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e7/e9 同段但不同名，不构成同义变体。"
+        }
+      }
+    },
+    {
+      "ref": "characters:31",
+      "evidence_rows": [
+        2204
+      ],
+      "source_excerpt": "Yangath",
+      "reason": "2204 预言中未来成年儿童名 Yangath；补 proper_name/required，性别未明保留其他。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2204 原文称 some of whom will be named Ekril, Orvasta, and Yangath。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "扬加斯对应 Yangath，与同段其他儿童名区分。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原 row 缺 term_kind/enforcement；补 proper_name/required，仍列 characters。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e7/e8 同段但不同名，不构成同义变体。"
+        }
+      }
+    },
+    {
+      "ref": "characters:32",
+      "evidence_rows": [
+        17111,
+        20697,
+        25914,
+        33841
+      ],
+      "source_excerpt": "Malia is goddess of disease, pestilence, and plague.",
+      "reason": "17111/20697/25914/33841 等均指疾病与混沌女神 Malia；候选玛利亚/玛莉亚/玛丽亚统一为玛利亚，term_reason 精炼。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "17111 明称 goddess of disease, pestilence, and plague，20697 称 Chaos goddess，25914/33841 称 Unholy Trio 成员。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "玛利亚对应 Malia；候选玛莉亚、玛丽亚为同音异写，统一用玛利亚。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters/proper_name/required 适当；女性神祇，gender=女性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同批候选存在玛莉亚/玛丽亚/玛利亚三种写法，最终统一为玛利亚。"
+        }
+      }
+    },
+    {
+      "ref": "characters:33",
+      "evidence_rows": [
+        22565,
+        22571
+      ],
+      "source_excerpt": "their slain chieftain, Vraling Creekleaper, lies dead",
+      "reason": "22565 用 him 指代被杀酋长 Vraling Creekleaper，性别由其他改为男性；译名保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "22565/22571 均作 Vraling Creekleaper；22565 称 slain chieftain 并用 bring him back。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "弗拉林溪跃者对应 Vraling Creekleaper，Creekleaper 作溪跃者。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "characters/proper_name/required 适当；gender 由其他改为男性，依据 him。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e12 的弗拉林核心名一致，全名与短名不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:157",
+      "evidence_rows": [
+        22565,
+        22571
+      ],
+      "source_excerpt": "Vraling Creekleaper",
+      "reason": "本批仅见全名 Vraling Creekleaper，未见独立 Vraling；保留为名字部分，term_reason 改为不称单独出现。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "22565/22571 只有 Vraling Creekleaper，没有独立 Vraling；按全名名字部分保留。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "弗拉林与 e11 的 Vraling Creekleaper 核心名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name/required 与名字部分相符；性别男性随全名指代。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "e11/e12 为同一专名的全名与名字部分，核心译名统一为弗拉林。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:21",
+    "terms:1070",
+    "characters:22",
+    "characters:25",
+    "characters:26",
+    "characters:27",
+    "characters:29",
+    "characters:30",
+    "characters:31",
+    "characters:32",
+    "characters:33",
+    "characters:157"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

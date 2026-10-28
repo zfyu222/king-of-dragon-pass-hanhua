@@ -1,0 +1,387 @@
+{
+  "review_complete": true,
+  "review_summary": "复核 e1-e12：确认 Widebrew 为具名魔法黑酿，译名“广酿”可用并补充术语说明；Helm of Karse 统一为“卡尔斯之盔”；God’s War 补充所指。其余条目译名、分类与一致性可用。f1 已核对：e10 与只读关联的 War of the Gods/Gods War 共享“诸神之战”属同一神话战争别名，不视为冲突。",
+  "acknowledged_findings": [
+    "F0418"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "指奥兰斯在英雄探索前饮用的具名魔法黑酿；可独立作物品名，与 crazy black 等修饰语分开处理。"
+      },
+      "reason": "原 term_reason 只重复原文短语，未说明 Widebrew 是具名饮品及其使用范围；补足语义以利后续翻译。",
+      "evidence_rows": [
+        25539,
+        25580,
+        32501,
+        34243,
+        34264
+      ],
+      "table": "terms",
+      "index": 903
+    },
+    {
+      "patch": {
+        "recommended_translation": "卡尔斯之盔",
+        "term_reason": "指与 Karse 相关的具名头盔；9338 作为赌注提及，32434 单列为宝藏，Karse 为地名组分。"
+      },
+      "reason": "Helm of Karse 是具名器物/宝藏；“卡尔斯之盔”更贴合器物专名，并保留 Karse 统一音译；term_reason 依本条出处重写。",
+      "evidence_rows": [
+        9338,
+        32434
+      ],
+      "table": "terms",
+      "index": 912
+    },
+    {
+      "patch": {
+        "term_reason": "指神话时代诸神彼此争斗的战争；本句以 God’s War 称之，统一译作“诸神之战”。"
+      },
+      "reason": "补充该专名的实际所指及统一译法，处理 f1 的共享译名审查。",
+      "evidence_rows": [
+        25026
+      ],
+      "table": "terms",
+      "index": 919
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:903",
+      "evidence_rows": [
+        25539,
+        25580,
+        32501,
+        34243,
+        34264
+      ],
+      "source_excerpt": "drinks crazy black Widebrew",
+      "reason": "Widebrew 是具名魔法黑酿；保留“广酿”作为独立物品名，并补充 term_reason 以说明 crazy black/magical 等修饰语不并入专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25539 作 drinks crazy black Widebrew，25580 作 magical Widebrew，32501 单列 Widebrew；34243/34264 再述 crazy black Widebrew，均指同一饮品。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“广酿”保留 Widebrew 的 brew/酿含义，且不把 crazy black 等修饰语并入基础名；32501 独立条目也适用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Widebrew 是饮品/魔法物品名，category_path=物品 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原 term_reason 只列短语，已改为说明其为奥兰斯探索前饮用的具名魔法黑酿，并与修饰语分开；译名不变。"
+        }
+      }
+    },
+    {
+      "ref": "terms:904",
+      "evidence_rows": [
+        9323
+      ],
+      "source_excerpt": "at the Conference of Karse",
+      "reason": "Karse 为地名，音译“卡尔斯”简洁，可作 Conference/Helm 等派生名的统一组分。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9323 的 Conference of Karse 显示 Karse 为地名组分。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Karse 音译“卡尔斯”，与会议/头盔派生名可共享组分。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为地名，category_path=地名 符合语义。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Karse 统一译“卡尔斯”，不改动；派生名应保留该组分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:905",
+      "evidence_rows": [
+        9323
+      ],
+      "source_excerpt": "at the Conference of Karse",
+      "reason": "该条指在 Karse 举行的会议/事件，译“卡尔斯会议”语义完整。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9323 的 at the Conference of Karse 指在 Karse 举行的会议/事件。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Conference 译“会议”，Karse 译“卡尔斯”，组合为“卡尔斯会议”，语义完整。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "条目指会议事件，非地名或组织，归“其他”合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "保留 Karse 统一译名“卡尔斯”，与基础地名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:912",
+      "evidence_rows": [
+        9338,
+        32434
+      ],
+      "source_excerpt": "bet of the Helm of Karse",
+      "reason": "Helm of Karse 是具名器物/宝藏；译名改为“卡尔斯之盔”并保留 Karse 统一音译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9338 作 bet of the Helm of Karse，32434 单列 Helm of Karse，均指同一具名头盔。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由“卡尔斯头盔”改为“卡尔斯之盔”，更贴合 Helm of Karse 的器物专名，并保留 Karse=卡尔斯。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Helm 是具名物品/宝藏，category_path=物品 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Karse 组分统一为“卡尔斯”，“之盔”与器物名搭配一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:907",
+      "evidence_rows": [
+        9503
+      ],
+      "source_excerpt": "Clan Damasti",
+      "reason": "Clan Damasti 为氏族专名，译“达马斯提氏族”符合“Clan+X氏族”结构。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9503 的 Clan Damasti 明示氏族专名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Clan 译“氏族”，Damasti 音译“达马斯提”，组合自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指氏族组织，category_path=组织 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Clan 名称统一采用“X氏族”结构；本条目无冲突变体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:908",
+      "evidence_rows": [
+        9849
+      ],
+      "source_excerpt": "Clan Ormandi",
+      "reason": "Clan Ormandi 为氏族专名，译“奥尔曼迪氏族”；与 Ormad 拼写不同，不合并。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9849 的 Clan Ormandi 明示氏族专名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Ormandi 音译“奥尔曼迪”，与 Clan 组合为“奥尔曼迪氏族”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指氏族组织，category_path=组织 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Ormandi 与 Ormad 拼写不同，分别译“奥尔曼迪/奥尔马德”，不合并。"
+        }
+      }
+    },
+    {
+      "ref": "terms:913",
+      "evidence_rows": [
+        9722
+      ],
+      "source_excerpt": "In Ormad’s Saga",
+      "reason": "Ormad’s Saga 为具名传说作品，译“奥尔马德传奇”符合叙事体裁并区分 Ormandi。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9722 的 In Ormad’s Saga 引述一部具名萨迦/传奇。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Ormad 音译“奥尔马德”，Saga 译“传奇”，符合叙事体裁且简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指文本/传说作品，category_path=其他 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Ormad 译“奥尔马德”，与 Clan Ormandi“奥尔曼迪”区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:914",
+      "evidence_rows": [
+        9399
+      ],
+      "source_excerpt": "as peacebond",
+      "reason": "peacebond 指把牛群留在中立氏族作为和平保证/质押，属游戏中的法律外交机制。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9399 的 as peacebond 说明 50 头牛留作和平保证/质押。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“和平抵押”表达 peacebond 的质押担保义，适合事件叙述。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "这是法律/外交机制概念，不是具体物品，category_path=其他 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他译法冲突；保留 game_term 的机制义。"
+        }
+      }
+    },
+    {
+      "ref": "terms:916",
+      "evidence_rows": [
+        24101,
+        24139
+      ],
+      "source_excerpt": "When the Rain Cauldron was stolen",
+      "reason": "Rain Cauldron 为被窃神器，译“雨釜”简洁保留器物义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "24101 的 When the Rain Cauldron was stolen 与 24139 的 theft of the Rain Cauldron 均指同一具名神器。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Rain Cauldron 译“雨釜”，简洁保留“雨”和“釜/鼎”器物义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指被窃神器，category_path=物品 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两出处均用 Rain Cauldron，统一译“雨釜”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:919",
+      "evidence_rows": [
+        25026
+      ],
+      "source_excerpt": "during the God’s War",
+      "reason": "God’s War 指神话时代诸神争斗的战争，统一译“诸神之战”；f1 的共享译名经核对为同一神话战争别名，不构成冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25026 的 during the God’s War 指 Uralda 受折磨的神话战争。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "God’s War 译“诸神之战”，可表达神话战争且与同批 Gods War/War of the Gods 别名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指神话战争时期/事件，category_path=其他 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "f1 的共享译名经核对为同一神话战争别名，不构成冲突；已补充 term_reason 说明。"
+        }
+      }
+    },
+    {
+      "ref": "terms:923",
+      "evidence_rows": [
+        25251
+      ],
+      "source_excerpt": "The Angry Clan spat upon his gifts",
+      "reason": "Angry Clan 为氏族专名，译“愤怒氏族”保留 Clan 的氏族义和愤怒修饰。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25251 的 The Angry Clan spat upon his gifts 明示氏族专名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Angry Clan 译“愤怒氏族”，保留 Clan 的氏族义和愤怒修饰。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指氏族组织，category_path=组织 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Clan 名称统一为“X氏族”结构；本条目译名无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:924",
+      "evidence_rows": [
+        25206
+      ],
+      "source_excerpt": "no use in kingmaking",
+      "reason": "kingmaking 指推举/拥立国王的政治过程；“拥立国王”适合顾问建议语境。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25206 的 no use in kingmaking 指推举/拥立国王的政治过程。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“拥立国王”表达 kingmaking 的动宾含义，适合顾问建议语境。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "这是政治/机制过程，不是人物或物品，category_path=其他 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "作为暂定游戏机制术语，reference 层级允许语境微调；当前译名可用。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:903",
+    "terms:904",
+    "terms:905",
+    "terms:912",
+    "terms:907",
+    "terms:908",
+    "terms:913",
+    "terms:914",
+    "terms:916",
+    "terms:919",
+    "terms:923",
+    "terms:924"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

@@ -1,0 +1,348 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e12 的源文、译名、分类与一致性；均为专名或游戏术语，保留现有译名与分类，无修改、隔离或新增。",
+  "acknowledged_findings": [],
+  "edits": [],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:546",
+      "evidence_rows": [
+        18668
+      ],
+      "source_excerpt": "Bad King Urgrain allied with the Odrangi just to learn where they were weakest.",
+      "reason": "四维核对通过：原文直接给出 Odrangi 的群体身份与事件，音译和组织分类均可用。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第18668行直接出现 Odrangi，并说明其与 Urgrain 结盟及被烧死的经过。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "奥德兰吉为音译，未误译普通词义，符合专名处理。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文以 they 指代该群体，作为部族或群体名归入组织可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该译名在本条证据中独立使用，未与其他同形普通词冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:547",
+      "evidence_rows": [
+        18898
+      ],
+      "source_excerpt": "The Ofrandlings fought beside Bad King Urgrain almost until the end.",
+      "reason": "四维核对通过：原文明确其与 Urgrain 并肩作战并向 Oskul 乞降，群体专名保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第18898行明确出现 Ofrandlings，并说明其与 Urgrain 并肩作战至近终。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "奥弗兰德林人保留音译并以“人”体现复数群体，符合专名用法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文以 they 指代该群体，归入组织可用。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "译名与 Urgrain、Oskul 等专名并列使用，无同形普通词冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:550",
+      "evidence_rows": [
+        18928,
+        33902
+      ],
+      "source_excerpt": "The Empire of Wyrm’s Friends’ arrogance made other powerful enemies.",
+      "reason": "四维核对通过：原文和法律证据均显示 Wyrm’s Friends 是一个势力名称，译名与组织分类可用。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第18928行出现 Wyrm’s Friends，第33902行进一步称其为 Empire of Wyrm’s Friends。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "巨龙之友保留 Wyrm 与 Friends 的复合专名，未混入普通词组。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "第33902行以 Empire 指称该势力，归入组织有直接依据。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "核心译名“巨龙之友”在帝国名中可保持一致，暂无其他候选冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:554",
+      "evidence_rows": [
+        19332
+      ],
+      "source_excerpt": "Elmal is the Horse-Friend, the Loyal Thane, and the benevolent Winter Sun.",
+      "reason": "四维核对通过：Winter Sun 是 Elmal 的固定称号，冬日太阳贴合称号性质。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第19332行将 Winter Sun 列为 Elmal 的称号之一。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "冬日太阳直译其称号，保留“冬日”与“太阳”的固定搭配。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该词是神祇的固定称号或身份性称谓，归入其他可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Elmal、Horse-Friend 等称号并列，译名不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:556",
+      "evidence_rows": [
+        19141
+      ],
+      "source_excerpt": "From the book, we can learn the secrets of Poetry.",
+      "reason": "四维核对通过：Poetry 在此为可由古书学习的秘密知识或技能，适用域已限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第19141行的“secrets of Poetry”表明其作为可学习知识出现。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "诗歌可作该技能或知识名，未改变普通词义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文将其列为可学习的 secrets，归入技能合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "applicability 已用 literal_context 限定为“secrets of Poetry.”，避免全局冻结普通词 poetry。"
+        }
+      }
+    },
+    {
+      "ref": "terms:558",
+      "evidence_rows": [
+        19595,
+        19600,
+        29841,
+        32462
+      ],
+      "source_excerpt": "a box of Perpetual Flour, which will help feed a clan in perpetuity.",
+      "reason": "四维核对通过：原文说明其为能永久供养氏族的具名魔法面粉，永续面粉与 perpetuity 对应。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第19595行称一箱 Perpetual Flour 可永久供养氏族；第19600、29841、32462行重复该具名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "永续面粉对应 perpetual/perpetuity，未改变物品性质。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文以 box、feed a clan 及宝藏列表描述，归入物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "拍卖句、日常描述和宝藏列表均用同一名称，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:559",
+      "evidence_rows": [
+        19595,
+        19603,
+        32382
+      ],
+      "source_excerpt": "an Amulet of Consolation, which brings encouragement to those who deal with troublesome people.",
+      "reason": "四维核对通过：原文说明护符给与难缠人物打交道者鼓励，慰藉护符贴合其功能。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第19595行说明 Amulet of Consolation 的用途，第19603、32382行重复名称。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "慰藉护符对应 consolation，保留物品名与功能。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文以 sells、Amulet 及宝藏列表描述，归入物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "第19595、19603、32382行名称一致，无普通词冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:560",
+      "evidence_rows": [
+        19596,
+        19606,
+        32463
+      ],
+      "source_excerpt": "a rare copy of The Poem Which Must Be Eaten, which provides to its devourer many valuable insights on the building of good relations between clans.",
+      "reason": "四维核对通过：原文称其为可被分食、能提供治族洞见的稀有名诗抄本，译名保留标题性质。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第19596行称其为 rare copy 并可被 devourer 分食，第19606、32463行重复诗题。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "《必食之诗》以简洁标题形式对应 The Poem Which Must Be Eaten。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文以 rare copy、auction 描述该抄本，归入物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "第19596、19606、32463行均指同一诗题，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:561",
+      "evidence_rows": [
+        19829,
+        19856
+      ],
+      "source_excerpt": "He conducted a Guest Ceremony, agreeing that he and his kinfolk would be responsible for their actions.",
+      "reason": "四维核对通过：原文说明 Guest Ceremony 是担保人对宾客行为负责的正式仪式，宾客礼保留仪式名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第19829行说明担保人举行 Guest Ceremony 并对宾客行为负责，第19856行重复该仪式名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "宾客礼可作正式仪式名，未改写为普通待客动作。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该词指正式仪式而非普通动作，归入其他合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "第19829、19856行均用同一仪式名，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:563",
+      "evidence_rows": [
+        20075
+      ],
+      "source_excerpt": "Red Creek",
+      "reason": "四维核对通过：第20075行随机名称分支中的 Red Creek 为氏族名，红溪为直译专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第20075行随机名称分支中包含 Red Creek。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "红溪直译 Red Creek，符合地名式氏族名处理。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该分支用于随机氏族名，归入组织可用。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同分支 Ardling、Zethnos 等并列，各自独立，不共享普通词义。"
+        }
+      }
+    },
+    {
+      "ref": "terms:564",
+      "evidence_rows": [
+        20075
+      ],
+      "source_excerpt": "Ardling",
+      "reason": "四维核对通过：第20075行随机名称分支中的 Ardling 为氏族名，阿德林为音译专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第20075行随机名称分支中包含 Ardling。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "阿德林为音译，未误译普通词义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该分支用于随机氏族名，归入组织可用。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同分支 Red Creek、Zethnos 等并列，译名独立且不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:565",
+      "evidence_rows": [
+        20075
+      ],
+      "source_excerpt": "Zethnos",
+      "reason": "四维核对通过：第20075行随机名称分支中的 Zethnos 为氏族名，泽斯诺斯为音译专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第20075行随机名称分支中包含 Zethnos。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "泽斯诺斯为音译，未误译普通词义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该分支用于随机氏族名，归入组织可用。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同分支 Red Creek、Ardling 等并列，译名独立且不冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:546",
+    "terms:547",
+    "terms:550",
+    "terms:554",
+    "terms:556",
+    "terms:558",
+    "terms:559",
+    "terms:560",
+    "terms:561",
+    "terms:563",
+    "terms:564",
+    "terms:565"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

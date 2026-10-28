@@ -1,0 +1,149 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e3 的原文、译名、分类与一致性：e1 保留“温加信徒”并补充适用范围；e2 将 Uroxi 统一为音译专名“乌罗克西”，以区别于神名 Urox；e3 保留“诡术师”并补充 Eurmal 神职依据。f1 已核对：只读的 Vingans 是 Vingan 的复数变体，共用“温加信徒”不构成异名冲突。",
+  "acknowledged_findings": [
+    "F0366"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "Vinga 的女性信徒，常以女战士身份出现；599 为兄弟复仇，10030/10063 为王后资格，28232 与男战士比较。"
+      },
+      "reason": "补充 Vingan 的指称范围，避免只按普通“信徒”泛化。",
+      "evidence_rows": [
+        599,
+        10030,
+        10063,
+        28232
+      ],
+      "table": "terms",
+      "index": 28
+    },
+    {
+      "patch": {
+        "recommended_translation": "乌罗克西",
+        "term_reason": "Urox（乌罗克斯，风暴公牛）的信徒战士，常作个体或群体名；309/315 为战斗狂怒的 Uroxi，30511 明确区分 Urox 神与 Uroxi 信徒。"
+      },
+      "reason": "统一音译专名，避免“乌罗克斯信徒”在 Uroxi warriors 等复合结构中累赘，并与 Urox 神名区分。",
+      "evidence_rows": [
+        309,
+        30511,
+        7001
+      ],
+      "table": "terms",
+      "index": 29
+    },
+    {
+      "patch": {
+        "term_reason": "Eurmal 的神职与称号“诡术之神”；在氏族环上作为特殊角色，539 为诡术诅咒，27547 受 Bondsman’s Oath 约束，32175 定义为愚人、被放逐者与替罪羊。"
+      },
+      "reason": "补充 Eurmal 神职与氏族环角色依据，固定本批译名“诡术师”。",
+      "evidence_rows": [
+        539,
+        27547,
+        32175
+      ],
+      "table": "terms",
+      "index": 30
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:28",
+      "evidence_rows": [
+        599,
+        4627,
+        10030,
+        10063,
+        28232
+      ],
+      "source_excerpt": "could not defeat a Vingan who wanted revenge for her fallen brother.",
+      "reason": "核对 Vingan 指 Vinga 女性信徒或女战士及其单复数变体。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "599、4627、10030、10063、28232 均以 Vingan 或 Vingan women/warriors 指 Vinga 的女性信徒或女战士；599 为兄弟复仇，10030/10063 为王后资格，28232 与男战士比较。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“温加信徒”可覆盖 Vinga 女性信徒或女战士身份；Vingan warriors 可作“温加信徒战士”，Vingan queen 可作“温加信徒王后”，不误作地名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "599、10030、28232 表明其为信仰身份与群体，category_path=身份、term_kind=proper_name、enforcement=required 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f1 涉及的只读复数 Vingans 与 Vingan 为同一术语单复数变体；本条统一“温加信徒”，不另造“温加女战士/温加”等异名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:29",
+      "evidence_rows": [
+        309,
+        315,
+        30511,
+        7001
+      ],
+      "source_excerpt": "confront an Uroxi in his battle rage.",
+      "reason": "统一 Uroxi 音译并核对信徒战士身份。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "309/315 的战斗狂怒、30511 的 Urox 与 Uroxi 区分、7001 的 Uroxi warriors 均指乌罗克斯即 Urox/风暴公牛的信徒战士。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原候选“乌罗克斯信徒”在 Uroxi warriors 中会成“乌罗克斯信徒战士”，且与神名 Urox 易混；本批统一为音译专名“乌罗克西”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "309/315/30511 指信徒战士个体或群体，category_path=身份、term_kind=proper_name、enforcement=required 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "候选中的乌罗克斯、乌洛克斯、乌洛希与乌罗克西均指同一 Uroxi；本批统一为“乌罗克西”，不把复数或群体用法拆成不同术语。"
+        }
+      }
+    },
+    {
+      "ref": "terms:30",
+      "evidence_rows": [
+        539,
+        27547,
+        32175
+      ],
+      "source_excerpt": "The Trickster God. Fool, Outlaw, and Scapegoat",
+      "reason": "核对 Eurmal 诡术师神职及氏族环角色。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "539 的 Trickster’s curse、27547 的氏族环 Trickster、32175 的 Trickster God 均指 Eurmal 的神职或角色，不是普通骗子。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“诡术师”与 32175 的 Trickster God 神职含义相合；不采用“欺诈者”这一较弱候选。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "27547/32175 表明其为氏族环身份或神职角色，category_path=身份、term_kind=game_term、enforcement=required 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条统一“诡术师”；只读关联 tricksters 的“诡计者”为跨批异名，本批不修改，但已记录需后续跨批统一。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:28",
+    "terms:29",
+    "terms:30"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

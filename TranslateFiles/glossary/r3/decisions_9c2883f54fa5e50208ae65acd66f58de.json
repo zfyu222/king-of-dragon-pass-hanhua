@@ -1,0 +1,412 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对本批 9 个 non_translate 运行时控制/占位串条目：原文均显示为句中的精确控制码，需原样保留；已为各条补齐 text、区分大小写的 applicability。未发现需隔离、新增或允许无匹配的项。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确控制串 `\\x01@\\r` 在叙事句中作运行时人物/内容替换标记；任何出现处都须原样保留，不译为自然语言。"
+        }
+      },
+      "reason": "原条目缺少 non_translate 的适用范围，补为全文精确匹配且区分大小写。",
+      "evidence_rows": [
+        1158,
+        20555
+      ],
+      "table": "non_translate",
+      "index": 38
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确控制串 `\\x01@\\n` 在句中作运行时人物/内容槽位，不能翻译；全文只保留该精确串。"
+        }
+      },
+      "reason": "原条目缺少 non_translate 的适用范围，补为全文精确匹配且区分大小写。",
+      "evidence_rows": [
+        1498,
+        16772
+      ],
+      "table": "non_translate",
+      "index": 39
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确控制串 `\\x01@N` 是运行时人物名占位符，必须原样保留；N 区分大小写。"
+        }
+      },
+      "reason": "原条目缺少 non_translate 的适用范围，补为全文精确匹配且区分大小写。",
+      "evidence_rows": [
+        7170,
+        24116
+      ],
+      "table": "non_translate",
+      "index": 136
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确控制串 `\\x01@\\x12` 在献礼句中作运行时内容槽位，须原样保留，不推定具体物品。"
+        }
+      },
+      "reason": "原条目缺少 non_translate 的适用范围，补为全文精确匹配且区分大小写。",
+      "evidence_rows": [
+        1498,
+        7982
+      ],
+      "table": "non_translate",
+      "index": 40
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确控制串 `\\x01@\\x1A` 可替换人物或牛只数额等动态内容，本身必须原样保留，不能固定翻译。"
+        }
+      },
+      "reason": "原条目缺少 non_translate 的适用范围，补为全文精确匹配且区分大小写。",
+      "evidence_rows": [
+        7642,
+        20413
+      ],
+      "table": "non_translate",
+      "index": 41
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确控制串 `\\x01@\\x14` 在句中作运行时人物/内容槽位，必须原样保留。"
+        }
+      },
+      "reason": "原条目缺少 non_translate 的适用范围，补为全文精确匹配且区分大小写。",
+      "evidence_rows": [
+        7163,
+        28888
+      ],
+      "table": "non_translate",
+      "index": 42
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确控制串 `\\x01@\\x17` 可替换牛只数额或能力描述等动态内容，本身必须原样保留。"
+        }
+      },
+      "reason": "原条目缺少 non_translate 的适用范围，补为全文精确匹配且区分大小写。",
+      "evidence_rows": [
+        1540,
+        6856
+      ],
+      "table": "non_translate",
+      "index": 43
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确控制串 `\\x01@\\x10` 可替换人物或牛只数额等动态内容，本身必须原样保留。"
+        }
+      },
+      "reason": "原条目缺少 non_translate 的适用范围，补为全文精确匹配且区分大小写。",
+      "evidence_rows": [
+        1553,
+        20758
+      ],
+      "table": "non_translate",
+      "index": 44
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确控制串 `\\x01@u` 是运行时氏族名槽位，小写 u 须原样保留。"
+        }
+      },
+      "reason": "原条目缺少 non_translate 的适用范围，补为全文精确匹配且区分大小写。",
+      "evidence_rows": [
+        1175,
+        20834
+      ],
+      "table": "non_translate",
+      "index": 45
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:38",
+      "evidence_rows": [
+        1158,
+        20555
+      ],
+      "source_excerpt": "story of \\x01@\\r.",
+      "reason": "确认该控制串在句中作运行时占位/替换标记，保留原码并补齐适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第1158行叙事句内出现 `\\x01@\\r`，第20555行同串作说话人，确为句中控制/占位串。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate，无自然语言译文；译文必须原样保留控制串。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为运行时人物/内容替换标记保留，不是可翻译词。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补齐 applicability 为 text、区分大小写；同串各句均保留，不设固定译名。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:39",
+      "evidence_rows": [
+        1498,
+        16772
+      ],
+      "source_excerpt": "\\x01@\\n said \\x06 would rather fight",
+      "reason": "确认该动态占位串应原样保留，并与 e3 的不同控制码区分。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第16772行句首出现 `\\x01@\\n` 并作说话人；第1498行也嵌入同一串。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate，不译，保留 `\\x01@\\n`。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "动态人物/内容占位串，纳入 non_translate 有原文依据。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 text 大小写敏感范围；与 e3 的 `\\x01@N` 是不同控制码，不做变体合并。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:136",
+      "evidence_rows": [
+        7170,
+        24116
+      ],
+      "source_excerpt": "\\x01@N composed a poem in honor of Brodasart.",
+      "reason": "确认 `\\x01@N` 为运行时人物名槽位，不应与 e2 合并。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第24116行句首原样出现 `\\x01@N`，第7170行亦为人物名槽位。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate，人物名由运行时替换，控制串本身不译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "第24116行用于人物名占位，属运行标记而非普通词。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 text 大小写敏感范围；与 e2 的 `\\x01@\\n` 不是同一控制串，不合并。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:40",
+      "evidence_rows": [
+        1498,
+        7982
+      ],
+      "source_excerpt": "We offered them \\x01@\\x12.",
+      "reason": "确认该控制串为献礼句中的运行时内容槽位，保留原码。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第7982行完整句子中出现 `\\x01@\\x12`，第1498行同串位于献礼宾语位置。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate，控制串不翻译，保留原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "运行时内容占位符，不当作普通词。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补 text 大小写敏感范围；不推定具体物品或固定译名。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:41",
+      "evidence_rows": [
+        7642,
+        20413
+      ],
+      "source_excerpt": "Offer them another kind of sacrifice worth \\x01@\\x1A cows.",
+      "reason": "确认 `\\x01@\\x1A` 是跨语境动态占位串，不能固定成数字或人名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第20413行 `\\x01@\\x1A` 位于牛只数额前；第7642行同串可作说话人，说明为通用占位串。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate，不译；按上下文替换，不能固定成数字或人名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "运行时动态占位符，支持作为 non_translate 保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补齐 text 大小写敏感范围；同串跨语境保留，不赋予单一语义。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:42",
+      "evidence_rows": [
+        7163,
+        28888
+      ],
+      "source_excerpt": "\\x01@\\x14 said the omens were favorable",
+      "reason": "确认该控制串作人物/内容槽位，保留原码。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第7163行 `\\x01@\\x14` 作说话人，第28888行同串作受命人物。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate，占位串不译，保留控制码。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物/内容运行时占位符，非普通词。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补 text 大小写敏感范围；不设固定译名。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:43",
+      "evidence_rows": [
+        1540,
+        6856
+      ],
+      "source_excerpt": "Blacktail is worth \\x01@\\x17 cows over his lifetime.",
+      "reason": "确认 `\\x01@\\x17` 可替换数值或能力描述，本身必须保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第6856行 `\\x01@\\x17` 置于牛只数额前；第1540行同串可代表能力描述，确为动态槽位。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate，不译，原样保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "运行时数值/文本占位符，不是可翻译术语。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补齐 text 大小写敏感范围；同串不固定为数字或描述。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:44",
+      "evidence_rows": [
+        1553,
+        20758
+      ],
+      "source_excerpt": "They offer \\x01@\\x10 cows worth of goods.",
+      "reason": "确认 `\\x01@\\x10` 是人物/数值动态占位串，保留原码。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第1553行 `\\x01@\\x10` 位于牛只数额前，第20758行同串作被派遣人物，确为通用占位串。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate，不译，保留控制码。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "运行时人物/数值占位符，符合运行标记保留依据。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补 text 大小写敏感范围；不因语境变化而拆分或翻译控制串。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:45",
+      "evidence_rows": [
+        1175,
+        20834
+      ],
+      "source_excerpt": "warned us of the evil intentions of the \\x01@u clan.",
+      "reason": "确认 `\\x01@u` 为运行时氏族名槽位，小写 u 须保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第1175行 `\\x01@u` 位于 clan 前作氏族名槽位，第20834行同串亦同。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate，氏族名由运行时替换，控制串本身不译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "运行时氏族名占位符，非普通词或可译专名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "补 text 大小写敏感范围；统一保留小写 u，注意大小写。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:38",
+    "non_translate:39",
+    "non_translate:136",
+    "non_translate:40",
+    "non_translate:41",
+    "non_translate:42",
+    "non_translate:43",
+    "non_translate:44",
+    "non_translate:45"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

@@ -1,0 +1,382 @@
+{
+  "review_complete": true,
+  "review_summary": "审校 e1-e12：确认随机名称列表中的 Tarsavi、Vathari、Vengasting 及 Holy Tail、Yinkini、Wild Hunt、Ferena Brooslayer、Boar of Pestilence、Errat Town 等译名可用；修正 e4 Aldrya 译名并清理无本批原文支持的 term_reason；为 e8 Bad Dogs 添加 literal_context 限定。审计 f1 经核对为同一神话战争的别名共用译名，保留“诸神之战”。无 quarantine、additions、allow_no_match。",
+  "acknowledged_findings": [
+    "F0418"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "奥尔德莉亚",
+        "term_reason": "20229/20261 明确为精灵女神；33876 称其为 Aldryami（精灵）之母。"
+      },
+      "reason": "候选译名冲突，依据 Aldryami 词根统一为奥尔德莉亚；同时删除 term_reason 中未提供原文支持的 20275。",
+      "evidence_rows": [
+        20229,
+        20261,
+        33876
+      ],
+      "table": "terms",
+      "index": 570
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "the ",
+          "suffix": " attacked him",
+          "reason": "21055 中 'the Bad Dogs' 指在 Gods War 中袭击 Yinkin 的神话群体，用紧邻结构避免普通 bad dogs 被当作专名。"
+        }
+      },
+      "reason": "Bad Dogs 与普通短语易混，按本批唯一可证上下文加 literal_context 限定。",
+      "evidence_rows": [
+        21055
+      ],
+      "table": "terms",
+      "index": 577
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:566",
+      "evidence_rows": [
+        20075
+      ],
+      "source_excerpt": "Tarsavi",
+      "reason": "原文 20075 的随机名称分支列出 Tarsavi，作为专名音译；组织类氏族名分类可接受。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "20075 的分支列表中包含 Tarsavi，与 Red Creek、Ardling 等并列。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "塔萨维为稳定音译，与同列专名不冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该名称位于并列随机分支中，按组织类氏族名保留。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 Vathari、Vengasting 等并列专名译法风格一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:567",
+      "evidence_rows": [
+        20075
+      ],
+      "source_excerpt": "Vathari",
+      "reason": "原文 20075 的随机名称分支列出 Vathari，作为专名音译；组织类氏族名分类可接受。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "20075 的分支列表中包含 Vathari，与 Red Creek、Ardling 等并列。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "瓦萨里为稳定音译，与同列专名不冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该名称位于并列随机分支中，按组织类氏族名保留。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 Tarsavi、Vengasting 等并列专名译法风格一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:568",
+      "evidence_rows": [
+        20075
+      ],
+      "source_excerpt": "Vengasting",
+      "reason": "原文 20075 的随机名称分支列出 Vengasting，作为专名音译；组织类氏族名分类可接受。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "20075 的分支列表中包含 Vengasting，与 Red Creek、Ardling 等并列。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "文加斯廷为稳定音译，与同列专名不冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该名称位于并列随机分支中，按组织类氏族名保留。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 Tarsavi、Vathari 等并列专名译法风格一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:570",
+      "evidence_rows": [
+        20229,
+        20261,
+        33876
+      ],
+      "source_excerpt": "Aldrya, Mother of the Aldryami or elves",
+      "reason": "Aldrya 为精灵女神；候选译名冲突时采用与 Aldryami 同词根的奥尔德莉亚，并修正 term_reason 中未提供的 20275 依据。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "20229/20261 明确为精灵女神，33876 称其为 Aldryami（精灵）之母；原 term_reason 引用的 20275 不在本批证据，已改为仅依据本批记录。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "候选 阿尔德里亚/奥尔德莉亚 冲突，依据 33876 的 Aldryami 词根统一为奥尔德莉亚。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为神祇专名归入 terms/其他合法；合并条目不另拆 characters。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "奥尔德莉亚与 Aldryami 的译名同词根，未与本批其他术语冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:573",
+      "evidence_rows": [
+        20722
+      ],
+      "source_excerpt": "whisking them with the Holy Tail",
+      "reason": "Holy Tail 为仪式中拂扫牛群的圣物，译作圣尾。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "20722 明确以 Holy Tail 拂扫牛群，是仪式使用的圣物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "圣尾为直译，作为特定圣物名称简洁明确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品类专名，符合仪式器具。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与原文 Holy Tail 的标题式专名用法一致，无同批冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:575",
+      "evidence_rows": [
+        21033,
+        21035,
+        28240
+      ],
+      "source_excerpt": "alongside the Yinkini",
+      "reason": "Yinkini 指与养狗者作战、同行并进行仪式准备的一群人，即 Yinkin 教派成员；因金信徒准确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "21033/21035 称与其并肩攻击养狗者，28240 称与其同行，均指 Yinkin 相关群体。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "因金信徒表达 Yinkin 教派成员，简洁且与因金词根一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为教派/群体名归入组织。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一来源的两次候选译名均为因金信徒，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:576",
+      "evidence_rows": [
+        21055,
+        32154,
+        32555,
+        34010,
+        34368
+      ],
+      "source_excerpt": "hurt in the Gods War",
+      "reason": "Gods War 指 Orlanth 击败 Yelm 等神话战争；与 War of the Gods、God's War 为同一事件，统一诸神之战。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "21055/32154/32555/34010 及 34368 均以 Gods War 指同一神话战争时期。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "诸神之战为既有标准译名；候选诸神战争同义但已选前者统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为神话战争专名归入其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "审计 f1：Gods War、War of the Gods、God's War 指同一事件，共用译名不构成别名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:577",
+      "evidence_rows": [
+        21055
+      ],
+      "source_excerpt": "the Bad Dogs attacked him",
+      "reason": "Bad Dogs 为 Gods War 中袭击 Yinkin 并夺走其火焰气息的神话群体；译作恶犬，并用 literal_context 限定原文上下文。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "21055 中 'the Bad Dogs' 首字母大写并指袭击 Yinkin 的群体；已加 literal_context 限定，避免普通 bad dogs 泛化。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "恶犬直译，符合该神话群体名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为神话犬形群体归入种族可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Gods War 同段神话叙事一致，未与普通词义混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:582",
+      "evidence_rows": [
+        21320
+      ],
+      "source_excerpt": "Gagarth, god of the Wild Hunt",
+      "reason": "Wild Hunt 是 Gagarth 所主掌的神话狩猎，译作狂猎。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "21320 明确 Gagarth 为 Wild Hunt 之神，并描述其为左吹之风。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "狂猎为固定神话名译法，简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为神话事件/狩猎专名归入其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Gagarth 的描述一致，无同批冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:584",
+      "evidence_rows": [
+        21921,
+        21922
+      ],
+      "source_excerpt": "Ferena Brooslayer’s temple",
+      "reason": "Ferena Brooslayer 仅作为神殿所有者/目的地出现，未说明身份性别；保留专名音译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "21921/21922 均以其神殿为目的地，原文未说明性别身份。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "费雷娜·屠布罗者为音译加称号；Brooslayer 取屠布罗者。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为人物/神祇专名归入其他，不强行拆入 characters。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两处出现同一所有格形式，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:587",
+      "evidence_rows": [
+        21743
+      ],
+      "source_excerpt": "the Boar of Pestilence strode the streets of Errat Town",
+      "reason": "Boar of Pestilence 是 Errarth 王陨落时出现在 Errat Town 的具名灾祸生物；译作瘟疫野猪。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "21743 明确该生物在 Errarth 王陨落时步入 Errat Town 并驱赶居民。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "瘟疫野猪直译且保留具名生物感。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为具名生物归入其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同句 Errat Town 译名并存，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:588",
+      "evidence_rows": [
+        21743
+      ],
+      "source_excerpt": "streets of Errat Town",
+      "reason": "Errat Town 是 Errarth 王陨落叙事中的城镇；译作埃拉特镇。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "21743 明确 Boar of Pestilence 在 Errat Town 街道行走。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "埃拉特镇为音译加通名，符合地名格式。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名类专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Errarth 同段出现，译名区分清晰。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:566",
+    "terms:567",
+    "terms:568",
+    "terms:570",
+    "terms:573",
+    "terms:575",
+    "terms:576",
+    "terms:577",
+    "terms:582",
+    "terms:584",
+    "terms:587",
+    "terms:588"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

@@ -1,0 +1,279 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对全部 7 个分配条目：确认 Issaries、Heler、Kero Fin 等专名译名；将“Issaries the Conciliator”类别由“技能”改为“其他”；补明 e1/e4/e5/e7 的 term_reason；未发现需隔离或新增项。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "贸易、旅行与调解之神；原文以其神名、祭司、席位与英雄任务出现。"
+      },
+      "reason": "补明 Issaries 的神职及实际出现范围，避免只据一处献祭文本收窄释义。",
+      "evidence_rows": [
+        964,
+        6133,
+        33874,
+        30444
+      ],
+      "table": "terms",
+      "index": 46
+    },
+    {
+      "patch": {
+        "category_path": "其他",
+        "term_reason": "英雄任务名，亦为伊萨里斯的称号；原文将其列为减少盗匪威胁的英雄任务。"
+      },
+      "reason": "英雄任务不是技能；类别改为允许的“其他”，并补明任务与称号含义。",
+      "evidence_rows": [
+        2249,
+        33444
+      ],
+      "table": "terms",
+      "index": 137
+    },
+    {
+      "patch": {
+        "term_reason": "格洛兰萨历史纪元名；原文称氏族目前生活在第三纪。"
+      },
+      "reason": "将未整理的英文说明改为中文释义，明确其为历史纪元名。",
+      "evidence_rows": [
+        34036
+      ],
+      "table": "terms",
+      "index": 852
+    },
+    {
+      "patch": {
+        "term_reason": "雨神；被阿罗卡吞下后由奥兰斯救出，并参与奥兰斯披甲仪式。"
+      },
+      "reason": "原说明仅及降雨量；补明其雨神身份及主要神话事件。",
+      "evidence_rows": [
+        8634,
+        25538,
+        29104
+      ],
+      "table": "terms",
+      "index": 48
+    },
+    {
+      "patch": {
+        "term_reason": "圣山，奥兰斯之母，又称冬顶峰；亦作为生育女神受祭。"
+      },
+      "reason": "原说明仅述可探索地点；补明其圣山、母神及生育女神义。",
+      "evidence_rows": [
+        1848,
+        23806,
+        28598,
+        33419
+      ],
+      "table": "terms",
+      "index": 52
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:46",
+      "evidence_rows": [
+        964,
+        6133,
+        33874,
+        30444
+      ],
+      "source_excerpt": "heartfelt offerings to Issaries",
+      "reason": "确认 Issaries 为贸易、旅行与调解之神；统一译作“伊萨里斯”，并补明神职范围。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "原 term_reason 仅述献祭与议价；964、6133、33874 表明其亦司旅行与调解，30444 称其喜爱献祭。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "多数候选及同源复合名均以“伊萨里斯”为基名，未采用“伊萨瑞斯”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms 的“其他”为合法类别，符合神祇专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与“调停者伊萨里斯”“伊萨里斯与第三颗豆”保持同一基名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:137",
+      "evidence_rows": [
+        2249,
+        33444
+      ],
+      "source_excerpt": "Issaries the Conciliator",
+      "reason": "确认英雄任务名及称号；类别由“技能”改为“其他”，译名统一为“调停者伊萨里斯”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2249 明列英雄任务名，33444 将其列为减少盗匪威胁的英雄任务。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Conciliator”取“调停者”，与 Issaries 基名“伊萨里斯”组合为“调停者伊萨里斯”。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "英雄任务名不属于“技能”，改为合法类别“其他”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "基名与 e1 的“伊萨里斯”一致，标题与英雄任务用法可统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:174",
+      "evidence_rows": [
+        2288
+      ],
+      "source_excerpt": "Issaries and the Third Bean",
+      "reason": "确认秘密故事名；译名保留 Issaries 基名，Third Bean 作“第三颗豆”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2288 以秘密故事名列出，与 Eurmal Steals The Wheat 并列。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Issaries and the Third Bean”译作“伊萨里斯与第三颗豆”，语义完整。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "故事名归入“其他”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Issaries 基名与 e1 一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:852",
+      "evidence_rows": [
+        34036
+      ],
+      "source_excerpt": "it is now the Third Age",
+      "reason": "确认历史纪元专名；译名“第三纪”保留，term_reason 改为中文说明。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "34036 明确称当前为 Third Age；原 term_reason 夹杂英文，已补明为历史纪元名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Third Age”译作“第三纪”，作为时代名简洁可读。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "历史纪元归入“其他”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他纪元名冲突，译名可独立成立。"
+        }
+      }
+    },
+    {
+      "ref": "terms:48",
+      "evidence_rows": [
+        8634,
+        25538,
+        29104
+      ],
+      "source_excerpt": "Heler, the Rain God",
+      "reason": "确认雨神 Heler；译名统一为“赫勒”，并补明其神话事件。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "8634 称 Heler, the Rain God；25538/29104 补充其被 Aroka 吞下及参与奥兰斯披甲。原 term_reason 仅述降雨量，已补明。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "多数候选作“赫勒”，与“Heler Pole”的基名一致；未取“海勒/赫勒尔”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "雨神归入“其他”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Heler 基名统一作“赫勒”，复合名“赫勒柱”可沿用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:192",
+      "evidence_rows": [
+        2321
+      ],
+      "source_excerpt": "Heler Pole",
+      "reason": "确认独特宝物名；译名“赫勒柱”保留，与 Heler 基名一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2321 将 Heler Pole 列为从敌人手中夺来的 treasure。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Heler Pole”译作“赫勒柱”，Heler 基名与 e5 一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "宝物归入“物品”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Heler 的“赫勒”保持词族一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:52",
+      "evidence_rows": [
+        1848,
+        23806,
+        28598,
+        33419
+      ],
+      "source_excerpt": "Mount Kero Fin",
+      "reason": "确认圣山/女神专名；译名统一为“凯罗芬”，并补明其山与女神双重身份。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "1848/23806/33419 表明其为圣山、奥兰斯之母并又称冬顶峰；28598 记其生育女神面。原 term_reason 仅述可探索地点，已补明。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "多数候选作“凯罗芬”，与读音 KERR-oh FIN 对应；不取“凯罗峰”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为圣山归入“地名”合法，term_reason 已注明兼为女神。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批 Kero Fin 各用法统一作“凯罗芬”，山地与神名不另造译名。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:46",
+    "terms:137",
+    "terms:174",
+    "terms:852",
+    "terms:48",
+    "terms:192",
+    "terms:52"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

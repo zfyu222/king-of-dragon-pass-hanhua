@@ -1,0 +1,425 @@
+{
+  "review_complete": true,
+  "review_summary": "已审阅 e1-e12：专名音译、氏族类型术语及物品名译名总体成立；将 e1、e2、e4、e7、e9、e11、e12 的 term_reason 收窄为证据行可证内容。审计 f1-f3 均为同一术语单复数变体共用译名，不是不同名称冲突。",
+  "acknowledged_findings": [
+    "F0396",
+    "F0397",
+    "F0398"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "原文第4758行随机姓名分支中的一个专名，作为姓名音译为‘泽尼克尤夫’。"
+      },
+      "reason": "原 term_reason 提到未在本条证据行出现的‘山丘守护灵’；改为仅依据4758的随机姓名分支说明。",
+      "evidence_rows": [
+        4758
+      ],
+      "table": "terms",
+      "index": 280
+    },
+    {
+      "patch": {
+        "term_reason": "氏族类型，决定可执行的仪式与战争魔法，并影响农业限制。"
+      },
+      "reason": "原 term_reason 的 Peace/Balanced 对举不在本条证据行；改为依据30294、30338、33771可证的机制。",
+      "evidence_rows": [
+        30294,
+        30338,
+        33771
+      ],
+      "table": "terms",
+      "index": 281
+    },
+    {
+      "patch": {
+        "term_reason": "氏族类型；可分配更多魔法给作物、牧群与秘仪，且作为和平氏族仍可能进行突袭。"
+      },
+      "reason": "原 term_reason 的 War clan 对举不在本条证据行；改为依据4562、30322可证的用法。",
+      "evidence_rows": [
+        4562,
+        30322
+      ],
+      "table": "terms",
+      "index": 282
+    },
+    {
+      "patch": {
+        "term_reason": "氏族类型；原文第4563行以‘Balanced clan’与‘Peace clan’对比使用。"
+      },
+      "reason": "原 term_reason 的 War clan 对举不在本条证据行；改为依据4563可证的对比关系。",
+      "evidence_rows": [
+        4563
+      ],
+      "table": "terms",
+      "index": 283
+    },
+    {
+      "patch": {
+        "term_reason": "游戏中的基本社会与政治单位，文中涉及氏族法律、首领、成员与氏族声望。"
+      },
+      "reason": "原 term_reason 提到证据行未出现的 ring、tula、血统等机制；收窄为记录可证的用法。",
+      "evidence_rows": [
+        4433,
+        33665
+      ],
+      "table": "terms",
+      "index": 284
+    },
+    {
+      "patch": {
+        "term_reason": "矮人赠予的具名项链；原文与一箱银子和宝石并列为赠礼。"
+      },
+      "reason": "原 term_reason 提到‘能杀精灵’等证据行未出现的内容；改为5385可证的赠予关系。",
+      "evidence_rows": [
+        5385
+      ],
+      "table": "terms",
+      "index": 289
+    },
+    {
+      "patch": {
+        "term_reason": "原文第32488行的物品名，按宝石名‘虎眼石’译作‘虎眼石项链’。"
+      },
+      "reason": "原 term_reason 的‘宝藏列表’不在证据行原文中；改为仅依据32488的物品名说明。",
+      "evidence_rows": [
+        32488
+      ],
+      "table": "terms",
+      "index": 1087
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:280",
+      "evidence_rows": [
+        4758
+      ],
+      "source_excerpt": "Zenik Youf",
+      "reason": "随机姓名分支中的专名；音译与条目一致，另在 edits 收窄未由证据行支持的 term_reason。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文第4758行的随机姓名分支包含‘Zenik Youf’，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "按音译作‘泽尼克尤夫’，不加间隔号，符合专名音译要求。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为姓名专名归入 terms 的‘其他’类，可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现同形普通词或其他译名冲突；作为专名保持统一音译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:281",
+      "evidence_rows": [
+        4564
+      ],
+      "source_excerpt": "War clan",
+      "reason": "战争氏族为游戏氏族类型；术语义项成立，term_reason 另在 edits 收窄为证据可证机制。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文第4564行包含‘War clan’，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作‘战争氏族’，与 War clan 的氏族类型义相符。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "第4564行将其作为氏族类型使用，归入‘组织’合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与复数形式 War clans 共用‘战争氏族’；审计 f1 的同译来自同一术语单复数，不构成不同名称冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:762",
+      "evidence_rows": [
+        32933
+      ],
+      "source_excerpt": "War clans",
+      "reason": "战争氏族的复数变体；与单数同译，义项成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文第32933行包含‘War clans’，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作‘战争氏族’，保留与单数变体一致的术语译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "第32933行说明其可分配更多氏族魔法给战争、农民可动员，属氏族类型，归入‘组织’合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 War clan 为单复数同词族，共用‘战争氏族’不冲突；审计 f1 已核对。"
+        }
+      }
+    },
+    {
+      "ref": "terms:282",
+      "evidence_rows": [
+        4562
+      ],
+      "source_excerpt": "Peace clan",
+      "reason": "和平氏族为游戏氏族类型；术语义项成立，term_reason 另在 edits 收窄为证据可证内容。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文第4562行‘Even a Peace clan must raid’包含‘Peace clan’，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作‘和平氏族’，符合作为氏族类型的用法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "第4562行以 Peace clan 指氏族类型，归入‘组织’合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与复数变体 Peace clans 共用‘和平氏族’；审计 f2 的同译来自同一术语单复数，不是不同名称冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:358",
+      "evidence_rows": [
+        8556
+      ],
+      "source_excerpt": "Hills of Peace",
+      "reason": "地名专名；译作‘和平丘陵’，无冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文第8556行‘driven out of the Hills of Peace’包含完整地名，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作‘和平丘陵’，保留 Hills of Peace 的地名结构，简洁可读。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "第8556行明确为 Chinkis Mor 等被逐出的地名，归入‘地名’正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现同形普通词或其他译名冲突；作为地名保持统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:763",
+      "evidence_rows": [
+        32933
+      ],
+      "source_excerpt": "Peace clans",
+      "reason": "和平氏族的复数变体；与单数同译，义项成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文第32933行包含‘Peace clans’，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作‘和平氏族’，与单数变体保持一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "第32933行说明其可分配更多氏族魔法给作物与畜群，属氏族类型，归入‘组织’合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Peace clan 为单复数同词族，共用‘和平氏族’不冲突；审计 f2 已核对。"
+        }
+      }
+    },
+    {
+      "ref": "terms:283",
+      "evidence_rows": [
+        4563
+      ],
+      "source_excerpt": "Balanced clan",
+      "reason": "平衡氏族为游戏氏族类型；术语义项成立，term_reason 另在 edits 收窄为证据可证对比。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文第4563行‘than a Balanced clan’包含‘Balanced clan’，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作‘平衡氏族’，符合作为氏族类型的用法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "第4563行以 Balanced clan 与 Peace clan 对比，指氏族类型，归入‘组织’合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与复数变体 Balanced clans 共用‘平衡氏族’；审计 f3 的同译来自同一术语单复数，不是不同名称冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:764",
+      "evidence_rows": [
+        32933
+      ],
+      "source_excerpt": "Balanced clans",
+      "reason": "平衡氏族的复数变体；与单数同译，义项成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文第32933行‘Balanced clans are in the middle’包含‘Balanced clans’，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作‘平衡氏族’，与单数变体保持一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "第32933行将其列在战争与和平氏族之间，属氏族类型，归入‘组织’合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Balanced clan 为单复数同词族，共用‘平衡氏族’不冲突；审计 f3 已核对。"
+        }
+      }
+    },
+    {
+      "ref": "terms:284",
+      "evidence_rows": [
+        4433
+      ],
+      "source_excerpt": "our clan",
+      "reason": "clan 是游戏核心社会单位；术语义项成立，term_reason 另在 edits 收窄为记录可证内容。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文第4433行‘laws of our clan’包含‘clan’，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作‘氏族’，符合游戏核心社会与政治单位的常用译法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "第4433行讨论氏族法律与首领，归入‘组织’合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "在全批 clan leaders、clan members 等搭配中均宜译‘氏族’，未见过度具体化冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:287",
+      "evidence_rows": [
+        5028
+      ],
+      "source_excerpt": "Kodigvari",
+      "reason": "Kodigvari 为 Kodig 的部族专名；音译统一，类别成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文第5028行‘His tribe, the Kodigvari’包含‘Kodigvari’，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "按音译作‘柯迪格瓦里’，不加间隔号，符合部族专名音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "第5028行明确称其为 Kodig 的 tribe，归入‘组织’合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现同形普通词或其他译名冲突；部族专名保持统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:289",
+      "evidence_rows": [
+        5385
+      ],
+      "source_excerpt": "Necklace of Axes",
+      "reason": "具名物品；译名成立，term_reason 另在 edits 删除证据行未出现的‘能杀精灵’等细节。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文第5385行‘the Necklace of Axes’包含完整物品名，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作‘斧之项链’，保留 Necklace of Axes 的具名物品结构，简洁可读。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "第5385行将其列为矮人赠予的具名物品，归入‘物品’正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Tiger's Eye Necklace 同属项链类物品，但名称与译名不同，不构成共用译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1087",
+      "evidence_rows": [
+        32488
+      ],
+      "source_excerpt": "Tiger's Eye Necklace",
+      "reason": "虎眼石项链为物品名；译名成立，term_reason 另在 edits 收窄为证据可证内容。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文第32488行完整出现‘Tiger's Eye Necklace’，与 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作‘虎眼石项链’，按宝石名‘虎眼石’处理，符合物品名译法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "第32488行为物品名，归入‘物品’正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Necklace of Axes 同属项链类但英文名称不同，译名未混用；作为普通宝藏物品用 reference 可接受。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:280",
+    "terms:281",
+    "terms:762",
+    "terms:282",
+    "terms:358",
+    "terms:763",
+    "terms:283",
+    "terms:764",
+    "terms:284",
+    "terms:287",
+    "terms:289",
+    "terms:1087"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

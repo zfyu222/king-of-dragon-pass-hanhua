@@ -1,0 +1,372 @@
+{
+  "review_complete": true,
+  "review_summary": "已审校 e1-e12 共 12 条；确认 f1 中 The Sword Story 与 Sword Story 同指剑神话，仅差冠词，共用“剑的故事”可接受；将 e4 的“日光祝福”修正为“太阳祝福”，并收窄 e12 term_reason 中无本批原文依据的“优先治疗领袖”。无隔离、新增或 allow_no_match。",
+  "acknowledged_findings": [
+    "F0425"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "太阳祝福",
+        "term_reason": "埃尔马尔的太阳祝福；原文称因圣时恶兆需求此祝福。"
+      },
+      "reason": "Sun blessing 指太阳神埃尔马尔的太阳祝福，“日光祝福”把太阳窄化为光线；统一为“太阳祝福”。",
+      "evidence_rows": [
+        30421
+      ],
+      "table": "terms",
+      "index": 732
+    },
+    {
+      "patch": {
+        "term_reason": "原文按钮用于选择查拉娜阿罗伊的治疗祝福；若没有伤员可直接关闭对话框。"
+      },
+      "reason": "原 term_reason 的“优先治疗领袖”无本批原文依据；按 32982 收窄为选择治疗祝福及无伤员退出。",
+      "evidence_rows": [
+        32982
+      ],
+      "table": "terms",
+      "index": 761
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:729",
+      "evidence_rows": [
+        30049,
+        30502,
+        31008
+      ],
+      "source_excerpt": "Uralda's Calf Blessing is crucial this year, if we want to keep up the numbers of our herds.",
+      "reason": "Calf Blessing 确为乌拉尔达的祝福，译名“牛犊祝福”与 31008 的 UI 标签及 30502 的祈使句一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30049、30502、31008 均以 Calf Blessing 指乌拉尔达的牛犊祝福，未出现异义。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“牛犊祝福”直译 Calf Blessing；30502 的 Ask Uralda for the Calf Blessing 支持该短名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福为可祈求的游戏能力/技能条目，category_path=技能适用。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与其他祝福条目统一采用“X祝福”，Uralda 统一为乌拉尔达。"
+        }
+      }
+    },
+    {
+      "ref": "terms:730",
+      "evidence_rows": [
+        30427,
+        30985
+      ],
+      "source_excerpt": "Ask Ernalda for her Swine blessing, for many and fat little piglets.",
+      "reason": "Swine blessing 是厄纳尔达的猪群祝福，译名“猪群祝福”能覆盖 30427 的肥壮小猪语境。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30427 与 30985 均作 Swine blessing/Swine Blessing，指厄纳尔达的猪类祝福。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Swine 作猪群解，“猪群祝福”比“猪只祝福”更适合作为祝福名，且与 many and fat little piglets 相符。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福属游戏能力/技能类术语，category_path=技能可用。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与牛犊祝福、降雨祝福等保持“X祝福”结构；大小写差异不另立译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:731",
+      "evidence_rows": [
+        30494
+      ],
+      "source_excerpt": "Orlanth's Rain blessing will counteract the bad omen for rain for the crops.",
+      "reason": "Rain blessing 指奥兰斯的降雨祝福，译名与抵消作物降雨恶兆的语境一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30494 明确为 Orlanth's Rain blessing，用于抵消作物降雨恶兆。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“降雨祝福”直译 Rain blessing，语义与作物降雨语境相符。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福属游戏能力/技能类术语，category_path=技能适用。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Orlanth 统一为奥兰斯；雨类祝福用“降雨祝福”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:732",
+      "evidence_rows": [
+        30421
+      ],
+      "source_excerpt": "We must ask for Elmal's Sun blessing this year, with the bad omens we heard last sacred time.",
+      "reason": "源文为 Elmal's Sun blessing；将“日光祝福”修正为“太阳祝福”，避免把太阳神祝福窄化为光线。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30421 明确为 Elmal's Sun blessing，是埃尔马尔的太阳祝福。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "“日光祝福”偏重光线；Sun blessing 指太阳神埃尔马尔的太阳祝福，已改为“太阳祝福”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福属游戏能力/技能类术语，category_path=技能适用。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "改为“太阳祝福”后与“降雨祝福”“牛犊祝福”等“X祝福”结构一致，Sun 统一为太阳。"
+        }
+      }
+    },
+    {
+      "ref": "terms:738",
+      "evidence_rows": [
+        32888
+      ],
+      "source_excerpt": "The Healing of Orlanth, when the merciful goddess Chalana Arroy joined Orlanth’s tribe.",
+      "reason": "Healing of Orlanth 是查拉娜阿罗伊加入奥兰斯部族的事件名，译作“奥兰斯之愈”并归入其他。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32888 说明该名指查拉娜阿罗伊加入奥兰斯部族时的疗愈事件。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“奥兰斯之愈”作为事件标题简洁可读，保留专名性质。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "这是神话事件而非技能，category_path=其他合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Orlanth 统一为奥兰斯；专名事件用“奥兰斯之愈”，与普通游戏义 Healing 按语境区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:742",
+      "evidence_rows": [
+        32895
+      ],
+      "source_excerpt": "When Roitina, lady of dance, first did the Clan-making Dance.",
+      "reason": "Clan-making Dance 是罗伊蒂娜首跳的立族之舞，译名与技能分类均成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32895 明确为罗伊蒂娜首先跳的 Clan-making Dance。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“立族之舞”对应 Clan-making Dance，保留舞蹈专名和创建氏族之意。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "此名为特定舞蹈/仪式能力，category_path=技能可用。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Clan-making 统一为立族；与“缔造风暴部族”等部族创建词按语境区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:743",
+      "evidence_rows": [
+        32973
+      ],
+      "source_excerpt": "Click “The Sword Story.”",
+      "reason": "The Sword Story 是 Lore 中可点击的剑神话条目；与 f1 所涉 Sword Story 同指一神话，共用“剑的故事”可接受。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32973 要求点击“The Sword Story”查阅神话，确认其为 Lore 条目名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“剑的故事”直译 The Sword Story，作为条目名简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "这是可查阅的神话故事条目，category_path=其他合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f1 所涉 Sword Story 与本书同一神话，仅差冠词，共用“剑的故事”不构成冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:748",
+      "evidence_rows": [
+        30765,
+        31956,
+        32904
+      ],
+      "source_excerpt": "Ves Venna, Warlord of the Ice Tribe.",
+      "reason": "Ice Tribe 是维斯文纳统辖的部族，译名“冰部族”与组织分类一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30765、31956、32904 均以 Ice Tribe 指维斯文纳所属部族。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“冰部族”直译 Ice Tribe，保留部族专名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该词指部族组织，category_path=组织正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Tribe 统一为部族，与风暴部族等一致；Ves Venna 统一为维斯文纳。"
+        }
+      }
+    },
+    {
+      "ref": "terms:752",
+      "evidence_rows": [
+        30987,
+        32957
+      ],
+      "source_excerpt": "the Battle Luck blessing will be chosen automatically",
+      "reason": "Battle Luck 是 Humakt 神庙的战斗祝福，译名“战斗好运”并归入技能类祝福。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30987 为标签，32957 说明建造时自动选择 Battle Luck blessing。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“战斗好运”对应 Battle Luck，作为祝福短名可读。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福属游戏能力/技能类术语，category_path=技能适用。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与希望祝福等统一使用短名，未发现同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:753",
+      "evidence_rows": [
+        33083
+      ],
+      "source_excerpt": "Or sacrifice for Chalana Arroy’s Hope blessing.",
+      "reason": "Hope blessing 是查拉娜阿罗伊的希望祝福，可改善氏族情绪，译名与技能分类通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33083 说明可通过献祭获得 Chalana Arroy’s Hope blessing 以改善氏族情绪。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“希望祝福”直译 Hope blessing，语义明确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福属游戏能力/技能类术语，category_path=技能适用。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Chalana Arroy 统一为查拉娜阿罗伊；与祝福类条目结构一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:758",
+      "evidence_rows": [
+        32943
+      ],
+      "source_excerpt": "“Favors Due”",
+      "reason": "Favors Due 是关系滑块标签，表示别族欠下的人情，译名“应收人情”方向正确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32943 要求在关系界面把滑块调到“Favors Due”居中，指应收人情。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“应收人情”准确表达 favors due（他人欠你的人情），符合滑块标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "这是关系界面机制标签，category_path=其他合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与相关 Tribal Favors“部族恩惠”区分；此处强调应收方向，未误作付出。"
+        }
+      }
+    },
+    {
+      "ref": "terms:761",
+      "evidence_rows": [
+        30978,
+        32982
+      ],
+      "source_excerpt": "Click the “Healing” button",
+      "reason": "Healing 是选择治疗祝福的按钮；30978 为独立标签，32982 为引号内按钮引用；已修正 term_reason 中无原文支持的“优先治疗领袖”。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "32982 仅说明按钮用于选择治疗祝福及无伤员可退出，未提优先治疗领袖；已据此收窄 term_reason。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“治疗”对应 Healing 祝福按钮，与“疗伤”候选义近；统一采用较短的治疗。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "这是祝福选择按钮/游戏能力术语，category_path=技能可用。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与“奥兰斯之愈”事件名按语境区分；30978 与 32982 均支持同一治疗义。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:729",
+    "terms:730",
+    "terms:731",
+    "terms:732",
+    "terms:738",
+    "terms:742",
+    "terms:743",
+    "terms:748",
+    "terms:752",
+    "terms:753",
+    "terms:758",
+    "terms:761"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

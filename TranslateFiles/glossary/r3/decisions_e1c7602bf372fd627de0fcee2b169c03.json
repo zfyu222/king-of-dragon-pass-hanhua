@@ -1,0 +1,45 @@
+{
+  "review_complete": true,
+  "review_summary": "完成 e1 的术语审校：Humakt 为格洛兰萨神祇专名，原文明确称其为 the god of Death / Lord of Death，并兼有战争、誓言与荣誉职能；确认标准译名为“胡马科特”，分类“其他”合法，proper_name 下 required 正确，候选音译变体统一到该译名，无新增、隔离或修订项。",
+  "acknowledged_findings": [],
+  "edits": [],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:5",
+      "evidence_rows": [
+        33363,
+        33365,
+        18418,
+        20521
+      ],
+      "source_excerpt": "Humakt (HOO-makt)",
+      "reason": "Humakt 为格洛兰萨神祇专名，原文多称为 the god of Death / Lord of Death，兼有战争、誓言与荣誉职能；应保留 proper_name 与 required，并统一音译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33363 原文为 'Humakt (HOO-makt)'，源名 Humakt 明确；33365 亦称其自绝亲族后仍为最致命战神。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "按 33363 标注读音 HOO-makt 音译，标准译名取“胡马科特”；18418 'Humakt, who is the god of death.' 确认其死亡神身份，译名可对应。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "18418 与 20521 显示其为死亡之神/奥兰斯之弟；作为神祇专名归入 terms 的“其他”合法，且 proper_name 下 enforcement=required 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "全部候选均指同一 Humakt；33363 提供读音，33365 说明其神格，故统一为“胡马科特”，不采用胡马卡特、胡马克特、胡马特等音译变体分列。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:5"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

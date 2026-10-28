@@ -1,0 +1,408 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对全部 9 个 non_translate 条目，均为独立出现的内部标识符；为每条补充 whole_record、大小写敏感的保护范围，避免将 scene、R431、News 等片段误设为全局禁翻。无新增、隔离或允许无匹配项。",
+  "acknowledged_findings": [
+    "F0007",
+    "F0008",
+    "F0009",
+    "F0206",
+    "F0207",
+    "F0236",
+    "F0237",
+    "F0238",
+    "F0239"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文仅以完整场景资源标识 sceneR431 出现，应仅保护完整记录，不将 scene 或 R431 片段扩展到全局禁翻。"
+        }
+      },
+      "reason": "补充适用域以回应缺少范围的问题；该条仅在完整记录出现时保留原文。",
+      "evidence_rows": [
+        24705
+      ],
+      "table": "non_translate",
+      "index": 298
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文仅以完整场景资源标识 sceneR432 出现，应仅保护完整记录，不将 scene 或 R432 片段扩展到全局禁翻。"
+        }
+      },
+      "reason": "补充适用域以回应缺少范围的问题；该条仅在完整记录出现时保留原文。",
+      "evidence_rows": [
+        24737
+      ],
+      "table": "non_translate",
+      "index": 299
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文仅以完整场景资源标识 sceneR438 出现，应仅保护完整记录，不将 scene 或 R438 片段扩展到全局禁翻。"
+        },
+        "term_reason": "场景资源标识符，运行时使用，不翻译。"
+      },
+      "reason": "补充适用域及运行标识依据；该条仅在完整记录出现时保留原文。",
+      "evidence_rows": [
+        24959
+      ],
+      "table": "non_translate",
+      "index": 346
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文仅以完整场景资源标识 sceneR441 出现，应仅保护完整记录，不将 scene 或 R441 片段扩展到全局禁翻。"
+        },
+        "term_reason": "场景资源标识符，运行时使用，不翻译。"
+      },
+      "reason": "补充适用域及运行标识依据；该条仅在完整记录出现时保留原文。",
+      "evidence_rows": [
+        25087
+      ],
+      "table": "non_translate",
+      "index": 347
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文仅以完整场景资源标识 sceneR460 出现，应仅保护完整记录，不将 scene 或 R460 片段扩展到全局禁翻。"
+        },
+        "term_reason": "场景资源标识符，运行时使用，不翻译。"
+      },
+      "reason": "补充适用域及运行标识依据；该条仅在完整记录出现时保留原文。",
+      "evidence_rows": [
+        25362
+      ],
+      "table": "non_translate",
+      "index": 348
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文仅以完整场景资源标识 sceneR460b 出现，应仅保护完整记录，不将 scene、R460 或 b 片段扩展到全局禁翻。"
+        },
+        "term_reason": "场景资源标识符，运行时使用，不翻译。"
+      },
+      "reason": "补充适用域及运行标识依据；该条仅在完整记录出现时保留原文。",
+      "evidence_rows": [
+        25424
+      ],
+      "table": "non_translate",
+      "index": 350
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文仅以完整 CamelCase 事件资源标识 GoExploringNews 出现，应仅保护完整记录，不将 Go、Exploring 或 News 等片段扩展到全局禁翻。"
+        }
+      },
+      "reason": "补充适用域以回应缺少范围的问题；该条仅在完整记录出现时保留原文。",
+      "evidence_rows": [
+        900
+      ],
+      "table": "non_translate",
+      "index": 7
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文仅以完整 CamelCase 事件资源标识 MissionNews 出现，应仅保护完整记录，不将 Mission 或 News 等片段扩展到全局禁翻。"
+        }
+      },
+      "reason": "补充适用域以回应缺少范围的问题；该条仅在完整记录出现时保留原文。",
+      "evidence_rows": [
+        956
+      ],
+      "table": "non_translate",
+      "index": 8
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文仅以完整 CamelCase 内部判定标识 CouldBeGood 出现，应仅保护完整记录，不将 Could、Be 或 Good 等常见词片段扩展到全局禁翻。"
+        }
+      },
+      "reason": "补充适用域以回应缺少范围的问题；该条仅在完整记录出现时保留原文。",
+      "evidence_rows": [
+        1042
+      ],
+      "table": "non_translate",
+      "index": 9
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:298",
+      "evidence_rows": [
+        24705
+      ],
+      "source_excerpt": "sceneR431",
+      "reason": "整条为场景资源标识，保留原文；保护范围限定为完整记录，避免片段全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 24705 原文为 sceneR431，整条是内部场景标识，无正文句子成分。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不进行中文翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "应继续归为 non_translate；通过 edits 限定 applicability 为 whole_record、case_sensitive=true，仅保护完整场景标识。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 sceneR432、sceneR438、sceneR441、sceneR460、sceneR460b 等场景标识一致，按整条原文保留且不扩展到 scene 或编号片段。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:299",
+      "evidence_rows": [
+        24737
+      ],
+      "source_excerpt": "sceneR432",
+      "reason": "整条为场景资源标识，保留原文；保护范围限定为完整记录，避免片段全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 24737 原文为 sceneR432，整条是内部场景标识，无正文句子成分。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不进行中文翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "应继续归为 non_translate；通过 edits 限定 applicability 为 whole_record、case_sensitive=true，仅保护完整场景标识。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 sceneR431、sceneR438、sceneR441、sceneR460、sceneR460b 等场景标识一致，按整条原文保留且不扩展到 scene 或编号片段。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:346",
+      "evidence_rows": [
+        24959
+      ],
+      "source_excerpt": "sceneR438",
+      "reason": "整条为场景资源标识，保留原文；保护范围限定为完整记录，避免片段全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 24959 原文为 sceneR438，整条是内部场景标识，无正文句子成分。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不进行中文翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "应继续归为 non_translate；通过 edits 补充 term_reason 并限定 applicability 为 whole_record、case_sensitive=true，仅保护完整场景标识。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 sceneR431、sceneR432、sceneR441、sceneR460、sceneR460b 等场景标识一致，按整条原文保留且不扩展到 scene 或编号片段。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:347",
+      "evidence_rows": [
+        25087
+      ],
+      "source_excerpt": "sceneR441",
+      "reason": "整条为场景资源标识，保留原文；保护范围限定为完整记录，避免片段全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 25087 原文为 sceneR441，整条是内部场景标识，无正文句子成分。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不进行中文翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "应继续归为 non_translate；通过 edits 补充 term_reason 并限定 applicability 为 whole_record、case_sensitive=true，仅保护完整场景标识。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 sceneR431、sceneR432、sceneR438、sceneR460、sceneR460b 等场景标识一致，按整条原文保留且不扩展到 scene 或编号片段。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:348",
+      "evidence_rows": [
+        25362
+      ],
+      "source_excerpt": "sceneR460",
+      "reason": "整条为场景资源标识，保留原文；保护范围限定为完整记录，避免片段全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 25362 原文为 sceneR460，整条是内部场景标识，无正文句子成分。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不进行中文翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "应继续归为 non_translate；通过 edits 补充 term_reason 并限定 applicability 为 whole_record、case_sensitive=true，仅保护完整场景标识。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 sceneR431、sceneR432、sceneR438、sceneR441、sceneR460b 等场景标识一致，按整条原文保留且不扩展到 scene 或编号片段。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:350",
+      "evidence_rows": [
+        25424
+      ],
+      "source_excerpt": "sceneR460b",
+      "reason": "整条为场景资源标识，保留原文；保护范围限定为完整记录，避免片段全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 25424 原文为 sceneR460b，整条是内部场景标识，无正文句子成分。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不进行中文翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "应继续归为 non_translate；通过 edits 补充 term_reason 并限定 applicability 为 whole_record、case_sensitive=true，仅保护完整场景标识。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 sceneR431、sceneR432、sceneR438、sceneR441、sceneR460 等场景标识一致，按整条原文保留且不扩展到 scene、R460 或 b 片段。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:7",
+      "evidence_rows": [
+        900
+      ],
+      "source_excerpt": "GoExploringNews",
+      "reason": "整条为 CamelCase 事件资源标识，保留原文；保护范围限定为完整记录，避免常见词片段全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 900 原文为 GoExploringNews，整条是内部事件资源标识，无正文句子成分。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不进行中文翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "应继续归为 non_translate；通过 edits 限定 applicability 为 whole_record、case_sensitive=true，仅保护完整事件资源标识。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 MissionNews、CouldBeGood 同属 CamelCase 内部标识，均整条保留，不将 Go、News 等常见片段设为全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:8",
+      "evidence_rows": [
+        956
+      ],
+      "source_excerpt": "MissionNews",
+      "reason": "整条为 CamelCase 事件资源标识，保留原文；保护范围限定为完整记录，避免常见词片段全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 956 原文为 MissionNews，整条是内部事件资源标识，无正文句子成分。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不进行中文翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "应继续归为 non_translate；通过 edits 限定 applicability 为 whole_record、case_sensitive=true，仅保护完整事件资源标识。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 GoExploringNews、CouldBeGood 同属 CamelCase 内部标识，均整条保留，不将 Mission、News 等常见片段设为全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:9",
+      "evidence_rows": [
+        1042
+      ],
+      "source_excerpt": "CouldBeGood",
+      "reason": "整条为 CamelCase 内部判定标识，保留原文；保护范围限定为完整记录，避免常见词片段全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1042 原文为 CouldBeGood，整条是内部判定标识，无正文句子成分。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不进行中文翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "应继续归为 non_translate；通过 edits 限定 applicability 为 whole_record、case_sensitive=true，仅保护完整内部判定标识。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 GoExploringNews、MissionNews 同属 CamelCase 内部标识，均整条保留，不将 Could、Good 等常见词片段设为全局禁翻。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:298",
+    "non_translate:299",
+    "non_translate:346",
+    "non_translate:347",
+    "non_translate:348",
+    "non_translate:350",
+    "non_translate:7",
+    "non_translate:8",
+    "non_translate:9"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

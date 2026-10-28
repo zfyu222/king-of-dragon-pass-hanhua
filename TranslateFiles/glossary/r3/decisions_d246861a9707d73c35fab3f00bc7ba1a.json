@@ -1,0 +1,443 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条复核 e1-e12 的原文、译名、分类与一致性；确认 e1、e2、e5、e12 等条目，修正 e3、e4、e6-e10 中缺少原文依据的 term_reason，并将 e11 的 Cat Clan 统一为“猫氏族”。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "原文中以大写称号指称承担旅行职责者；本句强调其应知晓所有奥兰斯人所在之地。"
+      },
+      "reason": "原 term_reason 将称号直接指认为伊萨里斯，但 26335 未出现该名；改为原文可证的旅行职责称号。",
+      "evidence_rows": [
+        26335
+      ],
+      "table": "terms",
+      "index": 636
+    },
+    {
+      "patch": {
+        "term_reason": "原文中兰科尔米对对方的讥称，讽刺其话多而少实义。"
+      },
+      "reason": "26348/26365 只显示兰科尔米以该称号讥讽对方，未在本行点名伊萨里斯；去除无据指认。",
+      "evidence_rows": [
+        26348,
+        26365
+      ],
+      "table": "terms",
+      "index": 637
+    },
+    {
+      "patch": {
+        "term_reason": "原文提及的具名宝物，由 \\x01@K 带回。"
+      },
+      "reason": "26300 仅载明带回 Humakt’s Helm，未说明献祭增益；移除无据机制描述。",
+      "evidence_rows": [
+        26300
+      ],
+      "table": "terms",
+      "index": 645
+    },
+    {
+      "patch": {
+        "term_reason": "原文提及的具名宝物，由 \\x01@K 带回。"
+      },
+      "reason": "26303 仅载明带回 Humakt’s Sword，未说明以死亡领主为目标的袭击增益；移除无据机制描述。",
+      "evidence_rows": [
+        26303
+      ],
+      "table": "terms",
+      "index": 646
+    },
+    {
+      "patch": {
+        "term_reason": "原文提及的具名宝物，作为 \\x05 获得的宝物出现。"
+      },
+      "reason": "26309 仅载明获得 Humakt’s Shield，未说明保护图拉；移除无据机制描述。",
+      "evidence_rows": [
+        26309
+      ],
+      "table": "terms",
+      "index": 647
+    },
+    {
+      "patch": {
+        "term_reason": "原文中的混沌敌人名，能使旧伤溃烂；33934 以 her 指称。"
+      },
+      "reason": "26760 只说明其使旧伤溃烂，未给出“以疮为力量来源”；33934 可证女性指称。",
+      "evidence_rows": [
+        26760,
+        33934
+      ],
+      "table": "terms",
+      "index": 651
+    },
+    {
+      "patch": {
+        "term_reason": "原文中的混沌变形怪物名，曾伪装成埃尔马尔旧爱，又称恶问者、碎魂者。"
+      },
+      "reason": "33937/33938 可证其千变、伪装成旧爱及别名；移除无据的“先知/皇帝”和“虚无”表述。",
+      "evidence_rows": [
+        33937,
+        33938
+      ],
+      "table": "terms",
+      "index": 652
+    },
+    {
+      "patch": {
+        "recommended_translation": "猫氏族",
+        "term_reason": "原文中由因金统领的氏族名，后加入风暴部族。"
+      },
+      "reason": "Cat Clan 是氏族而非泛称种族；候选 34334 亦作“猫氏族”，统一为“猫氏族”。",
+      "evidence_rows": [
+        26922,
+        26926,
+        34334
+      ],
+      "table": "terms",
+      "index": 655
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:630",
+      "evidence_rows": [
+        25934,
+        33842
+      ],
+      "source_excerpt": "The two of them fight at the Shrieking Falls.",
+      "reason": "原文明确为 Storm Bull 与 Ragnaglar 交战的地点，译名与分类一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25934 原句直接出现 the Shrieking Falls，为具名地点。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“尖啸瀑布”对应 shrieking falls，且两个候选均同译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=地名，与原文地点用法相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "25934/33842 均指同一地点，候选译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:632",
+      "evidence_rows": [
+        33972
+      ],
+      "source_excerpt": "The seed was called Adborl, and it was a burrowing thing.",
+      "reason": "Adborl 是具名掘地种子，译名按音译统一，归入物品合理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33972 明载 The seed was called Adborl，且描述其为 burrowing thing。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“阿德博尔”为 Adborl 的音译，候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=物品，符合种子作为具体宝物/道具的用法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "26039/33972/33983 均指向同一具名种子，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:636",
+      "evidence_rows": [
+        26335
+      ],
+      "source_excerpt": "as the Travelling One",
+      "reason": "保留“旅者”作为旅行职责称号，修正 term_reason 中超出原文的指认。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "26335 仅见 the Travelling One 称号，未点名伊萨里斯；已修正 term_reason。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“旅者”简洁对应 Travelling One，符合称号感。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=身份，符合称号/职责称谓。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅有该条候选，译名无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:637",
+      "evidence_rows": [
+        26348,
+        26365
+      ],
+      "source_excerpt": "Talk-Too-Much God",
+      "reason": "保留“多嘴神”作为讥称译名，修正 term_reason 中无原文依据的受讥者指认。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "26348/26365 仅显示兰科尔米以此称号讥讽对方，未点名伊萨里斯；已修正。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“多嘴神”保留 god 的称谓并传达 talk too much 的讥讽语气。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=身份，符合神祇讥称。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅有该条候选，译名无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:644",
+      "evidence_rows": [
+        26419,
+        26423,
+        32396
+      ],
+      "source_excerpt": "a Board of Nails",
+      "reason": "Board of Nails 为具名宝物，能驱退恶念，译名“钉板”简洁一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26423 明载 Digging Stick People 赠出 last treasure, a Board of Nails，并称可 ward off bad thoughts。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“钉板”对应 Board of Nails，保留具名宝物感。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=物品，符合宝物描述。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选译名均为“钉板”；32396 独立列表同形。"
+        }
+      }
+    },
+    {
+      "ref": "terms:645",
+      "evidence_rows": [
+        26300
+      ],
+      "source_excerpt": "Humakt’s Helm",
+      "reason": "保留“胡马特头盔”译名，修正 term_reason 中未见于原文的机制描述。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "26300 仅说带回 Humakt’s Helm，未及献祭增益；已修正 term_reason。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“胡马特头盔”准确对应 Humakt’s Helm。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=物品，符合具名宝物。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Humakt’s Sword/Shield 共用“胡马特”核心译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:646",
+      "evidence_rows": [
+        26303
+      ],
+      "source_excerpt": "Humakt’s Sword",
+      "reason": "保留“胡马特之剑”译名，修正 term_reason 中未见于原文的机制描述。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "26303 仅说带回 Humakt’s Sword，未及死亡领主袭击增益；已修正 term_reason。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“胡马特之剑”准确对应 Humakt’s Sword。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=物品，符合具名宝物。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Humakt’s Helm/Shield 共用“胡马特”核心译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:647",
+      "evidence_rows": [
+        26309
+      ],
+      "source_excerpt": "Humakt’s Shield",
+      "reason": "保留“胡马特之盾”译名，修正 term_reason 中未见于原文的机制描述。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "26309 仅说获得 Humakt’s Shield，未及保护图拉；已修正 term_reason。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“胡马特之盾”准确对应 Humakt’s Shield。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=物品，符合具名宝物。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Humakt’s Helm/Sword 共用“胡马特”核心译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:651",
+      "evidence_rows": [
+        26760,
+        33934
+      ],
+      "source_excerpt": "the Author of Sores",
+      "reason": "保留“溃疮之作者”作为混沌敌人名，修正 term_reason 中无依据的力量来源描述。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "26760 仅说明其令旧伤溃烂，33934 以 her 指称；已移除未给出的“以疮为力量来源”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“溃疮之作者”对应 Author of Sores，作为敌名可辨识。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他，符合混沌敌人专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选译名一致，女性指称不影响译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:652",
+      "evidence_rows": [
+        33937,
+        33938
+      ],
+      "source_excerpt": "The Teller of Lies",
+      "reason": "保留“谎言讲述者”译名，修正 term_reason 中未见于原文的“先知/皇帝/虚无”表述。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "33937/33938 支持变形、伪装旧爱与别名；已移除未给出的身份与“虚无”表述。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“谎言讲述者”直接对应 Teller of Lies，符合混沌怪物名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他，符合混沌怪物专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选译名一致，别名不改变主译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:655",
+      "evidence_rows": [
+        26922,
+        26926,
+        34334
+      ],
+      "source_excerpt": "who is head of the Cat Clan",
+      "reason": "Cat Clan 为氏族名，统一改为“猫氏族”，并修正 term_reason。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26922/34334 明载 Yinkin 为 Cat Clan 之首，是具名氏族。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "将“猫族”改为“猫氏族”，因 Cat Clan 是氏族名而非泛称种族。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=组织，符合氏族这一社会组织。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "按 Clan=氏族统一为“猫氏族”，候选 34334 亦同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:657",
+      "evidence_rows": [
+        26960,
+        26976
+      ],
+      "source_excerpt": "who is head of the Marks On Bark Clan",
+      "reason": "Marks On Bark Clan 为知识之神统领的氏族，保留“树皮刻痕氏族”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26960/26976 明载 Knowing God 为 Marks On Bark Clan 之首，且该氏族加入 Storm Tribe。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“树皮刻痕氏族”对应 Marks On Bark Clan，marks on bark 即树皮上的刻痕/记号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=组织，符合氏族这一社会组织。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选 34335 作“树皮记号氏族”，但“树皮刻痕”更贴合 marks on bark，保留现译。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:630",
+    "terms:632",
+    "terms:636",
+    "terms:637",
+    "terms:644",
+    "terms:645",
+    "terms:646",
+    "terms:647",
+    "terms:651",
+    "terms:652",
+    "terms:655",
+    "terms:657"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

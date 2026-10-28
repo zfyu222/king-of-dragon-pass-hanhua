@@ -1,0 +1,150 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 5 条角色专名：Lodril、Dendara、Magasta、Subere、Crushing Noise 的原文出处、译名、性别/身份及专名分类，未发现需修订项。",
+  "acknowledged_findings": [],
+  "edits": [],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:289",
+      "evidence_rows": [
+        34172
+      ],
+      "source_excerpt": "Finally, after much pleading by Lodril, Dendara, Chalana Arroy, and others, Yelm agreed.",
+      "reason": "原文以专名形式提到 Lodril 参与向耶尔姆求情，条目判定为男性神祇并使用音译名洛德里尔，分类与译名均可由原文对应。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34172 原文直接出现 Lodril，且语境为向 Yelm 求情的神祇之一。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "洛德里尔为 Lodril 的音译，符合专名音译习惯，未与普通词义冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文将 Lodril 作为具名求情者，属于 characters 下的 proper_name。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批神名采用统一音译风格，无同形普通词需区分。"
+        }
+      }
+    },
+    {
+      "ref": "characters:290",
+      "evidence_rows": [
+        34172
+      ],
+      "source_excerpt": "after much pleading by Lodril, Dendara, Chalana Arroy, and others",
+      "reason": "原文以专名列出 Dendara 作为求情者之一，条目判定为女性神祇并使用音译名登达拉，信息一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34172 原文直接出现 Dendara，语境为向 Yelm 求情的神祇。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "登达拉对应 Dendara，音译自然，适合作为神名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Dendara 以具名神祇身份出现，应归入 characters/proper_name。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 Lodril 等神名音译风格一致，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:291",
+      "evidence_rows": [
+        34196
+      ],
+      "source_excerpt": "Magasta turned the ocean",
+      "reason": "原文明确 Magasta 转动海洋，条目判定为男性神祇并使用音译名马加斯塔，与创世神话语境吻合。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34196 原文直接出现 Magasta，并说明其转动海洋。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "马加斯塔为 Magasta 的音译，符合神名统一音译要求。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文以具名神祇描述 Magasta 的创世行为，属于 characters/proper_name。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批神名音译风格一致，未发现需区分的普通词。"
+        }
+      }
+    },
+    {
+      "ref": "characters:292",
+      "evidence_rows": [
+        34196
+      ],
+      "source_excerpt": "and Subere revitalized the underworld.",
+      "reason": "原文明确 Subere 使冥界恢复生机，条目判定为女性神祇并使用音译名苏贝雷，分类与译名均相称。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34196 原文直接出现 Subere，并说明其使冥界恢复生机。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "苏贝雷为 Subere 的音译，适合作为神名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Subere 在原文中作为具名神祇出现，属于 characters/proper_name。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批神名音译一致，未发现同形普通词问题。"
+        }
+      }
+    },
+    {
+      "ref": "characters:293",
+      "evidence_rows": [
+        34246
+      ],
+      "source_excerpt": "Their child was born later, and it was called Crushing Noise.",
+      "reason": "原文明确该名为奥兰斯与黑暗女人所生孩子的名字，条目按专名处理并用意译名碎响，保留原短语的声响意象。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34246 原文直接说明孩子被命名为 Crushing Noise。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "碎响保留 Crushing Noise 的声响意象，简洁且可作专名使用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文以命名方式引入该孩子，属于具名角色，归入 characters/proper_name 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该名为独立专名，与同批神名音译条目无冲突；意译处理符合其描述性命名特征。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:289",
+    "characters:290",
+    "characters:291",
+    "characters:292",
+    "characters:293"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

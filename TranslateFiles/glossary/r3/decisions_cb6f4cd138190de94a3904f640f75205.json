@@ -1,0 +1,114 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1-e3 的原文、译名、分类和一致性：thralls/thrall 是单复数变体，同译“奴隶”成立；clan magic 统一译“氏族魔法”，但其类别改为“其他”；war magic 统一译“战争魔法”。未新增或隔离条目。",
+  "acknowledged_findings": [
+    "F0370"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "category_path": "其他"
+      },
+      "reason": "原文把氏族魔法定义为危机中举行仪式、求助神与祖先的潜力，并说明每年圣时更新，属氏族资源或机制，不是个人技能，因此将类别改为“其他”。",
+      "evidence_rows": [
+        30343,
+        33601
+      ],
+      "table": "terms",
+      "index": 40
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:37",
+      "evidence_rows": [
+        33161,
+        30622
+      ],
+      "source_excerpt": "Thralls are essentially slaves.",
+      "reason": "核对身份术语 thralls 的原文定义、标准译名以及单复数一致性。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33161 明确定义 Thralls are essentially slaves；30622 说明其他地区有时以 slaves 称呼 thralls。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "33161 的 slaves 定义与多数候选支持“奴隶”；30622 的对应说明不改变该身份术语的标准译名，候选“奴仆”不优先。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文显示 thralls 是可被俘获、买卖、释放的法定身份，归入“身份”恰当。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与单数 thrall 属同一词形变化，统一译“奴隶”一致；f1 所指共用译名经核对为同一术语变体，不是不同名称冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:40",
+      "evidence_rows": [
+        33601,
+        30343
+      ],
+      "source_excerpt": "Clan magic represents your potential to perform rituals and call on the gods and clan ancestors in a crisis.",
+      "reason": "确认氏族魔法的标准译名，并将资源机制类别修正为“其他”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33601 将 clan magic 定义为举行仪式、求助神与氏族祖先的潜力；30343 说明其为集体精神且每年圣时更新。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "统一译“氏族魔法”，与 war magic 译“战争魔法”保持 magic 译法一致；少量“氏族魔力”候选不优先，以免把资源误读为 mana。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文是氏族共享、可分配、可消耗、可增减的资源潜力，不属个人技能；已由“技能”改为“其他”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各候选均以 clan magic 指同一集体资源，译名统一为“氏族魔法”；与战争魔法等具体魔法类型区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:41",
+      "evidence_rows": [
+        33771,
+        4612
+      ],
+      "source_excerpt": "The lack of raiding has weakened our war magic.",
+      "reason": "确认战争魔法为圣时分配的战争仪式魔法，并核对译名与类别。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4612 说明缺少劫掠削弱 war magic；33771 说明圣时可获得战争魔法仪式点数。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "候选一致作“战争魔法”，与 clan magic/“氏族魔法”及战争语义一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文将其作为战斗及圣时分配的战争仪式魔法类型，归入“技能”类可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "统一作“战争魔法”；war magic 与 clan magic 为不同类型，不混用“氏族魔法”。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:37",
+    "terms:40",
+    "terms:41"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

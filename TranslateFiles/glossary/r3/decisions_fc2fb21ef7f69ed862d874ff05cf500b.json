@@ -1,0 +1,426 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1–e12 的原文、译名、分类与一致性；修正 Dragonkill 的译名及大小写适用范围、dragonkill_mini.rtf 的整行保护范围及 Ralian Jewelry 的词根译名；确认“龙友帝国”各拼写变体共用译名成立。",
+  "acknowledged_findings": [
+    "F0359"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "屠龙事件",
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "正文事件名首字母大写；33879 的小写 dragonkill 是内部键，不应按此条翻译。"
+        },
+        "term_reason": "指龙族屠杀人类大军的灾祸事件，是 Dragonkill War 的简称；与“屠龙战争”共用“屠龙”核心。"
+      },
+      "reason": "将暂定“龙杀”统一为“屠龙事件”，并与“屠龙战争”保持词根一致；同时限定仅匹配首字母大写的正文事件名，避免误译小写内部键。",
+      "evidence_rows": [
+        21457,
+        29036,
+        33879
+      ],
+      "table": "terms",
+      "index": 428
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "33905 整行仅为资源文件名 dragonkill_mini.rtf，必须原样保留。"
+        }
+      },
+      "reason": "为资源文件名补充 whole_record 适用范围，避免全局禁翻。",
+      "evidence_rows": [
+        33905
+      ],
+      "table": "non_translate",
+      "index": 344
+    },
+    {
+      "patch": {
+        "recommended_translation": "拉利奥斯珠宝",
+        "term_reason": "32465 宝藏列表中的具名珠宝；Ralian 与 Ralians 同根，译名统一采用“拉利奥斯”。"
+      },
+      "reason": "原译“拉里安”与同批“拉利奥斯人”的词根不一致，统一为“拉利奥斯珠宝”。",
+      "evidence_rows": [
+        32465
+      ],
+      "table": "terms",
+      "index": 1080
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:239",
+      "evidence_rows": [
+        3695,
+        3696
+      ],
+      "source_excerpt": "The ice demons are called hollri.",
+      "reason": "原文明确 hollri 是 Valind 的冰魔，译名与分类可用；“霍里”为音译，未发现同批异译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3695 以 the hollri 指 Valind 的冰魔；3696 直接定义 They are very powerful servants of Valind。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“霍里”对应 hollri；本批未出现其他译名，结合冰魔种族名可保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“种族”，与原文称其为冰魔、Valind 的仆从相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "3695/3696 均为小写 hollri，条目用大小写不敏感 text 覆盖句首大写用法，无同批冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:245",
+      "evidence_rows": [
+        4138,
+        11217,
+        29030,
+        33889,
+        33901
+      ],
+      "source_excerpt": "Alakoring Dragonbreaker came from Ralios to fight the Empire of Wyrms Friends.",
+      "reason": "Alakoring Dragonbreaker 为来自拉利奥斯、对抗龙友帝国的传奇屠龙英雄；“屠龙者阿拉科林”统一了候选异译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4138 直接出现 Alakoring Dragonbreaker；29030 称其为 of legend；33889/33901 称其被供奉为 dragon slayer。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“屠龙者阿拉科林”兼顾 Alakoring 音译与 Dragonbreaker 的称号义，能对应 dragon slayer。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“身份”，条目是英雄人物/称号，分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选“阿拉科林破龙者/阿拉科林屠龙者”为同义异译，统一取“屠龙者阿拉科林”，本批无其他冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:246",
+      "evidence_rows": [
+        4262,
+        4272
+      ],
+      "source_excerpt": "White horses are sacred to Elmal and to his wife Redalda, the horse goddess.",
+      "reason": "Redalda 为 Elmal 之妻、马神；“雷达尔达”音译可用。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4262 明确 Redalda 是 Elmal 的妻子、马神；4272 以 Redalda’s 出现在所有格中。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“雷达尔达”为 Redalda 的音译，本批无其他候选冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "专名归入“其他”可接受，现有分类无独立神祇类，不影响专名约束。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "4262 与 4272 的 Redalda/Redalda’s 为同一专名及其所有格，无需另立译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:247",
+      "evidence_rows": [
+        4352,
+        26962,
+        26963,
+        27010,
+        27017,
+        34316
+      ],
+      "source_excerpt": "Vadrus growled.",
+      "reason": "Vadrus 在原文中是可对话、被寻找的神祇，并与 Umath 之子相关；“瓦德鲁斯”统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26962 命令寻找 Vadrus，27017 直接出现其说话，34316 将其列为 Umath 之子。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“瓦德鲁斯”为 Vadrus 的音译，本批候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“其他”，用于神祇专名；现有分类无神祇类，分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "4352、26962/26963、27010、27017、34316 均指向同一 Vadrus，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:249",
+      "evidence_rows": [
+        4137,
+        34034,
+        34039
+      ],
+      "source_excerpt": "Weren’t there stories of great raids from Ralios in the Second Age?",
+      "reason": "Second Age 为格洛兰萨历史时代；“第二纪元”比短形式“第二纪”更完整。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4137 以 in the Second Age 指历史时代；34034 称 the bad people of the Second Age。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“第二纪元”能自然表达 Second Age；候选“第二纪”可视为缩写但不如现译完整。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“其他”，用于历史时代专名，分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "4137、34034、34039 均指同一 Second Age，现译统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:250",
+      "evidence_rows": [
+        4063,
+        9159,
+        9160,
+        9577,
+        13612,
+        14372,
+        16616,
+        16703,
+        27788,
+        33299,
+        33880,
+        33894,
+        34291
+      ],
+      "source_excerpt": "The Dragonkill War is not named for what happened to the dragons. It is named for what the dragons did.",
+      "reason": "Dragonkill War 是龙族诱杀人类大军的战争；“屠龙战争”与原文强调“得名于龙之所为”相符。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9159 说明得名于龙之所为；9160 称百万士兵去而十人回；33894 亦述龙族吞噬人类。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“屠龙战争”能表达专名，并与 9159/33894 的龙族屠杀义相符；候选“屠龙之战”仅为异译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“其他”，用于历史战争专名，分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各 evidence 均指向同一 Dragonkill War，现统一“屠龙战争”；与 e7 的“屠龙事件”共用“屠龙”核心。"
+        }
+      }
+    },
+    {
+      "ref": "terms:428",
+      "evidence_rows": [
+        11482,
+        21457,
+        29036,
+        33497,
+        33879,
+        33916,
+        33917,
+        33928,
+        33994
+      ],
+      "source_excerpt": "There were ten survivors of the Dragonkill. Ten.",
+      "reason": "原译“龙杀”与 Dragonkill War 的“屠龙战争”不一致，且未限定小写内部键；已改为“屠龙事件”并加大小写范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "29036 以 the Dragonkill 指仅十人幸存的事件；21457 以 Since the Dragonkill 作时间基准。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "暂定“龙杀”不如“屠龙事件”清楚，且与“屠龙战争”词根不一致；已统一为“屠龙事件”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“其他”，用于历史灾祸事件，分类合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e6 的“屠龙战争”统一“屠龙”核心；同时用 case_sensitive text 排除 33879 的小写内部键。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:344",
+      "evidence_rows": [
+        33905
+      ],
+      "source_excerpt": "dragonkill_mini.rtf",
+      "reason": "该行是完整资源文件名，应整行原样保留；已补 whole_record 适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33905 整行仅为 dragonkill_mini.rtf，是资源文件名而非正文事件名。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不翻译，保留原文件名。"
+        },
+        "category": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无 category_path，不适用术语分类。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "文件名与正文专名 Dragonkill 大小写不同，已用 whole_record 限定，避免混用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:251",
+      "evidence_rows": [
+        4096,
+        5298
+      ],
+      "source_excerpt": "In the days of the Empire of the Wyrm’s Friends, we wouldn’t have had to fight so frequently.",
+      "reason": "该帝国名在本条两处均指同一历史政权；f1 所列拼写变体共用“龙友帝国”不构成混淆。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4096 与 5298 均以 Empire of the Wyrm’s Friends 指同一古代帝国。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“龙友帝国”简洁表达 Empire of Wyrm’s Friends；同义异体拼写不改变所指。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“组织”，与帝国这一历史政权相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条两处拼写仅冠词/所有格差异；f1 的异体形式仍指同一帝国，共用译名成立。"
+        }
+      }
+    },
+    {
+      "ref": "terms:252",
+      "evidence_rows": [
+        4141,
+        4148
+      ],
+      "source_excerpt": "Thanking us profusely, the Ralians set out immediately.",
+      "reason": "Ralians 是来自拉利奥斯的人群称谓；“拉利奥斯人”与 e11 的“拉利奥斯”词根统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4141 以 these Ralians 指外乡人；4148 直接称 the Ralians 并叙述其离开。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“拉利奥斯人”作为 Ralians 的人群称谓自然，且与 Ralian 词根统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“身份”，表示人群/来自身份，分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Ralians 为复数人群称谓，统一用“拉利奥斯人”；与 e11 修正后的“拉利奥斯珠宝”词根一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1080",
+      "evidence_rows": [
+        32465
+      ],
+      "source_excerpt": "Ralian Jewelry",
+      "reason": "原译“拉里安”与同批“拉利奥斯人”词根不一致，改为“拉利奥斯珠宝”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32465 原文仅为宝藏列表项 Ralian Jewelry。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“拉里安珠宝”词根不一致；已改为“拉利奥斯珠宝”，贴合 Ralian/Ralians 同根关系。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“物品”，与宝藏列表中的具名珠宝相符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e10 的“拉利奥斯人”统一“拉利奥斯”词根，消除同批异译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:253",
+      "evidence_rows": [
+        4289,
+        4312,
+        14542,
+        14543
+      ],
+      "source_excerpt": "Threaten her with outlawry.",
+      "reason": "outlawry 为法律判决/威胁，译文“放逐”简洁可用；四处用法一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4289 称 a sentence of outlawry；4312 讨论 pressed for outlawry；14542/14543 以之威胁。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“放逐”能表达作为法律处罚的 outlawry；term_reason 已补充其剥夺法律保护的含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“其他”，用于法律制度/处罚概念，分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "4289、4312、14542、14543 均为同一法律概念，统一译“放逐”。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:239",
+    "terms:245",
+    "terms:246",
+    "terms:247",
+    "terms:249",
+    "terms:250",
+    "terms:428",
+    "non_translate:344",
+    "terms:251",
+    "terms:252",
+    "terms:1080",
+    "terms:253"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

@@ -1,0 +1,520 @@
+{
+  "review_complete": true,
+  "review_summary": "复核 e1-e12：均为运行时控制字节或动态占位符，属于 non_translate，不应翻译；为全部条目补充精确匹配的 applicability，并按原文证据确认不合并 e1-e8 的候选变体关系。未发现需隔离、新增或允许无匹配的条目。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确匹配运行时氏族名占位符 \\x01@a；原文中嵌于正文，所有出现均须原样保留。"
+        }
+      },
+      "reason": "该条为氏族名动态插入占位符，需明确精确匹配范围，避免默认全局禁翻。",
+      "evidence_rows": [
+        19206
+      ],
+      "table": "non_translate",
+      "index": 46
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确匹配运行时人物名占位符 \\x01A{；所有出现均须原样保留。"
+        }
+      },
+      "reason": "该条为带左花括号标记的人物名占位符，需明确精确匹配范围。",
+      "evidence_rows": [
+        1473
+      ],
+      "table": "non_translate",
+      "index": 48
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确匹配运行时人物名占位符 \\x01A}；所有出现均须原样保留。"
+        }
+      },
+      "reason": "该条为带右花括号标记的人物名占位符，需明确精确匹配范围。",
+      "evidence_rows": [
+        1473
+      ],
+      "table": "non_translate",
+      "index": 49
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确匹配运行时人物名占位符 \\x01A|；所有出现均须原样保留。"
+        }
+      },
+      "reason": "该条为带竖线标记的人物名占位符，需明确精确匹配范围。",
+      "evidence_rows": [
+        1474
+      ],
+      "table": "non_translate",
+      "index": 50
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确匹配运行时数值/货币相关占位符片段 \\x01A$；所有出现均须原样保留。"
+        }
+      },
+      "reason": "该条为数值相关运行时占位符，需明确精确匹配范围。",
+      "evidence_rows": [
+        16726
+      ],
+      "table": "non_translate",
+      "index": 224
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确匹配运行时人物名占位符 \\x01A+；所有出现均须原样保留。"
+        }
+      },
+      "reason": "该条为带加号标记的人物名占位符，需明确精确匹配范围。",
+      "evidence_rows": [
+        20944
+      ],
+      "table": "non_translate",
+      "index": 266
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确匹配运行时人物名占位符 \\x01A,；所有出现均须原样保留。"
+        }
+      },
+      "reason": "该条为带逗号标记的人物名占位符，需明确精确匹配范围。",
+      "evidence_rows": [
+        20955
+      ],
+      "table": "non_translate",
+      "index": 267
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确匹配运行时数值占位符 \\x01A；包括其在 \\x01A$ 中的前缀出现，均须原样保留。"
+        }
+      },
+      "reason": "该条为数值占位符，需明确精确匹配范围并避免与更长占位符混淆。",
+      "evidence_rows": [
+        24088
+      ],
+      "table": "non_translate",
+      "index": 345
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确匹配运行时人物名占位符 \\x01Ax；所有出现均须原样保留。"
+        }
+      },
+      "reason": "该条为带 x 后缀的人物名占位符，需明确精确匹配范围。",
+      "evidence_rows": [
+        1353
+      ],
+      "table": "non_translate",
+      "index": 47
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确匹配含 \\x7F 控制字节的运行时部族名占位符 \\x01A\\x7F；所有出现均须原样保留。"
+        }
+      },
+      "reason": "该条含控制字节并用于部族名插入，需明确精确匹配范围。",
+      "evidence_rows": [
+        1510
+      ],
+      "table": "non_translate",
+      "index": 51
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确匹配随机短语控制字节 \\x02；所有出现均须原样保留。"
+        }
+      },
+      "reason": "该条为随机短语分支控制字节，需明确精确匹配范围。",
+      "evidence_rows": [
+        1134
+      ],
+      "table": "non_translate",
+      "index": 52
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "精确匹配随机短语控制字节 \\x03；所有出现均须原样保留。"
+        }
+      },
+      "reason": "该条为随机短语分支控制字节，需明确精确匹配范围。",
+      "evidence_rows": [
+        1134
+      ],
+      "table": "non_translate",
+      "index": 53
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:46",
+      "evidence_rows": [
+        19206
+      ],
+      "source_excerpt": "against the \\x01@a clan.",
+      "reason": "运行时氏族名占位符，须原样保留；补充精确匹配 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 19206 的 'against the \\x01@a clan.' 与 row.source 一致，确为嵌入正文的占位符。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，不翻译，只保护控制序列。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该序列用于氏族名动态插入，属于运行时占位符，归 non_translate 正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 applicability 为精确 text 匹配；term_families 虽列 e1-e8 为候选变体，但原文显示 e1 是氏族名占位符，e2-e8 为人物名或数值等不同占位符，不能合并。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:48",
+      "evidence_rows": [
+        1473
+      ],
+      "source_excerpt": "\\x01A{, the clan trader, seems receptive.",
+      "reason": "人物名占位符，须原样保留；补充精确匹配 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 1473 的 '\\x01A{, the clan trader, seems receptive.' 与 row.source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，不翻译，只保护控制序列。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该序列用于人物名动态插入，归 non_translate 正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 applicability；与 e1 等仅为占位符结构候选，不是同一术语，不统一译名。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:49",
+      "evidence_rows": [
+        1473
+      ],
+      "source_excerpt": "\\x01A}, on the other hand",
+      "reason": "人物名占位符，须原样保留；补充精确匹配 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 1473 的 '\\x01A}, on the other hand' 与 row.source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，不翻译，只保护控制序列。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该序列用于人物名动态插入，归 non_translate 正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 applicability；右花括号占位符独立于 e2 的左花括号占位符，按原样保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:50",
+      "evidence_rows": [
+        1474
+      ],
+      "source_excerpt": "\\x01A|, on the other hand, is clearly marshalling",
+      "reason": "人物名占位符，须原样保留；补充精确匹配 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 1474 的 '\\x01A|, on the other hand, is clearly marshalling' 与 row.source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，不翻译，只保护控制序列。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该序列用于人物名动态插入，归 non_translate 正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 applicability；竖线标记占位符与 e2/e3 编码不同，不合并。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:224",
+      "evidence_rows": [
+        16726
+      ],
+      "source_excerpt": "demanded \\x01A$ cows to cure",
+      "reason": "数值相关占位符片段，须原样保留；补充精确匹配 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 16726 的 'demanded \\x01A$ cows to cure' 与 row.source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，不翻译，只保护控制序列。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该序列为数值/货币相关运行时占位符，归 non_translate 正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 applicability；该序列包含 e8 的 \\x01A 前缀，但作为更长精确序列单独保留，不合并译名。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:266",
+      "evidence_rows": [
+        20944
+      ],
+      "source_excerpt": "Outlaw \\x01A+.",
+      "reason": "人物名占位符，须原样保留；补充精确匹配 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 20944 的 'Outlaw \\x01A+.' 与 row.source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，不翻译，只保护控制序列。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该序列用于人物名动态插入，归 non_translate 正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 applicability；加号标记人物名占位符，与 e1 及其他人物占位符编码不同，不合并。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:267",
+      "evidence_rows": [
+        20955
+      ],
+      "source_excerpt": "She and \\x01A, seemed sad",
+      "reason": "人物名占位符，须原样保留；补充精确匹配 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 20955 的 'She and \\x01A, seemed sad' 与 row.source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，不翻译，只保护控制序列。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该序列用于人物名动态插入，归 non_translate 正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 applicability；逗号标记人物名占位符，与 e6 加号占位符不同。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:345",
+      "evidence_rows": [
+        24088
+      ],
+      "source_excerpt": "standard wergild for a slain carl is \\x01A .",
+      "reason": "数值占位符，须原样保留；补充精确匹配 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 24088 的 'standard wergild for a slain carl is \\x01A .' 与 row.source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，不翻译，只保护控制序列。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该序列为数值运行时占位符，归 non_translate 正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 applicability；\\x01A 为数值占位符，可出现在 \\x01A$ 前缀中，与 e5 非同一精确序列。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:47",
+      "evidence_rows": [
+        1353
+      ],
+      "source_excerpt": "greatest warrior, \\x01Ax, stepped forward",
+      "reason": "人物名占位符，须原样保留；补充精确匹配 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 1353 的 'greatest warrior, \\x01Ax, stepped forward' 与 row.source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，不翻译，只保护控制序列。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该序列用于人物名动态插入，归 non_translate 正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 applicability；\\x01Ax 为带 x 后缀的人物名占位符，与 e8 的 \\x01A 数值占位符不同。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:51",
+      "evidence_rows": [
+        1510
+      ],
+      "source_excerpt": "and the \\x01A\\x7F tribe was born.",
+      "reason": "含控制字节的部族名占位符，须原样保留；补充精确匹配 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 1510 的 'and the \\x01A\\x7F tribe was born.' 与 row.source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，不翻译，只保护控制序列。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该序列含 \\x7F 控制字节并用于部族名插入，归 non_translate 正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 applicability；与 e1 的氏族名占位符编码不同，不合并。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:52",
+      "evidence_rows": [
+        1134
+      ],
+      "source_excerpt": "always \\x02\\x03reliable/safe/respectable\\x02 to fall back",
+      "reason": "随机短语控制字节，须原样保留；补充精确匹配 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 1134 的 'always \\x02\\x03reliable/safe/respectable\\x02 to fall back' 与 row.source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，不翻译，只保护控制序列。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "\\x02 是随机短语分支/定界控制字节，归 non_translate 正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 applicability；\\x02 出现在多条记录的分支定界中，不是普通词，按原样保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:53",
+      "evidence_rows": [
+        1134
+      ],
+      "source_excerpt": "\\x02\\x03reliable/safe/respectable",
+      "reason": "随机短语控制字节，须原样保留；补充精确匹配 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 1134 的 '\\x02\\x03reliable/safe/respectable' 与 row.source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，不翻译，只保护控制序列。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "\\x03 是随机短语分支控制字节，归 non_translate 正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已补 applicability；\\x03 与 e11 的 \\x02 配合但编码不同，均原样保留。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:46",
+    "non_translate:48",
+    "non_translate:49",
+    "non_translate:50",
+    "non_translate:224",
+    "non_translate:266",
+    "non_translate:267",
+    "non_translate:345",
+    "non_translate:47",
+    "non_translate:51",
+    "non_translate:52",
+    "non_translate:53"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

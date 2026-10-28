@@ -1,0 +1,62 @@
+{
+  "review_complete": true,
+  "review_summary": "本批仅审 e1：确认 Eurmal 为神祇专名，标准译名定为欧尔马尔，保留 characters/proper_name 与 required 级别，并修正术语说明以反映其诡术/混乱神格及祝福、诅咒机制。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "Glorantha 神话中的诡术与混乱之神；献祭可获其祝福或诅咒，常带来不可预测的后果。"
+      },
+      "reason": "原说明只概括了灵感/魔法一面，未体现 Eurmal 的核心神格与献祭机制。",
+      "evidence_rows": [
+        20041,
+        23320,
+        24752,
+        33874
+      ],
+      "table": "characters",
+      "index": 8
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:8",
+      "evidence_rows": [
+        1579,
+        20041,
+        23320,
+        24752,
+        33359,
+        33874
+      ],
+      "source_excerpt": "Eurmal (YUR-mahl)",
+      "reason": "确认 Eurmal 为诡术/混乱之神，保留 characters/proper_name 与男性，标准译名定为欧尔马尔，并修正术语说明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33359 原文含“Eurmal (YUR-mahl)”，与 source 完全对应；24752 亦作 Eurmal。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "多数候选采用欧尔马尔，且相关复合词候选有欧尔马尔写法；欧尔马/欧尔玛/欧尔玛尔为批内变体，不改变标准名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "33874 将 Eurmal the Trickster 列为受崇拜神祇，26138/34044 又以神话角色出现；table=characters、term_kind=proper_name 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "候选译名存在变体，本批按多数提案、发音标注及相关复合名统一为欧尔马尔；term_reason 已补为诡术与混乱之神并记录祝福/诅咒机制。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:8"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

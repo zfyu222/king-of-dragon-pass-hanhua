@@ -1,0 +1,17 @@
+[
+  {
+    "markers": "",
+    "info": "方括号标记",
+    "regex": "\\[[^\\[\\]\\n]{1,60}\\]"
+  },
+  {
+    "markers": "",
+    "info": "printf 格式化符",
+    "regex": "%(?:\\d+\\$)?[0-9.+#-]*[sdfoxXeEfgGcr]"
+  },
+  {
+    "markers": "",
+    "info": "字面转义序列",
+    "regex": "\\\\[nrt]"
+  }
+]

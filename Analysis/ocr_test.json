@@ -1,0 +1,332 @@
+[
+ {
+  "file": "Game\\KoDp\\textures\\Btn_SceneSaga.png",
+  "hits": [
+   {
+    "text": "D",
+    "score": 0.558,
+    "box": [
+     22,
+     31,
+     42,
+     47
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\dark_button_up_n.tga",
+  "hits": [
+   {
+    "text": "h",
+    "score": 0.756,
+    "box": [
+     4,
+     4,
+     10,
+     13
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\facebook.png",
+  "hits": [
+   {
+    "text": "+",
+    "score": 0.762,
+    "box": [
+     28,
+     14,
+     70,
+     79
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\gpgames.png",
+  "hits": [
+   {
+    "text": "+",
+    "score": 0.957,
+    "box": [
+     26,
+     32,
+     44,
+     50
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Icon.png",
+  "hits": [
+   {
+    "text": "1",
+    "score": 0.88,
+    "box": [
+     21,
+     5,
+     38,
+     23
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\NewsBig.png",
+  "hits": [
+   {
+    "text": "■",
+    "score": 0.778,
+    "box": [
+     182,
+     36,
+     281,
+     148
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\NewsMedium.png",
+  "hits": [
+   {
+    "text": "■",
+    "score": 0.729,
+    "box": [
+     185,
+     38,
+     278,
+     145
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\NewsShort.png",
+  "hits": [
+   {
+    "text": "■",
+    "score": 0.894,
+    "box": [
+     188,
+     36,
+     275,
+     143
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Stele.png",
+  "hits": [
+   {
+    "text": "+",
+    "score": 0.902,
+    "box": [
+     47,
+     19,
+     56,
+     32
+    ]
+   },
+   {
+    "text": "94人H",
+    "score": 0.598,
+    "box": [
+     18,
+     78,
+     90,
+     110
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\youtube.png",
+  "hits": [
+   {
+    "text": "You",
+    "score": 0.993,
+    "box": [
+     33,
+     19,
+     65,
+     45
+    ]
+   },
+   {
+    "text": "Tube",
+    "score": 0.999,
+    "box": [
+     29,
+     47,
+     68,
+     71
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Menu\\Logo.png",
+  "hits": [
+   {
+    "text": "KING OF",
+    "score": 0.759,
+    "box": [
+     99,
+     3,
+     245,
+     50
+    ]
+   },
+   {
+    "text": "DRAGON PASS",
+    "score": 0.957,
+    "box": [
+     0,
+     35,
+     328,
+     89
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Menu\\Logo@2x.png",
+  "hits": [
+   {
+    "text": "KING OF",
+    "score": 0.846,
+    "box": [
+     200,
+     7,
+     489,
+     96
+    ]
+   },
+   {
+    "text": "DRAGON PASS",
+    "score": 0.935,
+    "box": [
+     0,
+     65,
+     657,
+     179
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Menu\\Logo~ipad.png",
+  "hits": [
+   {
+    "text": "KING OF",
+    "score": 0.874,
+    "box": [
+     207,
+     13,
+     495,
+     102
+    ]
+   },
+   {
+    "text": "DRAGON PASS",
+    "score": 0.94,
+    "box": [
+     3,
+     71,
+     668,
+     185
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Menu\\Logo~ipad@2x.png",
+  "hits": [
+   {
+    "text": "KING OF",
+    "score": 0.788,
+    "box": [
+     415,
+     28,
+     988,
+     197
+    ]
+   },
+   {
+    "text": "DRAGON PASS",
+    "score": 0.947,
+    "box": [
+     8,
+     145,
+     1337,
+     368
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Common\\AdvisorClose.png",
+  "hits": [
+   {
+    "text": "V",
+    "score": 0.606,
+    "box": [
+     3,
+     14,
+     39,
+     35
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Common\\AdvisorMenu_backgroundRight.png",
+  "hits": [
+   {
+    "text": "V",
+    "score": 0.643,
+    "box": [
+     349,
+     18,
+     383,
+     38
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Common\\IssariesA.png",
+  "hits": [
+   {
+    "text": "山",
+    "score": 0.558,
+    "box": [
+     1,
+     0,
+     16,
+     9
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Common\\OrlanthA.png",
+  "hits": [
+   {
+    "text": "?",
+    "score": 0.816,
+    "box": [
+     5,
+     5,
+     13,
+     14
+    ]
+   }
+  ]
+ }
+]

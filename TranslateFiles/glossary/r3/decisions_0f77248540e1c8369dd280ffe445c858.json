@@ -1,0 +1,447 @@
+{
+  "review_complete": true,
+  "review_summary": "审校12个角色条目，确认专名、分类和跨条核心名一致性；修正 e4 的奥尔马短名、e6 的 the Stout 称号译法，并清理若干 term_reason 中本批原文未支持的附加情节。未新增术语或隔离项。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "Brandgor 是敌氏族的塞恩；其侄 Hend Aslandarsson 被 Orlmar Half-Foot 杀死，他要求30头牛作为赔偿。"
+      },
+      "reason": "删除本批证据未出现的“谈判结束世仇”，保留可核实的索赔事实。",
+      "evidence_rows": [
+        2829,
+        2830
+      ],
+      "table": "characters",
+      "index": 34
+    },
+    {
+      "patch": {
+        "recommended_translation": "奥尔马",
+        "term_reason": "原文中 Orlmar 被控有罪，玩家可选择主张其无罪；短名按核心译名统一为“奥尔马”。"
+      },
+      "reason": "统一短名核心译名，使中文名与全名“奥尔马半足”一致，并简化无证据的附加情节。",
+      "evidence_rows": [
+        9039,
+        9044
+      ],
+      "table": "characters",
+      "index": 86
+    },
+    {
+      "patch": {
+        "term_reason": "伊萨里斯（商神）的女祭司兼商人；原文中她多次到氏族交易，并询问是否购买宝物。"
+      },
+      "reason": "删除“后来去世”等本批原文未支持的信息。",
+      "evidence_rows": [
+        2920,
+        2923,
+        4218
+      ],
+      "table": "characters",
+      "index": 37
+    },
+    {
+      "patch": {
+        "recommended_translation": "壮硕的莫德里姆",
+        "term_reason": "原文称其为来自敌对氏族的富裕农夫，带两个儿子 Korlmar 和 Harnkorl 来求购黑尾；the Stout 是称号，译为“壮硕的”。"
+      },
+      "reason": "将称号 the Stout 意译，避免把称号误作姓氏音译，并与 base 名统一。",
+      "evidence_rows": [
+        3025,
+        4174
+      ],
+      "table": "characters",
+      "index": 38
+    },
+    {
+      "patch": {
+        "term_reason": "Mordrim the Stout 之子；原文中与兄弟 Harnkorl 一起被指偷走黑尾。"
+      },
+      "reason": "删除本批证据未见的“付出生命”。",
+      "evidence_rows": [
+        3025,
+        3056
+      ],
+      "table": "characters",
+      "index": 39
+    },
+    {
+      "patch": {
+        "term_reason": "Mordrim the Stout 之子；原文中与兄弟 Korlmar 一起被指偷走黑尾。"
+      },
+      "reason": "删除本批证据未见的“付出生命”。",
+      "evidence_rows": [
+        3025,
+        3056
+      ],
+      "table": "characters",
+      "index": 40
+    },
+    {
+      "patch": {
+        "term_reason": "原文中曾对幽灵提起诉讼，被引为可放逐幽灵的先例。"
+      },
+      "reason": "删除本批证据未见的“法言人”身份。",
+      "evidence_rows": [
+        3244
+      ],
+      "table": "characters",
+      "index": 43
+    },
+    {
+      "patch": {
+        "term_reason": "原文随机短语中的人名分支，与 Eleyi、Ornarin 以斜杠并列。"
+      },
+      "reason": "删除本批证据未见的“新娘候选人”设定，仅保留随机分支事实。",
+      "evidence_rows": [
+        2907
+      ],
+      "table": "characters",
+      "index": 44
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:34",
+      "evidence_rows": [
+        2829,
+        2830
+      ],
+      "source_excerpt": "Brandgor, a thane of the",
+      "reason": "原文明确 Brandgor 为氏族塞恩，因侄 Hend 被杀向玩家索赔30头牛；译名与身份一致。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "2829/2830 明示 Brandgor 为 thane 并说明其侄 Hend 被杀；term_reason 已删去本批原文未见的附加情节。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“布兰德戈”与源名 Brandgor 对应，未改变专名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名人物，归入 characters 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同事件中 Brandgor、Hend、Orlmar 的译名不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:35",
+      "evidence_rows": [
+        2829
+      ],
+      "source_excerpt": "Hend Aslandarsson",
+      "reason": "原文说明 Hend Aslandarsson 是 Brandgor 的侄子，被 Orlmar Half-Foot 杀死。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2829 明确 Hend Aslandarsson 为 Brandgor 的侄子且被杀。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“亨德阿斯兰达松”对应 Hend Aslandarsson，音译完整且无间隔号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名人物，characters 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Brandgor、Orlmar 的译名体系一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:36",
+      "evidence_rows": [
+        2829,
+        2830
+      ],
+      "source_excerpt": "Orlmar Half-Foot",
+      "reason": "原文称 Orlmar Half-Foot 为玩家氏族成员，杀死 Brandgor 的侄子 Hend。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2829/2830 明确 Orlmar Half-Foot 为玩家氏族成员并涉及 Hend 之死。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“奥尔马半足”映射 Orlmar Half-Foot，Half-Foot 按绰号意译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名人物，characters 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "短名条目共享核心译名“奥尔马”，全名保持“奥尔马半足”。"
+        }
+      }
+    },
+    {
+      "ref": "characters:86",
+      "evidence_rows": [
+        9039,
+        9044
+      ],
+      "source_excerpt": "Argue that Orlmar is innocent.",
+      "reason": "原文在争议选项/结果中称 Orlmar 被控有罪，玩家可主张其无罪；短名核心词统一为“奥尔马”。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "9039/9044 的 Orlmar 与 source 相符；term_reason 已删去本批原文未见的“其兄受伤、moot 裁决”等附加情节。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“奥尔玛”与 Orlmar Half-Foot 的核心名“奥尔马”不一致；patch 统一为“奥尔马”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名人物，归入 characters 正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "短名核心译名由“奥尔玛”改为“奥尔马”，与全名条目一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:37",
+      "evidence_rows": [
+        2920,
+        2923,
+        4218
+      ],
+      "source_excerpt": "Sora Goodseller, a trader-priestess of the Talking God, Issaries, returns",
+      "reason": "原文说明 Sora Goodseller 是 Issaries 的女祭司兼商人，多次到氏族交易或询问购买宝物。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "原文支持其女祭司/商人身份；term_reason 已删除本批证据未见的“后来去世”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“索拉古德塞勒”在各出处一致，Goodseller 按音译处理。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名人物，characters 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "2920/2923/4218/14179 等出处均使用同一译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:38",
+      "evidence_rows": [
+        3025,
+        3056,
+        4174
+      ],
+      "source_excerpt": "Mordrim the Stout, a prosperous farmer from the",
+      "reason": "原文说明 Mordrim the Stout 是敌氏族富裕农夫，带子求购黑尾；the Stout 为称号，应译“壮硕的”。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "3025/4174 明示其为 prosperous farmer 并带子求购 Blacktail；term_reason 已去除未见于本批证据的附加结局。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“莫德里姆斯托特”把称号音译；patch 改为“壮硕的莫德里姆”，与 base 名对齐。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名人物，characters 正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "称号译法改为“壮硕的莫德里姆”，与“莫德里姆”及子嗣条目中的父名一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:67",
+      "evidence_rows": [
+        6834
+      ],
+      "source_excerpt": "We lodged a legal claim against Mordrim with his chieftain,",
+      "reason": "原文说明氏族就 Blacktail 被盗向 Mordrim 的酋长提出法律索赔；Mordrim 为索赔对象。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "6834 明确 legal claim against Mordrim with his chieftain。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“莫德里姆”与修正后的称号名核心词一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名人物，characters 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与“壮硕的莫德里姆”共享核心名，未改专名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:39",
+      "evidence_rows": [
+        3056,
+        4174
+      ],
+      "source_excerpt": "Korlmar and Harnkorl, sons of Mordrim the Stout",
+      "reason": "原文说明 Korlmar 是 Mordrim the Stout 之子，与兄弟 Harnkorl 被指偷走 Blacktail。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "3056 支持其父子和偷牛关系；term_reason 已删去本批证据未见的“付出生命”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“科尔马”在各出处一致，作为 Korlmar 的音译可接受。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名人物，characters 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与兄弟名及父名译法一致，未改核心名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:40",
+      "evidence_rows": [
+        3056,
+        4174
+      ],
+      "source_excerpt": "Korlmar and Harnkorl, sons of Mordrim the Stout",
+      "reason": "原文说明 Harnkorl 是 Mordrim the Stout 之子，与兄弟 Korlmar 被指偷走 Blacktail。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "3056 支持其父子和偷牛关系；term_reason 已删去本批证据未见的“付出生命”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“哈恩科尔”与 Harnkorl 对应。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名人物，characters 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与兄弟名及父名译法一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:41",
+      "evidence_rows": [
+        2888
+      ],
+      "source_excerpt": "ancient king Homast the Proud",
+      "reason": "原文称 Homast 为古代国王，因谎言从“骄傲者”变为“毁灭者”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2888 明确 ancient king Homast the Proud 与 Homast the Ruinous。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“霍马斯特”对应 Homast，未误译称号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名人物，characters 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "单条出处，无同批冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:43",
+      "evidence_rows": [
+        3244,
+        19372
+      ],
+      "source_excerpt": "Horvator Farsee once conducted a case against a spirit",
+      "reason": "原文称 Horvator Farsee 曾对幽灵提起诉讼，被引为放逐幽灵的先例。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "3244/19372 支持其诉讼先例身份；term_reason 已删除本批证据未见的“法言人”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“霍瓦托远见者”对应 Horvator Farsee，Farsee 按称号意译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名人物，characters 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "3244/19372 使用同一译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:44",
+      "evidence_rows": [
+        2907
+      ],
+      "source_excerpt": "Astranna/Eleyi/Ornarin",
+      "reason": "原文随机短语中 Astranna 与 Eleyi、Ornarin 并列；译名仅对应 Astranna 分支。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "2907 仅显示随机分支人名；term_reason 已删去本批证据未见的“新娘候选人”设定。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“阿斯特拉娜”对应 Astranna 分支。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名人物，characters 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "保留斜杠分支结构，不影响其他分支。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:34",
+    "characters:35",
+    "characters:36",
+    "characters:86",
+    "characters:37",
+    "characters:38",
+    "characters:67",
+    "characters:39",
+    "characters:40",
+    "characters:41",
+    "characters:43",
+    "characters:44"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

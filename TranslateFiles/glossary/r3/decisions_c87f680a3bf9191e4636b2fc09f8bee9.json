@@ -1,0 +1,525 @@
+{
+  "review_complete": true,
+  "review_summary": "完成 12 条 non_translate 审校：printf 格式串、文件模式与 URL 协议标记均保持原样；为各条补充明确的 applicability。http 以 text 范围覆盖独立与嵌入 URL 用例，mailto 因仅有独立记录而限定为 whole_record。未新增术语、专名或翻译条目。",
+  "acknowledged_findings": [
+    "F0331",
+    "F0332"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31179 完整内容为 printf 格式串 %sbottom，仅整条记录原样保留。"
+        }
+      },
+      "reason": "补充 whole_record 适用范围，保护完整 printf 格式串而不扩大禁翻范围。",
+      "evidence_rows": [
+        31179
+      ],
+      "table": "non_translate",
+      "index": 459
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31180 完整内容为 printf 格式串 %sleft，仅整条记录原样保留。"
+        }
+      },
+      "reason": "补充 whole_record 适用范围，保护完整 printf 格式串而不扩大禁翻范围。",
+      "evidence_rows": [
+        31180
+      ],
+      "table": "non_translate",
+      "index": 460
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31181 完整内容为 printf 格式串 %sanchor，仅整条记录原样保留。"
+        }
+      },
+      "reason": "补充 whole_record 适用范围，保护完整 printf 格式串而不扩大禁翻范围。",
+      "evidence_rows": [
+        31181
+      ],
+      "table": "non_translate",
+      "index": 461
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31182 完整内容为 printf 格式串 %scenter，仅整条记录原样保留。"
+        }
+      },
+      "reason": "补充 whole_record 适用范围，保护完整 printf 格式串而不扩大禁翻范围。",
+      "evidence_rows": [
+        31182
+      ],
+      "table": "non_translate",
+      "index": 462
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31351 完整内容为 printf 数值格式串 %d,%d，仅整条记录原样保留。"
+        }
+      },
+      "reason": "补充 whole_record 适用范围，保护完整 printf 格式串而不扩大禁翻范围。",
+      "evidence_rows": [
+        31351
+      ],
+      "table": "non_translate",
+      "index": 463
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31423 完整内容为 printf 格式符 %ld，仅整条记录原样保留。"
+        }
+      },
+      "reason": "补充 whole_record 适用范围，保护完整 printf 格式符而不扩大禁翻范围。",
+      "evidence_rows": [
+        31423
+      ],
+      "table": "non_translate",
+      "index": 464
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31425 完整内容为 printf 格式串 %ld %s，仅整条记录原样保留。"
+        }
+      },
+      "reason": "补充 whole_record 适用范围，保护完整 printf 格式串而不扩大禁翻范围。",
+      "evidence_rows": [
+        31425
+      ],
+      "table": "non_translate",
+      "index": 465
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31424 完整内容为带字面 1 的 printf 格式串 1 %s，仅整条记录原样保留。"
+        }
+      },
+      "reason": "补充 whole_record 适用范围，保护完整 printf 格式串而不扩大禁翻范围。",
+      "evidence_rows": [
+        31424
+      ],
+      "table": "non_translate",
+      "index": 466
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31886 完整内容为 printf 格式串 %s. %s.，仅整条记录原样保留。"
+        }
+      },
+      "reason": "补充 whole_record 适用范围，保护完整 printf 格式串而不扩大禁翻范围。",
+      "evidence_rows": [
+        31886
+      ],
+      "table": "non_translate",
+      "index": 467
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31405 完整内容为文件打开模式标记 w+，仅整条记录原样保留。"
+        }
+      },
+      "reason": "补充 whole_record 适用范围，保护文件模式标记而不把裸字母扩成全局禁翻。",
+      "evidence_rows": [
+        31405
+      ],
+      "table": "non_translate",
+      "index": 468
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "记录 31406 的独立 http 与记录 33064 的 http://www.facebook.com/ASharpLLC 均以 http 为 URL 协议标记，需在正文和 URL 中原样保留。"
+        }
+      },
+      "reason": "补充 text 适用范围，覆盖独立 http 与嵌入 URL 的协议标记用例。",
+      "evidence_rows": [
+        31406,
+        33064
+      ],
+      "table": "non_translate",
+      "index": 469
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31407 仅有独立 mailto；没有嵌入用例，限定整条记录保留。"
+        }
+      },
+      "reason": "补充 whole_record 适用范围，避免把未证实的嵌入用法纳入全局禁翻。",
+      "evidence_rows": [
+        31407
+      ],
+      "table": "non_translate",
+      "index": 470
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:459",
+      "evidence_rows": [
+        31179
+      ],
+      "source_excerpt": "%sbottom",
+      "reason": "printf 格式串，整条记录原样保留；补充 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31179 原文为 %sbottom，含 %s 占位符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，目标文本应原样保留 %sbottom。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于 C printf 格式串，不是游戏专名或术语。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目未给 applicability；现限定为 whole_record，仅保护完整记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:460",
+      "evidence_rows": [
+        31180
+      ],
+      "source_excerpt": "%sleft",
+      "reason": "printf 格式串，整条记录原样保留；补充 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31180 原文为 %sleft，含 %s 占位符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，目标文本应原样保留 %sleft。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于 C printf 格式串，不是游戏专名或术语。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目未给 applicability；现限定为 whole_record，仅保护完整记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:461",
+      "evidence_rows": [
+        31181
+      ],
+      "source_excerpt": "%sanchor",
+      "reason": "printf 格式串，整条记录原样保留；补充 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31181 原文为 %sanchor，含 %s 占位符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，目标文本应原样保留 %sanchor。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于 C printf 格式串，不是游戏专名或术语。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目未给 applicability；现限定为 whole_record，仅保护完整记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:462",
+      "evidence_rows": [
+        31182
+      ],
+      "source_excerpt": "%scenter",
+      "reason": "printf 格式串，整条记录原样保留；补充 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31182 原文为 %scenter，含 %s 占位符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，目标文本应原样保留 %scenter。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于 C printf 格式串，不是游戏专名或术语。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目未给 applicability；现限定为 whole_record，仅保护完整记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:463",
+      "evidence_rows": [
+        31351
+      ],
+      "source_excerpt": "%d,%d",
+      "reason": "printf 数值格式串，整条记录原样保留；补充 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31351 原文为 %d,%d，含两个整数占位符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，目标文本应原样保留 %d,%d。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于 printf 数值格式串，不是游戏专名或术语。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目未给 applicability；现限定为 whole_record，仅保护完整记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:464",
+      "evidence_rows": [
+        31423
+      ],
+      "source_excerpt": "%ld",
+      "reason": "printf 格式符，整条记录原样保留；补充 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31423 原文为 %ld，含长整数格式符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，目标文本应原样保留 %ld。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于 printf 格式符，不是游戏专名或术语。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目未给 applicability；现限定为 whole_record，仅保护完整记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:465",
+      "evidence_rows": [
+        31425
+      ],
+      "source_excerpt": "%ld %s",
+      "reason": "printf 格式串，整条记录原样保留；补充 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31425 原文为 %ld %s，含长整数与字符串占位符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，目标文本应原样保留 %ld %s。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于 printf 格式串，不是游戏专名或术语。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目未给 applicability；现限定为 whole_record，仅保护完整记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:466",
+      "evidence_rows": [
+        31424
+      ],
+      "source_excerpt": "1 %s",
+      "reason": "带字面 1 的 printf 格式串，整条记录原样保留；补充 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31424 原文为 1 %s，含字面 1 与字符串占位符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，目标文本应原样保留 1 %s。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于 printf 格式串，不是游戏专名或术语。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目未给 applicability；现限定为 whole_record，仅保护完整记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:467",
+      "evidence_rows": [
+        31886
+      ],
+      "source_excerpt": "%s. %s.",
+      "reason": "printf 格式串，整条记录原样保留；补充 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31886 原文为 %s. %s.，含两个字符串占位符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，目标文本应原样保留 %s. %s.。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于 printf 格式串，不是游戏专名或术语。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目未给 applicability；现限定为 whole_record，仅保护完整记录。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:468",
+      "evidence_rows": [
+        31405
+      ],
+      "source_excerpt": "w+",
+      "reason": "文件打开模式标记，整条记录原样保留；补充 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31405 原文为 w+，是文件打开模式标记。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，目标文本应原样保留 w+。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于文件模式标识符，不是游戏专名或术语。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目未给 applicability；现限定为 whole_record，避免把裸字母扩成全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:469",
+      "evidence_rows": [
+        31406,
+        33064
+      ],
+      "source_excerpt": "http",
+      "reason": "URL 协议标记；独立与嵌入用例均需保留，补充 text 适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31406 为独立 http；记录 33064 为 http://www.facebook.com/ASharpLLC，http 均为 URL 协议标记。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，保留 http 原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于 URL 协议标记，应作为 non_translate 保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目无 applicability；现设 text 范围覆盖独立与嵌入 URL，避免按普通词翻译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:470",
+      "evidence_rows": [
+        31407
+      ],
+      "source_excerpt": "mailto",
+      "reason": "mailto 协议标记，仅有独立用例；补充 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31407 原文为独立 mailto，未见嵌入用例。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "非翻译项，保留 mailto 原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于邮件 URL 协议标记，应作为 non_translate 保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目无 applicability；因只有独立记录，限定 whole_record，不扩展到未证实的嵌入用法。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:459",
+    "non_translate:460",
+    "non_translate:461",
+    "non_translate:462",
+    "non_translate:463",
+    "non_translate:464",
+    "non_translate:465",
+    "non_translate:466",
+    "non_translate:467",
+    "non_translate:468",
+    "non_translate:469",
+    "non_translate:470"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

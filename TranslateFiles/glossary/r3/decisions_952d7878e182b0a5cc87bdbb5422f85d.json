@@ -1,0 +1,405 @@
+{
+  "review_complete": true,
+  "review_summary": "已审校 e1-e12：确认界面/机制术语译名基本统一；将 e5、e6 的类别由“技能”修正为“其他”，并收束 e3、e4、e5、e6、e10 的 term_reason 为所给原文可证内容。f1 经核对为 divination/Divinations 的单复数变体，共享“占卜”译名可接受。",
+  "acknowledged_findings": [
+    "F0403"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "神祇赐予的助力；第33304行为规则标题，33371称 Issaries 的祝福帮助演说者。"
+      },
+      "reason": "原 term_reason 含未由所给行支持的获取方式细节；按 33304/33371 收束为可证实的游戏机制含义。",
+      "evidence_rows": [
+        33304,
+        33371
+      ],
+      "table": "terms",
+      "index": 1113
+    },
+    {
+      "patch": {
+        "term_reason": "向兰科尔米或祖先求问的廉价仪式；33325说明其不需大量献祭即可有较高成功率。"
+      },
+      "reason": "删除未由 33325 支持的诅咒/图拉宝藏细节，保留原文所述的占卜对象与廉价特点。",
+      "evidence_rows": [
+        33325
+      ],
+      "table": "terms",
+      "index": 1115
+    },
+    {
+      "patch": {
+        "category_path": "其他",
+        "term_reason": "可允许多一个贸易伙伴的祝福；33372 以互斥例外提及。"
+      },
+      "reason": "blessing 是宗教祝福效果而非技能；同时按 33372 的例外句修正 term_reason。",
+      "evidence_rows": [
+        33372
+      ],
+      "table": "terms",
+      "index": 1124
+    },
+    {
+      "patch": {
+        "category_path": "其他",
+        "term_reason": "可允许多一个贸易伙伴的祝福；33375 以互斥例外提及。"
+      },
+      "reason": "blessing 是宗教祝福效果而非技能；同时按 33375 的例外句修正 term_reason。",
+      "evidence_rows": [
+        33375
+      ],
+      "table": "terms",
+      "index": 1125
+    },
+    {
+      "patch": {
+        "term_reason": "第33630行为界面标题；第33632行说明Saga Screen可选择年份重玩。"
+      },
+      "reason": "删除未由 33630/33632 支持的“saga 是氏族历史”说明，仅保留界面标题与重玩功能。",
+      "evidence_rows": [
+        33630,
+        33632
+      ],
+      "table": "terms",
+      "index": 1132
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:1111",
+      "evidence_rows": [
+        33208
+      ],
+      "source_excerpt": "Tap the Explore button to send out an exploration party.",
+      "reason": "33208明确将 Explore button 作为派出探索队的界面按钮；译名简短且与探索语义一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33208原文直接出现 Explore button，并说明用于 send out an exploration party。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Explore button 译为“探索按钮”，保留按钮属性，符合短 UI 标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于界面控件而非专名，category_path 其他可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他“Explore button”译名冲突；与 exploration 的“探索”用词一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1112",
+      "evidence_rows": [
+        33214
+      ],
+      "source_excerpt": "The Exploration Cross",
+      "reason": "33214标题为 The Exploration Cross，作为地图/探索标记名称处理；译名保留探索与十字标记义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33214原文标题为 The Exploration Cross，未给出其他定义。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Exploration Cross 译为“探索十字标”，保留 Exploration 的“探索”和 Cross 的十字标记义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于地图/探索标记，其他类别合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Explore/exploration 的“探索”用词一致，本批无同名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1113",
+      "evidence_rows": [
+        33304,
+        33371
+      ],
+      "source_excerpt": "Blessings: the Basics",
+      "reason": "33304为规则标题，33371说明祝福可帮助演说者；译名“祝福”符合神祇赐福的游戏义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33304为规则标题 Blessings: the Basics；33371说明 Issaries 的祝福帮助演说者。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Blessings 译为“祝福”，符合神祇赐福的游戏义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "宗教祝福/游戏机制，其他类别合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "复数标题与具体祝福（贸易祝福、市场祝福）可共用“祝福”作为中心词。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1115",
+      "evidence_rows": [
+        33325
+      ],
+      "source_excerpt": "Divinations, such as those performed to Lhankor Mhy and the Ancestors, are cheap",
+      "reason": "33325将 Divinations 说明为向 Lhankor Mhy 与 Ancestors 施行的廉价仪式；译名“占卜”与机制义一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33325将 Divinations 说明为向 Lhankor Mhy 与 Ancestors 施行的廉价仪式。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Divinations 译为“占卜”，与单数 divination 的既有译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为占卜仪式/技能，技能类别可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "33325的复数标题不改变术语核心；中文“占卜”不区分单复数，共享译名可接受。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1124",
+      "evidence_rows": [
+        33372
+      ],
+      "source_excerpt": "This blessing makes your market more profitable, and lets you support an additional trading partner (unless the Trading blessing already allows one).",
+      "reason": "33372在例外句中出现 Trading blessing；已将其类别改为其他，并按例外句收束 term_reason。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33372在“除非 Trading blessing 已允许一个额外贸易伙伴”的例外句中出现该术语。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Trading blessing 译为“贸易祝福”，保留 trading 的贸易义和 blessing 的祝福义。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "33372表明它是 blessing（祝福效果），不是技能；category_path 已改为其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Market blessing“市场祝福”互斥且译名可区分；本批无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1125",
+      "evidence_rows": [
+        33375
+      ],
+      "source_excerpt": "This blessing helps your trading caravans, and allows one additional trading partner (unless the Market blessing already allows one).",
+      "reason": "33375在例外句中出现 Market blessing；已将其类别改为其他，并按例外句收束 term_reason。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33375在“除非 Market blessing 已允许一个额外贸易伙伴”的例外句中出现该术语。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Market blessing 译为“市场祝福”，保留 market 的市场义和 blessing 的祝福义。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "33375表明它是 blessing（祝福效果），不是技能；category_path 已改为其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Trading blessing“贸易祝福”互斥且译名可区分；本批无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1128",
+      "evidence_rows": [
+        33513
+      ],
+      "source_excerpt": "The winner is crowned High King or High Queen of Dragon Pass.",
+      "reason": "33513以 High King or High Queen of Dragon Pass 表示胜者被加冕的统治头衔；译名按性别对应处理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33513原文以 High King or High Queen of Dragon Pass 表示胜者被加冕的统治头衔。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "High Queen 译为“至高女王”，与 High King 的“至高王”性别对应。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "身份/头衔，身份类别合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一头衔的性别变体，未与其他译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1129",
+      "evidence_rows": [
+        33435
+      ],
+      "source_excerpt": "Sometimes your quester will fail to make the transition, burning your Quest magic for the year to no effect.",
+      "reason": "33435将 Quest magic 描述为跨界失败时会烧掉的年度资源；译名保留探索与魔法资源义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33435原文将 Quest magic 描述为跨界失败时会烧掉的年度资源。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Quest magic 译为“探索魔法”，保留 Quest 的探索义和 magic 的魔法资源义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "游戏资源/机制，其他类别合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Quest 相关术语的“探索”用词一致；本批无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1131",
+      "evidence_rows": [
+        33638,
+        33639
+      ],
+      "source_excerpt": "Trade Screen",
+      "reason": "33638为标题 Trade Screen，33639说明该界面用于派遣贸易任务、追踪宝藏与贸易路线等；译名符合短 UI 标签。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33638为标题 Trade Screen；33639说明该界面用于派遣贸易任务、追踪宝藏与贸易路线等。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Trade Screen 译为“贸易界面”，符合短 UI 标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "界面标签，其他类别合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Trade screen 的大小写变体一致；本批无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1132",
+      "evidence_rows": [
+        33630,
+        33632
+      ],
+      "source_excerpt": "Saga Screen",
+      "reason": "33630为标题 Saga Screen，33632说明该界面可选择年份重玩；已修正 term_reason 去除未支持说明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33630为标题 Saga Screen；33632说明该界面可选择年份重玩。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Saga Screen 译为“传奇界面”，保留 saga 的氏族历史/传奇叙事义并符合短 UI 标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "界面标签，其他类别合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "标题与说明中的 Saga Screen 用词一致；本批无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1133",
+      "evidence_rows": [
+        33561,
+        33567
+      ],
+      "source_excerpt": "Reorganization Screen",
+      "reason": "33561为标题，33567说明该界面用于筛选首领并为氏族议事环选酋长与顾问；译名符合短 UI 标签。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33561为标题 Reorganization Screen；33567说明该界面用于筛选首领并为氏族议事环选酋长与顾问。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Reorganization Screen 译为“重组界面”，符合短 UI 标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "界面标签，其他类别合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "标题与说明中的 Reorganization Screen 用词一致；本批无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1137",
+      "evidence_rows": [
+        33658
+      ],
+      "source_excerpt": "As the strength of the clan market improves, your traders will be able to generate more goods for the clan.",
+      "reason": "33658说明 clan market 代表其他氏族主动来贸易，其强度提升会让商人产出更多货物；译名限定明确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33658说明 clan market 代表其他氏族主动来贸易，其强度提升会让商人产出更多货物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "clan market 译为“氏族市场”，保留 clan 的氏族义和 market 的市场义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "贸易机制，其他类别合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同段中的 market 与 clan market 可分别理解为市场机制与氏族市场；译名“氏族市场”限定明确。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:1111",
+    "terms:1112",
+    "terms:1113",
+    "terms:1115",
+    "terms:1124",
+    "terms:1125",
+    "terms:1128",
+    "terms:1129",
+    "terms:1131",
+    "terms:1132",
+    "terms:1133",
+    "terms:1137"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

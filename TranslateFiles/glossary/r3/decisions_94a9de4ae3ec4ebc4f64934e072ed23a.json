@@ -1,0 +1,535 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 12 条 non_translate 场景标识的来源、分类与保护范围审校；均保留原文，并按独立/嵌入用例补齐 whole_record 或 text 的 applicability。",
+  "acknowledged_findings": [
+    "F0047",
+    "F0048",
+    "F0049",
+    "F0050",
+    "F0051",
+    "F0057",
+    "F0120",
+    "F0223",
+    "F0224",
+    "F0225",
+    "F0226",
+    "F0227"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "record 3932 原文仅为完整场景标识 scene028，未给出嵌入正文用例；仅保护整条记录。"
+        }
+      },
+      "reason": "补充 whole_record 范围，避免 scene028 被全局禁翻。",
+      "evidence_rows": [
+        3932
+      ],
+      "table": "non_translate",
+      "index": 88
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "record 3981 原文仅为完整场景标识 scene029，未给出嵌入正文用例；仅保护整条记录。"
+        }
+      },
+      "reason": "补充 whole_record 范围，避免 scene029 被全局禁翻。",
+      "evidence_rows": [
+        3981
+      ],
+      "table": "non_translate",
+      "index": 89
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "record 4025 原文仅为完整场景标识 scene030，未给出嵌入正文用例；仅保护整条记录。"
+        }
+      },
+      "reason": "补充 whole_record 范围，避免 scene030 被全局禁翻。",
+      "evidence_rows": [
+        4025
+      ],
+      "table": "non_translate",
+      "index": 90
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "record 4097 原文仅为完整场景标识 scene034，未给出嵌入正文用例；仅保护整条记录。"
+        }
+      },
+      "reason": "补充 whole_record 范围，避免 scene034 被全局禁翻。",
+      "evidence_rows": [
+        4097
+      ],
+      "table": "non_translate",
+      "index": 91
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "record 4274 原文仅为完整场景标识 scene049，未给出嵌入正文用例；仅保护整条记录。"
+        }
+      },
+      "reason": "补充 whole_record 范围，避免 scene049 被全局禁翻。",
+      "evidence_rows": [
+        4274
+      ],
+      "table": "non_translate",
+      "index": 92
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "record 4764 原文为完整场景标识 scene026z；现有 term_reason 也说明其不翻译。"
+        }
+      },
+      "reason": "补充 whole_record 范围，避免 scene026z 被全局禁翻。",
+      "evidence_rows": [
+        4764
+      ],
+      "table": "non_translate",
+      "index": 100
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "record 10971 独立出现 scene052，record 31420 以 @scene052 嵌入出现；该串均为内部场景标识，无普通词义，需同时保护两种上下文。"
+        }
+      },
+      "reason": "scene052 同时有独立及 @ 前缀嵌入用例，采用 text 范围并限定大小写。",
+      "evidence_rows": [
+        10971,
+        31420
+      ],
+      "table": "non_translate",
+      "index": 183
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "record 27729 原文仅为完整场景标识 scene209，未给出嵌入正文用例；仅保护整条记录。"
+        }
+      },
+      "reason": "补充 whole_record 范围，避免 scene209 被全局禁翻。",
+      "evidence_rows": [
+        27729
+      ],
+      "table": "non_translate",
+      "index": 318
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "record 28012 原文仅为完整场景标识 scene215，未给出嵌入正文用例；仅保护整条记录。"
+        }
+      },
+      "reason": "补充 whole_record 范围，避免 scene215 被全局禁翻。",
+      "evidence_rows": [
+        28012
+      ],
+      "table": "non_translate",
+      "index": 319
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "record 28058 原文为完整场景标识 scene216；现有 reason 也说明其保持原样。"
+        }
+      },
+      "reason": "补充 whole_record 范围，避免 scene216 被全局禁翻。",
+      "evidence_rows": [
+        28058
+      ],
+      "table": "non_translate",
+      "index": 320
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "record 28372 原文为完整场景标识 scene221；现有 reason 也说明其保持原样。"
+        }
+      },
+      "reason": "补充 whole_record 范围，避免 scene221 被全局禁翻。",
+      "evidence_rows": [
+        28372
+      ],
+      "table": "non_translate",
+      "index": 321
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "record 28457 原文为完整场景标识 scene222；现有 reason 也说明其保持原样。"
+        }
+      },
+      "reason": "补充 whole_record 范围，避免 scene222 被全局禁翻。",
+      "evidence_rows": [
+        28457
+      ],
+      "table": "non_translate",
+      "index": 322
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:88",
+      "evidence_rows": [
+        3932
+      ],
+      "source_excerpt": "scene028",
+      "reason": "原文为内部场景标识符，不翻译；已补 whole_record 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "record 3932 原文为 scene028，确属内部场景标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不产生目标译文，保留标识符原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原缺 applicability，已补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 sceneNNN 场景标识均保留原文，处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:89",
+      "evidence_rows": [
+        3981
+      ],
+      "source_excerpt": "scene029",
+      "reason": "原文为内部场景标识符，不翻译；已补 whole_record 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "record 3981 原文为 scene029，确属内部场景标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不产生目标译文，保留标识符原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原缺 applicability，已补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 sceneNNN 场景标识均保留原文，处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:90",
+      "evidence_rows": [
+        4025
+      ],
+      "source_excerpt": "scene030",
+      "reason": "原文为内部场景标识符，不翻译；已补 whole_record 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "record 4025 原文为 scene030，确属内部场景标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不产生目标译文，保留标识符原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原缺 applicability，已补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 sceneNNN 场景标识均保留原文，处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:91",
+      "evidence_rows": [
+        4097
+      ],
+      "source_excerpt": "scene034",
+      "reason": "原文为内部场景标识符，不翻译；已补 whole_record 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "record 4097 原文为 scene034，确属内部场景标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不产生目标译文，保留标识符原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原缺 applicability，已补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 sceneNNN 场景标识均保留原文，处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:92",
+      "evidence_rows": [
+        4274
+      ],
+      "source_excerpt": "scene049",
+      "reason": "原文为内部场景标识符，不翻译；已补 whole_record 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "record 4274 原文为 scene049，确属内部场景标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不产生目标译文，保留标识符原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原缺 applicability，已补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 sceneNNN 场景标识均保留原文，处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:100",
+      "evidence_rows": [
+        4764
+      ],
+      "source_excerpt": "scene026z",
+      "reason": "原文为内部场景标识符，不翻译；已补 whole_record 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "record 4764 原文为 scene026z，确属内部场景标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不产生目标译文，保留标识符原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原缺 applicability，已补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 sceneNNN 场景标识均保留原文，处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:183",
+      "evidence_rows": [
+        10971,
+        31420
+      ],
+      "source_excerpt": "scene052",
+      "reason": "原文既有独立 scene052，也有 @scene052 中的嵌入用法，均属内部场景标识；以 text 范围保护该唯一标识串。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "record 10971 原文为 scene052，record 31420 原文为 @scene052，后者含同一场景标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不产生目标译文，scene052 保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；因同时存在独立及 @scene052 嵌入用例，已补 text 范围并限定大小写。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "独立与嵌入用法均保持 scene052 原文，符合同批场景标识处理。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:318",
+      "evidence_rows": [
+        27729
+      ],
+      "source_excerpt": "scene209",
+      "reason": "原文为内部场景标识符，不翻译；已补 whole_record 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "record 27729 原文为 scene209，确属内部场景标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不产生目标译文，保留标识符原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原缺 applicability，已补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 sceneNNN 场景标识均保留原文，处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:319",
+      "evidence_rows": [
+        28012
+      ],
+      "source_excerpt": "scene215",
+      "reason": "原文为内部场景标识符，不翻译；已补 whole_record 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "record 28012 原文为 scene215，确属内部场景标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不产生目标译文，保留标识符原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原缺 applicability，已补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 sceneNNN 场景标识均保留原文，处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:320",
+      "evidence_rows": [
+        28058
+      ],
+      "source_excerpt": "scene216",
+      "reason": "原文为内部场景标识符，不翻译；已补 whole_record 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "record 28058 原文为 scene216，确属内部场景标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不产生目标译文，保留标识符原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原缺 applicability，已补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 sceneNNN 场景标识均保留原文，处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:321",
+      "evidence_rows": [
+        28372
+      ],
+      "source_excerpt": "scene221",
+      "reason": "原文为内部场景标识符，不翻译；已补 whole_record 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "record 28372 原文为 scene221，确属内部场景标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不产生目标译文，保留标识符原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原缺 applicability，已补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 sceneNNN 场景标识均保留原文，处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:322",
+      "evidence_rows": [
+        28457
+      ],
+      "source_excerpt": "scene222",
+      "reason": "原文为内部场景标识符，不翻译；已补 whole_record 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "record 28457 原文为 scene222，确属内部场景标识。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不产生目标译文，保留标识符原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原缺 applicability，已补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 sceneNNN 场景标识均保留原文，处理一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:88",
+    "non_translate:89",
+    "non_translate:90",
+    "non_translate:91",
+    "non_translate:92",
+    "non_translate:100",
+    "non_translate:183",
+    "non_translate:318",
+    "non_translate:319",
+    "non_translate:320",
+    "non_translate:321",
+    "non_translate:322"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

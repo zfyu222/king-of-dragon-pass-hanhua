@@ -1,0 +1,130 @@
+{
+  "review_complete": true,
+  "review_summary": "审校 e1-e3：确认 Horse-Spawn 为敌族专名，译名马裔及种族分类可用，并补充大小写变体限定；Sword-Throwing Feat 为具名战斗绝技，保留译名并修正未由本批原文支持的 term_reason；Berserker blessing 为游戏机制名，译名与技能分类可用。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": false,
+          "reason": "第1887条作 Horse-Spawn，第22908条作 Horse-spawn，均指同一敌族专名。"
+        }
+      },
+      "reason": "补充大小写不敏感的正文专名限定，覆盖同一名称的变体拼写。",
+      "evidence_rows": [
+        1887,
+        22908
+      ],
+      "table": "terms",
+      "index": 16
+    },
+    {
+      "patch": {
+        "term_reason": "第290、296条以 Sword-Throwing Feat 指一种具名战斗绝技，由角色在事件中施展。"
+      },
+      "reason": "原文未在本批记录中出现胡马卡特，删除未经本批原文支持的设定关联，仅保留可证实的具名绝技含义。",
+      "evidence_rows": [
+        290,
+        296
+      ],
+      "table": "terms",
+      "index": 19
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:16",
+      "evidence_rows": [
+        1889,
+        1665,
+        12945,
+        1887,
+        22908
+      ],
+      "source_excerpt": "Our fellow Orlanthi call them the Horse-Spawn",
+      "reason": "Horse-Spawn 在原文中指西部骑马游牧的敌对外来族群，是专名而非普通复合词；译名马裔和种族分类成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第1889条明确称其为 Orlanthi 口中的 the Horse-Spawn，并描述为 nomadic horse riders；第1665条称 cruel horse nomads。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "第1887条独立词条为 Horse-Spawn，译作马裔可保留名称性并与相关复合词 Horse-Spawn Bowl 的马裔一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "第1889、1665条均指向一个骑马游牧的敌对外族群体，归入种族合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "第1887条 Horse-Spawn 与第22908条 Horse-spawn 为同一专名的大小写变体；已在编辑中限定为 text 且 case_sensitive=false。第12945条说明 Grazers 即 Horse-Spawn，不改变统一译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:19",
+      "evidence_rows": [
+        290,
+        296
+      ],
+      "source_excerpt": "Perform the Sword-Throwing Feat.",
+      "reason": "Sword-Throwing Feat 是事件中可施展的具名战斗绝技；译名掷剑绝技、技能分类和 required 级别均成立，term_reason 已删去本批原文未支持的设定关联。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第290条作 Perform the Sword-Throwing Feat.，第296条再次以 the Sword-Throwing Feat 指同一具名绝技。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "掷剑绝技对应 Sword-Throwing Feat，保留 Feat 作为具名绝技的术语义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文将其作为可由角色施展的战斗能力，归入技能合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "第290、296条名称形式一致，均指向同一绝技；本批内无译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:20",
+      "evidence_rows": [
+        193
+      ],
+      "source_excerpt": "Berserker blessing",
+      "reason": "Berserker blessing 指氏族可用的特定战斗祝福，是游戏机制名；译名狂战士祝福和技能分类可用。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第193条作 Use the clan’s Berserker blessing to fight them all.，说明其为氏族可用的特定祝福。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "狂战士祝福可自然表达 Berserker blessing 的机制含义，未与普通动词混淆。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该词条指战斗中可用的祝福/能力，归入技能在现有分类中最合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条仅一次出现，形式为 Berserker blessing；只读词族候选中的 Berserker 为组件提示，本条按复合机制名统一译作狂战士祝福，未发现同形冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:16",
+    "terms:19",
+    "terms:20"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

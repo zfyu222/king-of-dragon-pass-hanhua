@@ -1,0 +1,388 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1–e12 的原文、译名、分类与一致性。确认 f1、f2 均为同一词项的单复数变体共享译名，不构成冲突。将 e9 统一为“开路者温加”，将 e11 统一为“王冠试炼”；其余条目维持现有译名与分类。未发现需要隔离、新增或允许无匹配的条目。",
+  "acknowledged_findings": [
+    "F0370",
+    "F0401"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "开路者温加"
+      },
+      "reason": "统一 Vinga Trailblazer 的译名，使 Trailblazer 与相关英雄任务名称中的“开路者”一致。",
+      "evidence_rows": [
+        16113,
+        28288
+      ],
+      "table": "terms",
+      "index": 506
+    },
+    {
+      "patch": {
+        "recommended_translation": "王冠试炼"
+      },
+      "reason": "原文描述为萨拉斯卡自创的王权仪式，并称 attempting her Crown Test；“试炼”比“考验”更贴合仪式名。",
+      "evidence_rows": [
+        16268,
+        17986,
+        17987
+      ],
+      "table": "terms",
+      "index": 508
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:489",
+      "evidence_rows": [
+        15208
+      ],
+      "source_excerpt": "his family was slain by sable nomads from Prax",
+      "reason": "原文明确 sable nomads 来自 Prax，是与 Derik 家族遇害相关的游牧群体；译名和种族分类可保持。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "15208 原文直接出现 sable nomads from Prax。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译为“黑貂游牧民”保留了 sable 与 nomads 的群体称谓，未与普通动物词混淆。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=种族，证据指一支游牧群体，分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此条 sable nomads，无同形冲突；与相关游牧群体称谓不矛盾。"
+        }
+      }
+    },
+    {
+      "ref": "terms:490",
+      "evidence_rows": [
+        34033,
+        16364,
+        15794
+      ],
+      "source_excerpt": "This was called the First Age.",
+      "reason": "First Age 在 15794、16364、34033 均作历史纪元名；译名统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "15794、16364、34033 均出现 First Age，指历史纪元。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "采用“第一时代”，与候选常见译法一致，能明确表达历史分期。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他，历史纪元名归入其他合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "三处证据均指同一纪元，未发现跨义冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:491",
+      "evidence_rows": [
+        15441,
+        15444
+      ],
+      "source_excerpt": "One group, calling itself the First People, claims descent from the founders of the tribe.",
+      "reason": "First People 是自称源于部族创始者的派系名；“初民”保留其群体自称。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "15441 原文明确 One group, calling itself the First People。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“初民”可作该派系的自称名，简洁且不引入额外身份。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=组织，原文称其为 clan 内 faction/group，分类合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "15441、15444 均指同一派系，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:496",
+      "evidence_rows": [
+        15437,
+        26138,
+        34044,
+        34372
+      ],
+      "source_excerpt": "as Eurmal taught Grandfather Mortal.",
+      "reason": "Grandfather Mortal 是 Eurmal 所杀的第一位凡人/凡人之祖；“凡人祖父”作为神话称号保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "15437、26138、34044、34372 均以 Grandfather Mortal 指被 Eurmal 杀死的首位凡人。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“凡人祖父”保留 Grandfather 的称号结构，且证据说明其凡人始祖身份。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=身份，作为神话中的身份/称号合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各出处均指同一神话人物，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:500",
+      "evidence_rows": [
+        34006,
+        15745,
+        15746,
+        28064
+      ],
+      "source_excerpt": "thrall: a slave, with no legal status.",
+      "reason": "34006 直接定义 thrall 为 a slave, with no legal status；与 related e13 的复数 thralls 共享“奴隶”不构成冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34006 原文直接定义 thrall: a slave, with no legal status；15745、15746 等亦有单数用例。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“奴隶”直接对应原文定义，未弱化其无法律地位。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=身份，thrall 是可买卖、释放、献祭的依附身份，分类合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 related e13 的 thralls 属同词项单复数变体，共享“奴隶”；f1 为变体提示，不构成冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:501",
+      "evidence_rows": [
+        15669,
+        15670,
+        19082,
+        23960,
+        23968
+      ],
+      "source_excerpt": "Use trickster magic to send the spirits elsewhere.",
+      "reason": "trickster magic 指 Eurmal 一系诡术师使用的魔法，在送走精魂、骰局作弊和引走敌人等场景中一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "15669、15670 明确 Use trickster magic to send the spirits elsewhere；19082、23960 等亦同。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译为“诡术魔法”对应 trickster + magic，保留技能/魔法属性。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=技能，指可运用的魔法能力，分类合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各出处均指同一类诡术魔法，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:502",
+      "evidence_rows": [
+        15772,
+        15773
+      ],
+      "source_excerpt": "We told them that their rock spirit was wrong.",
+      "reason": "rock spirit 指敌对氏族信奉的特定岩石之灵；作为可被质疑判断的强大精魂，使用 reference 较稳妥。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "15772 出现 their rock spirit；15773 进一步说明 even a spirit so great as their rock spirit。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“岩石之灵”直译该精魂称谓，保留“灵”的性质。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他，为特定精魂/信仰对象，归其他合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两处均指同一敌对氏族的岩石之灵，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:503",
+      "evidence_rows": [
+        28181,
+        34004,
+        15790
+      ],
+      "source_excerpt": "She is a spirit-talker of some kind.",
+      "reason": "28181 与 34004 均说明 spirit-talker 是与 spirits 打交道的宗教专家；“灵语者”准确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34004 定义 spirit-talker 为 dealing with spirits 的人；28181、15790 有实例。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译为“灵语者”对应与灵沟通/交涉的专家身份。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=身份，指宗教专家身份，分类合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 related e14 的复数 spirit-talkers 属同词项变体，共享“灵语者”；f2 不构成冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:506",
+      "evidence_rows": [
+        16113,
+        28288
+      ],
+      "source_excerpt": "Kallyr said again that she wanted to enact the Vinga Trailblazer heroquest.",
+      "reason": "Vinga Trailblazer 是温加的英雄任务称号；为与 Trailblazer 词族译法一致，统一为“开路者温加”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "16113、28288 均出现 Vinga Trailblazer heroquest，指同一英雄任务。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由“温加开拓者”改为“开路者温加”，保留 Vinga=温加，Trailblazer=开路者。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他，作为英雄任务名称合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与相关 Trailblazer 名称的“开路者”核心译名统一，避免同一词族分裂。"
+        }
+      }
+    },
+    {
+      "ref": "terms:507",
+      "evidence_rows": [
+        16364
+      ],
+      "source_excerpt": "In the First Age, the Northern Horse People stood against the way Orlanth wanted things.",
+      "reason": "Northern Horse People 是第一纪元对抗奥兰斯秩序的族群名；“北方马民”保留族群称谓。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "16364 原文直接出现 the Northern Horse People。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“北方马民”对应 Northern + Horse + People，简洁且与 Horse Nomads 类译法相容。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=种族，指族群/人民，分类合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条仅一处，但与“马民”类族群称谓不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:508",
+      "evidence_rows": [
+        16268,
+        16322,
+        17986,
+        17987
+      ],
+      "source_excerpt": "Saraska strides out into the middle of the ritual ground and begins her Crown Test.",
+      "reason": "Crown Test 是萨拉斯卡自创、用于建立王国的王权仪式；统一为更具仪式感的“王冠试炼”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "16268、16322、17986、17987 均以 Crown Test 指 Saraska 的王权仪式。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由“王冠考验”改为“王冠试炼”，更贴合原文 ritual 与 attempting 的试炼含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他，作为特定王权仪式名合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "各出处均指同一仪式，现统一为“王冠试炼”，消除候选分歧。"
+        }
+      }
+    },
+    {
+      "ref": "terms:514",
+      "evidence_rows": [
+        16786
+      ],
+      "source_excerpt": "The next day, when it was time to choose whether or not to go back to the Checkered Battle, Orlanth did not.",
+      "reason": "Checkered Battle 是奥兰斯选择不再返回的神话战役名；“棋盘之战”保留其专名性。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "16786 原文直接出现 the Checkered Battle。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“棋盘之战”直译 Checkered + Battle，符合神话战役名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他，作为战役名归其他合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条仅一处，译名统一且无同形冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:489",
+    "terms:490",
+    "terms:491",
+    "terms:496",
+    "terms:500",
+    "terms:501",
+    "terms:502",
+    "terms:503",
+    "terms:506",
+    "terms:507",
+    "terms:508",
+    "terms:514"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

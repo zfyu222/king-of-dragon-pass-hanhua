@@ -1,0 +1,392 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1–e12 的原文、译名、分类和跨条一致性；确认 f1 为 Mt/Mount Wintertop 同一地名缩写共用译名，f2 为 duck/duck-people 同一鸭人种族；修正 Humakt 统一译名及乌拉尔达两项祝福的可读性，其余条目维持。",
+  "acknowledged_findings": [
+    "F0360",
+    "F0382"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "胡马卡特砺剑礼",
+        "term_reason": "胡马卡特的砺剑仪式，原文作为已施行的仪式名。"
+      },
+      "reason": "相关条目 e19 将 Humakt 统一为“胡马卡特”，原译“胡马特”不一致。",
+      "evidence_rows": [
+        29046,
+        29107
+      ],
+      "table": "terms",
+      "index": 941
+    },
+    {
+      "patch": {
+        "recommended_translation": "乌拉尔达牛犊祝福",
+        "term_reason": "乌拉尔达的牛犊祝福；原文称每年拥有它是幸运。"
+      },
+      "reason": "“犊祝福”不成词，改为“牛犊祝福”以准确表达 Calf Blessing。",
+      "evidence_rows": [
+        29879
+      ],
+      "table": "terms",
+      "index": 952
+    },
+    {
+      "patch": {
+        "recommended_translation": "乌拉尔达牛奶祝福",
+        "term_reason": "乌拉尔达的牛奶祝福；原文称随时拥有它是幸运，今年格外幸运。"
+      },
+      "reason": "“奶祝福”不成词，改为“牛奶祝福”以准确表达 Milk Blessing。",
+      "evidence_rows": [
+        29883
+      ],
+      "table": "terms",
+      "index": 953
+    },
+    {
+      "patch": {
+        "recommended_translation": "胡马卡特誓约祝福",
+        "term_reason": "胡马卡特的誓约祝福，原文称对使者有用。"
+      },
+      "reason": "相关条目 e19 将 Humakt 统一为“胡马卡特”，原译“胡马特”不一致。",
+      "evidence_rows": [
+        29708
+      ],
+      "table": "terms",
+      "index": 955
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:933",
+      "evidence_rows": [
+        27326
+      ],
+      "source_excerpt": "towards Stormwalk Mountain",
+      "reason": "原文将 Stormwalk Mountain 用作旅行者前往的地名；译名、分类和一致性均维持。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第27326条原文出现 towards Stormwalk Mountain，确认是旅行目的地。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Stormwalk Mountain 译作“风暴山”，作为地名简洁可辨识，未发现同形冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文用于地点，category_path=地名 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未与本批其他地名共用易混译名；专名统一保留“风暴山”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:939",
+      "evidence_rows": [
+        29057
+      ],
+      "source_excerpt": "We are the Pure Horse People.",
+      "reason": "原文为马裔自称的族名；译名、分类和一致性均维持。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第29057条 Horse-Spawn 自称 We are the Pure Horse People，确认族名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“纯马民”可表达 Pure Horse People 的族群自称含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文指一个 people/族裔，category_path=种族 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批内单独使用，未与相关族名条目产生译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:940",
+      "evidence_rows": [
+        29044
+      ],
+      "source_excerpt": "performed the Arming of Orlanth.",
+      "reason": "原文为奥兰斯相关仪式名；译名、分类和一致性均维持。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第29044条出现 performed the Arming of Orlanth，确认仪式名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Arming 指披甲/配甲仪式，“奥兰斯披甲礼”保留仪式义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为仪式名，category_path=技能 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Orlanth 与相关条目 e21“奥兰斯”一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:941",
+      "evidence_rows": [
+        29046
+      ],
+      "source_excerpt": "performed the Honing of Humakt.",
+      "reason": "原文为 Humakt 相关仪式名；已将 Humakt 统一为“胡马卡特”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第29046条出现 performed the Honing of Humakt，确认仪式名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原文 Honing of Humakt 是胡马卡特的砺剑仪式；已将“胡马特”统一为“胡马卡特”，译作“胡马卡特砺剑礼”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为仪式名，category_path=技能 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "相关条目 e19 将 Humakt 作“胡马卡特”，本次修正消除同神异译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:947",
+      "evidence_rows": [
+        29294
+      ],
+      "source_excerpt": "near Mt Wintertop",
+      "reason": "原文为山名；Mt Wintertop 与 Mount Wintertop 为同地异写，共用“冬顶山”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第29294条出现 near Mt Wintertop，确认是山名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Mt Wintertop 译“冬顶山”，与 Mount Wintertop 同地异写共用译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为山名，category_path=地名 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f1 的共用译名源于 Mt/Mount Wintertop 同一地名缩写，非不同地点冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:949",
+      "evidence_rows": [
+        29842
+      ],
+      "source_excerpt": "using Ernalda's Oven to bake our bread",
+      "reason": "原文为厄纳尔达相关炉具/宝物；译名、分类和一致性均维持。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第29842条出现 using Ernalda's Oven to bake our bread，确认炉具用途。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Ernalda's Oven 译“厄纳尔达烤炉”，贴合原文烤面包用途。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为可使用的炉具/宝物，category_path=物品 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Ernalda 与相关条目 e23“厄纳尔达”一致，未与普通炉具混淆。"
+        }
+      }
+    },
+    {
+      "ref": "terms:951",
+      "evidence_rows": [
+        29290
+      ],
+      "source_excerpt": "They're weird duck-people who live nearby",
+      "reason": "原文指鸭人种族；译名、分类和一致性均维持。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第29290条出现 duck-people who live nearby，确认指居住附近的鸭人种族。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "duck-people 译“鸭人”，与 duck people/ducks 同种族译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文指鸭人种族，category_path=种族 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f2 的共用译名对应 duck-people、duck people、ducks 同一鸭人种族，属合理变体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:952",
+      "evidence_rows": [
+        29879
+      ],
+      "source_excerpt": "Uralda's Calf Blessing",
+      "reason": "原文为乌拉尔达的牛犊祝福；已修正不自然的“犊祝福”搭配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第29879条出现 Uralda's Calf Blessing，确认祝福名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原文 Calf Blessing 指牛犊祝福；“犊祝福”不成词，改为“乌拉尔达牛犊祝福”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为祝福名，category_path=技能 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "乌拉尔达与相关条目 e20“母牛之母乌拉尔达”一致；仅修正搭配。"
+        }
+      }
+    },
+    {
+      "ref": "terms:953",
+      "evidence_rows": [
+        29883
+      ],
+      "source_excerpt": "Uralda's Milk Blessing",
+      "reason": "原文为乌拉尔达的牛奶祝福；已修正不自然的“奶祝福”搭配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第29883条出现 Uralda's Milk Blessing，确认祝福名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原文 Milk Blessing 指牛奶祝福；“奶祝福”不成词，改为“乌拉尔达牛奶祝福”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为祝福名，category_path=技能 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "乌拉尔达与相关条目 e20“母牛之母乌拉尔达”一致；仅修正搭配。"
+        }
+      }
+    },
+    {
+      "ref": "terms:954",
+      "evidence_rows": [
+        29592
+      ],
+      "source_excerpt": "sacrificing for Chalana Arroy's Hope blessing",
+      "reason": "原文为查拉娜阿罗伊的希望祝福；译名、分类和一致性均维持。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第29592条出现 sacrificing for Chalana Arroy's Hope blessing，确认祝福名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Chalana Arroy's Hope blessing 译“查拉娜阿罗伊希望祝福”，保留神名和祝福名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为祝福名，category_path=技能 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Chalana Arroy 与相关条目 e16“查拉娜阿罗伊”一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:955",
+      "evidence_rows": [
+        29708
+      ],
+      "source_excerpt": "Humakt's Oath blessing would be useful for our emissary.",
+      "reason": "原文为 Humakt 相关祝福名；已将 Humakt 统一为“胡马卡特”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第29708条出现 Humakt's Oath blessing would be useful for our emissary，确认祝福名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原文 Humakt's Oath blessing 是胡马卡特的誓约祝福；已将“胡马特”统一为“胡马卡特”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为祝福名，category_path=技能 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "相关条目 e19 将 Humakt 作“胡马卡特”，本次修正消除同神异译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:956",
+      "evidence_rows": [
+        29707
+      ],
+      "source_excerpt": "learn the Silvertongue blessing before sending out an emissary",
+      "reason": "原文为银舌祝福；译名、分类和一致性均维持。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第29707条出现 learn the Silvertongue blessing before sending out an emissary，确认祝福名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Silvertongue blessing 译“银舌祝福”，保留祝福专名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为祝福名，category_path=技能 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Silvertongue 与相关条目 e25“银舌”一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:933",
+    "terms:939",
+    "terms:940",
+    "terms:941",
+    "terms:947",
+    "terms:949",
+    "terms:951",
+    "terms:952",
+    "terms:953",
+    "terms:954",
+    "terms:955",
+    "terms:956"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

@@ -1,0 +1,409 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对全部 12 条术语：保留 e1/e2/e3/e6/e7/e10/e11/e12 结论；修正 e4 的 Uroxi 群体译名与术语属性、e5 的部族联盟用词、e8 的黑貂骑手专名分类、e9 的氏族圣物一致性。未提出隔离或新增。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "七名乌罗克斯信徒",
+        "term_kind": "game_term",
+        "enforcement": "reference",
+        "term_reason": "原文以 the Seven Uroxi 指七名乌罗克斯（Urox）信徒，是比喻中的群体，不是独立专名；依 Uroxi 既定译名处理。"
+      },
+      "reason": "Uroxi 已在相关条目译作乌罗克斯信徒；此条是七名信众的比喻群体，不是独立专名，需修正译名及术语属性。",
+      "evidence_rows": [
+        12519
+      ],
+      "table": "terms",
+      "index": 460
+    },
+    {
+      "patch": {
+        "recommended_translation": "部族联盟",
+        "term_reason": "原文以 terms of tribal confederation 指部族联盟的规约，违反者须向同部族其他氏族赔牛。"
+      },
+      "reason": "tribe 在相关条目作部族；tribal confederation 应统一为部族联盟，term_reason 也应说明是联盟规约。",
+      "evidence_rows": [
+        13097,
+        13098
+      ],
+      "table": "terms",
+      "index": 464
+    },
+    {
+      "patch": {
+        "source": "Sable Riders",
+        "recommended_translation": "黑貂骑手",
+        "term_kind": "proper_name",
+        "enforcement": "required",
+        "category_path": "种族",
+        "term_reason": "原文在 16594/16602 以大写 Sable Riders 指一个具名族群/势力；13978 小写 sable riders 是 Goldentooth 的黑貂坐骑骑手。此处按具名族群处理。"
+      },
+      "reason": "16594/16602 大写 Sable Riders 是具名族群，应作 proper_name/required；13978 小写为普通骑手但同译。改源词大写并归类种族。",
+      "evidence_rows": [
+        16594,
+        16602,
+        13978
+      ],
+      "table": "terms",
+      "index": 473
+    },
+    {
+      "patch": {
+        "recommended_translation": "氏族圣物",
+        "term_reason": "原文说商人归还一部分氏族圣物并承诺帮忙；regalia 与 e2 的圣物统一为圣物。"
+      },
+      "reason": "e2 将 regalia 定为圣物；clan regalia 应作氏族圣物，避免仪仗/圣物混用。",
+      "evidence_rows": [
+        14846
+      ],
+      "table": "terms",
+      "index": 476
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:455",
+      "evidence_rows": [
+        12193
+      ],
+      "source_excerpt": "Evil Dragon Empire",
+      "reason": "保留现有专名与译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "12193 原文出现 Evil Dragon Empire，作为用酒馆引诱 Orlanthi 的具名势力。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "恶龙帝国可对应 Evil Dragon Empire，保留专名直译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "组织：原文为具有行动能力的帝国势力。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 related 的 Empire of the Wyrms Friends（龙友帝国）不是同一名称，未混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:457",
+      "evidence_rows": [
+        12237,
+        12238
+      ],
+      "source_excerpt": "holy regalia itself pilfered!",
+      "reason": "保留 regalia 的核心译名圣物。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "12237 出现 holy regalia itself pilfered，12238 亦称 our regalia 被盗。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "圣物可涵盖 holy regalia/regalia 的神圣礼器义，且与 e9 修正后的氏族圣物一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品：原文指被窃的实物徽器/圣物。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "核心 regalia 保留圣物；e9 已据此改为氏族圣物。"
+        }
+      }
+    },
+    {
+      "ref": "terms:458",
+      "evidence_rows": [
+        12457,
+        12458
+      ],
+      "source_excerpt": "truth magic",
+      "reason": "保留真言术作为该魔法权利的短译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "12457/12458 均作 cast truth magic on her，指向验证真伪的魔法。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "真言术简洁表达施放 truth magic 以查真伪，符合技能/魔法语境。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "技能：原文是可被要求施放的魔法权利/能力。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 related 的 Mistress of Truth（真理女主）分属不同复合词，不强行统一 truth 字样。"
+        }
+      }
+    },
+    {
+      "ref": "terms:460",
+      "evidence_rows": [
+        12519
+      ],
+      "source_excerpt": "the Seven Uroxi",
+      "reason": "修正 Uroxi 译名，并降为群体性 game_term/reference。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "12519 原文作 the Seven Uroxi，源词准确。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译七位乌洛克西与 related Uroxi=乌罗克斯信徒不一致；改为七名乌罗克斯信徒。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "身份：指七名 Urox 信众组成的群体。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "Uroxi 统一为乌罗克斯信徒；该短语是数量+群体，改 game_term/reference 而非独立专名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:464",
+      "evidence_rows": [
+        13097,
+        13098
+      ],
+      "source_excerpt": "terms of tribal confederation",
+      "reason": "统一 tribe 为部族，并说明该词指联盟规约。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "13097/13098 出现 terms of tribal confederation，指部族联盟规约。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "tribe 在 related tribal moot 作部族，故 tribal confederation 改为部族联盟，避免部落/部族混用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "组织：原文指氏族所组成的部族联盟及其规约关系。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一 tribe 为部族；与 tribal moot=部族大会同用语域。"
+        }
+      }
+    },
+    {
+      "ref": "terms:465",
+      "evidence_rows": [
+        12749
+      ],
+      "source_excerpt": "Laws of Heort",
+      "reason": "保留赫奥特法典及 Heort 的统一译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "12749 原文作 interpretation of the Laws of Heort。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "赫奥特法典准确指赫奥特王传下的法度，并与 related King Heort=赫奥特王一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他：法律典籍不适合作身份/组织/物品等分类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Heort 统一为赫奥特，Laws 作法典。"
+        }
+      }
+    },
+    {
+      "ref": "terms:471",
+      "evidence_rows": [
+        14111
+      ],
+      "source_excerpt": "Bent Stick",
+      "reason": "保留弯枝部族名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "14111 原文作 the Bent Stick tribe，Bent Stick 是部族名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "弯枝保留部族名直译，记录中可加部族限定，但词条本身不必扩展。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "组织：原文明确为 tribe。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Orgerd 部族并列出现，未产生译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:473",
+      "evidence_rows": [
+        16594,
+        16602,
+        13978
+      ],
+      "source_excerpt": "Sable Riders",
+      "reason": "修正大写专名分类与来源。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "13978 为小写普通 sable riders，16594/16602 以大写 Sable Riders 指具名族群；词条来源改为 Sable Riders。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "黑貂骑手可同时对应大写族群名与小写骑手，无碍。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原归类身份偏泛；大写 Sable Riders 指一个具名族群/部族，改种族。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "按专名处理为 proper_name/required；与 13978 普通骑手同译黑貂骑手，不制造冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:476",
+      "evidence_rows": [
+        14846
+      ],
+      "source_excerpt": "clan regalia",
+      "reason": "统一 regalia 为圣物。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "14846 原文作 returning a part of their clan regalia。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译氏族仪仗与 e2 的 regalia=圣物不一致；改为氏族圣物。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品：原文指被归还的氏族礼器/圣物实物。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "regalia 核心译名统一为圣物，clan regalia 作氏族圣物。"
+        }
+      }
+    },
+    {
+      "ref": "terms:477",
+      "evidence_rows": [
+        14464,
+        32492
+      ],
+      "source_excerpt": "Tube of Truth-Seeking",
+      "reason": "保留寻真之管的具名宝物译法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "14464 与 32492 均作 Tube of Truth-Seeking，为具名宝物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "寻真之管保留 Truth-Seeking=寻真，且作物品名简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品：原文是由沼草卷成的占卜辅助宝物。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 truth magic=真言术不是同一复合词，未错误合并。"
+        }
+      }
+    },
+    {
+      "ref": "terms:487",
+      "evidence_rows": [
+        15023,
+        15057,
+        21885,
+        21958,
+        22790,
+        22791,
+        33075
+      ],
+      "source_excerpt": "Queen of Dragon Pass",
+      "reason": "保留龙隘女王头衔。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "15057 等原文明确作 Queen of Dragon Pass，是女性统治者头衔。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "龙隘女王与 King of Dragon Pass 的龙隘之王体系一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "身份：原文为头衔/政治身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Dragon Pass 统一为龙隘，Queen 作女王；保留 game_term/required。"
+        }
+      }
+    },
+    {
+      "ref": "terms:488",
+      "evidence_rows": [
+        14910
+      ],
+      "source_excerpt": "duel of fertility",
+      "reason": "保留丰产决斗并与 fertility magic 对齐。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "14910 原文作 Challenge them to a duel of fertility，指丰产魔法较量。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "丰产决斗与 related fertility magic=丰产魔法一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他：特定决斗/事件机制，非技能或物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "fertility 统一作丰产，duel 作决斗。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:455",
+    "terms:457",
+    "terms:458",
+    "terms:460",
+    "terms:464",
+    "terms:465",
+    "terms:471",
+    "terms:473",
+    "terms:476",
+    "terms:477",
+    "terms:487",
+    "terms:488"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

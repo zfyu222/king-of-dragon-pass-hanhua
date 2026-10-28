@@ -1,0 +1,487 @@
+{
+  "review_complete": true,
+  "review_summary": "审阅12条具名物品术语。e1-e4 统一 Humakt 为“胡马卡特”并修正译名；e5-e9、e11-e12 按具名物品将 enforcement 调为 required 并补明 term_reason；e10 因 Fortune 可指命运/运势，保留“命运法杖”及 reference。分类均为“物品”，未发现跨条冲突。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "胡马卡特之盔",
+        "term_reason": "指胡马卡特的头盔，作为具名物品使用。",
+        "enforcement": "required"
+      },
+      "reason": "统一 Humakt 译名为“胡马卡特”，补明术语说明并固定具名物品译名。",
+      "evidence_rows": [
+        32439
+      ],
+      "table": "terms",
+      "index": 1066
+    },
+    {
+      "patch": {
+        "recommended_translation": "胡马卡特之盾",
+        "term_reason": "指胡马卡特的盾，作为具名物品使用。",
+        "enforcement": "required"
+      },
+      "reason": "统一 Humakt 译名为“胡马卡特”，补明术语说明并固定具名物品译名。",
+      "evidence_rows": [
+        32441
+      ],
+      "table": "terms",
+      "index": 1067
+    },
+    {
+      "patch": {
+        "recommended_translation": "胡马卡特之剑",
+        "term_reason": "指胡马卡特的剑，作为具名物品使用。",
+        "enforcement": "required"
+      },
+      "reason": "统一 Humakt 译名为“胡马卡特”，补明术语说明并固定具名物品译名。",
+      "evidence_rows": [
+        32442
+      ],
+      "table": "terms",
+      "index": 1068
+    },
+    {
+      "patch": {
+        "recommended_translation": "胡马卡特警示符文",
+        "term_reason": "指胡马卡特的警示符文，作为具名物品使用。",
+        "enforcement": "required"
+      },
+      "reason": "统一 Humakt 译名为“胡马卡特”，补明术语说明并固定具名物品译名。",
+      "evidence_rows": [
+        32443
+      ],
+      "table": "terms",
+      "index": 1069
+    },
+    {
+      "patch": {
+        "term_reason": "盛装众神之土的罐子，作为具名物品使用。",
+        "enforcement": "required"
+      },
+      "reason": "补明 Gods' Earth 为众神之土，并作为具名物品固定译名。",
+      "evidence_rows": [
+        32449
+      ],
+      "table": "terms",
+      "index": 1072
+    },
+    {
+      "patch": {
+        "term_reason": "奥兰斯的摇铃，作为具名物品使用。",
+        "enforcement": "required"
+      },
+      "reason": "补明为奥兰斯的摇铃，并作为具名物品固定译名。",
+      "evidence_rows": [
+        32461
+      ],
+      "table": "terms",
+      "index": 1078
+    },
+    {
+      "patch": {
+        "term_reason": "奎文的颈环，作为具名物品使用。",
+        "enforcement": "required"
+      },
+      "reason": "补明为奎文的颈环，并作为具名物品固定译名。",
+      "evidence_rows": [
+        32464
+      ],
+      "table": "terms",
+      "index": 1079
+    },
+    {
+      "patch": {
+        "term_reason": "以温科特王冠制成的戒指，作为具名物品使用。",
+        "enforcement": "required"
+      },
+      "reason": "补明为温科特王冠所制之戒，并作为具名物品固定译名。",
+      "evidence_rows": [
+        32467
+      ],
+      "table": "terms",
+      "index": 1081
+    },
+    {
+      "patch": {
+        "term_reason": "饰有七枚符文的围巾，作为具名物品使用。",
+        "enforcement": "required"
+      },
+      "reason": "补明为饰有七枚符文的围巾，并作为具名物品固定译名。",
+      "evidence_rows": [
+        32470
+      ],
+      "table": "terms",
+      "index": 1082
+    },
+    {
+      "patch": {
+        "term_reason": "与 Fortune 相关的法杖；Fortune 可指命运或运势，暂按“命运”译为“命运法杖”，保留 reference。"
+      },
+      "reason": "补明 Fortune 的命运/运势歧义，维持暂定译名与 reference。",
+      "evidence_rows": [
+        32483
+      ],
+      "table": "terms",
+      "index": 1085
+    },
+    {
+      "patch": {
+        "term_reason": "乌拉尔达的奶罐，作为具名物品使用。",
+        "enforcement": "required"
+      },
+      "reason": "补明为乌拉尔达的奶罐，并作为具名物品固定译名。",
+      "evidence_rows": [
+        32493
+      ],
+      "table": "terms",
+      "index": 1088
+    },
+    {
+      "patch": {
+        "term_reason": "温加的梳子，作为具名物品使用。",
+        "enforcement": "required"
+      },
+      "reason": "补明为温加的梳子，并作为具名物品固定译名。",
+      "evidence_rows": [
+        32496
+      ],
+      "table": "terms",
+      "index": 1090
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:1066",
+      "evidence_rows": [
+        32439
+      ],
+      "source_excerpt": "Humakt's Helm",
+      "reason": "具名头盔；Humakt 译名与关联术语统一为“胡马卡特”，并固定为 required。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32439 原文为 Humakt's Helm，是具体物品名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“胡马科特之盔”未统一 Humakt；改为“胡马卡特之盔”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“物品”，与头盔类物品相符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "关联术语提示 Humakt 应作“胡马卡特”，本项已统一并固定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1067",
+      "evidence_rows": [
+        32441
+      ],
+      "source_excerpt": "Humakt's Shield",
+      "reason": "具名盾牌；Humakt 译名与关联术语统一为“胡马卡特”，并固定为 required。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32441 原文为 Humakt's Shield，是具体物品名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“胡马科特之盾”未统一 Humakt；改为“胡马卡特之盾”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“物品”，与盾牌类物品相符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "关联术语提示 Humakt 应作“胡马卡特”，本项已统一并固定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1068",
+      "evidence_rows": [
+        32442
+      ],
+      "source_excerpt": "Humakt's Sword",
+      "reason": "具名剑；Humakt 译名与关联术语统一为“胡马卡特”，并固定为 required。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32442 原文为 Humakt's Sword，是具体物品名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“胡马科特之剑”未统一 Humakt；改为“胡马卡特之剑”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“物品”，与剑类物品相符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "关联术语提示 Humakt 应作“胡马卡特”，本项已统一并固定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1069",
+      "evidence_rows": [
+        32443
+      ],
+      "source_excerpt": "Humakt's Warning Rune",
+      "reason": "具名符文物品；Humakt 译名与关联术语统一为“胡马卡特”，并固定为 required。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32443 原文为 Humakt's Warning Rune，是具体物品名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“胡马科特警示符文”未统一 Humakt；改为“胡马卡特警示符文”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“物品”，与符文类物品相符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "关联术语提示 Humakt 应作“胡马卡特”，本项已统一并固定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1072",
+      "evidence_rows": [
+        32449
+      ],
+      "source_excerpt": "Jar of Gods' Earth",
+      "reason": "具名容器；译名可用，术语说明补明，并按具名物品固定为 required。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32449 原文为 Jar of Gods' Earth，是具体容器名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“神土之罐”表达盛装众神之土的罐子，语义可用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“物品”，与罐子相符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "作为唯一具名物品，将 enforcement 由 reference 调整为 required；译名无跨条冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1078",
+      "evidence_rows": [
+        32461
+      ],
+      "source_excerpt": "Orlanth's Rattle",
+      "reason": "具名摇铃；译名与 Orlanth 一致，术语说明补明，并按具名物品固定为 required。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32461 原文为 Orlanth's Rattle，是具体物品名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“奥兰斯摇铃”与 Orlanth 的“奥兰斯”一致，语义可用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“物品”，与摇铃相符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "作为具名物品固定为 required；Orlanth 译名与关联术语一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1079",
+      "evidence_rows": [
+        32464
+      ],
+      "source_excerpt": "Quivin's Torc",
+      "reason": "具名颈环；译名与 Quivin 一致，术语说明补明，并按具名物品固定为 required。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32464 原文为 Quivin's Torc，是具体物品名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“奎文颈环”与 Quivin 的“奎文”一致，torc 译作颈环可用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“物品”，与颈环相符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "作为具名物品固定为 required；Quivin 译名与关联术语一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1081",
+      "evidence_rows": [
+        32467
+      ],
+      "source_excerpt": "Ring Made From Vingkot's Crown",
+      "reason": "具名戒指；译名准确，术语说明补明，并按具名物品固定为 required。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32467 原文为 Ring Made From Vingkot's Crown，是具体物品名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“温科特王冠所制之戒”准确表达以王冠制成的戒指。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“物品”，与戒指相符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "作为具名物品固定为 required；Vingkot 译名与关联术语一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1082",
+      "evidence_rows": [
+        32470
+      ],
+      "source_excerpt": "Scarf of Seven Runes",
+      "reason": "具名围巾；译名可用，术语说明补明，并按具名物品固定为 required。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32470 原文为 Scarf of Seven Runes，是具体物品名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“七符文围巾”表达饰有七枚符文的围巾，语义可用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“物品”，与围巾相符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "作为具名物品固定为 required；无跨条冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1085",
+      "evidence_rows": [
+        32483
+      ],
+      "source_excerpt": "Staff of Fortune",
+      "reason": "具名法杖；Fortune 可指命运或运势，保留“命运法杖”为暂定译名及 reference。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32483 原文为 Staff of Fortune，是具体物品名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“命运法杖”可作为暂定译名；Fortune 也可指运势/幸运，故保留 reference。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“物品”，与法杖相符；因 Fortune 多义维持 reference。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "无跨条冲突；保留暂定译名并补明歧义。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1088",
+      "evidence_rows": [
+        32493
+      ],
+      "source_excerpt": "Uralda's Milk Pot",
+      "reason": "具名奶罐；译名与 Uralda 一致，术语说明补明，并按具名物品固定为 required。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32493 原文为 Uralda's Milk Pot，是具体物品名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“乌拉尔达奶罐”与 Uralda 的“乌拉尔达”一致，语义可用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“物品”，与奶罐相符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "作为具名物品固定为 required；Uralda 译名与关联术语一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1090",
+      "evidence_rows": [
+        32496
+      ],
+      "source_excerpt": "Vinga's Comb",
+      "reason": "具名梳子；译名与 Vinga 一致，术语说明补明，并按具名物品固定为 required。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32496 原文为 Vinga's Comb，是具体物品名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“温加之梳”与 Vinga 的“温加”一致，语义可用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“物品”，与梳子相符。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "作为具名物品固定为 required；Vinga 译名与关联术语一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:1066",
+    "terms:1067",
+    "terms:1068",
+    "terms:1069",
+    "terms:1072",
+    "terms:1078",
+    "terms:1079",
+    "terms:1081",
+    "terms:1082",
+    "terms:1085",
+    "terms:1088",
+    "terms:1090"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

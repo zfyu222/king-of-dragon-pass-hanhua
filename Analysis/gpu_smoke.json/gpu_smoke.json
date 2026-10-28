@@ -1,0 +1,170 @@
+{
+  "engine": {
+    "adapter": 5,
+    "rapidocr": "3.10.0",
+    "onnxruntime": "1.31.0",
+    "language": "ch",
+    "numpy": "2.5.4",
+    "pillow": "13.0.0",
+    "opencv": "5.0.0.93",
+    "box_threshold": 0.35,
+    "threads": 4,
+    "models": {
+      "Det": {
+        "file": "PP-OCRv6_det_medium.onnx",
+        "sha256": "92078b7355007ccfffcd4c8cd441a3afd4538904d06881b29a155e1e679907c2",
+        "providers": [
+          "CUDAExecutionProvider",
+          "CPUExecutionProvider"
+        ]
+      },
+      "Rec": {
+        "file": "PP-OCRv6_rec_medium.onnx",
+        "sha256": "eef444829dbbe18d7fea59a3f6eb75647518d2b3a9568d27c92e42940204894b",
+        "providers": [
+          "CUDAExecutionProvider",
+          "CPUExecutionProvider"
+        ]
+      }
+    },
+    "model_size": "medium",
+    "device": "cuda"
+  },
+  "kernel_events": {
+    "Det": {
+      "CUDAExecutionProvider": 448
+    },
+    "Rec": {
+      "CUDAExecutionProvider": 382,
+      "CPUExecutionProvider": 4
+    }
+  },
+  "result": {
+    "image_id": "d6fae21d780e32becd3f55ef08a67c95fcca4a64e46cdb5d06e19c2e171887a2",
+    "status": "text_candidate",
+    "regions": [
+      {
+        "polygon": [
+          [
+            100.0,
+            1.6666666666666667
+          ],
+          [
+            245.0,
+            1.6666666666666667
+          ],
+          [
+            245.0,
+            46.666666666666664
+          ],
+          [
+            100.0,
+            46.666666666666664
+          ]
+        ],
+        "box": [
+          100.0,
+          1.6666666666666667,
+          245.0,
+          46.666666666666664
+        ],
+        "text": "KINGOF",
+        "recognition_score": 0.99829,
+        "detection_score": 0.7672873808135963,
+        "pass": "whole-bg0-nearest",
+        "alternatives": [
+          {
+            "text": "KINGOF",
+            "recognition_score": 0.99829,
+            "detection_score": 0.7672873808135963,
+            "pass": "whole-bg0-nearest",
+            "box": [
+              100.0,
+              1.6666666666666667,
+              245.0,
+              46.666666666666664
+            ]
+          },
+          {
+            "text": "KING OF",
+            "recognition_score": 0.95271,
+            "detection_score": 0.7518272012749969,
+            "pass": "whole-bg1-nearest",
+            "box": [
+              101.0,
+              2.0,
+              244.66666666666666,
+              46.666666666666664
+            ]
+          }
+        ],
+        "disagreement": true,
+        "status": "needs_review",
+        "region_id": "e326bdcfa753a7bf75b402cd"
+      },
+      {
+        "polygon": [
+          [
+            0.0,
+            31.333333333333332
+          ],
+          [
+            328.6666666666667,
+            29.333333333333332
+          ],
+          [
+            328.6666666666667,
+            88.0
+          ],
+          [
+            0.0,
+            89.66666666666667
+          ]
+        ],
+        "box": [
+          0,
+          29.333333333333332,
+          328.6666666666667,
+          89.66666666666667
+        ],
+        "text": "DRAGON PASS",
+        "recognition_score": 0.9806,
+        "detection_score": 0.8650638888879344,
+        "pass": "whole-bg0-nearest",
+        "alternatives": [
+          {
+            "text": "DRAGON PAss",
+            "recognition_score": 0.76536,
+            "detection_score": 0.8742933576076062,
+            "pass": "whole-bg0-nearest",
+            "box": [
+              0.0,
+              31.333333333333332,
+              328.6666666666667,
+              89.66666666666667
+            ]
+          },
+          {
+            "text": "DRAGON PASS",
+            "recognition_score": 0.9806,
+            "detection_score": 0.8650638888879344,
+            "pass": "whole-bg1-nearest",
+            "box": [
+              0.0,
+              29.333333333333332,
+              328.6666666666667,
+              89.66666666666667
+            ]
+          }
+        ],
+        "disagreement": false,
+        "status": "candidate",
+        "region_id": "6ddf412a2494245cf40a82ad"
+      }
+    ],
+    "errors": [],
+    "passes": 2,
+    "elapsed_seconds": 1.0018,
+    "human_review": "unreviewed"
+  }
+}

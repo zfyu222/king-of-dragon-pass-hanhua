@@ -1,0 +1,260 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1-e9 的原文、译名、分类与一致性；维持现有译名，确认 f1 为同一概念的冠词变体。",
+  "acknowledged_findings": [
+    "F0399"
+  ],
+  "edits": [],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:164",
+      "evidence_rows": [
+        2315
+      ],
+      "source_excerpt": "took them away to the Higher World.",
+      "reason": "原文明确 Higher World 为接受义人灵魂/带离此世之地；译名、类别与用法均维持。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 2315 出现 Higher World，与 Mastakos 的战车带走人物相连。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“上界”，符合神话中超越此世之地的语境。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归为地名，指他界/上界，可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 World Machine 等术语无同形冲突；单独使用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:288",
+      "evidence_rows": [
+        13583
+      ],
+      "source_excerpt": "Mostal is not a god at all, but an idea called The World Machine.",
+      "reason": "原文将 World Machine 定义为 Mostal 的理念/体系名称；与 The World Machine 同指，仅冠词差异，译名统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "13583 说明 Mostal 被称为 The World Machine 的理念；5376/5377 亦见该词。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“世界机器”，直译且与矮人机械宇宙观相符。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归为其他，作为特定理念/体系名称可接受；proper_name 保留。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e3 The World Machine 同指，冠词变体不另译；f1 已核对。"
+        }
+      }
+    },
+    {
+      "ref": "terms:468",
+      "evidence_rows": [
+        13583
+      ],
+      "source_excerpt": "Mostal is not a god at all, but an idea called The World Machine.",
+      "reason": "The World Machine 与 e2 World Machine 同指 Mostal 的理念，冠词差异不构成新术语；统一译“世界机器”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "13583 出现完整形式 The World Machine，并说明其为 Mostal 的理念。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“世界机器”，与 e2 一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归为其他，指特定理念/体系名称。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e2 为同一概念，仅带冠词；确认共用译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:843",
+      "evidence_rows": [
+        34034
+      ],
+      "source_excerpt": "It had an island called Machine City.",
+      "reason": "原文明确 Machine City 为 Zistor 所有、以机械改造居民的岛屿城市；译名与地名分类维持。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34034 原文称 Zistor 有一座名为 Machine City 的岛城。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“机械之城”，保留 Machine City 的专名感。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归为地名，指具体城市/岛屿。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Machine God 等共享“机械”词根但所指不同，不混用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:859",
+      "evidence_rows": [
+        33995
+      ],
+      "source_excerpt": "our ancestors fought the Machine God.",
+      "reason": "原文将 Machine God 作为祖先曾对抗的神性存在；译“机械神”并保留专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33995 出现 Machine God，与祖先作战。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“机械神”，符合神性专名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归为其他，作为神祇名可接受（无独立神祇类）。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Machine City 词根相近但指不同对象，译名未冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:892",
+      "evidence_rows": [
+        34270
+      ],
+      "source_excerpt": "Once, a single Law ruled all of the Old World.",
+      "reason": "Old World 指 Orlanth 之前由单一 Law 统治的旧世界；译“旧世界”并保留游戏术语。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34270 两处出现 Old World，均指 Orlanth 之前的旧世界。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“旧世界”，对应 Old World 的字面与神话时间义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归为其他，作为旧世界/旧时代概念可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Higher World 等世界层级术语区分清楚。"
+        }
+      }
+    },
+    {
+      "ref": "terms:167",
+      "evidence_rows": [
+        2353
+      ],
+      "source_excerpt": "Urox Fights On",
+      "reason": "原文将 Urox Fights On 列为部族大厅讲述的神话故事名；译名保留乌罗克斯并维持故事标题。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2353 在故事列表中出现 Urox Fights On，与其他神话并列。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“乌罗克斯继续战斗”，保留神名音译和 Fights On 的含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归为其他，作为神话故事名可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Urox 音译与现有神名用字一致；未发现冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:181",
+      "evidence_rows": [
+        2203
+      ],
+      "source_excerpt": "the Island of Hills",
+      "reason": "原文将 Island of Hills 作为龙之长子被送往的保护地；译“丘陵岛”并保留地名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2203 预言中明确出现 Island of Hills。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“丘陵岛”，对应 Island of Hills 的字面。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归为地名，指具体岛屿。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与其他地名无同形冲突；单独使用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:182",
+      "evidence_rows": [
+        29122
+      ],
+      "source_excerpt": "Issaries Goldentongue.",
+      "reason": "Goldentongue 是 Issaries 的别号/称号，原文亦见 Goldentongue ritual；统一译“金舌”，保留身份类专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "29122 出现 Issaries Goldentongue，2203/2238 亦以 Goldentongue 指称该神。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“金舌”，符合别号含义；仪式用法可拼接为“金舌仪式”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归为身份，作为神祇别号/称号可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一英文仅一条；仪式用法是同一别号的定语使用，不另立译名。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:164",
+    "terms:288",
+    "terms:468",
+    "terms:843",
+    "terms:859",
+    "terms:892",
+    "terms:167",
+    "terms:181",
+    "terms:182"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

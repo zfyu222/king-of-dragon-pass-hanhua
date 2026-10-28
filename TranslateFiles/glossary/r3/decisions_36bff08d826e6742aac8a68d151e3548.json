@@ -1,0 +1,451 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 e1-e12 的来源、译名、分类与一致性审校。确认 alynx/alynxes 统一为“阿林克斯”，broo/broos 统一为“布鲁兽”；修正 e2/e3/e6 派生名称中的“艾林克斯”，统一 e11/e12 为“亡者之厅”，并修订 e7/e9/e10/e12 等 term_reason 的原文依据。",
+  "acknowledged_findings": [
+    "F0388",
+    "F0389"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "狩猎阿林克斯",
+        "term_reason": "原文 2769 以 the Hunting Alynx 指氏族可呼唤的特定狩猎阿林克斯，因年老死亡；32444 宝藏列表同名。作为具名动物/资产名。"
+      },
+      "reason": "统一 alynx 核心译名为阿林克斯，避免艾林克斯/阿林克斯混用。",
+      "evidence_rows": [
+        2769,
+        32444
+      ],
+      "table": "terms",
+      "index": 195
+    },
+    {
+      "patch": {
+        "recommended_translation": "神威阿林克斯",
+        "term_reason": "原文 2777 指氏族珍视的独特阿林克斯，死后由后代延续；Awesome 在此为称号而非普通形容词。"
+      },
+      "reason": "统一 alynx 核心译名为阿林克斯，保留称号“神威”。",
+      "evidence_rows": [
+        2777,
+        32385
+      ],
+      "table": "terms",
+      "index": 196
+    },
+    {
+      "patch": {
+        "recommended_translation": "阿林克斯原木",
+        "term_reason": "32381 宝藏列表中的具名原木。"
+      },
+      "reason": "统一 alynx 核心译名为阿林克斯。",
+      "evidence_rows": [
+        32381
+      ],
+      "table": "terms",
+      "index": 1033
+    },
+    {
+      "patch": {
+        "term_reason": "巨魔所生的矮小、有时智力低下的后代；13503 明确定义，14230 称其常被奴役。"
+      },
+      "reason": "补充 term_reason 的实际定义与奴役用法。",
+      "evidence_rows": [
+        13503,
+        14230
+      ],
+      "table": "terms",
+      "index": 133
+    },
+    {
+      "patch": {
+        "term_reason": "混沌兽头人种族；33854 称其为 Ragnaglar 所生的怪物种族，33856 称 goat-men，33878 称 Thed 为其母。"
+      },
+      "reason": "修正 term_reason 中无原文依据的“龙新人”表述，依据 33854/33856/33878。",
+      "evidence_rows": [
+        33854,
+        33856,
+        33878
+      ],
+      "table": "terms",
+      "index": 330
+    },
+    {
+      "patch": {
+        "term_reason": "神话植物；2163 中氏族为减少混沌威胁而只吃该灌木的浆果。"
+      },
+      "reason": "修正 term_reason 中“其只吃该灌木浆果”的施事歧义。",
+      "evidence_rows": [
+        2163
+      ],
+      "table": "terms",
+      "index": 138
+    },
+    {
+      "patch": {
+        "recommended_translation": "亡者之厅",
+        "term_reason": "祖先所在的冥界居所；原文 23071/34146 等以 Halls of the Dead 指亡者前往之地。"
+      },
+      "reason": "统一该冥界地名译名，避免 e11/e12 亡者殿堂与亡者之厅混用。",
+      "evidence_rows": [
+        23071,
+        34146
+      ],
+      "table": "terms",
+      "index": 141
+    },
+    {
+      "patch": {
+        "term_reason": "亡者所在的冥界厅堂；34151 奥兰斯一行找到该厅，34163 描述盲帝与 294 名亡者审判者。"
+      },
+      "reason": "修正 term_reason 中未由原文直接支持的“受审”表述，并保持与 e11 译名一致。",
+      "evidence_rows": [
+        34151,
+        34163
+      ],
+      "table": "terms",
+      "index": 1159
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:132",
+      "evidence_rows": [
+        33392
+      ],
+      "source_excerpt": "The alynx is a semi-domesticated hunting cat that grows as large as a bobcat.",
+      "reason": "确认 alynx 为格洛兰萨的半驯化猎猫，标准译名阿林克斯；game_term 与 required 成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33392 明确定义 alynx 为 semi-domesticated hunting cat；1828 的 alynx kittens 也支持其为猫科动物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "阿林克斯为稳定音译，且与原文猎猫描述相符。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "按生物/物种归入种族，符合 alynx 的物种义。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "e4 为其复数，e2/e3/e6 为派生名称；均以阿林克斯为核心译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:195",
+      "evidence_rows": [
+        2769,
+        32444
+      ],
+      "source_excerpt": "whistled for the Hunting Alynx",
+      "reason": "保留 proper_name/required，确认其为特定狩猎阿林克斯或同名宝藏；修正 alynx 译名混用。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2769 以 the Hunting Alynx 指氏族可呼唤的特定动物，32444 宝藏列表同名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "将“艾林克斯”改为“阿林克斯”，与 e1 标准译名一致；Hunting 译作“狩猎”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为具名动物/资产归入其他可接受，proper_name required 不变。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一 alynx 音译为阿林克斯，消除 e2 与 e1/e4 的艾林克斯/阿林克斯混用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:196",
+      "evidence_rows": [
+        2777,
+        32385
+      ],
+      "source_excerpt": "our prized Awesome Alynx",
+      "reason": "保留 proper_name/required，确认其为氏族珍视的特定阿林克斯或同名宝藏；修正 alynx 译名混用。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2777 称 our prized Awesome Alynx 为氏族珍视的独特动物，32385 宝藏列表同名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "将“艾林克斯”改为“阿林克斯”；Awesome 作为称号译“神威”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为具名动物/资产归入其他可接受，proper_name required 不变。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一 alynx 核心译名为阿林克斯，与 e1/e2/e4 一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:240",
+      "evidence_rows": [
+        21017,
+        21061
+      ],
+      "source_excerpt": "the god of alynxes",
+      "reason": "确认 alynxes 为 alynx 的复数，标准译名阿林克斯；game_term/required 与种族分类成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "21017 的 the god of alynxes 指 Yinkin 为阿林克斯之神；21061 也提及其狩猎能力。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "复数在中文不加标记，继续译作阿林克斯，与 e1 一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "按物种归入种族。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "e1/e4 为单复数同词，共享阿林克斯译名合理；f1 已核对。"
+        }
+      }
+    },
+    {
+      "ref": "terms:516",
+      "evidence_rows": [
+        16550,
+        32445
+      ],
+      "source_excerpt": "Derik gave us a Hunting Horn",
+      "reason": "确认 Hunting Horn 为德里克赠送、帮助寻找目标的宝物；game_term/reference 与物品分类成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "16550 写 Derik gave us a Hunting Horn 并说明用途，32445 宝藏列表同名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "狩猎号角准确表达 Hunting Horn，作为宝物名可用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入物品符合号角作为宝物的用法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Hunting 与 e2 的“狩猎”一致；未见需改译的冲突变体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1033",
+      "evidence_rows": [
+        32381
+      ],
+      "source_excerpt": "Alynx Log",
+      "reason": "确认 Alynx Log 为宝藏列表中的具名原木；修正 alynx 译名混用。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32381 宝藏列表仅有 Alynx Log，作为具名物品。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "将“艾林克斯原木”改为“阿林克斯原木”，与 e1 标准译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入物品，game_term/reference 适合宝藏列表条目。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一 alynx 音译为阿林克斯，消除与 e1/e2/e3/e4 的混用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:133",
+      "evidence_rows": [
+        13503,
+        14230
+      ],
+      "source_excerpt": "they’re trollkin, the stunted and sometimes simple-minded offspring",
+      "reason": "确认 trollkin 为巨魔所生矮小、有时智力低下的后代；标准译名巨魔裔，game_term/required 与种族分类成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "13503 明确定义 trollkin 为 stunted and sometimes simple-minded offspring；14230 称其可被奴役。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "巨魔裔作为种族名自然且覆盖单复数；候选巨魔崽偏口语，巨魔幼裔偏字面。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入种族符合 trollkin 的类人生物/后代身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各出处单复数均可用巨魔裔统一，未发现需区分的语境。"
+        }
+      }
+    },
+    {
+      "ref": "terms:134",
+      "evidence_rows": [
+        8469,
+        3565
+      ],
+      "source_excerpt": "They were broo!",
+      "reason": "确认 broo 为混沌兽头人种族，标准译名布鲁兽；game_term/required、种族分类及现有适用范围成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8469 中伪装山羊现形为 broo；3565 称其为 evil, Chaotic broos。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "布鲁兽以音译加“兽”表生物；与 e9 复数译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入种族符合 Chaos 兽头人设定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "e8/e9 为 broo/broos 单复数，共享布鲁兽合理；f2 已核对。"
+        }
+      }
+    },
+    {
+      "ref": "terms:330",
+      "evidence_rows": [
+        33854,
+        33856
+      ],
+      "source_excerpt": "a horrible race of monsters was born, the broos",
+      "reason": "确认 broos 为 Ragnaglar 所生的混沌兽头人种族；标准译名布鲁兽；修正 term_reason 中无原文依据的“龙新人”表述。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33854 称 broos 为 Ragnaglar 所生的怪物种族，33856 称其为 goat-men。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "复数在中文不加标记，继续译作布鲁兽，与 e8 一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入种族符合 Chaos 兽头人设定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "e8/e9 为 broo/broos 单复数，共享布鲁兽合理；f2 已核对。"
+        }
+      }
+    },
+    {
+      "ref": "terms:138",
+      "evidence_rows": [
+        2163
+      ],
+      "source_excerpt": "fasted and ate only the berries of the Truestone Bush",
+      "reason": "确认 Truestone Bush 为神话植物；proper_name/required 与“其他”分类成立，并修正 term_reason 的施事歧义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2163 中氏族为减少 Chaos 威胁而 fasted and ate only the berries of the Truestone Bush。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "真石灌木直译 Truestone Bush，作为神话植物名可读。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "植物名归入其他，proper_name required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现同名冲突或需区分的变体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:141",
+      "evidence_rows": [
+        23071,
+        34146
+      ],
+      "source_excerpt": "when you are gone to the Halls of the Dead",
+      "reason": "确认 Halls of the Dead 为亡者前往的冥界地名；统一译作亡者之厅，与 e12 一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "23071 写死后 gone to the Halls of the Dead，34146 写 Flesh Man 被引向该处。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "将“亡者殿堂”改为“亡者之厅”，与 e12 的单数 Hall of the Dead 统一；中文不区分复数。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入地名，proper_name required 成立。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "e11/e12 指同一冥界厅堂，统一为亡者之厅，消除殿堂/厅混用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1159",
+      "evidence_rows": [
+        34151,
+        34163
+      ],
+      "source_excerpt": "At last Orlanth and his companions found the Hall of the Dead.",
+      "reason": "确认 Hall of the Dead 为冥界厅堂地名；译名亡者之厅与 e11 统一，并修正 term_reason 中未由原文直接支持的“受审”表述。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34151 奥兰斯一行找到 Hall of the Dead，34163 描述进入该厅及盲帝/审判者。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "亡者之厅准确且与 e11 复数形式统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "归入地名，proper_name required 成立。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e11 的 Halls of the Dead 共享亡者之厅，符合同一地点。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:132",
+    "terms:195",
+    "terms:196",
+    "terms:240",
+    "terms:516",
+    "terms:1033",
+    "terms:133",
+    "terms:134",
+    "terms:330",
+    "terms:138",
+    "terms:141",
+    "terms:1159"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

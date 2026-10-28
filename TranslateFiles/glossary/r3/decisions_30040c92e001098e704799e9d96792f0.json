@@ -1,0 +1,295 @@
+{
+  "review_complete": true,
+  "review_summary": "已审校 e1–e7 的来源、译名、分类与一致性。确认 Bull-roarer、Beastfolk、Luminous Stallion King、Telmori、Ralios、Dinkat’s Ladder 的术语分类与核心译名；将派生词 e5 统一为“泰尔莫里狼人”，并补全 e1/e2/e3/e4/e6 的 term_reason。f1 所报 Beastfolk/Beast Folk 共用“兽民”经核对为同词异形，可接受。",
+  "acknowledged_findings": [
+    "F0386"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "Orlanth 仪式所用发声法器；在战斗中使用可惊散敌马，有时弦会断裂。"
+      },
+      "reason": "补全术语理由，覆盖原文定义的仪式用途与战斗效果，保留“牛吼器”及 reference 范围。",
+      "evidence_rows": [
+        1633,
+        30901,
+        30902
+      ],
+      "table": "terms",
+      "index": 120
+    },
+    {
+      "patch": {
+        "term_reason": "非人种族群体的统称，包括弥诺陶洛斯、半人马、鸭人、狐人、蜂人等；常与奥兰斯氏族为敌。"
+      },
+      "reason": "补全种族定义及使用范围，避免只记录 Beast Valley 初见。",
+      "evidence_rows": [
+        1825,
+        9080,
+        9113
+      ],
+      "table": "terms",
+      "index": 122
+    },
+    {
+      "patch": {
+        "term_reason": "Grazers 的国王，亦为我方女王婚礼及竞技求婚的对象。"
+      },
+      "reason": "删除未经本批原文直接支持的“羽马”限定，改按 2100/21885 的国王与求婚对象身份记录。",
+      "evidence_rows": [
+        2100,
+        21885,
+        22798
+      ],
+      "table": "terms",
+      "index": 126
+    },
+    {
+      "patch": {
+        "term_reason": "狼人种族/部族名；原文称其会定期变为狼，常与奥兰斯人为敌。"
+      },
+      "reason": "补全种族定义与使用范围，保留“泰尔莫里”专名音译。",
+      "evidence_rows": [
+        2193,
+        3816,
+        5091,
+        21574
+      ],
+      "table": "terms",
+      "index": 128
+    },
+    {
+      "patch": {
+        "recommended_translation": "泰尔莫里狼人",
+        "term_reason": "原文指泰尔莫里狼人，可能构成最大威胁。"
+      },
+      "reason": "统一 Telmori 家族核心译名；同族标准译名为“泰尔莫里”，本派生短语改为“泰尔莫里狼人”。",
+      "evidence_rows": [
+        31113
+      ],
+      "table": "terms",
+      "index": 962
+    },
+    {
+      "patch": {
+        "term_reason": "远方地名，奥兰斯人的土地；战车旅人自称来自该地。"
+      },
+      "reason": "补全地名身份与用例范围，保留“拉利奥斯”音译。",
+      "evidence_rows": [
+        4098,
+        33889
+      ],
+      "table": "terms",
+      "index": 130
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:120",
+      "evidence_rows": [
+        1633,
+        30901,
+        30902
+      ],
+      "source_excerpt": "we found a bull-roarer, similar to the ones used in Orlanth’s ceremonies.",
+      "reason": "原文将 bull-roarer 定义为 Orlanth 仪式法器并作为魔法宝物带回，30901/30902 又表明其战斗用途；中文统一作牛吼器，保留 reference 范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1633 明确其为 Orlanth 仪式所用 bull-roarer 并作为魔法宝物带回；30901 显示旋转可惊散敌马。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "bull-roarer 的常用中文名为牛吼器；大小写变体不改变所指。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "列为物品 game_term/reference 合理：它既是器物，又有特定魔法宝物用法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "1633 的 bull-roarer 与 30901/30902 的 Bull-roarer 同指一物，统一译作牛吼器；term_reason 已补全战斗用途。"
+        }
+      }
+    },
+    {
+      "ref": "terms:122",
+      "evidence_rows": [
+        1825,
+        9080,
+        9113
+      ],
+      "source_excerpt": "teeming with Beastfolk: minotaurs, centaurs, duck-men, fox people — even wasp people.",
+      "reason": "Beastfolk 为多种非人种族的统称；“兽民”贴合原文。f1 中 Beast Folk 为同词异形，共用译名不构成冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1825 列举 minotaurs、centaurs、duck-men、fox people、wasp people 等同属 Beastfolk；9080/9113 继续以该词指敌对种族群体。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“兽民”准确表达 Beastfolk 作为非人兽类族群统称，而非单个 NPC。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族/game_term/required 合适；该词是游戏内固定族群称谓。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批 Beastfolk 大小写变体一致；f1 所涉 Beast Folk 为同词异形，共用“兽民”可接受，不隔离。"
+        }
+      }
+    },
+    {
+      "ref": "terms:126",
+      "evidence_rows": [
+        2100,
+        21885,
+        22798
+      ],
+      "source_excerpt": "our queen’s wedding to the Luminous Stallion King",
+      "reason": "Luminous Stallion King 是 Grazers 的国王/求婚对象称号；“光辉牡马王”保留三要素。term_reason 已按本批原文去除未证实的限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2100 称 Grazers 使者安排我方女王与 Luminous Stallion King 的婚礼；21885/22798 又将其写为求婚对象。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“光辉牡马王”对应 Luminous（光辉）、Stallion（牡马）、King（王），较“骏马王”更保留原词性别信息。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms/身份 收录该称号专名，term_kind=proper_name、required 符合专名冻结要求。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "三个候选统一取“光辉牡马王”，不再混用“光辉骏马王/光耀牡马王”；term_reason 已修正。"
+        }
+      }
+    },
+    {
+      "ref": "terms:128",
+      "evidence_rows": [
+        2193,
+        3816,
+        5091,
+        21574
+      ],
+      "source_excerpt": "They are called Telmori, and they turn into wolves once a week.",
+      "reason": "Telmori 是龙隘狼人种族/部族专名；“泰尔莫里”为标准音译，并与 e5 派生词统一核心。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2193 称 Telmori wolfmen；3816 说明他们被称为 Telmori 且每周变狼；5091 又称满月变狼。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“泰尔莫里”为稳定音译，保留专名身份；不意译为普通“狼人”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族/proper_name/required 合适；原文将其作为族群专名使用。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "同族派生词 e5 原用“特尔莫里”；现统一为“泰尔莫里”，核心专名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:962",
+      "evidence_rows": [
+        31113
+      ],
+      "source_excerpt": "the Telmori wolf-men are",
+      "reason": "Telmori wolf-men 是 Telmori 的派生称谓；按同族核心译名改为“泰尔莫里狼人”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "31113 原文为 the Telmori wolf-men are，指泰尔莫里狼人群体。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原推荐“特尔莫里狼人”与同族标准译名“泰尔莫里”不一致，已改为“泰尔莫里狼人”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族/proper_name/required 可保留；核心词 Telmori 为族群专名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与同族 Telmori 条目统一核心“泰尔莫里”；派生词仅增加“狼人”说明。"
+        }
+      }
+    },
+    {
+      "ref": "terms:130",
+      "evidence_rows": [
+        2058,
+        4098,
+        33889
+      ],
+      "source_excerpt": "the Orlanthi land of Ralios",
+      "reason": "Ralios 为奥兰斯人居住的远方地名；“拉利奥斯”音译准确。term_reason 已补全其土地属性。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2058 称酋长希望远行至 Ralios；4098 称旅人来自远方 Ralios；33889 明确为 Orlanthi land of Ralios。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“拉利奥斯”对应 Ralios，音译稳定，无其他候选冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名/proper_name/required 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各用例均指同一地名，统一“拉利奥斯”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:131",
+      "evidence_rows": [
+        1923
+      ],
+      "source_excerpt": "had found a piece of Dinkat’s Ladder, but destroyed it to honor their dragon-hating ancestors",
+      "reason": "Dinkat’s Ladder 是具名物品；“丁卡特的梯子”直译且保留所有格专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1923 原文明确提到 a piece of Dinkat’s Ladder，并说该氏族将其毁掉。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“丁卡特的梯子”对应 Dinkat’s Ladder，专名与普通名词关系清楚。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品/proper_name/required 合适；原文未给具体机制，不作机制补写。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他变体；保留“丁卡特的梯子”统一译名。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:120",
+    "terms:122",
+    "terms:126",
+    "terms:128",
+    "terms:962",
+    "terms:130",
+    "terms:131"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

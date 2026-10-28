@@ -1,0 +1,192 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 e1-e6 的来源、译名、分类与一致性审校；保留“光明使者探索”“圣时”“闪电剑绝技”“风暴季”“风暴时代”，将 weaponthane 由字面译名修正为“战团武士”并补足术语说明。未新增、隔离或放行无匹配条目。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "战团武士",
+        "term_reason": "原文定义为服务于国王或氏族首领的职业战士；与 carls 对举，可被氏族供养、遣散或收养。"
+      },
+      "reason": "将字面“武器武士”改为更贴合职业战士身份且与同词族复数译名一致的“战团武士”，并补足原文定义范围。",
+      "evidence_rows": [
+        34008,
+        3466,
+        18574
+      ],
+      "table": "terms",
+      "index": 70
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:66",
+      "evidence_rows": [
+        994
+      ],
+      "source_excerpt": "the story of the Lightbringers Quest",
+      "reason": "原文将 Lightbringers Quest 作为奥兰斯神话中的著名探索/英雄任务；译名保留“光明使者”与“探索”，与核心专名一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第994行原文明确出现 the Lightbringers Quest，并称其为死者生前讲述的故事。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“光明使者探索”准确表达 Lightbringers（光明使者）与 Quest（探索/英雄任务），符合专名译法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“其他”，该词指神话英雄任务而非人物、地点或技能本身。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "核心译名“光明使者探索”与同词族“光明使者”及“探索魔法”的用词方向一致，未发现需修改的冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:67",
+      "evidence_rows": [
+        33832
+      ],
+      "source_excerpt": "Sacred Time is two weeks.",
+      "reason": "原文定义 Sacred Time 为年末两周的魔法时段；译名“圣时”简洁且与年度仪式语境一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第33832行原文说明一年由五季与 Sacred Time 组成，并明确 Sacred Time is two weeks。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“圣时”对应 Sacred Time，保留年度神圣仪式时段之义，符合 UI 短词要求。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“其他”，该词是历法/仪式时段，归入其他合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同词族“圣时回顾界面”等保持“圣时”核心译名，未见需改。"
+        }
+      }
+    },
+    {
+      "ref": "terms:70",
+      "evidence_rows": [
+        34008
+      ],
+      "source_excerpt": "professional warrior in the service of a king or clan chief",
+      "reason": "原文将 weaponthane 定义为服务于国王或氏族首领的职业战士；原译“武器武士”偏字面，改为“战团武士”以体现战士身份并与复数译名统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第34008行原文给出定义：weaponthane 是服务于国王或氏族首领的职业战士。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“武器武士”按字面拆词，易被理解为武器类别；改译“战团武士”更贴合职业战士身份，并与同词族复数译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“身份”；原文中的 weaponthane 是一种战士/侍从身份。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一为“战团武士”，避免“武器武士/武器塞恩/战士贵族”在单复数及批次间分裂；未改动只读关联项。"
+        }
+      }
+    },
+    {
+      "ref": "terms:71",
+      "evidence_rows": [
+        718
+      ],
+      "source_excerpt": "performed the Lightning Sword Feat",
+      "reason": "原文称在战斗中施展 Lightning Sword Feat；译名“闪电剑绝技”保留技能名与“绝技”的招式义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第718行原文明确出现 performed the Lightning Sword Feat，指战斗中的一项绝技。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“闪电剑绝技”对应 Lightning Sword Feat，且与同词族“掷剑绝技”的“绝技”用法一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“技能”，该词是具体战斗绝技。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "“闪电剑绝技”与相关 Feat 译名均用“绝技”，核心术语一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:72",
+      "evidence_rows": [
+        33283
+      ],
+      "source_excerpt": "In Storm season, all things are possible, but nothing is certain.",
+      "reason": "原文把 Storm season 列为年度五季之一；译名“风暴季”符合季节短词。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第33283行原文在年度季节循环中列出 Storm season，并说明其不确定性。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“风暴季”对应 Storm season，简洁且符合季节 UI 标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“其他”，季节名归入其他可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与“风暴时代”共享“风暴”核心词但区分 season/age，语义范围清楚。"
+        }
+      }
+    },
+    {
+      "ref": "terms:73",
+      "evidence_rows": [
+        34010
+      ],
+      "source_excerpt": "Now we call this period the Storm Age.",
+      "reason": "原文称 Orlanth 击败 Yelm 后的时期为 Storm Age；译名“风暴时代”准确表达神话时代名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第34010行原文明确把 Orlanth 击败 Yelm 后的时期称为 the Storm Age。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“风暴时代”对应 Storm Age，保留神话历史时代义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 为“其他”，该词是神话时代名，不是地点或组织。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与“风暴季”区分时代与季节，核心“风暴”译名一致，未见需改。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:66",
+    "terms:67",
+    "terms:70",
+    "terms:71",
+    "terms:72",
+    "terms:73"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

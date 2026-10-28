@@ -1,0 +1,390 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 e1-e12 的来源、译名、分类与一致性审校；确认 f1 为 Dark season/Dark time 的历法别名共享译名，f2 为 kingly/royal regalia 同义别名共享译名。将 e9/e10 的 regalia 从“徽记”修正为“王权礼器”，其余条目保留或确认现有译名与分类。",
+  "acknowledged_findings": [
+    "F0404",
+    "F0406"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "王权礼器",
+        "term_reason": "原文指可成为王权象征的仪式性器物；kingly regalia 与 royal regalia 同指王权礼器，本词条按物品类别收录。"
+      },
+      "reason": "regalia 是仪式性器物/王权象征物，不是徽记；与 royal regalia 同义，统一为王权礼器。",
+      "evidence_rows": [
+        8753,
+        9035,
+        10317,
+        10318
+      ],
+      "table": "terms",
+      "index": 366
+    },
+    {
+      "patch": {
+        "recommended_translation": "王权礼器",
+        "term_reason": "原文指可成为王权象征的仪式性器物；与 kingly regalia 同指王权礼器，按物品类别收录。"
+      },
+      "reason": "royal regalia 与 kingly regalia 同指王权礼器，原译“王权徽记”窄化了 regalia 的器物义。",
+      "evidence_rows": [
+        8867
+      ],
+      "table": "terms",
+      "index": 367
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:350",
+      "evidence_rows": [
+        8372,
+        32167,
+        32986,
+        33283
+      ],
+      "source_excerpt": "Dark season",
+      "reason": "Dark season 是历法季节名；大小写变体同指；f1 中与 Dark time 的共享译名按同一历法时段别名核对，本批 e1 保留暗季。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8372 的定期贡赋与 32167 的 Dark Season、32986/33283 的历法描述均指向同一季节。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "暗季是简短季节名，符合 UI/季节名用词，且与 Earth season 等历法术语风格一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "季节名不属于人物/物品/组织/地名/技能/种族，归入其他合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Dark season 与 Dark Season 仅大小写差异，统一作暗季；未发现本批内第二译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:353",
+      "evidence_rows": [
+        8448
+      ],
+      "source_excerpt": "Sea People",
+      "reason": "Sea People 在诅咒来源随机列表中与其他族群并列，海民为可拼接的族称。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8448 的随机列表列 Sea People 为诅咒来源之一。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "海民直接对应 Sea People，简洁且符合族称用法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "与 Tusk Riders/Snake Mothers/Newtlings 并列，作为族群/种族归入种族。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Sea People 译名；与同列表族群名均保持专名短译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:354",
+      "evidence_rows": [
+        8448
+      ],
+      "source_excerpt": "Snake Mothers",
+      "reason": "Snake Mothers 在诅咒来源随机列表中为族群/生物类别名，蛇母为简洁族称。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8448 的随机列表列 Snake Mothers 为诅咒来源之一。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "蛇母对应 Snake Mothers，保留母系/群体称谓且符合专名短译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "与 Sea People/Tusk Riders/Newtlings 并列，作为族群/种族归入种族。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Snake Mothers 译名，未发现变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:355",
+      "evidence_rows": [
+        8448
+      ],
+      "source_excerpt": "People of the Spear",
+      "reason": "People of the Spear 在诅咒来源随机列表中为人群/部族名，矛民为简洁专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8448 的随机列表列 People of the Spear 为诅咒来源之一。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "矛民对应 People of the Spear，保留“民/人群”义且符合专名短译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "与同列表族群名并列，作为人群/部族名归入组织可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 People of the Spear 译名，未发现变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:357",
+      "evidence_rows": [
+        8519
+      ],
+      "source_excerpt": "Battle of Red Leaves",
+      "reason": "Battle of Red Leaves 是仪式舞蹈所指的战役专名，红叶之战为直译专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8519 明确称 ritual dance of the Battle of Red Leaves。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "红叶之战对应 Battle of Red Leaves，保留战役专名结构。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "战役/神话事件名归入其他合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Battle of Red Leaves 译名，未发现变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:359",
+      "evidence_rows": [
+        8628
+      ],
+      "source_excerpt": "Battle of Walking Waves",
+      "reason": "Battle of Walking Waves 是仪式舞蹈所指的战役专名，行浪之战为简洁专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8628 明确称 ritual dance of the Battle of Walking Waves。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "行浪之战对应 Battle of Walking Waves，保留战役专名结构且与 e5 的红叶之战句式一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "战役/神话事件名归入其他合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Battle of Walking Waves 译名，未发现变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:360",
+      "evidence_rows": [
+        8676,
+        14181,
+        28487,
+        31432,
+        33531,
+        33734,
+        33918,
+        33919,
+        33920
+      ],
+      "source_excerpt": "the Colymar are but one example",
+      "reason": "Colymar 在 8676/14181/33531 等指部族/氏族；33918-33920 另见创始人同名，本条目按部族/氏族义收录并统一译名；跨批只读提示未附原文，不据此改译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8676 称 Colymar 为以创始者命名的部族例子；14181、33531、33734 均指该部族；33918-33920 同时出现创始人同名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "科利马尔为多数候选且符合音译；科尔玛为少数候选，无原文支持，不采用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Colymar 在本条目中作部族/氏族专名，归组织合适；人物义另由同名创始人语境区分。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批部族义均宜作科利马尔；未发现本批内第二译名，人物同名同译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:364",
+      "evidence_rows": [
+        8753,
+        8770,
+        22696,
+        22697,
+        25782,
+        25783,
+        26405
+      ],
+      "source_excerpt": "Quivini Mountains",
+      "reason": "Quivini Mountains 在 8753/22696/26405 等指山脉地名；大小写变体同指；译名奎维尼山脉。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8753 称 flying staff 失落在 Quivini Mountains；22696/22697/26405 同指该山脉。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "奎维尼山脉对应专名与复数 Mountains，音译加“山脉”自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Quivini Mountains 是地名，归地名合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "25782/25783 的小写 Quivini mountains 为同一地名变体，统一作奎维尼山脉。"
+        }
+      }
+    },
+    {
+      "ref": "terms:366",
+      "evidence_rows": [
+        8753,
+        9035,
+        10317,
+        10318
+      ],
+      "source_excerpt": "kingly regalia",
+      "reason": "kingly regalia 指王权仪式器物；原译王权徽记窄化，已改为王权礼器，并与 royal regalia 别名统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8753 与 9035 均称其为 a piece of kingly regalia；10317/10318 指为国王仪式所需捐赠的王权器物。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译王权徽记把 regalia 窄化为徽记；王权礼器更贴合 a piece of ... regalia 的器物义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文以 a piece of ... 指可拥有/捐赠的物品，归物品合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "8753/9035/10317/10318 的 kingly regalia 均按王权礼器统一；与 royal regalia 的共享译名经 f2 核对为同义别名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:367",
+      "evidence_rows": [
+        8867
+      ],
+      "source_excerpt": "royal regalia",
+      "reason": "royal regalia 与 kingly regalia 同指王权礼器；原译王权徽记窄化，已改为王权礼器。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8867 称某些生物可交换为 a piece of royal regalia。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译王权徽记未体现 regalia 的仪式器物义；改为王权礼器并与 kingly regalia 统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "royal regalia 在此指可交换获得的物品，归物品合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 kingly regalia 的共享译名经 f2 核对为同义别名，统一作王权礼器。"
+        }
+      }
+    },
+    {
+      "ref": "terms:368",
+      "evidence_rows": [
+        8772
+      ],
+      "source_excerpt": "slime snakes",
+      "reason": "slime snakes 是 8772 中 Storm Khans 所称的一窝生物类别，译黏液蛇。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8772 明确说他们杀死一窝他们称为 slime snakes 的生物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "黏液蛇直译 slime snakes，作为生物类别名简洁可辨。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "slime snakes 是生物/族群类别，归种族可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 slime snakes 译名，未发现变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:371",
+      "evidence_rows": [
+        8887
+      ],
+      "source_excerpt": "Earthshaker Clan",
+      "reason": "Earthshaker Clan 是 8887 中氏族自称/得名，撼地者氏族保留为氏族专名；跨批只读提示未附原文，不据此改译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8887 称从那天起被称为 the Earthshaker Clan。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "撼地者氏族对应 Earthshaker Clan，撼地者作为称号自然，氏族标明组织类型。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Earthshaker Clan 是氏族名，归组织合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Earthshaker Clan 变体；核心称号撼地者保持一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:350",
+    "terms:353",
+    "terms:354",
+    "terms:355",
+    "terms:357",
+    "terms:359",
+    "terms:360",
+    "terms:364",
+    "terms:366",
+    "terms:367",
+    "terms:368",
+    "terms:371"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

@@ -1,0 +1,533 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e12 共 12 条非翻译条目，均为 sceneR 系列场景资源标识符。保留原文合理，但原条目未限定适用范围；已逐条将适用范围收窄为 whole_record，以避免影响正文中的同形文本。",
+  "acknowledged_findings": [
+    "F0157",
+    "F0158",
+    "F0159",
+    "F0160",
+    "F0161",
+    "F0162",
+    "F0163",
+    "F0164",
+    "F0165",
+    "F0166",
+    "F0167",
+    "F0168"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "sceneR288 是完整场景资源标识符，仅应整条匹配保留"
+        }
+      },
+      "reason": "原条目缺少适用范围；sceneR288 作为完整场景标识符仅应整条匹配保留。",
+      "evidence_rows": [
+        18799
+      ],
+      "table": "non_translate",
+      "index": 230
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "sceneR292 是完整场景资源标识符，仅应整条匹配保留"
+        }
+      },
+      "reason": "原条目缺少适用范围；sceneR292 作为完整场景标识符仅应整条匹配保留。",
+      "evidence_rows": [
+        18932
+      ],
+      "table": "non_translate",
+      "index": 231
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "sceneR293 是完整场景资源标识符，仅应整条匹配保留"
+        }
+      },
+      "reason": "原条目缺少适用范围；sceneR293 作为完整场景标识符仅应整条匹配保留。",
+      "evidence_rows": [
+        18990
+      ],
+      "table": "non_translate",
+      "index": 232
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "sceneR295 是完整场景资源标识符，仅应整条匹配保留"
+        }
+      },
+      "reason": "原条目缺少适用范围；sceneR295 作为完整场景标识符仅应整条匹配保留。",
+      "evidence_rows": [
+        19080
+      ],
+      "table": "non_translate",
+      "index": 239
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "sceneR296 是完整场景资源标识符，仅应整条匹配保留"
+        }
+      },
+      "reason": "原条目缺少适用范围；sceneR296 作为完整场景标识符仅应整条匹配保留。",
+      "evidence_rows": [
+        19111
+      ],
+      "table": "non_translate",
+      "index": 240
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "sceneR297 是完整场景资源标识符，仅应整条匹配保留"
+        }
+      },
+      "reason": "原条目缺少适用范围；sceneR297 作为完整场景标识符仅应整条匹配保留。",
+      "evidence_rows": [
+        19147
+      ],
+      "table": "non_translate",
+      "index": 241
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "sceneR299 是完整场景资源标识符，仅应整条匹配保留"
+        }
+      },
+      "reason": "原条目缺少适用范围；sceneR299 作为完整场景标识符仅应整条匹配保留。",
+      "evidence_rows": [
+        19241
+      ],
+      "table": "non_translate",
+      "index": 242
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "sceneR300 是完整场景资源标识符，仅应整条匹配保留"
+        }
+      },
+      "reason": "原条目缺少适用范围；sceneR300 作为完整场景标识符仅应整条匹配保留。",
+      "evidence_rows": [
+        19288
+      ],
+      "table": "non_translate",
+      "index": 243
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "sceneR302 是完整场景资源标识符，仅应整条匹配保留"
+        }
+      },
+      "reason": "原条目缺少适用范围；sceneR302 作为完整场景标识符仅应整条匹配保留。",
+      "evidence_rows": [
+        19384
+      ],
+      "table": "non_translate",
+      "index": 244
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "sceneR306 是完整场景资源标识符，仅应整条匹配保留"
+        }
+      },
+      "reason": "原条目缺少适用范围；sceneR306 作为完整场景标识符仅应整条匹配保留。",
+      "evidence_rows": [
+        19593
+      ],
+      "table": "non_translate",
+      "index": 245
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "sceneR308 是完整场景资源标识符，仅应整条匹配保留"
+        }
+      },
+      "reason": "原条目缺少适用范围；sceneR308 作为完整场景标识符仅应整条匹配保留。",
+      "evidence_rows": [
+        19653
+      ],
+      "table": "non_translate",
+      "index": 246
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "sceneR309 是完整场景资源标识符，仅应整条匹配保留"
+        }
+      },
+      "reason": "原条目缺少适用范围；sceneR309 作为完整场景标识符仅应整条匹配保留。",
+      "evidence_rows": [
+        19709
+      ],
+      "table": "non_translate",
+      "index": 247
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:230",
+      "evidence_rows": [
+        18799
+      ],
+      "source_excerpt": "sceneR288",
+      "reason": "保留原文，并将匹配范围限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 18799 原文为 sceneR288，与本条 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译资源标识符，无目标译文需核对。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "sceneR288 是场景资源标识符，保留原文合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目未限定适用范围；已用 whole_record 限定为完整记录匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:231",
+      "evidence_rows": [
+        18932
+      ],
+      "source_excerpt": "sceneR292",
+      "reason": "保留原文，并将匹配范围限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 18932 原文为 sceneR292，与本条 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译资源标识符，无目标译文需核对。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "sceneR292 是场景资源标识符，保留原文合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目未限定适用范围；已用 whole_record 限定为完整记录匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:232",
+      "evidence_rows": [
+        18990
+      ],
+      "source_excerpt": "sceneR293",
+      "reason": "保留原文，并将匹配范围限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 18990 原文为 sceneR293，与本条 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译资源标识符，无目标译文需核对。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "sceneR293 是场景资源标识符，保留原文合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目未限定适用范围；已用 whole_record 限定为完整记录匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:239",
+      "evidence_rows": [
+        19080
+      ],
+      "source_excerpt": "sceneR295",
+      "reason": "保留原文，并将匹配范围限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 19080 原文为 sceneR295，与本条 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译资源标识符，无目标译文需核对。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "sceneR295 是场景资源标识符，保留原文合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目未限定适用范围；已用 whole_record 限定为完整记录匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:240",
+      "evidence_rows": [
+        19111
+      ],
+      "source_excerpt": "sceneR296",
+      "reason": "保留原文，并将匹配范围限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 19111 原文为 sceneR296，与本条 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译资源标识符，无目标译文需核对。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "sceneR296 是场景资源标识符，保留原文合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目未限定适用范围；已用 whole_record 限定为完整记录匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:241",
+      "evidence_rows": [
+        19147
+      ],
+      "source_excerpt": "sceneR297",
+      "reason": "保留原文，并将匹配范围限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 19147 原文为 sceneR297，与本条 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译资源标识符，无目标译文需核对。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "sceneR297 是场景资源标识符，保留原文合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目未限定适用范围；已用 whole_record 限定为完整记录匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:242",
+      "evidence_rows": [
+        19241
+      ],
+      "source_excerpt": "sceneR299",
+      "reason": "保留原文，并将匹配范围限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 19241 原文为 sceneR299，与本条 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译资源标识符，无目标译文需核对。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "sceneR299 是场景资源标识符，保留原文合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目未限定适用范围；已用 whole_record 限定为完整记录匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:243",
+      "evidence_rows": [
+        19288
+      ],
+      "source_excerpt": "sceneR300",
+      "reason": "保留原文，并将匹配范围限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 19288 原文为 sceneR300，与本条 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译资源标识符，无目标译文需核对。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "sceneR300 是场景资源标识符，保留原文合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目未限定适用范围；已用 whole_record 限定为完整记录匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:244",
+      "evidence_rows": [
+        19384
+      ],
+      "source_excerpt": "sceneR302",
+      "reason": "保留原文，并将匹配范围限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 19384 原文为 sceneR302，与本条 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译资源标识符，无目标译文需核对。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "sceneR302 是场景资源标识符，保留原文合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目未限定适用范围；已用 whole_record 限定为完整记录匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:245",
+      "evidence_rows": [
+        19593
+      ],
+      "source_excerpt": "sceneR306",
+      "reason": "保留原文，并将匹配范围限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 19593 原文为 sceneR306，与本条 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译资源标识符，无目标译文需核对。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "sceneR306 是场景资源标识符，保留原文合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目未限定适用范围；已用 whole_record 限定为完整记录匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:246",
+      "evidence_rows": [
+        19653
+      ],
+      "source_excerpt": "sceneR308",
+      "reason": "保留原文，并将匹配范围限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 19653 原文为 sceneR308，与本条 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译资源标识符，无目标译文需核对。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "sceneR308 是场景资源标识符，保留原文合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目未限定适用范围；已用 whole_record 限定为完整记录匹配。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:247",
+      "evidence_rows": [
+        19709
+      ],
+      "source_excerpt": "sceneR309",
+      "reason": "保留原文，并将匹配范围限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 19709 原文为 sceneR309，与本条 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非翻译资源标识符，无目标译文需核对。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "sceneR309 是场景资源标识符，保留原文合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目未限定适用范围；已用 whole_record 限定为完整记录匹配。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:230",
+    "non_translate:231",
+    "non_translate:232",
+    "non_translate:239",
+    "non_translate:240",
+    "non_translate:241",
+    "non_translate:242",
+    "non_translate:243",
+    "non_translate:244",
+    "non_translate:245",
+    "non_translate:246",
+    "non_translate:247"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

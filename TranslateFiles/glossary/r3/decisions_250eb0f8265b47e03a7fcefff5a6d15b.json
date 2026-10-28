@@ -1,0 +1,415 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1-e12 的原文、译名、分类与一致性；修正 e4/e6/e7/e8/e11 的 term_reason，并统一 e8 中 Humakt 的译名为“胡马卡特”。f1 已核对：Centaur/centaurs 为单复数同词，共用“半人马”不构成异名冲突。",
+  "acknowledged_findings": [
+    "F0407"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "原文称其不赐指环，但礼物比任何战士首领都慷慨。"
+      },
+      "reason": "删去原文未出现的“治疗女神”关联，保留 record 30596 可证的指环与礼物描述。",
+      "evidence_rows": [
+        30596
+      ],
+      "table": "terms",
+      "index": 960
+    },
+    {
+      "patch": {
+        "term_reason": "原文称部队追随燃烧军旗作战，但其激励效果不如预期。"
+      },
+      "reason": "“可能被火焰吞噬”不见于 30907、30908、32400，按原文改为军旗激励效果描述。",
+      "evidence_rows": [
+        30907,
+        30908,
+        32400
+      ],
+      "table": "terms",
+      "index": 965
+    },
+    {
+      "patch": {
+        "term_reason": "原文称其光芒照射到箭矢和投石上时使其燃起火焰。"
+      },
+      "reason": "删去原文未出现的“战后化为灰烬”，保留 30911 可证的光芒引燃箭石。",
+      "evidence_rows": [
+        30911,
+        32409
+      ],
+      "table": "terms",
+      "index": 966
+    },
+    {
+      "patch": {
+        "recommended_translation": "胡马卡特的渡鸦旗",
+        "term_reason": "原文称部队聚集于胡马卡特的渡鸦旗下，也有人将其拾起。"
+      },
+      "reason": "Humakt 统一作“胡马卡特”；同时删去 30920 未提供的“巨魔裔”细节。",
+      "evidence_rows": [
+        30918,
+        30920,
+        32440
+      ],
+      "table": "terms",
+      "index": 967
+    },
+    {
+      "patch": {
+        "term_reason": "原文在 Beastfolk 列表中与牛头人、鸭人等并列，指半人马这一种族。"
+      },
+      "reason": "原 term_reason 的“来袭敌人均骑马”不见于 30834 或所列 corpus 行，改为 1844/1826 可证的 Beastfolk 列表关系。",
+      "evidence_rows": [
+        1844,
+        1826,
+        30834
+      ],
+      "table": "terms",
+      "index": 973
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:957",
+      "evidence_rows": [
+        29779
+      ],
+      "source_excerpt": "Barntar's Vigor blessing",
+      "reason": "祝福名称与原文一致，译名保留神名与领域；无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "29779 原文含 Barntar's Vigor blessing，神名 Barntar 与既有术语“巴恩塔”一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“巴恩塔活力祝福”保留“神名+领域+祝福”的命名方式，未增添原文没有的信息。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该条为可获得的宗教祝福/能力，归入技能可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e2、e3 的祝福命名格式一致，均用神名+领域+祝福。"
+        }
+      }
+    },
+    {
+      "ref": "terms:958",
+      "evidence_rows": [
+        29872
+      ],
+      "source_excerpt": "Elmal's Sun blessing",
+      "reason": "太阳祝福名称与原文一致，译名保留 Elmal 的既定译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "29872 原文含 Elmal's Sun blessing，Elmal 对应“埃尔马尔”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“埃尔马尔太阳祝福”准确表达太阳祝福，并与 Elmal=埃尔马尔一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "宗教祝福归入技能可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1、e3 的祝福命名结构一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:959",
+      "evidence_rows": [
+        29875
+      ],
+      "source_excerpt": "Orlanth's Rain blessing",
+      "reason": "雨水祝福名称与原文一致，译名保留 Orlanth 的既定译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "29875 原文含 Orlanth's Rain blessing，Orlanth 对应“奥兰斯”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“奥兰斯雨水祝福”准确表达雨水祝福，并与 Orlanth=奥兰斯一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "宗教祝福归入技能可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1、e2 的祝福命名结构一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:960",
+      "evidence_rows": [
+        30596
+      ],
+      "source_excerpt": "White Lady",
+      "reason": "译名保留称号；term_reason 删去原文未出现的治疗女神关联。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "30596 只说明 White Lady 不赐指环而礼物慷慨，未提治疗女神，已修正 term_reason。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“白衣女士”直译 White Lady，作为称号可保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "特定女神称号归入其他，现有类别下可用。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "White-Clad Goddess 候选仅为词族提示，原文不足以确认同一指称，故不强行合并。"
+        }
+      }
+    },
+    {
+      "ref": "terms:961",
+      "evidence_rows": [
+        30725
+      ],
+      "source_excerpt": "Praxian nomads",
+      "reason": "游牧民群体名称与原文一致，无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30725 原文含 Praxian nomads，并说明其居住在远方、不断迁徙。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“普拉克斯游牧民”对应 Praxian nomads，保留族名/地域修饰。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该条指称特定人群，归入种族在现有分类中可用。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Praxian 部分保留“普拉克斯”，与相关 Praxians 译名方向不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:965",
+      "evidence_rows": [
+        30907,
+        30908,
+        32400
+      ],
+      "source_excerpt": "Burning Standard",
+      "reason": "军旗名称译名保留；term_reason 删去原文未出现的火焰吞噬说法。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "30907 与 30908 只说明部队追随军旗及其激励效果，未提可能被火焰吞噬，已修正 term_reason。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“燃烧军旗”对应 Burning Standard，并保留具名军旗义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名军旗为物品，分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "30907、30908 与 32400 的 Burning Standard 指向同一名称，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:966",
+      "evidence_rows": [
+        30911,
+        32409
+      ],
+      "source_excerpt": "Elmal's Amber",
+      "reason": "琥珀名称译名保留；term_reason 删去原文未出现的战后化灰。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "30911 只说明光芒使箭矢和投石燃火，未提战后化为灰烬，已修正 term_reason。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“埃尔马尔琥珀”对应 Elmal's Amber，并保留 Elmal=埃尔马尔。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名琥珀为物品，分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "30911 与 32409 同一名称，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:967",
+      "evidence_rows": [
+        30918,
+        30920,
+        32440
+      ],
+      "source_excerpt": "Humakt's Raven Banner",
+      "reason": "Humakt 统一为“胡马卡特”；term_reason 删去无依据的“巨魔裔”。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "30920 仅称有人拾起军旗，未提巨魔裔，已修正 term_reason。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原文 Humakt 与术语提示“胡马卡特”一致，当前“胡马科特”应改为“胡马卡特”；军旗译为“渡鸦旗”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名旗帜为物品，分类正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 Humakt=胡马卡特的既有译名统一，修改后消除胡马科特/胡马卡特不一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:970",
+      "evidence_rows": [
+        30878
+      ],
+      "source_excerpt": "Elite Horsemen",
+      "reason": "战斗单位名称与原文一致；与 Elite Riders 区分保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30878 原文为 Elite Horsemen，是单位名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“精锐骑兵”对应 Elite Horsemen，Elite=精锐、Horsemen=骑兵。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "战斗单位名归入其他，现有分类下可用。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e10 Elite Riders 分列不同单位，译名保持骑兵/骑手区别。"
+        }
+      }
+    },
+    {
+      "ref": "terms:971",
+      "evidence_rows": [
+        30879
+      ],
+      "source_excerpt": "Elite Riders",
+      "reason": "战斗单位名称与原文一致；与 Elite Horsemen 区分保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30879 原文为 Elite Riders，是单位名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“精锐骑手”对应 Elite Riders，Elite=精锐、Riders=骑手。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "战斗单位名归入其他，现有分类下可用。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e9 Elite Horsemen 对应不同源词，未盲目合并。"
+        }
+      }
+    },
+    {
+      "ref": "terms:973",
+      "evidence_rows": [
+        30834,
+        1844,
+        1826
+      ],
+      "source_excerpt": "centaurs",
+      "reason": "种族名译名保留；term_reason 改为有原文依据的 Beastfolk 列表关系。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "30834 条目本身仅为 centaurs；1844/1826 将其列入 Beastfolk，未提“来袭敌人均骑马”，已修正 term_reason。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“半人马”是 centaurs 的通行译名，也与 e13 单数 Centaur 的译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "centaurs 为种族名，归入种族正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f1 已核对：Centaur/centaurs 为单复数同词，共用“半人马”不构成异名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:976",
+      "evidence_rows": [
+        30569,
+        30573,
+        33312,
+        33628
+      ],
+      "source_excerpt": "Great Temple",
+      "reason": "Great Temple 统一译作“大神殿”；大小写与上下文不改变所指。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30569、30573 的 great temple 与 33312、33628 的 Great Temple 均指同一建筑等级。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“大神殿”对应 Great Temple；较低等级 shrine/temple 保留神龛/神殿层级即可。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该条为宗教建筑/制度名，归入其他在现有类别下可用。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各出处统一用“大神殿”，未混用“大神庙”。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:957",
+    "terms:958",
+    "terms:959",
+    "terms:960",
+    "terms:961",
+    "terms:965",
+    "terms:966",
+    "terms:967",
+    "terms:970",
+    "terms:971",
+    "terms:973",
+    "terms:976"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

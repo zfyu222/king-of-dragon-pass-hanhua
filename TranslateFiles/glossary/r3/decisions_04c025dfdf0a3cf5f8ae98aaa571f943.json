@@ -1,0 +1,440 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成本批 12 条术语审校；统一 Urgrain 系音译为“乌尔格雷恩”，修正相关译名与具名宝物分类，补足关键 term_reason；f1 复核为 Arroin’s Tear 撇号变体同译，不构成不同名称冲突。",
+  "acknowledged_findings": [
+    "F0358"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "风暴神，Orlanth 之父；原文记其与 Asrelia 受阻的爱情，又称 Orlanth’s father Umath，并叙述其为子女撕开天地。"
+      },
+      "reason": "原 term_reason 仅记爱情典故，补足原文可证实的神祇身份、亲属关系与事迹范围。",
+      "evidence_rows": [
+        1364,
+        33876,
+        34315
+      ],
+      "table": "characters",
+      "index": 5
+    },
+    {
+      "patch": {
+        "recommended_translation": "恶王乌尔格雷恩",
+        "term_reason": "原文反复以 Bad King Urgrain 指称的传说暴君，常作反面典故；“恶王”为称号，Urgrain 音译统一为“乌尔格雷恩”。"
+      },
+      "reason": "统一核心音译为“乌尔格雷恩”，并概括 Bad King Urgrain 的传说暴君与反面典故用法。",
+      "evidence_rows": [
+        1364,
+        1471,
+        21898
+      ],
+      "table": "characters",
+      "index": 7
+    },
+    {
+      "patch": {
+        "term_reason": "恶王 Urgrain 的核心名；原文又拼作 Ugrain，并见 Urgraini 相关称谓，统一以“乌尔格雷恩”为音译核心。"
+      },
+      "reason": "补充拼写变体 Ugrain 与 Urgraini 的使用范围，避免将变体误作不同人物。",
+      "evidence_rows": [
+        4463,
+        4533,
+        9861
+      ],
+      "table": "characters",
+      "index": 55
+    },
+    {
+      "patch": {
+        "recommended_translation": "乌尔格雷恩乌尔格雷恩松",
+        "term_reason": "Urgrain 之子；原文 -sson 为父名后缀，并记其复行父亲王权仪式失败后燃烧七日。"
+      },
+      "reason": "按 Urgrain 标准音译“乌尔格雷恩”修正父名派生名，并说明父名后缀及原文事迹。",
+      "evidence_rows": [
+        11495
+      ],
+      "table": "characters",
+      "index": 94
+    },
+    {
+      "patch": {
+        "term_reason": "即恶王乌尔格雷恩的王号短称；原文作 Bad King Urgrain，记其因嗜战在无敌之处制造敌人。"
+      },
+      "reason": "说明 King Urgrain 是 Bad King Urgrain 的王号短称，避免误判为另一人物。",
+      "evidence_rows": [
+        17639
+      ],
+      "table": "characters",
+      "index": 139
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "enforcement": "required",
+        "recommended_translation": "乌尔格雷恩钱币",
+        "term_reason": "宝藏列表中的具名钱币，以 Urgrain 命名；Urgrain 统一音译为“乌尔格雷恩”。"
+      },
+      "reason": "将具名宝物改为 proper_name/required，并统一 Urgrain 核心音译。",
+      "evidence_rows": [
+        32509
+      ],
+      "table": "terms",
+      "index": 1097
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "enforcement": "required",
+        "term_reason": "32384 宝藏列表中的具名宝物，即 Arroin 之泪；撇号变体同指，译名统一为“阿罗因之泪”。"
+      },
+      "reason": "将具名治疗宝物改为 proper_name/required，并与同名撇号变体统一分类。",
+      "evidence_rows": [
+        32384
+      ],
+      "table": "terms",
+      "index": 1035
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:5",
+      "evidence_rows": [
+        33876,
+        34315
+      ],
+      "source_excerpt": "Umath, father of Orlanth",
+      "reason": "神祇身份与核心音译核对完成，term_reason 补足亲属和事迹范围。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "33876 作 'Umath, father of Orlanth'，34315 述 'Umath ripped a place between the earth and the sky for us'；原 term_reason 仅记爱情典故，已补足。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "推荐译名“乌马斯”稳定；候选“乌玛斯”不应混用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "角色表、proper_name、required、男性均符合原文神祇身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Umath 核心名在派生地名“乌马斯营地”中保持一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:848",
+      "evidence_rows": [
+        34012
+      ],
+      "source_excerpt": "Wakboth easily conquered Umath's Camp, the home of our tribe",
+      "reason": "地名、译名与派生一致性核对通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34012 称 'Wakboth easily conquered Umath's Camp, the home of our tribe'，确为氏族家园地名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“乌马斯营地”保留 Umath 音译并意译 Camp，语义完整。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms/地名、proper_name、required 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Umath 的核心音译“乌马斯”一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:6",
+      "evidence_rows": [
+        1362,
+        8354
+      ],
+      "source_excerpt": "the sorrow of Tragic King Errarth",
+      "reason": "传说国王名与称号译法核对通过，未发现冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1362 作 'the sorrow of Tragic King Errarth'，8354 又见 'Tragic King Errarth'，为传说国王。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“悲剧之王埃拉尔斯”保留称号和核心名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "角色表、proper_name、required、男性符合传说国王。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "核心名“埃拉尔斯”与 Errarth/King Errarth 的译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:117",
+      "evidence_rows": [
+        14519,
+        15130
+      ],
+      "source_excerpt": "Errarth, the Tragic King, judged adulterers innocent",
+      "reason": "Errarth 核心音译与称号变体核对通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "14519 作 'Errarth, the Tragic King'，15130 作 'Errarth, the tragic king'，身份一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“埃拉尔斯”为稳定核心音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "角色表、proper_name、required、男性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与“悲剧之王埃拉尔斯”和“埃拉尔斯王”共用核心名埃拉尔斯。"
+        }
+      }
+    },
+    {
+      "ref": "characters:140",
+      "evidence_rows": [
+        17698
+      ],
+      "source_excerpt": "Where King Errarth died, the earth wept, and a great willow tree grew",
+      "reason": "王号派生译名与核心名一致性核对通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "17698 明确 'King Errarth died'，为国王名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“埃拉尔斯王”保留王号和核心名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "角色表、proper_name、required、男性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "核心名“埃拉尔斯”与 Errarth 的称号译名一致，王号位置差异可接受。"
+        }
+      }
+    },
+    {
+      "ref": "characters:7",
+      "evidence_rows": [
+        1364,
+        1471,
+        21898
+      ],
+      "source_excerpt": "the hard lessons to be learned from Bad King Urgrain",
+      "reason": "统一 Bad King Urgrain 译名并补足 term_reason。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "1364/1471/21898 均以 Bad King Urgrain 指传说暴君；term_reason 已改为概括其反面典故用法。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "修正为“恶王乌尔格雷恩”，统一核心音译，排除乌尔格莱恩/乌尔格兰/乌尔格林等候选。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "角色表、proper_name、required、男性；Bad King 为称号。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 Urgrain 核心名“乌尔格雷恩”及其父名、王号、钱币派生名统一。"
+        }
+      }
+    },
+    {
+      "ref": "characters:55",
+      "evidence_rows": [
+        4463,
+        4533,
+        9861
+      ],
+      "source_excerpt": "When Bad King Urgrain was just a clan chief",
+      "reason": "Urgrain 核心名及拼写变体核对通过，term_reason 已补足。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "4463 作 Bad King Urgrain；4533 拼作 Ugrain，9861 见 Urgraini；term_reason 已说明变体与相关称谓。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“乌尔格雷恩”与标准核心名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "角色表、proper_name、required、男性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Urgrain/Ugrain 同指，不应另立不同译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:94",
+      "evidence_rows": [
+        11495
+      ],
+      "source_excerpt": "Urgrain Urgrainsson burned for seven days",
+      "reason": "父名派生名译名修正并核对通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11495 作 'Urgrain Urgrainsson'，并有 'his father’s rites of kingship'，为父名派生男性名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "修正为“乌尔格雷恩乌尔格雷恩松”，使父名 Urgrain 与标准音译一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "角色表、proper_name、required、男性；-sson 为父名后缀。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "父名 Urgrain 与标准核心名“乌尔格雷恩”统一。"
+        }
+      }
+    },
+    {
+      "ref": "characters:139",
+      "evidence_rows": [
+        17639
+      ],
+      "source_excerpt": "Bad King Urgrain created enemies where there were none",
+      "reason": "王号短称与完整称号的同指关系已补足。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "17639 原文作 Bad King Urgrain；term_reason 已说明 King Urgrain 为王号短称，并非另一人。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“乌尔格雷恩王”保留王号和标准核心名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "角色表、proper_name、required、男性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Bad King Urgrain 同指，核心名统一为“乌尔格雷恩”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1097",
+      "evidence_rows": [
+        32509
+      ],
+      "source_excerpt": "Urgrain's Coin",
+      "reason": "具名钱币分类与译名修正完成。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32509 为宝藏列表条目 'Urgrain's Coin'，是以 Urgrain 命名的具名钱币。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "修正为“乌尔格雷恩钱币”，与核心名“乌尔格雷恩”一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "由 game_term/reference 修正为 proper_name/required，category 物品；具名宝物应作专名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 Urgrain 核心译名“乌尔格雷恩”统一。"
+        }
+      }
+    },
+    {
+      "ref": "characters:9",
+      "evidence_rows": [
+        1628,
+        34098
+      ],
+      "source_excerpt": "while with her son Arroin",
+      "reason": "Arroin 神名与派生宝物名一致性核对通过。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34098 作 'while with her son Arroin'，1628 称 'Chalana Arroy’s son, Arroin'，为神祇名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“阿罗因”音译稳定。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "角色表、proper_name、required、男性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与“阿罗因之泪”的核心名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1035",
+      "evidence_rows": [
+        32384
+      ],
+      "source_excerpt": "Arroin's Tear",
+      "reason": "Arroin’s Tear 分类与 f1 共享译名冲突复核完成。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32384 为宝藏列表条目 'Arroin's Tear'，与其他撇号形态写法同指。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“阿罗因之泪”共用译名；f1 复核为撇号变体同译，不构成不同名称冲突。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "由 game_term/reference 修正为 proper_name/required，category 物品；具名宝物应作专名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与同名撇号变体的 proper_name/required 分类统一，译名一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:5",
+    "terms:848",
+    "characters:6",
+    "characters:117",
+    "characters:140",
+    "characters:7",
+    "characters:55",
+    "characters:94",
+    "characters:139",
+    "terms:1097",
+    "characters:9",
+    "terms:1035"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

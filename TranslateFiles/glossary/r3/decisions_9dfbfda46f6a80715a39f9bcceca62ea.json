@@ -1,0 +1,198 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1-e6 的来源、译名、分类与一致性；e1 补正术语说明，e2/e3/e4 的共用译名 f1/f2 经核对分别同指太阳神耶尔姆与同一冥界（含冠词变体），其余专名与宝物名维持统一译名。无隔离或新增。",
+  "acknowledged_findings": [
+    "F0355",
+    "F0394"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "亡者女神；原文称其为厄纳尔达的姑母，在洞窟中收集死魂并掌管亡者归宿。"
+      },
+      "reason": "原 term_reason 只述白犊牛事件，未点明 Ty Kora Tek 的亡者女神身份及与厄纳尔达的关系。",
+      "evidence_rows": [
+        3246,
+        26065
+      ],
+      "table": "terms",
+      "index": 210
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:210",
+      "evidence_rows": [
+        3246,
+        26065
+      ],
+      "source_excerpt": "My mistress, Ernalda, is leader of the female gods. Perhaps, through her, we could seek the aid of Ty Kora Tek, Goddess of the Dead.",
+      "reason": "专名 Ty Kora Tek 指亡者女神，译名泰科拉泰克与多数候选一致；已补足术语说明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3246 出现 Ty Kora Tek，并称其为 Goddess of the Dead；为专名而非普通描述。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "泰科拉泰克为音译；候选提科拉泰克为异写，按多数且首见保留泰科拉泰克。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "term_kind=proper_name、enforcement=required 成立；原 term_reason 仅述白犊牛，已依据 3246/26065 补为亡者女神、厄纳尔达姑母、收集死魂及亡者归宿。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "3246 与 26065 同指亡者女神；未有其他译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:211",
+      "evidence_rows": [
+        33816,
+        3077
+      ],
+      "source_excerpt": "One of these mighty gods, bright-faced Yelm, thought of himself as the best god of all.",
+      "reason": "Yelm 指太阳神/皇帝，译名耶尔姆成立；与 Yelm the Bright Emperor 共用译名经核对不冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33816 称 bright-faced Yelm 为 mighty god；3077 称 Emperor Yelm，均指太阳神。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "耶尔姆为音译，候选一致；与同指太阳神的 Yelm the Bright Emperor 共用不构成冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name/required，category_path=其他；神名非普通词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f1 两处均指同一太阳神 Yelm，共用耶尔姆成立；未发现多义。"
+        }
+      }
+    },
+    {
+      "ref": "terms:212",
+      "evidence_rows": [
+        9130,
+        32156
+      ],
+      "source_excerpt": "He went to the Underworld, and rescued Ernalda and the sun.",
+      "reason": "Underworld 指神话中的亡者世界，译名冥界成立；与标题 The Underworld 为同一地名变体。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9130 的 the Underworld 为奥兰斯前往并救回厄纳尔达之地；32156 称可从 Underworld 带回宝物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "冥界对应神话地名，候选均同译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名/proper_name/required；大写 Underworld 指特定亡者世界，不按普通词义扩展。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f2 与 The Underworld 为同一地名的冠词变体，统一冥界。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1141",
+      "evidence_rows": [
+        34116
+      ],
+      "source_excerpt": "The Underworld",
+      "reason": "完整标题 The Underworld 指冥界，译名冥界与 e3 一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34116 完整记录即 The Underworld，为探索阶段标题。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "冥界与 e3 同译，冠词不译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名/proper_name/required；标题为专有地名而非普通词组。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f2 与 Underworld 同指冥界，保留冠词差异但译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:214",
+      "evidence_rows": [
+        33371,
+        30190
+      ],
+      "source_excerpt": "Issaries is known as the Talking God, because his blessings help speakers ranging from storytellers to traders to poets.",
+      "reason": "Talking God 是伊萨里斯的称号，译名言谈之神保留其护佑言说者的语义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33371 明确 Issaries is known as the Talking God；30190 称 Issaries, the Talking God, protects heralds。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "言谈之神直译称号，保留其说话/传令护佑语义；言神过简、巧言之神偏重修辞，均不取。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "proper_name/required，category_path=其他；为神祇称号，不按普通身份词处理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "33371 与 30190 同指伊萨里斯，统一言谈之神；候选异译不拆分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:218",
+      "evidence_rows": [
+        2922,
+        2923
+      ],
+      "source_excerpt": "The treasure is Ernalda’s Oven.",
+      "reason": "Ernalda’s Oven 是具体宝物名，译名厄纳尔达的烤炉成立且两处一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2922 明确宝物名为 Ernalda’s Oven。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "厄纳尔达的烤炉对应所有格宝物名，保留 Ernalda 译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品/proper_name/required；具体宝物名而非普通烤炉。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "2922 与 2923 均作 Ernalda’s Oven，译名一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:210",
+    "terms:211",
+    "terms:212",
+    "terms:1141",
+    "terms:214",
+    "terms:218"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

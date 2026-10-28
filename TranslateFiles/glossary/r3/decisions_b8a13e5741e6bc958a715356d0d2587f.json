@@ -1,0 +1,392 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1-e12 的原文、译名、分类与一致性；确认多数专名，修正 e3 分类、e4 的 term_kind 与失据理由、e8 译名；f1 已核对为 Beast Folk/Beastfolk 同族拼写变体共用“兽民”，非专名冲突。",
+  "acknowledged_findings": [
+    "F0386"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "category_path": "其他"
+      },
+      "reason": "10431 仅能证明这是“a Thunder Brothers seat”（议事会席位名/神群称谓），不能证明组织实体；按“其他”归类更准确。",
+      "evidence_rows": [
+        10431
+      ],
+      "table": "terms",
+      "index": 391
+    },
+    {
+      "patch": {
+        "term_kind": "game_term",
+        "term_reason": "原文 11760 为交易中被拒绝的矮人食物名称，属于游戏物品名。"
+      },
+      "reason": "Dwarf Food 是物品名而非专名；原 term_reason 中“金属圆筒”不在本条证据 11760 中，删除无据细节并改 term_kind。",
+      "evidence_rows": [
+        11760
+      ],
+      "table": "terms",
+      "index": 436
+    },
+    {
+      "patch": {
+        "recommended_translation": "不可称名之兄弟"
+      },
+      "reason": "24696 是禁忌称号；原译“我们不得称名之兄弟”结构生硬，改为更凝练的“不可称名之兄弟”。",
+      "evidence_rows": [
+        24696
+      ],
+      "table": "terms",
+      "index": 622
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:53",
+      "evidence_rows": [
+        1822,
+        1825,
+        33913
+      ],
+      "source_excerpt": "Beast Valley",
+      "reason": "确认 Beast Valley 为地名，保留“兽谷”；1825 说明得名于 Beastfolk，与“兽民”形成同一词族但不混为族群名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1822 独立标签、1825 释义句、33913 与 Prax 并列，均证明 Beast Valley 是地名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“兽谷”与 1825 的 Beastfolk 得名说明相符，简洁且不与普通“野兽”混淆。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名路径正确；1822 为地点标签，33913 界定区域位置。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e2/e13 的 Beastfolk“兽民”区分：Beast Valley 是地名“兽谷”，Beastfolk 是族群“兽民”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:322",
+      "evidence_rows": [
+        6744,
+        6756
+      ],
+      "source_excerpt": "Beast Folk",
+      "reason": "确认 Beast Folk/beastfolk 指与氏族为敌的非人族群，统一译“兽民”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "6744 称可击退最弱者，6756 称其为祖先宿敌，均指非人族群。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“兽民”贴合 6756 的种族仇恨语境，大小写与单复数变体统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族路径合适；6744/6756 均以族群整体出现。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f1：与关联项 e13 的 Beastfolk 同指一族，共用“兽民”属拼写变体，不是不同专名误合并。"
+        }
+      }
+    },
+    {
+      "ref": "terms:391",
+      "evidence_rows": [
+        10431
+      ],
+      "source_excerpt": "a Thunder Brothers seat",
+      "reason": "原文为议事会席位名，指雷霆兄弟神群；译名保留，分类改为“其他”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "10431 仅为“a Thunder Brothers seat”，指向部族议事会席位名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“雷霆兄弟”保留专名及兄弟神群含义。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文只可证实为席位名/神群称谓，未显示组织实体；由“组织”改为“其他”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e7/e8 的 brother 词条无同一指称；雷霆兄弟是独立神群/席位名，不与兽兄弟混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:436",
+      "evidence_rows": [
+        11760
+      ],
+      "source_excerpt": "Dwarf Food",
+      "reason": "确认 Dwarf Food 为物品名，译“矮人食物”；term_kind 改为 game_term，并删除无据理由。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11760 中 Dwarf Food 是被拒绝的交易物品名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“矮人食物”直译可辨，符合物品标签。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "物品类别正确；term_kind 由 proper_name 改为 game_term，因 11760 是物品名而非专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e5 Dwarf Mine、e10 Dwarf Valley、e11 Dwarf Containers 共用“矮人”构词但指不同对象，未混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:439",
+      "evidence_rows": [
+        11862,
+        11866,
+        12855,
+        12867,
+        29192
+      ],
+      "source_excerpt": "Dwarf Mine",
+      "reason": "确认 Dwarf Mine 是矮人地下王国/矿场地名，保留“矮人矿场”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11862/11866/12855/29192 均以 Dwarf Mine 为地名或地下王国名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“矮人矿场”与 12855“same name”及 12867 地下王国语境相符，可作地名统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名路径合适；29192 为地图标签，12867 称其为地下王国。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e4 Dwarf Food、e6 dwarfs、e10 Dwarf Valley 共用“矮人”构词但分别为食物、种族、地名，未混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:450",
+      "evidence_rows": [
+        11793,
+        11861,
+        26328,
+        13583
+      ],
+      "source_excerpt": "dwarfs",
+      "reason": "确认 dwarfs 指格洛兰萨矮人种族，统一“矮人”；保留 game_term。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11793/11861 的 dwarfs 指制造声音、前来贸易的矮人；26328 为其独立列表项。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“矮人”与 13583 信奉 Mostal 的种族语境一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族路径合适；13583 提及其神祇 Mostal，可证为种族。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e5/e10/e11 的“矮人”为构词成分，非同一词条；不改变种族译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:604",
+      "evidence_rows": [
+        22577,
+        22600
+      ],
+      "source_excerpt": "beast brother",
+      "reason": "确认 beast brother 指泰尔莫里人与狼类伙伴的特殊羁绊，保留“兽兄弟”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "22577/22600 的 beast brother 指狼类伙伴，且通常一人一兽。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“兽兄弟”保留 beast+brother 的字面关系，与 22577 的羁绊说明相符。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他路径合适；这是特殊羁绊/身份关系，不是普通生物或组织。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e2/e13 Beastfolk“兽民”、e8 Brother 标题区分；beast brother 是伙伴关系，不并入族群名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:622",
+      "evidence_rows": [
+        24696
+      ],
+      "source_excerpt": "Brother We Do Not Name",
+      "reason": "确认该称号指背叛 Urox 的存在，改译“不可称名之兄弟”以保留禁忌标题。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "24696 的 Brother We Do Not Name 是招致 Urox 敌视混沌的背叛者称号。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“我们不得称名之兄弟”生硬；改为“不可称名之兄弟”，保留禁忌称号且更凝练。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他路径可容纳该神性/背叛者称号，原文未显示为组织或地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Brother 在此为称号成分，与 e7 beast brother 的伙伴义不同；不与兽兄弟混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:638",
+      "evidence_rows": [
+        26391,
+        26392
+      ],
+      "source_excerpt": "Valley of Tearing Jaws",
+      "reason": "确认 Valley of Tearing Jaws 为英雄任务途经地名，保留“裂颚谷”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26391/26392 均为 Valley of Tearing Jaws 的英雄任务途经地。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“裂颚谷”对应 Tearing Jaws + Valley，简洁可作地名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名路径合适；26391 明确 walk through the Valley of Tearing Jaws。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1 兽谷同为 Valley 地名但不同专名；不因共用“谷”而合并。"
+        }
+      }
+    },
+    {
+      "ref": "terms:981",
+      "evidence_rows": [
+        31353
+      ],
+      "source_excerpt": "Dwarf Valley",
+      "reason": "确认 Dwarf Valley 为地图地名，保留“矮人谷”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "31353 为地图标签 Dwarf Valley。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“矮人谷”直译地图地名，简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名路径合适；独立地图标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e5 Dwarf Mine、e1 Beast Valley 区分：Dwarf Valley 是独立地名，不套用矿场译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1043",
+      "evidence_rows": [
+        32406
+      ],
+      "source_excerpt": "Dwarf Containers",
+      "reason": "确认 Dwarf Containers 为宝藏列表物品名，保留“矮人容器”及 reference 级保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32406 为宝藏列表项 Dwarf Containers。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“矮人容器”对应复数容器名，作物品标签可读。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品路径合适；32406 为宝藏列表。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e4 Dwarf Food 同属矮人相关物品但不同词条；“矮人”构词一致，不混译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:54",
+      "evidence_rows": [
+        1552,
+        1691,
+        9665,
+        31955,
+        33913
+      ],
+      "source_excerpt": "Prax",
+      "reason": "确认 Prax 为地域/平原名，采用“普拉克斯”，不取少数候选“普拉克萨/帕拉克”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1552/1691/9665/31955 均以 Prax 为地域或平原名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“普拉克斯”采用常见音译，适用于 31955“flat land called Prax”及 1552“nomads of Prax”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名路径合适；31955 明确为 flat land。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "统一“普拉克斯”；与 e1 Beast Valley 在 33913 并列但为不同地名，不混用。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:53",
+    "terms:322",
+    "terms:391",
+    "terms:436",
+    "terms:439",
+    "terms:450",
+    "terms:604",
+    "terms:622",
+    "terms:638",
+    "terms:981",
+    "terms:1043",
+    "terms:54"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

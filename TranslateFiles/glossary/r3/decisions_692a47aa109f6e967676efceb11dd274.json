@@ -1,0 +1,362 @@
+{
+  "review_complete": true,
+  "review_summary": "已复核 e1–e12 的来源、译名、分类与一致性；e6 的分类由“物品”修正为“其他”；e6/e7 为单复数变体，e12 与相关拼写变体为同一地名，统一译名均保留。",
+  "acknowledged_findings": [
+    "F0405",
+    "F0424"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "category_path": "其他"
+      },
+      "reason": "shrine 是可建造、供祈祷的神圣场所，不是物品；应与“Shrines”条目统一归入“其他”。",
+      "evidence_rows": [
+        29966,
+        30567
+      ],
+      "table": "terms",
+      "index": 721
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:709",
+      "evidence_rows": [
+        28723
+      ],
+      "source_excerpt": "You still carry Kev’s Gift.",
+      "reason": "Kev’s Gift 是特定天赋/赠礼名称，保留专名并统一译作“凯夫的赠礼”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28723 原文以 Kev’s Gift 指玩家仍携带的特定赠礼。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“凯夫的赠礼”保留 Kev 音译和 Gift 的赠礼义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该名称为可携带的天赋/能力，归入“技能”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条仅见该译名，未发现与 Kev 相关专名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:710",
+      "evidence_rows": [
+        28913
+      ],
+      "source_excerpt": "In Nallindia’s Saga, a priestess lays a dead cousin back to rest.",
+      "reason": "Nallindia’s Saga 为具名萨迦/叙事作品，译作“纳林迪亚传奇”并归入“其他”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28913 以 Nallindia’s Saga 指一部萨迦/叙事作品。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“纳林迪亚传奇”音译 Nallindia，Saga 译“传奇”可接受。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为文学作品归入“其他”合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "萨迦名称统一，无变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:713",
+      "evidence_rows": [
+        28748
+      ],
+      "source_excerpt": "The clan was glad to be certain that Theya was in Ernalda’s Loom House.",
+      "reason": "Ernalda’s Loom House 为神话居所名，译作“埃尔纳尔达的织机屋”并归入“地名”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28748 指 Theya 所在的神话居所 Ernalda’s Loom House。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“埃尔纳尔达的织机屋”保留 Ernalda 专名与 Loom House 字面。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为具体居所/地点归入“地名”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Ernalda 译名与相关神名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:714",
+      "evidence_rows": [
+        28545,
+        30925,
+        32490
+      ],
+      "source_excerpt": "Items like the Tornado Rope are fairly easy to make, but are usually used quickly.",
+      "reason": "Tornado Rope 为具名魔法物品，译作“龙卷绳”并保持“物品”分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28545、30925、32490 均以 Tornado Rope 指同一具名魔法绳索。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“龙卷绳”简洁对应 Tornado Rope，符合物品短名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为可制作和使用的具名物品归入“物品”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "三条出处译名一致，无别名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:717",
+      "evidence_rows": [
+        30098,
+        34010
+      ],
+      "source_excerpt": "Sacrifices are due, first to Orlanth, King of the Gods, then to Ernalda, his wife.",
+      "reason": "King of the Gods 为 Orlanth 的神职称号，译作“众神之王”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30098 称 Orlanth 为 King of the Gods；34010 也以该称号指 Orlanth。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“众神之王”准确表达称号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为神职称号归入“身份”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两处均指 Orlanth，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:721",
+      "evidence_rows": [
+        29966,
+        30567
+      ],
+      "source_excerpt": "We should first build a shrine to Odayla, so our hunters will have a place to pray.",
+      "reason": "shrine 为宗教场所类游戏术语，保留“神龛”并修正分类为“其他”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "29966 与 30567 均指可建造、供祈祷的 shrine。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“神龛”符合小型神圣场所义。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文是可建造、供祈祷的神圣场所，不是物品；应改为“其他”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与复数 Shrines 应统一译作“神龛”，单复数变体不构成冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1114",
+      "evidence_rows": [
+        33311
+      ],
+      "source_excerpt": "Shrines, Temples and Great Temples",
+      "reason": "Shrines 是 shrine 的复数形式，统一译作“神龛”，分类为“其他”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33311 为“Shrines, Temples and Great Temples”标题，Shrines 指神龛类场所。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“神龛”与单数 shrine 保持同一译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为宗教场所类型归入“其他”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e6 的 shrine 为单复数变体，统一译名正确。"
+        }
+      }
+    },
+    {
+      "ref": "terms:727",
+      "evidence_rows": [
+        30463,
+        30996
+      ],
+      "source_excerpt": "Ask Lhankor Mhy to provide Clan Lore. That way, we can identify any treasures we may obtain.",
+      "reason": "Clan Lore 为知识类能力名，译作“氏族知识”并归入“技能”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30463 称 Lhankor Mhy 提供 Clan Lore 以辨识宝物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“氏族知识”对应 Clan Lore 的知识/技能义，优于“传说”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为知识类能力归入“技能”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "30996 标签同译“氏族知识”，前后一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:728",
+      "evidence_rows": [
+        30445,
+        30993
+      ],
+      "source_excerpt": "Spare Grain would make life easier for the farmers.",
+      "reason": "Spare Grain 为祝福/效果名，译作“余粮”；与 Grain Clan 的“谷物”搭配差异属语境允许。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30445 以 Spare Grain 指使农民生活更轻松的祝福/效果。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“余粮”简洁表达 Spare Grain。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为祝福/能力归入“技能”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "30993 标签同译“余粮”；与 Grain Clan 共用 Grain 词根但搭配不同，语境差异可接受。"
+        }
+      }
+    },
+    {
+      "ref": "terms:873",
+      "evidence_rows": [
+        34337
+      ],
+      "source_excerpt": "So Orlanth found Esra, who said that the Grain Clan would join",
+      "reason": "Grain Clan 为氏族专名，译作“谷物氏族”并归入“组织”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34337 称 Grain Clan 由 Esra 领导，是可能加入 Storm Tribe 的氏族。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“谷物氏族”对应 Grain Clan，保留氏族名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为氏族组织归入“组织”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Grain Clan 为专名，Grain 译“谷物”；与 Spare Grain 的“余粮”属不同搭配，可接受。"
+        }
+      }
+    },
+    {
+      "ref": "terms:734",
+      "evidence_rows": [
+        33344,
+        33345
+      ],
+      "source_excerpt": "Resurrection requires a relatively whole body that is still close to its severed spirit.",
+      "reason": "Resurrection 为使死者复生的仪式/力量，非专有人名，译作“复活”并归入“技能”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33344 说明 Resurrection 是使刚死者复生的仪式/力量。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“复活”对应 Resurrection，符合技能/仪式名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为仪式/能力归入“技能”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "33345 同称 Chalana Arroy 的复活力量，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:735",
+      "evidence_rows": [
+        32923
+      ],
+      "source_excerpt": "you settled in Quiviniland, a mountainous area in the southeast of Dragon Pass.",
+      "reason": "Quiviniland 为玩家氏族定居的山地地区；相关拼写变体按同一地名统一译作“奎维尼兰”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32923 明确 Quiviniland 是 Dragon Pass 东南部山地。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“奎维尼兰”为地名音译，简洁统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为地区名归入“地名”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "32923 中作为单一地区名出现，译名按地名统一。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:709",
+    "terms:710",
+    "terms:713",
+    "terms:714",
+    "terms:717",
+    "terms:721",
+    "terms:1114",
+    "terms:727",
+    "terms:728",
+    "terms:873",
+    "terms:734",
+    "terms:735"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

@@ -1,0 +1,162 @@
+{
+  "stage": "translate",
+  "key": "58a4ecd86a51dce8475faea9b56de6efd6f6952cc19c53664df8672e7b6970a3",
+  "records": 34421,
+  "failed_records": 0,
+  "clean": true,
+  "failures": [],
+  "repair_tasks": [],
+  "repair_dispatch": [],
+  "phase": "initial_full",
+  "checked_records": 34421,
+  "checked_rounds": [
+    {
+      "round": 1,
+      "phase": "initial_full",
+      "scope": "full",
+      "checked_records": 34421,
+      "result": "passed"
+    }
+  ],
+  "round_reports": [
+    "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\reports\\draft_checks\\round_00001.json"
+  ],
+  "repair_status": [
+    {
+      "id": "draft-repair-0861b8ad19d04e7aa8ea",
+      "status": "done",
+      "attempt": 1,
+      "ids": [
+        "R0004378_f97c5b15ab",
+        "R0004438_75d380836e",
+        "R0008359_758e1894a1",
+        "R0008444_122d32db0e",
+        "R0008452_59c85548a2",
+        "R0010272_b450a70e72",
+        "R0010290_2d930b3ae3",
+        "R0012184_069ea3715f",
+        "R0017200_4ded5a8200",
+        "R0017201_a07312eb00",
+        "R0019018_b77ee5f309",
+        "R0019019_ae3889236c",
+        "R0021502_008de189af",
+        "R0021503_17a1ae9473",
+        "R0023629_ea39b10b49",
+        "R0025762_76d3cc6b0a",
+        "R0026221_af3734e326",
+        "R0026222_0c2a499608",
+        "R0026271_956c24d8fa",
+        "R0026344_1c1a556121",
+        "R0027542_a8109011a5"
+      ],
+      "round": 1
+    },
+    {
+      "id": "draft-repair-8e0cb9eeeead44ce8794",
+      "status": "done",
+      "attempt": 1,
+      "ids": [
+        "R0012061_ad66d030a4",
+        "R0012064_544e3c1f27",
+        "R0014373_b06df80c36",
+        "R0014445_9b03962a1f",
+        "R0014729_be14eb032a",
+        "R0014730_6b22ebe742",
+        "R0014732_c50d884168",
+        "R0014733_7ca2fe392e",
+        "R0015011_3ed5cd1f0c",
+        "R0017079_ab2d541ff6",
+        "R0018693_d22b125243",
+        "R0018700_900efe39f7",
+        "R0020441_5673fd9a01",
+        "R0020525_615fa94325",
+        "R0022151_f610e2d6e5",
+        "R0022326_26caf22248",
+        "R0023533_b0757dd49a",
+        "R0023587_b00b18c3df",
+        "R0024491_d019f06cc2",
+        "R0024864_d3b74d4bb0",
+        "R0026169_c09ddac388",
+        "R0026174_c887e3922b",
+        "R0026175_190d881680",
+        "R0026181_31d3846f0a"
+      ],
+      "round": 1
+    },
+    {
+      "id": "draft-repair-d999053796f34d39a624",
+      "status": "done",
+      "attempt": 1,
+      "ids": [
+        "R0026182_f6ce3e1f21",
+        "R0026188_27d4f0398d",
+        "R0026189_8081206e28",
+        "R0026247_1a612110e6",
+        "R0026273_5c70071562",
+        "R0026287_b1b4a4a50f",
+        "R0026288_3397fde41f",
+        "R0027468_ce33c809d6",
+        "R0027671_c7848a69a7",
+        "R0028792_26bc937419",
+        "R0028859_0f7e260e87",
+        "R0028873_4877aa3ad0",
+        "R0028876_9c34b677f7",
+        "R0032923_748ccfad88",
+        "R0032928_0b1dc02669",
+        "R0033291_bd8963e542",
+        "R0033727_ff9fdb5a60"
+      ],
+      "round": 1
+    },
+    {
+      "id": "draft-repair-e0cb9dbc921041f5bab3",
+      "status": "done",
+      "attempt": 1,
+      "ids": [
+        "R0000549_a0394dd89f",
+        "R0000588_84cdb09938",
+        "R0001645_a5a26f5680",
+        "R0001741_1dc4dc47d6",
+        "R0001756_4934db5431",
+        "R0002168_2bdf7a6c88",
+        "R0002364_c0d5e68744",
+        "R0002425_875052ab5e",
+        "R0003380_a3986f37cc",
+        "R0003567_e1634238e7",
+        "R0003952_002365eb42",
+        "R0004774_232b4ea91e",
+        "R0006006_72aae2b356",
+        "R0006578_404ebdd976",
+        "R0007279_6bca2a1db7",
+        "R0007280_4cbd58b465",
+        "R0007914_4625fdb83e",
+        "R0008453_1bb7d5d7c6",
+        "R0008560_76f801829a",
+        "R0008691_6b072d7b60",
+        "R0008827_e625b5f147",
+        "R0008930_1a32442f69",
+        "R0009604_0f18daf6d6",
+        "R0009804_6842a4d683",
+        "R0011825_4987a2f449"
+      ],
+      "round": 1
+    },
+    {
+      "id": "draft-repair-ead3a4068f12414fab7a",
+      "status": "done",
+      "attempt": 1,
+      "ids": [
+        "R0033958_b295c98ca3",
+        "R0033959_b1f6dceae7",
+        "R0015614_f6324b5781",
+        "R0015615_a0added7b3",
+        "R0015626_f5c17a0d1c"
+      ],
+      "round": 1
+    }
+  ],
+  "imported_baseline": null,
+  "needs_attention_ids": [],
+  "repair_stop_reasons": {},
+  "status": "clean"
+}

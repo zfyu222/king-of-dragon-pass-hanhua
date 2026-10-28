@@ -1,0 +1,2267 @@
+{
+  "schema": 1,
+  "kind": "pilot",
+  "purpose": "calibration",
+  "pilot_key": "a26d1a16f775ae33a9bf83086cb12aa4d3b427e31d65a634d91294688632211a",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e",
+  "glossary": {
+    "hash": "4822e7bd99ed60fc76fbb98300e2035b15fc52497be5653d066e3ce9a3d0e21e",
+    "path": "glossary\\r3\\freeze_c04a1e8d\\built\\glossary_reviewed.json",
+    "revision": 3
+  },
+  "config": {
+    "agent_attempt_limit": 2,
+    "agent_task_limit": 1,
+    "api": {
+      "api_format": "OpenAI",
+      "api_key_env": "SHH_TRANSLATION_API_KEY",
+      "api_url": "",
+      "concurrency": 50,
+      "extra_body": {},
+      "max_completion_tokens": 16384,
+      "max_requests": 10000,
+      "model_name": "",
+      "request_timeout": 120,
+      "requests_per_minute": 0,
+      "stream": false,
+      "target_platform": "custom_platform_shh",
+      "temperature": 1,
+      "think_switch": false,
+      "tls_switch": false
+    },
+    "backend": "api",
+    "batch_chars": 12000,
+    "batch_records": null,
+    "batch_tokens": 1024,
+    "body_repair_round_limit": 6,
+    "case_sensitive": false,
+    "context_records": 0,
+    "draft_scan_workers": 1,
+    "escalation_backend": "codex",
+    "exclusions": [
+      {
+        "info": "Opal 插值命令（\\x01 + 两个操作数字节）",
+        "markers": "",
+        "regex": "\\\\x01(?:(?:\\\\x[0-9A-Fa-f]{2})|[^\\r\\n]){2}"
+      },
+      {
+        "info": "Opal 转义控制字节",
+        "markers": "",
+        "regex": "\\\\x[0-9A-Fa-f]{2}"
+      },
+      {
+        "info": "printf 格式化符（含 %ld）",
+        "markers": "",
+        "regex": "%(?:\\d+\\$)?[-+ #0']*(?:\\d+|\\*)?(?:\\.(?:\\d+|\\*))?(?:hh|h|ll|l|j|z|t|L)?[diuoxXfFeEgGaAcspn%]"
+      },
+      {
+        "info": "字面换行与制表转义",
+        "markers": "",
+        "regex": "\\\\[nrt]"
+      },
+      {
+        "info": "Opal scene 内部键",
+        "markers": "",
+        "regex": "^sceneR?\\d{3}[a-z]?$"
+      },
+      {
+        "info": "Opal 事件节点内部键",
+        "markers": "",
+        "regex": "^(?:H\\d+[a-z]{1,2}\\d?|Q\\d[A-Za-z]+|T\\d+)$"
+      },
+      {
+        "info": "Opal 状态与资源内部键",
+        "markers": "",
+        "regex": "^(?:RaidGoodNews|RaidBadNews|GoodNews|BadNews|EmissaryNews|GoExploringNews|MissionNews|BigBigTrouble|CallToArms|CouldBeBad|CouldBeGood|IsItAdventure|ItIsBad|ItIsGood|MightBeSad|QuiteAnAdventure|ReallyReallyGood|WeAreSad|WeDidIt|WoeAlasAlack|IntroOverture|MythMusic)$"
+      }
+    ],
+    "extract_batch_records": null,
+    "extract_batch_tokens": 10000,
+    "game_background": "## 游戏信息\n- 原名：King of Dragon Pass\n- 中文名：龙隘之王（暂译）\n- 开发商：A Sharp\n- 发行商：HeroCraft PC（Steam 版）\n- 发行平台：Steam（Windows、macOS）\n- Steam 发行日期：2015-07-28\n- 引擎：Marmalade SDK / S3E；本机 `README.txt` 确认 Steam 版使用 Marmalade SDK 8.8.0（build 487222q），游戏版本 2.4.0。\n- 原语言：英语（Steam 商店仅列英语）\n- 参考资料：[Steam 商店页](https://store.steampowered.com/app/352220/King_of_Dragon_Pass/)；[A Sharp 官方页面](https://www.a-sharp.com/kodp/)\n\n## 游戏简介\n\n玩家在神话世界 Glorantha 中领导一个氏族，通过资源管理、外交、战争、信仰与大量分支事件，逐步壮大为部族乃至龙隘之王。游戏将互动叙事与策略管理结合，Steam 版约有近 600 个手绘事件场景。[Steam 商店页](https://store.steampowered.com/app/352220/King_of_Dragon_Pass/)；[开发商介绍](https://www.a-sharp.com/kodp/)\n\n## 汉化目标\n- 范围：剧情事件、程序内置文本、UI、开场/教程、帮助、内置手册和地图标签。\n- 目标语言：简体中文",
+    "glossary_review_batch_records": 12,
+    "glossary_review_batch_tokens": 10000,
+    "layout_normalization": "exact_v1",
+    "lease_seconds": 3600,
+    "max_attempts": 5,
+    "model": "gpt-6-luna",
+    "pilot_batch_count": null,
+    "pilot_call_limit": null,
+    "pilot_ordinals": [],
+    "pilot_records": 150,
+    "placeholder_family_overrides": {},
+    "polish": false,
+    "protect_named_curly": null,
+    "quality_version": 2,
+    "record_constraints": {},
+    "review_batch_records": 80,
+    "review_batch_tokens": 1024,
+    "review_estimate": {
+      "ascii_chars_per_token": 3,
+      "full_base_tokens": 420,
+      "non_ascii_tokens_per_char": 2,
+      "pilot_base_tokens": 120,
+      "translation_multiplier": 3
+    },
+    "review_output_reserve_percent": 20,
+    "review_output_tokens": 32768,
+    "sol_no_progress_limit": 2,
+    "sol_repair_model": "gpt-6-sol",
+    "sol_repair_round_limit": 3,
+    "source_language": "英语",
+    "stage_backends": {},
+    "style": "《龙隘之王》（King of Dragon Pass）是格洛兰萨（Glorantha）神话背景的氏族经营与互动叙事游戏，文本由事件叙述、选项、顾问建议、UI 标签和动态拼接片段混合而成。叙述文字要求史诗感、古朴凝练、有画面感，用词贴近神话与部落生活，但不要写成文言文，也不要滥用成语；人物对白和顾问意见要求自然口语、直接有力，保留说话人的立场、情绪与偏见，不加解释性补充。玩家选项使用简短祈使句，动词开头，句末用句号；同一场景内多个选项的句式与长度尽量对齐。UI 标签、按钮、资源名、季节名使用简体中文的短词，不加句号，尽量不超过 6 个字。专名（神祇、氏族、人物、地名、部族、英雄任务）必须使用冻结术语表的统一译名；术语表未收录的新专名按音译为主、意译为辅，音译不夹杂间隔号。数值、牛只头数、年份、百分比一律使用阿拉伯数字，不得改写成中文数字。原文中的 \\x01 命令、\\xNN 控制字节、printf 格式符、字面 \\n\\r\\t 以及随机短语的 / 分支结构必须原样保留，随机短语的每个英文分支分别译为中文，分支数量与斜杠位置不变。许多条目是整句被拆开的片段（半句、短语、单个词），必须按其在句中承担的成分翻译：冠词与介词片段保持可拼接的短形式，不要补主语或补句号，不要改写词性，不要输出解释。遇到含义含糊的片段，按该词在氏族管理语境中最常见的含义翻译，不要臆造专名或剧情。",
+    "target_language": "简体中文",
+    "task_input_chars": 48000,
+    "task_input_tokens": 65536,
+    "whole_word": true,
+    "workflow": "custom"
+  },
+  "records": [
+    {
+      "id": "R0000024_4bb5e4cc5c",
+      "ordinal": 24,
+      "source": "\\x01@\\x16 charge hit us before we could \\x02\\x02shift our lines/reach advantageous ground\\x02.",
+      "translation": "\\x01@\\x16冲锋在我们来得及\\x02\\x02重整阵线/抢占有利地形之前击中了我们\\x02。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0000031_fb1e9c9e3e",
+      "ordinal": 31,
+      "source": "\\x02\\x03The two forces ran together/Each force charged the other/Both sides were eager to engage\\x02.",
+      "translation": "\\x02\\x03两支军队冲撞在一起/双方军队彼此冲锋/两方都渴望交战\\x02。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0000416_0d43d624d1",
+      "ordinal": 416,
+      "source": "This banner dates to the days of the Empire of Wyrms Friends. We shouldn’t squander an opportunity to use it.",
+      "translation": "这面旗帜可追溯到龙友帝国的时代。我们不该浪费使用它的机会。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0000535_6b994b44fb",
+      "ordinal": 535,
+      "source": "\\x05 single-handedly smashed the enemy’s charge.",
+      "translation": "\\x05单枪匹马击溃了敌人的冲锋。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0000613_cc3b5072d3",
+      "ordinal": 613,
+      "source": "\\x02\\x03brother/son/cousin\\x02",
+      "translation": "\\x02\\x03兄弟/儿子/表亲\\x02",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0000893_3be7a50548",
+      "ordinal": 893,
+      "source": "magic",
+      "translation": "魔法",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0001028_3450e61dfb",
+      "ordinal": 1028,
+      "source": "sceneR080",
+      "translation": "sceneR080",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0001068_980c958649",
+      "ordinal": 1068,
+      "source": "Our herds are already great. We can afford a display of generosity.",
+      "translation": "我们的畜群已经十分兴旺。我们完全可以大方一回。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0001329_a145311ee1",
+      "ordinal": 1329,
+      "source": "Their chief, \\x01@p, agreed to give us what \\x01@I asked for.",
+      "translation": "他们的首领\\x01@p同意把\\x01@I索要的东西给我们。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0001796_1f47935e3c",
+      "ordinal": 1796,
+      "source": "trolls",
+      "translation": "巨魔",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0001842_25a4ccf3da",
+      "ordinal": 1842,
+      "source": "the \\x01@O.",
+      "translation": "那处\\x01@O。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0002269_9f2ed3f7c0",
+      "ordinal": 2269,
+      "source": "healing their enemies.",
+      "translation": "救治他们的敌人。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0002672_e08f5d5a95",
+      "ordinal": 2672,
+      "source": "I ran into some of the Storm Bulls who helped us fight Chaos on our tula some time ago. They say that the awful rot of Chaos is upon us again.",
+      "translation": "我碰见了一些风暴公牛信徒，他们不久前曾在我们的图拉上帮我们对抗混沌。他们说，可怕的混沌腐坏又降临到我们头上了。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0002745_513c98a18f",
+      "ordinal": 2745,
+      "source": "The \\x01@! clan sent a delegation to pay us honor.",
+      "translation": "那个\\x01@!氏族派了一支代表团来向我们致敬。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0002788_587fe684fb",
+      "ordinal": 2788,
+      "source": "The Earthshaker Plow team not only proved their worth at plowing our fields, but they increased our clan magic by a prodigious amount.",
+      "translation": "撼地兽耕队不仅在我们的田地上证明了犁耕的本领，还使我们的氏族魔法大幅增长。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0002962_5038632d02",
+      "ordinal": 2962,
+      "source": "scene003",
+      "translation": "scene003",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0002998_04c9b90072",
+      "ordinal": 2998,
+      "source": "\\x01B3 refused to accept wergild.",
+      "translation": "\\x01B3拒绝接受赎杀金。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0003823_48fd6e9e50",
+      "ordinal": 3823,
+      "source": "If we can get other clans to suppress the Telmori for us, so much the better for us.",
+      "translation": "如果我们能让其他氏族替我们镇压泰尔莫里，那对我们来说再好不过。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0004078_55489b2954",
+      "ordinal": 4078,
+      "source": "The farmers thanked us for hearing their complaints.",
+      "translation": "农夫们感谢我们听取他们的申诉。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0004331_1f327455ba",
+      "ordinal": 4331,
+      "source": "Sora agreed to the trade, and we looked forward to using the jar in battle against our foes.",
+      "translation": "索拉同意了这笔交易，我们期待在战斗中用那只罐子对付敌人。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0004688_51c7a00c5d",
+      "ordinal": 4688,
+      "source": "If he can’t say something nice about the other clans, he shouldn’t say anything.",
+      "translation": "如果他说不出其他氏族什么好话，那他就该闭嘴。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0004846_1d1d337ec4",
+      "ordinal": 4846,
+      "source": "It certainly did not happen overnight, but we have seen a string of good luck lately. Our clan magic is much stronger now, and I can only credit the talking fox we traded with.",
+      "translation": "这当然不是一夜之间发生的，但我们最近交了一连串好运。我们的氏族魔法如今强大了许多，我只能把功劳归于我们与之交易的那只会说话的狐狸。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0005050_47c8b46d18",
+      "ordinal": 5050,
+      "source": "We brought the children home, but they",
+      "translation": "我们把孩子们带回了家，但他们",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0006499_35d6e32dfc",
+      "ordinal": 6499,
+      "source": "We hoped that the fine gifts for the ceremony would ease tensions between our two clans, and bring blessings to our herds.",
+      "translation": "我们希望仪式上的精美礼物能缓和两个氏族之间的紧张关系，并为我们的畜群带来祝福。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0006514_439d2ed582",
+      "ordinal": 6514,
+      "source": "Our herds are poor, we must sacrifice.",
+      "translation": "我们的畜群贫弱，我们必须献祭。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0006843_63862be762",
+      "ordinal": 6843,
+      "source": "We took a Glass Coin, minted by the far-off mermaids.",
+      "translation": "我们收下了一枚玻璃币，它由遥远的美人鱼铸造。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0006858_3eccfcc076",
+      "ordinal": 6858,
+      "source": "Blacktail is worth \\x01@\\x18 cows over his lifetime.",
+      "translation": "黑尾一生值\\x01@\\x18头牛。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0006963_24f700eb69",
+      "ordinal": 6963,
+      "source": "I can’t believe we’re even discussing this. Of course we help him! Anyone who thinks different needs some sense knocked into them.",
+      "translation": "我真不敢相信我们居然在讨论这个。我们当然要帮他！谁要是有别的想法，就该挨顿揍清醒一下。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0007297_443df2ce2b",
+      "ordinal": 7297,
+      "source": "The greater the force we send, the greater the loot we will gain.",
+      "translation": "我们派出的兵力越多，能得到的战利品就越多。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0008060_9b517172fc",
+      "ordinal": 8060,
+      "source": "I see triumph, if these clan halls contain sufficient wit and bravery.”",
+      "translation": "只要这些氏族大厅里有足够的智慧与胆识，我就能看到胜利。”",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0008101_023909a6ae",
+      "ordinal": 8101,
+      "source": "A tribe is strong where a clan is weak. Einarth tells us what we should already know.",
+      "translation": "部族之所以强大，正在于氏族薄弱之处。艾纳尔斯告诉我们的，本是我们早该知道的事。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0008187_01e7556cb8",
+      "ordinal": 8187,
+      "source": "If we do pay tribute to the bandits, they’ll simply step up their attacks on our neighbors.",
+      "translation": "如果我们真向匪徒进贡，他们只会加紧袭击我们的邻居。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0008254_55508e0b90",
+      "ordinal": 8254,
+      "source": "They departed, apparently satisfied.",
+      "translation": "他们离开了，看来很满意。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0008474_b61925d55d",
+      "ordinal": 8474,
+      "source": "No one felt any easier when the warriors could find no sign of other Chaos beings, because no one understood where the creature that killed \\x01@\\x03 had come from.",
+      "translation": "当战士们找不到其他混沌生物的踪迹时，没有人感到宽慰，因为谁也不明白杀死\\x01@\\x03的那头生物究竟从何而来。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0009326_18acd3df66",
+      "ordinal": 9326,
+      "source": "Do you wish to offer me a treasure, or 50 cows in return?”",
+      "translation": "你愿意给我一件宝物作为回报，还是50头牛？”",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0009334_d567cf64e3",
+      "ordinal": 9334,
+      "source": "50 cows worth of silver against his",
+      "translation": "价值50头牛的银子抵他的",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0010692_3edc2e608e",
+      "ordinal": 10692,
+      "source": "It is very unusual to allow one clan to earn wealth on another clan’s land.",
+      "translation": "允许一个氏族在另一个氏族的土地上获利，是非常不寻常的事。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0011058_2e5af57acf",
+      "ordinal": 11058,
+      "source": "They came for me, but took \\x01C$ by mistake!",
+      "translation": "他们是来抓我的，却误抓了\\x01C$！",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0011200_a7fdeb088b",
+      "ordinal": 11200,
+      "source": "How many warriors do you send along with \\x01@\\x18?",
+      "translation": "你派多少战士随\\x01@\\x18同行？",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0011566_a07c692e07",
+      "ordinal": 11566,
+      "source": "This is silly. Why have we let this go on for so long?",
+      "translation": "这太荒唐了。我们为什么让事情拖了这么久？",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0011968_42d6a3f6a1",
+      "ordinal": 11968,
+      "source": "We can afford to take on more carls.",
+      "translation": "我们负担得起多招些自由农。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0012377_b1f16cc7ff",
+      "ordinal": 12377,
+      "source": "We are stronger than they, and they know it. In suing for peace, we can demand payment from them.",
+      "translation": "我们比他们强大，他们也知道。既然他们来求和，我们就可以向他们索取赔偿。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0012417_9d80cfc138",
+      "ordinal": 12417,
+      "source": "Red-hued the earth-daughter vow-stabbed.",
+      "translation": "赤红的大地之女被誓言刺穿。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0012493_19cce336c5",
+      "ordinal": 12493,
+      "source": "Let Kallyr prove herself without taking hands away from planting our fields.",
+      "translation": "让卡莉尔自己去证明自己，不要为此从播种田地的活计中抽走人手。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0013176_880a0872ba",
+      "ordinal": 13176,
+      "source": "All agreed to a war, when the next Fire season came.",
+      "translation": "等到下一个火季来临时，所有人都同意开战。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0013298_14031e2283",
+      "ordinal": 13298,
+      "source": "in the possession of a minotaur.",
+      "translation": "落在一个牛头人手中。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0013456_3eadcc2e76",
+      "ordinal": 13456,
+      "source": "The dwarfs hate grain blight, and this treasure will protect us from it.",
+      "translation": "矮人痛恨谷物枯萎病，这件宝物能保护我们免受其害。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0013496_ca8725c712",
+      "ordinal": 13496,
+      "source": "There are legends about this Cragspider. She is a terrible enemy, very old and very powerful.",
+      "translation": "关于这位峭壁蜘蛛有许多传说。她是个可怕的敌人，非常古老，也非常强大。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0013661_3232563b3b",
+      "ordinal": 13661,
+      "source": "Trade is the answer.",
+      "translation": "贸易就是答案。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0013792_7fff767180",
+      "ordinal": 13792,
+      "source": "He took his leave of us.",
+      "translation": "他向我们告辞了。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0013915_6c083fb165",
+      "ordinal": 13915,
+      "source": "They were chastened, and admitted that their grievances were exaggerated and harmful to the unity of the clan.",
+      "translation": "他们受到了训诫，承认自己的不满言过其实，也有害于氏族团结。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0014077_1c238d03ee",
+      "ordinal": 14077,
+      "source": "\\x02\\x04We are cursed/We are luckless/It is hopeless/We are soon to be dead\\x02.",
+      "translation": "\\x02\\x04我们遭到诅咒/我们厄运缠身/一切无望/我们很快就要死了\\x02。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0014669_d819840e45",
+      "ordinal": 14669,
+      "source": "Vingulf, the Uroxi warrior who once challenged Orlkensor to a duel, boldly admitted to the deed, and contemptuously tossed the wergild at our feet.",
+      "translation": "温古夫，那位曾向奥克尔肯索挑战决斗的乌罗克西战士，公然承认了此事，还轻蔑地把赎杀金掷到我们脚下。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0015014_899cee5e7d",
+      "ordinal": 15014,
+      "source": "They listened carefully to our warnings, and thanked us for the gifts.",
+      "translation": "他们仔细听取了我们的警告，并感谢我们赠送的礼物。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0015133_bac0e337f6",
+      "ordinal": 15133,
+      "source": "Saraska enjoys the favor of the gods.",
+      "translation": "萨拉斯卡享有诸神的眷顾。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0015827_64da132977",
+      "ordinal": 15827,
+      "source": "Vanartha and Robasart will be sad to lose their child, even to a heroic destiny.",
+      "translation": "瓦纳莎和罗巴萨特会为失去孩子而悲伤，哪怕孩子是走向英雄的命运。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0016500_05bcad5a45",
+      "ordinal": 16500,
+      "source": "Derik Furman’s warriors brought him into our clan hall, gravely wounded. He had slain Jaldon Goldentooth.",
+      "translation": "德里克剥皮者的战士把重伤的他带进了我们的氏族大厅。他杀死了贾尔登金牙。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0016505_6189dd4587",
+      "ordinal": 16505,
+      "source": "A third of them were slain. The others were wounded. They considered themselves lucky to be back at all",
+      "translation": "他们中有三分之一被杀。其余人受了伤。他们觉得自己还能回来就已算走运",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0016692_12bd8256bc",
+      "ordinal": 16692,
+      "source": "Although we’ll never see any benefit from the gifts we give him, we’re rich enough to make the gesture anyway.",
+      "translation": "虽然我们永远看不到送他的礼物能带来什么好处，但我们足够富有，仍可以做出这个姿态。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0016892_75ddb86f28",
+      "ordinal": 16892,
+      "source": "Threaten to attack them if they don’t hand over the gifts.",
+      "translation": "威胁他们，若不交出礼物就攻打他们。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0017173_70c6489f8c",
+      "ordinal": 17173,
+      "source": "We refused to increase it.",
+      "translation": "我们拒绝增加。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0017291_7d34316f63",
+      "ordinal": 17291,
+      "source": "They gave us goods worth \\x01@\\x15 cows.",
+      "translation": "他们给了我们价值\\x01@\\x15头牛的货物。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00001-bf727764",
+        "instance": "api-pilot_translate-3746f0746a3e432ea5c56b8bca2e3279"
+      }
+    },
+    {
+      "id": "R0017312_70180631d1",
+      "ordinal": 17312,
+      "source": "Send me to lead the party. I will smash the Chaos beast.",
+      "translation": "派我带队。我会把那头混沌巨兽砸个粉碎。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0017364_85c9351988",
+      "ordinal": 17364,
+      "source": "Purify the temple.",
+      "translation": "净化神殿。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0017513_b1bae087e3",
+      "ordinal": 17513,
+      "source": "They agreed that they sought possible glory, when there was certain glory already in our clan. They laughed and said that they had forgotten themselves. The people were glad that they did not wish to leave.",
+      "translation": "他们承认，自己是在追逐可能得到的荣耀，而我们氏族早已拥有确凿无疑的荣耀。他们笑着说自己一时忘了分寸。众人很高兴他们不愿离开。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0017733_9857b66eb8",
+      "ordinal": 17733,
+      "source": "\\x01@\\x05 seized \\x01D\\x1B and",
+      "translation": "\\x01@\\x05抓住了\\x01D\\x1B并",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0017782_f663de6ef3",
+      "ordinal": 17782,
+      "source": "\\x01@N composed a poem about harmony between carls and cottars.",
+      "translation": "\\x01@N作了一首诗，歌颂自由农与茅舍农之间的和睦。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0017870_43b4f03182",
+      "ordinal": 17870,
+      "source": "The carls would love us to get that horse, but I fear it will be at the cost of our harvest.",
+      "translation": "自由农很希望我们得到那匹马，但我担心这会牺牲我们的收成。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0018064_13551ded03",
+      "ordinal": 18064,
+      "source": "We gave it hay to eat.",
+      "translation": "我们喂它干草吃。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0018113_0bcb09af18",
+      "ordinal": 18113,
+      "source": "The other clans disagreed.",
+      "translation": "其他氏族不同意。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0018595_3291ce8574",
+      "ordinal": 18595,
+      "source": "If her enemies follow her here, the warriors will be proud to smite them.",
+      "translation": "如果她的敌人追到这里，武士们会以痛击他们为荣。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0018684_0da910e27c",
+      "ordinal": 18684,
+      "source": "She said she would try us the next time she had thralls for sale.",
+      "translation": "她说下次有奴隶出售时，会来找我们试试。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0018945_78d85051a3",
+      "ordinal": 18945,
+      "source": "They said that if we were really friends, we would not try to withdraw a gift.",
+      "translation": "他们说，如果我们真是朋友，就不该试图收回礼物。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0018947_4f6c927948",
+      "ordinal": 18947,
+      "source": "They said that they would take the favors and return the cows.",
+      "translation": "他们说会收下这些恩惠，并把牛退还。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0019262_f65c1ee14a",
+      "ordinal": 19262,
+      "source": "What do you offer?",
+      "translation": "你们献上什么？",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0019280_5ecbb9c204",
+      "ordinal": 19280,
+      "source": "Ernalda said, “Don’t poke at the wasp’s nest without a net on your head and gloves on your hands.”",
+      "translation": "厄纳尔达说：“头上不戴网罩、手上不戴手套，就别去捅马蜂窝。”",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0019335_0755d15833",
+      "ordinal": 19335,
+      "source": "Our patron god, Elmal, is also friend and protector to horses.",
+      "translation": "我们的守护神埃尔马尔也是马匹的朋友与保护者。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0020211_aecdcc3343",
+      "ordinal": 20211,
+      "source": "We have done nothing without good cause.",
+      "translation": "我们从未无缘无故做过任何事。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0020238_d4c8c88d65",
+      "ordinal": 20238,
+      "source": "We assembled a war party to punish the elves.",
+      "translation": "我们召集了一支战团去惩罚精灵。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0020297_2f84af50ff",
+      "ordinal": 20297,
+      "source": "The god-talkers studied the signs given us by the spirits of our ancestors, and concluded that \\x01@\\t had been slain by outlaws.",
+      "translation": "神语者研究了祖先精魂给我们的征兆，断定\\x01@\\t已被歹徒杀害。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0020325_243a713e8b",
+      "ordinal": 20325,
+      "source": "Send for shamans to scare away bad spirits.",
+      "translation": "派萨满去吓退恶灵。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0020489_60746eb65d",
+      "ordinal": 20489,
+      "source": "The warriors are back from their mission to slay walking corpses alongside the Humakti. They said that the fighting was fierce, and",
+      "translation": "武士们随胡马科特信徒去斩杀行尸，如今已完成任务归来。他们说战斗十分激烈，而且",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0020617_09855f9ac4",
+      "ordinal": 20617,
+      "source": "Shamans come and say they will drive away the disease spirits for the low price of \\x01@\\x13 cows.",
+      "translation": "萨满们来了，说只要\\x01@\\x13头牛的低价，就能驱走疫病精魂。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0020918_76d940802c",
+      "ordinal": 20918,
+      "source": "Offer them gifts if they will threaten another clan instead.",
+      "translation": "送他们礼物，让他们转而威胁另一个氏族。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0021019_3cce480501",
+      "ordinal": 21019,
+      "source": "What gifts do you offer them first?",
+      "translation": "你们先送他们什么礼物？",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0021365_468acf8104",
+      "ordinal": 21365,
+      "source": "We should attend the ceremony.",
+      "translation": "我们应当参加仪式。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0021405_4914a16326",
+      "ordinal": 21405,
+      "source": "If we can find a way out of this endless tribal warfare, we will be renowned throughout Dragon Pass as gifted politicians.",
+      "translation": "如果我们能找到办法摆脱这场无休止的部族战争，我们就会作为有天赋的政治家闻名整个龙隘。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0021450_9393e4eeaa",
+      "ordinal": 21450,
+      "source": "We can volunteer to mediate disputes, but unless we have a way of forcing them to abide by our decisions, the peace will be a fragile one.",
+      "translation": "我们可以自愿调解纠纷，但除非有办法迫使他们服从我们的裁决，否则这和平将十分脆弱。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0021470_f0fa20162b",
+      "ordinal": 21470,
+      "source": "When our god-talkers threw the banner in the fire, the flame would not eat it. The motion rune on the banner glowed in the color of fire, and everyone said that Issaries had returned the banner as a reciprocal gift. All agreed that this was a very good omen.",
+      "translation": "我们的神语者把旗帜扔进火中时，火焰却不肯吞没它。旗上的移动符文发出火焰般的颜色，大家都说伊萨里斯把旗帜作为回礼送了回来。所有人都同意，这是个非常好的预兆。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0021943_a172e62e0c",
+      "ordinal": 21943,
+      "source": "sceneR361",
+      "translation": "sceneR361",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0021982_f032df23a2",
+      "ordinal": 21982,
+      "source": "\\x01@\\x05 is told that there are \\x01@\\x19 rebellious thralls, and that they are worth five cows apiece.",
+      "translation": "\\x01@\\x05被告知有\\x01@\\x19名反叛奴隶，每名值5头牛。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0022003_305022ee8c",
+      "ordinal": 22003,
+      "source": "They fought back fiercely, angered that we dared interfere in their clan affairs. Some of our people were killed, and others wounded.",
+      "translation": "他们愤怒于我们竟敢插手其氏族事务，奋力反击。我们有些人被杀，另一些人受伤。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0022284_2f6f8c3bde",
+      "ordinal": 22284,
+      "source": "These fellows are telling the truth.",
+      "translation": "这些家伙说的是实话。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0022629_0522a19702",
+      "ordinal": 22629,
+      "source": "Finally, you must mate with the mountain, and thereby win the blessing of the goddess Kero Fin.”",
+      "translation": "最后，你必须与山交合，以此赢得女神凯罗芬的祝福。”",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0023062_9b274c9443",
+      "ordinal": 23062,
+      "source": "Bad King Urgrain had a prophet dipped in lime, but it was his own skin that peeled off.",
+      "translation": "恶王乌尔格雷恩曾把一个先知浸入石灰，结果剥落的却是他自己的皮。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0023160_aa1ab3306f",
+      "ordinal": 23160,
+      "source": "The carls said that they would wait and see if the behavior of the thralls improved. They said we should do more than threaten the thralls next time they caused trouble.",
+      "translation": "自由农说他们愿意等等看奴隶的表现是否会改善。他们说，下次奴隶惹麻烦时，我们应该做的不只是威胁他们。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0023482_64f670c64f",
+      "ordinal": 23482,
+      "source": "The carls wondered aloud why we bothered to take thralls if we were just going to let them go again.",
+      "translation": "自由农高声纳闷：如果我们到头来又要放走奴隶，当初何必费心抓他们。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0023825_5f1f1e44d4",
+      "ordinal": 23825,
+      "source": "He was much affronted by our desire to bargain with him, and withdrew his offer.",
+      "translation": "我们想和他讨价还价，这让他大为恼火，于是收回了提议。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0023903_dc35594ea9",
+      "ordinal": 23903,
+      "source": "Our magic is strong; a divination will tell us more about these mysterious artifacts.",
+      "translation": "我们的魔法很强；一次占卜会让我们更了解这些神秘器物。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0024056_18f08b03e8",
+      "ordinal": 24056,
+      "source": "This could cause trouble between our clans.",
+      "translation": "这可能会在我们两个氏族之间引起麻烦。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0024645_ccae0cb73c",
+      "ordinal": 24645,
+      "source": "Thanes from the \\x01@! clan came to ask our Lhankor Mhy priests to magically translate an old scroll they had found.",
+      "translation": "\\x01@!氏族的贵族前来请我们的兰科尔米祭司用魔法翻译他们找到的一卷古老卷轴。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0024711_6bd3d9b6f2",
+      "ordinal": 24711,
+      "source": "They increased their offer, and we agreed to perform the ritual they sought.",
+      "translation": "他们提高了报酬，我们便同意举行他们所求的仪式。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0025339_15842c20d8",
+      "ordinal": 25339,
+      "source": "They give you gifts worth \\x01@\\x1A cows. What do you offer them in return?",
+      "translation": "他们送你价值\\x01@\\x1A头牛的礼物。你回赠他们什么？",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0025464_9e854a6e46",
+      "ordinal": 25464,
+      "source": "The carls could afford to lose a few cows.",
+      "translation": "自由农还损失得起几头牛。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0026098_2a7ee3ed54",
+      "ordinal": 26098,
+      "source": "The terrible woman said, “You say the words, but you do not understand the mystery. You shall remain here forever.” And back in the realm of mortals, we knew that \\x01@K would never be returned to us, and that we would be cursed with ill fortune.",
+      "translation": "那可怕的女人说：“你们念出了词句，却不明白其中的奥秘。你们将永远留在这里。”而在凡人领域，我们知道\\x01@K再也不会回到我们身边，我们也会被厄运诅咒。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0026260_336bca454d",
+      "ordinal": 26260,
+      "source": "Orlanth said, “The only thing that will get a new arrangement is your face!”",
+      "translation": "奥兰斯说：“唯一需要重新安排的，就是你的脸！”",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0026346_d0dd8e8910",
+      "ordinal": 26346,
+      "source": "“It is a very confused time and things are very mixed up.”",
+      "translation": "“这是非常混乱的时期，一切都乱成一团。”",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0026563_5c3631e33f",
+      "ordinal": 26563,
+      "source": "First, she was attacked by \\x01@\\x10.",
+      "translation": "首先，她遭到\\x01@\\x10的攻击。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0026685_6cc36f57bf",
+      "ordinal": 26685,
+      "source": "The god-talkers said we would have good luck with our herds for a long time to come.",
+      "translation": "神语者说，我们的畜群会在未来很长一段时间里好运不断。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0026723_fa98953099",
+      "ordinal": 26723,
+      "source": "The creature ate at \\x01@K where the shield could not protect \\x08.",
+      "translation": "那生物在盾牌护不住\\x08的地方啃咬\\x01@K。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0026963_1a42d862c1",
+      "ordinal": 26963,
+      "source": "\\x01@K went everywhere, looking for Vadrus. Several times \\x06 found steads that had been sacked by Vadrus and his gang, but the trail was always cold. Finally, \\x01@K had gone so far that \\x06 realized that \\x06 no longer knew the way back.",
+      "translation": "\\x01@K四处奔走，寻找瓦德鲁斯。有好几次，\\x06发现了被瓦德鲁斯及其匪帮洗劫过的农庄，但线索总是断了。最后，\\x01@K走得太远，\\x06这才意识到，\\x06已经不认识回去的路了。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0027270_0f96329527",
+      "ordinal": 27270,
+      "source": "Join the attack on the star warriors.",
+      "translation": "加入对星武士的进攻。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0027558_92633e1f26",
+      "ordinal": 27558,
+      "source": "I don’t trust this \\x01@\\x14.",
+      "translation": "我不信任这个\\x01@\\x14。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00002-1d7aa46d",
+        "instance": "api-pilot_translate-4fa4828f84fa4dab8223a4ed0ffb272a"
+      }
+    },
+    {
+      "id": "R0027593_fee3cea571",
+      "ordinal": 27593,
+      "source": "We traded\\x01@\\x01\\x01@\\x14 for the eggs.",
+      "translation": "我们用\\x01@\\x01\\x01@\\x14换来了这些蛋。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0028222_ec88d2abf5",
+      "ordinal": 28222,
+      "source": "Tell me more about these Kitori.",
+      "translation": "再多告诉我一些关于这些基托里人的事。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0028418_cb7a6b53c8",
+      "ordinal": 28418,
+      "source": "She nearly returned home, but realized she had not fulfilled her destiny.",
+      "translation": "她本已快要回家，却意识到自己尚未完成天命。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0028664_c942be1496",
+      "ordinal": 28664,
+      "source": "Ask allies to send warriors.",
+      "translation": "请求盟友派出战士。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0028810_e7e4cbdfd7",
+      "ordinal": 28810,
+      "source": "but let the girl continue as Aroka.",
+      "translation": "但让那女孩继续充当阿罗卡。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0028897_0c9304977b",
+      "ordinal": 28897,
+      "source": "Undead! Bring me my sword!",
+      "translation": "亡灵！把我的剑拿来！",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0029194_a598883c0b",
+      "ordinal": 29194,
+      "source": "Cragspider",
+      "translation": "峭壁蜘蛛",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0029445_029b236619",
+      "ordinal": 29445,
+      "source": "Turtles",
+      "translation": "乌龟",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0029482_14e4d79f17",
+      "ordinal": 29482,
+      "source": "They owe us a favor.",
+      "translation": "他们欠我们一个人情。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0029519_8f64695c78",
+      "ordinal": 29519,
+      "source": "Ask someone else about this.",
+      "translation": "向别人打听这件事。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0029624_33ae505c6f",
+      "ordinal": 29624,
+      "source": "Our mothers and fathers are already struggling to provide for their families! We need more food or more adults to care for the babes.",
+      "translation": "我们的父母已经在苦苦养活家人了！我们需要更多食物，或者更多大人来照看孩子。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0029817_46e768d561",
+      "ordinal": 29817,
+      "source": "We don't have enough cattle.",
+      "translation": "我们没有足够的牛。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0030115_dd5fdb899a",
+      "ordinal": 30115,
+      "source": "If we support those who don't like us, we may sway their opinions.",
+      "translation": "若我们支持那些不喜欢我们的人，或许能改变他们的看法。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0030141_a4cccf3603",
+      "ordinal": 30141,
+      "source": "The quester must be tough enough to survive the rigors of a heroquest, and wise enough to perform the steps correctly. And ideally, a hero.",
+      "translation": "探索者必须足够坚韧，能经受英雄探索的严酷考验；也要足够睿智，能正确完成各个步骤。最好还得是位英雄。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0030209_fe55b95d54",
+      "ordinal": 30209,
+      "source": "In this freezing weather, better to stay at home by the fire.",
+      "translation": "在这天寒地冻的日子里，最好留在家里烤火。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0030288_2c571ac806",
+      "ordinal": 30288,
+      "source": "We heroquested recently, so we should not perform a heroquest this year. There is no need to prepare for one now.",
+      "translation": "我们最近刚进行过英雄探索，所以今年不应再进行英雄探索。现在无须为此做准备。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0030451_1df527bbec",
+      "ordinal": 30451,
+      "source": "First sacrifice to Issaries and learn new mysteries. Then sacrifice to improve our deals when trading is poor.",
+      "translation": "先向伊萨里斯献祭，学习新的秘仪。之后再献祭，以在贸易不景气时改善我们的交易。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0030497_7ffd13b0bd",
+      "ordinal": 30497,
+      "source": "Tarard Riel may be only a rock, but he is very old, and has lived here all his life.",
+      "translation": "塔拉德瑞尔也许只是一块岩石，但他非常古老，一生都住在这里。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0030556_83a5a5b180",
+      "ordinal": 30556,
+      "source": "I'm afraid we'll have to slaughter animals now.",
+      "translation": "恐怕我们现在不得不宰杀牲畜了。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0031146_ccb2f8fb3c",
+      "ordinal": 31146,
+      "source": " for ",
+      "translation": " 为 ",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0031530_f881f5f161",
+      "ordinal": 31530,
+      "source": "Orlkarth",
+      "translation": "奥尔卡斯",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0031632_8cf062e303",
+      "ordinal": 31632,
+      "source": "farm6",
+      "translation": "农场6",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0031788_b50b77148a",
+      "ordinal": 31788,
+      "source": "No babies were born! ",
+      "translation": "没有婴儿降生！ ",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0032031_0a8c4d71c7",
+      "ordinal": 32031,
+      "source": "Our cows were expected to give abundant milk.",
+      "translation": "我们本指望母牛能产出充足的奶。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0032198_9ce0c33782",
+      "ordinal": 32198,
+      "source": "We need a chief who will build up our herds and our trade goods. I could do the work.",
+      "translation": "我们需要一位能壮大畜群和贸易货物的首领。这活儿我能干。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0032283_6e15cb45ff",
+      "ordinal": 32283,
+      "source": "I am glad to serve the clan by handling herding concerns.",
+      "translation": "我很乐意通过处理放牧事务来为氏族效力。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0032917_cb2f276341",
+      "ordinal": 32917,
+      "source": "About six hundred years ago, a dragon approached you, in either its own form or that of a human with a dragon’s soul inside it. The dragons had always been hostile, or at the very best utterly uncaring. Orlanth was always the dragon-slayer. You had to choose whether to believe it and cooperate and learn to do what dragons know, or whether to maintain neutrality.\\n\\nWhat was your attitude towards the dragons?",
+      "translation": "大约六百年前，一条龙接近了你们，它或以本相现身，或化作一个体内藏有龙魂的人类。龙向来怀有敌意，往好了说也全然漠不关心。奥兰斯一直是屠龙者。你们必须选择：是相信它、与它合作并学习龙所知晓的本事，还是保持中立。\\n\\n你们对龙持什么态度？",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0033005_a659fdc593",
+      "ordinal": 33005,
+      "source": "Your ancestors expect you to retain enmity to their ancient enemies, who are still around to bedevil you.",
+      "translation": "你们的祖先希望你们继续仇视他们的古老敌人；那些敌人仍在附近给你们制造麻烦。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0033133_e713c73078",
+      "ordinal": 33133,
+      "source": "Sick people are more likely to die of old age or starvation than healthy people. Sick and wounded people cannot work, farm, fight, go on patrol, produce crafts, or lend their talents to the ring.",
+      "translation": "病人比健康人更可能因年老或饥饿而死亡。患病和受伤的人无法工作、耕种、战斗、巡逻、制作工艺品，也无法为议事会贡献才能。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0033195_81e7b3b7ff",
+      "ordinal": 33195,
+      "source": "Advice: Tap the face at the bottom of the screen. You'll see the leaders of the clan, known as the Clan Ring. They can offer good advice, particularly if their skills are high. (To check their skills, tap their picture.) Your advisors have personalities, so their advice sometimes serves their own agendas better than it serves the clan. Change advisors via the Clan screen's Reorganize button.",
+      "translation": "建议：点击屏幕底部的人脸。你会看到氏族的领袖，也就是氏族议事会。他们能提供好建议，尤其是技能高的时候。（要查看他们的技能，点击他们的头像。）你的顾问各有性格，所以他们的建议有时更符合自己的盘算，而非氏族的利益。可通过氏族界面的“重组”按钮更换顾问。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0033264_891393efb9",
+      "ordinal": 33264,
+      "source": "You are mortals living in a magical world. The world is alive. Every river and rock has a spirit, as does your clan. These spirits sometimes share their magic with humans. The very greatest of the spirits are the gods. And the greatest god is the storm king, Orlanth.",
+      "translation": "你们是生活在一个魔法世界中的凡人。世界是活的。每一条河流、每一块岩石都有灵，你们的氏族也有。这些灵有时会与人类分享它们的魔法。最伟大的灵是神。而最伟大的神是风暴之王奥兰斯。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0033282_06265b68cb",
+      "ordinal": 33282,
+      "source": "Your Place in the World",
+      "translation": "你在世界中的位置",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0033397_9155570dba",
+      "ordinal": 33397,
+      "source": "This blessing helps your hunters and trackers locate what they search for.",
+      "translation": "这项祝福能帮助你的猎人和追踪者找到他们所寻之物。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0033578_1d77799f9e",
+      "ordinal": 33578,
+      "source": "Knowledge of the sacred Orlanthi laws laid down by King Heort. Familiarity with legal precedents, ability to argue based on the power of tradition. Primary skill for emissaries and the clan lawspeaker, of secondary importance for poets.",
+      "translation": "通晓赫奥特王所定的神圣奥兰斯人律法。熟悉法律先例，能依据传统的权威进行辩论。这是使者与氏族法言者的主要技能，对诗人而言则是次要技能。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0033992_69eb1b36d7",
+      "ordinal": 33992,
+      "source": "The dragonewts allied with our folk for many generations, then betrayed them. About all I know about them is that there are different types, some big, some little. And they're related to the dragons somehow.",
+      "translation": "龙人曾与我们的人民结盟许多代，后来却背叛了他们。关于龙人，我只知道他们分不同类型，有的高大，有的矮小。而且他们不知怎么与龙有关。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0034221_4ba3e0d395",
+      "ordinal": 34221,
+      "source": "Lhankor Mhy asked him why he had done this, and he could not answer, for he would not admit that he had been greedy and foolish. So he lost the contest, and with it, all truth, forever. Yet in taking something from Grandbread, Lhankor Mhy gained a fraction of the foreign god’s possessiveness. (This is why we Lhankor Mhy initiates must struggle with the temptation to hoard the truth, even today.) Grandbread then became a useless god. Nobody bothered to reawaken him after the Lightbringers Quest brought an end to the Darkness.",
+      "translation": "兰科尔米问他为何这样做，他无法回答，因为他不肯承认自己既贪婪又愚蠢。于是他输掉了那场较量，也从此永远失去了全部真理。然而，兰科尔米从格兰德布雷德那里取走某物时，也沾染了这位外神的一丝占有欲。（正因如此，我们这些兰科尔米入教者直到今天仍须与囤积真理的诱惑抗争。）格兰德布雷德由此成了无用的神。光明使者探索终结大黑暗之后，再无人费心将他唤醒。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    },
+    {
+      "id": "R0034243_227959c091",
+      "ordinal": 34243,
+      "source": "Orlanth prepared himself against the monster. He brought a sack with the Four Winds in it, an ancient flint sword called a klanth, a twisted vine which held the Upper Wind, and a leather rope which held the Lower Wind. He spent a year chanting songs of power, and ate of Ernalda's Splendorbread and drank crazy black Widebrew.",
+      "translation": "奥兰斯为对抗那头巨兽做好准备。他带来一只装着四方之风的口袋、一把名为克兰斯的古老燧石剑、一根束缚着上层之风的扭曲藤蔓，以及一根束缚着下层之风的皮绳。他花了一年时间吟唱力量之歌，吃了厄纳尔达的辉光面包，喝下疯狂的黑色广酿。",
+      "metadata": {},
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r3-00003-0143fd5b",
+        "instance": "api-pilot_translate-b6f6e285b2a448458878fee4d5921309"
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "id": "pilot_translate-r3-00001-bf727764",
+      "stage": "pilot_translate",
+      "status": "done",
+      "attempt": 1,
+      "backend": "api",
+      "ids": "[\"R0000024_4bb5e4cc5c\",\"R0000031_fb1e9c9e3e\",\"R0000416_0d43d624d1\",\"R0000535_6b994b44fb\",\"R0000613_cc3b5072d3\",\"R0000893_3be7a50548\",\"R0001028_3450e61dfb\",\"R0001068_980c958649\",\"R0001329_a145311ee1\",\"R0001796_1f47935e3c\",\"R0001842_25a4ccf3da\",\"R0002269_9f2ed3f7c0\",\"R0002672_e08f5d5a95\",\"R0002745_513c98a18f\",\"R0002788_587fe684fb\",\"R0002962_5038632d02\",\"R0002998_04c9b90072\",\"R0003823_48fd6e9e50\",\"R0004078_55489b2954\",\"R0004331_1f327455ba\",\"R0004688_51c7a00c5d\",\"R0004846_1d1d337ec4\",\"R0005050_47c8b46d18\",\"R0006499_35d6e32dfc\",\"R0006514_439d2ed582\",\"R0006843_63862be762\",\"R0006858_3eccfcc076\",\"R0006963_24f700eb69\",\"R0007297_443df2ce2b\",\"R0008060_9b517172fc\",\"R0008101_023909a6ae\",\"R0008187_01e7556cb8\",\"R0008254_55508e0b90\",\"R0008474_b61925d55d\",\"R0009326_18acd3df66\",\"R0009334_d567cf64e3\",\"R0010692_3edc2e608e\",\"R0011058_2e5af57acf\",\"R0011200_a7fdeb088b\",\"R0011566_a07c692e07\",\"R0011968_42d6a3f6a1\",\"R0012377_b1f16cc7ff\",\"R0012417_9d80cfc138\",\"R0012493_19cce336c5\",\"R0013176_880a0872ba\",\"R0013298_14031e2283\",\"R0013456_3eadcc2e76\",\"R0013496_ca8725c712\",\"R0013661_3232563b3b\",\"R0013792_7fff767180\",\"R0013915_6c083fb165\",\"R0014077_1c238d03ee\",\"R0014669_d819840e45\",\"R0015014_899cee5e7d\",\"R0015133_bac0e337f6\",\"R0015827_64da132977\",\"R0016500_05bcad5a45\",\"R0016505_6189dd4587\",\"R0016692_12bd8256bc\",\"R0016892_75ddb86f28\",\"R0017173_70c6489f8c\",\"R0017291_7d34316f63\"]",
+      "error": null
+    },
+    {
+      "id": "pilot_translate-r3-00002-1d7aa46d",
+      "stage": "pilot_translate",
+      "status": "done",
+      "attempt": 1,
+      "backend": "api",
+      "ids": "[\"R0017312_70180631d1\",\"R0017364_85c9351988\",\"R0017513_b1bae087e3\",\"R0017733_9857b66eb8\",\"R0017782_f663de6ef3\",\"R0017870_43b4f03182\",\"R0018064_13551ded03\",\"R0018113_0bcb09af18\",\"R0018595_3291ce8574\",\"R0018684_0da910e27c\",\"R0018945_78d85051a3\",\"R0018947_4f6c927948\",\"R0019262_f65c1ee14a\",\"R0019280_5ecbb9c204\",\"R0019335_0755d15833\",\"R0020211_aecdcc3343\",\"R0020238_d4c8c88d65\",\"R0020297_2f84af50ff\",\"R0020325_243a713e8b\",\"R0020489_60746eb65d\",\"R0020617_09855f9ac4\",\"R0020918_76d940802c\",\"R0021019_3cce480501\",\"R0021365_468acf8104\",\"R0021405_4914a16326\",\"R0021450_9393e4eeaa\",\"R0021470_f0fa20162b\",\"R0021943_a172e62e0c\",\"R0021982_f032df23a2\",\"R0022003_305022ee8c\",\"R0022284_2f6f8c3bde\",\"R0022629_0522a19702\",\"R0023062_9b274c9443\",\"R0023160_aa1ab3306f\",\"R0023482_64f670c64f\",\"R0023825_5f1f1e44d4\",\"R0023903_dc35594ea9\",\"R0024056_18f08b03e8\",\"R0024645_ccae0cb73c\",\"R0024711_6bd3d9b6f2\",\"R0025339_15842c20d8\",\"R0025464_9e854a6e46\",\"R0026098_2a7ee3ed54\",\"R0026260_336bca454d\",\"R0026346_d0dd8e8910\",\"R0026563_5c3631e33f\",\"R0026685_6cc36f57bf\",\"R0026723_fa98953099\",\"R0026963_1a42d862c1\",\"R0027270_0f96329527\",\"R0027558_92633e1f26\"]",
+      "error": null
+    },
+    {
+      "id": "pilot_translate-r3-00003-0143fd5b",
+      "stage": "pilot_translate",
+      "status": "done",
+      "attempt": 1,
+      "backend": "api",
+      "ids": "[\"R0027593_fee3cea571\",\"R0028222_ec88d2abf5\",\"R0028418_cb7a6b53c8\",\"R0028664_c942be1496\",\"R0028810_e7e4cbdfd7\",\"R0028897_0c9304977b\",\"R0029194_a598883c0b\",\"R0029445_029b236619\",\"R0029482_14e4d79f17\",\"R0029519_8f64695c78\",\"R0029624_33ae505c6f\",\"R0029817_46e768d561\",\"R0030115_dd5fdb899a\",\"R0030141_a4cccf3603\",\"R0030209_fe55b95d54\",\"R0030288_2c571ac806\",\"R0030451_1df527bbec\",\"R0030497_7ffd13b0bd\",\"R0030556_83a5a5b180\",\"R0031146_ccb2f8fb3c\",\"R0031530_f881f5f161\",\"R0031632_8cf062e303\",\"R0031788_b50b77148a\",\"R0032031_0a8c4d71c7\",\"R0032198_9ce0c33782\",\"R0032283_6e15cb45ff\",\"R0032917_cb2f276341\",\"R0033005_a659fdc593\",\"R0033133_e713c73078\",\"R0033195_81e7b3b7ff\",\"R0033264_891393efb9\",\"R0033282_06265b68cb\",\"R0033397_9155570dba\",\"R0033578_1d77799f9e\",\"R0033992_69eb1b36d7\",\"R0034221_4ba3e0d395\",\"R0034243_227959c091\"]",
+      "error": null
+    }
+  ],
+  "config_note": "Current configuration. Saved outputs retain their producer task/input snapshots; a settings change alone does not mean these outputs were regenerated.",
+  "ready_for_assessment": true,
+  "statistics": {
+    "sample_records": 150,
+    "translated_records": 150,
+    "mechanical_failed_records": 0,
+    "task_statuses": {
+      "done": 3
+    },
+    "api_request_statuses_cumulative": {
+      "received": 3
+    }
+  },
+  "failures": [],
+  "note": "Mechanical findings are diagnostic, not a semantic error rate. Main AI assesses pipeline reliability, style and recurring quality problems. Individual errors need not be cleared before accepting calibration.",
+  "snapshot_hash": "45df0f151851c9bbf4a6caff115aee71a83e85d0f457791e80848a7d0daa6ca3",
+  "report_hash": "c83b12dcdac1e5da3b32c64416f85bab77382534161483d6e91bfe58d2fb3e98"
+}

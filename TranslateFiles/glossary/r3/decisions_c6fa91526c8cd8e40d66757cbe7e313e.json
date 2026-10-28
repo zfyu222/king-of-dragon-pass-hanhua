@@ -1,0 +1,373 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 12 条宝藏物品术语。保留“物品”分类和 reference 执行级别；依据宝藏列表语境修正 3 条中文搭配（Hate Torch、Moldy Book、Strong Man's Toothpick），其余译名与原文及短标签风格一致。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "仇恨火炬"
+      },
+      "reason": "Hate 在此为名词性“仇恨”，且“仇恨火炬”比“憎恨火炬”更符合中文物品名搭配。",
+      "evidence_rows": [
+        32432
+      ],
+      "table": "terms",
+      "index": 1060
+    },
+    {
+      "patch": {
+        "recommended_translation": "发霉的书"
+      },
+      "reason": "“霉书”不成常用中文词，Moldy Book 宜译“发霉的书”，仍符合短物品名长度。",
+      "evidence_rows": [
+        32458
+      ],
+      "table": "terms",
+      "index": 1077
+    },
+    {
+      "patch": {
+        "recommended_translation": "壮汉的牙签"
+      },
+      "reason": "Strong Man 指体格强壮者，译“壮汉”比“强人”更准确自然。",
+      "evidence_rows": [
+        32484
+      ],
+      "table": "terms",
+      "index": 1086
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:1060",
+      "evidence_rows": [
+        32432
+      ],
+      "source_excerpt": "Hate Torch",
+      "reason": "确认条目为宝藏列表中的火炬，修正中文搭配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第32432行原文为 Hate Torch，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“憎恨火炬”搭配略生硬；改为“仇恨火炬”，Hate 作名词更自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 物品与宝藏列表中的火炬类可持有物一致。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同批无同形词冲突；保持短物品名格式。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1071",
+      "evidence_rows": [
+        32447
+      ],
+      "source_excerpt": "Iron Plow",
+      "reason": "确认铁犁为宝藏列表中的具名物品，译名准确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第32447行原文为 Iron Plow，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“铁犁”准确对应 Iron Plow，符合短物品名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 物品与犁具类可持有物一致。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批普通物品短名风格一致，无同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1073",
+      "evidence_rows": [
+        32450
+      ],
+      "source_excerpt": "Kero Fin Ice",
+      "reason": "确认以 Kero Fin 命名的冰类宝藏物品，保留短名译法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第32450行原文为 Kero Fin Ice，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“凯罗芬冰”保留 Kero Fin 音译并以“冰”对应 Ice，作为短物品名可通。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 物品与宝藏列表中的冰类可持有物一致。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Kero Fin 与 e4 同作“凯罗芬”，专名部分一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1074",
+      "evidence_rows": [
+        32451
+      ],
+      "source_excerpt": "Kero Fin Kite",
+      "reason": "确认以 Kero Fin 命名的风筝类宝藏物品，保留短名译法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第32451行原文为 Kero Fin Kite，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“凯罗芬风筝”对应 Kero Fin Kite，专名音译与物品名简洁度合适。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 物品与风筝类可持有物一致。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Kero Fin 与 e3 同作“凯罗芬”，专名部分一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1075",
+      "evidence_rows": [
+        32455
+      ],
+      "source_excerpt": "Many-Birthing Cow",
+      "reason": "确认多产母牛为宝藏列表中的具名牲畜，译名可通。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第32455行原文为 Many-Birthing Cow，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“多产母牛”对应 Many-Birthing Cow，表达其多育特征。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 物品用于宝藏列表中的牲畜类可持有物，按现有分类保留。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批牲畜/物品短名风格一致，无同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1076",
+      "evidence_rows": [
+        32456
+      ],
+      "source_excerpt": "Metal Mule",
+      "reason": "确认金属骡为宝藏列表中的具名物品，译名准确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第32456行原文为 Metal Mule，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“金属骡”直接对应 Metal Mule，简洁明确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 物品与宝藏列表中的骡类物品一致。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批物品短名风格一致，无同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1077",
+      "evidence_rows": [
+        32458
+      ],
+      "source_excerpt": "Moldy Book",
+      "reason": "确认霉书为宝藏列表中的书籍物品，修正不自然短名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第32458行原文为 Moldy Book，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "“霉书”不自然；改为“发霉的书”，准确对应 Moldy Book。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 物品与宝藏列表中的书籍类可持有物一致。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "修正后仍为短物品名，不与同批条目冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1083",
+      "evidence_rows": [
+        32472
+      ],
+      "source_excerpt": "Shifting Statue",
+      "reason": "确认变形雕像为宝藏列表中的具名雕像，按会变形义保留译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第32472行原文为 Shifting Statue，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“变形雕像”可表达 Shifting Statue 的形态变化义，作为短名可通。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 物品与宝藏列表中的雕像类可持有物一致。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批物品短名风格一致，无同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1086",
+      "evidence_rows": [
+        32484
+      ],
+      "source_excerpt": "Strong Man's Toothpick",
+      "reason": "确认壮汉牙签为宝藏列表中的具名物品，修正 Strong Man 译法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第32484行原文为 Strong Man's Toothpick，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“强人之牙签”中“强人”易生歧义；改为“壮汉的牙签”更贴合 Strong Man。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 物品与宝藏列表中的牙签类可持有物一致。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "修正后保持短物品名结构，不与同批条目冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1089",
+      "evidence_rows": [
+        32494
+      ],
+      "source_excerpt": "Vargast's Ring",
+      "reason": "确认瓦尔加斯特之戒为宝藏列表中的具名戒指，译名保留专名音译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第32494行原文为 Vargast's Ring，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“瓦尔加斯特之戒”保留 Vargast 音译，并用“之戒”对应 Ring。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 物品与宝藏列表中的戒指类可持有物一致。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "专名 Vargast 在同批无其他异译，戒指类命名格式统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1092",
+      "evidence_rows": [
+        32503
+      ],
+      "source_excerpt": "Wolfbane Bush",
+      "reason": "确认狼毒灌木为宝藏列表中的植物类物品，译名可通。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第32503行原文为 Wolfbane Bush，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“狼毒灌木”对应 Wolfbane Bush；Wolfbane 作植物名、Bush 作灌木，短名可通。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 物品与宝藏列表中的植物类可持有物一致。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批物品短名风格一致，无同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1095",
+      "evidence_rows": [
+        32507
+      ],
+      "source_excerpt": "Sea Water",
+      "reason": "确认海水为宝藏列表中的海水物品，保留直译短名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第32507行原文为 Sea Water，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“海水”直接对应 Sea Water，作为宝藏物品短名准确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path 物品与宝藏列表中的海水类可持有物一致。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批短物品名风格一致，无同形冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:1060",
+    "terms:1071",
+    "terms:1073",
+    "terms:1074",
+    "terms:1075",
+    "terms:1076",
+    "terms:1077",
+    "terms:1083",
+    "terms:1086",
+    "terms:1089",
+    "terms:1092",
+    "terms:1095"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

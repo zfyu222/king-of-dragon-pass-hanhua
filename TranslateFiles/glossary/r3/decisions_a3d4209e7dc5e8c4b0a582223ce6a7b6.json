@@ -1,0 +1,389 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1-e12 的来源、译名、分类与一致性；修正 e3 王号缺译、e4 音译及无据说明、e7 性别与说明、e9 无据身份推断；确认 f1 为同一人物不同全称，核心译名一致，不构成冲突。",
+  "acknowledged_findings": [
+    "F0351"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "巴斯莫利兽人王乌卡尔格拉",
+        "term_reason": "原文将同一人物称为乌卡尔格拉，并带称号“King of the Basmoli Beastmen”；译名应保留王号。"
+      },
+      "reason": "源文全称含王号，原译仅保留人名而漏译称号；补齐并统一核心名。",
+      "evidence_rows": [
+        32901
+      ],
+      "table": "characters",
+      "index": 199
+    },
+    {
+      "patch": {
+        "recommended_translation": "巴斯莫利",
+        "term_reason": "原文将氏族早年对抗的兽人称为 Basmoli，即该兽人群体之名。"
+      },
+      "reason": "统一 Basmoli 音译为“巴斯莫利”，并删除原文未提及的 Telmori 类比。",
+      "evidence_rows": [
+        3814
+      ],
+      "table": "terms",
+      "index": 238
+    },
+    {
+      "patch": {
+        "gender": "女性",
+        "term_reason": "原文以 her 指代正在赶来的大书记，确认其为女性。"
+      },
+      "reason": "原文 her 表明女性，修正性别及“未明示性别”的错误说明。",
+      "evidence_rows": [
+        8654
+      ],
+      "table": "characters",
+      "index": 82
+    },
+    {
+      "patch": {
+        "term_reason": "原文称其切奶酪时奶酪流血；未明示性别与身份。"
+      },
+      "reason": "原文只叙述切奶酪见血，未明确其为氏族成员，修订说明避免无据推断。",
+      "evidence_rows": [
+        8985
+      ],
+      "table": "characters",
+      "index": 84
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:80",
+      "evidence_rows": [
+        8389
+      ],
+      "source_excerpt": "Ukkar Gra, King of the Basmoli, demanded tribute from King Vingkot when Vingkot was weak.",
+      "reason": "来源明确为 Basmoli 之王并以 him 指代；乌卡尔格拉为可用音译，作为人物专名保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第8389行明确称 Ukkar Gra 为 Basmoli 之王，并以 him 指代。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“乌卡尔格拉”保留原名称音译，未混入王号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters、proper_name、required 符合人物专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e2/e3 的核心名“乌卡尔格拉”一致；f1 中不同全称不构成冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:89",
+      "evidence_rows": [
+        9113
+      ],
+      "source_excerpt": "Ukkar Gra the Basmoli King",
+      "reason": "来源为带称号的同一人物；保留“巴斯莫利王乌卡尔格拉”可对应称号加人名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第9113行出现 Ukkar Gra the Basmoli King，并称其首先攻击氏族。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“巴斯莫利王乌卡尔格拉”对应称号加人名，语义完整。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters、proper_name、required 符合人物专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1 同一人物，核心译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:199",
+      "evidence_rows": [
+        32901
+      ],
+      "source_excerpt": "Ukkar Gra, King of the Basmoli Beastmen.",
+      "reason": "源文为同一人物的全称并含王号；原译仅保留人名，应补为“巴斯莫利兽人王乌卡尔格拉”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第32901行完整形式为 Ukkar Gra, King of the Basmoli Beastmen。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译漏掉“King of the Basmoli Beastmen”，应补为“巴斯莫利兽人王乌卡尔格拉”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters、proper_name、required 正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e1/e2 同一人物，核心名“乌卡尔格拉”一致；本条全称需保留王号。"
+        }
+      }
+    },
+    {
+      "ref": "terms:238",
+      "evidence_rows": [
+        3814
+      ],
+      "source_excerpt": "When our clan was young, we fought the beastmen called the Basmoli.",
+      "reason": "原文以 Basmoli 指氏族早年对抗的兽人群体；统一音译为“巴斯莫利”，并删除无原文依据的 Telmori 类比。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "原文只称兽人为 Basmoli；term_reason 中“与 Telmori 类似”无本条依据，已删除。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "“Basmoli”音译统一为“巴斯莫利”，避免“里/利”混用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为族名或种族专名，category_path=种族、proper_name、required 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与“Basmoli Beastmen”的“巴斯莫利兽人”统一词干。"
+        }
+      }
+    },
+    {
+      "ref": "terms:747",
+      "evidence_rows": [
+        31953
+      ],
+      "source_excerpt": "Your ancient enemy is Ukkar Gra, King of the Basmoli Beastmen.",
+      "reason": "来源明确指乌卡尔格拉所统辖的 Basmoli Beastmen；译作“巴斯莫利兽人”保留族名与群体义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第31953行称 Ukkar Gra 为 King of the Basmoli Beastmen。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“巴斯莫利兽人”对应 Basmoli Beastmen，语义完整。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "族名归入种族，proper_name、required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e4 统一使用“巴斯莫利”词干。"
+        }
+      }
+    },
+    {
+      "ref": "characters:81",
+      "evidence_rows": [
+        8434
+      ],
+      "source_excerpt": "Little Aramarth learned to read the word",
+      "reason": "来源明确为人物名 Little Aramarth；音译并保留 Little 的昵称色彩，性别未明保持其他。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第8434行出现 Little Aramarth，为人物名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“小阿拉玛斯”保留 Little 的修饰和音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters、proper_name、required 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "无同批冲突；性别未明写“其他”可保留。"
+        }
+      }
+    },
+    {
+      "ref": "characters:82",
+      "evidence_rows": [
+        8654
+      ],
+      "source_excerpt": "The great scribe Jalena was coming this way; I hope the floods will not detain her.",
+      "reason": "来源以 her 指代大书记 Jalena；译名可用，但性别应为女性，原说明需修正。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第8654行称 the great scribe Jalena，并以 her 指代。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“贾莱娜”音译合理。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters、proper_name、required 正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原文 her 表明女性，原“其他”和“未明示性别”不准确，已修正。"
+        }
+      }
+    },
+    {
+      "ref": "characters:83",
+      "evidence_rows": [
+        8756
+      ],
+      "source_excerpt": "Mathkara blames herself for this, because she joked about our ancient enemies when she planted.",
+      "reason": "来源以 herself/she 指代 Mathkara，女性判断成立；译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第8756行以 herself/she 指代 Mathkara。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“玛丝卡拉”音译可用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters、proper_name、required 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "女性判断与 she/herself 一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:84",
+      "evidence_rows": [
+        8985
+      ],
+      "source_excerpt": "Jarnesta cut into a cheese, and it bled.",
+      "reason": "名称可保留；原文未明确其氏族身份或性别，修订 term_reason 避免推断。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "原文只叙述 Jarnesta 切奶酪见血，未明确其为氏族成员；说明已改为未明示身份。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“贾尔内斯塔”音译可用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters、proper_name、required 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "原文无性别线索，保留“其他”合理。"
+        }
+      }
+    },
+    {
+      "ref": "characters:85",
+      "evidence_rows": [
+        8985
+      ],
+      "source_excerpt": "Korlmast’s cattle",
+      "reason": "来源以所有格 Korlmast’s cattle 出现，表明 Korlmast 是牛群所有者；译名可用，性别未明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第8985行以所有格 Korlmast’s cattle 出现，表明其为牛群所有者。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“科尔马斯特”音译可用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters、proper_name、required 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "无同批冲突；性别未明保持“其他”。"
+        }
+      }
+    },
+    {
+      "ref": "characters:87",
+      "evidence_rows": [
+        9054
+      ],
+      "source_excerpt": "Encourage chiefs of other clans to pressure Eindgar.",
+      "reason": "来源出现短名 Eindgar，另有全称 Eindgar Buttered-Bread；本条保留短名音译艾因德加合理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第9047/9054行出现 Eindgar 及全称 Eindgar Buttered-Bread。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“艾因德加”对应 Eindgar，短名译法可用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters、proper_name、required 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条 source 为短名，与全称不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:88",
+      "evidence_rows": [
+        9067
+      ],
+      "source_excerpt": "Hend provoked Orlmar",
+      "reason": "来源明确 Hend 挑衅 Orlmar；译名可用，性别未明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第9067行出现 Hend provoked Orlmar。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“亨德”音译可用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters、proper_name、required 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "无同批冲突；原文未明示性别。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:80",
+    "characters:89",
+    "characters:199",
+    "terms:238",
+    "terms:747",
+    "characters:81",
+    "characters:82",
+    "characters:83",
+    "characters:84",
+    "characters:85",
+    "characters:87",
+    "characters:88"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

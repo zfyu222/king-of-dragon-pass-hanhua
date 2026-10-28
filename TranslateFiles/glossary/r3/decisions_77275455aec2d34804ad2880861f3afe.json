@@ -1,0 +1,152 @@
+{
+  "review_complete": true,
+  "review_summary": "本批审校 e1-e3：e1 由“地名”改为“其他”并补充聚落单位说明；e2 统一为“武器武士”并明确全职战士定义；e3 提升为 required 以固定贵族身份术语。f1、f2 经核对均为同词单复数共享译名，不构成冲突。",
+  "acknowledged_findings": [
+    "F0368",
+    "F0369"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "category_path": "其他",
+        "term_reason": "原文指氏族成员居住的农庄/家宅，可闹鬼、重建或容纳马匹，是游戏中的聚落单位，不是具体地名。"
+      },
+      "reason": "19343、18061、20562 均指一般农庄/家宅，而非具体地名；与复数 steads 同义，分类改为“其他”。",
+      "evidence_rows": [
+        19343,
+        18061,
+        20562
+      ],
+      "table": "terms",
+      "index": 32
+    },
+    {
+      "patch": {
+        "recommended_translation": "武器武士",
+        "term_reason": "原文界定为氏族首领供养的全职职业战士，装备盔甲、马匹、剑盾，负责战斗、巡逻与护卫；与普通战士及 thane 贵族区分。"
+      },
+      "reason": "33148、33724 明确其为全职职业武士；暂定“战团武士”易误解为战团单位，且与单数 weaponthane/Weaponthane Morale 的既有核心译名不一致。",
+      "evidence_rows": [
+        33148,
+        33724,
+        32877
+      ],
+      "table": "terms",
+      "index": 34
+    },
+    {
+      "patch": {
+        "enforcement": "required",
+        "term_reason": "thanes 指氏族贵族/首领阶层，参与纠纷、战争与索贡，与 weaponthanes 职业武士区分；单数 thane 同义。"
+      },
+      "reason": "13849、14083、22030 等均显示其为明确的氏族权贵身份；与单数 thane 同一术语，应设为 required。",
+      "evidence_rows": [
+        13849,
+        14083,
+        22030,
+        24605
+      ],
+      "table": "terms",
+      "index": 35
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:32",
+      "evidence_rows": [
+        18061,
+        19343,
+        19345,
+        20562
+      ],
+      "source_excerpt": "crashed into a stead",
+      "reason": "stead 为氏族农庄/家宅，非具体地名；译名保留“农庄”，分类改为“其他”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "18061 的 'crashed into a stead' 表明 stead 为普通农庄/宅地，与源词单数形式一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“农庄”贴合 19343、19345 中可闹鬼、可重建的氏族宅地，也与同词复数译名一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "19343、18061、20562 均指一般农庄/家宅，不是具体地名；由“地名”改为“其他”更准确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同词复数形式及复合词的核心译名均沿用“农庄”，未发现需拆分的同形普通义。"
+        }
+      }
+    },
+    {
+      "ref": "terms:34",
+      "evidence_rows": [
+        33148,
+        33724,
+        32877,
+        33542
+      ],
+      "source_excerpt": "The clan chief supports a number of full-time warriors, called weaponthanes, who live in the chief’s hall.",
+      "reason": "weaponthanes 为全职职业武士，统一译作“武器武士”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33148 明确称 weaponthanes 为氏族首领供养的全职战士，33724、32877 进一步说明其职责与装备。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原暂定“战团武士”易被理解为战团单位；33148、33724 定义为全职职业武士，改为“武器武士”以与单数 weaponthane 及 Weaponthane Morale 的既有译名保持一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "33148、32877 均将其列为氏族职业战士阶层，归入“身份”正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "单数 weaponthane 与派生标签 Weaponthane Morale 的核心译名均为“武器武士”，本条复数形式统一使用该核心译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:35",
+      "evidence_rows": [
+        13849,
+        14083,
+        22030,
+        24605
+      ],
+      "source_excerpt": "a personal dispute between two thanes",
+      "reason": "thanes 指贵族/首领阶层，与单数同义，设为 required。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "13849 的 'a personal dispute between two thanes' 表明 thanes 指发生私人纠纷的贵族/首领阶层。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "14083 中 thanes 以战争威胁，22030、22031 中可追击奴隶，译“贵族”符合其氏族权贵身份。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "13849、14083 均指氏族中的贵族/首领，归入“身份”正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "单数 thane 与复数 thanes 同指贵族阶层，统一设为 required，避免跨批因词形变化降为 reference。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:32",
+    "terms:34",
+    "terms:35"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

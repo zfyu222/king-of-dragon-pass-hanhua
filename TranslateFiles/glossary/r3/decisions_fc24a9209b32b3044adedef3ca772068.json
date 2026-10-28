@@ -1,0 +1,375 @@
+{
+  "review_complete": true,
+  "review_summary": "已审校 e1–e12：确认各专名/术语的原文依据、译名、分类与批内一致性；e1/e3 的 term_reason 已去除超出证据的表述，e6 的 term_kind 修正为 proper_name。Block in Prax 与 The Block 共用核心译名“巨块”，Kev the Weaver 两处一致。无需隔离或新增条目。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "Kallyr 抵达的隘口，并在那里遭遇敌意巨人；原文 No-Breath Pass。"
+      },
+      "reason": "原文为 made it to No-Breath Pass，并未说明她已越过该隘口；修正 term_reason 以免超出证据。",
+      "evidence_rows": [
+        28377
+      ],
+      "table": "terms",
+      "index": 693
+    },
+    {
+      "patch": {
+        "term_reason": "原文片段指向的地点，即 Gates of Dusk。"
+      },
+      "reason": "28421 仅给出 towards the Gates of Dusk，未在本行提及 Kallyr；删除无行内证据的指认。",
+      "evidence_rows": [
+        28421
+      ],
+      "table": "terms",
+      "index": 695
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "term_reason": "通往奥兰斯厅堂、与冥界有关的神话道路；原文 Path of the Dead。"
+      },
+      "reason": "Path of the Dead 是具体神话道路/地名，不是泛机制词；改为 proper_name 并使 term_reason 与原文一致。",
+      "evidence_rows": [
+        28445
+      ],
+      "table": "terms",
+      "index": 699
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:693",
+      "evidence_rows": [
+        28377
+      ],
+      "source_excerpt": "she made it to No-Breath Pass, where a hostile giant confronted her.",
+      "reason": "No-Breath Pass 为 Kallyr 抵达并遭遇巨人的隘口；译名“无息隘口”贴合原文。term_reason 中“越过”已按原文改为“抵达”，避免过度推断。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "source 字段与 28377 的 No-Breath Pass 一致；term_reason 原写“越过”超出 made it to，已修正为“抵达”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "No-Breath Pass 译为“无息隘口”，No-Breath 对应“无息”，Pass 对应“隘口”，语义准确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "No-Breath Pass 是具体隘口地名，category_path=地名、term_kind=proper_name 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形地名冲突；“无息隘口”与原文专名保持一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:855",
+      "evidence_rows": [
+        34098
+      ],
+      "source_excerpt": "She sought the Breath of Life.",
+      "reason": "Breath of Life 是 Chalana Arroy 寻求的治愈/复活之法，“生命之息”译法准确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "source 字段 Breath of Life 与 34098 完全一致，指 Chalana Arroy 寻求的治愈之法。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“生命之息”直译且符合神话语体；Breath of Life 为特定称谓。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该词是神话中的治愈/复活之法，非人物、地名或组织，归“其他”合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Breath of Life 译法；译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:695",
+      "evidence_rows": [
+        28421
+      ],
+      "source_excerpt": "towards the Gates of Dusk.",
+      "reason": "Gates of Dusk 为具体地点，“黄昏之门”对应准确；term_reason 已删除本行无据的 Kallyr 指认。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "source 字段与 28421 的 Gates of Dusk 一致；term_reason 原提及 Kallyr 于本行无据，已改为仅按原文片段说明地点。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Gates of Dusk 译“黄昏之门”，Gates 与 Dusk 对应准确，符合地名风格。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Gates of Dusk 为具体地点，category_path=地名、proper_name 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Gates of Dusk 译法；译名稳定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:696",
+      "evidence_rows": [
+        28422
+      ],
+      "source_excerpt": "towards the fabled land of Pamaltela.",
+      "reason": "Pamaltela 为传说中的陆地，“帕马尔特拉”音译自然，分类为地名专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "source 与 28422 的 Pamaltela 一致，原文明确为 fabled land。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Pamaltela 音译“帕马尔特拉”，不夹杂间隔号，符合专名音译要求。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文称其为 fabled land，归地名、proper_name 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无 Pamaltela 异译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:697",
+      "evidence_rows": [
+        28423
+      ],
+      "source_excerpt": "towards the fabled land of Altinela.",
+      "reason": "Altinela 为传说中的陆地，“阿尔蒂内拉”音译自然，分类为地名专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "source 与 28423 的 Altinela 一致，原文明确为 fabled land。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Altinela 音译“阿尔蒂内拉”，音节对应清晰，不夹杂间隔号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文称其为 fabled land，归地名、proper_name 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无 Altinela 异译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:699",
+      "evidence_rows": [
+        28445
+      ],
+      "source_excerpt": "was travelling the Path of the Dead to Orlanth’s Hall",
+      "reason": "Path of the Dead 是通往 Orlanth’s Hall 的具体神话道路；“死者之路”准确，term_kind 已改为 proper_name。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "source 字段与 28445 的 Path of the Dead 一致，原文指向通往 Orlanth’s Hall 的道路。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Path of the Dead 译为“死者之路”，Path 与 of the Dead 对应准确，保留神话道路含义。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "Path of the Dead 是具体神话道路/地名，category_path=地名正确；term_kind 由 game_term 修正为 proper_name。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Path of the Dead 译法；“死者之路”可稳定沿用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:704",
+      "evidence_rows": [
+        28221
+      ],
+      "source_excerpt": "the fabled Block in Prax",
+      "reason": "Block in Prax 指普拉克斯境内著名巨块；“普拉克斯的巨块”保留地点限定，核心译名与 The Block 一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "source 与 28221 的 Block in Prax 一致，原文称 fabled。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“普拉克斯的巨块”将 Block in Prax 按地点修饰结构译出，核心词“巨块”明确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指普拉克斯境内著名巨块/地标，category_path=地名、proper_name 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e8 的 The Block 共用核心译名“巨块”；e7 保留 in Prax 的地点限定，不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:906",
+      "evidence_rows": [
+        9665
+      ],
+      "source_excerpt": "The Block can still be seen, in the land of Prax.",
+      "reason": "The Block 是仍可见于 Prax 的具体地标，“巨块”与 Wakboth 被压其下的语境相符。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "source 与 9665 的 The Block 一致，原文说明其仍可见于 Prax。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "The Block 译“巨块”，与 Wakboth 被压在巨块下的语境相符。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "The Block 是 Prax 的具体地标，category_path=地名、proper_name 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e7 的 Block in Prax 一致使用“巨块”；定冠词 The 不另译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:705",
+      "evidence_rows": [
+        28334
+      ],
+      "source_excerpt": "the Brambleberry Clan",
+      "reason": "Brambleberry Clan 为氏族专名，“荆棘莓氏族”意译加通名，分类为组织。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "source 与 28334 的 Brambleberry Clan 一致，原文作为氏族选项之一。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Brambleberry Clan 译“荆棘莓氏族”，Brambleberry 意译、Clan 译“氏族”，符合组织名习惯。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "这是氏族名，category_path=组织、term_kind=proper_name 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Brambleberry Clan 译法。"
+        }
+      }
+    },
+    {
+      "ref": "terms:706",
+      "evidence_rows": [
+        28334
+      ],
+      "source_excerpt": "a scrap of Vingkot’s Cloak",
+      "reason": "Vingkot’s Cloak 为与 Vingkot 相关的传说物品，“温科特的斗篷”对应准确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "source 与 28334 的 Vingkot’s Cloak 一致，原文提到其碎片。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Vingkot’s Cloak 译“温科特的斗篷”，所有格与物品名对应准确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "这是与 Vingkot 相关的传说物品，category_path=物品、proper_name 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Vingkot’s Cloak 译法；“温科特”音译稳定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:707",
+      "evidence_rows": [
+        28234
+      ],
+      "source_excerpt": "would be like opening Eurmal’s Urn",
+      "reason": "Eurmal’s Urn 为特定神话器物，原文用作比喻；“欧尔玛的瓮”译法准确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "source 与 28234 的 Eurmal’s Urn 一致，原文用作比喻。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Eurmal’s Urn 译“欧尔玛的瓮”，所有格与器物名对应准确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "这是特定神话器物，category_path=物品、proper_name 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Eurmal’s Urn 译法；“欧尔玛”音译稳定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:708",
+      "evidence_rows": [
+        28496,
+        28510
+      ],
+      "source_excerpt": "Ernalda is also known as Kev the Weaver, who sees the deep secrets of the Earth.",
+      "reason": "Kev the Weaver 是 Ernalda 的别称/称号；“织者凯夫”意译加音译，两处原文一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "source 与 28496 的 Kev the Weaver 一致；28510 亦重复同一称谓。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Kev the Weaver 译“织者凯夫”，Weaver 意译、Kev 音译，符合神祇别称风格。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "这是 Ernalda 的别称/称号，归“其他”可避免误作普通身份职业。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "28496 与 28510 均作 Kev the Weaver，本批统一为“织者凯夫”。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:693",
+    "terms:855",
+    "terms:695",
+    "terms:696",
+    "terms:697",
+    "terms:699",
+    "terms:704",
+    "terms:906",
+    "terms:705",
+    "terms:706",
+    "terms:707",
+    "terms:708"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

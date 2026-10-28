@@ -1,0 +1,530 @@
+{
+  "review_complete": true,
+  "review_summary": "已复核 e1-e12 全部非译条目，均为独立内部标识或运行标记；逐条补充 whole_record 适用性，避免全局禁翻，并确认 f1-f9 所指的无范围保护问题已处理。",
+  "acknowledged_findings": [
+    "F0261",
+    "F0262",
+    "F0263",
+    "F0264",
+    "F0265",
+    "F0266",
+    "F0267",
+    "F0268",
+    "F0277"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 27021 中 T23 仅作为独立内部标识出现（standalone=1, embedded=0），无嵌入正文证据；仅保护完整记录。"
+        }
+      },
+      "reason": "为独立内部资源标识 T23 补充 whole_record 适用性，避免全局禁翻。",
+      "evidence_rows": [
+        27021
+      ],
+      "table": "non_translate",
+      "index": 374
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 27037 中 H9g 仅作为独立内部标识出现（standalone=1, embedded=0），无嵌入正文证据；仅保护完整记录。"
+        }
+      },
+      "reason": "为独立内部资源标识 H9g 补充 whole_record 适用性，避免全局禁翻。",
+      "evidence_rows": [
+        27037
+      ],
+      "table": "non_translate",
+      "index": 375
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 27062 中 H9h 仅作为独立内部标识出现（standalone=1, embedded=0），无嵌入正文证据；仅保护完整记录。"
+        }
+      },
+      "reason": "为独立内部资源标识 H9h 补充 whole_record 适用性，避免全局禁翻。",
+      "evidence_rows": [
+        27062
+      ],
+      "table": "non_translate",
+      "index": 376
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 27073 中 H11a 仅作为独立内部标识出现（standalone=1, embedded=0），无嵌入正文证据；仅保护完整记录。"
+        }
+      },
+      "reason": "为独立内部资源标识 H11a 补充 whole_record 适用性，避免全局禁翻。",
+      "evidence_rows": [
+        27073
+      ],
+      "table": "non_translate",
+      "index": 377
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 27089 中 H11b 仅作为独立内部标识出现（standalone=1, embedded=0），无嵌入正文证据；仅保护完整记录。"
+        }
+      },
+      "reason": "为独立内部资源标识 H11b 补充 whole_record 适用性，避免全局禁翻。",
+      "evidence_rows": [
+        27089
+      ],
+      "table": "non_translate",
+      "index": 378
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 27108 中 H11c 仅作为独立内部标识出现（standalone=1, embedded=0），无嵌入正文证据；仅保护完整记录。"
+        }
+      },
+      "reason": "为独立内部资源标识 H11c 补充 whole_record 适用性，避免全局禁翻。",
+      "evidence_rows": [
+        27108
+      ],
+      "table": "non_translate",
+      "index": 379
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 27131 中 H11d 仅作为独立内部标识出现（standalone=1, embedded=0），无嵌入正文证据；仅保护完整记录。"
+        }
+      },
+      "reason": "为独立内部资源标识 H11d 补充 whole_record 适用性，避免全局禁翻。",
+      "evidence_rows": [
+        27131
+      ],
+      "table": "non_translate",
+      "index": 380
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 27154 中 H11e 仅作为独立内部标识出现（standalone=1, embedded=0），无嵌入正文证据；仅保护完整记录。"
+        }
+      },
+      "reason": "为独立内部资源标识 H11e 补充 whole_record 适用性，避免全局禁翻。",
+      "evidence_rows": [
+        27154
+      ],
+      "table": "non_translate",
+      "index": 381
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 30803 仅含内部场景跳转标记 @outcome；仅保护完整标记，不扩展为全局禁翻。"
+        }
+      },
+      "reason": "为内部场景跳转标记 @outcome 补充 whole_record 适用性。",
+      "evidence_rows": [
+        30803
+      ],
+      "table": "non_translate",
+      "index": 384
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 30810 中 R134fullscreen 仅作为独立内部资源标识出现（standalone=1, embedded=0）；仅保护完整标识。"
+        }
+      },
+      "reason": "为内部资源标识 R134fullscreen 补充 whole_record 适用性。",
+      "evidence_rows": [
+        30810
+      ],
+      "table": "non_translate",
+      "index": 391
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 30931 仅含内部标记 A@；仅保护完整标记，不扩展为全局禁翻。"
+        }
+      },
+      "reason": "为内部标记 A@ 补充 whole_record 适用性。",
+      "evidence_rows": [
+        30931
+      ],
+      "table": "non_translate",
+      "index": 407
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 30932 仅含内部标记 I@；仅保护完整标记，不扩展为全局禁翻。"
+        }
+      },
+      "reason": "为内部标记 I@ 补充 whole_record 适用性。",
+      "evidence_rows": [
+        30932
+      ],
+      "table": "non_translate",
+      "index": 408
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:374",
+      "evidence_rows": [
+        27021
+      ],
+      "source_excerpt": "T23",
+      "reason": "独立内部资源标识，保留原文并限定 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 27021 原文逐字为 T23，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非译条目，无需给出译文，保留原文 T23。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "T23 为独立字母数字内部标识；适用性设为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批独立内部标识一致，仅保护完整记录，不扩大范围。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:375",
+      "evidence_rows": [
+        27037
+      ],
+      "source_excerpt": "H9g",
+      "reason": "独立内部资源标识，保留原文并限定 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 27037 原文逐字为 H9g，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非译条目，无需给出译文，保留原文 H9g。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "H9g 为独立字母数字内部标识；适用性设为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批独立内部标识一致，仅保护完整记录，不扩大范围。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:376",
+      "evidence_rows": [
+        27062
+      ],
+      "source_excerpt": "H9h",
+      "reason": "独立内部资源标识，保留原文并限定 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 27062 原文逐字为 H9h，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非译条目，无需给出译文，保留原文 H9h。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "H9h 为独立字母数字内部标识；适用性设为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批独立内部标识一致，仅保护完整记录，不扩大范围。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:377",
+      "evidence_rows": [
+        27073
+      ],
+      "source_excerpt": "H11a",
+      "reason": "独立内部资源标识，保留原文并限定 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 27073 原文逐字为 H11a，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非译条目，无需给出译文，保留原文 H11a。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "H11a 为独立字母数字内部标识；适用性设为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批独立内部标识一致，仅保护完整记录，不扩大范围。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:378",
+      "evidence_rows": [
+        27089
+      ],
+      "source_excerpt": "H11b",
+      "reason": "独立内部资源标识，保留原文并限定 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 27089 原文逐字为 H11b，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非译条目，无需给出译文，保留原文 H11b。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "H11b 为独立字母数字内部标识；适用性设为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批独立内部标识一致，仅保护完整记录，不扩大范围。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:379",
+      "evidence_rows": [
+        27108
+      ],
+      "source_excerpt": "H11c",
+      "reason": "独立内部资源标识，保留原文并限定 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 27108 原文逐字为 H11c，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非译条目，无需给出译文，保留原文 H11c。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "H11c 为独立字母数字内部标识；适用性设为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批独立内部标识一致，仅保护完整记录，不扩大范围。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:380",
+      "evidence_rows": [
+        27131
+      ],
+      "source_excerpt": "H11d",
+      "reason": "独立内部资源标识，保留原文并限定 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 27131 原文逐字为 H11d，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非译条目，无需给出译文，保留原文 H11d。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "H11d 为独立字母数字内部标识；适用性设为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批独立内部标识一致，仅保护完整记录，不扩大范围。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:381",
+      "evidence_rows": [
+        27154
+      ],
+      "source_excerpt": "H11e",
+      "reason": "独立内部资源标识，保留原文并限定 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 27154 原文逐字为 H11e，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非译条目，无需给出译文，保留原文 H11e。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "H11e 为独立字母数字内部标识；适用性设为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批独立内部标识一致，仅保护完整记录，不扩大范围。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:384",
+      "evidence_rows": [
+        30803
+      ],
+      "source_excerpt": "@outcome",
+      "reason": "内部场景跳转标记，保留原文并限定 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 30803 原文逐字为 @outcome，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非译条目，无需给出译文，保留原文 @outcome。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "@outcome 为内部场景跳转标记；适用性设为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批运行标记一致，仅保护完整标记，不扩大范围。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:391",
+      "evidence_rows": [
+        30810
+      ],
+      "source_excerpt": "R134fullscreen",
+      "reason": "内部资源标识，保留原文并限定 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 30810 原文逐字为 R134fullscreen，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非译条目，无需给出译文，保留原文 R134fullscreen。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "R134fullscreen 为内部资源标识；适用性设为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批独立内部标识一致，仅保护完整标识。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:407",
+      "evidence_rows": [
+        30931
+      ],
+      "source_excerpt": "A@",
+      "reason": "内部标记，保留原文并限定 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 30931 原文逐字为 A@，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非译条目，无需给出译文，保留原文 A@。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "A@ 为内部标记；适用性设为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批运行标记一致，仅保护完整标记，不扩大范围。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:408",
+      "evidence_rows": [
+        30932
+      ],
+      "source_excerpt": "I@",
+      "reason": "内部标记，保留原文并限定 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 30932 原文逐字为 I@，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "非译条目，无需给出译文，保留原文 I@。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "I@ 为内部标记；适用性设为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批运行标记一致，仅保护完整标记，不扩大范围。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:374",
+    "non_translate:375",
+    "non_translate:376",
+    "non_translate:377",
+    "non_translate:378",
+    "non_translate:379",
+    "non_translate:380",
+    "non_translate:381",
+    "non_translate:384",
+    "non_translate:391",
+    "non_translate:407",
+    "non_translate:408"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

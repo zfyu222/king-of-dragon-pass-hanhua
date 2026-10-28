@@ -1,0 +1,396 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e12 共 12 条专名条目；保留全部现有核心译名，修正 e1、e2、e3、e10 中超出所附原文可证范围的 term_reason，其余源文、译名、分类与一致性均通过。未新增、隔离或允许无匹配条目。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "第2907条中与 Astranna、Ornarin 并列出现的随机人名分支；具体身份需结合事件上下文。"
+      },
+      "reason": "原 term_reason 含第2907条未载的氏族及联姻用途，按现有证据收窄。",
+      "evidence_rows": [
+        2907
+      ],
+      "table": "characters",
+      "index": 45
+    },
+    {
+      "patch": {
+        "term_reason": "第2907条中与 Astranna、Eleyi 并列出现的随机人名分支；具体身份需结合事件上下文。"
+      },
+      "reason": "原 term_reason 含第2907条未载的氏族及联姻用途，按现有证据收窄。",
+      "evidence_rows": [
+        2907
+      ],
+      "table": "characters",
+      "index": 46
+    },
+    {
+      "patch": {
+        "term_reason": "你的卡尔之一；其牛群中出生了一头乳白色牛犊，原文称白犊为吉兆。"
+      },
+      "reason": "原 term_reason 含所附原文未载的“圣牛归属”信息，改为仅陈述第3379、3380条可证内容。",
+      "evidence_rows": [
+        3379,
+        3380
+      ],
+      "table": "characters",
+      "index": 47
+    },
+    {
+      "patch": {
+        "term_reason": "伟大的奥兰斯英雄，Barefoot 为称号；他发现英雄探索之法并摧毁 Lokamayadon，其成功英雄探索曾从 Gbaji 手中拯救世界。"
+      },
+      "reason": "原 term_reason 含未附原文的“十五岁暗影”说法，改为可由本条目证据支持的事迹与称号说明。",
+      "evidence_rows": [
+        7788,
+        16490,
+        17024,
+        28267
+      ],
+      "table": "characters",
+      "index": 54
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:45",
+      "evidence_rows": [
+        2907
+      ],
+      "source_excerpt": "Eleyi",
+      "reason": "源文显示其为斜杠分支中的人名；译名音译合理，分类保留，term_reason 已按证据收窄。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第2907条原文为“Astranna/Eleyi/Ornarin”，Eleyi 是其中一个斜杠分支人名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“埃莱伊”与 Eleyi 音译对应，且未夹间隔号。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "保留 characters/proper_name；term_reason 删去第2907条未载的氏族与联姻细节，限定为并列随机人名分支。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此一处 Eleyi，无冲突译名；与同列 Ornarin 均按并列人名处理。"
+        }
+      }
+    },
+    {
+      "ref": "characters:46",
+      "evidence_rows": [
+        2907
+      ],
+      "source_excerpt": "Ornarin",
+      "reason": "源文显示其为斜杠分支中的人名；译名音译合理，分类保留，term_reason 已按证据收窄。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第2907条原文为“Astranna/Eleyi/Ornarin”，Ornarin 是其中一个斜杠分支人名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“奥纳林”与 Ornarin 音译对应，且未夹间隔号。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "保留 characters/proper_name；term_reason 删去第2907条未载的氏族与联姻细节，限定为并列随机人名分支。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此一处 Ornarin，无冲突译名；与同列 Eleyi 均按并列人名处理。"
+        }
+      }
+    },
+    {
+      "ref": "characters:47",
+      "evidence_rows": [
+        3379,
+        3380
+      ],
+      "source_excerpt": "Orendal",
+      "reason": "源文明确 Orendal 为拥有牛群的卡尔；译名、分类与跨条一致性通过，term_reason 已按原文修正。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第3379条称 Orendal 是“one of your carls”，并提及其牛群出生白犊。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“奥伦达尔”与 Orendal 音译对应，符合专名音译要求。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "保留 characters/proper_name；term_reason 改为原文可见的卡尔牛群与白色牛犊吉兆，不写入“圣牛归属”等未附原文情节。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "第3379、3380条同指 Orendal，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:48",
+      "evidence_rows": [
+        3520
+      ],
+      "source_excerpt": "Gordangar",
+      "reason": "源文、译名、分类与一致性核对通过，无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第3520条明确 Gordangar 在 King Heort 患难时期杀死许多古老敌人，并两次被放逐。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“戈丹加尔”与 Gordangar 音译对应。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "保留 characters/proper_name，男性与原文所述战士身份相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此一处 Gordangar，无冲突译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:49",
+      "evidence_rows": [
+        3706,
+        3707
+      ],
+      "source_excerpt": "Ordangmar",
+      "reason": "源文、译名、分类与一致性核对通过，无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第3706条明确 Ordangmar 为著名诗人，并在宴会上朗诵讽刺诗。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“奥丹格马尔”与 Ordangmar 音译对应，且未夹间隔号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "保留 characters/proper_name；原文以诗人身份出现并与 thane 发生冲突。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "第3706、3707条同指 Ordangmar，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:50",
+      "evidence_rows": [
+        3982,
+        3983
+      ],
+      "source_excerpt": "Randan Korlmarson",
+      "reason": "源文、译名、分类与一致性核对通过，无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第3982条明确 Randan Korlmarson 在后牧场经过大石时被其搭话。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“兰丹科尔马森”完整音译 Randan Korlmarson，未夹间隔号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "保留 characters/proper_name，原文以 he/him 指代，男性符合。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "第3982、3983条同指 Randan Korlmarson，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:51",
+      "evidence_rows": [
+        3982,
+        3983,
+        30497,
+        30499
+      ],
+      "source_excerpt": "Tarard Riel",
+      "reason": "源文、译名、分类与一致性核对通过；保留无间隔号形式，不采纳另条候选的间隔号写法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第3982条称大石自称名为 Tarard Riel，并自称当地山丘的守护灵。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“塔拉德瑞尔”按 Tarard Riel 音译合并，未夹间隔号，符合专名规范。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "保留 characters/proper_name；原文称其为有名字、会说话并受神龛供奉的岩石守护灵，作为具名角色处理可成立。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "提取候选另有 terms 表“塔拉德·里尔”，但按无间隔号且角色条目已定为“塔拉德瑞尔”，本批统一保留现译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:52",
+      "evidence_rows": [
+        4026,
+        4027
+      ],
+      "source_excerpt": "Arglain",
+      "reason": "源文、译名、分类与一致性核对通过，无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第4026条明确 Arglain 是外来者，提出执行鲑鱼仪式。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“阿格莱恩”与 Arglain 音译对应。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "保留 characters/proper_name，原文以 he 指代，男性符合。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "第4026、4027条同指 Arglain，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:53",
+      "evidence_rows": [
+        4103
+      ],
+      "source_excerpt": "Verlain",
+      "reason": "源文、译名、分类与一致性核对通过，无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第4103条明确投石击中 Verlain 两眼之间并当场杀死他。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“维尔莱恩”与 Verlain 音译对应。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "保留 characters/proper_name，原文以 him 指代，男性符合。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此一处 Verlain，无冲突译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:54",
+      "evidence_rows": [
+        17024,
+        28267
+      ],
+      "source_excerpt": "Harmast Barefoot was but a simple farmer and refugee.",
+      "reason": "源文、译名与一致性通过；term_reason 已改为可由证据支持的英雄事迹说明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第17024条称 Harmast Barefoot 原为农民和难民，后发现英雄探索之法并摧毁 Lokamayadon；第28267条称其为伟大的奥兰斯英雄。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“赤脚哈马斯特”将称号 Barefoot 前置并音译人名，符合现有冻结译名与无间隔号风格。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "保留 characters/proper_name 与男性；term_reason 删除未附原文的“十五岁暗影”说法，改为第17024、28267等条支持的事迹。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选中的“哈马斯特·赤足”含间隔号且语序不同，按风格统一为“赤脚哈马斯特”；各证据同指一人。"
+        }
+      }
+    },
+    {
+      "ref": "characters:56",
+      "evidence_rows": [
+        4757
+      ],
+      "source_excerpt": "Orlindia the Poetess",
+      "reason": "源文、译名、分类与一致性核对通过，无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第4757条称 Orlindia the Poetess 因创作赞美诗未得 Bad King Urgrain 赏赐，后以讽刺诗报复。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“女诗人奥林迪亚”正确表达 Orlindia 及女性身份称号 the Poetess。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "保留 characters/proper_name，女性与原文 she 相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此一处 Orlindia the Poetess，无冲突译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:57",
+      "evidence_rows": [
+        4697
+      ],
+      "source_excerpt": "Obduran the Flyer",
+      "reason": "源文、译名、分类与一致性核对通过，无需改动。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第4697条称龙因 Obduran the Flyer 的诗教他龙语；其称号与男性身份在关联原文中一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“飞行者奥布杜兰”将称号前置并音译人名，表达 the Flyer 且未夹间隔号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "保留 characters/proper_name，男性与第33888条“a man named”相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "第4697、33888、33900条同指 Obduran the Flyer，译名一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:45",
+    "characters:46",
+    "characters:47",
+    "characters:48",
+    "characters:49",
+    "characters:50",
+    "characters:51",
+    "characters:52",
+    "characters:53",
+    "characters:54",
+    "characters:56",
+    "characters:57"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

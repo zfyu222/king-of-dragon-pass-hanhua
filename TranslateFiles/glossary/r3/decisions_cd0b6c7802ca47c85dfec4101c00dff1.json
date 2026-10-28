@@ -1,0 +1,341 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 e1-e12 的来源、译名、分类与一致性复核；确认 f1 中 the Clod 与 Sacred Clod 为同一圣物的省略别名，共用“圣土块”译名合理，无需改动。",
+  "acknowledged_findings": [
+    "F0392"
+  ],
+  "edits": [],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:186",
+      "evidence_rows": [
+        2242
+      ],
+      "source_excerpt": "send one of their heroes to the God Place",
+      "reason": "原文明确其为英雄任务目的地，现有分类与译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2242 原文 “send one of their heroes to the God Place” 表明 God Place 是英雄任务目的地。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“God Place”译作“神地”简洁，符合场所名用法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "上下文为前往参与英雄任务的场所，归入地名合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同含 Place 的其他地名各自独立，不要求整名同译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:447",
+      "evidence_rows": [
+        11699
+      ],
+      "source_excerpt": "They are Strangers, meaning that they are not of your clan, but can be trusted to follow normal customs and beliefs.",
+      "reason": "原文给出社会身份定义，限定匹配与译名均可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11699 原文直接定义 Strangers 为不属于本氏族但可信任遵循习俗者。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“外人”可表达 not of your clan 的身份含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该词在此处指社会身份类别，归入身份合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "literal_context 精确覆盖 “They are Strangers, meaning”，不会误匹配普通小写 strangers，也与 Place of Strangers 的专名用法区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:605",
+      "evidence_rows": [
+        22582
+      ],
+      "source_excerpt": "Who has rescued me from the Howling Place?",
+      "reason": "原文显示其为死后所在之地，专名分类与译名一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "22582 中弗拉林复活后称自己从 Howling Place 被救回，语境指向死亡/冥界之地。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“嚎叫之地”贴合 Howling Place 的字面与地名感。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Howling Place 是特定地点，归入地名合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "作为独立地名处理，与 God Place、Place of Strangers 不要求共用整名译法。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1174",
+      "evidence_rows": [
+        34246
+      ],
+      "source_excerpt": "Orlanth reached the Place of Strangers",
+      "reason": "原文明确为奥兰斯旅途中的地点，专名译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34246 中奥兰斯抵达 Place of Strangers 并遇见黑暗女人，确为地点名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“陌生人之地”保留 Place of Strangers 的地名结构与含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该词在原文中作地点名使用，归入地名合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "此处是专名，与 Strangers 的社会身份义区分，不因共享词根而强行统一整名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:187",
+      "evidence_rows": [
+        2321
+      ],
+      "source_excerpt": "Glowing Bowl/Crimson Rod",
+      "reason": "原文宝物随机列表支持其作为具名宝物，译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2321 的随机宝物分支列出 Glowing Bowl，并整体称为 treasure。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“发光碗”对应 Glowing Bowl，作为宝物名可接受。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文列入 treasure 分支，归入物品合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同列表其他宝物名并列为独立条目，无译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:188",
+      "evidence_rows": [
+        2321
+      ],
+      "source_excerpt": "Crimson Rod",
+      "reason": "原文宝物随机列表列出该具名物品，现有译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2321 的随机宝物分支包含 Crimson Rod，并整体称为 treasure。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“深红权杖”对应 Crimson Rod，作为宝物名搭配自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文列入 treasure 分支，归入物品合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同列表其他宝物名保持独立物品名处理，无共享译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:190",
+      "evidence_rows": [
+        2321
+      ],
+      "source_excerpt": "Arrival Boots",
+      "reason": "原文宝物随机列表支持其作为具名物品，译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2321 的随机宝物分支列出 Arrival Boots，并整体称为 treasure。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“抵达之靴”对应 Arrival Boots，作为宝物名可理解。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文列入 treasure 分支，归入物品合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同列表其他宝物名保持独立物品名处理，无共享译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:191",
+      "evidence_rows": [
+        2321
+      ],
+      "source_excerpt": "Blood Count’s Mane",
+      "reason": "原文宝物随机列表列出该具名物品，所属关系译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2321 的随机宝物分支包含 Blood Count’s Mane，并整体称为 treasure。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“血伯爵的鬃毛”保留 Blood Count’s Mane 的所属关系与物品名形式。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文列入 treasure 分支，归入物品合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同列表其他宝物名保持独立物品名处理，无共享译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:193",
+      "evidence_rows": [
+        2778
+      ],
+      "source_excerpt": "our prize bull Blacktail had died",
+      "reason": "原文明确 Blacktail 为获奖公牛专名，分类与核心译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2778 称 “our prize bull Blacktail”，说明 Blacktail 是具名公牛。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“黑尾”保留 Blacktail 的核心名称含义，适合作公牛专名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为具名动物而非普通物品，归入其他合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Son of Blacktail、Blacktail the Bull 的“黑尾”核心译名保持一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:194",
+      "evidence_rows": [
+        2780
+      ],
+      "source_excerpt": "the bull known as Son of Blacktail had died",
+      "reason": "原文明确其为具名公牛，现有专名译法可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2780 称 “the bull known as Son of Blacktail”，说明其为具名公牛。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“黑尾之子”对应 Son of Blacktail，并保留与 Blacktail 的名称关联。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为具名动物，归入其他合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Blacktail、Blacktail the Bull 保持“黑尾”核心译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:948",
+      "evidence_rows": [
+        29840
+      ],
+      "source_excerpt": "Blacktail the Bull helps ensure we have many new calves.",
+      "reason": "原文表明其为具名公牛或相关宝物效果，现有译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "29840 明确出现 “Blacktail the Bull”，并说明其帮助确保产犊。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“黑尾公牛”保留 Blacktail 名称与 the Bull 描述，含义清楚。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该条以具名公牛/宝物效果出现，归入物品可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Blacktail 的“黑尾”核心译名一致，附加 the Bull 后作“黑尾公牛”不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:201",
+      "evidence_rows": [
+        2735
+      ],
+      "source_excerpt": "We gave them the Clod.",
+      "reason": "the Clod 是 Sacred Clod 的省略别名，共用“圣土块”译名经核对合理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2735 中交出 the Clod，后文称其为 fine weapon，确指同一独特武器/圣物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“圣土块”保留 Sacred Clod 的译名，也适用于省略形式 the Clod。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文以 the Clod 指独特武器/圣物，归入物品合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f1 所报共享译名经核对为同物别称：the Clod 与 Sacred Clod 共用“圣土块”合理，不需隔离。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:186",
+    "terms:447",
+    "terms:605",
+    "terms:1174",
+    "terms:187",
+    "terms:188",
+    "terms:190",
+    "terms:191",
+    "terms:193",
+    "terms:194",
+    "terms:948",
+    "terms:201"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

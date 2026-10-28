@@ -1,0 +1,442 @@
+{
+  "review_complete": true,
+  "review_summary": "复核 e1-e12：保留 e1/e4/e6/e10 等译名；将 e2 类别修正为组织并清理 term_reason，将 e9 译名改为“石头部族”，并清理 e3/e5/e7/e8/e11/e12 中未附原文的 term_reason 细节；f1 已核对为同一英雄探索的异写，共用译名可接受。",
+  "acknowledged_findings": [
+    "F0377"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "category_path": "组织",
+        "term_reason": "34065 原文称其为 a clan called the Digging Stick People，故为氏族名；26419 提到其赠予 Board of Nails。"
+      },
+      "reason": "34065 明说 Digging Stick People 是一个 clan，故类别应为组织；term_reason 改为可证原文依据，译名保留“掘棍人”。",
+      "evidence_rows": [
+        34065,
+        26419
+      ],
+      "table": "terms",
+      "index": 641
+    },
+    {
+      "patch": {
+        "term_reason": "26437、34065 原文称 Big-Teeth 与 Long-Noses 交战，并吞食其死者，为敌对族群名。"
+      },
+      "reason": "原 term_reason 提到未附原文的帕拉图尔；改为证据行可证的族群关系。",
+      "evidence_rows": [
+        26437,
+        34065
+      ],
+      "table": "terms",
+      "index": 642
+    },
+    {
+      "patch": {
+        "term_reason": "26241 原文称 the Death sword 为神所持、与死亡权能相关的剑。"
+      },
+      "reason": "去除未附原文的胡马特信息，仅保留 26241 可证内容。",
+      "evidence_rows": [
+        26241
+      ],
+      "table": "terms",
+      "index": 648
+    },
+    {
+      "patch": {
+        "term_reason": "26863、33935 原文称其为 Chaos enemy，会令体内软组织如蛆增殖而爆裂。"
+      },
+      "reason": "原 term_reason 引用了未附的 26868、26874；改为证据行可证描述。",
+      "evidence_rows": [
+        26863,
+        33935
+      ],
+      "table": "terms",
+      "index": 653
+    },
+    {
+      "patch": {
+        "term_reason": "26922 原文称 Plant Tribe 与猫族争夺猎场，为部族名。"
+      },
+      "reason": "原 term_reason 引用了未附的 26926；改为 26922 可证内容。",
+      "evidence_rows": [
+        26922
+      ],
+      "table": "terms",
+      "index": 656
+    },
+    {
+      "patch": {
+        "recommended_translation": "石头部族"
+      },
+      "reason": "Stone Tribe 为部族名；“石部族”不自然，采用候选“石头部族”并与“植物部族”统一 Tribe 译法。",
+      "evidence_rows": [
+        26960,
+        26976
+      ],
+      "table": "terms",
+      "index": 658
+    },
+    {
+      "patch": {
+        "term_reason": "27674 原文称其开始 Death Song，死亡将行走于厅堂，为仪式之歌名。"
+      },
+      "reason": "去除未附原文的 Humakti 鸭人信息，仅保留 27674 可证内容。",
+      "evidence_rows": [
+        27674
+      ],
+      "table": "terms",
+      "index": 668
+    },
+    {
+      "patch": {
+        "term_reason": "27756 原文称黄铜币来自 the Sun Empire，为帝国名。"
+      },
+      "reason": "去除未附原文的“外来”判断，仅保留 27756 可证来源。",
+      "evidence_rows": [
+        27756
+      ],
+      "table": "terms",
+      "index": 669
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:639",
+      "evidence_rows": [
+        26396
+      ],
+      "source_excerpt": "walk through the Stream of Silver Swords",
+      "reason": "26396 确认其为英雄探索途经的溪流地名；保留现译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26396 原文作 the Stream of Silver Swords，指英雄探索途经的溪流。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“银剑溪”对应 Stream of Silver Swords，简洁且符合地名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名；原文以 walk through 描述穿越该地点。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未与其他条目发生同形冲突；保留“银剑溪”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:641",
+      "evidence_rows": [
+        34065,
+        26417
+      ],
+      "source_excerpt": "He visited a clan called the Digging Stick People.",
+      "reason": "34065 明说它是 clan；修正类别为组织并更新 term_reason，保留“掘棍人”为氏族名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34065 原文称 a clan called the Digging Stick People；26417 亦以此名指该群体。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“掘棍人”直译 Digging Stick People，作为氏族名可保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "34065 明说“a clan”，故由“种族”改为“组织”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未与其他条目冲突；本条为独立氏族名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:642",
+      "evidence_rows": [
+        34065,
+        26437
+      ],
+      "source_excerpt": "Their tulas were the battleground for the Long-Noses and the Big-Teeth, two other peoples who were fighting each other.",
+      "reason": "确认 Big-Teeth 为与 Long-Noses 交战的族群；译名保留，term_reason 去除未附原文的帕拉图尔信息。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34065 称 Long-Noses 与 Big-Teeth 为 two other peoples；26437 亦表明二者交战。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“大牙人”对应 Big-Teeth，保留族群名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文称其为 peoples，归入种族。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Long-Noses 等族群名并列，未与其他条目冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:643",
+      "evidence_rows": [
+        26230,
+        32476
+      ],
+      "source_excerpt": "I give you the Silver Sheep, a gift befitting a cottar.",
+      "reason": "确认 Silver Sheep 为奥兰斯赠予的具名宝物；译名保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26230 原文明确 I give you the Silver Sheep..."
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“银羊”直译 Silver Sheep，作为宝物名简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品；原文为赠予的 treasure。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "32476 宝藏列表同名，译名一致；“银羊”不与其他条目冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:648",
+      "evidence_rows": [
+        26241
+      ],
+      "source_excerpt": "No god knows the future, even the god who wields the Death sword.",
+      "reason": "确认 Death sword 为神所持的死亡之剑；term_reason 去除未附原文的胡马特信息。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26241 原文作 the Death sword，为某神所持。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“死亡之剑”对应 Death sword，符合神话武器名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品；原文以 wields 描述持剑。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 Death weapon 条目区分原文措辞，分别翻译不矛盾。"
+        }
+      }
+    },
+    {
+      "ref": "terms:649",
+      "evidence_rows": [
+        26205,
+        26208
+      ],
+      "source_excerpt": "demanding the Death weapon first.",
+      "reason": "确认 Death weapon 指奥兰斯索取的死亡武器；译名保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26205、26208 原文均作 demanding the Death weapon first。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“死亡武器”对应 Death weapon，保留与 Death sword 的措辞差异。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品；原文为 Orlanth 索取的武器。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Death sword“死亡之剑”同指死亡武器但原文不同，分别翻译不矛盾。"
+        }
+      }
+    },
+    {
+      "ref": "terms:653",
+      "evidence_rows": [
+        26864,
+        33935
+      ],
+      "source_excerpt": "Then came the Maker of Bad Growth, another Chaos enemy.",
+      "reason": "确认其为 Chaos enemy 的专名；译名保留，term_reason 去除未附原文的行号。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26864 原文称 the Maker of Bad Growth, another Chaos enemy；33935 亦见同名敌人。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“恶增生制造者”对应 Maker of Bad Growth，保留其制造恶增生的含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他；作为混沌敌人专名，现有分类可容纳。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 33935 同名用法一致，未与其他条目冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:656",
+      "evidence_rows": [
+        26922,
+        34334
+      ],
+      "source_excerpt": "My clan is badly pressed by the Plant Tribe, which fights us for our hunting ground.",
+      "reason": "确认 Plant Tribe 为争夺猎场的部族名；译名保留，term_reason 仅保留可证行号。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26922 原文称 Plant Tribe 与猫族争夺 hunting ground；34334 亦见同名部族。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“植物部族”对应 Plant Tribe，符合部族名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "组织；原文为与 Cat Clan 并列的部族。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未与其他条目冲突；保留“植物部族”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:658",
+      "evidence_rows": [
+        26960,
+        26976
+      ],
+      "source_excerpt": "He says that the Stone Tribe imprisoned him",
+      "reason": "确认 Stone Tribe 为囚禁知识之神的部族；将“石部族”改为更自然的“石头部族”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26960 原文称 the Stone Tribe imprisoned him；26976 亦见同名部族。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "“石部族”不自然；按 Stone Tribe 改为“石头部族”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "组织；原文为部族名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Plant Tribe“植物部族”同为 Tribe 结构，译名统一用“部族”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:662",
+      "evidence_rows": [
+        26683
+      ],
+      "source_excerpt": "thanking us for having performed the Blessings of Uralda heroquest",
+      "reason": "确认其为英雄探索名；与 Uralda’s Blessing 为同一探索的异写，共用译名可接受。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26683 原文称 the Blessings of Uralda heroquest。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“乌拉尔达的祝福”对应 Blessings of Uralda；中文不区分单复数。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他；原文明确为 heroquest 名称。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f1：与 Uralda’s Blessing 共用译名，26683 语境表明指同一英雄探索，非误合并。"
+        }
+      }
+    },
+    {
+      "ref": "terms:668",
+      "evidence_rows": [
+        27674
+      ],
+      "source_excerpt": "He is beginning his Death Song.",
+      "reason": "确认 Death Song 为仪式之歌名；译名保留，term_reason 去除未附原文的 Humakti 鸭人信息。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "27674 原文称 He is beginning his Death Song。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“死亡之歌”对应 Death Song，保留仪式名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他；原文为仪式中开始的歌名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Death 与 Death sword/Death weapon 的“死亡”译法一致，但本条为歌名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:669",
+      "evidence_rows": [
+        27756
+      ],
+      "source_excerpt": "brass coins from the Sun Empire",
+      "reason": "确认 Sun Empire 为黄铜币来源的帝国名；译名保留，term_reason 仅保留可证内容。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "27756 原文称 brass coins from the Sun Empire。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“太阳帝国”对应 Sun Empire，作为帝国名简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "组织；原文为帝国名，归入组织可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未与其他条目冲突；保留“太阳帝国”。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:639",
+    "terms:641",
+    "terms:642",
+    "terms:643",
+    "terms:648",
+    "terms:649",
+    "terms:653",
+    "terms:656",
+    "terms:658",
+    "terms:662",
+    "terms:668",
+    "terms:669"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

@@ -1,0 +1,448 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1-e12 的原文、译名、分类与跨条一致性；将 e2 的别称译名定为“木棍农夫”，并修正 e1/e3/e6/e7/e8/e9/e10/e11 中超出证据或表述不准的 term_reason。f1 中 e1/e13 的“神语者”为同一身份的单复数变体，不构成不同专名冲突。",
+  "acknowledged_findings": [
+    "F0365"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "神职者/祭司，负责向神献祭；原文以 priest 定义，并称其为 holy man。"
+      },
+      "reason": "原 term_reason 的“可从祖先托梦”非核心定义，按 34002/33873 修正。",
+      "evidence_rows": [
+        33873,
+        34002
+      ],
+      "table": "terms",
+      "index": 671
+    },
+    {
+      "patch": {
+        "recommended_translation": "木棍农夫"
+      },
+      "reason": "Stick 指木棍而非棍棒/武器；作为 Nalda Bin 别称取更中性译名。",
+      "evidence_rows": [
+        27587,
+        32896
+      ],
+      "table": "terms",
+      "index": 676
+    },
+    {
+      "patch": {
+        "term_reason": "部族间的约定；原文称某氏族经常藐视这些协议。"
+      },
+      "reason": "28193 只支持协议被藐视，未支持 laid down the law。",
+      "evidence_rows": [
+        28193
+      ],
+      "table": "terms",
+      "index": 681
+    },
+    {
+      "patch": {
+        "term_reason": "Yinkin 教徒执行的英雄任务名；任务中击败 Serpentbeast Brotherhood。"
+      },
+      "reason": "28275 未提 Telmor，删去无据设定。",
+      "evidence_rows": [
+        28275
+      ],
+      "table": "terms",
+      "index": 685
+    },
+    {
+      "patch": {
+        "term_reason": "Kallyr 的称号式全名；原文作 Kallyr Trailblazer。"
+      },
+      "reason": "28446 未说明称号获得过程，改为可证实的称号式全名。",
+      "evidence_rows": [
+        28446
+      ],
+      "table": "terms",
+      "index": 688
+    },
+    {
+      "patch": {
+        "term_reason": "被偷来的银龙雕像；复活仪式中睁眼变暖，后恢复原状。"
+      },
+      "reason": "28371 说明雕像与仪式变化；原“龙新人”表述无据。",
+      "evidence_rows": [
+        28371,
+        32474
+      ],
+      "table": "terms",
+      "index": 689
+    },
+    {
+      "patch": {
+        "term_reason": "原文地名；Kallyr 在山脉另一侧抵达铁灰色大洋。"
+      },
+      "reason": "28400 的 far side 修饰到达海洋的位置，不是山名本身。",
+      "evidence_rows": [
+        28400
+      ],
+      "table": "terms",
+      "index": 694
+    },
+    {
+      "patch": {
+        "term_reason": "原文地名，出现于 down into the Great Abyss 片段。"
+      },
+      "reason": "28424 仅有该片段，未提 Kallyr。",
+      "evidence_rows": [
+        28424
+      ],
+      "table": "terms",
+      "index": 698
+    },
+    {
+      "patch": {
+        "term_reason": "原文中与 Storm Tribe、Fire Tribe 并列的部族名；巨人说自己不属于它。"
+      },
+      "reason": "28438 只支持部族名及并列关系，不支持“大地神族”。",
+      "evidence_rows": [
+        28438
+      ],
+      "table": "terms",
+      "index": 700
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:671",
+      "evidence_rows": [
+        27769,
+        33873,
+        34002
+      ],
+      "source_excerpt": "someone responsible for sacrifices to a god: priest.",
+      "reason": "34002 将 god-talker 直接定义为负责向神献祭的 priest，33873 又称其为 holy man；原 term_reason 的“可从祖先托梦”非核心定义，已改为神职者/祭司。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "34002 明确定义为向神献祭的 priest；33873 称 holy man，故修正 term_reason。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“神语者”对应与神沟通的神职身份，中文简洁且可作固定译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "34002/33873 均为宗教神职者，归入“身份”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "27769 用复数 god-talkers，33873 用单数 god-talker，属同一身份单复数变体；共用“神语者”不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:676",
+      "evidence_rows": [
+        27587,
+        32896
+      ],
+      "source_excerpt": "Vingkot asked our ancestors to shelter the Nalda Bin, or “Stick Farmers,” when the world fell apart.",
+      "reason": "27587/32896 表明 Stick Farmers 是 Nalda Bin 的别称；原推荐“棍棒农夫”偏 club/cudgel，改取更中性的“木棍农夫”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "27587/32896 均说明 Stick Farmers 是 Nalda Bin 的别称，指残存民族。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由“棍棒农夫”改为“木棍农夫”，更贴近 stick 的普通木棍义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "两句均指 remnant people 群体，归“种族”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一别名在 27587、32896 均作 “Stick Farmers”，统一译“木棍农夫”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:681",
+      "evidence_rows": [
+        28193
+      ],
+      "source_excerpt": "flouts our tribal agreements",
+      "reason": "28193 只证明协议被藐视，未出现 laid down the law；term_reason 改为部族间约定。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "28193 的 flouts our tribal agreements 表明是部族间约定；原 term_reason 的 laid down the law 无据，已删。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“部族协议”对应 tribal agreements。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "协议/约定属制度性概念，归“其他”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条协议与部族法为相关但不同概念，译名保留“协议”以区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:682",
+      "evidence_rows": [
+        28227
+      ],
+      "source_excerpt": "The tribal agreements are a seed that tribal law grows from.",
+      "reason": "28227 明确 tribal agreements 是 tribal law 的种子，译名与分类可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28227 以 seed/grows from 说明 tribal law 是由部族协议生长的部族法律。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“部族法”对应 tribal law，简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "法律/制度概念归“其他”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与“部族协议”区分清楚，未混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:683",
+      "evidence_rows": [
+        28144
+      ],
+      "source_excerpt": "Bad King of Dragon Pass",
+      "reason": "28144 以 Bad King of Dragon Pass 作为恶王称号；译名保留“龙隘之恶王”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28144 用 Bad King of Dragon Pass 指恶王/失败统治者的称号。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“龙隘之恶王”对应 Bad King of Dragon Pass，并沿用“龙隘”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "称号/统治者身份归“身份”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与“龙隘之王”共享地名“龙隘”，以“恶王”区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:685",
+      "evidence_rows": [
+        28275
+      ],
+      "source_excerpt": "helping the Yinkin cultists perform the Wolf Death heroquest",
+      "reason": "28275 只说明 Yinkin 教徒执行 Wolf Death heroquest 并击败 Serpentbeast Brotherhood，未提 Telmor；term_reason 已修正。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "28275 支持任务名及 Yinkin 教徒、Serpentbeast Brotherhood，未提 Telmor，已删该设定。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“狼之死英雄任务”对应 Wolf Death heroquest，作为任务名可读。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "英雄任务名归“其他”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与通用 heroquest 概念相关；本条为具体任务名，保留“英雄任务”以符合任务名语境。"
+        }
+      }
+    },
+    {
+      "ref": "terms:688",
+      "evidence_rows": [
+        28446
+      ],
+      "source_excerpt": "Kallyr Trailblazer was well, and happy to be exploring the Otherworld.",
+      "reason": "28446 仅证明 Kallyr Trailblazer 是 Kallyr 的称号式全名，未证明“完成开路者任务后获得”；term_reason 已修正。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "28446 只出现 Kallyr Trailblazer，未说明称号获得过程；已改为称号式全名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“开路者卡莉尔”对应 Kallyr Trailblazer，Kallyr 译“卡莉尔”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物称号式全名归“身份”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Trailblazer 译“开路者”，与其他 Trailblazer 条目用词一致；Kallyr 译名稳定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:689",
+      "evidence_rows": [
+        28371,
+        32474
+      ],
+      "source_excerpt": "statue of the Silver Dragon that we stole from the dragonewts",
+      "reason": "28371 说明是被偷来的银龙雕像，复活仪式中睁眼变暖后恢复；32474 宝藏列表以 Silver Dragon 为条目名。term_reason 已删去不准确的“龙新人”表述。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "28371 证明是雕像及仪式变化；32474 为宝藏列表标签；原 term_reason 的“龙新人”无据，已修正。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“银龙”对应 Silver Dragon，作为具名物品简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "28371 明说 statue，32474 在宝藏列表，归“物品”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "28371 的雕像与 32474 的宝藏标签同名，统一“银龙”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:694",
+      "evidence_rows": [
+        28400
+      ],
+      "source_excerpt": "On the far side of the Eleven Giants Mountains",
+      "reason": "28400 中 Eleven Giants Mountains 是 Kallyr 越过并抵达铁灰色大洋的山脉名；原“彼岸山脉”易误解为名称，已修正。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "28400 的 On the far side of... 修饰到达海洋的位置，不是山名本身；term_reason 已改。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“十一巨人山脉”逐词对应 Eleven Giants Mountains。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "山脉名归“地名”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Giants/Mountains 与相关 Mountain 词族不冲突；本条为完整地名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:698",
+      "evidence_rows": [
+        28424
+      ],
+      "source_excerpt": "down into the Great Abyss.",
+      "reason": "28424 仅有 down into the Great Abyss 片段，未出现 Kallyr；term_reason 已改为仅说明地名及片段。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "28424 只证明 Great Abyss 是向下通往的地名，未提 Kallyr；原 term_reason 已修正。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“大深渊”对应 Great Abyss。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "深渊地名归“地名”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Great 译“大”，与相关 Great Earthshaker Temple 的“大”用词一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:700",
+      "evidence_rows": [
+        28438
+      ],
+      "source_excerpt": "I am not a subject of the Storm Tribe or the Earth Tribe.",
+      "reason": "28438 中 Earth Tribe 与 Storm Tribe、Fire Tribe 并列，巨人自称不属于它；原“大地神族”无据，已改为部族名。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "28438 明列 Storm Tribe、Earth Tribe、Fire Tribe，Earth Tribe 是部族名而非“大地神族”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“大地部族”对应 Earth Tribe。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "部族/群体名归“组织”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Earth 在部族名中译“大地”，与季节“土季”属语境差异，允许。"
+        }
+      }
+    },
+    {
+      "ref": "terms:701",
+      "evidence_rows": [
+        28385
+      ],
+      "source_excerpt": "I have slain the Red Sword-Tooth Lion.",
+      "reason": "28385 中 Kallyr 自述杀死 Red Sword-Tooth Lion，译名“红剑齿狮”可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28385 明确 Kallyr 已杀死 the Red Sword-Tooth Lion。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“红剑齿狮”对应 Red Sword-Tooth Lion。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名巨兽归“其他”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Sword 译“剑”，与相关 Sword-Throwing Feat 的“剑”一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:671",
+    "terms:676",
+    "terms:681",
+    "terms:682",
+    "terms:683",
+    "terms:685",
+    "terms:688",
+    "terms:689",
+    "terms:694",
+    "terms:698",
+    "terms:700",
+    "terms:701"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

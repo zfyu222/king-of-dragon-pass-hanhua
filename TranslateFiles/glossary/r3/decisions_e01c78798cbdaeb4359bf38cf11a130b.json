@@ -1,0 +1,342 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对全部12个术语条目的原文、译名、分类与一致性。各条推荐译名均可保留，分类与专名设置无冲突；本批无需修订、隔离或新增。",
+  "acknowledged_findings": [],
+  "edits": [],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:269",
+      "evidence_rows": [
+        4642
+      ],
+      "source_excerpt": "Yellow Back Clan",
+      "reason": "原文为完整氏族名，推荐译名与分类无冲突，保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4642原文为“Yellow Back Clan”，是氏族名而非普通短语。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“黄背氏族”对应Yellow Back（黄背）+ Clan（氏族），符合氏族名构词。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=组织，符合氏族作为组织的分类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e2-e4均采用“[修饰语]+氏族”的氏族名结构，未出现同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:270",
+      "evidence_rows": [
+        4643
+      ],
+      "source_excerpt": "Flat Head Clan",
+      "reason": "原文为完整氏族名，译名与分类一致，保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4643原文为“Flat Head Clan”，可确认是氏族名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“扁头氏族”保留Flat Head的贬义形象，并以“氏族”对应Clan。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=组织，符合氏族的组织属性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e1、e3、e4同用“氏族”后缀，术语族一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:271",
+      "evidence_rows": [
+        4644
+      ],
+      "source_excerpt": "Sons of Dogs Clan",
+      "reason": "原文为完整氏族名，译名自然且分类正确，保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4644原文为“Sons of Dogs Clan”，是讽刺诗中的氏族名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“犬之子氏族”对应Sons of Dogs（犬之子）+ Clan（氏族），未拆成普通短语。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=组织，符合氏族分类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批氏族名统一使用“氏族”后缀，“犬之子”不另作普通词处理。"
+        }
+      }
+    },
+    {
+      "ref": "terms:272",
+      "evidence_rows": [
+        4645
+      ],
+      "source_excerpt": "Filth-Eater Clan",
+      "reason": "原文为完整氏族名，译名简洁可读，保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4645原文为“Filth-Eater Clan”，可确认是氏族名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“食秽氏族”以“食秽”表达Filth-Eater，以“氏族”对应Clan，作为贬称简洁可读。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=组织，符合氏族分类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e5同有Eater成分：e4作氏族名前缀用“食秽”，e5作完整怪物称号用“食皮者”，语境不同且核心“食”义一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:650",
+      "evidence_rows": [
+        26701,
+        26702,
+        33932,
+        33949
+      ],
+      "source_excerpt": "The Eater of Skin, a Chaos monstrosity, comes singing the Rending Song, which makes the people bleed.",
+      "reason": "原文确认其为具名混沌怪物，译名与分类无冲突，保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26701、26702称其为Chaos monstrosity/creature；33932、33949记其唱Rending Song并与Elmal交战，确为具名怪物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“食皮者”直译Eater of Skin，保留吞食皮肤的可怕意象，适合作为怪物称号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为独特混沌怪物名，归入“其他”而非普通种族或人物身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e4的Eater成分均保留“食”义；完整称号“食皮者”与氏族名“食秽氏族”不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:273",
+      "evidence_rows": [
+        4632
+      ],
+      "source_excerpt": "Korolvanth",
+      "reason": "随机诗人姓名分支中的专名，音译与分类可用，保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4632为随机诗人姓名分支，首项为Korolvanth。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“科罗尔万斯”按Korolvanth音译，未加间隔号，符合专名音译规则。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "“其他”作为随机人名分类可用，proper_name/required设置正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同分支Selemal、Branduan、Estavos各自独立音译，无同形复用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:274",
+      "evidence_rows": [
+        4632
+      ],
+      "source_excerpt": "Selemal",
+      "reason": "随机诗人姓名分支中的专名，音译与分类可用，保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4632随机姓名分支含Selemal，是诗人姓名候选之一。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“塞莱马尔”按Selemal音译，音节对应清楚，未加间隔号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "“其他”适合随机人名分类，proper_name/required设置正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e6、e8、e9同属4632分支，译名区分清楚，无共用译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:275",
+      "evidence_rows": [
+        4632
+      ],
+      "source_excerpt": "Branduan",
+      "reason": "随机诗人姓名分支中的专名，音译与分类可用，保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4632随机姓名分支含Branduan。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“布兰杜安”按Branduan音译，保留辅音与元音对应，未加间隔号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "“其他”适合随机人名分类，proper_name/required设置正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e6、e7、e9同分支但译名独立，不与其他专名混淆。"
+        }
+      }
+    },
+    {
+      "ref": "terms:276",
+      "evidence_rows": [
+        4632
+      ],
+      "source_excerpt": "Estavos",
+      "reason": "随机诗人姓名分支中的专名，音译与分类可用，保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4632随机姓名分支含Estavos。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“埃斯塔沃斯”按Estavos音译，音节完整，未加间隔号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "“其他”适合随机人名分类，proper_name/required设置正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e6-e8同批随机姓名均采用独立音译，未出现同形或译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:277",
+      "evidence_rows": [
+        4758
+      ],
+      "source_excerpt": "Tariel Gor",
+      "reason": "随机守护灵姓名分支中的专名，音译与分类可用，保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4758为随机姓名分支，Tariel Gor用于命名山丘守护灵。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“塔里尔戈尔”按Tariel Gor音译，按规则不加间隔号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "“其他”适合作为灵体随机名，proper_name/required设置正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同分支Dinter、Morarera、Zenik Youf区分，e10-e12均按音译处理。"
+        }
+      }
+    },
+    {
+      "ref": "terms:278",
+      "evidence_rows": [
+        4758
+      ],
+      "source_excerpt": "Dinter",
+      "reason": "随机守护灵姓名分支中的专名，音译与分类可用，保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4758随机姓名分支含Dinter。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“丁特”按Dinter音译，短名简洁且未加间隔号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "“其他”适合随机灵体人名分类，proper_name/required设置正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与Tariel Gor、Morarera同列随机名，译名独立，未与常见词冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:279",
+      "evidence_rows": [
+        4758
+      ],
+      "source_excerpt": "Morarera",
+      "reason": "随机守护灵姓名分支中的专名，音译与分类可用，保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4758随机姓名分支含Morarera。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“莫拉雷拉”按Morarera音译，音节对应完整，未加间隔号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "“其他”适合随机灵体人名分类，proper_name/required设置正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与e10、e11同分支但译名独立，未出现共用或同形冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:269",
+    "terms:270",
+    "terms:271",
+    "terms:272",
+    "terms:650",
+    "terms:273",
+    "terms:274",
+    "terms:275",
+    "terms:276",
+    "terms:277",
+    "terms:278",
+    "terms:279"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

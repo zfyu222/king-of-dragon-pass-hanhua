@@ -1,0 +1,339 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1-e12 的来源、译名、分类与一致性；这些条目均为祝福列表独立标签，短词采用 whole_record 限定，共用“赐福”词干保持一致，未发现需要修订或隔离的问题。",
+  "acknowledged_findings": [],
+  "edits": [],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:991",
+      "evidence_rows": [
+        30980
+      ],
+      "source_excerpt": "Sun",
+      "reason": "独立祝福标签；译名与 whole_record 限定一致，无需修订。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30980 原文仅为独立标签“Sun”，可确认其为祝福名而非叙事中的普通太阳。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "推荐译名“太阳”忠实于标签，简短符合 UI 用词。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为祝福列表中的独立增益标签，归入“技能”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "whole_record、区分大小写并限定原文为祝福列表标签，避免影响 33894 等叙述中的普通 sun。"
+        }
+      }
+    },
+    {
+      "ref": "terms:993",
+      "evidence_rows": [
+        30982
+      ],
+      "source_excerpt": "Steadfast",
+      "reason": "独立祝福标签，短词译名可保留；whole_record 防止普通形容词义扩散。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30982 原文为独立标签“Steadfast”，是祝福名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“坚毅”简洁对应 Steadfast，适合技能或祝福标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福列表增益标签归入“技能”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "作为常见形容词，以 whole_record 且区分大小写限定，避免全局替换普通 steadfast。"
+        }
+      }
+    },
+    {
+      "ref": "terms:994",
+      "evidence_rows": [
+        30983
+      ],
+      "source_excerpt": "Bless Children",
+      "reason": "独立祝福标签，译名准确，作为技能或祝福术语保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30983 原文为独立标签“Bless Children”，是祝福名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“赐福子嗣”准确表达祝福子嗣或生育之意，和术语说明一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福类增益归入“技能”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e4 的“赐福作物”共享“赐福”词干，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:995",
+      "evidence_rows": [
+        30984
+      ],
+      "source_excerpt": "Bless Crops",
+      "reason": "独立祝福标签，译名准确，作为技能或祝福术语保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30984 原文为独立标签“Bless Crops”，是祝福名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“赐福作物”准确对应 Bless Crops，简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福类增益归入“技能”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e3 的“赐福子嗣”保持“赐福+对象”结构一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:996",
+      "evidence_rows": [
+        30986
+      ],
+      "source_excerpt": "Preserve",
+      "reason": "独立祝福标签，短词译名可保留；whole_record 防止普通动词义扩散。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30986 原文为独立标签“Preserve”，是祝福名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“保存”对应 Preserve，作为短标签可保留；含义偏食物保存但不改写为长句。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福列表中的保存类增益标签归入“技能”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "2689 中 preserve 为普通动词，本条以 whole_record 且区分大小写限定，避免误替换。"
+        }
+      }
+    },
+    {
+      "ref": "terms:997",
+      "evidence_rows": [
+        30988
+      ],
+      "source_excerpt": "Oath",
+      "reason": "独立祝福标签，短词译名可保留；whole_record 防止与长专名冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30988 原文为独立标签“Oath”，是祝福名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“誓约”对应 Oath，短标签合适。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福列表增益标签归入“技能”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "27547 和 27548 中 Oath 属“Bondsman’s Oath”长专名，本条 whole_record 限定独立标签，避免冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:999",
+      "evidence_rows": [
+        30990
+      ],
+      "source_excerpt": "Truesword",
+      "reason": "独立祝福标签，独特复合名译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30990 原文为独立标签“Truesword”，是祝福名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“真剑”简洁对应 Truesword，符合技能或祝福名风格。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福类战斗增益归入“技能”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Truesword 为独特复合名，译名“真剑”不与普通词冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1003",
+      "evidence_rows": [
+        30995
+      ],
+      "source_excerpt": "Maternal Ward",
+      "reason": "独立祝福标签，独特复合名译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30995 原文为独立标签“Maternal Ward”，是祝福名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“母佑”以短词表达 Maternal Ward 的守护义，适合 UI 标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福类守护增益归入“技能”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Maternal Ward 为独特复合名，译名“母佑”可独立使用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1005",
+      "evidence_rows": [
+        30999
+      ],
+      "source_excerpt": "Earthblood",
+      "reason": "独立祝福标签，独特复合名译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30999 原文为独立标签“Earthblood”，是祝福名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“大地之血”直译 Earthblood，保留神话感且简短。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福类增益归入“技能”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Earthblood 为独特复合名，不存在与普通词混用问题。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1006",
+      "evidence_rows": [
+        31000
+      ],
+      "source_excerpt": "Tracking",
+      "reason": "独立祝福标签，短词译名可保留；whole_record 防止普通活动词义扩散。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "31000 原文为独立标签“Tracking”，是祝福名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“追踪”对应 Tracking，短标签合适。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福列表中的寻迹增益归入“技能”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "17565 中 tracking 为普通活动词，本条以 whole_record 且区分大小写限定，避免全局替换。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1007",
+      "evidence_rows": [
+        31001
+      ],
+      "source_excerpt": "Sureshot",
+      "reason": "独立祝福标签，独特复合名译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "31001 原文为独立标签“Sureshot”，是祝福名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“神射”简洁对应 Sureshot 的精准射击义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福类狩猎增益归入“技能”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Sureshot 为独特复合名，译名“神射”可独立使用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1010",
+      "evidence_rows": [
+        31004
+      ],
+      "source_excerpt": "Rain",
+      "reason": "独立祝福标签，短词译名可保留；whole_record 防止与长专名冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "31004 原文为独立标签“Rain”，是祝福名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“降雨”对应 Rain，短标签合适。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福列表中的降雨增益归入“技能”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "34240 和 34262 中 Rain 属“Lord of Rain”长名，本条以 whole_record 且区分大小写限定，避免冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:991",
+    "terms:993",
+    "terms:994",
+    "terms:995",
+    "terms:996",
+    "terms:997",
+    "terms:999",
+    "terms:1003",
+    "terms:1005",
+    "terms:1006",
+    "terms:1007",
+    "terms:1010"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

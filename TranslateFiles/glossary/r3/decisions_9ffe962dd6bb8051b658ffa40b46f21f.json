@@ -1,0 +1,533 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 12 个 non_translate 条目：原文均为独立的内部资源、字体或图形标识符，source 与记录一致；保留 non_translate 分类，并为每条补充整条记录、区分大小写的 applicability，避免默认全局禁翻。未发现需隔离、新增或改译的条目。",
+  "acknowledged_findings": [
+    "F0303",
+    "F0304",
+    "F0305",
+    "F0306",
+    "F0307",
+    "F0308",
+    "F0309",
+    "F0310",
+    "F0311",
+    "F0312",
+    "F0313",
+    "F0314"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31212 整条仅为内部资源键名 FCpigs；本批未见嵌入正文用例，按完整记录保持原样。"
+        }
+      },
+      "reason": "补齐 non_translate 的显式适用范围，避免内部资源键名被全局禁翻；无译名或分类改动。",
+      "evidence_rows": [
+        31212
+      ],
+      "table": "non_translate",
+      "index": 421
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31229 整条为内部字体资源名 Trebuchet17；本批未见嵌入正文用例，按完整记录保持原样。"
+        }
+      },
+      "reason": "补齐 non_translate 的显式适用范围，避免内部字体资源名被全局禁翻；无译名或分类改动。",
+      "evidence_rows": [
+        31229
+      ],
+      "table": "non_translate",
+      "index": 422
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31250 整条为内部字体资源名 Trebuchet27；本批未见嵌入正文用例，按完整记录保持原样。"
+        }
+      },
+      "reason": "补齐 non_translate 的显式适用范围，避免内部字体资源名被全局禁翻；无译名或分类改动。",
+      "evidence_rows": [
+        31250
+      ],
+      "table": "non_translate",
+      "index": 423
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31270 整条为内部字体资源名 CTrebuchet19；本批未见嵌入正文用例，按完整记录保持原样。"
+        }
+      },
+      "reason": "补齐 non_translate 的显式适用范围，避免内部字体资源名被全局禁翻；无译名或分类改动。",
+      "evidence_rows": [
+        31270
+      ],
+      "table": "non_translate",
+      "index": 424
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31271 整条为内部字体资源名 Lorenzo19pt；本批未见嵌入正文用例，按完整记录保持原样。"
+        }
+      },
+      "reason": "补齐 non_translate 的显式适用范围，避免内部字体资源名被全局禁翻；无译名或分类改动。",
+      "evidence_rows": [
+        31271
+      ],
+      "table": "non_translate",
+      "index": 425
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31272 整条为内部字体资源名 Lorenzo22；本批未见嵌入正文用例，按完整记录保持原样。"
+        }
+      },
+      "reason": "补齐 non_translate 的显式适用范围，避免内部字体资源名被全局禁翻；无译名或分类改动。",
+      "evidence_rows": [
+        31272
+      ],
+      "table": "non_translate",
+      "index": 426
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31275 整条为内部字体资源名 Lorenzo17；本批未见嵌入正文用例，按完整记录保持原样。"
+        }
+      },
+      "reason": "补齐 non_translate 的显式适用范围，避免内部字体资源名被全局禁翻；无译名或分类改动。",
+      "evidence_rows": [
+        31275
+      ],
+      "table": "non_translate",
+      "index": 427
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31276 整条为内部图形资源名 line1x64；本批未见嵌入正文用例，按完整记录保持原样。"
+        }
+      },
+      "reason": "补齐 non_translate 的显式适用范围，避免内部图形资源名被全局禁翻；无译名或分类改动。",
+      "evidence_rows": [
+        31276
+      ],
+      "table": "non_translate",
+      "index": 428
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31277 整条为内部图形资源名 triangle10x6；本批未见嵌入正文用例，按完整记录保持原样。"
+        }
+      },
+      "reason": "补齐 non_translate 的显式适用范围，避免内部图形资源名被全局禁翻；无译名或分类改动。",
+      "evidence_rows": [
+        31277
+      ],
+      "table": "non_translate",
+      "index": 429
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31322 整条为内部资源名 CCBlessing；本批未见嵌入正文用例，按完整记录保持原样。"
+        }
+      },
+      "reason": "补齐 non_translate 的显式适用范围，避免内部资源名被全局禁翻；无译名或分类改动。",
+      "evidence_rows": [
+        31322
+      ],
+      "table": "non_translate",
+      "index": 430
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31323 整条为内部资源名 MHStorm；本批未见嵌入正文用例，按完整记录保持原样。"
+        }
+      },
+      "reason": "补齐 non_translate 的显式适用范围，避免内部资源名被全局禁翻；无译名或分类改动。",
+      "evidence_rows": [
+        31323
+      ],
+      "table": "non_translate",
+      "index": 431
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "记录 31324 整条为内部资源名 MHSeason；本批未见嵌入正文用例，按完整记录保持原样。"
+        }
+      },
+      "reason": "补齐 non_translate 的显式适用范围，避免内部资源名被全局禁翻；无译名或分类改动。",
+      "evidence_rows": [
+        31324
+      ],
+      "table": "non_translate",
+      "index": 432
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:421",
+      "evidence_rows": [
+        31212
+      ],
+      "source_excerpt": "FCpigs",
+      "reason": "内部资源键名，保持原样并限定为整条记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31212 原文为 FCpigs，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不生成中文译名，运行时保持 FCpigs 原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "FCpigs 是内部资源键名/标识符，不是普通正文词或专名，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同义资源名需合并；保持完整大小写及词形，不与普通词 FC/pigs 拆分对应。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:422",
+      "evidence_rows": [
+        31229
+      ],
+      "source_excerpt": "Trebuchet17",
+      "reason": "内部字体资源名，保持原样并限定为整条记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31229 原文为 Trebuchet17，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不生成中文译名，运行时保持 Trebuchet17 原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Trebuchet17 是内部字体资源标识符，不是正文专名，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e3 的 Trebuchet27 为不同字体资源名，仅共享 Trebuchet 前缀，数字后缀不同，不合并。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:423",
+      "evidence_rows": [
+        31250
+      ],
+      "source_excerpt": "Trebuchet27",
+      "reason": "内部字体资源名，保持原样并限定为整条记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31250 原文为 Trebuchet27，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不生成中文译名，运行时保持 Trebuchet27 原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Trebuchet27 是内部字体资源标识符，不是正文专名，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e2 的 Trebuchet17 为不同字体资源名，仅共享 Trebuchet 前缀，数字后缀不同，不合并。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:424",
+      "evidence_rows": [
+        31270
+      ],
+      "source_excerpt": "CTrebuchet19",
+      "reason": "内部字体资源名，保持原样并限定为整条记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31270 原文为 CTrebuchet19，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不生成中文译名，运行时保持 CTrebuchet19 原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "CTrebuchet19 是内部字体资源标识符，前缀和数字属于名称组成部分，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Trebuchet17/27 等共享词干但前缀和数字不同，作为独立资源名保留，不合并译名。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:425",
+      "evidence_rows": [
+        31271
+      ],
+      "source_excerpt": "Lorenzo19pt",
+      "reason": "内部字体资源名，保持原样并限定为整条记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31271 原文为 Lorenzo19pt，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不生成中文译名，运行时保持 Lorenzo19pt 原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Lorenzo19pt 是内部字体资源标识符，不是正文人物名，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e6/e7 的 Lorenzo22、Lorenzo17 为不同字体资源名，数字和 pt 后缀不同，不合并。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:426",
+      "evidence_rows": [
+        31272
+      ],
+      "source_excerpt": "Lorenzo22",
+      "reason": "内部字体资源名，保持原样并限定为整条记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31272 原文为 Lorenzo22，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不生成中文译名，运行时保持 Lorenzo22 原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Lorenzo22 是内部字体资源标识符，不是正文人物名，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e5/e7 的 Lorenzo19pt、Lorenzo17 为不同字体资源名，数字后缀不同，不合并。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:427",
+      "evidence_rows": [
+        31275
+      ],
+      "source_excerpt": "Lorenzo17",
+      "reason": "内部字体资源名，保持原样并限定为整条记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31275 原文为 Lorenzo17，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不生成中文译名，运行时保持 Lorenzo17 原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Lorenzo17 是内部字体资源标识符，不是正文人物名，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e5/e6 的 Lorenzo19pt、Lorenzo22 为不同字体资源名，数字后缀不同，不合并。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:428",
+      "evidence_rows": [
+        31276
+      ],
+      "source_excerpt": "line1x64",
+      "reason": "内部图形资源名，保持原样并限定为整条记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31276 原文为 line1x64，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不生成中文译名，运行时保持 line1x64 原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "line1x64 是内部图形资源标识符，不是正文中的线段描述，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "line 与 1x64 整体构成资源名，尺寸部分不拆分翻译，保持原标识符一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:429",
+      "evidence_rows": [
+        31277
+      ],
+      "source_excerpt": "triangle10x6",
+      "reason": "内部图形资源名，保持原样并限定为整条记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31277 原文为 triangle10x6，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不生成中文译名，运行时保持 triangle10x6 原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "triangle10x6 是内部图形资源标识符，不是正文中的三角形尺寸描述，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "triangle 与 10x6 整体构成资源名，不拆分译作普通词加尺寸，保持原标识符一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:430",
+      "evidence_rows": [
+        31322
+      ],
+      "source_excerpt": "CCBlessing",
+      "reason": "内部资源名，保持原样并限定为整条记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31322 原文为 CCBlessing，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不生成中文译名，运行时保持 CCBlessing 原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "CCBlessing 是内部资源标识符，不应按普通词 Blessing 意译，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "CCBlessing 整体作为资源名保留，不将 Blessing 单独拆出与普通词统一。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:431",
+      "evidence_rows": [
+        31323
+      ],
+      "source_excerpt": "MHStorm",
+      "reason": "内部资源名，保持原样并限定为整条记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31323 原文为 MHStorm，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不生成中文译名，运行时保持 MHStorm 原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "MHStorm 是内部资源标识符，不应按普通词 Storm 意译，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "MHStorm 整体作为资源名保留，不将 Storm 单独拆出与普通天气词统一。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:432",
+      "evidence_rows": [
+        31324
+      ],
+      "source_excerpt": "MHSeason",
+      "reason": "内部资源名，保持原样并限定为整条记录匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录 31324 原文为 MHSeason，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不生成中文译名，运行时保持 MHSeason 原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "MHSeason 是内部资源标识符，不是正文季节标签，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "MHSeason 整体作为资源名保留，不将 Season 单独拆出与普通季节词统一。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:421",
+    "non_translate:422",
+    "non_translate:423",
+    "non_translate:424",
+    "non_translate:425",
+    "non_translate:426",
+    "non_translate:427",
+    "non_translate:428",
+    "non_translate:429",
+    "non_translate:430",
+    "non_translate:431",
+    "non_translate:432"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

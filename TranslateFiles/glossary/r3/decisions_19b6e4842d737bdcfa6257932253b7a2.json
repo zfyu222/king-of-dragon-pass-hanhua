@@ -1,0 +1,418 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 e1-e12 共 12 条审校：e1、e2、e3、e4、e7 仅修正 term_reason 以补足原文依据；e8 由 game_term/reference 纠正为 proper_name/required，译名统一为“贝林塔尔之书”；e9/e10 的王权仪式倒装同义、e4/e5 的 Mralota/Mrolata 异拼、e8 与同书条目的同书异撇号关系均已核对，不构成需要隔离的不同实体冲突。",
+  "acknowledged_findings": [
+    "F0410",
+    "F0412",
+    "F0422"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "原文以集合名词指一个将参加部族联盟会议的群体，后文以 they 指代。"
+      },
+      "reason": "10339 只能证明 Hiord 是复数群体，原 term_reason 的“氏族”缺少直接依据，改为“群体”。",
+      "evidence_rows": [
+        10339
+      ],
+      "table": "terms",
+      "index": 387
+    },
+    {
+      "patch": {
+        "term_reason": "某氏族领地上的圣石名，原文称其具有战争力量并涉及守护灵/岩灵；作为专名整句使用。"
+      },
+      "reason": "原 term_reason 的“祭祀”不见于所引本条原文，删去并明确圣石与守护灵的关系。",
+      "evidence_rows": [
+        10417,
+        10458
+      ],
+      "table": "terms",
+      "index": 390
+    },
+    {
+      "patch": {
+        "term_reason": "奥兰斯之弟、灵体之主；风暴时代曾与奥兰斯掰手腕解决分歧，亦为受祭之神。"
+      },
+      "reason": "原 term_reason 只写掰手腕，未体现 24332 的神祇身份与 19869 的献祭用法。",
+      "evidence_rows": [
+        9923,
+        19869,
+        24332
+      ],
+      "table": "terms",
+      "index": 392
+    },
+    {
+      "patch": {
+        "term_reason": "原文称“Mralota, the Pig Mother”；部族各氏族每年向她献猪的猪母女神。"
+      },
+      "reason": "原 term_reason 的“猪氏族”易误读，10067 明确是部族各氏族向她献猪。",
+      "evidence_rows": [
+        10067
+      ],
+      "table": "terms",
+      "index": 393
+    },
+    {
+      "patch": {
+        "term_reason": "从海中游上岸、夺取王位并自称法老的陌生人；法老之名。"
+      },
+      "reason": "原 term_reason 仅按诗题说明，34292-34293 明确其法老身份，需补足人物范围。",
+      "evidence_rows": [
+        34292,
+        34293
+      ],
+      "table": "terms",
+      "index": 397
+    },
+    {
+      "patch": {
+        "recommended_translation": "贝林塔尔之书",
+        "term_kind": "proper_name",
+        "enforcement": "required",
+        "term_reason": "32505 宝藏列表中的具名书卷，书名由专名 Belintar + Book 构成；按专名处理并统一词根。"
+      },
+      "reason": "Belintar's Book 是特定书名，应作 required proper_name；原译“贝林塔之书”未与 Belintar=贝林塔尔 对齐。",
+      "evidence_rows": [
+        32505
+      ],
+      "table": "terms",
+      "index": 1094
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:387",
+      "evidence_rows": [
+        10339
+      ],
+      "source_excerpt": "The Hiord said that they would come to a confederation moot.",
+      "reason": "保留译名，仅收紧 term_reason。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "10339 仅能证明 Hiord 是以 they 指代的群体；原 term_reason 的“氏族”缺少本条直接依据，已改为“群体”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "希奥德为 Hiord 的音译，符合专名译法且无同名冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为参加联盟会议的群体，category_path=组织 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此一条 Hiord；译名与术语说明一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:390",
+      "evidence_rows": [
+        10417,
+        10458
+      ],
+      "source_excerpt": "If we win over the spirit of the War Rock, our martial deeds will be remembered for generations!",
+      "reason": "修正圣石/守护灵说明，保留战争之岩。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "10417 表明 War Rock 是位于 tula 的圣石，10458 称其有 spirit；原 term_reason 的“祭祀”无本条依据，已删。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“战争之岩”与原文 War Rock 的命名方式一致；作为圣石专名可统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "主指圣石/岩体，归入物品；10458 的 spirit of the War Rock 是其所涉守护灵，不改变本行对象。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批 War Rock 均作战争之岩，无其他译名并存。"
+        }
+      }
+    },
+    {
+      "ref": "terms:392",
+      "evidence_rows": [
+        24332
+      ],
+      "source_excerpt": "Orlanth’s brother, Kolat, is master of spirits.",
+      "reason": "补足 Kolat 的神祇身份，保留科拉特。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "24332 明称其为 Orlanth 之弟、master of spirits，19869 有向其献祭；原 term_reason 只写掰手腕，已补足神祇身份。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "科拉特为 Kolat 的音译，本批各处同指该神。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神祇名在现有类别中以其他归类，与 e4/e6 的神名处理一致。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Kolat 全批统一为科拉特；未见异拼或异译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:393",
+      "evidence_rows": [
+        10067
+      ],
+      "source_excerpt": "Each clan of the tribe must sacrifice a dozen pigs to Mralota, the Pig Mother, each year, on her High Holy Day.",
+      "reason": "修正猪母神说明，确认与 Mrolata 异拼同译。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "10067 明确 Mralota, the Pig Mother 以及各氏族每年献猪；原 term_reason 的“猪氏族”易生误读，已修正。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "姆拉洛塔对应 Mralota，与 e5 的异拼 Mrolata 共用译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "猪母女神归入其他，类别可用。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f1 涉及 Mralota/Mrolata：10113 的 Mrolata 是同一猪母的异拼，共用姆拉洛塔成立；已在 e5 说明异拼。"
+        }
+      }
+    },
+    {
+      "ref": "terms:394",
+      "evidence_rows": [
+        10113
+      ],
+      "source_excerpt": "Mrolata doesn’t even have legends of her own.",
+      "reason": "保留异拼同译，解决 f1。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "10113 原文拼作 Mrolata，句意称其传说只是 Uralda 故事的改名版本；作为猪母异拼可识别。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Mrolata 视为 Mralota 的异拼，统一作姆拉洛塔，避免制造第二个神名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "仍为神名，其他类别沿用。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f1 已核对：Mrolata/Mralota 指同一猪母，共用译名不是不同实体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:396",
+      "evidence_rows": [
+        10103
+      ],
+      "source_excerpt": "Offend Esra, the grain goddess, to please Mralota, the pig goddess? Never!",
+      "reason": "确认谷物女神译名与神名范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "10103 明称 Esra, the grain goddess；其他出处亦称其 made the seeds / 为谷物女神，范围清楚。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "埃斯拉为 Esra 的音译，全批一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神名归入其他，与同批神名处理一致。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Esra 在各出处的身份（谷物/种子女神）一致，无译名冲突；与 Mralota 对照不混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:397",
+      "evidence_rows": [
+        34292
+      ],
+      "source_excerpt": "His name was Belintar.",
+      "reason": "补足 Belintar 的法老身份，并作为书名词根。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "34292-34293 明确 Belintar 从海中上岸、夺权并自称 Pharaoh；原 term_reason 仅按诗题说明，已补足人物身份。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "贝林塔尔为 Belintar 的完整音译，应作为 e8 书名的词根。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物/法老名在 terms 中以其他归类，类别路径可用。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "将 Belintar 定为贝林塔尔，纠正原本 e8 的贝林塔缺口；后续同根词统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1094",
+      "evidence_rows": [
+        32505
+      ],
+      "source_excerpt": "Belintar's Book",
+      "reason": "将书名改为 required proper_name 并统一词根译名。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "32505 仅有具名书名 Belintar's Book，不是普通机制词；term_kind=proper_name、enforcement=required。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原“贝林塔之书”未对齐 Belintar=贝林塔尔，改为“贝林塔尔之书”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该书卷归物品，category_path=物品 保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一 Belintar 词根为贝林塔尔；f3 的同书异写按同一书名处理。"
+        }
+      }
+    },
+    {
+      "ref": "terms:404",
+      "evidence_rows": [
+        10057
+      ],
+      "source_excerpt": "We only select a nominee. The gods and spirits who oversee the rites of kingship truly choose the king.",
+      "reason": "确认王权仪式为神监督的仪式机制。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "10057-10058 说明 rites of kingship 由神祇监督并挑选国王，11458 等表明候选人须经历该仪式；含义明确。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "王权仪式准确覆盖 rites of kingship，简短且可复用于事件句。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为仪式机制归其他，未误归技能。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f2 已核对：与 e10 kingship rites 为同义倒装，统一作王权仪式。"
+        }
+      }
+    },
+    {
+      "ref": "terms:405",
+      "evidence_rows": [
+        10032
+      ],
+      "source_excerpt": "Your new tribe still needs to choose a king, one who is able to survive the kingship rites.",
+      "reason": "确认 kingship rites 与 e9 同义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "10032 明确候选国王须 survive the kingship rites，即王权仪式。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "与 e9 统一作王权仪式，符合同一机制。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "仪式/程序归其他，与 e9 一致。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f2 已核对：kingship rites 与 rites of kingship 同义，共用译名成立。"
+        }
+      }
+    },
+    {
+      "ref": "terms:766",
+      "evidence_rows": [
+        33668
+      ],
+      "source_excerpt": "provides a Kingship indicator showing how your clan ranks.",
+      "reason": "确认王者声望作为潜在君主评价指标。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33668 指 Sacred Time recap 中的 Kingship indicator，用于衡量氏族被视为潜在君主的程度。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "王者声望作为该指标的中文短标签，能表达潜在君主评价，且 UI 长度合适。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为界面评级指标归其他，类别可用。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此一条 Kingship；与王权仪式相关但不混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:406",
+      "evidence_rows": [
+        10403
+      ],
+      "source_excerpt": "If the king takes an anti-banditry oath, he must be prepared to keep it, or the tribal magic will be harmed.",
+      "reason": "确认反匪誓约为王权仪式中的具体誓约。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "10367 为选项 Agree to anti-banditry oath，10403 说明国王违背该誓约会损害部族魔法。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "反匪誓约准确表达 anti-banditry oath，简练适合选项。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "特定誓约归其他，类别可用。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批 anti-banditry oath 仅此一处，无译名冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:387",
+    "terms:390",
+    "terms:392",
+    "terms:393",
+    "terms:394",
+    "terms:396",
+    "terms:397",
+    "terms:1094",
+    "terms:404",
+    "terms:405",
+    "terms:766",
+    "terms:406"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

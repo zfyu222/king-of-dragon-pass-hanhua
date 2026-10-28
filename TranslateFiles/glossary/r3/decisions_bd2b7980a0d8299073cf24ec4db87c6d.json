@@ -1,0 +1,533 @@
+{
+  "review_complete": true,
+  "review_summary": "本批 12 条均为内部场景编号/标识，应保持原文而非翻译。已逐条核对源值、non_translate 分类与一致性，并为所有条目补全 whole_record、大小写敏感的适用范围，避免将这类标识误设为全局禁翻；未发现需翻译、隔离或新增的条目。",
+  "acknowledged_findings": [
+    "F0031",
+    "F0033",
+    "F0034",
+    "F0035",
+    "F0036",
+    "F0037",
+    "F0038",
+    "F0039",
+    "F0040",
+    "F0041",
+    "F0042",
+    "F0046"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "唯一证据为整条源值 scene008，属于内部场景标识；仅按完整记录匹配保护，不扩及正文中的普通词。"
+        }
+      },
+      "reason": "补全 non_translate 条目的适用范围，按内部场景编号整体保留并区分大小写。",
+      "evidence_rows": [
+        1082
+      ],
+      "table": "non_translate",
+      "index": 31
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "唯一证据为整条源值 scene002，属于内部场景标识；仅按完整记录匹配保护，不扩及正文中的普通词。"
+        }
+      },
+      "reason": "补全 non_translate 条目的适用范围，按内部场景编号整体保留并区分大小写。",
+      "evidence_rows": [
+        2919
+      ],
+      "table": "non_translate",
+      "index": 74
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "唯一证据为整条源值 scene003，属于内部场景标识；仅按完整记录匹配保护，不扩及正文中的普通词。"
+        }
+      },
+      "reason": "补全 non_translate 条目的适用范围，按内部场景编号整体保留并区分大小写。",
+      "evidence_rows": [
+        2962
+      ],
+      "table": "non_translate",
+      "index": 75
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "唯一证据为整条源值 scene004，属于内部场景标识；仅按完整记录匹配保护，不扩及正文中的普通词。"
+        }
+      },
+      "reason": "补全 non_translate 条目的适用范围，按内部场景编号整体保留并区分大小写。",
+      "evidence_rows": [
+        2990
+      ],
+      "table": "non_translate",
+      "index": 76
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "唯一证据为整条源值 scene006，属于内部场景标识；仅按完整记录匹配保护，不扩及正文中的普通词。"
+        }
+      },
+      "reason": "补全 non_translate 条目的适用范围，按内部场景编号整体保留并区分大小写。",
+      "evidence_rows": [
+        3024
+      ],
+      "table": "non_translate",
+      "index": 77
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "唯一证据为整条源值 scene007，属于内部场景标识；仅按完整记录匹配保护，不扩及正文中的普通词。"
+        }
+      },
+      "reason": "补全 non_translate 条目的适用范围，按内部场景编号整体保留并区分大小写。",
+      "evidence_rows": [
+        3055
+      ],
+      "table": "non_translate",
+      "index": 78
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "唯一证据为整条源值 scene009，属于内部场景标识；仅按完整记录匹配保护，不扩及正文中的普通词。"
+        }
+      },
+      "reason": "补全 non_translate 条目的适用范围，按内部场景编号整体保留并区分大小写。",
+      "evidence_rows": [
+        3103
+      ],
+      "table": "non_translate",
+      "index": 79
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "唯一证据为整条源值 scene010，属于内部场景标识；仅按完整记录匹配保护，不扩及正文中的普通词。"
+        }
+      },
+      "reason": "补全 non_translate 条目的适用范围，按内部场景编号整体保留并区分大小写。",
+      "evidence_rows": [
+        3146
+      ],
+      "table": "non_translate",
+      "index": 80
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "唯一证据为整条源值 scene011，属于内部场景标识；仅按完整记录匹配保护，不扩及正文中的普通词。"
+        }
+      },
+      "reason": "补全 non_translate 条目的适用范围，按内部场景编号整体保留并区分大小写。",
+      "evidence_rows": [
+        3171
+      ],
+      "table": "non_translate",
+      "index": 81
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "唯一证据为整条源值 scene012，属于内部场景标识；仅按完整记录匹配保护，不扩及正文中的普通词。"
+        }
+      },
+      "reason": "补全 non_translate 条目的适用范围，按内部场景编号整体保留并区分大小写。",
+      "evidence_rows": [
+        3211
+      ],
+      "table": "non_translate",
+      "index": 82
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "唯一证据为整条源值 scene013，属于内部场景标识；仅按完整记录匹配保护，不扩及正文中的普通词。"
+        }
+      },
+      "reason": "补全 non_translate 条目的适用范围，按内部场景编号整体保留并区分大小写。",
+      "evidence_rows": [
+        3304
+      ],
+      "table": "non_translate",
+      "index": 83
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "唯一证据为整条源值 scene027，符合内部场景编号格式；仅按完整记录匹配保护，不扩及正文中的普通词。"
+        }
+      },
+      "reason": "补全 non_translate 条目的适用范围，按内部场景编号整体保留并区分大小写。",
+      "evidence_rows": [
+        3876
+      ],
+      "table": "non_translate",
+      "index": 87
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:31",
+      "evidence_rows": [
+        1082
+      ],
+      "source_excerpt": "scene008",
+      "reason": "scene008 为内部场景标识，整条保留；仅有独立用例，故以 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1082 的源值为 scene008，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无需翻译，原文 scene008 原样保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "scene008 是内部场景/关卡标识而非正文，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批 scene 编号统一按整条标识保留；大小写敏感，不影响正文普通词。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:74",
+      "evidence_rows": [
+        2919
+      ],
+      "source_excerpt": "scene002",
+      "reason": "scene002 为内部场景标识，整条保留；仅有独立用例，故以 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2919 的源值为 scene002，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无需翻译，原文 scene002 原样保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "scene002 是内部场景标识而非正文，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批 scene 编号统一按整条标识保留；大小写敏感，不影响正文普通词。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:75",
+      "evidence_rows": [
+        2962
+      ],
+      "source_excerpt": "scene003",
+      "reason": "scene003 为内部场景标识，整条保留；仅有独立用例，故以 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2962 的源值为 scene003，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无需翻译，原文 scene003 原样保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "scene003 是内部场景标识而非正文，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批 scene 编号统一按整条标识保留；大小写敏感，不影响正文普通词。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:76",
+      "evidence_rows": [
+        2990
+      ],
+      "source_excerpt": "scene004",
+      "reason": "scene004 为内部场景标识，整条保留；仅有独立用例，故以 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2990 的源值为 scene004，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无需翻译，原文 scene004 原样保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "scene004 是内部场景标识而非正文，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批 scene 编号统一按整条标识保留；大小写敏感，不影响正文普通词。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:77",
+      "evidence_rows": [
+        3024
+      ],
+      "source_excerpt": "scene006",
+      "reason": "scene006 为内部场景标识，整条保留；仅有独立用例，故以 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 3024 的源值为 scene006，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无需翻译，原文 scene006 原样保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "scene006 是内部场景标识而非正文，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批 scene 编号统一按整条标识保留；大小写敏感，不影响正文普通词。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:78",
+      "evidence_rows": [
+        3055
+      ],
+      "source_excerpt": "scene007",
+      "reason": "scene007 为内部场景标识，整条保留；仅有独立用例，故以 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 3055 的源值为 scene007，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无需翻译，原文 scene007 原样保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "scene007 是内部场景标识而非正文，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批 scene 编号统一按整条标识保留；大小写敏感，不影响正文普通词。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:79",
+      "evidence_rows": [
+        3103
+      ],
+      "source_excerpt": "scene009",
+      "reason": "scene009 为内部场景标识，整条保留；仅有独立用例，故以 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 3103 的源值为 scene009，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无需翻译，原文 scene009 原样保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "scene009 是内部场景标识而非正文，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批 scene 编号统一按整条标识保留；大小写敏感，不影响正文普通词。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:80",
+      "evidence_rows": [
+        3146
+      ],
+      "source_excerpt": "scene010",
+      "reason": "scene010 为内部场景标识，整条保留；仅有独立用例，故以 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 3146 的源值为 scene010，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无需翻译，原文 scene010 原样保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "scene010 是内部场景标识而非正文，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批 scene 编号统一按整条标识保留；大小写敏感，不影响正文普通词。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:81",
+      "evidence_rows": [
+        3171
+      ],
+      "source_excerpt": "scene011",
+      "reason": "scene011 为内部场景标识，整条保留；仅有独立用例，故以 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 3171 的源值为 scene011，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无需翻译，原文 scene011 原样保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "scene011 是内部场景标识而非正文，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批 scene 编号统一按整条标识保留；大小写敏感，不影响正文普通词。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:82",
+      "evidence_rows": [
+        3211
+      ],
+      "source_excerpt": "scene012",
+      "reason": "scene012 为内部场景标识，整条保留；仅有独立用例，故以 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 3211 的源值为 scene012，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无需翻译，原文 scene012 原样保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "scene012 是内部场景标识而非正文，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批 scene 编号统一按整条标识保留；大小写敏感，不影响正文普通词。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:83",
+      "evidence_rows": [
+        3304
+      ],
+      "source_excerpt": "scene013",
+      "reason": "scene013 为内部场景标识，整条保留；仅有独立用例，故以 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 3304 的源值为 scene013，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无需翻译，原文 scene013 原样保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "scene013 是内部场景标识而非正文，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批 scene 编号统一按整条标识保留；大小写敏感，不影响正文普通词。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:87",
+      "evidence_rows": [
+        3876
+      ],
+      "source_excerpt": "scene027",
+      "reason": "scene027 为内部场景标识，整条保留；仅有独立用例，故以 whole_record 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 3876 的源值为 scene027，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无需翻译，原文 scene027 原样保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "scene027 符合内部场景编号格式而非正文，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批 scene 编号统一按整条标识保留；大小写敏感，不影响正文普通词。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:31",
+    "non_translate:74",
+    "non_translate:75",
+    "non_translate:76",
+    "non_translate:77",
+    "non_translate:78",
+    "non_translate:79",
+    "non_translate:80",
+    "non_translate:81",
+    "non_translate:82",
+    "non_translate:83",
+    "non_translate:87"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

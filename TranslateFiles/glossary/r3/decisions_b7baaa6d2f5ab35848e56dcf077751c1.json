@@ -1,0 +1,388 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1–e12 的原文、译名、分类与术语一致性；修正 e1 英雄探索标题译名、e2 分类，并为 e6 的 Tactic 增加字面上下文限定，其余维持。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "缔造风暴部族英雄探索",
+        "term_reason": "英雄探索标题，指‘缔造风暴部族’这一英雄探索；Heroquest 按既有术语译作‘英雄探索’。"
+      },
+      "reason": "源文为英雄探索标题；原译‘任务’不如既有‘英雄探索’，且‘风暴部族创建’应统一为‘缔造风暴部族’。",
+      "evidence_rows": [
+        33669
+      ],
+      "table": "terms",
+      "index": 767
+    },
+    {
+      "patch": {
+        "category_path": "其他",
+        "term_reason": "通过献祭可增加的战争类祝福，用于扩充短召队；属祝福机制而非技能。"
+      },
+      "reason": "War blessings 是献祭获得的祝福机制，非技能，故修正分类。",
+      "evidence_rows": [
+        33729
+      ],
+      "table": "terms",
+      "index": 771
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "reason": "原文仅在‘your Tactic for the initial clash’中作为初轮交锋选项出现；33794 的‘the tactic’为一般用法对照。",
+          "prefix": "your ",
+          "suffix": " for the initial clash"
+        }
+      },
+      "reason": "Tactic 是常见词，此处仅作初轮交锋选项，需限定字面上下文，避免全局替换。",
+      "evidence_rows": [
+        33769,
+        33794
+      ],
+      "table": "terms",
+      "index": 786
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:767",
+      "evidence_rows": [
+        33669
+      ],
+      "source_excerpt": "The Making of the Storm Tribe Heroquest",
+      "reason": "源文为英雄探索标题；原译‘任务’不如既有‘英雄探索’，且‘风暴部族创建’应统一为‘缔造风暴部族’。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33669 原文为 The Making of the Storm Tribe Heroquest，是英雄探索标题，确属专名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译‘风暴部族创建英雄任务’未采用既有‘英雄探索’与‘缔造风暴部族’；已改为‘缔造风暴部族英雄探索’。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为英雄探索名称归入‘其他’，category_path 合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 related_terms 的‘缔造风暴部族’和‘英雄探索’核心译名已统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:771",
+      "evidence_rows": [
+        33729
+      ],
+      "source_excerpt": "sacrifice for more War blessings",
+      "reason": "War blessings 是献祭获得的祝福机制，非技能，故修正分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33729 的 War blessings 是通过献祭可增加的战争类祝福。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘战争祝福’准确对应 War blessings。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原分类‘技能’不贴合祝福机制；改为‘其他’。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 War blessings 的字面术语一致，无冲突译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:777",
+      "evidence_rows": [
+        33737
+      ],
+      "source_excerpt": "a watch tower increases your patrol’s chances of spotting raids and cattle raids",
+      "reason": "源文、译名、分类及相邻术语一致性均无问题。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33737 的 watch tower 是提高巡逻发现突袭概率的防御工事。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘瞭望塔’为 watch tower 的常用译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为可建造防御设施归入‘物品’可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 stead 等相邻机制术语无译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:782",
+      "evidence_rows": [
+        33784
+      ],
+      "source_excerpt": "Stead burning is a ferocious insult.",
+      "reason": "源文定义与译名相符，分类和 stead 译名一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33784 的 Stead burning 指焚烧农庄的战斗行动，并被视为侮辱。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘焚烧农庄’对应 Stead burning。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为战斗行动归入‘其他’合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "stead 与 related_terms 的‘农庄’一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:785",
+      "evidence_rows": [
+        33650,
+        33775
+      ],
+      "source_excerpt": "Battle Treasures only take effect when you choose to use them in a specific battle.",
+      "reason": "源文、译名、分类及宝物词族一致性均无问题。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33650/33775 表明 Battle Treasures 是特定战斗中可使用、可能损坏的宝物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘战斗宝物’准确表达 battle treasures。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为宝物归入‘物品’合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 magical treasure=魔法宝物 的上位概念不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:786",
+      "evidence_rows": [
+        33769,
+        33794
+      ],
+      "source_excerpt": "your Tactic for the initial clash",
+      "reason": "Tactic 是常见词，此处仅作初轮交锋选项，需限定字面上下文。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33769 的 Tactic 是初轮交锋选项；33794 的 tactic 为一般用法。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘战术’可对应此战斗选项。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为战斗选项归入‘其他’合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已为 Tactic 增加 literal_context 限定，避免与一般 tactic 全局混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:795",
+      "evidence_rows": [
+        33712
+      ],
+      "source_excerpt": "Tribal mood represents the tribe’s assessment of its past performance and its prospects for the future.",
+      "reason": "源文定义与译名相符，分类及 tribal 词族一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33712 定义 Tribal Mood 为部族对过去表现和未来前景的评估。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘部族情绪’可表达该状态。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为部族状态机制归入‘其他’合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 tribal moot=部族大会 等 tribal 词族译法一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:798",
+      "evidence_rows": [
+        33697
+      ],
+      "source_excerpt": "Tribal Favors",
+      "reason": "标题本身可支持现有译名；与相关 favor 词条语境不同，不强行改译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33697 标题为 Tribal Favors，属部族机制名称。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘部族恩惠’直译标题，未见相反证据。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为机制名称归入‘其他’合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Favors Due=应收人情 语境不同，保留现有译名不强行统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:801",
+      "evidence_rows": [
+        33514,
+        33517,
+        33710
+      ],
+      "source_excerpt": "Relations Screen",
+      "reason": "源文、译名、分类及 screen 词族一致性均无问题。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33514 标题为 Relations Screen；33517 说明其追踪其他氏族信息。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘关系界面’准确对应 Relations screen。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "UI 界面归入‘其他’合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 War screen、Clan screen 的‘界面’译法一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:802",
+      "evidence_rows": [
+        33710
+      ],
+      "source_excerpt": "The Tribe button on the Relations screen",
+      "reason": "源文、译名、分类及 Tribe 词族一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33710 的 Tribe button 位于 Relations screen，用于查看部族状态等。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘部族按钮’准确对应 Tribe button。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "UI 按钮归入‘其他’合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Tribe/Tribal 词族译作‘部族’一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:803",
+      "evidence_rows": [
+        33721
+      ],
+      "source_excerpt": "War Screen",
+      "reason": "源文、译名、分类及 screen 词族一致性均无问题。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33721 标题为 War Screen。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘战争界面’准确对应 War Screen。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "UI 界面归入‘其他’合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Relations screen、Clan screen 的‘界面’译法一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:804",
+      "evidence_rows": [
+        33155,
+        33724,
+        33195
+      ],
+      "source_excerpt": "the button on the Clan screen",
+      "reason": "源文、译名、分类及 screen 词族一致性均无问题。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33155/33724 及 33195 显示 Clan screen 是管理氏族的界面。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘氏族界面’准确对应 Clan screen。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "UI 界面归入‘其他’合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Relations screen、War screen 的‘界面’译法一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:767",
+    "terms:771",
+    "terms:777",
+    "terms:782",
+    "terms:785",
+    "terms:786",
+    "terms:795",
+    "terms:798",
+    "terms:801",
+    "terms:802",
+    "terms:803",
+    "terms:804"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

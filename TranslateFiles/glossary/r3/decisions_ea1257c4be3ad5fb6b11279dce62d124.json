@@ -1,0 +1,391 @@
+{
+  "review_complete": true,
+  "review_summary": "已审阅 e1-e12 的源文、译名、分类与一致性；将 e1 分类改为身份，将 e2 分类改为组织并设为 required，将 e7 分类改为其他。审计项 f1 的共享译名经核对为同一机构及单复数变体，不构成冲突。",
+  "acknowledged_findings": [
+    "F0395"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "category_path": "身份"
+      },
+      "reason": "3246 明示该词为 Ty Kora Tek 的称号；作为神祇称号/身份，分类应为身份而非其他。",
+      "evidence_rows": [
+        3246
+      ],
+      "table": "terms",
+      "index": 217
+    },
+    {
+      "patch": {
+        "category_path": "组织",
+        "enforcement": "required",
+        "term_reason": "部族全体氏族为解决争端、裁决赔偿而召开的正式大会。"
+      },
+      "reason": "33700 定义 tribal moot 为 full tribe gathering；2845/2846 也将其作为提交纠纷的正式机构。该词是游戏特定机构名，应归入组织并设为 required。",
+      "evidence_rows": [
+        33700,
+        2845
+      ],
+      "table": "terms",
+      "index": 225
+    },
+    {
+      "patch": {
+        "category_path": "其他"
+      },
+      "reason": "3439/3440 表明 Orlanth Dragonslayer 是英雄任务名，不是技能；分类统改为其他，译名保持不变。",
+      "evidence_rows": [
+        3439,
+        3440
+      ],
+      "table": "terms",
+      "index": 236
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:217",
+      "evidence_rows": [
+        3246
+      ],
+      "source_excerpt": "Goddess of the Dead",
+      "reason": "称号译名准确；分类改为身份，其余无需修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3246 原文 'Ty Kora Tek, Goddess of the Dead' 明确该称号指 Ty Kora Tek。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'Goddess of the Dead' 译为 '亡者女神'，准确简洁。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "3246 明示其为 Ty Kora Tek 的称号；作为神祇称号/身份，已将 category_path 从 '其他' 改为 '身份'。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "3246 中该称号仅指 Ty Kora Tek，未与普通 'dead' 或他名混淆。"
+        }
+      }
+    },
+    {
+      "ref": "terms:225",
+      "evidence_rows": [
+        2845,
+        2846,
+        33700
+      ],
+      "source_excerpt": "tribal moot",
+      "reason": "译名保持部族大会；分类改为组织并设为 required，共享译名经核对有效。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2845/2846 的 'next tribal moot' 与 33700 的 'full tribe known as the tribal moot' 均指同一机构。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'部族大会' 与相关 'tribal moots' 单复数变体一致，也适用于 33700 的裁决集会。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "33700 定义其为 full tribe gathering，应为 '组织' 而非 '其他'；已通过 edit 修正，并设为 required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f1 的共享译名经核对：'tribal moots' 为单复数变体，'moot' 为同机构通称，共用 '部族大会' 不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:228",
+      "evidence_rows": [
+        3419,
+        33881,
+        3417
+      ],
+      "source_excerpt": "Aroka",
+      "reason": "Aroka 专名音译与分类稳定，无需修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3419 的 'Enemies aided Daga and Aroka' 与 33881 的 'mighty dragons Aroka and Sh’hakarzeel' 均指同一专名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'Aroka' 音译为 '阿罗卡'，与 3417 的仪式名 'Orlanth and Aroka' 处理一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为神话巨龙专名使用合法分类 '其他'，无需按普通词处理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "3417 的 'Orlanth and Aroka' 与 33881 的巨龙 Aroka 同译 '阿罗卡'，未见变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:232",
+      "evidence_rows": [
+        3349,
+        30094,
+        33230,
+        33476
+      ],
+      "source_excerpt": "Earth Mother",
+      "reason": "Earth Mother 为 Ernalda 称号，译名与身份分类一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3349 的 'Ernalda, the Earth Mother' 明确其为 Ernalda 的称号。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'Earth Mother' 译为 '大地母亲'，与 30094/33230 的尊称语境一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为神祇称号归入 '身份'，符合其指称 Ernalda 的用法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "33476 以 'Earth Mother' 与 Ernalda 并列选择，未出现需区分的地名或普通义。"
+        }
+      }
+    },
+    {
+      "ref": "terms:233",
+      "evidence_rows": [
+        3390
+      ],
+      "source_excerpt": "White Cow Chief",
+      "reason": "White Cow Chief 称号译名稳定，分类正确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3390 原文称邻居以 'the White Cow Chief' 称呼该酋长。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'White Cow Chief' 译为 '白牛酋长'，简洁且保留称号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该词是人物获得的称号，归入 '身份' 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "3390 中仅作称号使用，未见同形普通词或变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:234",
+      "evidence_rows": [
+        3375
+      ],
+      "source_excerpt": "Charm of the Seven Flowers",
+      "reason": "护符专名译名准确，物品分类正确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3375 原文 'the Charm of the Seven Flowers' 指一件可使蛇驯服的护符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'Charm of the Seven Flowers' 译为 '七花护符'，保留物品属性与专名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "魔法护符归入 '物品' 合法且贴切。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "3375 中为唯一专名用法，未见与普通 'charm' 混淆。"
+        }
+      }
+    },
+    {
+      "ref": "terms:236",
+      "evidence_rows": [
+        3439,
+        3440
+      ],
+      "source_excerpt": "Orlanth Dragonslayer",
+      "reason": "英雄任务名译名保留；分类由技能改为其他。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3439/3440 均以 'heroquest of Orlanth Dragonslayer' 指称这一英雄任务。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'Orlanth Dragonslayer' 译为 '屠龙者奥兰斯'，与 Orlanth 的 '奥兰斯' 一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "3439/3440 表明这是英雄任务名而非技能，已将 category_path 从 '技能' 改为 '其他'。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "3440 同时出现 'Aroka’s belly'，'奥兰斯' 与 '阿罗卡' 的专名译法一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:242",
+      "evidence_rows": [
+        3658,
+        32165,
+        33283
+      ],
+      "source_excerpt": "Fire season",
+      "reason": "火季为历法季节名，译名与分类稳定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3658 的 'Since it is Fire season' 与 32165 的 'Fire Season' 均指同一历法季节。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'Fire season' 译为 '火季'，符合 UI 季节短词要求。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "季节名归入 '其他' 合法，且不与普通火/季混淆。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "33283 列出 Sea/Fire/Earth/Dark/Storm 季节循环，'火季' 与同组季节短名风格一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:243",
+      "evidence_rows": [
+        3767
+      ],
+      "source_excerpt": "Battle of Extinguish Field",
+      "reason": "战役专名译名稳定，无需修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3767 原文以 'The Battle of Extinguish Field' 指一场具体战役。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'Extinguish Field' 译为 '熄火原'，整体 '熄火原之战' 准确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "战役专名归入 '其他' 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "3767 中为完整专名，未见同名普通词或变体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:244",
+      "evidence_rows": [
+        3563,
+        33840
+      ],
+      "source_excerpt": "Bad Emperor",
+      "reason": "Bad Emperor 固定称号译名可保留，分类正确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3563 与 33840 均以 'the Bad Emperor' 指被 Orlanth 杀死的同一神话统治者。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'Bad Emperor' 译为 '恶帝'，简短且符合神话称号；候选 '恶皇' 不取。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该词是统治者称号/身份，归入 '身份' 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "3563/33840 中均作同一固定称号，未见需区分普通 emperor 的语境。"
+        }
+      }
+    },
+    {
+      "ref": "terms:248",
+      "evidence_rows": [
+        4112,
+        34089
+      ],
+      "source_excerpt": "Hill of Orlanth Victorious",
+      "reason": "地名译名准确，分类正确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4112 与 34089 均以 'the Hill of Orlanth Victorious' 指光使者探寻起点。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译为 '胜利者奥兰斯之丘'，保留 Orlanth 的 '奥兰斯' 和 Victorious 对 Orlanth 的修饰。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名归入 '地名' 合法且贴切。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "34089 叙述 Orlanth 自该丘启程，译名中的 '奥兰斯' 与英雄名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:255",
+      "evidence_rows": [
+        4375
+      ],
+      "source_excerpt": "plant-folk",
+      "reason": "植物民作为种族描述性称谓，reference 处理合适。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4375 原文 'hunts for the plant-folk' 指一类被称为 plant-folk 的存在。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "'plant-folk' 译为 '植物民'，保留种族称谓。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为种族称谓归入 '种族' 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "4375 中仅作种族名使用，未与普通 plant 混淆；reference 级别适合单处描述性称谓。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:217",
+    "terms:225",
+    "terms:228",
+    "terms:232",
+    "terms:233",
+    "terms:234",
+    "terms:236",
+    "terms:242",
+    "terms:243",
+    "terms:244",
+    "terms:248",
+    "terms:255"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

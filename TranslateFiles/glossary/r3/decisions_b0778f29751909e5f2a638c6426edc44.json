@@ -1,0 +1,362 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e11 的出处、译名、分类与一致性；将 Voria 统一为沃丽娅，Delecti 统一为德莱克提，并按专名样式去除 Karsten Fardrosson 译名中的间隔号；其余条目维持或确认。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "沃丽娅",
+        "term_reason": "春天女神，厄纳尔达之女、巴恩塔之姊妹。"
+      },
+      "reason": "统一女性神名音译，并补充原文可证的亲属关系。",
+      "evidence_rows": [
+        7509,
+        32174,
+        33876,
+        34196
+      ],
+      "table": "characters",
+      "index": 73
+    },
+    {
+      "patch": {
+        "recommended_translation": "德莱克提"
+      },
+      "reason": "与 e7 的 Delecti the Necromancer 统一核心译名。",
+      "evidence_rows": [
+        7731,
+        9679
+      ],
+      "table": "characters",
+      "index": 75
+    },
+    {
+      "patch": {
+        "recommended_translation": "卡尔斯滕法德罗松"
+      },
+      "reason": "按专名音译不夹杂间隔号的样式去除中间点。",
+      "evidence_rows": [
+        7788
+      ],
+      "table": "characters",
+      "index": 76
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:70",
+      "evidence_rows": [
+        7234
+      ],
+      "source_excerpt": "Genevra/Asandra/Chella",
+      "reason": "姓名列表中的专名，未提供身份或性别；保留现有音译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7234 为随机姓名列表，Chella 是其中专名；未有身份或性别信息。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "凯拉为现有唯一音译提案，未见冲突；在无更多证据下保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为角色姓名归入 characters 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Chella 变体或冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:71",
+      "evidence_rows": [
+        7273,
+        7274,
+        8911,
+        8930,
+        9584
+      ],
+      "source_excerpt": "Illator, a noble of Tarsh, comes to visit you.",
+      "reason": "确认塔什贵族男性角色，译名统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7273 称 Illator 为塔什贵族，并以 he 指代；9584 再提其索要月民奴隶。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "伊拉托与各候选一致，无冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名人物，归 characters 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "7273、7274、8911、8930、9584 均指同一塔什贵族。"
+        }
+      }
+    },
+    {
+      "ref": "characters:72",
+      "evidence_rows": [
+        7478,
+        7481,
+        7485
+      ],
+      "source_excerpt": "a barbarian horseman called Sheng Seleris",
+      "reason": "确认蛮族骑手专名，译名保持。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7478 等称其为攻击月帝国的蛮族骑手。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "盛塞莱里斯为候选统一音译，未见他译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名人物，归 characters 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "7478、7481、7485 三处为同一称谓。"
+        }
+      }
+    },
+    {
+      "ref": "characters:73",
+      "evidence_rows": [
+        7509,
+        32174,
+        33876,
+        34196
+      ],
+      "source_excerpt": "born Voria, the Goddess of Spring",
+      "reason": "Voria 为春之女神，统一女性化音译沃丽娅。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34196 称 Voria 为春天女神，32174 称其为厄纳尔达之女、巴恩塔之姊妹。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由沃里亚改为沃丽娅；女性神名采用候选中的沃丽娅，并与春之女神身份相符。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名春之女神，归 characters 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "同一 Voria 的多个候选统一为沃丽娅，避免沃里亚、沃莉娅混用。"
+        }
+      }
+    },
+    {
+      "ref": "characters:74",
+      "evidence_rows": [
+        7932,
+        7934
+      ],
+      "source_excerpt": "Arlesta, a priestess of Maran Gor",
+      "reason": "确认 Maran Gor 女祭司专名，译名保持。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7932 称 Arlesta 为 Maran Gor 的女祭司，并以 she 指代。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "阿莱斯塔为唯一音译候选，无冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名人物，归 characters 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "7932、7934 同指该女祭司。"
+        }
+      }
+    },
+    {
+      "ref": "characters:75",
+      "evidence_rows": [
+        7731,
+        9679
+      ],
+      "source_excerpt": "priestesses served Delecti, that powerful magician",
+      "reason": "Delecti 为男性死灵法师，核心名统一为德莱克提。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7731、9679 称 Delecti 为强大法师，女祭司侍奉他，操控亡灵军团。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由德莱克蒂改为德莱克提，与 e7 的死灵法师德莱克提统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名法师，归 characters 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "本批两处 Delecti 候选为德莱克蒂、德莱克提，统一采用德莱克提。"
+        }
+      }
+    },
+    {
+      "ref": "characters:156",
+      "evidence_rows": [
+        22064
+      ],
+      "source_excerpt": "ducks serve Delecti the Necromancer",
+      "reason": "确认 Delecti 的带称号形式，保留死灵法师德莱克提。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "22064 以 Delecti the Necromancer 指称该死灵法师。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "死灵法师德莱克提与 e6 统一，语序自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名人物及称号，归 characters 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "核心名与 e6 一致；称号 the Necromancer 译为死灵法师。"
+        }
+      }
+    },
+    {
+      "ref": "characters:76",
+      "evidence_rows": [
+        7788
+      ],
+      "source_excerpt": "Karsten Fardrosson’s spectacular failure caused stars to fall on his people.",
+      "reason": "确认男性英雄专名，按样式去除间隔号。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7788 提及 Karsten Fardrosson 的英雄探索惨败，并以 his 指代。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "删除间隔号，改为卡尔斯滕法德罗松，符合音译不夹杂间隔号的样式。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名人物，归 characters 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此一处；去除间隔号后仍保持同一核心音译。"
+        }
+      }
+    },
+    {
+      "ref": "characters:77",
+      "evidence_rows": [
+        8323
+      ],
+      "source_excerpt": "Einara Buttered-Bread fed the Six Red-Tailed Telmori",
+      "reason": "确认女性传说人物专名，译名保持。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8323 称其为氏族传说中的女性人物，并以 she 指代。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "艾娜拉黄油面包保留人名与绰号意译，无间隔号，符合样式。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名人物，归 characters 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Bread 与 e10 的 Speaking Bread 同译面包，但限定语不同，不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:150",
+      "evidence_rows": [
+        2217
+      ],
+      "source_excerpt": "sifting the flour to make the Speaking Bread",
+      "reason": "确认仪式物品名，分类物品，译名保持。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2217 将 Speaking Bread 列为英雄探索中制作的仪式物品。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "会说话的面包直译具名物品，语义清楚。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "仪式物品，category_path 物品合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Speaking 与 e11 的 Speaking Cone 为不同物品名；此处按会说话的面包保留。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1084",
+      "evidence_rows": [
+        32479
+      ],
+      "source_excerpt": "Speaking Cone",
+      "reason": "确认为物品名，维持 game_term reference 及传声锥译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32479 为单独条目 Speaking Cone，原文未给更多功能说明。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "传声锥作为暂定功能译名，保留 reference 级别。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品名，category_path 物品合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Speaking Bread 不强行统一：此处按锥形传声物处理，非会说话的面包。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:70",
+    "characters:71",
+    "characters:72",
+    "characters:73",
+    "characters:74",
+    "characters:75",
+    "characters:156",
+    "characters:76",
+    "characters:77",
+    "terms:150",
+    "terms:1084"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

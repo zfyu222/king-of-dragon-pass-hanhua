@@ -1,0 +1,356 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 e1–e12 的来源、译名、分类与跨条一致性审校。保留现有译名，无需 edits、quarantine 或 additions；f1 经核对为 Three Bean Broth 的连字符变体，不是不同名称冲突。",
+  "acknowledged_findings": [
+    "F0393"
+  ],
+  "edits": [],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:93",
+      "evidence_rows": [
+        1631
+      ],
+      "source_excerpt": "Rastoskuli/Three Winds",
+      "reason": "保留原译名；斜杠随机分支与氏族分类均成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1631 原文称其为 Holy Country 的 clan，且 Rastoskuli/Three Winds 为随机分支名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "拉斯托斯库利/三风保留两个分支及斜杠，音译与意译对应清楚。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "clan 是氏族组织，归入组织。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e2/e3/e4 仅共享 Three 词形，不是同一术语，不合并。"
+        }
+      }
+    },
+    {
+      "ref": "terms:203",
+      "evidence_rows": [
+        2771,
+        32487
+      ],
+      "source_excerpt": "Three Bean Broth, which fortified me and our other traders before bargaining sessions",
+      "reason": "保留三豆汤；确认 e3 为同一物连字符变体。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2771 指议价前增强商人的特殊食物；32487 宝藏列表亦列 Three Bean Broth。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "三豆汤对应 Three Bean Broth，与 e3 连字符变体统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为可消耗宝物/食物，归物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "e2 与 e3 为同一名称的连字符变体，统一为三豆汤；f1 非异名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:529",
+      "evidence_rows": [
+        17289,
+        17299
+      ],
+      "source_excerpt": "a jar of Three-Bean Broth, a beverage trading partners find pleasing",
+      "reason": "保留三豆汤；与 e2 统一，不另立译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "17289/17299 指作为礼物、令贸易伙伴满意的具名饮料。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "三豆汤对应 Three-Bean Broth，与 e2 统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "罐装饮料/宝物，归物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "e2/e3 仅连字符差异，指同一 Three Bean Broth，不因分批另译；f1 已核对。"
+        }
+      }
+    },
+    {
+      "ref": "terms:692",
+      "evidence_rows": [
+        28375
+      ],
+      "source_excerpt": "the Three-Eyed Clan",
+      "reason": "保留三眼氏族；Three 仅为词形共用。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28375 原文称 Kallyr 从 Three-Eyed Clan 偷走 Edgeless Ring。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "三眼氏族准确对应 Three-Eyed Clan。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Clan 为氏族组织，归组织。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1/e2/e3 的 Three 仅词形共用，不构成同义；三眼氏族独立。"
+        }
+      }
+    },
+    {
+      "ref": "terms:94",
+      "evidence_rows": [
+        1643,
+        32471
+      ],
+      "source_excerpt": "Seventh Wind Crystal",
+      "reason": "保留第七风水晶；无同名冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1643 称石英为 Seventh Wind Crystal，失去则失去氏族魔法；32471 宝藏列表列名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "第七风水晶对应 Seventh Wind Crystal，第七风修饰水晶的关系清楚。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "石英宝物，归物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同义条目；与 Three 系列无关，不混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:95",
+      "evidence_rows": [
+        1644,
+        30923,
+        30924,
+        32482
+      ],
+      "source_excerpt": "Splinter Rock",
+      "reason": "保留裂石；与原文燧石宝物相符。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1644 称燧石为 Splinter Rock，可战前增强战斗魔法；30923/30924 描述击石释放火花强风并碎裂。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "裂石对应 Splinter Rock，作为宝物名简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "燧石宝物，归物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e5 同属宝物但不同名；无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:96",
+      "evidence_rows": [
+        1645,
+        12064,
+        29193
+      ],
+      "source_excerpt": "Snakepipe Hollow",
+      "reason": "采用蛇笛谷；与现有候选一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1645 称其为 Chaotic place known as Snakepipe Hollow；12064 称北方奇异之地；29193 为地图标签。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "蛇笛谷对应 Snakepipe Hollow，Snakepipe 取蛇笛、Hollow 取谷，符合地名意象。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Hollow 为谷地，归地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批 Tarsh 等地点不同；无同名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:97",
+      "evidence_rows": [
+        1648
+      ],
+      "source_excerpt": "Uralda’s Milk-Pot",
+      "reason": "保留乌拉尔达的奶罐；整体为宝物名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1648 明确 treasure is called Uralda’s Milk-Pot。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "乌拉尔达的奶罐保留专名与所有格，Milk-Pot 译奶罐。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "奶罐宝物，归物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "整体为单一宝物名，不拆分 Uralda；无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:100",
+      "evidence_rows": [
+        1712,
+        32420
+      ],
+      "source_excerpt": "Footprints of the Wyrm",
+      "reason": "保留巨龙足迹；书名译法可通。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1712 称古书名为 Footprints of the Wyrm，内容关于 Dragon Pass；32420 宝藏列表列名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "巨龙足迹对应书名，Wyrm 取龙义，未误作蛇。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "古书宝物，归物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e5/e6 等同为宝物但名称不同；不混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:101",
+      "evidence_rows": [
+        1733,
+        1750,
+        2823,
+        2824,
+        7273,
+        23816
+      ],
+      "source_excerpt": "Our explorers met with the Orlanthi of Tarsh",
+      "reason": "保留塔什；与塔什王国分层一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1733/1750 称 Tarsh 为北方 Orlanthi 之地；2823/2824 称 recently explored；7273 称西北王国；23816 称 far northwest。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "塔什统一对应 Tarsh，与 Tarshite 的塔什人用法一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Tarsh 是可探索、可开战的地区/王国所在地，归地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "e10 Tarsh 为地名，e11 Kingdom of Tarsh 为政体；塔什/塔什王国共享核心名且层级区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:373",
+      "evidence_rows": [
+        9010,
+        24644
+      ],
+      "source_excerpt": "the Kingdom of Tarsh",
+      "reason": "保留塔什王国；组织分类按政治实体处理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9010 称 Kingdom of Tarsh 及其对 Lunar Empire 的战争；24644 称 Orlanthi kingdom of Tarsh。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "塔什王国对应 Kingdom of Tarsh，与 e10 的塔什一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Kingdom 为政治实体/王国，归组织，与地名 Tarsh 区分。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "e10/e11 为地名与政体两个层级，不混同；e12 的 Kingdom 组件不构成同义。"
+        }
+      }
+    },
+    {
+      "ref": "terms:922",
+      "evidence_rows": [
+        25230
+      ],
+      "source_excerpt": "the Kingdom of the Dead",
+      "reason": "保留死者之国；神话地名分类成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25230 称 Sofala 渡 Orlanth 及同伴过海往 Kingdom of the Dead，是神话地点。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "死者之国对应 Kingdom of the Dead，保留国度/王国意象。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神话地点，归地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e11 仅共享 Kingdom 组件，所指不同；死者之国不与塔什王国混同。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:93",
+    "terms:203",
+    "terms:529",
+    "terms:692",
+    "terms:94",
+    "terms:95",
+    "terms:96",
+    "terms:97",
+    "terms:100",
+    "terms:101",
+    "terms:373",
+    "terms:922"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

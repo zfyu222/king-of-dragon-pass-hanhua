@@ -1,0 +1,155 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e3 全部合并条目：Valind=瓦林德、Urox=乌罗克斯、Maran Gor=玛兰戈尔；三者均为神祇专名，分类由身份改为其他并补足 term_reason；e2 与只读关联 e4 为同一神带称号，非另名冲突。",
+  "acknowledged_findings": [
+    "F0356"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "category_path": "其他",
+        "term_reason": "格洛兰萨寒冷/冬季与冰川之神瓦林德（Valind），冰魔 hollri 的驱使者和奥兰斯（Orlanth）的古老敌神；原文用于祭祀、天气与敌对神语境。"
+      },
+      "reason": "Valind 是神祇专名而非身份角色；多数候选及原文语境界定为神名，分类改为其他，并补足可证实的含义与使用范围。",
+      "evidence_rows": [
+        2240,
+        3668,
+        3696,
+        33878
+      ],
+      "table": "terms",
+      "index": 2
+    },
+    {
+      "patch": {
+        "category_path": "其他",
+        "term_reason": "格洛兰萨神祇乌罗克斯（Urox），又称风暴公牛（Storm Bull）、净化之风（Cleansing Wind），混沌之敌，奥兰斯（Orlanth）的兄弟；原文用于祭祀、求战和对抗混沌。"
+      },
+      "reason": "Urox 是神祇专名而非身份角色；统一采用多数候选及读音支持的乌罗克斯，分类改为其他，并补足称号与使用范围。",
+      "evidence_rows": [
+        2163,
+        17257,
+        24697,
+        33874,
+        33408
+      ],
+      "table": "terms",
+      "index": 6
+    },
+    {
+      "patch": {
+        "category_path": "其他",
+        "term_reason": "格洛兰萨大地女神玛兰戈尔（Maran Gor），厄纳尔达（Ernalda）的姐妹，司地震与破坏；原文常见于祭祀、地震和土块圣物语境。"
+      },
+      "reason": "Maran Gor 是神祇专名而非身份角色；统一采用多数候选玛兰戈尔，分类改为其他，并补足可证实的含义与使用范围。",
+      "evidence_rows": [
+        1742,
+        7180,
+        33389,
+        33874
+      ],
+      "table": "terms",
+      "index": 9
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:2",
+      "evidence_rows": [
+        2240,
+        3668,
+        3696,
+        33878
+      ],
+      "source_excerpt": "Valind, the cold, creeping god of ice and glaciers",
+      "reason": "Valind 为寒冷/冬季与冰川之神，所有候选译名均为瓦林德；分类改为其他并补足 term_reason，未发现译名冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 2240 原文 'Valind, the cold, creeping god of ice and glaciers' 明确 Valind 为神名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "e1 所有提取候选均作瓦林德；音译一致，未发现需改译的异名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文 2240/33878 表明其为冰与冬季之神，不是社会身份；patch 将 category_path 从身份改为其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "e1 候选译名全部为瓦林德；与 e2/e3 不同神，无共用译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:6",
+      "evidence_rows": [
+        2163,
+        17257,
+        24697,
+        33874,
+        33408
+      ],
+      "source_excerpt": "Urox is the foe of Chaos.",
+      "reason": "Urox 为风暴公牛/混沌之敌，候选有乌罗克斯、乌洛克斯、乌洛克，按多数及 OOR-ox 读音统一为乌罗克斯；分类改为其他并补足 term_reason；只读 e4 是同神带称号，非另名冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 17257 原文 'Urox is the foe of Chaos.' 明确 Urox 为神名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "候选多数作乌罗克斯，且 33408 标注读音 OOR-ox 支持该译名；保留乌罗克斯，乌洛克斯/乌洛克视为非标准变体。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "24697/33874 显示其为风暴公牛、混沌之敌与奥兰斯兄弟，属神祇专名而非身份角色；patch 改为其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "e2 候选统一指同一神；只读 e4 'Urox, the Storm Bull' 为同神带称号，e4 译文仅保留名字但不在本批修改范围，不构成另名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:9",
+      "evidence_rows": [
+        1742,
+        7180,
+        33389,
+        33874
+      ],
+      "source_excerpt": "Maran Gor, the destructive goddess of shaking earth",
+      "reason": "Maran Gor 为厄纳尔达之姐妹、地震与破坏女神，候选有玛兰戈尔、马兰戈尔、玛兰·戈尔，按多数统一为玛兰戈尔；分类改为其他并补足 term_reason。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 1742 原文 'Maran Gor, the destructive goddess of shaking earth' 明确其为神名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "候选多数作玛兰戈尔，33388 音标 MAH-rahn GOR 支持该统一形式；马兰戈尔/玛兰·戈尔视为非标准变体。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "33389/33874 表明其为厄纳尔达之姐妹、地震与破坏女神，属神祇专名而非身份角色；patch 改为其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "e3 候选均指同一地震/破坏女神，统一为玛兰戈尔；与 e1/e2 无译名冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:2",
+    "terms:6",
+    "terms:9"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

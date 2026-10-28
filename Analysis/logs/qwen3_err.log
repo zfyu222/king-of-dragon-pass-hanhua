@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "D:\StaticHanHua\Tools\image_text\image_workflow.py", line 65, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\StaticHanHua\Tools\image_text\image_workflow.py", line 41, in main
+    result=qwen_batches(a.out,a.batch);result=dict(completed=len(result['images']),invocation=result['invocation'])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\StaticHanHua\Tools\image_text\tiered.py", line 99, in qwen_batches
+    with Server() as server:receipt=run(folder,server.endpoint)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\StaticHanHua\Tools\image_text\local_vlm.py", line 69, in run
+    try:return _run(out,client,limit)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\StaticHanHua\Tools\image_text\local_vlm.py", line 126, in _run
+    if failures:raise RuntimeError('Local inference stopped; see local_vlm/report.json')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Local inference stopped; see local_vlm/report.json

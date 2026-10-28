@@ -1,0 +1,139 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 e1-e3 核对：将 Humakti 统一为“胡马科特信徒”，Humakti Deathlord 译为“胡马科特死亡领主”；核对 f1 所指 Deathlord/Death Lord 为同一头衔异写，共用“死亡领主”合理；修正 e1-e3 中超出原文证据范围的 term_reason。",
+  "acknowledged_findings": [
+    "F0400"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "胡马科特信徒",
+        "term_reason": "Humakt 的信徒、战士及教派成员；原文亦以 Humakti 作定语修饰 gifts、magic 等，名词译“胡马科特信徒”，定语用“胡马科特”。"
+      },
+      "reason": "统一候选译名，保留 Humakt 词根并覆盖名词/定语用法。",
+      "evidence_rows": [
+        20466,
+        26169,
+        28873
+      ],
+      "table": "terms",
+      "index": 25
+    },
+    {
+      "patch": {
+        "term_reason": "Humakti 教派的死亡领主头衔；原文称鸭人首领为 Upland Marsh 的 Humakti Deathlord，并强调即使身为鸭人仍是 Deathlord。"
+      },
+      "reason": "原说明中的“致命决斗/受礼遇”超出所引原文可证范围，收窄为头衔与出现场景。",
+      "evidence_rows": [
+        5198,
+        27640
+      ],
+      "table": "terms",
+      "index": 294
+    },
+    {
+      "patch": {
+        "term_reason": "Humakti 教派的死亡领主头衔；原文中一名鸭人首领以此身份出现在 Upland Marsh。"
+      },
+      "reason": "仅按 5198 可证内容描述，不把 5215 的决斗情节写入本条。",
+      "evidence_rows": [
+        5198
+      ],
+      "table": "terms",
+      "index": 295
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:25",
+      "evidence_rows": [
+        20466,
+        26169,
+        28873
+      ],
+      "source_excerpt": "Humakti are known for their strict code of honor.",
+      "reason": "Humakti 指 Humakt 教派的信徒/战士，也可作定语；统一译名并修正词条说明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "20466 直接以 Humakti 指遵循严格荣誉准则的教派成员；26169 的 Humakti gifts/beliefs 亦指其教派属性。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "候选译名不统一；按 Humakt 词根统一为“胡马科特信徒”，28873 的 Humakti spells 等定语场合用“胡马科特”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指信徒/战士身份，归入“身份”恰当。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e3“胡马科特死亡领主”共享“胡马科特”词根，与 e2“死亡领主”组合关系清楚。"
+        }
+      }
+    },
+    {
+      "ref": "terms:294",
+      "evidence_rows": [
+        5198,
+        27640
+      ],
+      "source_excerpt": "\\x01B~ may be a duck, but he is still a Deathlord.",
+      "reason": "Deathlord 是 Humakti 教派头衔，译“死亡领主”准确；修正说明中超出证据的决斗表述。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "5198 称鸭人首领为 Humakti Deathlord；27640 再次确认其 Deathlord 身份。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“死亡领主”对应 Deathlord 的头衔义，未误作普通“死亡之主”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "是教派死亡领主头衔，归入“身份”恰当。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f1 所指 e4 的 Death Lord 与本条 Deathlord 为同一头衔异写，共用“死亡领主”合理；与 e3 组合为“胡马科特死亡领主”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:295",
+      "evidence_rows": [
+        5198
+      ],
+      "source_excerpt": "a Humakti Deathlord of the Upland Marsh.",
+      "reason": "Humakti Deathlord 是复合头衔，译名与 e1/e2 组合一致；说明改为仅陈述 5198 可证内容。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "5198 原文为“a Humakti Deathlord of the Upland Marsh”，明确是 Humakti 教派的死亡领主头衔。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“胡马科特死亡领主”正确组合 Humakti 的定语形式与 Deathlord 的译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "复合头衔，归入“身份”恰当。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e1“胡马科特信徒”、e2“死亡领主”词根/头衔一致；原 term_reason 含 5198 之外的决斗情节，已收窄。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:25",
+    "terms:294",
+    "terms:295"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

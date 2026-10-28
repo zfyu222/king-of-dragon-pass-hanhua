@@ -1,0 +1,414 @@
+{
+  "review_complete": true,
+  "review_summary": "已审核 e1-e12；核对 f1 单复数共用译名与 f2 冠词变体题名，均非冲突；修正 Lunar thralls、Vingkot、ritual of truth、Humakt-cross 的译名一致性，并删除 Night People 无原文依据的说明。",
+  "acknowledged_findings": [
+    "F0368",
+    "F0425"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "月之奴隶",
+        "term_reason": "Lunar 作为与月帝国/月方阵营相关的修饰语，thralls 指奴隶；9584 中指被拒绝交给 Illator 的一批月方奴隶。"
+      },
+      "reason": "原译“月民奴隶”将 Lunar 固化为“月民”，与既有 thralls=奴隶及 Lunar Empire=月帝国的译名体系不一致；改为保留“月”义的“月之奴隶”。",
+      "evidence_rows": [
+        9584
+      ],
+      "table": "terms",
+      "index": 909
+    },
+    {
+      "patch": {
+        "recommended_translation": "温科特圣痕",
+        "term_reason": "Vingkot 的圣痕；9336 称其为赌注，32469 将其列为宝藏。Vingkot 按既有译名作温科特。"
+      },
+      "reason": "原译“文格科特圣痕”与关联条目 Vingkot Orlanthsson=温科特奥兰斯松不一致；统一 Vingkot 为温科特。",
+      "evidence_rows": [
+        9336,
+        32469
+      ],
+      "table": "terms",
+      "index": 910
+    },
+    {
+      "patch": {
+        "recommended_translation": "真理仪式",
+        "term_reason": "Lhankor Mhy 的真理仪式；9401 指要求对方接受 Lhankor Mhy 的真理仪式。"
+      },
+      "reason": "truth 在关联条目 the Mistress of Truth 中译作“真理”，原译“真言”不一致。",
+      "evidence_rows": [
+        9401
+      ],
+      "table": "terms",
+      "index": 915
+    },
+    {
+      "patch": {
+        "recommended_translation": "胡马卡特十字",
+        "term_reason": "与 Humakt 相关的十字形物件；24216 以 his Humakt-cross 作为 Robarth 成为 Burthalor 的 meat-maker 的凭借，具体形制未明。"
+      },
+      "reason": "Humakt 在关联条目中统一作“胡马卡特”，原译“胡马克特”不一致。",
+      "evidence_rows": [
+        24216
+      ],
+      "table": "terms",
+      "index": 918
+    },
+    {
+      "patch": {
+        "term_reason": "原文以 the Night People 称呼与玩家一方谈判并交战的群体；27043 中他们自称来战斗并吃阵亡者。"
+      },
+      "reason": "原 term_reason 称与 Night Tribe 互称，但 27040/27043 仅有 Night People；按实际原文删除无依据说法。",
+      "evidence_rows": [
+        27040,
+        27043
+      ],
+      "table": "terms",
+      "index": 932
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:895",
+      "evidence_rows": [
+        34295
+      ],
+      "source_excerpt": "Tournament of the Masters of Luck and Death",
+      "reason": "专名与原文一致，译名完整表达比武会性质；未发现关联冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34295 原文明确出现 Tournament of the Masters of Luck and Death。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译为“幸运与死亡大师比武会”，保留 Masters 与 Tournament 的核心义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "为特定比武会名称，归入“其他”符合可选分类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现同形专名或关联译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:896",
+      "evidence_rows": [
+        34279,
+        34285
+      ],
+      "source_excerpt": "Battle of Arrowmound",
+      "reason": "战役专名与两处原文一致，译名简洁明确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34279 与 34285 均出现 Battle of Arrowmound。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“箭丘之战”对应 Arrowmound 与 Battle 的战役含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "为战役名称，归入“其他”符合可选分类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两处原文同名同译，未发现冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:897",
+      "evidence_rows": [
+        34365
+      ],
+      "source_excerpt": "Sword Story",
+      "reason": "神话标题与原文一致；与带冠词变体共用译名无冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34365 原文标题即为 Sword Story。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“剑的故事”准确表达标题含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "为神话/故事标题，归入“其他”符合可选分类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与只读关联 e14/The Sword Story 仅冠词差异，同译“剑的故事”；f2 已核对，无别名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:901",
+      "evidence_rows": [
+        25539,
+        25550,
+        34243,
+        34264
+      ],
+      "source_excerpt": "an ancient flint sword called a klanth",
+      "reason": "klanth 为古代燧石剑类型名，音译并保持核心词统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34243 原文明确称 an ancient flint sword called a klanth。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“克兰斯”为音译，作为 klanth 的名称；与 Klanth of Orlanth 中核心词一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "klanth 是古代燧石剑，归入“物品”符合分类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "25539、25550、34243、34264 均指同一武器类型，译名统一；e11 保留“克兰斯”核心词。"
+        }
+      }
+    },
+    {
+      "ref": "terms:909",
+      "evidence_rows": [
+        9584
+      ],
+      "source_excerpt": "Lunar thralls you refused to turn over to Illator",
+      "reason": "Lunar 修饰 thralls；原译将 Lunar 固化为“月民”，已按既有术语体系改为“月之奴隶”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9584 原文为 the Lunar thralls，Lunar 修饰 thralls。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原“月民奴隶”改为“月之奴隶”，保留 thralls=奴隶，并以“月”对应 Lunar。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属奴隶身份/社会类别，归入“身份”符合分类。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "关联 thralls=奴隶、Lunar Empire=月帝国；采用“月之奴隶”避免与既有专名体系脱节。"
+        }
+      }
+    },
+    {
+      "ref": "terms:910",
+      "evidence_rows": [
+        9336,
+        32469
+      ],
+      "source_excerpt": "Sacred Mark of Vingkot",
+      "reason": "Vingkot 译名需与关联条目统一；已由“文格科特圣痕”修正为“温科特圣痕”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9336 与 32469 均出现 Sacred Mark of Vingkot。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原“文格科特圣痕”与关联 Vingkot Orlanthsson=温科特奥兰斯松不一致；统一为“温科特圣痕”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "32469 将其列入宝藏，归入“物品”符合分类。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "Vingkot 采用既有译名“温科特”，消除与 e15 的译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:915",
+      "evidence_rows": [
+        9401
+      ],
+      "source_excerpt": "ritual of truth",
+      "reason": "truth 与关联条目统一为“真理”；原“真言仪式”改为“真理仪式”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9401 原文为 Lhankor Mhy 的 ritual of truth。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "truth 在关联 the Mistress of Truth 中译“真理”，改为“真理仪式”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "为特定仪式，归入“其他”符合分类。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 Truth=真理的既有译名一致，修正“真言”的歧义。"
+        }
+      }
+    },
+    {
+      "ref": "terms:917",
+      "evidence_rows": [
+        24094,
+        24261
+      ],
+      "source_excerpt": "One of our steads",
+      "reason": "steads 为 stead 的复数，指氏族农庄/居所；与单数形式共用“农庄”无冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "24261 原文 One of our steads，24094 亦作 steads。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“农庄”符合氏族居所/农庄语境。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "为普通居所/农庄概念而非专名，归入“其他”符合分类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "steads 与只读关联 e13 的 stead 为单复数同词变体，同译“农庄”；f1 已核对，无别名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:918",
+      "evidence_rows": [
+        24216
+      ],
+      "source_excerpt": "his Humakt-cross",
+      "reason": "Humakt 译名需与关联条目统一；已由“胡马克特十字”修正为“胡马卡特十字”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "24216 原文为 his Humakt-cross。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "Humakt 按关联条目统一作“胡马卡特”，改为“胡马卡特十字”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "为与 Humakt 相关的物件，归入“物品”；形制未明故维持 reference。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "修正原“胡马克特”与 e17 Humakt=胡马卡特的不一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:920",
+      "evidence_rows": [
+        25026,
+        25027
+      ],
+      "source_excerpt": "the Cow Goddess will withhold her bounty from us",
+      "reason": "Cow Goddess 为 Uralda 的称号，译名明确且两处一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25026 与 25027 均称 the Cow Goddess。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“母牛女神”保留称号及 Uralda 所指。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "为女神称号/身份，归入“身份”符合分类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两处称号一致，未发现冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:925",
+      "evidence_rows": [
+        25520,
+        25638,
+        32452
+      ],
+      "source_excerpt": "the magical Klanth of Orlanth",
+      "reason": "Klanth of Orlanth 为特定魔法武器，Orlanth 与 klanth 的核心译名均保持一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25520 原文为 the magical Klanth of Orlanth。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“奥兰斯之克兰斯”与 Orlanth=奥兰斯、klanth=克兰斯一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "为魔法武器/宝物，归入“物品”符合分类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "25638、32452 同名为 Klanth of Orlanth；核心专名译法统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:932",
+      "evidence_rows": [
+        27040,
+        27043
+      ],
+      "source_excerpt": "the Night People",
+      "reason": "Night People 为具名群体；原 term_reason 中 Night Tribe 互称说法无原文依据，已修正说明。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "原 term_reason 称与 Night Tribe 互称，但 27040/27043 仅有 Night People；已按实际原文修正说明。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“夜之民”对应 Night People。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "为具名群体/部族，归入“组织”符合分类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "27040、27041、27043 三处均作 Night People，译名一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:895",
+    "terms:896",
+    "terms:897",
+    "terms:901",
+    "terms:909",
+    "terms:910",
+    "terms:915",
+    "terms:917",
+    "terms:918",
+    "terms:920",
+    "terms:925",
+    "terms:932"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

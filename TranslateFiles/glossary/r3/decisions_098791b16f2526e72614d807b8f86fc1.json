@@ -1,0 +1,533 @@
+{
+  "review_complete": true,
+  "review_summary": "核对12个场景资源标识，均保留原文作为内部标识；分类正确，已统一补充 whole_record 适用范围，避免全局禁翻并保持同批一致。",
+  "acknowledged_findings": [
+    "F0276",
+    "F0278",
+    "F0279",
+    "F0280",
+    "F0281",
+    "F0282",
+    "F0283",
+    "F0284",
+    "F0285",
+    "F0286",
+    "F0287",
+    "F0288"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "本批原文为独立场景资源标识 scene043L，仅按完整记录保留原文，避免误保护正文片段。"
+        }
+      },
+      "reason": "补充适用范围的运行保护，限定为完整资源标识。",
+      "evidence_rows": [
+        30809
+      ],
+      "table": "non_translate",
+      "index": 390
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "本批原文为独立场景资源标识 scene035，仅按完整记录保留原文，避免误保护正文片段。"
+        }
+      },
+      "reason": "补充适用范围的运行保护，限定为完整资源标识。",
+      "evidence_rows": [
+        30811
+      ],
+      "table": "non_translate",
+      "index": 392
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "本批原文为独立场景资源标识 scene050，仅按完整记录保留原文，避免误保护正文片段。"
+        }
+      },
+      "reason": "补充适用范围的运行保护，限定为完整资源标识。",
+      "evidence_rows": [
+        30812
+      ],
+      "table": "non_translate",
+      "index": 393
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "本批原文为独立场景资源标识 scene025，仅按完整记录保留原文，避免误保护正文片段。"
+        }
+      },
+      "reason": "补充适用范围的运行保护，限定为完整资源标识。",
+      "evidence_rows": [
+        30813
+      ],
+      "table": "non_translate",
+      "index": 394
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "本批原文为独立场景资源标识 scene041，仅按完整记录保留原文，避免误保护正文片段。"
+        }
+      },
+      "reason": "补充适用范围的运行保护，限定为完整资源标识。",
+      "evidence_rows": [
+        30814
+      ],
+      "table": "non_translate",
+      "index": 395
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "本批原文为独立场景资源标识 scene031，仅按完整记录保留原文，避免误保护正文片段。"
+        }
+      },
+      "reason": "补充适用范围的运行保护，限定为完整资源标识。",
+      "evidence_rows": [
+        30815
+      ],
+      "table": "non_translate",
+      "index": 396
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "本批原文为独立场景资源标识 scene044，仅按完整记录保留原文，避免误保护正文片段。"
+        }
+      },
+      "reason": "补充适用范围的运行保护，限定为完整资源标识。",
+      "evidence_rows": [
+        30816
+      ],
+      "table": "non_translate",
+      "index": 397
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "本批原文为独立场景资源标识 scene040，仅按完整记录保留原文，避免误保护正文片段。"
+        }
+      },
+      "reason": "补充适用范围的运行保护，限定为完整资源标识。",
+      "evidence_rows": [
+        30817
+      ],
+      "table": "non_translate",
+      "index": 398
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "本批原文为独立场景资源标识 scene045，仅按完整记录保留原文，避免误保护正文片段。"
+        }
+      },
+      "reason": "补充适用范围的运行保护，限定为完整资源标识。",
+      "evidence_rows": [
+        30818
+      ],
+      "table": "non_translate",
+      "index": 399
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "本批原文为独立场景资源标识 scene039，仅按完整记录保留原文，避免误保护正文片段。"
+        }
+      },
+      "reason": "补充适用范围的运行保护，限定为完整资源标识。",
+      "evidence_rows": [
+        30819
+      ],
+      "table": "non_translate",
+      "index": 400
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "本批原文为独立场景资源标识 scene032，仅按完整记录保留原文，避免误保护正文片段。"
+        }
+      },
+      "reason": "补充适用范围的运行保护，限定为完整资源标识。",
+      "evidence_rows": [
+        30820
+      ],
+      "table": "non_translate",
+      "index": 401
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "本批原文为独立场景资源标识 scene037，仅按完整记录保留原文，避免误保护正文片段。"
+        }
+      },
+      "reason": "补充适用范围的运行保护，限定为完整资源标识。",
+      "evidence_rows": [
+        30821
+      ],
+      "table": "non_translate",
+      "index": 402
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:390",
+      "evidence_rows": [
+        30809
+      ],
+      "source_excerpt": "scene043L",
+      "reason": "独立场景资源标识，保留原文；补充 whole_record 适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 ordinal 30809 为 scene043L，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为内部场景资源标识保留原文，无需翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确，但原条目缺适用范围；已补为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 scene 资源标识一致，均保留原文并按完整记录保护。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:392",
+      "evidence_rows": [
+        30811
+      ],
+      "source_excerpt": "scene035",
+      "reason": "独立场景资源标识，保留原文；补充 whole_record 适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 ordinal 30811 为 scene035，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为内部场景资源标识保留原文，无需翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确，但原条目缺适用范围；已补为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 scene 资源标识一致，均保留原文并按完整记录保护。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:393",
+      "evidence_rows": [
+        30812
+      ],
+      "source_excerpt": "scene050",
+      "reason": "独立场景资源标识，保留原文；补充 whole_record 适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 ordinal 30812 为 scene050，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为内部场景资源标识保留原文，无需翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确，但原条目缺适用范围；已补为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 scene 资源标识一致，均保留原文并按完整记录保护。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:394",
+      "evidence_rows": [
+        30813
+      ],
+      "source_excerpt": "scene025",
+      "reason": "独立场景资源标识，保留原文；补充 whole_record 适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 ordinal 30813 为 scene025，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为内部场景资源标识保留原文，无需翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确，但原条目缺适用范围；已补为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 scene 资源标识一致，均保留原文并按完整记录保护。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:395",
+      "evidence_rows": [
+        30814
+      ],
+      "source_excerpt": "scene041",
+      "reason": "独立场景资源标识，保留原文；补充 whole_record 适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 ordinal 30814 为 scene041，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为内部场景资源标识保留原文，无需翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确，但原条目缺适用范围；已补为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 scene 资源标识一致，均保留原文并按完整记录保护。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:396",
+      "evidence_rows": [
+        30815
+      ],
+      "source_excerpt": "scene031",
+      "reason": "独立场景资源标识，保留原文；补充 whole_record 适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 ordinal 30815 为 scene031，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为内部场景资源标识保留原文，无需翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确，但原条目缺适用范围；已补为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 scene 资源标识一致，均保留原文并按完整记录保护。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:397",
+      "evidence_rows": [
+        30816
+      ],
+      "source_excerpt": "scene044",
+      "reason": "独立场景资源标识，保留原文；补充 whole_record 适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 ordinal 30816 为 scene044，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为内部场景资源标识保留原文，无需翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确，但原条目缺适用范围；已补为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 scene 资源标识一致，均保留原文并按完整记录保护。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:398",
+      "evidence_rows": [
+        30817
+      ],
+      "source_excerpt": "scene040",
+      "reason": "独立场景资源标识，保留原文；补充 whole_record 适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 ordinal 30817 为 scene040，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为内部场景资源标识保留原文，无需翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确，但原条目缺适用范围；已补为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 scene 资源标识一致，均保留原文并按完整记录保护。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:399",
+      "evidence_rows": [
+        30818
+      ],
+      "source_excerpt": "scene045",
+      "reason": "独立场景资源标识，保留原文；补充 whole_record 适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 ordinal 30818 为 scene045，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为内部场景资源标识保留原文，无需翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确，但原条目缺适用范围；已补为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 scene 资源标识一致，均保留原文并按完整记录保护。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:400",
+      "evidence_rows": [
+        30819
+      ],
+      "source_excerpt": "scene039",
+      "reason": "独立场景资源标识，保留原文；补充 whole_record 适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 ordinal 30819 为 scene039，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为内部场景资源标识保留原文，无需翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确，但原条目缺适用范围；已补为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 scene 资源标识一致，均保留原文并按完整记录保护。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:401",
+      "evidence_rows": [
+        30820
+      ],
+      "source_excerpt": "scene032",
+      "reason": "独立场景资源标识，保留原文；补充 whole_record 适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 ordinal 30820 为 scene032，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为内部场景资源标识保留原文，无需翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确，但原条目缺适用范围；已补为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 scene 资源标识一致，均保留原文并按完整记录保护。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:402",
+      "evidence_rows": [
+        30821
+      ],
+      "source_excerpt": "scene037",
+      "reason": "独立场景资源标识，保留原文；补充 whole_record 适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 ordinal 30821 为 scene037，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为内部场景资源标识保留原文，无需翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确，但原条目缺适用范围；已补为 whole_record。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批 scene 资源标识一致，均保留原文并按完整记录保护。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:390",
+    "non_translate:392",
+    "non_translate:393",
+    "non_translate:394",
+    "non_translate:395",
+    "non_translate:396",
+    "non_translate:397",
+    "non_translate:398",
+    "non_translate:399",
+    "non_translate:400",
+    "non_translate:401",
+    "non_translate:402"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

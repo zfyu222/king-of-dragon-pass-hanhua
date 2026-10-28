@@ -1,0 +1,213 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1-e6 的来源、译名、分类与一致性。e2 补齐 Kallyr 缺失的 enforcement、term_kind 与 term_reason；e6 依据 20590 的男性指称修正性别并更新 term_reason。f1 所涉全称变体与原名同指 Chinkis Mor，同译“钦基斯莫尔”成立，不是不同专名冲突。",
+  "acknowledged_findings": [
+    "F0350"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "enforcement": "required",
+        "term_kind": "proper_name",
+        "term_reason": "被盾中养大的孤女，后加入温加（Vinga）教团成为女战士；9509原文明确“Her name is Kallyr”，11067称其加入Vinga教团并显露战斗天赋。"
+      },
+      "reason": "原行缺少 enforcement 与 term_kind，且 term_reason 不完整；补齐为强制专名并给出原文依据。",
+      "evidence_rows": [
+        9509,
+        11067
+      ],
+      "table": "characters",
+      "index": 28
+    },
+    {
+      "patch": {
+        "gender": "男性",
+        "term_reason": "精灵领主/军阀，率绿叶大军绑架厄纳尔达；20590用 elf lord 与 his leafy army 指称，表明为男性。"
+      },
+      "reason": "依据20590的男性指称和31954的 Elf Warlord 修正性别，并更新术语依据。",
+      "evidence_rows": [
+        20590,
+        31954
+      ],
+      "table": "characters",
+      "index": 78
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:24",
+      "evidence_rows": [
+        2090,
+        2093
+      ],
+      "source_excerpt": "The third is Derik Poljoni, the raider of Prax who was born into our clan, but now leads his own tribe of nomadic outcasts.",
+      "reason": "专名与译名成立，分类及强制属性完整。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2090说明其生于本氏族、现领导波尔约尼游牧弃民；2093给出完整专名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“德里克波尔约尼”音译Derik Poljoni，与波尔约尼相关译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 下有名个体，proper_name/required 适当。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条目候选一致取“德里克波尔约尼”，无同形普通词误收。"
+        }
+      }
+    },
+    {
+      "ref": "characters:28",
+      "evidence_rows": [
+        9509,
+        11067
+      ],
+      "source_excerpt": "Her name is Kallyr.",
+      "reason": "补齐缺失元数据后成立；Kallyr 为女性专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9509明确婴儿名为Kallyr；11067称其为被盾中养大的孤女并加入Vinga教团。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Kallyr音译为“卡莉尔”，与相关“开路者卡莉尔”用名一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原行缺少 enforcement 与 term_kind；已补为 required/proper_name，属characters中的有名个体。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各候选均取“卡莉尔”，未出现需区分的同名异人证据。"
+        }
+      }
+    },
+    {
+      "ref": "characters:42",
+      "evidence_rows": [
+        2957
+      ],
+      "source_excerpt": "Actually, according to the legend, this oven was made not by Ernalda, but by her great priestess Ornore Crust-Maker.",
+      "reason": "称号译法与专名分类成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2957称她是Ernalda的伟大女祭司Ornore Crust-Maker，并参与烤炉传说。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“奥诺尔制壳者”音译Ornore并意译Crust-Maker，符合该称号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "传奇女祭司，属characters专名；required/proper_name适当。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Crust-Maker在此作为称号译“制壳者”，与泛称Maker的“造物主”语境不同，不强行统一。"
+        }
+      }
+    },
+    {
+      "ref": "characters:59",
+      "evidence_rows": [
+        4999,
+        16315,
+        32896
+      ],
+      "source_excerpt": "The first king was Vingkot, son of Orlanth.",
+      "reason": "主要译名统一为温科特，分类成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "16315明确Vingkot为Orlanth之子、首位国王；4999等称其为风暴时代文化英雄。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "统一取“温科特”；候选中的维因科特、温克特、文格科特为异译，未采用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "风暴时代君王/文化英雄，属characters专名；required/proper_name适当。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选均指同一Vingkot，核心名取“温科特”，复合名可用温科特衔接。"
+        }
+      }
+    },
+    {
+      "ref": "characters:63",
+      "evidence_rows": [
+        5896,
+        25229
+      ],
+      "source_excerpt": "Chalana Arroy healed the angry Wasp Queen when her nest fell, and healed all her children. To this day, wasps will not bother a healer.",
+      "reason": "神话称号译法与分类成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "5896与25229均述Chalana Arroy治愈愤怒的Wasp Queen及其子嗣，是神话个体。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“黄蜂女王”直译Wasp Queen，作为神话称号自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神话女性个体/称号，归入characters并设proper_name、required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与“羽马女王”等Queen类称号均用“女王”，但本体作为黄蜂女王独立。"
+        }
+      }
+    },
+    {
+      "ref": "characters:78",
+      "evidence_rows": [
+        20590,
+        31954
+      ],
+      "source_excerpt": "Elmal guarded Orlanth’s clan hall when the elf lord, Chinkis Mor, brought his leafy army to kidnap Ernalda.",
+      "reason": "修正性别与依据后成立；译名稳定。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "20590称其为elf lord并带his leafy army，31954称Elf Warlord；据此将term_reason由“未明示性别”改为男性。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“钦基斯莫尔”音译Chinkis Mor，与“Chinkis Mor, the Elf Warlord”全称译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "精灵领主/军阀，属characters专名；required/proper_name适当。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同一人物的全称变体同译“钦基斯莫尔”，属同一专名而非不同名共用译名。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:24",
+    "characters:28",
+    "characters:42",
+    "characters:59",
+    "characters:63",
+    "characters:78"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

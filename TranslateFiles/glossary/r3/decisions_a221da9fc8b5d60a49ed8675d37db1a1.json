@@ -1,0 +1,371 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 e1-e11 审校：确认 e1 与 f1 拼写变体同实体；修正 e2、e9 译名；隔离误作地名的 Pella 并新增陶艺女神人物条目；其余条目保留。",
+  "acknowledged_findings": [
+    "F0359"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "亲法老之王",
+        "term_reason": "原文以 the Pharaoh-Loving King 作某王称号/修饰语，指亲附法老的国王；译名保留“法老”。"
+      },
+      "reason": "“爱法老之王”生硬，且称号应自然表达亲附法老；改作“亲法老之王”并与 Pharaoh=法老 一致。",
+      "evidence_rows": [
+        2215
+      ],
+      "table": "terms",
+      "index": 146
+    },
+    {
+      "patch": {
+        "recommended_translation": "凯塔埃拉",
+        "term_reason": "Kathaela 为地名，2402 称其被改称 Holy Country；采用“凯塔埃拉”以与同一地名 Kethaela 的常见译名一致。"
+      },
+      "reason": "Kathaela 与 Kethaela 同指后称 Holy Country 的旧地；“卡赛拉”会与同一地名译名分裂，统一为“凯塔埃拉”。",
+      "evidence_rows": [
+        2402
+      ],
+      "table": "terms",
+      "index": 157
+    }
+  ],
+  "quarantine": [
+    {
+      "reason": "31825/32894 明确 Pella 为陶艺女神，2218 的 clay jugs of Pella 应指其陶罐；现条目按地名收录且混入女神证据，分类错误，需移入 characters。",
+      "evidence_rows": [
+        2218,
+        31825,
+        32894
+      ],
+      "table": "terms",
+      "index": 153
+    }
+  ],
+  "additions": [
+    {
+      "table": "characters",
+      "row": {
+        "source": "Pella",
+        "recommended_translation": "佩拉",
+        "gender": "女性",
+        "term_kind": "proper_name",
+        "enforcement": "required",
+        "term_reason": "31825/32894 明确 Pella 为陶艺女神，制作第一个储粮陶罐；2218 的 clay jugs of Pella 指其陶罐。"
+      },
+      "reason": "原 e6 误将 Pella 归为地名；证据显示其为女神，需转 characters。",
+      "evidence_rows": [
+        2218,
+        31825,
+        32894
+      ]
+    }
+  ],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:144",
+      "evidence_rows": [
+        2212
+      ],
+      "source_excerpt": "the Empire of Wyrm’s Friends",
+      "reason": "历史帝国专名；同一实体的拼写变体共用译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2212 原文 'a jumbled text from the Empire of Wyrm’s Friends' 明确为历史帝国专名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“龙友帝国”简洁且与 f1 所列 Wyrms/Wyrm’s 变体译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "历史政权属组织，category_path=组织 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f1 的变体均指同一帝国，仅拼写不同，不构成多义冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:146",
+      "evidence_rows": [
+        2215
+      ],
+      "source_excerpt": "the Pharaoh-Loving King",
+      "reason": "称号/修饰语，指亲附法老的具体国王。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2215 原文作 'the Pharaoh-Loving King'，首字母大写，作为某王的称号/修饰语。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由“爱法老之王”改为“亲法老之王”；“亲法老”更自然表达其政治依附，并保留“法老”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "称号归入身份，category_path=身份 合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "2215 内含 Pharaoh；改译后与 e3 的“法老”一致，避免同一词根译名分裂。"
+        }
+      }
+    },
+    {
+      "ref": "terms:320",
+      "evidence_rows": [
+        34293
+      ],
+      "source_excerpt": "which he called Pharaoh",
+      "reason": "Belintar 自封的圣王称号，后泛指/特指该统治者。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34293 明确 Belintar 自封 sacral king，并称此称号为 Pharaoh。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“法老”作为该头衔的统一译名，符合全文多次用例。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "统治者称号归入身份，category_path=身份 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各证据中 the Pharaoh 均指同一统治者/头衔；与 e2 的“法老”词根一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:148",
+      "evidence_rows": [
+        2217
+      ],
+      "source_excerpt": "in the Mixing Bag",
+      "reason": "神话物品名，按字面译“混合袋”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2217 列出英雄事迹 'walking across Heortland in the Mixing Bag'，为具名神话物品。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“混合袋”直译且简短，未发现冲突候选。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名物品归入物品类，category_path=物品 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形异指或变体，译名可统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:151",
+      "evidence_rows": [
+        2217
+      ],
+      "source_excerpt": "the Chariot Men",
+      "reason": "预言中出现的群体名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2217 有 'predicting the arrival of the Chariot Men, who appeared the next year'，指特定群体。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“战车人”简短直译，适合群体名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "群体/势力归入组织类，category_path=组织 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Chariot Men 用法，无需分化。"
+        }
+      }
+    },
+    {
+      "ref": "terms:153",
+      "evidence_rows": [
+        2218,
+        31825,
+        32894
+      ],
+      "source_excerpt": "clay jugs of Pella",
+      "reason": "Pella 实为陶艺女神；原地名分类错误，已隔离并转人物条目。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "31825/32894 明确 Pella 是 pottery goddess；2218 的 clay jugs of Pella 应指其陶罐，不是地名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“佩拉”作为女神名的音译可用，新增人物条目沿用。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原地名分类错误；Pella 是女神/人物，已 quarantine 并新增 characters 条目。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "同形异指实为同一女神；统一“佩拉”，不再保留地名义。"
+        }
+      }
+    },
+    {
+      "ref": "terms:154",
+      "evidence_rows": [
+        2218
+      ],
+      "source_excerpt": "the Blue Men",
+      "reason": "预言中的群体名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2218 有 'When the Blue Men come...'，指特定群体。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“蓝人”简短直译，符合群体名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "群体名归入组织类，category_path=组织 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Blue Men 用法，译名可统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:156",
+      "evidence_rows": [
+        2405
+      ],
+      "source_excerpt": "grandmothers of Esrolia",
+      "reason": "地名 Esrolia。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2405 有 'grandmothers of Esrolia'，指地名/地区。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“埃斯罗利亚”为稳定音译，符合地名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名归入地名类，category_path=地名 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批各 Esrolia 用例均指同一地区，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:157",
+      "evidence_rows": [
+        2402
+      ],
+      "source_excerpt": "the land of Kathaela",
+      "reason": "Kathaela 为 Kethaela 异体拼写，后改称 Holy Country。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2402 有 'the land of Kathaela'，指后被改称 Holy Country 的旧地。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由“卡赛拉”改为“凯塔埃拉”，与同一地名 Kethaela 的常见译名统一，避免拼写变体分裂。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名归入地名类，category_path=地名 合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "2402 显示 Kathaela 与 Holy Country 同指；统一“凯塔埃拉”消除与 Kethaela 的译名不一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:158",
+      "evidence_rows": [
+        34293
+      ],
+      "source_excerpt": "a place called the Holy Country",
+      "reason": "Belintar 将 Kethaela 改称 Holy Country。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34293 明确 Belintar 宣布 Kethaela 为 'a place called the Holy Country'。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“圣国”简短，符合地名/国名风格。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "国名/地区归入地名类，category_path=地名 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e9 的 Kathaela/Kethaela 及 e3 的 Pharaoh 叙事一致，无译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:159",
+      "evidence_rows": [
+        2205,
+        2240
+      ],
+      "source_excerpt": "except Wildday",
+      "reason": "一周中的特定日子。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2205 有 'any day of the week except Wildday'，明确为星期名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“野日”简短，符合 UI/日历标签风格。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "星期名归入其他，category_path=其他 合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "2240 的 'next Wildday' 同义，译名可统一。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:144",
+    "terms:146",
+    "terms:320",
+    "terms:148",
+    "terms:151",
+    "terms:153",
+    "terms:154",
+    "terms:156",
+    "terms:157",
+    "terms:158",
+    "terms:159"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

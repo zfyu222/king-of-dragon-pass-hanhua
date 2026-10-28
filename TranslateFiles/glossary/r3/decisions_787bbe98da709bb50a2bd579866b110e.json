@@ -1,0 +1,59 @@
+{
+  "review_complete": true,
+  "review_summary": "已审校分配条目 e1：Chalana Arroy 为格洛兰萨神话中的治疗与慈悲女神、Arroin 之母；保留专名“查拉娜阿罗伊”，不加间隔号，归入 characters 的女神专名。四维核对通过，并补齐 term_reason 以说明神祇身份与职能。未发现 audit findings。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "治疗与慈悲女神，Arroin 之母；其面纱可安抚复仇之心。"
+      },
+      "reason": "现有 term_reason 仅写亲属与面纱关系，未概括其核心神祇身份；按 20392、1628、1781 补齐。",
+      "evidence_rows": [
+        20392,
+        1628,
+        1781
+      ],
+      "table": "characters",
+      "index": 3
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:3",
+      "evidence_rows": [
+        34098,
+        33339,
+        20392,
+        33874
+      ],
+      "source_excerpt": "Chalana Arroy is the virtuous goddess of healing and mercy.",
+      "reason": "核对原文可见其为格洛兰萨之女、Arroin 之母，并在神战中行医；20392 直接定义其为治疗与慈悲女神。译名采用无间隔号音译“查拉娜阿罗伊”，符合专名要求；characters 分类及女性性别均成立，相关英雄任务与祝福中的同一专名保持一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34098 明确称 Chalana Arroy 为格洛兰萨之女、Arroin 之母，并在神战中治愈众人；25959、20392 也将其作为治疗女神叙述。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "33339 标注发音为 chah-LAH-nuh a-ROY，支持音译“查拉娜阿罗伊”；按风格要求不加间隔号，不采用“查拉纳阿罗伊”“查拉娜·阿罗伊”等候选写法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "20392 直称其为 healing and mercy 的女神；作为有姓名、亲属关系与神职的神祇专名，归入 characters 且 gender 为女性合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "33874 以“Chalana Arroy the Healer”列名，33444 中“Chalana Arroy Heals the Scars”亦为同一专名；统一使用“查拉娜阿罗伊”，保留完整词形。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:3"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

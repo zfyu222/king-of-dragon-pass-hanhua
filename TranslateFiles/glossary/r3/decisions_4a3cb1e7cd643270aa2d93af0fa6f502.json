@@ -1,0 +1,492 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1-e12 的原文、译名、分类与一致性：四个群体名保留组织类专名；八个宝藏名均按具名宝物改为 proper_name/required，其中 Bullroarer 改译“牛吼器”；Arim's Cup 与 Godbone 的同形异写共用“阿里姆之杯”“神骨”。f1、f2 已核对，均为同一宝物的异写，不构成冲突。",
+  "acknowledged_findings": [
+    "F0384",
+    "F0414"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "32651 为群体专名 Malani（氏族/部族名），归入组织；译名统一为“马拉尼”。"
+      },
+      "reason": "补充群体专名的实际指称范围，分类与译名不变。",
+      "evidence_rows": [
+        32651
+      ],
+      "table": "terms",
+      "index": 1029
+    },
+    {
+      "patch": {
+        "term_reason": "32652 为群体专名 Cinsina（氏族/部族名），归入组织；译名统一为“辛西纳”。"
+      },
+      "reason": "补充群体专名的实际指称范围，分类与译名不变。",
+      "evidence_rows": [
+        32652
+      ],
+      "table": "terms",
+      "index": 1030
+    },
+    {
+      "patch": {
+        "term_reason": "32653 为群体专名 Torkani（氏族/部族名），归入组织；译名统一为“托尔卡尼”。"
+      },
+      "reason": "补充群体专名的实际指称范围，分类与译名不变。",
+      "evidence_rows": [
+        32653
+      ],
+      "table": "terms",
+      "index": 1031
+    },
+    {
+      "patch": {
+        "term_reason": "32654 为群体专名 Velisi（氏族/部族名），归入组织；译名统一为“维利西”。"
+      },
+      "reason": "补充群体专名的实际指称范围，分类与译名不变。",
+      "evidence_rows": [
+        32654
+      ],
+      "table": "terms",
+      "index": 1032
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "enforcement": "required",
+        "term_reason": "32383 宝藏列表中的具名酒杯，Arim's Cup 为唯一宝物名；译名统一为“阿里姆之杯”。"
+      },
+      "reason": "具名宝物应作专名冻结，修正原 game_term/reference 分类。",
+      "evidence_rows": [
+        32383
+      ],
+      "table": "terms",
+      "index": 1034
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "enforcement": "required",
+        "term_reason": "32386 宝藏列表中的具名袋囊，Bag of Friendship 为唯一宝物名。"
+      },
+      "reason": "具名宝物应作专名冻结，修正原 game_term/reference 分类。",
+      "evidence_rows": [
+        32386
+      ],
+      "table": "terms",
+      "index": 1036
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "enforcement": "required",
+        "term_reason": "32398 宝藏列表中的具名宝物，Bronze Fleece 为唯一宝物名。"
+      },
+      "reason": "具名宝物应作专名冻结，修正原 game_term/reference 分类。",
+      "evidence_rows": [
+        32398
+      ],
+      "table": "terms",
+      "index": 1038
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "enforcement": "required",
+        "recommended_translation": "牛吼器",
+        "term_reason": "32399 宝藏列表中的具名仪式器物，Bullroarer 指牛吼器；译名统一为“牛吼器”。"
+      },
+      "reason": "按具名宝物冻结，并采用更常见的中文器物名。",
+      "evidence_rows": [
+        32399
+      ],
+      "table": "terms",
+      "index": 1039
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "enforcement": "required",
+        "term_reason": "32402 宝藏列表中的具名陶牛，Clay Cow 为唯一宝物名。"
+      },
+      "reason": "具名宝物应作专名冻结，修正原 game_term/reference 分类。",
+      "evidence_rows": [
+        32402
+      ],
+      "table": "terms",
+      "index": 1041
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "enforcement": "required",
+        "term_reason": "32424 宝藏列表中的具名骨物，Godbone 为唯一宝物名；译名统一为“神骨”。"
+      },
+      "reason": "具名宝物应作专名冻结，修正原 game_term/reference 分类。",
+      "evidence_rows": [
+        32424
+      ],
+      "table": "terms",
+      "index": 1053
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "enforcement": "required",
+        "term_reason": "32429 宝藏列表中的具名面具，Greysage Mask 为唯一宝物名。"
+      },
+      "reason": "具名宝物应作专名冻结，修正原 game_term/reference 分类。",
+      "evidence_rows": [
+        32429
+      ],
+      "table": "terms",
+      "index": 1057
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "enforcement": "required",
+        "term_reason": "32431 宝藏列表中以 Urox 命名的具名锤，Hammer of Urox 为唯一宝物名。"
+      },
+      "reason": "具名宝物应作专名冻结，修正原 game_term/reference 分类。",
+      "evidence_rows": [
+        32431
+      ],
+      "table": "terms",
+      "index": 1059
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:1029",
+      "evidence_rows": [
+        32651
+      ],
+      "source_excerpt": "Malani",
+      "reason": "Malani 为群体专名，译名“马拉尼”与组织分类一致；仅补充 term_reason。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32651 原文为 Malani，列表中的群体名来源明确。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“马拉尼”为音译专名，简洁且无冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "群体/氏族名归入“组织”合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "term_reason 已补充为群体专名范围；译名和分类保持不变。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1030",
+      "evidence_rows": [
+        32652
+      ],
+      "source_excerpt": "Cinsina",
+      "reason": "Cinsina 为群体专名，译名“辛西纳”与组织分类一致；仅补充 term_reason。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32652 原文为 Cinsina，列表中的群体名来源明确。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“辛西纳”为音译专名，简洁且无冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "群体/氏族名归入“组织”合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "term_reason 已补充为群体专名范围；译名和分类保持不变。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1031",
+      "evidence_rows": [
+        32653
+      ],
+      "source_excerpt": "Torkani",
+      "reason": "Torkani 为群体专名，译名“托尔卡尼”与组织分类一致；仅补充 term_reason。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32653 原文为 Torkani，列表中的群体名来源明确。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“托尔卡尼”为音译专名，简洁且无冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "群体/氏族名归入“组织”合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "term_reason 已补充为群体专名范围；译名和分类保持不变。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1032",
+      "evidence_rows": [
+        32654
+      ],
+      "source_excerpt": "Velisi",
+      "reason": "Velisi 为群体专名，译名“维利西”与组织分类一致；仅补充 term_reason。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32654 原文为 Velisi，列表中的群体名来源明确。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“维利西”为音译专名，简洁且无冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "群体/氏族名归入“组织”合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "term_reason 已补充为群体专名范围；译名和分类保持不变。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1034",
+      "evidence_rows": [
+        32383
+      ],
+      "source_excerpt": "Arim's Cup",
+      "reason": "Arim's Cup 是宝藏列表中的具名酒杯，应作专名冻结；译名“阿里姆之杯”可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32383 原文为 Arim's Cup，宝藏列表条目来源明确。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“阿里姆之杯”保留 Arim 音译和物品属性，与同形异写共用译名无冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名酒杯归入“物品”合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原 game_term/reference 与具名宝物性质不符，已改为 proper_name/required，并统一“阿里姆之杯”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1036",
+      "evidence_rows": [
+        32386
+      ],
+      "source_excerpt": "Bag of Friendship",
+      "reason": "Bag of Friendship 是具名袋囊，应作专名冻结；译名“友谊之袋”可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32386 原文为 Bag of Friendship，宝藏列表条目来源明确。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“友谊之袋”直译名称并保持短标签，未见冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名袋囊归入“物品”合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原 game_term/reference 改为 proper_name/required，符合具名袋囊的专名用法。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1038",
+      "evidence_rows": [
+        32398
+      ],
+      "source_excerpt": "Bronze Fleece",
+      "reason": "Bronze Fleece 是具名宝物，应作专名冻结；译名“青铜羊毛”可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32398 原文为 Bronze Fleece，宝藏列表条目来源明确。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“青铜羊毛”保留材质与 Fleece 的字面义，适合作宝物名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名宝物归入“物品”合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原 game_term/reference 改为 proper_name/required，分类与译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1039",
+      "evidence_rows": [
+        32399
+      ],
+      "source_excerpt": "Bullroarer",
+      "reason": "Bullroarer 是具名仪式器物，应作专名冻结；采用更常见的“牛吼器”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32399 原文为 Bullroarer，宝藏列表条目来源明确。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原文 Bullroarer 指牛吼器这一仪式器物；“牛吼器”较“牛吼板”更符合常见中文名，且保持短标签。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名仪式器物归入“物品”合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原 game_term/reference 改为 proper_name/required，译名同步修正。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1041",
+      "evidence_rows": [
+        32402
+      ],
+      "source_excerpt": "Clay Cow",
+      "reason": "Clay Cow 是具名陶牛，应作专名冻结；译名“陶牛”可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32402 原文为 Clay Cow，宝藏列表条目来源明确。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“陶牛”简洁对应 Clay Cow，未改变字面义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名陶牛归入“物品”合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原 game_term/reference 改为 proper_name/required，符合具名宝物。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1053",
+      "evidence_rows": [
+        32424
+      ],
+      "source_excerpt": "Godbone",
+      "reason": "Godbone 是具名骨物，应作专名冻结；译名“神骨”与异写一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32424 原文为 Godbone，宝藏列表条目来源明确。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“神骨”简洁，与同形异写 God Bone 的译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名骨物归入“物品”合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原 game_term/reference 改为 proper_name/required；f2 的同译名对应同一宝物异写。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1057",
+      "evidence_rows": [
+        32429
+      ],
+      "source_excerpt": "Greysage Mask",
+      "reason": "Greysage Mask 是具名面具，应作专名冻结；译名“灰贤面具”可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32429 原文为 Greysage Mask，宝藏列表条目来源明确。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“灰贤面具”保留 Greysage 与 Mask 的构词信息，适合作面具宝物名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名面具归入“物品”合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原 game_term/reference 改为 proper_name/required，符合具名面具。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1059",
+      "evidence_rows": [
+        32431
+      ],
+      "source_excerpt": "Hammer of Urox",
+      "reason": "Hammer of Urox 是以 Urox 命名的具名锤，应作专名冻结；译名“乌洛克斯之锤”可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32431 原文为 Hammer of Urox，宝藏列表条目来源明确。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“乌洛克斯之锤”保留 Urox 音译和 Hammer of 的结构，适合作具名锤。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名锤归入“物品”合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原 game_term/reference 改为 proper_name/required，符合以神名命名的武器专名。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:1029",
+    "terms:1030",
+    "terms:1031",
+    "terms:1032",
+    "terms:1034",
+    "terms:1036",
+    "terms:1038",
+    "terms:1039",
+    "terms:1041",
+    "terms:1053",
+    "terms:1057",
+    "terms:1059"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

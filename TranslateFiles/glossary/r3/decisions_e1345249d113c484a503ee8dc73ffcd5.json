@@ -1,0 +1,97 @@
+{
+  "review_complete": true,
+  "review_summary": "审校 e1、e2：确认 Jorganos Archer 为男性具名弓手，采用“约加诺斯弓手”；将 Bow of Jorganos 统一为“约加诺斯之弓”，并补足两条术语理由的原文依据。未发现需隔离或新增项。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "Jorganos Archer 是 Ragorn 之父、Jarani 的祖父、King Vingkot Orlanthsson 之子；754/775 以 himself 强调只有他本人能完成那一箭。"
+      },
+      "reason": "补足专名所指人物及家谱/用例范围，避免只凭 himself 描述身份。",
+      "evidence_rows": [
+        34272,
+        754,
+        775
+      ],
+      "table": "characters",
+      "index": 0
+    },
+    {
+      "patch": {
+        "recommended_translation": "约加诺斯之弓",
+        "term_reason": "属于 Jorganos 的具名弓；Jarani 在 Arrowmound 用它守护 Voriof 的白羊。"
+      },
+      "reason": "统一 Jorganos 译名，并补足该具名弓的归属与原文用途。",
+      "evidence_rows": [
+        34272
+      ],
+      "table": "terms",
+      "index": 884
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:0",
+      "evidence_rows": [
+        754,
+        775,
+        34272
+      ],
+      "source_excerpt": "Jarani is the son of Ragorn, the son of Jorganos Archer, the son of King Vingkot Orlanthsson.",
+      "reason": "确认专名所指、男性身份与统一译名；Jorganos 部分作为后续弓名词根应保持一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "754/775 的 only Jorganos Archer himself 与 34272 的家谱均指向同一男性具名弓手。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "采用“约加诺斯弓手”；Archer 作为称号译为“弓手”，Jorganos 音译为“约加诺斯”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、proper_name、required、男性；原文用 himself 与 son of 家谱明确人物身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "754、775、34272 均指同一人物，译名内部一致；Jorganos 部分与弓名共享译法。"
+        }
+      }
+    },
+    {
+      "ref": "terms:884",
+      "evidence_rows": [
+        34272
+      ],
+      "source_excerpt": "He kept there the White Sheep of Voriof, and guarded them with the Bow of Jorganos.",
+      "reason": "确认 Bow of Jorganos 是 Jarani 守护白羊所用具名弓；修正译名以统一 Jorganos。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34272 明确出现 the Bow of Jorganos，是 Jarani 守护 Voriof 白羊所用的具名弓。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原建议“约尔加诺斯之弓”与 e1 不一致，已修正为“约加诺斯之弓”；Bow of 译为“之弓”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms 表、物品、proper_name、required；原文为独特具名武器，不是普通弓。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "将 Jorganos 部分统一为“约加诺斯”，与 e1 的标准音译保持一致；34272 提供弓名直接出处。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:0",
+    "terms:884"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

@@ -1,0 +1,426 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 e1-e12 的原文、译名、分类与一致性审校；修正 Lightbringers' Ring、One Great Truth、Einarth Milk-Eyes 的译名/性别/理由，并为 Q5Mystery、?horse 补足 whole_record 级非翻译保护范围；其余条目维持。",
+  "acknowledged_findings": [
+    "F0242"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "光明使者之环",
+        "term_reason": "吉娜贾尔提议、七位光明使者结成的新纽带。"
+      },
+      "reason": "Lightbringers 统一译“光明使者”，并与同系列 Lightbringers 术语的核心译名一致。",
+      "evidence_rows": [
+        34104
+      ],
+      "table": "terms",
+      "index": 1139
+    },
+    {
+      "patch": {
+        "recommended_translation": "唯一伟大真理"
+      },
+      "reason": "The One Great Truth 作为特定真理名，中文搭配改为“唯一伟大真理”更自然。",
+      "evidence_rows": [
+        34215,
+        34225
+      ],
+      "table": "terms",
+      "index": 1172
+    },
+    {
+      "patch": {
+        "term_reason": "原文中的称号，指不愿见来者的皇帝；按专名统一译作“哭泣皇帝”。"
+      },
+      "reason": "删去证据未直接支持的说话者/对象细节，仅保留可由 34157、34177 证实的称号含义。",
+      "evidence_rows": [
+        34157,
+        34177
+      ],
+      "table": "terms",
+      "index": 1177
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "证据仅见整条记录 Q5Mystery，无句子嵌入用例；按事件/脚本标识整条原样保留。"
+        }
+      },
+      "reason": "为 Q5Mystery 明确非翻译保护范围，避免全局禁翻。",
+      "evidence_rows": [
+        25503
+      ],
+      "table": "non_translate",
+      "index": 353
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "证据仅见整条记录 ?horse，作为内部图像/资源标记整条原样保留；不扩展到普通 horse。"
+        }
+      },
+      "reason": "为 ?horse 明确非翻译保护范围，避免普通词 horse 被误保护。",
+      "evidence_rows": [
+        30930
+      ],
+      "table": "non_translate",
+      "index": 406
+    },
+    {
+      "patch": {
+        "recommended_translation": "乳眼艾纳尔斯",
+        "gender": "男性",
+        "term_reason": "原文多次称其为 prophet，并明确为 old man、用 he/his 指代；Milk-Eyes 为别号，统一译作“乳眼艾纳尔斯”。"
+      },
+      "reason": "修正性别为男性，并统一 Einarth 核心译名与同批 Einarth 短名及先知称号条目一致。",
+      "evidence_rows": [
+        8056,
+        23097
+      ],
+      "table": "characters",
+      "index": 2
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:1139",
+      "evidence_rows": [
+        34104
+      ],
+      "source_excerpt": "She suggested that they should form a new type of bond, the Lightbringers' Ring.",
+      "reason": "原文明确该 Ring 是吉娜贾尔提议、七人结成的新纽带；译名统一为“光明使者之环”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34104 直接出现 the Lightbringers' Ring，并说明是七人结成的新纽带。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“光使者之环”漏“明”，改为“光明使者之环”，与 Lightbringers 的核心译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=组织，指七人结成的 ring/group，分类可用。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一 Lightbringers 为“光明使者”，避免与同系列术语的译名脱节。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1142",
+      "evidence_rows": [
+        34118
+      ],
+      "source_excerpt": "The Ritual of the Net",
+      "reason": "证据为标题式仪式名；保留专名并译作“网之仪式”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34118 全文即 The Ritual of the Net，作为标题/仪式名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "网之仪式 对应 Ritual of the Net，未增设定语。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他，适合有名称的仪式标题。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同一术语的冲突变体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1156",
+      "evidence_rows": [
+        34139
+      ],
+      "source_excerpt": "At the River of Swords, Issaries negotiated with Jeset the Ferryman for the fare of passage for a live person across it.",
+      "reason": "River of Swords 为冥界河流名；译“剑之河”与原文相符。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34139 直接出现 River of Swords，并说明其渡河语境。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "剑之河 对应 River of Swords，简洁保留河流专名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=地名，河流专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同一术语的冲突变体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1160",
+      "evidence_rows": [
+        34166
+      ],
+      "source_excerpt": "Yelm demanded the Trial by Combat.",
+      "reason": "Trial by Combat 是耶尔姆要求的特定审判方式；译“战斗审判”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34166 明确 Yelm demanded the Trial by Combat。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "战斗审判 对应 Trial by Combat，保留审判方式含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他，作为机制/审判方式分类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同一术语的冲突变体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1172",
+      "evidence_rows": [
+        34215,
+        34225
+      ],
+      "source_excerpt": "And this was the One Great Truth, the one told only at initiation time, to those who dedicate their lives to emulating the Knowing God.",
+      "reason": "原文将 One Great Truth 作为入会时传授的特定真理；改“唯一大真理”为“唯一伟大真理”更合中文搭配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34215/34225 明确 One Great Truth 只在入会时传授。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“唯一大真理”生硬，改为“唯一伟大真理”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他，作为特定真理/概念名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同一术语的其他译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1177",
+      "evidence_rows": [
+        34157,
+        34177
+      ],
+      "source_excerpt": "The Weeping Emperor will not be glad to see you.",
+      "reason": "原文以 The Weeping Emperor 作为称号；保留“哭泣皇帝”，并删去 term_reason 中证据未直接支持的说话者细节。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "34157/34177 仅可证 The Weeping Emperor 为称号；已据此收紧 term_reason。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "哭泣皇帝 对应 Weeping Emperor。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=身份，作为皇帝称号。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同一称号的冲突译名。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:353",
+      "evidence_rows": [
+        25503
+      ],
+      "source_excerpt": "Q5Mystery",
+      "reason": "证据仅见整条 Q5Mystery，无句子嵌入；作为事件/脚本标识按 whole_record 保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25503 整条记录就是 Q5Mystery。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保持原文，不涉及翻译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "非翻译运行标识，按 whole_record 限定，不扩展为普通词。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目无 applicability，现补为 whole_record 且 case_sensitive=true。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:406",
+      "evidence_rows": [
+        30930
+      ],
+      "source_excerpt": "?horse",
+      "reason": "?horse 是内部图像/资源标记；证据仅见整条记录，补 whole_record applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30930 整条记录为 ?horse。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保持原样。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "内部资源标记，仅整条匹配，不扩展到普通 horse。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目无 applicability，现补为 whole_record 且 case_sensitive=true。"
+        }
+      }
+    },
+    {
+      "ref": "characters:2",
+      "evidence_rows": [
+        8056,
+        23097
+      ],
+      "source_excerpt": "Einarth Milk-Eyes, an old man from a faraway clan, comes to visit you. He is renowned as a prophet.",
+      "reason": "原文明确其为 old man 并用 He；gender 改男性，全名统一为“乳眼艾纳尔斯”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8056 明确 an old man、He；5490/5492 等称其为 prophet。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“乳眼艾纳斯”与 Einarth 的“艾纳尔斯”不一致，改为“乳眼艾纳尔斯”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表，proper_name，人物身份明确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一 Einarth 核心译名为“艾纳尔斯”，与同批 Einarth 短名及先知称号条目一致；gender 改男性。"
+        }
+      }
+    },
+    {
+      "ref": "characters:163",
+      "evidence_rows": [
+        23040
+      ],
+      "source_excerpt": "Give gifts to Einarth.",
+      "reason": "Einarth 是同一人物的短称；译“艾纳尔斯”与全名及称号条目一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "23040 单独使用短名 Einarth；23030 与 Milk-Eyes 全名同现。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "艾纳尔斯 与同批 Einarth 核心译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表，proper_name，短称人物。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与“乳眼艾纳尔斯”“先知艾纳尔斯”保持核心名一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:273",
+      "evidence_rows": [
+        30696,
+        30699
+      ],
+      "source_excerpt": "Einarth the Prophet brought us the Ten Year ring.",
+      "reason": "Einarth the Prophet 是同一先知的称号形式；译“先知艾纳尔斯”与短名一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30696/30699 直接出现 Einarth the Prophet。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "先知艾纳尔斯 对应称号+名，核心名与 Einarth 短名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表，proper_name。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与“乳眼艾纳尔斯”“艾纳尔斯”保持同一人物译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:4",
+      "evidence_rows": [
+        27109
+      ],
+      "source_excerpt": "Asrelia, the goddess who conceals the wealth of the earth.",
+      "reason": "原文称 Asrelia 为藏匿大地财富的女神；保留“阿丝瑞莉娅”，性别女性。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "27109 明确 Asrelia 为 the goddess；27585 用 she。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "阿丝瑞莉娅 与 Asrelia 音译相符。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表，proper_name，神祇人物；gender 女性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批 Asrelia 仅此一条，无冲突变体。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:1139",
+    "terms:1142",
+    "terms:1156",
+    "terms:1160",
+    "terms:1172",
+    "terms:1177",
+    "non_translate:353",
+    "non_translate:406",
+    "characters:2",
+    "characters:163",
+    "characters:273",
+    "characters:4"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

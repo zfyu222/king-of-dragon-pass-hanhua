@@ -1,0 +1,533 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e12 的 sceneR 场景资源标识符：它们均为完整的内部标识符，应原样保留，并将保护范围限定为 whole_record 精确匹配，避免无范围的全局禁翻；未发现需隔离或新增的条目。",
+  "acknowledged_findings": [
+    "F0145",
+    "F0146",
+    "F0147",
+    "F0148",
+    "F0149",
+    "F0150",
+    "F0151",
+    "F0152",
+    "F0153",
+    "F0154",
+    "F0155",
+    "F0156"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文为完整内部场景资源标识符 sceneR230；仅在整条记录精确匹配该标识符时保留，避免禁翻普通文本。"
+        }
+      },
+      "reason": "补充显式适用范围，消除非翻译条目的无范围保护。",
+      "evidence_rows": [
+        16221
+      ],
+      "table": "non_translate",
+      "index": 213
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文为完整内部场景资源标识符 sceneR231；仅在整条记录精确匹配该标识符时保留，避免禁翻普通文本。"
+        }
+      },
+      "reason": "补充显式适用范围，消除非翻译条目的无范围保护。",
+      "evidence_rows": [
+        16247
+      ],
+      "table": "non_translate",
+      "index": 214
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文为完整内部场景资源标识符 sceneR231a；仅在整条记录精确匹配该标识符时保留，避免禁翻普通文本。"
+        }
+      },
+      "reason": "补充显式适用范围，消除非翻译条目的无范围保护。",
+      "evidence_rows": [
+        16289
+      ],
+      "table": "non_translate",
+      "index": 215
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文为完整内部场景资源标识符 sceneR232；仅在整条记录精确匹配该标识符时保留，避免禁翻普通文本。"
+        }
+      },
+      "reason": "补充显式适用范围，消除非翻译条目的无范围保护。",
+      "evidence_rows": [
+        16290
+      ],
+      "table": "non_translate",
+      "index": 216
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文为完整内部场景资源标识符 sceneR233；仅在整条记录精确匹配该标识符时保留，避免禁翻普通文本。"
+        }
+      },
+      "reason": "补充显式适用范围，消除非翻译条目的无范围保护。",
+      "evidence_rows": [
+        16338
+      ],
+      "table": "non_translate",
+      "index": 217
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文为完整内部场景资源标识符 sceneR234；仅在整条记录精确匹配该标识符时保留，避免禁翻普通文本。"
+        }
+      },
+      "reason": "补充显式适用范围，消除非翻译条目的无范围保护。",
+      "evidence_rows": [
+        16369
+      ],
+      "table": "non_translate",
+      "index": 218
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文为完整内部场景资源标识符 sceneR235；仅在整条记录精确匹配该标识符时保留，避免禁翻普通文本。"
+        }
+      },
+      "reason": "补充显式适用范围，消除非翻译条目的无范围保护。",
+      "evidence_rows": [
+        16413
+      ],
+      "table": "non_translate",
+      "index": 219
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文为完整内部场景资源标识符 sceneR283；仅在整条记录精确匹配该标识符时保留，避免禁翻普通文本。"
+        }
+      },
+      "reason": "补充显式适用范围，消除非翻译条目的无范围保护。",
+      "evidence_rows": [
+        18568
+      ],
+      "table": "non_translate",
+      "index": 225
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文为完整内部场景资源标识符 sceneR284；仅在整条记录精确匹配该标识符时保留，避免禁翻普通文本。"
+        }
+      },
+      "reason": "补充显式适用范围，消除非翻译条目的无范围保护。",
+      "evidence_rows": [
+        18612
+      ],
+      "table": "non_translate",
+      "index": 226
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文为完整内部场景资源标识符 sceneR285；仅在整条记录精确匹配该标识符时保留，避免禁翻普通文本。"
+        }
+      },
+      "reason": "补充显式适用范围，消除非翻译条目的无范围保护。",
+      "evidence_rows": [
+        18679
+      ],
+      "table": "non_translate",
+      "index": 227
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文为完整内部场景资源标识符 sceneR286；仅在整条记录精确匹配该标识符时保留，避免禁翻普通文本。"
+        }
+      },
+      "reason": "补充显式适用范围，消除非翻译条目的无范围保护。",
+      "evidence_rows": [
+        18731
+      ],
+      "table": "non_translate",
+      "index": 228
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文为完整内部场景资源标识符 sceneR287；仅在整条记录精确匹配该标识符时保留，避免禁翻普通文本。"
+        }
+      },
+      "reason": "补充显式适用范围，消除非翻译条目的无范围保护。",
+      "evidence_rows": [
+        18759
+      ],
+      "table": "non_translate",
+      "index": 229
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:213",
+      "evidence_rows": [
+        16221
+      ],
+      "source_excerpt": "sceneR230",
+      "reason": "完整记录为内部场景资源标识符，应原样保留并限定为整条精确匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录原文仅为 sceneR230，没有附加占位或正文内容。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "该条为运行时场景标识符，保留原文，不产生译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补充 whole_record 适用范围，避免将 sceneR230 作为无范围全局禁翻词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "自身为 sceneR 前缀资源名，按标识符原样保留策略一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:214",
+      "evidence_rows": [
+        16247
+      ],
+      "source_excerpt": "sceneR231",
+      "reason": "完整记录为内部场景资源标识符，应原样保留并限定为整条精确匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录原文仅为 sceneR231，没有附加占位或正文内容。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "该条为运行时场景标识符，保留原文，不产生译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补充 whole_record 适用范围，避免将 sceneR231 作为无范围全局禁翻词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "自身为 sceneR 前缀资源名，按标识符原样保留策略一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:215",
+      "evidence_rows": [
+        16289
+      ],
+      "source_excerpt": "sceneR231a",
+      "reason": "完整记录为内部场景资源标识符，应原样保留并限定为整条精确匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录原文仅为 sceneR231a，没有附加占位或正文内容。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "该条为运行时场景标识符，保留原文，不产生译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补充 whole_record 适用范围，避免将 sceneR231a 作为无范围全局禁翻词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "自身为 sceneR 前缀资源名，按标识符原样保留策略一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:216",
+      "evidence_rows": [
+        16290
+      ],
+      "source_excerpt": "sceneR232",
+      "reason": "完整记录为内部场景资源标识符，应原样保留并限定为整条精确匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录原文仅为 sceneR232，没有附加占位或正文内容。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "该条为运行时场景标识符，保留原文，不产生译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补充 whole_record 适用范围，避免将 sceneR232 作为无范围全局禁翻词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "自身为 sceneR 前缀资源名，按标识符原样保留策略一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:217",
+      "evidence_rows": [
+        16338
+      ],
+      "source_excerpt": "sceneR233",
+      "reason": "完整记录为内部场景资源标识符，应原样保留并限定为整条精确匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录原文仅为 sceneR233，没有附加占位或正文内容。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "该条为运行时场景标识符，保留原文，不产生译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补充 whole_record 适用范围，避免将 sceneR233 作为无范围全局禁翻词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "自身为 sceneR 前缀资源名，按标识符原样保留策略一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:218",
+      "evidence_rows": [
+        16369
+      ],
+      "source_excerpt": "sceneR234",
+      "reason": "完整记录为内部场景资源标识符，应原样保留并限定为整条精确匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录原文仅为 sceneR234，没有附加占位或正文内容。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "该条为运行时场景标识符，保留原文，不产生译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补充 whole_record 适用范围，避免将 sceneR234 作为无范围全局禁翻词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "自身为 sceneR 前缀资源名，按标识符原样保留策略一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:219",
+      "evidence_rows": [
+        16413
+      ],
+      "source_excerpt": "sceneR235",
+      "reason": "完整记录为内部场景资源标识符，应原样保留并限定为整条精确匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录原文仅为 sceneR235，没有附加占位或正文内容。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "该条为运行时场景标识符，保留原文，不产生译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补充 whole_record 适用范围，避免将 sceneR235 作为无范围全局禁翻词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "自身为 sceneR 前缀资源名，按标识符原样保留策略一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:225",
+      "evidence_rows": [
+        18568
+      ],
+      "source_excerpt": "sceneR283",
+      "reason": "完整记录为内部场景资源标识符，应原样保留并限定为整条精确匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录原文仅为 sceneR283，没有附加占位或正文内容。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "该条为运行时场景标识符，保留原文，不产生译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补充 whole_record 适用范围，避免将 sceneR283 作为无范围全局禁翻词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "自身为 sceneR 前缀资源名，按标识符原样保留策略一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:226",
+      "evidence_rows": [
+        18612
+      ],
+      "source_excerpt": "sceneR284",
+      "reason": "完整记录为内部场景资源标识符，应原样保留并限定为整条精确匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录原文仅为 sceneR284，没有附加占位或正文内容。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "该条为运行时场景标识符，保留原文，不产生译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补充 whole_record 适用范围，避免将 sceneR284 作为无范围全局禁翻词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "自身为 sceneR 前缀资源名，按标识符原样保留策略一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:227",
+      "evidence_rows": [
+        18679
+      ],
+      "source_excerpt": "sceneR285",
+      "reason": "完整记录为内部场景资源标识符，应原样保留并限定为整条精确匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录原文仅为 sceneR285，没有附加占位或正文内容。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "该条为运行时场景标识符，保留原文，不产生译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补充 whole_record 适用范围，避免将 sceneR285 作为无范围全局禁翻词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "自身为 sceneR 前缀资源名，按标识符原样保留策略一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:228",
+      "evidence_rows": [
+        18731
+      ],
+      "source_excerpt": "sceneR286",
+      "reason": "完整记录为内部场景资源标识符，应原样保留并限定为整条精确匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录原文仅为 sceneR286，没有附加占位或正文内容。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "该条为运行时场景标识符，保留原文，不产生译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补充 whole_record 适用范围，避免将 sceneR286 作为无范围全局禁翻词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "自身为 sceneR 前缀资源名，按标识符原样保留策略一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:229",
+      "evidence_rows": [
+        18759
+      ],
+      "source_excerpt": "sceneR287",
+      "reason": "完整记录为内部场景资源标识符，应原样保留并限定为整条精确匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "记录原文仅为 sceneR287，没有附加占位或正文内容。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "该条为运行时场景标识符，保留原文，不产生译文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补充 whole_record 适用范围，避免将 sceneR287 作为无范围全局禁翻词。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "自身为 sceneR 前缀资源名，按标识符原样保留策略一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:213",
+    "non_translate:214",
+    "non_translate:215",
+    "non_translate:216",
+    "non_translate:217",
+    "non_translate:218",
+    "non_translate:219",
+    "non_translate:225",
+    "non_translate:226",
+    "non_translate:227",
+    "non_translate:228",
+    "non_translate:229"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

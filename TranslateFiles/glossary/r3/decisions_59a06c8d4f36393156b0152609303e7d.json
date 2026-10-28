@@ -1,0 +1,391 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 e1-e12 的源文、译名、分类与一致性审校；修正 e3/e4 的 Vingkotling 名词与定语分工、e5 的所属关系及 e11 的完整音译；核对 f1，确认 Godtime/God Time 为同一神代概念的拼写变体，共用“神代”合理；无新增、隔离或允许无匹配项。",
+  "acknowledged_findings": [
+    "F0375"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "温科特林人",
+        "term_reason": "原文指温科特王统领下的人民；Vingkotlings 为复数族群称谓，中文以“温科特林人”表达。"
+      },
+      "reason": "将复数族名统一为“温科特林人”，补足原译遗漏的“林”，与同词根条目一致。",
+      "evidence_rows": [
+        32899,
+        34125
+      ],
+      "table": "terms",
+      "index": 749
+    },
+    {
+      "patch": {
+        "recommended_translation": "温科特林",
+        "term_reason": "原文在 the Vingkotling people 中以 Vingkotling 修饰 people，指温科特林人的族群；此处译作“温科特林”作定语。"
+      },
+      "reason": "Vingkotling 在证据中修饰 people，译作“温科特林”可避免“温科特林人人”的重复，并与定语用法一致。",
+      "evidence_rows": [
+        33936
+      ],
+      "table": "terms",
+      "index": 830
+    },
+    {
+      "patch": {
+        "recommended_translation": "温科特林人的永恒之戒",
+        "term_reason": "原文称奥兰斯戴上 the Eternal Ring of the Vingkotlings 后，七万七千温科特林战士苏醒；名称含所属关系。"
+      },
+      "reason": "补出 of the Vingkotlings 的所属关系，并使名称与“温科特林人”一致。",
+      "evidence_rows": [
+        34125
+      ],
+      "table": "terms",
+      "index": 1151
+    },
+    {
+      "patch": {
+        "recommended_translation": "阿尔卡纳尔",
+        "term_reason": "13849 的 Alkanar 是与 Red Hay 并列的氏族名，二者世仇始于两个贵族的私怨。"
+      },
+      "reason": "按 Alkanar 完整音节音译，保留词尾 r，避免与 Arcana 的常见译名混淆。",
+      "evidence_rows": [
+        13849
+      ],
+      "table": "terms",
+      "index": 469
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:456",
+      "evidence_rows": [
+        12232
+      ],
+      "source_excerpt": "Back in the Vingkotling days",
+      "reason": "确认这是以温科特林人时代为背景的时间短语，译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文见 12232：‘Back in the Vingkotling days’，指与狮人 Ukkar Gra 作战的温科特林人时期。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“温科特林时代”保留了 Vingkotling 专名核心，且作为时代短语自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于神话历史时期，归入“其他”合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Vingkotling 词根采用“温科特林”，与同批诸王及修订后的族群名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:557",
+      "evidence_rows": [
+        19631
+      ],
+      "source_excerpt": "other Vingkotling kings",
+      "reason": "确认诸王均为温科特林王者，译名和身份分类可用。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 19631 以 other Vingkotling kings 指其他温科特林诸王。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“温科特林诸王”准确表达 Vingkotling kings，且用“诸王”符合复数。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指王者身份/统治群体，归“身份”合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Vingkotling 统一作“温科特林”，与同族名条目一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:749",
+      "evidence_rows": [
+        32899
+      ],
+      "source_excerpt": "The foes of the Vingkotlings were many",
+      "reason": "复数族名原译“温科特族”遗漏“林”，已按 Vingkotling 词根统一为“温科特林人”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32899 的 Vingkotlings 指温科特王统领下的人民；复数在中文不另加标记。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "将“温科特族”改为“温科特林人”，保留完整专名核心，并与同批族群译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该词指族群/人民，归“种族”合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一 Vingkotling 为“温科特林”，修正原“温科特族”的词根不一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:830",
+      "evidence_rows": [
+        33936
+      ],
+      "source_excerpt": "other steads of the Vingkotling people",
+      "reason": "确认 Vingkotling 在此作族群修饰语，已改为“温科特林”以避免与 people 的“人”重复。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33936/33951 的 the Vingkotling people 指温科特林人的居住地。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "将“温科特林人”改为“温科特林”：原文 Vingkotling 在 the Vingkotling people 中作定语，避免与 people 对应的“人”重复。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于古代人类族群，归“种族”合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "采用“温科特林”词根；与 e3 的“温科特林人”形成定语/名词分工，与 e1/e2 的定语用法一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1151",
+      "evidence_rows": [
+        34125
+      ],
+      "source_excerpt": "Eternal Ring of the Vingkotlings",
+      "reason": "确认为温科特林人所有的戒指，补出所属关系。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34125 明言 Orlanth 戴上 the Eternal Ring of the Vingkotlings，唤醒温科特林战士。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "改为“温科特林人的永恒之戒”，补出 of the Vingkotlings 的所属关系，避免读成泛称形容词。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "为具名魔法戒指，归“物品”合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "采用“温科特林人”词根，与修订后的族群名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:459",
+      "evidence_rows": [
+        12698
+      ],
+      "source_excerpt": "composed of Eurmali",
+      "reason": "确认 Eurmali 指 Eurmal 的信徒/教团成员，译名可按身份词处理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "12698 中贬称我方 ring 全由 Eurmali 组成，指 Eurmal 信徒。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“欧尔马利信徒”把专名与信徒身份都说清楚，适合该句。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指教团成员身份，归“身份”合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一 Eurmali 在 24747/24748 也指议事环中的该教团成员，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:462",
+      "evidence_rows": [
+        32498
+      ],
+      "source_excerpt": "Voss Varainu Tapestry",
+      "reason": "确认是具名挂毯，音译和物品分类可用。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "12887/32498 均出现 the Voss Varainu Tapestry，作为宝物/挂毯。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“沃斯瓦莱努挂毯”保留 Voss Varainu 音译并点明挂毯。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "为具名宝物，归“物品”合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两处出现同一名称，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:463",
+      "evidence_rows": [
+        33468
+      ],
+      "source_excerpt": "Godtime, the days of creation when humans and gods lived side-by-side",
+      "reason": "确认 Godtime 是创世神话时代；与 God Time 为拼写变体，共用译名合理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33468 将 Godtime 释为 humans and gods lived side-by-side 的创世之日。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“神代”简洁表达该神话时代，也符合 UI/帮助文本用词。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为时代概念归“其他”合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f1 所指 Godtime/God Time 为同一时代的拼写变体，共用“神代”不构成异名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:466",
+      "evidence_rows": [
+        13782
+      ],
+      "source_excerpt": "great, vanished Empire called Ganderland",
+      "reason": "确认 Ganderland 是已消亡帝国名，音译和地名分类可用。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "13782 称鸭族祖先来自 a great, vanished Empire called Ganderland。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“甘德兰”保留 Ganderland 音译，适合作地名/帝国名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "为已消亡帝国地名，归“地名”合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此一处，无同名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:467",
+      "evidence_rows": [
+        13390
+      ],
+      "source_excerpt": "In Airvant’s Saga",
+      "reason": "确认是 Airvant 的萨迦篇名，音译与分类可用。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "13390 以 In Airvant’s Saga 引出 Airvant 抵抗强敌、前妻导致氏族毁灭的故事。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“艾尔万特萨迦”保留专名并点明萨迦体裁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为传说/文本篇名归“其他”合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此一处，无同名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:469",
+      "evidence_rows": [
+        13849
+      ],
+      "source_excerpt": "The feud between the Alkanar and Red Hay clans",
+      "reason": "确认 Alkanar 是氏族名；按完整音节改为“阿尔卡纳尔”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "13849 明言 Alkanar 与 Red Hay 两个氏族间的世仇始于贵族私怨。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "将“阿尔卡纳”改为“阿尔卡纳尔”，保留 Alkanar 词尾 r，避免与 Arcana 的常见译名相混。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指氏族，归“组织”合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此一处；与 e12 的 Red Hay 分开命名，不共用译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:470",
+      "evidence_rows": [
+        13849
+      ],
+      "source_excerpt": "Red Hay",
+      "reason": "确认 Red Hay 是与 Alkanar 并列的氏族名，直译可用。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "13849 的 the Alkanar and Red Hay clans 表明 Red Hay 是氏族名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“红干草”按字面保留氏族名，未与 Alkanar 混同。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指氏族，归“组织”合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e11 的“阿尔卡纳尔”分别对应两个氏族，无共用译名。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:456",
+    "terms:557",
+    "terms:749",
+    "terms:830",
+    "terms:1151",
+    "terms:459",
+    "terms:462",
+    "terms:463",
+    "terms:466",
+    "terms:467",
+    "terms:469",
+    "terms:470"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

@@ -1,0 +1,467 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e12 的 source、translation、category、consistency；f1 的 Bag/Sack of Winds 与 f2 的 Horseback Hill/Ridge 均按同一指称共用译名。另统一 e2 与 e1 的 Gagarth 之风译名，并修正若干 term_reason 中超出本批原文或仅罗列引句的问题。",
+  "acknowledged_findings": [
+    "F0428",
+    "F0429"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "25556/25557 中 Gagarth 赠予的具名风，作为专名统一译作“天上之风”。"
+      },
+      "reason": "原 term_reason 引用未在本批 records 出现的 25562 及“greatest weapon”表述；按可证原文收紧。",
+      "evidence_rows": [
+        25556,
+        25557
+      ],
+      "table": "terms",
+      "index": 926
+    },
+    {
+      "patch": {
+        "recommended_translation": "天上之风",
+        "term_reason": "34245 中 Orlanth 击败 Gagarth 后夺走的风，与 Wind From Above 同指，统一译作“天上之风”。"
+      },
+      "reason": "Wind of Above 与 e1 的 Wind From Above 同指 Gagarth 之风，统一译名并更新 reason。",
+      "evidence_rows": [
+        34245
+      ],
+      "table": "terms",
+      "index": 1173
+    },
+    {
+      "patch": {
+        "term_reason": "可获得的魔法袋；25632 中取得，25633 明示 magical，32387 宝藏列表作具名物品。"
+      },
+      "reason": "原 term_reason 仅列原文引句，改为说明实际含义与使用范围。",
+      "evidence_rows": [
+        25632,
+        25633,
+        32387
+      ],
+      "table": "terms",
+      "index": 927
+    },
+    {
+      "patch": {
+        "term_reason": "Orlanth 准备并释放的具名魔法风；25539 被扭曲藤蔓束缚，34250 释放后吹干敌人。"
+      },
+      "reason": "原 term_reason 仅列原文引句，改为说明其束缚与释放后的用途。",
+      "evidence_rows": [
+        25539,
+        34250
+      ],
+      "table": "terms",
+      "index": 929
+    },
+    {
+      "patch": {
+        "term_reason": "Orlanth 准备的具名魔法风；25539 被皮绳束缚，与 Upper Wind 并列。"
+      },
+      "reason": "原 term_reason 仅列原文引句，改为说明其束缚方式及与 Upper Wind 的并列关系。",
+      "evidence_rows": [
+        25539
+      ],
+      "table": "terms",
+      "index": 930
+    },
+    {
+      "patch": {
+        "term_reason": "氏族 tula 边缘的高地；27243 中星降战士在此防守，27262 战团前往该地。"
+      },
+      "reason": "原 term_reason 的“星之战神”表述不够贴合原文，改为可证的星降战士与战团行动。",
+      "evidence_rows": [
+        27243,
+        27262
+      ],
+      "table": "terms",
+      "index": 934
+    },
+    {
+      "patch": {
+        "term_reason": "27460 以书名方式提及；32506 宝藏列表中的具名书。"
+      },
+      "reason": "删除本批 records 未出现的 Belintar’s Book 对比，仅保留可证内容。",
+      "evidence_rows": [
+        27460,
+        32506
+      ],
+      "table": "terms",
+      "index": 938
+    },
+    {
+      "patch": {
+        "term_reason": "厄纳尔达相关的具名织锦/仪式；29047 以 woven 搭配，29115 单独作名称。"
+      },
+      "reason": "删除本批 records 未出现的骑兵情节，改为依据 woven 与单独名称用法说明。",
+      "evidence_rows": [
+        29047,
+        29115
+      ],
+      "table": "terms",
+      "index": 942
+    },
+    {
+      "patch": {
+        "term_reason": "Hyalor（海亚洛）相关的具名驯马技能或事迹；29111 单独作名称。"
+      },
+      "reason": "原 term_reason 将未明说的“故事或仪式”当作确定信息，改为更谨慎的具名技能/事迹。",
+      "evidence_rows": [
+        29111
+      ],
+      "table": "terms",
+      "index": 944
+    },
+    {
+      "patch": {
+        "term_reason": "29064 中 Theya 向 Horse-Spawn 提及的具名返乡之路，具体所指未明。"
+      },
+      "reason": "按 29064 可证的人物与听者改写，保留具体机制未明的谨慎表述。",
+      "evidence_rows": [
+        29064
+      ],
+      "table": "terms",
+      "index": 945
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:926",
+      "evidence_rows": [
+        25557
+      ],
+      "source_excerpt": "Gagarth gifted her with his Wind From Above.",
+      "reason": "Gagarth 的具名风，作为专名保留；term_reason 已按本批原文收紧。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25557 原文作 his Wind From Above，大小写与结构表明为具名风/武器。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“天上之风”保留 Wind From Above 的方向意象，可作专名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为 Gagarth 赠予的魔法风/武器，归入物品可接受。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已删除 term_reason 中未在本批 records 出现的 25562 及“greatest weapon”表述，仅保留 25556/25557 可证内容。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1173",
+      "evidence_rows": [
+        34245
+      ],
+      "source_excerpt": "He took the Wind of Above from him.",
+      "reason": "Wind of Above 与 e1 的 Wind From Above 同指 Gagarth 之风，统一译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34245 原文作 the Wind of Above，为 Orlanth 从 Gagarth 处夺走的具名风。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原“上方之风”与 e1“天上之风”不一致；二者同指 Gagarth 之风，改为“天上之风”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为可夺取的魔法风/武器，归入物品可接受。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e1 的 Wind From Above 统一为“天上之风”，并更新 term_reason 说明同指关系。"
+        }
+      }
+    },
+    {
+      "ref": "terms:927",
+      "evidence_rows": [
+        25632,
+        25633,
+        32387
+      ],
+      "source_excerpt": "We gained the Bag of Winds.",
+      "reason": "Bag of Winds 为可获得魔法袋，与 Sack of Winds 同指。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25632 原文 We gained the Bag of Winds，25633 称 the magical Bag of Winds，32387 宝藏列表同名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“风袋”简洁对应 Bag of Winds，并与 e4“风袋”共用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为可获得并列入宝藏的魔法袋，归入物品。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "term_reason 已改为说明可获得、magical 及宝藏列表用法，不再只列原文引句。"
+        }
+      }
+    },
+    {
+      "ref": "terms:928",
+      "evidence_rows": [
+        34251
+      ],
+      "source_excerpt": "Orlanth captured it inside the magical Sack of Winds and threw it away.",
+      "reason": "Sack of Winds 为 Orlanth 捕获 Aroka 吐息的魔法袋，与 e3 同指。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34251 原文作 magical Sack of Winds，用于捕获 Aroka 的致命吐息。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“风袋”对应 Sack of Winds，且与 e3 Bag of Winds 同指共用译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "魔法袋为具名物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e3 的 Bag of Winds 同指同一魔法袋，共用“风袋”可接受。"
+        }
+      }
+    },
+    {
+      "ref": "terms:929",
+      "evidence_rows": [
+        25539,
+        34250
+      ],
+      "source_excerpt": "a twisted vine which holds the Upper Wind",
+      "reason": "Upper Wind 为被束缚/释放的具名魔法风。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25539 原文 a twisted vine which holds the Upper Wind；34250 又作 Orlanth released the Upper Wind。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“上层之风”保留 Upper 与风名结构，区别于 Lower Wind。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为魔法风而非实体容器，归入其他可接受。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "term_reason 已改为说明其被扭曲藤蔓束缚及释放后吹干敌人的实际用法。"
+        }
+      }
+    },
+    {
+      "ref": "terms:930",
+      "evidence_rows": [
+        25539
+      ],
+      "source_excerpt": "a leather rope which holds the Lower Wind",
+      "reason": "Lower Wind 为被皮绳束缚、与 Upper Wind 并列的具名魔法风。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25539 原文 a leather rope which holds the Lower Wind，表明其为可被束缚的具名风。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“下层之风”与 e5“上层之风”保持 Upper/Lower 对照。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为魔法风而非实体物品，归入其他可接受。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "term_reason 已改为说明其被皮绳束缚并与 Upper Wind 并列，不再只列原文引句。"
+        }
+      }
+    },
+    {
+      "ref": "terms:934",
+      "evidence_rows": [
+        27243,
+        27262
+      ],
+      "source_excerpt": "defended Horseback Hill",
+      "reason": "Horseback Hill 为氏族 tula 边缘高地，星降战士在此防守。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "27243 原文 defended Horseback Hill, at the edge of our tula；27262 战团前往 Horseback Hill。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“马背山”保留 Horseback 的比喻意象，可作地名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文明确为高地/地点，归入地名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "term_reason 已改为依据 27243/27262 说明其为 tula 边缘、星降战士防守的高地。"
+        }
+      }
+    },
+    {
+      "ref": "terms:935",
+      "evidence_rows": [
+        27304
+      ],
+      "source_excerpt": "Horseback Ridge was somehow special?",
+      "reason": "Horseback Ridge 回指前文 Horseback Hill，共用“马背山”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "27304 原文 Horseback Ridge was somehow special? 为回指前文地点的名称变体。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "与 e7 Horseback Hill 共用“马背山”，符合同一高地指称。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Horseback Ridge 为高地地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e7 的 Horseback Hill 同指，共用译名可接受，未发现需隔离的冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:938",
+      "evidence_rows": [
+        27460,
+        32506
+      ],
+      "source_excerpt": "Book of Kings",
+      "reason": "Book of Kings 为书名/宝藏书，采用《列王纪》。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "27460 以 “The Book of Kings…” 书名方式提及；32506 宝藏列表作 Book of Kings。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“《列王纪》”作为书名标题可接受，保留书名号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "32506 宝藏列表中的书，归入物品。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "term_reason 已删除本批 records 未出现的 Belintar’s Book 对比，仅保留 27460/32506 可证内容。"
+        }
+      }
+    },
+    {
+      "ref": "terms:942",
+      "evidence_rows": [
+        29047,
+        29115
+      ],
+      "source_excerpt": "woven Ernalda’s Tapestry.",
+      "reason": "Ernalda’s Tapestry 为厄纳尔达相关具名织锦/仪式。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "29047 原文 woven Ernalda’s Tapestry；29115 单独作 Ernalda’s Tapestry。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“厄纳尔达织锦”对应专名，保留 Ernalda 音译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文以 woven 搭配且作为可举行/编织的具名事项，归入技能可接受。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "term_reason 已改为依据 29047/29115，删除本批未出现的骑兵情节。"
+        }
+      }
+    },
+    {
+      "ref": "terms:944",
+      "evidence_rows": [
+        29111
+      ],
+      "source_excerpt": "Hyalor’s Horsetaming.",
+      "reason": "Hyalor’s Horsetaming 为海亚洛相关具名驯马技能/事迹。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "29111 原文单独作 Hyalor’s Horsetaming，为具名条目。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“海亚洛驯马”保留 Hyalor 音译与 Horsetaming 的核心动作。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为具名驯马技能/事迹，归入技能可接受。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "term_reason 已改为依据 29111 说明其为 Hyalor 相关具名驯马技能或事迹。"
+        }
+      }
+    },
+    {
+      "ref": "terms:945",
+      "evidence_rows": [
+        29064
+      ],
+      "source_excerpt": "there was a Long Way Home",
+      "reason": "Long Way Home 为 Theya 向 Horse-Spawn 提及的具名返乡之路。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "29064 原文 there was a Long Way Home，且 Horse-Spawn 因此追问 Theya。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“归乡长路”保留 Long Way Home 的返乡与漫长意象。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为未定机制的具名返乡之路/传说，归入其他。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "term_reason 已改为依据 29064 说明 Theya、Horse-Spawn 与具体所指未明。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:926",
+    "terms:1173",
+    "terms:927",
+    "terms:928",
+    "terms:929",
+    "terms:930",
+    "terms:934",
+    "terms:935",
+    "terms:938",
+    "terms:942",
+    "terms:944",
+    "terms:945"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

@@ -1,0 +1,392 @@
+{
+  "review_complete": true,
+  "review_summary": "已复核 e1-e12 的出处、译名、分类与一致性；确认种族、组织、神祇称号、英雄任务及战斗机制等术语。修正 e6、e10、e11、e12 的译名以统一精魂、称号和英雄探索词族；f1、f2 核对为单复数或同根变体共用，不作隔离。",
+  "acknowledged_findings": [
+    "F0407",
+    "F0409"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "精魂战斗"
+      },
+      "reason": "9277 表明 spirit combat 为捕获 Ghosts 并供法术使用的精魂相关战斗机制，统一为精魂战斗。",
+      "evidence_rows": [
+        9277
+      ],
+      "table": "terms",
+      "index": 381
+    },
+    {
+      "patch": {
+        "recommended_translation": "猪之母"
+      },
+      "reason": "the Pig Mother 是 Mralota 的固定称号；猪之母避免与“猪母（母猪）”混淆，并保持称号结构。",
+      "evidence_rows": [
+        10067,
+        10069
+      ],
+      "table": "terms",
+      "index": 395
+    },
+    {
+      "patch": {
+        "recommended_translation": "缔造风暴部族"
+      },
+      "reason": "9890 为英雄任务名；采用“缔造风暴部族”与同一任务标题变体统一。",
+      "evidence_rows": [
+        9890
+      ],
+      "table": "terms",
+      "index": 398
+    },
+    {
+      "patch": {
+        "recommended_translation": "英雄探索者"
+      },
+      "reason": "10165 中 heroquester 是执行 heroquest 的人；改为英雄探索者以统一英雄探索词根。",
+      "evidence_rows": [
+        10165
+      ],
+      "table": "terms",
+      "index": 399
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:375",
+      "evidence_rows": [
+        9080
+      ],
+      "source_excerpt": "their leader, a Centaur",
+      "reason": "半人马是 Beastfolk 使者中的种族称谓，保留为种族术语。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9080 原文明确称 Beastfolk 使者的 leader 为 a Centaur。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "半人马准确对应 Centaur，可作种族名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族分类符合该词在原文中的身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Centaur 与 centaurs 仅单复数差异，共用半人马；f1 已核对，非不同实体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:377",
+      "evidence_rows": [
+        9123
+      ],
+      "source_excerpt": "fox people",
+      "reason": "狐人是 Beastfolk 大军中的种族称谓，采用简洁的“X人”形式。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9123 将 fox people 列入 beastfolk 大军。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "狐人对应 fox people，符合种族名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族分类符合其身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 people 类种族译名采用同一“X人”结构，语义稳定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:378",
+      "evidence_rows": [
+        9123
+      ],
+      "source_excerpt": "wasp people",
+      "reason": "蜂人是 Beastfolk 大军中的种族称谓，译名简洁可辨。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9123 将 wasp people 列为 beastfolk 大军成员。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "蜂人对应 wasp people，保留“X人”种族名结构。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族分类符合其身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 fox people 等同批 people 类种族译法一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:379",
+      "evidence_rows": [
+        9152,
+        9161
+      ],
+      "source_excerpt": "Long-Tooth and Long-Nose",
+      "reason": "Long-Tooth 与 Long-Nose 并列，属神话专名；长牙保留与长鼻的对称字面。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9152、9161 均以 Long-Tooth 与 Long-Nose 并列作为 Issaries 调解的对象。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "长牙对应 Long-Tooth，保留与 Long-Nose 的对称字面。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他用于神话专名，现有分类可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一原文中的 Long-Tooth 译名一致，未出现异译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:380",
+      "evidence_rows": [
+        9241,
+        9244,
+        19782
+      ],
+      "source_excerpt": "In the middle of Death Week",
+      "reason": "Death Week 是亡者幽灵出现的历法时段，死亡周简洁对应。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9244 将 Death Week 作为幽灵出现的历法时段；19782 亦同。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "死亡周简洁对应 Death Week，符合历法短名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他用于历法时段，合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "9241、9244、19782 均指向同一时段，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:381",
+      "evidence_rows": [
+        9277
+      ],
+      "source_excerpt": "spirit combat",
+      "reason": "spirit combat 是具体战斗机制；改为精魂战斗以统一 spirit 词族。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9277 将 spirit combat 描述为捕获 Ghosts 并供法术使用的战斗机制。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "将“灵魂战斗”改为“精魂战斗”，使 spirit 与精魂类术语一致并区别于泛称灵魂。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "技能分类符合其战斗机制属性。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一到精魂词族，保留精魂战斗；不再使用灵魂战斗。"
+        }
+      }
+    },
+    {
+      "ref": "terms:382",
+      "evidence_rows": [
+        9090
+      ],
+      "source_excerpt": "magical treasure",
+      "reason": "magical treasure 在补偿选项中作为宝物类别，魔法宝物语义直接。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9090 在补偿选项列出 magical treasure，与 wealth 并列。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "魔法宝物对应 magical treasure，语义直接。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品分类符合其宝物类别。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "在宝物语境中译名稳定，无需另设变体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:385",
+      "evidence_rows": [
+        9861
+      ],
+      "source_excerpt": "Battle of Kanda Fant",
+      "reason": "Battle of Kanda Fant 是战役专名，坎达凡特之战保留地名并标明事件。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9861 明确称 Battle of Kanda Fant 为战役。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "坎达凡特之战保留地名音译并加“之战”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他用于战役专名可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同条与 Urgraini 等专名并置，译名独立一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:388",
+      "evidence_rows": [
+        10062
+      ],
+      "source_excerpt": "remaking the Storm Clans",
+      "reason": "Storm Clans 是 Heort 重造的风暴阵营群体，风暴氏族可作集合称谓。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "10062 中 Storm Clans 为 Heort 重造的风暴阵营群体。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "风暴氏族可作集合称谓，符合组织名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "组织分类符合其群体属性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f2 核对：与 Storm Clan 单数共用风暴氏族，属单复数变体；中文不强制区分，语境可辨。"
+        }
+      }
+    },
+    {
+      "ref": "terms:395",
+      "evidence_rows": [
+        10067,
+        10069
+      ],
+      "source_excerpt": "Mralota, the Pig Mother",
+      "reason": "Pig Mother 是 Mralota 的固定称号；改为猪之母以保留神祇称号结构。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "10067、10069 将 the Pig Mother 作为 Mralota 的固定称号，并构成 Pig Mother priestess。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "将“猪母”改为“猪之母”，避免与“母猪”混淆，并保留称号结构。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他用于神祇称号可接受。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "同类“X Mother”称号统一为“X之母”，故用猪之母。"
+        }
+      }
+    },
+    {
+      "ref": "terms:398",
+      "evidence_rows": [
+        9890
+      ],
+      "source_excerpt": "The Making of the Storm Tribe",
+      "reason": "The Making of the Storm Tribe 是英雄任务名；采用动宾标题更自然。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9890 将 The Making of the Storm Tribe 列为英雄任务名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "将“风暴部族的缔造”改为“缔造风暴部族”，采用更自然的英雄任务动宾标题。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "其他用于英雄任务名可接受。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与同一任务的另一标题变体统一为缔造风暴部族。"
+        }
+      }
+    },
+    {
+      "ref": "terms:399",
+      "evidence_rows": [
+        10165
+      ],
+      "source_excerpt": "heroquester enter the God Plane",
+      "reason": "heroquester 指执行英雄任务的人；改为英雄探索者以统一词根。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "10165 中 heroquester 指执行英雄任务、欲进入 God Plane 的人。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "将“英雄任务者”改为“英雄探索者”，与 heroquest 的英雄探索词根一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "身份分类符合其角色称谓。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一到英雄探索词族，避免“任务者”与英雄探索脱节。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:375",
+    "terms:377",
+    "terms:378",
+    "terms:379",
+    "terms:380",
+    "terms:381",
+    "terms:382",
+    "terms:385",
+    "terms:388",
+    "terms:395",
+    "terms:398",
+    "terms:399"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

@@ -1,0 +1,365 @@
+{
+  "review_complete": true,
+  "review_summary": "已审校 e1-e12 的来源、译名、分类与一致性；将 Curing 改为“祛病”、Horsefriend 改为“友马”；确认 Quivin Mts. 与 Quivin Mountains 同指一山脉，Silver Tongue 与 Silvertongue 分属宝物和祝福且语境可区分。",
+  "acknowledged_findings": [
+    "F0373",
+    "F0383"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "祛病"
+      },
+      "reason": "与 Curing blessing 的核心译名统一，并改善中文搭配。",
+      "evidence_rows": [
+        30977
+      ],
+      "table": "terms",
+      "index": 989
+    },
+    {
+      "patch": {
+        "recommended_translation": "友马"
+      },
+      "reason": "与 Horsefriend ritual 的核心译名统一，避免“马友”歧义。",
+      "evidence_rows": [
+        30979
+      ],
+      "table": "terms",
+      "index": 990
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:977",
+      "evidence_rows": [
+        33308
+      ],
+      "source_excerpt": "Learning Blessings by Sacrificing for Mysteries",
+      "reason": "Mysteries 是献祭学习祝福的机制名，译名与分类可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 33308 标题为 Learning Blessings by Sacrificing for Mysteries，说明 Mysteries 是献祭学习的机制。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“秘仪”与只读关联 Mysteries magic 的核心词一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为宗教/魔法机制归“其他”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Mysteries magic 的“秘仪”一致；未发现同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:978",
+      "evidence_rows": [
+        30717
+      ],
+      "source_excerpt": "the walking dead",
+      "reason": "walking dead 指需防御的亡灵敌人，译作“行尸”可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 30717 以 the walking dead 指需要防御的亡灵敌人。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“行尸”可表达行走的死者，且为短词。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为敌人类别归“其他”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "固定短语 walking dead 指亡灵，不与普通 walking 混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:979",
+      "evidence_rows": [
+        31354
+      ],
+      "source_excerpt": "Quivin Mts.",
+      "reason": "Quivin Mts. 是 Quivin Mountains 的地图缩写，译名一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 31354 地图标签为 Quivin Mts.，即 Quivin Mountains 缩写。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“奎文山脉”与全称 Quivin Mountains 一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地图标签归“地名”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f1：与只读关联的 Quivin Mountains 同指一山脉，缩写与全称同译“奎文山脉”，非冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:983",
+      "evidence_rows": [
+        30714
+      ],
+      "source_excerpt": "Vinga's Fyrdwomen blessing",
+      "reason": "该条为温加的女兵祝福，译名保留神名、民团女兵与祝福。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 30714 明确为 Vinga's Fyrdwomen blessing。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“温加的民团女兵祝福”保留温加、民团女兵与祝福三要素。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福归“技能”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与只读关联 Vinga 的“温加”及 Fyrdwomen 的“民团女兵”一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:984",
+      "evidence_rows": [
+        31842
+      ],
+      "source_excerpt": "Ernalda, the Mother Goddess.",
+      "reason": "Mother Goddess 是厄纳尔达的称号，译作“母神”简洁。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 31842 称 Ernalda 为 the Mother Goddess。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“母神”是 Mother Goddess 的简洁称号译法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神祇称号归“其他”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "作为厄纳尔达的称号，与治疗女神等称号区分；无同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:985",
+      "evidence_rows": [
+        31846
+      ],
+      "source_excerpt": "Chalana Arroy, the Healing Goddess.",
+      "reason": "Healing Goddess 是查拉娜阿罗伊的称号，译作“治疗女神”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 31846 称 Chalana Arroy 为 the Healing Goddess。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“治疗女神”对应 Healing Goddess，简洁明确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神祇称号归“其他”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与只读关联 Healing ritual 的“疗伤”语义相近但对象不同，不强行统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:988",
+      "evidence_rows": [
+        33336
+      ],
+      "source_excerpt": "Vigor helps more often, reducing the number of farmers you need to tend the crops and herds.",
+      "reason": "Vigor 是巴恩塔的祝福标签，译作“活力”与相关祝福一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 33336 说明 Vigor 作为 Barntar 的祝福可减少照看作物和牛群所需农民。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“活力”与只读关联 Barntar's Vigor blessing 的核心词一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福归“技能”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "whole_record 仅保护祝福标签 Vigor；与普通 vigor 及 Barntar's Vigor blessing 的“活力”一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:989",
+      "evidence_rows": [
+        30977
+      ],
+      "source_excerpt": "Curing",
+      "reason": "Curing 为祝福列表标签，改译“祛病”后与相关祝福核心词统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 30977 为祝福列表独立标签 Curing。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“愈病”搭配生硬；按 Curing blessing 的核心译名改为“祛病”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福归“技能”。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "改为“祛病”后与只读关联 Curing blessing 的“祛病祝福”核心词一致；whole_record 限定标签。"
+        }
+      }
+    },
+    {
+      "ref": "terms:990",
+      "evidence_rows": [
+        30979
+      ],
+      "source_excerpt": "Horsefriend",
+      "reason": "Horsefriend 为祝福列表标签，改译“友马”后与相关仪式核心词统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 30979 为祝福列表独立标签 Horsefriend。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“马友”易被理解为人的称谓；按 Horsefriend ritual 的核心译名改为“友马”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福归“技能”。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "改为“友马”后与只读关联 Horsefriend ritual 的“友马仪式”核心词一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:992",
+      "evidence_rows": [
+        30981
+      ],
+      "source_excerpt": "Shield",
+      "reason": "Shield 为祝福标签，whole_record 限定可避免与普通盾牌义混淆。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 30981 为祝福列表独立标签 Shield。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“盾护”作为短标签保留 Shield 的防护义，且与普通盾牌物品区分。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福归“技能”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "whole_record 限定仅匹配独立标签；corpus 33790/33148 的 shield wall、sword and shield 为普通义，不受影响。"
+        }
+      }
+    },
+    {
+      "ref": "terms:998",
+      "evidence_rows": [
+        30989
+      ],
+      "source_excerpt": "Morale",
+      "reason": "Morale 为祝福标签，译作“士气”为常用短译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 30989 为祝福列表独立标签 Morale。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“士气”是 Morale 的常用短译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福归“技能”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "whole_record 限定标签，避免与普通 morale 混用；译名稳定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1000",
+      "evidence_rows": [
+        30991
+      ],
+      "source_excerpt": "Silvertongue",
+      "reason": "Silvertongue 为祝福标签，译作“银舌”与相关祝福一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 30991 为祝福列表独立标签 Silvertongue。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“银舌”与只读关联 Silvertongue blessing 的“银舌祝福”一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福归“技能”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f2：与宝物 Silver Tongue 同译“银舌”，但本条为祝福、彼为物品，语境可区分，非错误合并。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:977",
+    "terms:978",
+    "terms:979",
+    "terms:983",
+    "terms:984",
+    "terms:985",
+    "terms:988",
+    "terms:989",
+    "terms:990",
+    "terms:992",
+    "terms:998",
+    "terms:1000"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

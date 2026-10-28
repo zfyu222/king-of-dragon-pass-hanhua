@@ -1,0 +1,434 @@
+{
+  "review_complete": true,
+  "review_summary": "复核12条术语，修正4条超出原文的term_reason；为Survival、Objective、Skirmish补充限定适用域，避免普通词义被全局替换；译名与分类保留。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "用物资建造且无需维护费的防御设施；良好工事可提升求生效果。"
+      },
+      "reason": "原文只说明建造耗物资、无维护费，以及良好防御工事有助求生；原理由“减少战败损失与伤亡”过度推断。",
+      "evidence_rows": [
+        33733,
+        33790
+      ],
+      "table": "terms",
+      "index": 775
+    },
+    {
+      "patch": {
+        "term_reason": "对氏族或牛群发动的快速军事袭击，可针对未交战氏族。"
+      },
+      "reason": "原文说明可突袭远方未交战氏族，并另有牛群突袭；原理由局限于“农庄”。",
+      "evidence_rows": [
+        33696,
+        33730
+      ],
+      "table": "terms",
+      "index": 779
+    },
+    {
+      "patch": {
+        "term_reason": "战斗目标选项，意为夺取土地。"
+      },
+      "reason": "原文只有目标名“Seize land”，不足以支持“把邻族赶出其土地”的具体机制。",
+      "evidence_rows": [
+        33786
+      ],
+      "table": "terms",
+      "index": 783
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "choosing ",
+          "suffix": " means",
+          "reason": "33790中仅在战斗目标选择语境使用Survival；普通survival义不应套用“求生”。"
+        }
+      },
+      "reason": "Survival为易混普通词，需限定战斗目标语境，避免survival bonus等普通义被替换。",
+      "evidence_rows": [
+        33790,
+        5403
+      ],
+      "table": "terms",
+      "index": 784
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "the ",
+          "suffix": " that",
+          "reason": "33769以大写Objective指混战阶段主要目标；普通objective不按“战斗目标”冻结。"
+        }
+      },
+      "reason": "Objective为普通词，仅在混战主目标语境冻结为“战斗目标”。",
+      "evidence_rows": [
+        33769
+      ],
+      "table": "terms",
+      "index": 787
+    },
+    {
+      "patch": {
+        "term_reason": "初轮交锋可选的四种战斗战术之一，即散兵战。",
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "are ",
+          "suffix": ",",
+          "reason": "33791中Skirmish位于四种战术列表；普通“小规模冲突”义不套用“散兵战”。"
+        }
+      },
+      "reason": "原文只确认Skirmish是可选战术之一，原理由加入投石、标枪、箭矢等未见于原文的细节；同时补战术列表限定语境。",
+      "evidence_rows": [
+        33791
+      ],
+      "table": "terms",
+      "index": 790
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:774",
+      "evidence_rows": [
+        33732
+      ],
+      "source_excerpt": "Auxiliaries are noncombatants (usually but not always women) who accompany the warriors, cheering them on and supporting them with healing magic.",
+      "reason": "源文定义与非战斗辅助人员一致，辅助队译名和游戏术语分类可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文明确Auxiliaries为随军非战斗人员，提供鼓舞和治疗魔法。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“辅助队”为简短队伍称谓，能涵盖随军辅助人员。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为随军辅助队伍归入“组织”，与单人身份名区分。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批未见Auxiliaries的其他译名或同义变体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:775",
+      "evidence_rows": [
+        33733,
+        33790
+      ],
+      "source_excerpt": "Fortifications cost goods to build but do not subtract further goods for maintenance.",
+      "reason": "译名准确；原term_reason对工事效果的表述超出原文，已按建造费用、维护和求生效果修正。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "33733只说明建造耗物资且无维护费；33790只说良好工事有助求生，原“减少战败损失与伤亡”过度推断，已改。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“防御工事”准确对应Fortifications。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "可建造防御设施归入“物品”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "33790中good fortifications为泛指工事，译名“防御工事”可保持一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:776",
+      "evidence_rows": [
+        33734,
+        33921
+      ],
+      "source_excerpt": "The hill forts provide superior defense, but are beyond the building capabilities of present-day clans.",
+      "reason": "山丘堡垒译名准确，理由与古代堡垒防御优越、现代氏族无法建造的原文一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33734说明hill forts防御优越且现代氏族无法建造；33921补充难民沿用废弃山堡。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“山丘堡垒”对应hill forts，保留具体堡垒类型。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为古代防御设施归入“物品”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "33734的hill forts指古代具体堡垒，不采用泛称“防御工事”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:778",
+      "evidence_rows": [
+        33737
+      ],
+      "source_excerpt": "a stake perimeter offers extra protection against mounted foes.",
+      "reason": "木桩防线译名准确，理由与原文对抗骑兵的额外防护一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33737明确stake perimeter对抗mounted foes提供额外保护。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“木桩防线”直接对应stake perimeter。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为具体防御工事归入“物品”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "33737将其列为具体额外防护设施，与泛称Fortifications区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:779",
+      "evidence_rows": [
+        33696,
+        33730
+      ],
+      "source_excerpt": "you can now launch raids against distant clans even if you are not feuding with them.",
+      "reason": "突袭译名可用；原理由限于农庄，已按远方氏族和牛群突袭修正。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "33696说明可突袭远方非交战氏族，33730另述cattle raids；原“对氏族农庄”范围过窄，已改。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“突袭”可作raids的简短军事行动译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为军事行动归入“其他”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "33696表明raids是发动攻击的动作，译“突袭”不与目标名混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:781",
+      "evidence_rows": [
+        33783
+      ],
+      "source_excerpt": "Plunder is the standard objective",
+      "reason": "掠夺译名准确，理由与标准战斗目标及夺取牛只物资的原文一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33783明确Plunder是标准目标，胜利后夺取牛只和物资。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“掠夺”对应Plunder的战斗目标义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为战斗目标归入“其他”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "33783中Plunder与夺取cattle/goods关联，译名稳定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:783",
+      "evidence_rows": [
+        33786
+      ],
+      "source_excerpt": "Seize land",
+      "reason": "译名直译准确；原理由补出邻族驱逐机制，原文无据，已收敛为战斗目标释义。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "33786只有目标名Seize land，未说明驱逐邻族；原term_reason已改。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“夺取土地”直译准确，适合目标选项。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为战斗目标选项归入“其他”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "33786为独立目标选项，译名在本批未见冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:784",
+      "evidence_rows": [
+        33790,
+        5403
+      ],
+      "source_excerpt": "choosing Survival means that your warriors are concentrating on making a shield wall and staying alive",
+      "reason": "战斗目标义明确；为避免普通survival被全局替换为“求生”，补literal_context适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33790明确Survival是保存战士生命的战斗选择。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“求生”贴合该战斗目标；普通survival仍按一般语境处理。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为战斗目标归入“其他”可接受。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "5403出现普通义survival bonus，故补case_sensitive literal_context，仅锁定choosing Survival means语境。"
+        }
+      }
+    },
+    {
+      "ref": "terms:787",
+      "evidence_rows": [
+        33769
+      ],
+      "source_excerpt": "the Objective that your warriors will pursue as their main goal in the melee",
+      "reason": "混战主目标义明确；为避免普通objective被全局替换为“战斗目标”，补literal_context适用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33769明确Objective为 warriors 在melee阶段追求的主要目标。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“战斗目标”准确表达该界面术语。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为战斗目标归入“其他”可接受。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "33769的大写Objective是混战主目标，补applicability防止普通objective混入。"
+        }
+      }
+    },
+    {
+      "ref": "terms:788",
+      "evidence_rows": [
+        33764,
+        33773
+      ],
+      "source_excerpt": "The initial clash is when the two sides size each other up",
+      "reason": "初轮交锋译名与第一阶段机制一致，分类和一致性可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33764描述initial clash比较双方战术；33773补充比较魔法。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“初轮交锋”对应战斗第一阶段。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为战斗阶段归入“其他”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "33764描述第一阶段，33773说明其在混战前；与melee区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:789",
+      "evidence_rows": [
+        33765,
+        33773
+      ],
+      "source_excerpt": "The second part of the battle, the melee, decides the outcome of the fight.",
+      "reason": "混战译名与战斗第二阶段机制一致，分类和一致性可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33765明确melee为战斗第二阶段并决定胜负。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“混战”对应近身交战阶段。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为战斗阶段归入“其他”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "33765明确melee为第二阶段，33773说明初轮交锋影响混战；与initial clash区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:790",
+      "evidence_rows": [
+        33791
+      ],
+      "source_excerpt": "The four possible tactics are Skirmish, Maneuver, Charge, and Evade.",
+      "reason": "散兵战作为战术名可用；原理由加入投石、标枪等未见于原文，已修正，并补literal_context限定战术列表语境。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "33791只确认Skirmish是四种初轮交锋战术之一；原理由的投石、标枪、箭矢无据，已改。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“散兵战”可对应战术名Skirmish。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为战斗战术归入“技能”可接受。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "Skirmish亦有普通“小规模冲突”义，补case_sensitive literal_context仅匹配are Skirmish,语境。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:774",
+    "terms:775",
+    "terms:776",
+    "terms:778",
+    "terms:779",
+    "terms:781",
+    "terms:783",
+    "terms:784",
+    "terms:787",
+    "terms:788",
+    "terms:789",
+    "terms:790"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

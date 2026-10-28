@@ -1,0 +1,373 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成全部分配的 12 条术语审校。f1-f3 的共享译名均为同物写法、别名或单复数变体，不构成异指冲突；修正 e7 的术语类型与强制级别，修正 e11 的译名以匹配单数源词并与复数形式统一。无新增、隔离或 no-match 项。",
+  "acknowledged_findings": [
+    "F0414",
+    "F0415",
+    "F0416"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "enforcement": "required",
+        "term_reason": "32412 中的具名宝物标题，指 Esra 的篮子；应与事件写法同作专名。"
+      },
+      "reason": "列表标题是同一具名宝物的专名，应修正为 proper_name/required。",
+      "evidence_rows": [
+        32412
+      ],
+      "table": "terms",
+      "index": 1047
+    },
+    {
+      "patch": {
+        "recommended_translation": "破铅者",
+        "term_reason": "15574 的 Lead Breaker clan 中 Lead Breaker 为氏族名；复数 Lead Breakers 指其成员。译作破铅者，与“氏族”连用为破铅者氏族。"
+      },
+      "reason": "源词条未含 clan，译名中保留“氏族”会与原文 clan 重复；统一核心译名以匹配复数形式。",
+      "evidence_rows": [
+        15574
+      ],
+      "table": "terms",
+      "index": 492
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:472",
+      "evidence_rows": [
+        14111
+      ],
+      "source_excerpt": "Orgerd tribe",
+      "reason": "核对部族名、音译及组织分类，均无冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "14111 原文将 Orgerd 用作受 Urgrain 威胁的部族名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "奥格德为音译专名，符合现有统一译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文作 Orgerd tribe，归入组织。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此条 Orgerd，与术语表推荐译名一致，无别名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:478",
+      "evidence_rows": [
+        14698
+      ],
+      "source_excerpt": "God Bone",
+      "reason": "核对独特宝物名及物品分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "14698 中的 God Bone 为获得的特定宝物名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "神骨为简短名词译名，保留宝物名性质。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文在获得宝物列表中，归入物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "神骨作为该独特宝物名，未见同形异指；共享译名审计项按同物空格变体核对。"
+        }
+      }
+    },
+    {
+      "ref": "terms:480",
+      "evidence_rows": [
+        14698,
+        32473
+      ],
+      "source_excerpt": "Shimmering Cloak",
+      "reason": "事件与宝藏列表写法一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "14698 与 32473 均使用 Shimmering Cloak。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "闪光斗篷准确传达 shimmering 与 cloak，并保持宝物名简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "两处均为宝物或宝藏名，归入物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "14698 事件名与 32473 列表标题一致，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:482",
+      "evidence_rows": [
+        14833,
+        32489
+      ],
+      "source_excerpt": "a torc of honor",
+      "reason": "核对描述性宝物名及列表标题。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "14833 中 torc of honor 为获得后提升他人钦佩的颈环类宝物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "荣誉颈环保留 torc 的颈环义与 honor 的荣誉义，适合宝物名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "14833 与 32489 均为宝物名，归入物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "14833 小写描述与 32489 标题式写法同指一物，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:483",
+      "evidence_rows": [
+        14834,
+        32502
+      ],
+      "source_excerpt": "a winking sapphire",
+      "reason": "核对蓝宝石宝物名及大小写变体。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "14834 中 winking sapphire 为非常值钱的蓝宝石宝物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "眨眼蓝宝石保留 winking 的字面形象及 sapphire 的宝石义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "14834 与 32502 均为宝物或宝藏名，归入物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "14834 小写写法与 32502 标题写法同指一物，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:484",
+      "evidence_rows": [
+        14835
+      ],
+      "source_excerpt": "a basket of Esra",
+      "reason": "具名宝物名及物品分类正确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "14835 中 basket of Esra 可帮助大麦收成，且含专名 Esra。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "埃斯拉之篮传达 Esra 音译与篮子的宝物义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为宝物效果描述，归入物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该宝物作为具名物品处理；共享译名审计项已核对为同物别名，不构成异指。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1047",
+      "evidence_rows": [
+        32412
+      ],
+      "source_excerpt": "Esra's Basket",
+      "reason": "修正术语类型与强制级别；译名和物品路径维持。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32412 为宝藏列表中的 Esra's Basket，含专名 Esra。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "埃斯拉之篮保留 Esra 音译与 Basket 义，和事件写法一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "category_path 物品正确；术语分类由 game_term/reference 修正为 proper_name/required，因其是具名宝物标题。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "修正后与同一宝物的专名处理一致；共享译名 f2 属同物别名，不构成异指。"
+        }
+      }
+    },
+    {
+      "ref": "terms:485",
+      "evidence_rows": [
+        14836
+      ],
+      "source_excerpt": "far-walk sandals",
+      "reason": "核对凉鞋类宝物名、译名和物品分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "14836 中 a pair of far-walk sandals 为探索时增加好运的宝物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "远行凉鞋对应 far-walk 与 sandals，适合作为宝物名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文是宝物效果描述，归入物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "远行凉鞋作为该特定宝物名的稳定译法，未见同形异指冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1050",
+      "evidence_rows": [
+        32416
+      ],
+      "source_excerpt": "Farwalk Sandals",
+      "reason": "宝藏列表标题与推荐译名一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32416 为宝藏列表中的 Farwalk Sandals 标题。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "远行凉鞋传达 Farwalk 的远行义及 Sandals 的凉鞋义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "列表标题为具名宝物，归入物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "该标题与共享译名审计中的同物写法保持核心译名一致，作为 reference 术语不强制扩展。"
+        }
+      }
+    },
+    {
+      "ref": "terms:486",
+      "evidence_rows": [
+        15165
+      ],
+      "source_excerpt": "the honorable Arlev clan",
+      "reason": "核对氏族专名及组织分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "15165 中 the honorable Arlev clan 是被 Heort 邀请加入的氏族。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "阿列夫氏族音译 Arlev 并保留氏族类别。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文明确作 clan，归入组织。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此条 Arlev clan，专名与类别组合稳定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:492",
+      "evidence_rows": [
+        15574
+      ],
+      "source_excerpt": "Lead Breaker clan",
+      "reason": "修正单数形式译名以匹配源词及复数变体。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "15574 中 Lead Breaker clan 为来自圣国的氏族名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "源词条为 Lead Breaker，未含 clan；改译破铅者，避免与原文 clan 重复，且可组合为破铅者氏族。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文明确称 clan，category_path 组织正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "改为破铅者后与复数 Lead Breakers 的成员及氏族用法共享核心译名，术语族内一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:511",
+      "evidence_rows": [
+        16884,
+        16888
+      ],
+      "source_excerpt": "Lead Breakers clan",
+      "reason": "核对复数形式及与单数变体的一致性。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "16884 中 Lead Breakers clan 指来自圣国的氏族，16888 又以其复数指代成员。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "破铅者保留核心译名，遇 clan 可组合为破铅者氏族，遇 These Lead Breakers 可作破铅者。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "两处均指同一氏族或其代表，归入组织。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与单数 Lead Breaker 修正后的破铅者共享核心译名，单复数差异不导致异名。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:472",
+    "terms:478",
+    "terms:480",
+    "terms:482",
+    "terms:483",
+    "terms:484",
+    "terms:1047",
+    "terms:485",
+    "terms:1050",
+    "terms:486",
+    "terms:492",
+    "terms:511"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

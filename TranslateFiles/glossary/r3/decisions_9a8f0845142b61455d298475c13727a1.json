@@ -1,0 +1,183 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 5 个条目的四维审校：dragonewts 统一为“龙人”，并将 e1 分类纠正为 game_term；e3 由“龙新人幼体”改为“龙人幼体”；e2、e4、e5 保持既定译名。f1 经核对为同一龙人种族单复数共享译名，不构成别名冲突。",
+  "acknowledged_findings": [
+    "F0381"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_kind": "game_term",
+        "term_reason": "原文 33882 将 dragonewts 定义为 Elder Races 之一，是格洛兰萨的龙人种族通称；单复数同指，故为 game_term。"
+      },
+      "reason": "dragonewts 是种族通称而非唯一专名；改为 game_term 以与单数 dragonewt 的分类和译名保持一致。",
+      "evidence_rows": [
+        33882
+      ],
+      "table": "terms",
+      "index": 82
+    },
+    {
+      "patch": {
+        "recommended_translation": "龙人幼体",
+        "term_reason": "原文 feeding dragonewt eftlings on the sly 指龙人幼体，属格洛兰萨龙人种族的幼体称谓。",
+        "applicability": {
+          "case_sensitive": false,
+          "mode": "text",
+          "reason": "原文 feeding dragonewt eftlings on the sly 指龙人幼体，属格洛兰萨龙人种族的幼体称谓。"
+        }
+      },
+      "reason": "统一种族名译作“龙人”，并保留 eftlings 的幼体义；applicability 说明同步修正。",
+      "evidence_rows": [
+        6581
+      ],
+      "table": "terms",
+      "index": 314
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:82",
+      "evidence_rows": [
+        33882
+      ],
+      "source_excerpt": "The dragonewts are one of the Elder Races; they walk like men but are lizards, like the dragons.",
+      "reason": "确认 dragonewts 为格洛兰萨龙人种族；将误标 proper_name 改为 game_term，译名龙人统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33882 明确称 dragonewts 为 Elder Races 之一，像人行走但为蜥蜴，与龙同类。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "龙人符合该种族定义，也避免候选“龙新人”与现代汉语习惯的冲突。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文为种族通称，不是唯一专名；已由 proper_name 改为 game_term，category_path=种族、enforcement=required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e4 单数 dragonewt 同译“龙人”；f1 的共享译名经核对属于同一龙人种族单复数，不是别名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:99",
+      "evidence_rows": [
+        1709,
+        31352
+      ],
+      "source_excerpt": "Our expedition to the Dragonewt Wildlands has returned.",
+      "reason": "确认 Dragonewt Wildlands 为龙人出没地区的地名，译名与种族名一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1709 说明远征前往 Dragonewt Wildlands；31352 是地图标签，符合地名来源。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“龙人荒野”对应 Dragonewt Wildlands，且“龙人”与 e1 统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "专有地名，category_path=地名、term_kind=proper_name、enforcement=required 适当。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "复合词中的“龙人”与 e1、e4 的种族译名一致，整体地名译法不受 f1 共享译名影响。"
+        }
+      }
+    },
+    {
+      "ref": "terms:314",
+      "evidence_rows": [
+        6581
+      ],
+      "source_excerpt": "feeding dragonewt eftlings on the sly.",
+      "reason": "确认该短语指龙人幼体；修正“龙新人幼体”为“龙人幼体”，并同步 applicability 说明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "6581 的 dragonewt eftlings 指龙人种族的幼体，eftlings 保留幼体义。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“龙新人幼体”与已统一的“龙人”不一致；改为“龙人幼体”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属龙人种族的幼体称谓，category_path=种族、term_kind=game_term、enforcement=reference 且有 applicability 限定，设置合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "修订后与 e1、e4 的“龙人”统一；applicability 仍限定于该具体短语。"
+        }
+      }
+    },
+    {
+      "ref": "terms:372",
+      "evidence_rows": [
+        9147
+      ],
+      "source_excerpt": "The dragonewt flared its scales and hissed.",
+      "reason": "确认 dragonewt 单数为龙人个体；共享译名属于同一术语单复数变体。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9147 中单数 dragonewt 张鳞嘶叫，指龙人种族个体，语义明确。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“龙人”与 e1 复数译名一致，单复数共用同一中文种族名可接受。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族 game_term、enforcement=required 与原文明指龙人种族个体相符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f1 所指与 e1 共享译名来自同一龙人种族单复数，不是不同专名误用同一译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:581",
+      "evidence_rows": [
+        21385
+      ],
+      "source_excerpt": "had the same dream as last time, with the Lord High Dragonewt presiding over a marriage between us and the Horse-Spawn, brought about because we made peace.",
+      "reason": "确认 Lord High Dragonewt 为梦中主持和亲的高位龙人称号，保留“龙人至尊”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "21385 中 Lord High Dragonewt 主持我方与 Horse-Spawn 的和亲，为特定高位称号。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“龙人至尊”体现 Lord High 的尊号含义，并保留“龙人”这一种族名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属身份/称号，category_path=身份、term_kind=proper_name、enforcement=required 适当。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "“龙人”构件与 e1、e4 统一；作为称号与普通种族名词区分清晰。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:82",
+    "terms:99",
+    "terms:314",
+    "terms:372",
+    "terms:581"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

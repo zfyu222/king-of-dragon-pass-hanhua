@@ -1,0 +1,202 @@
+{
+  "review_complete": true,
+  "review_summary": "本批核对6个角色专名：e1将“真理女主”修正为更自然的“真理之女主人”；e3将Orlanthsson由解释性意译改为与关联项一致的音译“奥兰斯松”；其余条目译名、分类与一致性未见需改问题。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "真理之女主人奥雷诺亚",
+        "term_reason": "原文称她为 Lhankor Mhy 的母辈神之一，称号 Mistress of Truth；译作“真理之女主人”，表明其女性主宰身份。"
+      },
+      "reason": "“真理女主”易被理解为女性主角，改为“真理之女主人”更贴合 Mistress 的女性主宰义且中文搭配更自然。",
+      "evidence_rows": [
+        34092
+      ],
+      "table": "characters",
+      "index": 229
+    },
+    {
+      "patch": {
+        "recommended_translation": "德罗加拉尔奥兰斯松",
+        "term_reason": "Ornay 之父，原文称其为 King；Orlanthsson 为父名后缀，整体音译作“奥兰斯松”。"
+      },
+      "reason": "原译把父名后缀拆成“奥兰斯之子”；改为整体音译“奥兰斯松”，与关联项 e7 的 Orlanthsson 处理一致。",
+      "evidence_rows": [
+        34273
+      ],
+      "table": "characters",
+      "index": 241
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:229",
+      "evidence_rows": [
+        34092
+      ],
+      "source_excerpt": "Orenoar the Mistress of Truth",
+      "reason": "核对原文、译名、专名分类及 truth 相关关联项后，仅修正称号的中文搭配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第34092行明确 Orenoar 为 Lhankor Mhy 的母辈神之一，称号 Mistress of Truth。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "“真理女主”易被理解为女性主角；改为“真理之女主人奥雷诺亚”，保留 Mistress 的女性主宰义且中文更自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters/proper_name，性别女性与 Orenoar 作为母辈神及 Mistress 称号一致。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Truth 在本条作称号译“真理”，与关联项 e9、e13 的“真理”一致；e10/e12 的“真言”属魔法或仪式语境，不构成冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:237",
+      "evidence_rows": [
+        34272
+      ],
+      "source_excerpt": "Jarani Whitetop, the Mountain Glider",
+      "reason": "原文、译名、分类及 Jarani 关联项核对一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第34272行原文为 Jarani Whitetop, the Mountain Glider，并说明其为 Ragorn 之子、占据 Arrowmound。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Jarani 音译“贾拉尼”，Whitetop 意译“白顶”，组合“白顶贾拉尼”可作人物称号式译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters/proper_name，男性与原文 son of Ragorn 等父系身份一致。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Jarani 译“贾拉尼”与关联项 e14“贾拉尼石阵”一致；Whitetop 为单独称号，未见冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:241",
+      "evidence_rows": [
+        34273
+      ],
+      "source_excerpt": "King Drorgalar Orlanthsson",
+      "reason": "修正 Orlanthsson 的父名后缀处理，使其作为专名整体音译并与关联项一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第34273行原文为 Ornay daughter of King Drorgalar Orlanthsson，确认其为 King 及 Ornay 之父。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译“德罗加拉尔奥兰斯之子”把父名后缀拆成解释性短语，改为整体音译“德罗加拉尔奥兰斯松”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters/proper_name，男性与 King、Ornay 之父身份一致。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "关联项 e7 将 Vingkot Orlanthsson 的 Orlanthsson 译作“奥兰斯松”；本条已统一为该后缀译法。"
+        }
+      }
+    },
+    {
+      "ref": "characters:245",
+      "evidence_rows": [
+        34234
+      ],
+      "source_excerpt": "Young Varnaval",
+      "reason": "核对原文、候选译名、性别证据及 Young 关联项后保留现译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第34234行原文称“treat him as they treated Young Varnaval”，确认 Young Varnaval 为被引用的特定人物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“年轻的瓦尔纳瓦尔”按 Young 的普通修饰义翻译，可作该称号式人物的描述性译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters/proper_name；原文未明确 Young Varnaval 性别，保留“其他”不构成性别误填。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Young 在关联项 e15“Young Orlanth”中译“年轻的”，本条处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:246",
+      "evidence_rows": [
+        34371
+      ],
+      "source_excerpt": "Grandfather Life",
+      "reason": "原文、译名、分类及 Grandfather 关联项核对一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第34371行原文明确 Eurmal 首先遇到的人是 Grandfather Life。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Grandfather Life 译“生命祖父”，与 Grandfather 的称谓义及 Life 的字面义吻合。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters/proper_name，男性与 Grandfather 称谓一致。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Grandfather 与关联项 e16“Grandfather Mortal”的“祖父”译法一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:247",
+      "evidence_rows": [
+        34375
+      ],
+      "source_excerpt": "Warlord Elf",
+      "reason": "称号式人物专名，原文、译名、分类及关联项核对一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第34375行原文称 Eurmal 与 Warlord Elf 打赌猜谜并输掉 Death，确认其为特定精灵统帅。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Warlord Elf 译“精灵统帅”，保留其称号性质，中文搭配自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters/proper_name，男性与 Warlord 称号相符；本条作为称号式人物专名保留。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "关联项 e8 的“Chinkis Mor, the Elf Warlord”同指该精灵统帅；e8 仅列本名，不影响本条称号译“精灵统帅”。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:229",
+    "characters:237",
+    "characters:241",
+    "characters:245",
+    "characters:246",
+    "characters:247"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

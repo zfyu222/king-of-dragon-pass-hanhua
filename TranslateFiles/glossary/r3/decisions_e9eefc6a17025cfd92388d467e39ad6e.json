@@ -1,0 +1,400 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e10 全部 characters 专名：保留原有专名与译名，修正 Fynin 的基础人名译名为“菲宁”，并修正若干 term_reason 中原文未支持的细节；未发现需隔离、新增或允许无匹配的条目。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "原文称 Sadratha 是派往远西北的探险者之一，归来报告 Tarsh 与面具王子之事。"
+      },
+      "reason": "将 term_reason 改为中性表述，避免加入原文未明示的性别指向。",
+      "evidence_rows": [
+        23816
+      ],
+      "table": "characters",
+      "index": 168
+    },
+    {
+      "patch": {
+        "term_reason": "原文称他自称 Prince of Masks，是探险者在 Tarsh 遇到的一个古怪而浮夸的男子，声称可降下魔法灾难。"
+      },
+      "reason": "删除“术士”等原文未直接支持的设定，仅保留可证身份与行为。",
+      "evidence_rows": [
+        23816,
+        23817
+      ],
+      "table": "characters",
+      "index": 171
+    },
+    {
+      "patch": {
+        "recommended_translation": "菲宁",
+        "term_reason": "原文称 Fynin 为无腿国王，千年前与 Ore Digging Tribe 在此交战阵亡；‘the Legless King’ 是称谓，基础人名译作菲宁。"
+      },
+      "reason": "源词为 Fynin；the Legless King / King 是称谓，不应并入基础人名译名。",
+      "evidence_rows": [
+        23881,
+        23885
+      ],
+      "table": "characters",
+      "index": 172
+    },
+    {
+      "patch": {
+        "term_reason": "原文称 Thadart 是氏族探险者，被 Tusk Riders 俘获折磨，面容被其神改变成 Tusk Rider 模样；后娶 Kistrald 并生子 Palagor。"
+      },
+      "reason": "修正“因公致残”等不精确概括，使 term_reason 贴合原文所述俘获、折磨与面容改变。",
+      "evidence_rows": [
+        24350,
+        24391,
+        24516
+      ],
+      "table": "characters",
+      "index": 173
+    },
+    {
+      "patch": {
+        "term_reason": "原文称 Kistrald 是 \\x01@! clan 的女子，后成为 Thadart 的妻子并生下 Palagor；在 Tusk Rider 来袭前曾痛斥氏族。"
+      },
+      "reason": "删除原文未支持的“与其子一同被放逐或死亡”细节，仅保留婚姻、生子和斥责氏族等可证信息。",
+      "evidence_rows": [
+        24482,
+        24516,
+        24572
+      ],
+      "table": "characters",
+      "index": 174
+    },
+    {
+      "patch": {
+        "term_reason": "原文称 Thed 是不洁三神之一，布鲁兽之母与强奸女神，也是 Wakboth 的盟友。"
+      },
+      "reason": "删除所引原文未见的侵害与报复细节，改为可证的神祇身份与关系。",
+      "evidence_rows": [
+        24958,
+        25959,
+        33878,
+        34012
+      ],
+      "table": "characters",
+      "index": 176
+    },
+    {
+      "patch": {
+        "term_reason": "原文称 Molanni 是静风女神、Daga 之母，也是 Orlanth 的侄女；Daga 的父亲为 Yelm。"
+      },
+      "reason": "补充原文可证的亲属与神职范围，使 term_reason 能说明该专名的实际含义。",
+      "evidence_rows": [
+        24958,
+        25501,
+        34233
+      ],
+      "table": "characters",
+      "index": 177
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:168",
+      "evidence_rows": [
+        23816
+      ],
+      "source_excerpt": "Sadratha, one of the explorers you sent to the far northwest",
+      "reason": "人名与探险者身份成立；将 term_reason 改为不含未证明性别的中性表述。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "23816 原文作 Sadratha, one of the explorers...；term_reason 已中性化。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“萨德拉塔”音译可用，本批无其他候选冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters，proper_name，required；gender 因原文未明作“其他”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无 Sadratha 其他译名或指代冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:169",
+      "evidence_rows": [
+        24016,
+        24017,
+        24032,
+        24033,
+        24036
+      ],
+      "source_excerpt": "Glendara, a prosperous carl of your clan",
+      "reason": "女性氏族 carl 身份与失马事件明确，译名统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "24016/24017 表明 Glendara 是氏族 carl，名马 Tempest 被盗。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“格伦达拉”音译统一，候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters，proper_name，required；女性由 her 可证。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Glendara 译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:170",
+      "evidence_rows": [
+        24016,
+        24032,
+        24033,
+        24053
+      ],
+      "source_excerpt": "Rangarda Dark-Eyes",
+      "reason": "别名与身份明确；“黑眼兰加尔达”保留 Dark-Eyes 且不用间隔号。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "24016 与 24032 表明她是 \\x01@! clan 的 well-off carl，被 Glendara 指控。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Dark-Eyes 作“黑眼”置于名前，保留别名且符合不用间隔号的风格。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters，proper_name，required；女性由 she/her 可证。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批 Rangarda Dark-Eyes 只用此译名；不采用含间隔号的候选。"
+        }
+      }
+    },
+    {
+      "ref": "characters:171",
+      "evidence_rows": [
+        23816,
+        23817
+      ],
+      "source_excerpt": "The Prince of Masks",
+      "reason": "自称称号与男性身份成立；term_reason 已删除未证“术士”设定。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "23816/23817 仅称古怪浮夸男子自称 The Prince of Masks；term_reason 已收紧。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“面具王子”对应 Prince of Masks，简洁明确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters，proper_name，required；男性由 fellow 可证。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Prince of Masks 译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:172",
+      "evidence_rows": [
+        23881,
+        23885
+      ],
+      "source_excerpt": "Fynin, the Legless King",
+      "reason": "源词为 Fynin，称号不应并入基础人名；译名改为“菲宁”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "23881/23885 确认 Fynin 是 the Legless King / King Fynin；源词本身为 Fynin。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "源条目仅为 Fynin，‘the Legless King’是称谓；将“无腿者菲宁”修正为“菲宁”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters，proper_name，required；男性由 King 及记载可证。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "修正后基础名与称谓范围一致；正文仍可按语境译“无腿王”。"
+        }
+      }
+    },
+    {
+      "ref": "characters:173",
+      "evidence_rows": [
+        24350,
+        24391,
+        24491,
+        24516
+      ],
+      "source_excerpt": "Thadart, was taken by the cruel enemies known as Tusk Riders",
+      "reason": "被俘、折磨、面容改变及婚姻关系均有原文依据；term_reason 已贴合。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "24350/24391 表明 Thadart 被 Tusk Riders 抓走、折磨并面容被改；删除不精确概括。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“塔达特”音译统一，候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters，proper_name，required；男性由 man/his 可证。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Thadart 译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:174",
+      "evidence_rows": [
+        24482,
+        24516,
+        24572
+      ],
+      "source_excerpt": "Kistrald",
+      "reason": "婚姻、生子和斥责氏族可证；删除未证放逐/死亡结局。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "24482/24516/24572 仅证她为 \\x01@! clan 女子、Thadart 之妻、Palagor 之母并曾斥责氏族。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“基斯特拉尔德”音译统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters，proper_name，required；女性由 bride/wife 可证。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Kistrald 译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:175",
+      "evidence_rows": [
+        24516,
+        24517
+      ],
+      "source_excerpt": "Palagor",
+      "reason": "Thadart 与 Kistrald 之子及面容特征明确，译名统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "24516/24517 表明 Palagor 是 Thadart 与 Kistrald 之子，继承父亲面容特征。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“帕拉戈尔”音译统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters，proper_name，required；男性由 son 可证。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Palagor 译名。"
+        }
+      }
+    },
+    {
+      "ref": "characters:176",
+      "evidence_rows": [
+        24958,
+        25959,
+        33843,
+        33878,
+        34012
+      ],
+      "source_excerpt": "Thed",
+      "reason": "女神身份明确；term_reason 已删除未证细节并统一译名。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "25959/33878/34012/24958 支持其为不洁三神之一、布鲁兽之母与强奸女神、Wakboth 盟友；删除未证细节。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "选用“瑟德”，在赛德/塞德/瑟德候选中本批统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters，proper_name，required；女性由 goddess/mother 可证。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批统一作“瑟德”，不再混用赛德/塞德。"
+        }
+      }
+    },
+    {
+      "ref": "characters:177",
+      "evidence_rows": [
+        24958,
+        25501,
+        26003,
+        34231,
+        34233,
+        34256,
+        34257
+      ],
+      "source_excerpt": "Molanni, goddess of still air",
+      "reason": "静风女神、Daga 之母及亲属关系可证；译名统一。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "24958/25501/34233 支持其为静风女神、Daga 之母、Orlanth 的侄女，且 Daga 之父为 Yelm；term_reason 已补充。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "选用“莫兰妮”，在莫兰妮/莫兰尼候选中本批统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters，proper_name，required；女性由 goddess/mother/niece 可证。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批统一作“莫兰妮”，不再混用莫兰尼。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:168",
+    "characters:169",
+    "characters:170",
+    "characters:171",
+    "characters:172",
+    "characters:173",
+    "characters:174",
+    "characters:175",
+    "characters:176",
+    "characters:177"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

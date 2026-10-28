@@ -1,0 +1,398 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e12 的原文、译名、分类与一致性；修正 e1/e2 的建筑分类、e3 无据译名及 e2 术语说明，隔离普通词 fertility，并确认 f1 为同一神祇面相的共用译名。",
+  "acknowledged_findings": [
+    "F0372"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "category_path": "其他"
+      },
+      "reason": "tribal hall 是可建造的部族会堂/设施，不宜归入一般‘物品’，改为‘其他’。",
+      "evidence_rows": [
+        10672
+      ],
+      "table": "terms",
+      "index": 422
+    },
+    {
+      "patch": {
+        "category_path": "其他",
+        "term_reason": "部族神殿，需陈列龙隘最令人瞩目的部族圣物。"
+      },
+      "reason": "tribal temple 是建筑设施，category_path 改为‘其他’；term_reason 去除英文并明确含义。",
+      "evidence_rows": [
+        10665
+      ],
+      "table": "terms",
+      "index": 423
+    },
+    {
+      "patch": {
+        "recommended_translation": "十字之灵",
+        "term_reason": "原文仅称需安抚 cross spirit，暂定为十字之灵，具体所指不明。"
+      },
+      "reason": "原译‘十字线之灵’把 cross 误解为 crossline，且 term_reason 引用了未给出的 crossline stone；改为保守暂译并如实说明。",
+      "evidence_rows": [
+        10875
+      ],
+      "table": "terms",
+      "index": 425
+    }
+  ],
+  "quarantine": [
+    {
+      "reason": "fertility 在 11565 中为普通名词，指氏族丰产/繁衍力；33444 的 cattle fertility 也是普通搭配，不应作为游戏术语冻结。",
+      "evidence_rows": [
+        11565,
+        33444
+      ],
+      "table": "terms",
+      "index": 444
+    }
+  ],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:422",
+      "evidence_rows": [
+        10672
+      ],
+      "source_excerpt": "the tribal hall to be built",
+      "reason": "核对 10672：tribal hall 是氏族的可建造会堂/设施；‘部族大厅’可保留，类别由‘物品’改为‘其他’。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "10672 原文 wants the tribal hall to be built...，指部族设施。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘部族大厅’对应 tribal hall，简洁且可拼接。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "tribal hall 是建筑/设施，不是一般物品，category_path 改为‘其他’。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e2 tribal temple 的‘部族神殿’同属部族建筑，译名结构一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:423",
+      "evidence_rows": [
+        10665
+      ],
+      "source_excerpt": "The tribal temple must house the most impressive regalia in all of Dragon Pass.",
+      "reason": "10665 指需陈列部族圣物的部族神殿；译名可保留，类别改‘其他’，term_reason 去除英文。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "10665 原文明确 tribal temple 需陈列龙隘最令人瞩目的 regalia，指神殿建筑。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘部族神殿’对应 tribal temple，语义准确。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "建筑设施改归‘其他’，不再放‘物品’。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1 ‘部族大厅’同为部族建筑，命名结构一致；非专名用 reference 合理。"
+        }
+      }
+    },
+    {
+      "ref": "terms:425",
+      "evidence_rows": [
+        10875
+      ],
+      "source_excerpt": "Agree to propitiate the cross spirit.",
+      "reason": "10875 只表明要安抚 cross spirit，未给出十字线/十字线石依据；原译属无据增译，改为更保守的‘十字之灵’。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文仅见 propitiate the cross spirit，指一个需安抚的灵体。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原‘十字线之灵’把 cross 误解为 crossline；改为‘十字之灵’，不补‘路口/线’等未证实信息。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "灵体归‘其他’，category_path 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "作为暂定 reference 术语保留，不与其他条目共用译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:431",
+      "evidence_rows": [
+        11035,
+        11036
+      ],
+      "source_excerpt": "Conduct a divination ritual.",
+      "reason": "11035/11036 均作可执行选项，11036 明确已决定执行；‘占卜仪式’与‘技能’分类相容。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11035 原文 Conduct a divination ritual. 是玩家可执行选项，11036 为叙述确认。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘占卜仪式’对应 divination ritual，动词搭配‘举行’可拼接。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为可执行的仪式/技能项归‘技能’，在现有分类中可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "11035 与 11036 用法一致，无别名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:432",
+      "evidence_rows": [
+        11737,
+        12782,
+        12794
+      ],
+      "source_excerpt": "We hosted Sir Ethilrist and his Black Horse Troop at our tula.",
+      "reason": "12782/11737 确认 Black Horse Troop 是 Sir Ethilrist 率领的异邦战士组织；‘黑马团’作为组织专名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "12782 原文 his Black Horse Troop，与 11737 自称一致，指一个组织。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘黑马团’对应 Black Horse Troop，专名简洁，未与普通‘黑马’混用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "组织，category_path 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "11737、12782、12794 均指同一团体，译名一致；与 e6/e7 的黑马团宝物语境相合。"
+        }
+      }
+    },
+    {
+      "ref": "terms:434",
+      "evidence_rows": [
+        11755,
+        12789,
+        12790,
+        32475
+      ],
+      "source_excerpt": "The Silver Lips of Anriar, which helps persuade people",
+      "reason": "12789/32475 确认是有说服效果的具名宝物；译名‘安里亚尔银唇’可保留，proper_name required。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "12789 原文 The Silver Lips of Anriar, which helps persuade people，指具名宝物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘安里亚尔银唇’保留 Anriar 音译与 Silver Lips 意译，符合宝物名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品，category_path 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "11755、12789、12790、32475 同指一件宝物，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:435",
+      "evidence_rows": [
+        11759,
+        32404
+      ],
+      "source_excerpt": "Dragon Cart",
+      "reason": "11759/32404 显示 Dragon Cart 是被黑马团嫌弃的具名宝物；‘龙车’可保留，proper_name required。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32404 原文即 Dragon Cart；11759 也作 our Dragon Cart，指具名车驾。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘龙车’直译对应 Dragon Cart，简短可作宝物名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品/车驾，category_path 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "11759 与 32404 同一物品，译名一致；不扩展为‘龙战车’。"
+        }
+      }
+    },
+    {
+      "ref": "terms:442",
+      "evidence_rows": [
+        11951,
+        11952,
+        34065
+      ],
+      "source_excerpt": "We were sure our ancestors, who had adopted the “Stick People” during the Darkness, would be pleased.",
+      "reason": "11951/11952 引号内 Stick People 是一个被祖先收养/奴役的族群名；‘棍民’可保留。34065 的 Digging Stick People 不是同一名称，不能据此改译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11951/11952 引号内 “Stick People” 是被收养或奴役的族群称谓；34065 的 Digging Stick People 名称不同，不能混同。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘棍民’作为族群简称可对应 Stick People；引号保留其他称性质。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族/族群，category_path 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "11951 与 11952 均用同一引号名称，译名一致；proper_name required 合理。"
+        }
+      }
+    },
+    {
+      "ref": "terms:443",
+      "evidence_rows": [
+        12017
+      ],
+      "source_excerpt": "They retell famous stories of Orlanth the Adventurer.",
+      "reason": "12017 指风领主重述 Orlanth the Adventurer 的故事，是奥兰斯的冒险者面相；‘冒险者奥兰斯’可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "12017 原文 They retell famous stories of Orlanth the Adventurer，指该神祇面相。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘冒险者奥兰斯’对应 Orlanth the Adventurer，与既有 Orlanth 译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神祇/面相归‘其他’，在现有分类中可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与只读关联项 Orlanth Adventurous 同指冒险者面相，共用‘冒险者奥兰斯’可接受，f1 不构成误译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:444",
+      "evidence_rows": [
+        11565,
+        11849,
+        33444
+      ],
+      "source_excerpt": "We must act decisively or these squabbles will ruin all our fertility.",
+      "reason": "11565 的 fertility 是普通名词，指氏族丰产/繁衍力；33444 的 cattle fertility 也是普通搭配，非游戏专名，建议 quarantine。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "11565 中 all our fertility 为普通名词短语，非专名；33444 亦为 cattle fertility 普通搭配，应移除 game_term 身份。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "不冻结译名；正文可按语境译‘丰产/生育力’。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "不应归为游戏术语；以 quarantine 处理，而非保留 category_path。"
+        },
+        "consistency": {
+          "status": "not_applicable",
+          "evidence": "隔离后不进入术语表，无需跨批统一译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:445",
+      "evidence_rows": [
+        11564
+      ],
+      "source_excerpt": "If this dispute continues, our pig magic will be strong, but our crop magic will be weak.",
+      "reason": "11564 将 pig magic 与 crop magic 对举，指氏族魔法类型；‘猪魔法’可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11564 原文 our pig magic will be strong...，指与猪相关的魔法类型。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘猪魔法’直译对应 pig magic，与‘作物魔法’对举。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "魔法类型归‘技能’，在现有分类中可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e12 crop magic 保持‘X魔法’结构，语义对称。"
+        }
+      }
+    },
+    {
+      "ref": "terms:446",
+      "evidence_rows": [
+        11564
+      ],
+      "source_excerpt": "If this dispute continues, our pig magic will be strong, but our crop magic will be weak.",
+      "reason": "11564 将 crop magic 与 pig magic 对举，指影响作物的魔法；‘作物魔法’可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11564 原文 our crop magic will be weak，指与作物相关的魔法类型。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘作物魔法’对应 crop magic，与‘猪魔法’对举。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "魔法类型归‘技能’，在现有分类中可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e11 pig magic 保持‘X魔法’结构，语义对称。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:422",
+    "terms:423",
+    "terms:425",
+    "terms:431",
+    "terms:432",
+    "terms:434",
+    "terms:435",
+    "terms:442",
+    "terms:443",
+    "terms:444",
+    "terms:445",
+    "terms:446"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

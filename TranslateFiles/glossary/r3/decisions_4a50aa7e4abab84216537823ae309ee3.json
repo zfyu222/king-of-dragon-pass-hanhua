@@ -1,0 +1,463 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成12个条目的四维审校；修正4条 term_reason 中未由证据支持的内容，为5个 non_translate 网址/邮箱补充 applicability；其余专名、译名与分类保持。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "原文中为“她”称为朋友、令她不舍放弃的灵体名称；四个斜杠分支为随机名称。"
+      },
+      "reason": "原 term_reason 提及未在证据中出现的 Ernalda 女祭司，按本条原文收窄为灵体名称与朋友关系。",
+      "evidence_rows": [
+        19961
+      ],
+      "table": "terms",
+      "index": 562
+    },
+    {
+      "patch": {
+        "term_reason": "原文中为植物部族的斗士 Sharp Green，以许多剑获得力量，后被 Orlanth 击败。"
+      },
+      "reason": "原 term_reason 引用了未提供证据的 26949，且未说明原文中的关键战斗结果，按现有证据修正。",
+      "evidence_rows": [
+        26922,
+        26926,
+        34334
+      ],
+      "table": "terms",
+      "index": 661
+    },
+    {
+      "patch": {
+        "term_reason": "原文中为救下孩子的地点，地名 Green Vale。"
+      },
+      "reason": "原 term_reason 提到未由本条证据支持的 Kallyr，按原文第一人称叙述修正。",
+      "evidence_rows": [
+        28386
+      ],
+      "table": "terms",
+      "index": 702
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "原文中的完整网址，出现在宣传句内；作为 URL 标识符需原样保留。"
+        }
+      },
+      "reason": "non_translate 网址需明确保留范围，避免默认全局禁翻。",
+      "evidence_rows": [
+        33060,
+        33061
+      ],
+      "table": "non_translate",
+      "index": 335
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "原文中的官方支持邮箱，作为联系标识符需原样保留。"
+        }
+      },
+      "reason": "non_translate 邮箱需明确保留范围。",
+      "evidence_rows": [
+        33055,
+        33812
+      ],
+      "table": "non_translate",
+      "index": 338
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "原文中的常见问题网页地址，作为 URL 标识符需原样保留。"
+        }
+      },
+      "reason": "non_translate 网址需明确保留范围。",
+      "evidence_rows": [
+        33086
+      ],
+      "table": "non_translate",
+      "index": 341
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "原文中的支持网页地址，作为 URL 标识符需原样保留。"
+        }
+      },
+      "reason": "non_translate 网址需明确保留范围。",
+      "evidence_rows": [
+        33087
+      ],
+      "table": "non_translate",
+      "index": 342
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "原文中的官方支持网址，作为 URL 标识符需原样保留。"
+        }
+      },
+      "reason": "non_translate 网址需明确保留范围。",
+      "evidence_rows": [
+        33812
+      ],
+      "table": "non_translate",
+      "index": 343
+    },
+    {
+      "patch": {
+        "term_reason": "原文中为对话框选出的氏族最佳外交官。"
+      },
+      "reason": "原 term_reason 添加了未由本条证据支持的议价与领导技能描述，按原文修正。",
+      "evidence_rows": [
+        32946
+      ],
+      "table": "characters",
+      "index": 207
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:201",
+      "evidence_rows": [
+        31955
+      ],
+      "source_excerpt": "Your ancient enemy is Tada the Green, champion of the flat land called Prax.",
+      "reason": "专名、译名与分类均与原文一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 31955 明确称 Tada the Green 为普拉克斯平原的勇士、古代敌人。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“绿者塔达”保留专名音译与 the Green 的修饰关系，无遗漏。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表中作为专有人名，term_kind=proper_name，enforcement=required，符合专名规则。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同条 evidence 32903 的同一人物称谓一致；未发现与其它条目的译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:562",
+      "evidence_rows": [
+        19961
+      ],
+      "source_excerpt": "Green Needle/Wise Leaf/Treeheart/Flit",
+      "reason": "保留随机名称四分支；修正未证实的背景表述。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 19961 给出被称作 Green Needle/Wise Leaf/Treeheart/Flit 的灵体，并由“she”视为朋友。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译文保留四个斜杠分支及数量：绿针/智叶/树心/轻掠。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms 表以 proper_name 记录该灵体名称，category_path=其他，可归类为神话灵体专名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原 term_reason 提到未由本条证据支持的 Ernalda 女祭司；已改为仅依据原文说明“她”的灵体朋友。"
+        }
+      }
+    },
+    {
+      "ref": "terms:661",
+      "evidence_rows": [
+        26926
+      ],
+      "source_excerpt": "blunted the many swords of Sharp Green, which gave it power.",
+      "reason": "专名保留；term_reason 已按现有证据修正。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "本条 26926 显示 Sharp Green 拥有许多剑并靠其获得力量；与 26922、34334 的斗士/被击败信息相容。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“锐绿”作为 Sharp Green 专名译名统一；未与 Tada the Green 混同。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms 表以 proper_name、category_path=其他 记录该植物部族斗士名，可用于专名冻结。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原 term_reason 引用了未提供证据的 26949 且未说明被 Orlanth 击败；已按现有三条证据重写。"
+        }
+      }
+    },
+    {
+      "ref": "terms:702",
+      "evidence_rows": [
+        28386
+      ],
+      "source_excerpt": "saved the children of Green Vale.",
+      "reason": "地名与译文一致；term_reason 已按原文修正。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 28386 明确 Green Vale 是救下孩子的地点。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“绿谷”符合地名译法，简短且不作普通词意译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms 表 category_path=地名，为专有地名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原 term_reason 提到未由本条证据支持的 Kallyr；已改为按原文“I”救下孩子的地点。"
+        }
+      }
+    },
+    {
+      "ref": "terms:893",
+      "evidence_rows": [
+        34366
+      ],
+      "source_excerpt": "When Ernalda was grown there was the Green Age.",
+      "reason": "时代专名与译文一致，分类无冲突。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 34366 将 Green Age 表述为 Ernalda 成长后出现的神话时代。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“绿色时代”保留时代名含义，与 Golden Age 并列结构一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms 表以 proper_name、category_path=其他 记录该神话时代名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现与其它时代名或普通 green 词义混淆。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:335",
+      "evidence_rows": [
+        33060
+      ],
+      "source_excerpt": "http://a-sharp.com/kodp",
+      "reason": "网址保留原样，已补 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 33060、33061 均为完整网址 http://a-sharp.com/kodp。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 保留原样，与源字符串完全一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补充 applicability=mode:text、case_sensitive:true，限定为该完整 URL 标识符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与源字符串完全一致，未与其他网址混同。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:338",
+      "evidence_rows": [
+        33812
+      ],
+      "source_excerpt": "support@herocraft.com",
+      "reason": "邮箱保留原样，已补 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 33055 版权信息和 33812 支持句均出现 support@herocraft.com。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 保留原样，与邮箱字符串完全一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补充 applicability=mode:text、case_sensitive:true，限定为该官方邮箱标识符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两处出现形式一致，未与其它联系方式混同。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:341",
+      "evidence_rows": [
+        33086
+      ],
+      "source_excerpt": "a-sharp.com/kodp/faq.html",
+      "reason": "网址保留原样，已补 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 33086 在常见问题指引句中给出 a-sharp.com/kodp/faq.html。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 保留原样，与源字符串完全一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补充 applicability=mode:text、case_sensitive:true，限定为该 URL 标识符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未与其它 a-sharp 网址混同。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:342",
+      "evidence_rows": [
+        33087
+      ],
+      "source_excerpt": "a-sharp.com/support",
+      "reason": "网址保留原样，已补 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 33087 在问题反馈指引中给出 a-sharp.com/support。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 保留原样，与源字符串完全一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补充 applicability=mode:text、case_sensitive:true，限定为该 URL 标识符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未与其它 a-sharp 网址混同。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:343",
+      "evidence_rows": [
+        33812
+      ],
+      "source_excerpt": "www.a-sharp.com/kodp/",
+      "reason": "网址保留原样，已补 applicability。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 33812 在支持联系句中给出 www.a-sharp.com/kodp/。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 保留原样，与源字符串完全一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "已补充 applicability=mode:text、case_sensitive:true，限定为该 URL 标识符。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同条邮箱并列出现时均保留原始标识符。"
+        }
+      }
+    },
+    {
+      "ref": "characters:207",
+      "evidence_rows": [
+        32946
+      ],
+      "source_excerpt": "The dialog chose Kulbrast as our best diplomat.",
+      "reason": "专名与译名一致；term_reason 已按原文修正。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 32946 称 Kulbrast 为对话框选出的最佳外交官，his 指明男性。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“库尔布拉斯特”作为 Kulbrast 音译专名，性别与原文一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表中 term_kind=proper_name、enforcement=required，符合专名规则。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原 term_reason 添加了未由本条证据支持的议价与领导技能描述，已按原文修正。"
+        }
+      }
+    },
+    {
+      "ref": "characters:208",
+      "evidence_rows": [
+        32989
+      ],
+      "source_excerpt": "Bastakos from the ring.",
+      "reason": "专名与译名一致；未明示性别时保留“其他”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 32989 称 Bastakos 为可被移出氏族议事圈的成员，上下文与 Trickster 相关。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“巴斯塔科斯”作为 Bastakos 音译专名，未添加原文没有的性别信息。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表中 term_kind=proper_name、enforcement=required；gender=其他符合原文未明示性别的状态。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "译名与分类内部一致，未发现与其它条目冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:201",
+    "terms:562",
+    "terms:661",
+    "terms:702",
+    "terms:893",
+    "non_translate:335",
+    "non_translate:338",
+    "non_translate:341",
+    "non_translate:342",
+    "non_translate:343",
+    "characters:207",
+    "characters:208"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

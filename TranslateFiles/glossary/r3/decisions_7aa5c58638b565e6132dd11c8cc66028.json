@@ -1,0 +1,216 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e6：确认 Charge、Arim’s cup、Stinking Forest、Chaos、lawspeaker(s) 的译名与分类；修正 e4 的大小写适用范围并细化释义，修正 e6 的 enforcement 为 required。f1 为同一宝藏的拼写/大小写变体，f2 为同一职衔的单复数变体，均无需隔离。",
+  "acknowledged_findings": [
+    "F0384",
+    "F0385"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "原文以首字母大写 Chaos 指格洛兰萨的宇宙混沌力量/敌对阵营，如 3591；需与普通小写 chaos 区分。"
+        },
+        "term_reason": "首字母大写 Chaos 指格洛兰萨的宇宙混沌敌对力量与阵营，常与 Chaos creatures、forces of Chaos、fight Chaos 等连用。"
+      },
+      "reason": "统一“混沌”译名，并限定大小写范围，避免把普通词 chaos 误套为游戏术语。",
+      "evidence_rows": [
+        3591,
+        1646
+      ],
+      "table": "terms",
+      "index": 118
+    },
+    {
+      "patch": {
+        "enforcement": "required",
+        "term_reason": "氏族法律职衔，单数形式；原文中法言者代表氏族处理案件、引用先例并陈词。"
+      },
+      "reason": "与 e5 复数 lawspeakers 为同一职衔变体，统一“法言者”并冻结为 required。",
+      "evidence_rows": [
+        3216,
+        4289
+      ],
+      "table": "terms",
+      "index": 227
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:792",
+      "evidence_rows": [
+        33791,
+        33794
+      ],
+      "source_excerpt": "The four possible tactics are Skirmish, Maneuver, Charge, and Evade.",
+      "reason": "确认 Charge 为战斗四战术之一，译“冲锋”；技能分类与 required 保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33791 列出 Skirmish、Maneuver、Charge、Evade 四战术；33794 说明 Charge 为冲击并压退敌军的战术。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "在战术并列中译作“冲锋”，简短且与 Skirmish/Maneuver/Evade 搭配自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为战斗战术机制归入技能类，符合现有分类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同条内四战术并列，译名固定为“冲锋”，无需改动。"
+        }
+      }
+    },
+    {
+      "ref": "terms:116",
+      "evidence_rows": [
+        1782
+      ],
+      "source_excerpt": "The treasure was Arim’s cup, a memento of Tarsh’s first king.",
+      "reason": "确认 Arim’s cup 为 Tarsh 首王纪念杯，译“阿里姆之杯”；与关联项 Arim's Cup 为同物变体。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1782 明确其为 Arim’s cup，Tarsh 首王的纪念杯，持有可获 Tarshite 友谊。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Arim 音译“阿里姆”，cup 译“杯”，译名“阿里姆之杯”准确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名宝物/容器，物品类且 proper_name required 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与只读关联项 Arim's Cup 属同一宝藏的拼写/大小写变体，共享译名“阿里姆之杯”不构成两名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:117",
+      "evidence_rows": [
+        1814,
+        24372
+      ],
+      "source_excerpt": "the place they had been to was called the Stinking Forest",
+      "reason": "确认 Stinking Forest 为森林地名，统一“臭林”，适合地图标签；不采用“臭森林/恶臭森林”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1814 明确该地名为 Stinking Forest；24372 称 Tusk Riders 居于其中。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "地名译作“臭林”，简短且适合地图标签，候选“臭森林”“恶臭森林”不采用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "森林地名归入地名类，proper_name required 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各出处均指同一森林地名，统一“臭林”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:118",
+      "evidence_rows": [
+        3591,
+        1646
+      ],
+      "source_excerpt": "Chaos is always a frightening foe",
+      "reason": "确认 Chaos 为格洛兰萨宇宙混沌敌对力量，统一“混沌”；补大小写适用范围并细化 term_reason。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3591 称 Chaos 为需对抗的可怕敌人；1646 称 Chaos creatures 为混沌生物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“混沌”保留宇宙性敌对力量义，避免降为普通“混乱”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属神话/游戏阵营概念，其他类与 game_term required 合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一大写 Chaos 指宇宙混沌力量；补 case_sensitive text 范围，避免普通小写 chaos 套用术语。"
+        }
+      }
+    },
+    {
+      "ref": "terms:119",
+      "evidence_rows": [
+        21438,
+        21449
+      ],
+      "source_excerpt": "Our lawspeakers will mediate future trade disputes.",
+      "reason": "确认 lawspeakers 为氏族法律职衔，统一“法言者”；与 e6 单数同译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "21438/21449 将 lawspeakers 描述为可调解未来贸易争端、被称智慧的氏族法律职衔。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“法言者”简洁保留法律职衔含义，候选“律法发言人”等不采用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "氏族法律职衔归入身份类，game_term required 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e6 的 lawspeaker 为单复数变体，均译“法言者”，不隔离。"
+        }
+      }
+    },
+    {
+      "ref": "terms:227",
+      "evidence_rows": [
+        3216,
+        4289
+      ],
+      "source_excerpt": "Our lawspeaker charged it with unlawful trespass",
+      "reason": "确认 lawspeaker 与 e5 为同一职衔单数形式，统一“法言者”；将 enforcement 改为 required。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3216/4289 显示 lawspeaker 代表氏族处理法律案件、陈词并引用先例。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "单数 lawspeaker 与 e5 复数同译“法言者”，保留正式职衔义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "身份类正确；作为氏族正式职衔应冻结为 required，已修正。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e5 的 lawspeakers 为单复数变体，统一“法言者”；enforcement 由 reference 改为 required。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:792",
+    "terms:116",
+    "terms:117",
+    "terms:118",
+    "terms:119",
+    "terms:227"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

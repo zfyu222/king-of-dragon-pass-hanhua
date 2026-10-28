@@ -1,0 +1,410 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 12 个分配条目的来源、译名、分类与跨出处一致性；保留专名及乐队组织名译法，修正 e4、e5、e10 的 term_reason 与 e11 的性别。未发现需隔离或新增条目。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "想娶 Ostlana 的男子，企图偷犁；原文以 he、his 指代。"
+      },
+      "reason": "15612/15614/15615 只可证其求婚与偷犁企图，未称“武士”；删去无直接原文依据的身份词。",
+      "evidence_rows": [
+        15612,
+        15614,
+        15615
+      ],
+      "table": "characters",
+      "index": 126
+    },
+    {
+      "patch": {
+        "term_reason": "Veoslina 之女，Rangoron 想娶的对象；原文称 daughter、girl，并由其母决定婚事。"
+      },
+      "reason": "15614/15615 可证母女关系与婚事，但未出现“聪明”；修正为原文可证内容。",
+      "evidence_rows": [
+        15614,
+        15615
+      ],
+      "table": "characters",
+      "index": 127
+    },
+    {
+      "patch": {
+        "term_reason": "德里克·弗曼的 thane，传达德里克关于奶牛供应的话；原文未明确其性别。"
+      },
+      "reason": "16579 中送五头奶牛的是 Derik Furman；Varmath 只是 his thane 并转告下次同样供应，修正归属。",
+      "evidence_rows": [
+        16579
+      ],
+      "table": "characters",
+      "index": 135
+    },
+    {
+      "patch": {
+        "gender": "男性",
+        "term_reason": "哈马斯特追寻并摧毁篡位者的英雄，所有巨魔之王；原文34033称其为 a man named Arkat，故为男性。"
+      },
+      "reason": "27896 称 Arkat 为 troll king，34033 明确 a man named Arkat；性别由“其他”改为“男性”，译名沿用“阿卡特”。",
+      "evidence_rows": [
+        27896,
+        34033
+      ],
+      "table": "characters",
+      "index": 136
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:125",
+      "evidence_rows": [
+        15495,
+        15502,
+        15531,
+        16862
+      ],
+      "source_excerpt": "In addition to Bundalini the giant, the party includes two minotaurs and a host of walking skeletons.",
+      "reason": "核对巨人领队身份及各出处同指；确认音译与乐队全称搭配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "15495 称 Bundalini 为巨人并提及其 All-Skeleton Band；15502、15531、16862 同指此巡演领队。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Bundalini 音译“邦达利尼”自然，未采用其他候选；与 All-Skeleton Band 的“全骷髅乐队”可组合。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "15531 的 His All-Skeleton Band 确认男性；15495 称其为巨人，proper_name/required 恰当。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同批均用“邦达利尼”，与“全骷髅乐队”及全称乐队名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:494",
+      "evidence_rows": [
+        15531,
+        15532
+      ],
+      "source_excerpt": "Bundalini and His All-Skeleton Band play at your clan market",
+      "reason": "核对乐队名及全称/简称关系，保留“全骷髅乐队”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "15531 给出 Bundalini and His All-Skeleton Band；15532 简称 Bundalini’s All-Skeleton Band，同指乐队。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "All-Skeleton Band 译“全骷髅乐队”，保留专名且可用于全称组合。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该名指由 Bundalini 率领的乐队组织，组织类 proper_name/required 恰当。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e3 全称中的“全骷髅乐队”核心译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:518",
+      "evidence_rows": [
+        16862
+      ],
+      "source_excerpt": "and saw Bundalini and His All-Skeleton Band perform.",
+      "reason": "核对全称乐队名，确认与 e1/e2 核心名一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "16862 将 Bundalini and His All-Skeleton Band 作为演出主体。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "全称译“邦达利尼与他的全骷髅乐队”，保留“他的”指代。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "指乐队组织，组织类 proper_name/required 恰当。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "“邦达利尼”“全骷髅乐队”与 e1/e2 统一。"
+        }
+      }
+    },
+    {
+      "ref": "characters:126",
+      "evidence_rows": [
+        15612,
+        15614,
+        15615
+      ],
+      "source_excerpt": "He presented it to Ostlana’s mother Veoslina, who then permitted the marriage.",
+      "reason": "核对求婚、偷犁与男性指代；修正 term_reason 中无据的“武士”。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "15612 为偷犁选项；15614/15615 叙述偷犁及婚事，原文只称 he/his，未称“武士”；已修正 term_reason。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Rangoron 音译“兰戈隆”，三处一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "15614 的 his/he 确认男性；proper_name/required 恰当。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各出处均作 Rangoron，无变体，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "characters:127",
+      "evidence_rows": [
+        15614,
+        15615
+      ],
+      "source_excerpt": "When word of his failure reached Ostlana’s mother Veoslina, she prevented any further contact between Rangoron and her daughter.",
+      "reason": "核对母女关系与婚事；删去 term_reason 中未见于出处的“聪明”。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "15614/15615 可证 Ostlana 为 Veoslina 之女及婚事，但未出现“聪明”；已修正 term_reason。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Ostlana 音译“奥斯特拉娜”，两处一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "15614 的 her daughter 与 15615 的 marriage 明确女性身份；proper_name/required 恰当。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Veoslina、Rangoron 的关系在两处一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:128",
+      "evidence_rows": [
+        15614,
+        15615
+      ],
+      "source_excerpt": "When word of his failure reached Ostlana’s mother Veoslina, she prevented any further contact between Rangoron and her daughter.",
+      "reason": "核对母亲身份与反对/允许婚事。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "15614/15615 均称 Veoslina 为 Ostlana’s mother，并决定其婚事。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Veoslina 音译“维奥斯琳娜”，两处一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "mother/she 明确女性；proper_name/required 恰当。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Ostlana、Rangoron 关系译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:129",
+      "evidence_rows": [
+        15794,
+        15807,
+        16988,
+        16989,
+        17029
+      ],
+      "source_excerpt": "Remember Voballa, the simple girl mistaken for a hero of the Knowing God?",
+      "reason": "核对同一女孩 Voballa 的候选译名与后续身份。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "15794 介绍 Voballa 为 Vanartha 与 Robasart 的孩子；16988/16989/17029 同指该女孩。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "候选“沃巴拉/沃芭拉”仅用字差异，取首次且更贴音的“沃巴拉”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "15794 的 she/her 与 16988 的 girl 确认女性；proper_name/required 恰当。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "全批统一“沃巴拉”，不与父母名混淆。"
+        }
+      }
+    },
+    {
+      "ref": "characters:130",
+      "evidence_rows": [
+        15794,
+        15815
+      ],
+      "source_excerpt": "the young child of carls Vanartha and Robasart",
+      "reason": "核对 Voballa 父母之一，原文无性别代词。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "15794 称 Vanartha 为 Voballa 的 carl 父母之一；15815 再称 Vanartha and Robasart’s child。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Vanartha 音译“瓦纳莎”，仅此候选用字。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文未给出性别代词，保留“其他”；proper_name/required 恰当。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Robasart 并列，译名稳定。"
+        }
+      }
+    },
+    {
+      "ref": "characters:131",
+      "evidence_rows": [
+        15794,
+        15815
+      ],
+      "source_excerpt": "the people were happy that we had not given Vanartha and Robasart’s child away.",
+      "reason": "核对 Voballa 父母之一，原文无性别代词。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "15794 称 Robasart 与 Vanartha 同为 Voballa 的 carl 父母；15815 再称二者之子。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Robasart 音译“罗巴萨特”，仅此候选。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文未给性别代词，保留“其他”；proper_name/required 恰当。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Vanartha 并列，译名稳定。"
+        }
+      }
+    },
+    {
+      "ref": "characters:135",
+      "evidence_rows": [
+        16579
+      ],
+      "source_excerpt": "Derik Furman, who was born into our clan but now leads his own tribe, has fulfilled his promise, and sent us five milk cows. His thane, Varmath Rhinobane, said we could expect the same next Fire season.",
+      "reason": "核对 Varmath 的 thane 身份及奶牛归属；修正 term_reason 中“送来奶牛”的主语错误。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "16579 中送五头奶牛的是 Derik Furman，Varmath 为其 thane 并转告下次同样供应；已修正 term_reason 归属。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Varmath Rhinobane 译“瓦马斯·屠犀”，Rhinobane 作为称号性姓氏意译简洁，未与其他名冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文只用 His 指 Derik，未给 Varmath 性别，保留“其他”；proper_name/required 恰当。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "全名各部分译名稳定，无其他候选。"
+        }
+      }
+    },
+    {
+      "ref": "characters:136",
+      "evidence_rows": [
+        16490,
+        27896,
+        34033
+      ],
+      "source_excerpt": "He was finally destroyed by a man named Arkat, who was a good Orlanthi but betrayed us by turning into a troll.",
+      "reason": "核对 Arkat 的英雄、巨魔之王与男性身份；修正性别并统一译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "16490 称 Harmast 追寻英雄 Arkat；27896 称 Arkat 为 troll king；34033 同指摧毁 Nysalor 的 Arkat。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Arkat 以“阿卡特”最贴音形；34033 的 man 不改变专名，未采用增音“阿尔卡特”。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "34033 明确 a man named Arkat，27896 又称 troll king；性别由“其他”改为“男性”，分类保持 proper_name/required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "三处同指，统一“阿卡特”，不混用“阿尔卡特”。"
+        }
+      }
+    },
+    {
+      "ref": "characters:137",
+      "evidence_rows": [
+        16945,
+        16946,
+        27850,
+        27851,
+        27860,
+        27900
+      ],
+      "source_excerpt": "A huge troll, who identifies herself as Umulguk, seeks permission to enter your tula as a guest.",
+      "reason": "核对女巨魔 Umulguk 的自我介绍、父名与挑战。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "16945 自称 Umulguk；27850 称 I, Umulguk, daughter of Umkotor；27851 等继续同指。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Umulguk 音译“乌穆尔古克”，两批候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "16945 的 herself/she 与 27850 的 daughter 明确女性；proper_name/required 恰当。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各出处均作 Umulguk，未与 Umkotor 混淆。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:125",
+    "terms:494",
+    "terms:518",
+    "characters:126",
+    "characters:127",
+    "characters:128",
+    "characters:129",
+    "characters:130",
+    "characters:131",
+    "characters:135",
+    "characters:136",
+    "characters:137"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

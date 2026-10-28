@@ -1,0 +1,362 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对12个条目，确认大部分专名与游戏术语的译名、分类和证据；修正 e7 地名译法为“内拉特浴池”，并按本条原文修订 e10 的 term_reason。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "内拉特浴池"
+      },
+      "reason": "Baths 为复数地点名，“之浴”易被读作仪式；按地名改为更明确的“内拉特浴池”。",
+      "evidence_rows": [
+        34168
+      ],
+      "table": "terms",
+      "index": 1164
+    },
+    {
+      "patch": {
+        "term_reason": "女神所生之子即诸神誓约；众生以其起誓维护协议，原文称此誓约即重建的世界。"
+      },
+      "reason": "原 term_reason 含证据行未出现的女神专名及英文 child；按本条原文改写为女神之子。",
+      "evidence_rows": [
+        34190
+      ],
+      "table": "terms",
+      "index": 1167
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:1153",
+      "evidence_rows": [
+        34102
+      ],
+      "source_excerpt": "extracted the Bondsman's Oath from him",
+      "reason": "Bondsman's Oath 是奥兰斯迫使欧尔玛服从首领的特定誓约；“仆从誓约”准确，分类为游戏术语并保留 required。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文明确为 Orlanth 从 Eurmal 处取得的誓约，用于使其服从首领。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“仆从誓约”对应 bondsman（受约束者/仆从）+ oath，未泛化。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属于特定誓约/机制性术语，非普通 oath，归入其他合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形冲突；与 e5/e10 的誓约类术语区分清楚。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1154",
+      "evidence_rows": [
+        34138
+      ],
+      "source_excerpt": "marched along the Path of Silence",
+      "reason": "Path of Silence 是与刚死者并行的道路，Lhankor Mhy 知道离开之处；“寂静之路”保留地名意象。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文为与刚死者并行的道路，Lhankor Mhy 知道离开处。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“寂静之路”对应 Path of Silence，保留地名意象。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "是冥界道路名，归入地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形冲突，Path 统一译“之路”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1157",
+      "evidence_rows": [
+        34140
+      ],
+      "source_excerpt": "found their way to the Obsidian Castle",
+      "reason": "Obsidian Castle 是冥界中独一旧神招待随后背叛光使者的城堡；“黑曜石城堡”为准确专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文称他们到 Obsidian Castle，并成为 Only Old One 的客人。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“黑曜石城堡”对应 Obsidian Castle。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为具体城堡地点，归入地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Obsidian 统一译“黑曜石”，无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1161",
+      "evidence_rows": [
+        34166
+      ],
+      "source_excerpt": "taken to the Locked Gate",
+      "reason": "Locked Gate 是亡者之厅中奥兰斯与所有看守者战斗的地点；“锁闭之门”保留地点名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文说 Orlanth 被带到 Locked Gate 并与所有 Keepers 战斗。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“锁闭之门”对应 Locked Gate，保留地点名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "是亡者之厅中的具体地点，归入地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Gate 在本批 e11 为 Gates of Dawn，译“门”一致；限定语不同不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1162",
+      "evidence_rows": [
+        34167
+      ],
+      "source_excerpt": "Orlanth made his Promise of the Future.",
+      "reason": "Promise of the Future 是奥兰斯向耶尔姆提出的律法性承诺，主张未来可以像过去；“未来之诺”凝练对应。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文为 Orlanth 提出的未来之诺，主张未来可以像过去。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“未来之诺”凝练对应 Promise of the Future。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "是神话谈判中的特定承诺/游戏术语，归入其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1/e10 的誓约术语区分；Promise 译“诺”可接受。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1163",
+      "evidence_rows": [
+        34168
+      ],
+      "source_excerpt": "Yelm made his Requirement for Proof.",
+      "reason": "Requirement for Proof 是耶尔姆要求奥兰斯浸入三浴以证明自己的程序；“证明之要求”保留正式语气。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文为 Yelm 要求 Orlanth 以三浴证明的程序。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“证明之要求”对应 Requirement for Proof，保留正式语气。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "是审判程序中的特定要求，归入其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e8/e9 同属 Yelm 的正式程序术语，译名结构一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1164",
+      "evidence_rows": [
+        34168
+      ],
+      "source_excerpt": "the Baths of Nelat",
+      "reason": "Baths of Nelat 是奥兰斯此前经历过、使他能在三浴中不死的浴池地点；原译“内拉特之浴”易读作仪式，改为地名“内拉特浴池”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文为 Orlanth 此前经历过、使其在三浴中不死的 baths。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "“内拉特之浴”易读作仪式；Baths 为复数地点名，改为“内拉特浴池”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文指具体浴池地点，归入地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Nelat 音译“内拉特”保留，与 e6 三浴语境一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1165",
+      "evidence_rows": [
+        34170
+      ],
+      "source_excerpt": "Yelm made his Statement of Recognition",
+      "reason": "Statement of Recognition 是耶尔姆承认奥兰斯为诸神至高王并应得宇宙位置的声明；“承认之声明”保留正式语气。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文为 Yelm 承认 Orlanth 及其代表之物在宇宙中应有一席之地的声明。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“承认之声明”对应 Statement of Recognition，正式语气保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "是谈判中的特定声明/程序术语，归入其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e6/e9 的 Yelm 程序术语并列，结构一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1166",
+      "evidence_rows": [
+        34171
+      ],
+      "source_excerpt": "his demand for Atonement",
+      "reason": "Atonement 在此是耶尔姆要求奥兰斯作出的特定和解/服从表示；以 literal_context 限定在 demand for ... 语境，避免泛化为普通赎罪。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文为 Yelm 要求 Atonement，随后 Orlanth 行臣服礼并承认其威权。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“赎罪”保留 Atonement 的正式宗教义；applicability 限定在 demand for ... 语境，避免泛化。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "此处是亡者之厅谈判中的特定要求，归入其他并以 reference 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e6/e8 同属 Yelm 程序术语；仅作受限参考，不影响普通 atonement 译法。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1167",
+      "evidence_rows": [
+        34190
+      ],
+      "source_excerpt": "Her child is the Pledge of the Gods",
+      "reason": "Pledge of the Gods 是女神所生之子、众生起誓维护协议的诸神誓约；term_reason 已删除证据外专名及英文 child。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "原文仅称 the goddess 的孩子是 Pledge of the Gods；term_reason 已删除证据外专名及英文 child。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“诸神誓约”对应 Pledge of the Gods，保留专名性质。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文称此誓约即重建的世界，是特定誓约/宇宙秩序，归入其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1/e5 的誓约类术语区分；Pledge 译“誓约”一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1168",
+      "evidence_rows": [
+        34196
+      ],
+      "source_excerpt": "The Gates of Dawn were thrown open.",
+      "reason": "Gates of Dawn 是世界重建时众神进入各自领域、时间幽灵消失的东方之门；“黎明之门”为准确专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文为世界重建时众神进入各自领域、时间幽灵消失的东方之门。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“黎明之门”对应 Gates of Dawn。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "是具体门/地点，归入地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Gate 与 e4 的 Locked Gate 均译“门”，限定语不同不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1169",
+      "evidence_rows": [
+        34204
+      ],
+      "source_excerpt": "distant continent of Southland",
+      "reason": "Southland 是伊萨里斯把真理卖到海对岸的遥远大陆；“南陆”简洁对应大陆专名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文为海对岸的遥远大陆 Southland，Issaries 把真理卖到那里。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“南陆”简洁对应 Southland，作为大陆专名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "是大陆名，归入地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Southland 统一译“南陆”；本批无其他 South- 地名冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:1153",
+    "terms:1154",
+    "terms:1157",
+    "terms:1161",
+    "terms:1162",
+    "terms:1163",
+    "terms:1164",
+    "terms:1165",
+    "terms:1166",
+    "terms:1167",
+    "terms:1168",
+    "terms:1169"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

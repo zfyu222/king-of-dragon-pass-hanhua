@@ -1,0 +1,356 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对全部9条分配条目：e1-e3 的术语来源、译名与分类成立；e4-e9 均为独立内部标签/运行时键名，已补 whole_record 适用域以替代无范围非翻译保护。无新增、隔离或 allow_no_match。",
+  "acknowledged_findings": [
+    "F0000",
+    "F0001",
+    "F0002",
+    "F0003",
+    "F0004",
+    "F0005"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "RaidGoodNews 是独立内部结果标签，原文仅完整记录出现；仅整条记录完全匹配时保留，避免全局或子串禁翻。"
+        }
+      },
+      "reason": "补明确适用域，保留运行时保护但不全局禁翻。",
+      "evidence_rows": [
+        32
+      ],
+      "table": "non_translate",
+      "index": 0
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "RaidBadNews 是独立内部结果标签，原文仅完整记录出现；仅整条记录完全匹配时保留，避免全局或子串禁翻。"
+        }
+      },
+      "reason": "补明确适用域，保留运行时保护但不全局禁翻。",
+      "evidence_rows": [
+        33
+      ],
+      "table": "non_translate",
+      "index": 1
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "GoodNews 是独立内部结果标签，但词形可作普通短语；仅整条记录完全匹配时保留。"
+        }
+      },
+      "reason": "GoodNews 需限定为完整标签，避免普通词用法被全局禁翻。",
+      "evidence_rows": [
+        146
+      ],
+      "table": "non_translate",
+      "index": 2
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "BadNews 是独立内部结果标签，但词形可作普通短语；仅整条记录完全匹配时保留。"
+        }
+      },
+      "reason": "BadNews 需限定为完整标签，避免普通词用法被全局禁翻。",
+      "evidence_rows": [
+        124
+      ],
+      "table": "non_translate",
+      "index": 3
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "EmissaryNews 是独立内部事件标签/运行时键名；仅整条记录完全匹配时保留。"
+        }
+      },
+      "reason": "补明确适用域，保留运行时保护但不全局禁翻。",
+      "evidence_rows": [
+        159
+      ],
+      "table": "non_translate",
+      "index": 4
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "ItIsBad 是独立内部状态标签，词形可作普通短句；仅整条记录完全匹配时保留。"
+        }
+      },
+      "reason": "ItIsBad 需限定为完整标签，避免普通短句用法被全局禁翻。",
+      "evidence_rows": [
+        395
+      ],
+      "table": "non_translate",
+      "index": 5
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:1170",
+      "evidence_rows": [
+        34205
+      ],
+      "source_excerpt": "He fought broos, gorp, slimekin, ghouls, and krarshtkids.",
+      "reason": "slimekin 在原行明确列为混沌生物，术语分类与译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第34205行原文将 slimekin 与 broos、gorp、ghouls、krarshtkids 并列，明确为乌罗克斯消灭的混沌生物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“黏液亲族”按种族/类别名处理，保留 slimekin 的黏液属性与类属后缀；无更可靠原文译名冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "条目为游戏特定混沌生物类别，归入“种族”且 game_term/required 成立。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同段其他混沌生物名按类别术语处理一致，未发现普通词同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1171",
+      "evidence_rows": [
+        34205
+      ],
+      "source_excerpt": "He fought broos, gorp, slimekin, ghouls, and krarshtkids.",
+      "reason": "krarshtkids 在原行明确列为混沌生物，译名与分类一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第34205行原文将 krarshtkids 与 slimekin 等并列为乌罗克斯消灭的混沌生物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“克拉什特幼体”保留 Krarsht- 音译及 -kids 幼体义，作为该类生物类别名可接受。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "条目为特定混沌生物类别，归入“种族”且 game_term/required 成立。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同段 slimekin 等生物名保持名词性类别译法；krarshtkids 复数不另译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1175",
+      "evidence_rows": [
+        34247
+      ],
+      "source_excerpt": "At last Orlanth found the lair of Aroka, which lay past the Poisonthorn Acre.",
+      "reason": "Poisonthorn Acre 在原行明确为阿罗卡巢穴所在地，译名与地名分类可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "第34247行原文明确 Poisonthorn Acre 是阿罗卡巢穴所在、奥兰斯经过的地点。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“毒棘田”对应 Poisonthorn Acre 的地名构成，作为地名简洁自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "条目为具体地点，归入“地名”且 proper_name/required 成立。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "专名按地名统一处理，未发现与普通词冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:0",
+      "evidence_rows": [
+        32
+      ],
+      "source_excerpt": "RaidGoodNews",
+      "reason": "确认内部结果标签，补 whole_record 适用域，避免全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原始记录仅含独立内部结果标签“RaidGoodNews”，无嵌入正文用例。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，无译文，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "分类为运行时内部结果标签成立；原缺适用域，已通过 edits 补为 whole_record，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅完整标签匹配时保留，不扩展到子串或普通词用法。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:1",
+      "evidence_rows": [
+        33
+      ],
+      "source_excerpt": "RaidBadNews",
+      "reason": "确认内部结果标签，补 whole_record 适用域，避免全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原始记录仅含独立内部结果标签“RaidBadNews”，无嵌入正文用例。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，无译文，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "分类为运行时内部结果标签成立；原缺适用域，已通过 edits 补为 whole_record，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅完整标签匹配时保留，不扩展到子串或普通词用法。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:2",
+      "evidence_rows": [
+        146
+      ],
+      "source_excerpt": "GoodNews",
+      "reason": "确认内部结果标签；GoodNews 词形可普通，已限定 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原始记录仅含独立内部结果标签“GoodNews”，无嵌入正文用例。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，无译文，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "分类为运行时内部结果标签成立；原缺适用域，已补 whole_record，避免把 GoodNews 普通词用法全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅完整标签匹配时保留，不扩展到普通子串或普通词用法。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:3",
+      "evidence_rows": [
+        124
+      ],
+      "source_excerpt": "BadNews",
+      "reason": "确认内部结果标签；BadNews 词形可普通，已限定 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原始记录仅含独立内部结果标签“BadNews”，无嵌入正文用例。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，无译文，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "分类为运行时内部结果标签成立；原缺适用域，已补 whole_record，避免把 BadNews 普通词用法全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅完整标签匹配时保留，不扩展到普通子串或普通词用法。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:4",
+      "evidence_rows": [
+        159
+      ],
+      "source_excerpt": "EmissaryNews",
+      "reason": "确认内部事件标签，补 whole_record 适用域，避免全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原始记录仅含独立内部事件标签“EmissaryNews”，无嵌入正文用例。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，无译文，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "分类为运行时内部事件标签/键名成立；原缺适用域，已补 whole_record，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅完整标签匹配时保留，不扩展到普通子串或普通词用法。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:5",
+      "evidence_rows": [
+        395
+      ],
+      "source_excerpt": "ItIsBad",
+      "reason": "确认内部状态标签；词形可作普通短句，已限定 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原始记录仅含独立内部状态标签“ItIsBad”，无嵌入正文用例。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目，无译文，保留原文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "分类为运行时内部状态标签成立；原缺适用域，已补 whole_record，避免把 ItIsBad 普通短句用法全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅完整标签匹配时保留，不覆盖普通短句用法。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:1170",
+    "terms:1171",
+    "terms:1175",
+    "non_translate:0",
+    "non_translate:1",
+    "non_translate:2",
+    "non_translate:3",
+    "non_translate:4",
+    "non_translate:5"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

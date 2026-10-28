@@ -1,0 +1,59 @@
+{
+  "review_complete": true,
+  "review_summary": "本批仅审校 e1。核对 Orlanth 的专名性质、译名与分类：确认统一译名为“奥兰斯”，将 terms 分类由“身份”修正为“其他”，并补充 term_reason 以限定为神名本身；候选中的“奥尔兰斯”应按“奥兰斯”统一。未发现需隔离或新增项。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "category_path": "其他",
+        "term_reason": "Orlanth 是风暴神、奥兰斯神系之主与奥兰斯人的主神；本条仅指神名 Orlanth，不包含 Orlanthi 等派生称谓。"
+      },
+      "reason": "将神祇专名从“身份”改为 terms 合法分类“其他”，并以原文限定术语为神名本身，避免把派生称谓并入。",
+      "evidence_rows": [
+        173,
+        33280,
+        17047
+      ],
+      "table": "terms",
+      "index": 3
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:3",
+      "evidence_rows": [
+        173,
+        33280,
+        25123
+      ],
+      "source_excerpt": "Orlanth is the god of moving Air, of life-giving Rain, and also of devastating Lightning and sudden Change.",
+      "reason": "确认 Orlanth 为风暴神/众神之王专名，统一译作“奥兰斯”；修正 terms 分类并限定 term_reason 为神名本身。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "173 以 Orlanth 指可指引战斗的神；33280 明言 Orlanth 是众神之王、风暴之神。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "推荐译名“奥兰斯”与多数候选一致；25123/25230 的“奥尔兰斯”为个别变体，应统一为“奥兰斯”。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "Orlanth 是神祇专名，归入“身份”不当；按 terms 合法分类改为“其他”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "条目及关联形式 Orlanth Adventurous、Hill of Orlanth Victorious 均以“奥兰斯”为核心；不把 Orlanthi 派生词并入本条专名。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:3"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

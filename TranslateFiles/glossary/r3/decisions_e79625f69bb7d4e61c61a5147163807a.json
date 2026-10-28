@@ -1,0 +1,533 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对全部12条 non_translate 场景标识条目；原文均为完整独立标识（如 sceneR312），应整体保留并按 whole_record 精确匹配，避免全局禁翻。",
+  "acknowledged_findings": [
+    "F0169",
+    "F0170",
+    "F0171",
+    "F0172",
+    "F0173",
+    "F0174",
+    "F0175",
+    "F0176",
+    "F0177",
+    "F0178",
+    "F0179",
+    "F0180"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整原文 sceneR312 是独立场景标识，未出现内嵌用法，应仅匹配完整记录并保留原文。"
+        }
+      },
+      "reason": "为场景标识补充精确保护范围。",
+      "evidence_rows": [
+        19824
+      ],
+      "table": "non_translate",
+      "index": 248
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整原文 sceneR313 是独立场景标识，未出现内嵌用法，应仅匹配完整记录并保留原文。"
+        }
+      },
+      "reason": "为场景标识补充精确保护范围。",
+      "evidence_rows": [
+        19864
+      ],
+      "table": "non_translate",
+      "index": 249
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整原文 sceneR314 是独立场景标识，未出现内嵌用法，应仅匹配完整记录并保留原文。"
+        }
+      },
+      "reason": "为场景标识补充精确保护范围。",
+      "evidence_rows": [
+        19901
+      ],
+      "table": "non_translate",
+      "index": 250
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整原文 sceneR315 是独立场景标识，未出现内嵌用法，应仅匹配完整记录并保留原文。"
+        }
+      },
+      "reason": "为场景标识补充精确保护范围。",
+      "evidence_rows": [
+        19948
+      ],
+      "table": "non_translate",
+      "index": 251
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整原文 sceneR316 是独立场景标识，未出现内嵌用法，应仅匹配完整记录并保留原文。"
+        }
+      },
+      "reason": "为场景标识补充精确保护范围。",
+      "evidence_rows": [
+        19995
+      ],
+      "table": "non_translate",
+      "index": 252
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整原文 sceneR317 是独立场景标识，未出现内嵌用法，应仅匹配完整记录并保留原文。"
+        }
+      },
+      "reason": "为场景标识补充精确保护范围。",
+      "evidence_rows": [
+        20074
+      ],
+      "table": "non_translate",
+      "index": 260
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整原文 sceneR318 是独立场景标识，未出现内嵌用法，应仅匹配完整记录并保留原文。"
+        }
+      },
+      "reason": "为场景标识补充精确保护范围。",
+      "evidence_rows": [
+        20139
+      ],
+      "table": "non_translate",
+      "index": 261
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整原文 sceneR320 是独立场景标识，未出现内嵌用法，应仅匹配完整记录并保留原文。"
+        }
+      },
+      "reason": "为场景标识补充精确保护范围。",
+      "evidence_rows": [
+        20222
+      ],
+      "table": "non_translate",
+      "index": 262
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整原文 sceneR322 是独立场景标识，未出现内嵌用法，应仅匹配完整记录并保留原文。"
+        }
+      },
+      "reason": "为场景标识补充精确保护范围。",
+      "evidence_rows": [
+        20316
+      ],
+      "table": "non_translate",
+      "index": 263
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整原文 sceneR323 是独立场景标识，未出现内嵌用法，应仅匹配完整记录并保留原文。"
+        }
+      },
+      "reason": "为场景标识补充精确保护范围。",
+      "evidence_rows": [
+        20365
+      ],
+      "table": "non_translate",
+      "index": 264
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整原文 sceneR325 是独立场景标识，未出现内嵌用法，应仅匹配完整记录并保留原文。"
+        }
+      },
+      "reason": "为场景标识补充精确保护范围。",
+      "evidence_rows": [
+        20439
+      ],
+      "table": "non_translate",
+      "index": 265
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整原文 sceneR341 是独立场景标识，未出现内嵌用法，应仅匹配完整记录并保留原文。"
+        }
+      },
+      "reason": "为场景标识补充精确保护范围。",
+      "evidence_rows": [
+        21108
+      ],
+      "table": "non_translate",
+      "index": 269
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:248",
+      "evidence_rows": [
+        19824
+      ],
+      "source_excerpt": "sceneR312",
+      "reason": "场景数据标识，保留原文；保护范围限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 sceneR312 独立成条，是场景标识而非可翻译正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不产生译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "列入 non_translate 的依据是其为内部场景标识/标识符，而非普通词或专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批 sceneR 标识模式一致，统一按完整标识保留，不影响普通词翻译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:249",
+      "evidence_rows": [
+        19864
+      ],
+      "source_excerpt": "sceneR313",
+      "reason": "场景数据标识，保留原文；保护范围限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 sceneR313 独立成条，是场景标识而非可翻译正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不产生译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "列入 non_translate 的依据是其为内部场景标识/标识符，而非普通词或专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批 sceneR 标识模式一致，统一按完整标识保留，不影响普通词翻译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:250",
+      "evidence_rows": [
+        19901
+      ],
+      "source_excerpt": "sceneR314",
+      "reason": "场景数据标识，保留原文；保护范围限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 sceneR314 独立成条，是场景标识而非可翻译正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不产生译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "列入 non_translate 的依据是其为内部场景标识/标识符，而非普通词或专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批 sceneR 标识模式一致，统一按完整标识保留，不影响普通词翻译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:251",
+      "evidence_rows": [
+        19948
+      ],
+      "source_excerpt": "sceneR315",
+      "reason": "场景数据标识，保留原文；保护范围限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 sceneR315 独立成条，是场景标识而非可翻译正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不产生译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "列入 non_translate 的依据是其为内部场景标识/标识符，而非普通词或专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批 sceneR 标识模式一致，统一按完整标识保留，不影响普通词翻译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:252",
+      "evidence_rows": [
+        19995
+      ],
+      "source_excerpt": "sceneR316",
+      "reason": "场景数据标识，保留原文；保护范围限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 sceneR316 独立成条，是场景标识而非可翻译正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不产生译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "列入 non_translate 的依据是其为内部场景标识/标识符，而非普通词或专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批 sceneR 标识模式一致，统一按完整标识保留，不影响普通词翻译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:260",
+      "evidence_rows": [
+        20074
+      ],
+      "source_excerpt": "sceneR317",
+      "reason": "场景数据标识，保留原文；保护范围限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 sceneR317 独立成条，是场景标识而非可翻译正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不产生译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "列入 non_translate 的依据是其为内部场景标识/标识符，而非普通词或专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批 sceneR 标识模式一致，统一按完整标识保留，不影响普通词翻译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:261",
+      "evidence_rows": [
+        20139
+      ],
+      "source_excerpt": "sceneR318",
+      "reason": "场景数据标识，保留原文；保护范围限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 sceneR318 独立成条，是场景标识而非可翻译正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不产生译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "列入 non_translate 的依据是其为内部场景标识/标识符，而非普通词或专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批 sceneR 标识模式一致，统一按完整标识保留，不影响普通词翻译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:262",
+      "evidence_rows": [
+        20222
+      ],
+      "source_excerpt": "sceneR320",
+      "reason": "场景数据标识，保留原文；保护范围限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 sceneR320 独立成条，是场景标识而非可翻译正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不产生译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "列入 non_translate 的依据是其为内部场景标识/标识符，而非普通词或专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批 sceneR 标识模式一致，统一按完整标识保留，不影响普通词翻译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:263",
+      "evidence_rows": [
+        20316
+      ],
+      "source_excerpt": "sceneR322",
+      "reason": "场景数据标识，保留原文；保护范围限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 sceneR322 独立成条，是场景标识而非可翻译正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不产生译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "列入 non_translate 的依据是其为内部场景标识/标识符，而非普通词或专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批 sceneR 标识模式一致，统一按完整标识保留，不影响普通词翻译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:264",
+      "evidence_rows": [
+        20365
+      ],
+      "source_excerpt": "sceneR323",
+      "reason": "场景数据标识，保留原文；保护范围限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 sceneR323 独立成条，是场景标识而非可翻译正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不产生译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "列入 non_translate 的依据是其为内部场景标识/标识符，而非普通词或专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批 sceneR 标识模式一致，统一按完整标识保留，不影响普通词翻译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:265",
+      "evidence_rows": [
+        20439
+      ],
+      "source_excerpt": "sceneR325",
+      "reason": "场景数据标识，保留原文；保护范围限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 sceneR325 独立成条，是场景标识而非可翻译正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不产生译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "列入 non_translate 的依据是其为内部场景标识/标识符，而非普通词或专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批 sceneR 标识模式一致，统一按完整标识保留，不影响普通词翻译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:269",
+      "evidence_rows": [
+        21108
+      ],
+      "source_excerpt": "sceneR341",
+      "reason": "场景数据标识，保留原文；保护范围限定为完整记录。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 sceneR341 独立成条，是场景标识而非可翻译正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目保留原文，不产生译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "列入 non_translate 的依据是其为内部场景标识/标识符，而非普通词或专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与本批 sceneR 标识模式一致，统一按完整标识保留，不影响普通词翻译。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:248",
+    "non_translate:249",
+    "non_translate:250",
+    "non_translate:251",
+    "non_translate:252",
+    "non_translate:260",
+    "non_translate:261",
+    "non_translate:262",
+    "non_translate:263",
+    "non_translate:264",
+    "non_translate:265",
+    "non_translate:269"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

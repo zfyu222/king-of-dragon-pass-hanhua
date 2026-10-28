@@ -1,0 +1,402 @@
+{
+  "review_complete": true,
+  "review_summary": "已审 12 条：e1 剔除普通形容词并改为技能名 Leadership，e4/e11 修正译名，e9 将“英雄主义”改为“英雄气概”，e12 按原文修正 Short Game 定义；f1 共享译名经核对为同一职衔变体，保留“战争领袖”。",
+  "acknowledged_findings": [
+    "F0402"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "source": "Leadership",
+        "recommended_translation": "领导力",
+        "term_reason": "Leadership 是《龙隘之王》中影响使者选择等判定的领袖技能；good 仅为普通修饰语，不入术语。"
+      },
+      "reason": "源词含普通形容词 good，术语应为技能名 Leadership；译名统一为“领导力”。",
+      "evidence_rows": [
+        32947
+      ],
+      "table": "terms",
+      "index": 757
+    },
+    {
+      "patch": {
+        "recommended_translation": "掠牛突袭",
+        "term_reason": "与 Cattle Raids 同义；32049 描述本年度首次掠牛突袭的兵力条件，32127 重述此预兆。"
+      },
+      "reason": "与 e3 同义；原译“牛群劫掠”不自然，统一为“掠牛突袭”。",
+      "evidence_rows": [
+        32049
+      ],
+      "table": "terms",
+      "index": 1021
+    },
+    {
+      "patch": {
+        "recommended_translation": "英雄气概",
+        "term_reason": "圣时仪式魔法类型，提升氏族领袖能力。"
+      },
+      "reason": "原译“英雄主义”偏意识形态；此处为提升领袖能力的仪式，改“英雄气概”。",
+      "evidence_rows": [
+        33690
+      ],
+      "table": "terms",
+      "index": 770
+    },
+    {
+      "patch": {
+        "recommended_translation": "速召队",
+        "term_reason": "能在短时间内武装集结、响应掠牛或突袭的步兵。"
+      },
+      "reason": "原译“短召队”生硬；据“quickly arm themselves”改“速召队”。",
+      "evidence_rows": [
+        33730
+      ],
+      "table": "terms",
+      "index": 773
+    },
+    {
+      "patch": {
+        "term_reason": "以完成“风暴氏族创立”任务并在取得部族王权后十年内再完成三个英雄任务为胜利条件的游戏模式。"
+      },
+      "reason": "term_reason 原称“两个英雄任务”不准确，按 33429 修正 Short Game 胜利条件。",
+      "evidence_rows": [
+        33429
+      ],
+      "table": "terms",
+      "index": 810
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:757",
+      "evidence_rows": [
+        32947
+      ],
+      "source_excerpt": "good Leadership",
+      "reason": "源词含普通形容词 good，术语应为技能名 Leadership；译名统一为领导力。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "32947 原文作“good Leadership”，good 为修饰语，已从术语源词中剔除。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "Leadership 与 Bargaining skill 并列，指领袖技能，改译“领导力”比“良好的领导技能”更贴合术语。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Leadership 是游戏中的领袖技能，归“技能”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未发现同形专名；单独统一为“领导力”，不与 e2 的 Ask for Cattle 混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:759",
+      "evidence_rows": [
+        33016
+      ],
+      "source_excerpt": "Ask for Cattle",
+      "reason": "使者任务目标按钮，译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33016 显示“Ask for Cattle”为 Goal 按钮选项，属任务目标。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“索要牛只”对应 ask for cattle 的目标动作，简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为任务目标/UI 选项，归“其他”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e3/e4 的 cattle raid 仅语义相关，不是同一术语，不强行合并。"
+        }
+      }
+    },
+    {
+      "ref": "terms:780",
+      "evidence_rows": [
+        33747
+      ],
+      "source_excerpt": "Cattle Raids",
+      "reason": "标题词，指掠牛袭击；与 e4 统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33747 原文标题为 Cattle Raids，33730 解释其需快速响应。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“掠牛突袭”保留偷掠牛群与袭击两层含义，适合作标题。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为行动/事件标题，归“其他”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "作为标准形式；e4 的 cattle raid 已统一为“掠牛突袭”，单复数不另译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1021",
+      "evidence_rows": [
+        32049
+      ],
+      "source_excerpt": "our first cattle raid this year",
+      "reason": "与 e3 同义；原译“牛群劫掠”不自然，统一为“掠牛突袭”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32049 原文“our first cattle raid this year”指本年度首次掠牛行动。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "改为“掠牛突袭”，与 e3 的 Cattle Raids 统一，避免“牛群劫掠”歧义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为事件/行动类型，归“其他”合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e3 为单复数变体，统一核心译名；32127 重述同一预兆。"
+        }
+      }
+    },
+    {
+      "ref": "terms:760",
+      "evidence_rows": [
+        32945
+      ],
+      "source_excerpt": "“Emissary”",
+      "reason": "按钮标签，作用域已限定为引号内；译名保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32945 原文“Emissary”按钮用于派遣使者；literal_context 仅匹配引号内。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“使者”符合按钮所指的外交角色。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "按钮标签归“其他”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一词在说明文中可作普通角色泛称；本条作用域已限定，不全局冻结。"
+        }
+      }
+    },
+    {
+      "ref": "terms:765",
+      "evidence_rows": [
+        32940
+      ],
+      "source_excerpt": "Crops, Herds, and War",
+      "reason": "氏族魔法点分配的三类对象，顺序与译名保持。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32940 原文要求把氏族魔法点分配到 Crops、Herds、War。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“作物、畜群与战争”对应三类分配对象。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为魔法分配类别，归“其他”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "三项并列顺序一致；与 e1 的 Leadership 技能无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:768",
+      "evidence_rows": [
+        33600
+      ],
+      "source_excerpt": "position of warleader",
+      "reason": "氏族军事职衔；与只读关联 e13 的 war leader 同义，共享译名正确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33600 称其为 position，33765 中 warleader 报告战果，确认是职衔。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“战争领袖”准确表达军事领袖职衔。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "职衔归“身份”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f1 已核对：与 e13 的 war leader 是同一职衔的变体，统一“战争领袖”，不修改只读 e13。"
+        }
+      }
+    },
+    {
+      "ref": "terms:769",
+      "evidence_rows": [
+        33690
+      ],
+      "source_excerpt": "ritual: Destiny and Heroism.",
+      "reason": "圣时仪式类型；applicability 已限定在 ritual: Destiny and Heroism 语境。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33690 原文“Sacred Time ritual: Destiny and Heroism”确认 Destiny 是仪式类型。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“命运”可作该仪式名；不扩展为普通命运。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "仪式魔法类型归“其他”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e9 的 Heroism 并列对应，命运/英雄气概区分清楚。"
+        }
+      }
+    },
+    {
+      "ref": "terms:770",
+      "evidence_rows": [
+        33690
+      ],
+      "source_excerpt": "Destiny and Heroism.",
+      "reason": "原译“英雄主义”偏意识形态；此处为提升领袖能力的仪式，改“英雄气概”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33690 原文与 Destiny 并列；33692 说明其提升领袖能力。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "改“英雄气概”，符合 heroism 作为品质/仪式名，而非“英雄主义”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "圣时仪式魔法类型归“其他”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e8 的 Destiny 并列，分别译“命运”“英雄气概”，不混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:772",
+      "evidence_rows": [
+        33726
+      ],
+      "source_excerpt": "Vinga’s Fyrdwomen blessing",
+      "reason": "以神名 Vinga 命名的特定祝福；保留音译与女民兵含义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33726 原文为 Vinga’s Fyrdwomen blessing，属可牺牲获得的特定祝福。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“温加的女民兵祝福”保留神名 Vinga 与 Fyrdwomen 的女民兵义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福作为可获得的魔法效果，归“技能”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Vinga 音译统一为“温加”；Fyrdwomen 与普通 fyrd 区分，未与其他条目冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:773",
+      "evidence_rows": [
+        33730
+      ],
+      "source_excerpt": "known as the short-call",
+      "reason": "原译“短召队”生硬；据“quickly arm themselves”改“速召队”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33730 原文“known as the short-call”指能快速武装响应的步兵。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "改“速召队”，比“短召队”更自然，保留快速集结响应之义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为步兵群体/单位，归“组织”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e12 的 Short Game 仅共享 short 词形，非同一术语，不统一译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:810",
+      "evidence_rows": [
+        33429
+      ],
+      "source_excerpt": "Winning the Short Game requires",
+      "reason": "译名“短局”可用；term_reason 原称两个英雄任务不准确，已按原文修正胜利条件。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33429 原文说明 Short Game 的胜利条件，33802 为其标题。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“短局”作为游戏模式名简洁，与 Long Game 相对。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "游戏模式归“其他”合法。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "按 33429 修正定义：完成“风暴氏族创立”并在取得王权后十年内再完成三个英雄任务；不再写“两个英雄任务”。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:757",
+    "terms:759",
+    "terms:780",
+    "terms:1021",
+    "terms:760",
+    "terms:765",
+    "terms:768",
+    "terms:769",
+    "terms:770",
+    "terms:772",
+    "terms:773",
+    "terms:810"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

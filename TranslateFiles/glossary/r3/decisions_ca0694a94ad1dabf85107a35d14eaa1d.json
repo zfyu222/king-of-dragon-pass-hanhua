@@ -1,0 +1,200 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 e1-e6 的来源、译名、分类与一致性审校；确认 e1-e5，修正 e6 为“赫奥特法典”并统一法律体系译名，未发现需隔离项。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "赫奥特法典",
+        "term_reason": "Heort 所立的法典/法律体系；3243 说明其不强制援助闹鬼受害者，7834/8185 说明族人须遵守且逃犯不受其保护，19982 称灵体在其外。"
+      },
+      "reason": "候选译名存在“希奥尔特法/赫奥特法典/赫尔特法”分歧；Heort’s Laws 是可被遵守且排除逃犯/灵体保护的法律集合，故采用“赫奥特法典”并更新术语说明。",
+      "evidence_rows": [
+        3243,
+        7834,
+        8185,
+        19982
+      ],
+      "table": "terms",
+      "index": 209
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:202",
+      "evidence_rows": [
+        2770
+      ],
+      "source_excerpt": "Esra’s Basket, the magical treasure that has been improving our barley crop’s yield",
+      "reason": "确认 Esra’s Basket 为独特魔法宝物名，译名与分类成立，无需修改。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2770 原文以 Esra’s Basket 指称改善大麦产量、已损坏的魔法宝物，名称与指代一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“埃斯拉的篮子”对应 Esra’s Basket，保留所属关系，符合宝物名译法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "2770 明示其为 magical treasure，归入“物品”合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "条目推荐译名与候选一致，未见同形普通词需另行限定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:205",
+      "evidence_rows": [
+        2774,
+        6538
+      ],
+      "source_excerpt": "Bowl of Plenty",
+      "reason": "确认 Bowl of Plenty 为具名魔法宝物，译名“丰饶之碗”与物品分类一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2774/2775 称其盛装大麦/面包或谷物，6538 称挖出 a Bowl of Plenty，指独特宝物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“丰饶之碗”准确表达 Bowl of Plenty 的宝物名含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文明确为能产出食物的魔法宝物，归入“物品”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各证据均指向同一宝物名，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:206",
+      "evidence_rows": [
+        2791
+      ],
+      "source_excerpt": "Humakt’s Warning Rune",
+      "reason": "确认 Humakt’s Warning Rune 为氏族魔法宝物名，译名与分类成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2791 称该宝物为 Humakt’s Warning Rune，因不死生物逼近而变色。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“胡马特警示符文”对应 Humakt’s Warning Rune，Humakt 音译与符文义均保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "2791 明示其为 treasure，归入“物品”合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "条目内译名统一，未见其他候选冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:207",
+      "evidence_rows": [
+        33393,
+        33394,
+        2819
+      ],
+      "source_excerpt": "Odayla, half-brother to Orlanth, is the god of the hunt in all its forms.",
+      "reason": "确认 Odayla 为狩猎神专名，统一采用“奥达拉”；条目分类、词性与推荐译名一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33394 明确 Odayla 是 the god of the hunt in all its forms；33393 给出读音 oe-DAY-lah，2819 另见其祝福影响猎物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "采用“奥达拉”贴合 Odayla/oe-DAY-lah 音节，并与主要候选一致；不采用“奥达亚/奥达伊拉”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Odayla 为神祇专名，非普通词；在现有可选路径中以“其他”承载神祇名合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "条目内部统一为“奥达拉”，与 Orlanth 等专名按音译处理不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:208",
+      "evidence_rows": [
+        13920,
+        27587
+      ],
+      "source_excerpt": "That clan was called the Nalda Bin.",
+      "reason": "确认 Nalda Bin 为被 Vingkot 置于保护下的残存氏族/族群，译名“纳尔达宾”成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "13920 称“That clan was called the Nalda Bin”；27587 又称其为 Nalda Bin, or “Stick Farmers” 的 remnant people。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“纳尔达宾”按音译处理，与现有候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "13920 明其为 shattered clan，归入“组织”有直接原文依据；其他段落称 remnant people 不改变该专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "条目统一使用“纳尔达宾”，未把普通词 Stick Farmers 当作同一必译形式。"
+        }
+      }
+    },
+    {
+      "ref": "terms:209",
+      "evidence_rows": [
+        3243,
+        7834,
+        8185,
+        19982
+      ],
+      "source_excerpt": "None of Heort’s Laws obligate us to aid the victim of a haunting.",
+      "reason": "修正 Heort’s Laws 为“赫奥特法典”，统一法律体系译名并补充 term_reason。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3243/7834/8185/19982 均以 Heort’s Laws 指约束族人、不保护逃犯/灵体的法律体系，专名性质明确。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原推荐“希奥尔特法”音译不稳且未体现 Laws 的集合义；改为“赫奥特法典”，与“Heort”音译及 7834/8185 的法典语境相合。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Heort’s Laws 是法律体系/法典，归入“其他”合法；非物品、组织等。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一采用“赫奥特法典”，替换“希奥尔特法/赫奥特法典/赫尔特法”等候选分歧。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:202",
+    "terms:205",
+    "terms:206",
+    "terms:207",
+    "terms:208",
+    "terms:209"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

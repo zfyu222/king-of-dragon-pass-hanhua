@@ -1,0 +1,371 @@
+{
+  "review_complete": true,
+  "review_summary": "已复核全部 12 条角色与术语。译名、分类及跨条目一致性整体成立；修正 e9 的性别和无据的“六项社会美德”说明，并删去 e10 证据未支持的 him 指代说明。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "gender": "男性",
+        "term_reason": "自称马斯拉尼亚大帝的非龙类奇异生物，形似龙但并非龙，请求与氏族环谈判。"
+      },
+      "reason": "7056、7057 均以 He 指代，故性别应为男性；原文只说其像龙但不是龙并请求与氏族环谈判，未提“六项社会美德”。",
+      "evidence_rows": [
+        7056,
+        7057
+      ],
+      "table": "characters",
+      "index": 65
+    },
+    {
+      "patch": {
+        "term_reason": "鸭人的首领；原文称其为 leader/Lord of the Ducks。"
+      },
+      "reason": "6761、6767 仅见 leader/Lord of the Ducks，未见 him；删除无据的指代说明。",
+      "evidence_rows": [
+        6761,
+        6767
+      ],
+      "table": "characters",
+      "index": 66
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:58",
+      "evidence_rows": [
+        4999,
+        5000,
+        5005
+      ],
+      "source_excerpt": "sacred to Arfritha",
+      "reason": "来源、译名、分类与跨条目一致性均成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4999 明确其为 Kodig 之女、Vingkot 孙女；5000 亦称 Vingkot 孙女，来源可靠。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Arfritha 音译“阿尔弗丽塔”，与现有译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "女性角色，置于 characters 合适；性别“女性”由 daughter 支持。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e2“阿尔弗丽塔谷”共享 Arfritha 词根，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:286",
+      "evidence_rows": [
+        5005,
+        5013
+      ],
+      "source_excerpt": "Arfritha Vale",
+      "reason": "地名来源、译名、分类与一致性均成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "5005、5013 均称氏族山谷开始被称为 the Arfritha Vale。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Arfritha Vale 译作“阿尔弗丽塔谷”，vale 译“谷”简洁准确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属地名，category_path 使用“地名”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1 的 Arfritha 共用“阿尔弗丽塔”，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:60",
+      "evidence_rows": [
+        4999,
+        5028
+      ],
+      "source_excerpt": "Kodig, son of the Storm Age culture hero Vingkot",
+      "reason": "来源、译名、分类与一致性均成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "5028 称 Kodig 为 Vingkot 之子；4999 称 Arfritha 为 Kodig 之女。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Kodig 音译“柯迪格”，简洁统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "男性人物专名，置于 characters 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1 中父亲 Kodig 的译名“柯迪格”一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:61",
+      "evidence_rows": [
+        5894
+      ],
+      "source_excerpt": "Biskala the Bee",
+      "reason": "来源、译名、分类与一致性均成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "5894 明确称 Biskala the Bee，并述及 Orlanth 准其在花园筑巢。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“蜜蜂比斯卡拉”保留 the Bee 的称号性质，译名可成立。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神话蜜蜂角色；原文无性别代词，性别“其他”稳妥。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未见同形词条冲突，称号“蜜蜂”与专名组合一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:62",
+      "evidence_rows": [
+        5895
+      ],
+      "source_excerpt": "Mograin the Mouse",
+      "reason": "来源、译名、分类与一致性均成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "5895 明确称 Mograin the Mouse 咬断绳索救出 Orlanth。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“老鼠莫格莱恩”保留称号与专名，译名可成立。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神话老鼠角色；原文无性别代词，性别“其他”稳妥。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未见同形词条冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:64",
+      "evidence_rows": [
+        6101
+      ],
+      "source_excerpt": "Biturian the Leaper",
+      "reason": "来源、译名、分类与一致性均成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "6101 称 Biturian the Leaper 被 Bad King Urgrain 流放一年零一日，归来后攻击国王。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Biturian the Leaper 译作“跳跃者比图里安”，Leaper 译“跳跃者”符合称号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，置于 characters 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e7、e8 共享 Leaper 构词，但按各自语境分别译作“跳跃者”“跃树者”“欢跃者”，未机械统一。"
+        }
+      }
+    },
+    {
+      "ref": "characters:99",
+      "evidence_rows": [
+        12061
+      ],
+      "source_excerpt": "Tree Leaper",
+      "reason": "来源、译名、分类与一致性均成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "12061 将 Tree Leaper 列为三位 Orlanthi 圣武士之一的随机名号，并以 He 指代。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Tree Leaper 译“跃树者”，作为人物名号简洁可辨。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名；原文用 He，性别“男性”有据。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Leaper 构词与 e6、e8 分别译为“跳跃者”“跃树者”“欢跃者”，语境差异合理。"
+        }
+      }
+    },
+    {
+      "ref": "terms:111",
+      "evidence_rows": [
+        1773
+      ],
+      "source_excerpt": "an intelligent, magical horse named Glad Leaper",
+      "reason": "来源、译名、分类与一致性均成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1773、1774 及 1776 均称 Yarandros 骑乘名为 Glad Leaper 的智能魔法马。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Glad Leaper 译“欢跃者”，保留 glad 与 leaper 的语义组合。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "有专名的魔法马，作为术语置于“其他”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e6、e7 的 Leaper 构词按语境差异化处理，未造成冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:65",
+      "evidence_rows": [
+        7056,
+        7057
+      ],
+      "source_excerpt": "He introduces himself as Mathrania the Magnificent",
+      "reason": "已修正性别与无据设定，译名和分类保留。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "7056、7057 均以 He 指代，故性别改为男性；原文仅称其像龙而非龙、请求与氏族环谈判，删去无据的“六项社会美德”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Mathrania the Magnificent 译“马斯拉尼亚大帝”，以“大帝”体现其自夸称号，可成立。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "非龙类奇异生物人物，置于 characters 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未见同形词条冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:66",
+      "evidence_rows": [
+        6761,
+        6767
+      ],
+      "source_excerpt": "Purefeather, leader of the Ducks",
+      "reason": "已修正术语说明中无据的 him 指代，译名与分类保留。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "6761 称 Purefeather 为 leader of the Ducks，6767 称 Lord of the Ducks；原文未出现 him，已删去该说明。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Purefeather 译“净羽”，作为鸭人首领的专名简洁自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，置于 characters 合适；Lord 支持男性首领身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未见同形词条冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:68",
+      "evidence_rows": [
+        7234
+      ],
+      "source_excerpt": "Genevra",
+      "reason": "随机姓名专名，来源、译名、分类与一致性均成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7234 的控制字节间列出 Genevra/Asandra/Chella，Genevra 为其中一个姓名分支。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Genevra 音译“吉内芙拉”，作为随机姓名可成立。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物姓名专名；原文未给身份或性别，性别“其他”稳妥。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e12 为同一随机姓名列表的不同分支，未发生译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:69",
+      "evidence_rows": [
+        7234
+      ],
+      "source_excerpt": "Asandra",
+      "reason": "随机姓名专名，来源、译名、分类与一致性均成立。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7234 的控制字节间列出 Genevra/Asandra/Chella，Asandra 为其中一个姓名分支。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Asandra 音译“阿桑德拉”，作为随机姓名可成立。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物姓名专名；原文未给身份或性别，性别“其他”稳妥。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e11 为同一随机姓名列表的不同分支，未发生译名冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:58",
+    "terms:286",
+    "characters:60",
+    "characters:61",
+    "characters:62",
+    "characters:64",
+    "characters:99",
+    "terms:111",
+    "characters:65",
+    "characters:66",
+    "characters:68",
+    "characters:69"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

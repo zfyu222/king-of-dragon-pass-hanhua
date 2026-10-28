@@ -1,0 +1,174 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e5 的原文依据、译名、分类与术语一致性；确认 ducks/Ducks 为鸭人种族，duck people/duck-people 共享“鸭人”属同一所指，f1 已核。将 Bad King Urgrain’s Coin 的“金币”改为更忠实的“硬币”，其余译名和分类维持。",
+  "acknowledged_findings": [
+    "F0382"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "恶王乌尔格兰硬币"
+      },
+      "reason": "1533 原文 Coin 未限定金币材质，译为“硬币”避免增添设定；Bad King Urgrain 专名译法保持不变。",
+      "evidence_rows": [
+        1533
+      ],
+      "table": "terms",
+      "index": 85
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:83",
+      "evidence_rows": [
+        1264,
+        1265,
+        3411,
+        7309,
+        26327
+      ],
+      "source_excerpt": "The ducks told me,",
+      "reason": "原文确认 ducks/Ducks 指鸭人种族；保留“鸭人”译名及限定 applicability，共享译名经 f1 核对为同一所指。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1264 的 the ducks 自称没有牛，3411 的 ducks 被要求增加贡赋，7309 的 ducks 偷牛，26327 为 Ducks 外来者列表项；均指鸭人种族而非普通水鸟。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "统一译作“鸭人”，与 duck people/duck-people 的共享译名一致，能表达原文种族义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=种族；原文以族群、酋长、纳贡和偷牛等行为描述，分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一原文的候选均译“鸭人”，大小写及复数出现形式未形成冲突；共享译名已结合 f1 核对。"
+        }
+      }
+    },
+    {
+      "ref": "terms:85",
+      "evidence_rows": [
+        1533
+      ],
+      "source_excerpt": "Bad King Urgrain’s Coin",
+      "reason": "核对 1533 为具名钱币/宝物；Coin 原文未限定金币材质，已提交译名修正。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1533 原文为 the idea of buying Bad King Urgrain’s Coin，是被氏族议会嘲笑购买的具名宝物。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "据原文 Coin 未限定材质，改为“恶王乌尔格兰硬币”，保留 Bad King Urgrain 专名译法，避免增添“金币”设定。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为具名钱币/宝物归入物品，符合原文购买对象。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条目无同源译名冲突；Urgrain 音译保持统一，修正仅限 Coin 的语义精确化。"
+        }
+      }
+    },
+    {
+      "ref": "terms:89",
+      "evidence_rows": [
+        33727,
+        33148,
+        1611,
+        1612
+      ],
+      "source_excerpt": "are therefore known as footmen.",
+      "reason": "原文将 fyrd 中徒步作战者称为 footmen，译作“步兵”符合身份及军事语境。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33727 说明不骑马、步行作战的 fyrd 成员 known as footmen；33148 以 normal footman 与 weaponthanes 对比；1611/1612 统计 footmen 伤亡。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“步兵”保留徒步作战的军事角色义，单复数在中文中按集合/个体自然处理。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=身份；footmen 是氏族民军中的军事身份，分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各候选均译“步兵”，未与 short-call 或 weaponthanes 混同；术语稳定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:91",
+      "evidence_rows": [
+        1631,
+        30890,
+        30891,
+        32388
+      ],
+      "source_excerpt": "Bagpipes of Ronskei",
+      "reason": "原文确认这是具名风笛；采用“龙斯凯风笛”，不采用“隆斯凯风笛”异体。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1631 发现旧风笛并提到 Bagpipes of Ronskei 的音乐在 Battle of Swen’s Ford 击退巨魔；30890 称吹奏后 trollkin 逃跑；30891 称战后气囊破裂；32388 为物品标签。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "统一采用“龙斯凯风笛”；候选“隆斯凯风笛”仅属同源异体，按多数及跨叙事/标签一致性不采用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=物品；原文为可发现、可吹奏且具魔法效果的风笛，分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一物品在叙事与标签中统一为“龙斯凯风笛”；Ronskei 译名在叙事和物品名间保持一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:92",
+      "evidence_rows": [
+        1631
+      ],
+      "source_excerpt": "Battle of Swen’s Ford",
+      "reason": "原文确认 Battle of Swen’s Ford 为历史战役名；保留“斯文渡口之战”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1631 明确提到 Ronskei 风笛音乐在 Battle of Swen’s Ford 期间击退巨魔，属于具名历史战役。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“斯文渡口之战”保留 Swen 的音译和 Ford 的“渡口”义，并以“之战”表达 Battle，搭配自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他；该条为历史事件/战役名，不归地名或组织，使用“其他”合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "战役名独立使用，与同段 Ronskei 风笛的译名不冲突；未发现同源异译。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:83",
+    "terms:85",
+    "terms:89",
+    "terms:91",
+    "terms:92"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

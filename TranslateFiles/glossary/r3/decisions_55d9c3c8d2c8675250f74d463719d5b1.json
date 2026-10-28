@@ -1,0 +1,46 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 e1 的 source、translation、category、consistency 四项核对，确认 Dragon Pass 译作“龙隘”并保持地名专名 required；无需编辑、隔离或新增。",
+  "acknowledged_findings": [],
+  "edits": [],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:50",
+      "evidence_rows": [
+        901,
+        1191,
+        15023,
+        22690,
+        33914
+      ],
+      "source_excerpt": "explore Dragon Pass",
+      "reason": "Dragon Pass 在原文中反复作为探索目标、所属地区、统治头衔来源及游戏主舞台出现；推荐译名“龙隘”稳定对应，专名分类为地名且要求统一使用。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 901 的 'explore Dragon Pass' 显示其为探索目的地；1191 的 'chieftain in Dragon Pass' 和 33914 的 'south of Dragon Pass' 均指地理区域。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "推荐译名“龙隘”与游戏中文名《龙隘之王》中的 Dragon Pass 对应；本批候选均作“龙隘”，无明显多义或更佳译法。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "条目为 proper_name、category_path=地名、enforcement=required；15023 的 'Queen of Dragon Pass' 与 22690 的 'King of Dragon Pass' 表明它是可构成统治头衔的专有地区名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "全部候选译名一致为“龙隘”；本批用法覆盖探索、传闻、头衔及历史叙述，均指向同一地区，无需因句式变化改译。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:50"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

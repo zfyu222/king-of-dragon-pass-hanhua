@@ -1,0 +1,406 @@
+{
+  "review_complete": true,
+  "review_summary": "已审 e1-e12：确认温科特、赫奥特、萨拉斯卡、因金等专名；修正御云者、德里克剥皮者/独径及温科特王，并将普通头衔 Emperor 隔离。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "温科特王",
+        "term_reason": "原文多次称 King Vingkot，风暴时代率众反击精灵并庇护破碎氏族的国王；按王号称“温科特王”。"
+      },
+      "reason": "“国王温科特”语序生硬，改为中文王号格式并统一专名。",
+      "evidence_rows": [
+        8352,
+        13920
+      ],
+      "table": "characters",
+      "index": 79
+    },
+    {
+      "patch": {
+        "recommended_translation": "御云者",
+        "term_reason": "Cloud Rider 是三位奥兰斯圣武士之一的称号，Rider 指驾驭云者而非骑士阶衔。"
+      },
+      "reason": "“云骑士”把 Rider 误作骑士；改作“御云者”保留称号含义。",
+      "evidence_rows": [
+        12061
+      ],
+      "table": "characters",
+      "index": 102
+    },
+    {
+      "patch": {
+        "recommended_translation": "德里克剥皮者",
+        "term_reason": "Furman 是德里克因剥取被杀敌人皮张而得的外号，意译以保留原文命名依据；基名仍作“德里克”。"
+      },
+      "reason": "“德里克弗曼”只音译且丢失绰号依据；改为意译绰号。",
+      "evidence_rows": [
+        15208
+      ],
+      "table": "characters",
+      "index": 120
+    },
+    {
+      "patch": {
+        "recommended_translation": "德里克独径",
+        "term_reason": "Single-Path 是德里克离族独行、寻求新试炼时使用的称号，指其独行之路；基名仍作“德里克”。"
+      },
+      "reason": "“德里克·单径”生硬且使用间隔号；改为“德里克独径”并统一基名。",
+      "evidence_rows": [
+        16668,
+        16669
+      ],
+      "table": "characters",
+      "index": 134
+    }
+  ],
+  "quarantine": [
+    {
+      "reason": "Emperor 为普通头衔，原文虽在神话中可指 Yelm，但大小写 text 全局匹配会误伤其他皇帝用法；不宜作为冻结专名，交由上下文译为“皇帝”。",
+      "evidence_rows": [
+        26829,
+        33869
+      ],
+      "table": "characters",
+      "index": 182
+    }
+  ],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:79",
+      "evidence_rows": [
+        8352,
+        13920
+      ],
+      "source_excerpt": "Chinkis Mor, the elf warlord, demanded tribute from King Vingkot when Vingkot was weak.",
+      "reason": "原文称 King Vingkot 为风暴时代国王；改作“温科特王”统一王号格式。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8352/13920 明称 King Vingkot，且记录其反击精灵、庇护破碎氏族。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "“国王温科特”语序生硬；改为“温科特王”以符合中文王号并保留专名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文以 King 修饰具体人物 Vingkot，属人物专名，gender 男性有据。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "同一 King Vingkot 按王号处理，统一为“温科特王”。"
+        }
+      }
+    },
+    {
+      "ref": "characters:90",
+      "evidence_rows": [
+        10024,
+        10062
+      ],
+      "source_excerpt": "When Heort was made king, the dead plants lived again, for one day.",
+      "reason": "原文确认 Heort 为古代国王/立法者，现译名与分类可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "10024 称 Heort 为王；10062 称 King Heort 并重建风暴氏族。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "赫奥特为稳定音译，与 King Heort 组合自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名，原文 his tribe 等表明男性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "全批 Heort 均作“赫奥特”，与 Heort’s laws 等派生用法不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:93",
+      "evidence_rows": [
+        11090
+      ],
+      "source_excerpt": "Taralarth is the greatest Vingan warrior in all of Dragon Pass.",
+      "reason": "原文确认其为女性温加战士，人名与称号可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11090 称 Taralarth 为全龙隘最伟大的温加战士，并指定 Kallyr 随其受训。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "塔拉拉思战舞者保留人名与称号；Battle-Dancer 意译符合战士语境。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "女性温加战士，人物专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此条，无同名冲突；称号与人物名组合一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:101",
+      "evidence_rows": [
+        12061
+      ],
+      "source_excerpt": "Tree Leaper/Windfriend/Five-Magic/Cloud Rider",
+      "reason": "原文列为圣武士随机名号，现译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "12061 将 Five-Magic 列为三位奥兰斯圣武士之一。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "五魔法作为随机圣武士名号可辨识，未改专名基干。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物名号，proper_name。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同列随机名号并列，不涉及普通词义冻结。"
+        }
+      }
+    },
+    {
+      "ref": "characters:102",
+      "evidence_rows": [
+        12061
+      ],
+      "source_excerpt": "Tree Leaper/Windfriend/Five-Magic/Cloud Rider",
+      "reason": "Cloud Rider 是圣武士名号，Rider 非骑士阶衔；改作“御云者”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "12061 将 Cloud Rider 列为三位奥兰斯圣武士之一。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "“云骑士”把 Rider 误作骑士；改为“御云者”保留驾驭云的含义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物名号，proper_name。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 Five-Magic 等同列名号保持称号式意译，避免阶衔误读。"
+        }
+      }
+    },
+    {
+      "ref": "characters:109",
+      "evidence_rows": [
+        13932,
+        15057
+      ],
+      "source_excerpt": "I am Saraska Bright-Eyes, and it has been prophesied that I will unite the tribes and make this the land called Saraska.",
+      "reason": "原文确认全名与女性王位竞争者身份，现译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "13932 自称 Saraska Bright-Eyes 并预言统一部族；15057 争取以萨拉斯卡为龙隘女王。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "萨拉斯卡明眸准确对应名与绰号，基名与短名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "女性王位竞争者，人物专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "全名含 Saraska，与短名条目共用“萨拉斯卡”。"
+        }
+      }
+    },
+    {
+      "ref": "characters:120",
+      "evidence_rows": [
+        15208
+      ],
+      "source_excerpt": "He is now called Derik Furman after all of the hides of his slain enemies he and his followers have taken as trophies.",
+      "reason": "Furman 是剥皮绰号而非单纯音译姓氏；改作“德里克剥皮者”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "15208 说明 Derik 因剥取被杀敌人皮张而得 Furman 之称。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "“德里克弗曼”只音译且缺分隔；改为“德里克剥皮者”保留命名依据。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名/绰号，gender 男性有 he/his。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "保留基名“德里克”，与后续 Single-Path 称号同人一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:133",
+      "evidence_rows": [
+        16167,
+        17986
+      ],
+      "source_excerpt": "The self-proclaimed future Queen of Dragon Pass is reduced to highway robbery.",
+      "reason": "原文确认 Saraska 为女性王位竞争者，短名译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "16167 称 Saraska’s bandits，17986 她尝试 Crown Test 被雷击死。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "萨拉斯卡为稳定音译，与全名基名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "女性王位竞争者，人物专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Saraska Bright-Eyes 共用“萨拉斯卡”，短名不另译。"
+        }
+      }
+    },
+    {
+      "ref": "characters:134",
+      "evidence_rows": [
+        16668
+      ],
+      "source_excerpt": "Derik Single-Path, who has distinguished himself in many raids, comes before the clan ring and says that he is leaving.",
+      "reason": "Single-Path 是离族独行称号；改作“德里克独径”，去掉不必要间隔号。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "16668 说明 Derik Single-Path 多次劫掠立功后离族寻求新试炼。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "“德里克·单径”生硬且用间隔号；改为“德里克独径”保留称号义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "人物专名/称号，gender 男性有原文 he。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "基名“德里克”与 Furman 称号一致，均按同一人物处理。"
+        }
+      }
+    },
+    {
+      "ref": "characters:141",
+      "evidence_rows": [
+        18569
+      ],
+      "source_excerpt": "Nallindia/Alarandra/Astella",
+      "reason": "原文为女性名随机分支，现译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "18569 的女性名随机分支为 Nallindia/Alarandra/Astella。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "娜林迪娅音译自然，保留 Nallindia 的专名性。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "女性人名候选，proper_name。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅作随机名分支，不与同形普通词冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:152",
+      "evidence_rows": [
+        21017,
+        21055
+      ],
+      "source_excerpt": "Devotees of the cult of Yinkin, the god of alynxes, appear before you soliciting your help.",
+      "reason": "原文确认 Yinkin 为猫神、Orlanth 兄弟，现译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "21017/21055 明称 Yinkin 为 alynxes 之神、Orlanth 之兄弟。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "因金为稳定音译，适合神名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神祇专名，gender 男性有 brother/son 等原文。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "全批 Yinkin 均作“因金”，与猫神/兄弟描述一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:182",
+      "evidence_rows": [
+        26829,
+        33869
+      ],
+      "source_excerpt": "Orlanth challenges Yelm the Emperor to a series of contests: one of dancing, one of magic, and one of music.",
+      "reason": "Emperor 是普通头衔，虽可指 Yelm，但全局 text 匹配风险高；隔离该条，交上下文处理。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26829 以 the Emperor 指来者；33869 明说 Yelm the Emperor。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "本段可译为“皇帝”，但不作为全局冻结译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "Emperor 是普通头衔/称号，不是可安全全局匹配的专名，应隔离。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 Yelm the Emperor 的专名处理分开，避免把 title 强制成术语。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:79",
+    "characters:90",
+    "characters:93",
+    "characters:101",
+    "characters:102",
+    "characters:109",
+    "characters:120",
+    "characters:133",
+    "characters:134",
+    "characters:141",
+    "characters:152",
+    "characters:182"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

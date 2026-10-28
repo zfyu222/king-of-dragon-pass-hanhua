@@ -1,0 +1,403 @@
+{
+  "review_complete": true,
+  "review_summary": "完成 e1-e12 审核：隔离普通描述性短语 e1；将 e5 的 elves 提升为 required 并补充植物性精灵原文依据；将 e8 的 crossline/Crossline 按与 Cross Line 同一龙族魔法屏障统一为地名专名并提升为 required；修正 e12 的 term_reason。f1 已核对 bull-men 与 minotaur(s) 为别名共用“牛头人”；f2 已核对 Crossline 与 Cross Line 为同一屏障的拼写变体，共用“十字线”。",
+  "acknowledged_findings": [
+    "F0408",
+    "F0413"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "enforcement": "required",
+        "term_reason": "原文称其为 plant people called Aldryami, or elves，指格洛兰萨的植物性精灵种族。"
+      },
+      "reason": "8035 明确定义 elves 为 plant people called Aldryami, or elves，属固定种族术语，不应仅为 reference；term_reason 补足原文依据。",
+      "evidence_rows": [
+        8035,
+        10697
+      ],
+      "table": "terms",
+      "index": 418
+    },
+    {
+      "patch": {
+        "category_path": "地名",
+        "enforcement": "required",
+        "term_kind": "proper_name",
+        "term_reason": "原文称 dragonewt barrier called the Crossline，指龙族设下的具名魔法屏障；与 Cross Line 为同一名称的拼写变体。"
+      },
+      "reason": "23455 明确其为具名屏障，10890 的 crossline 同指；与 related e15 的 Cross Line 为拼写变体，按地名专名统一并提升为 required。",
+      "evidence_rows": [
+        10890,
+        23455
+      ],
+      "table": "terms",
+      "index": 424
+    },
+    {
+      "patch": {
+        "term_reason": "原文中的具名宝物，据称能帮助维系部族；Bit 指马衔。"
+      },
+      "reason": "原 term_reason 提及黑马团与可交易，但本批证据 12787 只显示其能帮助维系部族，故改为原文可证表述。",
+      "evidence_rows": [
+        12787,
+        12788
+      ],
+      "table": "terms",
+      "index": 433
+    }
+  ],
+  "quarantine": [
+    {
+      "reason": "ancestral insignia 是普通描述性名词短语，原文只说明武士摘除以示抗议，未形成需冻结的专名或游戏机制术语。",
+      "evidence_rows": [
+        9878,
+        9879
+      ],
+      "table": "terms",
+      "index": 407
+    }
+  ],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:407",
+      "evidence_rows": [
+        9878,
+        9879
+      ],
+      "source_excerpt": "ancestral insignia",
+      "reason": "原文只是描述战团武士摘下的祖传标志，未见固定专名或机制定义，建议隔离。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "9878/9879 均出现 ancestral insignia，指武士摘除以示抗议的祖传标志。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“祖传徽记”语义通顺，可作为正文自然译法。"
+        },
+        "category": {
+          "status": "not_applicable",
+          "evidence": "该短语是普通描述性名词短语，未显示特定物品名或机制名，不应冻结为物品术语；已列入 quarantine。"
+        },
+        "consistency": {
+          "status": "not_applicable",
+          "evidence": "无其他专名或固定术语需统一，隔离后按普通词组处理。"
+        }
+      }
+    },
+    {
+      "ref": "terms:412",
+      "evidence_rows": [
+        10461
+      ],
+      "source_excerpt": "Fulthamsaga",
+      "reason": "Fulthamsaga 为萨迦篇名，音译“富尔塔姆萨迦”可保留词根，分类与专名要求正确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "10461 的 'In Fulthamsaga' 表明其为萨迦篇名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "音译“富尔塔姆萨迦”保留 Fultham- 词根与 saga。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "萨迦/传说文本归入“其他”符合分类选项。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Fuldram Fulthamson 同词根；本批无冲突译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:413",
+      "evidence_rows": [
+        10503
+      ],
+      "source_excerpt": "Lhankhor Mhy",
+      "reason": "Lhankhor Mhy 为知识之神名，译名“兰科米”符合音译且不插间隔号。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "10503 的 'worship Lhankhor Mhy' 表明为神名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“兰科米”音译 Lhankhor Mhy，且不插间隔号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神祇名归入“其他”符合分类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "作为知识之神专名需统一；本批仅此一处，未见异译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:414",
+      "evidence_rows": [
+        10636,
+        21362,
+        29990
+      ],
+      "source_excerpt": "Lady of the Wild",
+      "reason": "Lady of the Wild 为神话称号，三处同指，统一采用较中性的“荒野女士”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "10636/21362/29990 均作 Lady of the Wild，为神话称号。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "采用“荒野女士”较“荒野夫人”中性，符合女神/神话称号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神话人物称号归入“其他”符合分类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "三处同指，已统一为“荒野女士”，候选“荒野夫人”不采用。"
+        }
+      }
+    },
+    {
+      "ref": "terms:418",
+      "evidence_rows": [
+        8035,
+        10697
+      ],
+      "source_excerpt": "plant people called Aldryami, or elves",
+      "reason": "elves 在 8035 明确定义为植物性精灵种族，应作为固定 game_term 并提升为 required。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8035 明说 'plant people called Aldryami, or elves'，elves 指格洛兰萨植物性精灵。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“精灵”为通行译名，能对应 elves/Aldryami。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族分类正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原 enforcement 为 reference；8035/10697 等显示其为固定种族术语，已改为 required 并补 term_reason。"
+        }
+      }
+    },
+    {
+      "ref": "terms:419",
+      "evidence_rows": [
+        11027
+      ],
+      "source_excerpt": "Idevlings",
+      "reason": "Idevlings 为 Vingkot 时代族群名，音译加“人”符合族群名规范。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11027 的 'the Idevlings and the Kikotlings' 表明为族群名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“伊德夫林人”音译并加“人”，符合族群名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Kikotlings 并列区分，未混淆。"
+        }
+      }
+    },
+    {
+      "ref": "terms:420",
+      "evidence_rows": [
+        11027
+      ],
+      "source_excerpt": "Kikotlings",
+      "reason": "Kikotlings 为 Vingkot 时代族群名，音译加“人”符合族群名规范。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11027 的 'the Idevlings and the Kikotlings' 表明为族群名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“基科特林人”音译并加“人”，符合族群名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Idevlings 并列区分，未混淆。"
+        }
+      }
+    },
+    {
+      "ref": "terms:424",
+      "evidence_rows": [
+        10890,
+        23455
+      ],
+      "source_excerpt": "dragonewt barrier called the Crossline",
+      "reason": "Crossline 指名为 Crossline 的龙族魔法屏障，与 Cross Line 为拼写变体，应按地名专名统一并提升为 required。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "23455 的 'dragonewt barrier called the Crossline' 表明为具名屏障；10890 的 crossline 同指此威胁。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“十字线”与 related e15 的 Cross Line 共用译名；f2 已核对为同一屏障拼写变体。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原为“其他/reference”；23455 表明是具名魔法屏障，已按 e15 同类改为“地名/required/proper_name”。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "10890 小写 crossline 与 23455 大写 Crossline 同指；已统一为“十字线”并提升为 required。"
+        }
+      }
+    },
+    {
+      "ref": "terms:426",
+      "evidence_rows": [
+        11082,
+        31978
+      ],
+      "source_excerpt": "Argan Argar",
+      "reason": "Argan Argar 为乌兹贸易神名，两处同指，音译“阿尔甘阿尔加”统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11082 的 'Uz trade god, Argan Argar' 与 31978 均表明为神名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“阿尔甘阿尔加”音译专名，符合不插间隔号要求。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神祇名归入“其他”符合分类。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两处同形同指，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:427",
+      "evidence_rows": [
+        11082
+      ],
+      "source_excerpt": "Uz",
+      "reason": "Uz 在 'Uz trade god' 中作族名修饰贸易神，指乌兹族/巨魔，音译“乌兹”稳定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11082 的 'Uz trade god' 中 Uz 修饰贸易神，指乌兹族/巨魔。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“乌兹”为音译族名，与 Argan Argar 搭配清楚。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他拼写变体；与 Uz 族名用法一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:429",
+      "evidence_rows": [
+        11170,
+        11203
+      ],
+      "source_excerpt": "The bull-men are called minotaurs",
+      "reason": "bull-men 在 11203 明确定为 minotaurs，属牛头人种族别名，译名统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11203 明说 'The bull-men are called minotaurs'，与 11170 的 gigantic bull-men 同指。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“牛头人”与 minotaurs 共用译名，语义准确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 related e13/e14 的 minotaur(s) 同指；f1 已核对为别名共用译名，非冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:433",
+      "evidence_rows": [
+        11754,
+        12787,
+        12788,
+        32393
+      ],
+      "source_excerpt": "The Bit of Kargzant",
+      "reason": "Bit of Kargzant 为具名宝物，统一译“卡格赞特马衔”；term_reason 改为仅据原文说明其维系部族作用。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11754/12787/12788/32393 均作 The Bit of Kargzant，为具名宝物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“卡格赞特马衔”准确表达 Bit（马衔）与专名 Kargzant，保留物品名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品分类正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "候选“卡格赞特之衔铁”与“卡格赞特马衔”同义，统一采用后者；原 term_reason 的黑马团/交易信息无本批证据，已修正。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:407",
+    "terms:412",
+    "terms:413",
+    "terms:414",
+    "terms:418",
+    "terms:419",
+    "terms:420",
+    "terms:424",
+    "terms:426",
+    "terms:427",
+    "terms:429",
+    "terms:433"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

@@ -1,0 +1,357 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 12 个术语条目，确认专名/游戏术语分类、译名与原文指称一致；对 Hell 补充限定上下文以避免普通词义误替换，其余条目无需修改。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "to ",
+          "suffix": " ",
+          "reason": "原文 34014 中 Hell 出现在 'to Hell' 结构，指奥兰斯被送往的冥府；限定该上下文以避免普通感叹义。"
+        }
+      },
+      "reason": "Hell 是易与普通词混淆的冥府地名，补充 literal_context 范围后保留其游戏内指称。",
+      "evidence_rows": [
+        34014
+      ],
+      "table": "terms",
+      "index": 851
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:846",
+      "evidence_rows": [
+        33997
+      ],
+      "source_excerpt": "past Aggar and Saird where our folk lived",
+      "reason": "Saird 在原文中作地名出现，赛尔德为音译，分类与专名要求一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 33997 将 Saird 与 Aggar 并列，指北方帝国所在的地名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "赛尔德为 Saird 的音译，保持地名指称。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名分类合法，proper_name 且 required 符合专名要求。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形地名冲突，译名与候选一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:847",
+      "evidence_rows": [
+        33994
+      ],
+      "source_excerpt": "The land of Dagori Inkarth was full of them",
+      "reason": "Dagori Inkarth 是原文中的地名，达戈里因卡斯为音译，分类正确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 33994 称 Dagori Inkarth 在 Dragonkill 前满是 trolls，明确为地名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "达戈里因卡斯为 Dagori Inkarth 的音译，未改变指称。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名分类合法，proper_name 且 required 适合专名地点。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形地名冲突，译名内部一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:849",
+      "evidence_rows": [
+        34095
+      ],
+      "source_excerpt": "He led his companions to Hankarantal, where the cliffs cannot be scaled.",
+      "reason": "Hankarantal 是原文中的地名，汉卡兰塔尔为音译，分类与专名要求一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 34095 称 Orlanth 带队前往 Hankarantal，且当地峭壁不可攀爬。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "汉卡兰塔尔为 Hankarantal 的音译，保持地名指称。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名分类合法，proper_name 且 required 适合专名地点。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形地名冲突，译名内部一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:851",
+      "evidence_rows": [
+        34014
+      ],
+      "source_excerpt": "The only god strong enough to send Orlanth to Hell was Orlanth.",
+      "reason": "Hell 在原文中为冥府地名，译作地狱；因该词易与普通词混用，补充 literal_context 限定。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 34014 的 'send Orlanth to Hell' 表明 Hell 是冥府地名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "地狱在此指冥府，符合原文；不按普通感叹义处理。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名分类合法，proper_name required 适合该专名地点。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原文 34014 中 'to Hell ' 为明确冥府上下文；已用 literal_context 限定，避免全局替换普通词义。"
+        }
+      }
+    },
+    {
+      "ref": "terms:854",
+      "evidence_rows": [
+        34033
+      ],
+      "source_excerpt": "return to the Gods Age",
+      "reason": "Gods Age 为神话纪元名，采用诸神时代；候选众神时代为同义异译，本条统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 34033 提到回到 Gods Age，指 Dawn 之前的神话时代。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "诸神时代可指诸神掌权的时代，与 Gods Age 相符；众神时代为可接受异译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "纪元名归入其他合法，proper_name required 合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "在诸神时代/众神时代两候选间统一采用诸神时代，未改变指称。"
+        }
+      }
+    },
+    {
+      "ref": "terms:857",
+      "evidence_rows": [
+        34087
+      ],
+      "source_excerpt": "The Journey West",
+      "reason": "The Journey West 是原文标题，西行之旅保留标题义与旅程方向。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 34087 整条为标题 The Journey West。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "西行之旅保留标题义和向西旅程的方向。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "标题/神话阶段名归入其他合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "作为独立标题，译名内部一致，无同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1140",
+      "evidence_rows": [
+        34114
+      ],
+      "source_excerpt": "The Sea Journey",
+      "reason": "The Sea Journey 是原文标题，海上旅程保留标题义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 34114 整条为标题 The Sea Journey。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "海上旅程保留标题义，符合渡海旅程的指称。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "标题/神话阶段名归入其他合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "标题译名内部一致，无同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:858",
+      "evidence_rows": [
+        34096
+      ],
+      "source_excerpt": "The army of darkness was commanded by Shankgaro, Uzlord of the West.",
+      "reason": "Uzlord of the West 是 Shankgaro 的独特统治头衔，西方乌兹领主保留 Uz 族称与领主头衔。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 34096 称 Shankgaro 为 Uzlord of the West，是其统治头衔。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "西方乌兹领主保留 Uz 族称与领主头衔，符合原文指称。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "身份分类合法，proper_name required 适合独特称号。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与原文所指 Shankgaro 的称号一致，无同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:861",
+      "evidence_rows": [
+        34034
+      ],
+      "source_excerpt": "It was Zistor, a huge monster, made of gleaming metal and wires.",
+      "reason": "Zistor 是 God Learners 仿造 Mostal 的特定造物/机器神名，齐斯托为音译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 34034 说明 Zistor 是 God Learners 仿造 Mostal 的巨大金属线缆怪物/机器。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "齐斯托为 Zistor 音译，保留专名指称。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为特定神话造物归入其他合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形异译冲突，译名内部一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:863",
+      "evidence_rows": [
+        34321
+      ],
+      "source_excerpt": "The sacred truth is that the Storm Age exists unchanged in the Godplace.",
+      "reason": "Godplace 是 Storm Age 保持不变的神话所在，神域为地名意译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 34321 称 Storm Age 在 Godplace 中保持不变，明确为神话地点。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "神域表达该神话所在，符合原文地名指称。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名分类合法，proper_name required 适合专名地点。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "译名内部一致，无同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:864",
+      "evidence_rows": [
+        34378
+      ],
+      "source_excerpt": "In this way Orlanth gained entry into the Land of the Dead",
+      "reason": "Land of the Dead 是原文中的冥府地名，亡者之地保留该地名指称。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 34378 称 Orlanth 放弃 Death 后进入 Land of the Dead。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "亡者之地保留该地名指称，符合冥府语境。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名分类合法，proper_name required 适合专名地点。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "译名内部一致，无同形冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:866",
+      "evidence_rows": [
+        34271
+      ],
+      "source_excerpt": "Orlanth was called to Arrowmound, that mountain in the Skyreach range.",
+      "reason": "Skyreach range 是 Arrowmound 所在的山脉名，天脊山脉保留山脉地名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 34271 称 Arrowmound 位于 Skyreach range。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "天脊山脉保留 Skyreach range 的山脉名指称。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "地名分类合法，proper_name required 适合专名地点。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "译名内部一致，无同形冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:846",
+    "terms:847",
+    "terms:849",
+    "terms:851",
+    "terms:854",
+    "terms:857",
+    "terms:1140",
+    "terms:858",
+    "terms:861",
+    "terms:863",
+    "terms:864",
+    "terms:866"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

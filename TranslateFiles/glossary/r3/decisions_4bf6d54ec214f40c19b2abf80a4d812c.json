@@ -1,0 +1,394 @@
+{
+  "review_complete": true,
+  "review_summary": "已审校 e1-e12：保留哭泣岩、龙裔、雷霆奥兰斯、白衣女神、秘仪魔法、祛病祝福、疗伤仪式、识字祝福、友马仪式；修正 e2 的类别与 Ernalda 译名、e6 的 Plowman 称号、e8 的 temple 类别与译名。f1/f2 分别为同一神祇称号与同一词形变体的同译，不构成冲突。",
+  "acknowledged_findings": [
+    "F0387",
+    "F0420"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "category_path": "地名",
+        "recommended_translation": "厄纳尔达大神殿",
+        "term_reason": "Clearwine 的厄纳尔达大神殿，西娅在此受训；temple 在此为具体地点。"
+      },
+      "reason": "在 Clearwine 的 Great Ernalda temple 是具体神殿地点，不是组织；Ernalda 统一作厄纳尔达。",
+      "evidence_rows": [
+        28485,
+        28486
+      ],
+      "table": "terms",
+      "index": 711
+    },
+    {
+      "patch": {
+        "recommended_translation": "犁夫",
+        "term_reason": "Barntar 的固定称号；原文 33874 明示 Barntar the Plowman，称号统一作犁夫。"
+      },
+      "reason": "The Plowman 是 Barntar 的固定称号，与 related e22 的“犁夫巴恩塔”核心译名一致。",
+      "evidence_rows": [
+        30391,
+        33874
+      ],
+      "table": "terms",
+      "index": 719
+    },
+    {
+      "patch": {
+        "category_path": "其他",
+        "recommended_translation": "神殿",
+        "term_reason": "temple 是比 shrine 高一级的神殿建筑；学会两项祝福后可建，全年提供该两项祝福。"
+      },
+      "reason": "原文以 shrine/temple/Great Temple 构成建筑等级，temple 应作神殿并与“大神殿”保持词根一致；它是建筑/机制而非库存物品。",
+      "evidence_rows": [
+        33312,
+        29967,
+        30568
+      ],
+      "table": "terms",
+      "index": 722
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:703",
+      "evidence_rows": [
+        28375
+      ],
+      "source_excerpt": "At Weeping Rocks she stole the Edgeless Ring from the Three-Eyed Clan.",
+      "reason": "Weeping Rocks 是 Kallyr 盗取 Edgeless Ring 的具体地点，译为哭泣岩。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28375 明示 At Weeping Rocks 为盗取发生地。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "哭泣岩保留 Weeping/Rocks 的字面意象，作为地名简洁可读。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具体地点，category_path=地名 正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无同形地名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:711",
+      "evidence_rows": [
+        28485,
+        28486
+      ],
+      "source_excerpt": "Send Theya to the Great Ernalda temple in Clearwine for training.",
+      "reason": "temple in Clearwine 是具体地点；译名按 Ernalda 统一为厄纳尔达大神殿。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28485/28486 均指 Clearwine 的 Great Ernalda temple，西娅被送去受训。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "将“埃尔纳尔达”改为与 Ernalda 既有译名一致的“厄纳尔达”，全称作厄纳尔达大神殿。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文 in Clearwine 表明是具体神殿地点，应从组织改为地名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 related e20 Ernalda=厄纳尔达及 e21 的“大神殿”词根统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:715",
+      "evidence_rows": [
+        28633,
+        28695
+      ],
+      "source_excerpt": "that we would be visited by dragon-kin.",
+      "reason": "dragon-kin 是带来灾祸的龙类亲族，译龙裔。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28633/28695 均作 dragon-kin，指将造成破坏的来访者。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "龙裔保持龙类亲族义，且与 related e14 dragonkin 同译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族，指龙类亲族群体。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "连字符变体 dragonkin 与 dragon-kin 同译，f2 非冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:716",
+      "evidence_rows": [
+        30492,
+        30493
+      ],
+      "source_excerpt": "The best blessing of Orlanth Thunderous is the rain he brings to our crops.",
+      "reason": "Orlanth Thunderous 是奥兰斯的雷雨面向，译雷霆奥兰斯。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30492/30493 均称 Orlanth Thunderous 的祝福是带来雨水。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "雷霆奥兰斯保留 Orlanth=奥兰斯 与 Thunderous 的雷雨面向。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神祇面向/专名，归其他可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Orlanth 与 related e18 奥兰斯一致；Thunderous 作雷霆限定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:718",
+      "evidence_rows": [
+        30410
+      ],
+      "source_excerpt": "The White Goddess's touch cools fevers.",
+      "reason": "White Goddess 指能以触摸退烧的白衣治疗女神，译白衣女神。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30410 明示其触摸能退烧。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "白衣女神与 White-Clad Goddess 同指，保留白衣称号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "称号/神祇身份，身份合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "f1 中 e13 为只读关联项，White-Clad Goddess 与 White Goddess 为同一神祇称号，同译不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:719",
+      "evidence_rows": [
+        30391,
+        33874
+      ],
+      "source_excerpt": "Barntar the Plowman",
+      "reason": "The Plowman 是 Barntar 的称号；与犁夫巴恩塔统一作犁夫。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30391 称 The Plowman 忠诚；33874 明示 Barntar the Plowman。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "将“耕者”改为“犁夫”，与 related e22“犁夫巴恩塔”的核心称号一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "神祇称号，身份合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "The Plowman 与 Barntar the Plowman 应共用“犁夫”，不保留两套称号译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:720",
+      "evidence_rows": [
+        30015,
+        30296
+      ],
+      "source_excerpt": "We allocated Mysteries magic, so a sacrifice may succeed.",
+      "reason": "Mysteries magic 是秘仪类魔法，译秘仪魔法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30015 明示分配 Mysteries magic；30296 以 mysteries 指同一魔法类别。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "秘仪魔法与 related e25 mysteries=秘仪 词根一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "魔法类别/技能，技能类别合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "mysteries/Mysteries 大小写与短语形式同属秘仪，不冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:722",
+      "evidence_rows": [
+        33312,
+        29967,
+        30568
+      ],
+      "source_excerpt": "Once you know two blessings for a particular deity, you can build a temple and gain those blessings year-round.",
+      "reason": "temple 是高于 shrine 的神殿建筑；译神殿，类别为建筑/机制。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33312 明示学两项祝福后可 build a temple 并全年获祝福；29967 以 temple 对比 shrine。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "由“神庙”改为“神殿”，与 Great Temple=大神殿 词根一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "temple 是建筑/升级机制而非库存物品，改为其他。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 related e21 Great Earthshaker Temple=大地震者大神殿 的 temple=神殿 一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:723",
+      "evidence_rows": [
+        29999,
+        30000,
+        33135
+      ],
+      "source_excerpt": "Chalana Arroy's Curing blessing already keeps the clan well. There is little else to use to fight the predicted disease spirits.",
+      "reason": "Curing blessing 是查拉娜·阿罗伊对抗疾病的祝福，译祛病祝福。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "29999/30000 明示用于对抗 predicted disease spirits；33135 指疾病恢复。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "祛病祝福准确表达 Curing 的疾病治疗义，且与 Healing ritual 区分。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福/技能，技能类别合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批 blessing 类术语均用“祝福”；与 e10 疗伤仪式区分清楚。"
+        }
+      }
+    },
+    {
+      "ref": "terms:724",
+      "evidence_rows": [
+        30403
+      ],
+      "source_excerpt": "Ask Chalana Arroy to teach us the Healing ritual. Then we could sacrifice to help all our wounded people.",
+      "reason": "Healing ritual 是查拉娜·阿罗伊救治伤员的仪式，译疗伤仪式。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30403 明示教 Healing ritual 后可献祭帮助 wounded people。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "疗伤仪式贴合救治伤员语境。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "仪式/技能，技能类别合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e9 祛病祝福区分疾病与疗伤，不混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:725",
+      "evidence_rows": [
+        30080
+      ],
+      "source_excerpt": "We should sacrifice to Lhankor Mhy so he will gift us with knowledge of the Literacy blessing.",
+      "reason": "Literacy blessing 是兰克·米尔赐予的识字祝福。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30080 明示向 Lhankor Mhy 献祭以获得 Literacy blessing 的知识。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "识字祝福直译且符合知识神祝福。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "祝福/技能，技能类别合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "blessing 统一作“祝福”，与 e9/e11 一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:726",
+      "evidence_rows": [
+        30414
+      ],
+      "source_excerpt": "We should ask Elmal to show us how to perform the Horsefriend ritual.",
+      "reason": "Horsefriend ritual 是埃尔马尔教授的友马仪式。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30414 明示向 Elmal 求教 Horsefriend ritual 以使马匹兴旺。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "友马仪式保留 Horsefriend 的友好/马匹关系，简洁可读。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "仪式/技能，技能类别合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "ritual 统一作“仪式”，与 e10 疗伤仪式 一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:703",
+    "terms:711",
+    "terms:715",
+    "terms:716",
+    "terms:718",
+    "terms:719",
+    "terms:720",
+    "terms:722",
+    "terms:723",
+    "terms:724",
+    "terms:725",
+    "terms:726"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

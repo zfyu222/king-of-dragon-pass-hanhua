@@ -1,0 +1,191 @@
+{
+  "review_complete": true,
+  "review_summary": "完成 e1-e6 六条术语审校；e1 的多个拼写变体同指“龙友帝国”，共享译名合理；e2-e4、e6 的译名与分类通过；e5 改为名词性标题“风暴部族的缔造”。",
+  "acknowledged_findings": [
+    "F0359"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "风暴部族的缔造"
+      },
+      "reason": "Making of... 是神话/英雄探索标题，改用名词性短语比动词式更贴合引号内任务名和 UI 标题用法。",
+      "evidence_rows": [
+        33429
+      ],
+      "table": "terms",
+      "index": 63
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:56",
+      "evidence_rows": [
+        912
+      ],
+      "source_excerpt": "uncovered relics from the Empire of the Wyrms Friends",
+      "reason": "历史帝国专名“龙友帝国”译名稳定；组织归类正确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "912 的“uncovered relics from the Empire of the Wyrms Friends”明确该专名为历史帝国。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“龙友帝国”对应 Empire of Wyrms Friends，简洁且能作为历史政权名；共享译名有意统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文称遗物来自该帝国，属历史政权/组织，归入“组织”合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "已核对共享译名警告：不同所有格与单复数拼写均指同一帝国，保留同一译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:60",
+      "evidence_rows": [
+        938
+      ],
+      "source_excerpt": "“Elmal Guards the Stead”",
+      "reason": "英雄探索标题译名保留神名与守护家园意象，分类为其他。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "938 以引号列出“Elmal Guards the Stead”，并要求必须成功，确认是英雄探索名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“埃尔马尔守卫家园”保留 Elmal 的既定音译，Guards the Stead 译作守卫家园，符合神话标题语气。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该条是英雄探索/神话标题，不是技能或组织，归入“其他”合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Elmal 统一译“埃尔马尔”，标题整体保留，不拆分为普通短语。"
+        }
+      }
+    },
+    {
+      "ref": "terms:61",
+      "evidence_rows": [
+        939
+      ],
+      "source_excerpt": "“Ernalda Feeds the Tribe”",
+      "reason": "英雄探索标题译名与女神名统一，分类为其他。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "939 以引号列出“Ernalda Feeds the Tribe”，说明是尚未完成的英雄探索名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“厄纳尔达哺育部族”保留女神名“厄纳尔达”，哺育部族贴合 Feeds the Tribe 的神话动作。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "英雄探索/神话标题归入“其他”，不按技能处理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Ernalda 统一译“厄纳尔达”，标题整体译名稳定。"
+        }
+      }
+    },
+    {
+      "ref": "terms:62",
+      "evidence_rows": [
+        940
+      ],
+      "source_excerpt": "“Orlanth and Aroka”",
+      "reason": "英雄探索标题中的神名与龙名均按既定音译保留，分类为其他。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "940 以引号列出“Orlanth and Aroka”，为需要成功的英雄探索名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“奥兰斯与阿罗卡”分别对应 Orlanth 与 Aroka，连接词与原文一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该条是英雄探索/神话标题，归入“其他”合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Orlanth、Aroka 的既定音译保持统一，标题不意译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:63",
+      "evidence_rows": [
+        33429
+      ],
+      "source_excerpt": "the Making of the Storm Tribe quest",
+      "reason": "英雄探索标题改为名词性短语，核心“风暴部族”不变。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33429 要求完成 the Making of the Storm Tribe quest，确认其为英雄探索任务名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "将动词式“缔造风暴部族”改为名词性“风暴部族的缔造”，更贴合 Making of... 的标题结构。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该条是英雄探索/神话标题，归入“其他”合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "核心词“风暴部族”保持不变，标题采用名词短语以稳定任务名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:65",
+      "evidence_rows": [
+        25655
+      ],
+      "source_excerpt": "began the Lhankor Mhy Finds the Truth heroquest",
+      "reason": "英雄探索标题保留知识神音译，真理义符合神话主题。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25655 明确写出 began the Lhankor Mhy Finds the Truth heroquest，确认是英雄探索名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“兰科尔米寻得真理”保留 Lhankor Mhy 的既定音译，Finds the Truth 译作寻得真理，契合知识神神话。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该条是英雄探索/神话标题，归入“其他”合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Lhankor Mhy 统一译“兰科尔米”，标题整体不再拆分。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:56",
+    "terms:60",
+    "terms:61",
+    "terms:62",
+    "terms:63",
+    "terms:65"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

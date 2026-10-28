@@ -1,0 +1,384 @@
+{
+  "review_complete": true,
+  "review_summary": "已复核 e1-e11 的来源、译名、分类与一致性；修正 Gustbran the Smith 的语序、Doubting Wheel 的译名、Gustbran's Wheel 的分类、Minlinster 缺乏依据的性别，以及 Ginna Jar 的性别与译名，其余维持。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "铁匠古斯特布兰"
+      },
+      "reason": "原文为 Gustbran the Smith，中文以称号前置更自然，且保留核心译名古斯特布兰。",
+      "evidence_rows": [
+        23025
+      ],
+      "table": "terms",
+      "index": 603
+    },
+    {
+      "patch": {
+        "recommended_translation": "疑虑之轮"
+      },
+      "reason": "原文为拟人化神话存在 Doubting Wheel，疑虑之轮比疑轮更完整自然。",
+      "evidence_rows": [
+        26902
+      ],
+      "table": "terms",
+      "index": 654
+    },
+    {
+      "patch": {
+        "term_kind": "proper_name",
+        "enforcement": "required"
+      },
+      "reason": "32430 为宝藏列表中的具名轮，属具名物品，应改为 proper_name/required；译名不变。",
+      "evidence_rows": [
+        32430
+      ],
+      "table": "terms",
+      "index": 1058
+    },
+    {
+      "patch": {
+        "gender": "其他"
+      },
+      "reason": "33874 仅列 Minlinster the Brewer，未出现 he/his 等男性指代；为避免无据设定，性别改为其他。",
+      "evidence_rows": [
+        33876
+      ],
+      "table": "characters",
+      "index": 212
+    },
+    {
+      "patch": {
+        "gender": "女性",
+        "recommended_translation": "金娜贾尔"
+      },
+      "reason": "34104 以 She 指代 Ginna Jar，性别应为女性；女性名用金娜贾尔更贴切并保留音译。",
+      "evidence_rows": [
+        34104
+      ],
+      "table": "characters",
+      "index": 214
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:209",
+      "evidence_rows": [
+        32992
+      ],
+      "source_excerpt": "she has high Bargaining",
+      "reason": "确认 Brenna 为高议价女性领袖，译名与性别字段可用。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32992 指示在议事圈中选择 Brenna，同句 she 可证女性。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "布伦娜为音译，未与现有术语冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters/proper_name/required，女性标记有 she 依据。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Brenna 译名；与人物专名规则一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:210",
+      "evidence_rows": [
+        32986
+      ],
+      "source_excerpt": "Minara",
+      "reason": "确认 Minara 为报告收成总计的氏族成员，原文未明示性别。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32986 中 Minara 报告收成总计，专名成立。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "米娜拉为音译，未与现有术语冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters/proper_name/required；性别其他因原文未明示。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Minara 译名，人物专名处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:211",
+      "evidence_rows": [
+        27155,
+        33874
+      ],
+      "source_excerpt": "Gustbran, Smith of the Gods",
+      "reason": "确认 Gustbran 为铁匠之神，男性有 his fire 支持，译名统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "27155 称 Gustbran 为 Smith of the Gods，33874 列为小神之一。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "古斯特布兰音译稳定，保留核心专名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters/proper_name/required；27155 的 his fire 支持男性。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Gustbran the Smith、Gustbran's Wheel 的核心译名古斯特布兰一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:512",
+      "evidence_rows": [
+        16761
+      ],
+      "source_excerpt": "the Big Wheel Clan",
+      "reason": "确认 Big Wheel Clan 为恶王占卜后归咎的氏族名，组织分类正确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "16761 明确提到 blame the Big Wheel Clan。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "大轮氏族直译可读，保留氏族名结构。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms/组织/proper_name/required，符合氏族组织名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Doubting Wheel 的轮分属不同专名，不强行统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:603",
+      "evidence_rows": [
+        23025
+      ],
+      "source_excerpt": "Gustbran the Smith",
+      "reason": "确认其为铁匠神称号，语序改为称号前置，核心译名不变。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "23025 的 forge of Gustbran the Smith 证明其为铁匠神称号。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译古斯特布兰铁匠语序生硬，改为铁匠古斯特布兰，保留核心专名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms/其他/proper_name/required，符合神祇称号专名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "核心译名古斯特布兰与同源 Gustbran 及 Gustbran's Wheel 一致，称号前置不改变专名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:654",
+      "evidence_rows": [
+        26902,
+        26903,
+        34332,
+        34333
+      ],
+      "source_excerpt": "the Doubting Wheel rolls up.",
+      "reason": "确认 Doubting Wheel 为滚来劝阻建部族的拟人化存在，译名改为疑虑之轮。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26902 与 34332 均指会滚来劝阻建部族的 Doubting Wheel。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译疑轮过简，改为疑虑之轮，完整对应 Doubting Wheel。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms/其他/proper_name/required，属于拟人化神话造物名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Big Wheel Clan 的轮分属不同专名，不强行统一，但保留轮字。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1058",
+      "evidence_rows": [
+        32430
+      ],
+      "source_excerpt": "Gustbran's Wheel",
+      "reason": "确认其为宝藏列表中的具名轮，按具名物品改为 proper_name/required，译名不变。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32430 仅列 Gustbran's Wheel，位于宝藏列表，是具名物品。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "古斯特布兰之轮保留 Gustbran 核心译名，物品名可读。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原 game_term/reference 与具名物品不符，改为 proper_name/required，category_path 物品不变。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Gustbran 部分与古斯特布兰统一，之轮结构不与疑虑之轮混同。"
+        }
+      }
+    },
+    {
+      "ref": "characters:212",
+      "evidence_rows": [
+        33874
+      ],
+      "source_excerpt": "Minlinster the Brewer",
+      "reason": "确认 Minlinster 为酿酒师神名，但原文未明示男性，性别改为其他。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33874 将 Minlinster the Brewer 列入神祇名单，专名成立。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "敏林斯特音译稳定，未与现有术语冲突。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "33874 未出现 he/his 等男性指代，性别由男性改为其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Minlinster 译名；性别字段与原文未明示状态一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:213",
+      "evidence_rows": [
+        32419,
+        33876,
+        34097,
+        34099,
+        34100,
+        34102
+      ],
+      "source_excerpt": "Flesh Man, a mortal and one of the Lightbringers",
+      "reason": "确认 Flesh Man 为光使者中的男性凡人，译名血肉人保留字面含义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33876 称 Flesh Man 为 mortal 与 Lightbringer，34099 用 He 指代。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "血肉人对应 Flesh Man 的字面义，未采用音译或物品义肉人。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters/proper_name/required；男性有 34099 的 He 支持。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一人物在不同段落均译血肉人，与光使者身份一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:214",
+      "evidence_rows": [
+        33876,
+        34104,
+        34111
+      ],
+      "source_excerpt": "Ginna Jar. She suggested",
+      "reason": "确认 Ginna Jar 为最后加入光使者的女性，性别与译名均修正。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34104 明言 Ginna Jar 是最后加入者并以 She 指代。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原金纳贾尔调整为女性名金娜贾尔，音译不变且更贴合 She。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "性别字段由其他改为女性，依据 She suggested。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Ginna Jar 译名，金娜贾尔与女性字段一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:215",
+      "evidence_rows": [
+        33876,
+        34164,
+        34319,
+        34326
+      ],
+      "source_excerpt": "Mahome, goddess of the Hearthfire",
+      "reason": "确认 Mahome 为炉火女神，女性与译名玛霍梅均正确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33876 称 Mahome 为炉火女神，34319 记其为 Orlanth 与 Ernalda 烹饪。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "玛霍梅音译稳定，未与同批术语冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters/proper_name/required，女性由 goddess 明确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无其他 Mahome 译名；炉火女神身份与原文一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:209",
+    "characters:210",
+    "characters:211",
+    "terms:512",
+    "terms:603",
+    "terms:654",
+    "terms:1058",
+    "characters:212",
+    "characters:213",
+    "characters:214",
+    "characters:215"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

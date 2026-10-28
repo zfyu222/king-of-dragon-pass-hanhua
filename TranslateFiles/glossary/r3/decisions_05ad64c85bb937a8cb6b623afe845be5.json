@@ -1,0 +1,58 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1：确认 King Heort 指奥兰斯传说君王兼立法者，译名采用“赫奥特王”，并补全 term_reason 以说明其身份与使用范围；无需隔离或新增。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "指奥兰斯人的传说君王、立法者赫奥特；原文称 Heortland 因其得名，并多次引用其律法与格言，神话中他被 Thed 所害。"
+      },
+      "reason": "原 term_reason 仅引用一次轶事，未说明其传说君王、立法者身份及使用范围，补全以便后续翻译和审校。",
+      "evidence_rows": [
+        34289,
+        33578
+      ],
+      "table": "characters",
+      "index": 1
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:1",
+      "evidence_rows": [
+        34289,
+        33493,
+        33578,
+        25959
+      ],
+      "source_excerpt": "Our part of it was called Heortland, after the legendary King Heort, who battled the darkness and gave us our laws.",
+      "reason": "确认 King Heort 为奥兰斯传说君王、立法者，Heortland 因其得名；采用与 Heort 系列术语一致的“赫奥特王”，并补全 term_reason。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34289 明确称 Heortland 得名于 legendary King Heort，并称其立法；33493 独立标签为 King Heort，33578 亦引其制定的神圣律法，均指同一人物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "以 related_terms 中 Heort=赫奥特 为词干，King Heort 译作“赫奥特王”；33493 的独立标签及 33578 的句中用法均适用，无漏译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "属 proper_name/characters；34289 称其为 legendary King，25959 的神话叙事中描述其被害，且原文用 him 指称，男性人物。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "采用“赫奥特王”，保留词干“赫奥特”，与 related_terms 的 Heort/赫奥特、Laws of Heort/赫奥特法典、Heort's Balm/赫奥特香膏、Heort's Stone/赫奥特之石一致；候选中的“赫尔特王”“赫奥尔特王”“希奥特王”“赫奥特国王”不采用。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:1"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

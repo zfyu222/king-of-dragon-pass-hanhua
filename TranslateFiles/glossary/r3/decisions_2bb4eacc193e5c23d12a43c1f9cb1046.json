@@ -1,0 +1,140 @@
+{
+  "review_complete": true,
+  "review_summary": "完成 e1-e3 的来源、译名、分类与一致性审校。e1 fyrd 按原文定义改为“民团”；e2 carls 维持“自由农”；e3 carl 由“卡尔”改为“自由农”并更新适用说明，与复数条目统一。未发现需隔离或新增条目。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "民团",
+        "term_reason": "34001 定义为氏族军队，主要由武装农民组成；33494 说明 fyrd 是氏族可战成年人的总数。"
+      },
+      "reason": "“民兵队”偏向具体小队；原文定义的是整体征召军/民团，故改为“民团”。",
+      "evidence_rows": [
+        34001,
+        33494,
+        118,
+        119
+      ],
+      "table": "terms",
+      "index": 33
+    },
+    {
+      "patch": {
+        "recommended_translation": "自由农",
+        "term_reason": "33999 定义为耕种并通常养几头牛的农民；与 carls 同指氏族自由农阶层。",
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": false,
+          "reason": "原文中 carl/carls 指氏族自由农民阶层；复数形式另由 carls 条目统一。"
+        }
+      },
+      "reason": "carl 是氏族自由农民阶层，不是单纯音译人名；与 e2 的 carls=自由农 保持一致。",
+      "evidence_rows": [
+        33999,
+        3445,
+        3567,
+        26250,
+        24113
+      ],
+      "table": "terms",
+      "index": 226
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:33",
+      "evidence_rows": [
+        118,
+        119,
+        34001,
+        33494
+      ],
+      "source_excerpt": "fyrd: the clan army, mostly composed of armed farmers.",
+      "reason": "原文定义 fyrd 为氏族军队，主要由武装农民组成；33494 说明其规模为可战成年人总数。将译名从“民兵队”修正为更贴合整体征召军含义的“民团”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34001 原文直接定义 fyrd；118/119 显示其需被召集，并与 weaponthanes 区分。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "34001 的 clan army, mostly composed of armed farmers 与 33494 的可战成年人总数表明其为整体民团/征召军，而非小队；改为“民团”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "fyrd 是氏族军事组织/征召力量，归入“组织”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批无与 fyrd 同义的其它条目；术语族未列相关变体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:36",
+      "evidence_rows": [
+        90,
+        33141,
+        33162
+      ],
+      "source_excerpt": "Carls are wealthier farmers who own cattle and farm good land",
+      "reason": "carls 指氏族中拥有牛和好地的较富裕农民阶层；“自由农”准确且与单数条目统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33141 将 carls 定义为 farming population 中的较富裕农民；90 以 carls 指氏族成员。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "33141 的 wealthier farmers who own cattle and farm good land 对应“自由农”；33162 也以 carls 与 thralls/farmers 并提。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "carls 是氏族社会身份阶层，归入“身份”正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "e2 的“自由农”作为标准译名；e3 单数条目已修正为同一译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:226",
+      "evidence_rows": [
+        33999,
+        24113,
+        26250
+      ],
+      "source_excerpt": "carl: farmer, who plows and usually tends a few cows.",
+      "reason": "carl 是耕种并通常养几头牛的自由农民阶层，不是单纯音译人名；将其从“卡尔”改为“自由农”，与 e2 的 carls 保持一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33999 直接定义 carl 为 farmer；24113 的 prosperous carl 与 26250 的 like a carl 均指该社会身份。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "33999 的 farmer, who plows and usually tends a few cows 表明“自由农”比音译“卡尔”更准确；改为“自由农”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "carl 是氏族自由农民阶层，归入“身份”正确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原译“卡尔”与 e2 的 carls=“自由农”不一致；已统一为“自由农”。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:33",
+    "terms:36",
+    "terms:226"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

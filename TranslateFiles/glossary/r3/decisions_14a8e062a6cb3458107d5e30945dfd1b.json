@@ -1,0 +1,541 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对 e1-e12 的原文、保留方式、non_translate 分类和跨条一致性；为 11 个运行时串补充了显式的 applicability，并隔离了缺少游戏语义证据的单字母 H（e9）；没有新增专名或术语。",
+  "acknowledged_findings": [
+    "F0140",
+    "F0349"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "动态人物名替换令牌，在句中作名字出现，须原样保留。"
+        }
+      },
+      "reason": "补充 text 作用域，防止动态人名令牌被翻译或改写。",
+      "evidence_rows": [
+        7742,
+        19055
+      ],
+      "table": "non_translate",
+      "index": 162
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "动态人物名占位符，在主语和所有格位置均原样保留。"
+        }
+      },
+      "reason": "补充 text 作用域，保留人物名占位符。",
+      "evidence_rows": [
+        20277,
+        20284
+      ],
+      "table": "non_translate",
+      "index": 256
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "动态变量或数值替换令牌，位于名词或数量位置时原样保留。"
+        }
+      },
+      "reason": "补充 text 作用域，保留变量替换串。",
+      "evidence_rows": [
+        7988,
+        19395
+      ],
+      "table": "non_translate",
+      "index": 163
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "随机短语起始控制标记，与结尾 \\x02 配对；保留 \\x02\\x05 本身。"
+        }
+      },
+      "reason": "补充 text 作用域，保护随机短语起始标记。",
+      "evidence_rows": [
+        7965,
+        7966,
+        20860
+      ],
+      "table": "non_translate",
+      "index": 164
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "运行时变量控制字节，正文中仅随 \\x01@ 变量串出现。"
+        }
+      },
+      "reason": "补充作用域，保留控制字节 \\x14，不转为可读文本。",
+      "evidence_rows": [
+        8689
+      ],
+      "table": "non_translate",
+      "index": 166
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "动态人物名替换令牌，在 chief 名称位置原样保留。"
+        }
+      },
+      "reason": "补充 text 作用域，保留人物名替换串。",
+      "evidence_rows": [
+        10670,
+        10672
+      ],
+      "table": "non_translate",
+      "index": 185
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "女性角色名运行时占位符，含所有格时也原样保留。"
+        }
+      },
+      "reason": "补充 text 作用域，保留女性角色名占位符。",
+      "evidence_rows": [
+        11032,
+        11033,
+        11037
+      ],
+      "table": "non_translate",
+      "index": 187
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "动态变量或名称替换令牌，跨行同串原样保留。"
+        }
+      },
+      "reason": "补充 text 作用域，保留跨行一致的变量串。",
+      "evidence_rows": [
+        10949,
+        19462,
+        29003,
+        29004
+      ],
+      "table": "non_translate",
+      "index": 188
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "仅见完整字段 h@，按 whole_record 保留，避免把小写 h 扩为全局禁翻。"
+        }
+      },
+      "reason": "将 h@ 限定为完整字段保护。",
+      "evidence_rows": [
+        32673
+      ],
+      "table": "non_translate",
+      "index": 483
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "整字段为控制串 \\x01\\x02H，按 whole_record 原样保留。"
+        }
+      },
+      "reason": "将控制串限定为完整字段保护。",
+      "evidence_rows": [
+        16412
+      ],
+      "table": "non_translate",
+      "index": 220
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "氏族或敌方名称替换令牌，在 the 后作名词时原样保留。"
+        }
+      },
+      "reason": "补充 text 作用域，保留敌方名称占位符。",
+      "evidence_rows": [
+        16473,
+        16474
+      ],
+      "table": "non_translate",
+      "index": 221
+    }
+  ],
+  "quarantine": [
+    {
+      "reason": "孤立单字母 H，只有单独记录且没有可证明的游戏特定语义；按审计 f1/f2 隔离，不作为全局禁翻。",
+      "evidence_rows": [
+        11783
+      ],
+      "table": "non_translate",
+      "index": 208
+    }
+  ],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:162",
+      "evidence_rows": [
+        7742,
+        19055
+      ],
+      "source_excerpt": "\\x01@t said",
+      "reason": "确认是动态人名令牌；保留原串不变，补充 text 适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7742 与 19055 均出现完整 \\x01@t，前句作主语、后句作 duel 宾语。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为运行时人名替换串不译，保持 \\x01@t。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属于 non_translate 运行时占位符；补入 text applicability，限定其作用域。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 \\x01@\\t 虽同带 \\x01@ 前缀，但变量码不同，不按同一名称合并。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:256",
+      "evidence_rows": [
+        20277,
+        20284
+      ],
+      "source_excerpt": "\\x01@\\t was found dead",
+      "reason": "确认是动态人物名占位符；保留原串并补足作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "20277 中 \\x01@\\t 位于 was found dead 前，20284 中出现在所有格 ’s 前。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "动态人物名占位符不译，保持 \\x01@\\t。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属于 non_translate 占位符；补入 text applicability。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1 同带 \\x01@ 前缀但变量码不同，保持独立。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:163",
+      "evidence_rows": [
+        7988,
+        19395
+      ],
+      "source_excerpt": "the \\x01@\\x0E tribe was born",
+      "reason": "确认是动态变量替换串；保留原串并补足作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7988 位于 tribe 前，19395 位于 baskets 前，均为变量替换位置。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "变量或数值替换令牌不译，保持 \\x01@\\x0E。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属于 non_translate 运行时变量串；补入 text applicability。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一变量码在名词或数量前保持原串，不与 e1/e2 合并。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:164",
+      "evidence_rows": [
+        7965,
+        7966,
+        20860
+      ],
+      "source_excerpt": "\\x02\\x05is reserved",
+      "reason": "确认是随机短语起始控制标记；保留标记，英文分支另译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7965 以 \\x02\\x05 开始随机短语，7966 与 20860 中亦作为起始标记出现。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "控制标记不译，保持 \\x02\\x05；随机分支内容另行翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属于 non_translate 控制标记；补入 text applicability。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与结尾 \\x02 成对使用，本条目只保护起始 \\x02\\x05，不把裸 \\x02 全局冻结。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:166",
+      "evidence_rows": [
+        8689
+      ],
+      "source_excerpt": "\\x01@\\x14 clans",
+      "reason": "确认是运行时变量控制字节；保留控制字节并补足作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8689 中 \\x14 紧接在 \\x01@ 后、clans 前出现。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "控制字节 \\x14 不译，原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属于 non_translate 控制字节；补入 text applicability。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 \\x01@ 前缀固定连用，保护 \\x14 本身，不扩展到其他 @ 变量。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:185",
+      "evidence_rows": [
+        10670,
+        10672
+      ],
+      "source_excerpt": "\\x01C\\x18 was expecting you",
+      "reason": "确认是 chief 名字的动态占位符；保留原串并补足作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "10670 中位于 chief 名称后、was expecting you 前；10672 同位置出现。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "人物名替换令牌不译，保持 \\x01C\\x18。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属于 non_translate 人物名占位符；补入 text applicability。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e7 共享 \\x01C 前缀但尾码不同，不合并为同一人物。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:187",
+      "evidence_rows": [
+        11032,
+        11033,
+        11037
+      ],
+      "source_excerpt": "Assume that \\x01C$ is dead",
+      "reason": "确认是女性角色名占位符；含所有格时也保持同一串。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11032 与 11033 中位于角色名位置，11037 中带所有格 ’s 出现。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "女性角色名占位符不译，保持 \\x01C$。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属于 non_translate 角色名占位符；补入 text applicability。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "含 ’s 属格时仍保留相同占位符，不一并翻译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:188",
+      "evidence_rows": [
+        10949,
+        19462,
+        29003,
+        29004
+      ],
+      "source_excerpt": "\\x01@\\x0B of our warriors were dead",
+      "reason": "确认是跨行一致的动态变量串；保留原串并补足作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "10949、19462、29003、29004 均出现完整 \\x01@\\x0B，位置包括主语和所有格。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "动态变量或名称替换令牌不译，保持 \\x01@\\x0B。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属于 non_translate 运行时变量串；补入 text applicability。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "跨行同串保持统一，不拆成 @ 或单独数字处理。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:208",
+      "evidence_rows": [
+        11783
+      ],
+      "source_excerpt": "H",
+      "reason": "孤立单字母缺少游戏语义证据；不应全局保护，转隔离。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11783 完整原文仅为 H，没有上下文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "隔离后不赋予译法，也不作为 H 的全局禁翻规则。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原 non_translate 分类缺少游戏义证据；按审计 f1/f2 转隔离。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选词族将其与 h@ 相连，但大小写不同且无同义证据，不能视为同一标记。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:483",
+      "evidence_rows": [
+        32673
+      ],
+      "source_excerpt": "h@",
+      "reason": "仅见完整字段 h@；按完整记录保留，不扩展为小写 h 全局禁翻。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32673 完整原文只有 h@，与条目的 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "保持 h@，不把小写 h 当全局禁翻字符。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "作为完整运行时标记处理；补入 whole_record applicability。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e9 的 H 大小写不同，不合并；候选词族只作提示。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:220",
+      "evidence_rows": [
+        16412
+      ],
+      "source_excerpt": "\\x01\\x02H",
+      "reason": "整字段是控制串；按完整字段保留，不冻结普通 H。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "16412 完整原文只有 \\x01\\x02H，与条目一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "控制串不译，保持 \\x01\\x02H。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "确为控制或运行时串；补入 whole_record，仅匹配完整字段。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "序列中的 H 不单独冻结，避免与普通 H 混淆。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:221",
+      "evidence_rows": [
+        16473,
+        16474
+      ],
+      "source_excerpt": "against the \\x01Á.",
+      "reason": "确认是敌方名称替换令牌；保留控制序列并补足作用域。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "16473 与 16474 均在 the 后、标点前出现 \\x01Á。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为敌方名称或变量占位符不译，保持 \\x01Á。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "属于 non_translate 运行时替换串；补入 text applicability。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两处同一占位符均作 the 后名词，保持原串。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:162",
+    "non_translate:256",
+    "non_translate:163",
+    "non_translate:164",
+    "non_translate:166",
+    "non_translate:185",
+    "non_translate:187",
+    "non_translate:188",
+    "non_translate:208",
+    "non_translate:483",
+    "non_translate:220",
+    "non_translate:221"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

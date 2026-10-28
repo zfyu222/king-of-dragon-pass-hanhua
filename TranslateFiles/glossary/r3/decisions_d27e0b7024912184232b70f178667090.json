@@ -1,0 +1,387 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 e1-e12 的来源、译名、分类与一致性审校；修正 e5、e10 的译名及 e12 的术语理由；e1/e2、e4、e11 的同译或单复数共用译名经核对为同指或变体，可接受。",
+  "acknowledged_findings": [
+    "F0374",
+    "F0395",
+    "F0411"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "战争宝物",
+        "term_reason": "原文特指战争类宝物，与普通宝物区分，不宜赠予。"
+      },
+      "reason": "统一 treasure 类物品的词根为“宝物”。",
+      "evidence_rows": [
+        10192
+      ],
+      "table": "terms",
+      "index": 408
+    },
+    {
+      "patch": {
+        "recommended_translation": "温加女王",
+        "term_reason": "信奉温加（Vinga）的女王；每四位君主中一位。"
+      },
+      "reason": "统一 Vinga 的音译词干，避免派生词译名不一致。",
+      "evidence_rows": [
+        10841,
+        10842
+      ],
+      "table": "terms",
+      "index": 416
+    },
+    {
+      "patch": {
+        "term_reason": "部族用于聚焦魔法与集体精神的仪式性宝物；可增补、遗失或毁坏。"
+      },
+      "reason": "修订术语理由，改为有原文证据支持的含义。",
+      "evidence_rows": [
+        33681,
+        26933,
+        27053,
+        23874
+      ],
+      "table": "terms",
+      "index": 421
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:400",
+      "evidence_rows": [
+        10067
+      ],
+      "source_excerpt": "A Pig Mother priestess must sit on the tribal council one year in four.",
+      "reason": "保留“部族议事会”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 tribal council 指部族议事机构，并明确有席位要求。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“部族议事会”准确表达 council 的议事机构义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为部族治理机构归入“组织”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "原文各例均指同一部族议事会，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:401",
+      "evidence_rows": [
+        10218
+      ],
+      "source_excerpt": "the Ernalda and Asrelia seats on the tribal ring",
+      "reason": "保留“部族议事会”；处理 f3 同译核查。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "tribal ring 在席位语境中比喻部族议事机构，不是实体圆环。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "译作“部族议事会”以功能义表达 ring，中文搭配自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为部族议事机构归入“组织”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 tribal council 在分配神祇席位的语境中同指，共用译名经核对可接受。"
+        }
+      }
+    },
+    {
+      "ref": "terms:402",
+      "evidence_rows": [
+        10339
+      ],
+      "source_excerpt": "The Hiord said that they would come to a confederation moot.",
+      "reason": "保留“结盟大会”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "confederation moot 指为组建联盟或部族而召集的结盟大会。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“结盟大会”保留 confederation 的结盟义和 moot 的集会义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为集会或事件归入“其他”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 tribal moot 的“部族大会”区分，避免混淆。"
+        }
+      }
+    },
+    {
+      "ref": "terms:403",
+      "evidence_rows": [
+        10089
+      ],
+      "source_excerpt": "they will do nothing but oppose us in tribal moots.",
+      "reason": "保留“部族大会”；处理 f2 同译核查。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "tribal moots 是 tribal moot 的复数，指部族大会。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“部族大会”与单数形式一致，符合集会义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为部族集会或事件归入“其他”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "单复数同译，且该集会义在原文中一致，共用译名可接受。"
+        }
+      }
+    },
+    {
+      "ref": "terms:408",
+      "evidence_rows": [
+        10192
+      ],
+      "source_excerpt": "just don’t give them a war treasure.",
+      "reason": "修正译名为“战争宝物”并修订术语理由。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "war treasure 是战争类宝物，与普通 treasure 区分。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "将“战争珍宝”改为“战争宝物”，以“宝物”对应 treasure 的物品类别。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为特殊宝物类别归入“物品”。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一以“宝物”为词根，避免与宝物类术语使用“珍宝”不一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:409",
+      "evidence_rows": [
+        10322
+      ],
+      "source_excerpt": "Your clan magic will be strengthened through a tie to the tribal wyter.",
+      "reason": "保留“部族守护灵”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "tribal wyter 指与部族相连、可增强氏族魔法的守护灵。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“部族守护灵”准确表达 wyter 的灵体守护义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为特定灵体或机制归入“其他”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "限定为部族层级，未与普通“灵”混同。"
+        }
+      }
+    },
+    {
+      "ref": "terms:410",
+      "evidence_rows": [
+        10403
+      ],
+      "source_excerpt": "or the tribal magic will be harmed.",
+      "reason": "保留“部族魔法”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "tribal magic 指部族层面的魔法，会因国王违背誓言受损。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“部族魔法”直指部族层级的魔法力量。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为魔法力量或机制归入“其他”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与氏族魔法等概念区分，限定词“部族”保留。"
+        }
+      }
+    },
+    {
+      "ref": "terms:411",
+      "evidence_rows": [
+        10217
+      ],
+      "source_excerpt": "it is the Earth Priestess, not the chief, who does the talking.",
+      "reason": "保留“大地女祭司”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "Earth Priestess 指大地神殿中负责谈判的女祭司，区别于酋长。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“大地女祭司”保留 Earth 的神系限定和女性身份。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为宗教身份或职位归入“身份”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "标题中的性别与神殿归属均在译名中体现。"
+        }
+      }
+    },
+    {
+      "ref": "terms:415",
+      "evidence_rows": [
+        10941
+      ],
+      "source_excerpt": "in his aspect as the Great Ruler.",
+      "reason": "保留“伟大统治者”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "Great Ruler 是 Orlanth 的王权面向称号，作为献祭对象。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“伟大统治者”对应 Great Ruler 的称号义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为神祇面向或称号归入“其他”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Orlanth 名号体系关联，未泛化为普通统治者。"
+        }
+      }
+    },
+    {
+      "ref": "terms:416",
+      "evidence_rows": [
+        10841,
+        10842
+      ],
+      "source_excerpt": "one monarch in four should be a Vingan queen.",
+      "reason": "修正为“温加女王”并修订术语理由。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "Vingan queen 指信奉 Vinga 的女王，每四位君主中一位。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "将“维英加女王”改为“温加女王”，统一 Vinga 的音译词干。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为宗教与王权身份归入“身份”。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与相关派生词 Vingans 的“温加”词干统一，消除“维英加”与“温加”不一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:417",
+      "evidence_rows": [
+        10627
+      ],
+      "source_excerpt": "as crazy as a Tusk Rider",
+      "reason": "保留“獠牙骑士”；处理 f1 同译核查。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "Tusk Rider 指骑猪的特定战士或族群成员，本例作疯狂比喻。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“獠牙骑士”保留 Tusk 的獠牙义和 Rider 的骑乘义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为特定族群或战士群体归入“种族”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "单数 Tusk Rider 与复数形式共用同一译名，语义一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:421",
+      "evidence_rows": [
+        33681,
+        26933,
+        27053,
+        23874
+      ],
+      "source_excerpt": "tribes often use actual magical treasures as part of their regalia.",
+      "reason": "保留“部族礼器”，修订术语理由。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "tribal regalia 指部族用于聚焦魔法与集体精神的仪式性宝物集合。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“部族礼器”表达 regalia 的仪式性权威物品义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为可增补、遗失或毁坏的物品集合归入“物品”。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一使用“部族礼器”，并修订理由删除无证据的 11466 引用。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:400",
+    "terms:401",
+    "terms:402",
+    "terms:403",
+    "terms:408",
+    "terms:409",
+    "terms:410",
+    "terms:411",
+    "terms:415",
+    "terms:416",
+    "terms:417",
+    "terms:421"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

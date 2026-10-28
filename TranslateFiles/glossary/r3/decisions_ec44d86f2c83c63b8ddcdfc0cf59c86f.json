@@ -1,0 +1,533 @@
+{
+  "review_complete": true,
+  "review_summary": "12 条均为独立的运行时场景标识（sceneR###），保留在 non_translate 分类中；逐条补充 whole_record 与大小写敏感适用范围，避免将 scene 等普通词全局禁翻。未发现需要翻译、隔离或新增的条目。",
+  "acknowledged_findings": [
+    "F0119",
+    "F0121",
+    "F0122",
+    "F0123",
+    "F0124",
+    "F0125",
+    "F0126",
+    "F0127",
+    "F0128",
+    "F0129",
+    "F0130",
+    "F0131"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文整条仅为运行时场景标识 sceneR093，用作场景标签，应完整保留。"
+        }
+      },
+      "reason": "补充 whole_record 作用域，仅保护完整场景标识，避免全局禁翻。",
+      "evidence_rows": [
+        10924
+      ],
+      "table": "non_translate",
+      "index": 182
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文整条仅为运行时场景标识 sceneR097，用作场景标签，应完整保留。"
+        }
+      },
+      "reason": "补充 whole_record 作用域，仅保护完整场景标识，避免全局禁翻。",
+      "evidence_rows": [
+        11066
+      ],
+      "table": "non_translate",
+      "index": 189
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文整条仅为运行时场景标识 sceneR099，用作场景标签，应完整保留。"
+        }
+      },
+      "reason": "补充 whole_record 作用域，仅保护完整场景标识，避免全局禁翻。",
+      "evidence_rows": [
+        11126
+      ],
+      "table": "non_translate",
+      "index": 190
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文整条仅为运行时场景标识 sceneR100，用作场景标签，应完整保留。"
+        }
+      },
+      "reason": "补充 whole_record 作用域，仅保护完整场景标识，避免全局禁翻。",
+      "evidence_rows": [
+        11169
+      ],
+      "table": "non_translate",
+      "index": 191
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文整条仅为运行时场景标识 sceneR101，用作场景标签，应完整保留。"
+        }
+      },
+      "reason": "补充 whole_record 作用域，仅保护完整场景标识，避免全局禁翻。",
+      "evidence_rows": [
+        11223
+      ],
+      "table": "non_translate",
+      "index": 192
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文整条仅为运行时场景标识 sceneR103，用作场景标签，应完整保留。"
+        }
+      },
+      "reason": "补充 whole_record 作用域，仅保护完整场景标识，避免全局禁翻。",
+      "evidence_rows": [
+        11310
+      ],
+      "table": "non_translate",
+      "index": 193
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文整条仅为运行时场景标识 sceneR104，用作场景标签，应完整保留。"
+        }
+      },
+      "reason": "补充 whole_record 作用域，仅保护完整场景标识，避免全局禁翻。",
+      "evidence_rows": [
+        11348
+      ],
+      "table": "non_translate",
+      "index": 194
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文整条仅为运行时场景标识 sceneR105，用作场景标签，应完整保留。"
+        }
+      },
+      "reason": "补充 whole_record 作用域，仅保护完整场景标识，避免全局禁翻。",
+      "evidence_rows": [
+        11379
+      ],
+      "table": "non_translate",
+      "index": 195
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文整条仅为运行时场景标识 sceneR106，用作场景标签，应完整保留。"
+        }
+      },
+      "reason": "补充 whole_record 作用域，仅保护完整场景标识，避免全局禁翻。",
+      "evidence_rows": [
+        11453
+      ],
+      "table": "non_translate",
+      "index": 196
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文整条仅为运行时场景标识 sceneR108，用作场景标签，应完整保留。"
+        }
+      },
+      "reason": "补充 whole_record 作用域，仅保护完整场景标识，避免全局禁翻。",
+      "evidence_rows": [
+        11540
+      ],
+      "table": "non_translate",
+      "index": 197
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文整条仅为运行时场景标识 sceneR110，用作场景标签，应完整保留。"
+        }
+      },
+      "reason": "补充 whole_record 作用域，仅保护完整场景标识，避免全局禁翻。",
+      "evidence_rows": [
+        11608
+      ],
+      "table": "non_translate",
+      "index": 198
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文整条仅为运行时场景标识 sceneR113，用作场景标签，应完整保留。"
+        }
+      },
+      "reason": "补充 whole_record 作用域，仅保护完整场景标识，避免全局禁翻。",
+      "evidence_rows": [
+        11736
+      ],
+      "table": "non_translate",
+      "index": 199
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:182",
+      "evidence_rows": [
+        10924
+      ],
+      "source_excerpt": "sceneR093",
+      "reason": "确认是运行时场景标识，保留原文并限定整条匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文仅有完整标识 sceneR093，与记录一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无译文，保留原文即可。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原行缺少适用范围，已补为 whole_record，仅匹配完整标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条只作场景资源键使用，未发现嵌入正文用例；与同批 sceneR### 模式一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:189",
+      "evidence_rows": [
+        11066
+      ],
+      "source_excerpt": "sceneR097",
+      "reason": "确认是运行时场景标识，保留原文并限定整条匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文仅有完整标识 sceneR097，与记录一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无译文，保留原文即可。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原行缺少适用范围，已补为 whole_record，仅匹配完整标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条只作场景资源键使用，未发现嵌入正文用例；与同批 sceneR### 模式一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:190",
+      "evidence_rows": [
+        11126
+      ],
+      "source_excerpt": "sceneR099",
+      "reason": "确认是运行时场景标识，保留原文并限定整条匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文仅有完整标识 sceneR099，与记录一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无译文，保留原文即可。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原行缺少适用范围，已补为 whole_record，仅匹配完整标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条只作场景资源键使用，未发现嵌入正文用例；与同批 sceneR### 模式一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:191",
+      "evidence_rows": [
+        11169
+      ],
+      "source_excerpt": "sceneR100",
+      "reason": "确认是运行时场景标识，保留原文并限定整条匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文仅有完整标识 sceneR100，与记录一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无译文，保留原文即可。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原行缺少适用范围，已补为 whole_record，仅匹配完整标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条只作场景资源键使用，未发现嵌入正文用例；与同批 sceneR### 模式一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:192",
+      "evidence_rows": [
+        11223
+      ],
+      "source_excerpt": "sceneR101",
+      "reason": "确认是运行时场景标识，保留原文并限定整条匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文仅有完整标识 sceneR101，与记录一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无译文，保留原文即可。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原行缺少适用范围，已补为 whole_record，仅匹配完整标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条只作场景资源键使用，未发现嵌入正文用例；与同批 sceneR### 模式一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:193",
+      "evidence_rows": [
+        11310
+      ],
+      "source_excerpt": "sceneR103",
+      "reason": "确认是运行时场景标识，保留原文并限定整条匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文仅有完整标识 sceneR103，与记录一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无译文，保留原文即可。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原行缺少适用范围，已补为 whole_record，仅匹配完整标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条只作场景资源键使用，未发现嵌入正文用例；与同批 sceneR### 模式一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:194",
+      "evidence_rows": [
+        11348
+      ],
+      "source_excerpt": "sceneR104",
+      "reason": "确认是运行时场景标识，保留原文并限定整条匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文仅有完整标识 sceneR104，与记录一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无译文，保留原文即可。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原行缺少适用范围，已补为 whole_record，仅匹配完整标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条只作场景资源键使用，未发现嵌入正文用例；与同批 sceneR### 模式一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:195",
+      "evidence_rows": [
+        11379
+      ],
+      "source_excerpt": "sceneR105",
+      "reason": "确认是运行时场景标识，保留原文并限定整条匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文仅有完整标识 sceneR105，与记录一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无译文，保留原文即可。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原行缺少适用范围，已补为 whole_record，仅匹配完整标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条只作场景资源键使用，未发现嵌入正文用例；与同批 sceneR### 模式一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:196",
+      "evidence_rows": [
+        11453
+      ],
+      "source_excerpt": "sceneR106",
+      "reason": "确认是运行时场景标识，保留原文并限定整条匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文仅有完整标识 sceneR106，与记录一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无译文，保留原文即可。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原行缺少适用范围，已补为 whole_record，仅匹配完整标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条只作场景资源键使用，未发现嵌入正文用例；与同批 sceneR### 模式一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:197",
+      "evidence_rows": [
+        11540
+      ],
+      "source_excerpt": "sceneR108",
+      "reason": "确认是运行时场景标识，保留原文并限定整条匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文仅有完整标识 sceneR108，与记录一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无译文，保留原文即可。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原行缺少适用范围，已补为 whole_record，仅匹配完整标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条只作场景资源键使用，未发现嵌入正文用例；与同批 sceneR### 模式一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:198",
+      "evidence_rows": [
+        11608
+      ],
+      "source_excerpt": "sceneR110",
+      "reason": "确认是运行时场景标识，保留原文并限定整条匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文仅有完整标识 sceneR110，与记录一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无译文，保留原文即可。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原行缺少适用范围，已补为 whole_record，仅匹配完整标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条只作场景资源键使用，未发现嵌入正文用例；与同批 sceneR### 模式一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:199",
+      "evidence_rows": [
+        11736
+      ],
+      "source_excerpt": "sceneR113",
+      "reason": "确认是运行时场景标识，保留原文并限定整条匹配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文仅有完整标识 sceneR113，与记录一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无译文，保留原文即可。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原行缺少适用范围，已补为 whole_record，仅匹配完整标签。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条只作场景资源键使用，未发现嵌入正文用例；与同批 sceneR### 模式一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:182",
+    "non_translate:189",
+    "non_translate:190",
+    "non_translate:191",
+    "non_translate:192",
+    "non_translate:193",
+    "non_translate:194",
+    "non_translate:195",
+    "non_translate:196",
+    "non_translate:197",
+    "non_translate:198",
+    "non_translate:199"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

@@ -1,0 +1,383 @@
+{
+  "review_complete": true,
+  "review_summary": "完成 12 条术语审校：保留多数专名译法；将 Night Tribe 统一为“夜之部族”，明确 Storm Ring 为议事机构而非实体指环，并将 White Sheep of Voriof 由“物品”改归“其他”。已核对 f1：Dark Tribe 与 Darkness tribe 在原文中同指黑暗部族，共享“黑暗部族”可接受。",
+  "acknowledged_findings": [
+    "F0427"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "夜之部族"
+      },
+      "reason": "Night Tribe 为敌对部族专名；“夜部族”较生硬，“夜之部族”更符合史诗叙述与汉语专名搭配。",
+      "evidence_rows": [
+        34340,
+        27042
+      ],
+      "table": "terms",
+      "index": 870
+    },
+    {
+      "patch": {
+        "term_reason": "Orlanth 为治理新部族而建立的议事环/领导机构，并非实体指环。"
+      },
+      "reason": "原文“govern the new tribe”表明 Storm Ring 是统治制度/议事机构；需排除候选的物品/指环义。",
+      "evidence_rows": [
+        34340,
+        27060
+      ],
+      "table": "terms",
+      "index": 879
+    },
+    {
+      "patch": {
+        "category_path": "其他"
+      },
+      "reason": "34272 所示 White Sheep of Voriof 为 Jarani 看护的活羊群/圣畜，并非无生命物品。",
+      "evidence_rows": [
+        34272
+      ],
+      "table": "terms",
+      "index": 883
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:869",
+      "evidence_rows": [
+        34320,
+        34327,
+        2288
+      ],
+      "source_excerpt": "But even though the Dark Tribe was much stronger with Yelm gone",
+      "reason": "Dark Tribe 为与 Orlanth 对立的部族专名；保留“黑暗部族”，分类为组织。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34320 原文明确出现 Dark Tribe；2288 的标题中也有同一名称。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Dark Tribe”译“黑暗部族”符合部族名用法，未按普通“黑暗”义拆译。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "34320 显示其是能随 Yelm 消失而变强、与 Orlanth 对抗的部族集体，归“组织”合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条候选唯一，Dark Tribe 在 34320/34327 中用法一致；共享译名风险见 f1 核对。"
+        }
+      }
+    },
+    {
+      "ref": "terms:870",
+      "evidence_rows": [
+        34340,
+        27042
+      ],
+      "source_excerpt": "Then warriors from the Night Tribe came and attacked the quarrelling clans",
+      "reason": "Night Tribe 为敌对部族专名；采用更自然的“夜之部族”，分类维持组织。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34340 原文出现 Night Tribe；27042 也显示其为可被说服转攻他部的部族。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "候选“夜部族”较生硬；“夜之部族”更符合专名与叙述搭配，已统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "34340/27042 表明其能派战士、被交涉，归“组织”合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "候选译名合并为“夜之部族”，本条内部不再保留“夜部族”变体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:874",
+      "evidence_rows": [
+        34315,
+        34316
+      ],
+      "source_excerpt": "gave leadership of the Storm Band over to his sons",
+      "reason": "Storm Band 为风暴神群体的专名；保留“风暴团”，分类为组织。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34315 原文出现 Storm Band，34316 续述其领导权争夺。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Storm Band”译“风暴团”，作为风暴神群体专名简洁可读。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "34315-34316 显示其为被 Umath 统领、后由 Orlanth 接掌的群体，归“组织”合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选唯一，译名内部一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:876",
+      "evidence_rows": [
+        34280
+      ],
+      "source_excerpt": "they swore to serve forever as the Guardians of Justice",
+      "reason": "Guardians of Justice 为伤者宣誓永久服务的群体专名；保留“正义守护者”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34280 原文明确出现 Guardians of Justice，为伤者宣誓永久担任的群体。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Guardians of Justice”译“正义守护者”准确自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "34280 显示为宣誓服务的群体/团体，归“组织”合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选唯一；“正义”核心与 Justice 系列一致，未混同具体器物。"
+        }
+      }
+    },
+    {
+      "ref": "terms:877",
+      "evidence_rows": [
+        34278
+      ],
+      "source_excerpt": "Harand got help from the Forces of Darkness.",
+      "reason": "Forces of Darkness 为 Harand 求援的黑暗方力量；保留“黑暗势力”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34278 原文出现 Forces of Darkness，为 Harand 求援的黑暗方力量。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Forces of Darkness”译“黑暗势力”符合军事/敌对力量语境。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "34278 显示其提供军队支援，作为阵营/势力归“组织”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选唯一；“黑暗”词根与其他黑暗势力名称区分中心词，未误并。"
+        }
+      }
+    },
+    {
+      "ref": "terms:879",
+      "evidence_rows": [
+        34340,
+        27060
+      ],
+      "source_excerpt": "so Orlanth made the Storm Ring to govern the new tribe",
+      "reason": "Storm Ring 为治理新部族的议事机构；保留“风暴之环”，排除实体指环义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34340 原文明确出现 Storm Ring；27060 同述 Orlanth 造环治新部族。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“风暴之环”保留 Ring 的制度义，较“风暴指环”更符合 govern the new tribe。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "34340/27060 表明其为治理新部族的议事环/机构，归“组织”合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "候选二误作物件“风暴指环”；已修正 term_reason，明确其为议事机构而非实体指环。"
+        }
+      }
+    },
+    {
+      "ref": "terms:882",
+      "evidence_rows": [
+        34339,
+        27036
+      ],
+      "source_excerpt": "She gave him the Crown of Authority",
+      "reason": "Crown of Authority 为使人们尊重圣权并效忠的礼器；保留“权威之冠”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34339 原文出现 Crown of Authority，由 Ernalda 交给 Orlanth。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“权威之冠”对应 Crown of Authority，礼器义明确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "34339 显示其为可授予、影响效忠的礼器，归“物品”合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选唯一，译名与 Authority 的“权威”一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:883",
+      "evidence_rows": [
+        34272
+      ],
+      "source_excerpt": "He kept there the White Sheep of Voriof",
+      "reason": "White Sheep of Voriof 为 Jarani 看守的圣羊群专名；译名保留，分类改为其他。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34272 原文出现 White Sheep of Voriof，为 Jarani 看守的圣羊群。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“沃里奥夫的白羊”保留专名与所属关系，可作群体名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "34272 原文说明其为活着的羊群/圣畜，不是无生命物品；改归“其他”更准确。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "候选唯一，译名不变；仅修正分类以反映活畜性质。"
+        }
+      }
+    },
+    {
+      "ref": "terms:885",
+      "evidence_rows": [
+        34275
+      ],
+      "source_excerpt": "He brought with him the Justice Wand",
+      "reason": "Justice Wand 为 Orlanth 从天空带回的权杖专名；保留“正义权杖”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34275 原文出现 Justice Wand，Orlanth 从天空带回。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Justice Wand”译“正义权杖”准确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "34275 显示其为可带回并使用的器物，归“物品”合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选唯一；与 Justice Staff 分译“权杖/法杖”，保留 Wand/Staff 差异。"
+        }
+      }
+    },
+    {
+      "ref": "terms:886",
+      "evidence_rows": [
+        34282
+      ],
+      "source_excerpt": "He returned with the Justice Staff",
+      "reason": "Justice Staff 为 Heort 从 Jarani Stones 带回的法杖专名；保留“正义法杖”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34282 原文出现 Justice Staff，由 Heort 从 Jarani Stones 带回。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Justice Staff”译“正义法杖”准确，与 Justice Wand 区分。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "34282 显示其为带回并受法言者敬奉相关的器物，归“物品”合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选唯一；与 Justice Wand 保持“正义”核心、中心词分别译出。"
+        }
+      }
+    },
+    {
+      "ref": "terms:890",
+      "evidence_rows": [
+        34270
+      ],
+      "source_excerpt": "until Orlanth established the Rite of Justice",
+      "reason": "Rite of Justice 为 Orlanth 确立的解决争端仪式；保留“正义仪式”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34270 原文明确出现 Rite of Justice，为 Orlanth 确立的解决争端仪式。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Rite of Justice”译“正义仪式”直接准确。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "34270 表明其为制度性仪式而非具体物品/组织，归“其他”合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选唯一；与 Justice 系列共享“正义”译名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:894",
+      "evidence_rows": [
+        34366
+      ],
+      "source_excerpt": "When she had enough golden grain to hoard then there was the Golden Age.",
+      "reason": "Golden Age 为 Ernalda 有足够金色谷物的时代专名；保留“黄金时代”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "34366 原文出现 Golden Age，指 Ernalda 有足够金色谷物的时代。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“Golden Age”译“黄金时代”为通行且符合原文时代义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "34366 表明其为时代/纪元概念，归“其他”合适。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选唯一；与 golden grain 的“金色”不混作同一术语。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:869",
+    "terms:870",
+    "terms:874",
+    "terms:876",
+    "terms:877",
+    "terms:879",
+    "terms:882",
+    "terms:883",
+    "terms:885",
+    "terms:886",
+    "terms:890",
+    "terms:894"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

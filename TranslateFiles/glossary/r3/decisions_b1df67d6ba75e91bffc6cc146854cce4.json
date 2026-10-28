@@ -1,0 +1,329 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e10 的 source/translation/category/consistency。e5 与 e11 的共享译名确认是同一神名的拼写变体，保留‘风暴公牛’；e6、e7、e10 的 term_reason 已按原文补全或修正，其余条目译名与分类可维持。",
+  "acknowledged_findings": [
+    "F0352"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "长鼻人女祭司；在神话中亦称猛犸女神。"
+      },
+      "reason": "26437/26438 称 Oriska 为 Long-Noses 女祭司，34214/34224 又称其为 Mammoth Goddess；补充适用范围，避免只按凡人祭司理解。",
+      "evidence_rows": [
+        26437,
+        34214
+      ],
+      "table": "characters",
+      "index": 180
+    },
+    {
+      "patch": {
+        "term_reason": "大牙人战争首领；在神话中亦称剑齿虎神。"
+      },
+      "reason": "26449/34070 称 Paratur 为 Big-Teeth war leader，34214/34224 称其为 Sabretooth God；原 term_reason 的‘虎形’缺少原文依据，删除并补入可证身份。",
+      "evidence_rows": [
+        26449,
+        34214
+      ],
+      "table": "characters",
+      "index": 181
+    },
+    {
+      "patch": {
+        "term_reason": "年轻 carl；成年礼获埃尔纳尔达预视天赋，后在克利尔温受训并预言马裔大军。"
+      },
+      "reason": "28458 称其成年礼获 Ernalda 预视天赋，28485 送其去 Clearwine 大神庙受训，29037 记其预警大批 Horse-Spawn；补全使用范围。",
+      "evidence_rows": [
+        28458,
+        28485,
+        29037
+      ],
+      "table": "characters",
+      "index": 186
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:178",
+      "evidence_rows": [
+        25934
+      ],
+      "source_excerpt": "The Unholy Trio creates the Devil and embroils the world in war.",
+      "reason": "the Devil 指不洁三神所造的特定神话存在；译名‘恶魔’可作其称号，性别在 evidence 中未明，保留‘其他’。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25934 明确 the Devil 为 Unholy Trio 所造并引发世界战争，是特定神话存在。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘恶魔’可作为 the Devil 的称号；与 e4 的‘恶魔瓦克博斯’共享‘恶魔’称号，未出现冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表记录特定神话人物/存在；gender 其他因本条证据未明确性别。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e4 ‘Wakboth the Devil’ 的‘恶魔’称号一致；未发现同形普通词需隔离。"
+        }
+      }
+    },
+    {
+      "ref": "terms:79",
+      "evidence_rows": [
+        1552
+      ],
+      "source_excerpt": "Red Devil Men",
+      "reason": "Red Devil Men 是族群名，列于袭击目标；译名‘红魔人’作为族名简洁，category_path 种族合法。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1552 将 Red Devil Men 列为可被袭击的族群。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘红魔人’保留 Red/Devil/Men 的族名成分，作为族群专名简洁可用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=种族 符合其为族群名的用法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条独立族名；与 e1/e4 的‘恶魔’仅共享 Devil 词根，不构成同义术语冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:231",
+      "evidence_rows": [
+        3871
+      ],
+      "source_excerpt": "When things got darkest for the world, when Wakboth ran rampant, the Lightbringers began their quest.",
+      "reason": "Wakboth 是混沌存在/恶魔神名，译‘瓦克博斯’；与 e4 核心名一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3871 称 Wakboth 在世界最黑暗时横行，是特定混沌存在。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘瓦克博斯’为音译专名；与 e4 ‘恶魔瓦克博斯’的核心名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms/其他 可收录神魔专名；proper_name required 适当。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e4 共享核心译名‘瓦克博斯’，称号形式差异不构成冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:329",
+      "evidence_rows": [
+        7218
+      ],
+      "source_excerpt": "During the Darkness, they helped Maran Gor fight Wakboth the Devil.",
+      "reason": "Wakboth the Devil 是 Wakboth 的称号形式，译‘恶魔瓦克博斯’；与 e1/e3 一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7218 以 Wakboth the Devil 指黑暗期被 Maran Gor 对抗的恶魔。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘恶魔瓦克博斯’保留称号+核心名，且与 e1 ‘恶魔’、e3 ‘瓦克博斯’一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms/其他 收录该神魔称号形式；proper_name required 适当。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "核心名与 e3 一致，称号与 e1 一致；未发现需隔离的多义用法。"
+        }
+      }
+    },
+    {
+      "ref": "characters:179",
+      "evidence_rows": [
+        26383
+      ],
+      "source_excerpt": "StormBull",
+      "reason": "StormBull 是 Storm Bull 的无空格拼写，同一神名；译‘风暴公牛’与 e11 共享译名正确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "26383 原文即无空格形式 StormBull，作为同一神名的拼写变体处理。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘风暴公牛’是 Storm Bull 的既定译名；无空格写法不改变译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表记录该神祇；gender 男性与 Storm Bull 神格一致。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "审计 f1 指 e5/e11 共用译名；二者实为同一神名的空格变体，共用‘风暴公牛’合理。"
+        }
+      }
+    },
+    {
+      "ref": "characters:180",
+      "evidence_rows": [
+        26437,
+        34214
+      ],
+      "source_excerpt": "Oriska, priestess of the Long-Noses",
+      "reason": "Oriska 为 Long-Noses 女祭司，神话中亦称 Mammoth Goddess；译名‘奥里斯卡’稳定，term_reason 已补全范围。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "26437 称 Oriska 为 Long-Noses 女祭司，34214 又称其为 Mammoth Goddess；已补 term_reason 以覆盖两种用法。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘奥里斯卡’音译稳定，候选一致；female 与 priestess/Mammoth Goddess 用法不冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、gender 女性符合其女祭司/女神身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e7 同场景出现但译名独立；未发现同名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:181",
+      "evidence_rows": [
+        26449,
+        34214
+      ],
+      "source_excerpt": "Paratur, war leader of the Big-Teeth",
+      "reason": "Paratur 为大牙人战争首领，神话中亦称剑齿虎神；译名‘帕拉图尔’稳定，term_reason 已修正。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "26449 称 Paratur 为 Big-Teeth war leader，34214 称其为 Sabretooth God；原 term_reason 的‘虎形’无据，已改为可证身份。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘帕拉图尔’音译稳定，候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、gender 男性符合其战争首领/剑齿虎神身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e6 同场景出现但译名独立；未发现同名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:183",
+      "evidence_rows": [
+        27850
+      ],
+      "source_excerpt": "I, Umulguk, daughter of Umkotor, make challenge to you.",
+      "reason": "Umkotor 仅见作 Umulguk 的父/母名，性别未明；保留‘乌姆科托尔’与‘其他’。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "27850 仅以 Umkotor 作为 Umulguk 的父/母名出现，未给出性别或更多身份。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘乌姆科托尔’音译合理，无候选冲突。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表记录该专名；gender 其他符合原文未明性别。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条独立专名；未发现需统一的同形词。"
+        }
+      }
+    },
+    {
+      "ref": "characters:184",
+      "evidence_rows": [
+        27977
+      ],
+      "source_excerpt": "Norkalint the Cannibal King",
+      "reason": "Norkalint 是食人王，译名‘食人王诺卡林特’准确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "27977 称 Norkalint the Cannibal King 使 Bad King Urgrain 的女儿沦为 thrall；身份为食人王。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘食人王诺卡林特’将称号前置，符合中文专名习惯且保留 Cannibal King。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、gender 男性符合其王/男性称谓用法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条独立专名；未发现同形普通词。"
+        }
+      }
+    },
+    {
+      "ref": "characters:186",
+      "evidence_rows": [
+        28458,
+        28485,
+        29037
+      ],
+      "source_excerpt": "a young carl named Theya was favored by Ernalda with the gift of prophetic visions",
+      "reason": "Theya 为获预视天赋的年轻 carl，后在 Clearwine 受训并预警马裔大军；统一译‘瑟娅’，term_reason 已补全。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "28458 称 Theya 成年礼获 Ernalda 预视天赋，28485 送其去 Clearwine 受训，29037 记其预警 Horse-Spawn；已补 term_reason 覆盖后续用法。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘瑟娅’在本条候选出处中占多数并保留为统一译名；‘西娅’仅为异译，未发现语义差别。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表、gender 女性符合原文中的女性 carl/先知。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同一 Theya 的多次出现统一用‘瑟娅’；未与其他条目冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:178",
+    "terms:79",
+    "terms:231",
+    "terms:329",
+    "characters:179",
+    "characters:180",
+    "characters:181",
+    "characters:183",
+    "characters:184",
+    "characters:186"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

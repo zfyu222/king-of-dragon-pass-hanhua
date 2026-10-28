@@ -1,0 +1,215 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 e1-e6 的源词、译名、分类与一致性审校；确认 Praxians 单复数同指一族、Silver Tongue 与 Silvertongue 分属物品/祝福且可依语境区分；修订 e1 的 term_reason，并将 e4 统一为 required 且补足定义。",
+  "acknowledged_findings": [
+    "F0379",
+    "F0383"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "原文以 Praxians 指普拉克斯地区族群；Jaldon 被称为其英雄，且该群体与巨魔、兽人等并列为敌人。"
+      },
+      "reason": "原 term_reason 提到鸭人，但本条目所给原文未直接支持；按 1481、12283、15208 的族群与敌人描述改为可证表述。",
+      "evidence_rows": [
+        1481,
+        12283,
+        15208
+      ],
+      "table": "terms",
+      "index": 77
+    },
+    {
+      "patch": {
+        "enforcement": "required",
+        "term_reason": "原文定义为可捕捉失落魔法点、把失落运气带回氏族的小型药囊；可按牛只估价，属特定宝物机制，不是普通“取回”义。"
+      },
+      "reason": "候选对 enforcement 有 reference/required 分歧；33646 给出明确定义，属特定宝物机制，应统一为 required，并补足物理形态与功能。",
+      "evidence_rows": [
+        1558,
+        33646
+      ],
+      "table": "terms",
+      "index": 86
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:77",
+      "evidence_rows": [
+        1481,
+        12283,
+        15208
+      ],
+      "source_excerpt": "They said that they would sooner intermarry with Praxians than with us. And Praxians were their ancient enemies.",
+      "reason": "Praxians 为普拉克斯地区族群，单复数同指；译名稳定，term_reason 已按证据收敛。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1481、12283、15208 等行均以 Praxians 指族群或敌人，词形与来源一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“普拉克斯人”与词根 Prax- 对应；候选“帕拉克人”“普拉克西人”无证据支持，不采用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "各证据均指族群或敌人群体，归入“种族”合适。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "候选译名不统一；本条保留“普拉克斯人”，并与单数形式同指一族；term_reason 已改为依据 1481、15208 的表述。"
+        }
+      }
+    },
+    {
+      "ref": "terms:80",
+      "evidence_rows": [
+        1552
+      ],
+      "source_excerpt": "Stink People",
+      "reason": "Stink People 在敌人列表中作为群体名；保留贬义俗称，归种族。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1552 将 Stink People 列入 dragonewts、trolls 等敌对群体列表中。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“臭人”对应 Stink People 的俗称或贬义色彩，未改作普通形容词。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该词在列表中与族群、怪物名并列，归“种族”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "未见同形异义或跨批冲突；不把 People 扩展成其他词条。"
+        }
+      }
+    },
+    {
+      "ref": "terms:84",
+      "evidence_rows": [
+        1530,
+        17434,
+        18202,
+        29267
+      ],
+      "source_excerpt": "the fabled Black Spear",
+      "reason": "Black Spear 是传说武器与王权宝物，并派生出氏族名；本条冻结器物名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1530 称 fabled Black Spear；17434 说明其为部族王权标志中的古代传说武器。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“黑矛”直译，且可与 Black Spear clan 的“黑矛氏族”保持词根一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "1530、17434、29267 均指器物或宝物所有权，归“物品”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "器物名与派生氏族名共用“黑矛”词根；未把派生名另立异译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:86",
+      "evidence_rows": [
+        1558,
+        33646
+      ],
+      "source_excerpt": "They are small medicine bundles that catch lost Magic points and return the lost luck to your clan.",
+      "reason": "Spirit Fetches 是特定宝物，定义为小型药囊；候选 enforcement 分歧已统一为 required。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1558、1559 以牛只估价；33646 明确定义 Spirit Fetches 为捕捉失落 Magic points 的小型 medicine bundles。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“精魂护符”保留 Spirit 的精魂义并作为宝物名；按 33646 的功能理解，非普通“取回”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "33646 将其与其他 treasures 并列，属可持有宝物，归“物品”。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "候选对 enforcement 有 reference/required 分歧；33646 有明确定义，已统一为 required 并补足 term_reason。"
+        }
+      }
+    },
+    {
+      "ref": "terms:87",
+      "evidence_rows": [
+        1425
+      ],
+      "source_excerpt": "did the Orlanth Dance",
+      "reason": "Orlanth Dance 是庆祝结盟的特定舞蹈或仪式；译名沿用 Orlanth 音译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1425 中氏族成员跳 Orlanth Dance 庆祝结盟，属特定仪式名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“奥兰斯之舞”沿用 Orlanth 的既有音译，Dance 译“之舞”，搭配自然。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该词指仪式性舞蹈或技能行为，归“技能”可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与既有 Orlanth 神名译法保持一致，未拆分音译。"
+        }
+      }
+    },
+    {
+      "ref": "terms:88",
+      "evidence_rows": [
+        1562,
+        1564,
+        32477
+      ],
+      "source_excerpt": "The Silver Tongue! We must have it!",
+      "reason": "Silver Tongue 是可回本的具名宝物；与同名祝福同形不同类，保留“银舌”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1562、1564 以 the Silver Tongue 指可回本、必须取得的宝物；32477 宝藏列表亦列此名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“银舌”保留 Silver Tongue 的字面与宝物名风格。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "证据均按可得宝物或宝藏列名，归“物品”。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与另一条 Silvertongue 祝福共用中文“银舌”，但本条为物品宝物，语境可区分；未强行改译。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:77",
+    "terms:80",
+    "terms:84",
+    "terms:86",
+    "terms:87",
+    "terms:88"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

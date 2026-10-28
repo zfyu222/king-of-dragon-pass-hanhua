@@ -1,0 +1,500 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e12 及 f1-f6：e1-e6 为独立内部控件名，补 whole_record 限定；e9/e10 为纯 printf 格式串，补 whole_record 限定；e7/e8/e11/e12 含可译单位或方位词，整体 non_translate 不当，已隔离，占位符继续由运行时格式符规则保护。",
+  "acknowledged_findings": [
+    "F0325",
+    "F0326",
+    "F0327",
+    "F0328",
+    "F0329",
+    "F0330"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文 31926 仅以完整记录 Inc2 独立出现，无嵌入正文证据；作为内部控件名按 whole_record 保留。"
+        }
+      },
+      "reason": "为内部控件名补 whole_record applicability，避免全局禁翻。",
+      "evidence_rows": [
+        31926
+      ],
+      "table": "non_translate",
+      "index": 445
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文 31927 仅以完整记录 Dec2 独立出现，无嵌入正文证据；作为内部控件名按 whole_record 保留。"
+        }
+      },
+      "reason": "为内部控件名补 whole_record applicability，避免全局禁翻。",
+      "evidence_rows": [
+        31927
+      ],
+      "table": "non_translate",
+      "index": 446
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文 31928 仅以完整记录 Inc3 独立出现，无嵌入正文证据；作为内部控件名按 whole_record 保留。"
+        }
+      },
+      "reason": "为内部控件名补 whole_record applicability，避免全局禁翻。",
+      "evidence_rows": [
+        31928
+      ],
+      "table": "non_translate",
+      "index": 447
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文 31929 仅以完整记录 Dec3 独立出现，无嵌入正文证据；作为内部控件名按 whole_record 保留。"
+        }
+      },
+      "reason": "为内部控件名补 whole_record applicability，避免全局禁翻。",
+      "evidence_rows": [
+        31929
+      ],
+      "table": "non_translate",
+      "index": 448
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文 31930 仅以完整记录 Inc4 独立出现，无嵌入正文证据；作为内部控件名按 whole_record 保留。"
+        }
+      },
+      "reason": "为内部控件名补 whole_record applicability，避免全局禁翻。",
+      "evidence_rows": [
+        31930
+      ],
+      "table": "non_translate",
+      "index": 449
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文 31931 仅以完整记录 Dec4 独立出现，无嵌入正文证据；作为内部控件名按 whole_record 保留。"
+        }
+      },
+      "reason": "为内部控件名补 whole_record applicability，避免全局禁翻。",
+      "evidence_rows": [
+        31931
+      ],
+      "table": "non_translate",
+      "index": 450
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文 31232 为完整 printf 格式串 %s +%d，仅作格式模板使用；限定 whole_record，避免把 %s 或 %d 扩成全局禁翻。"
+        }
+      },
+      "reason": "为纯 printf 格式串补 whole_record applicability，避免全局禁翻。",
+      "evidence_rows": [
+        31232
+      ],
+      "table": "non_translate",
+      "index": 455
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文 31233 为完整 printf 格式串 %s %d，仅作格式模板使用；限定 whole_record，避免把 %s 或 %d 扩成全局禁翻。"
+        }
+      },
+      "reason": "为纯 printf 格式串补 whole_record applicability，避免全局禁翻。",
+      "evidence_rows": [
+        31233
+      ],
+      "table": "non_translate",
+      "index": 456
+    }
+  ],
+  "quarantine": [
+    {
+      "reason": "原文 %d km 含可译单位 km，整体标记 non_translate 会阻止显示“公里”；应隔离，仅保留 %d 由格式符规则处理。",
+      "evidence_rows": [
+        31343
+      ],
+      "table": "non_translate",
+      "index": 451
+    },
+    {
+      "reason": "原文 %d mi 含可译单位 mi，整体标记 non_translate 会阻止显示“英里”；应隔离，仅保留 %d 由格式符规则处理。",
+      "evidence_rows": [
+        31344
+      ],
+      "table": "non_translate",
+      "index": 452
+    },
+    {
+      "reason": "原文 %stop 可解析为 %s 后接可译方位词 top，整体 non_translate 会阻止翻译；应隔离，仅保护 %s。",
+      "evidence_rows": [
+        31177
+      ],
+      "table": "non_translate",
+      "index": 457
+    },
+    {
+      "reason": "原文 %sright 可解析为 %s 后接可译方位词 right，整体 non_translate 会阻止翻译；应隔离，仅保护 %s。",
+      "evidence_rows": [
+        31178
+      ],
+      "table": "non_translate",
+      "index": 458
+    }
+  ],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:445",
+      "evidence_rows": [
+        31926
+      ],
+      "source_excerpt": "Inc2",
+      "reason": "确认 Inc2 仅作完整内部控件名出现；保留原样并限定 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 ordinal 31926 为 Inc2，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目保持 Inc2 原样，无需译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文为独立短标识符，提取理由称内部控件名；无嵌入文本证据，保留 non_translate 并补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同组 Inc/Dec 控件名均按完整记录保留，不翻译、不拆词。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:446",
+      "evidence_rows": [
+        31927
+      ],
+      "source_excerpt": "Dec2",
+      "reason": "确认 Dec2 仅作完整内部控件名出现；保留原样并限定 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 ordinal 31927 为 Dec2，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目保持 Dec2 原样，无需译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文为独立短标识符，提取理由称内部控件名；无嵌入文本证据，保留 non_translate 并补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同组 Inc/Dec 控件名均按完整记录保留，不翻译、不拆词。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:447",
+      "evidence_rows": [
+        31928
+      ],
+      "source_excerpt": "Inc3",
+      "reason": "确认 Inc3 仅作完整内部控件名出现；保留原样并限定 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 ordinal 31928 为 Inc3，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目保持 Inc3 原样，无需译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文为独立短标识符，提取理由称内部控件名；无嵌入文本证据，保留 non_translate 并补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同组 Inc/Dec 控件名均按完整记录保留，不翻译、不拆词。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:448",
+      "evidence_rows": [
+        31929
+      ],
+      "source_excerpt": "Dec3",
+      "reason": "确认 Dec3 仅作完整内部控件名出现；保留原样并限定 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 ordinal 31929 为 Dec3，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目保持 Dec3 原样，无需译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文为独立短标识符，提取理由称内部控件名；无嵌入文本证据，保留 non_translate 并补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同组 Inc/Dec 控件名均按完整记录保留，不翻译、不拆词。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:449",
+      "evidence_rows": [
+        31930
+      ],
+      "source_excerpt": "Inc4",
+      "reason": "确认 Inc4 仅作完整内部控件名出现；保留原样并限定 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 ordinal 31930 为 Inc4，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目保持 Inc4 原样，无需译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文为独立短标识符，提取理由称内部控件名；无嵌入文本证据，保留 non_translate 并补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同组 Inc/Dec 控件名均按完整记录保留，不翻译、不拆词。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:450",
+      "evidence_rows": [
+        31931
+      ],
+      "source_excerpt": "Dec4",
+      "reason": "确认 Dec4 仅作完整内部控件名出现；保留原样并限定 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 ordinal 31931 为 Dec4，与条目 source 一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "non_translate 条目保持 Dec4 原样，无需译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文为独立短标识符，提取理由称内部控件名；无嵌入文本证据，保留 non_translate 并补 whole_record 限定。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "同组 Inc/Dec 控件名均按完整记录保留，不翻译、不拆词。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:451",
+      "evidence_rows": [
+        31343
+      ],
+      "source_excerpt": "%d km",
+      "reason": "整条含可译单位 km，整体 non_translate 不当；隔离，仅保留 %d 占位符。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 ordinal 31343 为 %d km，包含 %d 与单位 km。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "不能整条保持英文 km；应译为“公里”并保留 %d，故隔离该 non_translate 条目。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文含自然语言单位 km，并非纯格式符或标识符；整体 non_translate 分类过宽，隔离。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与纯格式串 %s +%d 等不同，单位需本地化，不混同处理。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:452",
+      "evidence_rows": [
+        31344
+      ],
+      "source_excerpt": "%d mi",
+      "reason": "整条含可译单位 mi，整体 non_translate 不当；隔离，仅保留 %d 占位符。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 ordinal 31344 为 %d mi，包含 %d 与单位 mi。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "不能整条保持英文 mi；应译为“英里”并保留 %d，故隔离该 non_translate 条目。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文含自然语言单位 mi，并非纯格式符或标识符；整体 non_translate 分类过宽，隔离。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与纯格式串 %s +%d 等不同，单位需本地化，不混同处理。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:455",
+      "evidence_rows": [
+        31232
+      ],
+      "source_excerpt": "%s +%d",
+      "reason": "确认纯 printf 格式串；保留原样并限定 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 ordinal 31232 为 %s +%d。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "格式串无自然语言译名，%s、加号和 %d 原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "printf 格式串归入 non_translate 合理；补 whole_record applicability，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批纯格式串处理一致，不拆分占位符，不把裸 %s 或 %d 扩成全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:456",
+      "evidence_rows": [
+        31233
+      ],
+      "source_excerpt": "%s %d",
+      "reason": "确认纯 printf 格式串；保留原样并限定 whole_record。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 ordinal 31233 为 %s %d。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "格式串无自然语言译名，%s、空格和 %d 原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "printf 格式串归入 non_translate 合理；补 whole_record applicability，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与同批纯格式串处理一致，不拆分占位符，不把裸 %s 或 %d 扩成全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:457",
+      "evidence_rows": [
+        31177
+      ],
+      "source_excerpt": "%stop",
+      "reason": "原文可解析为 %s 后接可译 top；整条 non_translate 不当，隔离，仅保护 %s。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 ordinal 31177 为 %stop，按 printf 结构可读作 %s 后接 top。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "top 是 UI 方位词，若整条保留会阻止本地化；应隔离并翻译 top，保留 %s。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文含可译词，不属于纯格式符或标识符；隔离。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "不能与纯格式串等同处理；动态拼接中的可译词需翻译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:458",
+      "evidence_rows": [
+        31178
+      ],
+      "source_excerpt": "%sright",
+      "reason": "原文可解析为 %s 后接可译 right；整条 non_translate 不当，隔离，仅保护 %s。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "原文 ordinal 31178 为 %sright，按 printf 结构可读作 %s 后接 right。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "right 是 UI 方位词，若整条保留会阻止本地化；应隔离并翻译 right，保留 %s。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "原文含可译词，不属于纯格式符或标识符；隔离。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "不能与纯格式串等同处理；动态拼接中的可译词需翻译。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:445",
+    "non_translate:446",
+    "non_translate:447",
+    "non_translate:448",
+    "non_translate:449",
+    "non_translate:450",
+    "non_translate:451",
+    "non_translate:452",
+    "non_translate:455",
+    "non_translate:456",
+    "non_translate:457",
+    "non_translate:458"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

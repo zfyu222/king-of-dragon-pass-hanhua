@@ -1,0 +1,165 @@
+﻿id,image,width,height,source,text,norm_x1,norm_y1,norm_x2,norm_y2,px_x1,px_y1,px_x2,px_y2
+1,M/MapArch.png,236,89,Q,Dragon Pass,196,170,370,570,46.256,15.13,87.32,50.73
+1,M/MapArch.png,236,89,P,jagon,232,244,386,553,54.75,21.75,91.0,49.25
+2,Lore/background-map.png,640,480,Q,Spider Mt.,736,0,796,67,471.04,0.0,509.44,32.16
+2,Lore/background-map.png,640,480,P,Spider,738,0,803,34,472.0,0,514.0,16.5
+2,Lore/background-map.png,640,480,Q,Stinking Forest,513,27,696,67,328.32,12.96,445.44,32.16
+2,Lore/background-map.png,640,480,Q,DAGORI,880,27,976,67,563.2,12.96,624.64,32.16
+2,Lore/background-map.png,640,480,P,Mt.,748,28,788,67,478.5,13.5,504.5,32.0
+2,Lore/background-map.png,640,480,Q,AGGAR,0,33,92,67,0.0,15.84,58.88,32.16
+2,Lore/background-map.png,640,480,Q,SAIRD,213,33,286,67,136.32,15.84,183.04,32.16
+2,Lore/background-map.png,640,480,Q,INKARTH,875,67,980,107,560.0,32.16,627.2,51.36
+2,Lore/background-map.png,640,480,Q,Skyfall Lake,756,97,836,167,483.84,46.56,535.04,80.16
+2,Lore/background-map.png,640,480,P,Skyfall,762,98,845,138,487.5,47.0,540.5,66.0
+2,Lore/background-map.png,640,480,P,Lake,765,129,827,169,489.5,62.0,529.5,81.0
+2,Lore/background-map.png,640,480,P,Indigo Mts.,808,157,954,302,517.0,75.5,610.5,145.0
+2,Lore/background-map.png,640,480,Q,Hydra Mts.,260,167,392,207,166.4,80.16,250.88,99.36
+2,Lore/background-map.png,640,480,P,RockwoodMts.,39,170,303,441,25.0,81.5,194.0,211.5
+2,Lore/background-map.png,640,480,Q,Rockwood Mts.,54,197,286,427,34.56,94.56,183.04,204.96
+2,Lore/background-map.png,640,480,P,Quivin,697,354,763,394,446.0,170.0,488.5,189.0
+2,Lore/background-map.png,640,480,Q,Kero Fin,530,377,607,417,339.2,180.96,388.48,200.16
+2,Lore/background-map.png,640,480,P,RALIOS,2,394,95,438,1.5,189.0,60.5,210.0
+2,Lore/background-map.png,640,480,Q,Dragon Pass,352,397,500,437,225.28,190.56,320.0,209.76
+2,Lore/background-map.png,640,480,Q,PRAX,880,457,986,517,563.2,219.36,631.04,248.16
+2,Lore/background-map.png,640,480,Q,Mislari Mts.,20,507,162,547,12.8,243.36,103.68,262.56
+2,Lore/background-map.png,640,480,P,Arrowmound,330,528,453,561,211.5,253.5,290.0,269.5
+2,Lore/background-map.png,640,480,Q,Arstola Forest,36,557,210,657,23.04,267.36,134.4,315.36
+2,Lore/background-map.png,640,480,Q,The Block,870,557,986,607,556.8,267.36,631.04,291.36
+2,Lore/background-map.png,640,480,P,Stormwalk,773,654,877,696,494.5,314.0,561.5,334.0
+2,Lore/background-map.png,640,480,Q,HEORTLAND,666,657,736,817,426.24,315.36,471.04,392.16
+2,Lore/background-map.png,640,480,Q,Stormwalk Mt.,776,657,876,727,496.64,315.36,560.64,348.96
+2,Lore/background-map.png,640,480,P,Devil's,891,667,982,706,570.5,320.0,628.5,339.0
+2,Lore/background-map.png,640,480,Q,Devil's Marsh,892,667,976,747,570.88,320.16,624.64,358.56
+2,Lore/background-map.png,640,480,Q,ESROLIA,182,687,316,727,116.48,329.76,202.24,348.96
+2,Lore/background-map.png,640,480,P,Shadow,469,692,566,731,300.0,332.0,362.5,351.0
+2,Lore/background-map.png,640,480,Q,Shadow Plateau,466,697,562,777,298.24,334.56,359.68,372.96
+2,Lore/background-map.png,640,480,P,Marsh,891,706,975,750,570.0,339.0,624.0,360.0
+2,Lore/background-map.png,640,480,P,Plateau,466,725,570,775,298.0,348.0,365.0,372.0
+2,Lore/background-map.png,640,480,Q,Nochet,342,797,432,837,218.88,382.56,276.48,401.76
+3,Menu/Logo~ipad@2x.png,1338,378,Q,KING OF,320,100,720,480,428.16,37.8,963.36,181.44
+3,Menu/Logo~ipad@2x.png,1338,378,Q,DRAGON PASS,25,450,975,880,33.45,170.1,1304.55,332.64
+4,Lore/background-map1024.png,1024,768,P,Spider,738,0,808,40,756.0,0,827.0,31.0
+4,Lore/background-map1024.png,1024,768,P,yng,849,0,876,36,869.0,0,897.0,28.0
+4,Lore/background-map1024.png,1024,768,Q,Spider Mt.,738,10,797,33,755.712,7.68,816.128,25.344
+4,Lore/background-map1024.png,1024,768,P,DAGORI,891,21,985,61,912.0,16.0,1009.0,47.0
+4,Lore/background-map1024.png,1024,768,Q,Stinking Forest,507,23,683,53,519.168,17.664,699.392,40.704
+4,Lore/background-map1024.png,1024,768,Q,DAGORI INKARTH,887,23,983,93,908.288,17.664,1006.592,71.424
+4,Lore/background-map1024.png,1024,768,Q,AGGAR,10,33,88,63,10.24,25.344,90.112,48.384
+4,Lore/background-map1024.png,1024,768,Q,SAIRD,216,33,284,63,221.184,25.344,290.816,48.384
+4,Lore/background-map1024.png,1024,768,P,Mt.,750,34,792,69,768.0,26.0,811.0,53.0
+4,Lore/background-map1024.png,1024,768,P,INKARTH,879,60,988,98,900.0,46.0,1012.0,75.0
+4,Lore/background-map1024.png,1024,768,P,Skyfall,755,87,844,130,773.0,67.0,864.0,100.0
+4,Lore/background-map1024.png,1024,768,Q,Skyfall Lake,754,93,822,153,772.096,71.424,841.728,117.504
+4,Lore/background-map1024.png,1024,768,P,Vas,858,115,924,151,879.0,88.0,946.0,116.0
+4,Lore/background-map1024.png,1024,768,P,Lake,762,124,826,165,780.0,95.0,846.0,127.0
+4,Lore/background-map1024.png,1024,768,Q,Hydra Mts.,279,163,403,203,285.696,125.184,412.672,155.904
+4,Lore/background-map1024.png,1024,768,Q,Indigo Mts.,827,173,947,303,846.848,132.864,969.728,232.704
+4,Lore/background-map1024.png,1024,768,Q,Rockwood Mts.,58,193,268,413,59.392,148.224,274.432,317.184
+4,Lore/background-map1024.png,1024,768,P,Quivin,687,342,770,388,703.0,263.0,788.0,298.0
+4,Lore/background-map1024.png,1024,768,Q,Quivin Mt.,687,343,767,413,703.488,263.424,785.408,317.184
+4,Lore/background-map1024.png,1024,768,Q,Kero Fin,534,373,614,403,546.816,286.464,628.736,309.504
+4,Lore/background-map1024.png,1024,768,Q,Dragon Pass,357,383,497,413,365.568,294.144,508.928,317.184
+4,Lore/background-map1024.png,1024,768,Q,RALIOS,10,403,88,433,10.24,309.504,90.112,332.544
+4,Lore/background-map1024.png,1024,768,Q,PRAX,900,463,983,503,921.6,355.584,1006.592,386.304
+4,Lore/background-map1024.png,1024,768,Q,Mislari Mts.,23,493,153,533,23.552,378.624,156.672,409.344
+4,Lore/background-map1024.png,1024,768,Q,Arrowmound,357,513,477,543,365.568,393.984,488.448,417.024
+4,Lore/background-map1024.png,1024,768,Q,The Block,900,523,983,553,921.6,401.664,1006.592,424.704
+4,Lore/background-map1024.png,1024,768,Q,Arstola Forest,23,553,193,633,23.552,424.704,197.632,486.144
+4,Lore/background-map1024.png,1024,768,P,Storm,706,561,774,723,723.0,431.0,793.0,555.0
+4,Lore/background-map1024.png,1024,768,Q,Storm Mts.,717,573,797,813,734.208,440.064,816.128,624.384
+4,Lore/background-map1024.png,1024,768,P,Stormwalk,763,642,872,681,781.0,493.0,893.0,523.0
+4,Lore/background-map1024.png,1024,768,Q,HEORTLAND,657,643,737,813,672.768,493.824,754.688,624.384
+4,Lore/background-map1024.png,1024,768,Q,Stormwalk Mt.,767,643,847,713,785.408,493.824,867.328,547.584
+4,Lore/background-map1024.png,1024,768,P,Devil's,889,665,979,704,910.0,511.0,1002.0,541.0
+4,Lore/background-map1024.png,1024,768,Q,ESROLIA,183,693,313,733,187.392,532.224,320.512,562.944
+4,Lore/background-map1024.png,1024,768,Q,Devil’s Marsh,893,693,973,743,914.432,532.224,996.352,570.624
+4,Lore/background-map1024.png,1024,768,P,Mts,750,701,806,799,768.0,538.0,825.0,614.0
+4,Lore/background-map1024.png,1024,768,P,Marsh,891,703,969,743,912.0,540.0,992.0,571.0
+4,Lore/background-map1024.png,1024,768,Q,Nochet,343,793,423,823,351.232,609.024,433.152,632.064
+5,Menu/Logo~ipad.png,669,189,Q,KING OF,320,80,720,480,214.08,15.12,481.68,90.72
+5,Menu/Logo~ipad.png,669,189,Q,DRAGON PASS,25,440,970,920,16.725,83.16,648.93,173.88
+6,Lore/background-map1024@2x.png,2048,1536,P,Spider,738,1,806,39,1512.258056640625,2.042553186416626,1651.61279296875,60.25531768798828
+6,Lore/background-map1024@2x.png,2048,1536,Q,Spider Mt.,740,10,800,60,1515.52,15.36,1638.4,92.16
+6,Lore/background-map1024@2x.png,2048,1536,Q,Stinking Forest,513,23,683,57,1050.624,35.328,1398.784,87.552
+6,Lore/background-map1024@2x.png,2048,1536,Q,DAGORI INKARTH,893,23,983,95,1828.864,35.328,2013.184,145.92
+6,Lore/background-map1024@2x.png,2048,1536,P,DAGORI,893,25,982,59,1828.0,38.0,2012.0,90.0
+6,Lore/background-map1024@2x.png,2048,1536,Q,AGGAR,13,33,90,65,26.624,50.688,184.32,99.84
+6,Lore/background-map1024@2x.png,2048,1536,Q,SAIRD,218,33,285,65,446.464,50.688,583.68,99.84
+6,Lore/background-map1024@2x.png,2048,1536,P,Mt.,751,36,783,66,1538.0,55.0,1604.0,101.0
+6,Lore/background-map1024@2x.png,2048,1536,P,INKARTH,885,61,987,98,1812.0,93.0,2021.0,150.0
+6,Lore/background-map1024@2x.png,2048,1536,P,Skyfall,756,87,844,130,1548.3870849609375,133.7872314453125,1728.0,200.1702117919922
+6,Lore/background-map1024@2x.png,2048,1536,Q,Skyfall Lake,755,90,825,160,1546.24,138.24,1689.6,245.76
+6,Lore/background-map1024@2x.png,2048,1536,P,Lake,764,127,826,164,1564.0,195.0,1692.0,252.0
+6,Lore/background-map1024@2x.png,2048,1536,Q,Hydra Mts.,280,165,405,200,573.44,253.44,829.44,307.2
+6,Lore/background-map1024@2x.png,2048,1536,Q,Indigo Mts.,825,175,935,285,1689.6,268.8,1914.88,437.76
+6,Lore/background-map1024@2x.png,2048,1536,Q,Rockwood Mts.,60,195,265,415,122.88,299.52,542.72,637.44
+6,Lore/background-map1024@2x.png,2048,1536,P,Quivin,687,345,770,389,1406.0,530.0,1577.0,597.0
+6,Lore/background-map1024@2x.png,2048,1536,Q,Quivin Mt.,685,350,765,415,1402.88,537.6,1566.72,637.44
+6,Lore/background-map1024@2x.png,2048,1536,Q,Kero Fin,535,375,615,400,1095.68,576.0,1259.52,614.4
+6,Lore/background-map1024@2x.png,2048,1536,Q,Dragon Pass,360,385,500,415,737.28,591.36,1024.0,637.44
+6,Lore/background-map1024@2x.png,2048,1536,Q,RALIOS,13,405,90,435,26.624,622.08,184.32,668.16
+6,Lore/background-map1024@2x.png,2048,1536,P,"OPROT,",859,452,880,466,1759.0,695.0,1802.0,716.0
+6,Lore/background-map1024@2x.png,2048,1536,Q,PRAX,905,460,980,500,1853.44,706.56,2007.04,768.0
+6,Lore/background-map1024@2x.png,2048,1536,Q,Mislari Mts.,20,495,150,530,40.96,760.32,307.2,814.08
+6,Lore/background-map1024@2x.png,2048,1536,Q,Arrowmound,350,510,475,540,716.8,783.36,972.8,829.44
+6,Lore/background-map1024@2x.png,2048,1536,P,TheBlock,897,522,989,555,1836.3870849609375,801.7021484375,2026.322509765625,851.7446899414062
+6,Lore/background-map1024@2x.png,2048,1536,Q,The Block,900,525,980,550,1843.2,806.4,2007.04,844.8
+6,Lore/background-map1024@2x.png,2048,1536,Q,Arstola Forest,25,545,190,630,51.2,837.12,389.12,967.68
+6,Lore/background-map1024@2x.png,2048,1536,P,Storm,706,567,774,719,1446.1934814453125,871.14892578125,1585.54833984375,1105.021240234375
+6,Lore/background-map1024@2x.png,2048,1536,P,t+ t++ + + + t +t²+t t +r+ + +,442,582,674,622,904.258056640625,893.6170043945312,1380.1290283203125,955.9149169921875
+6,Lore/background-map1024@2x.png,2048,1536,Q,Stormwalk Mt.,765,640,865,705,1566.72,983.04,1771.52,1082.88
+6,Lore/background-map1024@2x.png,2048,1536,Q,HEORTLAND,655,645,735,810,1341.44,990.72,1505.28,1244.16
+6,Lore/background-map1024@2x.png,2048,1536,P,Stormwalk,764,646,868,676,1564.0,992.0,1778.0,1039.0
+6,Lore/background-map1024@2x.png,2048,1536,P,Devil's,889,666,977,704,1819.8709716796875,1022.2978515625,2001.54833984375,1081.5318603515625
+6,Lore/background-map1024@2x.png,2048,1536,Q,Devil’s Marsh,895,670,970,735,1832.96,1029.12,1986.56,1128.96
+6,Lore/background-map1024@2x.png,2048,1536,Q,ESROLIA,190,690,310,725,389.12,1059.84,634.88,1113.6
+6,Lore/background-map1024@2x.png,2048,1536,P,Mts,751,702,803,796,1537.0322265625,1078.4681396484375,1644.3870849609375,1222.4681396484375
+6,Lore/background-map1024@2x.png,2048,1536,P,Marsh,892,704,969,742,1826.064453125,1081.5318603515625,1984.0,1139.74462890625
+6,Lore/background-map1024@2x.png,2048,1536,Q,Storm Mts.,755,710,800,795,1546.24,1090.56,1638.4,1221.12
+6,Lore/background-map1024@2x.png,2048,1536,Q,Nochet,340,795,420,825,696.32,1221.12,860.16,1267.2
+7,Lore/background-map@2x.png,1280,960,P,Spider,740,2,806,39,947.0,2.0,1032.0,37.0
+7,Lore/background-map@2x.png,1280,960,Q,Spider Mt.,737,10,802,39,943.36,9.6,1026.56,37.44
+7,Lore/background-map@2x.png,1280,960,P,DAGORI,891,20,985,59,1141.0,19.0,1261.0,57.0
+7,Lore/background-map@2x.png,1280,960,Q,Stinking Forest,512,23,682,53,655.36,22.08,872.96,50.88
+7,Lore/background-map@2x.png,1280,960,Q,DAGORI INKARTH,893,23,980,53,1143.04,22.08,1254.4,50.88
+7,Lore/background-map@2x.png,1280,960,Q,AGGAR,10,33,87,63,12.8,31.68,111.36,60.48
+7,Lore/background-map@2x.png,1280,960,Q,SAIRD,217,33,283,63,277.76,31.68,362.24,60.48
+7,Lore/background-map@2x.png,1280,960,P,Mt.,750,34,784,67,960.0,33.0,1004.0,64.0
+7,Lore/background-map@2x.png,1280,960,P,INKARTH,879,59,988,98,1125.0,57.0,1265.0,94.0
+7,Lore/background-map@2x.png,1280,960,P,Skyfall,757,89,841,129,969.0,85.0,1077.0,124.0
+7,Lore/background-map@2x.png,1280,960,Q,Skyfall Lake,757,97,837,167,968.96,93.12,1071.36,160.32
+7,Lore/background-map@2x.png,1280,960,P,Lake,762,124,827,166,975.0,119.0,1058.0,159.0
+7,Lore/background-map@2x.png,1280,960,Q,Hydra Mts.,279,167,402,197,357.12,160.32,514.56,189.12
+7,Lore/background-map@2x.png,1280,960,Q,Indigo Mts.,822,177,937,287,1052.16,169.92,1199.36,275.52
+7,Lore/background-map@2x.png,1280,960,Q,Rockwood Mts.,57,197,267,417,72.96,189.12,341.76,400.32
+7,Lore/background-map@2x.png,1280,960,P,Quivin,687,345,769,389,879.0,331.0,984.0,373.0
+7,Lore/background-map@2x.png,1280,960,Q,Quivin Mt.,687,357,762,417,879.36,342.72,975.36,400.32
+7,Lore/background-map@2x.png,1280,960,Q,Kero Fin,537,377,602,407,687.36,361.92,770.56,390.72
+7,Lore/background-map@2x.png,1280,960,Q,Dragon Pass,362,387,497,417,463.36,371.52,636.16,400.32
+7,Lore/background-map@2x.png,1280,960,Q,RALIOS,10,403,87,433,12.8,386.88,111.36,415.68
+7,Lore/background-map@2x.png,1280,960,Q,PRAX,902,467,980,507,1154.56,448.32,1254.4,486.72
+7,Lore/background-map@2x.png,1280,960,Q,Mislari Mts.,22,497,152,527,28.16,477.12,194.56,505.92
+7,Lore/background-map@2x.png,1280,960,Q,Arrowmound,352,517,472,547,450.56,496.32,604.16,525.12
+7,Lore/background-map@2x.png,1280,960,Q,The Block,902,527,980,557,1154.56,505.92,1254.4,534.72
+7,Lore/background-map@2x.png,1280,960,Q,Arstola Forest,22,547,188,627,28.16,525.12,240.64,601.92
+7,Lore/background-map@2x.png,1280,960,P,Storm,706,562,773,722,904.0,540.0,989.0,693.0
+7,Lore/background-map@2x.png,1280,960,Q,Storm Mts.,717,577,772,737,917.76,553.92,988.16,707.52
+7,Lore/background-map@2x.png,1280,960,P,ttt t t st + t,560,584,671,618,717.0,561.0,859.0,593.0
+7,Lore/background-map@2x.png,1280,960,P,Stormwalk,762,642,871,680,976.0,616.0,1115.0,653.0
+7,Lore/background-map@2x.png,1280,960,Q,HEORTLAND,657,647,737,807,840.96,621.12,943.36,774.72
+7,Lore/background-map@2x.png,1280,960,Q,Stormwalk Mt.,767,647,862,677,981.76,621.12,1103.36,649.92
+7,Lore/background-map@2x.png,1280,960,P,Devil's,891,667,977,703,1141.0,640.0,1251.0,675.0
+7,Lore/background-map@2x.png,1280,960,Q,Devil’s Marsh,893,677,968,737,1143.04,649.92,1239.04,707.52
+7,Lore/background-map@2x.png,1280,960,Q,ESROLIA,188,687,312,717,240.64,659.52,399.36,688.32
+7,Lore/background-map@2x.png,1280,960,P,Marsh,891,703,969,743,1141.0,675.0,1240.0,713.0
+7,Lore/background-map@2x.png,1280,960,Q,Nochet,342,797,417,827,437.76,765.12,533.76,793.92
+8,Scenes/scene226.jpg,480,270,Q,Theya artwork not available,266,884,740,960,127.68,238.68,355.2,259.2
+9,M/RecruitCaption.png,58,14,Q,Recruit,0,0,1000,1000,0.0,0.0,58.0,14.0
+10,Scenes~ipad/scene226.jpg,640,360,Q,Theya artwork not available,264,884,736,960,168.96,318.24,471.04,345.6
+11,Menu/Logo@2x.png,658,180,Q,KING OF,317,70,727,470,208.586,12.6,478.366,84.6
+11,Menu/Logo@2x.png,658,180,Q,DRAGON PASS,17,450,977,930,11.186,81.0,642.866,167.4
+12,Menu/Logo.png,329,90,P,KINGOF,304,19,745,519,100.0,1.6666666666666667,245.0,46.666666666666664
+12,Menu/Logo.png,329,90,Q,KING OF,312,48,728,480,102.648,4.32,239.512,43.2
+12,Menu/Logo.png,329,90,Q,DRAGON PASS,18,480,980,960,5.922,43.2,322.42,86.4
+13,M/ClanButton.png,144,40,Q,Clan,344,280,644,720,49.536,11.2,92.736,28.8
+14,M/DismissCaption.png,58,14,Q,Dismiss,0,0,1000,1000,0.0,0.0,58.0,14.0

@@ -1,0 +1,213 @@
+{
+  "review_complete": true,
+  "review_summary": "复核 e1-e6：保留 Roitina、trolls、Dark Trolls、Troll Trophy 的译名与分类判断；修正 e2 全称译名以保留 the Troll Lord 称号，并修正 e2/e4 的 term_reason，使 Boztakang 短名与称号使用一致。已核对 f1。",
+  "acknowledged_findings": [
+    "F0353"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "巨魔领主博兹塔康",
+        "term_reason": "原文称其为巨魔领主，并称其为氏族的远古敌人。"
+      },
+      "reason": "全称含称号 the Troll Lord，应保留称号；同时去除未见于本批原文的族名，并解决 f1 与 e4 短名共用译名的问题。",
+      "evidence_rows": [
+        31952,
+        32900
+      ],
+      "table": "characters",
+      "index": 198
+    },
+    {
+      "patch": {
+        "term_reason": "原文称其为残酷的巨魔领主，氏族创建者曾与其势力作战。"
+      },
+      "reason": "将 term_reason 中的“巨魔王”统一为原文 cruel lord of trolls 的“巨魔领主”，与 e2 一致。",
+      "evidence_rows": [
+        12643
+      ],
+      "table": "terms",
+      "index": 452
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:197",
+      "evidence_rows": [
+        31826,
+        31949,
+        32895
+      ],
+      "source_excerpt": "Roitina, lady of dance",
+      "reason": "Roitina 为女性舞蹈人物专名；音译罗伊蒂娜，角色表 proper_name/required 与女性性别均有原文依据。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "31826 作 Roitina, lady of dance；31949、32895 亦作 Roitina，拼写一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "罗伊蒂娜为稳定音译，未与其他专名冲突；不把 lady of dance 并入人名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters/proper_name/required；31826 的 lady of dance 支持女性身份。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本条人名音译统一；与现有候选“罗伊蒂娜”一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:198",
+      "evidence_rows": [
+        31952,
+        32900
+      ],
+      "source_excerpt": "Boztakang the Troll Lord",
+      "reason": "全称含称号 the Troll Lord，译名应保留称号；原 term_reason 中的族名未见于本批原文，一并修正。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "31952 与 32900 均出现 Boztakang the Troll Lord，全称含称号。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "改译为“巨魔领主博兹塔康”，保留 the Troll Lord；短名博兹塔康留给 e4。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters/proper_name/required；Lord 与 ancient enemy 语境支持男性人物专名。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与 e4 的短名共用词根“博兹塔康”，但 e2 补出称号，解决 f1 的同译歧义。"
+        }
+      }
+    },
+    {
+      "ref": "terms:302",
+      "evidence_rows": [
+        6004,
+        6005,
+        12082,
+        16981,
+        16945,
+        17600
+      ],
+      "source_excerpt": "the trolls",
+      "reason": "trolls 在原文中作为与氏族为敌、可结盟/酿酒、受 troll gods 影响的种族名，译“巨魔”，category=种族、game_term/required 正确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "6004、6005、12082、16981 均出现 trolls；16945/17600 补证其与 Iron Spike、troll gods 相关。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“巨魔”为种族名，且与 e5“黑暗巨魔”、e6“巨魔战利品”的核心译名一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "种族名应作 game_term，而非 proper_name；最终条目已采用 game_term/required。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "单复数及大小写 Trolls/trolls 不改变译名；与相关术语核心词一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:452",
+      "evidence_rows": [
+        12643
+      ],
+      "source_excerpt": "Boztakang",
+      "reason": "Boztakang 为巨魔领主专名短名，音译博兹塔康；term_reason 将“巨魔王”统一为原文 lord of trolls 的“巨魔领主”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "12643 出现 Boztakang，并称其为 cruel lord of trolls。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "短名音译“博兹塔康”，与 e2 全称的核心词一致；无需重复称号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms/proper_name/required，category_path=其他；作为人物/领主专名可归其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e2“巨魔领主博兹塔康”保持词根一致；f1 的同译问题已由 e2 补称号解决。"
+        }
+      }
+    },
+    {
+      "ref": "terms:972",
+      "evidence_rows": [
+        30840,
+        30880
+      ],
+      "source_excerpt": "dark trolls",
+      "reason": "dark trolls/Dark Trolls 为巨魔类战斗单位或种族分支，译“黑暗巨魔”；game_term/required、种族分类正确。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30840 作 dark trolls，30880 作 Dark Trolls，仅大小写不同。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“黑暗巨魔”直译 dark+trolls，并与 e3“巨魔”核心词一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为巨魔种族分支/单位名，category_path=种族、game_term/required 合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e3 共享“巨魔”，dark 修饰语统一为“黑暗”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1096",
+      "evidence_rows": [
+        32508
+      ],
+      "source_excerpt": "Troll Trophy",
+      "reason": "Troll Trophy 为宝藏列表中的物品标签，译“巨魔战利品”；作为具名物品用 reference 合适。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32508 宝藏列表出现 Troll Trophy。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“巨魔战利品”对应 Troll Trophy，Troll 与 e3 统一为“巨魔”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "物品标签，category_path=物品；game_term/reference 符合其出现范围。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "核心词“巨魔”与 e3/e5 一致；未与其他术语冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:197",
+    "characters:198",
+    "terms:302",
+    "terms:452",
+    "terms:972",
+    "terms:1096"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

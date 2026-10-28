@@ -1,0 +1,545 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e12 共 12 条 non_translate 场景资源标识。原文均为 sceneR### 形式的完整资源键，不是自然语言正文；全部保留原文，并补充 whole_record applicability 与 term_reason，限定为整条记录匹配，避免全局误禁翻。",
+  "acknowledged_findings": [
+    "F0107",
+    "F0108",
+    "F0109",
+    "F0110",
+    "F0111",
+    "F0112",
+    "F0113",
+    "F0114",
+    "F0115",
+    "F0116",
+    "F0117",
+    "F0118"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录仅由场景资源标识 sceneR049 构成，不是正文；按整条记录原样保留。"
+        },
+        "term_reason": "完整场景资源标识，不翻译。"
+      },
+      "reason": "修正 unscoped_nontranslate：补充 whole_record 范围与 term_reason，避免对 sceneR### 作全局禁翻。",
+      "evidence_rows": [
+        8910
+      ],
+      "table": "non_translate",
+      "index": 170
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录仅由场景资源标识 sceneR050 构成，不是正文；按整条记录原样保留。"
+        },
+        "term_reason": "完整场景资源标识，不翻译。"
+      },
+      "reason": "修正 unscoped_nontranslate：补充 whole_record 范围与 term_reason，避免对 sceneR### 作全局禁翻。",
+      "evidence_rows": [
+        8989
+      ],
+      "table": "non_translate",
+      "index": 171
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录仅由场景资源标识 sceneR051 构成，不是正文；按整条记录原样保留。"
+        },
+        "term_reason": "完整场景资源标识，不翻译。"
+      },
+      "reason": "修正 unscoped_nontranslate：补充 whole_record 范围与 term_reason，避免对 sceneR### 作全局禁翻。",
+      "evidence_rows": [
+        9038
+      ],
+      "table": "non_translate",
+      "index": 172
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录仅由场景资源标识 sceneR052 构成，不是正文；按整条记录原样保留。"
+        },
+        "term_reason": "完整场景资源标识，不翻译。"
+      },
+      "reason": "修正 unscoped_nontranslate：补充 whole_record 范围与 term_reason，避免对 sceneR### 作全局禁翻。",
+      "evidence_rows": [
+        9079
+      ],
+      "table": "non_translate",
+      "index": 173
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录仅由场景资源标识 sceneR053 构成，不是正文；按整条记录原样保留。"
+        },
+        "term_reason": "完整场景资源标识，不翻译。"
+      },
+      "reason": "修正 unscoped_nontranslate：补充 whole_record 范围与 term_reason，避免对 sceneR### 作全局禁翻。",
+      "evidence_rows": [
+        9120
+      ],
+      "table": "non_translate",
+      "index": 174
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录仅由场景资源标识 sceneR054 构成，不是正文；按整条记录原样保留。"
+        },
+        "term_reason": "完整场景资源标识，不翻译。"
+      },
+      "reason": "修正 unscoped_nontranslate：补充 whole_record 范围与 term_reason，避免对 sceneR### 作全局禁翻。",
+      "evidence_rows": [
+        9140
+      ],
+      "table": "non_translate",
+      "index": 175
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录仅由场景资源标识 sceneR055 构成，不是正文；按整条记录原样保留。"
+        },
+        "term_reason": "完整场景资源标识，不翻译。"
+      },
+      "reason": "修正 unscoped_nontranslate：补充 whole_record 范围与 term_reason，避免对 sceneR### 作全局禁翻。",
+      "evidence_rows": [
+        9175
+      ],
+      "table": "non_translate",
+      "index": 176
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录仅由场景资源标识 sceneR056 构成，不是正文；按整条记录原样保留。"
+        },
+        "term_reason": "完整场景资源标识，不翻译。"
+      },
+      "reason": "修正 unscoped_nontranslate：补充 whole_record 范围与 term_reason，避免对 sceneR### 作全局禁翻。",
+      "evidence_rows": [
+        9182
+      ],
+      "table": "non_translate",
+      "index": 177
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录仅由场景资源标识 sceneR057 构成，不是正文；按整条记录原样保留。"
+        },
+        "term_reason": "完整场景资源标识，不翻译。"
+      },
+      "reason": "修正 unscoped_nontranslate：补充 whole_record 范围与 term_reason，避免对 sceneR### 作全局禁翻。",
+      "evidence_rows": [
+        9223
+      ],
+      "table": "non_translate",
+      "index": 178
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录仅由场景资源标识 sceneR059 构成，不是正文；按整条记录原样保留。"
+        },
+        "term_reason": "完整场景资源标识，不翻译。"
+      },
+      "reason": "修正 unscoped_nontranslate：补充 whole_record 范围与 term_reason，避免对 sceneR### 作全局禁翻。",
+      "evidence_rows": [
+        9296
+      ],
+      "table": "non_translate",
+      "index": 179
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录仅由场景资源标识 sceneR072 构成，不是正文；按整条记录原样保留。"
+        },
+        "term_reason": "完整场景资源标识，不翻译。"
+      },
+      "reason": "修正 unscoped_nontranslate：补充 whole_record 范围，明确该场景资源标识仅按完整记录保留。",
+      "evidence_rows": [
+        9877
+      ],
+      "table": "non_translate",
+      "index": 180
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "完整记录仅由场景资源标识 sceneR074 构成，不是正文；按整条记录原样保留。"
+        },
+        "term_reason": "完整场景资源标识，不翻译。"
+      },
+      "reason": "修正 unscoped_nontranslate：补充 whole_record 范围，明确该场景资源标识仅按完整记录保留。",
+      "evidence_rows": [
+        9971
+      ],
+      "table": "non_translate",
+      "index": 181
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:170",
+      "evidence_rows": [
+        8910
+      ],
+      "source_excerpt": "sceneR049",
+      "reason": "原文为完整场景资源标识，不应翻译；已补充 whole_record 保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "evidence_rows 8910 原文仅为 sceneR049，是场景资源键而非自然语言正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无目标译文，保留源标识 sceneR049。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该串为运行期场景资源标识，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已为该 sceneR### 资源键补 whole_record applicability 与 term_reason，限定按完整记录保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:171",
+      "evidence_rows": [
+        8989
+      ],
+      "source_excerpt": "sceneR050",
+      "reason": "原文为完整场景资源标识，不应翻译；已补充 whole_record 保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "evidence_rows 8989 原文仅为 sceneR050，是场景资源键而非自然语言正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无目标译文，保留源标识 sceneR050。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该串为运行期场景资源标识，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已为该 sceneR### 资源键补 whole_record applicability 与 term_reason，限定按完整记录保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:172",
+      "evidence_rows": [
+        9038
+      ],
+      "source_excerpt": "sceneR051",
+      "reason": "原文为完整场景资源标识，不应翻译；已补充 whole_record 保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "evidence_rows 9038 原文仅为 sceneR051，是场景资源键而非自然语言正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无目标译文，保留源标识 sceneR051。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该串为运行期场景资源标识，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已为该 sceneR### 资源键补 whole_record applicability 与 term_reason，限定按完整记录保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:173",
+      "evidence_rows": [
+        9079
+      ],
+      "source_excerpt": "sceneR052",
+      "reason": "原文为完整场景资源标识，不应翻译；已补充 whole_record 保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "evidence_rows 9079 原文仅为 sceneR052，是场景资源键而非自然语言正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无目标译文，保留源标识 sceneR052。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该串为运行期场景资源标识，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已为该 sceneR### 资源键补 whole_record applicability 与 term_reason，限定按完整记录保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:174",
+      "evidence_rows": [
+        9120
+      ],
+      "source_excerpt": "sceneR053",
+      "reason": "原文为完整场景资源标识，不应翻译；已补充 whole_record 保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "evidence_rows 9120 原文仅为 sceneR053，是场景资源键而非自然语言正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无目标译文，保留源标识 sceneR053。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该串为运行期场景资源标识，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已为该 sceneR### 资源键补 whole_record applicability 与 term_reason，限定按完整记录保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:175",
+      "evidence_rows": [
+        9140
+      ],
+      "source_excerpt": "sceneR054",
+      "reason": "原文为完整场景资源标识，不应翻译；已补充 whole_record 保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "evidence_rows 9140 原文仅为 sceneR054，是场景资源键而非自然语言正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无目标译文，保留源标识 sceneR054。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该串为运行期场景资源标识，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已为该 sceneR### 资源键补 whole_record applicability 与 term_reason，限定按完整记录保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:176",
+      "evidence_rows": [
+        9175
+      ],
+      "source_excerpt": "sceneR055",
+      "reason": "原文为完整场景资源标识，不应翻译；已补充 whole_record 保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "evidence_rows 9175 原文仅为 sceneR055，是场景资源键而非自然语言正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无目标译文，保留源标识 sceneR055。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该串为运行期场景资源标识，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已为该 sceneR### 资源键补 whole_record applicability 与 term_reason，限定按完整记录保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:177",
+      "evidence_rows": [
+        9182
+      ],
+      "source_excerpt": "sceneR056",
+      "reason": "原文为完整场景资源标识，不应翻译；已补充 whole_record 保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "evidence_rows 9182 原文仅为 sceneR056，是场景资源键而非自然语言正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无目标译文，保留源标识 sceneR056。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该串为运行期场景资源标识，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已为该 sceneR### 资源键补 whole_record applicability 与 term_reason，限定按完整记录保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:178",
+      "evidence_rows": [
+        9223
+      ],
+      "source_excerpt": "sceneR057",
+      "reason": "原文为完整场景资源标识，不应翻译；已补充 whole_record 保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "evidence_rows 9223 原文仅为 sceneR057，是场景资源键而非自然语言正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无目标译文，保留源标识 sceneR057。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该串为运行期场景资源标识，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已为该 sceneR### 资源键补 whole_record applicability 与 term_reason，限定按完整记录保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:179",
+      "evidence_rows": [
+        9296
+      ],
+      "source_excerpt": "sceneR059",
+      "reason": "原文为完整场景资源标识，不应翻译；已补充 whole_record 保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "evidence_rows 9296 原文仅为 sceneR059，是场景资源键而非自然语言正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无目标译文，保留源标识 sceneR059。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该串为运行期场景资源标识，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已为该 sceneR### 资源键补 whole_record applicability 与 term_reason，限定按完整记录保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:180",
+      "evidence_rows": [
+        9877
+      ],
+      "source_excerpt": "sceneR072",
+      "reason": "原文为完整场景资源标识，已有不翻译理由；补充 whole_record 保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "evidence_rows 9877 原文仅为 sceneR072，是场景资源键而非自然语言正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无目标译文，保留源标识 sceneR072。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该串为运行期场景资源标识，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已为该 sceneR### 资源键补 whole_record applicability，限定按完整记录保留。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:181",
+      "evidence_rows": [
+        9971
+      ],
+      "source_excerpt": "sceneR074",
+      "reason": "原文为完整场景资源标识，已有不翻译理由；补充 whole_record 保护范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "evidence_rows 9971 原文仅为 sceneR074，是场景资源键而非自然语言正文。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目无目标译文，保留源标识 sceneR074。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该串为运行期场景资源标识，归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "已为该 sceneR### 资源键补 whole_record applicability，限定按完整记录保留。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:170",
+    "non_translate:171",
+    "non_translate:172",
+    "non_translate:173",
+    "non_translate:174",
+    "non_translate:175",
+    "non_translate:176",
+    "non_translate:177",
+    "non_translate:178",
+    "non_translate:179",
+    "non_translate:180",
+    "non_translate:181"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

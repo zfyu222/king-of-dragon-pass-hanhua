@@ -1,0 +1,533 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对全部12条 non_translate 标识符；原文证据均为独立完整字符串，无嵌入正文用例。保留 non_translate 分类，并将适用范围限定为 whole_record，避免对相似字母片段进行全局禁翻。",
+  "acknowledged_findings": [
+    "F0211",
+    "F0212",
+    "F0213",
+    "F0214",
+    "F0215",
+    "F0216",
+    "F0217",
+    "F0218",
+    "F0219",
+    "F0220",
+    "F0221",
+    "F0222"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文记录 26315 仅为完整字符串 H6a，无嵌入正文用例；仅按完整记录保留，避免全局禁翻。"
+        }
+      },
+      "reason": "补充 whole_record 限定；该标识符只有独立完整记录证据。",
+      "evidence_rows": [
+        26315
+      ],
+      "table": "non_translate",
+      "index": 306
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文记录 26334 仅为完整字符串 H6b，无嵌入正文用例；仅按完整记录保留，避免全局禁翻。"
+        }
+      },
+      "reason": "补充 whole_record 限定；该标识符只有独立完整记录证据。",
+      "evidence_rows": [
+        26334
+      ],
+      "table": "non_translate",
+      "index": 307
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文记录 26385 仅为完整字符串 H6d，无嵌入正文用例；仅按完整记录保留，避免全局禁翻。"
+        }
+      },
+      "reason": "补充 whole_record 限定；该标识符只有独立完整记录证据。",
+      "evidence_rows": [
+        26385
+      ],
+      "table": "non_translate",
+      "index": 308
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文记录 26416 仅为完整字符串 H6f，无嵌入正文用例；仅按完整记录保留，避免全局禁翻。"
+        }
+      },
+      "reason": "补充 whole_record 限定；该标识符只有独立完整记录证据。",
+      "evidence_rows": [
+        26416
+      ],
+      "table": "non_translate",
+      "index": 309
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文记录 26436 仅为完整字符串 H6g，无嵌入正文用例；仅按完整记录保留，避免全局禁翻。"
+        }
+      },
+      "reason": "补充 whole_record 限定；该标识符只有独立完整记录证据。",
+      "evidence_rows": [
+        26436
+      ],
+      "table": "non_translate",
+      "index": 310
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文记录 26448 仅为完整字符串 H6h，无嵌入正文用例；仅按完整记录保留，避免全局禁翻。"
+        }
+      },
+      "reason": "补充 whole_record 限定；该标识符只有独立完整记录证据。",
+      "evidence_rows": [
+        26448
+      ],
+      "table": "non_translate",
+      "index": 311
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文记录 26460 仅为完整字符串 H6i，无嵌入正文用例；仅按完整记录保留，避免全局禁翻。"
+        }
+      },
+      "reason": "补充 whole_record 限定；该标识符只有独立完整记录证据。",
+      "evidence_rows": [
+        26460
+      ],
+      "table": "non_translate",
+      "index": 312
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文记录 26502 仅为完整字符串 H6k，无嵌入正文用例；仅按完整记录保留，避免全局禁翻。"
+        }
+      },
+      "reason": "补充 whole_record 限定；该标识符只有独立完整记录证据。",
+      "evidence_rows": [
+        26502
+      ],
+      "table": "non_translate",
+      "index": 313
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文记录 26512 仅为完整字符串 H7a，无嵌入正文用例；仅按完整记录保留，避免全局禁翻。"
+        }
+      },
+      "reason": "补充 whole_record 限定；该标识符只有独立完整记录证据。",
+      "evidence_rows": [
+        26512
+      ],
+      "table": "non_translate",
+      "index": 314
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文记录 26523 仅为完整字符串 H7b，无嵌入正文用例；仅按完整记录保留，避免全局禁翻。"
+        }
+      },
+      "reason": "补充 whole_record 限定；该标识符只有独立完整记录证据。",
+      "evidence_rows": [
+        26523
+      ],
+      "table": "non_translate",
+      "index": 315
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文记录 26555 仅为完整字符串 H7d，无嵌入正文用例；仅按完整记录保留，避免全局禁翻。"
+        }
+      },
+      "reason": "补充 whole_record 限定；该标识符只有独立完整记录证据。",
+      "evidence_rows": [
+        26555
+      ],
+      "table": "non_translate",
+      "index": 316
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "原文记录 26595 仅为完整字符串 H7e，无嵌入正文用例；仅按完整记录保留，避免全局禁翻。"
+        }
+      },
+      "reason": "补充 whole_record 限定；该标识符只有独立完整记录证据。",
+      "evidence_rows": [
+        26595
+      ],
+      "table": "non_translate",
+      "index": 317
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:306",
+      "evidence_rows": [
+        26315
+      ],
+      "source_excerpt": "H6a",
+      "reason": "核对为独立标识符并限定完整记录范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 26315 原文为 H6a，与条目 source 逐字一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不设目标译名，无译文可核。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "H6a 仅在完整记录中独立出现，作为保留标识符归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；已限定为 whole_record 且区分大小写，仅保护完整记录 H6a。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:307",
+      "evidence_rows": [
+        26334
+      ],
+      "source_excerpt": "H6b",
+      "reason": "核对为独立标识符并限定完整记录范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 26334 原文为 H6b，与条目 source 逐字一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不设目标译名，无译文可核。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "H6b 仅在完整记录中独立出现，作为保留标识符归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；已限定为 whole_record 且区分大小写，仅保护完整记录 H6b。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:308",
+      "evidence_rows": [
+        26385
+      ],
+      "source_excerpt": "H6d",
+      "reason": "核对为独立标识符并限定完整记录范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 26385 原文为 H6d，与条目 source 逐字一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不设目标译名，无译文可核。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "H6d 仅在完整记录中独立出现，作为保留标识符归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；已限定为 whole_record 且区分大小写，仅保护完整记录 H6d。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:309",
+      "evidence_rows": [
+        26416
+      ],
+      "source_excerpt": "H6f",
+      "reason": "核对为独立标识符并限定完整记录范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 26416 原文为 H6f，与条目 source 逐字一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不设目标译名，无译文可核。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "H6f 仅在完整记录中独立出现，作为保留标识符归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；已限定为 whole_record 且区分大小写，仅保护完整记录 H6f。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:310",
+      "evidence_rows": [
+        26436
+      ],
+      "source_excerpt": "H6g",
+      "reason": "核对为独立标识符并限定完整记录范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 26436 原文为 H6g，与条目 source 逐字一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不设目标译名，无译文可核。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "H6g 仅在完整记录中独立出现，作为保留标识符归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；已限定为 whole_record 且区分大小写，仅保护完整记录 H6g。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:311",
+      "evidence_rows": [
+        26448
+      ],
+      "source_excerpt": "H6h",
+      "reason": "核对为独立标识符并限定完整记录范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 26448 原文为 H6h，与条目 source 逐字一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不设目标译名，无译文可核。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "H6h 仅在完整记录中独立出现，作为保留标识符归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；已限定为 whole_record 且区分大小写，仅保护完整记录 H6h。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:312",
+      "evidence_rows": [
+        26460
+      ],
+      "source_excerpt": "H6i",
+      "reason": "核对为独立标识符并限定完整记录范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 26460 原文为 H6i，与条目 source 逐字一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不设目标译名，无译文可核。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "H6i 仅在完整记录中独立出现，作为保留标识符归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；已限定为 whole_record 且区分大小写，仅保护完整记录 H6i。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:313",
+      "evidence_rows": [
+        26502
+      ],
+      "source_excerpt": "H6k",
+      "reason": "核对为独立标识符并限定完整记录范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 26502 原文为 H6k，与条目 source 逐字一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不设目标译名，无译文可核。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "H6k 仅在完整记录中独立出现，作为保留标识符归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；已限定为 whole_record 且区分大小写，仅保护完整记录 H6k。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:314",
+      "evidence_rows": [
+        26512
+      ],
+      "source_excerpt": "H7a",
+      "reason": "核对为独立标识符并限定完整记录范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 26512 原文为 H7a，与条目 source 逐字一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不设目标译名，无译文可核。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "H7a 仅在完整记录中独立出现，作为保留标识符归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；已限定为 whole_record 且区分大小写，仅保护完整记录 H7a。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:315",
+      "evidence_rows": [
+        26523
+      ],
+      "source_excerpt": "H7b",
+      "reason": "核对为独立标识符并限定完整记录范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 26523 原文为 H7b，与条目 source 逐字一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不设目标译名，无译文可核。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "H7b 仅在完整记录中独立出现，作为保留标识符归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；已限定为 whole_record 且区分大小写，仅保护完整记录 H7b。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:316",
+      "evidence_rows": [
+        26555
+      ],
+      "source_excerpt": "H7d",
+      "reason": "核对为独立标识符并限定完整记录范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 26555 原文为 H7d，与条目 source 逐字一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不设目标译名，无译文可核。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "H7d 仅在完整记录中独立出现，作为保留标识符归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；已限定为 whole_record 且区分大小写，仅保护完整记录 H7d。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:317",
+      "evidence_rows": [
+        26595
+      ],
+      "source_excerpt": "H7e",
+      "reason": "核对为独立标识符并限定完整记录范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "ordinal 26595 原文为 H7e，与条目 source 逐字一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 条目不设目标译名，无译文可核。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "H7e 仅在完整记录中独立出现，作为保留标识符归入 non_translate 合理。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原条目缺少 applicability；已限定为 whole_record 且区分大小写，仅保护完整记录 H7e。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:306",
+    "non_translate:307",
+    "non_translate:308",
+    "non_translate:309",
+    "non_translate:310",
+    "non_translate:311",
+    "non_translate:312",
+    "non_translate:313",
+    "non_translate:314",
+    "non_translate:315",
+    "non_translate:316",
+    "non_translate:317"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

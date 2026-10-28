@@ -1,0 +1,524 @@
+{
+  "review_complete": true,
+  "review_summary": "已核对 e1-e12：e1-e3 的 sceneNNN 是完整独立的内部场景资源标识，改为 whole_record 限定，解决 f1-f3 的未限定 non_translate 问题；e4-e12 均为运行时控制或占位串，已补充精确适用范围，保持原样保护，不降级为 reference。未新增译名，未隔离条目。",
+  "acknowledged_findings": [
+    "F0289",
+    "F0290",
+    "F0291"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "30822 中 scene038 是完整独立字段，仅作内部场景资源标识；限定 whole_record，避免把 scene 或编号当作全局禁翻词。"
+        }
+      },
+      "reason": "审计 f1：为 scene038 补充明确适用性，仅保护完整记录。",
+      "evidence_rows": [
+        30822
+      ],
+      "table": "non_translate",
+      "index": 403
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "30823 中 scene036 是完整独立字段，仅作内部场景资源标识；限定 whole_record，避免全局禁翻 scene 或编号。"
+        }
+      },
+      "reason": "审计 f2：为 scene036 补充明确适用性，仅保护完整记录。",
+      "evidence_rows": [
+        30823
+      ],
+      "table": "non_translate",
+      "index": 404
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "30824 中 scene005 是完整独立字段，仅作内部场景资源标识；限定 whole_record，避免全局禁翻 scene 或编号。"
+        }
+      },
+      "reason": "审计 f3：为 scene005 补充明确适用性，仅保护完整记录。",
+      "evidence_rows": [
+        30824
+      ],
+      "table": "non_translate",
+      "index": 405
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "1136 等原文中 \\x01@ 是运行时占位前缀；精确保护该字面控制串，不扩展到普通 @ 文本。"
+        }
+      },
+      "reason": "补充 \\x01@ 的精确保护范围。",
+      "evidence_rows": [
+        1136
+      ],
+      "table": "non_translate",
+      "index": 33
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "2460 等原文中 \\x01@! 是氏族名占位符；精确保护该控制串，不把邻近正文一并禁翻。"
+        }
+      },
+      "reason": "补充 \\x01@! 的精确保护范围。",
+      "evidence_rows": [
+        2460
+      ],
+      "table": "non_translate",
+      "index": 36
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "4433 等原文中字面 \\x01 是控制字节前缀；精确保护该控制串，不扩展到普通字母。"
+        }
+      },
+      "reason": "补充 \\x01 控制字节的精确保护范围。",
+      "evidence_rows": [
+        4433
+      ],
+      "table": "non_translate",
+      "index": 65
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "8189、24113 中该控制串作为氏族名占位符；精确匹配控制串本身，不扩展到普通引号或正文。"
+        }
+      },
+      "reason": "补充氏族名占位控制串的精确保护范围。",
+      "evidence_rows": [
+        8189
+      ],
+      "table": "non_translate",
+      "index": 165
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "10522、10534 中该控制串作为氏族名占位符；精确保护控制串本身，不扩展到普通加号或正文。"
+        }
+      },
+      "reason": "补充氏族名占位控制串的精确保护范围。",
+      "evidence_rows": [
+        10522
+      ],
+      "table": "non_translate",
+      "index": 184
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "22429、22451 中该控制串作为部族名占位符；精确保护控制串本身，不扩展到普通等号或正文。"
+        }
+      },
+      "reason": "补充部族名占位控制串的精确保护范围。",
+      "evidence_rows": [
+        22429
+      ],
+      "table": "non_translate",
+      "index": 278
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "1136、10582 中该控制串作为人物名占位符；精确保护控制串本身，不扩展到普通字母或正文。"
+        }
+      },
+      "reason": "补充人物名占位控制串的精确保护范围。",
+      "evidence_rows": [
+        1136
+      ],
+      "table": "non_translate",
+      "index": 34
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "1154 中该控制串作为句首人物名占位符；精确保护控制串本身，不扩展到普通句首文本。"
+        }
+      },
+      "reason": "补充句首人物名占位控制串的精确保护范围。",
+      "evidence_rows": [
+        1154
+      ],
+      "table": "non_translate",
+      "index": 35
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "1182、6707、28929 等原文中该控制串作为动态名称占位符；精确保护控制串本身，不扩展到普通正文。"
+        }
+      },
+      "reason": "补充动态名称占位控制串的精确保护范围。",
+      "evidence_rows": [
+        1182
+      ],
+      "table": "non_translate",
+      "index": 37
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:403",
+      "evidence_rows": [
+        30822
+      ],
+      "source_excerpt": "scene038",
+      "reason": "核对 30822：scene038 是完整独立的内部场景资源标识，不含可译正文；应整条保留。审计 f1 的未限定保护已通过 whole_record 修正。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30822 原文仅含 scene038，无正文语义。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为内部资源标识，译文保留 scene038，不译作中文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原缺适用范围，edits 补为 whole_record，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 scene036、scene005 同属 sceneNNN 资源标识模式，处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:404",
+      "evidence_rows": [
+        30823
+      ],
+      "source_excerpt": "scene036",
+      "reason": "核对 30823：scene036 是完整独立的内部场景资源标识，不含可译正文；应整条保留。审计 f2 的未限定保护已通过 whole_record 修正。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30823 原文仅含 scene036，无正文语义。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为内部资源标识，译文保留 scene036，不译作中文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原缺适用范围，edits 补为 whole_record，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 scene038、scene005 同属 sceneNNN 资源标识模式，处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:405",
+      "evidence_rows": [
+        30824
+      ],
+      "source_excerpt": "scene005",
+      "reason": "核对 30824：scene005 是完整独立的内部场景资源标识，不含可译正文；应整条保留。审计 f3 的未限定保护已通过 whole_record 修正。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "30824 原文仅含 scene005，无正文语义。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为内部资源标识，译文保留 scene005，不译作中文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原缺适用范围，edits 补为 whole_record，避免全局禁翻。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 scene038、scene036 同属 sceneNNN 资源标识模式，处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:33",
+      "evidence_rows": [
+        1136
+      ],
+      "source_excerpt": "The \\x01@! carls",
+      "reason": "核对 1136：\\x01@ 是运行时占位前缀（如 \\x01@!），仅保护该字面控制串，不译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1136 中 \\x01@ 作为 \\x01@! 的前缀出现，属运行时占位控制串。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "控制串必须原样保留，不能译为中文。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；原缺 applicability，edits 以精确 text 范围限定 \\x01@，不扩展到普通 @。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 \\x01@!、\\x01@p 等派生占位串保持前缀一致，不误译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:36",
+      "evidence_rows": [
+        2460
+      ],
+      "source_excerpt": "the \\x01@! clan",
+      "reason": "核对 2460：\\x01@! 是氏族名运行时占位符，前后为普通叙述，应精确保护控制串。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2460 中 \\x01@! 位于 the 与 clan 之间，确为氏族名占位符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "运行时氏族名占位符应原样保留，不翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；edits 补为精确 text 范围，只保护该控制串。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e4 的 \\x01@ 前缀一致，且不吞并邻近正文。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:65",
+      "evidence_rows": [
+        4433
+      ],
+      "source_excerpt": "\\x01@\\x03 was made chief",
+      "reason": "核对 4433：单独 \\x01 作为控制字节前缀出现，须原样保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "4433 中 \\x01 出现在 \\x01@\\x03 内，属运行时控制字节。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "控制字节应原样保留，不能译为文字。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；edits 以精确 text 范围保护字面 \\x01 控制序列，不扩展为普通字母。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e4-e12 的控制串保护策略一致，不改变正文翻译。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:165",
+      "evidence_rows": [
+        8189
+      ],
+      "source_excerpt": "the \\x01@\" clan",
+      "reason": "核对 8189：该控制串是氏族名占位符，应精确保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "8189 中 \\x01@\" 位于 the 与 clan 之间，属氏族名占位符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "占位控制串应原样保留，不译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；edits 补为精确 text 范围，不扩展到普通引号。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与其他氏族名占位控制串处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:184",
+      "evidence_rows": [
+        10522
+      ],
+      "source_excerpt": "Clan \\x01@+ expel",
+      "reason": "核对 10522：该控制串是氏族名占位符，应精确保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "10522 中 \\x01@+ 位于 Clan 与 expel 之间，属氏族名占位符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "占位控制串应原样保留，不译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；edits 补为精确 text 范围，不扩展到普通加号。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e5、e7 的氏族名占位处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:278",
+      "evidence_rows": [
+        22429
+      ],
+      "source_excerpt": "The \\x01@= tribe",
+      "reason": "核对 22429：该控制串是部族名占位符，应精确保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "22429 中 \\x01@= 位于 The 与 tribe 之间，属部族名占位符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "占位控制串应原样保留，不译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；edits 补为精确 text 范围，不扩展到普通等号。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e8 等占位控制串处理一致，体现部族名占位。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:34",
+      "evidence_rows": [
+        1136
+      ],
+      "source_excerpt": "Their chief, \\x01@p, said",
+      "reason": "核对 1136：该控制串是人物名占位符，应精确保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1136 中 \\x01@p 位于 Their chief, 与 said 之间，属人物名占位符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "占位控制串应原样保留，不译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；edits 补为精确 text 范围，不扩展到普通字母。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e4 的 \\x01@ 前缀一致，且与人物名占位用途一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:35",
+      "evidence_rows": [
+        1154
+      ],
+      "source_excerpt": "\\x01@I asked",
+      "reason": "核对 1154：该控制串位于句首，是人物名占位符，应精确保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1154 开头为 \\x01@I asked，\\x01@I 是句首人物名占位符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "占位控制串应原样保留，不译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；edits 补为精确 text 范围，不扩展到普通句首文本。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与其他人物名占位控制串处理一致。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:37",
+      "evidence_rows": [
+        1182
+      ],
+      "source_excerpt": "Does \\x01@\\x03 enjoy",
+      "reason": "核对 1182：该控制串是动态名称占位符，应精确保护。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1182 中 \\x01@\\x03 位于 Does 与 enjoy 之间，属动态名称占位符。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "占位控制串应原样保留，不译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "non_translate 分类正确；edits 补为精确 text 范围，不扩展到普通正文。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e6 的控制字节前缀用法一致，并与动态名称占位处理一致。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:403",
+    "non_translate:404",
+    "non_translate:405",
+    "non_translate:33",
+    "non_translate:36",
+    "non_translate:65",
+    "non_translate:165",
+    "non_translate:184",
+    "non_translate:278",
+    "non_translate:34",
+    "non_translate:35",
+    "non_translate:37"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

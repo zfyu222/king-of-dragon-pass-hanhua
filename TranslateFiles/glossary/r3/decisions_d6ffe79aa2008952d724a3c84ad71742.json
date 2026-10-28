@@ -1,0 +1,419 @@
+{
+  "review_complete": true,
+  "review_summary": "已完成 12 条分配条目的四维审校；修正 Markanth 与 Eiritha 的译名一致性，删除两处原文未支持的 term_reason 细节；其余条目分类、性别与亲属关系无冲突。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "古墓中会说话的头颅，自称马尔坎斯马格雷恩松；后来在战斗中被展示并碎裂。"
+      },
+      "reason": "原文仅支持古墓头颅自称姓名及头颅在战斗中被展示后碎裂，未提‘氏族远祖’或‘迷惑敌人’，故修正 term_reason。",
+      "evidence_rows": [
+        1636,
+        30915,
+        30917
+      ],
+      "table": "characters",
+      "index": 10
+    },
+    {
+      "patch": {
+        "recommended_translation": "马尔坎斯之首"
+      },
+      "reason": "Markanth 与 e1 统一为‘马尔坎斯’，修正原译‘马坎斯’漏 r 音且不一致。",
+      "evidence_rows": [
+        32433
+      ],
+      "table": "terms",
+      "index": 1061
+    },
+    {
+      "patch": {
+        "recommended_translation": "艾瑞莎之乳",
+        "term_reason": "32407 宝藏列表中以艾瑞莎命名的物品。"
+      },
+      "reason": "Eiritha 与 e3 统一为‘艾瑞莎’，并同步 term_reason 避免旧译残留。",
+      "evidence_rows": [
+        32407
+      ],
+      "table": "terms",
+      "index": 1044
+    },
+    {
+      "patch": {
+        "recommended_translation": "艾瑞莎之枝",
+        "term_reason": "32408 宝藏列表中以艾瑞莎命名的枝状物品。"
+      },
+      "reason": "Eiritha 与 e3 统一为‘艾瑞莎’，并将‘枝条’调整为更自然的物品名‘之枝’。",
+      "evidence_rows": [
+        32408
+      ],
+      "table": "terms",
+      "index": 1045
+    },
+    {
+      "patch": {
+        "term_reason": "Arim 的双胞胎女儿之一，Varstapoor 的双胞胎姐妹，被称为女祭司，并与 Varstapoor 共享地震力量。"
+      },
+      "reason": "原文只称 Vestenbora 为女祭司并与 Varstapoor 共享魔法/地震力量，未提 Maran Gor，故修正 term_reason。",
+      "evidence_rows": [
+        1736,
+        1740
+      ],
+      "table": "characters",
+      "index": 17
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:10",
+      "evidence_rows": [
+        1636,
+        30915,
+        30917
+      ],
+      "source_excerpt": "his name was Markanth Margrainsson",
+      "reason": "核对古墓头颅自称姓名及战斗中碎裂的原文；修正 term_reason 中未支持的远祖与迷惑细节。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "1636 仅说明古墓头颅自称 Markanth Margrainsson；30915/30917 说明头颅在战斗中被展示后碎裂，未提‘氏族远祖’或‘迷惑敌人’，故修正 term_reason。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Markanth Margrainsson 音译作‘马尔坎斯马格雷恩松’，无间隔号，符合专名音译风格。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表，proper_name/required，男性由‘his name’可证。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "作为 Markanth 全名基准；e2 已改为‘马尔坎斯之首’与之统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1061",
+      "evidence_rows": [
+        32433
+      ],
+      "source_excerpt": "Head of Markanth",
+      "reason": "宝藏列表中的具名头颅；统一 Markanth 译名并保留物品名风格。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32433 为宝藏列表中的具名头颅，指 Markanth 的头。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译‘马坎斯之首’漏 r 音且与 e1‘马尔坎斯’不一致，改为‘马尔坎斯之首’。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms/物品分类正确；作为具名宝藏条目，game_term/reference 保留，短名‘首/头颅’仍有风格选择空间。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "Markanth 统一为‘马尔坎斯’，与 e1 全名一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:12",
+      "evidence_rows": [
+        1694,
+        1695
+      ],
+      "source_excerpt": "who the plainsmen worship under the false name of Eiritha",
+      "reason": "确认 Eiritha 是平原民对 Uralda 的误称，并作为物品名中的专名基准。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1694/1695 表明 Eiritha 是平原民对 Uralda 的误称。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘艾瑞莎’作为专名音译保留，无间隔号；作为 e4/e5 的共同词根。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表，proper_name/required，性别女性按神祇名与上下文保留。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "Eiritha 统一为‘艾瑞莎’；e4/e5 已据此修正。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1044",
+      "evidence_rows": [
+        32407
+      ],
+      "source_excerpt": "Eiritha's Paps",
+      "reason": "宝藏列表中的具名物品；Eiritha 译名需与 e3 统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32407 为宝藏列表中的具名物品，Eiritha 为专名，Paps 在此作古老词义的乳房/乳头状圣物名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译‘艾里塔之乳’与 e3 的 Eiritha 译名不一致；改为‘艾瑞莎之乳’，保留‘之乳’的古老物品名风格。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms/物品分类正确；作为具名宝藏条目，game_term/reference 保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "Eiritha 统一译作‘艾瑞莎’，与 e3 及 e5 一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:1045",
+      "evidence_rows": [
+        32408
+      ],
+      "source_excerpt": "Eiritha's Switch",
+      "reason": "宝藏列表中的具名枝条；统一 Eiritha 译名并调整物品名搭配。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "32408 为宝藏列表中的具名物品；Switch 在此指枝条/枝状器物。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "原译‘艾里塔枝条’与 e3 不一致且搭配生硬；改为‘艾瑞莎之枝’，统一专名并保持物品名风格。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "terms/物品分类正确；作为具名宝藏条目，game_term/reference 保留。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "Eiritha 统一为‘艾瑞莎’，与 e3/e4 一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:14",
+      "evidence_rows": [
+        1731,
+        1740,
+        1760,
+        7273
+      ],
+      "source_excerpt": "a tribal king named Arim",
+      "reason": "核对 Arim 的部族王、双胞胎之父与 Tarsh 奠基者身份。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1731 称 Arim 为部族王；1740 称双胞胎之父；1760 明确称其为 Tarsh 奠基者；7273 称 Tarsh 国王。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘阿里姆’音译统一，无间隔号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表，proper_name/required，男性王，分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e7 配偶、e8/e9 子女及 e10-e12 王系关系无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "characters:15",
+      "evidence_rows": [
+        1731,
+        1733
+      ],
+      "source_excerpt": "Sorana the Priestess, or Sorana Tor",
+      "reason": "确认 Sorana Tor 的别名、身份与配偶关系。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1731/1733 表明 Sorana Tor 又称 Sorana the Priestess，为 Arim 妻子、大地魔法师。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘索拉娜托尔’音译统一，无间隔号；全名别名保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表，proper_name/required，女性，分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e6 Arim 的配偶关系一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:16",
+      "evidence_rows": [
+        1736,
+        1740,
+        1753,
+        2086
+      ],
+      "source_excerpt": "Varstapoor and Vestenbora, who have miraculous earthquake powers",
+      "reason": "核对 Varstapoor 的双胞胎、地震力量与王位关系。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1736 表明 Varstapoor 与 Vestenbora 为双胞胎且有地震力量；1740/1753 表明其为 Tarsh 国王；2086 为名单名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘瓦斯塔普尔’音译统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表，proper_name/required，男性王，分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e6 父子、e9 双胞胎关系一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:17",
+      "evidence_rows": [
+        1736,
+        1740
+      ],
+      "source_excerpt": "Vestenbora the priestess",
+      "reason": "核对 Vestenbora 的双胞胎、女祭司身份与共享力量；删除未支持的 Maran Gor 细节。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "1736/1740 表明 Vestenbora 为 Arim 双胞胎女儿、Varstapoor 双胞胎姐妹、女祭司，并与 Varstapoor 共享地震/魔法力量；未提 Maran Gor，故修正 term_reason。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘维斯滕博拉’音译统一。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表，proper_name/required，女性，分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e6 Arim、e8 Varstapoor 的双胞胎关系一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:18",
+      "evidence_rows": [
+        1753,
+        1754,
+        1760,
+        2087
+      ],
+      "source_excerpt": "His son, Ovartien Twinson, has been chosen to succeed him",
+      "reason": "核对 Ovartien Twinson 的继位、Tarsh 王位与劫掠 Sylila。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1753/1754 表明 Ovartien Twinson 为 Varstapoor 之子并继位；1760 称其为 Tarsh 国王并劫掠 Sylila；2087 名单名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘奥瓦蒂恩特温森’音译统一，无间隔号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表，proper_name/required，男性王，分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e8 Varstapoor 父子、e11 Yarandros 父子关系一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:19",
+      "evidence_rows": [
+        1764,
+        1766,
+        1777,
+        2088
+      ],
+      "source_excerpt": "Ovartien’s son, Yarandros, has stolen some of the Horse-Spawn breeding stock",
+      "reason": "核对 Yarandros 的父子关系、夺马引发战争与王位。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1764 表明 Yarandros 为 Ovartien 之子并盗取 Horse-Spawn 良马引发战争；1766 表明其成为 Tarsh 国王；1777 称 Orios 之父为 Yarandros Charge-Crazy；2088 名单名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘亚兰多斯’音译简洁统一；未采用候选‘亚兰卓斯’。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表，proper_name/required，男性王，分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e10 Ovartien 父子、e12 Orios 父子关系一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:20",
+      "evidence_rows": [
+        1777,
+        1778,
+        2089
+      ],
+      "source_excerpt": "The present Tarshite king is Orios Longarms",
+      "reason": "核对 Orios Longarms 的现任王身份与父子关系。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1777/1778 表明 Orios Longarms 为现任 Tarsh 国王、Yarandros 之子；2089 名单名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘长臂奥里奥斯’采用绰号前置格式，符合中文史诗称谓习惯；无间隔号。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "characters 表，proper_name/required，男性王，分类正确。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e11 Yarandros 父子关系一致；Orios Longarms 译名未与其他条目冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:10",
+    "terms:1061",
+    "characters:12",
+    "terms:1044",
+    "terms:1045",
+    "characters:14",
+    "characters:15",
+    "characters:16",
+    "characters:17",
+    "characters:18",
+    "characters:19",
+    "characters:20"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

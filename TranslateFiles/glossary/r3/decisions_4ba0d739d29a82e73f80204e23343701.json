@@ -1,0 +1,203 @@
+{
+  "review_complete": true,
+  "review_summary": "已逐条核对全部分配的 6 条术语的来源、译名、分类与一致性；保留 Pent/彭特、Pentans/彭特人、Sylila/西利拉、Goldhorses/金马、Charge-crazy/冲锋狂；Grazers 统一为牧马族，并补充其自称/他称范围。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "term_reason": "马民部落（Horse-Spawn）的自称/他称；Tarshites 称其为 Grazers，Feathered Horse Queen 要求外人使用此自称，并与 Tarsh 结盟。"
+      },
+      "reason": "原 term_reason 只覆盖 Tarshites 的他称，未覆盖 21849 明确的自称说明；补齐适用范围。",
+      "evidence_rows": [
+        1753,
+        21849
+      ],
+      "table": "terms",
+      "index": 110
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:105",
+      "evidence_rows": [
+        1746,
+        1747,
+        1753
+      ],
+      "source_excerpt": "an inhospitable land called Pent",
+      "reason": "Pent 是北方不毛之地，作为地名音译为彭特；与 Pentans 彭特人保持词干一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1746 原文为 an inhospitable land called Pent；1747/1753 亦称其地为 Pent。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "彭特是 Pent 的地名音译，简洁且与 Pentans 译名共享词干。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Pent 在原文中为北方之地，归入地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e2 的彭特人保持 Pent/彭特 词干一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:106",
+      "evidence_rows": [
+        1746,
+        1747
+      ],
+      "source_excerpt": "the Pentans will keep coming south",
+      "reason": "Pentans 指来自 Pent 的游牧人群，译为彭特人。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1746 出现 the Pentans will keep coming south；1747 亦作 Pentans。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "彭特人为 Pentans 的族称译法，保留专名 Pent 的译音。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Pentans 指来自 Pent 的游牧人群，归入种族。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e1 的彭特地名译法一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:109",
+      "evidence_rows": [
+        1753,
+        1754
+      ],
+      "source_excerpt": "the part of the Lunar Empire called Sylila",
+      "reason": "Sylila 为月帝国属地，音译西利拉。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1753/1754 均称 Sylila 为 Lunar Empire 的一部分。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "西利拉为 Sylila 的地名音译，保留。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Sylila 是月帝国属地，归入地名。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此一条 Sylila，译名无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:110",
+      "evidence_rows": [
+        1753,
+        2098,
+        12942,
+        19833,
+        21849,
+        21852
+      ],
+      "source_excerpt": "you must call us what we call ourselves — Grazers",
+      "reason": "保留牧马族；原 term_reason 仅覆盖他称，已补为自称/他称并覆盖与 Horse-Spawn 同指的范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1753 称 Tarshites 把 Horse-Spawn 叫作 Grazers；21849 明言 Grazers 为其自称；12942/19833/21852 亦用此族称。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "牧马族作为族称，兼顾其马民身份；排除易误解的食草者和过泛的放牧者。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Grazers 是 Horse-Spawn 的族称，归入种族。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "统一采用牧马族，不再混用格拉泽人/放牧者/食草者/牧马者；与 Horse-Spawn 的译名区分。"
+        }
+      }
+    },
+    {
+      "ref": "terms:112",
+      "evidence_rows": [
+        1773,
+        1775,
+        1776
+      ],
+      "source_excerpt": "He breeds magical Goldhorses",
+      "reason": "Goldhorses 是 Yarandros 培育的魔法马，译为金马。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1773/1775/1776 均作 magical Goldhorses，由 Yarandros 培育。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "金马保留 Gold 的语素，作为特异马种术语简洁可辨。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Goldhorses 是魔法马种/坐骑，按游戏术语归入其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批 Goldhorses 均译金马，无变体。"
+        }
+      }
+    },
+    {
+      "ref": "terms:113",
+      "evidence_rows": [
+        1773,
+        1774,
+        1775
+      ],
+      "source_excerpt": "The people of Tarsh call him “Charge-crazy,”",
+      "reason": "Charge-crazy 是 Tarsh 人对 Yarandros 的绰号，译冲锋狂。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1773/1774/1775 均载 Tarsh 人称 Yarandros 为 “Charge-crazy”。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "冲锋狂保留核心“冲锋”，并体现 crazy 的绰号色彩。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Charge-crazy 是人物绰号，不是普通形容词，归入其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "核心译法“冲锋”与族内候选 Charge 一致，不将普通 charge 扩展为全局禁翻。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:105",
+    "terms:106",
+    "terms:109",
+    "terms:110",
+    "terms:112",
+    "terms:113"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

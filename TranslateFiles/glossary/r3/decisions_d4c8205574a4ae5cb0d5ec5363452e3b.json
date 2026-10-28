@@ -1,0 +1,346 @@
+{
+  "review_complete": true,
+  "review_summary": "已复核全部11条术语。Unholy Trio、Cleansing Wind、Bad Wind、Chaos-Scourer、Enkand the Splitter、Vostoo the Grand、walktapus、Garland of Reeds、Vivamort及Bit That Bound Vivamort的译名均可保留；修正Thanatar的分类与释义，并修正Bit That Bound Vivamort释义中无原文依据的“氏族宝物”表述。未新增、隔离或放宽条目。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "category_path": "其他",
+        "term_reason": "原文称凶手属于崇拜Thanatar的混沌教派，该教派以窃头施邪术闻名；33856又以Thanatar之名指混沌神崇拜，故Thanatar是神名。"
+      },
+      "reason": "Thanatar为混沌神名而非组织本身；原term_reason把Thanatar误作cult，且分类组织不贴合神名用法。",
+      "evidence_rows": [
+        17220,
+        33856
+      ],
+      "table": "terms",
+      "index": 521
+    },
+    {
+      "patch": {
+        "term_reason": "原文称Humakt用此Bit束缚吸血鬼之神Vivamort；9322所说可赌的是此物的一部分，未称氏族宝物。"
+      },
+      "reason": "9322只说明此物用于束缚Vivamort并可赌其一部分，未称其为氏族宝物；修正释义以贴合原文。",
+      "evidence_rows": [
+        9322,
+        32394
+      ],
+      "table": "terms",
+      "index": 911
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:520",
+      "evidence_rows": [
+        17111,
+        25412
+      ],
+      "source_excerpt": "She is one of the Unholy Trio.",
+      "reason": "Unholy Trio为三神组合专名，译名与分类可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "17111明确Malia为Unholy Trio之一；25412称其为三神组合。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“不洁三神”准确表达Unholy Trio，且与多数候选一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "条目指三名神祇组成的固定组合，归入组织可表达该群体，类别合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "17111与25412均以同一专名指此三神组合，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:521",
+      "evidence_rows": [
+        17220,
+        33856
+      ],
+      "source_excerpt": "in the name of Thanatar",
+      "reason": "Thanatar是混沌神名，原分类与释义需修正。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "17220说明凶手属于Chaos cult of Thanatar，33856称以其名义行为；原term_reason把Thanatar直说成cult，已修正。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“塔纳塔尔”为音译专名，符合统一译名。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "Thanatar在此为混沌神名/崇拜对象，不是组织本身，category_path由组织改为其他。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "两条证据均以Thanatar指同一混沌崇拜对象，译名不变。"
+        }
+      }
+    },
+    {
+      "ref": "terms:522",
+      "evidence_rows": [
+        17257,
+        24697
+      ],
+      "source_excerpt": "When he fights for us, he is the Cleansing Wind.",
+      "reason": "Cleansing Wind为Urox称号，译名统一。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "17257将Cleansing Wind明确为Urox战斗时的称号；24697亦称Urox为Cleansing Wind。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“净化之风”准确表达Cleansing Wind的称号义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为Urox的别称/称号，归入其他并保持专名required，合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "17257与24697均使用同一称号，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:523",
+      "evidence_rows": [
+        17257
+      ],
+      "source_excerpt": "When he bullies us, he is the Bad Wind.",
+      "reason": "Bad Wind为Urox贬义称号，译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "17257把Bad Wind明确为Urox欺凌时的称号。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“恶风”对应Bad Wind，并与“净化之风”形成对举。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为Urox的贬义称号，归入其他，类别合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅见17257，但与同条Urox称号体系一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:524",
+      "evidence_rows": [
+        17260
+      ],
+      "source_excerpt": "Beneath his earth-pounders Chaos-Scourer trod Enkand the Splitter.",
+      "reason": "Chaos-Scourer为Urox称号，译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "17260以Chaos-Scourer为主语称呼Urox，属Urox称号。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“扫荡混沌者”保留Chaos与scourer的动作/称号义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "称号专名归入其他，类别合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与Cleansing Wind、Bad Wind同属Urox称号，译名策略一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:525",
+      "evidence_rows": [
+        17260
+      ],
+      "source_excerpt": "Enkand the Splitter",
+      "reason": "Enkand the Splitter为具名对象，译名与分类可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "17260称Enkand the Splitter被Chaos-Scourer踩踏，是具名对象。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“裂者恩坎德”将the Splitter意译、Enkand音译，符合专名处理。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名人物/对象归入身份，类别合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此条，与Urox称号条目无冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:526",
+      "evidence_rows": [
+        17260
+      ],
+      "source_excerpt": "On his head-spikes Vostoo the Grand was gored.",
+      "reason": "Vostoo the Grand为具名人物，译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "17260称Vostoo the Grand被Urox头角刺穿，是具名对象。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“伟大的沃斯图”将the Grand意译、Vostoo音译，符合专名规则。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名人物归入身份，类别合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "本批仅此条，无译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:527",
+      "evidence_rows": [
+        17264,
+        17319,
+        17279
+      ],
+      "source_excerpt": "That terrible walktapus is still stalking our tula, attacking our cattle.",
+      "reason": "walktapus为Chaos怪物种族名，译名与分类可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "17264称walktapus仍在tula游荡并袭击牲畜；17319称其为常见的Chaos怪物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“行走章鱼”对应walktapus的构词，作为怪物名简洁可识别。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为Chaos怪物种族名归入种族，类别合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "17264、17279、17319均用walktapus指同一怪物，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:528",
+      "evidence_rows": [
+        17287,
+        32422
+      ],
+      "source_excerpt": "a Garland of Reeds, which ensures friendship with the elves",
+      "reason": "Garland of Reeds为具名物品，译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "17287称Garland of Reeds能确保与精灵的友谊；32422为同名条目。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“芦苇花环”直译Garland of Reeds，物品名简洁。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名物品归入物品，类别合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "17287与32422同名同指，译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:532",
+      "evidence_rows": [
+        17590,
+        9322
+      ],
+      "source_excerpt": "Vampires serve the Chaos god Vivamort",
+      "reason": "Vivamort为混沌神名，译名可保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "17590称Vivamort为Chaos god，吸血鬼服侍他；9322称Vampire God。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“维瓦莫特”为音译专名，前后一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为混沌神名归入其他，类别合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "17590与9322均指同一神祇，terms与characters候选不造成译名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:911",
+      "evidence_rows": [
+        9322,
+        32394
+      ],
+      "source_excerpt": "Bit That Bound Vivamort, with which Humakt restrained the Vampire God",
+      "reason": "Bit That Bound Vivamort为具名物品；释义中“氏族宝物”无出处，需修正。",
+      "checks": {
+        "source": {
+          "status": "corrected",
+          "evidence": "9322说明此Bit用于Humakt束缚Vampire God，32394为同名物品；原term_reason中“氏族宝物”无直接出处，已修正。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“束缚维瓦莫特的嚼子”把Bit按马嚼子义译出，Vivamort音译固定。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "具名物品归入物品，类别合法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "9322与32394名称一致，译名统一。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:520",
+    "terms:521",
+    "terms:522",
+    "terms:523",
+    "terms:524",
+    "terms:525",
+    "terms:526",
+    "terms:527",
+    "terms:528",
+    "terms:532",
+    "terms:911"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

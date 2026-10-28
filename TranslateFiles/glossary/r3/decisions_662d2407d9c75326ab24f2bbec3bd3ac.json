@@ -1,0 +1,116 @@
+{
+  "review_complete": true,
+  "review_summary": "完成 e1-e3 审校：battle magic 统一作“战斗魔法”；fertility magic 采用“丰产魔法”，并将分类修正为“技能”；Ernalda 统一作“厄纳尔达”。无隔离或新增条目。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "category_path": "技能"
+      },
+      "reason": "fertility magic 与 battle magic 同属游戏中的魔法类型/能力，归入“技能”比“其他”更准确，并与 e1 分类一致。",
+      "evidence_rows": [
+        179,
+        10169
+      ],
+      "table": "terms",
+      "index": 43
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:42",
+      "evidence_rows": [
+        178,
+        38,
+        9357
+      ],
+      "source_excerpt": "Our battle magic didn’t help us at all in that last combat.",
+      "reason": "源文指战斗中所用的魔法；候选均作“战斗魔法”，作为机制名保留。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "Ordinal 178 明确出现 battle magic，且指上一场战斗中的魔法；源词匹配。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "候选一致作“战斗魔法”，与战斗/决斗语境相符。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=技能，battle magic 是战斗用魔法/能力，归入技能类可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "e1 的全部候选译名均为“战斗魔法”，无变体冲突。"
+        }
+      }
+    },
+    {
+      "ref": "terms:43",
+      "evidence_rows": [
+        179,
+        10169,
+        28048
+      ],
+      "source_excerpt": "Our fertility magic is strong because we plant crops and raise animals every year.",
+      "reason": "fertility magic 指靠耕作饲养维持的丰产魔法；统一为“丰产魔法”，不采用过窄的“生育魔力”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "Ordinal 179 出现 fertility magic，并说明其因耕作饲养而强盛；源词匹配。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "Ordinal 179 显示与作物牲畜相关，宜作“丰产魔法”；“生育魔力”过窄，不采用。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "category_path 由“其他”改为“技能”：fertility magic 与 battle magic 同属魔法类型/能力，归技能类更一致。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "提取候选存在“丰产魔法/生育魔力”分歧，但按原文耕作饲养语境统一为“丰产魔法”。"
+        }
+      }
+    },
+    {
+      "ref": "terms:44",
+      "evidence_rows": [
+        33352,
+        3349,
+        33874,
+        28496
+      ],
+      "source_excerpt": "Ernalda (er-NAHL-duh)",
+      "reason": "Ernalda 为大地母神专名；据发音提示及多数原文/候选统一为“厄纳尔达”。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "Ordinal 33352 给出 Ernalda 及发音 er-NAHL-duh；Ordinal 3349 称其为 Earth Mother，确为女神专名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "发音对应“厄纳尔达”，且多数原文与 related_terms 使用该译名；其他音译变体不采用。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "category_path=其他用于神祇专名，term_kind=proper_name、required，合法且非人物身份条目。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "候选有厄尔纳尔达/厄娜尔达/埃尔纳尔达等变体，但按出现频次和 related_terms 统一为“厄纳尔达”。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:42",
+    "terms:43",
+    "terms:44"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

@@ -1,0 +1,129 @@
+{
+  "review_complete": true,
+  "review_summary": "审校 3 个角色专名：保留“羽马女王”，修正温科特父名译法与乌罗克斯称号语序；分类、性别与证据一致。",
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "温科特奥兰斯之子",
+        "term_reason": "温科特为传说国王；Orlanthsson 为父名，意为“奥兰斯之子”，原文 34272 亦列为 Jorganos Archer 一系先祖。"
+      },
+      "reason": "Orlanthsson 是父名，不能仅音译为“奥兰斯松”；按原文含义和相关父名条目统一为“奥兰斯之子”。",
+      "evidence_rows": [
+        1650,
+        34272
+      ],
+      "table": "characters",
+      "index": 11
+    },
+    {
+      "patch": {
+        "recommended_translation": "风暴公牛乌罗克斯",
+        "term_reason": "Urox 即风暴公牛；原文 1696 称战锤刻有其圣符，用于对抗 Chaos，称号与名同指此神。"
+      },
+      "reason": "源文是名 Urox 加同位称号 the Storm Bull；中文按称号加名排列更自然，并保持既有“乌罗克斯”“风暴公牛”译名。",
+      "evidence_rows": [
+        1696
+      ],
+      "table": "characters",
+      "index": 13
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "characters:11",
+      "evidence_rows": [
+        1650,
+        34272
+      ],
+      "source_excerpt": "King Vingkot Orlanthsson",
+      "reason": "原文明确为传说国王温科特；Orlanthsson 是父名，应译出“奥兰斯之子”而非纯音译。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1650 与 34272 均明确出现 King Vingkot Orlanthsson，且 34272 说明其家族谱系。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "Orlanthsson 为父名，意为奥兰斯之子；原译“奥兰斯松”弱化了含义，已改为“温科特奥兰斯之子”。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "原文为传说国王，属人物专名；proper_name 与 required 分类成立。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "与相关 Drorgalar Orlanthsson 的“奥兰斯之子”处理对齐，避免同一父名在人物名中采用不同译法。"
+        }
+      }
+    },
+    {
+      "ref": "characters:13",
+      "evidence_rows": [
+        1696
+      ],
+      "source_excerpt": "Urox the Storm Bull",
+      "reason": "Urox 与称号 the Storm Bull 同指风暴公牛神；中文顺序调整为“风暴公牛乌罗克斯”更自然，并保留两个既有译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "1696 明确称战锤刻有 Urox the Storm Bull 的圣符，并用于对抗 Chaos。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "源文为名 Urox 加称号 the Storm Bull；中文按“风暴公牛乌罗克斯”排列更自然，并保留“乌罗克斯”和“风暴公牛”两个既有译名。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "Urox 为神祇/人物专名，称号指向同一神；proper_name 与 required 成立。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "最终译名保留相关术语“乌罗克斯”与“风暴公牛”，与拆分条目译名一致。"
+        }
+      }
+    },
+    {
+      "ref": "characters:23",
+      "evidence_rows": [
+        2084,
+        2098,
+        21758,
+        21788,
+        22757,
+        22758,
+        22908
+      ],
+      "source_excerpt": "The Feathered Horse Queen",
+      "reason": "各证据行均指向马裔/马民统治者的同一称号；译名“羽马女王”简洁且符合其统治者身份。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2084、2098、21758、21788、22757、22758 及 corpus 22908 均指向同一称号，22908 并称其为有大地力量的女人。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "“羽马女王”简洁对应 Feathered Horse Queen；原文语境为马裔统治者，非普通王后。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "该称号指马裔/马民统治者，属人物专名；proper_name 与 required 成立。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各证据行均作 Feathered Horse Queen，译名统一；与源文中的 queen of feathers 预言措辞不冲突。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "characters:11",
+    "characters:13",
+    "characters:23"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

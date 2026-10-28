@@ -1,0 +1,500 @@
+{
+  "review_complete": true,
+  "review_summary": "已复核全部 11 条 non_translate 条目：确认控制串、printf 占位符、内部标签、#KoDP/KoDP 品牌缩写及 Facebook URL 均保持原样；通过 edits 为条目补充明确的适用域，未新增、隔离或放行无匹配项。",
+  "acknowledged_findings": [
+    "F0233",
+    "F0234",
+    "F0235"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "29000、29002 中为嵌入叙述的控制串，字符序列 \\x01@\\x0F 须在任何位置原样保留。"
+        }
+      },
+      "reason": "为控制串补 text 适用范围，覆盖 29000、29002 两处嵌入用法。",
+      "evidence_rows": [
+        29000,
+        29002
+      ],
+      "table": "non_translate",
+      "index": 323
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "28651 整条记录即内部音乐/事件标签 MythMusic，仅在完整标签时保留。"
+        }
+      },
+      "reason": "为独立内部标签补 whole_record，避免误匹配正文中的同形词。",
+      "evidence_rows": [
+        28651
+      ],
+      "table": "non_translate",
+      "index": 329
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "28996 整条记录即内部事件与音效标签 CallToArms，仅在完整标签时保留。"
+        }
+      },
+      "reason": "为独立内部标签补 whole_record，避免误匹配正文。",
+      "evidence_rows": [
+        28996
+      ],
+      "table": "non_translate",
+      "index": 330
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "29228、29514、33056、33062 中为嵌入句子的 printf 字符串占位符，31349 独立成条，均须原样保留。"
+        }
+      },
+      "reason": "为 printf 占位符补 text 适用范围，覆盖独立与嵌入用例。",
+      "evidence_rows": [
+        29228,
+        29514,
+        31349,
+        33056,
+        33062
+      ],
+      "table": "non_translate",
+      "index": 331
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "31230 整条记录即带加号的格式串 %s +，仅在完整记录时保留。"
+        }
+      },
+      "reason": "为完整格式串补 whole_record。",
+      "evidence_rows": [
+        31230
+      ],
+      "table": "non_translate",
+      "index": 453
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "31231 整条记录即带减号的格式串 %s -，仅在完整记录时保留。"
+        }
+      },
+      "reason": "为完整格式串补 whole_record。",
+      "evidence_rows": [
+        31231
+      ],
+      "table": "non_translate",
+      "index": 454
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "33062、33063 中为嵌入句子的 printf 整数占位符，须原样保留。"
+        }
+      },
+      "reason": "为 printf 整数占位符补 text 适用范围，覆盖嵌入用法。",
+      "evidence_rows": [
+        33062,
+        33063
+      ],
+      "table": "non_translate",
+      "index": 332
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "33061、33068 中 #KoDP 为句首社交标签，带井号的品牌标签须原样保留。"
+        }
+      },
+      "reason": "为带井号的社交标签补 text 适用范围，覆盖句首嵌入。",
+      "evidence_rows": [
+        33061,
+        33068
+      ],
+      "table": "non_translate",
+      "index": 333
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "text",
+          "case_sensitive": true,
+          "reason": "33124 中 KoDP 是游戏名缩写，31288 的 #KoDP 也含该缩写；作为品牌缩写须原样保留。"
+        }
+      },
+      "reason": "为游戏名缩写补 text 适用范围，覆盖正文与 #KoDP 内用法。",
+      "evidence_rows": [
+        33124,
+        31288
+      ],
+      "table": "non_translate",
+      "index": 334
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "33064 整条记录为 Facebook 页面 URL，仅在完整记录时保留。"
+        }
+      },
+      "reason": "为完整 URL 补 whole_record。",
+      "evidence_rows": [
+        33064
+      ],
+      "table": "non_translate",
+      "index": 336
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "literal_context",
+          "case_sensitive": true,
+          "prefix": "page ",
+          "suffix": " or",
+          "reason": "33087 中该 Facebook 链接嵌在 'page ' 与 ' or' 之间，仅此上下文保留。"
+        }
+      },
+      "reason": "为嵌入 URL 补 literal_context，按实际 page / or 边界限定。",
+      "evidence_rows": [
+        33087
+      ],
+      "table": "non_translate",
+      "index": 339
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:323",
+      "evidence_rows": [
+        29000,
+        29002
+      ],
+      "source_excerpt": "\\x01@\\x0F",
+      "reason": "控制串，保持原样；已补适用范围。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "29000、29002 的原文均含连续控制串 \\x01@\\x0F，条目 source 与之一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为 non_translate 条目保持 \\x01@\\x0F，未改写控制字节。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "该串是事件叙述中的运行时控制标记，非普通词；已补 text 适用域，确保嵌入位置也受保护。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 style 中保留 \\xNN 控制字节的规则一致，无跨条冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:329",
+      "evidence_rows": [
+        28651
+      ],
+      "source_excerpt": "MythMusic",
+      "reason": "内部音乐/事件标签，保持原样。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28651 整条原文为 MythMusic，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "内部音乐/事件标签不翻译，输出保持 MythMusic。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "作为独立内部标签属 non_translate；已补 whole_record 适用域，避免误伤正文。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "独立标签，本批无同名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:330",
+      "evidence_rows": [
+        28996
+      ],
+      "source_excerpt": "CallToArms",
+      "reason": "内部事件与音效标签，保持原样。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "28996 整条原文为 CallToArms，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "内部事件与音效标签不翻译，输出保持 CallToArms。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "作为独立内部标签属 non_translate；已补 whole_record 适用域，避免误伤正文。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "独立标签，本批无同名冲突。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:331",
+      "evidence_rows": [
+        29228,
+        29514,
+        31349,
+        33056,
+        33062
+      ],
+      "source_excerpt": "The clan mood is %s.",
+      "reason": "printf 字符串占位符，保持原样。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "29228、29514、33056、33062 均含 printf 占位符 %s，31349 为独立条目；source 与这些用例一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "%s 为格式占位符，译文保持 %s。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "printf 占位符属运行保护内容；已补 text 适用域，覆盖嵌入与独立用例。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e5、e6 中的 %s 基础占位符一致，后两者仅追加字面 +/-。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:453",
+      "evidence_rows": [
+        31230
+      ],
+      "source_excerpt": "%s +",
+      "reason": "printf 格式串，保留原样。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "31230 整条原文为 %s +，与条目一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "格式串 %s + 原样保留，%s 与加号均未翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "带加号的 printf 格式串属 non_translate；已补 whole_record 适用域。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "沿用 e4 的 %s 写法，并保留加号运算符。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:454",
+      "evidence_rows": [
+        31231
+      ],
+      "source_excerpt": "%s -",
+      "reason": "printf 格式串，保留原样。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "31231 整条原文为 %s -，与条目一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "格式串 %s - 原样保留，%s 与减号均未翻译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "带减号的 printf 格式串属 non_translate；已补 whole_record 适用域。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "沿用 e4 的 %s 写法，并保留减号运算符。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:332",
+      "evidence_rows": [
+        33062,
+        33063
+      ],
+      "source_excerpt": "for %d years",
+      "reason": "printf 整数占位符，保持原样。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33062、33063 均含 for %d years 结构，条目 %d 与原文一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "%d 为整数占位符，译文保持 %d。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "printf 整数占位符属运行保护内容；已补 text 适用域。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e4 的 %s 占位符区分清楚，未混用类型。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:333",
+      "evidence_rows": [
+        33061,
+        33068
+      ],
+      "source_excerpt": "#KoDP I'm playing King of Dragon Pass, a unique storytelling game for iOS http://a-sharp.com/kodp",
+      "reason": "社交品牌标签，保持原样。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33061、33068 均以 #KoDP 开头，条目 source 与原文一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "社交标签 #KoDP 原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "带井号的品牌标签属 non_translate；已补 text 适用域，覆盖句首嵌入。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e9 的 KoDP 缩写拼写一致，保留同一品牌写法。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:334",
+      "evidence_rows": [
+        33124,
+        31288
+      ],
+      "source_excerpt": "While the basic goal of KoDP is kingly victory",
+      "reason": "游戏名缩写，保持原样。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33124 的正文含 KoDP，31288 的 #KoDP 标签也含该缩写。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "作为游戏名品牌缩写，译文保持 KoDP。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "KoDP 是 King of Dragon Pass 的缩写/品牌写法，非普通词；已补 text 适用域，覆盖正文与标签内用法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e8 的 #KoDP 保持 KoDP 拼写，未改缩写。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:336",
+      "evidence_rows": [
+        33064
+      ],
+      "source_excerpt": "http://www.facebook.com/ASharpLLC",
+      "reason": "Facebook 页面 URL，保持原样。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33064 整条原文为 http://www.facebook.com/ASharpLLC，与条目一致。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "URL 原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "完整 Facebook 页面 URL 属 non_translate；已补 whole_record 适用域。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e11 的 ASharpLLC 页面路径一致，前者带协议完整形式，后者为域名形式。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:339",
+      "evidence_rows": [
+        33087
+      ],
+      "source_excerpt": "www.facebook.com/ASharpLLC",
+      "reason": "嵌入句中的 Facebook 链接，保持原样。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "33087 原文含连续链接 www.facebook.com/ASharpLLC。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "域名链接原样保留。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "嵌入句子的 URL 属 non_translate；已补 literal_context，限定紧邻 page 与 or 的用法。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 e10 的 ASharpLLC 路径一致，未改写大小写。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:323",
+    "non_translate:329",
+    "non_translate:330",
+    "non_translate:331",
+    "non_translate:453",
+    "non_translate:454",
+    "non_translate:332",
+    "non_translate:333",
+    "non_translate:334",
+    "non_translate:336",
+    "non_translate:339"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

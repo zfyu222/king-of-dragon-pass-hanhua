@@ -1,0 +1,455 @@
+{
+  "review_complete": true,
+  "review_summary": "完成 e1-e12 术语审校；修正 e1/e2 英雄任务分类与译名、e3 组织分类、e7 缚灵体义项与物品分类、e11/e12 称号译名；确认 f1、f2 为同指或单复数变体，保留共享译名。",
+  "acknowledged_findings": [
+    "F0391",
+    "F0392"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "recommended_translation": "查拉娜阿罗伊治愈伤痕",
+        "category_path": "其他",
+        "term_reason": "英雄任务名；25853/33444 支持其为可执行的 heroquest，并列出降低疾病发生率的效果。"
+      },
+      "reason": "修正 Chalana Arroy 音译（去间隔号、用‘娜’）并将英雄任务名归为‘其他’。",
+      "evidence_rows": [
+        25853,
+        33444
+      ],
+      "table": "terms",
+      "index": 183
+    },
+    {
+      "patch": {
+        "recommended_translation": "勇士胡马卡特",
+        "category_path": "其他",
+        "term_reason": "英雄任务名；7899/33444 支持其为可执行的 heroquest，并列出五名战士抵六名敌人的效果。"
+      },
+      "reason": "统一 Humakt 音译为‘胡马卡特’，并将英雄任务名归为‘其他’。",
+      "evidence_rows": [
+        7899,
+        33444
+      ],
+      "table": "terms",
+      "index": 184
+    },
+    {
+      "patch": {
+        "category_path": "组织",
+        "term_reason": "奥兰斯建立的神话部族/组织；5026/33958 指其成员与居地，33422 另见英雄任务名 Making of the Storm Tribe。"
+      },
+      "reason": "Storm Tribe 指部族/组织，不是技能；修正分类并补充术语说明。",
+      "evidence_rows": [
+        5026,
+        33422,
+        33958
+      ],
+      "table": "terms",
+      "index": 185
+    },
+    {
+      "patch": {
+        "recommended_translation": "缚灵体",
+        "category_path": "物品",
+        "term_reason": "原文 11727 定义为补充魔法的魔法物品；9265 说明是将鬼魂束缚成的灵体，故译‘缚灵体’。"
+      },
+      "reason": "按原文定义将 Spirit Fetch 归为魔法物品，并采用贴合缚鬼义的译名。",
+      "evidence_rows": [
+        9265,
+        11727
+      ],
+      "table": "terms",
+      "index": 199
+    },
+    {
+      "patch": {
+        "recommended_translation": "母牛之母",
+        "term_reason": "乌拉尔达的称号；3109/3127/31822/31847 将 Cow Mother 与 Uralda 连用，指母牛之母。"
+      },
+      "reason": "统一 Cow Mother 称号译名，与 Uralda 连用形式一致。",
+      "evidence_rows": [
+        3109,
+        3127,
+        31822,
+        31847
+      ],
+      "table": "terms",
+      "index": 215
+    },
+    {
+      "patch": {
+        "recommended_translation": "大地女神们的女王",
+        "term_reason": "厄纳尔达的称号；3231 原文称其为 Queen of the Earth Goddesses，其赐福结束闹鬼。"
+      },
+      "reason": "修正‘之后’的歧义，按 Queen 义改为‘女王’。",
+      "evidence_rows": [
+        3231
+      ],
+      "table": "terms",
+      "index": 216
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "terms:183",
+      "evidence_rows": [
+        2251,
+        25853,
+        33444
+      ],
+      "source_excerpt": "Chalana Arroy Heals the Scars",
+      "reason": "修正音译与英雄任务分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "25853 原文为 ‘Chalana Arroy Heals the Scars heroquest’，2251/33444 同名为英雄任务。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "改‘查拉纳·阿罗伊治愈伤痕’为‘查拉娜阿罗伊治愈伤痕’，按音译规范去间隔号并统一 Chalana Arroy。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "33444 将其列为英雄任务及效果，非技能，改为‘其他’。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一为‘查拉娜阿罗伊治愈伤痕’，与 2251/25853/33444 的同名任务一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:184",
+      "evidence_rows": [
+        2245,
+        7899,
+        23888,
+        33444
+      ],
+      "source_excerpt": "Humakt the Champion",
+      "reason": "统一 Humakt 译名并修正英雄任务分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7899 原文为 ‘Humakt the Champion heroquest’，23888 称其为故事名。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "改‘勇士胡马克特’为‘勇士胡马卡特’，统一 Humakt 音译。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "33444 将其列为英雄任务及效果，非技能，改为‘其他’。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "统一为‘勇士胡马卡特’，7899/23888/33444 均指同一英雄任务。"
+        }
+      }
+    },
+    {
+      "ref": "terms:185",
+      "evidence_rows": [
+        5026,
+        9919,
+        33422,
+        33958
+      ],
+      "source_excerpt": "Storm Tribe",
+      "reason": "修正为组织并补充部族义说明。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "5026 原文 ‘Storm Tribe’ 指成员关系，11298/33958 指奥兰斯建立的神话部族。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘风暴部族’与 5026/9919/33958 的部族义一致。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "该名指神话部族/组织，非技能；33422/33958 支持，改为‘组织’。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各证据均指同一 Storm Tribe；‘Making of the Storm Tribe’中的同名任务不影响组织名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:189",
+      "evidence_rows": [
+        2321
+      ],
+      "source_excerpt": "Carmanian Flute",
+      "reason": "译名与分类有原文支持。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2321 将 Carmanian Flute 列为可夺获的宝物。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘卡曼尼亚长笛’对应 Carmanian Flute，无冲突证据。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "2321 明列为 treasure，属物品。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅 2321 一例，译名与分类自洽。"
+        }
+      }
+    },
+    {
+      "ref": "terms:197",
+      "evidence_rows": [
+        2786,
+        7042,
+        18061,
+        8886
+      ],
+      "source_excerpt": "One of the giant reptiles called earthshakers",
+      "reason": "生物义明确，保留撼地兽。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "18061 定义 ‘giant reptiles called earthshakers’；2786/7042 指可骑乘、与龙亲缘的巨兽。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘撼地兽’符合 18061 的巨兽义，非普通‘地震’。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "18061/7042 均为生物，归‘种族’可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "单数 earthshaker 与复数 Earthshakers 同指该生物；8886/8888 的氏族称号为同词根派生，不改变本条生物义。"
+        }
+      }
+    },
+    {
+      "ref": "terms:198",
+      "evidence_rows": [
+        2787,
+        2788,
+        32491
+      ],
+      "source_excerpt": "Earthshaker Plow Team",
+      "reason": "独特资产名，保留撼地兽耕队。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2787/2788 称 Earthshaker Plow Team 能拉犁并增强氏族魔法；32491 列为宝藏名。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘撼地兽耕队’对应 Earthshaker Plow Team，并用 Earthshaker 的‘撼地兽’词根。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "2787/32491 表明其为可拥有的资产/宝藏，归‘物品’合理。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "与 Earthshaker 的‘撼地兽’词根一致；本名为独特资产名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:199",
+      "evidence_rows": [
+        2784,
+        9265,
+        11727,
+        13256,
+        32480
+      ],
+      "source_excerpt": "A Spirit Fetch is a magical item that replenishes our magic after we use it up.",
+      "reason": "按魔法物品/缚鬼义修正译名与分类。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "11727 定义 ‘A Spirit Fetch is a magical item’；9265 称将鬼魂束缚成 Spirit Fetch。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "改‘魂灵化身’为‘缚灵体’，以贴合 9265 的缚鬼与 11727 的魔法物品义。"
+        },
+        "category": {
+          "status": "corrected",
+          "evidence": "11727 明定义为 magical item，32480 列为宝藏，改为‘物品’。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "全条统一为‘缚灵体’；2784/2785/13256/32480 均指同一魔法灵体/物品。"
+        }
+      }
+    },
+    {
+      "ref": "terms:200",
+      "evidence_rows": [
+        2744,
+        7953,
+        32468
+      ],
+      "source_excerpt": "Sacred Clod",
+      "reason": "圣物名与分类自洽。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2744 原文 ‘the Sacred Clod’ 为氏族拒绝出售的圣物；7953/12609 可引发地震。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘圣土块’对应 2744/32468 的 Sacred Clod。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "2744/7953/32468 均表明其为独特圣物/宝藏，归‘物品’。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "2744/7953/12508/12609/32468 均指同一 Sacred Clod，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:204",
+      "evidence_rows": [
+        2772,
+        17284,
+        32392
+      ],
+      "source_excerpt": "Bell of Uralda",
+      "reason": "魔法铃名与分类自洽。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "2772 称其为每土季带来益处的魔法铃；17284 称铃声带大地符文力量。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘乌拉尔达之铃’对应 Bell of Uralda，Uralda 音译与证据一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "2772/32392 表明其为魔法宝物，归‘物品’。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "2772/17284/32392 均指同一铃，译名统一。"
+        }
+      }
+    },
+    {
+      "ref": "terms:213",
+      "evidence_rows": [
+        3249,
+        32183,
+        33876,
+        34378
+      ],
+      "source_excerpt": "Lightbringers",
+      "reason": "神话团体名与分类自洽。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3249 称 Orlanth and the Lightbringers 使多数神祇复活；32183 称 Seven Lightbringers。"
+        },
+        "translation": {
+          "status": "pass",
+          "evidence": "‘光明使者’对应 Lightbringers，符合 3249/32183/33821 的神话团体义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "3249/32183/33876 均指一组神祇/同伴，归‘组织’。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "各证据均指同一神话团体；‘光明使者探索’为派生任务名。"
+        }
+      }
+    },
+    {
+      "ref": "terms:215",
+      "evidence_rows": [
+        3109,
+        3127,
+        3386,
+        3388,
+        31822,
+        31847
+      ],
+      "source_excerpt": "the Cow Mother",
+      "reason": "统一 Uralda 称号译名。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3109/3127 称 Cow Mother 为 Uralda 称号；3388 称其赐福智慧。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "改‘牛母’为‘母牛之母’，与 3127/31822/31847 的 Uralda the Cow Mother 称号一致。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "3109/3386 中为神祇称号，归‘其他’可接受。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "全条统一为‘母牛之母’，与 3127/31822/31847 的 Uralda 称号一致。"
+        }
+      }
+    },
+    {
+      "ref": "terms:216",
+      "evidence_rows": [
+        3231
+      ],
+      "source_excerpt": "Queen of the Earth Goddesses",
+      "reason": "修正 Queen 称号歧义。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "3231 原文 ‘Ernalda, Queen of the Earth Goddesses’ 明示为厄纳尔达称号。"
+        },
+        "translation": {
+          "status": "corrected",
+          "evidence": "改‘大地女神之后’为‘大地女神们的女王’，避免‘之后’被读作‘after’，贴合 3231 的 Queen 义。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "3231 中为神祇称号，归‘其他’可接受。"
+        },
+        "consistency": {
+          "status": "pass",
+          "evidence": "仅 3231 一例，修正后称号语义自洽。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "terms:183",
+    "terms:184",
+    "terms:185",
+    "terms:189",
+    "terms:197",
+    "terms:198",
+    "terms:199",
+    "terms:200",
+    "terms:204",
+    "terms:213",
+    "terms:215",
+    "terms:216"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

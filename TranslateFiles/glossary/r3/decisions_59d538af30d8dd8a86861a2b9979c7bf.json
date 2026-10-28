@@ -1,0 +1,533 @@
+{
+  "review_complete": true,
+  "review_summary": "已审核本批全部 12 条 non_translate：均为 sceneR010 至 sceneR023 的场景记录内部标识符，现有 source 与 evidence 一致，无需翻译。原条目缺少 applicability，逐条补充为 whole_record、case_sensitive=true；未发现需隔离或新增条目。",
+  "acknowledged_findings": [
+    "F0081",
+    "F0082",
+    "F0084",
+    "F0085",
+    "F0086",
+    "F0087",
+    "F0088",
+    "F0089",
+    "F0090",
+    "F0091",
+    "F0092",
+    "F0093"
+  ],
+  "edits": [
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "7149 仅以完整标识 sceneR010 独立出现，无嵌入文本用例，按整条记录保留。"
+        }
+      },
+      "reason": "补充显式 applicability，避免将场景内部标识符当成全局禁翻词。",
+      "evidence_rows": [
+        7149
+      ],
+      "table": "non_translate",
+      "index": 124
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "7185 仅以完整标识 sceneR011 独立出现，无嵌入文本用例，按整条记录保留。"
+        }
+      },
+      "reason": "补充显式 applicability，避免将场景内部标识符当成全局禁翻词。",
+      "evidence_rows": [
+        7185
+      ],
+      "table": "non_translate",
+      "index": 125
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "7236 仅以完整标识 sceneR012 独立出现，无嵌入文本用例，按整条记录保留。"
+        }
+      },
+      "reason": "补充显式 applicability，避免将场景内部标识符当成全局禁翻词。",
+      "evidence_rows": [
+        7236
+      ],
+      "table": "non_translate",
+      "index": 137
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "7272 仅以完整标识 sceneR013 独立出现，无嵌入文本用例，按整条记录保留。"
+        }
+      },
+      "reason": "补充显式 applicability，避免将场景内部标识符当成全局禁翻词。",
+      "evidence_rows": [
+        7272
+      ],
+      "table": "non_translate",
+      "index": 138
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "7308 仅以完整标识 sceneR014 独立出现，无嵌入文本用例，按整条记录保留。"
+        }
+      },
+      "reason": "补充显式 applicability，避免将场景内部标识符当成全局禁翻词。",
+      "evidence_rows": [
+        7308
+      ],
+      "table": "non_translate",
+      "index": 139
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "7389 仅以完整标识 sceneR016 独立出现，无嵌入文本用例，按整条记录保留。"
+        }
+      },
+      "reason": "补充显式 applicability，避免将场景内部标识符当成全局禁翻词。",
+      "evidence_rows": [
+        7389
+      ],
+      "table": "non_translate",
+      "index": 140
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "7430 仅以完整标识 sceneR017 独立出现，无嵌入文本用例，按整条记录保留。"
+        }
+      },
+      "reason": "补充显式 applicability，避免将场景内部标识符当成全局禁翻词。",
+      "evidence_rows": [
+        7430
+      ],
+      "table": "non_translate",
+      "index": 141
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "7471 仅以完整标识 sceneR018 独立出现，无嵌入文本用例，按整条记录保留。"
+        }
+      },
+      "reason": "补充显式 applicability，避免将场景内部标识符当成全局禁翻词。",
+      "evidence_rows": [
+        7471
+      ],
+      "table": "non_translate",
+      "index": 142
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "7511 仅以完整标识 sceneR019 独立出现，无嵌入文本用例，按整条记录保留。"
+        }
+      },
+      "reason": "补充显式 applicability，避免将场景内部标识符当成全局禁翻词。",
+      "evidence_rows": [
+        7511
+      ],
+      "table": "non_translate",
+      "index": 143
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "7609 仅以完整标识 sceneR021 独立出现，无嵌入文本用例，按整条记录保留。"
+        }
+      },
+      "reason": "补充显式 applicability，避免将场景内部标识符当成全局禁翻词。",
+      "evidence_rows": [
+        7609
+      ],
+      "table": "non_translate",
+      "index": 144
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "7635 仅以完整标识 sceneR022 独立出现，无嵌入文本用例，按整条记录保留。"
+        }
+      },
+      "reason": "补充显式 applicability，避免将场景内部标识符当成全局禁翻词。",
+      "evidence_rows": [
+        7635
+      ],
+      "table": "non_translate",
+      "index": 145
+    },
+    {
+      "patch": {
+        "applicability": {
+          "mode": "whole_record",
+          "case_sensitive": true,
+          "reason": "7656 仅以完整标识 sceneR023 独立出现，无嵌入文本用例，按整条记录保留。"
+        }
+      },
+      "reason": "补充显式 applicability，避免将场景内部标识符当成全局禁翻词。",
+      "evidence_rows": [
+        7656
+      ],
+      "table": "non_translate",
+      "index": 146
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "ref": "non_translate:124",
+      "evidence_rows": [
+        7149
+      ],
+      "source_excerpt": "sceneR010",
+      "reason": "场景内部标识符，应整体保留；补充限定范围后与 non_translate 用途一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7149 原文为 sceneR010，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 项不译，无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为场景记录内部标识符，非玩家可译文本，归入 non_translate 恰当。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原缺 applicability；补为 whole_record（case_sensitive=true），因仅独立整体出现，避免全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:125",
+      "evidence_rows": [
+        7185
+      ],
+      "source_excerpt": "sceneR011",
+      "reason": "场景内部标识符，应整体保留；补充限定范围后与 non_translate 用途一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7185 原文为 sceneR011，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 项不译，无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为场景记录内部标识符，非玩家可译文本，归入 non_translate 恰当。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原缺 applicability；补为 whole_record（case_sensitive=true），因仅独立整体出现，避免全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:137",
+      "evidence_rows": [
+        7236
+      ],
+      "source_excerpt": "sceneR012",
+      "reason": "场景内部标识符，应整体保留；补充限定范围后与 non_translate 用途一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7236 原文为 sceneR012，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 项不译，无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为场景记录内部标识符，非玩家可译文本，归入 non_translate 恰当。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原缺 applicability；补为 whole_record（case_sensitive=true），因仅独立整体出现，避免全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:138",
+      "evidence_rows": [
+        7272
+      ],
+      "source_excerpt": "sceneR013",
+      "reason": "场景内部标识符，应整体保留；补充限定范围后与 non_translate 用途一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7272 原文为 sceneR013，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 项不译，无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为场景记录内部标识符，非玩家可译文本，归入 non_translate 恰当。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原缺 applicability；补为 whole_record（case_sensitive=true），因仅独立整体出现，避免全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:139",
+      "evidence_rows": [
+        7308
+      ],
+      "source_excerpt": "sceneR014",
+      "reason": "场景内部标识符，应整体保留；补充限定范围后与 non_translate 用途一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7308 原文为 sceneR014，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 项不译，无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为场景记录内部标识符，非玩家可译文本，归入 non_translate 恰当。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原缺 applicability；补为 whole_record（case_sensitive=true），因仅独立整体出现，避免全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:140",
+      "evidence_rows": [
+        7389
+      ],
+      "source_excerpt": "sceneR016",
+      "reason": "场景内部标识符，应整体保留；补充限定范围后与 non_translate 用途一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7389 原文为 sceneR016，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 项不译，无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为场景记录内部标识符，非玩家可译文本，归入 non_translate 恰当。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原缺 applicability；补为 whole_record（case_sensitive=true），因仅独立整体出现，避免全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:141",
+      "evidence_rows": [
+        7430
+      ],
+      "source_excerpt": "sceneR017",
+      "reason": "场景内部标识符，应整体保留；补充限定范围后与 non_translate 用途一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7430 原文为 sceneR017，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 项不译，无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为场景记录内部标识符，非玩家可译文本，归入 non_translate 恰当。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原缺 applicability；补为 whole_record（case_sensitive=true），因仅独立整体出现，避免全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:142",
+      "evidence_rows": [
+        7471
+      ],
+      "source_excerpt": "sceneR018",
+      "reason": "场景内部标识符，应整体保留；补充限定范围后与 non_translate 用途一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7471 原文为 sceneR018，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 项不译，无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为场景记录内部标识符，非玩家可译文本，归入 non_translate 恰当。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原缺 applicability；补为 whole_record（case_sensitive=true），因仅独立整体出现，避免全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:143",
+      "evidence_rows": [
+        7511
+      ],
+      "source_excerpt": "sceneR019",
+      "reason": "场景内部标识符，应整体保留；补充限定范围后与 non_translate 用途一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7511 原文为 sceneR019，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 项不译，无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为场景记录内部标识符，非玩家可译文本，归入 non_translate 恰当。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原缺 applicability；补为 whole_record（case_sensitive=true），因仅独立整体出现，避免全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:144",
+      "evidence_rows": [
+        7609
+      ],
+      "source_excerpt": "sceneR021",
+      "reason": "场景内部标识符，应整体保留；补充限定范围后与 non_translate 用途一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7609 原文为 sceneR021，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 项不译，无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为场景记录内部标识符，非玩家可译文本，归入 non_translate 恰当。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原缺 applicability；补为 whole_record（case_sensitive=true），因仅独立整体出现，避免全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:145",
+      "evidence_rows": [
+        7635
+      ],
+      "source_excerpt": "sceneR022",
+      "reason": "场景内部标识符，应整体保留；补充限定范围后与 non_translate 用途一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7635 原文为 sceneR022，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 项不译，无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为场景记录内部标识符，非玩家可译文本，归入 non_translate 恰当。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原缺 applicability；补为 whole_record（case_sensitive=true），因仅独立整体出现，避免全局禁翻。"
+        }
+      }
+    },
+    {
+      "ref": "non_translate:146",
+      "evidence_rows": [
+        7656
+      ],
+      "source_excerpt": "sceneR023",
+      "reason": "场景内部标识符，应整体保留；补充限定范围后与 non_translate 用途一致。",
+      "checks": {
+        "source": {
+          "status": "pass",
+          "evidence": "7656 原文为 sceneR023，与条目 source 完全一致。"
+        },
+        "translation": {
+          "status": "not_applicable",
+          "evidence": "non_translate 项不译，无目标译文。"
+        },
+        "category": {
+          "status": "pass",
+          "evidence": "作为场景记录内部标识符，非玩家可译文本，归入 non_translate 恰当。"
+        },
+        "consistency": {
+          "status": "corrected",
+          "evidence": "原缺 applicability；补为 whole_record（case_sensitive=true），因仅独立整体出现，避免全局禁翻。"
+        }
+      }
+    }
+  ],
+  "reviewed_refs": [
+    "non_translate:124",
+    "non_translate:125",
+    "non_translate:137",
+    "non_translate:138",
+    "non_translate:139",
+    "non_translate:140",
+    "non_translate:141",
+    "non_translate:142",
+    "non_translate:143",
+    "non_translate:144",
+    "non_translate:145",
+    "non_translate:146"
+  ],
+  "snapshot_sha256": "411300e90a111096a3f5ac1f03d80b5313feb48102d41fba3db5efd568c8e2b9",
+  "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e"
+}

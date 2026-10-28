@@ -1,0 +1,862 @@
+[
+ {
+  "file": "Game\\KoDp\\textures\\Common\\AdvisorClose.png",
+  "hits": [
+   {
+    "text": "V",
+    "score": 0.606,
+    "box": [
+     3,
+     14,
+     39,
+     35
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Common\\AdvisorMenu_backgroundRight.png",
+  "hits": [
+   {
+    "text": "V",
+    "score": 0.643,
+    "box": [
+     349,
+     18,
+     383,
+     38
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Common\\IssariesA.png",
+  "hits": [
+   {
+    "text": "山",
+    "score": 0.558,
+    "box": [
+     1,
+     0,
+     16,
+     9
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Common\\OrlanthA.png",
+  "hits": [
+   {
+    "text": "?",
+    "score": 0.816,
+    "box": [
+     5,
+     5,
+     13,
+     14
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Controls\\Btn_GC_37x37.png",
+  "hits": [
+   {
+    "text": "D",
+    "score": 0.615,
+    "box": [
+     23,
+     6,
+     31,
+     17
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Menu\\Logo.png",
+  "hits": [
+   {
+    "text": "KING OF",
+    "score": 0.759,
+    "box": [
+     99,
+     3,
+     245,
+     50
+    ]
+   },
+   {
+    "text": "DRAGON PASS",
+    "score": 0.957,
+    "box": [
+     0,
+     35,
+     328,
+     89
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Menu\\Logo@2x.png",
+  "hits": [
+   {
+    "text": "KING OF",
+    "score": 0.846,
+    "box": [
+     200,
+     7,
+     489,
+     96
+    ]
+   },
+   {
+    "text": "DRAGON PASS",
+    "score": 0.935,
+    "box": [
+     0,
+     65,
+     657,
+     179
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Menu\\Logo~ipad.png",
+  "hits": [
+   {
+    "text": "KING OF",
+    "score": 0.874,
+    "box": [
+     207,
+     13,
+     495,
+     102
+    ]
+   },
+   {
+    "text": "DRAGON PASS",
+    "score": 0.94,
+    "box": [
+     3,
+     71,
+     668,
+     185
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Menu\\Logo~ipad@2x.png",
+  "hits": [
+   {
+    "text": "KING OF",
+    "score": 0.788,
+    "box": [
+     415,
+     28,
+     988,
+     197
+    ]
+   },
+   {
+    "text": "DRAGON PASS",
+    "score": 0.947,
+    "box": [
+     8,
+     145,
+     1337,
+     368
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\M\\Btn_Fortify.png",
+  "hits": [
+   {
+    "text": "2",
+    "score": 0.858,
+    "box": [
+     38,
+     0,
+     48,
+     12
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\M\\Btn_MapIcon.png",
+  "hits": [
+   {
+    "text": "田",
+    "score": 0.769,
+    "box": [
+     3,
+     2,
+     33,
+     34
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\M\\Btn_MapIcon@2x.png",
+  "hits": [
+   {
+    "text": "田",
+    "score": 0.845,
+    "box": [
+     15,
+     17,
+     56,
+     54
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\M\\Btn_Mission.png",
+  "hits": [
+   {
+    "text": "7",
+    "score": 0.997,
+    "box": [
+     44,
+     3,
+     63,
+     25
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\M\\Btn_Reorganize@2x.png",
+  "hits": [
+   {
+    "text": "reee",
+    "score": 0.62,
+    "box": [
+     8,
+     51,
+     36,
+     66
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\M\\ClanButton.png",
+  "hits": [
+   {
+    "text": "Clan",
+    "score": 0.989,
+    "box": [
+     45,
+     7,
+     97,
+     33
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\M\\Donkey_BtnRight.png",
+  "hits": [
+   {
+    "text": "T",
+    "score": 0.614,
+    "box": [
+     12,
+     15,
+     36,
+     26
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\M\\Icon_Magic.png",
+  "hits": [
+   {
+    "text": "爱",
+    "score": 0.646,
+    "box": [
+     8,
+     6,
+     33,
+     36
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\M\\Icon_Map.png",
+  "hits": [
+   {
+    "text": "田",
+    "score": 0.806,
+    "box": [
+     6,
+     9,
+     32,
+     33
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\M\\MapArch.png",
+  "hits": [
+   {
+    "text": "Pass",
+    "score": 0.937,
+    "box": [
+     46,
+     30,
+     75,
+     54
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\M\\MenuButton.png",
+  "hits": [
+   {
+    "text": "E",
+    "score": 0.988,
+    "box": [
+     5,
+     7,
+     48,
+     40
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\M\\Speed_BtnBase.png",
+  "hits": [
+   {
+    "text": "八",
+    "score": 0.722,
+    "box": [
+     60,
+     16,
+     69,
+     22
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\M\\TradeArch.png",
+  "hits": [
+   {
+    "text": "y",
+    "score": 0.669,
+    "box": [
+     220,
+     73,
+     231,
+     85
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\T\\Elmal-great.png",
+  "hits": [
+   {
+    "text": "ATE",
+    "score": 0.551,
+    "box": [
+     12,
+     28,
+     37,
+     49
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\T\\Ernalda-shrine.png",
+  "hits": [
+   {
+    "text": "14.1",
+    "score": 0.619,
+    "box": [
+     17,
+     16,
+     61,
+     42
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\T\\Eurmal-rune@2x.png",
+  "hits": [
+   {
+    "text": "。。",
+    "score": 0.567,
+    "box": [
+     4,
+     16,
+     27,
+     28
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\T\\Humakt-rune.png",
+  "hits": [
+   {
+    "text": "+",
+    "score": 0.897,
+    "box": [
+     1,
+     0,
+     14,
+     14
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\T\\Humakt-rune@2x.png",
+  "hits": [
+   {
+    "text": "+",
+    "score": 0.847,
+    "box": [
+     1,
+     0,
+     31,
+     30
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\T\\Kero Fin-rune@2x.png",
+  "hits": [
+   {
+    "text": "?",
+    "score": 0.578,
+    "box": [
+     9,
+     0,
+     21,
+     11
+    ]
+   },
+   {
+    "text": "又",
+    "score": 0.847,
+    "box": [
+     9,
+     8,
+     23,
+     27
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\T\\Lhankor Mhy-shrine.png",
+  "hits": [
+   {
+    "text": "4.",
+    "score": 0.752,
+    "box": [
+     13,
+     22,
+     36,
+     37
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\T\\Malia-rune@2x.png",
+  "hits": [
+   {
+    "text": "8",
+    "score": 0.872,
+    "box": [
+     5,
+     8,
+     26,
+     23
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\T\\Orlanth-rune.png",
+  "hits": [
+   {
+    "text": "G",
+    "score": 0.624,
+    "box": [
+     4,
+     1,
+     13,
+     12
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\T\\Tarard Riel-rune.png",
+  "hits": [
+   {
+    "text": "X",
+    "score": 0.762,
+    "box": [
+     3,
+     4,
+     14,
+     13
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\T\\Tarard Riel-rune@2x.png",
+  "hits": [
+   {
+    "text": "文",
+    "score": 0.678,
+    "box": [
+     5,
+     7,
+     31,
+     30
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\T\\Uralda-rune@2x.png",
+  "hits": [
+   {
+    "text": "X",
+    "score": 0.627,
+    "box": [
+     5,
+     2,
+     24,
+     24
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\T\\Uralda-shrine.png",
+  "hits": [
+   {
+    "text": "1",
+    "score": 0.994,
+    "box": [
+     19,
+     10,
+     61,
+     43
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\T\\Vinga-rune@2x.png",
+  "hits": [
+   {
+    "text": "2",
+    "score": 0.94,
+    "box": [
+     0,
+     9,
+     27,
+     30
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\T\\Wind Spirits-rune.png",
+  "hits": [
+   {
+    "text": "T",
+    "score": 0.787,
+    "box": [
+     0,
+     4,
+     14,
+     14
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Battle\\outcome23~ipad.jpg",
+  "hits": [
+   {
+    "text": "1",
+    "score": 0.567,
+    "box": [
+     43,
+     122,
+     81,
+     140
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Battle\\outcome26.jpg",
+  "hits": [
+   {
+    "text": "十",
+    "score": 0.718,
+    "box": [
+     51,
+     5,
+     63,
+     19
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Battle\\outcome29~ipad.jpg",
+  "hits": [
+   {
+    "text": "C",
+    "score": 0.708,
+    "box": [
+     79,
+     339,
+     110,
+     379
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Battle\\outcome30.jpg",
+  "hits": [
+   {
+    "text": "A",
+    "score": 0.802,
+    "box": [
+     3,
+     210,
+     21,
+     230
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Battle\\outcome30~ipad.jpg",
+  "hits": [
+   {
+    "text": "8",
+    "score": 0.721,
+    "box": [
+     30,
+     174,
+     62,
+     214
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Battle\\outcome33~ipad.jpg",
+  "hits": [
+   {
+    "text": "LO",
+    "score": 0.734,
+    "box": [
+     62,
+     279,
+     95,
+     300
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Battle\\outcome4.jpg",
+  "hits": [
+   {
+    "text": "Vryon",
+    "score": 0.709,
+    "box": [
+     33,
+     278,
+     94,
+     317
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Battle\\outcome41.jpg",
+  "hits": [
+   {
+    "text": "3元",
+    "score": 0.699,
+    "box": [
+     19,
+     176,
+     35,
+     188
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Battle\\outcome7~ipad.jpg",
+  "hits": [
+   {
+    "text": "福",
+    "score": 0.616,
+    "box": [
+     2,
+     336,
+     17,
+     355
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Battle\\TriptychBig.png",
+  "hits": [
+   {
+    "text": "■",
+    "score": 0.815,
+    "box": [
+     341,
+     49,
+     435,
+     159
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\EndGame\\E7.jpg",
+  "hits": [
+   {
+    "text": "E",
+    "score": 0.907,
+    "box": [
+     296,
+     183,
+     305,
+     193
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Intro\\B1.jpg",
+  "hits": [
+   {
+    "text": "三",
+    "score": 0.756,
+    "box": [
+     176,
+     152,
+     198,
+     179
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Intro\\B6.jpg",
+  "hits": [
+   {
+    "text": "5",
+    "score": 0.583,
+    "box": [
+     396,
+     208,
+     408,
+     220
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Intro_ipad\\B1.jpg",
+  "hits": [
+   {
+    "text": "mli",
+    "score": 0.651,
+    "box": [
+     334,
+     385,
+     364,
+     430
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Intro_ipad\\B2.jpg",
+  "hits": [
+   {
+    "text": "AL",
+    "score": 0.796,
+    "box": [
+     100,
+     393,
+     121,
+     405
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\Intro_ipad\\B3.jpg",
+  "hits": [
+   {
+    "text": "823.",
+    "score": 0.615,
+    "box": [
+     49,
+     178,
+     87,
+     277
+    ]
+   }
+  ]
+ },
+ {
+  "file": "Game\\KoDp\\textures\\plashki\\wood_patch.png",
+  "hits": [
+   {
+    "text": "S",
+    "score": 0.577,
+    "box": [
+     1190,
+     4,
+     1272,
+     13
+    ]
+   }
+  ]
+ }
+]
