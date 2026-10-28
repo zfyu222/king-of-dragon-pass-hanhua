@@ -1,8 +1,10 @@
+param([string]$OutputRoot = '')
 $ErrorActionPreference = "Stop"
 
 $projectRoot = Split-Path -Parent $PSScriptRoot
 $sourceRoot = Join-Path $PSScriptRoot "src"
-$outputRoot = Join-Path $projectRoot "release\KoDPCNHook"
+if (-not $OutputRoot) { $OutputRoot = Join-Path $projectRoot "release\KoDPCNHook" }
+$outputRoot = [IO.Path]::GetFullPath($OutputRoot)
 $vcvars = "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Auxiliary\Build\vcvarsall.bat"
 
 if (-not (Test-Path -LiteralPath $vcvars)) {
@@ -19,7 +21,10 @@ $htmlInstaller = Join-Path $PSScriptRoot "deploy_html.ps1"
 
 $buildCommand = 'call "{0}" x86 >nul && cl.exe /nologo /utf-8 /std:c++17 /O2 /MT /W4 /EHsc /LD "{1}" /link /OUT:"{2}" && cl.exe /nologo /utf-8 /std:c++17 /O2 /MT /W4 /EHsc "{3}" /link /SUBSYSTEM:WINDOWS /OUT:"{4}" shell32.lib user32.lib' -f $vcvars, $hookSource, $hookOutput, $launcherSource, $launcherOutput
 
-& cmd.exe /d /s /c $buildCommand
+$buildRoot = Join-Path $PSScriptRoot 'build\native'
+New-Item -ItemType Directory -Force -Path $buildRoot | Out-Null
+Push-Location $buildRoot
+try { & cmd.exe /d /s /c $buildCommand } finally { Pop-Location }
 if ($LASTEXITCODE -ne 0) {
     throw "Hook build failed with exit code $LASTEXITCODE"
 }

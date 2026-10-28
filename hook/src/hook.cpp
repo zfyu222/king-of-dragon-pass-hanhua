@@ -805,12 +805,17 @@ bool LoadTranslations() {
                 visibleTranslation[1] == '@') {
                 visibleTranslation.erase(0, 3);
             }
-            const std::string chinesePossessive = u8"以其";
-            if (visibleTranslation.compare(
-                    0,
-                    chinesePossessive.size(),
-                    chinesePossessive) == 0) {
-                visibleTranslation.erase(0, chinesePossessive.size());
+            // The approved new corpus may put punctuation before the clause.
+            // These are grammatical delimiters, not part of the clan's trait.
+            for (const char* prefix : {u8"，", ",", " "}) {
+                if (visibleTranslation.rfind(prefix, 0) == 0)
+                    visibleTranslation.erase(0, std::strlen(prefix));
+            }
+            for (const char* prefix : {u8"以其", u8"以", u8"他们的"}) {
+                if (visibleTranslation.rfind(prefix, 0) == 0) {
+                    visibleTranslation.erase(0, std::strlen(prefix));
+                    break;
+                }
             }
             if (!visibleSource.empty() && !visibleTranslation.empty()) {
                 knownForAliases.emplace_back(
@@ -845,7 +850,7 @@ bool LoadTranslations() {
             "The pigs need %d hides of wildland, and the other livestock "
             "need to graze on %d hides of land. They need %d herders to "
             "tend them.",
-            u8"猪群需要 %d 张兽皮的荒地，其他牲畜需要在 %d 张兽皮的土地上放牧。"
+            u8"猪群需要 %d 海德荒地，其他牲畜需要在 %d 海德土地上放牧。"
             u8"它们需要 %d 名牧人照料。",
         },
         {
@@ -859,7 +864,7 @@ bool LoadTranslations() {
             "The pigs need %d hides of wildland, and the other livestock "
             "need to graze on %d hides of land. They need %d herder to "
             "tend them.",
-            u8"猪群需要 %d 张兽皮的荒地，其他牲畜需要在 %d 张兽皮的土地上放牧。"
+            u8"猪群需要 %d 海德荒地，其他牲畜需要在 %d 海德土地上放牧。"
             u8"它们需要 %d 名牧人照料。",
         },
     };
@@ -939,10 +944,11 @@ bool LoadTranslations() {
     const char* clanDeityProbe =
         "They're known for their fine horses. Their main deity is Elmal. "
         "Their chief is Harran.";
-    const char* partiallyTranslatedClanProbe =
+    const std::string partiallyTranslatedClanText = std::string(
         "They're known for keeping close ties with their former kin in\n"
-        "Heortland. Their chief is Elusu. They're in the Colymar tribe. "
-        u8"他们欠我们一个恩惠。";
+        "Heortland. Their chief is Elusu. They're in the Colymar tribe. ") +
+        TranslateRuntimeText("They owe us a favor.");
+    const char* partiallyTranslatedClanProbe = partiallyTranslatedClanText.c_str();
     const char* pigCompositeResult =
         TranslateRuntimeText(pigCompositeProbe);
     const std::string pigCompositeTranslation(

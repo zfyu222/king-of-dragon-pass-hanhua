@@ -1,0 +1,334 @@
+{
+  "59f050c50a106f99034b711399389ab1f5e72ef968f4f98632d3fc75274d9766": {
+    "look": "matched",
+    "font": "D:/StaticHanHua/Tools/Fonts/NotoSC/NotoSerifSC-variable.ttf",
+    "ink": [
+      20,
+      23,
+      10
+    ],
+    "ink_tolerance": 20,
+    "inpaint": "telea",
+    "font_weight": 600,
+    "text_rgba": [
+      25,
+      28,
+      14,
+      255
+    ],
+    "stroke_width": 1,
+    "stroke_rgba": [
+      226,
+      223,
+      155,
+      190
+    ],
+    "halo": {
+      "alpha": 0.06
+    },
+    "max_font_size": 14,
+    "angle": 0,
+    "rows": {
+      "7": {
+        "angle": -29,
+        "inpaint": "lama"
+      },
+      "8": {
+        "angle": 35,
+        "inpaint": "lama"
+      },
+      "19": {
+        "angle": 65,
+        "inpaint": "lama"
+      },
+      "16": {
+        "angle": -12
+      },
+      "10": {
+        "inpaint": "lama"
+      },
+      "5": {
+        "max_font_size": 20,
+        "line_spacing": 0.9
+      }
+    }
+  },
+  "7e3ca9ba51f0e425649ce9e17b21564eb2e0b2fb672852a4c50cf5a79de957c9": {
+    "look": "matched",
+    "font": "D:/StaticHanHua/Tools/Fonts/NotoSC/NotoSerifSC-variable.ttf",
+    "ink": [
+      20,
+      23,
+      10
+    ],
+    "ink_tolerance": 20,
+    "inpaint": "telea",
+    "font_weight": 600,
+    "text_rgba": [
+      25,
+      28,
+      14,
+      255
+    ],
+    "stroke_width": 1,
+    "stroke_rgba": [
+      226,
+      223,
+      155,
+      190
+    ],
+    "halo": {
+      "alpha": 0.06
+    },
+    "max_font_size": 22,
+    "angle": 0,
+    "rows": {
+      "7": {
+        "angle": -29,
+        "inpaint": "lama"
+      },
+      "8": {
+        "angle": 35,
+        "inpaint": "lama"
+      },
+      "19": {
+        "angle": 65,
+        "inpaint": "lama"
+      },
+      "16": {
+        "angle": -12
+      },
+      "10": {
+        "inpaint": "lama"
+      },
+      "5": {
+        "max_font_size": 32,
+        "line_spacing": 0.9
+      }
+    }
+  },
+  "e71c97a6d2217c18afa2dd12a270c67aa095d0b8c4e291fd402697f57e5c34c9": {
+    "look": "matched",
+    "font": "D:/StaticHanHua/Tools/Fonts/NotoSC/NotoSerifSC-variable.ttf",
+    "ink": [
+      20,
+      23,
+      10
+    ],
+    "ink_tolerance": 20,
+    "inpaint": "telea",
+    "font_weight": 600,
+    "text_rgba": [
+      25,
+      28,
+      14,
+      255
+    ],
+    "stroke_width": 1,
+    "stroke_rgba": [
+      226,
+      223,
+      155,
+      190
+    ],
+    "halo": {
+      "alpha": 0.06
+    },
+    "max_font_size": 45,
+    "angle": 0,
+    "rows": {
+      "7": {
+        "angle": -29,
+        "inpaint": "lama"
+      },
+      "8": {
+        "angle": 35,
+        "inpaint": "lama"
+      },
+      "19": {
+        "angle": 65,
+        "inpaint": "lama"
+      },
+      "16": {
+        "angle": -12
+      },
+      "10": {
+        "inpaint": "lama"
+      },
+      "5": {
+        "max_font_size": 64,
+        "line_spacing": 0.9
+      }
+    }
+  },
+  "e7a6e3f465b99cd48575aa3ac16e37b36d908f3a9c24c603b615da992336f7c3": {
+    "look": "matched",
+    "font": "D:/StaticHanHua/Tools/Fonts/NotoSC/NotoSerifSC-variable.ttf",
+    "ink": [
+      20,
+      23,
+      10
+    ],
+    "ink_tolerance": 20,
+    "inpaint": "telea",
+    "font_weight": 600,
+    "text_rgba": [
+      25,
+      28,
+      14,
+      255
+    ],
+    "stroke_width": 1,
+    "stroke_rgba": [
+      226,
+      223,
+      155,
+      190
+    ],
+    "halo": {
+      "alpha": 0.06
+    },
+    "max_font_size": 28,
+    "angle": 0,
+    "rows": {
+      "7": {
+        "angle": -29,
+        "inpaint": "lama"
+      },
+      "8": {
+        "angle": 35,
+        "inpaint": "lama"
+      },
+      "19": {
+        "angle": 65,
+        "inpaint": "lama"
+      },
+      "16": {
+        "angle": -12
+      },
+      "10": {
+        "inpaint": "lama"
+      },
+      "5": {
+        "max_font_size": 40,
+        "line_spacing": 0.9
+      }
+    }
+  },
+  "f9f2ca4d8c9fcc2f6d85d4533db90075d071d88cae143063e4eb36f5656c1202": {
+    "look": "matched",
+    "font": "D:/StaticHanHua/Tools/Fonts/NotoSC/NotoSansSC-variable.ttf"
+  },
+  "fb7062597c1b78d3ef2aa95c147c4f26d9cee0283bdec8648414d00ef866dd80": {
+    "look": "matched",
+    "font": "D:/StaticHanHua/Tools/Fonts/NotoSC/NotoSansSC-variable.ttf"
+  },
+  "42505a0a03254b513d1d6a74bb6f3bce45ff84595e5f1a47d2f1dcbc0f6d1414": {
+    "look": "matched",
+    "font": "D:/StaticHanHua/Tools/Fonts/NotoSC/NotoSansSC-variable.ttf"
+  },
+  "31e999d0b719f3202230bfcff0e688dae0ad0ef440d5c3ad602f561566d8c8b2": {
+    "look": "matched",
+    "font": "D:/StaticHanHua/Tools/Fonts/NotoSC/NotoSansSC-variable.ttf"
+  },
+  "d6fae21d780e32becd3f55ef08a67c95fcca4a64e46cdb5d06e19c2e171887a2": {
+    "look": "matched",
+    "font": "D:/StaticHanHua/Tools/Fonts/NotoSC/NotoSerifSC-variable.ttf",
+    "clear_transparent_bg": true,
+    "halo": {
+      "alpha": 0
+    },
+    "text_rgba": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "stroke_width": 1,
+    "stroke_rgba": [
+      0,
+      0,
+      0,
+      255
+    ],
+    "font_weight": 900,
+    "italic": 8
+  },
+  "43584de2921553cf1dcdd273839550f8d522b8458d99e4e735f1bb0b90c1e466": {
+    "look": "matched",
+    "font": "D:/StaticHanHua/Tools/Fonts/NotoSC/NotoSerifSC-variable.ttf",
+    "clear_transparent_bg": true,
+    "halo": {
+      "alpha": 0
+    },
+    "text_rgba": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "stroke_width": 1,
+    "stroke_rgba": [
+      0,
+      0,
+      0,
+      255
+    ],
+    "font_weight": 900,
+    "italic": 8
+  },
+  "98fc4e10620d4464a981299048be857b5fc3e0c06fb164b023c7ddccd794e04a": {
+    "look": "matched",
+    "font": "D:/StaticHanHua/Tools/Fonts/NotoSC/NotoSerifSC-variable.ttf",
+    "clear_transparent_bg": true,
+    "halo": {
+      "alpha": 0
+    },
+    "text_rgba": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "stroke_width": 1,
+    "stroke_rgba": [
+      0,
+      0,
+      0,
+      255
+    ],
+    "font_weight": 900,
+    "italic": 8
+  },
+  "693210c955d757c2ee504a173b15e8f00358e0c9075c6b37ace86f250cb84217": {
+    "look": "matched",
+    "font": "D:/StaticHanHua/Tools/Fonts/NotoSC/NotoSerifSC-variable.ttf",
+    "clear_transparent_bg": true,
+    "halo": {
+      "alpha": 0
+    },
+    "text_rgba": [
+      255,
+      255,
+      255,
+      255
+    ],
+    "stroke_width": 1,
+    "stroke_rgba": [
+      0,
+      0,
+      0,
+      255
+    ],
+    "font_weight": 900,
+    "italic": 8
+  },
+  "17473c8ce745bd0e6451e517c7d2ca20a88d9647b159658c7658282da563a159": {
+    "look": "matched",
+    "font": "D:/StaticHanHua/Tools/Fonts/NotoSC/NotoSerifSC-variable.ttf"
+  },
+  "351fabf715381a6ac6e2c2acb6862511f96ea3191fde842100f1f209431cedfb": {
+    "look": "matched",
+    "font": "D:/StaticHanHua/Tools/Fonts/NotoSC/NotoSerifSC-variable.ttf"
+  }
+}

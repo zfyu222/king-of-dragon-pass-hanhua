@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "installed_and_restored": 361,
+  "source_game_untouched": true,
+  "fixture": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\Repack\\Test_20261029\\verification_b97f2e6d",
+  "checks": [
+    {
+      "check": "install",
+      "exit_code": 0,
+      "expected_success": true
+    },
+    {
+      "check": "idempotent_install",
+      "exit_code": 0,
+      "expected_success": true
+    },
+    {
+      "check": "restore",
+      "exit_code": 0,
+      "expected_success": true
+    },
+    {
+      "check": "reject_tampered_payload",
+      "exit_code": 1,
+      "expected_success": false
+    }
+  ],
+  "manifest_sha256": "c57a34d47169714e364e299208cff08db681b6dcdcc9949879db28a81427bf59"
+}
