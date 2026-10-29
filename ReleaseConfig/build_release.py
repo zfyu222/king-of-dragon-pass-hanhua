@@ -34,6 +34,17 @@ def build():
     base = json.loads((old / 'TEST_MANIFEST.json').read_text(encoding='utf-8'))
     titles = ROOT / 'ImagePatch/title-final-20261029'
     title_manifest = json.loads((titles / 'IMAGE_PATCH_MANIFEST.json').read_text(encoding='utf-8'))
+    sys.path.insert(0, str(WORKSPACE/'Tools/image_text'))
+    from patch_qa import verified, budget_root
+    qa=ROOT/'ImagePatch/title-final-qa-20261029'
+    snapshot=verified(qa)
+    reviews=json.loads((budget_root(qa)/'agent_budget.json').read_text(encoding='utf-8'))['reviews']
+    decisions={r['image_id']:r['content']['decision'] for r in reviews if r['snapshot_hash']==snapshot['snapshot_hash']}
+    if snapshot['binding']['manifest_hash']!=sha(titles/'IMAGE_PATCH_MANIFEST.json'):
+        raise ValueError('Final title QA snapshot changed')
+    for f in title_manifest['files']:
+        if decisions.get(f['image_id'])!='pass' or sha(titles/f['path'])!=f['sha256']:
+            raise ValueError('Title visual approval missing or image changed')
     previous = json.loads((ROOT / 'ImagePatch/build-v15/IMAGE_PATCH_MANIFEST.json').read_text(encoding='utf-8'))
     title_sources = {f['image_id']:f['sources'][0]['path'] for f in previous['files']}
     replacements = {title_sources[f['image_id']]: titles / f['path'] for f in title_manifest['files']}

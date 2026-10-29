@@ -108,6 +108,7 @@
 - 当前版本：`Dispatch/龙城之王_子非鱼汉化1.1.zip`；中文名称按本次指定统一为“龙城之王”。历史 v1.0 保留。
 - 支持：Steam v2.4.0，Windows。
 - 发布页：https://github.com/zfyu222/king-of-dragon-pass-hanhua/releases/tag/v1.1
+- 公开下载已匿名校验，SHA-256：`90f52db229051f14ab0248ffcec6b594a24e4baa346b687fa7a8a1d40ae2af8a`。GitHub下载资产为 `King-of-Dragon-Pass_CN_1.1.zip`（服务端不保留中文文件名），显示名和本地ZIP保持中文名。
 - 百度网盘分享 King-of-Dragon-Pass：https://pan.baidu.com/s/5xKG8bFszi_wB9yFgSxNV9g
 - 腾讯文档反馈：https://docs.qq.com/sheet/DTkxSTUVQS1Ntd1FR?tab=BB08J2
 - 载荷：3个原生运行文件、348个已译HTML目标、12张汉化贴图及一个等长Logo像素补丁；ZIP内共368个载荷/脚本文件，另附说明、清单与校验和。原始游戏文件、备份和开发日志不分发。
