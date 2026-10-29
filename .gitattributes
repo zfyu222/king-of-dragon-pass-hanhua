@@ -1,2 +1,4 @@
 # Preserve the exported delivery bytes so validation SHA-256 survives checkout.
 /king-of-dragon-pass_text_translated.csv -text
+
+/TranslateFiles/feedback-20261029/feedback_text*.csv -text whitespace=cr-at-eol

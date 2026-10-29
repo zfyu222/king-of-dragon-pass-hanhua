@@ -1,0 +1,7 @@
+{
+  "text": "## 游戏信息\n- 原名：King of Dragon Pass\n- 中文名：龙隘之王（暂译）\n- 开发商：A Sharp\n- 发行商：HeroCraft PC（Steam 版）\n- 发行平台：Steam（Windows、macOS）\n- Steam 发行日期：2015-07-28\n- 引擎：Marmalade SDK / S3E；本机 `README.txt` 确认 Steam 版使用 Marmalade SDK 8.8.0（build 487222q），游戏版本 2.4.0。\n- 原语言：英语（Steam 商店仅列英语）\n- 参考资料：[Steam 商店页](https://store.steampowered.com/app/352220/King_of_Dragon_Pass/)；[A Sharp 官方页面](https://www.a-sharp.com/kodp/)\n\n## 游戏简介\n\n玩家在神话世界 Glorantha 中领导一个氏族，通过资源管理、外交、战争、信仰与大量分支事件，逐步壮大为部族乃至龙隘之王。游戏将互动叙事与策略管理结合，Steam 版约有近 600 个手绘事件场景。[Steam 商店页](https://store.steampowered.com/app/352220/King_of_Dragon_Pass/)；[开发商介绍](https://www.a-sharp.com/kodp/)\n\n## 汉化目标\n- 范围：剧情事件、程序内置文本、UI、开场/教程、帮助、内置手册和地图标签。\n- 目标语言：简体中文",
+  "sha256": "223ecda7f3f443512863b0d04d20945694e63f6caa89b3d1f5f22f143ed306b2",
+  "source": {
+    "kind": "configuration"
+  }
+}

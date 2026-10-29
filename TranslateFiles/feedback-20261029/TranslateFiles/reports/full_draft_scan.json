@@ -1,0 +1,29 @@
+{
+  "stage": "translate",
+  "key": "71028d3afc4c1b662ce8e372fddc5c03061d9b9d85f4b4ffb3f4fff456440e22",
+  "records": 8,
+  "failed_records": 0,
+  "clean": true,
+  "failures": [],
+  "repair_tasks": [],
+  "repair_dispatch": [],
+  "phase": "initial_full",
+  "checked_records": 8,
+  "checked_rounds": [
+    {
+      "round": 1,
+      "phase": "initial_full",
+      "scope": "full",
+      "checked_records": 8,
+      "result": "passed"
+    }
+  ],
+  "round_reports": [
+    "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\feedback-20261029\\TranslateFiles\\reports\\draft_checks\\round_00001.json"
+  ],
+  "repair_status": [],
+  "imported_baseline": null,
+  "needs_attention_ids": [],
+  "repair_stop_reasons": {},
+  "status": "clean"
+}

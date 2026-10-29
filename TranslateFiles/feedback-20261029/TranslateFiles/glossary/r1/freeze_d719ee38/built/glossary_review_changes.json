@@ -1,0 +1,161 @@
+{
+  "review_summary": "核对 e1、e2：%s 与 %d 均为 printf 格式符，应作为 non_translate 原样保留；原分类正确，但缺少明确适用范围，已通过 edits 补为 text 范围。",
+  "changes": [
+    {
+      "action": "edits",
+      "table": "non_translate",
+      "index": 0,
+      "before": {
+        "source": "%s",
+        "evidence_rows": [
+          1,
+          2
+        ],
+        "extraction_candidates": [
+          {
+            "table": "non_translate",
+            "row": {
+              "source": "%s"
+            },
+            "extraction_count": 1,
+            "evidence_rows": [
+              1,
+              2
+            ],
+            "extraction_tasks": [
+              "extract-r1-00001-73d3f6b3"
+            ]
+          }
+        ],
+        "provisional_selection": "most_extraction_proposals_then_first_seen"
+      },
+      "after": {
+        "source": "%s",
+        "evidence_rows": [
+          1,
+          2
+        ],
+        "extraction_candidates": [
+          {
+            "table": "non_translate",
+            "row": {
+              "source": "%s"
+            },
+            "extraction_count": 1,
+            "evidence_rows": [
+              1,
+              2
+            ],
+            "extraction_tasks": [
+              "extract-r1-00001-73d3f6b3"
+            ]
+          }
+        ],
+        "provisional_selection": "most_extraction_proposals_then_first_seen",
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "text",
+          "reason": "records 1、2 将 %s 作为 printf 格式符嵌入句子，必须原样保留。"
+        }
+      },
+      "reason": "non_translate 标识符需要明确适用范围；%s 在正文句子中作为格式符出现。",
+      "evidence": [
+        {
+          "row": 1,
+          "text": "We had to maneuver under a deadly rain of %s."
+        },
+        {
+          "row": 2,
+          "text": "We had to maneuver under a devastating barrage of %s."
+        }
+      ]
+    },
+    {
+      "action": "edits",
+      "table": "non_translate",
+      "index": 1,
+      "before": {
+        "source": "%d",
+        "evidence_rows": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "extraction_candidates": [
+          {
+            "table": "non_translate",
+            "row": {
+              "source": "%d"
+            },
+            "extraction_count": 1,
+            "evidence_rows": [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "extraction_tasks": [
+              "extract-r1-00001-73d3f6b3"
+            ]
+          }
+        ],
+        "provisional_selection": "most_extraction_proposals_then_first_seen"
+      },
+      "after": {
+        "source": "%d",
+        "evidence_rows": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "extraction_candidates": [
+          {
+            "table": "non_translate",
+            "row": {
+              "source": "%d"
+            },
+            "extraction_count": 1,
+            "evidence_rows": [
+              3,
+              4,
+              5,
+              6,
+              7,
+              8
+            ],
+            "extraction_tasks": [
+              "extract-r1-00001-73d3f6b3"
+            ]
+          }
+        ],
+        "provisional_selection": "most_extraction_proposals_then_first_seen",
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "text",
+          "reason": "records 3、4 将 %d 作为 printf 格式符嵌入句子，必须原样保留。"
+        }
+      },
+      "reason": "non_translate 标识符需要明确适用范围；%d 在正文句子中作为格式符出现。",
+      "evidence": [
+        {
+          "row": 3,
+          "text": "Through their healing magics, our auxiliaries kept %d warrior from dying, and healed %d of the wounded."
+        },
+        {
+          "row": 4,
+          "text": "Through their healing magics, our auxiliaries kept %d warriors from dying, and healed %d of the wounded."
+        }
+      ]
+    }
+  ],
+  "remaining_findings": [],
+  "no_match_exceptions": {}
+}

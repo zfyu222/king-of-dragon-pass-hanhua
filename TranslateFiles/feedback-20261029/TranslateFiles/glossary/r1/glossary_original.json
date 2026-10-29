@@ -1,0 +1,67 @@
+{
+  "characters": [],
+  "terms": [],
+  "non_translate": [
+    {
+      "source": "%s",
+      "evidence_rows": [
+        1,
+        2
+      ],
+      "extraction_candidates": [
+        {
+          "table": "non_translate",
+          "row": {
+            "source": "%s"
+          },
+          "extraction_count": 1,
+          "evidence_rows": [
+            1,
+            2
+          ],
+          "extraction_tasks": [
+            "extract-r1-00001-73d3f6b3"
+          ]
+        }
+      ],
+      "provisional_selection": "most_extraction_proposals_then_first_seen"
+    },
+    {
+      "source": "%d",
+      "evidence_rows": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "extraction_candidates": [
+        {
+          "table": "non_translate",
+          "row": {
+            "source": "%d"
+          },
+          "extraction_count": 1,
+          "evidence_rows": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "extraction_tasks": [
+            "extract-r1-00001-73d3f6b3"
+          ]
+        }
+      ],
+      "provisional_selection": "most_extraction_proposals_then_first_seen"
+    }
+  ],
+  "applicability_policy": 1,
+  "terminology_policy": 1,
+  "nontranslate_scope_policy": 1,
+  "corpus_evidence_policy": 1,
+  "feedback_risk_policy": 1
+}

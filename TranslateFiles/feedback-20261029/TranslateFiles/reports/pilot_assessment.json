@@ -1,0 +1,7 @@
+{
+  "report_hash": "bc9d3a280661776977c29553e484867719b0c6bc878ac1db6bffff5c552480fe",
+  "reviewer": "main",
+  "decision": "accept",
+  "summary": "8条试译覆盖两种弹雨描述、三种救治前缀和单复数；两类人数占位符及投射物占位符顺序完整，防止死亡与治愈人数的含义区分正确，可进入正式翻译和独立审校。",
+  "retry_ids": []
+}

@@ -1035,7 +1035,15 @@ bool MatchFormat(
         if (end == std::string::npos) {
             return false;
         }
-        captures->push_back(text.substr(cursor, end - cursor));
+        const std::string capture = text.substr(cursor, end - cursor);
+        const char conversion = pattern.tokens[index].back();
+        if (std::strchr("diuoxXfFeEgGaA", conversion) &&
+            (capture.empty() || !std::all_of(capture.begin(), capture.end(), [conversion](unsigned char c) {
+                if (std::isdigit(c) || c=='+' || c=='-' || c==',') return true;
+                if (std::strchr("xXaA", conversion) && (c=='x'||c=='X'||(c>='a'&&c<='f')||(c>='A'&&c<='F'))) return true;
+                return std::strchr("fFeEgGaA",conversion) && (c=='.'||c=='e'||c=='E');
+            }))) return false;
+        captures->push_back(capture);
         cursor = end + nextLiteral.size();
     }
     return cursor == text.size();
@@ -1072,91 +1080,64 @@ std::string RenderFormat(
     return capture == captures.size() ? result : std::string();
 }
 
-bool TranslateKnownComposite(
-    const std::string& source, std::string* translated) {
-    translated->clear();
-    size_t cursor = 0;
-    size_t translatedFragments = 0;
-    size_t numericCaptures = 0;
-    while (cursor < source.size()) {
-        const unsigned char first =
-            static_cast<unsigned char>(source[cursor]);
-        const TranslationEntry* matched = nullptr;
-        for (const TranslationEntry* candidate :
-             g_compositeFragmentsByFirstByte[first]) {
-            if (candidate->first.size() <= source.size() - cursor &&
-                source.compare(
-                    cursor,
-                    candidate->first.size(),
-                    candidate->first) == 0) {
-                matched = candidate;
-                break;
+bool TranslateKnownComposite(const std::string& source, std::string* translated) {
+    if (source.size() > 32768) return false;
+    std::vector<char> failed(source.size() + 1, 0);
+    std::vector<std::string> parts;
+    auto walk = [&](auto&& self, size_t pos, size_t depth) -> bool {
+        if (pos == source.size()) return true;
+        if (depth > 256) return false; // bound the x86 game thread's stack use
+        if (failed[pos]) return false;
+        auto append = [&](size_t length, const std::string& value) {
+            if (!length) return false;
+            parts.push_back(value);
+            if (self(self, pos + length, depth + 1)) return true;
+            parts.pop_back(); return false;
+        };
+        unsigned char first = static_cast<unsigned char>(source[pos]);
+        for (const auto* e : g_compositeFragmentsByFirstByte[first])
+            if (source.compare(pos, e->first.size(), e->first) == 0 && append(e->first.size(), e->second)) return true;
+        for (const auto* e : g_translatedFragmentsByFirstByte[first])
+            if (source.compare(pos, e->size(), *e) == 0 && append(e->size(), *e)) return true;
+        auto pattern = [&](const FormatPattern& p) {
+            if (p.literals.empty() || p.literals[0].empty() || source.compare(pos,p.literals[0].size(),p.literals[0])) return false;
+            size_t cursor = pos + p.literals[0].size();
+            std::vector<std::string> values;
+            for (size_t i=0;i<p.tokens.size();++i) {
+                const auto& literal=p.literals[i+1];
+                if (literal.empty()) return false; // no unconstrained tail capture inside a composite
+                size_t finish=source.find(literal,cursor);
+                if(finish==std::string::npos || finish==cursor) return false;
+                std::string capture=source.substr(cursor,finish-cursor);
+                if (p.translateCaptures || p.tokens[i].find('s') != std::string::npos) {
+                    auto found=g_translations.find(capture);
+                    if(found!=g_translations.end()) capture=found->second;
+                    else if(std::any_of(capture.begin(),capture.end(),[](unsigned char c){return c<128 && std::isalpha(c);})) return false;
+                } else if(p.tokens[i].find('s')==std::string::npos && !std::all_of(capture.begin(),capture.end(),[](unsigned char c){return std::isdigit(c)||c==','||c=='-'||c=='+'||c=='.';})) return false;
+                values.push_back(capture); cursor=finish+literal.size();
             }
+            auto value=RenderFormat(p.translated,values);
+            return !value.empty() && append(cursor-pos,value);
+        };
+        for(const auto& p:g_opalFormatPatternsByFirstByte[first]) if(pattern(p)) return true;
+        for(const auto& p:g_formatPatterns) if(pattern(p)) return true;
+        // Upstream UI code can already have translated the suffix (e.g. 阵亡).
+        // Preserve complete UTF-8 characters; unknown Latin words still fail.
+        size_t utf8Length = first >= 0xC2 && first <= 0xDF ? 2 :
+            first >= 0xE0 && first <= 0xEF ? 3 : first >= 0xF0 && first <= 0xF4 ? 4 : 0;
+        if (utf8Length && pos + utf8Length <= source.size()) {
+            bool valid = true;
+            for (size_t i=1; i<utf8Length; ++i)
+                valid = valid && (static_cast<unsigned char>(source[pos+i]) & 0xC0) == 0x80;
+            if (valid && append(utf8Length, source.substr(pos, utf8Length))) return true;
         }
-        if (matched) {
-            *translated += matched->second;
-            cursor += matched->first.size();
-            ++translatedFragments;
-            continue;
-        }
-        const std::string* translatedFragment = nullptr;
-        for (const std::string* candidate :
-             g_translatedFragmentsByFirstByte[first]) {
-            if (candidate->size() <= source.size() - cursor &&
-                source.compare(
-                    cursor, candidate->size(), *candidate) == 0) {
-                translatedFragment = candidate;
-                break;
-            }
-        }
-        if (translatedFragment) {
-            *translated += *translatedFragment;
-            cursor += translatedFragment->size();
-            ++translatedFragments;
-            continue;
-        }
-        if (std::isspace(
-                static_cast<unsigned char>(source[cursor]))) {
-            translated->push_back(source[cursor++]);
-            continue;
-        }
-        const size_t numberStart = cursor;
-        size_t numberCursor = cursor;
-        if (source[numberCursor] == '+' ||
-            source[numberCursor] == '-') {
-            ++numberCursor;
-        }
-        const size_t digitStart = numberCursor;
-        while (numberCursor < source.size() &&
-               (std::isdigit(static_cast<unsigned char>(
-                    source[numberCursor])) ||
-                source[numberCursor] == ',')) {
-            ++numberCursor;
-        }
-        if (numberCursor != digitStart) {
-            translated->append(
-                source,
-                numberStart,
-                numberCursor - numberStart);
-            cursor = numberCursor;
-            ++numericCaptures;
-            continue;
-        }
-        if (static_cast<unsigned char>(source[cursor]) < 0x80 &&
-            std::ispunct(
-                static_cast<unsigned char>(source[cursor]))) {
-            translated->push_back(source[cursor++]);
-            continue;
-        }
-        translated->clear();
-        return false;
-    }
-    if (translatedFragments < 2 &&
-        !(translatedFragments >= 1 && numericCaptures >= 1)) {
-        translated->clear();
-        return false;
-    }
-    return true;
+        if(std::isspace(first)||std::isdigit(first)||std::ispunct(first))
+            if(append(1,source.substr(pos,1))) return true;
+        failed[pos]=1; return false;
+    };
+    if(!walk(walk,0,0)) {translated->clear(); return false;}
+    translated->clear();for(const auto& part:parts)*translated+=part;
+    return *translated!=source;
 }
 
 const char* TranslateRuntimeText(const char* source) {
@@ -1329,7 +1310,11 @@ const char* TranslateRuntimeText(const char* source) {
                 translatedAnyLine = true;
                 composite += normalizedLineTranslation->second;
             } else {
-                composite += line;
+                // A displayed line may itself contain expanded variables or
+                // several catalog fragments. Exact-only lookup skipped these.
+                const std::string resolved = TranslateRuntimeText(line.c_str());
+                translatedAnyLine = translatedAnyLine || resolved != line;
+                composite += resolved;
             }
             while (*lineEnd == '\r' || *lineEnd == '\n') {
                 composite.push_back(*lineEnd++);
@@ -1346,6 +1331,12 @@ const char* TranslateRuntimeText(const char* source) {
     for (const FormatPattern& pattern : g_formatPatterns) {
         if (!MatchFormat(pattern, text, &captures)) {
             continue;
+        }
+        for (size_t i = 0; i < captures.size(); ++i) {
+            if (i < pattern.tokens.size() && pattern.tokens[i].find('s') != std::string::npos && captures[i].size() < text.size()) {
+                const std::string resolved = TranslateRuntimeText(captures[i].c_str());
+                captures[i] = resolved;
+            }
         }
         formatted = RenderFormat(pattern.translated, captures);
         if (!formatted.empty()) {

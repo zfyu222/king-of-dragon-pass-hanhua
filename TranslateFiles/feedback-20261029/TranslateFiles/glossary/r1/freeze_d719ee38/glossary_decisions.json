@@ -1,0 +1,108 @@
+{
+  "snapshot_sha256": "d6460ec00d08dc0d0564b996b8fe084b04e8844796ba612c4ae8b57557170af5",
+  "source_sha256": "af3c33acf3d4431119e0badd658040ed2d15d7dc94ca16770c97eb860efb0ea3",
+  "review_complete": true,
+  "review_summary": "核对 e1、e2：%s 与 %d 均为 printf 格式符，应作为 non_translate 原样保留；原分类正确，但缺少明确适用范围，已通过 edits 补为 text 范围。",
+  "reviewed_refs": [
+    "non_translate:0",
+    "non_translate:1"
+  ],
+  "acknowledged_findings": [],
+  "edits": [
+    {
+      "evidence_rows": [
+        1,
+        2
+      ],
+      "index": 0,
+      "patch": {
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "text",
+          "reason": "records 1、2 将 %s 作为 printf 格式符嵌入句子，必须原样保留。"
+        }
+      },
+      "reason": "non_translate 标识符需要明确适用范围；%s 在正文句子中作为格式符出现。",
+      "table": "non_translate"
+    },
+    {
+      "evidence_rows": [
+        3,
+        4
+      ],
+      "index": 1,
+      "patch": {
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "text",
+          "reason": "records 3、4 将 %d 作为 printf 格式符嵌入句子，必须原样保留。"
+        }
+      },
+      "reason": "non_translate 标识符需要明确适用范围；%d 在正文句子中作为格式符出现。",
+      "table": "non_translate"
+    }
+  ],
+  "quarantine": [],
+  "additions": [],
+  "allow_no_match": [],
+  "entry_reviews": [
+    {
+      "checks": {
+        "category": {
+          "evidence": "分类 non_translate 正确，但原条目缺少 applicability；已通过 edits.patch 补为 text。",
+          "status": "corrected"
+        },
+        "consistency": {
+          "evidence": "%s 在两个句子中均作为同一格式符保留，无译名分歧。",
+          "status": "pass"
+        },
+        "source": {
+          "evidence": "records 1、2 均为含 %s 的英文句子，%s 是嵌入的格式占位符。",
+          "status": "pass"
+        },
+        "translation": {
+          "evidence": "non_translate 条目应保留 %s 原样，不翻译。",
+          "status": "pass"
+        }
+      },
+      "evidence_rows": [
+        1,
+        2
+      ],
+      "reason": "%s 是 printf 格式符，不是自然语言词；应保持原样并限定适用范围。",
+      "ref": "non_translate:0",
+      "source_excerpt": "We had to maneuver under a deadly rain of %s."
+    },
+    {
+      "checks": {
+        "category": {
+          "evidence": "分类 non_translate 正确，但原条目缺少 applicability；已通过 edits.patch 补为 text。",
+          "status": "corrected"
+        },
+        "consistency": {
+          "evidence": "%d 在单复数两个句子中均作为同一格式符保留，无译名分歧。",
+          "status": "pass"
+        },
+        "source": {
+          "evidence": "records 3、4 均为含 %d 的英文句子，%d 是嵌入的数值格式占位符。",
+          "status": "pass"
+        },
+        "translation": {
+          "evidence": "non_translate 条目应保留 %d 原样，不翻译。",
+          "status": "pass"
+        }
+      },
+      "evidence_rows": [
+        3,
+        4
+      ],
+      "reason": "%d 是 printf 格式符，应保持原样并限定适用范围。",
+      "ref": "non_translate:1",
+      "source_excerpt": "Through their healing magics, our auxiliaries kept %d warrior from dying, and healed %d of the wounded."
+    }
+  ],
+  "review_instances": {
+    "non_translate:0": "api-glossary_review-63ae6073dd5f470787f63835bc4f2b7e",
+    "non_translate:1": "api-glossary_review-63ae6073dd5f470787f63835bc4f2b7e"
+  }
+}

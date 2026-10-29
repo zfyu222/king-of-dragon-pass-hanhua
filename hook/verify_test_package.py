@@ -13,9 +13,17 @@ def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
 def verify(package):
     package = package.resolve()
     m = json.loads((package / 'TEST_MANIFEST.json').read_text(encoding='utf-8'))
+    actual_hashes = {}
+    originals = {}
     for e in m['install_files']:
-        if sha(ROOT / 'Game' / e['game_path']) != e['before_sha256']:
+        actual = ROOT / 'Game' / e['game_path']
+        actual_hashes[e['game_path']] = sha(actual)
+        if actual_hashes[e['game_path']] not in (e['before_sha256'], e['after_sha256']):
             raise AssertionError('Source game changed before test: ' + e['game_path'])
+        original = actual if actual_hashes[e['game_path']] == e['before_sha256'] else package / 'backup/before_test' / e['game_path']
+        if not original.is_file() or sha(original) != e['before_sha256']:
+            raise AssertionError('No verified fixture baseline: ' + e['game_path'])
+        originals[e['game_path']] = original
     fixture = package.parent / ('verification_' + uuid.uuid4().hex[:8])
     clone, game = fixture / 'package', fixture / 'game'
     clone.mkdir(parents=True); game.mkdir()
@@ -26,7 +34,7 @@ def verify(package):
     shutil.copyfile(ROOT / 'Game/King of Dragon Pass.s86', game / 'King of Dragon Pass.s86')
     for e in m['install_files']:
         out = game / e['game_path']; out.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copyfile(ROOT / 'Game' / e['game_path'], out)
+        shutil.copyfile(originals[e['game_path']], out)
     results = []
     def run(name, restore=False, success=True):
         command = ['powershell.exe', '-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', str(clone / 'InstallTest.ps1'), '-GameRoot', str(game)]
@@ -47,12 +55,12 @@ def verify(package):
     broken.write_bytes(broken.read_bytes() + b'tampered')
     run('reject_tampered_payload', success=False); check('before_sha256')
     for e in m['install_files']:
-        if sha(ROOT / 'Game' / e['game_path']) != e['before_sha256']:
+        if sha(ROOT / 'Game' / e['game_path']) != actual_hashes[e['game_path']]:
             raise AssertionError('Source game changed during test: ' + e['game_path'])
     report = dict(status='passed', installed_and_restored=len(m['install_files']),
         source_game_untouched=True, fixture=str(fixture), checks=results,
         manifest_sha256=sha(package / 'TEST_MANIFEST.json'))
-    out = ROOT / 'Analysis/repack_test_verification_20261029.json'
+    out = package.parent / 'installation_verification.json'
     out.write_text(json.dumps(report, indent=2), encoding='utf-8')
     print(json.dumps(report, indent=2))
 

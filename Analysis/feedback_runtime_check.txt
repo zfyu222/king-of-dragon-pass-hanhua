@@ -1,0 +1,65 @@
+runtime_check.cpp
+  正在创建库 D:\StaticHanHua\Projects\king-of-dragon-pass\hook\build\native\runtime_check.lib 和对象 D:\StaticHanHua\Projects\king-of-dragon-pass\hook\build\native\runtime_check.exp
+PASS Play
+开始游戏
+PASS Settings
+设置
+PASS The pigs need 23 hides of wildland, and the other livestock need to graze on 27 hides of land. They need 62 herders to tend them.
+猪群需要 23 海德荒地，其他牲畜需要在 27 海德土地上放牧。它们需要 62 名牧人照料。
+PASS We need 238 farmers and 210 oxen to work all of our cropland. We have 411 healthy farmers, and 265 of our cattle are strong young oxen.
+我们需要 238 名农夫和 210 头耕牛来耕种全部农田。目前有 411 名健康农夫，另有 265 头牛是强壮的年轻耕牛。
+PASS We need 1 farmer and 1 ox to work all of our cropland. We have 1 healthy farmers, and 1 of our cattle are strong young oxen.
+我们需要 1 名农夫 和 1 头耕牛 来耕种我们所有的耕地。我们有 1 名健康的农夫，另外有 1 头牛是强壮的年轻耕牛。
+PASS farmers and oxen
+名农夫 和 头耕牛
+PASS Bachad N
+巴查德（邻近）
+PASS They're known for a large boulder with war powers. Their chief is Fantarl. They owe us a favor.
+他们因一块拥有战争力量的巨石闻名。 他们的首领是 范塔尔. 他们欠我们一个人情。
+PASS Everyone is gossiping about what happened a few hours ago. The young woman Eonislara was found out in the forest, making love with Korol, a notorious poet and troublemaking warrior of the Heran clan. Korol left without a formal farewell. Eonislara is unmarried, so her actions are not an offense against the gods. But she is betrothed to Jorator, a young thane of the Blackrock clan, and the wedding is scheduled for next season.
+所有人都在议论几小时前发生的事。年轻女子埃奥尼斯拉拉被人发现与科罗尔在森林里交欢。科罗尔是赫兰氏族臭名昭著的诗人，也是个惹是生非的战士。科罗尔没有正式告别就离开了。埃奥尼斯拉拉尚未婚配，因此她的行为并未冒犯诸神。但她已与黑岩氏族的年轻贵族约拉托尔订婚，婚礼定于下个季节举行。
+PASS They're known for keeping close ties with their former kin in Heortland. Their chief is Hendrick. They're in the Colymar tribe. They owe us a favor.
+他们因与赫奥特兰的旧亲保持密切联系而闻名。 他们的首领是 亨德里克. 他们属于 科利马尔 部族。 他们欠我们一个人情。
+PASS They're known for their fine horses. Their main deity is Elmal. Their chief is Harran.
+他们因他们的良马而闻名。 他们的主神是 埃尔马尔. 他们的首领是 哈兰.
+PASS They're known for keeping close ties with their former kin in
+Heortland. Their chief is Elusu. They're in the Colymar tribe. 他们欠我们一个人情。
+他们因与赫奥特兰的旧亲保持密切联系而闻名。 他们的首领是 埃卢苏. 他们属于 科利马尔 部族。 他们欠我们一个人情。
+PASS Leikan, age 49
+Animals: Good
+Bargaining: Good
+Combat: Excellent
+Custom: Excellent
+Leadership: Excellent
+Magic: Very Good
+Worships: Orlanth
+莱坎，年龄 49
+动物: 良好
+议价: 良好
+战斗: 优秀
+习俗: 优秀
+领导力: 优秀
+魔法: 很好
+信奉： 奥兰斯
+PASS The Issaries priestess Sora Goodseller came to our clan and asked if we had any white horses to trade. We had no white horses. Embarrassed that we had no white horse, we gave her a feast instead.
+伊萨里斯的女祭司索拉古德塞勒来到我们氏族，问我们有没有白马可以交易。 我们没有白马。 我们为没有白马而感到尴尬，于是改设宴款待她。
+PASS Eonislara, betrothed to Jorator of the Blackrock clan, was seduced by Korol, the notorious troublemaking poet of the Heran clan.
+已与黑岩氏族的约拉托尔订婚的埃奥尼斯拉拉，被赫兰氏族臭名昭著、惹是生非的诗人科罗尔诱奸了。
+PASS To prepare for the marriage of Ernalda and Orlanth, your men and women stood guard with Elmal.
+为厄纳尔达与奥兰斯的婚礼做准备，你的男女族人随埃尔马尔一同守卫。
+PASS We managed to sneak around their patrols and spirit away 22 cows without being spotted.
+我们成功绕过了他们的巡逻队，并悄然带走 22头牛 没有被察觉。
+PASS Farmer Morale +
+Warrior Morale +
+农民士气 +
+武士士气 +
+PASS We had to maneuver under a deadly rain of missiles. It was a short, nasty battle. Their magic confused and confounded our warriors. We were driven off and had no opportunity to obtain booty. With their careful attention, our auxiliaries kept 1 warrior from dying, and healed 1 of the wounded.
+我们不得不在投射物的致命雨幕下机动。 这是一场短暂而残酷的战斗。 他们的魔法 迷惑并扰乱了我们的战士。 我们被击退，没能获得任何战利品。 由于他们悉心照料，我们的辅助部队使1名战士免于死亡，并治愈了1名伤员。
+PASS Weaponthanes阵亡
+Footmen阵亡
+武器武士阵亡
+步兵阵亡
+PASS We had to maneuver under a devastating barrage of missiles.
+我们不得不在投射物的毁灭性弹幕下机动。
+PASS With their careful attention, our auxiliaries kept 3 warriors from dying, and healed 12 of the wounded.
+由于他们悉心照料，我们的辅助部队使3名战士免于死亡，并治愈了12名伤员。

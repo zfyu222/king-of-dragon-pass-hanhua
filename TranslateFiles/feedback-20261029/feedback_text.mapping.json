@@ -1,0 +1,255 @@
+{
+  "schema": "runtime-template-occurrences.v1",
+  "source_csv_sha256": "af3c33acf3d4431119e0badd658040ed2d15d7dc94ca16770c97eb860efb0ea3",
+  "resource_sha256": "c13f4071da49b6f44a10cbd0d17347f61d244ab77a44112761809174910529c0",
+  "records": [
+    {
+      "ordinal": 1,
+      "source_sha256": "e74b10a21239e265250b5e4af5e69cadacab57cbdbf660c6079c44813dbee585",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 17948,
+          "bytes": 69,
+          "source_bytes_sha256": "ea828c0675ec12a1df14effd8ac3709d662213397d02f6a3cd511493ab15b0a7"
+        }
+      ],
+      "transform": "Observed random branch expanded; Opal rendered values mapped to ordered printf captures; full displayed sentence retained to avoid mistranslating from dying fragments."
+    },
+    {
+      "ordinal": 2,
+      "source_sha256": "ec8741839997c4fccc29a11319f9a0d0767e971d2784eca54ebfd1b327ed0065",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 17948,
+          "bytes": 69,
+          "source_bytes_sha256": "ea828c0675ec12a1df14effd8ac3709d662213397d02f6a3cd511493ab15b0a7"
+        }
+      ],
+      "transform": "Observed random branch expanded; Opal rendered values mapped to ordered printf captures; full displayed sentence retained to avoid mistranslating from dying fragments."
+    },
+    {
+      "ordinal": 3,
+      "source_sha256": "e9c7b29e55f7321b0fee45f68a45bc23dddea4a886c2223e4392471c9234c404",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27608,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27704,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27728,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27744,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27760,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        }
+      ],
+      "transform": "Observed random branch expanded; Opal rendered values mapped to ordered printf captures; full displayed sentence retained to avoid mistranslating from dying fragments."
+    },
+    {
+      "ordinal": 4,
+      "source_sha256": "3f296039e54e8c69a042a4d0b757f993e1daf030106fd8ba1047d080ba1d9c94",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27608,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27704,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27728,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27744,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27760,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        }
+      ],
+      "transform": "Observed random branch expanded; Opal rendered values mapped to ordered printf captures; full displayed sentence retained to avoid mistranslating from dying fragments."
+    },
+    {
+      "ordinal": 5,
+      "source_sha256": "98ff245d289af18f06359e821bca4a34263825eeca40727e5b4e0354e0b41241",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27608,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27704,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27728,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27744,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27760,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        }
+      ],
+      "transform": "Observed random branch expanded; Opal rendered values mapped to ordered printf captures; full displayed sentence retained to avoid mistranslating from dying fragments."
+    },
+    {
+      "ordinal": 6,
+      "source_sha256": "45630054e56611db739e6852cf127607a3aad49bf35a6c5df8aab81645ec5b53",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27608,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27704,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27728,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27744,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27760,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        }
+      ],
+      "transform": "Observed random branch expanded; Opal rendered values mapped to ordered printf captures; full displayed sentence retained to avoid mistranslating from dying fragments."
+    },
+    {
+      "ordinal": 7,
+      "source_sha256": "cf4e84ce4b5cfee5c31dfa5574b16339d6b92743bc2066bbdad0fbe4490bc5e8",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27608,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27704,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27728,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27744,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27760,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        }
+      ],
+      "transform": "Observed random branch expanded; Opal rendered values mapped to ordered printf captures; full displayed sentence retained to avoid mistranslating from dying fragments."
+    },
+    {
+      "ordinal": 8,
+      "source_sha256": "9e8cc1f975d1b2e0beddf03c842b0c734a2ece178738984789c5527b6f868ffd",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27608,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27704,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27728,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27744,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27760,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        }
+      ],
+      "transform": "Observed random branch expanded; Opal rendered values mapped to ordered printf captures; full displayed sentence retained to avoid mistranslating from dying fragments."
+    }
+  ]
+}

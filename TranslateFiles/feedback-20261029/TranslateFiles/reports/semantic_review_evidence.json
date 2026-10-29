@@ -1,0 +1,294 @@
+{
+  "task_id": "review-r1-00001-e0be65ad",
+  "input_hash": "f165194c04a3f7ea5a28058b12055ffa68c72fae3ff59c71090a6b3e164d33d8",
+  "records": [
+    {
+      "changes": [],
+      "checks": {
+        "accuracy": {
+          "evidence": "原文是‘we had to maneuver under a deadly rain of %s’，译文保留被迫机动及‘%s’构成致命雨幕的关系，施事、动作和程度均未改变。",
+          "status": "pass"
+        },
+        "completeness": {
+          "evidence": "原文是‘we had to maneuver under a deadly rain of %s’，译文保留被迫机动及‘%s’构成致命雨幕的关系，施事、动作和程度均未改变。",
+          "status": "pass"
+        },
+        "logic": {
+          "evidence": "原文是‘we had to maneuver under a deadly rain of %s’，译文保留被迫机动及‘%s’构成致命雨幕的关系，施事、动作和程度均未改变。",
+          "status": "pass"
+        },
+        "placeholders": {
+          "evidence": "%s 在译文中出现一次，与源文一致，无增删、移动或格式改动。",
+          "status": "pass"
+        },
+        "terminology": {
+          "evidence": "本条 term_refs 仅 t1（%s，要求保留原文），译文中 %s 原样保留，无专名或术语冲突。",
+          "status": "pass"
+        },
+        "tone": {
+          "evidence": "战况汇报式叙述，‘不得不在……下机动’简洁直接，符合事件文本口吻。",
+          "status": "pass"
+        }
+      },
+      "exceptions": [],
+      "id": "R0000001_e74b10a212",
+      "issues": [],
+      "reason": "原文是‘we had to maneuver under a deadly rain of %s’，译文保留被迫机动及‘%s’构成致命雨幕的关系，施事、动作和程度均未改变。",
+      "reviewed": true,
+      "source_excerpt": "We had to maneuver under a deadly rain of %s.",
+      "translation": "我们不得不在%s的致命雨幕下机动。"
+    },
+    {
+      "changes": [],
+      "checks": {
+        "accuracy": {
+          "evidence": "原文写‘under a devastating barrage of %s’，译文保留在%s的毁灭性弹幕下被迫机动，‘devastating’的程度和‘barrage’的密集打击义均已传达。",
+          "status": "pass"
+        },
+        "completeness": {
+          "evidence": "原文写‘under a devastating barrage of %s’，译文保留在%s的毁灭性弹幕下被迫机动，‘devastating’的程度和‘barrage’的密集打击义均已传达。",
+          "status": "pass"
+        },
+        "logic": {
+          "evidence": "原文写‘under a devastating barrage of %s’，译文保留在%s的毁灭性弹幕下被迫机动，‘devastating’的程度和‘barrage’的密集打击义均已传达。",
+          "status": "pass"
+        },
+        "placeholders": {
+          "evidence": "%s 在译文中出现一次，与源文一致，无占位符增删或顺序变化。",
+          "status": "pass"
+        },
+        "terminology": {
+          "evidence": "本条 term_refs 仅 t1（%s，要求保留原文），译文中 %s 原样保留，无术语误用。",
+          "status": "pass"
+        },
+        "tone": {
+          "evidence": "‘毁灭性弹幕’用于战况叙述，直接有力，未添加解释或改变语气。",
+          "status": "pass"
+        }
+      },
+      "exceptions": [],
+      "id": "R0000002_ec87418399",
+      "issues": [],
+      "reason": "原文写‘under a devastating barrage of %s’，译文保留在%s的毁灭性弹幕下被迫机动，‘devastating’的程度和‘barrage’的密集打击义均已传达。",
+      "reviewed": true,
+      "source_excerpt": "We had to maneuver under a devastating barrage of %s.",
+      "translation": "我们不得不在%s的毁灭性弹幕下机动。"
+    },
+    {
+      "changes": [],
+      "checks": {
+        "accuracy": {
+          "evidence": "原文说辅助部队借治疗法术使一名战士免于死亡，并治愈部分伤员；译文两个结果分别对应‘kept ... from dying’和‘healed ... of the wounded’，施事和数量关系准确。",
+          "status": "pass"
+        },
+        "completeness": {
+          "evidence": "原文说辅助部队借治疗法术使一名战士免于死亡，并治愈部分伤员；译文两个结果分别对应‘kept ... from dying’和‘healed ... of the wounded’，施事和数量关系准确。",
+          "status": "pass"
+        },
+        "logic": {
+          "evidence": "原文说辅助部队借治疗法术使一名战士免于死亡，并治愈部分伤员；译文两个结果分别对应‘kept ... from dying’和‘healed ... of the wounded’，施事和数量关系准确。",
+          "status": "pass"
+        },
+        "placeholders": {
+          "evidence": "两个 %d 按源文顺序保留，数量与位置一致，无格式改动。",
+          "status": "pass"
+        },
+        "terminology": {
+          "evidence": "本条 term_refs 仅 t2（%d，要求保留原文），译文两个 %d 均原样保留，无术语冲突。",
+          "status": "pass"
+        },
+        "tone": {
+          "evidence": "‘凭借治疗法术，我们的辅助部队……’是自然的战报陈述，简洁且未改变口吻。",
+          "status": "pass"
+        }
+      },
+      "exceptions": [],
+      "id": "R0000003_e9c7b29e55",
+      "issues": [],
+      "reason": "原文说辅助部队借治疗法术使一名战士免于死亡，并治愈部分伤员；译文两个结果分别对应‘kept ... from dying’和‘healed ... of the wounded’，施事和数量关系准确。",
+      "reviewed": true,
+      "source_excerpt": "Through their healing magics, our auxiliaries kept %d warrior from dying, and healed %d of the wounded.",
+      "translation": "凭借治疗法术，我们的辅助部队使%d名战士免于死亡，并治愈了%d名伤员。"
+    },
+    {
+      "changes": [],
+      "checks": {
+        "accuracy": {
+          "evidence": "原文用复数‘warriors’，译文‘%d名战士’在中文量词结构中可同时覆盖单复数；‘kept ... from dying’与‘healed ... of the wounded’两个结果均准确。",
+          "status": "pass"
+        },
+        "completeness": {
+          "evidence": "原文用复数‘warriors’，译文‘%d名战士’在中文量词结构中可同时覆盖单复数；‘kept ... from dying’与‘healed ... of the wounded’两个结果均准确。",
+          "status": "pass"
+        },
+        "logic": {
+          "evidence": "原文用复数‘warriors’，译文‘%d名战士’在中文量词结构中可同时覆盖单复数；‘kept ... from dying’与‘healed ... of the wounded’两个结果均准确。",
+          "status": "pass"
+        },
+        "placeholders": {
+          "evidence": "两个 %d 按源文顺序保留，数量与位置一致。",
+          "status": "pass"
+        },
+        "terminology": {
+          "evidence": "本条 term_refs 仅 t2（%d，要求保留原文），译文两个 %d 均原样保留，无术语冲突。",
+          "status": "pass"
+        },
+        "tone": {
+          "evidence": "译文保持战报式陈述，语气与源文一致，无生硬增补。",
+          "status": "pass"
+        }
+      },
+      "exceptions": [],
+      "id": "R0000004_3f296039e5",
+      "issues": [],
+      "reason": "原文用复数‘warriors’，译文‘%d名战士’在中文量词结构中可同时覆盖单复数；‘kept ... from dying’与‘healed ... of the wounded’两个结果均准确。",
+      "reviewed": true,
+      "source_excerpt": "Through their healing magics, our auxiliaries kept %d warriors from dying, and healed %d of the wounded.",
+      "translation": "凭借治疗法术，我们的辅助部队使%d名战士免于死亡，并治愈了%d名伤员。"
+    },
+    {
+      "changes": [],
+      "checks": {
+        "accuracy": {
+          "evidence": "原文‘Due to their prompt healing’说明免死原因是治疗及时；译文‘由于治疗及时’准确表达因果关系，后续‘免于死亡’和‘治愈伤员’也对应两个动作。",
+          "status": "pass"
+        },
+        "completeness": {
+          "evidence": "原文‘Due to their prompt healing’说明免死原因是治疗及时；译文‘由于治疗及时’准确表达因果关系，后续‘免于死亡’和‘治愈伤员’也对应两个动作。",
+          "status": "pass"
+        },
+        "logic": {
+          "evidence": "原文‘Due to their prompt healing’说明免死原因是治疗及时；译文‘由于治疗及时’准确表达因果关系，后续‘免于死亡’和‘治愈伤员’也对应两个动作。",
+          "status": "pass"
+        },
+        "placeholders": {
+          "evidence": "两个 %d 均保留，顺序及数量与源文一致。",
+          "status": "pass"
+        },
+        "terminology": {
+          "evidence": "本条 term_refs 仅 t2（%d，要求保留原文），译文两个 %d 均原样保留。",
+          "status": "pass"
+        },
+        "tone": {
+          "evidence": "‘由于治疗及时’自然简洁，符合战况汇报口吻。",
+          "status": "pass"
+        }
+      },
+      "exceptions": [],
+      "id": "R0000005_98ff245d28",
+      "issues": [],
+      "reason": "原文‘Due to their prompt healing’说明免死原因是治疗及时；译文‘由于治疗及时’准确表达因果关系，后续‘免于死亡’和‘治愈伤员’也对应两个动作。",
+      "reviewed": true,
+      "source_excerpt": "Due to their prompt healing, our auxiliaries kept %d warrior from dying, and healed %d of the wounded.",
+      "translation": "由于治疗及时，我们的辅助部队使%d名战士免于死亡，并治愈了%d名伤员。"
+    },
+    {
+      "changes": [],
+      "checks": {
+        "accuracy": {
+          "evidence": "原文复数‘warriors’不要求中文显式标复数；译文‘%d名战士’保留数量含义，‘kept ... from dying’和‘healed ... of the wounded’均准确对应。",
+          "status": "pass"
+        },
+        "completeness": {
+          "evidence": "原文复数‘warriors’不要求中文显式标复数；译文‘%d名战士’保留数量含义，‘kept ... from dying’和‘healed ... of the wounded’均准确对应。",
+          "status": "pass"
+        },
+        "logic": {
+          "evidence": "原文复数‘warriors’不要求中文显式标复数；译文‘%d名战士’保留数量含义，‘kept ... from dying’和‘healed ... of the wounded’均准确对应。",
+          "status": "pass"
+        },
+        "placeholders": {
+          "evidence": "两个 %d 按源文顺序保留，无增删或重排。",
+          "status": "pass"
+        },
+        "terminology": {
+          "evidence": "本条 term_refs 仅 t2（%d，要求保留原文），两个 %d 均原样保留。",
+          "status": "pass"
+        },
+        "tone": {
+          "evidence": "译文为自然战报句式，语气直接，未改变源文陈述。",
+          "status": "pass"
+        }
+      },
+      "exceptions": [],
+      "id": "R0000006_45630054e5",
+      "issues": [],
+      "reason": "原文复数‘warriors’不要求中文显式标复数；译文‘%d名战士’保留数量含义，‘kept ... from dying’和‘healed ... of the wounded’均准确对应。",
+      "reviewed": true,
+      "source_excerpt": "Due to their prompt healing, our auxiliaries kept %d warriors from dying, and healed %d of the wounded.",
+      "translation": "由于治疗及时，我们的辅助部队使%d名战士免于死亡，并治愈了%d名伤员。"
+    },
+    {
+      "changes": [],
+      "checks": {
+        "accuracy": {
+          "evidence": "原文‘With their careful attention’指辅助部队的悉心照料，译文保留这一原因；‘kept ... from dying’与‘healed ... of the wounded’两个结果均准确。",
+          "status": "pass"
+        },
+        "completeness": {
+          "evidence": "原文‘With their careful attention’指辅助部队的悉心照料，译文保留这一原因；‘kept ... from dying’与‘healed ... of the wounded’两个结果均准确。",
+          "status": "pass"
+        },
+        "logic": {
+          "evidence": "原文‘With their careful attention’指辅助部队的悉心照料，译文保留这一原因；‘kept ... from dying’与‘healed ... of the wounded’两个结果均准确。",
+          "status": "pass"
+        },
+        "placeholders": {
+          "evidence": "两个 %d 数量与位置均与源文一致。",
+          "status": "pass"
+        },
+        "terminology": {
+          "evidence": "本条 term_refs 仅 t2（%d，要求保留原文），译文两个 %d 均原样保留。",
+          "status": "pass"
+        },
+        "tone": {
+          "evidence": "‘由于他们悉心照料’符合叙事口吻，未添加源文没有的评价。",
+          "status": "pass"
+        }
+      },
+      "exceptions": [],
+      "id": "R0000007_cf4e84ce4b",
+      "issues": [],
+      "reason": "原文‘With their careful attention’指辅助部队的悉心照料，译文保留这一原因；‘kept ... from dying’与‘healed ... of the wounded’两个结果均准确。",
+      "reviewed": true,
+      "source_excerpt": "With their careful attention, our auxiliaries kept %d warrior from dying, and healed %d of the wounded.",
+      "translation": "由于他们悉心照料，我们的辅助部队使%d名战士免于死亡，并治愈了%d名伤员。"
+    },
+    {
+      "changes": [],
+      "checks": {
+        "accuracy": {
+          "evidence": "原文复数‘warriors’在中文‘%d名战士’中不构成复数缺失；原因‘careful attention’及两个医疗结果均准确传达。",
+          "status": "pass"
+        },
+        "completeness": {
+          "evidence": "原文复数‘warriors’在中文‘%d名战士’中不构成复数缺失；原因‘careful attention’及两个医疗结果均准确传达。",
+          "status": "pass"
+        },
+        "logic": {
+          "evidence": "原文复数‘warriors’在中文‘%d名战士’中不构成复数缺失；原因‘careful attention’及两个医疗结果均准确传达。",
+          "status": "pass"
+        },
+        "placeholders": {
+          "evidence": "两个 %d 按源文顺序保留，无格式或数量改动。",
+          "status": "pass"
+        },
+        "terminology": {
+          "evidence": "本条 term_refs 仅 t2（%d，要求保留原文），译文两个 %d 均原样保留。",
+          "status": "pass"
+        },
+        "tone": {
+          "evidence": "译文保持简洁战报语气，符合事件叙述。",
+          "status": "pass"
+        }
+      },
+      "exceptions": [],
+      "id": "R0000008_9e8cc1f975",
+      "issues": [],
+      "reason": "原文复数‘warriors’在中文‘%d名战士’中不构成复数缺失；原因‘careful attention’及两个医疗结果均准确传达。",
+      "reviewed": true,
+      "source_excerpt": "With their careful attention, our auxiliaries kept %d warriors from dying, and healed %d of the wounded.",
+      "translation": "由于他们悉心照料，我们的辅助部队使%d名战士免于死亡，并治愈了%d名伤员。"
+    }
+  ]
+}

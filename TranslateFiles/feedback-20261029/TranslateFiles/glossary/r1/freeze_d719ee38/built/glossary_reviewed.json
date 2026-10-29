@@ -1,0 +1,83 @@
+{
+  "characters": [],
+  "terms": [],
+  "non_translate": [
+    {
+      "source": "%s",
+      "evidence_rows": [
+        1,
+        2
+      ],
+      "extraction_candidates": [
+        {
+          "table": "non_translate",
+          "row": {
+            "source": "%s"
+          },
+          "extraction_count": 1,
+          "evidence_rows": [
+            1,
+            2
+          ],
+          "extraction_tasks": [
+            "extract-r1-00001-73d3f6b3"
+          ]
+        }
+      ],
+      "provisional_selection": "most_extraction_proposals_then_first_seen",
+      "applicability": {
+        "case_sensitive": true,
+        "mode": "text",
+        "reason": "records 1、2 将 %s 作为 printf 格式符嵌入句子，必须原样保留。"
+      }
+    },
+    {
+      "source": "%d",
+      "evidence_rows": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "extraction_candidates": [
+        {
+          "table": "non_translate",
+          "row": {
+            "source": "%d"
+          },
+          "extraction_count": 1,
+          "evidence_rows": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "extraction_tasks": [
+            "extract-r1-00001-73d3f6b3"
+          ]
+        }
+      ],
+      "provisional_selection": "most_extraction_proposals_then_first_seen",
+      "applicability": {
+        "case_sensitive": true,
+        "mode": "text",
+        "reason": "records 3、4 将 %d 作为 printf 格式符嵌入句子，必须原样保留。"
+      }
+    }
+  ],
+  "applicability_policy": 1,
+  "terminology_policy": 1,
+  "nontranslate_scope_policy": 1,
+  "corpus_evidence_policy": 1,
+  "feedback_risk_policy": 1,
+  "stats": {
+    "character_count": 0,
+    "term_count": 0,
+    "non_translate_count": 2,
+    "total_hits": 2
+  }
+}
