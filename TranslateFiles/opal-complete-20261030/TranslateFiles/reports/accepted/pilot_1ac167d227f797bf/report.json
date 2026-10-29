@@ -1,0 +1,3219 @@
+{
+  "schema": 1,
+  "kind": "pilot",
+  "purpose": "calibration",
+  "pilot_key": "02cefcad869a2625b8d1c00955d5da30eaf41a19608bcb454834430abe4bde76",
+  "source_sha256": "1f4d9ec1fd18873bae9eba995d0e21a4e10da1d62d4987206de4d53421750bee",
+  "glossary": {
+    "hash": "9a6cf7dd4c99acdf49539b9fad1b369a591aa5a5ac295d686d0e923053e1b187",
+    "path": "glossary\\r1\\freeze_63c60a64\\built\\glossary_reviewed.json",
+    "revision": 1
+  },
+  "config": {
+    "agent_attempt_limit": 2,
+    "agent_task_limit": 1,
+    "api": {
+      "api_format": "OpenAI",
+      "api_key_env": "SHH_TRANSLATION_API_KEY",
+      "api_url": "",
+      "concurrency": 45,
+      "extra_body": {},
+      "max_completion_tokens": 16384,
+      "max_requests": 5252,
+      "model_name": "",
+      "request_timeout": 120,
+      "requests_per_minute": 0,
+      "stream": false,
+      "target_platform": "custom_platform_shh",
+      "temperature": 1,
+      "think_switch": false,
+      "tls_switch": false
+    },
+    "backend": "api",
+    "batch_chars": 12000,
+    "batch_records": null,
+    "batch_tokens": 1024,
+    "body_repair_round_limit": 6,
+    "case_sensitive": false,
+    "context_records": 0,
+    "draft_scan_workers": 1,
+    "escalation_backend": "api",
+    "exclusions": [
+      {
+        "info": "Opal 插值命令（\\x01 + 两个操作数字节）",
+        "markers": "",
+        "regex": "\\\\x01(?:(?:\\\\x[0-9A-Fa-f]{2})|[^\\r\\n]){2}"
+      },
+      {
+        "info": "Opal 转义控制字节",
+        "markers": "",
+        "regex": "\\\\x[0-9A-Fa-f]{2}"
+      },
+      {
+        "info": "printf 格式化符（含 %ld）",
+        "markers": "",
+        "regex": "%(?:\\d+\\$)?[-+ #0']*(?:\\d+|\\*)?(?:\\.(?:\\d+|\\*))?(?:hh|h|ll|l|j|z|t|L)?[diuoxXfFeEgGaAcspn%]"
+      },
+      {
+        "info": "字面换行与制表转义",
+        "markers": "",
+        "regex": "\\\\[nrt]"
+      },
+      {
+        "info": "Opal scene 内部键",
+        "markers": "",
+        "regex": "^sceneR?\\d{3}[a-z]?$"
+      },
+      {
+        "info": "Opal 事件节点内部键",
+        "markers": "",
+        "regex": "^(?:H\\d+[a-z]{1,2}\\d?|Q\\d[A-Za-z]+|T\\d+)$"
+      },
+      {
+        "info": "Opal 状态与资源内部键",
+        "markers": "",
+        "regex": "^(?:RaidGoodNews|RaidBadNews|GoodNews|BadNews|EmissaryNews|GoExploringNews|MissionNews|BigBigTrouble|CallToArms|CouldBeBad|CouldBeGood|IsItAdventure|ItIsBad|ItIsGood|MightBeSad|QuiteAnAdventure|ReallyReallyGood|WeAreSad|WeDidIt|WoeAlasAlack|IntroOverture|MythMusic)$"
+      }
+    ],
+    "extract_batch_records": null,
+    "extract_batch_tokens": 10000,
+    "game_background": "## 游戏信息\n- 原名：King of Dragon Pass\n- 中文名：龙隘之王（暂译）\n- 开发商：A Sharp\n- 发行商：HeroCraft PC（Steam 版）\n- 发行平台：Steam（Windows、macOS）\n- Steam 发行日期：2015-07-28\n- 引擎：Marmalade SDK / S3E；本机 `README.txt` 确认 Steam 版使用 Marmalade SDK 8.8.0（build 487222q），游戏版本 2.4.0。\n- 原语言：英语（Steam 商店仅列英语）\n- 参考资料：[Steam 商店页](https://store.steampowered.com/app/352220/King_of_Dragon_Pass/)；[A Sharp 官方页面](https://www.a-sharp.com/kodp/)\n\n## 游戏简介\n\n玩家在神话世界 Glorantha 中领导一个氏族，通过资源管理、外交、战争、信仰与大量分支事件，逐步壮大为部族乃至龙隘之王。游戏将互动叙事与策略管理结合，Steam 版约有近 600 个手绘事件场景。[Steam 商店页](https://store.steampowered.com/app/352220/King_of_Dragon_Pass/)；[开发商介绍](https://www.a-sharp.com/kodp/)\n\n## 汉化目标\n- 范围：剧情事件、程序内置文本、UI、开场/教程、帮助、内置手册和地图标签。\n- 目标语言：简体中文",
+    "glossary_review_batch_records": 12,
+    "glossary_review_batch_tokens": 10000,
+    "layout_normalization": "exact_v1",
+    "lease_seconds": 3600,
+    "max_attempts": 5,
+    "pilot_batch_count": null,
+    "pilot_call_limit": null,
+    "pilot_ordinals": [],
+    "pilot_records": 150,
+    "placeholder_family_overrides": {},
+    "polish": false,
+    "protect_named_curly": null,
+    "quality_version": 2,
+    "record_constraints": {},
+    "review_batch_records": 80,
+    "review_batch_tokens": 1024,
+    "review_estimate": {
+      "ascii_chars_per_token": 3,
+      "full_base_tokens": 420,
+      "non_ascii_tokens_per_char": 2,
+      "pilot_base_tokens": 120,
+      "translation_multiplier": 3
+    },
+    "review_output_reserve_percent": 20,
+    "review_output_tokens": 32768,
+    "source_language": "英语",
+    "stage_backends": {},
+    "standard_no_progress_limit": 2,
+    "standard_repair_round_limit": 3,
+    "style": "《龙隘之王》（King of Dragon Pass）是格洛兰萨（Glorantha）神话背景的氏族经营与互动叙事游戏，文本由事件叙述、选项、顾问建议、UI 标签和动态拼接片段混合而成。叙述文字要求史诗感、古朴凝练、有画面感，用词贴近神话与部落生活，但不要写成文言文，也不要滥用成语；人物对白和顾问意见要求自然口语、直接有力，保留说话人的立场、情绪与偏见，不加解释性补充。玩家选项使用简短祈使句，动词开头，句末用句号；同一场景内多个选项的句式与长度尽量对齐。UI 标签、按钮、资源名、季节名使用简体中文的短词，不加句号，尽量不超过 6 个字。专名（神祇、氏族、人物、地名、部族、英雄任务）必须使用冻结术语表的统一译名；术语表未收录的新专名按音译为主、意译为辅，音译不夹杂间隔号。数值、牛只头数、年份、百分比一律使用阿拉伯数字，不得改写成中文数字。原文中的 \\x01 命令、\\xNN 控制字节、printf 格式符、字面 \\n\\r\\t 以及随机短语的 / 分支结构必须原样保留，随机短语的每个英文分支分别译为中文，分支数量与斜杠位置不变。许多条目是整句被拆开的片段（半句、短语、单个词），必须按其在句中承担的成分翻译：冠词与介词片段保持可拼接的短形式，不要补主语或补句号，不要改写词性，不要输出解释。遇到含义含糊的片段，按该词在氏族管理语境中最常见的含义翻译，不要臆造专名或剧情。 本游戏中文名称为龙城之王。原文是程序拼接片段，须结合本片段语法翻译，不能把from dying译成来自/奄奄一息；完整保留Opal命令、随机分支数量及分支顺序。",
+    "target_language": "简体中文",
+    "task_input_chars": 48000,
+    "task_input_tokens": 65536,
+    "whole_word": true,
+    "workflow": "custom"
+  },
+  "records": [
+    {
+      "id": "R0000006_0087478a90",
+      "ordinal": 6,
+      "source": "We pulled back before the \\x01\\xC3\\x21 were ready, and by the time their charge reached us, they were tired.",
+      "translation": "我们在\\x01\\xC3\\x21准备就绪前就后撤了；等他们的冲锋抵达我们面前时，他们已经疲惫不堪。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1;offset=43CE;bytes=99",
+        "scene": "1",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00001-f2a81882",
+        "instance": "api-pilot_translate-2ec7c1624c0c4444997065a59f146ef4"
+      }
+    },
+    {
+      "id": "R0000011_aa10258214",
+      "ordinal": 11,
+      "source": "We drove the \\x01\\xC3\\x21 from the battlefield, and were able to plunder their tula.",
+      "translation": "我们把\\x01\\xC3\\x21逐出了战场，并得以劫掠他们的氏族领地。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=2;offset=5D48;bytes=75",
+        "scene": "2",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00001-f2a81882",
+        "instance": "api-pilot_translate-2ec7c1624c0c4444997065a59f146ef4"
+      }
+    },
+    {
+      "id": "R0000017_6456b2b2fc",
+      "ordinal": 17,
+      "source": "We took one captive from the \\x01\\xC3\\x21.",
+      "translation": "我们从\\x01\\xC3\\x21中抓了一名俘虏。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=2;offset=5FB6;bytes=33",
+        "scene": "2",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00001-f2a81882",
+        "instance": "api-pilot_translate-2ec7c1624c0c4444997065a59f146ef4"
+      }
+    },
+    {
+      "id": "R0000028_7a03db905a",
+      "ordinal": 28,
+      "source": "We were \\x02\\x02forced off/driven from\\x02 the battlefield. The \\x01\\xC3\\x21 made off with",
+      "translation": "我们\\x02\\x02被逼离开/被赶离\\x02战场。\\x01\\xC3\\x21抢走了",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=2;offset=65B8;bytes=72",
+        "scene": "2",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00001-f2a81882",
+        "instance": "api-pilot_translate-2ec7c1624c0c4444997065a59f146ef4"
+      }
+    },
+    {
+      "id": "R0000066_2558e06ea3",
+      "ordinal": 66,
+      "source": "Our herders report that the \\x01\\xC3\\x21 stole \\x01\\x40\\x03 cows",
+      "translation": "我们的牧人报告说，\\x01\\xC3\\x21偷走了\\x01\\x40\\x03头牛",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=11;offset=8D98;bytes=46",
+        "scene": "11",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00001-f2a81882",
+        "instance": "api-pilot_translate-2ec7c1624c0c4444997065a59f146ef4"
+      }
+    },
+    {
+      "id": "R0000078_6eb6128c56",
+      "ordinal": 78,
+      "source": "“The \\x01\\xC3\\x21 give gifts, too.”",
+      "translation": "“\\x01\\xC3\\x21也会送礼。”",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=13;offset=97C8;bytes=30",
+        "scene": "13",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00001-f2a81882",
+        "instance": "api-pilot_translate-2ec7c1624c0c4444997065a59f146ef4"
+      }
+    },
+    {
+      "id": "R0000095_9b0dfd1f90",
+      "ordinal": 95,
+      "source": "The \\x01\\xC3\\x21 have \\x02\\x03surrounded/cut off/concentrated their attack on\\x02 the \\x01\\x40\\x62 warriors who joined our forces. The \\x01\\xC3\\x62 are fighting well for the moment, but they are outnumbered and in a dangerous position. \\x01\\x40\\xD8 is the nearest skilled battle leader. What should \\x06 do?",
+      "translation": "\\x01\\xC3\\x21已经\\x02\\x03包围了/截住了/把攻势集中在\\x02那些加入我方的\\x01\\x40\\x62战士。\\x01\\xC3\\x62眼下打得不错，但寡不敌众，处境危险。\\x01\\x40\\xD8是附近最有本事的战地首领。\\x06该怎么办？",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=18;offset=B2F4;bytes=259",
+        "scene": "18",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00001-f2a81882",
+        "instance": "api-pilot_translate-2ec7c1624c0c4444997065a59f146ef4"
+      }
+    },
+    {
+      "id": "R0000125_b9dd30373e",
+      "ordinal": 125,
+      "source": "\\x01\\x40\\xD8 rose shakily to \\x04 feet and kept our warriors from fleeing along with our \\x01\\x40\\x18, but after the battle \\x06 fell again from \\x04 wounds.",
+      "translation": "\\x01\\x40\\xD8摇摇晃晃地用\\x04双脚站了起来，没让我们的战士跟着我们的\\x01\\x40\\x18一起逃走；但战斗结束后，\\x06又因\\x04伤势倒下。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=18;offset=C3EE;bytes=130",
+        "scene": "18",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00001-f2a81882",
+        "instance": "api-pilot_translate-2ec7c1624c0c4444997065a59f146ef4"
+      }
+    },
+    {
+      "id": "R0000174_60e7db1fbc",
+      "ordinal": 174,
+      "source": "We were fortunate that \\x01\\x40\\xD8 was so tough, and kept crawling towards our lines after suffering dozens of wounds.",
+      "translation": "我们很幸运，\\x01\\x40\\xD8如此顽强，身负数十处伤后仍不断朝我们的阵线爬来。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=21;offset=E242;bytes=110",
+        "scene": "21",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00001-f2a81882",
+        "instance": "api-pilot_translate-2ec7c1624c0c4444997065a59f146ef4"
+      }
+    },
+    {
+      "id": "R0000196_c1e241bbf6",
+      "ordinal": 196,
+      "source": "but the \\x01\\xC3\\x21 ignored her.",
+      "translation": "但\\x01\\xC3\\x21没有理会她。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=22;offset=F46A;bytes=24",
+        "scene": "22",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00001-f2a81882",
+        "instance": "api-pilot_translate-2ec7c1624c0c4444997065a59f146ef4"
+      }
+    },
+    {
+      "id": "R0000232_f31832a9cc",
+      "ordinal": 232,
+      "source": "\\x01\\x40\\x21 warriors running ahead of their companions tried to break into our stead to plunder. They were trying to cross our ditch when \\x01\\x40\\xD8 had a chance to cut them off.",
+      "translation": "\\x01\\x40\\x21战士甩开同伴冲在前面，企图闯进我们的农庄劫掠。他们正试图越过我们的沟渠时，\\x01\\x40\\xD8得到了截住他们的机会。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=24;offset=108C6;bytes=163",
+        "scene": "24",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00001-f2a81882",
+        "instance": "api-pilot_translate-2ec7c1624c0c4444997065a59f146ef4"
+      }
+    },
+    {
+      "id": "R0000259_5a397283b6",
+      "ordinal": 259,
+      "source": "Does \\x01\\x40\\xD8:",
+      "translation": "\\x01\\x40\\xD8会吗：",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=26;offset=12264;bytes=9",
+        "scene": "26",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00001-f2a81882",
+        "instance": "api-pilot_translate-2ec7c1624c0c4444997065a59f146ef4"
+      }
+    },
+    {
+      "id": "R0000286_dd77f19b13",
+      "ordinal": 286,
+      "source": "“There is only one who can command me, and you are not him. You are \\x01\\x40\\xD8, \\x01\\x81\\x22 \\x01\\x40\\x22 thane who is but a distant relative of Orlanth. \\x02\\x02Be gone!/Run away or I will burn you to a cinder!\\x02” And \\x01\\x40\\x06 resumed his unswerving defense.",
+      "translation": "“能命令我的只有一个人，而你不是他。你是\\x01\\x40\\xD8，\\x01\\x81\\x22\\x01\\x40\\x22贵族，不过是奥兰斯的一个远亲罢了。\\x02\\x02滚开！/快逃，不然我把你烧成灰烬！\\x02”随后，\\x01\\x40\\x06又继续他毫不动摇的防守。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=26;offset=1309A;bytes=226",
+        "scene": "26",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00001-f2a81882",
+        "instance": "api-pilot_translate-2ec7c1624c0c4444997065a59f146ef4"
+      }
+    },
+    {
+      "id": "R0000356_456c61cda3",
+      "ordinal": 356,
+      "source": "\\x01\\x40\\xD8 caught the sword on its return, then pointed its bloody length toward the remaining \\x01\\xC3\\x21, who shuddered and pushed to get away from \\x08.",
+      "translation": "\\x01\\x40\\xD8在剑收回时将它架住，随后把染血的剑身指向仅剩的\\x01\\xC3\\x21；对方打了个寒颤，拼命想从\\x08身边逃开。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=27;offset=16612;bytes=137",
+        "scene": "27",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00001-f2a81882",
+        "instance": "api-pilot_translate-2ec7c1624c0c4444997065a59f146ef4"
+      }
+    },
+    {
+      "id": "R0000379_272219a089",
+      "ordinal": 379,
+      "source": "\\x01\\x40\\xD8 called upon Urox and began killing the \\x01\\xC3\\x21. \\x05 did not stop until \\x01\\x41\\x57 was dead.",
+      "translation": "\\x01\\x40\\xD8向乌罗克斯呼求，开始斩杀\\x01\\xC3\\x21。\\x05直到\\x01\\x41\\x57死去才停手。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=27;offset=171A6;bytes=82",
+        "scene": "27",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00001-f2a81882",
+        "instance": "api-pilot_translate-2ec7c1624c0c4444997065a59f146ef4"
+      }
+    },
+    {
+      "id": "R0000380_080f16af8f",
+      "ordinal": 380,
+      "source": "\\x01\\x40\\xD8 bellowed and charged but the \\x01\\x40\\x21 Orlanthi was not to be taken so easily. The Uroxi’s charge missed and carried \\x08 ten feet past \\x01\\x41\\x57. By the time \\x01\\x40\\xD8 could turn, \\x01\\x41\\x57’s sword poked all the way through \\x01\\xBA\\xD8\\x04 chest. \\x01\\x40\\xD8 stared cross-eyed at the blade, took another three steps, and then fell.",
+      "translation": "\\x01\\x40\\xD8大吼一声冲了上去，但\\x01\\x40\\x21奥兰斯人可不是那么容易对付的。乌罗克斯信徒的冲锋落空，把\\x08带过\\x01\\x41\\x57十英尺。等\\x01\\x40\\xD8能转过身时，\\x01\\x41\\x57的剑已经整个刺穿了\\x01\\xBA\\xD8\\x04胸膛。\\x01\\x40\\xD8双眼斗鸡似的盯着剑刃，又迈了三步，随即倒下。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=27;offset=171FC;bytes=294",
+        "scene": "27",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00001-f2a81882",
+        "instance": "api-pilot_translate-2ec7c1624c0c4444997065a59f146ef4"
+      }
+    },
+    {
+      "id": "R0000391_85bdb662e6",
+      "ordinal": 391,
+      "source": "\\x01\\x40\\xD8 leapt sideways past the \\x01\\x40\\x21’s thrust, then slipped a blow home so quickly that none of us saw it.",
+      "translation": "\\x01\\x40\\xD8侧身跃过\\x01\\x40\\x21的突刺，随即一击得手，快得我们谁都没看清。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=27;offset=17792;bytes=103",
+        "scene": "27",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00001-f2a81882",
+        "instance": "api-pilot_translate-2ec7c1624c0c4444997065a59f146ef4"
+      }
+    },
+    {
+      "id": "R0000433_514e56cef4",
+      "ordinal": 433,
+      "source": "A berserker threatened to wipe out our warriors, but \\x01\\x40\\xD8 faced him in single combat, and struck him down.",
+      "translation": "一名狂战士扬言要杀光我们的战士，但\\x01\\x40\\xD8与他单打独斗，将他击倒。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=28;offset=197AE;bytes=105",
+        "scene": "28",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00001-f2a81882",
+        "instance": "api-pilot_translate-2ec7c1624c0c4444997065a59f146ef4"
+      }
+    },
+    {
+      "id": "R0000438_b30941b05a",
+      "ordinal": 438,
+      "source": "The berserker continued his swing, up and over in a figure-eight motion, catching the back of \\x01\\x40\\xD8’s neck with his axe and sending \\x04 head flying. Our warriors \\x02\\x03wailed with grief/drew back in terror/howled their sadness\\x02.",
+      "translation": "狂战士继续挥斧，上下翻飞划出一个八字，斧刃劈中\\x01\\x40\\xD8的后颈，把\\x04头颅砍飞。我们的战士\\x02\\x03哀号痛哭/惊恐后退/悲号不已\\x02。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=28;offset=1993E;bytes=222",
+        "scene": "28",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00001-f2a81882",
+        "instance": "api-pilot_translate-2ec7c1624c0c4444997065a59f146ef4"
+      }
+    },
+    {
+      "id": "R0000455_7b5a4d9de7",
+      "ordinal": 455,
+      "source": "\\x01\\x40\\xD8 and \\x04 companions managed to \\x02\\x02run into a stand of trees where the horses couldn’t follow/scramble to safety\\x02.",
+      "translation": "\\x01\\x40\\xD8和\\x04同伴们设法\\x02\\x02跑进一片马匹无法跟进的树林/挣扎着逃到安全处\\x02。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=29;offset=1B1EA;bytes=115",
+        "scene": "29",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00001-f2a81882",
+        "instance": "api-pilot_translate-2ec7c1624c0c4444997065a59f146ef4"
+      }
+    },
+    {
+      "id": "R0000653_592267df49",
+      "ordinal": 653,
+      "source": "No one noticed \\x01\\x40\\xD8’s failure of nerve",
+      "translation": "没人注意到\\x01\\x40\\xD8的怯懦",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=34;offset=236B2;bytes=39",
+        "scene": "34",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00001-f2a81882",
+        "instance": "api-pilot_translate-2ec7c1624c0c4444997065a59f146ef4"
+      }
+    },
+    {
+      "id": "R0000660_96d468df47",
+      "ordinal": 660,
+      "source": "\\x01\\x40\\xD8 chose to turn \\x04 back on this chance for glory, but the gods did not favor such cowardice. \\x01\\x40\\xD8 was slain.",
+      "translation": "\\x01\\x40\\xD8选择把\\x04背转向这次赢得荣耀的机会，但众神不眷顾这种怯懦。\\x01\\x40\\xD8被杀。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=34;offset=2388A;bytes=108",
+        "scene": "34",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00001-f2a81882",
+        "instance": "api-pilot_translate-2ec7c1624c0c4444997065a59f146ef4"
+      }
+    },
+    {
+      "id": "R0000671_51e9383d16",
+      "ordinal": 671,
+      "source": "As they fled, one of the \\x01\\xC3\\x36 turned in his saddle and shot \\x01\\x40\\xD8 with a flaming arrow.",
+      "translation": "他们逃跑时，\\x01\\xC3\\x36中的一人在马鞍上转过身，用一支燃烧的箭射中了\\x01\\x40\\xD8。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=35;offset=24302;bytes=84",
+        "scene": "35",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00001-f2a81882",
+        "instance": "api-pilot_translate-2ec7c1624c0c4444997065a59f146ef4"
+      }
+    },
+    {
+      "id": "R0000719_a838c659da",
+      "ordinal": 719,
+      "source": "Before the \\x01\\xC3\\x21 can realize their danger, \\x01\\x40\\xD8 dashes among them and strikes down their chief god-talker,",
+      "translation": "还没等\\x01\\xC3\\x21意识到危险，\\x01\\x40\\xD8就冲入他们中间，击倒了他们的首席神语者，",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=36;offset=25F8A;bytes=103",
+        "scene": "36",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00001-f2a81882",
+        "instance": "api-pilot_translate-2ec7c1624c0c4444997065a59f146ef4"
+      }
+    },
+    {
+      "id": "R0000738_974ffbeb8c",
+      "ordinal": 738,
+      "source": "\\x01\\x40\\xD8 sniffed the air, following the spirits to the foemen who were most afflicted by the impests. His ax ended their suffering.",
+      "translation": "\\x01\\x40\\xD8嗅了嗅空气，循着神灵找到受报应灵折磨最深的敌人。他的斧头终结了他们的痛苦。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=37;offset=287E8;bytes=126",
+        "scene": "37",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00001-f2a81882",
+        "instance": "api-pilot_translate-2ec7c1624c0c4444997065a59f146ef4"
+      }
+    },
+    {
+      "id": "R0000752_56a011eb1b",
+      "ordinal": 752,
+      "source": "After the battle, \\x01\\x40\\xD8 could not be sure that \\x06 had slain \\x01\\x41\\x5E’s attackers. But \\x01\\xBA\\xD8\\x06 was satisfied: many \\x01\\xC3\\x21 had fallen to \\x04 sword.",
+      "translation": "战斗结束后，\\x01\\x40\\xD8无法确定\\x06是否杀死了\\x01\\x41\\x5E的袭击者。但\\x01\\xBA\\xD8\\x06很满意：许多\\x01\\xC3\\x21倒在了\\x04剑下。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=37;offset=290CE;bytes=131",
+        "scene": "37",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00002-127a4787",
+        "instance": "api-pilot_translate-d81df992fcc844668c4ae396ee96cc29"
+      }
+    },
+    {
+      "id": "R0000779_72f11632ca",
+      "ordinal": 779,
+      "source": "Odayla blessed \\x01\\x40\\xD8’s shooting. \\x03 second arrow felled the \\x01\\x40\\x21 warleader, and our warriors chased the enemy off the field.",
+      "translation": "奥达拉保佑了\\x01\\x40\\xD8的射术。\\x03第二支箭射倒了\\x01\\x40\\x21战酋，我们的战士把敌人赶出了战场。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=37;offset=2A02A;bytes=122",
+        "scene": "37",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00002-127a4787",
+        "instance": "api-pilot_translate-d81df992fcc844668c4ae396ee96cc29"
+      }
+    },
+    {
+      "id": "R0000844_4be9778e1e",
+      "ordinal": 844,
+      "source": "The enemy god-talkers chose \\x01\\x40\\xD8 as the target of their most dangerous spells. \\x05 spent the battle",
+      "translation": "敌人的神语者把\\x01\\x40\\xD8选为他们最危险法术的目标。\\x05整场战斗都在",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=37;offset=2D2C8;bytes=96",
+        "scene": "37",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00002-127a4787",
+        "instance": "api-pilot_translate-d81df992fcc844668c4ae396ee96cc29"
+      }
+    },
+    {
+      "id": "R0000896_c132356c48",
+      "ordinal": 896,
+      "source": "\\x01\\x40\\xD8’s sword whirled and danced, blowing the \\x01\\xC3\\x21 back in a blood-spattered whirlwind.",
+      "translation": "\\x01\\x40\\xD8的剑旋转飞舞，化作一阵血花四溅的旋风，把\\x01\\xC3\\x21逼退。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=38;offset=31BC6;bytes=86",
+        "scene": "38",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00002-127a4787",
+        "instance": "api-pilot_translate-d81df992fcc844668c4ae396ee96cc29"
+      }
+    },
+    {
+      "id": "R0000909_dd09e228a3",
+      "ordinal": 909,
+      "source": "\\x01\\x40\\xD8 performed the \\x02\\x06Sword Dancing Feat/Sword-Edge Feat/Valiant Champion’s Whirling-Feat/Hero’s Fury Feat/Twirling Blade Feat/Cat Feat\\x02, striking down \\x01\\xC3\\x21 so quickly they had no chance to defend themselves.",
+      "translation": "\\x01\\x40\\xD8施展了\\x02\\x06剑舞神技/剑锋绝技/勇武冠军旋身绝技/英雄之怒绝技/旋舞之刃绝技/猫之绝技\\x02，转眼间击倒\\x01\\xC3\\x21，对方根本来不及招架。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=38;offset=322FA;bytes=209",
+        "scene": "38",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [
+        "R0000909_dd09e228a3: terminology mismatch ['Valiant Champion’s Whirling']",
+        "terminology mismatch: Valiant Champion’s Whirling"
+      ],
+      "producer": {
+        "task_id": "pilot_translate-r1-00002-127a4787",
+        "instance": "api-pilot_translate-d81df992fcc844668c4ae396ee96cc29"
+      }
+    },
+    {
+      "id": "R0000969_b35ac5b63d",
+      "ordinal": 969,
+      "source": "We had no idea how \\x06 fought as long as \\x06 did, but when \\x01\\x40\\xD8 fell, \\x06 died.",
+      "translation": "我们不知道\\x06是怎么撑得和\\x06一样久的，但当\\x01\\x40\\xD8倒下时，\\x06也死了。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=38;offset=35578;bytes=72",
+        "scene": "38",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00002-127a4787",
+        "instance": "api-pilot_translate-d81df992fcc844668c4ae396ee96cc29"
+      }
+    },
+    {
+      "id": "R0001021_42a045da72",
+      "ordinal": 1021,
+      "source": "In the darkness, \\x01\\x40\\xD8 cannot tell who is winning or losing, the battle is too confused.",
+      "translation": "黑暗中，\\x01\\x40\\xD8分不清谁占上风、谁处下风，战局实在太混乱了。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=40;offset=37B58;bytes=86",
+        "scene": "40",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00002-127a4787",
+        "instance": "api-pilot_translate-d81df992fcc844668c4ae396ee96cc29"
+      }
+    },
+    {
+      "id": "R0001046_c8718767b2",
+      "ordinal": 1046,
+      "source": "A troll priestess blinded \\x01\\x40\\xD8 before he could work his storm magic.",
+      "translation": "一名巨魔女祭司在\\x01\\x40\\xD8施展风暴魔法之前弄瞎了他。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=41;offset=3A474;bytes=67",
+        "scene": "41",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00002-127a4787",
+        "instance": "api-pilot_translate-d81df992fcc844668c4ae396ee96cc29"
+      }
+    },
+    {
+      "id": "R0001076_7c73621ac2",
+      "ordinal": 1076,
+      "source": "\\x01\\x40\\xD8 struck down trollkin at will and beat off the dark trolls until they were afraid to go near \\x08.",
+      "translation": "\\x01\\x40\\xD8随心所欲地击倒巨魔裔，打退黑暗巨魔，直到他们不敢靠近\\x08。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=41;offset=3BEDA;bytes=98",
+        "scene": "41",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00002-127a4787",
+        "instance": "api-pilot_translate-d81df992fcc844668c4ae396ee96cc29"
+      }
+    },
+    {
+      "id": "R0001158_92bfa9cc75",
+      "ordinal": 1158,
+      "source": "Then the \\x01\\xC3\\x21 hit our lines. \\x01\\x40\\xD8",
+      "translation": "接着，\\x01\\xC3\\x21冲击了我们的阵线。\\x01\\x40\\xD8",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=42;offset=40230;bytes=31",
+        "scene": "42",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00002-127a4787",
+        "instance": "api-pilot_translate-d81df992fcc844668c4ae396ee96cc29"
+      }
+    },
+    {
+      "id": "R0001198_582df1b17c",
+      "ordinal": 1198,
+      "source": "Several of our warriors ran away, but \\x01\\x40\\xD8 leapt towards the enemy before they could pursue.",
+      "translation": "我们有几名战士逃跑了，但\\x01\\x40\\xD8在敌人来得及追击之前朝他们扑了过去。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=43;offset=41E58;bytes=91",
+        "scene": "43",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00002-127a4787",
+        "instance": "api-pilot_translate-d81df992fcc844668c4ae396ee96cc29"
+      }
+    },
+    {
+      "id": "R0001219_56f6a6d66c",
+      "ordinal": 1219,
+      "source": "\\x01\\x40\\xD8’s magic succeeded, and Humakt’s voice rang across the battlefield, urging our warriors to fight without fear of death or injury.",
+      "translation": "\\x01\\x40\\xD8的魔法成功了，胡马卡特的声音响彻战场，激励我们的战士无惧死亡与伤痛地战斗。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=43;offset=426B4;bytes=136",
+        "scene": "43",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00002-127a4787",
+        "instance": "api-pilot_translate-d81df992fcc844668c4ae396ee96cc29"
+      }
+    },
+    {
+      "id": "R0001271_16e1474df7",
+      "ordinal": 1271,
+      "source": "\\x01\\x40\\xD8’s bravery bought us time to regroup, and we carried the fight to the \\x01\\xC3\\x21 and drove them from the field.",
+      "translation": "\\x01\\x40\\xD8的勇敢为我们争取了重整旗鼓的时间，我们随后向\\x01\\xC3\\x21发起反击，把他们赶出了战场。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=44;offset=4423E;bytes=109",
+        "scene": "44",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00002-127a4787",
+        "instance": "api-pilot_translate-d81df992fcc844668c4ae396ee96cc29"
+      }
+    },
+    {
+      "id": "R0001272_c6c716d3a6",
+      "ordinal": 1272,
+      "source": "\\x01\\x40\\xD8 carved a path to our auxiliaries and had \\x04 wound healed, then returned to the battle.",
+      "translation": "\\x01\\x40\\xD8杀出一条路赶到我们的辅军那里，命人治好了\\x04伤口，随后重返战场。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=44;offset=442DA;bytes=89",
+        "scene": "44",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00002-127a4787",
+        "instance": "api-pilot_translate-d81df992fcc844668c4ae396ee96cc29"
+      }
+    },
+    {
+      "id": "R0001327_0237eeba31",
+      "ordinal": 1327,
+      "source": "We could not afford to make the proper sacrifices to \\x01\\x40\\xA6, and our temple is now effectively just a shrine.",
+      "translation": "我们无力向\\x01\\x40\\xA6献上应有的祭品，如今我们的神庙实际上已只是一座神龛。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=71;offset=4C0B4;bytes=106",
+        "scene": "71",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00002-127a4787",
+        "instance": "api-pilot_translate-d81df992fcc844668c4ae396ee96cc29"
+      }
+    },
+    {
+      "id": "R0001381_1466c0a3a4",
+      "ordinal": 1381,
+      "source": "The \\x01\\xC3\\x21 chief, \\x01\\x40\\x70, replies, “I can tell you of \\x01\\x40\\x03, chief of the \\x01\\xC3\\x61. What do you wish to know of \\x08?”",
+      "translation": "\\x01\\xC3\\x21的酋长\\x01\\x40\\x70答道：“我可以告诉你\\x01\\xC3\\x61的酋长\\x01\\x40\\x03的事。你想了解\\x08的什么？”",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=81;offset=56552;bytes=106",
+        "scene": "81",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00002-127a4787",
+        "instance": "api-pilot_translate-d81df992fcc844668c4ae396ee96cc29"
+      }
+    },
+    {
+      "id": "R0001385_9a99b7c655",
+      "ordinal": 1385,
+      "source": "“\\x01\\x40\\x03 is far from daring,” \\x01\\x40\\x70 said. “\\x01\\xBA\\x03\\x05 says that history may belong to the daring, but the present belongs to the careful and deliberate.”",
+      "translation": "“\\x01\\x40\\x03可远远算不上胆大，”\\x01\\x40\\x70说，“\\x01\\xBA\\x03\\x05说，历史也许属于勇者，但当下属于谨慎而深思熟虑的人。”",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=81;offset=5684E;bytes=149",
+        "scene": "81",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00002-127a4787",
+        "instance": "api-pilot_translate-d81df992fcc844668c4ae396ee96cc29"
+      }
+    },
+    {
+      "id": "R0001388_614401afdd",
+      "ordinal": 1388,
+      "source": "“\\x01\\x40\\x03 is generous when times are good,” \\x01\\x40\\x70 said, “but stingy when \\x01\\xBA\\x03\\x04 herds are thin and \\x04 storehouses empty.”",
+      "translation": "“\\x01\\x40\\x03在年景好时很慷慨，”\\x01\\x40\\x70说，“但\\x01\\xBA\\x03\\x04牧群稀少、\\x04粮仓空虚时，就变得吝啬。”",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=81;offset=56B56;bytes=119",
+        "scene": "81",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00002-127a4787",
+        "instance": "api-pilot_translate-d81df992fcc844668c4ae396ee96cc29"
+      }
+    },
+    {
+      "id": "R0001466_a2c959f98f",
+      "ordinal": 1466,
+      "source": "\\x01\\xBA\\x49\\x05 said, “My clan is favored by the gods; your tribute to us will please them.”",
+      "translation": "\\x01\\xBA\\x49\\x05说：“我的氏族受神明眷顾；你们向我们献上的贡品会取悦他们。”",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=90;offset=60ED8;bytes=85",
+        "scene": "90",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00002-127a4787",
+        "instance": "api-pilot_translate-d81df992fcc844668c4ae396ee96cc29"
+      }
+    },
+    {
+      "id": "R0001536_108c368217",
+      "ordinal": 1536,
+      "source": "\\x01\\x40\\xB2\\x01\\x40\\xB2Exploration would be safer if",
+      "translation": "\\x01\\x40\\xB2\\x01\\x40\\xB2探索会更安全，只要",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=109;offset=6C55A;bytes=35",
+        "scene": "109",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00002-127a4787",
+        "instance": "api-pilot_translate-d81df992fcc844668c4ae396ee96cc29"
+      }
+    },
+    {
+      "id": "R0001618_f5a4643f9b",
+      "ordinal": 1618,
+      "source": "The \\x01\\x40\\x61 clan is spreading the news that the \\x01\\xC3\\x21 have declared a feud against us. Given how little the \\x01\\xC3\\x61 like us, this could be a malicious rumor.",
+      "translation": "\\x01\\x40\\x61氏族正在散布消息，说\\x01\\xC3\\x21已宣布与我们结仇。考虑到\\x01\\xC3\\x61并不怎么喜欢我们，这可能是恶意谣言。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=146;offset=86C12;bytes=147",
+        "scene": "146",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00002-127a4787",
+        "instance": "api-pilot_translate-d81df992fcc844668c4ae396ee96cc29"
+      }
+    },
+    {
+      "id": "R0001744_f50df6d059",
+      "ordinal": 1744,
+      "source": "\\x01\\x41\\xC3’s hair is falling out at a very quick pace, and his supposed friend, \\x01\\x41\\xC8, has told him that he now looks like Wakboth the Devil. Now \\x01\\x41\\xC3 won’t come out of his stead.",
+      "translation": "\\x01\\x41\\xC3的头发掉得飞快，他所谓的朋友\\x01\\x41\\xC8告诉他，他现在看起来就像恶魔瓦克博斯。如今\\x01\\x41\\xC3不肯走出自己的屋舍。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=231;offset=9949E;bytes=173",
+        "scene": "231",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00002-127a4787",
+        "instance": "api-pilot_translate-d81df992fcc844668c4ae396ee96cc29"
+      }
+    },
+    {
+      "id": "R0001816_a12fb6ad74",
+      "ordinal": 1816,
+      "source": "The chieftain of the \\x01\\xC3\\x21, \\x01\\x40\\x0B, stomped onto the tula, shouting and swinging \\x04 sword. When \\x06 and \\x04 warriors reached the clan hall, \\x06 said that \\x06 was sick of seeing us in dreams at night, and in visions during the day. “I must obliterate your smirking faces so I can sleep again!”",
+      "translation": "\\x01\\xC3\\x21的酋长\\x01\\x40\\x0B重重踏上氏族领地，大喊大叫，挥舞着\\x04剑。当\\x06和\\x04战士抵达氏族大厅时，\\x06说，\\x06已经厌倦了夜里在梦中、白天在幻象里见到我们。“我必须抹掉你们那些得意的嘴脸，这样我才能重新安睡！”",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=279;offset=A601E;bytes=282",
+        "scene": "279",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00002-127a4787",
+        "instance": "api-pilot_translate-d81df992fcc844668c4ae396ee96cc29"
+      }
+    },
+    {
+      "id": "R0001837_90600f7cb6",
+      "ordinal": 1837,
+      "source": "A priest from the \\x01\\xC3\\x21 came to congratulate us on that scroll translation we performed for the \\x01\\xC3\\x61. “That was a tricky task,” he said. “Your devotion to knowledge is to be admired.” And he left us some small tokens of his clan’s esteem.",
+      "translation": "来自\\x01\\xC3\\x21的一位祭司前来祝贺我们为\\x01\\xC3\\x61完成的那次卷轴翻译。“那可不是件容易的活，”他说，“你们对知识的虔诚值得敬佩。”随后他留下了一些小信物，以表他氏族的敬意。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=298;offset=AA260;bytes=245",
+        "scene": "298",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00002-127a4787",
+        "instance": "api-pilot_translate-d81df992fcc844668c4ae396ee96cc29"
+      }
+    },
+    {
+      "id": "R0001908_5ad8d72911",
+      "ordinal": 1908,
+      "source": "We could end up with many more unhappy widows by an ill-advised adventure against the \\x01\\xC3\\x21.",
+      "translation": "若贸然对\\x01\\xC3\\x21发起一场冒险，最终可能让我们多出许多不幸的寡妇。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=430;offset=BCCBA;bytes=90",
+        "scene": "430",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0001934_e140625e24",
+      "ordinal": 1934,
+      "source": "Demand extra food from the \\x01\\xC3\\x4D to get you through the drought.",
+      "translation": "向\\x01\\xC3\\x4D索要额外食物，以度过旱灾。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=450;offset=C9510;bytes=62",
+        "scene": "450",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0001981_814ad06512",
+      "ordinal": 1981,
+      "source": "We’re already allied with the \\x01\\xC3\\x21. My daughter’s marriage should mark the start of a new alliance.",
+      "translation": "我们已与\\x01\\xC3\\x21结盟。我女儿的婚事应当标志着一场新联盟的开端。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=475;offset=D9F86;bytes=102",
+        "scene": "475",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0002009_c8e521309c",
+      "ordinal": 2009,
+      "source": "We sent a single warrior against the \\x01\\xC3\\x21. He killed both \\x01\\x40\\x19’s \\x01\\x40\\x12 and got away.",
+      "translation": "我们派了一名战士去对付\\x01\\xC3\\x21。他杀死了\\x01\\x40\\x19的两个\\x01\\x40\\x12，然后全身而退。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=488;offset=E32A4;bytes=82",
+        "scene": "488",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0002181_70fccc6536",
+      "ordinal": 2181,
+      "source": "“Thus we see what use a tribe is,” \\x01\\x40\\x01 said. “I will see to it that all of the clans of the \\x01\\xC3\\x3C know your lack of generosity when your tribe-mates are in need.”",
+      "translation": "“这下我们可知道部落有什么用了，”\\x01\\x40\\x01说道。“等你的同族需要帮助时，我会让\\x01\\xC3\\x3C的所有氏族都知道你有多不慷慨。”",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=544;offset=10E5D8;bytes=168",
+        "scene": "544",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0002202_9c24e1898f",
+      "ordinal": 2202,
+      "source": "Their chief, \\x01\\x8A\\x21, is a woman, and would not ask for something if she did not need it.",
+      "translation": "他们的首领\\x01\\x8A\\x21是位女子；若不是确实需要，她不会开口索要东西。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=545;offset=11188A;bytes=85",
+        "scene": "545",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0002220_423ba33919",
+      "ordinal": 2220,
+      "source": "\\x01\\x40\\xB2\\x01\\x40\\xB2Some of our god-talkers shook their heads, and said we had offended against the gods by lying about the myth.",
+      "translation": "\\x01\\x40\\xB2\\x01\\x40\\xB2我们的一些神语者摇了摇头，说我们在神话上说谎，冒犯了诸神。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=547;offset=1155A0;bytes=115",
+        "scene": "547",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0002283_1275d955d6",
+      "ordinal": 2283,
+      "source": "The \\x01\\xC3\\x21 must agree to contribute something to the tribe themselves. Otherwise, the other clans will resent them.",
+      "translation": "\\x01\\xC3\\x21必须同意自己也向部落作出贡献。否则，其他氏族会怨恨他们。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=552;offset=11CDF4;bytes=112",
+        "scene": "552",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0002302_eae7a064b4",
+      "ordinal": 2302,
+      "source": "and was satisfied that \\x01\\x42\\x93 had learned from his experience.",
+      "translation": "并且满意地看到\\x01\\x42\\x93已从自己的经历中吸取了教训。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=555;offset=11F314;bytes=59",
+        "scene": "555",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0002336_7aeba8f9bd",
+      "ordinal": 2336,
+      "source": "The \\x01\\xC3\\x75 have annoyed us many times; the people will cheer us if we send these folk to annoy them.",
+      "translation": "\\x01\\xC3\\x75已经多次惹恼我们；若我们派这些人去骚扰他们，民众会为我们欢呼。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=565;offset=1232F4;bytes=97",
+        "scene": "565",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0002401_f097b262e2",
+      "ordinal": 2401,
+      "source": "A scouting party discovers rich farmland not far from your stead. It is inhabited by strange beast folk who behave sort of like normal Orlanthi and call themselves the \\x01\\xC3\\x4D. For once, both warriors and carls agree: it would be a fine thing to drive these small, inhuman creatures from this fertile valley and claim it as your own.",
+      "translation": "一支侦察队发现，离你的农庄不远处有一片肥沃的农田。那里住着一群奇怪的兽民，举止有些像普通的奥兰斯人，自称\\x01\\xC3\\x4D。这一次，战士和自由民难得意见一致：把这些非人的小生物赶出这片肥沃的山谷，并将其据为己有，会是件好事。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=583;offset=132FEE;bytes=329",
+        "scene": "583",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0002432_44dee19f4b",
+      "ordinal": 2432,
+      "source": "Have \\x01\\x42\\xA5 straighten them out.",
+      "translation": "让\\x01\\x42\\xA5去管教他们。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=593;offset=13B118;bytes=29",
+        "scene": "593",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0002462_22c2a30e13",
+      "ordinal": 2462,
+      "source": "Chaos is rampant. \\x01\\x42\\xA5 is probably right.",
+      "translation": "混沌猖獗。\\x01\\x42\\xA5大概是对的。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=617;offset=14D676;bytes=40",
+        "scene": "617",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0002522_4426d42b96",
+      "ordinal": 2522,
+      "source": "Perform a curse-lifting spell on \\x01\\x42\\xC2.",
+      "translation": "对\\x01\\x42\\xC2施放解除诅咒的法术。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=632;offset=15DF50;bytes=37",
+        "scene": "632",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0002572_9c9cd13e7b",
+      "ordinal": 2572,
+      "source": "\\x01\\xBA\\x03\\x03 poetry … I am rendered speechless.",
+      "translation": "\\x01\\xBA\\x03\\x03诗歌……我竟无言以对。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=654;offset=16DF26;bytes=41",
+        "scene": "654",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0002591_7670d74c92",
+      "ordinal": 2591,
+      "source": "The \\x01\\xC3\\x21 hated us for our attack, and many other clans thought less of us for our disregard for custom and propriety, but we succeeded in providing for the clan.",
+      "translation": "\\x01\\xC3\\x21因我们的进攻而憎恨我们，许多其他氏族也因我们无视习俗与礼法而看轻我们，但我们成功供养了氏族。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=667;offset=175E20;bytes=160",
+        "scene": "667",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0002712_10438af327",
+      "ordinal": 2712,
+      "source": "This banner could bring us peace with our enemies, the \\x01\\xC3\\x01, \\x01\\xC3\\x02, or \\x01\\xC3\\x03.",
+      "translation": "这面旗帜或许能让我们与敌人\\x01\\xC3\\x01、\\x01\\xC3\\x02或\\x01\\xC3\\x03达成和平。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=698;offset=19392E;bytes=72",
+        "scene": "698",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0002790_e600f07f86",
+      "ordinal": 2790,
+      "source": "We had to give up our efforts to make a tribe with the \\x01\\xC3\\x21 when the talks broke down in the fine details of negotiating.",
+      "translation": "由于谈判在细节问题上破裂，我们不得不放弃与\\x01\\xC3\\x21共同组建部落的努力。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=718;offset=1A79FA;bytes=120",
+        "scene": "718",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0002867_e600f07f86",
+      "ordinal": 2867,
+      "source": "We had to give up our efforts to make a tribe with the \\x01\\xC3\\x21 when the talks broke down in the fine details of negotiating.",
+      "translation": "由于谈判在细节问题上破裂，我们不得不放弃与\\x01\\xC3\\x21共同组建部落的努力。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=722;offset=1B1924;bytes=120",
+        "scene": "722",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0002870_eb722b71f3",
+      "ordinal": 2870,
+      "source": "How much do you give the \\x01\\xC3\\x21?",
+      "translation": "你给\\x01\\xC3\\x21多少？",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=722;offset=1B24C8;bytes=29",
+        "scene": "722",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0002938_9729f9c98b",
+      "ordinal": 2938,
+      "source": "The \\x01\\xC3\\x21 said that they would come to a confederation moot.",
+      "translation": "\\x01\\xC3\\x21说他们会来参加联盟大会。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=726;offset=1BA964;bytes=58",
+        "scene": "726",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0002981_09618dfe7b",
+      "ordinal": 2981,
+      "source": "“A tribe is a powerful thing. Your idea is good,” said \\x01\\x8A\\x21, their chief. But \\x06 was unwilling to be in our debt and gave us gifts to match what we had given.",
+      "translation": "“部落是一股强大的力量。你的主意不错，”他们的首领\\x01\\x8A\\x21说道。但\\x06不愿欠我们人情，便回赠了与我们先前所赠相称的礼物。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=728;offset=1C0140;bytes=160",
+        "scene": "728",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0002997_eb722b71f3",
+      "ordinal": 2997,
+      "source": "How much do you give the \\x01\\xC3\\x21?",
+      "translation": "你给\\x01\\xC3\\x21多少？",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=729;offset=1C27F6;bytes=29",
+        "scene": "729",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0003147_5b0ee427ba",
+      "ordinal": 3147,
+      "source": "Agree to pay compensation to the \\x01\\xC3\\x21.",
+      "translation": "同意向\\x01\\xC3\\x21支付赔偿。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=741;offset=1D5530;bytes=37",
+        "scene": "741",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0003213_c4a4671e59",
+      "ordinal": 3213,
+      "source": "If the \\x01\\xE6\\x0B steps down, we lose our chance at keeping the ten-year ring.",
+      "translation": "如果\\x01\\xE6\\x0B退位，我们就会失去保住十年之戒的机会。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=747;offset=1DB1D8;bytes=71",
+        "scene": "747",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0003228_c39aceea89",
+      "ordinal": 3228,
+      "source": "Send \\x01\\xCF\\x00.",
+      "translation": "派\\x01\\xCF\\x00去。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=749;offset=1DD414;bytes=9",
+        "scene": "749",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0003347_190f28e1f2",
+      "ordinal": 3347,
+      "source": "We approached the \\x01\\xC3\\x26, seeking release from that obligation.",
+      "translation": "我们去找\\x01\\xC3\\x26，请求免除那项义务。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=774;offset=1EFF92;bytes=60",
+        "scene": "774",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0003420_20fb32dbf4",
+      "ordinal": 3420,
+      "source": "The \\x01\\xE6\\x0B listened to us, then cursed us for our disloyalty.",
+      "translation": "\\x01\\xE6\\x0B听了我们的话，随后因我们不忠而诅咒我们。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=799;offset=1FF73A;bytes=58",
+        "scene": "799",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0003522_b7914d170f",
+      "ordinal": 3522,
+      "source": "Our relations with the \\x01\\xC3\\x2B are bad. So, they can’t get much worse if we try to stop this cycle of tavern-burning and tavern-building.",
+      "translation": "我们与\\x01\\xC3\\x2B的关系很差。所以，即使我们试图阻止这种烧酒馆、建酒馆的循环，关系也坏不到哪里去。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=808;offset=2078F6;bytes=135",
+        "scene": "808",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0003555_26e709a063",
+      "ordinal": 3555,
+      "source": "\\x01\\xBA\\x0B\\x05 talked about it with the other chieftains.",
+      "translation": "\\x01\\xBA\\x0B\\x05与其他首领谈过此事。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=819;offset=20E6B0;bytes=47",
+        "scene": "819",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0003628_0c276473ed",
+      "ordinal": 3628,
+      "source": "Sneering at the overwhelming odds, \\x01\\x40\\x0B led our thundering warriors into battle. Warrior after warrior fell beneath the rebel swords. The \\x01\\xE6\\x0B was pierced in many places, and finally decapitated. \\x03 severed head spoke \\x04 favorite lines of poetry, then was quiet.",
+      "translation": "面对压倒性的敌势，\\x01\\x40\\x0B嗤笑着率领我们如雷的战士冲入战场。一名又一名战士倒在叛军的刀剑之下。\\x01\\xE6\\x0B身中多处，最终被斩首。\\x03被斩下的头颅念诵着\\x04最喜爱的诗句，随后归于沉寂。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=827;offset=2149CE;bytes=258",
+        "scene": "827",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0003656_e695c282fc",
+      "ordinal": 3656,
+      "source": "Our \\x01\\xE6\\x0B has declared war against the \\x01\\x40\\x81 tribe.",
+      "translation": "我们的\\x01\\xE6\\x0B已向\\x01\\x40\\x81部落宣战。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=833;offset=21833C;bytes=47",
+        "scene": "833",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0003666_e32c3c2826",
+      "ordinal": 3666,
+      "source": "Let the \\x01\\xE6\\x0B decide how you will participate.",
+      "translation": "让\\x01\\xE6\\x0B决定你将如何参与。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=833;offset=218892;bytes=44",
+        "scene": "833",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0003794_81b08bb20d",
+      "ordinal": 3794,
+      "source": "If we depose a just \\x01\\xE6\\x0B, our clan magic will suffer. The same will happen if we fail to depose a bad \\x01\\xE6\\x0B.",
+      "translation": "如果我们废黜一位公正的\\x01\\xE6\\x0B，我们的氏族魔法就会受损。若我们未能废黜一位恶劣的\\x01\\xE6\\x0B，也会如此。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=839;offset=224D60;bytes=105",
+        "scene": "839",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0003814_4f490c9300",
+      "ordinal": 3814,
+      "source": "The \\x01\\xE6\\x0B refused us.",
+      "translation": "\\x01\\xE6\\x0B拒绝了我们。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=841;offset=225EC4;bytes=19",
+        "scene": "841",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00003-8e4235d1",
+        "instance": "api-pilot_translate-ef1fc903c259488e9b3ec21b2589a0a6"
+      }
+    },
+    {
+      "id": "R0003872_6e0ec38495",
+      "ordinal": 3872,
+      "source": "\\x01\\x40\\x0B’s mother was scared by a bull while \\x06 was still in the womb. An offer of cows will enrage the \\x01\\xE6\\x0B.",
+      "translation": "\\x01\\x40\\x0B的母亲怀\\x06时被一头公牛惊吓。献上母牛会激怒\\x01\\xE6\\x0B。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=845;offset=22971E;bytes=104",
+        "scene": "845",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0003897_9a4ac90c22",
+      "ordinal": 3897,
+      "source": "The \\x01\\xC3\\x21 ring rejected our claim, saying that they were innocent.",
+      "translation": "\\x01\\xC3\\x21的议事会驳回了我们的诉求，声称他们无辜。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=854;offset=22F2DE;bytes=64",
+        "scene": "854",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0003962_de053c1e03",
+      "ordinal": 3962,
+      "source": "Once again quarrels and fights broke out between the supporters of our \\x01\\xE6\\x0B, and those who were against \\x08.",
+      "translation": "我们的\\x01\\xE6\\x0B的支持者与反对\\x08的人之间再次爆发了争吵和打斗。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=868;offset=23A7CE;bytes=105",
+        "scene": "868",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0003966_fb46b73be7",
+      "ordinal": 3966,
+      "source": "All the clans saw that the \\x01\\xE6\\x0B still enjoyed Orlanth’s blessings, and so became willing to work out their differences with \\x01\\xBA\\x0B\\x08. The \\x01\\xE6\\x0B said \\x06 felt wiser and stronger than before.",
+      "translation": "所有氏族都看到\\x01\\xE6\\x0B仍蒙受奥兰斯的庇佑，于是愿意与\\x01\\xBA\\x0B\\x08化解分歧。\\x01\\xE6\\x0B说\\x06觉得自己比以前更睿智、更强大。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=868;offset=23AB52;bytes=182",
+        "scene": "868",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0003978_ccc1390a4c",
+      "ordinal": 3978,
+      "source": "The \\x01\\x40\\x81 tribe",
+      "translation": "\\x01\\x40\\x81部族",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=868;offset=23B27A;bytes=13",
+        "scene": "868",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0003995_32dcc4acab",
+      "ordinal": 3995,
+      "source": "Not long after, we heard that the \\x01\\xC3\\x21 performed a divination, and now blame us for sending bad spirits against them.",
+      "translation": "不久之后，我们听说\\x01\\xC3\\x21做了一次占卜，如今责怪我们派恶灵害他们。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=872;offset=23D458;bytes=116",
+        "scene": "872",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0004004_1a1e96c4e6",
+      "ordinal": 4004,
+      "source": "Before the moot, we said that the \\x01\\xE6\\x0B should be deposed.",
+      "translation": "在部族大会之前，我们说过\\x01\\xE6\\x0B应当被废黜。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=884;offset=243A4A;bytes=56",
+        "scene": "884",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0004034_e95a954ba7",
+      "ordinal": 4034,
+      "source": "The other thanes cruelly abused us, claiming that we were motivated by nothing more than our own lust for power and prestige. They promised to tell the \\x01\\xE6\\x0B of what we had said.",
+      "translation": "其他贵族恶毒地辱骂我们，说我们无非是出于自己对权力和威望的贪欲。他们扬言要把我们说过的话告诉\\x01\\xE6\\x0B。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=887;offset=2457F0;bytes=176",
+        "scene": "887",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0004066_22a01fa9db",
+      "ordinal": 4066,
+      "source": "At a tribal moot, demand the \\x01\\xE6\\x0B’s abdication.",
+      "translation": "在部族大会上要求\\x01\\xE6\\x0B退位。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=888;offset=246D8A;bytes=48",
+        "scene": "888",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0004098_fa2b6aa0e0",
+      "ordinal": 4098,
+      "source": "The \\x01\\xC3\\x21 have only recently begun taking thralls.",
+      "translation": "\\x01\\xC3\\x21最近才开始掳掠奴隶。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=895;offset=24C4DA;bytes=48",
+        "scene": "895",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0004136_86f8e5e741",
+      "ordinal": 4136,
+      "source": "The other tribes of the region are the \\x01\\xC3\\x81, and the \\x01\\xC3\\x3D.",
+      "translation": "本地区的其他部族是\\x01\\xC3\\x81和\\x01\\xC3\\x3D。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=917;offset=25C26E;bytes=56",
+        "scene": "917",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0004171_ba10fadbdc",
+      "ordinal": 4171,
+      "source": "“My blood will wash away the dishonor my failure has visited upon the \\x01\\xC3\\x22.”",
+      "translation": "“我的血将洗去我的失败给\\x01\\xC3\\x22带来的耻辱。”",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=922;offset=261400;bytes=79",
+        "scene": "922",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0004232_1664f4d95e",
+      "ordinal": 4232,
+      "source": "Everyone agreed that \\x01\\x43\\xAC and \\x01\\x43\\xAD had been acting furtively, and that \\x01\\x43\\xAC had long been withholding her affections from \\x01\\x43\\xAB.",
+      "translation": "大家都认为\\x01\\x43\\xAC和\\x01\\x43\\xAD一直行迹鬼祟，而\\x01\\x43\\xAC长期以来一直对\\x01\\x43\\xAB吝于温情。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=935;offset=26FBBA;bytes=123",
+        "scene": "935",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0004233_f88db833a4",
+      "ordinal": 4233,
+      "source": "The spirits of our ancestors said the shame of \\x01\\x43\\xAC and \\x01\\x43\\xAD was great, and that spirits of reprisal were sure to smite them.",
+      "translation": "我们祖先的灵魂说\\x01\\x43\\xAC和\\x01\\x43\\xAD的耻辱深重，报应之灵必定会惩罚他们。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=935;offset=26FC6E;bytes=123",
+        "scene": "935",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0004353_34aeb15f78",
+      "ordinal": 4353,
+      "source": "We told \\x01\\xBA\\x0B\\x08: “You can’t fight the prophecies.”",
+      "translation": "我们告诉\\x01\\xBA\\x0B\\x08：“你们无法抗拒预言。”",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=972;offset=287A4A;bytes=53",
+        "scene": "972",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0004463_f39aff2a1e",
+      "ordinal": 4463,
+      "source": "The \\x01\\xC3\\x2C are no fighters. They will not send many warriors to war-whoop at the moot.",
+      "translation": "\\x01\\xC3\\x2C不善战斗。他们不会派多少战士到部族大会上呐喊助威。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1005;offset=29C0F4;bytes=83",
+        "scene": "1005",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0004464_e402985de1",
+      "ordinal": 4464,
+      "source": "The \\x01\\xC3\\x2C are no fighters. They will send no more than five warriors to war-whoop at the moot.",
+      "translation": "\\x01\\xC3\\x2C不善战斗。他们派去部族大会上呐喊助威的战士不会超过5名。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1005;offset=29C14A;bytes=92",
+        "scene": "1005",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0004550_925e47e4b7",
+      "ordinal": 4550,
+      "source": "How much do you give to the clans in the \\x01\\x40\\x81 tribe?",
+      "translation": "你给\\x01\\x40\\x81部族中的各氏族多少？",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1033;offset=2B0E32;bytes=51",
+        "scene": "1033",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0004586_a933789f6f",
+      "ordinal": 4586,
+      "source": "The \\x01\\xE6\\x0B will make this right.",
+      "translation": "\\x01\\xE6\\x0B会把这件事处理妥当。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1046;offset=2B9464;bytes=29",
+        "scene": "1046",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0004629_7f7a081e54",
+      "ordinal": 4629,
+      "source": "As a gesture of goodwill, we proposed a war against the \\x01\\xC3\\x3D.",
+      "translation": "为表示善意，我们提议对\\x01\\xC3\\x3D开战。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1070;offset=2C73F6;bytes=60",
+        "scene": "1070",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0004666_b256c9b975",
+      "ordinal": 4666,
+      "source": "We should be raiding the \\x01\\xC3\\x21, not helping them.",
+      "translation": "我们该去劫掠\\x01\\xC3\\x21，而不是帮他们。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1084;offset=2D2E5A;bytes=47",
+        "scene": "1084",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0004732_7cb880e69a",
+      "ordinal": 4732,
+      "source": "We conducted a ritual to protect \\x01\\x42\\xD7 from vampire magic.",
+      "translation": "我们举行仪式，保护\\x01\\x42\\xD7免受吸血鬼魔法侵害。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1101;offset=2E1672;bytes=56",
+        "scene": "1101",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0004746_88338d9e04",
+      "ordinal": 4746,
+      "source": "We would gain blessings if we could rid the earth of this scourge. Not to mention the gratitude of the \\x01\\xC3\\x21.",
+      "translation": "若能把这个祸害从大地上清除，我们会得到庇佑。更不用说\\x01\\xC3\\x21的感激了。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1113;offset=2EE1DC;bytes=107",
+        "scene": "1113",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0004837_2e6aece180",
+      "ordinal": 4837,
+      "source": "Send a delegation to protest the \\x01\\xC3\\x21’s poor hospitality.",
+      "translation": "派一支使团去抗议\\x01\\xC3\\x21的怠慢。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1138;offset=300D60;bytes=58",
+        "scene": "1138",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0005100_8ad0872b3e",
+      "ordinal": 5100,
+      "source": "The \\x01\\xE6\\x0B is very angry.",
+      "translation": "\\x01\\xE6\\x0B非常愤怒。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1192;offset=32F8C8;bytes=22",
+        "scene": "1192",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0005185_40228579ea",
+      "ordinal": 5185,
+      "source": "The other clans said that the \\x01\\xC3\\x61 had clearly murdered \\x01\\x40\\x09, and owed us wergild. The \\x01\\xC3\\x61 paid, but still protested their innocence.",
+      "translation": "其他氏族说\\x01\\xC3\\x61显然谋杀了\\x01\\x40\\x09，欠我们偿命金。\\x01\\xC3\\x61付了钱，但仍坚称自己无辜。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1231;offset=34873C;bytes=131",
+        "scene": "1231",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0005234_9ee7430875",
+      "ordinal": 5234,
+      "source": "A young warrior woman of your clan, \\x01\\x41\\x2B, comes to the clan hall with a warrior woman of the \\x01\\x40\\x21 clan, which you are feuding with. The other young woman’s name is \\x01\\x41\\x2C. \\x01\\x41\\x2B declares that she and \\x01\\x41\\x2C have undergone a ritual and declared themselves blood sisters. They will fight to defend one another, to the death if necessary. They say that we should follow their example, and end our foolish and destructive feud with the \\x01\\xC3\\x21.",
+      "translation": "你氏族里一位年轻的女战士\\x01\\x41\\x2B，带着\\x01\\x40\\x21氏族的一位女战士来到氏族大厅——你正与那个氏族结仇。另一位年轻女子名叫\\x01\\x41\\x2C。\\x01\\x41\\x2B宣称她和\\x01\\x41\\x2C已行过仪式，结为血亲姐妹。她们会为彼此而战，必要时至死方休。她们说我们应当以她们为榜样，结束我们与\\x01\\xC3\\x21之间愚蠢而具毁灭性的世仇。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1265;offset=35F65C;bytes=428",
+        "scene": "1265",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0005275_9670937418",
+      "ordinal": 5275,
+      "source": "The god-talkers said the signs were good, and that the bird shadow which passed over \\x01\\x44\\x82 should be ignored.",
+      "translation": "神语者说征兆很好，掠\\x01\\x44\\x82而过的鸟影应当置之不理。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1277;offset=367116;bytes=107",
+        "scene": "1277",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0005321_c9da54f823",
+      "ordinal": 5321,
+      "source": "\\x01\\x44\\x8B wept and wailed, protesting that she should have been proud to marry any of them.",
+      "translation": "\\x01\\x44\\x8B痛哭哀号，申辩说自己本该为能嫁给她们中的任何一人而自豪。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1286;offset=36A27E;bytes=85",
+        "scene": "1286",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0005350_1442d160c7",
+      "ordinal": 5350,
+      "source": "The only thing that matters is healing \\x01\\x44\\x8E.",
+      "translation": "唯一要紧的事是治好\\x01\\x44\\x8E。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1288;offset=36CF9E;bytes=43",
+        "scene": "1288",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0005351_beb06a089e",
+      "ordinal": 5351,
+      "source": "Honor Chalana Arroy, and she will save \\x01\\x44\\x8E.",
+      "translation": "敬奉查拉娜阿罗伊，她就会救下\\x01\\x44\\x8E。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1288;offset=36CFCC;bytes=43",
+        "scene": "1288",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0005409_6d21fd5c86",
+      "ordinal": 5409,
+      "source": "Our relations with the \\x01\\x40\\x3D are poor; \\x01\\xE8\\x3D is unlikely to listen to us.",
+      "translation": "我们与\\x01\\x40\\x3D的关系很差；\\x01\\xE8\\x3D不太可能听我们的话。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1299;offset=377156;bytes=69",
+        "scene": "1299",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0005435_634ce779ca",
+      "ordinal": 5435,
+      "source": "How many warriors accompany \\x01\\x44\\xA4?",
+      "translation": "多少战士随\\x01\\x44\\xA4同行？",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1312;offset=37F256;bytes=32",
+        "scene": "1312",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00004-7d6731c4",
+        "instance": "api-pilot_translate-59e36089222848e0a245782c6b44ae52"
+      }
+    },
+    {
+      "id": "R0005452_d2427f9a6e",
+      "ordinal": 5452,
+      "source": "\\x01\\x40\\xB2\\x01\\x40\\xB2What does \\x01\\xE8\\x00 \\x02\\x03try/attempt/do\\x02 next?",
+      "translation": "\\x01\\x40\\xB2\\x01\\x40\\xB2接下来\\x01\\xE8\\x00 \\x02\\x03会尝试做什么/试图做什么/做什么\\x02？",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1324;offset=386B20;bytes=43",
+        "scene": "1324",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0005459_c6b76f6e42",
+      "ordinal": 5459,
+      "source": "The Feathered Horse Queen said that she would sponsor a contest. In order to win the contest, \\x01\\xE8\\x00 would have to pass three great tests of Earth. The tests would be chosen by Ferena Brooslayer, the high priestess of Maran Gor. The winner of the contest would marry her and become King of Dragon Pass. \\x01\\xE8\\x00 would be one of several contestants.",
+      "translation": "羽马女王说，她将主办一场竞赛。为了赢得竞赛，\\x01\\xE8\\x00必须通过三项伟大的大地考验。考验将由玛兰戈尔的高阶女祭司费雷娜屠布罗者选定。竞赛的胜者将娶她为妻，并成为龙城之王。\\x01\\xE8\\x00将是数名参赛者之一。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1324;offset=386F32;bytes=340",
+        "scene": "1324",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0005515_8d7fccdece",
+      "ordinal": 5515,
+      "source": "\\x01\\xE8\\x00 gave them gifts.",
+      "translation": "\\x01\\xE8\\x00给了他们礼物。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1327;offset=38BECE;bytes=20",
+        "scene": "1327",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0005554_3e25e05697",
+      "ordinal": 5554,
+      "source": "the \\x01\\xC3\\x21 soon rounded up the thralls and beat them. They sacrificed \\x01\\x44\\xAC to Humakt, our grim warrior god.",
+      "translation": "\\x01\\xC3\\x21很快围捕了奴隶并殴打他们。他们把\\x01\\x44\\xAC献祭给胡马卡特，我们冷酷的战士之神。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1330;offset=38F97A;bytes=103",
+        "scene": "1330",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0005610_57e68f27e3",
+      "ordinal": 5610,
+      "source": "We have a good cause to charge \\x01\\x44\\xAE with slander. But there is no tribal moot to pursue it in, so her clan can just ignore us.",
+      "translation": "我们有充分理由指控\\x01\\x44\\xAE诽谤。但没有部族大会可以追究此事，所以她的氏族尽可无视我们。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1331;offset=39384A;bytes=125",
+        "scene": "1331",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0005630_b257794593",
+      "ordinal": 5630,
+      "source": "Do you tell the \\x01\\xC3\\x21 that you cursed them in retaliation for the cattle thefts?",
+      "translation": "你要告诉\\x01\\xC3\\x21，你诅咒他们是为了报复偷牛事件吗？",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1334;offset=3954F8;bytes=78",
+        "scene": "1334",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0005689_479e06d796",
+      "ordinal": 5689,
+      "source": "The other clans said that the \\x01\\xC3\\x61 had clearly murdered \\x01\\x44\\xB5, and owed us wergild. The \\x01\\xC3\\x61 paid, but still protested their innocence.",
+      "translation": "其他氏族说，\\x01\\xC3\\x61显然谋杀了\\x01\\x44\\xB5，并欠我们偿命金。\\x01\\xC3\\x61付了钱，但仍坚称自己无辜。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1339;offset=39CB48;bytes=131",
+        "scene": "1339",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0005823_48d0d8b0f1",
+      "ordinal": 5823,
+      "source": "The \\x01\\xE6\\x0B did not go to the man of brass.",
+      "translation": "\\x01\\xE6\\x0B没有去见那个黄铜之人。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1358;offset=3B0914;bytes=39",
+        "scene": "1358",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0005837_f6c8b2c798",
+      "ordinal": 5837,
+      "source": "\\x01\\xE8\\x00 said, “Woman, you are mine.”",
+      "translation": "\\x01\\xE8\\x00说：“女人，你是我的。”",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1367;offset=3B5606;bytes=36",
+        "scene": "1367",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0005894_433b2152e8",
+      "ordinal": 5894,
+      "source": "\\x01\\xD8\\x00 said we deserved to be forgotten, because our forces were weak.",
+      "translation": "\\x01\\xD8\\x00说我们活该被遗忘，因为我们的兵力弱小。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1373;offset=3B9A80;bytes=67",
+        "scene": "1373",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0005900_fbfd910d52",
+      "ordinal": 5900,
+      "source": "\\x01\\x8A\\x00 said that we had failed to win the respect of the other clans.",
+      "translation": "\\x01\\x8A\\x00说我们未能赢得其他氏族的尊重。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1373;offset=3B9CBE;bytes=66",
+        "scene": "1373",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0005909_27ef843bcd",
+      "ordinal": 5909,
+      "source": "“A treasure is not enough to buy you peace,” \\x01\\x41\\xA2 said.",
+      "translation": "“一件宝物不足以换来你们的和平，”\\x01\\x41\\xA2说。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1379;offset=3BCE74;bytes=58",
+        "scene": "1379",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0005955_ec5c757d31",
+      "ordinal": 5955,
+      "source": "The priests said that the \\x01\\xE6\\x0B’s verdict was righteous. The tricksters were dismayed, for the finding meant that they would be beaten.",
+      "translation": "祭司们说\\x01\\xE6\\x0B的裁决是公正的。诡计者们大为沮丧，因为这一裁定意味着他们要挨打。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1394;offset=3C8266;bytes=135",
+        "scene": "1394",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0005961_c36b9e4fdb",
+      "ordinal": 5961,
+      "source": "I told you that we’d be bothered by ridiculous problems like this if \\x01\\x40\\x0B became \\x01\\xE6\\x0B.",
+      "translation": "我告诉过你，如果\\x01\\x40\\x0B成为\\x01\\xE6\\x0B，我们就会被这种荒唐问题缠上。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1394;offset=3C8E06;bytes=86",
+        "scene": "1394",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0006047_ed75fc4211",
+      "ordinal": 6047,
+      "source": "There is enough death to go around, and the \\x01\\xC3\\x21 should also be made to drink from Humakt’s cup.",
+      "translation": "死亡已经够分给所有人了，\\x01\\xC3\\x21也该被逼着喝下胡马卡特之杯。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1420;offset=3E7380;bytes=97",
+        "scene": "1420",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0006074_1e620e1e31",
+      "ordinal": 6074,
+      "source": "If only Thadart could have died with \\x01\\x81\\x00 \\x01\\x40\\x22 on the \\x01\\x40\\x3C throne!",
+      "translation": "要是塔达特当年能和\\x01\\x81\\x00 \\x01\\x40\\x22一起死在\\x01\\x40\\x3C王座上就好了！",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1430;offset=3F0388;bytes=63",
+        "scene": "1430",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0006106_e621ea8137",
+      "ordinal": 6106,
+      "source": "\\x01\\x44\\xE7 said that even foes should band together when Chaos threatens. Others would hear of our selfish behavior, he said.",
+      "translation": "\\x01\\x44\\xE7说，当混沌威胁众人时，就连敌人也该联合起来。他说，其他人会听说我们自私的行为。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1446;offset=3FCA50;bytes=118",
+        "scene": "1446",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0006227_b87b7e63f1",
+      "ordinal": 6227,
+      "source": "We are not as strong as \\x01\\x41\\xAF’s clan, and should avoid unnecessary confrontation with them.",
+      "translation": "我们不如\\x01\\x41\\xAF的氏族强大，应避免与他们发生不必要的冲突。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1456;offset=40CBE0;bytes=91",
+        "scene": "1456",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0006287_ea97763146",
+      "ordinal": 6287,
+      "source": "He agreed that we could call on the \\x01\\xC3\\x21 in the future.",
+      "translation": "他同意我们将来可以求助\\x01\\xC3\\x21。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1460;offset=4130CE;bytes=54",
+        "scene": "1460",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0006291_7b9f753423",
+      "ordinal": 6291,
+      "source": "I know of this \\x01\\x44\\xF6. He seeks martial glory.",
+      "translation": "我听说过这个\\x01\\x44\\xF6。他渴求战功与荣耀。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1460;offset=413680;bytes=43",
+        "scene": "1460",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0006311_9a8b9a0724",
+      "ordinal": 6311,
+      "source": "“\\x01\\x40\\x03 is generous when the \\x01\\xC3\\x61 are rich, and miserly when they are poor.”",
+      "translation": "“\\x01\\x40\\x03在\\x01\\xC3\\x61富有时慷慨，在他们贫穷时吝啬。”",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1465;offset=41AF26;bytes=76",
+        "scene": "1465",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0006351_aeb2208cb5",
+      "ordinal": 6351,
+      "source": "\\x01\\x42\\x90 listened to the case we made and accepted that we spoke truly.",
+      "translation": "\\x01\\x42\\x90听了我们的申辩，并承认我们说的是真话。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1471;offset=421C8C;bytes=66",
+        "scene": "1471",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0006389_c11c651fab",
+      "ordinal": 6389,
+      "source": "The god-talkers of Lhankor Mhy performed the ritual. The fires burned in the sinister direction, the colors of the flame were impure. The \\x01\\xC3\\x21 sought to deceive us.",
+      "translation": "兰科米的神语者举行了仪式。火焰朝不祥的方向燃烧，火焰的颜色不纯。\\x01\\xC3\\x21企图欺骗我们。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1474;offset=42620C;bytes=163",
+        "scene": "1474",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0006460_1dd4ce83df",
+      "ordinal": 6460,
+      "source": "But as soon as \\x01\\xBA\\x4B\\x06 untwisted a second loop, the first one twisted up again, worse than before. Then Issaries came in and asked a foolish question.",
+      "translation": "但\\x01\\xBA\\x4B\\x06刚解开第二个绳圈，第一个绳圈就又扭紧了，而且比之前更糟。然后伊萨里斯走进来，问了一个愚蠢的问题。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1503;offset=438F1E;bytes=147",
+        "scene": "1503",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0006561_ca07d129ca",
+      "ordinal": 6561,
+      "source": "The god-talkers worried that this failure would only inflame the feud with the \\x01\\xC3\\x21, who they expected to receive many bad dreams and emanations, which they would rightfully blame on us.",
+      "translation": "神语者们担心，这次失败只会激化与\\x01\\xC3\\x21的世仇；他们预计\\x01\\xC3\\x21会收到许多恶梦和邪兆，并会有理由把这些归咎于我们。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1560;offset=45499A;bytes=185",
+        "scene": "1560",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [
+        "Protected token missing or repeated: [P1]",
+        "structural mismatch: exclusion_0, exclusion_1"
+      ],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0006595_f3b558a7b0",
+      "ordinal": 6595,
+      "source": "Confidants of the \\x01\\xE6\\x0B were heard to say that we had proven our unworthiness, and brought a curse down upon the tribe.",
+      "translation": "有人听到\\x01\\xE6\\x0B的亲信说，我们已证明自己不配得到信任，还给部族招来了诅咒。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1601;offset=467BB2;bytes=117",
+        "scene": "1601",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0006706_de335138ca",
+      "ordinal": 6706,
+      "source": "Issaries, and fined \\x01\\x41\\xAD.",
+      "translation": "伊萨里斯，并罚了\\x01\\x41\\xAD。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1658;offset=482634;bytes=24",
+        "scene": "1658",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0006721_23383eb538",
+      "ordinal": 6721,
+      "source": "Finally, \\x06 offered the opinion that \\x01\\x41\\xAF of the \\x01\\x40\\x61 clan had put us up to this, due to an unspecified grudge she held.",
+      "translation": "最后，\\x06提出看法，认为是\\x01\\x40\\x61氏族的\\x01\\x41\\xAF因她怀有某种不明的怨恨而唆使我们这么做。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1658;offset=482C84;bytes=117",
+        "scene": "1658",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0006788_4f198ac66d",
+      "ordinal": 6788,
+      "source": "The \\x01\\xC3\\x21 are not our friends.",
+      "translation": "\\x01\\xC3\\x21不是我们的朋友。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1673;offset=4923F0;bytes=28",
+        "scene": "1673",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0006801_ff78f070e4",
+      "ordinal": 6801,
+      "source": "The \\x01\\xC3\\x03 said that the \\x01\\x40\\x01 clan was not sacrificing at their temple to the Earth Mother.",
+      "translation": "\\x01\\xC3\\x03说，\\x01\\x40\\x01氏族没有在他们供奉大地母亲的神庙中献祭。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1677;offset=49414A;bytes=87",
+        "scene": "1677",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0006877_6c99f122ef",
+      "ordinal": 6877,
+      "source": "\\x01\\x40\\xB2\\x01\\x40\\xB2And \\x01\\x45\\x3C seems to have learned much from \\x04 stay in the Underworld.",
+      "translation": "\\x01\\x40\\xB2\\x01\\x40\\xB2而且\\x01\\x45\\x3C似乎从\\x04在冥界的停留中学到了许多。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1691;offset=49C594;bytes=71",
+        "scene": "1691",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0006894_a0dce8091c",
+      "ordinal": 6894,
+      "source": "So did \\x01\\x44\\x89, but",
+      "translation": "\\x01\\x44\\x89也是如此，但",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1708;offset=4A1D68;bytes=15",
+        "scene": "1708",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    },
+    {
+      "id": "R0006926_892ed5f67d",
+      "ordinal": 6926,
+      "source": "\\x01\\x40\\xB2\\x01\\x40\\xB2The entire clan mourned this great tragedy.",
+      "translation": "\\x01\\x40\\xB2\\x01\\x40\\xB2整个氏族都为这场巨大的悲剧哀悼。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1730;offset=4AA28C;bytes=49",
+        "scene": "1730",
+        "text_type": "narrative_fragment"
+      },
+      "exceptions": [],
+      "issues": [],
+      "diagnostics": [],
+      "producer": {
+        "task_id": "pilot_translate-r1-00005-69e08e20",
+        "instance": "api-pilot_translate-2e997cc827864cdcb77a1affad35c616"
+      }
+    }
+  ],
+  "tasks": [
+    {
+      "id": "pilot_translate-r1-00001-f2a81882",
+      "stage": "pilot_translate",
+      "status": "done",
+      "attempt": 1,
+      "backend": "api",
+      "ids": "[\"R0000006_0087478a90\",\"R0000011_aa10258214\",\"R0000017_6456b2b2fc\",\"R0000028_7a03db905a\",\"R0000066_2558e06ea3\",\"R0000078_6eb6128c56\",\"R0000095_9b0dfd1f90\",\"R0000125_b9dd30373e\",\"R0000174_60e7db1fbc\",\"R0000196_c1e241bbf6\",\"R0000232_f31832a9cc\",\"R0000259_5a397283b6\",\"R0000286_dd77f19b13\",\"R0000356_456c61cda3\",\"R0000379_272219a089\",\"R0000380_080f16af8f\",\"R0000391_85bdb662e6\",\"R0000433_514e56cef4\",\"R0000438_b30941b05a\",\"R0000455_7b5a4d9de7\",\"R0000653_592267df49\",\"R0000660_96d468df47\",\"R0000671_51e9383d16\",\"R0000719_a838c659da\",\"R0000738_974ffbeb8c\"]",
+      "error": null
+    },
+    {
+      "id": "pilot_translate-r1-00002-127a4787",
+      "stage": "pilot_translate",
+      "status": "done",
+      "attempt": 1,
+      "backend": "api",
+      "ids": "[\"R0000752_56a011eb1b\",\"R0000779_72f11632ca\",\"R0000844_4be9778e1e\",\"R0000896_c132356c48\",\"R0000909_dd09e228a3\",\"R0000969_b35ac5b63d\",\"R0001021_42a045da72\",\"R0001046_c8718767b2\",\"R0001076_7c73621ac2\",\"R0001158_92bfa9cc75\",\"R0001198_582df1b17c\",\"R0001219_56f6a6d66c\",\"R0001271_16e1474df7\",\"R0001272_c6c716d3a6\",\"R0001327_0237eeba31\",\"R0001381_1466c0a3a4\",\"R0001385_9a99b7c655\",\"R0001388_614401afdd\",\"R0001466_a2c959f98f\",\"R0001536_108c368217\",\"R0001618_f5a4643f9b\",\"R0001744_f50df6d059\",\"R0001816_a12fb6ad74\",\"R0001837_90600f7cb6\"]",
+      "error": null
+    },
+    {
+      "id": "pilot_translate-r1-00003-8e4235d1",
+      "stage": "pilot_translate",
+      "status": "done",
+      "attempt": 1,
+      "backend": "api",
+      "ids": "[\"R0001908_5ad8d72911\",\"R0001934_e140625e24\",\"R0001981_814ad06512\",\"R0002009_c8e521309c\",\"R0002181_70fccc6536\",\"R0002202_9c24e1898f\",\"R0002220_423ba33919\",\"R0002283_1275d955d6\",\"R0002302_eae7a064b4\",\"R0002336_7aeba8f9bd\",\"R0002401_f097b262e2\",\"R0002432_44dee19f4b\",\"R0002462_22c2a30e13\",\"R0002522_4426d42b96\",\"R0002572_9c9cd13e7b\",\"R0002591_7670d74c92\",\"R0002712_10438af327\",\"R0002790_e600f07f86\",\"R0002867_e600f07f86\",\"R0002870_eb722b71f3\",\"R0002938_9729f9c98b\",\"R0002981_09618dfe7b\",\"R0002997_eb722b71f3\",\"R0003147_5b0ee427ba\",\"R0003213_c4a4671e59\",\"R0003228_c39aceea89\",\"R0003347_190f28e1f2\",\"R0003420_20fb32dbf4\",\"R0003522_b7914d170f\",\"R0003555_26e709a063\",\"R0003628_0c276473ed\",\"R0003656_e695c282fc\",\"R0003666_e32c3c2826\",\"R0003794_81b08bb20d\",\"R0003814_4f490c9300\"]",
+      "error": null
+    },
+    {
+      "id": "pilot_translate-r1-00004-7d6731c4",
+      "stage": "pilot_translate",
+      "status": "done",
+      "attempt": 1,
+      "backend": "api",
+      "ids": "[\"R0003872_6e0ec38495\",\"R0003897_9a4ac90c22\",\"R0003962_de053c1e03\",\"R0003966_fb46b73be7\",\"R0003978_ccc1390a4c\",\"R0003995_32dcc4acab\",\"R0004004_1a1e96c4e6\",\"R0004034_e95a954ba7\",\"R0004066_22a01fa9db\",\"R0004098_fa2b6aa0e0\",\"R0004136_86f8e5e741\",\"R0004171_ba10fadbdc\",\"R0004232_1664f4d95e\",\"R0004233_f88db833a4\",\"R0004353_34aeb15f78\",\"R0004463_f39aff2a1e\",\"R0004464_e402985de1\",\"R0004550_925e47e4b7\",\"R0004586_a933789f6f\",\"R0004629_7f7a081e54\",\"R0004666_b256c9b975\",\"R0004732_7cb880e69a\",\"R0004746_88338d9e04\",\"R0004837_2e6aece180\",\"R0005100_8ad0872b3e\",\"R0005185_40228579ea\",\"R0005234_9ee7430875\",\"R0005275_9670937418\",\"R0005321_c9da54f823\",\"R0005350_1442d160c7\",\"R0005351_beb06a089e\",\"R0005409_6d21fd5c86\",\"R0005435_634ce779ca\"]",
+      "error": null
+    },
+    {
+      "id": "pilot_translate-r1-00005-69e08e20",
+      "stage": "pilot_translate",
+      "status": "done",
+      "attempt": 1,
+      "backend": "api",
+      "ids": "[\"R0005452_d2427f9a6e\",\"R0005459_c6b76f6e42\",\"R0005515_8d7fccdece\",\"R0005554_3e25e05697\",\"R0005610_57e68f27e3\",\"R0005630_b257794593\",\"R0005689_479e06d796\",\"R0005823_48d0d8b0f1\",\"R0005837_f6c8b2c798\",\"R0005894_433b2152e8\",\"R0005900_fbfd910d52\",\"R0005909_27ef843bcd\",\"R0005955_ec5c757d31\",\"R0005961_c36b9e4fdb\",\"R0006047_ed75fc4211\",\"R0006074_1e620e1e31\",\"R0006106_e621ea8137\",\"R0006227_b87b7e63f1\",\"R0006287_ea97763146\",\"R0006291_7b9f753423\",\"R0006311_9a8b9a0724\",\"R0006351_aeb2208cb5\",\"R0006389_c11c651fab\",\"R0006460_1dd4ce83df\",\"R0006561_ca07d129ca\",\"R0006595_f3b558a7b0\",\"R0006706_de335138ca\",\"R0006721_23383eb538\",\"R0006788_4f198ac66d\",\"R0006801_ff78f070e4\",\"R0006877_6c99f122ef\",\"R0006894_a0dce8091c\",\"R0006926_892ed5f67d\"]",
+      "error": null
+    }
+  ],
+  "config_note": "Current configuration. Saved outputs retain their producer task/input snapshots; a settings change alone does not mean these outputs were regenerated.",
+  "ready_for_assessment": true,
+  "statistics": {
+    "sample_records": 150,
+    "translated_records": 150,
+    "mechanical_failed_records": 2,
+    "task_statuses": {
+      "done": 5
+    },
+    "api_request_statuses_cumulative": {
+      "received": 5
+    }
+  },
+  "failures": [
+    {
+      "id": "R0000909_dd09e228a3",
+      "ordinal": 909,
+      "source": "\\x01\\x40\\xD8 performed the \\x02\\x06Sword Dancing Feat/Sword-Edge Feat/Valiant Champion’s Whirling-Feat/Hero’s Fury Feat/Twirling Blade Feat/Cat Feat\\x02, striking down \\x01\\xC3\\x21 so quickly they had no chance to defend themselves.",
+      "translation": "\\x01\\x40\\xD8施展了\\x02\\x06剑舞神技/剑锋绝技/勇武冠军旋身绝技/英雄之怒绝技/旋舞之刃绝技/猫之绝技\\x02，转眼间击倒\\x01\\xC3\\x21，对方根本来不及招架。",
+      "diagnostics": [
+        "R0000909_dd09e228a3: terminology mismatch ['Valiant Champion’s Whirling']",
+        "terminology mismatch: Valiant Champion’s Whirling"
+      ],
+      "missing_terms": [
+        "Valiant Champion’s Whirling"
+      ],
+      "structural_issues": []
+    },
+    {
+      "id": "R0006561_ca07d129ca",
+      "ordinal": 6561,
+      "source": "The god-talkers worried that this failure would only inflame the feud with the \\x01\\xC3\\x21, who they expected to receive many bad dreams and emanations, which they would rightfully blame on us.",
+      "translation": "神语者们担心，这次失败只会激化与\\x01\\xC3\\x21的世仇；他们预计\\x01\\xC3\\x21会收到许多恶梦和邪兆，并会有理由把这些归咎于我们。",
+      "diagnostics": [
+        "Protected token missing or repeated: [P1]",
+        "structural mismatch: exclusion_0, exclusion_1"
+      ],
+      "missing_terms": [],
+      "structural_issues": [
+        "exclusion_0",
+        "exclusion_1"
+      ]
+    }
+  ],
+  "note": "Mechanical findings are diagnostic, not a semantic error rate. Main AI assesses pipeline reliability, style and recurring quality problems. Individual errors need not be cleared before accepting calibration.",
+  "snapshot_hash": "f429a2b4f1e6c2671b7573107496d4ef7e15755f0448308ba6c97ac3a0738e70",
+  "report_hash": "1ac167d227f797bf5a2ce3052e60ad832364d55554cfb02495dad3c53a1fd489"
+}

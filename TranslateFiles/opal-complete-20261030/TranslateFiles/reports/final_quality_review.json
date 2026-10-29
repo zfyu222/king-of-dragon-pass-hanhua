@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "kind": "final",
+  "pilot_key": "28a12314fa1c495dc35562f8b22e2285107db19df7e5308c8b209f14ca559ec3",
+  "source_sha256": "1f4d9ec1fd18873bae9eba995d0e21a4e10da1d62d4987206de4d53421750bee",
+  "glossary": {
+    "hash": "9a6cf7dd4c99acdf49539b9fad1b369a591aa5a5ac295d686d0e923053e1b187",
+    "path": "glossary\\r1\\freeze_63c60a64\\built\\glossary_reviewed.json",
+    "revision": 1
+  },
+  "snapshot_hash": "6afbea41da6fb9ff32dabc42e10308c1ec3d23713f0c01c04544ff23eae41787",
+  "coverage": {
+    "records": 6972,
+    "text_types": {
+      "narrative_fragment": 6972
+    },
+    "missing_context": 0,
+    "risk_records": 6972,
+    "ordinary_sample": 0,
+    "standard_records": 1
+  },
+  "risk_detection": "Heuristic candidates plus reviewer findings; absence of flags is not proof of correctness.",
+  "records_to_check": [],
+  "consistency": [],
+  "glossary_checks": [],
+  "pilot_batch_summaries": {},
+  "check_signatures": {
+    "R0000591_66f13ed746": "6e7f0bf6993e71a59af1b0eabf1b870530e9d65f9dc7c9793f2013d8a3be47f3"
+  },
+  "reused_decisions": {
+    "R0000591_66f13ed746": {
+      "decision": {
+        "disposition": "contextual",
+        "id": "R0000591_66f13ed746",
+        "reason": "that exploded 可回指较远的 javelin，也可就近回指 guts；原文先写施法测度气流，再写投掷标枪并爆炸，现译明确为标枪炸开是可成立的战斗魔法解读。没有场景证据证明肚腹才是爆炸主语，不能据语法邻近强制返修；两个 Opal 命令和施受关系均保留。"
+      },
+      "report_hash": "47ca051cf2d42a93f18915cccb79c1a55e81488dc98381728af5cbacba70cb1e",
+      "signature": "6e7f0bf6993e71a59af1b0eabf1b870530e9d65f9dc7c9793f2013d8a3be47f3"
+    }
+  },
+  "required_decisions": [],
+  "standard_scope_policy": "disputes_only_v1",
+  "carried_findings": {},
+  "selection_explanation": "Only explicit unresolved reviewer issues need standard-tier adjudication. Risk flags, corrections, ordinary samples, duplicate-source groups and speaker groups do not trigger standard-tier review. Known standard-tier repair findings are carried to cheap-tier repair without re-reading; exhausted or regressing repairs use the existing targeted standard-tier escalation route.",
+  "resource_occurrence_binding": {
+    "opal_missing_text.mapping.json": "4468dd2ef1e23ceceef45380c66acda7e1bf7777ace85bc2bd4553db8394be02"
+  },
+  "report_hash": "440956280652d0a9f6faee26d280653b06c0607e0e7aff6ca7e22f387fe28e85",
+  "round_scope": []
+}

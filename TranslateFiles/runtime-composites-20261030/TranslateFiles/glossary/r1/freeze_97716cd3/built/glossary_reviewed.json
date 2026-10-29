@@ -1,0 +1,109 @@
+{
+  "characters": [],
+  "terms": [],
+  "non_translate": [
+    {
+      "source": "%d",
+      "evidence_rows": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "extraction_candidates": [
+        {
+          "table": "non_translate",
+          "row": {
+            "source": "%d"
+          },
+          "extraction_count": 1,
+          "evidence_rows": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "extraction_tasks": [
+            "extract-r1-00001-b9926185"
+          ]
+        }
+      ],
+      "provisional_selection": "most_extraction_proposals_then_first_seen",
+      "applicability": {
+        "case_sensitive": true,
+        "mode": "text",
+        "reason": "printf 整数格式符，在事件文本中由程序替换为数字；原文以嵌入形式出现，必须原样保留，不能改写为中文数字或变量名。"
+      }
+    },
+    {
+      "source": "%s",
+      "evidence_rows": [
+        19,
+        20
+      ],
+      "extraction_candidates": [
+        {
+          "table": "non_translate",
+          "row": {
+            "source": "%s"
+          },
+          "extraction_count": 1,
+          "evidence_rows": [
+            19,
+            20
+          ],
+          "extraction_tasks": [
+            "extract-r1-00001-b9926185"
+          ]
+        }
+      ],
+      "provisional_selection": "most_extraction_proposals_then_first_seen",
+      "applicability": {
+        "case_sensitive": true,
+        "mode": "text",
+        "reason": "printf 字符串格式符，在事件文本中由程序替换为氏族名等字符串；原文以嵌入形式出现，必须原样保留，不能改写或翻译。"
+      }
+    }
+  ],
+  "applicability_policy": 1,
+  "terminology_policy": 1,
+  "nontranslate_scope_policy": 1,
+  "corpus_evidence_policy": 1,
+  "feedback_risk_policy": 1,
+  "stats": {
+    "character_count": 0,
+    "term_count": 0,
+    "non_translate_count": 2,
+    "total_hits": 2
+  }
+}

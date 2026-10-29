@@ -1,0 +1,308 @@
+{
+  "schema": 2,
+  "kind": "final",
+  "pilot_key": "02cefcad869a2625b8d1c00955d5da30eaf41a19608bcb454834430abe4bde76",
+  "source_sha256": "1f4d9ec1fd18873bae9eba995d0e21a4e10da1d62d4987206de4d53421750bee",
+  "glossary": {
+    "hash": "9a6cf7dd4c99acdf49539b9fad1b369a591aa5a5ac295d686d0e923053e1b187",
+    "path": "glossary\\r1\\freeze_63c60a64\\built\\glossary_reviewed.json",
+    "revision": 1
+  },
+  "snapshot_hash": "1249eabb181ea15f3251b8f3a736656575d0580cafd43f19c1eee6187d4e3d94",
+  "coverage": {
+    "records": 6972,
+    "text_types": {
+      "narrative_fragment": 6972
+    },
+    "missing_context": 0,
+    "risk_records": 6972,
+    "ordinary_sample": 0,
+    "standard_records": 4
+  },
+  "risk_detection": "Heuristic candidates plus reviewer findings; absence of flags is not proof of correctness.",
+  "records_to_check": [
+    {
+      "id": "R0000591_66f13ed746",
+      "ordinal": 591,
+      "source": "The \\x01\\x40\\x21 thane ignored our thane’s taunts, measured the air with his spells, and hurled a javelin into \\x01\\x40\\xD8’s guts that exploded like a lightning bolt.",
+      "translation": "\\x01\\x40\\x21的贵族无视我们贵族的嘲弄，以法术测度气流，把一支标枪掷入\\x01\\x40\\xD8的肚腹，标枪如闪电般炸开。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=33;offset=2102A;bytes=153",
+        "scene": "33",
+        "text_type": "narrative_fragment"
+      },
+      "risk_reasons": [
+        "numbers",
+        "review_warning"
+      ],
+      "review": {
+        "task_id": "review-r2-00063-329b7ea5",
+        "instance": "api-review-96f6fbdf35cf408593155f7e09a0717b",
+        "stage": "review",
+        "before": "\\x01\\x40\\x21的贵族无视我们贵族的嘲弄，以法术测度气流，把一支标枪掷入\\x01\\x40\\xD8的肚腹，标枪如闪电般炸开。",
+        "translation": "\\x01\\x40\\x21的贵族无视我们贵族的嘲弄，以法术测度气流，把一支标枪掷入\\x01\\x40\\xD8的肚腹，标枪如闪电般炸开。",
+        "changes": [],
+        "checks": {
+          "accuracy": {
+            "evidence": "“The \\x01\\x40\\x21 thane ignored our thane's taunts”译“\\x01\\x40\\x21的贵族无视我们贵族的嘲弄”，敌方贵族与我方贵族两个主体区分正确；“measured the air with his spells”译“以法术测度气流”；“hurled a javelin into \\x01\\x40\\xD8's guts”译“把一支标枪掷入\\x01\\x40\\xD8的肚腹”，掷入对象正确。",
+            "status": "pass"
+          },
+          "completeness": {
+            "evidence": "“The \\x01\\x40\\x21 thane ignored our thane's taunts”译“\\x01\\x40\\x21的贵族无视我们贵族的嘲弄”，敌方贵族与我方贵族两个主体区分正确；“measured the air with his spells”译“以法术测度气流”；“hurled a javelin into \\x01\\x40\\xD8's guts”译“把一支标枪掷入\\x01\\x40\\xD8的肚腹”，掷入对象正确。",
+            "status": "pass"
+          },
+          "logic": {
+            "evidence": "动作顺序与单数主语（his spells、his javelin）关系未错置，因果（枪入肚腹后炸开）连贯。",
+            "status": "pass"
+          },
+          "placeholders": {
+            "evidence": "\\x01\\x40\\x21 与 \\x01\\x40\\xD8 两个命令及操作字节完整保留，未新增或移动。",
+            "status": "pass"
+          },
+          "terminology": {
+            "evidence": "t2 thane→贵族：本句两处 thane 均为称号贵族（\\x01\\x40\\x21 的贵族、我们贵族），译名统一且未把同形词误作专名。",
+            "status": "pass"
+          },
+          "tone": {
+            "evidence": "“无视嘲弄—以法术测度气流—掷枪—如闪电般炸开”保留史诗决斗的画面与力度，中文搭配可读。",
+            "status": "pass"
+          }
+        },
+        "exceptions": [],
+        "id": "R0000591_66f13ed746",
+        "issues": [
+          {
+            "reason": "原文“hurled a javelin into \\x01\\x40\\xD8's guts that exploded like a lightning bolt”中关系从句 that exploded 也可就近理解为修饰 guts（肚腹炸开）；现按标枪受法术加持后炸开处理，与“measured the air with his spells”的战斗魔法语境相符，但如需确认，建议对照场景其他分支或资源核对。",
+            "severity": "warning"
+          }
+        ],
+        "reason": "“The \\x01\\x40\\x21 thane ignored our thane's taunts”译“\\x01\\x40\\x21的贵族无视我们贵族的嘲弄”，敌方贵族与我方贵族两个主体区分正确；“measured the air with his spells”译“以法术测度气流”；“hurled a javelin into \\x01\\x40\\xD8's guts”译“把一支标枪掷入\\x01\\x40\\xD8的肚腹”，掷入对象正确。",
+        "reviewed": true,
+        "source_excerpt": "The \\x01\\x40\\x21 thane ignored our thane’s taunts, measured the air with his spells, and hurled a javelin into \\x01\\x40\\xD8’s guts that exploded like a lightning bolt."
+      }
+    },
+    {
+      "id": "R0000760_7307e4d919",
+      "ordinal": 760,
+      "source": "\\x01\\x40\\xD8 must have trusted the impests to distract \\x04 enemies instead of trusting \\x04 own skills. The \\x01\\x40\\x21 warriors repelled \\x01\\x40\\xD8’s charge and wounded \\x08 sorely.",
+      "translation": "\\x01\\x40\\xD8想必是指望报应灵去扰乱\\x04敌人，而不是相信\\x04自己的本领。\\x01\\x40\\x21武士击退了\\x01\\x40\\xD8的冲锋，重创了\\x08。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=37;offset=29594;bytes=152",
+        "scene": "37",
+        "text_type": "narrative_fragment"
+      },
+      "risk_reasons": [
+        "numbers",
+        "conditions",
+        "review_warning"
+      ],
+      "review": {
+        "task_id": "review-r2-00083-2f4a5cbc",
+        "instance": "api-review-b3b33bc5a348454ba997b8f411f12478",
+        "stage": "review",
+        "before": "\\x01\\x40\\xD8想必是指望报应灵去扰乱\\x04敌人，而不是相信\\x04自己的本领。\\x01\\x40\\x21武士击退了\\x01\\x40\\xD8的冲锋，重创了\\x08。",
+        "translation": "\\x01\\x40\\xD8想必是指望报应灵去扰乱\\x04敌人，而不是相信\\x04自己的本领。\\x01\\x40\\x21武士击退了\\x01\\x40\\xD8的冲锋，重创了\\x08。",
+        "changes": [],
+        "checks": {
+          "accuracy": {
+            "evidence": "原文说 \\x01\\x40\\xD8 想必指望报应灵去扰乱 \\x04 的敌人，而不是相信 \\x04 自身本领；\\x01\\x40\\x21 武士击退其冲锋并重创 \\x08；译文“指望报应灵去扰乱……而不是相信……”“击退了……冲锋，重创了……”施受、比较结构与结果均与原文一致。",
+            "status": "pass"
+          },
+          "completeness": {
+            "evidence": "原文说 \\x01\\x40\\xD8 想必指望报应灵去扰乱 \\x04 的敌人，而不是相信 \\x04 自身本领；\\x01\\x40\\x21 武士击退其冲锋并重创 \\x08；译文“指望报应灵去扰乱……而不是相信……”“击退了……冲锋，重创了……”施受、比较结构与结果均与原文一致。",
+            "status": "pass"
+          },
+          "logic": {
+            "evidence": "原文说 \\x01\\x40\\xD8 想必指望报应灵去扰乱 \\x04 的敌人，而不是相信 \\x04 自身本领；\\x01\\x40\\x21 武士击退其冲锋并重创 \\x08；译文“指望报应灵去扰乱……而不是相信……”“击退了……冲锋，重创了……”施受、比较结构与结果均与原文一致。",
+            "status": "pass"
+          },
+          "placeholders": {
+            "evidence": "\\x01\\x40\\xD8（2 次）、\\x04（2 次）、\\x01\\x40\\x21（1 次）、\\x08（1 次）全部保留且次数与原文相同；\\x04 与中文领属助词如何搭配见 issues 中的疑点。",
+            "status": "pass"
+          },
+          "terminology": {
+            "evidence": "impests 按冻结译名作“报应灵”（t7），指代正确；\\x04（t8）、\\x08（t6）为保护标记，原样保留。",
+            "status": "pass"
+          },
+          "tone": {
+            "evidence": "“想必是指望……而不是相信……”“击退了……冲锋，重创了……”是自然的评述语气，保留原文对其判断的冷峻意味。",
+            "status": "pass"
+          }
+        },
+        "exceptions": [],
+        "id": "R0000760_7307e4d919",
+        "issues": [
+          {
+            "reason": "原文两处 \\x04 都是领属用法（\\x04 enemies / \\x04 own skills），译文一处写“\\x04敌人”、一处写“\\x04自己的本领”，等于对 \\x04 是否已含“的”作了两种相反假设：若 \\x04 展开为“他的”，则前者自然、后者成“他的自己的本领”；若展开为“他”，则后者自然、前者成“他敌人”。需依据 \\x04 的实际展开统一其中一处，当前无法从本条判定，暂不改动以免造成“的的”。",
+            "severity": "warning"
+          }
+        ],
+        "reason": "原文说 \\x01\\x40\\xD8 想必指望报应灵去扰乱 \\x04 的敌人，而不是相信 \\x04 自身本领；\\x01\\x40\\x21 武士击退其冲锋并重创 \\x08；译文“指望报应灵去扰乱……而不是相信……”“击退了……冲锋，重创了……”施受、比较结构与结果均与原文一致。",
+        "reviewed": true,
+        "source_excerpt": "\\x01\\x40\\xD8 must have trusted the impests to distract \\x04 enemies instead of trusting \\x04 own skills. The \\x01\\x40\\x21 warriors repelled \\x01\\x40\\xD8’s charge and wounded \\x08 sorely."
+      }
+    },
+    {
+      "id": "R0001753_28c883890f",
+      "ordinal": 1753,
+      "source": "The war leader’s new stead is the envy of all, and \\x01\\xBA\\x17\\x04 fighting thanes share in \\x04 glory, for it was they who built it.",
+      "translation": "战争领袖的新宅院令所有人羡慕，\\x01\\xBA\\x17\\x04的参战贵族也共享\\x04的荣耀，因为正是他们建造了它。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=232;offset=9A11E;bytes=121",
+        "scene": "232",
+        "text_type": "narrative_fragment"
+      },
+      "risk_reasons": [
+        "numbers",
+        "review_correction",
+        "review_warning"
+      ],
+      "review": {
+        "task_id": "review-r2-00197-977d5fd5",
+        "instance": "api-review-76cb42891b2d4dbb80af7366e02e4c25",
+        "stage": "review",
+        "before": "战争领袖的新宅院令所有人羡慕，\\x01\\xBA\\x17\\x04名参战贵族也共享\\x04的荣耀，因为正是他们建造了它。",
+        "translation": "战争领袖的新宅院令所有人羡慕，\\x01\\xBA\\x17\\x04的参战贵族也共享\\x04的荣耀，因为正是他们建造了它。",
+        "changes": [
+          {
+            "after": "战争领袖的新宅院令所有人羡慕，\\x01\\xBA\\x17\\x04的参战贵族也共享\\x04的荣耀，因为正是他们建造了它。",
+            "before": "战争领袖的新宅院令所有人羡慕，\\x01\\xBA\\x17\\x04名参战贵族也共享\\x04的荣耀，因为正是他们建造了它。",
+            "category": "accuracy",
+            "reason": "原文说战争领袖的新宅院令人羡慕，出力建造它的参战贵族共享荣耀；译文保留“因为正是他们建造了它”的因果。原译首处“\\x04名”把控制字节读成数量词，与后文“\\x04的荣耀”的修饰关系冲突，改为“\\x04的”使同一槽位的定语关系一致。",
+            "severity": "minor",
+            "source_excerpt": "and \\x01\\xBA\\x17\\x04 fighting thanes share in \\x04 glory"
+          }
+        ],
+        "checks": {
+          "accuracy": {
+            "evidence": "原文说战争领袖的新宅院令人羡慕，出力建造它的参战贵族共享荣耀；译文保留“因为正是他们建造了它”的因果。原译首处“\\x04名”把控制字节读成数量词，与后文“\\x04的荣耀”的修饰关系冲突，改为“\\x04的”使同一槽位的定语关系一致。",
+            "status": "corrected"
+          },
+          "completeness": {
+            "evidence": "原文说战争领袖的新宅院令人羡慕，出力建造它的参战贵族共享荣耀；译文保留“因为正是他们建造了它”的因果。原译首处“\\x04名”把控制字节读成数量词，与后文“\\x04的荣耀”的修饰关系冲突，改为“\\x04的”使同一槽位的定语关系一致。",
+            "status": "pass"
+          },
+          "logic": {
+            "evidence": "原文说战争领袖的新宅院令人羡慕，出力建造它的参战贵族共享荣耀；译文保留“因为正是他们建造了它”的因果。原译首处“\\x04名”把控制字节读成数量词，与后文“\\x04的荣耀”的修饰关系冲突，改为“\\x04的”使同一槽位的定语关系一致。",
+            "status": "pass"
+          },
+          "placeholders": {
+            "evidence": "\\x01\\xBA\\x17 为完整 Opal 命令（含两个操作数），两处 \\x04 均原样保留，未增删标记。",
+            "status": "pass"
+          },
+          "terminology": {
+            "evidence": "thanes 按 t1 译为“贵族”，\\x04 按 t2 原样保留；未把同形普通词误作其他专名。",
+            "status": "pass"
+          },
+          "tone": {
+            "evidence": "“令所有人羡慕”“共享……的荣耀”古朴凝练，符合史诗叙述口吻。",
+            "status": "pass"
+          }
+        },
+        "exceptions": [],
+        "id": "R0001753_28c883890f",
+        "issues": [
+          {
+            "reason": "两处使用同一槽位 \\x04，但数据未给出其展开文本；现译文在首处后加“的”按定语/领属处理，若该槽位展开已含“的”或为限定词，可能出现重复或不通顺，需核对 scene=232 的槽位定义。",
+            "severity": "warning"
+          }
+        ],
+        "reason": "原文说战争领袖的新宅院令人羡慕，出力建造它的参战贵族共享荣耀；译文保留“因为正是他们建造了它”的因果。原译首处“\\x04名”把控制字节读成数量词，与后文“\\x04的荣耀”的修饰关系冲突，改为“\\x04的”使同一槽位的定语关系一致。",
+        "reviewed": true,
+        "source_excerpt": "The war leader’s new stead is the envy of all, and \\x01\\xBA\\x17\\x04 fighting thanes share in \\x04 glory, for it was they who built it."
+      }
+    },
+    {
+      "id": "R0006048_014836ba1b",
+      "ordinal": 6048,
+      "source": "A \\x01\\xE6\\x0B cannot allow members of \\x01\\xBA\\x0B\\x04 own clan to be killed with impunity.",
+      "translation": "一个\\x01\\xE6\\x0B不能允许\\x01\\xBA\\x0B\\x04自己氏族的成员被杀害而不受惩罚。",
+      "metadata": {
+        "group": "Opal missing narrative fields",
+        "note": "Exact length-prefixed source field. Opal 01 commands have TWO opaque operand bytes, including NUL. Preserve all literal escapes, complete commands, random branch count and slash order. This record is not necessarily a complete displayed sentence; do not assume adjacent CSV records are continuous.",
+        "resource": "KoDp/scenes.dat#scene=1420;offset=3E74A6;bytes=71",
+        "scene": "1420",
+        "text_type": "narrative_fragment"
+      },
+      "risk_reasons": [
+        "numbers",
+        "negation",
+        "review_warning"
+      ],
+      "review": {
+        "task_id": "review-r2-00626-c650e260",
+        "instance": "api-review-a4ead9db09b3437793ec25c90d1c835f",
+        "stage": "review",
+        "before": "一个\\x01\\xE6\\x0B不能允许\\x01\\xBA\\x0B\\x04自己氏族的成员被杀害而不受惩罚。",
+        "translation": "一个\\x01\\xE6\\x0B不能允许\\x01\\xBA\\x0B\\x04自己氏族的成员被杀害而不受惩罚。",
+        "changes": [],
+        "checks": {
+          "accuracy": {
+            "evidence": "原文动作链是：某个由第一个 Opal 命令指代的主体，不能允许第二个命令所指“自己氏族”的成员被杀害而凶手不受惩罚。译文保留“不能允许”、成员被杀、氏族归属和不受惩罚的结果，没有增删动作或否定；第二个命令的具体展开未知，另列 issues。",
+            "status": "pass"
+          },
+          "completeness": {
+            "evidence": "原文动作链是：某个由第一个 Opal 命令指代的主体，不能允许第二个命令所指“自己氏族”的成员被杀害而凶手不受惩罚。译文保留“不能允许”、成员被杀、氏族归属和不受惩罚的结果，没有增删动作或否定；第二个命令的具体展开未知，另列 issues。",
+            "status": "pass"
+          },
+          "logic": {
+            "evidence": "原文动作链是：某个由第一个 Opal 命令指代的主体，不能允许第二个命令所指“自己氏族”的成员被杀害而凶手不受惩罚。译文保留“不能允许”、成员被杀、氏族归属和不受惩罚的结果，没有增删动作或否定；第二个命令的具体展开未知，另列 issues。",
+            "status": "pass"
+          },
+          "placeholders": {
+            "evidence": "两个完整命令 \\x01\\xE6\\x0B 与 \\x01\\xBA\\x0B\\x04 在译文中逐字保留，控制字节和长度前缀未改动；未增删其他占位符或标签。",
+            "status": "pass"
+          },
+          "terminology": {
+            "evidence": "本条 term_refs 为空，源文无专名或需冻结的术语；clan 按普通词义译为“氏族”，两个 Opal 命令不是术语。",
+            "status": "not_applicable"
+          },
+          "tone": {
+            "evidence": "“不能允许……被杀害而不受惩罚”语气直接，符合原文谴责不惩凶手的叙事口吻，没有添加解释。",
+            "status": "pass"
+          }
+        },
+        "exceptions": [],
+        "id": "R0006048_014836ba1b",
+        "issues": [
+          {
+            "reason": "第二个 Opal 命令 \\x01\\xBA\\x0B\\x04 在原文中直接修饰 own clan，疑似展开为所有格（如“他的”）。现译将其置于“自己氏族”前；若命令展开为“他的”，会形成“他的自己氏族”的叠用。需确认该命令在中文下输出的是“他”还是“他的”，再定稿。",
+            "severity": "warning"
+          }
+        ],
+        "reason": "保留现译；Opal 命令均原样保留，主体、氏族归属和不受惩罚的结果与原文对应；第二个命令若展开为所有格，中文搭配仍有未解决的疑点。",
+        "reviewed": true,
+        "source_excerpt": "A \\x01\\xE6\\x0B cannot allow members of \\x01\\xBA\\x0B\\x04 own clan to be killed with impunity."
+      }
+    }
+  ],
+  "consistency": [],
+  "glossary_checks": [],
+  "pilot_batch_summaries": {},
+  "check_signatures": {
+    "R0000591_66f13ed746": "6e7f0bf6993e71a59af1b0eabf1b870530e9d65f9dc7c9793f2013d8a3be47f3",
+    "R0000760_7307e4d919": "7b311b7f1683b279d41f24f8bb39faaca6f9736a8b4a3a964e993e560b2a62c4",
+    "R0001753_28c883890f": "e8315f93fe117705f3fe122141438ad8c65e33bc5338fd19b94de4835b088c51",
+    "R0006048_014836ba1b": "463efd0420724b1407f15d2d0ee88178619190946d6f7a0d74f36673247d4ee5"
+  },
+  "reused_decisions": {},
+  "required_decisions": [
+    "R0000591_66f13ed746",
+    "R0000760_7307e4d919",
+    "R0001753_28c883890f",
+    "R0006048_014836ba1b"
+  ],
+  "standard_scope_policy": "disputes_only_v1",
+  "carried_findings": {},
+  "selection_explanation": "Only explicit unresolved reviewer issues need standard-tier adjudication. Risk flags, corrections, ordinary samples, duplicate-source groups and speaker groups do not trigger standard-tier review. Known standard-tier repair findings are carried to cheap-tier repair without re-reading; exhausted or regressing repairs use the existing targeted standard-tier escalation route.",
+  "resource_occurrence_binding": {
+    "opal_missing_text.mapping.json": "4468dd2ef1e23ceceef45380c66acda7e1bf7777ace85bc2bd4553db8394be02"
+  },
+  "report_hash": "47ca051cf2d42a93f18915cccb79c1a55e81488dc98381728af5cbacba70cb1e"
+}

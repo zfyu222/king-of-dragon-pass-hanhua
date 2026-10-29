@@ -1,0 +1,34 @@
+{
+  "schema": 2,
+  "kind": "final",
+  "pilot_key": "285f590250b110be71c65850f7bf5c0367845966697753c5bb000d184b62579b",
+  "source_sha256": "a709cf39be5eb7581eb237009f635d9be90e6976d41f60566fc09f3f4414d547",
+  "glossary": {
+    "hash": "09e3177a24333371f5e7264c781caab6016339bcce988c4d29c17dc6e8ad7a0f",
+    "path": "glossary\\r1\\freeze_97716cd3\\built\\glossary_reviewed.json",
+    "revision": 1
+  },
+  "snapshot_hash": "af7a497266d769f20b460e91a99c34df383119be4db7e339fea48d99cea8d4fc",
+  "coverage": {
+    "records": 20,
+    "text_types": {
+      "unknown": 20
+    },
+    "missing_context": 20,
+    "risk_records": 20,
+    "ordinary_sample": 0,
+    "standard_records": 0
+  },
+  "risk_detection": "Heuristic candidates plus reviewer findings; absence of flags is not proof of correctness.",
+  "records_to_check": [],
+  "consistency": [],
+  "glossary_checks": [],
+  "pilot_batch_summaries": {},
+  "check_signatures": {},
+  "reused_decisions": {},
+  "required_decisions": [],
+  "standard_scope_policy": "disputes_only_v1",
+  "carried_findings": {},
+  "selection_explanation": "Only explicit unresolved reviewer issues need standard-tier adjudication. Risk flags, corrections, ordinary samples, duplicate-source groups and speaker groups do not trigger standard-tier review. Known standard-tier repair findings are carried to cheap-tier repair without re-reading; exhausted or regressing repairs use the existing targeted standard-tier escalation route.",
+  "report_hash": "b0a060c72d9897d203a82539cbc8cd7114026b3b82d4cb0dd252332af3a667d6"
+}

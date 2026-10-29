@@ -1,0 +1,37 @@
+{
+  "stage": "translate",
+  "key": "67e32ed1c564ee282712f00e5cd5434eddd8b4423c1d74b8d4b0da339e23b0ef",
+  "records": 6972,
+  "failed_records": 0,
+  "clean": true,
+  "failures": [],
+  "repair_tasks": [],
+  "repair_dispatch": [],
+  "phase": "final_full",
+  "checked_records": 7265,
+  "checked_rounds": [
+    {
+      "round": 4,
+      "phase": "issue_recheck",
+      "scope": "issues",
+      "checked_records": 293,
+      "result": "passed"
+    },
+    {
+      "round": 5,
+      "phase": "final_full",
+      "scope": "full",
+      "checked_records": 6972,
+      "result": "passed"
+    }
+  ],
+  "round_reports": [
+    "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\opal-complete-20261030\\TranslateFiles\\reports\\draft_checks\\round_00004.json",
+    "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\opal-complete-20261030\\TranslateFiles\\reports\\draft_checks\\round_00005.json"
+  ],
+  "repair_status": [],
+  "imported_baseline": null,
+  "needs_attention_ids": [],
+  "repair_stop_reasons": {},
+  "status": "clean"
+}

@@ -1,0 +1,1461 @@
+{
+  "schema": "runtime-template-occurrences.v1",
+  "source_csv_sha256": "a709cf39be5eb7581eb237009f635d9be90e6976d41f60566fc09f3f4414d547",
+  "resource_sha256": "c13f4071da49b6f44a10cbd0d17347f61d244ab77a44112761809174910529c0",
+  "records": [
+    {
+      "ordinal": 1,
+      "source_sha256": "6857c4e78ded57c429906e4d3f97e135a4162bb95b940ebb341abbba6d236107",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27608,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27704,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27728,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27744,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27760,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27824,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29820,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29916,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29940,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29956,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29972,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 30036,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        }
+      ],
+      "transform": "Complete displayed medical sentence from ordered Opal fields; select one prefix random branch, singular/plural warrior field and final healed/patched up/bandaged or dying-only branch. Two numeric captures retain the original order; all alternative component fields are bound, not concatenated as CSV neighbours."
+    },
+    {
+      "ordinal": 2,
+      "source_sha256": "34540d57c4a9122c29f880b7b17c9a5a28b142dea869326076ad750e8aaa82b4",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27608,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27704,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27728,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27744,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27760,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27824,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29820,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29916,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29940,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29956,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29972,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 30036,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        }
+      ],
+      "transform": "Complete displayed medical sentence from ordered Opal fields; select one prefix random branch, singular/plural warrior field and final healed/patched up/bandaged or dying-only branch. Two numeric captures retain the original order; all alternative component fields are bound, not concatenated as CSV neighbours."
+    },
+    {
+      "ordinal": 3,
+      "source_sha256": "63689cf2fd790bbce9aea8ac4bd7bbd5d6898aba4ff891d070b68bd448e28b38",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27608,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27704,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27728,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27744,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27760,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27824,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29820,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29916,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29940,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29956,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29972,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 30036,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        }
+      ],
+      "transform": "Complete displayed medical sentence from ordered Opal fields; select one prefix random branch, singular/plural warrior field and final healed/patched up/bandaged or dying-only branch. Two numeric captures retain the original order; all alternative component fields are bound, not concatenated as CSV neighbours."
+    },
+    {
+      "ordinal": 4,
+      "source_sha256": "afc52ec085508ea47ddf44d36a76b29f9bc1864feba37d07151db05484354b5c",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27608,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27704,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27728,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27744,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27760,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27824,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29820,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29916,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29940,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29956,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29972,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 30036,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        }
+      ],
+      "transform": "Complete displayed medical sentence from ordered Opal fields; select one prefix random branch, singular/plural warrior field and final healed/patched up/bandaged or dying-only branch. Two numeric captures retain the original order; all alternative component fields are bound, not concatenated as CSV neighbours."
+    },
+    {
+      "ordinal": 5,
+      "source_sha256": "6acab5fe417b1d751411173c1037a28b286bb41e7580f572755219ec5fa482a9",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27608,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27704,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27728,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27744,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27760,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27824,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29820,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29916,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29940,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29956,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29972,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 30036,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        }
+      ],
+      "transform": "Complete displayed medical sentence from ordered Opal fields; select one prefix random branch, singular/plural warrior field and final healed/patched up/bandaged or dying-only branch. Two numeric captures retain the original order; all alternative component fields are bound, not concatenated as CSV neighbours."
+    },
+    {
+      "ordinal": 6,
+      "source_sha256": "ed0315bb0127e93000d512c0bce68f4de6ed9d64cd4266fef457b4046d050aeb",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27608,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27704,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27728,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27744,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27760,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27824,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29820,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29916,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29940,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29956,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29972,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 30036,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        }
+      ],
+      "transform": "Complete displayed medical sentence from ordered Opal fields; select one prefix random branch, singular/plural warrior field and final healed/patched up/bandaged or dying-only branch. Two numeric captures retain the original order; all alternative component fields are bound, not concatenated as CSV neighbours."
+    },
+    {
+      "ordinal": 7,
+      "source_sha256": "ecc51dd5a4bb1659fa348c46c616eff046524a1a227fdf35f2cf77f58a84df9f",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27608,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27704,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27728,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27744,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27760,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27824,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29820,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29916,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29940,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29956,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29972,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 30036,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        }
+      ],
+      "transform": "Complete displayed medical sentence from ordered Opal fields; select one prefix random branch, singular/plural warrior field and final healed/patched up/bandaged or dying-only branch. Two numeric captures retain the original order; all alternative component fields are bound, not concatenated as CSV neighbours."
+    },
+    {
+      "ordinal": 8,
+      "source_sha256": "dcc5dfd32fc3e01445c6c688968e688752e7c4de4f606533730a6eeb227d3629",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27608,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27704,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27728,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27744,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27760,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27824,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29820,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29916,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29940,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29956,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29972,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 30036,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        }
+      ],
+      "transform": "Complete displayed medical sentence from ordered Opal fields; select one prefix random branch, singular/plural warrior field and final healed/patched up/bandaged or dying-only branch. Two numeric captures retain the original order; all alternative component fields are bound, not concatenated as CSV neighbours."
+    },
+    {
+      "ordinal": 9,
+      "source_sha256": "6053ed332502ae81efc31fe761ba0fba550d48fee824cca033e807062bc5dfd3",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27608,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27704,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27728,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27744,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27760,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27824,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29820,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29916,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29940,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29956,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29972,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 30036,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        }
+      ],
+      "transform": "Complete displayed medical sentence from ordered Opal fields; select one prefix random branch, singular/plural warrior field and final healed/patched up/bandaged or dying-only branch. Two numeric captures retain the original order; all alternative component fields are bound, not concatenated as CSV neighbours."
+    },
+    {
+      "ordinal": 10,
+      "source_sha256": "49fcc75673ea1216d1612ca2d2ac93b3498d47e08aac52ff5309069bc9c6ef84",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27608,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27704,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27728,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27744,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27760,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27824,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29820,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29916,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29940,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29956,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29972,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 30036,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        }
+      ],
+      "transform": "Complete displayed medical sentence from ordered Opal fields; select one prefix random branch, singular/plural warrior field and final healed/patched up/bandaged or dying-only branch. Two numeric captures retain the original order; all alternative component fields are bound, not concatenated as CSV neighbours."
+    },
+    {
+      "ordinal": 11,
+      "source_sha256": "250ddf136d5c7da156349e830f3ed85dca7922a07d98eb4b9891091af3a8edc9",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27608,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27704,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27728,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27744,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27760,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27824,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29820,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29916,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29940,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29956,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29972,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 30036,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        }
+      ],
+      "transform": "Complete displayed medical sentence from ordered Opal fields; select one prefix random branch, singular/plural warrior field and final healed/patched up/bandaged or dying-only branch. Two numeric captures retain the original order; all alternative component fields are bound, not concatenated as CSV neighbours."
+    },
+    {
+      "ordinal": 12,
+      "source_sha256": "71c45ff1808f0273e424f91b3dc66cec2ab50a8c438d94ed5ffbeabdd1a76898",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27608,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27704,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27728,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27744,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27760,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27824,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29820,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29916,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29940,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29956,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29972,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 30036,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        }
+      ],
+      "transform": "Complete displayed medical sentence from ordered Opal fields; select one prefix random branch, singular/plural warrior field and final healed/patched up/bandaged or dying-only branch. Two numeric captures retain the original order; all alternative component fields are bound, not concatenated as CSV neighbours."
+    },
+    {
+      "ordinal": 13,
+      "source_sha256": "c108621e5e17f9c3c30df9efc8d1a32384ccf9071d1ef7678a4b2a71ff6fa10e",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27608,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27704,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27728,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27744,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27760,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27824,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29820,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29916,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29940,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29956,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29972,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 30036,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        }
+      ],
+      "transform": "Complete displayed medical sentence from ordered Opal fields; select one prefix random branch, singular/plural warrior field and final healed/patched up/bandaged or dying-only branch. Two numeric captures retain the original order; all alternative component fields are bound, not concatenated as CSV neighbours."
+    },
+    {
+      "ordinal": 14,
+      "source_sha256": "87b15937f75ec0fdda83e839e89cbbd1fbf188ac53316b1273bb17b0b553954f",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27608,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27704,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27728,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27744,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27760,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27824,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29820,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29916,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29940,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29956,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29972,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 30036,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        }
+      ],
+      "transform": "Complete displayed medical sentence from ordered Opal fields; select one prefix random branch, singular/plural warrior field and final healed/patched up/bandaged or dying-only branch. Two numeric captures retain the original order; all alternative component fields are bound, not concatenated as CSV neighbours."
+    },
+    {
+      "ordinal": 15,
+      "source_sha256": "e754007101cee235ed988119503ff25e04a594b700a61e153395f22f06396dc1",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27608,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27704,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27728,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27744,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27760,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27824,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29820,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29916,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29940,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29956,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29972,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 30036,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        }
+      ],
+      "transform": "Complete displayed medical sentence from ordered Opal fields; select one prefix random branch, singular/plural warrior field and final healed/patched up/bandaged or dying-only branch. Two numeric captures retain the original order; all alternative component fields are bound, not concatenated as CSV neighbours."
+    },
+    {
+      "ordinal": 16,
+      "source_sha256": "2c68216d458587a2806dcb854518f37e7009f8494e995bc647f3d08c193e0a1c",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27608,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27704,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27728,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27744,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27760,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27824,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29820,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29916,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29940,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29956,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29972,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 30036,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        }
+      ],
+      "transform": "Complete displayed medical sentence from ordered Opal fields; select one prefix random branch, singular/plural warrior field and final healed/patched up/bandaged or dying-only branch. Two numeric captures retain the original order; all alternative component fields are bound, not concatenated as CSV neighbours."
+    },
+    {
+      "ordinal": 17,
+      "source_sha256": "9cb4ff4436cf3e18cd2bd583c9c830676f9450feeb930275b458d3dab8d10564",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27608,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27704,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27728,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27744,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27760,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27824,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29820,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29916,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29940,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29956,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29972,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 30036,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        }
+      ],
+      "transform": "Complete displayed medical sentence from ordered Opal fields; select one prefix random branch, singular/plural warrior field and final healed/patched up/bandaged or dying-only branch. Two numeric captures retain the original order; all alternative component fields are bound, not concatenated as CSV neighbours."
+    },
+    {
+      "ordinal": 18,
+      "source_sha256": "34577e6b0783abd7cdb4eb18da4519040e396cb266552de8676452d069570681",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27608,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27704,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27728,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27744,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27760,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 27824,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29820,
+          "bytes": 93,
+          "source_bytes_sha256": "499dec7c4e8f8c6b07e809c9f4c36e145eaadb0917834481e395936a0a7bb272"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29916,
+          "bytes": 20,
+          "source_bytes_sha256": "24290c616f2fe012be649ae98756e1868dc6988b002f7e713293252be8830be8"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29940,
+          "bytes": 12,
+          "source_bytes_sha256": "b8fd9ca4d9e7b998d770d801359429bb8b064962d17e105846c80f33c6c14a74"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29956,
+          "bytes": 13,
+          "source_bytes_sha256": "8e235da1e40aa7ecc94ca77fcf407a38f9d2a02c2e641580dfe529d3473acc3c"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 29972,
+          "bytes": 60,
+          "source_bytes_sha256": "735358b7c03490a6e85efb2d08f3c3d473a319ac3f168173f9671aa70420bb35"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 30036,
+          "bytes": 6,
+          "source_bytes_sha256": "e30233d227026b86e1c6979c55ba537a628ca9b7b235b74fda4c8d17b36e295c"
+        }
+      ],
+      "transform": "Complete displayed medical sentence from ordered Opal fields; select one prefix random branch, singular/plural warrior field and final healed/patched up/bandaged or dying-only branch. Two numeric captures retain the original order; all alternative component fields are bound, not concatenated as CSV neighbours."
+    },
+    {
+      "ordinal": 19,
+      "source_sha256": "744e52d604e917a56960a4a1c5cec45c024ac63e0f921a506f65e8861f7baa7d",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 32576,
+          "bytes": 17,
+          "source_bytes_sha256": "bcb0511dcdfe292ffa5af5e4c2b223e348c861c3b8dd6c98859fb52a342b57cf"
+        },
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 32596,
+          "bytes": 13,
+          "source_bytes_sha256": "c1be24dd2cabe17403f5fc3cebeb3454c80a0ca37a89265e0dc7f15d6b155cef"
+        }
+      ],
+      "transform": "Observed saga sentence: We stole <count> cows + from the <clan>. Numeric then clan capture, as shown in screenshot 37898174."
+    },
+    {
+      "ordinal": 20,
+      "source_sha256": "7222d1a6c57a64d121c22721204215a2e55087820d3655ae4fa9571d726621e6",
+      "bindings": [
+        {
+          "resource": "KoDp/scenes.dat",
+          "offset": 34886,
+          "bytes": 55,
+          "source_bytes_sha256": "0a3fabaf2306aba8aa15c7eba7ebbe58f778fe9dbd38de89e6b3e332708967ab"
+        }
+      ],
+      "transform": "Observed saga sentence: clan and Sea season; season is retained as an approved full captured phrase. Source resource is the exact Sea-season refusal field, screenshot 37898174."
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "review_summary": "复核 2 条 non_translate 条目：%d 与 %s 均为 printf 格式占位符，应保持原样；分类正确，但原条目缺少 applicability，已补为 text 适用范围并说明嵌入句中的保留依据。本批 audit.findings 为空，无新增术语或隔离项。",
+  "changes": [
+    {
+      "action": "edits",
+      "table": "non_translate",
+      "index": 0,
+      "before": {
+        "source": "%d",
+        "evidence_rows": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "extraction_candidates": [
+          {
+            "table": "non_translate",
+            "row": {
+              "source": "%d"
+            },
+            "extraction_count": 1,
+            "evidence_rows": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "extraction_tasks": [
+              "extract-r1-00001-b9926185"
+            ]
+          }
+        ],
+        "provisional_selection": "most_extraction_proposals_then_first_seen"
+      },
+      "after": {
+        "source": "%d",
+        "evidence_rows": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "extraction_candidates": [
+          {
+            "table": "non_translate",
+            "row": {
+              "source": "%d"
+            },
+            "extraction_count": 1,
+            "evidence_rows": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19
+            ],
+            "extraction_tasks": [
+              "extract-r1-00001-b9926185"
+            ]
+          }
+        ],
+        "provisional_selection": "most_extraction_proposals_then_first_seen",
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "text",
+          "reason": "printf 整数格式符，在事件文本中由程序替换为数字；原文以嵌入形式出现，必须原样保留，不能改写为中文数字或变量名。"
+        }
+      },
+      "reason": "补充 e1 的适用范围，避免把 %d 当普通文本处理。",
+      "evidence": [
+        {
+          "row": 1,
+          "text": "Through their healing magics, our auxiliaries kept %d warrior from dying, and patched up %d of the wounded."
+        },
+        {
+          "row": 2,
+          "text": "Through their healing magics, our auxiliaries kept %d warrior from dying, and bandaged %d of the wounded."
+        },
+        {
+          "row": 19,
+          "text": "We stole %d cows from the %s."
+        }
+      ]
+    },
+    {
+      "action": "edits",
+      "table": "non_translate",
+      "index": 1,
+      "before": {
+        "source": "%s",
+        "evidence_rows": [
+          19,
+          20
+        ],
+        "extraction_candidates": [
+          {
+            "table": "non_translate",
+            "row": {
+              "source": "%s"
+            },
+            "extraction_count": 1,
+            "evidence_rows": [
+              19,
+              20
+            ],
+            "extraction_tasks": [
+              "extract-r1-00001-b9926185"
+            ]
+          }
+        ],
+        "provisional_selection": "most_extraction_proposals_then_first_seen"
+      },
+      "after": {
+        "source": "%s",
+        "evidence_rows": [
+          19,
+          20
+        ],
+        "extraction_candidates": [
+          {
+            "table": "non_translate",
+            "row": {
+              "source": "%s"
+            },
+            "extraction_count": 1,
+            "evidence_rows": [
+              19,
+              20
+            ],
+            "extraction_tasks": [
+              "extract-r1-00001-b9926185"
+            ]
+          }
+        ],
+        "provisional_selection": "most_extraction_proposals_then_first_seen",
+        "applicability": {
+          "case_sensitive": true,
+          "mode": "text",
+          "reason": "printf 字符串格式符，在事件文本中由程序替换为氏族名等字符串；原文以嵌入形式出现，必须原样保留，不能改写或翻译。"
+        }
+      },
+      "reason": "补充 e2 的适用范围，避免把 %s 当普通文本处理。",
+      "evidence": [
+        {
+          "row": 19,
+          "text": "We stole %d cows from the %s."
+        },
+        {
+          "row": 20,
+          "text": "The warriors refused to raid the %s during %s."
+        }
+      ]
+    }
+  ],
+  "remaining_findings": [],
+  "no_match_exceptions": {}
+}

@@ -1,0 +1,57 @@
+{
+  "report_hash": "47ca051cf2d42a93f18915cccb79c1a55e81488dc98381728af5cbacba70cb1e",
+  "decisions": {
+    "R0000591_66f13ed746": {
+      "disposition": "contextual",
+      "id": "R0000591_66f13ed746",
+      "reason": "that exploded 可回指较远的 javelin，也可就近回指 guts；原文先写施法测度气流，再写投掷标枪并爆炸，现译明确为标枪炸开是可成立的战斗魔法解读。没有场景证据证明肚腹才是爆炸主语，不能据语法邻近强制返修；两个 Opal 命令和施受关系均保留。"
+    },
+    "R0000760_7307e4d919": {
+      "disposition": "repair",
+      "id": "R0000760_7307e4d919",
+      "reason": "同一 \\x04 在源文的 enemies 与 own skills 前都承担领属修饰，现译却分别接“敌人”和“自己的本领”。若运行时输出含“的”，后者会成为“他的自己的本领”；若不含“的”，前者会成为“他敌人”。这是同句两处不能同时可靠成立的中文搭配。应核实 \\x04 在该场景中的实际展开，并据此统一两处领属表达，保持两个 \\x04、其余 Opal 命令和施受关系不变；不得凭未知展开直接补“的”。",
+      "record_ids": [
+        "R0000760_7307e4d919"
+      ]
+    },
+    "R0001753_28c883890f": {
+      "disposition": "repair",
+      "id": "R0001753_28c883890f",
+      "reason": "源文 \\x04 fighting thanes 与 \\x04 glory 两处为同一动态领属槽位；现译两处均在 \\x04 后添“的”。如果槽位已输出所有格或限定词，显示会重复或不通顺。旧译“\\x04名”也缺乏数词依据。应核实 scene 232 中 \\x04 的实际中文展开，再确定两处修饰结构；保留 \\x01\\xBA\\x17、两处 \\x04 及“建造者共享荣耀”的因果，不恢复无据的“名”。",
+      "record_ids": [
+        "R0001753_28c883890f"
+      ]
+    },
+    "R0006048_014836ba1b": {
+      "disposition": "repair",
+      "id": "R0006048_014836ba1b",
+      "reason": "源文 members of \\x01\\xBA\\x0B\\x04 own clan 中，\\x04 与 own 共同限定 clan；现译紧接“自己氏族”。若 \\x04 已展开为“他的”等所有格，显示为“他的自己氏族”，语义虽可辨但搭配生硬，且可能与命令输出重复领属。应核实 scene 1420 的该槽位展开，调整“自己/氏族”的搭配，完整保留 \\x01\\xE6\\x0B、\\x01\\xBA\\x0B、\\x04 以及“不能容许氏族成员被杀却无人受惩罚”的否定关系。",
+      "record_ids": [
+        "R0006048_014836ba1b"
+      ]
+    }
+  },
+  "status": "repair_round_prepared",
+  "round": 1,
+  "repair_tasks": [
+    "review-round-666f81087940480a"
+  ],
+  "repair_dispatch": [
+    {
+      "task_id": "review-round-666f81087940480a",
+      "backend": "api",
+      "repair_tier": "cheap",
+      "required_tier": null,
+      "repair_counts": {
+        "R0000760_7307e4d919": 1,
+        "R0001753_28c883890f": 1,
+        "R0006048_014836ba1b": 1
+      },
+      "automatic_escalation": false
+    }
+  ],
+  "repair_records": 3,
+  "needs_attention_ids": [],
+  "stage_approved": false,
+  "repair_stop_reasons": {}
+}

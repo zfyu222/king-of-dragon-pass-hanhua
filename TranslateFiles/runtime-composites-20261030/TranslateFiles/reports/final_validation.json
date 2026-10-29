@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "source_sha256": "a709cf39be5eb7581eb237009f635d9be90e6976d41f60566fc09f3f4414d547",
+  "translation_sha256": "50237bdeec0c26b183dea7db806ba045298608fab68a8dacd441e6d478afef5d",
+  "records": 20,
+  "semantic_review": "full",
+  "polish": false,
+  "revision": 2,
+  "glossary": {
+    "hash": "09e3177a24333371f5e7264c781caab6016339bcce988c4d29c17dc6e8ad7a0f",
+    "path": "glossary\\r1\\freeze_97716cd3\\built\\glossary_reviewed.json",
+    "revision": 1
+  },
+  "ainiee": {
+    "actual_commit": "c50570c1dee7df7bd51316a253f0b42d10a8ca4c",
+    "expected_commit": "c50570c1dee7df7bd51316a253f0b42d10a8ca4c",
+    "license": "AGPL-3.0; Tools/AINiee/LICENSE",
+    "modules": {
+      "Domain/PromptBuilder/GlossaryHelper.py": "6b3072989b77c84787774439c79aaea7d4727fcda104667d8833b53bb490446f",
+      "Domain/TextProcessor/TextProcessor.py": "805f49f68302fab2c5832aad8c7597fb4c3382cea131618765248f30a5963eed",
+      "Infrastructure/LLMRequester/LLMClientFactory.py": "70d43af749640604813887241604edf0472a75afbbf106fb5e69cfd3753a1a4b",
+      "Infrastructure/LLMRequester/OpenaiRequester.py": "b2b1f5e6fd3a31727b2e1d2597e1bcca3e5e4db2cfec550ff6cfcd6a6cff3f79"
+    }
+  },
+  "path": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\runtime-composites-20261030\\feedback_text_translated.csv",
+  "quality_review": {
+    "report_hash": "b0a060c72d9897d203a82539cbc8cd7114026b3b82d4cb0dd252332af3a667d6",
+    "reviewer": "workflow:no-disputes"
+  },
+  "in_game_check": "pending_repack",
+  "mixed_language_audit": {
+    "path": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\TranslateFiles\\runtime-composites-20261030\\TranslateFiles\\reports\\mixed_language_audit.json",
+    "candidate_records": 0,
+    "status": "candidates_only"
+  }
+}
