@@ -11,7 +11,8 @@ FILES=ROOT/'Dispatch/Files'
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 
 
-def verify():
+def verify(files=None,report_path=None):
+    FILES=Path(files) if files else ROOT/'Dispatch/Files'
     manifest=json.loads((FILES/'PATCH_MANIFEST.json').read_text(encoding='utf-8'))
     resources=[e for e in manifest['files'] if e['role']=='resource']
     live={e['path']:sha(ROOT/'Game'/e['path']) for e in resources}
@@ -55,7 +56,7 @@ def verify():
     assert live=={e['path']:sha(ROOT/'Game'/e['path']) for e in resources}
     result=dict(status='passed',resource_targets=len(resources),checks=checks,real_game_untouched=True,
                 legacy_steam_uri_verified_without_launching_steam=True,fixture=str(area),manifest_sha256=sha(FILES/'PATCH_MANIFEST.json'))
-    (ROOT/'ReleaseConfig/installation_validation.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
+    (Path(report_path) if report_path else ROOT/'ReleaseConfig/installation_validation.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
     print(json.dumps(result,ensure_ascii=False,indent=2))
 
 

@@ -23,6 +23,13 @@ int wmain(int argc, wchar_t** argv) {
     probes.push_back(u8"Weaponthanes阵亡\nFootmen阵亡");
     probes.push_back("We had to maneuver under a devastating barrage of missiles.");
     probes.push_back("With their careful attention, our auxiliaries kept 3 warriors from dying, and healed 12 of the wounded.");
+    probes.push_back("We stole 22 cows from the Greenwings.");
+    probes.push_back("The warriors refused to raid the Hiordlings during Sea season.");
+    probes.push_back(u8"The Gorinds charged right into the trap we had laid for them. The battle didn’t last long. Their magic was stronger than ours, but we were not dismayed. We drove the Gorinds from the battlefield, and were able to plunder their tula. We captured 23 cows and 1 horse. With their careful attention, our auxiliaries kept 2 warriors from dying, and bandaged 4 of the wounded.");
+    probes.push_back(u8"The Gorinds rushed us before we’d fired more than a few volleys. The battle didn’t last long. Their magic confused and confounded our warriors. We were driven off and had no opportunity to obtain booty. Due to their prompt healing, our auxiliaries kept 1 warrior from dying, and patched up 3 of the wounded.");
+    probes.push_back("The Horse Nomad charge hit us before we could shift our lines.");
+    probes.push_back("As our forces engage with the Horse Nomads, Orlaront notices that a detachment of riders is trying to sneak completely around and get at us from behind. What should he do?");
+    probes.push_back("Make sure Varsens knows about the threat.");
     int failed = 0;
     size_t probeIndex = 0;
     for (const char* probe : probes) {
@@ -40,5 +47,23 @@ int wmain(int argc, wchar_t** argv) {
     if (std::string(TranslateRuntimeText("Magic: dead")) != "Magic: dead") ++failed;
     const std::string boundary(33000, '+');
     if (std::string(TranslateRuntimeText(boundary.c_str())) != boundary) ++failed;
+    const std::string articleResult=TranslateRuntimeText("The Horse Nomad charge hit us before we could shift our lines.");
+    if(articleResult.rfind(u8"这",0)==0) ++failed;
+    const std::string battle = TranslateRuntimeText(probes[feedbackStart+12]);
+    for(const char* required : {"23","1","2","4",u8"辅助",u8"包扎"})
+        if(battle.find(required)==std::string::npos) {std::cout<<"FAIL battle lost "<<required<<"\n";++failed;}
+    const std::string retreat=TranslateRuntimeText(probes[feedbackStart+13]);
+    for(const char* required : {"1","3",u8"战利品",u8"救治"})
+        if(retreat.find(required)==std::string::npos) ++failed;
+    if(RenderFormat("%s / %d",{"name","12"})!="name / 12") ++failed;
+    if(RenderFormat("%s%d",{"name","12"})!="name12") ++failed;
+    FormatPattern possessive;
+    const std::string genderSetter("\x01\xBA\x0B",3), pronoun(1,4);
+    if(!BuildOpalRuntimePattern("Members of "+genderSetter+pronoun+" own clan.",u8"成员来自"+genderSetter+pronoun+u8"自己的氏族。",&possessive)
+        ||RenderPattern(possessive,{u8"她"})!=u8"成员来自她自己的氏族。") ++failed;
+    FormatPattern ordered;
+    const std::string firstMarker("\x01@\x14",3), secondMarker("\x01\xD8\0",3);
+    if(!BuildOpalRuntimePattern(firstMarker+" charged past "+secondMarker+".", secondMarker+" / "+firstMarker, &ordered)
+        || RenderPattern(ordered,{"A","B"})!="B / A") ++failed;
     return failed ? 1 : 0;
 }

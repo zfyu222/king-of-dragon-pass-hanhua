@@ -1,0 +1,4204 @@
+[
+  {
+    "source": "auxiliaries kept \\x01\\x40\\x8B",
+    "occurrences": [
+      {
+        "input_index": 34468,
+        "translation": "辅助部队使\\x01\\x40\\x8B免于"
+      },
+      {
+        "input_index": 34483,
+        "translation": "辅兵们使\\x01\\x40\\x8B"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "dying, and \\x02\\x03patched up/healed/bandaged\\x02 \\x01\\x40\\x8A of the wounded.",
+    "occurrences": [
+      {
+        "input_index": 34469,
+        "translation": "死亡，并且\\x02\\x03救治/治愈/包扎\\x02了\\x01\\x40\\x8A名伤员。"
+      },
+      {
+        "input_index": 34484,
+        "translation": "免于死亡，并且\\x02\\x03救治/治愈/包扎\\x02 \\x01\\x40\\x8A名伤员。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Our auxiliaries were able to \\x02\\x03patch up/ease the wounds of/heal\\x02 \\x01\\x40\\x8A of our warriors.",
+    "occurrences": [
+      {
+        "input_index": 34470,
+        "translation": "我们的辅助部队得以\\x02\\x03包扎/缓解/治愈\\x02了\\x01\\x40\\x8A名我族战士的伤势。"
+      },
+      {
+        "input_index": 34485,
+        "translation": "我们的辅兵得以\\x02\\x03包扎/护理/治愈\\x02 \\x01\\x40\\x8A名我们的战士。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "We gave gifts to the \\x01\\xC3\\x61 so that we could cross their tula.",
+    "occurrences": [
+      {
+        "input_index": 34505,
+        "translation": "我们向\\x01\\xC3\\x61赠送了礼物，以便穿过他们的氏族领地。"
+      },
+      {
+        "input_index": 34509,
+        "translation": "我们向\\x01\\xC3\\x61赠送礼物，以便能穿过他们的氏族领地。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "What should \\x01\\xBA\\xD8\\x06 do?",
+    "occurrences": [
+      {
+        "input_index": 34573,
+        "translation": "\\x01\\xBA\\xD8\\x06该怎么办？"
+      },
+      {
+        "input_index": 34747,
+        "translation": "\\x01\\xBA\\xD8\\x06该怎么做？"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "What should \\x01\\x40\\xD8 do?",
+    "occurrences": [
+      {
+        "input_index": 34659,
+        "translation": "\\x01\\x40\\xD8该怎么办？"
+      },
+      {
+        "input_index": 34956,
+        "translation": "\\x01\\x40\\xD8该怎么办？"
+      },
+      {
+        "input_index": 35062,
+        "translation": "\\x01\\x40\\xD8该怎么做？"
+      },
+      {
+        "input_index": 35421,
+        "translation": "\\x01\\x40\\xD8该怎么办？"
+      },
+      {
+        "input_index": 35579,
+        "translation": "\\x01\\x40\\xD8该怎么办？"
+      },
+      {
+        "input_index": 35617,
+        "translation": "\\x01\\x40\\xD8该怎么做？"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Does \\x01\\x40\\xD8:",
+    "occurrences": [
+      {
+        "input_index": 34687,
+        "translation": "\\x01\\x40\\xD8是否："
+      },
+      {
+        "input_index": 34709,
+        "translation": "\\x01\\x40\\xD8会："
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xD8 died instantly.",
+    "occurrences": [
+      {
+        "input_index": 34729,
+        "translation": "\\x01\\x40\\xD8当场死去。"
+      },
+      {
+        "input_index": 34901,
+        "translation": "\\x01\\x40\\xD8当场死去。"
+      },
+      {
+        "input_index": 35087,
+        "translation": "\\x01\\x40\\xD8当场毙命。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The javelin burst into flame as it left \\x01\\x41\\x57’s hand. But \\x01\\x40\\xD8",
+    "occurrences": [
+      {
+        "input_index": 34758,
+        "translation": "标枪刚离开\\x01\\x41\\x57的手便燃起烈焰。但\\x01\\x40\\xD8"
+      },
+      {
+        "input_index": 34761,
+        "translation": "标枪离开\\x01\\x41\\x57的手时燃起了火焰。但\\x01\\x40\\xD8"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Does \\x01\\xBA\\xD8\\x06:",
+    "occurrences": [
+      {
+        "input_index": 35097,
+        "translation": "\\x01\\xBA\\xD8\\x06是否："
+      },
+      {
+        "input_index": 35106,
+        "translation": "是否\\x01\\xBA\\xD8\\x06："
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "As they fled, one of the \\x01\\xC3\\x36 turned in his saddle and shot \\x01\\x40\\xD8 with a flaming arrow.",
+    "occurrences": [
+      {
+        "input_index": 35099,
+        "translation": "他们逃跑时，\\x01\\xC3\\x36中的一人在马鞍上转过身，用一支燃烧的箭射中了\\x01\\x40\\xD8。"
+      },
+      {
+        "input_index": 35111,
+        "translation": "他们逃跑时，\\x01\\xC3\\x36中的一员在马鞍上转过身，用一支燃烧的箭射中了\\x01\\x40\\xD8。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xD8 hung back when \\x06 should have charged and forced the attack when \\x06 had no hope of winning. \\x05 was lucky to escape serious injury.",
+    "occurrences": [
+      {
+        "input_index": 35157,
+        "translation": "\\x01\\x40\\xD8在\\x06本该冲锋时退缩不前，又在\\x06毫无胜算时强行进攻。\\x05侥幸逃过重伤。"
+      },
+      {
+        "input_index": 35276,
+        "translation": "\\x01\\x40\\xD8在\\x06本该冲锋时退缩不前，又在\\x06毫无胜算时强行进攻。\\x05能逃过重伤已算幸运。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "His weapons and armor glowed like the Sun. He drove the \\x01\\xC3\\x21 back from our troops with a blazing spear and an invincible shield.",
+    "occurrences": [
+      {
+        "input_index": 35198,
+        "translation": "他的武器和铠甲如太阳般灼亮。他挥舞炽烈的长矛与无敌的盾牌，把\\x01\\xC3\\x21从我们的队伍前逼退。"
+      },
+      {
+        "input_index": 35310,
+        "translation": "他的武器和甲胄如太阳般闪耀。他手持炽焰长矛与无敌盾牌，把\\x01\\xC3\\x21从我们的队伍前逼退。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xD8 summoned all of Elmal’s power, cutting through the \\x01\\xC3\\x21 as if they were children playing at the game of warriors. We followed him to victory.",
+    "occurrences": [
+      {
+        "input_index": 35199,
+        "translation": "\\x01\\x40\\xD8召来埃尔马尔的全部神力，劈开\\x01\\xC3\\x21，仿佛他们只是一群在玩武士游戏的孩童。我们跟随他走向胜利。"
+      },
+      {
+        "input_index": 35311,
+        "translation": "\\x01\\x40\\xD8唤起了埃尔马尔的全部力量，冲穿\\x01\\xC3\\x21的阵列，仿佛他们只是玩战士游戏的孩子。我们跟随他走向胜利。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Elmal gave \\x01\\x40\\xD8 the courage to stand firm when the enemy routed his followers. He struck down the first three \\x01\\xC3\\x21 who came against him. Our warriors were shamed and ran back to aid him.",
+    "occurrences": [
+      {
+        "input_index": 35200,
+        "translation": "敌人击溃他的追随者时，埃尔马尔赐予\\x01\\x40\\xD8坚守不退的勇气。他击倒了最先向他扑来的3名\\x01\\xC3\\x21。我们的武士羞愧难当，跑回去助他。"
+      },
+      {
+        "input_index": 35312,
+        "translation": "埃尔马尔赐予\\x01\\x40\\xD8勇气，使他在敌人击溃他的追随者时仍屹立不退。他砍倒了最先向他扑来的三名\\x01\\xC3\\x21。我们的战士羞愧难当，跑回去援助他。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The sword god sent \\x01\\x40\\xD8 a vision, and for the next few minutes all \\x06 could see was his perfect sword, rising and falling and spilling blood on every stroke. The \\x01\\xC3\\x21 could not stand against the First Sword. They fled for their lives.",
+    "occurrences": [
+      {
+        "input_index": 35201,
+        "translation": "剑神给\\x01\\x40\\xD8送来幻象，接下来的几分钟里，\\x06所能看见的只有他那柄完美的剑，起落之间每一击都溅出鲜血。\\x01\\xC3\\x21抵挡不住第一剑，纷纷逃命。"
+      },
+      {
+        "input_index": 35313,
+        "translation": "剑神给\\x01\\x40\\xD8送来幻象，在接下来的几分钟里，\\x06所能看见的只有他那柄完美的剑，起落挥砍，每一击都溅血。\\x01\\xC3\\x21抵挡不住第一剑，纷纷逃命。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The rest of our warriors fought well, but no one could stand against \\x01\\x40\\xD8. In \\x04 part of the battlefield, \\x01\\x40\\x21 warriors ran as if they saw Humakt himself.",
+    "occurrences": [
+      {
+        "input_index": 35202,
+        "translation": "我们其余的战士打得很好，但无人能挡住\\x01\\x40\\xD8。在战场\\x04一侧，\\x01\\x40\\x21战士像见了胡马卡特本人一样逃窜。"
+      },
+      {
+        "input_index": 35314,
+        "translation": "我们其余的战士打得很好，但无人能挡\\x01\\x40\\xD8。在\\x04那一侧的战场上，\\x01\\x40\\x21战士奔逃，仿佛见到了胡马卡特本人。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xD8 sacrificed many foolish \\x01\\xC3\\x21 to \\x04 sword god that day.",
+    "occurrences": [
+      {
+        "input_index": 35203,
+        "translation": "那天，\\x01\\x40\\xD8把许多愚蠢的\\x01\\xC3\\x21献给了\\x04剑神。"
+      },
+      {
+        "input_index": 35315,
+        "translation": "\\x01\\x40\\xD8那天把许多愚蠢的\\x01\\xC3\\x21献祭给了\\x04剑神。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x05 sacrificed many \\x01\\xC3\\x21 to the sword god that day.",
+    "occurrences": [
+      {
+        "input_index": 35204,
+        "translation": "那天，\\x05把许多\\x01\\xC3\\x21献给了剑神。"
+      },
+      {
+        "input_index": 35316,
+        "translation": "\\x05那天把许多\\x01\\xC3\\x21献祭给了剑神。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Odayla blessed \\x01\\x40\\xD8’s arrows and \\x06 sent the enemy scurrying for cover all across the field.",
+    "occurrences": [
+      {
+        "input_index": 35205,
+        "translation": "奥达拉赐福于\\x01\\x40\\xD8的箭矢，\\x06让敌人四散奔逃，满场寻找掩体。"
+      },
+      {
+        "input_index": 35317,
+        "translation": "奥达拉为\\x01\\x40\\xD8的箭赐福，\\x06让敌人满场奔逃，四处寻找掩体。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xD8’s arrows chased the \\x01\\xC3\\x21 across the battlefield, wounding their thanes and harrying their every move.",
+    "occurrences": [
+      {
+        "input_index": 35206,
+        "translation": "\\x01\\x40\\xD8的箭矢在战场上追逐\\x01\\xC3\\x21，射伤他们的贵族，令他们每一步都不得安宁。"
+      },
+      {
+        "input_index": 35318,
+        "translation": "\\x01\\x40\\xD8的箭追着\\x01\\xC3\\x21穿过战场，射伤他们的贵族，搅得他们每一步都不得安宁。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Odayla blessed \\x01\\x40\\xD8’s shooting. \\x03 second arrow felled the \\x01\\x40\\x21 warleader, and our warriors chased the enemy off the field.",
+    "occurrences": [
+      {
+        "input_index": 35207,
+        "translation": "奥达拉赐福于\\x01\\x40\\xD8的射术。\\x03第二支箭射倒了\\x01\\x40\\x21的战争首领，我们的战士把敌人赶出了战场。"
+      },
+      {
+        "input_index": 35319,
+        "translation": "奥达拉祝福了\\x01\\x40\\xD8的射术。\\x03第二支箭射倒了\\x01\\x40\\x21的战争首领，我们的战士把敌人赶出了战场。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Each of \\x01\\x40\\xD8’s arrows found its mark. The \\x01\\x40\\x21 warriors cursed \\x04 skill and tried to hide behind each other until they were out of range.",
+    "occurrences": [
+      {
+        "input_index": 35208,
+        "translation": "\\x01\\x40\\xD8的每一支箭都命中了目标。\\x01\\x40\\x21战士咒骂\\x04的箭术，试图互相躲在彼此身后，直到退到射程之外。"
+      },
+      {
+        "input_index": 35320,
+        "translation": "\\x01\\x40\\xD8的每一支箭都命中了目标。\\x01\\x40\\x21战士咒骂\\x04箭术，想躲到彼此身后，直到逃出射程。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "But \\x01\\x40\\xD8 could not be everywhere at once, and the enemy drove us from the battle.",
+    "occurrences": [
+      {
+        "input_index": 35209,
+        "translation": "但\\x01\\x40\\xD8无法同时出现在所有地方，敌人把我们逐出了战场。"
+      },
+      {
+        "input_index": 35321,
+        "translation": "但\\x01\\x40\\xD8无法分身四处，敌人把我们逐出了战场。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xD8 summoned an immense wind spirit that tossed aside the \\x01\\x40\\x21 thanes and routed their footmen.",
+    "occurrences": [
+      {
+        "input_index": 35210,
+        "translation": "\\x01\\x40\\xD8召来一个巨大的风灵，把\\x01\\x40\\x21的贵族掀到一旁，并击溃了他们的步兵。"
+      },
+      {
+        "input_index": 35322,
+        "translation": "\\x01\\x40\\xD8召来一个巨大的风灵，把\\x01\\x40\\x21的贵族掀翻在地，并击溃了他们的步兵。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "After the battle, \\x01\\x40\\xD8 said that he had seen the entire fight as if he was watching it from the sky. It was a strange thing, watching himself kill so many \\x01\\x40\\x21 warriors so easily.",
+    "occurrences": [
+      {
+        "input_index": 35211,
+        "translation": "战后，\\x01\\x40\\xD8说他仿佛从天上看完了整场战斗。看着自己如此轻易地杀死那么多\\x01\\x40\\x21战士，真是件怪事。"
+      },
+      {
+        "input_index": 35323,
+        "translation": "战后，\\x01\\x40\\xD8说他仿佛从天空俯瞰，看清了整场战斗。看着自己如此轻易地杀死那么多\\x01\\x40\\x21战士，真是件怪事。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xD8’s sword whirled and danced, blowing the \\x01\\xC3\\x21 back in a blood-spattered whirlwind.",
+    "occurrences": [
+      {
+        "input_index": 35212,
+        "translation": "\\x01\\x40\\xD8的剑旋转飞舞，化作一阵血花四溅的旋风，把\\x01\\xC3\\x21逼退。"
+      },
+      {
+        "input_index": 35324,
+        "translation": "\\x01\\x40\\xD8的剑旋转飞舞，掀起一阵血沫四溅的旋风，把\\x01\\xC3\\x21逼退。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "blasting the \\x01\\xC3\\x21 back with \\x04 bloody sword.",
+    "occurrences": [
+      {
+        "input_index": 35213,
+        "translation": "用\\x04染血的剑把\\x01\\xC3\\x21猛力轰退。"
+      },
+      {
+        "input_index": 35325,
+        "translation": "用\\x04血淋淋的剑把\\x01\\xC3\\x21击退。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xD8 leapt onto a mighty wind, flying above the battlefield to rain lightning bolts and mighty sword blows down upon our enemy.",
+    "occurrences": [
+      {
+        "input_index": 35214,
+        "translation": "\\x01\\x40\\xD8跃上一阵狂风，飞临战场上空，向我们的敌人倾泻闪电与沉重的剑击。"
+      },
+      {
+        "input_index": 35326,
+        "translation": "\\x01\\x40\\xD8跃上一阵狂风，飞临战场上空，向我们的敌人倾泻闪电与猛烈的剑击。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "He called upon the power of the Storm Bull, and the \\x01\\xC3\\x21 died in droves before him.",
+    "occurrences": [
+      {
+        "input_index": 35215,
+        "translation": "他呼唤风暴公牛的力量，\\x01\\xC3\\x21成群结队地死在他面前。"
+      },
+      {
+        "input_index": 35327,
+        "translation": "他呼唤风暴公牛的力量，\\x01\\xC3\\x21在他面前成片倒下。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "“RAAAAAHHHHRRRRR!” \\x01\\x40\\xD8 bellowed with the voice of the Bull and drove the \\x01\\xC3\\x21 before him like frightened dogs.",
+    "occurrences": [
+      {
+        "input_index": 35216,
+        "translation": "“吼啊啊啊啊——！”\\x01\\x40\\xD8以公牛的声音咆哮，把\\x01\\xC3\\x21像受惊的狗一样赶在身前。"
+      },
+      {
+        "input_index": 35328,
+        "translation": "“吼啊啊啊啊——！”\\x01\\x40\\xD8以公牛之声怒吼，把\\x01\\xC3\\x21像受惊的狗一样赶在前头。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xD8 killed \\x01\\x81\\x21 \\x01\\x40\\x21 with a single blow and asked Urox to grant him strength. We heard the Storm Bull’s hooves pound beside \\x01\\x40\\xD8’s steps. The \\x01\\x40\\x21 died like bugs.",
+    "occurrences": [
+      {
+        "input_index": 35217,
+        "translation": "\\x01\\x40\\xD8一击杀死了\\x01\\x81\\x21\\x01\\x40\\x21，并祈求乌罗克斯赐予他力量。我们听见风暴公牛的蹄声在\\x01\\x40\\xD8的脚步旁轰响。\\x01\\x40\\x21像虫豸一样死去。"
+      },
+      {
+        "input_index": 35329,
+        "translation": "\\x01\\x40\\xD8一击杀死了\\x01\\x81\\x21 \\x01\\x40\\x21，并祈求乌罗克斯赐予他力量。我们听见风暴公牛的铁蹄声在\\x01\\x40\\xD8的脚步旁震响。\\x01\\x40\\x21像虫子一样死去。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xD8 called upon Urox. The Divine Rage filled him. With a horrible bellow he fell upon the \\x01\\xC3\\x21, who could not match him.",
+    "occurrences": [
+      {
+        "input_index": 35218,
+        "translation": "\\x01\\x40\\xD8呼唤乌罗克斯。神圣狂怒充满了他。他发出一声可怕的咆哮，扑向\\x01\\xC3\\x21；他们根本不是他的对手。"
+      },
+      {
+        "input_index": 35330,
+        "translation": "\\x01\\x40\\xD8呼唤了乌罗克斯。神圣狂怒充满了他。他发出一声可怕的咆哮，扑向\\x01\\xC3\\x21，而对方无法与他匹敌。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "But we were not strong enough to follow where \\x01\\x40\\xD8 led, and we fled for our lives.",
+    "occurrences": [
+      {
+        "input_index": 35219,
+        "translation": "但我们不够强，无法跟随\\x01\\x40\\xD8所向之处，只得拼命逃命。"
+      },
+      {
+        "input_index": 35331,
+        "translation": "但我们不够强大，无法跟随\\x01\\x40\\xD8的引领，只好各自逃命。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "When \\x01\\x40\\xD8 lowered his head and charged, felling warriors with two-handed strokes and trampling them after they had fallen, the enemy’s auxiliaries stopped their keening and started calling their menfolk to stay back, to get away from this madman.",
+    "occurrences": [
+      {
+        "input_index": 35220,
+        "translation": "当\\x01\\x40\\xD8低下头冲锋，用双手劈砍击倒战士，又在他们倒下后践踏而过时，敌人的辅兵停止了哭嚎，开始呼喊她们的男人们退后，远离这个疯子。"
+      },
+      {
+        "input_index": 35332,
+        "translation": "当\\x01\\x40\\xD8低下头冲锋，以双手挥砍击倒武士，又在他们倒地后将其践踏时，敌人的辅兵停止了哀号，开始呼喊自家的男人们退后，离这个疯子远一点。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xD8 used her magic to leap where the \\x01\\x40\\x21 warriors were thickest. Her sword became a scythe, and soon the enemy were not so numerous. They ran.",
+    "occurrences": [
+      {
+        "input_index": 35221,
+        "translation": "\\x01\\x40\\xD8用魔法跃向\\x01\\x40\\x21战士最密集之处。她的剑化作镰刀，很快敌人就不再那么多了。他们逃了。"
+      },
+      {
+        "input_index": 35333,
+        "translation": "\\x01\\x40\\xD8用她的魔法跃向\\x01\\x40\\x21武士最密集之处。她的剑化作镰刀，很快敌人就不再那么多了。他们逃跑了。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xD8 struck down nearly a dozen enemy warriors before the rest of us could catch up to her attack.",
+    "occurrences": [
+      {
+        "input_index": 35222,
+        "translation": "我们其余人还没追上她的攻势，\\x01\\x40\\xD8便已击倒近十二名敌方战士。"
+      },
+      {
+        "input_index": 35335,
+        "translation": "\\x01\\x40\\xD8击倒了近十二名敌方武士，我们其余人还没能跟上她的攻势。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xC3\\x21 fled from her there, but the rest of us could not match her courage and we fled from the field, with \\x01\\x40\\xD8 fighting behind us, refusing to flee until she was all alone.",
+    "occurrences": [
+      {
+        "input_index": 35223,
+        "translation": "\\x01\\xC3\\x21当场从她面前逃走了，但我们其余人比不上她的勇气，也逃离了战场；\\x01\\x40\\xD8在我们身后奋战，直到只剩她一人也不肯逃走。"
+      },
+      {
+        "input_index": 35336,
+        "translation": "\\x01\\xC3\\x21从她面前逃走了，但我们其余人没有她那样的勇气，也逃离了战场；\\x01\\x40\\xD8在我们身后奋战，直到只剩她一人也不肯逃走。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xD8 performed the \\x02\\x06Sword Dancing Feat/Sword-Edge Feat/Valiant Champion’s Whirling-Feat/Hero’s Fury Feat/Twirling Blade Feat/Cat Feat\\x02, striking down \\x01\\xC3\\x21 so quickly they had no chance to defend themselves.",
+    "occurrences": [
+      {
+        "input_index": 35224,
+        "translation": "\\x01\\x40\\xD8施展了\\x02\\x06剑舞绝技/剑锋绝技/勇武斗士的旋舞绝技/英雄之怒绝技/旋舞之刃绝技/猫之绝技\\x02，击倒\\x01\\xC3\\x21，快得他们根本来不及自卫。"
+      },
+      {
+        "input_index": 35337,
+        "translation": "\\x01\\x40\\xD8施展了\\x02\\x06剑舞神技/剑锋绝技/勇武斗士的旋舞绝技/英雄之怒绝技/旋舞之刃绝技/猫之绝技\\x02，迅速击倒\\x01\\xC3\\x21，他们根本来不及自卫。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x05 led a few of our warriors on what looked like a hopeless charge. But the \\x01\\xC3\\x21 were so unnerved by \\x01\\x40\\xD8’s confidence against horrible odds that they wavered, and \\x06 led our forces to victory.",
+    "occurrences": [
+      {
+        "input_index": 35244,
+        "translation": "\\x05率领我们少数战士发起了一场看似毫无希望的冲锋。但\\x01\\xC3\\x21被\\x01\\x40\\xD8面对压倒性劣势仍充满自信的样子吓住，军心动摇，随后\\x06率领我军走向胜利。"
+      },
+      {
+        "input_index": 35364,
+        "translation": "\\x05率领少数战士发起了一场看似毫无希望的冲锋。但\\x01\\xC3\\x21被\\x01\\x40\\xD8在极端劣势下仍毫不畏怯的信心震慑得阵脚动摇，随后\\x06带领我军取得了胜利。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xD8 set \\x08self against the \\x01\\x40\\x21 warleader, \\x02\\x07a Humakti who carried four swords/a Vingan adventuress who laughed as she fought/an Orlanthi magician who had killed a giant when he was young/an Elmali warrior who never spoke on the battlefield/a red-haired Orlanth-worshipper who had once been an outlaw/a giant Uroxi who fought with his bare hands/an Odaylan champion whose bow never missed\\x02.",
+    "occurrences": [
+      {
+        "input_index": 35245,
+        "translation": "\\x01\\x40\\xD8以\\x08自身迎战\\x01\\x40\\x21的战争首领，\\x02\\x07一名身携四把剑的胡马卡特信徒/一位边战边笑的温加女战士/一位年轻时曾杀死巨人的奥兰斯人法师/一位在战场上从不开口的埃尔马尔信徒战士/一位曾为亡命徒的红发奥兰斯崇拜者/一位赤手空拳作战的魁梧乌罗克斯信徒/一位箭无虚发的奥达拉信徒勇士\\x02。"
+      },
+      {
+        "input_index": 35365,
+        "translation": "\\x01\\x40\\xD8把\\x08自己置于\\x01\\x40\\x21一方的战团长的对立面；对手是\\x02\\x07一名携带4把剑的胡马卡特信徒/一名边战边笑的温加女战士兼冒险者/一名年轻时杀死过巨人的奥兰斯人巫师/一名在战场上从不开口的埃尔马尔信徒战士/一名曾是亡命徒的红发奥兰斯信徒/一名身形巨大、赤手空拳作战的乌罗克斯信徒/一名箭无虚发的奥达拉信徒勇士\\x02。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x05 set \\x08self against the enemy warleader and killed that great hero. The \\x01\\xC3\\x21 fled.",
+    "occurrences": [
+      {
+        "input_index": 35246,
+        "translation": "\\x05以\\x08自身迎战敌方战争首领，亲手杀死了那位伟大的英雄。\\x01\\xC3\\x21逃走了。"
+      },
+      {
+        "input_index": 35366,
+        "translation": "\\x05将\\x08自己置于敌方战团长的对立面，杀死了那位伟大的英雄。\\x01\\xC3\\x21逃走了。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xD8 ran in front of our line and taunted the enemy into charging. They charged, but then \\x01\\x40\\xD8 gave \\x04 battle cry. Their line faltered and \\x06 hit them like a mighty hammer, killing the first dozen warriors who dared face \\x08. The rest ran.",
+    "occurrences": [
+      {
+        "input_index": 35247,
+        "translation": "\\x01\\x40\\xD8跑到我们阵前，嘲弄敌人，诱使他们冲锋。他们冲了上来，但随后\\x01\\x40\\xD8发出了\\x04的战吼。他们的阵线动摇了，\\x06像一柄巨锤般砸向他们，杀死了最先胆敢面对\\x08的十几名战士。其余的人逃走了。"
+      },
+      {
+        "input_index": 35367,
+        "translation": "\\x01\\x40\\xD8跑在我军阵前，嘲弄敌军，诱使他们冲锋。他们冲了过来，但随后\\x01\\x40\\xD8发出了\\x04战吼。他们的阵线动摇了，\\x06像一柄巨锤般猛击他们，杀死了最先胆敢面对\\x08的12名战士。其余的人逃走了。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "When the \\x01\\xC3\\x21 saw their mightiest hero fall, they ran.",
+    "occurrences": [
+      {
+        "input_index": 35249,
+        "translation": "当\\x01\\xC3\\x21看到他们最强大的英雄倒下时，他们逃跑了。"
+      },
+      {
+        "input_index": 35369,
+        "translation": "当\\x01\\xC3\\x21看到他们最强大的英雄倒下时，便逃走了。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xD8 pursued the enemy god-talkers the entire battle, never giving them time to work their spells against \\x08. Everyone agreed that \\x06 had done a very brave thing, and our warriors found it easy to win the battle.",
+    "occurrences": [
+      {
+        "input_index": 35250,
+        "translation": "整场战斗中，\\x01\\x40\\xD8都在追击敌方神语者，从不给他们时间对\\x08施法。大家都认为\\x06做了一件非常勇敢的事，我们的战士也轻松赢下了这场战斗。"
+      },
+      {
+        "input_index": 35370,
+        "translation": "\\x01\\x40\\xD8整场战斗都在追击敌方神语者，始终不给他们时间对\\x08施展法术。大家都认为\\x06做了一件非常勇敢的事，我们的战士也发现取胜轻而易举。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xD8 fought like a true hero. Some of us could have performed one of \\x04 mighty feats, but no one could have fought so well for an entire battle against so many enemy thanes. \\x05 gave us the victory.",
+    "occurrences": [
+      {
+        "input_index": 35251,
+        "translation": "\\x01\\x40\\xD8像真正的英雄一样战斗。我们中有些人本可以施展\\x04强大神技中的一项，但没有人能在一整场战斗中对抗那么多敌方贵族还打得这么好。\\x05为我们带来了胜利。"
+      },
+      {
+        "input_index": 35371,
+        "translation": "\\x01\\x40\\xD8像真正的英雄一样战斗。我们中有些人本可施展\\x04众多强大神技中的一项，但没人能在一整场战斗中对抗如此多的敌方贵族还打得这么好。\\x05为我们带来了胜利。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xD8 had been wounded, but \\x06 bore it bravely.",
+    "occurrences": [
+      {
+        "input_index": 35253,
+        "translation": "\\x01\\x40\\xD8受了伤，但\\x06勇敢地承受住了。"
+      },
+      {
+        "input_index": 35373,
+        "translation": "\\x01\\x40\\xD8受了伤，但\\x06勇敢地忍住了伤痛。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xD8 charged a dozen of the enemy’s mightiest thanes. They saw \\x08 coming at them, alone, and charged in return. \\x01\\x40\\xD8 fell beneath four swords, fighting to the last.",
+    "occurrences": [
+      {
+        "input_index": 35254,
+        "translation": "\\x01\\x40\\xD8冲向12名敌方最强的贵族。他们看见\\x08独自向他们冲来，便也迎面冲去。\\x01\\x40\\xD8倒在4把剑下，战斗到最后一刻。"
+      },
+      {
+        "input_index": 35374,
+        "translation": "\\x01\\x40\\xD8向敌方最强大的12名贵族发起冲锋。他们见\\x08独自冲来，便回身迎击。\\x01\\x40\\xD8倒在四把剑下，战至最后。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "In search of glory, \\x01\\x40\\xD8 led our warriors on a hopeless charge. The \\x01\\xC3\\x21 would have killed them all, but \\x06 realized \\x04 mistake and sacrificed \\x08self to allow our warriors to retreat. \\x05 fell after taking too many blows to count.",
+    "occurrences": [
+      {
+        "input_index": 35255,
+        "translation": "为了追求荣耀，\\x01\\x40\\xD8带领我们的战士发起了一场毫无希望的冲锋。\\x01\\xC3\\x21本会把他们都杀光，但\\x06意识到了\\x04错误，牺牲\\x08自己，让我们的战士得以撤退。\\x05在承受了数不清的打击后倒下了。"
+      },
+      {
+        "input_index": 35375,
+        "translation": "为了追寻荣耀，\\x01\\x40\\xD8率领我们的战士发起了一场没有胜算的冲锋。\\x01\\xC3\\x21本会把他们都杀光，但\\x06意识到了\\x04错误，牺牲\\x08自己，让我们的战士得以撤退。\\x05承受了数不清的打击后倒下了。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xD8 set across the battlefield to find the \\x01\\x40\\x21 warleader, \\x02\\x07a Humakti who carried four swords/a Vingan adventuress who laughed as she fought/an Orlanthi magician who had killed a giant when he was young/an Elmali warrior who never spoke on the battlefield/a red-haired Orlanth-worshipper who had once been an outlaw/a giant Uroxi who fought with his bare hands/an Odaylan champion whose bow never missed\\x02.",
+    "occurrences": [
+      {
+        "input_index": 35256,
+        "translation": "\\x01\\x40\\xD8穿过战场，去寻找\\x01\\x40\\x21战酋，\\x02\\x07一名携带4把剑的胡马卡特信徒/一位战斗时大笑的温加女战士冒险者/一名年轻时杀死过巨人的奥兰斯人法师/一名在战场上从不说话的埃尔马尔信徒战士/一名曾做过亡命徒的红发奥兰斯信徒/一名赤手空拳战斗的巨人乌罗克斯信徒/一名箭无虚发的奥达拉信徒勇士\\x02。"
+      },
+      {
+        "input_index": 35376,
+        "translation": "\\x01\\x40\\xD8穿过战场，去寻找\\x01\\x40\\x21的战帅，\\x02\\x07一位佩带四把剑的胡马卡特信徒/一位边战边笑的温加女战士兼冒险者/一位年轻时杀死过巨人的奥兰斯人法师/一位在战场上从不开口的埃尔马尔信徒战士/一位曾做过亡命徒的红发奥兰斯崇拜者/一位赤手空拳厮杀的巨人乌罗克斯信徒/一位箭无虚发的奥达拉信徒勇士\\x02。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xD8 thought of \\x08self as a mighty warrior, but the enemy thane defeated \\x08 in less time than it takes to report the deed.",
+    "occurrences": [
+      {
+        "input_index": 35257,
+        "translation": "\\x01\\x40\\xD8把\\x08自己看作一名强大的战士，但敌方贵族击败\\x08所用的时间，比讲述这件事还短。"
+      },
+      {
+        "input_index": 35377,
+        "translation": "\\x01\\x40\\xD8把\\x08自己视为强大的战士，但敌方贵族击败\\x08的速度，比讲述这件事还快。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xD8 ran in front of our line and taunted the enemy into charging. They charged. \\x05 could not stand against their attack, and fell beneath dozens of \\x01\\x40\\x21 blades.",
+    "occurrences": [
+      {
+        "input_index": 35258,
+        "translation": "\\x01\\x40\\xD8跑到我们阵线前，挑衅敌人冲锋。他们冲了上来。\\x05抵挡不住他们的进攻，倒在数十把\\x01\\x40\\x21刀剑下。"
+      },
+      {
+        "input_index": 35378,
+        "translation": "\\x01\\x40\\xD8跑到我们阵前，辱骂敌人，激他们冲锋。他们冲了上来。\\x05抵挡不住他们的攻势，倒在数十把\\x01\\x40\\x21刀剑之下。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The enemy god-talkers chose \\x01\\x40\\xD8 as the target of their most dangerous spells. \\x05",
+    "occurrences": [
+      {
+        "input_index": 35260,
+        "translation": "敌方神语者选择\\x01\\x40\\xD8作为他们最危险法术的目标。\\x05"
+      },
+      {
+        "input_index": 35380,
+        "translation": "敌方的神语者把\\x01\\x40\\xD8选为他们最危险法术的目标。\\x05"
+      },
+      {
+        "input_index": 35392,
+        "translation": "敌方神语者把\\x01\\x40\\xD8选为他们最危险法术的目标。\\x05"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "We never saw what happened to \\x01\\x40\\xD8. One moment \\x06 fought by our side, the next \\x06 had disappeared. We couldn’t even find \\x04 body.",
+    "occurrences": [
+      {
+        "input_index": 35262,
+        "translation": "我们始终没看到\\x01\\x40\\xD8遭遇了什么。前一瞬\\x06还在我们身旁战斗，下一瞬\\x06就消失了。我们甚至找不到\\x04尸体。"
+      },
+      {
+        "input_index": 35382,
+        "translation": "我们始终没看见\\x01\\x40\\xD8遭遇了什么。前一刻\\x06还在我们身边战斗，下一刻\\x06就消失了。我们连\\x04尸体都找不到。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xD8 disappeared from the field after saying \\x06 would accomplish some great feat. We had to assume \\x06 was dead.",
+    "occurrences": [
+      {
+        "input_index": 35263,
+        "translation": "\\x01\\x40\\xD8说完\\x06要完成一项伟大神技后，就从战场上消失了。我们只能认为\\x06已经死了。"
+      },
+      {
+        "input_index": 35383,
+        "translation": "\\x01\\x40\\xD8在说\\x06要完成某项伟大神技后，就从战场上消失了。我们只能认为\\x06已经死了。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xD8 fought like a hero, but even heroes fail. \\x05 drove the \\x01\\xC3\\x21 about the battlefield, slaying as \\x06 went, but in the end their swords and spears brought \\x08 low.",
+    "occurrences": [
+      {
+        "input_index": 35264,
+        "translation": "\\x01\\x40\\xD8战斗得像一位英雄，但英雄也会失败。\\x05把\\x01\\xC3\\x21赶得在战场上四处奔逃，\\x06一路砍杀，但最终他们的刀剑和长矛把\\x08击倒了。"
+      },
+      {
+        "input_index": 35384,
+        "translation": "\\x01\\x40\\xD8像英雄一样战斗，但英雄也有失败之时。\\x05把\\x01\\xC3\\x21赶得在战场上四处奔逃，\\x06一路砍杀，但最终他们的刀剑和长矛还是把\\x08击倒了。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "After the battle we were surprised to find that \\x01\\xBA\\xD8\\x06 still breathed. We took our \\x02\\x02foolish/reckless\\x02 champion back to the clan hall and nursed \\x08 towards health.",
+    "occurrences": [
+      {
+        "input_index": 35265,
+        "translation": "战斗结束后，我们惊讶地发现\\x01\\xBA\\xD8\\x06仍然活着。我们带着我们那位\\x02\\x02愚蠢/鲁莽\\x02的勇士回到氏族大厅，照料\\x08直至康复。"
+      },
+      {
+        "input_index": 35385,
+        "translation": "战后，我们惊讶地发现\\x01\\xBA\\xD8\\x06仍然活着。我们把自己那位\\x02\\x02愚蠢/鲁莽\\x02的勇士带回氏族会堂，照料\\x08恢复健康。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xD8 saw a pack of giant insects rumbling out of the darkness like great armored demons.",
+    "occurrences": [
+      {
+        "input_index": 35539,
+        "translation": "\\x01\\x40\\xD8看见一群巨虫从黑暗中隆隆涌出，如同披甲的巨大恶魔。"
+      },
+      {
+        "input_index": 35563,
+        "translation": "\\x01\\x40\\xD8看见一群巨虫从黑暗中隆隆涌出，像披甲的巨大恶魔。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x02\\x05slid face-down in the mud/spit blood and fell sideways beneath the feet of his own warriors/staggered sideways and then fell/spun like a top and then fell/stumbled backwards and collapsed\\x02. The \\x01\\xC3\\x21 faltered and we pressed our advantage.",
+    "occurrences": [
+      {
+        "input_index": 35583,
+        "translation": "\\x02\\x05脸朝下滑倒在泥里/喷出一口血，歪倒在自己战士的脚下/侧身踉跄，随后倒下/像陀螺般打转，随后倒下/向后踉跄，瘫倒在地\\x02。\\x01\\xC3\\x21动摇了，我们乘势进攻。"
+      },
+      {
+        "input_index": 35600,
+        "translation": "\\x02\\x05脸朝下栽进泥里/吐血侧倒在自己战士的脚下/向旁边踉跄，随后栽倒/像陀螺般旋转，随后倒地/向后踉跄，瘫倒在地\\x02。\\x01\\xC3\\x21动摇了，我们乘势进逼。"
+      },
+      {
+        "input_index": 35604,
+        "translation": "\\x02\\x05脸朝下栽进泥里/吐血侧倒在自己战士的脚下/向侧面踉跄，随后栽倒/像陀螺般旋转，随后倒地/向后踉跄，瘫倒在地\\x02。\\x01\\xC3\\x21动摇了，我们乘势进逼。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "the \\x01\\xC3\\x21 had wind spirits that blew the dart aside.",
+    "occurrences": [
+      {
+        "input_index": 35585,
+        "translation": "\\x01\\xC3\\x21有风精，把飞镖吹偏了。"
+      },
+      {
+        "input_index": 35606,
+        "translation": "那些\\x01\\xC3\\x21有风灵，把飞镖吹偏了。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x81\\x21 \\x01\\x40\\x21 noble struck \\x01\\x40\\xD8 down when \\x06 was blinded by blood.",
+    "occurrences": [
+      {
+        "input_index": 35674,
+        "translation": "\\x01\\x81\\x21\\x01\\x40\\x21贵族将\\x01\\x40\\xD8砍倒，当时\\x06被鲜血迷住了双眼。"
+      },
+      {
+        "input_index": 35687,
+        "translation": "\\x01\\x81\\x21\\x01\\x40\\x21贵族在\\x06被鲜血糊住双眼时，将\\x01\\x40\\xD8砍倒。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Your emissary, \\x01\\x40\\x49, approaches the \\x01\\xC3\\x21, asking them to make good on a favor they owe you.",
+    "occurrences": [
+      {
+        "input_index": 35760,
+        "translation": "你的使者\\x01\\x40\\x49上前求见\\x01\\xC3\\x21，请他们兑现欠你的恩情。"
+      },
+      {
+        "input_index": 35778,
+        "translation": "你的使者\\x01\\x40\\x49上前求见\\x01\\xC3\\x21，请他们兑现欠你的恩情。"
+      },
+      {
+        "input_index": 35835,
+        "translation": "你的使者\\x01\\x40\\x49前去拜访\\x01\\xC3\\x21，请他们兑现欠你的人情。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\x70 is known to be generous, and the \\x01\\xC3\\x21 hold us in high esteem. We can try asking for more than we are due.",
+    "occurrences": [
+      {
+        "input_index": 35767,
+        "translation": "\\x01\\x40\\x70以慷慨闻名，而\\x01\\xC3\\x21十分敬重我们。我们可以试着索要超过应得份额的东西。"
+      },
+      {
+        "input_index": 35786,
+        "translation": "\\x01\\x40\\x70以慷慨闻名，而\\x01\\xC3\\x21十分敬重我们。我们可以试着索要超过应得份额的东西。"
+      },
+      {
+        "input_index": 35850,
+        "translation": "\\x01\\x40\\x70以慷慨闻名，而\\x01\\xC3\\x21对我们十分敬重。我们可以试着索取多于我们应得之数。"
+      },
+      {
+        "input_index": 35862,
+        "translation": "\\x01\\x40\\x70以慷慨闻名，而\\x01\\xC3\\x21对我们十分敬重。我们可以试着索取多于我们应得之数。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "If we take much less than we are due, our clan will gain a reputation for generosity, which will help us not just with the \\x01\\xC3\\x21, but with others.",
+    "occurrences": [
+      {
+        "input_index": 35768,
+        "translation": "如果我们只取远少于应得份额的东西，我们的氏族将赢得慷慨的名声；这不仅能改善我们与\\x01\\xC3\\x21的关系，也能改善我们与其他势力的关系。"
+      },
+      {
+        "input_index": 35787,
+        "translation": "如果我们只收取远少于应得份额的东西，我们氏族就会赢得慷慨的名声，这不仅有助于我们与\\x01\\xC3\\x21的关系，也有助于我们与其他人的关系。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "We get along well with the \\x01\\xC3\\x21, and they think highly of us. We can use this fact, but let’s leave our good relations intact.",
+    "occurrences": [
+      {
+        "input_index": 35776,
+        "translation": "我们与\\x01\\xC3\\x21相处融洽，他们也很看重我们。我们可以利用这一点，但要让我们良好的关系保持完好。"
+      },
+      {
+        "input_index": 35798,
+        "translation": "我们与\\x01\\xC3\\x21相处融洽，他们也很看重我们。我们可以利用这一点，但还是别破坏我们的良好关系。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Our relations with the \\x01\\xC3\\x21 are shaky. Let’s not give them any excuse to dislike us further.",
+    "occurrences": [
+      {
+        "input_index": 35777,
+        "translation": "我们与\\x01\\xC3\\x21的关系不稳。别给他们任何更加讨厌我们的借口。"
+      },
+      {
+        "input_index": 35799,
+        "translation": "我们与\\x01\\xC3\\x21的关系不稳。别给他们任何更加厌恶我们的借口。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xC3\\x21 provided us with the food without \\x01\\x40\\x03.",
+    "occurrences": [
+      {
+        "input_index": 35782,
+        "translation": "\\x01\\xC3\\x21把食物提供给了我们，没有\\x01\\x40\\x03。"
+      },
+      {
+        "input_index": 35790,
+        "translation": "在没有\\x01\\x40\\x03的情况下，\\x01\\xC3\\x21把食物提供给了我们。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "We said we would consider ourselves in debt to the \\x01\\xC3\\x21 for several favors, not one.",
+    "occurrences": [
+      {
+        "input_index": 35783,
+        "translation": "我们说过，自己欠\\x01\\xC3\\x21的是多份恩情，而非一份。"
+      },
+      {
+        "input_index": 35791,
+        "translation": "我们说，我们会因多份人情而非一份，自认欠\\x01\\xC3\\x21的情。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Your emissary, \\x01\\x40\\x49, approaches the \\x01\\xC3\\x21, asking them for a favor.",
+    "occurrences": [
+      {
+        "input_index": 35788,
+        "translation": "你的使者\\x01\\x40\\x49前去拜会\\x01\\xC3\\x21，向他们求个人情。"
+      },
+      {
+        "input_index": 35852,
+        "translation": "你的使者\\x01\\x40\\x49前去拜访\\x01\\xC3\\x21，请他们帮一个忙。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xC3\\x21 chief, \\x01\\x40\\x70, replies, “I can tell you of \\x01\\x40\\x03, chief of the \\x01\\xC3\\x61. What do you wish to know of \\x08?”",
+    "occurrences": [
+      {
+        "input_index": 35809,
+        "translation": "\\x01\\xC3\\x21的首领\\x01\\x40\\x70答道：“我可以告诉你们\\x01\\xC3\\x61的首领\\x01\\x40\\x03的事。你们想了解\\x08的什么？”"
+      },
+      {
+        "input_index": 35821,
+        "translation": "\\x01\\xC3\\x21的酋长\\x01\\x40\\x70答道：“我可以跟你讲讲\\x01\\x40\\x03，\\x01\\xC3\\x61的酋长。你想知道\\x08的什么？”"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "“\\x01\\x40\\x03 has done many things to offend the gods,” \\x01\\x40\\x70 said. “It is a wonder \\x01\\xBA\\x03\\x06 has not been struck down by Orlanth’s righteous thunder, or swallowed up by the earth’s quaking vengeance.”",
+    "occurrences": [
+      {
+        "input_index": 35810,
+        "translation": "“\\x01\\x40\\x03做过许多冒犯神明的事，”\\x01\\x40\\x70说道。“奇怪的是，\\x01\\xBA\\x03\\x06竟没有被奥兰斯的正义雷霆劈倒，也没有被大地震颤的复仇吞没。”"
+      },
+      {
+        "input_index": 35822,
+        "translation": "“\\x01\\x40\\x03做过许多冒犯神明的事，”\\x01\\x40\\x70说道。“\\x01\\xBA\\x03\\x06竟没被奥兰斯的正义雷霆劈倒，也没被大地震颤的复仇吞没，真是奇事。”"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "“\\x01\\x40\\x03 is no more or less pious than any other Orlanthi chieftain,” \\x01\\x40\\x70 said. “Sometimes \\x01\\xBA\\x03\\x04 sacrifices are received, and sometimes not.”",
+    "occurrences": [
+      {
+        "input_index": 35811,
+        "translation": "“\\x01\\x40\\x03的虔诚与其他任何奥兰斯人首领无异，”\\x01\\x40\\x70说道。“\\x01\\xBA\\x03\\x04献祭有时会被接受，有时则不会。”"
+      },
+      {
+        "input_index": 35823,
+        "translation": "“\\x01\\x40\\x03的虔诚不比任何别的奥兰斯人酋长多一分，也不比他们少一分，”\\x01\\x40\\x70说道。“有时\\x01\\xBA\\x03\\x04的献祭被接纳，有时则不被接纳。”"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "“\\x01\\x40\\x03 is known for \\x04 holiness,” \\x01\\x40\\x70 said. “It’s said that the gods never refuse \\x01\\xBA\\x03\\x04 sacrifices.”",
+    "occurrences": [
+      {
+        "input_index": 35812,
+        "translation": "“\\x01\\x40\\x03以\\x04圣洁闻名，”\\x01\\x40\\x70说道。“据说神明从不拒绝\\x01\\xBA\\x03\\x04祭品。”"
+      },
+      {
+        "input_index": 35824,
+        "translation": "“\\x01\\x40\\x03以\\x04圣洁闻名，”\\x01\\x40\\x70说道。“据说神明从不拒绝\\x01\\xBA\\x03\\x04的祭品。”"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "“\\x01\\x40\\x03 is incapable of conceiving a lie, which is to \\x04 credit,” \\x01\\x40\\x70 said. “\\x01\\xBA\\x03\\x05 is also incapable of conceiving that others might lie, which is not so wise.”",
+    "occurrences": [
+      {
+        "input_index": 35818,
+        "translation": "“\\x01\\x40\\x03连谎话都想象不出来，这是\\x04的可贵之处，”\\x01\\x40\\x70说道。“\\x01\\xBA\\x03\\x05也想不到别人会说谎，这就不那么明智了。”"
+      },
+      {
+        "input_index": 35830,
+        "translation": "“\\x01\\x40\\x03根本想不到说谎这回事，这是\\x04的可贵之处，”\\x01\\x40\\x70说。“\\x01\\xBA\\x03\\x05也同样想不到别人会说谎，这就不那么明智了。”"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "“\\x01\\x40\\x03 has mastered the art of deception,” \\x01\\x40\\x70 said. “When \\x01\\xBA\\x03\\x06 tells the truth, you can be sure that it is only because \\x06 has calculated that there is nothing to be gained by lying.”",
+    "occurrences": [
+      {
+        "input_index": 35819,
+        "translation": "“\\x01\\x40\\x03精通骗术，”\\x01\\x40\\x70说道。“当\\x01\\xBA\\x03\\x06说真话时，你可以肯定，那只是因为\\x06算准了说谎捞不到任何好处。”"
+      },
+      {
+        "input_index": 35831,
+        "translation": "“\\x01\\x40\\x03精通骗术，”\\x01\\x40\\x70说。“当\\x01\\xBA\\x03\\x06说实话时，你可以确信，那只是因为\\x06算准了说谎毫无好处。”"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Then we had to convince the other clans of our tribe that they should allow the \\x01\\xC3\\x21 to join. Our persuasive abilities worked in both cases.",
+    "occurrences": [
+      {
+        "input_index": 35937,
+        "translation": "随后，我们还得说服部族中的其他氏族，让他们允许\\x01\\xC3\\x21加入。我们的劝说本领在这两处都奏效了。"
+      },
+      {
+        "input_index": 36942,
+        "translation": "接着，我们还得说服部族中的其他氏族，让他们同意\\x01\\xC3\\x21加入。我们的说服本领在这两件事上都奏了效。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Save \\x01\\xBA\\x49\\x08self and \\x04 escort.",
+    "occurrences": [
+      {
+        "input_index": 36002,
+        "translation": "保住\\x01\\xBA\\x49\\x08自己与\\x04护卫。"
+      },
+      {
+        "input_index": 36009,
+        "translation": "保住\\x01\\xBA\\x49\\x08自己与\\x04护卫。"
+      },
+      {
+        "input_index": 36023,
+        "translation": "保住\\x01\\xBA\\x49\\x08自己与\\x04护卫。"
+      },
+      {
+        "input_index": 36042,
+        "translation": "保全\\x01\\xBA\\x49\\x08自己与\\x04护卫。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Kill as many \\x01\\xC3\\x61 as possible.",
+    "occurrences": [
+      {
+        "input_index": 36015,
+        "translation": "尽可能多杀\\x01\\xC3\\x61。"
+      },
+      {
+        "input_index": 36033,
+        "translation": "杀尽可能多的\\x01\\xC3\\x61。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "It turned out there were more \\x01\\xC3\\x61 \\x02\\x06lurking in the bushes/hiding in the rocks/concealed from sight/behind some shrubs/over a ridge/hiding up in the trees\\x02.",
+    "occurrences": [
+      {
+        "input_index": 36017,
+        "translation": "结果发现还有更多\\x01\\xC3\\x61\\x02\\x06潜伏在灌木丛中/藏在岩石间/隐蔽得不见踪影/躲在一些矮树后/藏在小山脊另一侧/躲在树上\\x02。"
+      },
+      {
+        "input_index": 36035,
+        "translation": "结果发现还有更多\\x01\\xC3\\x61\\x02\\x06潜伏在灌木丛中/藏在岩石间/隐蔽得不见踪影/在一些灌木后面/在山脊另一侧/躲在树上\\x02。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\x49 stood firm, keeping the \\x01\\xC3\\x61 from taking anything.",
+    "occurrences": [
+      {
+        "input_index": 36020,
+        "translation": "\\x01\\x40\\x49坚守不退，没让\\x01\\xC3\\x61抢走任何东西。"
+      },
+      {
+        "input_index": 36039,
+        "translation": "\\x01\\x40\\x49坚守不退，使\\x01\\xC3\\x61什么也没能拿走。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xC3\\x61 must have been after \\x02\\x03additional wealth/the shining armbands/the fine armor\\x02 on \\x01\\x40\\x49’s person, and attacked. \\x01\\x40\\x49 fought \\x04 way clear, but not before \\x01\\x40\\x18 of \\x04 escort were wounded.",
+    "occurrences": [
+      {
+        "input_index": 36025,
+        "translation": "\\x01\\xC3\\x61准是看上了\\x01\\x40\\x49身上的\\x02\\x03额外财富/闪亮的臂环/精良的盔甲\\x02，于是发动了攻击。\\x01\\x40\\x49杀开\\x04去路，但\\x04护卫中仍有\\x01\\x40\\x18人受了伤。"
+      },
+      {
+        "input_index": 36044,
+        "translation": "那\\x01\\xC3\\x61一定是看上了\\x01\\x40\\x49身上的\\x02\\x03更多财富/闪亮的臂环/精美盔甲\\x02，于是发动了攻击。\\x01\\x40\\x49奋力杀出\\x04的血路，但在此之前，\\x04的护卫中已有\\x01\\x40\\x18人受了伤。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\x0F says her new name is \\x01\\x41\\xA6, for she has been reborn, and is now a new, holy person.",
+    "occurrences": [
+      {
+        "input_index": 36074,
+        "translation": "\\x01\\x40\\x0F说她的新名字是\\x01\\x41\\xA6，因为她已重生，如今是一个全新的圣者。"
+      },
+      {
+        "input_index": 36076,
+        "translation": "\\x01\\x40\\x0F说她的新名字是\\x01\\x41\\xA6，因为她已重生，如今是一个全新的圣者。"
+      },
+      {
+        "input_index": 36092,
+        "translation": "\\x01\\x40\\x0F说她的新名字是\\x01\\x41\\xA6，因为她已重生，如今是一个全新而神圣的人。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "We \\x02\\x04insisted on our right to preserve what was ours/told them we found it, it’s ours to trade/said that this was the best we could do/said that this would be our only offer\\x02, and the \\x01\\xC3\\x21 eventually agreed to pay \\x01\\x40\\x18 cows worth of goods every year in return for the first pick of the iron. Our metal-workers were annoyed that they would have less iron to work with than they wanted.",
+    "occurrences": [
+      {
+        "input_index": 36258,
+        "translation": "我们\\x02\\x04坚持我们有权保留属于我们的东西/告诉他们那是我们发现的，该由我们来交易/说这已是我们能给出的最好条件/说这是我们唯一的报价\\x02，而\\x01\\xC3\\x21最终同意每年支付价值\\x01\\x40\\x18头牛的货物，以换取铁的优先挑选权。我们的金属工匠很恼火，因为他们能用来加工的铁会比他们想要的少。"
+      },
+      {
+        "input_index": 36288,
+        "translation": "我们\\x02\\x04坚持我们有权保留属于我们的东西/告诉他们这是我们发现的，该由我们交易/说这是我们能给出的最好条件/说这是我们唯一的报价\\x02，而\\x01\\xC3\\x21最终同意每年支付价值\\x01\\x40\\x18头牛的货物，以换取铁的优先挑选权。我们的金属匠感到恼火，因为他们能用来干活的铁会比想要的少。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "A few days later, we heard the clatter of empty wagons and the rumble of a cattle herd. The \\x01\\xC3\\x21 scoured the mountainside clean of iron, and our carls rejoiced in their easily-won wealth.",
+    "occurrences": [
+      {
+        "input_index": 36260,
+        "translation": "几天后，我们听见空马车哐当作响，还有牛群隆隆的动静。\\x01\\xC3\\x21把山坡上的铁搜刮一空，我们的自由民为这轻易得来的财富欢欣不已。"
+      },
+      {
+        "input_index": 36290,
+        "translation": "几天后，我们听见空车辘辘作响，还有牛群隆隆的动静。\\x01\\xC3\\x21把山坡上的铁搜刮一空，我们的自由民为这轻易得来的财富欢欣鼓舞。"
+      },
+      {
+        "input_index": 36291,
+        "translation": "几天后，我们听见空车辘辘作响，还有牛群隆隆的动静。\\x01\\xC3\\x21把山坡上的铁搜刮一空，我们的自由民为这轻易得来的财富欢欣鼓舞。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Our relationship with the \\x01\\xC3\\x21 is strained. A show of generosity might stave off trouble with them.",
+    "occurrences": [
+      {
+        "input_index": 36337,
+        "translation": "我们与\\x01\\xC3\\x21的关系紧张。示以慷慨或许能避免与他们发生纠纷。"
+      },
+      {
+        "input_index": 36421,
+        "translation": "我们与\\x01\\xC3\\x21的关系紧张。展现慷慨也许能避免他们找麻烦。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xC3\\x21’s best poet toasted our clan at the wedding feast.",
+    "occurrences": [
+      {
+        "input_index": 36393,
+        "translation": "\\x01\\xC3\\x21最好的诗人在婚宴上向我们的氏族祝酒。"
+      },
+      {
+        "input_index": 36394,
+        "translation": "\\x01\\xC3\\x21最好的诗人在婚宴上向我们的氏族祝酒。"
+      },
+      {
+        "input_index": 36398,
+        "translation": "\\x01\\xC3\\x21最好的诗人在婚宴上向我们的氏族祝酒。"
+      },
+      {
+        "input_index": 36399,
+        "translation": "\\x01\\xC3\\x21最好的诗人在婚宴上向我们的氏族祝酒。"
+      },
+      {
+        "input_index": 36400,
+        "translation": "\\x01\\xC3\\x21最好的诗人在婚宴上向我们的氏族祝酒。"
+      },
+      {
+        "input_index": 36405,
+        "translation": "\\x01\\xC3\\x21最出色的诗人在婚宴上向我们的氏族敬酒。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "At the wedding feast, the \\x01\\xC3\\x21’s best poet mocked our lack of generosity.",
+    "occurrences": [
+      {
+        "input_index": 36395,
+        "translation": "婚宴上，\\x01\\xC3\\x21最好的诗人嘲笑我们不够慷慨。"
+      },
+      {
+        "input_index": 36404,
+        "translation": "在婚宴上，\\x01\\xC3\\x21最出色的诗人嘲笑我们不够慷慨。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Launch a raid against the \\x01\\xC3\\x21.",
+    "occurrences": [
+      {
+        "input_index": 36430,
+        "translation": "对\\x01\\xC3\\x21发动突袭。"
+      },
+      {
+        "input_index": 37122,
+        "translation": "对\\x01\\xC3\\x21发动劫掠。"
+      },
+      {
+        "input_index": 39586,
+        "translation": "对\\x01\\xC3\\x21发动劫掠。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "We found that the \\x01\\xC3\\x21 did not place as high a price on talking foxes as we had imagined.",
+    "occurrences": [
+      {
+        "input_index": 36514,
+        "translation": "我们发现\\x01\\xC3\\x21并不像我们想象的那样看重会说话的狐狸。"
+      },
+      {
+        "input_index": 38535,
+        "translation": "我们发现，\\x01\\xC3\\x21对会说话的狐狸的估价并不像我们想的那么高。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xC3\\x21 did not know what a talking fox was worth, so we did not trade it to them.",
+    "occurrences": [
+      {
+        "input_index": 36515,
+        "translation": "\\x01\\xC3\\x21不知道一只会说话的狐狸值多少，所以我们没有把它卖给他们。"
+      },
+      {
+        "input_index": 38536,
+        "translation": "\\x01\\xC3\\x21不知道一只会说话的狐狸值多少，所以我们没有拿它跟他们交易。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xC3\\x21 aren’t a strong clan, but they are our allies, and we should treat them with respect.",
+    "occurrences": [
+      {
+        "input_index": 36533,
+        "translation": "\\x01\\xC3\\x21并非强大的氏族，但他们是我们的盟友，我们应当尊重他们。"
+      },
+      {
+        "input_index": 40772,
+        "translation": "\\x01\\xC3\\x21并非强大的氏族，但他们是我们的盟友，我们应当以尊重相待。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "“Thus we see what use a tribe is,” \\x01\\x40\\x01 said. “I will see to it that all of the clans of the \\x01\\xC3\\x3C know your lack of generosity when your tribe-mates are in need.”",
+    "occurrences": [
+      {
+        "input_index": 36609,
+        "translation": "“这样我们就看出一个部落有什么用了，”\\x01\\x40\\x01说。“我会让\\x01\\xC3\\x3C的所有氏族都知道，当同部落的人需要帮助时，你有多么不慷慨。”"
+      },
+      {
+        "input_index": 36624,
+        "translation": "“于是我们看到了部族有什么用，”\\x01\\x40\\x01说。“我会确保\\x01\\xC3\\x3C的所有氏族都知道，当同族需要帮助时，你们是多么缺乏慷慨。”"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Our carls grumbled a lot; they said that the \\x01\\xC3\\x21 were testing the limits of our generosity.",
+    "occurrences": [
+      {
+        "input_index": 36613,
+        "translation": "我们的自由民抱怨连连；他们说\\x01\\xC3\\x21正在试探我们慷慨的底线。"
+      },
+      {
+        "input_index": 36626,
+        "translation": "我们的自由民怨声不断；他们说\\x01\\xC3\\x21正在试探我们慷慨的底线。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Our carls were pleased that we were able to help the \\x01\\xC3\\x21 without losing any cows.",
+    "occurrences": [
+      {
+        "input_index": 36615,
+        "translation": "我们的自由民很高兴，因为我们帮助了\\x01\\xC3\\x21，而且一头牛也没有损失。"
+      },
+      {
+        "input_index": 40727,
+        "translation": "我们的自由民很高兴，因为我们帮助了\\x01\\xC3\\x21，却没有损失任何牛。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Our carls were most unhappy that we aided the \\x01\\xC3\\x21 at the risk of starving ourselves.",
+    "occurrences": [
+      {
+        "input_index": 36616,
+        "translation": "我们的自由民极为不满，因为我们冒着挨饿的风险援助了\\x01\\xC3\\x21。"
+      },
+      {
+        "input_index": 40728,
+        "translation": "我们的自由民非常不满，因为我们冒着让自己挨饿的风险去帮助\\x01\\xC3\\x21。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "“What use is there then for tribes and \\x01\\xBA\\x0B\\x01\\xE6\\x0Bs,” \\x01\\x40\\x01 cried, “If they will not help their tribe-mates? I will see to it that everyone in the \\x01\\x40\\x3C tribe knows how you deal with those in need.”",
+    "occurrences": [
+      {
+        "input_index": 36617,
+        "translation": "“那么部落和\\x01\\xBA\\x0B\\x01\\xE6\\x0B们还有什么用，”\\x01\\x40\\x01喊道，“如果他们都不肯帮助自己的同部落人？我会让\\x01\\x40\\x3C部落里的每一个人都知道，你们是如何对待那些需要帮助的人的。”"
+      },
+      {
+        "input_index": 36629,
+        "translation": "“那么部族和\\x01\\xBA\\x0B\\x01\\xE6\\x0B还有什么用，”\\x01\\x40\\x01喊道，“如果它们不肯帮助自己的同族？我会确保\\x01\\x40\\x3C部族里的每个人都知道你们是怎样对待需要帮助的人的。”"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xC3\\x21 are avowed foes of the elves; we should reward them for this.",
+    "occurrences": [
+      {
+        "input_index": 36618,
+        "translation": "\\x01\\xC3\\x21是精灵公开的敌人；我们应当为此奖赏他们。"
+      },
+      {
+        "input_index": 40730,
+        "translation": "\\x01\\xC3\\x21是精灵公开的仇敌；我们应为此奖赏他们。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The children of the \\x01\\xC3\\x21 are all taught to read; we should honor the example they set for the rest of us.",
+    "occurrences": [
+      {
+        "input_index": 36620,
+        "translation": "\\x01\\xC3\\x21的孩子全都学着读书识字；我们应当敬重他们为我们其余人树立的榜样。"
+      },
+      {
+        "input_index": 40732,
+        "translation": "\\x01\\xC3\\x21的孩子们都学着读书识字；我们应当敬重他们为我们其余人树立的榜样。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xC3\\x21 say that it is stupid to learn to read and write. We should deny them.",
+    "occurrences": [
+      {
+        "input_index": 36621,
+        "translation": "\\x01\\xC3\\x21说学习读写是愚蠢的。我们应当拒绝他们。"
+      },
+      {
+        "input_index": 40733,
+        "translation": "\\x01\\xC3\\x21说学读书写字是愚蠢的。我们应当拒绝他们。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Their chief, \\x01\\x8A\\x21, is a woman, and would not ask for something if she did not need it.",
+    "occurrences": [
+      {
+        "input_index": 36630,
+        "translation": "他们的首领\\x01\\x8A\\x21是位女性，若非确有需要，她不会开口索取。"
+      },
+      {
+        "input_index": 40736,
+        "translation": "他们的首领\\x01\\x8A\\x21是女人；若不是真有需要，她不会开口索求。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Not long afterwards, he returned to our tula to withdraw his thanks. “The information you gave us was mistaken at best and deceitful at worst. Our relations with the \\x01\\xC3\\x61 have been sorely tested, and it is your careless words which are to blame.”",
+    "occurrences": [
+      {
+        "input_index": 36642,
+        "translation": "没过多久，他回到我们的氏族领地，收回他的谢意。“你给我们的消息，往好里说是弄错了，往坏里说是存心欺骗。我们与\\x01\\xC3\\x61的关系受到了严峻考验，而这都怪你信口开河。”"
+      },
+      {
+        "input_index": 40742,
+        "translation": "没过多久，他回到我们的氏族领地，收回他的谢意。“你给我们的情报往好里说是错误，往坏里说是欺诈。我们与\\x01\\xC3\\x61的关系受到严峻考验，而这一切都怪你轻率的话。”"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xB2\\x01\\x40\\xB2Some of our god-talkers shook their heads, and said we had offended against the gods by lying about the myth.",
+    "occurrences": [
+      {
+        "input_index": 36648,
+        "translation": "\\x01\\x40\\xB2\\x01\\x40\\xB2我们的一些神语者摇了摇头，说我们谎述神话，冒犯了众神。"
+      },
+      {
+        "input_index": 40745,
+        "translation": "\\x01\\x40\\xB2\\x01\\x40\\xB2我们的一些神语者摇了摇头，说我们歪曲神话，冒犯了诸神。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "It turned out that \\x01\\x42\\x8E’s god-talkers knew the same stories we did, so we had nothing to offer them.",
+    "occurrences": [
+      {
+        "input_index": 36649,
+        "translation": "原来\\x01\\x42\\x8E的神语者知道的故事与我们相同，因此我们没有什么可以给他们。"
+      },
+      {
+        "input_index": 40746,
+        "translation": "原来\\x01\\x42\\x8E的神语者知道的故事和我们一样，所以我们没有什么可以给他们。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "After \\x01\\x42\\x8E left, our god-talkers said that our clan magic had suffered because we aided the irreverent. They said that \\x01\\x8A\\x21, the chief of the \\x01\\xC3\\x21, is so impious that the gods want nothing to do with \\x08.",
+    "occurrences": [
+      {
+        "input_index": 36651,
+        "translation": "\\x01\\x42\\x8E离开后，我们的神语者说，由于我们帮助了不敬神明的人，我们的氏族魔法受损了。他们说，\\x01\\xC3\\x21的首领\\x01\\x8A\\x21如此不敬神明，以至于众神不愿与\\x08有任何瓜葛。"
+      },
+      {
+        "input_index": 40748,
+        "translation": "\\x01\\x42\\x8E离开后，我们的神语者说，由于我们帮助了不敬神的人，我们的氏族魔法受损了。他们说，\\x01\\xC3\\x21的族长\\x01\\x8A\\x21如此不虔诚，诸神根本不愿与\\x08有任何瓜葛。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Our friendship with \\x01\\x42\\x8E’s clan is strong; even if we refuse him, it will not make too big a difference.",
+    "occurrences": [
+      {
+        "input_index": 36656,
+        "translation": "我们与\\x01\\x42\\x8E的氏族友谊深厚；即使我们拒绝他，也不会有太大影响。"
+      },
+      {
+        "input_index": 40751,
+        "translation": "我们与\\x01\\x42\\x8E氏族的友谊很牢固；即使我们拒绝他，也不会有太大影响。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Their chief is impious. If we give \\x01\\xBA\\x03\\x04 thane secrets meant only for the righteous, our clan magic will suffer.",
+    "occurrences": [
+      {
+        "input_index": 36657,
+        "translation": "他们的首领不敬神明。如果我们把只应让正直者知道的秘密交给\\x01\\xBA\\x03\\x04贵族，我们的氏族魔法就会受损。"
+      },
+      {
+        "input_index": 40752,
+        "translation": "他们的族长不敬神。如果我们把只应传给虔信者的秘密交给\\x01\\xBA\\x03\\x04贵族，我们的氏族魔法就会受损。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xC3\\x21 respects the rights of the individual, and deserves our help.",
+    "occurrences": [
+      {
+        "input_index": 36660,
+        "translation": "\\x01\\xC3\\x21尊重个人的权利，值得我们帮助。"
+      },
+      {
+        "input_index": 40755,
+        "translation": "\\x01\\xC3\\x21尊重个人的权利，理应得到我们的帮助。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Our god-talkers performed a ritual to bless the \\x01\\xC3\\x21, which transferred to them a small portion of our clan magic.",
+    "occurrences": [
+      {
+        "input_index": 36674,
+        "translation": "我们的神语者举行仪式为\\x01\\xC3\\x21赐福，这使我们的一小部分氏族魔法转移到了他们身上。"
+      },
+      {
+        "input_index": 40765,
+        "translation": "我们的神语者举行仪式祝福\\x01\\xC3\\x21，将我们氏族魔法的一小部分转移给了他们。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Our god-talkers performed a ritual to bless the \\x01\\xC3\\x21, which transferred to them a goodly portion of our clan magic.",
+    "occurrences": [
+      {
+        "input_index": 36675,
+        "translation": "我们的神语者举行仪式为\\x01\\xC3\\x21赐福，这使我们相当大的一部分氏族魔法转移到了他们身上。"
+      },
+      {
+        "input_index": 40766,
+        "translation": "我们的神语者举行仪式祝福\\x01\\xC3\\x21，将我们氏族魔法的相当一部分转移给了他们。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Our god-talkers performed a ritual to bless the \\x01\\xC3\\x21, which transferred to them a portion of our clan magic.",
+    "occurrences": [
+      {
+        "input_index": 36678,
+        "translation": "我们的神语者举行仪式为\\x01\\xC3\\x21赐福，这使我们的一部分氏族魔法转移到了他们身上。"
+      },
+      {
+        "input_index": 40768,
+        "translation": "我们的神语者举行仪式祝福\\x01\\xC3\\x21，将我们氏族魔法的一部分转移给了他们。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "was not successful and there will be no extra cow blessings for the \\x01\\xC3\\x21.",
+    "occurrences": [
+      {
+        "input_index": 36782,
+        "translation": "未能成功，\\x01\\xC3\\x21也不会得到额外的牛群祝福。"
+      },
+      {
+        "input_index": 36786,
+        "translation": "未能成功，\\x01\\xC3\\x21也不会得到额外的牛群祝福。"
+      },
+      {
+        "input_index": 36795,
+        "translation": "没有成功，\\x01\\xC3\\x21不会有额外的牛群赐福。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The remaining clan leaders found brief haven among the \\x01\\xC3\\x21 before dispersing to parts unknown.",
+    "occurrences": [
+      {
+        "input_index": 36826,
+        "translation": "其余的氏族首领在\\x01\\xC3\\x21那里找到了短暂庇护，随后便散往未知之地。"
+      },
+      {
+        "input_index": 36827,
+        "translation": "其余的氏族首领在\\x01\\xC3\\x21中找到了短暂庇护，随后散往未知之地。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Designate \\x01\\x8A\\x00 as your champion.",
+    "occurrences": [
+      {
+        "input_index": 37047,
+        "translation": "指定\\x01\\x8A\\x00作为你的勇士。"
+      },
+      {
+        "input_index": 37049,
+        "translation": "指定\\x01\\x8A\\x00作为你的勇士。"
+      },
+      {
+        "input_index": 37051,
+        "translation": "指定\\x01\\x8A\\x00为你的勇士。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Designate \\x01\\xD8\\x00 as your champion",
+    "occurrences": [
+      {
+        "input_index": 37048,
+        "translation": "指定\\x01\\xD8\\x00作为你的勇士"
+      },
+      {
+        "input_index": 37052,
+        "translation": "指定\\x01\\xD8\\x00为你的勇士"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "We may have fewer fighters, but they are bold and skilled. Is this why the \\x01\\xC3\\x21 now sue for peace?",
+    "occurrences": [
+      {
+        "input_index": 37120,
+        "translation": "我们的战士或许更少，但他们勇猛而老练。难道\\x01\\xC3\\x21就是因为这个才来求和？"
+      },
+      {
+        "input_index": 40820,
+        "translation": "我们的战士也许更少，但他们勇敢而善战。难道\\x01\\xC3\\x21如今求和，就是因为这个吗？"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "If we make peace with the \\x01\\xC3\\x21, we can concentrate on our war against the elves.",
+    "occurrences": [
+      {
+        "input_index": 37121,
+        "translation": "如果我们与\\x01\\xC3\\x21议和，就能专心投入对精灵的战争。"
+      },
+      {
+        "input_index": 40821,
+        "translation": "如果我们与\\x01\\xC3\\x21议和，就能集中力量对付精灵。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "We gave it to the \\x01\\xC3\\x21.",
+    "occurrences": [
+      {
+        "input_index": 37136,
+        "translation": "我们把它给了\\x01\\xC3\\x21。"
+      },
+      {
+        "input_index": 38529,
+        "translation": "我们把它交给了\\x01\\xC3\\x21。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xC3\\x21 offered us an absurdly low payment for it.",
+    "occurrences": [
+      {
+        "input_index": 37137,
+        "translation": "\\x01\\xC3\\x21为此给我们的报酬低得荒唐。"
+      },
+      {
+        "input_index": 39607,
+        "translation": "\\x01\\xC3\\x21为它向我们开出了一个低得荒谬的价钱。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "We abandoned negotiations with the \\x01\\xC3\\x21.",
+    "occurrences": [
+      {
+        "input_index": 37178,
+        "translation": "我们放弃了与\\x01\\xC3\\x21的谈判。"
+      },
+      {
+        "input_index": 37217,
+        "translation": "我们放弃了与\\x01\\xC3\\x21的谈判。"
+      },
+      {
+        "input_index": 37237,
+        "translation": "我们放弃了与\\x01\\xC3\\x21的谈判。"
+      },
+      {
+        "input_index": 37257,
+        "translation": "我们放弃了与\\x01\\xC3\\x21的谈判。"
+      },
+      {
+        "input_index": 37275,
+        "translation": "我们放弃了与\\x01\\xC3\\x21的谈判。"
+      },
+      {
+        "input_index": 37294,
+        "translation": "我们放弃了与\\x01\\xC3\\x21的谈判。"
+      },
+      {
+        "input_index": 37313,
+        "translation": "我们放弃了与\\x01\\xC3\\x21的谈判。"
+      },
+      {
+        "input_index": 37335,
+        "translation": "我们放弃了与\\x01\\xC3\\x21的谈判。"
+      },
+      {
+        "input_index": 37354,
+        "translation": "我们中止了与\\x01\\xC3\\x21的谈判。"
+      },
+      {
+        "input_index": 37373,
+        "translation": "我们放弃了与\\x01\\xC3\\x21的谈判。"
+      },
+      {
+        "input_index": 37393,
+        "translation": "我们放弃了与\\x01\\xC3\\x21的谈判。"
+      },
+      {
+        "input_index": 37421,
+        "translation": "我们中止了与\\x01\\xC3\\x21的谈判。"
+      },
+      {
+        "input_index": 37442,
+        "translation": "我们放弃与\\x01\\xC3\\x21的谈判。"
+      },
+      {
+        "input_index": 37460,
+        "translation": "我们放弃了与\\x01\\xC3\\x21的谈判。"
+      },
+      {
+        "input_index": 37483,
+        "translation": "我们放弃了与\\x01\\xC3\\x21的谈判。"
+      },
+      {
+        "input_index": 37500,
+        "translation": "我们放弃了与\\x01\\xC3\\x21的谈判。"
+      },
+      {
+        "input_index": 37518,
+        "translation": "我们放弃了与\\x01\\xC3\\x21的谈判。"
+      },
+      {
+        "input_index": 37537,
+        "translation": "我们放弃了与\\x01\\xC3\\x21的谈判。"
+      },
+      {
+        "input_index": 38633,
+        "translation": "我们放弃与\\x01\\xC3\\x21的谈判。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "We had to give up our efforts to make a tribe with the \\x01\\xC3\\x21 when the talks broke down in the fine details of negotiating.",
+    "occurrences": [
+      {
+        "input_index": 37179,
+        "translation": "谈判在细枝末节上破裂，我们只好放弃与\\x01\\xC3\\x21共同组建部族的努力。"
+      },
+      {
+        "input_index": 37218,
+        "translation": "当谈判在具体细节上破裂时，我们不得不放弃与\\x01\\xC3\\x21组建部族的努力。"
+      },
+      {
+        "input_index": 37238,
+        "translation": "当谈判因细枝末节而破裂时，我们不得不放弃与\\x01\\xC3\\x21共同建立部族的努力。"
+      },
+      {
+        "input_index": 37258,
+        "translation": "由于谈判在具体细节上破裂，我们不得不放弃与\\x01\\xC3\\x21组建部族的努力。"
+      },
+      {
+        "input_index": 37276,
+        "translation": "由于谈判在具体细节上破裂，我们不得不放弃与\\x01\\xC3\\x21组建部族的努力。"
+      },
+      {
+        "input_index": 37295,
+        "translation": "谈判在细节磋商中破裂，我们不得不放弃与\\x01\\xC3\\x21共同组建部族的努力。"
+      },
+      {
+        "input_index": 37314,
+        "translation": "当谈判在细节上破裂时，我们不得不放弃与\\x01\\xC3\\x21共同组建部族的努力。"
+      },
+      {
+        "input_index": 37336,
+        "translation": "当谈判在细枝末节上破裂时，我们不得不放弃与\\x01\\xC3\\x21共同组建部族的努力。"
+      },
+      {
+        "input_index": 37355,
+        "translation": "当谈判在细枝末节上破裂时，我们不得不放弃与\\x01\\xC3\\x21共同组建部族的努力。"
+      },
+      {
+        "input_index": 37374,
+        "translation": "当谈判在细枝末节上破裂时，我们不得不放弃与\\x01\\xC3\\x21共同组建部落的努力。"
+      },
+      {
+        "input_index": 37394,
+        "translation": "当谈判在细节问题上破裂时，我们不得不放弃与\\x01\\xC3\\x21共同组建部落的努力。"
+      },
+      {
+        "input_index": 37422,
+        "translation": "当谈判在细节问题上破裂时，我们不得不放弃与\\x01\\xC3\\x21共同组建部落的努力。"
+      },
+      {
+        "input_index": 37443,
+        "translation": "谈判在具体细节上破裂后，我们不得不放弃与\\x01\\xC3\\x21共同组建部族的努力。"
+      },
+      {
+        "input_index": 37461,
+        "translation": "当谈判在协商的细枝末节上破裂时，我们不得不放弃与\\x01\\xC3\\x21共建部落的努力。"
+      },
+      {
+        "input_index": 37484,
+        "translation": "当谈判在协商的细枝末节上破裂时，我们不得不放弃与\\x01\\xC3\\x21共建部落的努力。"
+      },
+      {
+        "input_index": 37501,
+        "translation": "当谈判在协商细节上破裂时，我们不得不放弃与\\x01\\xC3\\x21共同组建部族的努力。"
+      },
+      {
+        "input_index": 37519,
+        "translation": "当谈判因细节分歧而破裂时，我们不得不放弃与\\x01\\xC3\\x21共同组建部族的努力。"
+      },
+      {
+        "input_index": 37538,
+        "translation": "当谈判因细节分歧而破裂时，我们不得不放弃与\\x01\\xC3\\x21共同组建部族的努力。"
+      },
+      {
+        "input_index": 38634,
+        "translation": "谈判在细枝末节上破裂后，我们不得不放弃与\\x01\\xC3\\x21共同组建部落的努力。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "It was hard to tell whether the \\x01\\xC3\\x21 hated us more for trying and failing, or just plain hated us. They \\x02\\x05gave us dirty looks/sneered at us/muttered nastily/shook their heads disgustedly/shook their fists at us\\x02 as we left.",
+    "occurrences": [
+      {
+        "input_index": 37180,
+        "translation": "很难判断\\x01\\xC3\\x21是更恨我们尝试结盟却失败，还是单纯就是恨我们。我们离开时，他们\\x02\\x05朝我们投来鄙夷的目光/对我们嗤之以鼻/恶声嘟囔/厌恶地摇头/朝我们挥拳\\x02。"
+      },
+      {
+        "input_index": 37219,
+        "translation": "很难说\\x01\\xC3\\x21是因为我们尝试过却失败了而更恨我们，还是单纯恨我们。我们离开时，他们\\x02\\x05朝我们投来鄙夷的目光/对我们嗤笑/恶狠狠地嘟囔/厌恶地摇头/朝我们挥拳\\x02。"
+      },
+      {
+        "input_index": 37239,
+        "translation": "很难判断\\x01\\xC3\\x21是更恨我们尝试后失败，还是单纯恨我们。我们离开时，他们\\x02\\x05朝我们投来鄙夷的目光/对我们冷笑/恶毒地嘟囔/厌恶地摇头/朝我们挥舞拳头\\x02。"
+      },
+      {
+        "input_index": 37259,
+        "translation": "很难判断\\x01\\xC3\\x21是因为我们尝试后失败而更恨我们，还是单纯恨我们。我们离开时，他们\\x02\\x05朝我们投来鄙夷的目光/对我们嗤笑/恶狠狠地嘟囔/厌恶地摇头/朝我们挥舞拳头\\x02。"
+      },
+      {
+        "input_index": 37277,
+        "translation": "很难判断\\x01\\xC3\\x21是因为我们尝试后失败而更恨我们，还是单纯恨我们。我们离开时，他们\\x02\\x05朝我们投来鄙夷的目光/对我们嗤笑/恶狠狠地嘟囔/厌恶地摇头/朝我们挥舞拳头\\x02。"
+      },
+      {
+        "input_index": 37296,
+        "translation": "很难说\\x01\\xC3\\x21是更恨我们尝试了却失败，还是纯粹恨我们。我们离开时，他们\\x02\\x05朝我们投来鄙夷的目光/对我们嗤之以鼻/恶狠狠地嘟囔/厌恶地摇头/朝我们挥舞拳头\\x02。"
+      },
+      {
+        "input_index": 37315,
+        "translation": "很难判断\\x01\\xC3\\x21是更恨我们尝试后失败，还是单纯恨我们。我们离开时，他们\\x02\\x05朝我们投来鄙夷的目光/对我们嗤之以鼻/恶狠狠地嘟囔/厌恶地摇头/朝我们挥舞拳头\\x02。"
+      },
+      {
+        "input_index": 37337,
+        "translation": "很难判断\\x01\\xC3\\x21是更因为我们尝试却失败而恨我们，还是纯粹恨我们。我们离开时，他们\\x02\\x05朝我们投来鄙夷的目光/对我们嗤之以鼻/恶狠狠地嘟囔/厌恶地摇头/朝我们挥舞拳头\\x02。"
+      },
+      {
+        "input_index": 37356,
+        "translation": "很难判断\\x01\\xC3\\x21是更因为我们尝试却失败而恨我们，还是纯粹恨我们。我们离开时，他们\\x02\\x05朝我们投来鄙夷的目光/对我们嗤之以鼻/恶狠狠地嘟囔/厌恶地摇头/朝我们挥舞拳头\\x02。"
+      },
+      {
+        "input_index": 37375,
+        "translation": "很难判断\\x01\\xC3\\x21是因为我们尝试过却失败而更恨我们，还是单纯恨我们。我们离开时，他们\\x02\\x05恶狠狠地瞪着我们/朝我们冷笑/恶声嘟囔/厌恶地摇头/朝我们挥舞拳头\\x02。"
+      },
+      {
+        "input_index": 37395,
+        "translation": "很难判断\\x01\\xC3\\x21是因为我们尝试却失败而更恨我们，还是单纯恨我们。我们离开时，他们\\x02\\x05厌恶地瞪着我们/对我们冷笑/恶声嘟囔/厌恶地摇头/朝我们挥拳\\x02。"
+      },
+      {
+        "input_index": 37423,
+        "translation": "很难判断\\x01\\xC3\\x21是因为我们尝试过却失败而更恨我们，还是单纯恨我们。我们离开时，他们\\x02\\x05朝我们投来鄙夷的目光/对我们嗤之以鼻/恶毒地嘟囔/厌恶地摇头/朝我们挥舞拳头\\x02。"
+      },
+      {
+        "input_index": 37444,
+        "translation": "很难判断\\x01\\xC3\\x21是更恨我们尝试过却失败了，还是单纯恨我们。我们离开时，他们\\x02\\x05朝我们投来鄙夷的目光/对我们嗤之以鼻/恶毒地嘟囔/厌恶地摇头/朝我们挥舞拳头\\x02。"
+      },
+      {
+        "input_index": 37462,
+        "translation": "很难说\\x01\\xC3\\x21是因为我们尝试过却失败了而更恨我们，还是单纯恨我们。我们离开时，他们\\x02\\x05朝我们投来鄙夷的目光/对我们嗤笑/恶声嘟囔/厌恶地摇头/朝我们挥舞拳头\\x02。"
+      },
+      {
+        "input_index": 37485,
+        "translation": "很难说\\x01\\xC3\\x21是因为我们尝试过却失败了而更恨我们，还是单纯恨我们。我们离开时，他们\\x02\\x05朝我们投来鄙夷的目光/对我们嗤笑/恶声嘟囔/厌恶地摇头/朝我们挥舞拳头\\x02。"
+      },
+      {
+        "input_index": 37502,
+        "translation": "\\x01\\xC3\\x21究竟是因为我们尝试后失败而更恨我们，还是单纯讨厌我们，很难分辨。我们离开时，他们\\x02\\x05恶狠狠地瞪着我们/对我们冷笑/恶声恶气地嘟囔/厌恶地摇头/朝我们挥舞拳头\\x02。"
+      },
+      {
+        "input_index": 37520,
+        "translation": "很难判断\\x01\\xC3\\x21是因为我们尝试却失败而更恨我们，还是单纯恨我们。他们\\x02\\x05朝我们投来嫌恶的目光/对我们冷笑/恶毒地嘟囔/厌恶地摇头/朝我们挥拳\\x02，当时我们正离开。"
+      },
+      {
+        "input_index": 37539,
+        "translation": "很难判断\\x01\\xC3\\x21是因为我们尝试却失败而更恨我们，还是单纯恨我们。他们\\x02\\x05朝我们投来嫌恶的目光/对我们冷笑/恶毒地嘟囔/厌恶地摇头/朝我们挥拳\\x02，当时我们正离开。"
+      },
+      {
+        "input_index": 38635,
+        "translation": "很难说\\x01\\xC3\\x21是因为我们尝试却失败而更恨我们，还是纯粹恨我们。我们离开时，他们\\x02\\x05朝我们投来鄙夷的目光/对我们冷笑/恶狠狠地嘟囔/厌恶地摇头/朝我们挥拳\\x02。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x8A\\x21, their chief, \\x02\\x03praised our generosity/accepted our gifts/was pleased\\x02.",
+    "occurrences": [
+      {
+        "input_index": 37182,
+        "translation": "\\x01\\x8A\\x21，他们的首领，\\x02\\x03称赞了我们的慷慨/接受了我们的礼物/显得十分满意\\x02。"
+      },
+      {
+        "input_index": 37223,
+        "translation": "他们的首领\\x01\\x8A\\x21，\\x02\\x03称赞我们的慷慨/接受了我们的礼物/感到高兴\\x02。"
+      },
+      {
+        "input_index": 37244,
+        "translation": "\\x01\\x8A\\x21，他们的首领，\\x02\\x03称赞了我们的慷慨/接受了我们的礼物/感到高兴\\x02。"
+      },
+      {
+        "input_index": 37263,
+        "translation": "\\x01\\x8A\\x21，他们的首领，\\x02\\x03赞扬了我们的慷慨/接受了我们的礼物/感到满意\\x02。"
+      },
+      {
+        "input_index": 37299,
+        "translation": "他们的首领\\x01\\x8A\\x21\\x02\\x03称赞了我们的慷慨/接受了我们的礼物/十分满意\\x02。"
+      },
+      {
+        "input_index": 37318,
+        "translation": "\\x01\\x8A\\x21，他们的首领，\\x02\\x03称赞了我们的慷慨/接受了我们的礼物/很满意\\x02。"
+      },
+      {
+        "input_index": 37340,
+        "translation": "\\x01\\x8A\\x21，他们的首领，\\x02\\x03称赞了我们的慷慨/接受了我们的礼物/感到满意\\x02。"
+      },
+      {
+        "input_index": 37358,
+        "translation": "\\x01\\x8A\\x21，他们的首领，\\x02\\x03称赞了我们的慷慨/接受了我们的礼物/感到满意\\x02。"
+      },
+      {
+        "input_index": 37378,
+        "translation": "\\x01\\x8A\\x21，他们的首领，\\x02\\x03称赞我们的慷慨/接受了我们的礼物/十分满意\\x02。"
+      },
+      {
+        "input_index": 37403,
+        "translation": "\\x01\\x8A\\x21，他们的首领，\\x02\\x03称赞我们的慷慨/接受了我们的礼物/很满意\\x02。"
+      },
+      {
+        "input_index": 37447,
+        "translation": "\\x01\\x8A\\x21，他们的首领，\\x02\\x03称赞了我们的慷慨/接受了我们的礼物/感到满意\\x02。"
+      },
+      {
+        "input_index": 37448,
+        "translation": "\\x01\\x8A\\x21，他们的首领，\\x02\\x03称赞了我们的慷慨/接受了我们的礼物/感到满意\\x02。"
+      },
+      {
+        "input_index": 37464,
+        "translation": "\\x01\\x8A\\x21，他们的首领，\\x02\\x03称赞我们的慷慨/接受了我们的礼物/感到高兴\\x02。"
+      },
+      {
+        "input_index": 37487,
+        "translation": "\\x01\\x8A\\x21，他们的首领，\\x02\\x03赞扬了我们的慷慨/接受了我们的礼物/感到满意\\x02。"
+      },
+      {
+        "input_index": 37504,
+        "translation": "\\x01\\x8A\\x21，他们的首领，\\x02\\x03赞扬了我们的慷慨/接受了我们的礼物/感到满意\\x02。"
+      },
+      {
+        "input_index": 37523,
+        "translation": "\\x01\\x8A\\x21，他们的首领，\\x02\\x03称赞了我们的慷慨/接受了我们的礼物/很满意\\x02。"
+      },
+      {
+        "input_index": 37542,
+        "translation": "\\x01\\x8A\\x21，他们的酋长，\\x02\\x03称赞了我们的慷慨/接受了我们的礼物/感到满意\\x02。"
+      },
+      {
+        "input_index": 38637,
+        "translation": "\\x01\\x8A\\x21，他们的首领，\\x02\\x03称赞我们慷慨/接受了我们的礼物/很满意\\x02。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x8A\\x21 thanked us for the gifts. \\x05 motioned to \\x04 thanes, who brought forth gifts of nearly identical value for us, so that the \\x01\\xC3\\x21 would not be in our debt.",
+    "occurrences": [
+      {
+        "input_index": 37183,
+        "translation": "\\x01\\x8A\\x21感谢我们赠送的礼物。\\x05向\\x04贵族示意，他们便为我们呈上价值几乎相同的回礼，好让\\x01\\xC3\\x21不欠我们的人情。"
+      },
+      {
+        "input_index": 37224,
+        "translation": "\\x01\\x8A\\x21为礼物向我们道谢。\\x05示意\\x04贵族，他们捧出价值几乎相同的礼物给我们，好让\\x01\\xC3\\x21不欠我们的人情。"
+      },
+      {
+        "input_index": 37245,
+        "translation": "\\x01\\x8A\\x21为这些礼物向我们道谢。\\x05向\\x04贵族示意，后者便捧出价值几乎相同的礼物给我们，好让\\x01\\xC3\\x21不欠我们的人情。"
+      },
+      {
+        "input_index": 37264,
+        "translation": "\\x01\\x8A\\x21为礼物向我们道谢。\\x05向\\x04贵族示意，他们便给我们取出了价值几乎与我们先前所赠相当的礼物，好让\\x01\\xC3\\x21不欠我们人情。"
+      },
+      {
+        "input_index": 37280,
+        "translation": "\\x01\\x8A\\x21为礼物向我们道谢。\\x05向\\x04贵族示意，他们便取出了价值与我们几乎相同的礼物，好让\\x01\\xC3\\x21不欠我们人情。"
+      },
+      {
+        "input_index": 37300,
+        "translation": "\\x01\\x8A\\x21感谢我们赠送的礼物。\\x05示意\\x04贵族，他们拿出价值几乎相同的礼物送给我们，好让\\x01\\xC3\\x21不欠我们的人情。"
+      },
+      {
+        "input_index": 37319,
+        "translation": "\\x01\\x8A\\x21感谢我们赠送的礼物。\\x05向\\x04贵族示意，他们拿出价值几乎相同的礼物给我们，好让\\x01\\xC3\\x21不欠我们的人情。"
+      },
+      {
+        "input_index": 37341,
+        "translation": "\\x01\\x8A\\x21感谢我们赠送的礼物。\\x05向\\x04贵族示意，他们便捧出价值几乎相同的礼物送给我们，好让\\x01\\xC3\\x21不欠我们人情。"
+      },
+      {
+        "input_index": 37359,
+        "translation": "\\x01\\x8A\\x21感谢我们赠送的礼物。\\x05向\\x04贵族示意，他们便捧出价值几乎相同的礼物送给我们，好让\\x01\\xC3\\x21不欠我们人情。"
+      },
+      {
+        "input_index": 37379,
+        "translation": "\\x01\\x8A\\x21为这些礼物向我们道谢。\\x05向\\x04贵族示意，他们便捧出价值几乎相同的礼物给我们，好让\\x01\\xC3\\x21不欠我们的人情。"
+      },
+      {
+        "input_index": 37404,
+        "translation": "\\x01\\x8A\\x21感谢我们送的礼物。\\x05向\\x04贵族示意，他们拿出价值几乎相同的礼物送给我们，好让\\x01\\xC3\\x21不欠我们的人情。"
+      },
+      {
+        "input_index": 37465,
+        "translation": "\\x01\\x8A\\x21感谢我们送的礼物。\\x05向\\x04贵族示意，他们便取出了价值与我们几乎相同的礼物回赠我们，好让\\x01\\xC3\\x21不欠我们人情。"
+      },
+      {
+        "input_index": 37488,
+        "translation": "\\x01\\x8A\\x21感谢我们赠送的礼物。\\x05向\\x04贵族示意，后者便献上价值几乎相同的礼物给我们，好让\\x01\\xC3\\x21不欠我们的人情。"
+      },
+      {
+        "input_index": 37505,
+        "translation": "\\x01\\x8A\\x21感谢我们赠送的礼物。\\x05向\\x04贵族示意，后者便献上价值几乎相同的礼物给我们，好让\\x01\\xC3\\x21不欠我们的人情。"
+      },
+      {
+        "input_index": 37524,
+        "translation": "\\x01\\x8A\\x21感谢我们的礼物。\\x05向\\x04贵族示意，他们便为我们呈上价值几乎相同的礼物，好让\\x01\\xC3\\x21不欠我们的人情。"
+      },
+      {
+        "input_index": 37543,
+        "translation": "\\x01\\x8A\\x21感谢我们赠送的礼物。\\x05向\\x04贵族示意，他们献上价值几乎相同的礼物给我们，好让\\x01\\xC3\\x21不欠我们人情。"
+      },
+      {
+        "input_index": 38638,
+        "translation": "\\x01\\x8A\\x21为这些礼物向我们道谢。\\x05向\\x04贵族示意，他们拿出价值几乎相同的礼物送给我们，好让\\x01\\xC3\\x21不欠我们的人情。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "“Although I thank you for these gifts, I can not let your generosity go unrewarded,” said \\x01\\x8A\\x21, the \\x01\\x40\\x21 chief, and gave us reciprocal gifts.",
+    "occurrences": [
+      {
+        "input_index": 37184,
+        "translation": "“虽然我感谢你们送来这些礼物，但我不能让你们的好意得不到回报。”\\x01\\x40\\x21的首领\\x01\\x8A\\x21说道，并给了我们回礼。"
+      },
+      {
+        "input_index": 37225,
+        "translation": "“尽管我感谢你们送来这些礼物，但我不能让你们的慷慨得不到回报。”\\x01\\x40\\x21首领\\x01\\x8A\\x21说道，并给了我们回礼。"
+      },
+      {
+        "input_index": 37246,
+        "translation": "“虽然我感谢你们送来这些礼物，但我不能让你的慷慨得不到回报，”\\x01\\x40\\x21的首领\\x01\\x8A\\x21说，并回赠了我们礼物。"
+      },
+      {
+        "input_index": 37265,
+        "translation": "“虽然我感谢你们送来这些礼物，但我不能让你们的慷慨得不到回报，”\\x01\\x40\\x21首领\\x01\\x8A\\x21说道，并给了我们回赠的礼物。"
+      },
+      {
+        "input_index": 37281,
+        "translation": "“虽然我感谢你们送来这些礼物，但我不能让你们的慷慨得不到回报，”\\x01\\x8A\\x21，\\x01\\x40\\x21首领，说道，并给了我们回赠的礼物。"
+      },
+      {
+        "input_index": 37301,
+        "translation": "“虽然我感谢你们这些礼物，但我不能让你们的慷慨得不到回报，”\\x01\\x40\\x21的首领\\x01\\x8A\\x21说，并给了我们回礼。"
+      },
+      {
+        "input_index": 37320,
+        "translation": "“虽然我感谢你们这些礼物，但我不能让你们的慷慨得不到回报，”\\x01\\x8A\\x21——\\x01\\x40\\x21的首领——说道，并回赠了我们礼物。"
+      },
+      {
+        "input_index": 37342,
+        "translation": "“虽然我感谢你们送来这些礼物，但我不能让你们的慷慨得不到回报，”\\x01\\x8A\\x21说道，他是\\x01\\x40\\x21的首领，随后回赠了我们礼物。"
+      },
+      {
+        "input_index": 37360,
+        "translation": "“虽然我感谢你们送来这些礼物，但我不能让你们的慷慨得不到回报，”\\x01\\x8A\\x21说道，他是\\x01\\x40\\x21的首领，随后回赠了我们礼物。"
+      },
+      {
+        "input_index": 37380,
+        "translation": "“虽然我感谢你们送来这些礼物，但我不能让你们的慷慨得不到回报，”\\x01\\x40\\x21的首领\\x01\\x8A\\x21说，并给了我们回礼。"
+      },
+      {
+        "input_index": 37405,
+        "translation": "“尽管我感谢你们送来这些礼物，但我不能让你们的慷慨得不到回报，”\\x01\\x8A\\x21——\\x01\\x40\\x21的首领——说道，并给了我们回礼。"
+      },
+      {
+        "input_index": 37466,
+        "translation": "“尽管我感谢你送来的这些礼物，但我不能让你的慷慨得不到回报，”身为\\x01\\x40\\x21首领的\\x01\\x8A\\x21说道，并回赠了我们礼物。"
+      },
+      {
+        "input_index": 37489,
+        "translation": "“尽管我感谢你们送来这些礼物，但我不能让你们的慷慨得不到回报，”\\x01\\x8A\\x21，\\x01\\x40\\x21的首领，说道，并回赠了我们礼物。"
+      },
+      {
+        "input_index": 37506,
+        "translation": "“尽管我感谢你们送来这些礼物，但我不能让你们的慷慨得不到回报，”\\x01\\x8A\\x21，\\x01\\x40\\x21的首领，说道，并回赠了我们礼物。"
+      },
+      {
+        "input_index": 37525,
+        "translation": "“虽然我感谢你们这些礼物，但我不能让你们的慷慨得不到回报，”\\x01\\x40\\x21首领\\x01\\x8A\\x21说道，并回赠了我们礼物。"
+      },
+      {
+        "input_index": 37544,
+        "translation": "“尽管我感谢你们送这些礼物，但我不能让你们的慷慨得不到回报，”\\x01\\x8A\\x21，\\x01\\x40\\x21的酋长，说道，并回赠了我们礼物。"
+      },
+      {
+        "input_index": 38639,
+        "translation": "“虽然我感谢你们送来这些礼物，但我不能让你们的慷慨得不到回报，”\\x01\\x8A\\x21——\\x01\\x40\\x21首领——说道，并回赠了我们礼物。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "“I appreciate the gesture,” said \\x01\\x8A\\x21. “To show you that we \\x01\\xC3\\x21 are also interested in this tribe you speak of, please accept these tokens of our respect.” \\x05 gifted us in kind.",
+    "occurrences": [
+      {
+        "input_index": 37185,
+        "translation": "“我很感激这番心意，”\\x01\\x8A\\x21说道。“为了向你们表明，我们\\x01\\xC3\\x21也对你们所说的这个部族感兴趣，请收下这些表达敬意的礼物。”\\x05也回赠了我们礼物。"
+      },
+      {
+        "input_index": 37226,
+        "translation": "“我很感激这番好意，”\\x01\\x8A\\x21说。“为了向你表明我们\\x01\\xC3\\x21也对你所说的这个部族感兴趣，请收下这些表达敬意的礼物。”\\x05也回赠了我们相应的礼物。"
+      },
+      {
+        "input_index": 37247,
+        "translation": "“我很感激这番好意，”\\x01\\x8A\\x21说。“为了向你表明我们\\x01\\xC3\\x21也对你所说的这个部族感兴趣，请收下这些表达敬意的礼物。”\\x05也回赠了我们相应的礼物。"
+      },
+      {
+        "input_index": 37266,
+        "translation": "“我很感激这份心意，”\\x01\\x8A\\x21说道。“为了让你们知道我们\\x01\\xC3\\x21也对你们所说的这个部族感兴趣，请收下这些表示敬意的礼物。”\\x05也回赠了我们礼物。"
+      },
+      {
+        "input_index": 37282,
+        "translation": "“我很感激这份心意，”\\x01\\x8A\\x21说。“为了让你们知道我们\\x01\\xC3\\x21也对你们所说的这个部族感兴趣，请收下这些表达敬意的礼物。”\\x05也回赠了我们礼物。"
+      },
+      {
+        "input_index": 37302,
+        "translation": "“我很感激这份心意，”\\x01\\x8A\\x21说。“为了让你们知道我们\\x01\\xC3\\x21也对你们所说的这个部族感兴趣，请收下这些表达敬意的礼物。”\\x05也回赠了我们礼物。"
+      },
+      {
+        "input_index": 37321,
+        "translation": "“我感激这份心意，”\\x01\\x8A\\x21说道。“为了让你们知道我们\\x01\\xC3\\x21也对你们所说的这个部族感兴趣，请收下这些代表我们敬意的礼物。”\\x05也回赠了我们礼物。"
+      },
+      {
+        "input_index": 37343,
+        "translation": "“我很感激这番好意，”\\x01\\x8A\\x21说道。“为了向你们表明我们\\x01\\xC3\\x21也对你们所说的这个部族感兴趣，请收下这些聊表敬意的礼物。”\\x05也回赠了我们礼物。"
+      },
+      {
+        "input_index": 37361,
+        "translation": "“我很感激这番好意，”\\x01\\x8A\\x21说道。“为了向你们表明我们\\x01\\xC3\\x21也对你们所说的这个部族感兴趣，请收下这些聊表敬意的礼物。”\\x05也回赠了我们礼物。"
+      },
+      {
+        "input_index": 37381,
+        "translation": "“我很感激这番心意，”\\x01\\x8A\\x21说。“为了向你们表明我们\\x01\\xC3\\x21也对你们所说的这个部落感兴趣，请收下这些聊表敬意的礼物。”\\x05也回赠了我们。"
+      },
+      {
+        "input_index": 37406,
+        "translation": "“我很感激这番好意，”\\x01\\x8A\\x21说道。“为了向你们表明我们\\x01\\xC3\\x21也对你们所说的这个部落感兴趣，请收下这些代表我们敬意的礼物。”\\x05也回赠了我们礼物。"
+      },
+      {
+        "input_index": 37467,
+        "translation": "“我很感激这番好意，”\\x01\\x8A\\x21说道。“为了向你表明我们\\x01\\xC3\\x21也对你所说的这个部落感兴趣，请收下这些表示敬意的礼物。”\\x05也回赠了我们礼物。"
+      },
+      {
+        "input_index": 37490,
+        "translation": "“我很感激这份心意，”\\x01\\x8A\\x21说道。“为了让你们知道我们\\x01\\xC3\\x21也对你们所说的这个部族感兴趣，请收下这些表达敬意的礼物。”\\x05也以礼物回赠了我们。"
+      },
+      {
+        "input_index": 37507,
+        "translation": "“我很感激这份心意，”\\x01\\x8A\\x21说道。“为了让你们知道我们\\x01\\xC3\\x21也对你们所说的这个部族感兴趣，请收下这些表达敬意的礼物。”\\x05也以礼物回赠了我们。"
+      },
+      {
+        "input_index": 37526,
+        "translation": "“我很欣赏这一姿态，”\\x01\\x8A\\x21说道。“为了向你们表明我们\\x01\\xC3\\x21也对你们所说的这个部族感兴趣，请收下这些表示敬意的礼物。”\\x05也以同样方式回赠了我们礼物。"
+      },
+      {
+        "input_index": 37545,
+        "translation": "“我很感激这份心意，”\\x01\\x8A\\x21说道。“为了向你们表明，我们\\x01\\xC3\\x21也对你们所说的这个部族感兴趣，请收下这些表达我们敬意的礼物。”\\x05也回赠了我们礼物。"
+      },
+      {
+        "input_index": 38640,
+        "translation": "“我很感激这份心意，”\\x01\\x8A\\x21说。“为了向你们表明我们\\x01\\xC3\\x21也对你们所说的这个部落感兴趣，请收下这些表示敬意的礼物。”\\x05也回赠了我们。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "“We \\x01\\xC3\\x21 can also be generous,” said \\x01\\x8A\\x21, and gifted us in return.",
+    "occurrences": [
+      {
+        "input_index": 37186,
+        "translation": "“我们\\x01\\xC3\\x21也可以很慷慨，”\\x01\\x8A\\x21说道，并回赠了我们礼物。"
+      },
+      {
+        "input_index": 37227,
+        "translation": "“我们\\x01\\xC3\\x21也可以慷慨大方，”\\x01\\x8A\\x21说，并回赠了我们礼物。"
+      },
+      {
+        "input_index": 37248,
+        "translation": "“我们\\x01\\xC3\\x21也可以慷慨大方，”\\x01\\x8A\\x21说，并回赠了我们礼物。"
+      },
+      {
+        "input_index": 37267,
+        "translation": "“我们\\x01\\xC3\\x21也可以很慷慨，”\\x01\\x8A\\x21说道，并回赠了我们礼物。"
+      },
+      {
+        "input_index": 37283,
+        "translation": "“我们\\x01\\xC3\\x21也能慷慨大方，”\\x01\\x8A\\x21说，并回赠了我们礼物。"
+      },
+      {
+        "input_index": 37303,
+        "translation": "“我们\\x01\\xC3\\x21也能慷慨大方，”\\x01\\x8A\\x21说，并回赠了我们礼物。"
+      },
+      {
+        "input_index": 37322,
+        "translation": "“我们\\x01\\xC3\\x21也可以很慷慨，”\\x01\\x8A\\x21说道，并回赠了我们礼物。"
+      },
+      {
+        "input_index": 37344,
+        "translation": "“我们\\x01\\xC3\\x21也可以很慷慨，”\\x01\\x8A\\x21说道，并回赠了我们礼物。"
+      },
+      {
+        "input_index": 37362,
+        "translation": "“我们\\x01\\xC3\\x21也可以很慷慨，”\\x01\\x8A\\x21说道，并回赠了我们礼物。"
+      },
+      {
+        "input_index": 37382,
+        "translation": "“我们\\x01\\xC3\\x21也可以很慷慨，”\\x01\\x8A\\x21说，并回赠了我们。"
+      },
+      {
+        "input_index": 37407,
+        "translation": "“我们\\x01\\xC3\\x21也能慷慨大方，”\\x01\\x8A\\x21说道，并回赠了我们礼物。"
+      },
+      {
+        "input_index": 37468,
+        "translation": "“我们\\x01\\xC3\\x21也能慷慨大方，”\\x01\\x8A\\x21说道，并回赠了我们。"
+      },
+      {
+        "input_index": 37491,
+        "translation": "“我们\\x01\\xC3\\x21也可以很慷慨，”\\x01\\x8A\\x21说道，并回赠了我们礼物。"
+      },
+      {
+        "input_index": 37508,
+        "translation": "“我们\\x01\\xC3\\x21也可以很慷慨，”\\x01\\x8A\\x21说道，并回赠了我们礼物。"
+      },
+      {
+        "input_index": 37527,
+        "translation": "“我们\\x01\\xC3\\x21也可以很慷慨，”\\x01\\x8A\\x21说道，并回赠了我们礼物。"
+      },
+      {
+        "input_index": 37546,
+        "translation": "“我们\\x01\\xC3\\x21也可以很慷慨，”\\x01\\x8A\\x21说道，并回赠了我们礼物。"
+      },
+      {
+        "input_index": 38641,
+        "translation": "“我们\\x01\\xC3\\x21也可以很慷慨，”\\x01\\x8A\\x21说，并回赠了我们。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "“Here are gifts in return,” said the chief of the \\x01\\xC3\\x21, giving us almost exactly as much as we gave them.",
+    "occurrences": [
+      {
+        "input_index": 37187,
+        "translation": "“这些是回礼，”\\x01\\xC3\\x21的首领说道，并给了我们几乎与我们送给他们等量的礼物。"
+      },
+      {
+        "input_index": 37228,
+        "translation": "“这些是回礼，”\\x01\\xC3\\x21的首领说，给了我们几乎与我们赠予他们等量的礼物。"
+      },
+      {
+        "input_index": 37249,
+        "translation": "“这些是回礼，”\\x01\\xC3\\x21的首领说，给了我们几乎与我们赠予他们等量的礼物。"
+      },
+      {
+        "input_index": 37268,
+        "translation": "“这些是回赠的礼物，”\\x01\\xC3\\x21的首领说道，给了我们几乎与我们送给他们的一样多的东西。"
+      },
+      {
+        "input_index": 37284,
+        "translation": "“这些是回礼，”\\x01\\xC3\\x21的首领说，给我们的东西几乎和我们给他们的相当。"
+      },
+      {
+        "input_index": 37304,
+        "translation": "“这些是回礼，”\\x01\\xC3\\x21的首领说，给我们的东西几乎和我们给他们的相当。"
+      },
+      {
+        "input_index": 37323,
+        "translation": "“这些是回礼，”\\x01\\xC3\\x21的首领说道，给我们的回礼几乎与我们送出的等值。"
+      },
+      {
+        "input_index": 37345,
+        "translation": "“这些是回赠的礼物，”\\x01\\xC3\\x21的首领说道，给了我们几乎与我们送出的一样多的回礼。"
+      },
+      {
+        "input_index": 37363,
+        "translation": "“这些是回礼，”\\x01\\xC3\\x21的首领说，给我们的东西几乎与我们给他们的完全一样多。"
+      },
+      {
+        "input_index": 37383,
+        "translation": "“这些是回礼，”\\x01\\xC3\\x21的首领说，给我们的东西几乎与我们给他们的完全一样多。"
+      },
+      {
+        "input_index": 37408,
+        "translation": "“这些是回礼，”\\x01\\xC3\\x21的首领说道，给了我们几乎和我们送给他们的一样多的东西。"
+      },
+      {
+        "input_index": 37469,
+        "translation": "“这些是回赠的礼物，”\\x01\\xC3\\x21的首领说道，给我们的东西几乎与我们给他们的完全相等。"
+      },
+      {
+        "input_index": 37492,
+        "translation": "“这些是回礼，”\\x01\\xC3\\x21的首领说道，给了我们几乎与我们送给他们的一样多的东西。"
+      },
+      {
+        "input_index": 37509,
+        "translation": "“这些是回礼，”\\x01\\xC3\\x21的首领说道，给了我们几乎与我们送给他们的一样多的东西。"
+      },
+      {
+        "input_index": 37528,
+        "translation": "“这些是回赠的礼物，”\\x01\\xC3\\x21的首领说道，给了我们几乎与我们给他们的一样多的回礼。"
+      },
+      {
+        "input_index": 37547,
+        "translation": "“这些是回赠的礼物，”\\x01\\xC3\\x21的酋长说道，回赠给我们的东西几乎与我们送给他们的一样多。"
+      },
+      {
+        "input_index": 38642,
+        "translation": "“这些是回赠的礼物，”\\x01\\xC3\\x21的首领说，给了我们几乎与我们送给他们的一样多的东西。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "“A tribe is a powerful thing. Your idea is good,” said \\x01\\x8A\\x21, their chief. But \\x06 was unwilling to be in our debt and gave us gifts to match what we had given.",
+    "occurrences": [
+      {
+        "input_index": 37188,
+        "translation": "“部族是强大之物。你的想法很好，”他们的首领\\x01\\x8A\\x21说道。但\\x06不愿欠我们的人情，便给了我们与我们先前所赠相称的礼物。"
+      },
+      {
+        "input_index": 37229,
+        "translation": "“部族是一股强大的力量。你的想法很好，”他们的首领\\x01\\x8A\\x21说。但\\x06不愿欠我们人情，便给了我们与我们所赠相称的礼物。"
+      },
+      {
+        "input_index": 37250,
+        "translation": "“部族是一股强大的力量。你的想法很好，”他们的首领\\x01\\x8A\\x21说。但\\x06不愿欠我们人情，便给了我们与我们所赠相称的礼物。"
+      },
+      {
+        "input_index": 37269,
+        "translation": "“部族是强大之物。你们的想法很好，”他们的首领\\x01\\x8A\\x21说道。但\\x06不愿欠我们人情，便给了我们与我们先前所赠相当的礼物。"
+      },
+      {
+        "input_index": 37285,
+        "translation": "“部族是强大之物。你的想法不错，”他们的首领\\x01\\x8A\\x21说。但\\x06不愿欠我们的人情，便给了我们与我们赠礼相当的礼物。"
+      },
+      {
+        "input_index": 37305,
+        "translation": "“部族是强大之物。你的想法不错，”他们的首领\\x01\\x8A\\x21说。但\\x06不愿欠我们的人情，便给了我们与我们赠礼相当的礼物。"
+      },
+      {
+        "input_index": 37324,
+        "translation": "“部族是强大的存在。你的主意很好，”他们的首领\\x01\\x8A\\x21说道。但\\x06不愿欠我们的人情，给了我们与我们赠礼相配的礼物。"
+      },
+      {
+        "input_index": 37346,
+        "translation": "“部族是一股强大的力量。你的主意很好，”他们的首领\\x01\\x8A\\x21说道。但\\x06不愿欠我们人情，便回赠了与我们所赠相称的礼物。"
+      },
+      {
+        "input_index": 37364,
+        "translation": "“部落是一股强大的力量。你的主意很好，”他们的首领\\x01\\x8A\\x21说。但\\x06不愿欠我们的人情，便回赠了与我们先前所给相配的礼物。"
+      },
+      {
+        "input_index": 37384,
+        "translation": "“部落是一股强大的力量。你的主意很好，”他们的首领\\x01\\x8A\\x21说。但\\x06不愿欠我们的人情，便回赠了与我们先前所给相配的礼物。"
+      },
+      {
+        "input_index": 37409,
+        "translation": "“部落是强大的事物。你的主意很好，”\\x01\\x8A\\x21——他们的首领——说道。但\\x06不愿欠我们的人情，便送给我们与我们先前所送相称的礼物。"
+      },
+      {
+        "input_index": 37470,
+        "translation": "“部落是强大之物。你的想法很好，”\\x01\\x8A\\x21，他们的首领，说道。但\\x06不愿欠我们人情，便回赠了与我们送出的相等的礼物。"
+      },
+      {
+        "input_index": 37493,
+        "translation": "“部族是强大的事物。你的想法很好，”\\x01\\x8A\\x21，他们的首领，说道。但\\x06不愿欠我们的人情，便送给我们与我们所赠相称的礼物。"
+      },
+      {
+        "input_index": 37510,
+        "translation": "“部族是强大的事物。你的想法很好，”\\x01\\x8A\\x21，他们的首领，说道。但\\x06不愿欠我们的人情，便送给我们与我们所赠相称的礼物。"
+      },
+      {
+        "input_index": 37529,
+        "translation": "“部族是强大之物。你的想法很好，”他们的首领\\x01\\x8A\\x21说道。但\\x06不愿欠我们的人情，给了我们与我们所送相称的礼物。"
+      },
+      {
+        "input_index": 37548,
+        "translation": "“部族是一股强大的力量。你的想法很好，”他们的酋长\\x01\\x8A\\x21说道。但\\x06不愿欠我们人情，便送给我们价值与我们赠礼相当的礼物。"
+      },
+      {
+        "input_index": 38643,
+        "translation": "“部落是一股强大的力量。你们的想法很好，”他们的首领\\x01\\x8A\\x21说。但\\x06不愿欠我们的人情，给了我们与我们所赠相当的礼物。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\x13 spoke well, and was chosen to rule the \\x01\\xD0\\x00 tribe.",
+    "occurrences": [
+      {
+        "input_index": 37196,
+        "translation": "\\x01\\x40\\x13说得很好，被选中统治\\x01\\xD0\\x00部族。"
+      },
+      {
+        "input_index": 37203,
+        "translation": "\\x01\\x40\\x13发言出色，因此被选中统治\\x01\\xD0\\x00部族。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\x13 spoke well, and \\x01\\x40\\x0B was chosen to rule the \\x01\\xD0\\x00 tribe.",
+    "occurrences": [
+      {
+        "input_index": 37197,
+        "translation": "\\x01\\x40\\x13发言出色，\\x01\\x40\\x0B被选中统治\\x01\\xD0\\x00部族。"
+      },
+      {
+        "input_index": 37204,
+        "translation": "\\x01\\x40\\x13发言出色，\\x01\\x40\\x0B因此被选中统治\\x01\\xD0\\x00部族。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Hear them out, then warn the \\x01\\xE6\\x0B.",
+    "occurrences": [
+      {
+        "input_index": 37693,
+        "translation": "听他们说完，然后警告\\x01\\xE6\\x0B。"
+      },
+      {
+        "input_index": 39358,
+        "translation": "听他们把话说完，然后警告\\x01\\xE6\\x0B。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "We heard them out, and then went to warn the \\x01\\xE6\\x0B.",
+    "occurrences": [
+      {
+        "input_index": 37694,
+        "translation": "我们听他们说完，然后去警告了\\x01\\xE6\\x0B。"
+      },
+      {
+        "input_index": 39359,
+        "translation": "我们听他们把话说完，然后去警告了\\x01\\xE6\\x0B。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xE6\\x0B asks for your advice.",
+    "occurrences": [
+      {
+        "input_index": 37695,
+        "translation": "\\x01\\xE6\\x0B向你征询意见。"
+      },
+      {
+        "input_index": 39360,
+        "translation": "\\x01\\xE6\\x0B向你征求意见。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "We told the \\x01\\xE6\\x0B to give cows to the discontented clans.",
+    "occurrences": [
+      {
+        "input_index": 37696,
+        "translation": "我们让\\x01\\xE6\\x0B把牛送给不满的氏族。"
+      },
+      {
+        "input_index": 39361,
+        "translation": "我们告诉\\x01\\xE6\\x0B，把牛送给那些心怀不满的氏族。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "We said that the \\x01\\xE6\\x0B should wage war against the discontented clans.",
+    "occurrences": [
+      {
+        "input_index": 37715,
+        "translation": "我们说\\x01\\xE6\\x0B应当对不满的氏族发动战争。"
+      },
+      {
+        "input_index": 39380,
+        "translation": "我们说，\\x01\\xE6\\x0B应当向那些心怀不满的氏族开战。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Join the others in demanding that the \\x01\\xE6\\x0B step down.",
+    "occurrences": [
+      {
+        "input_index": 37720,
+        "translation": "与其他人一同要求\\x01\\xE6\\x0B下台。"
+      },
+      {
+        "input_index": 39385,
+        "translation": "加入其他人，一同要求\\x01\\xE6\\x0B下台。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "We told them we would join them in demanding that the \\x01\\xE6\\x0B step down.",
+    "occurrences": [
+      {
+        "input_index": 37721,
+        "translation": "我们告诉他们，我们会与他们一同要求\\x01\\xE6\\x0B下台。"
+      },
+      {
+        "input_index": 39386,
+        "translation": "我们告诉他们，我们会加入他们，一同要求\\x01\\xE6\\x0B下台。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "“You exaggerate. Give the \\x01\\xE6\\x0B a chance to rule.”",
+    "occurrences": [
+      {
+        "input_index": 37722,
+        "translation": "“你言过其实了。给\\x01\\xE6\\x0B一个统治的机会吧。”"
+      },
+      {
+        "input_index": 39387,
+        "translation": "“你夸大其词了。给\\x01\\xE6\\x0B一个统治的机会吧。”"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "We argued that they were not giving the \\x01\\xE6\\x0B a fair chance to rule.",
+    "occurrences": [
+      {
+        "input_index": 37723,
+        "translation": "我们辩称，他们没有给\\x01\\xE6\\x0B一个公平的统治机会。"
+      },
+      {
+        "input_index": 39388,
+        "translation": "我们辩称，他们没有给\\x01\\xE6\\x0B一个公平的机会去统治。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xB2\\x01\\x40\\xB2The \\x01\\x40\\x30 clan was pleased not to be in a tribe with the \\x01\\xC3\\x2B.",
+    "occurrences": [
+      {
+        "input_index": 37868,
+        "translation": "\\x01\\x40\\xB2\\x01\\x40\\xB2\\x01\\x40\\x30氏族很高兴没有与\\x01\\xC3\\x2B同处一个部族。"
+      },
+      {
+        "input_index": 37876,
+        "translation": "\\x01\\x40\\xB2\\x01\\x40\\xB2\\x01\\x40\\x30氏族很高兴没有与\\x01\\xC3\\x2B同处一个部族。"
+      },
+      {
+        "input_index": 37879,
+        "translation": "\\x01\\x40\\xB2\\x01\\x40\\xB2\\x01\\x40\\x30氏族很高兴没有与\\x01\\xC3\\x2B同处一个部族。"
+      },
+      {
+        "input_index": 37882,
+        "translation": "\\x01\\x40\\xB2\\x01\\x40\\xB2\\x01\\x40\\x30氏族很高兴没有与\\x01\\xC3\\x2B同处一个部族。"
+      },
+      {
+        "input_index": 37894,
+        "translation": "\\x01\\x40\\xB2\\x01\\x40\\xB2\\x01\\x40\\x30氏族很高兴没有与\\x01\\xC3\\x2B同属一个部族。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Before the battle, \\x01\\x40\\x10 and our tribe’s other god-talkers ritually crumbled the Sacred Clod. Nothing happened at first, but then the hills groaned, and the ground itself rushed at the enemy as if it were an ocean wave. Many of them were killed or injured. Unfortunately, so were some of our own warriors.\\x01\\x40\\xB2\\x01\\x40\\xB2",
+    "occurrences": [
+      {
+        "input_index": 38055,
+        "translation": "战前，\\x01\\x40\\x10与我们部族的其他神语者按仪式碾碎了圣土块。起初毫无动静，但随后山丘呻吟起来，大地本身如海浪般冲向敌人。他们许多人非死即伤。不幸的是，我们自己的部分战士也未能幸免。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 38057,
+        "translation": "战前，\\x01\\x40\\x10与我们部族的其他神语者按仪式碾碎了圣土块。起初毫无动静，但随后山丘呻吟起来，大地本身如海浪般冲向敌人。他们许多人非死即伤。不幸的是，我们自己的部分战士也未能幸免。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 38061,
+        "translation": "战前，\\x01\\x40\\x10与我们部族的其他神语者按仪式碾碎了圣土块。起初毫无动静，但随后山丘呻吟起来，大地本身如海浪般冲向敌人。他们许多人非死即伤。不幸的是，我们自己的部分战士也未能幸免。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 38098,
+        "translation": "战前，\\x01\\x40\\x10与部落里其他神语者按仪式碾碎了圣土块。起初什么也没有发生，但随后山丘呻吟起来，大地本身如海浪般冲向敌人。他们中许多人非死即伤。不幸的是，我们的一些战士也是如此。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 38120,
+        "translation": "战前，\\x01\\x40\\x10与部落里其他神语者按仪式碾碎了圣土块。起初什么也没有发生，但随后山丘呻吟起来，大地本身如海浪般冲向敌人。他们中许多人非死即伤。不幸的是，我们的一些战士也是如此。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 38141,
+        "translation": "战斗开始前，\\x01\\x40\\x10与本部族其他神语者按仪式碾碎了圣土块。起初什么也没发生，但随后山丘呻吟起来，大地本身如海浪般冲向敌人。许多敌人死伤。不幸的是，我们的一些战士也死伤了。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 38162,
+        "translation": "战斗前，\\x01\\x40\\x10和我们部族其他的神语者按仪式碾碎了圣土块。起初什么也没发生，但随后山丘呻吟起来，大地本身则像海浪一般冲向敌人。他们中许多人被杀或受伤。不幸的是，我们自己的部分战士也是如此。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 38180,
+        "translation": "战斗前，\\x01\\x40\\x10和我们部族其他的神语者按仪式碾碎了圣土块。起初什么也没发生，但随后山丘呻吟起来，大地本身则像海浪一般冲向敌人。他们中许多人被杀或受伤。不幸的是，我们自己的部分战士也是如此。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 38184,
+        "translation": "战斗前，\\x01\\x40\\x10和我们部族其他的神语者按仪式碾碎了圣土块。起初什么也没发生，但随后山丘呻吟起来，大地本身则像海浪一般冲向敌人。他们中许多人被杀或受伤。不幸的是，我们自己的部分战士也是如此。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 38202,
+        "translation": "战斗开始前，\\x01\\x40\\x10和我们部落的其他神语者按照仪式碾碎了圣土块。起初什么也没有发生，但随后山丘呻吟起来，大地本身像海浪一样冲向敌人。他们中有许多人死伤。不幸的是，我们自己的战士也有一些死伤。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 38359,
+        "translation": "战前，\\x01\\x40\\x10和我们部族其他的神语者按仪式碾碎了圣土块。起初什么也没发生，但随后山丘呻吟起来，大地本身如海浪般冲向敌人。他们中有许多人死伤。不幸的是，我们的一些战士也未能幸免。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 38364,
+        "translation": "战前，\\x01\\x40\\x10和我们部族其他的神语者按仪式碾碎了圣土块。起初什么也没发生，但随后山丘呻吟起来，大地本身如海浪般冲向敌人。他们中有许多人死伤。不幸的是，我们的一些战士也未能幸免。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 38588,
+        "translation": "战斗开始前，\\x01\\x40\\x10和我们部族的其他神语者按照仪式碾碎了圣土块。起初什么也没发生，但随后山丘呻吟起来，大地本身像海浪一般冲向敌人。敌人中许多人死伤。不幸的是，我们自己的战士也有人死伤。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 38597,
+        "translation": "战斗开始前，\\x01\\x40\\x10和我们部族的其他神语者按照仪式碾碎了圣土块。起初什么也没发生，但随后山丘呻吟起来，大地本身像海浪一般冲向敌人。敌人中许多人死伤。不幸的是，我们自己的战士也有人死伤。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 38810,
+        "translation": "战斗前，\\x01\\x40\\x10和我们部族其他的神语者按照仪式碾碎了圣土块。起初什么也没发生，但随后山丘呻吟起来，大地本身像海浪般朝敌人冲去。他们中有许多人死伤。不幸的是，我们自己的战士也有伤亡。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 38812,
+        "translation": "战前，\\x01\\x40\\x10和我们部族里其他的神语者举行仪式，碾碎了圣土块。起初什么也没有发生，但随后山丘呻吟起来，大地本身如海浪般冲向敌人。他们中有许多人死伤。不幸的是，我们自己的一些战士也死伤了。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 38814,
+        "translation": "战前，\\x01\\x40\\x10和我们部族里其他的神语者举行仪式，碾碎了圣土块。起初什么也没有发生，但随后山丘呻吟起来，大地本身如海浪般冲向敌人。他们中有许多人死伤。不幸的是，我们自己的一些战士也死伤了。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 38998,
+        "translation": "战斗开始前，\\x01\\x40\\x10和我们部族其他的神语者依照仪式碾碎了圣土块。起初什么也没发生，但随后山丘呻吟起来，大地本身如海浪般冲向敌人。他们中有许多人被杀或受伤。不幸的是，我们自己的战士也有死伤。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 38999,
+        "translation": "战斗开始前，\\x01\\x40\\x10和我们部族其他的神语者依照仪式碾碎了圣土块。起初什么也没发生，但随后山丘呻吟起来，大地本身如海浪般冲向敌人。他们中有许多人被杀或受伤。不幸的是，我们自己的战士也有死伤。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 39000,
+        "translation": "战斗开始前，\\x01\\x40\\x10和我们部族其他的神语者依照仪式碾碎了圣土块。起初什么也没发生，但随后山丘呻吟起来，大地本身如海浪般冲向敌人。他们中有许多人被杀或受伤。不幸的是，我们自己的战士也有死伤。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 39017,
+        "translation": "战斗开始前，\\x01\\x40\\x10和我们部族的其他神语者按仪式碾碎了圣土块。起初毫无动静，但随后山丘呻吟起来，大地本身如海浪般冲向敌人。敌军有许多人死伤。不幸的是，我们自己的战士也有伤亡。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 39018,
+        "translation": "战斗开始前，\\x01\\x40\\x10和我们部族的其他神语者按仪式碾碎了圣土块。起初毫无动静，但随后山丘呻吟起来，大地本身如海浪般冲向敌人。敌军有许多人死伤。不幸的是，我们自己的战士也有伤亡。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 39019,
+        "translation": "战斗开始前，\\x01\\x40\\x10和我们部族的其他神语者按仪式碾碎了圣土块。起初毫无动静，但随后山丘呻吟起来，大地本身如海浪般冲向敌人。敌军有许多人死伤。不幸的是，我们自己的战士也有伤亡。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 39044,
+        "translation": "战斗前，\\x01\\x40\\x10与我们部族其他的神语者按照仪式碾碎了圣土块。起初什么也没发生，但随后山丘呻吟起来，大地本身像海浪一样冲向敌人。他们中有许多人被杀或受伤。不幸的是，我们自己的部分武士也非死即伤。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 39046,
+        "translation": "战前，\\x01\\x40\\x10与我们部族其他的神语者按仪式碾碎了圣土块。起初毫无动静，但接着山丘呻吟，大地本身如海浪般冲向敌人。敌方许多人死伤。不幸的是，我们自己的战士也有死伤。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 39047,
+        "translation": "战前，\\x01\\x40\\x10与我们部族其他的神语者按仪式碾碎了圣土块。起初毫无动静，但接着山丘呻吟，大地本身如海浪般冲向敌人。敌方许多人死伤。不幸的是，我们自己的战士也有死伤。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 39179,
+        "translation": "战斗开始前，\\x01\\x40\\x10和我们部族的其他神语者按仪式碾碎了圣土块。起初什么也没发生，但随后山丘呻吟起来，大地本身仿佛海浪一般冲向敌人。他们中有许多人死伤。不幸的是，我们自己的武士也有一些死伤。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 39181,
+        "translation": "战斗开始前，\\x01\\x40\\x10和我们部族的其他神语者按仪式碾碎了圣土块。起初什么也没发生，但随后山丘呻吟起来，大地本身仿佛海浪一般冲向敌人。他们中有许多人死伤。不幸的是，我们自己的武士也有一些死伤。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 39192,
+        "translation": "战斗开始前，\\x01\\x40\\x10和我们部族其他的神语者按照仪式碾碎了圣土块。起初什么也没发生，但随后山丘呻吟起来，大地本身像海浪一般冲向敌人。他们中有许多人死伤。不幸的是，我们自己的战士也有一些死伤。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      },
+      {
+        "input_index": 39197,
+        "translation": "战斗开始前，\\x01\\x40\\x10和我们部族其他的神语者按照仪式碾碎了圣土块。起初什么也没发生，但随后山丘呻吟起来，大地本身像海浪一般冲向敌人。他们中有许多人死伤。不幸的是，我们自己的战士也有一些死伤。\\x01\\x40\\xB2\\x01\\x40\\xB2"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xE6\\x0B gave us the assignment we wanted.",
+    "occurrences": [
+      {
+        "input_index": 38089,
+        "translation": "\\x01\\xE6\\x0B给了我们想要的任务。"
+      },
+      {
+        "input_index": 38111,
+        "translation": "\\x01\\xE6\\x0B把我们想要的任务交给了我们。"
+      },
+      {
+        "input_index": 38132,
+        "translation": "\\x01\\xE6\\x0B给了我们想要的任务。"
+      },
+      {
+        "input_index": 38153,
+        "translation": "\\x01\\xE6\\x0B给了我们想要的任务。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "We told the \\x01\\xE6\\x0B that we could best help the tribe through our magic.",
+    "occurrences": [
+      {
+        "input_index": 38090,
+        "translation": "我们告诉\\x01\\xE6\\x0B，我们通过魔法最能帮助部族。"
+      },
+      {
+        "input_index": 38112,
+        "translation": "我们告诉\\x01\\xE6\\x0B，借助魔法，我们能给部落最大的帮助。"
+      },
+      {
+        "input_index": 38133,
+        "translation": "我们告诉\\x01\\xE6\\x0B，我们最好通过魔法来帮助部族。"
+      },
+      {
+        "input_index": 38154,
+        "translation": "我们告诉\\x01\\xE6\\x0B，我们通过魔法最能帮到部族。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xE6\\x0B surprised us, and ordered us to spearhead the battle.",
+    "occurrences": [
+      {
+        "input_index": 38091,
+        "translation": "\\x01\\xE6\\x0B让我们大吃一惊，命令我们打头阵。"
+      },
+      {
+        "input_index": 38113,
+        "translation": "\\x01\\xE6\\x0B出乎我们意料，命令我们打头阵。"
+      },
+      {
+        "input_index": 38134,
+        "translation": "\\x01\\xE6\\x0B让我们吃了一惊，命令我们打头阵。"
+      },
+      {
+        "input_index": 38155,
+        "translation": "\\x01\\xE6\\x0B让我们吃了一惊，命令我们打头阵。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xE6\\x0B was more interested in putting our warriors on the battlefield than in having us lend our magic to the fight.",
+    "occurrences": [
+      {
+        "input_index": 38092,
+        "translation": "\\x01\\xE6\\x0B更想把我方战士投入战场，而不是让我们以魔法助战。"
+      },
+      {
+        "input_index": 38114,
+        "translation": "\\x01\\xE6\\x0B更想让我们的战士上战场，而不是让我们以魔法助战。"
+      },
+      {
+        "input_index": 38135,
+        "translation": "\\x01\\xE6\\x0B更关心的是把我族战士送上战场，而不是让我们为战斗贡献魔法。"
+      },
+      {
+        "input_index": 38156,
+        "translation": "\\x01\\xE6\\x0B更关心的是把我族战士送上战场，而不是让我们为战斗贡献魔法。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xE6\\x0B agreed that our strongest weapon was our magic. We sacrificed to the gods.",
+    "occurrences": [
+      {
+        "input_index": 38093,
+        "translation": "\\x01\\xE6\\x0B同意我们最强的武器是魔法。我们向诸神献祭。"
+      },
+      {
+        "input_index": 38115,
+        "translation": "\\x01\\xE6\\x0B也认为我们最强的武器是魔法。我们向诸神献祭。"
+      },
+      {
+        "input_index": 38136,
+        "translation": "\\x01\\xE6\\x0B同意我们最强大的武器是魔法。我们向诸神献祭。"
+      },
+      {
+        "input_index": 38157,
+        "translation": "\\x01\\xE6\\x0B同意我们最强大的武器是魔法。我们向诸神献祭。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Let the \\x01\\xE6\\x0B decide how you will participate.",
+    "occurrences": [
+      {
+        "input_index": 38094,
+        "translation": "让\\x01\\xE6\\x0B决定你如何参战。"
+      },
+      {
+        "input_index": 38116,
+        "translation": "让\\x01\\xE6\\x0B决定你们将如何参战。"
+      },
+      {
+        "input_index": 38137,
+        "translation": "让\\x01\\xE6\\x0B决定你如何参与。"
+      },
+      {
+        "input_index": 38158,
+        "translation": "让\\x01\\xE6\\x0B决定你如何参与。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "We let the \\x01\\xE6\\x0B decide how we would fight.",
+    "occurrences": [
+      {
+        "input_index": 38095,
+        "translation": "我们让\\x01\\xE6\\x0B决定我们如何作战。"
+      },
+      {
+        "input_index": 38117,
+        "translation": "我们让\\x01\\xE6\\x0B决定我们该如何作战。"
+      },
+      {
+        "input_index": 38138,
+        "translation": "我们让\\x01\\xE6\\x0B决定我们如何作战。"
+      },
+      {
+        "input_index": 38159,
+        "translation": "我们让\\x01\\xE6\\x0B决定我们如何作战。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xE6\\x0B put us in a dangerous place, but not the most dangerous place.",
+    "occurrences": [
+      {
+        "input_index": 38096,
+        "translation": "\\x01\\xE6\\x0B把我们派到了危险的位置，但并非最危险的位置。"
+      },
+      {
+        "input_index": 38118,
+        "translation": "\\x01\\xE6\\x0B把我们派到了危险的位置，但并非最危险的位置。"
+      },
+      {
+        "input_index": 38139,
+        "translation": "\\x01\\xE6\\x0B把我们安排在危险的位置，但不是最危险的位置。"
+      },
+      {
+        "input_index": 38160,
+        "translation": "\\x01\\xE6\\x0B把我们安排在危险的位置，但不是最危险的位置。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xE6\\x0B said that our magic would be of greater use than our swords.",
+    "occurrences": [
+      {
+        "input_index": 38097,
+        "translation": "\\x01\\xE6\\x0B说，我们的魔法会比刀剑更有用。"
+      },
+      {
+        "input_index": 38119,
+        "translation": "\\x01\\xE6\\x0B说，我们的魔法会比刀剑更有用。"
+      },
+      {
+        "input_index": 38140,
+        "translation": "\\x01\\xE6\\x0B说我们的魔法会比刀剑更有用。"
+      },
+      {
+        "input_index": 38161,
+        "translation": "\\x01\\xE6\\x0B说我们的魔法会比刀剑更有用。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "It is customary for clans to ask the \\x01\\xE6\\x0B for particular assignments when a big battle approaches.",
+    "occurrences": [
+      {
+        "input_index": 38100,
+        "translation": "大战临近时，氏族习惯上会向\\x01\\xE6\\x0B请求特定的任务。"
+      },
+      {
+        "input_index": 38121,
+        "translation": "大战临近时，氏族习惯上会向\\x01\\xE6\\x0B请求特定的任务。"
+      },
+      {
+        "input_index": 38142,
+        "translation": "大战临近时，氏族按惯例会向\\x01\\xE6\\x0B请求特定任务。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "It is customary for clans to ask the \\x01\\xE6\\x0B for particular assignments when a big battle approaches. The \\x01\\xE6\\x0B does not always give you the assignment you want.",
+    "occurrences": [
+      {
+        "input_index": 38101,
+        "translation": "大战临近时，氏族习惯上会向\\x01\\xE6\\x0B请求特定的任务。\\x01\\xE6\\x0B并不总会把想要的任务交给你。"
+      },
+      {
+        "input_index": 38122,
+        "translation": "大战临近时，氏族习惯上会向\\x01\\xE6\\x0B请求特定的任务。\\x01\\xE6\\x0B并不总会把想要的任务交给你。"
+      },
+      {
+        "input_index": 38143,
+        "translation": "大战临近时，氏族按惯例会向\\x01\\xE6\\x0B请求特定任务。\\x01\\xE6\\x0B并不总会给你想要的任务。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "If a clan volunteers for an assignment, and the \\x01\\xE6\\x0B wishes to punish them, \\x06 will give them something worse than they ask for.",
+    "occurrences": [
+      {
+        "input_index": 38102,
+        "translation": "如果某个氏族自愿请缨，而\\x01\\xE6\\x0B想惩罚他们，\\x06就会分给他们比所求更糟的任务。"
+      },
+      {
+        "input_index": 38123,
+        "translation": "如果某个氏族自愿请缨，而\\x01\\xE6\\x0B想惩罚他们，\\x06就会分给他们比所求更糟的任务。"
+      },
+      {
+        "input_index": 38144,
+        "translation": "如果一个氏族自愿承担某项任务，而\\x01\\xE6\\x0B想惩罚他们，\\x06就会分给他们比所请求的更糟的任务。"
+      },
+      {
+        "input_index": 38165,
+        "translation": "如果某个氏族自愿承担一项任务，而\\x01\\xE6\\x0B想惩罚他们，\\x06就会分给他们比所请求的更糟的任务。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xE6\\x0B’s orders risked our men more than we had hoped.",
+    "occurrences": [
+      {
+        "input_index": 38109,
+        "translation": "\\x01\\xE6\\x0B的命令使我们的人冒了比我们所愿更大的风险。"
+      },
+      {
+        "input_index": 38130,
+        "translation": "\\x01\\xE6\\x0B的命令让我们的人承受了比预想更大的风险。"
+      },
+      {
+        "input_index": 38151,
+        "translation": "\\x01\\xE6\\x0B的命令让我们的人承受了比预想更大的风险。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xE6\\x0B would not hear of it.",
+    "occurrences": [
+      {
+        "input_index": 38178,
+        "translation": "\\x01\\xE6\\x0B根本不愿听。"
+      },
+      {
+        "input_index": 38188,
+        "translation": "\\x01\\xE6\\x0B断然拒绝。"
+      },
+      {
+        "input_index": 38192,
+        "translation": "\\x01\\xE6\\x0B断然拒绝。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The battle was joined. The loyalist forces were overwhelmed by the rebels. They drove us back, killing many. Of all the loyalist clans, the \\x01\\xE6\\x0B’s own clan suffered the greatest losses. The \\x01\\xE6\\x0B was forced to abdicate.",
+    "occurrences": [
+      {
+        "input_index": 38186,
+        "translation": "战斗打响了。忠诚派军队被叛军击溃。他们击退了我们，杀死了许多人。在所有忠诚派氏族中，\\x01\\xE6\\x0B自己的氏族损失最为惨重。\\x01\\xE6\\x0B被迫退位。"
+      },
+      {
+        "input_index": 38361,
+        "translation": "战斗打响了。保王派军队被叛军击溃。他们击退了我们，杀死了许多人。在所有保王派氏族中，\\x01\\xE6\\x0B自己的氏族损失最为惨重。\\x01\\xE6\\x0B被迫退位。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Stay and fight the \\x01\\xE6\\x0B.",
+    "occurrences": [
+      {
+        "input_index": 38212,
+        "translation": "留下与\\x01\\xE6\\x0B作战。"
+      },
+      {
+        "input_index": 38217,
+        "translation": "留下来与\\x01\\xE6\\x0B战斗。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Join the \\x01\\xE6\\x0B and fight the rebels.",
+    "occurrences": [
+      {
+        "input_index": 38213,
+        "translation": "加入\\x01\\xE6\\x0B一方，与叛军作战。"
+      },
+      {
+        "input_index": 38218,
+        "translation": "加入\\x01\\xE6\\x0B，与叛军作战。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Offended, we decided to switch sides and help the \\x01\\xE6\\x0B.",
+    "occurrences": [
+      {
+        "input_index": 38214,
+        "translation": "我们感到受辱，决定倒戈帮助\\x01\\xE6\\x0B。"
+      },
+      {
+        "input_index": 38219,
+        "translation": "我们感到受了冒犯，决定倒戈帮助\\x01\\xE6\\x0B。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Seek out discontented clans for a war against the \\x01\\xE6\\x0B.",
+    "occurrences": [
+      {
+        "input_index": 38295,
+        "translation": "寻找心怀不满的氏族，共同对\\x01\\xE6\\x0B开战。"
+      },
+      {
+        "input_index": 38503,
+        "translation": "寻找心怀不满的氏族，对\\x01\\xE6\\x0B开战。"
+      },
+      {
+        "input_index": 39619,
+        "translation": "寻找心怀不满的氏族，以对\\x01\\xE6\\x0B开战。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The clan was happy to see the \\x01\\xC3\\x21 beaten for their affront to us.",
+    "occurrences": [
+      {
+        "input_index": 38315,
+        "translation": "氏族很高兴看到\\x01\\xC3\\x21因对我们的冒犯而被击败。"
+      },
+      {
+        "input_index": 38317,
+        "translation": "氏族很高兴看到\\x01\\xC3\\x21因对我们的冒犯而被击败。"
+      },
+      {
+        "input_index": 38319,
+        "translation": "氏族很高兴看到\\x01\\xC3\\x21因对我们的冒犯而被击败。"
+      },
+      {
+        "input_index": 38326,
+        "translation": "氏族乐见\\x01\\xC3\\x21因对我们的侮辱而遭到痛打。"
+      },
+      {
+        "input_index": 38328,
+        "translation": "氏族乐见\\x01\\xC3\\x21因对我们的侮辱而遭到痛打。"
+      },
+      {
+        "input_index": 38330,
+        "translation": "氏族乐见\\x01\\xC3\\x21因对我们的侮辱而遭到痛打。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The clan was sad that we lost to the \\x01\\xC3\\x21, but glad that we had not taken their insult lying down.",
+    "occurrences": [
+      {
+        "input_index": 38316,
+        "translation": "氏族为我们败给\\x01\\xC3\\x21而难过，但也欣慰我们没有默默忍受他们的侮辱。"
+      },
+      {
+        "input_index": 38318,
+        "translation": "氏族为我们败给\\x01\\xC3\\x21而难过，但也欣慰我们没有默默忍受他们的侮辱。"
+      },
+      {
+        "input_index": 38320,
+        "translation": "氏族为我们败给\\x01\\xC3\\x21而难过，但也欣慰我们没有默默忍受他们的侮辱。"
+      },
+      {
+        "input_index": 38327,
+        "translation": "氏族为我们败给\\x01\\xC3\\x21而难过，但欣慰我们没有对他们的侮辱忍气吞声。"
+      },
+      {
+        "input_index": 38329,
+        "translation": "氏族为我们败给\\x01\\xC3\\x21而难过，但欣慰我们没有对他们的侮辱忍气吞声。"
+      },
+      {
+        "input_index": 38331,
+        "translation": "氏族为我们败给\\x01\\xC3\\x21而难过，但欣慰我们没有对他们的侮辱忍气吞声。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Not long after, we heard that the \\x01\\xC3\\x21 performed a divination, and now blame us for sending bad spirits against them.",
+    "occurrences": [
+      {
+        "input_index": 38417,
+        "translation": "不久之后，我们听说\\x01\\xC3\\x21举行了占卜，如今责怪我们派恶灵去害他们。"
+      },
+      {
+        "input_index": 38419,
+        "translation": "不久之后，我们听说\\x01\\xC3\\x21举行了占卜，如今责怪我们派恶灵去害他们。"
+      },
+      {
+        "input_index": 38421,
+        "translation": "没过多久，我们听说\\x01\\xC3\\x21举行了占卜，如今他们怪罪我们向他们派来了恶灵。"
+      },
+      {
+        "input_index": 38423,
+        "translation": "没过多久，我们听说\\x01\\xC3\\x21举行了占卜，如今他们怪罪我们向他们派来了恶灵。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Not long after, we heard that the \\x01\\xC3\\x21 performed a divination to find who had sent bad spirits against them, but do not seem to suspect us.",
+    "occurrences": [
+      {
+        "input_index": 38418,
+        "translation": "不久之后，我们听说\\x01\\xC3\\x21举行占卜，想查出是谁向他们派遣了恶灵，但似乎并未怀疑我们。"
+      },
+      {
+        "input_index": 38420,
+        "translation": "没过多久，我们听说\\x01\\xC3\\x21举行了占卜，想查出是谁向他们派来恶灵，但他们似乎并不怀疑我们。"
+      },
+      {
+        "input_index": 38422,
+        "translation": "没过多久，我们听说\\x01\\xC3\\x21举行了占卜，想查出是谁向他们派来恶灵，但他们似乎并不怀疑我们。"
+      },
+      {
+        "input_index": 38424,
+        "translation": "没过多久，我们听说\\x01\\xC3\\x21举行了占卜，想查出是谁向他们派来恶灵，但他们似乎并不怀疑我们。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Before the moot, we said that the \\x01\\xE6\\x0B should be deposed.",
+    "occurrences": [
+      {
+        "input_index": 38432,
+        "translation": "在部族大会之前，我们说过应当废黜\\x01\\xE6\\x0B。"
+      },
+      {
+        "input_index": 38495,
+        "translation": "在部族大会之前，我们说过这位\\x01\\xE6\\x0B应当被废黜。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xC3\\x21 were unwilling to pay our price.",
+    "occurrences": [
+      {
+        "input_index": 38523,
+        "translation": "\\x01\\xC3\\x21不愿付我们开的价。"
+      },
+      {
+        "input_index": 38614,
+        "translation": "\\x01\\xC3\\x21不愿付出我们索要的代价。"
+      },
+      {
+        "input_index": 38619,
+        "translation": "\\x01\\xC3\\x21不愿付出我们索要的代价。"
+      },
+      {
+        "input_index": 38756,
+        "translation": "\\x01\\xC3\\x21不愿付我们要的价。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xC3\\x21 offered us too low a payment for it.",
+    "occurrences": [
+      {
+        "input_index": 38531,
+        "translation": "\\x01\\xC3\\x21为它出的价钱太低了。"
+      },
+      {
+        "input_index": 38624,
+        "translation": "\\x01\\xC3\\x21为此出的价钱太低了。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xB2\\x01\\x40\\xB2After wearing the armor for a few days, \\x01\\x40\\x05 said that \\x06 felt quicker of step and clearer of mind.",
+    "occurrences": [
+      {
+        "input_index": 38532,
+        "translation": "\\x01\\x40\\xB2\\x01\\x40\\xB2穿上这副护甲几天后，\\x01\\x40\\x05说\\x06觉得脚步更轻快，头脑更清明。"
+      },
+      {
+        "input_index": 38626,
+        "translation": "\\x01\\x40\\xB2\\x01\\x40\\xB2穿上这副护甲几天后，\\x01\\x40\\x05说\\x06觉得脚步更轻快，头脑也更清明。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The other clans agreed to war, because the \\x01\\xC3\\x21 had a grudge against us, and would sooner or later persuade their new tribe to attack us. Better to surprise than to be surprised.",
+    "occurrences": [
+      {
+        "input_index": 38578,
+        "translation": "其他氏族同意开战，因为\\x01\\xC3\\x21对我们怀恨在心，迟早会说服他们的新部族袭击我们。与其被人打个措手不及，不如先发制人。"
+      },
+      {
+        "input_index": 38580,
+        "translation": "其他氏族同意开战，因为\\x01\\xC3\\x21对我们怀恨在心，迟早会说服他们的新部族来攻打我们。与其遭人突袭，不如先发制人。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "We found a handsome groom for her among the \\x01\\xC3\\x21.",
+    "occurrences": [
+      {
+        "input_index": 38672,
+        "translation": "我们在\\x01\\xC3\\x21中为她找到了一位英俊的新郎。"
+      },
+      {
+        "input_index": 38843,
+        "translation": "我们在\\x01\\xC3\\x21中为她找到了一位英俊的夫婿。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "We arranged the marriage of a high-ranking young warrior of our clan to a wise and knowledgeable young maiden of the \\x01\\xC3\\x21.",
+    "occurrences": [
+      {
+        "input_index": 38856,
+        "translation": "我们将本氏族一位地位崇高的年轻武士，与\\x01\\xC3\\x21一位睿智博学的年轻女子结为夫妻。"
+      },
+      {
+        "input_index": 39071,
+        "translation": "我们安排本氏族一位地位显赫的年轻武士，与\\x01\\xC3\\x21一位聪慧博学的年轻女子成婚。"
+      },
+      {
+        "input_index": 39504,
+        "translation": "我们安排本氏族一位地位崇高的年轻武士，与\\x01\\xC3\\x21一位聪慧博学的年轻女子成婚。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xC3\\x25 protested our actions, and took the matter to the tribal moot.",
+    "occurrences": [
+      {
+        "input_index": 38860,
+        "translation": "\\x01\\xC3\\x25对我们的做法提出抗议，并把此事提交部族大会。"
+      },
+      {
+        "input_index": 38866,
+        "translation": "\\x01\\xC3\\x25对我们的行动提出抗议，并把此事提交部族大会。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Because the plow was no longer in our possession, it was ruled that it was the responsibility of the \\x01\\xC3\\x61, not us, to return it.",
+    "occurrences": [
+      {
+        "input_index": 38861,
+        "translation": "由于犁已不在我们手中，裁决认为归还它是\\x01\\xC3\\x61的责任，而非我们。"
+      },
+      {
+        "input_index": 38867,
+        "translation": "因为犁已不在我们手中，裁决认定归还它是\\x01\\xC3\\x61的责任，而不是我们的责任。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xC3\\x61 were forced to return the plow. Ostlana’s mother then said that Ostlana was not obligated to marry Rangoron, because he was not clever enough to see to it that they could keep the magic plow.",
+    "occurrences": [
+      {
+        "input_index": 38862,
+        "translation": "\\x01\\xC3\\x61被迫归还了犁。奥斯特拉娜的母亲随后表示，奥斯特拉娜没有义务嫁给兰戈隆，因为他不够机敏，没能设法让他们保住那魔法犁。"
+      },
+      {
+        "input_index": 38868,
+        "translation": "\\x01\\xC3\\x61被迫归还了犁。奥斯特拉娜的母亲随后说，奥斯特拉娜没有义务嫁给兰戈隆，因为他不够聪明，没能设法让他们保住那把魔法犁。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Unfortunately for the \\x01\\xC3\\x25, the \\x01\\xC3\\x61 aren’t in our tribe.",
+    "occurrences": [
+      {
+        "input_index": 38863,
+        "translation": "对\\x01\\xC3\\x25来说不幸的是，\\x01\\xC3\\x61并不在我们的部族里。"
+      },
+      {
+        "input_index": 38869,
+        "translation": "对\\x01\\xC3\\x25来说不幸的是，\\x01\\xC3\\x61不在我们的部族中。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "We were forced to compensate the \\x01\\xC3\\x25 for the loss of their plow. Because we could not produce the plow itself, we paid a heavy price.",
+    "occurrences": [
+      {
+        "input_index": 38864,
+        "translation": "我们被迫赔偿\\x01\\xC3\\x25失去的犁。由于我们交不出犁本身，只得付出沉重的代价。"
+      },
+      {
+        "input_index": 38870,
+        "translation": "我们被迫为\\x01\\xC3\\x25失去犁作出赔偿。由于我们拿不出犁本身，我们付出了沉重代价。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xC3\\x21 are all a little crazy, and that makes them hard to bargain with.",
+    "occurrences": [
+      {
+        "input_index": 39306,
+        "translation": "\\x01\\xC3\\x21都有些疯狂，因此很难跟他们讨价还价。"
+      },
+      {
+        "input_index": 41214,
+        "translation": "\\x01\\xC3\\x21都有点疯狂，这让他们很难打交道。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "I heard that \\x01\\x81\\x21 \\x01\\x40\\x21 trader went berserk when asked to decrease her prices; she cursed her trading partners with bad magic.",
+    "occurrences": [
+      {
+        "input_index": 39307,
+        "translation": "我听说\\x01\\x81\\x21\\x01\\x40\\x21商人被要求降价时发了狂；她用恶咒诅咒自己的贸易伙伴。"
+      },
+      {
+        "input_index": 41215,
+        "translation": "我听说\\x01\\x81\\x21 \\x01\\x40\\x21商人被要求降价时勃然大怒；她用恶毒魔法诅咒了自己的交易伙伴。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xE6\\x0B said \\x01\\xBA\\x0B\\x06 would make war on the beastfolk.",
+    "occurrences": [
+      {
+        "input_index": 39364,
+        "translation": "\\x01\\xE6\\x0B说\\x01\\xBA\\x0B\\x06将对兽民开战。"
+      },
+      {
+        "input_index": 39371,
+        "translation": "\\x01\\xE6\\x0B说\\x01\\xBA\\x0B\\x06将对兽民开战。"
+      },
+      {
+        "input_index": 39373,
+        "translation": "\\x01\\xE6\\x0B说，\\x01\\xBA\\x0B\\x06会向兽民开战。"
+      },
+      {
+        "input_index": 39377,
+        "translation": "\\x01\\xE6\\x0B说，\\x01\\xBA\\x0B\\x06会向兽民开战。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xE6\\x0B said \\x01\\xBA\\x0B\\x06 would make war on the Horse-Spawn.",
+    "occurrences": [
+      {
+        "input_index": 39365,
+        "translation": "\\x01\\xE6\\x0B说\\x01\\xBA\\x0B\\x06将对马裔开战。"
+      },
+      {
+        "input_index": 39369,
+        "translation": "\\x01\\xE6\\x0B说\\x01\\xBA\\x0B\\x06将对马裔开战。"
+      },
+      {
+        "input_index": 39375,
+        "translation": "\\x01\\xE6\\x0B说，\\x01\\xBA\\x0B\\x06会向马裔开战。"
+      },
+      {
+        "input_index": 39378,
+        "translation": "\\x01\\xE6\\x0B说，\\x01\\xBA\\x0B\\x06会向马裔开战。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xE6\\x0B said \\x01\\xBA\\x0B\\x06 would make war on the trolls.",
+    "occurrences": [
+      {
+        "input_index": 39366,
+        "translation": "\\x01\\xE6\\x0B说\\x01\\xBA\\x0B\\x06将对巨魔开战。"
+      },
+      {
+        "input_index": 39370,
+        "translation": "\\x01\\xE6\\x0B说\\x01\\xBA\\x0B\\x06将对巨魔开战。"
+      },
+      {
+        "input_index": 39374,
+        "translation": "\\x01\\xE6\\x0B说，\\x01\\xBA\\x0B\\x06会向巨魔开战。"
+      },
+      {
+        "input_index": 39379,
+        "translation": "\\x01\\xE6\\x0B说，\\x01\\xBA\\x0B\\x06会向巨魔开战。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xE6\\x0B said \\x01\\xBA\\x0B\\x06 would make war on the \\x01\\x40\\x81.",
+    "occurrences": [
+      {
+        "input_index": 39367,
+        "translation": "\\x01\\xE6\\x0B说\\x01\\xBA\\x0B\\x06将对\\x01\\x40\\x81开战。"
+      },
+      {
+        "input_index": 39368,
+        "translation": "\\x01\\xE6\\x0B说\\x01\\xBA\\x0B\\x06将对\\x01\\x40\\x81开战。"
+      },
+      {
+        "input_index": 39372,
+        "translation": "\\x01\\xE6\\x0B说，\\x01\\xBA\\x0B\\x06会向\\x01\\x40\\x81开战。"
+      },
+      {
+        "input_index": 39376,
+        "translation": "\\x01\\xE6\\x0B说，\\x01\\xBA\\x0B\\x06会向\\x01\\x40\\x81开战。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The other clans said that we had not proven the \\x01\\xC3\\x61 guilty of anything. They scolded us for bringing a false claim to the moot.",
+    "occurrences": [
+      {
+        "input_index": 39614,
+        "translation": "其他氏族说我们未能证明\\x01\\xC3\\x61犯了任何罪。他们斥责我们向部族大会提出虚假控诉。"
+      },
+      {
+        "input_index": 40100,
+        "translation": "其他氏族说我们未能证明\\x01\\xC3\\x61有任何罪责。他们斥责我们把虚假的指控带到了部族大会。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\xB2\\x01\\x40\\xB2What does \\x01\\xE8\\x00 \\x02\\x03try/attempt/do\\x02 next?",
+    "occurrences": [
+      {
+        "input_index": 39880,
+        "translation": "\\x01\\x40\\xB2\\x01\\x40\\xB2\\x01\\xE8\\x00接下来要\\x02\\x03尝试什么/试图做什么/做什么\\x02？"
+      },
+      {
+        "input_index": 39900,
+        "translation": "\\x01\\x40\\xB2\\x01\\x40\\xB2\\x01\\xE8\\x00接下来会\\x02\\x03尝试/试图/做\\x02什么？"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\xE8\\x00 broke off negotiations, and left the Horse-Spawn encampment.",
+    "occurrences": [
+      {
+        "input_index": 39883,
+        "translation": "\\x01\\xE8\\x00中断了谈判，离开了马裔的营地。"
+      },
+      {
+        "input_index": 39903,
+        "translation": "\\x01\\xE8\\x00中断了谈判，离开了马裔营地。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xC3\\x21 soon rounded up the thralls and beat them. They sacrificed \\x01\\x44\\xAC to Humakt, our grim warrior god.",
+    "occurrences": [
+      {
+        "input_index": 39990,
+        "translation": "不久，\\x01\\xC3\\x21就把奴隶们抓了回来，痛打了一顿。他们把\\x01\\x44\\xAC献祭给了胡马卡特——我们那冷酷的战士之神。"
+      },
+      {
+        "input_index": 39996,
+        "translation": "不久，\\x01\\xC3\\x21就把奴隶们抓了回来，痛打了一顿。他们把\\x01\\x44\\xAC献祭给了胡马卡特——我们那冷酷的战士之神。"
+      },
+      {
+        "input_index": 40001,
+        "translation": "\\x01\\xC3\\x21很快把奴隶们赶到一处，痛打了一顿。他们把\\x01\\x44\\xAC献祭给胡马卡特，我们那冷酷的战神。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xC3\\x21 soon rounded up the thralls and beat them. They sacrificed \\x01\\x44\\xAC to Humakt.",
+    "occurrences": [
+      {
+        "input_index": 39991,
+        "translation": "不久，\\x01\\xC3\\x21就把奴隶们抓了回来，痛打了一顿。他们把\\x01\\x44\\xAC献祭给了胡马卡特。"
+      },
+      {
+        "input_index": 39997,
+        "translation": "不久，\\x01\\xC3\\x21就把奴隶们抓了回来，痛打了一顿。他们把\\x01\\x44\\xAC献祭给了胡马卡特。"
+      },
+      {
+        "input_index": 40002,
+        "translation": "\\x01\\xC3\\x21很快把奴隶们赶到一处，痛打了一顿。他们把\\x01\\x44\\xAC献祭给胡马卡特。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\x01 successfully argued the case, and \\x01\\x44\\xAE’s clan ring ordered her to pay us reparations for slandering us and tarring \\x01\\x44\\xAD.",
+    "occurrences": [
+      {
+        "input_index": 40022,
+        "translation": "\\x01\\x40\\x01成功打赢了这场官司，\\x01\\x44\\xAE的氏族议事会命令她为诽谤我们以及给\\x01\\x44\\xAD涂焦油一事向我们支付赔偿。"
+      },
+      {
+        "input_index": 40025,
+        "translation": "\\x01\\x40\\x01成功辩赢了此案，\\x01\\x44\\xAE的氏族议事会下令她为诽谤我们以及给\\x01\\x44\\xAD涂焦油一事向我们支付赔偿。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\x01 argued well, but \\x01\\x44\\xAE’s clan ring refused to consider the merits of our case, and sided with their kinswoman.",
+    "occurrences": [
+      {
+        "input_index": 40023,
+        "translation": "\\x01\\x40\\x01辩护得很好，但\\x01\\x44\\xAE的氏族议事会拒绝考虑我们这方诉求的是非曲直，站到了他们的女亲族一边。"
+      },
+      {
+        "input_index": 40026,
+        "translation": "\\x01\\x40\\x01辩得有力，但\\x01\\x44\\xAE的氏族议事会拒绝考虑我方诉讼的是非曲直，偏袒了他们的同族女子。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Question \\x01\\x44\\xBB until he admits adultery.",
+    "occurrences": [
+      {
+        "input_index": 40124,
+        "translation": "审问\\x01\\x44\\xBB，直到他承认通奸。"
+      },
+      {
+        "input_index": 40144,
+        "translation": "盘问\\x01\\x44\\xBB，直到他承认通奸。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Question \\x01\\x44\\xBC until he admits adultery.",
+    "occurrences": [
+      {
+        "input_index": 40129,
+        "translation": "审问\\x01\\x44\\xBC，直到他承认通奸。"
+      },
+      {
+        "input_index": 40148,
+        "translation": "盘问\\x01\\x44\\xBC，直到他承认通奸。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The people were unhappy that \\x01\\xBA\\x0B\\x06 had forfeited the contest to become \\x01\\xE7\\x0B of Dragon Pass.",
+    "occurrences": [
+      {
+        "input_index": 40234,
+        "translation": "民众对\\x01\\xBA\\x0B\\x06放弃争夺龙城\\x01\\xE7\\x0B之位的竞赛感到不满。"
+      },
+      {
+        "input_index": 40252,
+        "translation": "族人们很不满，因为\\x01\\xBA\\x0B\\x06退出了争夺龙城\\x01\\xE7\\x0B之位的竞赛。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\xE8\\x00 said, “I have passed the tests you set for me.”",
+    "occurrences": [
+      {
+        "input_index": 40263,
+        "translation": "\\x01\\xE8\\x00说：“我已经通过了你为我设下的试炼。”"
+      },
+      {
+        "input_index": 40272,
+        "translation": "\\x01\\xE8\\x00说：“我已通过你为我设下的考验。”"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "From a distance, you see The Inhuman King, Lord High Dragonewt. He has come to officiate at the wedding, although you’re not sure why. He gives his blessings to \\x01\\x41\\xA6. You are too far away to make out what he is saying. The mood of your people is mixed. On one hand, they are excited to be part of this new phase in the history of Dragon Pass. On the other, they are disappointed that the chronicles of this momentous occasion will mention our clan briefly, if at all.",
+    "occurrences": [
+      {
+        "input_index": 40294,
+        "translation": "你远远望见非人王，龙人至高领主。他来主持这场婚礼，尽管你不明白为什么。他向\\x01\\x41\\xA6赐下祝福。你离得太远，听不清他在说什么。你的族人心情复杂。一方面，他们为能参与龙城历史上这个新阶段而兴奋；另一方面，他们又感到失望——这场重大盛事的编年史即便提到我们氏族，也只会一笔带过。"
+      },
+      {
+        "input_index": 40313,
+        "translation": "你远远望见非人王，龙人至高领主。他前来主持婚礼，尽管你不清楚其中缘由。他向\\x01\\x41\\xA6赐下祝福。你离得太远，听不清他在说什么。族人们的心情十分复杂。一方面，他们为能成为龙城历史这一新篇章的一部分而兴奋；另一方面，他们又感到失望，因为这场重大盛事的编年史即便会提到我们的氏族，也只会是一笔带过。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Still, they take consolation in the many great deeds that the clan will be remembered for. “Our clan name may not be spoken of as often as \\x01\\x41\\xA6, but the things we have done will appear in the sagas, just the same.”",
+    "occurrences": [
+      {
+        "input_index": 40296,
+        "translation": "不过，他们仍从这个氏族将因诸多伟业而被铭记中得到慰藉。“我们氏族的名号或许不如\\x01\\x41\\xA6那样常被提起，但我们所做的事同样会载入萨迦。”"
+      },
+      {
+        "input_index": 40315,
+        "translation": "不过，他们仍从氏族将因之被铭记的诸多伟大功绩中得到慰藉。“我们氏族之名或许不像\\x01\\x41\\xA6那样常被提起，但我们所做的事同样会载入英雄史诗。”"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Still, they remind themselves that the deeds of their clan are already legendary, and in their own way outshine \\x01\\x41\\xA6’s achievement.",
+    "occurrences": [
+      {
+        "input_index": 40297,
+        "translation": "不过，他们提醒自己，氏族的功业早已成为传说，并以自己的方式胜过\\x01\\x41\\xA6的成就。"
+      },
+      {
+        "input_index": 40316,
+        "translation": "不过，他们提醒自己，他们氏族的功绩早已成为传奇，并以自己的方式胜过\\x01\\x41\\xA6的成就。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "“Our clan cannot claim greatness, for we did not maintain our herds,” \\x01\\x44\\xC1 says.",
+    "occurrences": [
+      {
+        "input_index": 40299,
+        "translation": "“我们氏族称不上伟大，因为我们没能照料好牧群，”\\x01\\x44\\xC1说。"
+      },
+      {
+        "input_index": 40318,
+        "translation": "“我们的氏族称不上伟大，因为我们没能保住我们的畜群，”\\x01\\x44\\xC1说。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "What do you demand of the \\x01\\xC3\\x21?",
+    "occurrences": [
+      {
+        "input_index": 40372,
+        "translation": "你要向\\x01\\xC3\\x21提出什么要求？"
+      },
+      {
+        "input_index": 40384,
+        "translation": "你要向\\x01\\xC3\\x21提出什么要求？"
+      },
+      {
+        "input_index": 40395,
+        "translation": "你们要向\\x01\\xC3\\x21提出什么要求？"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "What do you demand of the \\x01\\xC3\\x61?",
+    "occurrences": [
+      {
+        "input_index": 40373,
+        "translation": "你要向\\x01\\xC3\\x61提出什么要求？"
+      },
+      {
+        "input_index": 40385,
+        "translation": "你要向\\x01\\xC3\\x61提出什么要求？"
+      },
+      {
+        "input_index": 40396,
+        "translation": "你们要向\\x01\\xC3\\x61提出什么要求？"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xC3\\x61 are more discontented with the tribe than the \\x01\\xC3\\x21; we must recapture their favor by siding with them.",
+    "occurrences": [
+      {
+        "input_index": 40375,
+        "translation": "\\x01\\xC3\\x61对部族的不满甚于\\x01\\xC3\\x21；我们必须站在他们一边，才能重新赢得他们的好感。"
+      },
+      {
+        "input_index": 40387,
+        "translation": "\\x01\\xC3\\x61对部族的不满甚于\\x01\\xC3\\x21；我们必须站在他们一边，才能重新赢得他们的好感。"
+      },
+      {
+        "input_index": 40398,
+        "translation": "\\x01\\xC3\\x61比\\x01\\xC3\\x21更不满部族；我们必须站在他们一边，重新赢得他们的好感。"
+      },
+      {
+        "input_index": 41295,
+        "translation": "\\x01\\xC3\\x61比\\x01\\xC3\\x21对部族更为不满；我们必须站在他们一边，以重新赢得他们的好感。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xC3\\x21 are more discontented with the tribe than the \\x01\\xC3\\x61; we must recapture their favor by siding with them.",
+    "occurrences": [
+      {
+        "input_index": 40376,
+        "translation": "\\x01\\xC3\\x21对部族的不满甚于\\x01\\xC3\\x61；我们必须站在他们一边，才能重新赢得他们的好感。"
+      },
+      {
+        "input_index": 40388,
+        "translation": "\\x01\\xC3\\x21对部族的不满甚于\\x01\\xC3\\x61；我们必须站在他们一边，才能重新赢得他们的好感。"
+      },
+      {
+        "input_index": 40399,
+        "translation": "\\x01\\xC3\\x21比\\x01\\xC3\\x61更不满部族；我们必须站在他们一边，重新赢得他们的好感。"
+      },
+      {
+        "input_index": 41296,
+        "translation": "\\x01\\xC3\\x21比\\x01\\xC3\\x61对部族更为不满；我们必须站在他们一边，以重新赢得他们的好感。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "If we rule against the \\x01\\xC3\\x21, they will surely foment rebellion against us!",
+    "occurrences": [
+      {
+        "input_index": 40377,
+        "translation": "如果我们判\\x01\\xC3\\x21败诉，他们必定会煽动叛乱来反对我们！"
+      },
+      {
+        "input_index": 41208,
+        "translation": "如果我们裁定\\x01\\xC3\\x21败诉，他们一定会煽动叛乱反对我们！"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "If we rule against the \\x01\\xC3\\x61, they will surely foment rebellion against us!",
+    "occurrences": [
+      {
+        "input_index": 40378,
+        "translation": "如果我们判\\x01\\xC3\\x61败诉，他们必定会煽动叛乱来反对我们！"
+      },
+      {
+        "input_index": 41209,
+        "translation": "如果我们裁定\\x01\\xC3\\x61败诉，他们一定会煽动叛乱反对我们！"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xC3\\x21 would be indebted to us if we did it as a favor.",
+    "occurrences": [
+      {
+        "input_index": 40538,
+        "translation": "若我们把这当作人情来帮忙，\\x01\\xC3\\x21便会欠我们一份情。"
+      },
+      {
+        "input_index": 40573,
+        "translation": "如果我们把这件事当作帮忙来做，\\x01\\xC3\\x21就会欠我们人情。"
+      },
+      {
+        "input_index": 40607,
+        "translation": "如果我们把这件事当作帮忙去做，\\x01\\xC3\\x21会欠我们人情。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "As our allies, the \\x01\\xC3\\x21 expect our aid.",
+    "occurrences": [
+      {
+        "input_index": 40546,
+        "translation": "身为我们的盟友，\\x01\\xC3\\x21期待我们相助。"
+      },
+      {
+        "input_index": 40574,
+        "translation": "作为我们的盟友，\\x01\\xC3\\x21期待我们的援助。"
+      },
+      {
+        "input_index": 40608,
+        "translation": "作为我们的盟友，\\x01\\xC3\\x21期待我们援助。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x41\\xAF is well-respected as an honest trader. \\x01\\x41\\xAD is a complaining son of a pig who is so annoying you give in to him just to get rid of him.",
+    "occurrences": [
+      {
+        "input_index": 40566,
+        "translation": "\\x01\\x41\\xAF是位受人敬重的诚实商人。\\x01\\x41\\xAD是个爱抱怨的猪猡，他烦得你只想让步，好把他打发走。"
+      },
+      {
+        "input_index": 40653,
+        "translation": "\\x01\\x41\\xAF作为诚实的商人颇受敬重。\\x01\\x41\\xAD是个爱抱怨的猪猡，烦得你只好让步，好把他打发走。"
+      },
+      {
+        "input_index": 40684,
+        "translation": "\\x01\\x41\\xAF是受人尊敬的诚实商人。\\x01\\x41\\xAD是个满腹牢骚的猪猡，烦人得要命，你只好顺着他，好把他打发走。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x41\\xAD is well-respected as an honest trader. We have had reason to suspect \\x01\\x41\\xAF’s perfidy in the past.",
+    "occurrences": [
+      {
+        "input_index": 40568,
+        "translation": "\\x01\\x41\\xAD作为诚实的商人颇受敬重。我们过去有理由怀疑\\x01\\x41\\xAF的背信弃义。"
+      },
+      {
+        "input_index": 40651,
+        "translation": "\\x01\\x41\\xAD作为诚实商人很受尊敬。我们过去有理由怀疑\\x01\\x41\\xAF的背信弃义。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "gods, although the \\x01\\xC3\\x21 refused our request for assistance.",
+    "occurrences": [
+      {
+        "input_index": 40829,
+        "translation": "众神，尽管\\x01\\xC3\\x21拒绝了我们的援助请求。"
+      },
+      {
+        "input_index": 40855,
+        "translation": "众神，尽管\\x01\\xC3\\x21拒绝了我们的援助请求。"
+      },
+      {
+        "input_index": 40890,
+        "translation": "众神，尽管\\x01\\xC3\\x21拒绝了我们求援的请求。"
+      },
+      {
+        "input_index": 40906,
+        "translation": "众神，尽管\\x01\\xC3\\x21拒绝了我们的援助请求。"
+      },
+      {
+        "input_index": 40909,
+        "translation": "众神，尽管\\x01\\xC3\\x21拒绝了我们的援助请求。"
+      },
+      {
+        "input_index": 40919,
+        "translation": "众神，尽管\\x01\\xC3\\x21拒绝了我们的援助请求。"
+      },
+      {
+        "input_index": 40998,
+        "translation": "众神，尽管\\x01\\xC3\\x21拒绝了我们寻求援助的请求。"
+      },
+      {
+        "input_index": 41003,
+        "translation": "众神，尽管\\x01\\xC3\\x21拒绝了我们寻求援助的请求。"
+      },
+      {
+        "input_index": 41008,
+        "translation": "众神，尽管\\x01\\xC3\\x21拒绝了我们寻求援助的请求。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\xBA\\x4B\\x05 was unable to enter the realm of the gods.",
+    "occurrences": [
+      {
+        "input_index": 40860,
+        "translation": "\\x01\\xBA\\x4B\\x05未能进入众神的领域。"
+      },
+      {
+        "input_index": 40922,
+        "translation": "\\x01\\xBA\\x4B\\x05无法进入众神的领域。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\xBA\\x4B\\x05 chose to the leave the realm of the gods.",
+    "occurrences": [
+      {
+        "input_index": 40864,
+        "translation": "\\x01\\xBA\\x4B\\x05选择离开诸神的国度。"
+      },
+      {
+        "input_index": 40924,
+        "translation": "\\x01\\xBA\\x4B\\x05选择离开众神的领域。"
+      },
+      {
+        "input_index": 40928,
+        "translation": "\\x01\\xBA\\x4B\\x05选择离开众神的领域。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The god-talkers worried that this failure would only inflame the feud with the \\x01\\xC3\\x21, who they expected to receive many bad dreams and emanations, which they would rightfully blame on us.",
+    "occurrences": [
+      {
+        "input_index": 40946,
+        "translation": "神语者担心，这次失败只会激化与\\x01\\xC3\\x21的仇怨；他们预计对方会收到许多恶梦和异象，而对方会理直气壮地把这些归咎于我们。"
+      },
+      {
+        "input_index": 40989,
+        "translation": "神语者担心，这次失败只会激化与\\x01\\xC3\\x21的仇怨；他们预计对方会收到许多恶梦与凶兆，并会理所当然地归咎于我们。"
+      },
+      {
+        "input_index": 40993,
+        "translation": "神语者担心，这次失败只会激化与\\x01\\xC3\\x21的仇怨；他们预计对方会收到许多恶梦与凶兆，并会理所当然地归咎于我们。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The god-talkers worried that the devotees of \\x01\\x40\\x9D would be cursed by our failed effort to reconcile with them magically, and that they would rightfully blame us for this.",
+    "occurrences": [
+      {
+        "input_index": 40947,
+        "translation": "神语者担心，我们试图以魔法与\\x01\\x40\\x9D的信徒和解却失败了，这会让他们遭受诅咒，而他们会理直气壮地为此责怪我们。"
+      },
+      {
+        "input_index": 40990,
+        "translation": "神语者担心，我们试图以魔法与他们和解却失败了，这会使\\x01\\x40\\x9D的信众遭受诅咒，而他们会理直气壮地为此怪罪我们。"
+      },
+      {
+        "input_index": 40994,
+        "translation": "神语者担心，我们试图以魔法与他们和解却失败了，这会使\\x01\\x40\\x9D的信众遭受诅咒，而他们会理直气壮地为此怪罪我们。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The god-talkers worried that the \\x01\\xC3\\x21 would be cursed by our failed effort to forge a mythic link between our clans, and that they would rightfully blame us for this.",
+    "occurrences": [
+      {
+        "input_index": 40948,
+        "translation": "神语者担心，我们试图在两个氏族之间缔结神话纽带却失败，会让\\x01\\xC3\\x21遭受诅咒，而他们会理直气壮地为此责怪我们。"
+      },
+      {
+        "input_index": 40991,
+        "translation": "神语者担心，我们试图在两个氏族之间缔结神话纽带却失败了，这会使\\x01\\xC3\\x21遭受诅咒，而他们会理直气壮地为此怪罪我们。"
+      },
+      {
+        "input_index": 40995,
+        "translation": "神语者担心，我们试图在两个氏族之间缔结神话纽带却失败了，这会使\\x01\\xC3\\x21遭受诅咒，而他们会理直气壮地为此怪罪我们。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "The \\x01\\xC3\\x21 are on the brink of a feud with us.",
+    "occurrences": [
+      {
+        "input_index": 41089,
+        "translation": "\\x01\\xC3\\x21与我们正处在结下世仇的边缘。"
+      },
+      {
+        "input_index": 41378,
+        "translation": "\\x01\\xC3\\x21正濒临与我们结下世仇。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\x08 agreed that \\x01\\x41\\xAD had not conducted the trade in complete accordance with Heort’s Law and the guidelines of",
+    "occurrences": [
+      {
+        "input_index": 41127,
+        "translation": "\\x01\\x40\\x08同意，\\x01\\x41\\xAD进行这笔交易时并未完全遵照赫奥尔特法以及……的准则"
+      },
+      {
+        "input_index": 41133,
+        "translation": "\\x01\\x40\\x08同意，\\x01\\x41\\xAD进行这笔交易时并未完全遵从赫奥尔特法以及……的准则"
+      },
+      {
+        "input_index": 41144,
+        "translation": "\\x01\\x40\\x08同意，\\x01\\x41\\xAD进行这笔交易时并未完全遵从赫奥尔特法以及"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\xBA\\x08\\x05 assessed a fine of \\x01\\x40\\x06 cows on \\x01\\x41\\xAD, and turned it over to us.",
+    "occurrences": [
+      {
+        "input_index": 41129,
+        "translation": "\\x01\\xBA\\x08\\x05判\\x01\\x41\\xAD缴纳\\x01\\x40\\x06头牛作为罚款，并把这些牛交给了我们。"
+      },
+      {
+        "input_index": 41135,
+        "translation": "\\x01\\xBA\\x08\\x05裁定向\\x01\\x41\\xAD处以\\x01\\x40\\x06头牛的罚金，并把它交给了我们。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\x08 said that \\x01\\x41\\xAD had made the trade in accordance with Heort’s Laws, and refused to return even half what we paid.",
+    "occurrences": [
+      {
+        "input_index": 41130,
+        "translation": "\\x01\\x40\\x08说，\\x01\\x41\\xAD是依照赫奥特律法进行这笔交易的，并拒绝退还我们所付的哪怕一半。"
+      },
+      {
+        "input_index": 41136,
+        "translation": "\\x01\\x40\\x08说，\\x01\\x41\\xAD的这笔交易符合赫奥特律法，并连我们所付的一半都拒绝退还。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "\\x01\\x40\\x08 agreed that \\x01\\x41\\xAD had not explained how he obtained the duck eggs. However, \\x01\\xBA\\x08\\x06 pointed out that there was no requirement to do so.",
+    "occurrences": [
+      {
+        "input_index": 41131,
+        "translation": "\\x01\\x40\\x08同意，\\x01\\x41\\xAD没有解释他是如何得到鸭蛋的。然而，\\x01\\xBA\\x08\\x06指出，并没有要求他这样做。"
+      },
+      {
+        "input_index": 41137,
+        "translation": "\\x01\\x40\\x08同意\\x01\\x41\\xAD没有说明他是如何弄到那些鸭蛋的。然而，\\x01\\xBA\\x08\\x06指出，并没有规定要求他这么做。"
+      },
+      {
+        "input_index": 41141,
+        "translation": "\\x01\\x40\\x08同意\\x01\\x41\\xAD没有说明他是如何弄到那些鸭蛋的。然而，\\x01\\xBA\\x08\\x06指出，并没有规定要求他这么做。"
+      },
+      {
+        "input_index": 41148,
+        "translation": "\\x01\\x40\\x08同意\\x01\\x41\\xAD没有说明他是如何弄到那些鸭蛋的。然而，\\x01\\xBA\\x08\\x06指出，并没有规定要求他这么做。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  },
+  {
+    "source": "Finally, \\x06 offered the opinion that \\x01\\x41\\xAF of the \\x01\\x40\\x61 clan had put us up to this, due to an unspecified grudge she held.",
+    "occurrences": [
+      {
+        "input_index": 41132,
+        "translation": "最后，\\x06提出一种看法：\\x01\\x40\\x61氏族的\\x01\\x41\\xAF因为怀有某种未说明的怨恨，才怂恿我们这么做。"
+      },
+      {
+        "input_index": 41138,
+        "translation": "最后，\\x06提出看法认为，\\x01\\x40\\x61氏族的\\x01\\x41\\xAF怂恿我们这么做，出于她心怀的某种不明怨恨。"
+      },
+      {
+        "input_index": 41142,
+        "translation": "最后，\\x06提出看法认为，\\x01\\x40\\x61氏族的\\x01\\x41\\xAF怂恿我们这么做，出于她心怀的某种不明怨恨。"
+      },
+      {
+        "input_index": 41149,
+        "translation": "最后，\\x06提出看法认为，\\x01\\x40\\x61氏族的\\x01\\x41\\xAF怂恿我们这么做，出于她心怀的某种不明怨恨。"
+      }
+    ],
+    "policy": "excluded: display hook has no resource identity"
+  }
+]

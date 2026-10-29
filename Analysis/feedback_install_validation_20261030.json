@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "resource_targets": 361,
+  "checks": [
+    {
+      "check": "fresh_install",
+      "exit_code": 0,
+      "expected_success": true
+    },
+    {
+      "check": "repeat_install",
+      "exit_code": 0,
+      "expected_success": true
+    },
+    {
+      "check": "fresh_uninstall",
+      "exit_code": 0,
+      "expected_success": true
+    },
+    {
+      "check": "reject_corrupt_payload",
+      "exit_code": 1,
+      "expected_success": false
+    },
+    {
+      "check": "reject_unknown_game_content",
+      "exit_code": 1,
+      "expected_success": false
+    },
+    {
+      "check": "legacy_upgrade",
+      "exit_code": 0,
+      "expected_success": true
+    },
+    {
+      "check": "legacy_repeat",
+      "exit_code": 0,
+      "expected_success": true
+    },
+    {
+      "check": "legacy_uninstall_steam_restore",
+      "exit_code": 0,
+      "expected_success": true
+    }
+  ],
+  "real_game_untouched": true,
+  "legacy_steam_uri_verified_without_launching_steam": true,
+  "fixture": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\Repack\\release_validation_a6175030",
+  "manifest_sha256": "0893b3ab0bf3fab3095ceb7a011964375fda36bcbf671da08f49d41ea42557f2"
+}

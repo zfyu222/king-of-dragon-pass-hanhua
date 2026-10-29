@@ -126,9 +126,13 @@ struct FormatPattern {
     std::vector<std::string> tokens;
     std::string translated;
     bool translateCaptures = false;
+    std::vector<size_t> captureOrder;
+    std::vector<std::string> sourceMarkers;
+    std::vector<std::string> targetLiterals;
 };
 std::vector<FormatPattern> g_formatPatterns;
 std::vector<FormatPattern> g_opalFormatPatternsByFirstByte[256];
+std::vector<FormatPattern> g_opalLeadingPatterns;
 
 void WriteLog(const wchar_t* message);
 const char* TranslateRuntimeText(const char* source);
@@ -630,6 +634,9 @@ bool ParseFormatPattern(
     FormatPattern* pattern) {
     pattern->literals.clear();
     pattern->tokens.clear();
+    pattern->captureOrder.clear();
+    pattern->sourceMarkers.clear();
+    pattern->targetLiterals.clear();
     pattern->translated = translated;
     size_t cursor = 0;
     size_t literalStart = 0;
@@ -639,21 +646,24 @@ bool ParseFormatPattern(
             continue;
         }
         size_t end = cursor + 1;
+        bool consumed = false;
         while (end < source.size() && end - cursor <= 32) {
             if (IsPrintfConversion(source[end])) {
                 if (source[end] == '%') {
                     cursor = end + 1;
+                    consumed = true;
                     break;
                 }
                 pattern->literals.push_back(source.substr(literalStart, cursor - literalStart));
                 pattern->tokens.push_back(source.substr(cursor, end - cursor + 1));
                 cursor = end + 1;
                 literalStart = cursor;
+                consumed = true;
                 break;
             }
             ++end;
         }
-        if (end >= source.size() || end - cursor > 32) {
+        if (!consumed) {
             ++cursor;
         }
     }
@@ -680,11 +690,20 @@ bool BuildOpalRuntimePattern(
         markers->clear();
         for (size_t cursor = 0; cursor < input.size();) {
             if (cursor + 2 < input.size() &&
-                static_cast<unsigned char>(input[cursor]) == 0x01 &&
-                input[cursor + 1] == '@') {
+                static_cast<unsigned char>(input[cursor]) == 0x01) {
+                // Observed in native FUN_10181f40: BAxx changes the current
+                // referent/gender but inserts no display text.
+                if(static_cast<unsigned char>(input[cursor+1])==0xBA) {cursor+=3;continue;}
                 markers->push_back(input.substr(cursor, 3));
                 output->append("%s");
                 cursor += 3;
+                continue;
+            }
+            const unsigned char control = static_cast<unsigned char>(input[cursor]);
+            if (control >= 3 && control <= 8) {
+                markers->push_back(input.substr(cursor, 1));
+                output->append("%s");
+                ++cursor;
                 continue;
             }
             output->push_back(input[cursor++]);
@@ -695,11 +714,22 @@ bool BuildOpalRuntimePattern(
     std::string runtimeTranslation;
     std::vector<std::string> sourceMarkers;
     std::vector<std::string> translatedMarkers;
-    replaceMarkers(source, &runtimeSource, &sourceMarkers);
-    replaceMarkers(translated, &runtimeTranslation, &translatedMarkers);
-    if (sourceMarkers.empty() || sourceMarkers != translatedMarkers ||
-        runtimeSource.empty() || runtimeSource.front() == '%') {
+    // The paired leading paragraph controls are empty in the screenshot's
+    // rendered event body. Strip only this evidenced prefix from both sides.
+    const std::string paragraphPrefix("\x01@\xB2\x01@\xB2", 6);
+    const bool paragraphs = source.rfind(paragraphPrefix, 0) == 0 && translated.rfind(paragraphPrefix, 0) == 0;
+    replaceMarkers(paragraphs ? source.substr(6) : source, &runtimeSource, &sourceMarkers);
+    replaceMarkers(paragraphs ? translated.substr(6) : translated, &runtimeTranslation, &translatedMarkers);
+    if (sourceMarkers.empty() || sourceMarkers.size() != translatedMarkers.size() || runtimeSource.empty()) {
         return false;
+    }
+    std::vector<bool> used(sourceMarkers.size(), false);
+    std::vector<size_t> order;
+    for (const auto& marker : translatedMarkers) {
+        size_t i = 0;
+        while (i < sourceMarkers.size() && (used[i] || sourceMarkers[i] != marker)) ++i;
+        if (i == sourceMarkers.size()) return false;
+        used[i] = true; order.push_back(i);
     }
     if (!ParseFormatPattern(
             runtimeSource, runtimeTranslation, pattern)) {
@@ -709,10 +739,15 @@ bool BuildOpalRuntimePattern(
     for (const std::string& literal : pattern->literals) {
         literalBytes += literal.size();
     }
-    if (literalBytes < 20) {
+    if (literalBytes < 8) {
         return false;
     }
     pattern->translateCaptures = true;
+    pattern->captureOrder = std::move(order);
+    pattern->sourceMarkers = sourceMarkers;
+    FormatPattern targetPattern;
+    if(ParseFormatPattern(runtimeTranslation,runtimeTranslation,&targetPattern))
+        pattern->targetLiterals = std::move(targetPattern.literals);
     return true;
 }
 
@@ -784,10 +819,12 @@ bool LoadTranslations() {
         FormatPattern opalPattern;
         if (BuildOpalRuntimePattern(
                 source, translated, &opalPattern)) {
-            const unsigned char first = static_cast<unsigned char>(
-                opalPattern.literals.front().front());
-            g_opalFormatPatternsByFirstByte[first].push_back(
-                std::move(opalPattern));
+            if (opalPattern.literals.front().empty()) {
+                g_opalLeadingPatterns.push_back(std::move(opalPattern));
+            } else {
+                const unsigned char first = static_cast<unsigned char>(opalPattern.literals.front().front());
+                g_opalFormatPatternsByFirstByte[first].push_back(std::move(opalPattern));
+            }
         }
 
         // Clan descriptions are stored with a three-byte control prefix and
@@ -1061,6 +1098,7 @@ std::string RenderFormat(
             continue;
         }
         size_t end = cursor + 1;
+        bool consumed = false;
         while (end < translated.size() && end - cursor <= 32) {
             if (IsPrintfConversion(translated[end])) {
                 if (translated[end] == '%') {
@@ -1069,15 +1107,68 @@ std::string RenderFormat(
                     result += captures[capture++];
                 }
                 cursor = end + 1;
+                consumed = true;
                 break;
             }
             ++end;
         }
-        if (end >= translated.size() || end - cursor > 32) {
+        if (!consumed) {
             result.push_back(translated[cursor++]);
         }
     }
     return capture == captures.size() ? result : std::string();
+}
+
+std::string RenderPattern(const FormatPattern& pattern, const std::vector<std::string>& values) {
+    if (pattern.captureOrder.empty()) return RenderFormat(pattern.translated, values);
+    std::vector<std::string> ordered;
+    for (size_t slot=0;slot<pattern.captureOrder.size();++slot) {
+        const size_t i=pattern.captureOrder[slot];
+        if (i >= values.size()) return {};
+        std::string value=values[i];
+        if(i<pattern.sourceMarkers.size() && pattern.sourceMarkers[i].size()==1 &&
+            (pattern.sourceMarkers[i][0]==3 || pattern.sourceMarkers[i][0]==4)) {
+            // Native 03/04 are His/Her and his/her. The approved standalone
+            // "her" is an object pronoun, so its possessive case needs the
+            // marker's grammatical role. Avoid doubling Chinese possessives.
+            if(value.size()>=3 && value.compare(value.size()-3,3,u8"的")==0) value.resize(value.size()-3);
+            std::string next=slot+1<pattern.targetLiterals.size()?pattern.targetLiterals[slot+1]:std::string();
+            const size_t first=next.find_first_not_of(" \t\r\n");
+            if(first!=std::string::npos) next.erase(0,first);
+            if(next.rfind(u8"的",0)!=0 && next.rfind(u8"自己",0)!=0) value+=u8"的";
+        }
+        ordered.push_back(value);
+    }
+    return RenderFormat(pattern.translated, ordered);
+}
+
+bool ResolveKnownCapture(const std::string& input, std::string* output) {
+    size_t begin=0,end=input.size();
+    while(begin<end && std::isspace(static_cast<unsigned char>(input[begin]))) ++begin;
+    while(end>begin && std::isspace(static_cast<unsigned char>(input[end-1]))) --end;
+    const std::string value=input.substr(begin,end-begin);
+    if(value.empty()) return false;
+    auto found=g_translations.find(value);
+    if(found!=g_translations.end()) {*output=found->second;return true;}
+    for(const char* pronoun:{"He","She","His","Her","Him"}) {
+        if(value==pronoun) {
+            std::string lower=value;lower[0]=static_cast<char>(std::tolower(lower[0]));
+            found=g_translations.find(lower);
+            if(found!=g_translations.end()) {*output=found->second;return true;}
+        }
+    }
+    // English articles are omitted only when the remaining complete name is
+    // present in the approved dictionary. Never guess an unknown person's name.
+    for(const char* article:{"The ","the "}) {
+        if(value.rfind(article,0)==0) {
+            found=g_translations.find(value.substr(std::strlen(article)));
+            if(found!=g_translations.end()) {*output=found->second;return true;}
+        }
+    }
+    if(std::none_of(value.begin(),value.end(),[](unsigned char c){return c<128 && std::isalpha(c);})) {
+        *output=value;return true;
+    }
+    return false;
 }
 
 bool TranslateKnownComposite(const std::string& source, std::string* translated) {
@@ -1095,32 +1186,48 @@ bool TranslateKnownComposite(const std::string& source, std::string* translated)
             parts.pop_back(); return false;
         };
         unsigned char first = static_cast<unsigned char>(source[pos]);
-        for (const auto* e : g_compositeFragmentsByFirstByte[first])
-            if (source.compare(pos, e->first.size(), e->first) == 0 && append(e->first.size(), e->second)) return true;
-        for (const auto* e : g_translatedFragmentsByFirstByte[first])
-            if (source.compare(pos, e->size(), *e) == 0 && append(e->size(), *e)) return true;
         auto pattern = [&](const FormatPattern& p) {
-            if (p.literals.empty() || p.literals[0].empty() || source.compare(pos,p.literals[0].size(),p.literals[0])) return false;
+            if (p.literals.empty() || source.compare(pos,p.literals[0].size(),p.literals[0])) return false;
             size_t cursor = pos + p.literals[0].size();
             std::vector<std::string> values;
             for (size_t i=0;i<p.tokens.size();++i) {
                 const auto& literal=p.literals[i+1];
-                if (literal.empty()) return false; // no unconstrained tail capture inside a composite
+                if (literal.empty()) {
+                    if(i+1!=p.tokens.size()) return false;
+                    // A trailing capture may end before later catalog fragments.
+                    // Try bounded, fully known values; do not consume free text.
+                    for(size_t finish=cursor+1;finish<=source.size() && finish-cursor<=128;++finish) {
+                        if(finish<source.size() && std::isalnum(static_cast<unsigned char>(source[finish]))) continue;
+                        std::string value;
+                        if(!ResolveKnownCapture(source.substr(cursor,finish-cursor),&value)) continue;
+                        auto complete=values;complete.push_back(value);
+                        const std::string rendered=RenderPattern(p,complete);
+                        if(!rendered.empty() && append(finish-pos,rendered)) return true;
+                    }
+                    return false;
+                }
                 size_t finish=source.find(literal,cursor);
                 if(finish==std::string::npos || finish==cursor) return false;
                 std::string capture=source.substr(cursor,finish-cursor);
                 if (p.translateCaptures || p.tokens[i].find('s') != std::string::npos) {
-                    auto found=g_translations.find(capture);
-                    if(found!=g_translations.end()) capture=found->second;
-                    else if(std::any_of(capture.begin(),capture.end(),[](unsigned char c){return c<128 && std::isalpha(c);})) return false;
+                    std::string resolved;
+                    if(!ResolveKnownCapture(capture,&resolved)) return false;
+                    capture=resolved;
                 } else if(p.tokens[i].find('s')==std::string::npos && !std::all_of(capture.begin(),capture.end(),[](unsigned char c){return std::isdigit(c)||c==','||c=='-'||c=='+'||c=='.';})) return false;
                 values.push_back(capture); cursor=finish+literal.size();
             }
-            auto value=RenderFormat(p.translated,values);
+            auto value=RenderPattern(p,values);
             return !value.empty() && append(cursor-pos,value);
         };
         for(const auto& p:g_opalFormatPatternsByFirstByte[first]) if(pattern(p)) return true;
+        for(const auto& p:g_opalLeadingPatterns) if(pattern(p)) return true;
         for(const auto& p:g_formatPatterns) if(pattern(p)) return true;
+        // Prefer complete source-bound templates to arbitrary word fragments:
+        // the article "The" must not become an unrelated standalone "这".
+        for (const auto* e : g_compositeFragmentsByFirstByte[first])
+            if (source.compare(pos, e->first.size(), e->first) == 0 && append(e->first.size(), e->second)) return true;
+        for (const auto* e : g_translatedFragmentsByFirstByte[first])
+            if (source.compare(pos, e->size(), *e) == 0 && append(e->size(), *e)) return true;
         // Upstream UI code can already have translated the suffix (e.g. 阵亡).
         // Preserve complete UTF-8 characters; unknown Latin words still fail.
         size_t utf8Length = first >= 0xC2 && first <= 0xDF ? 2 :
@@ -1140,7 +1247,7 @@ bool TranslateKnownComposite(const std::string& source, std::string* translated)
     return *translated!=source;
 }
 
-const char* TranslateRuntimeText(const char* source) {
+const char* TranslateRuntimeTextUncached(const char* source) {
     if (!source || !*source) {
         return source;
     }
@@ -1354,17 +1461,8 @@ const char* TranslateRuntimeText(const char* source) {
         translatedCaptures.reserve(captures.size());
         bool allCapturesCovered = true;
         for (const std::string& capture : captures) {
-            const char* translatedCapture =
-                TranslateRuntimeText(capture.c_str());
-            const std::string value(
-                translatedCapture ? translatedCapture : capture.c_str());
-            if (value == capture &&
-                std::any_of(
-                    capture.begin(),
-                    capture.end(),
-                    [](unsigned char ch) {
-                        return ch < 0x80 && std::isalpha(ch);
-                    })) {
+            std::string value;
+            if (!ResolveKnownCapture(capture, &value)) {
                 allCapturesCovered = false;
                 break;
             }
@@ -1373,8 +1471,7 @@ const char* TranslateRuntimeText(const char* source) {
         if (!allCapturesCovered) {
             continue;
         }
-        formatted = RenderFormat(
-            pattern.translated, translatedCaptures);
+        formatted = RenderPattern(pattern, translatedCaptures);
         if (!formatted.empty()) {
             return formatted.c_str();
         }
@@ -1383,6 +1480,21 @@ const char* TranslateRuntimeText(const char* source) {
         return formatted.c_str();
     }
     return source;
+}
+
+const char* TranslateRuntimeText(const char* source) {
+    if(!source || !*source) return source;
+    const auto exact=g_translations.find(source);
+    if(exact!=g_translations.end()) return exact->second.c_str();
+    if(std::strlen(source)>8192) return TranslateRuntimeTextUncached(source);
+    thread_local std::unordered_map<std::string,std::string> memo;
+    const auto hit=memo.find(source);
+    if(hit!=memo.end()) return hit->first==hit->second ? source : hit->second.c_str();
+    const std::string key(source);
+    const std::string value(TranslateRuntimeTextUncached(key.c_str()));
+    if(memo.size()>=512) memo.clear();
+    const auto saved=memo.emplace(key,value).first;
+    return key==value ? source : saved->second.c_str();
 }
 
 std::wstring Utf8ToWide(const char* text) {

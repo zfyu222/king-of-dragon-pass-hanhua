@@ -1,0 +1,20 @@
+{
+  "status": "ready_for_user_test",
+  "runtime_positive_cases": 29,
+  "runtime_failure_cases": 0,
+  "runtime_extra_assertions": "passed: complete battle counts and suffixes, unknown Latin preserved, invalid numeric capture rejected, long boundary, final/consecutive printf tokens, NUL/high-byte marker order, zero-output BA and possessives",
+  "formal_increment_records": 6972,
+  "formal_complete_sentence_records": 20,
+  "dictionary_records": 40313,
+  "derived_runtime_records": 6549,
+  "excluded_source_keys": 219,
+  "excluded_derived_variants": 67,
+  "checksum_files": 373,
+  "test_package": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\Repack\\LeakFix_20261030",
+  "manifest_sha256": "0893b3ab0bf3fab3095ceb7a011964375fda36bcbf671da08f49d41ea42557f2",
+  "dll_sha256": "8efc21327d8f670a43688ae93d6c93176de5b105cfa3a00ab1871a0f192449c8",
+  "dictionary_sha256": "c15413a1eb984df66df6f8d7fbac67ecc4d8d9e43dfc64cfc37467db5b1f7058",
+  "in_game_validation": "pending",
+  "game_files_modified": false,
+  "public_v1_1_zip_sha256": "90f52db229051f14ab0248ffcec6b594a24e4baa346b687fa7a8a1d40ae2af8a"
+}
