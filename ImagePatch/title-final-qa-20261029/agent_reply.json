@@ -1,0 +1,41 @@
+{
+  "snapshot_hash": "1d8ec9d91ba1e4f7d904826103a6f99b8a1f5175bb3cc79537da6acb3c7d8d0f",
+  "reviews": [
+    {
+      "image_id": "43584de2921553cf1dcdd273839550f8d522b8458d99e4e735f1bb0b90c1e466",
+      "reviewer": "conversation_agent",
+      "content": {
+        "decision": "pass",
+        "issues": [],
+        "reason": "已逐图查看四种尺寸，龙城/之王四字准确可读，未见英文残字及文字裁切，透明背景保留。"
+      }
+    },
+    {
+      "image_id": "693210c955d757c2ee504a173b15e8f00358e0c9075c6b37ace86f250cb84217",
+      "reviewer": "conversation_agent",
+      "content": {
+        "decision": "pass",
+        "issues": [],
+        "reason": "已逐图查看四种尺寸，龙城/之王四字准确可读，未见英文残字及文字裁切，透明背景保留。"
+      }
+    },
+    {
+      "image_id": "98fc4e10620d4464a981299048be857b5fc3e0c06fb164b023c7ddccd794e04a",
+      "reviewer": "conversation_agent",
+      "content": {
+        "decision": "pass",
+        "issues": [],
+        "reason": "已逐图查看四种尺寸，龙城/之王四字准确可读，未见英文残字及文字裁切，透明背景保留。"
+      }
+    },
+    {
+      "image_id": "d6fae21d780e32becd3f55ef08a67c95fcca4a64e46cdb5d06e19c2e171887a2",
+      "reviewer": "conversation_agent",
+      "content": {
+        "decision": "pass",
+        "issues": [],
+        "reason": "已逐图查看四种尺寸，龙城/之王四字准确可读，未见英文残字及文字裁切，透明背景保留。"
+      }
+    }
+  ]
+}

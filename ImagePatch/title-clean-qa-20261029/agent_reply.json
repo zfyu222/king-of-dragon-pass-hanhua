@@ -1,0 +1,41 @@
+{
+  "snapshot_hash": "c3e340ac750d8041403341095bbefd3b68dd47f4b379b1c2819bfffa886ae983",
+  "reviews": [
+    {
+      "image_id": "43584de2921553cf1dcdd273839550f8d522b8458d99e4e735f1bb0b90c1e466",
+      "reviewer": "conversation_agent",
+      "content": {
+        "decision": "pass",
+        "issues": [],
+        "reason": "逐图查看四尺寸透明底图，原英文已清除，未见残字；底图无其他美术主体。"
+      }
+    },
+    {
+      "image_id": "693210c955d757c2ee504a173b15e8f00358e0c9075c6b37ace86f250cb84217",
+      "reviewer": "conversation_agent",
+      "content": {
+        "decision": "pass",
+        "issues": [],
+        "reason": "逐图查看四尺寸透明底图，原英文已清除，未见残字；底图无其他美术主体。"
+      }
+    },
+    {
+      "image_id": "98fc4e10620d4464a981299048be857b5fc3e0c06fb164b023c7ddccd794e04a",
+      "reviewer": "conversation_agent",
+      "content": {
+        "decision": "pass",
+        "issues": [],
+        "reason": "逐图查看四尺寸透明底图，原英文已清除，未见残字；底图无其他美术主体。"
+      }
+    },
+    {
+      "image_id": "d6fae21d780e32becd3f55ef08a67c95fcca4a64e46cdb5d06e19c2e171887a2",
+      "reviewer": "conversation_agent",
+      "content": {
+        "decision": "pass",
+        "issues": [],
+        "reason": "逐图查看四尺寸透明底图，原英文已清除，未见残字；底图无其他美术主体。"
+      }
+    }
+  ]
+}

@@ -182,6 +182,9 @@
   "standard_scope_policy": "disputes_only_v1",
   "carried_findings": {},
   "selection_explanation": "Only explicit unresolved reviewer issues need standard-tier adjudication. Risk flags, corrections, ordinary samples, duplicate-source groups and speaker groups do not trigger standard-tier review. Known standard-tier repair findings are carried to cheap-tier repair without re-reading; exhausted or regressing repairs use the existing targeted standard-tier escalation route.",
-  "report_hash": "0424b1d851e0559df3000a0d9b153512a0c02e47b8c0d86ee5aa001f29550b9c",
+  "resource_occurrence_binding": {
+    "king-of-dragon-pass_image_text.mapping.json": "ca95ebe96741ac1627b213fc2df5e4490212eca777d6841e95fc5e062fabe502"
+  },
+  "report_hash": "eb4d6c6e4bfad64cb8c86b1a8587f0a1ef34f974335dd2c09867c4e09f3e11ea",
   "round_scope": []
 }

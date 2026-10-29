@@ -63,3 +63,6 @@ Desktop.ini
 .DS_Store
 .vscode/
 .idea/
+
+/ImagePatch/title-*/images/
+/ImagePatch/title-*/erase_masks/

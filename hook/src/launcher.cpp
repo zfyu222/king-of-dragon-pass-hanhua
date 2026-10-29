@@ -305,16 +305,16 @@ int WINAPI wWinMain(HINSTANCE, HINSTANCE, PWSTR, int) {
 
     if (gameExe.empty()) {
         ShowError(
-            L"龙隘之王汉化启动器",
+            L"龙城之王汉化启动器",
             L"请在 KoDPCNHook.ini 中设置 GameExe，或把游戏 EXE 路径作为第一个参数。");
         return 1;
     }
     if (GetFileAttributesW(gameExe.c_str()) == INVALID_FILE_ATTRIBUTES) {
-        ShowError(L"龙隘之王汉化启动器", L"找不到游戏：\n" + gameExe);
+        ShowError(L"龙城之王汉化启动器", L"找不到游戏：\n" + gameExe);
         return 1;
     }
     if (GetFileAttributesW(dllPath.c_str()) == INVALID_FILE_ATTRIBUTES) {
-        ShowError(L"龙隘之王汉化启动器", L"找不到 Hook DLL：\n" + dllPath);
+        ShowError(L"龙城之王汉化启动器", L"找不到 Hook DLL：\n" + dllPath);
         return 1;
     }
 
@@ -337,7 +337,7 @@ int WINAPI wWinMain(HINSTANCE, HINSTANCE, PWSTR, int) {
             gameDirectory.c_str(),
             &startup,
             &process)) {
-        ShowError(L"龙隘之王汉化启动器", WindowsError(L"启动游戏"));
+        ShowError(L"龙城之王汉化启动器", WindowsError(L"启动游戏"));
         return 1;
     }
 
@@ -391,7 +391,7 @@ int WINAPI wWinMain(HINSTANCE, HINSTANCE, PWSTR, int) {
         CloseHandle(process.hThread);
         CloseHandle(process.hProcess);
         ShowError(
-            L"龙隘之王汉化启动器",
+            L"龙城之王汉化启动器",
             L"Hook DLL 注入失败。请确认启动器、DLL 和游戏均为 32 位，并检查安全软件拦截。");
         return 1;
     }
@@ -404,7 +404,7 @@ int WINAPI wWinMain(HINSTANCE, HINSTANCE, PWSTR, int) {
         TerminateProcess(process.hProcess, 1);
         CloseHandle(process.hThread);
         CloseHandle(process.hProcess);
-        ShowError(L"龙隘之王汉化启动器", WindowsError(L"恢复游戏线程"));
+        ShowError(L"龙城之王汉化启动器", WindowsError(L"恢复游戏线程"));
         return 1;
     }
 

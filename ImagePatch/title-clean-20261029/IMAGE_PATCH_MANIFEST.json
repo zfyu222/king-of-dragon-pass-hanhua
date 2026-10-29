@@ -1,0 +1,568 @@
+{
+  "schema": 1,
+  "stage": "cleanup",
+  "status": "awaiting_cleanup_qa",
+  "installed": false,
+  "seed_manifest_sha256": "2e90377d4da492586fd3bd4e77e6b52a2cc135031a12fdfba9d95f9a38096b04",
+  "entries": [
+    {
+      "image_id": "d6fae21d780e32becd3f55ef08a67c95fcca4a64e46cdb5d06e19c2e171887a2",
+      "box": [
+        0,
+        0,
+        329,
+        38.7
+      ],
+      "text": "龙城",
+      "csv_row": 28,
+      "sources": [
+        {
+          "path": "Menu/Logo.png",
+          "file_sha256": "95907e16faf5afe3ef6a475eae4111e9aeaf27457ba23afb3a6a6862d7a14ca5",
+          "image_id": "d6fae21d780e32becd3f55ef08a67c95fcca4a64e46cdb5d06e19c2e171887a2",
+          "width": 329,
+          "height": 90,
+          "provenance": {}
+        }
+      ],
+      "mask_rgba": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "text_rgba": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "rendering": {
+        "look": "matched",
+        "font": "NotoSerifSC-variable.ttf",
+        "background_mode": "transparent_text_replacement",
+        "erased_ink_pixels": 3145,
+        "warnings": [],
+        "phase": "cleanup",
+        "visual_review": "pending"
+      },
+      "cleanup_style": {
+        "look": "matched",
+        "font": "D:/StaticHanHua/Tools/Fonts/NotoSC/NotoSerifSC-variable.ttf",
+        "clear_transparent_bg": true,
+        "halo": {
+          "alpha": 0
+        },
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "stroke_width": 1,
+        "stroke_rgba": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "font_weight": 900,
+        "italic": 8
+      }
+    },
+    {
+      "image_id": "d6fae21d780e32becd3f55ef08a67c95fcca4a64e46cdb5d06e19c2e171887a2",
+      "box": [
+        0,
+        38.7,
+        329,
+        90
+      ],
+      "text": "之王",
+      "csv_row": 29,
+      "sources": [
+        {
+          "path": "Menu/Logo.png",
+          "file_sha256": "95907e16faf5afe3ef6a475eae4111e9aeaf27457ba23afb3a6a6862d7a14ca5",
+          "image_id": "d6fae21d780e32becd3f55ef08a67c95fcca4a64e46cdb5d06e19c2e171887a2",
+          "width": 329,
+          "height": 90,
+          "provenance": {}
+        }
+      ],
+      "mask_rgba": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "text_rgba": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "rendering": {
+        "look": "matched",
+        "font": "NotoSerifSC-variable.ttf",
+        "background_mode": "transparent_text_replacement",
+        "erased_ink_pixels": 9610,
+        "warnings": [],
+        "phase": "cleanup",
+        "visual_review": "pending"
+      },
+      "cleanup_style": {
+        "look": "matched",
+        "font": "D:/StaticHanHua/Tools/Fonts/NotoSC/NotoSerifSC-variable.ttf",
+        "clear_transparent_bg": true,
+        "halo": {
+          "alpha": 0
+        },
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "stroke_width": 1,
+        "stroke_rgba": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "font_weight": 900,
+        "italic": 8
+      }
+    },
+    {
+      "image_id": "43584de2921553cf1dcdd273839550f8d522b8458d99e4e735f1bb0b90c1e466",
+      "box": [
+        0,
+        0,
+        658,
+        77.4
+      ],
+      "text": "龙城",
+      "csv_row": 28,
+      "sources": [
+        {
+          "path": "Menu/Logo@2x.png",
+          "file_sha256": "24ee44c8cb129a38ed567f14d0ebfdf3fa8f7646b47fffa2c51f0a2599594b28",
+          "image_id": "43584de2921553cf1dcdd273839550f8d522b8458d99e4e735f1bb0b90c1e466",
+          "width": 658,
+          "height": 180,
+          "provenance": {}
+        }
+      ],
+      "mask_rgba": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "text_rgba": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "rendering": {
+        "look": "matched",
+        "font": "NotoSerifSC-variable.ttf",
+        "background_mode": "transparent_text_replacement",
+        "erased_ink_pixels": 12813,
+        "warnings": [],
+        "phase": "cleanup",
+        "visual_review": "pending"
+      },
+      "cleanup_style": {
+        "look": "matched",
+        "font": "D:/StaticHanHua/Tools/Fonts/NotoSC/NotoSerifSC-variable.ttf",
+        "clear_transparent_bg": true,
+        "halo": {
+          "alpha": 0
+        },
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "stroke_width": 1,
+        "stroke_rgba": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "font_weight": 900,
+        "italic": 8
+      }
+    },
+    {
+      "image_id": "43584de2921553cf1dcdd273839550f8d522b8458d99e4e735f1bb0b90c1e466",
+      "box": [
+        0,
+        77.4,
+        658,
+        180
+      ],
+      "text": "之王",
+      "csv_row": 29,
+      "sources": [
+        {
+          "path": "Menu/Logo@2x.png",
+          "file_sha256": "24ee44c8cb129a38ed567f14d0ebfdf3fa8f7646b47fffa2c51f0a2599594b28",
+          "image_id": "43584de2921553cf1dcdd273839550f8d522b8458d99e4e735f1bb0b90c1e466",
+          "width": 658,
+          "height": 180,
+          "provenance": {}
+        }
+      ],
+      "mask_rgba": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "text_rgba": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "rendering": {
+        "look": "matched",
+        "font": "NotoSerifSC-variable.ttf",
+        "background_mode": "transparent_text_replacement",
+        "erased_ink_pixels": 38861,
+        "warnings": [],
+        "phase": "cleanup",
+        "visual_review": "pending"
+      },
+      "cleanup_style": {
+        "look": "matched",
+        "font": "D:/StaticHanHua/Tools/Fonts/NotoSC/NotoSerifSC-variable.ttf",
+        "clear_transparent_bg": true,
+        "halo": {
+          "alpha": 0
+        },
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "stroke_width": 1,
+        "stroke_rgba": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "font_weight": 900,
+        "italic": 8
+      }
+    },
+    {
+      "image_id": "98fc4e10620d4464a981299048be857b5fc3e0c06fb164b023c7ddccd794e04a",
+      "box": [
+        0,
+        0,
+        669,
+        81.27
+      ],
+      "text": "龙城",
+      "csv_row": 28,
+      "sources": [
+        {
+          "path": "Menu/Logo~ipad.png",
+          "file_sha256": "49a2795ede821f6445f4b9aa0753df02023d930e6792b435a63ca120aedda7f1",
+          "image_id": "98fc4e10620d4464a981299048be857b5fc3e0c06fb164b023c7ddccd794e04a",
+          "width": 669,
+          "height": 189,
+          "provenance": {}
+        }
+      ],
+      "mask_rgba": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "text_rgba": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "rendering": {
+        "look": "matched",
+        "font": "NotoSerifSC-variable.ttf",
+        "background_mode": "transparent_text_replacement",
+        "erased_ink_pixels": 12592,
+        "warnings": [],
+        "phase": "cleanup",
+        "visual_review": "pending"
+      },
+      "cleanup_style": {
+        "look": "matched",
+        "font": "D:/StaticHanHua/Tools/Fonts/NotoSC/NotoSerifSC-variable.ttf",
+        "clear_transparent_bg": true,
+        "halo": {
+          "alpha": 0
+        },
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "stroke_width": 1,
+        "stroke_rgba": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "font_weight": 900,
+        "italic": 8
+      }
+    },
+    {
+      "image_id": "98fc4e10620d4464a981299048be857b5fc3e0c06fb164b023c7ddccd794e04a",
+      "box": [
+        0,
+        81.27,
+        669,
+        189
+      ],
+      "text": "之王",
+      "csv_row": 29,
+      "sources": [
+        {
+          "path": "Menu/Logo~ipad.png",
+          "file_sha256": "49a2795ede821f6445f4b9aa0753df02023d930e6792b435a63ca120aedda7f1",
+          "image_id": "98fc4e10620d4464a981299048be857b5fc3e0c06fb164b023c7ddccd794e04a",
+          "width": 669,
+          "height": 189,
+          "provenance": {}
+        }
+      ],
+      "mask_rgba": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "text_rgba": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "rendering": {
+        "look": "matched",
+        "font": "NotoSerifSC-variable.ttf",
+        "background_mode": "transparent_text_replacement",
+        "erased_ink_pixels": 39086,
+        "warnings": [],
+        "phase": "cleanup",
+        "visual_review": "pending"
+      },
+      "cleanup_style": {
+        "look": "matched",
+        "font": "D:/StaticHanHua/Tools/Fonts/NotoSC/NotoSerifSC-variable.ttf",
+        "clear_transparent_bg": true,
+        "halo": {
+          "alpha": 0
+        },
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "stroke_width": 1,
+        "stroke_rgba": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "font_weight": 900,
+        "italic": 8
+      }
+    },
+    {
+      "image_id": "693210c955d757c2ee504a173b15e8f00358e0c9075c6b37ace86f250cb84217",
+      "box": [
+        0,
+        0,
+        1338,
+        162.54
+      ],
+      "text": "龙城",
+      "csv_row": 28,
+      "sources": [
+        {
+          "path": "Menu/Logo~ipad@2x.png",
+          "file_sha256": "16f9be385ff5c8a96585ca66abf13c342ed6680060bde6e5c45b4c01f1719c92",
+          "image_id": "693210c955d757c2ee504a173b15e8f00358e0c9075c6b37ace86f250cb84217",
+          "width": 1338,
+          "height": 378,
+          "provenance": {}
+        }
+      ],
+      "mask_rgba": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "text_rgba": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "rendering": {
+        "look": "matched",
+        "font": "NotoSerifSC-variable.ttf",
+        "background_mode": "transparent_text_replacement",
+        "erased_ink_pixels": 49952,
+        "warnings": [],
+        "phase": "cleanup",
+        "visual_review": "pending"
+      },
+      "cleanup_style": {
+        "look": "matched",
+        "font": "D:/StaticHanHua/Tools/Fonts/NotoSC/NotoSerifSC-variable.ttf",
+        "clear_transparent_bg": true,
+        "halo": {
+          "alpha": 0
+        },
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "stroke_width": 1,
+        "stroke_rgba": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "font_weight": 900,
+        "italic": 8
+      }
+    },
+    {
+      "image_id": "693210c955d757c2ee504a173b15e8f00358e0c9075c6b37ace86f250cb84217",
+      "box": [
+        0,
+        162.54,
+        1338,
+        378
+      ],
+      "text": "之王",
+      "csv_row": 29,
+      "sources": [
+        {
+          "path": "Menu/Logo~ipad@2x.png",
+          "file_sha256": "16f9be385ff5c8a96585ca66abf13c342ed6680060bde6e5c45b4c01f1719c92",
+          "image_id": "693210c955d757c2ee504a173b15e8f00358e0c9075c6b37ace86f250cb84217",
+          "width": 1338,
+          "height": 378,
+          "provenance": {}
+        }
+      ],
+      "mask_rgba": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "text_rgba": [
+        255,
+        255,
+        255,
+        255
+      ],
+      "rendering": {
+        "look": "matched",
+        "font": "NotoSerifSC-variable.ttf",
+        "background_mode": "transparent_text_replacement",
+        "erased_ink_pixels": 156274,
+        "warnings": [],
+        "phase": "cleanup",
+        "visual_review": "pending"
+      },
+      "cleanup_style": {
+        "look": "matched",
+        "font": "D:/StaticHanHua/Tools/Fonts/NotoSC/NotoSerifSC-variable.ttf",
+        "clear_transparent_bg": true,
+        "halo": {
+          "alpha": 0
+        },
+        "text_rgba": [
+          255,
+          255,
+          255,
+          255
+        ],
+        "stroke_width": 1,
+        "stroke_rgba": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "font_weight": 900,
+        "italic": 8
+      }
+    }
+  ],
+  "files": [
+    {
+      "image_id": "d6fae21d780e32becd3f55ef08a67c95fcca4a64e46cdb5d06e19c2e171887a2",
+      "path": "images/d6fae21d780e32becd3f55ef08a67c95fcca4a64e46cdb5d06e19c2e171887a2.png",
+      "sha256": "039a49b24303f20f50ab3a3f1cfddcba69b8bd75853b8120a4dba5a4bcf569ab",
+      "source": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\ImageText\\work2\\images\\d6fae21d780e32becd3f55ef08a67c95fcca4a64e46cdb5d06e19c2e171887a2.png",
+      "source_sha256": "16372547f0c08e2a05d493c7f1f79b49a2a9c8ed0ef0830e6447b152a16f83de",
+      "mask": "erase_masks\\d6fae21d780e32becd3f55ef08a67c95fcca4a64e46cdb5d06e19c2e171887a2.png",
+      "mask_sha256": "cfab52ea65c78a5c09f873a4c90e7ed5e6c7ba44a64d63f8e64b1f0b1eb82bc7"
+    },
+    {
+      "image_id": "43584de2921553cf1dcdd273839550f8d522b8458d99e4e735f1bb0b90c1e466",
+      "path": "images/43584de2921553cf1dcdd273839550f8d522b8458d99e4e735f1bb0b90c1e466.png",
+      "sha256": "99497a3e36fe56f9c9dfc99625acdc6cff6e22ce1317627264fd334554fb05c1",
+      "source": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\ImageText\\work2\\images\\43584de2921553cf1dcdd273839550f8d522b8458d99e4e735f1bb0b90c1e466.png",
+      "source_sha256": "5867d40dd97ea8b24b97ec406345228386da96e95e995241a3f9b45105928288",
+      "mask": "erase_masks\\43584de2921553cf1dcdd273839550f8d522b8458d99e4e735f1bb0b90c1e466.png",
+      "mask_sha256": "0eca15168c1b7f780959edaf420360066bcabbabbf09bb7c38b61238801e8602"
+    },
+    {
+      "image_id": "98fc4e10620d4464a981299048be857b5fc3e0c06fb164b023c7ddccd794e04a",
+      "path": "images/98fc4e10620d4464a981299048be857b5fc3e0c06fb164b023c7ddccd794e04a.png",
+      "sha256": "c58095a5eede183f1fdc75f2f866419f1a778aecc1045e734f7ed52680346b87",
+      "source": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\ImageText\\work2\\images\\98fc4e10620d4464a981299048be857b5fc3e0c06fb164b023c7ddccd794e04a.png",
+      "source_sha256": "6812537171c5ed087c0b55f29927e7fa4e37503af075bb001cf6294d5cfb25b0",
+      "mask": "erase_masks\\98fc4e10620d4464a981299048be857b5fc3e0c06fb164b023c7ddccd794e04a.png",
+      "mask_sha256": "255ac2f8d462a68a04211d56fbb445c0a7ac5b3568c993710c02b1474fc5a582"
+    },
+    {
+      "image_id": "693210c955d757c2ee504a173b15e8f00358e0c9075c6b37ace86f250cb84217",
+      "path": "images/693210c955d757c2ee504a173b15e8f00358e0c9075c6b37ace86f250cb84217.png",
+      "sha256": "7c9a8dc5eab883ed3a32dd58dfb06a7cc929c71e3697f3bd931c64a255b4612d",
+      "source": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\ImageText\\work2\\images\\693210c955d757c2ee504a173b15e8f00358e0c9075c6b37ace86f250cb84217.png",
+      "source_sha256": "c15b8e9636b63c237e9a2fe03f030b7bec2f1c94d173df34e44602b3d3e90883",
+      "mask": "erase_masks\\693210c955d757c2ee504a173b15e8f00358e0c9075c6b37ace86f250cb84217.png",
+      "mask_sha256": "d73004382057a7e127cb894082cc83f099050915b507dfe40e673f4af5922d63"
+    }
+  ],
+  "note": "No Chinese drawn. Cleanup masks describe attempted erasure, not verified text removal."
+}
