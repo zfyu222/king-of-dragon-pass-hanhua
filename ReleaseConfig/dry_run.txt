@@ -1,4 +1,4 @@
-将生成：D:\StaticHanHua\Projects\king-of-dragon-pass\Dispatch\龙城之王_子非鱼汉化1.2.zip
+将生成：D:\StaticHanHua\Projects\king-of-dragon-pass\Dispatch\龙城之王_子非鱼汉化1.3.zip
   D:\StaticHanHua\Projects\king-of-dragon-pass\Dispatch\Files\汉化文件\KoDPCNHook\KoDPCNHook.dll -> 汉化文件/KoDPCNHook/KoDPCNHook.dll
   D:\StaticHanHua\Projects\king-of-dragon-pass\Dispatch\Files\汉化文件\KoDPCNHook\KoDPCNLauncher.exe -> 汉化文件/KoDPCNHook/KoDPCNLauncher.exe
   D:\StaticHanHua\Projects\king-of-dragon-pass\Dispatch\Files\汉化文件\KoDPCNHook\translations.tsv -> 汉化文件/KoDPCNHook/translations.tsv
@@ -363,8 +363,7 @@
   D:\StaticHanHua\Projects\king-of-dragon-pass\Dispatch\Files\汉化文件\资源\KoDp\textures\Scenes\scene226.jpg -> KoDp/textures/Scenes/scene226.jpg
   D:\StaticHanHua\Projects\king-of-dragon-pass\Dispatch\Files\汉化文件\资源\KoDp\textures\Scenes~ipad\scene226.jpg -> KoDp/textures/Scenes~ipad/scene226.jpg
   D:\StaticHanHua\Projects\king-of-dragon-pass\Dispatch\Files\汉化文件\资源\logo480.rgba -> KoDP480.group.bin
-  D:\StaticHanHua\Projects\king-of-dragon-pass\Dispatch\Files\安装汉化.cmd -> 安装汉化.cmd
-  D:\StaticHanHua\Projects\king-of-dragon-pass\Dispatch\Files\启动汉化.cmd -> 启动汉化.cmd
   D:\StaticHanHua\Projects\king-of-dragon-pass\Dispatch\Files\卸载汉化.cmd -> 卸载汉化.cmd
   D:\StaticHanHua\Projects\king-of-dragon-pass\Dispatch\Files\汉化工具\install.ps1 -> 汉化工具/install.ps1
   D:\StaticHanHua\Projects\king-of-dragon-pass\Dispatch\Files\汉化工具\launch.ps1 -> 汉化工具/launch.ps1
+  D:\StaticHanHua\Projects\king-of-dragon-pass\Dispatch\Files\龙城之王_中文版.exe -> 龙城之王_中文版.exe

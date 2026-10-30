@@ -2,7 +2,7 @@
   "authorization": "explicit_user_release",
   "accept_pending_runtime": true,
   "in_game_validation": "pending",
-  "user_statement": "可以，发布吧",
+  "user_statement": "再次发布补丁吧",
   "game_version": "Steam v2.4.0",
   "platform": "Steam（Windows）",
   "translation_sha256": "cd90ffc6a0dc395535f244709bd99ef171ae0d0884c1c280d54f2be29d193e50",
@@ -1828,16 +1828,6 @@
       "game_path": "KoDP480.group.bin"
     },
     {
-      "path": "Dispatch/Files/安装汉化.cmd",
-      "sha256": "f315dc515638becbbccc9919074a745327268a275163b8c9ffdd74ff61887879",
-      "game_path": "安装汉化.cmd"
-    },
-    {
-      "path": "Dispatch/Files/启动汉化.cmd",
-      "sha256": "92881ced1982acba7d3378a49c3de7f16e150fba87c8c0dbca25518df72d7a86",
-      "game_path": "启动汉化.cmd"
-    },
-    {
       "path": "Dispatch/Files/卸载汉化.cmd",
       "sha256": "1f538fc74d9fcbedd682e5f4003aee4a735551cdbbee8c301f569a147ffcc6bc",
       "game_path": "卸载汉化.cmd"
@@ -1849,14 +1839,19 @@
     },
     {
       "path": "Dispatch/Files/汉化工具/launch.ps1",
-      "sha256": "18431245e9c3462cba47502ce19bc09c8fbfa642b4af1650cda7d775367f35aa",
+      "sha256": "c091d2e1fd511b189c73a61b66a7b6bd956dab1a27335126607b63b999ee3fac",
       "game_path": "汉化工具/launch.ps1"
+    },
+    {
+      "path": "Dispatch/Files/龙城之王_中文版.exe",
+      "sha256": "0ef2555c84e5a7bba8bad8fa74c2395ac7b35e8adb83c0a28aa96a3b2ea2d4c0",
+      "game_path": "龙城之王_中文版.exe"
     }
   ],
   "evidence_files": [
     {
-      "path": "ReleaseConfig/USER_RELEASE_AUTHORIZATION_v1.2.md",
-      "sha256": "2d1decc719a20f97d797a91ba2c241aa64bdffb4d8a56e1e269b7ffa45299a2b"
+      "path": "ReleaseConfig/USER_RELEASE_AUTHORIZATION_v1.3.md",
+      "sha256": "33b589b1337c95def92001b99fdd9701dad6be5cef31a67fe4417f286b9423ea"
     }
   ],
   "status": "authorized",

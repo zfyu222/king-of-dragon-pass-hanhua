@@ -2,1861 +2,1856 @@
   "authorization": "explicit_user_release",
   "accept_pending_runtime": true,
   "in_game_validation": "pending",
-  "user_statement": "可以，发布吧",
+  "user_statement": "再次发布补丁吧",
   "game_version": "Steam v2.4.0",
   "platform": "Steam（Windows）",
   "translation_sha256": "52ebdacb30dc74df83902c083c87c97c84a34cd466ecaf848626f8a9cad706d6",
   "payload_files": [
     {
-      "path": "ReleasePayload/v1.2/汉化文件/KoDPCNHook/KoDPCNHook.dll",
+      "path": "ReleasePayload/v1.3/汉化文件/KoDPCNHook/KoDPCNHook.dll",
       "sha256": "8efc21327d8f670a43688ae93d6c93176de5b105cfa3a00ab1871a0f192449c8",
       "game_path": "汉化文件/KoDPCNHook/KoDPCNHook.dll"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/KoDPCNHook/KoDPCNLauncher.exe",
+      "path": "ReleasePayload/v1.3/汉化文件/KoDPCNHook/KoDPCNLauncher.exe",
       "sha256": "25494c38704c9dadce4ae3520cb5ab6bcdc47f7e1d2f40fb945f1d2c4d67a391",
       "game_path": "汉化文件/KoDPCNHook/KoDPCNLauncher.exe"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/KoDPCNHook/translations.tsv",
+      "path": "ReleasePayload/v1.3/汉化文件/KoDPCNHook/translations.tsv",
       "sha256": "c15413a1eb984df66df6f8d7fbac67ecc4d8d9e43dfc64cfc37467db5b1f7058",
       "game_path": "汉化文件/KoDPCNHook/translations.tsv"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Achievements.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Achievements.html",
       "sha256": "d7244b4624dc2c54915041cca3733d3a0e769f32ee22c88d6ff6fe00af35966d",
       "game_path": "KoDp/Manual/Achievements.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Achievements~ipad.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Achievements~ipad.html",
       "sha256": "d298d811bc5471ed349980ff1d17d4e3a27ee8ca8ef09646d81f1ab4d6cfcd1e",
       "game_path": "KoDp/Manual/Achievements~ipad.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Clan.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Clan.html",
       "sha256": "3b3739963ba1d698515a9f808b41fe73af7d0aee21e9e6740f4185eafe348835",
       "game_path": "KoDp/Manual/Clan.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Controls.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Controls.html",
       "sha256": "159bef0208b8ab3ec8f8c509b96a13e8da41e94165c9a9c5d8f2d3f8e07267cc",
       "game_path": "KoDp/Manual/Controls.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Controls~ipad.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Controls~ipad.html",
       "sha256": "159bef0208b8ab3ec8f8c509b96a13e8da41e94165c9a9c5d8f2d3f8e07267cc",
       "game_path": "KoDp/Manual/Controls~ipad.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Crises.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Crises.html",
       "sha256": "b02878e92cead6ceabd61d94907f7b79a5f745b8ea65bf6dead2c23dcb1d6b4a",
       "game_path": "KoDp/Manual/Crises.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Crises~ipad.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Crises~ipad.html",
       "sha256": "27cecfa83bef37e12abe18592e484c6162eda377f72d2d4a1060d33d6c126b3a",
       "game_path": "KoDp/Manual/Crises~ipad.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/DontRead.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/DontRead.html",
       "sha256": "5c1ac4f27e396bcf7789cc8cb23b5488131d9d49350f501deb32d94f8ddd5f8b",
       "game_path": "KoDp/Manual/DontRead.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/DontRead~ipad.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/DontRead~ipad.html",
       "sha256": "d415d9769870eb7ff97e5b3abea9cd32fb3cecf74e652ed5be3e49c3d6845731",
       "game_path": "KoDp/Manual/DontRead~ipad.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/ExplorationMap.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/ExplorationMap.html",
       "sha256": "5752fbb4f7bcfc795694023b53acba374e92383b633d324bed29f3ddf158cc0a",
       "game_path": "KoDp/Manual/ExplorationMap.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Farming.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Farming.html",
       "sha256": "2f4bda8339e51acc4e58ccb8a9be8e7df16c4341801e466f7a78d177a3909d69",
       "game_path": "KoDp/Manual/Farming.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Glorantha.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Glorantha.html",
       "sha256": "89fa7292588bd65c5006907345304c3e765afb95b952e961f80c2c90b293d4a0",
       "game_path": "KoDp/Manual/Glorantha.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Info.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Info.html",
       "sha256": "02e78085dc6c1fdd79852328d954500adf2523dd180fd8c2adf27e8480a43aa4",
       "game_path": "KoDp/Manual/Info.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Info~ipad.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Info~ipad.html",
       "sha256": "fc6a5a92c1e7e274797acf1bef03220f6dab5ad27aa9c9af4c96f1938358fe8f",
       "game_path": "KoDp/Manual/Info~ipad.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Intro.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Intro.html",
       "sha256": "787f78366298c4e46ce204d2ba025ac98ffd08d4ba6e80372d4d0d20e464d2d2",
       "game_path": "KoDp/Manual/Intro.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Lore.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Lore.html",
       "sha256": "d8896cd95906e632423c47f14d627beded38524269eb7069b3d9aaa5fd90d838",
       "game_path": "KoDp/Manual/Lore.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Magic.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Magic.html",
       "sha256": "ca6e4979f74a7e8a805168e848c353d00c25110b15993080f338058fce860a4b",
       "game_path": "KoDp/Manual/Magic.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Magic~ipad.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Magic~ipad.html",
       "sha256": "1e8d523479648df310a9b7da054e712e0b6a00892e5ced686d217569bafd73c3",
       "game_path": "KoDp/Manual/Magic~ipad.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Notes.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Notes.html",
       "sha256": "79ee92e21afe29f13607f3d4e68e84bd69cf1d7b96be6b07bad94f54ec716bbe",
       "game_path": "KoDp/Manual/Notes.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Notes~ipad.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Notes~ipad.html",
       "sha256": "cbcccd43528a7a7c1324a330405a3ac5cb0edcb031dea8c7535a487d62e1ac5b",
       "game_path": "KoDp/Manual/Notes~ipad.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Questionnaire.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Questionnaire.html",
       "sha256": "fdb7642c44aa33d5cb55eee7f6892e3facf0c225c1448365d144e918bf914593",
       "game_path": "KoDp/Manual/Questionnaire.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Questionnaire~ipad.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Questionnaire~ipad.html",
       "sha256": "087fb16ee93f515d5c53d5f4d137094c48d93ef0a4f64fda0ea9b101bc828e7b",
       "game_path": "KoDp/Manual/Questionnaire~ipad.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Relations.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Relations.html",
       "sha256": "6749beaebfe38d771e4dd922bf0e9a4f847c7f300eb3c23d909fe84aec4d4453",
       "game_path": "KoDp/Manual/Relations.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Relations~ipad.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Relations~ipad.html",
       "sha256": "41c9db7eff35a666bce4ffc7facecda2b7e9046ca0c9c69adebe2cb8b8388ab4",
       "game_path": "KoDp/Manual/Relations~ipad.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Reorganization.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Reorganization.html",
       "sha256": "433e430d59451d3ec913cd06e02402f911f8d95e750362a4cd060f4acba9d364",
       "game_path": "KoDp/Manual/Reorganization.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/SacredTime.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/SacredTime.html",
       "sha256": "75aee68fbbbad41823f3019a1078e1d611e502c46e85b9f600f0a813f10b9f15",
       "game_path": "KoDp/Manual/SacredTime.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/SacredTime~ipad.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/SacredTime~ipad.html",
       "sha256": "cb424f4752fa190349eeabc512209097d7dd5fc5d70171b7f98f0a26214ac183",
       "game_path": "KoDp/Manual/SacredTime~ipad.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Saga.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Saga.html",
       "sha256": "d8f2e3c80bd0875613e74764a998e1257d00b4537436b40d97b69e76ef8f0c70",
       "game_path": "KoDp/Manual/Saga.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Saga~ipad.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Saga~ipad.html",
       "sha256": "20471ccc0bec9d07249be4cd7082743f2593c4915921dab54bedbdc69ad79f38",
       "game_path": "KoDp/Manual/Saga~ipad.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Trade.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Trade.html",
       "sha256": "4c8e3032701c42ea2e92464db6ba8ea2bb2428e52277929c5ed9147ff94472d0",
       "game_path": "KoDp/Manual/Trade.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Tribe.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Tribe.html",
       "sha256": "7bea1ebae5820a6f468bb3cd70a2a66d2ef52d9a3b7b1e3945349d615509fa37",
       "game_path": "KoDp/Manual/Tribe.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Tribe~ipad.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Tribe~ipad.html",
       "sha256": "0c2b62f4c2a5ed7e9044e84381feee3786b23ed0f92e16f016ce3d5d226d1a8f",
       "game_path": "KoDp/Manual/Tribe~ipad.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/War.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/War.html",
       "sha256": "61fa1fdfd3a13c93be7bdb619698445eaf9746ca1e4040f71cec91e2a2781788",
       "game_path": "KoDp/Manual/War.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/War~ipad.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/War~ipad.html",
       "sha256": "fb1f5be715c7008432f3a979d39bc29f32cc66d79ca226c0e2125a93be953c81",
       "game_path": "KoDp/Manual/War~ipad.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/Winning.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/Winning.html",
       "sha256": "4a5fa24a0eb9bbca5c18081408a4c510caca0cbe8bc35bb6183072136bed9406",
       "game_path": "KoDp/Manual/Winning.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Manual/toc.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Manual/toc.html",
       "sha256": "21578ff9b4cb8602b3b456c6d37faeb0eda7278384833803da9c73834799017c",
       "game_path": "KoDp/Manual/toc.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/Beginning_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/Beginning_full.html",
       "sha256": "4100f7fb877d8faa02231caa83a6fe564024b7c514daf931006030098041c104",
       "game_path": "KoDp/Text/Beginning_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/Beginning_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/Beginning_full.html",
       "sha256": "4100f7fb877d8faa02231caa83a6fe564024b7c514daf931006030098041c104",
       "game_path": "KoDp/_Text/Beginning_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/Beginning_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/Beginning_full_ni.html",
       "sha256": "dfc49ad67eb371bd72219cc0c92572991466c439c68c2356659a4ffca99cc8d1",
       "game_path": "KoDp/Text/Beginning_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/Beginning_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/Beginning_full_ni.html",
       "sha256": "dfc49ad67eb371bd72219cc0c92572991466c439c68c2356659a4ffca99cc8d1",
       "game_path": "KoDp/_Text/Beginning_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/Beginning_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/Beginning_mini.html",
       "sha256": "8ffacf991925dd9c9d5c3195b01e5ecf2e091ad7e3f792730b92b339a3241a49",
       "game_path": "KoDp/Text/Beginning_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/Beginning_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/Beginning_mini.html",
       "sha256": "8ffacf991925dd9c9d5c3195b01e5ecf2e091ad7e3f792730b92b339a3241a49",
       "game_path": "KoDp/_Text/Beginning_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/Beginning_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/Beginning_mini_ni.html",
       "sha256": "44441b11ec3898aafd47c37edf10fba2f2f2d1057d684637fd2d98efca706014",
       "game_path": "KoDp/Text/Beginning_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/Beginning_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/Beginning_mini_ni.html",
       "sha256": "44441b11ec3898aafd47c37edf10fba2f2f2d1057d684637fd2d98efca706014",
       "game_path": "KoDp/_Text/Beginning_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/Calendar.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/Calendar.html",
       "sha256": "3ddd2f6f8b788a29ef6f9dc247f37b67152ca22262b847bef946aaf070d75c31",
       "game_path": "KoDp/Text/Calendar.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/Calendar.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/Calendar.html",
       "sha256": "3ddd2f6f8b788a29ef6f9dc247f37b67152ca22262b847bef946aaf070d75c31",
       "game_path": "KoDp/_Text/Calendar.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/ChalanaArroyScars_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/ChalanaArroyScars_full.html",
       "sha256": "66630939609974cb3d179580ae4d5bab2edebae067127d282b3e2eb2f14543ed",
       "game_path": "KoDp/Text/ChalanaArroyScars_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/ChalanaArroyScars_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/ChalanaArroyScars_full.html",
       "sha256": "66630939609974cb3d179580ae4d5bab2edebae067127d282b3e2eb2f14543ed",
       "game_path": "KoDp/_Text/ChalanaArroyScars_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/ChalanaArroyScars_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/ChalanaArroyScars_full_ni.html",
       "sha256": "0566a68d2538eb9364bc145dde70cd49df7d67e513bad2c1d51fb41f324732fc",
       "game_path": "KoDp/Text/ChalanaArroyScars_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/ChalanaArroyScars_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/ChalanaArroyScars_full_ni.html",
       "sha256": "0566a68d2538eb9364bc145dde70cd49df7d67e513bad2c1d51fb41f324732fc",
       "game_path": "KoDp/_Text/ChalanaArroyScars_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/ChalanaArroyScars_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/ChalanaArroyScars_mini.html",
       "sha256": "89ea011eb5dfc86d0f3b72b7f56718a8486ac37529881a86dad5a958a840eff7",
       "game_path": "KoDp/Text/ChalanaArroyScars_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/ChalanaArroyScars_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/ChalanaArroyScars_mini.html",
       "sha256": "89ea011eb5dfc86d0f3b72b7f56718a8486ac37529881a86dad5a958a840eff7",
       "game_path": "KoDp/_Text/ChalanaArroyScars_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/ChalanaArroyScars_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/ChalanaArroyScars_mini_ni.html",
       "sha256": "6e696a72d38836e27691fec850e4fa4b59ee4c43a9afbdc4d9a0a54971927668",
       "game_path": "KoDp/Text/ChalanaArroyScars_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/ChalanaArroyScars_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/ChalanaArroyScars_mini_ni.html",
       "sha256": "6e696a72d38836e27691fec850e4fa4b59ee4c43a9afbdc4d9a0a54971927668",
       "game_path": "KoDp/_Text/ChalanaArroyScars_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/Chaos.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/Chaos.html",
       "sha256": "b523a54dd304dfa14c011763b0941076c906128e1b9fe3d35ee384e7fa186ce3",
       "game_path": "KoDp/Text/Chaos.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/Chaos.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/Chaos.html",
       "sha256": "b523a54dd304dfa14c011763b0941076c906128e1b9fe3d35ee384e7fa186ce3",
       "game_path": "KoDp/_Text/Chaos.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/Contests_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/Contests_full.html",
       "sha256": "5ecb9a2c81971fb079d289b078533be411ae48df4f1ec94c6c7badb58d09b8a6",
       "game_path": "KoDp/Text/Contests_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/Contests_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/Contests_full.html",
       "sha256": "5ecb9a2c81971fb079d289b078533be411ae48df4f1ec94c6c7badb58d09b8a6",
       "game_path": "KoDp/_Text/Contests_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/Contests_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/Contests_full_ni.html",
       "sha256": "3d7898f23d0b0c0907db1ee3156c787fbb0d6686d348a3b545db7927a984fe93",
       "game_path": "KoDp/Text/Contests_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/Contests_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/Contests_full_ni.html",
       "sha256": "3d7898f23d0b0c0907db1ee3156c787fbb0d6686d348a3b545db7927a984fe93",
       "game_path": "KoDp/_Text/Contests_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/Contests_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/Contests_mini.html",
       "sha256": "f4952c40228eb28aa3750c8592f549b39d6284b727d9c3dccf4f03e614eab2ba",
       "game_path": "KoDp/Text/Contests_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/Contests_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/Contests_mini.html",
       "sha256": "f4952c40228eb28aa3750c8592f549b39d6284b727d9c3dccf4f03e614eab2ba",
       "game_path": "KoDp/_Text/Contests_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/Contests_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/Contests_mini_ni.html",
       "sha256": "9376693852983a1df5af81a6deb9558327003e9c21a02135fbe94b14a7f6ef5a",
       "game_path": "KoDp/Text/Contests_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/Contests_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/Contests_mini_ni.html",
       "sha256": "9376693852983a1df5af81a6deb9558327003e9c21a02135fbe94b14a7f6ef5a",
       "game_path": "KoDp/_Text/Contests_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/Deities.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/Deities.html",
       "sha256": "107252a91c6483e9b9a715fc82be45ca6cad96a774eab556f8deccd14e18b714",
       "game_path": "KoDp/Text/Deities.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/Deities.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/Deities.html",
       "sha256": "107252a91c6483e9b9a715fc82be45ca6cad96a774eab556f8deccd14e18b714",
       "game_path": "KoDp/_Text/Deities.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/DragonEmpire_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/DragonEmpire_full.html",
       "sha256": "b2411725bed14514b9005b123512de6603971240957d65f63bd39c37452d855f",
       "game_path": "KoDp/Text/DragonEmpire_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/DragonEmpire_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/DragonEmpire_full.html",
       "sha256": "b2411725bed14514b9005b123512de6603971240957d65f63bd39c37452d855f",
       "game_path": "KoDp/_Text/DragonEmpire_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/DragonEmpire_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/DragonEmpire_full_ni.html",
       "sha256": "67ec394d51378557b36d945e1f818937087050d3ec900a1104d596835eb2add2",
       "game_path": "KoDp/Text/DragonEmpire_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/DragonEmpire_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/DragonEmpire_full_ni.html",
       "sha256": "67ec394d51378557b36d945e1f818937087050d3ec900a1104d596835eb2add2",
       "game_path": "KoDp/_Text/DragonEmpire_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/DragonEmpire_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/DragonEmpire_mini.html",
       "sha256": "4c2feea47300708ed5950c2236533bc213e2db99dfb23e7060b10139543189ef",
       "game_path": "KoDp/Text/DragonEmpire_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/DragonEmpire_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/DragonEmpire_mini.html",
       "sha256": "4c2feea47300708ed5950c2236533bc213e2db99dfb23e7060b10139543189ef",
       "game_path": "KoDp/_Text/DragonEmpire_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/DragonEmpire_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/DragonEmpire_mini_ni.html",
       "sha256": "dd0b903862a6b75df982f13a53427d21d90f019e82088b5f9e473149993b336b",
       "game_path": "KoDp/Text/DragonEmpire_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/DragonEmpire_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/DragonEmpire_mini_ni.html",
       "sha256": "dd0b903862a6b75df982f13a53427d21d90f019e82088b5f9e473149993b336b",
       "game_path": "KoDp/_Text/DragonEmpire_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/EarlySettlements_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/EarlySettlements_full.html",
       "sha256": "d00aa36410548bb04d4a3113f3e3678019d4f1c797999e427584df9564c35ed5",
       "game_path": "KoDp/Text/EarlySettlements_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/EarlySettlements_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/EarlySettlements_full.html",
       "sha256": "d00aa36410548bb04d4a3113f3e3678019d4f1c797999e427584df9564c35ed5",
       "game_path": "KoDp/_Text/EarlySettlements_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/EarlySettlements_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/EarlySettlements_full_ni.html",
       "sha256": "e7ec2cb22d3f487cb0e517661934d3d39bcc2056e25869d69f924f761f41df30",
       "game_path": "KoDp/Text/EarlySettlements_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/EarlySettlements_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/EarlySettlements_full_ni.html",
       "sha256": "e7ec2cb22d3f487cb0e517661934d3d39bcc2056e25869d69f924f761f41df30",
       "game_path": "KoDp/_Text/EarlySettlements_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/EarlySettlements_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/EarlySettlements_mini.html",
       "sha256": "e5a5b1cc550a8ea083b85bd316e0808793ec108acbee4d43e7398ec3ec7280f3",
       "game_path": "KoDp/Text/EarlySettlements_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/EarlySettlements_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/EarlySettlements_mini.html",
       "sha256": "e5a5b1cc550a8ea083b85bd316e0808793ec108acbee4d43e7398ec3ec7280f3",
       "game_path": "KoDp/_Text/EarlySettlements_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/EarlySettlements_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/EarlySettlements_mini_ni.html",
       "sha256": "f6f1eade168b444b3a1c0c77db1fc3969fd6a3b39aca234cd6ca5491ec2c34bd",
       "game_path": "KoDp/Text/EarlySettlements_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/EarlySettlements_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/EarlySettlements_mini_ni.html",
       "sha256": "f6f1eade168b444b3a1c0c77db1fc3969fd6a3b39aca234cd6ca5491ec2c34bd",
       "game_path": "KoDp/_Text/EarlySettlements_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/ElmalStead_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/ElmalStead_full.html",
       "sha256": "7ddb4a1fc84cf4785c859d641844dfb1b019f0e99214c07e11d2113855d28964",
       "game_path": "KoDp/Text/ElmalStead_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/ElmalStead_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/ElmalStead_full.html",
       "sha256": "7ddb4a1fc84cf4785c859d641844dfb1b019f0e99214c07e11d2113855d28964",
       "game_path": "KoDp/_Text/ElmalStead_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/ElmalStead_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/ElmalStead_full_ni.html",
       "sha256": "be9091b25a3f1f0a823920c0eed91603082e5f42291c4665552a4604a5ed443e",
       "game_path": "KoDp/Text/ElmalStead_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/ElmalStead_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/ElmalStead_full_ni.html",
       "sha256": "be9091b25a3f1f0a823920c0eed91603082e5f42291c4665552a4604a5ed443e",
       "game_path": "KoDp/_Text/ElmalStead_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/ElmalStead_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/ElmalStead_mini.html",
       "sha256": "afa686a49f45737c5518ee6b85d09df92bc79626672b69234ddc5184186d72f9",
       "game_path": "KoDp/Text/ElmalStead_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/ElmalStead_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/ElmalStead_mini.html",
       "sha256": "afa686a49f45737c5518ee6b85d09df92bc79626672b69234ddc5184186d72f9",
       "game_path": "KoDp/_Text/ElmalStead_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/ElmalStead_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/ElmalStead_mini_ni.html",
       "sha256": "864c7951afda5e3d9b0c8ef5acb3709ddbbe9034bee547a960cb76e511a8937c",
       "game_path": "KoDp/Text/ElmalStead_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/ElmalStead_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/ElmalStead_mini_ni.html",
       "sha256": "864c7951afda5e3d9b0c8ef5acb3709ddbbe9034bee547a960cb76e511a8937c",
       "game_path": "KoDp/_Text/ElmalStead_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/ElmalStead_secret.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/ElmalStead_secret.html",
       "sha256": "8be6d6a670b287d0460305a50f2110892c06230659c832dab2847e33df9eb0eb",
       "game_path": "KoDp/Text/ElmalStead_secret.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/ElmalStead_secret.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/ElmalStead_secret.html",
       "sha256": "8be6d6a670b287d0460305a50f2110892c06230659c832dab2847e33df9eb0eb",
       "game_path": "KoDp/_Text/ElmalStead_secret.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/ElmalStead_secret_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/ElmalStead_secret_ni.html",
       "sha256": "510af1df97f634ed492726db934a8245f78b688394cf738b0552c8e9f18804f9",
       "game_path": "KoDp/Text/ElmalStead_secret_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/ElmalStead_secret_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/ElmalStead_secret_ni.html",
       "sha256": "510af1df97f634ed492726db934a8245f78b688394cf738b0552c8e9f18804f9",
       "game_path": "KoDp/_Text/ElmalStead_secret_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/ErnaldaFeeds_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/ErnaldaFeeds_full.html",
       "sha256": "856289cf89877669a83792790597074e16ad5e32b2d80256b8df78e993fc1575",
       "game_path": "KoDp/Text/ErnaldaFeeds_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/ErnaldaFeeds_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/ErnaldaFeeds_full.html",
       "sha256": "856289cf89877669a83792790597074e16ad5e32b2d80256b8df78e993fc1575",
       "game_path": "KoDp/_Text/ErnaldaFeeds_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/ErnaldaFeeds_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/ErnaldaFeeds_full_ni.html",
       "sha256": "08dc9d75bba6245d6c410f4a80e9c2cd2fc2ac17dd52a6efda8b97aeff24d3d7",
       "game_path": "KoDp/Text/ErnaldaFeeds_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/ErnaldaFeeds_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/ErnaldaFeeds_full_ni.html",
       "sha256": "08dc9d75bba6245d6c410f4a80e9c2cd2fc2ac17dd52a6efda8b97aeff24d3d7",
       "game_path": "KoDp/_Text/ErnaldaFeeds_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/ErnaldaFeeds_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/ErnaldaFeeds_mini.html",
       "sha256": "6d28825a5931661af2ac23f1d9aa89ca74133d7be06a141283fd23f534c48cf6",
       "game_path": "KoDp/Text/ErnaldaFeeds_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/ErnaldaFeeds_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/ErnaldaFeeds_mini.html",
       "sha256": "6d28825a5931661af2ac23f1d9aa89ca74133d7be06a141283fd23f534c48cf6",
       "game_path": "KoDp/_Text/ErnaldaFeeds_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/ErnaldaFeeds_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/ErnaldaFeeds_mini_ni.html",
       "sha256": "b28c9b54f2772367a4d08300bc6f07b8951fd35830465183aca8bb10072592c4",
       "game_path": "KoDp/Text/ErnaldaFeeds_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/ErnaldaFeeds_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/ErnaldaFeeds_mini_ni.html",
       "sha256": "b28c9b54f2772367a4d08300bc6f07b8951fd35830465183aca8bb10072592c4",
       "game_path": "KoDp/_Text/ErnaldaFeeds_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/ErnaldaFeeds_secret.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/ErnaldaFeeds_secret.html",
       "sha256": "7c915ecac4259fe18a85e1d24f87b5196425be7ee2d41599b98c49cde40a6ec4",
       "game_path": "KoDp/Text/ErnaldaFeeds_secret.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/ErnaldaFeeds_secret.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/ErnaldaFeeds_secret.html",
       "sha256": "7c915ecac4259fe18a85e1d24f87b5196425be7ee2d41599b98c49cde40a6ec4",
       "game_path": "KoDp/_Text/ErnaldaFeeds_secret.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/ErnaldaFeeds_secret_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/ErnaldaFeeds_secret_ni.html",
       "sha256": "18300718989dba6308d55bdca1cfb6e458a9ea0508c862619fb4638d122cf5c6",
       "game_path": "KoDp/Text/ErnaldaFeeds_secret_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/ErnaldaFeeds_secret_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/ErnaldaFeeds_secret_ni.html",
       "sha256": "18300718989dba6308d55bdca1cfb6e458a9ea0508c862619fb4638d122cf5c6",
       "game_path": "KoDp/_Text/ErnaldaFeeds_secret_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/Foreigners.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/Foreigners.html",
       "sha256": "e2d50e5efff6e61986e3b882e3898e0d222f5e870bbb1471a4f8f8f88036cafb",
       "game_path": "KoDp/Text/Foreigners.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/Foreigners.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/Foreigners.html",
       "sha256": "e2d50e5efff6e61986e3b882e3898e0d222f5e870bbb1471a4f8f8f88036cafb",
       "game_path": "KoDp/_Text/Foreigners.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/Glossary.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/Glossary.html",
       "sha256": "51f7e1b60ba110388c3e050a44d9515b4fa02a71197349c07f9e136e993de45a",
       "game_path": "KoDp/Text/Glossary.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/Glossary.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/Glossary.html",
       "sha256": "51f7e1b60ba110388c3e050a44d9515b4fa02a71197349c07f9e136e993de45a",
       "game_path": "KoDp/_Text/Glossary.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/GreatDarkness_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/GreatDarkness_full.html",
       "sha256": "018714ed37dd8a63076ebb5cf49336a0e9dd52f4922397775100ce961986fc06",
       "game_path": "KoDp/Text/GreatDarkness_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/GreatDarkness_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/GreatDarkness_full.html",
       "sha256": "018714ed37dd8a63076ebb5cf49336a0e9dd52f4922397775100ce961986fc06",
       "game_path": "KoDp/_Text/GreatDarkness_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/GreatDarkness_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/GreatDarkness_full_ni.html",
       "sha256": "012c25ded23b7c75097a34c31d6fdb4412d2f3863852d127679dd067d17ad15f",
       "game_path": "KoDp/Text/GreatDarkness_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/GreatDarkness_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/GreatDarkness_full_ni.html",
       "sha256": "012c25ded23b7c75097a34c31d6fdb4412d2f3863852d127679dd067d17ad15f",
       "game_path": "KoDp/_Text/GreatDarkness_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/GreatDarkness_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/GreatDarkness_mini.html",
       "sha256": "2b949bb1e99b3c2f08cdaec4a56e3f89490bd4b3fc122ed23ae29f51d12005be",
       "game_path": "KoDp/Text/GreatDarkness_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/GreatDarkness_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/GreatDarkness_mini.html",
       "sha256": "2b949bb1e99b3c2f08cdaec4a56e3f89490bd4b3fc122ed23ae29f51d12005be",
       "game_path": "KoDp/_Text/GreatDarkness_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/GreatDarkness_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/GreatDarkness_mini_ni.html",
       "sha256": "69e91e075214c3f7b48f555316914f2fd33424d04cc8b95082cee20553085773",
       "game_path": "KoDp/Text/GreatDarkness_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/GreatDarkness_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/GreatDarkness_mini_ni.html",
       "sha256": "69e91e075214c3f7b48f555316914f2fd33424d04cc8b95082cee20553085773",
       "game_path": "KoDp/_Text/GreatDarkness_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/Heortland.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/Heortland.html",
       "sha256": "4e8d35d5ccdb9b11cbfd0f8d26f403746cba627aa0def2f93bc652f61d6debd1",
       "game_path": "KoDp/Text/Heortland.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/Heortland.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/Heortland.html",
       "sha256": "4e8d35d5ccdb9b11cbfd0f8d26f403746cba627aa0def2f93bc652f61d6debd1",
       "game_path": "KoDp/_Text/Heortland.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/History_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/History_full.html",
       "sha256": "a2f2b0993e3d36631162bb96889aba7dd0c5562575b4ca398f3487d077301878",
       "game_path": "KoDp/Text/History_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/History_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/History_full.html",
       "sha256": "a2f2b0993e3d36631162bb96889aba7dd0c5562575b4ca398f3487d077301878",
       "game_path": "KoDp/_Text/History_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/History_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/History_full_ni.html",
       "sha256": "7b67fd728ded4ad0dfea8bfc5e74e345acafcf8054bfca00a7f02ac6dc9ead0c",
       "game_path": "KoDp/Text/History_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/History_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/History_full_ni.html",
       "sha256": "7b67fd728ded4ad0dfea8bfc5e74e345acafcf8054bfca00a7f02ac6dc9ead0c",
       "game_path": "KoDp/_Text/History_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/History_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/History_mini.html",
       "sha256": "2aa5bb21decf819d830774df234791ed611e3f62c903840de9189bf3bc21a1d3",
       "game_path": "KoDp/Text/History_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/History_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/History_mini.html",
       "sha256": "2aa5bb21decf819d830774df234791ed611e3f62c903840de9189bf3bc21a1d3",
       "game_path": "KoDp/_Text/History_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/History_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/History_mini_ni.html",
       "sha256": "9153b31de815ac2a44bff5707d994e4db45799f1da5893e33b0abbe67e968440",
       "game_path": "KoDp/Text/History_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/History_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/History_mini_ni.html",
       "sha256": "9153b31de815ac2a44bff5707d994e4db45799f1da5893e33b0abbe67e968440",
       "game_path": "KoDp/_Text/History_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/HumaktChampion_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/HumaktChampion_full.html",
       "sha256": "f33e968d39ab58b84126317d551533a31d3ea690d4c5d915a98ba34bb5e7415b",
       "game_path": "KoDp/Text/HumaktChampion_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/HumaktChampion_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/HumaktChampion_full.html",
       "sha256": "f33e968d39ab58b84126317d551533a31d3ea690d4c5d915a98ba34bb5e7415b",
       "game_path": "KoDp/_Text/HumaktChampion_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/HumaktChampion_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/HumaktChampion_full_ni.html",
       "sha256": "eba3907e9adf9a0018ef2d495895629ad9944086a730a367c864135a348dbdfb",
       "game_path": "KoDp/Text/HumaktChampion_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/HumaktChampion_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/HumaktChampion_full_ni.html",
       "sha256": "eba3907e9adf9a0018ef2d495895629ad9944086a730a367c864135a348dbdfb",
       "game_path": "KoDp/_Text/HumaktChampion_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/HumaktChampion_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/HumaktChampion_mini.html",
       "sha256": "98c102e30dce03ee35143b094efda2e3c87db8231814b695f0e65d438202f5b2",
       "game_path": "KoDp/Text/HumaktChampion_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/HumaktChampion_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/HumaktChampion_mini.html",
       "sha256": "98c102e30dce03ee35143b094efda2e3c87db8231814b695f0e65d438202f5b2",
       "game_path": "KoDp/_Text/HumaktChampion_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/HumaktChampion_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/HumaktChampion_mini_ni.html",
       "sha256": "4e11ae1f29727d7b1fd6cb4eb7f151f1b9ce27e0d8e5072574d08bc1c4a3579d",
       "game_path": "KoDp/Text/HumaktChampion_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/HumaktChampion_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/HumaktChampion_mini_ni.html",
       "sha256": "4e11ae1f29727d7b1fd6cb4eb7f151f1b9ce27e0d8e5072574d08bc1c4a3579d",
       "game_path": "KoDp/_Text/HumaktChampion_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/IssariesConciliator_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/IssariesConciliator_full.html",
       "sha256": "fcc2b7b1e3b09e42ca23c67167dcda1b43e1c0191cb65e895bc7ab2e48a67ec7",
       "game_path": "KoDp/Text/IssariesConciliator_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/IssariesConciliator_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/IssariesConciliator_full.html",
       "sha256": "fcc2b7b1e3b09e42ca23c67167dcda1b43e1c0191cb65e895bc7ab2e48a67ec7",
       "game_path": "KoDp/_Text/IssariesConciliator_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/IssariesConciliator_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/IssariesConciliator_full_ni.html",
       "sha256": "d1867a70fb1cf23246230f017e768423e4365a90079438d6fb0bcf1773f37dc0",
       "game_path": "KoDp/Text/IssariesConciliator_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/IssariesConciliator_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/IssariesConciliator_full_ni.html",
       "sha256": "d1867a70fb1cf23246230f017e768423e4365a90079438d6fb0bcf1773f37dc0",
       "game_path": "KoDp/_Text/IssariesConciliator_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/IssariesConciliator_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/IssariesConciliator_mini.html",
       "sha256": "e9266a55c8022940ebc659455bd67eba9c7b50b8fa863656cba492a8edb17d92",
       "game_path": "KoDp/Text/IssariesConciliator_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/IssariesConciliator_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/IssariesConciliator_mini.html",
       "sha256": "e9266a55c8022940ebc659455bd67eba9c7b50b8fa863656cba492a8edb17d92",
       "game_path": "KoDp/_Text/IssariesConciliator_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/IssariesConciliator_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/IssariesConciliator_mini_ni.html",
       "sha256": "fc3b7f0ff3db8e19ed8544efd7197dd655ea81270e11bdcc69a328ba1b9ee899",
       "game_path": "KoDp/Text/IssariesConciliator_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/IssariesConciliator_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/IssariesConciliator_mini_ni.html",
       "sha256": "fc3b7f0ff3db8e19ed8544efd7197dd655ea81270e11bdcc69a328ba1b9ee899",
       "game_path": "KoDp/_Text/IssariesConciliator_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ1_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ1_full.html",
       "sha256": "72981c65701b0e85280aa7f63678b44d1f5903e9be8b499966c2eeb90b65a854",
       "game_path": "KoDp/Text/LBQ1_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ1_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ1_full.html",
       "sha256": "72981c65701b0e85280aa7f63678b44d1f5903e9be8b499966c2eeb90b65a854",
       "game_path": "KoDp/_Text/LBQ1_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ1_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ1_full_ni.html",
       "sha256": "522c4455a3d6b3c5939f421b93d31d1bdac829e871e3fd53f36b04caf4eda1c3",
       "game_path": "KoDp/Text/LBQ1_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ1_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ1_full_ni.html",
       "sha256": "522c4455a3d6b3c5939f421b93d31d1bdac829e871e3fd53f36b04caf4eda1c3",
       "game_path": "KoDp/_Text/LBQ1_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ1_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ1_mini.html",
       "sha256": "99a706b778c22adf81ef0ecadb7c5ef85183a423aab96c5fba3ea2d1b3071b8d",
       "game_path": "KoDp/Text/LBQ1_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ1_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ1_mini.html",
       "sha256": "99a706b778c22adf81ef0ecadb7c5ef85183a423aab96c5fba3ea2d1b3071b8d",
       "game_path": "KoDp/_Text/LBQ1_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ1_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ1_mini_ni.html",
       "sha256": "075181ea8606c5968427a7d06b2882b70ac125b08d893139ac1dc1bfb2b24d21",
       "game_path": "KoDp/Text/LBQ1_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ1_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ1_mini_ni.html",
       "sha256": "075181ea8606c5968427a7d06b2882b70ac125b08d893139ac1dc1bfb2b24d21",
       "game_path": "KoDp/_Text/LBQ1_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ2_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ2_full.html",
       "sha256": "90c2a3fdc4b7ae5db243155c2d47bdebf00e669a92735ba96dba8a07fd9a40ee",
       "game_path": "KoDp/Text/LBQ2_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ2_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ2_full.html",
       "sha256": "90c2a3fdc4b7ae5db243155c2d47bdebf00e669a92735ba96dba8a07fd9a40ee",
       "game_path": "KoDp/_Text/LBQ2_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ2_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ2_full_ni.html",
       "sha256": "b358714b4a0a2ee42e9b0233d6947c4aca94218c44ddd21f96a85836421de264",
       "game_path": "KoDp/Text/LBQ2_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ2_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ2_full_ni.html",
       "sha256": "b358714b4a0a2ee42e9b0233d6947c4aca94218c44ddd21f96a85836421de264",
       "game_path": "KoDp/_Text/LBQ2_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ2_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ2_mini.html",
       "sha256": "ce44bed916551badac1b36ad76f89aa77553738c982e3a425d6f8f284dc45909",
       "game_path": "KoDp/Text/LBQ2_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ2_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ2_mini.html",
       "sha256": "ce44bed916551badac1b36ad76f89aa77553738c982e3a425d6f8f284dc45909",
       "game_path": "KoDp/_Text/LBQ2_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ2_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ2_mini_ni.html",
       "sha256": "5452963a821a66cd59f7435071ae530ea0bdac967b69f19369abf21cba5a1d2d",
       "game_path": "KoDp/Text/LBQ2_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ2_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ2_mini_ni.html",
       "sha256": "5452963a821a66cd59f7435071ae530ea0bdac967b69f19369abf21cba5a1d2d",
       "game_path": "KoDp/_Text/LBQ2_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ3_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ3_full.html",
       "sha256": "3f968cd41ba88c69952a1765c0fe733e4e58cf5317924906958d631de787d9a9",
       "game_path": "KoDp/Text/LBQ3_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ3_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ3_full.html",
       "sha256": "3f968cd41ba88c69952a1765c0fe733e4e58cf5317924906958d631de787d9a9",
       "game_path": "KoDp/_Text/LBQ3_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ3_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ3_full_ni.html",
       "sha256": "b117f85bfff3d73d730947c26652c0bb6fd9fa445663d9059f328bb99f46c561",
       "game_path": "KoDp/Text/LBQ3_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ3_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ3_full_ni.html",
       "sha256": "b117f85bfff3d73d730947c26652c0bb6fd9fa445663d9059f328bb99f46c561",
       "game_path": "KoDp/_Text/LBQ3_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ3_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ3_mini.html",
       "sha256": "21e5053d896c84fcfe6cf24864eb3718a4f25d4623d181fea5bcaa4abfc62d3d",
       "game_path": "KoDp/Text/LBQ3_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ3_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ3_mini.html",
       "sha256": "21e5053d896c84fcfe6cf24864eb3718a4f25d4623d181fea5bcaa4abfc62d3d",
       "game_path": "KoDp/_Text/LBQ3_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ3_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ3_mini_ni.html",
       "sha256": "bcf7ed163a125ec904542c0c7d7eb76ac37a2b91f4e7f14a275214c7454c9956",
       "game_path": "KoDp/Text/LBQ3_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ3_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ3_mini_ni.html",
       "sha256": "bcf7ed163a125ec904542c0c7d7eb76ac37a2b91f4e7f14a275214c7454c9956",
       "game_path": "KoDp/_Text/LBQ3_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ4_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ4_full.html",
       "sha256": "9faee09ac28807e733cd266e678837747420a821cbbdfe4bfc5404c3cfccf1d5",
       "game_path": "KoDp/Text/LBQ4_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ4_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ4_full.html",
       "sha256": "9faee09ac28807e733cd266e678837747420a821cbbdfe4bfc5404c3cfccf1d5",
       "game_path": "KoDp/_Text/LBQ4_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ4_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ4_full_ni.html",
       "sha256": "2e90b0a08b9bb587cff4360dc7b3f964448d483b0b57071e54308a1853652190",
       "game_path": "KoDp/Text/LBQ4_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ4_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ4_full_ni.html",
       "sha256": "2e90b0a08b9bb587cff4360dc7b3f964448d483b0b57071e54308a1853652190",
       "game_path": "KoDp/_Text/LBQ4_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ4_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ4_mini.html",
       "sha256": "a135356087385fcf5aae5aa3178ba393903def860364ba928540cdad4fd0ada2",
       "game_path": "KoDp/Text/LBQ4_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ4_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ4_mini.html",
       "sha256": "a135356087385fcf5aae5aa3178ba393903def860364ba928540cdad4fd0ada2",
       "game_path": "KoDp/_Text/LBQ4_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ4_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ4_mini_ni.html",
       "sha256": "4114e978e1a8be396e3695536ec662fb754cf3c0264369af4ebee85e41de4f1e",
       "game_path": "KoDp/Text/LBQ4_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ4_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ4_mini_ni.html",
       "sha256": "4114e978e1a8be396e3695536ec662fb754cf3c0264369af4ebee85e41de4f1e",
       "game_path": "KoDp/_Text/LBQ4_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ5_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ5_full.html",
       "sha256": "0124bfc72be617fbc2bf1430767f1068f3dd605a14683f954a6df3a3f1722667",
       "game_path": "KoDp/Text/LBQ5_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ5_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ5_full.html",
       "sha256": "0124bfc72be617fbc2bf1430767f1068f3dd605a14683f954a6df3a3f1722667",
       "game_path": "KoDp/_Text/LBQ5_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ5_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ5_full_ni.html",
       "sha256": "a2c8b24e5b3c0dab32e06661421d90488ac071df4bf79f9c5485e06b83df67dc",
       "game_path": "KoDp/Text/LBQ5_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ5_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ5_full_ni.html",
       "sha256": "a2c8b24e5b3c0dab32e06661421d90488ac071df4bf79f9c5485e06b83df67dc",
       "game_path": "KoDp/_Text/LBQ5_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ5_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ5_mini.html",
       "sha256": "d3e4ee3bdd7d2c7f3d972904ec8ca45140269d4b9f42b678a53613de8c1b3d98",
       "game_path": "KoDp/Text/LBQ5_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ5_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ5_mini.html",
       "sha256": "d3e4ee3bdd7d2c7f3d972904ec8ca45140269d4b9f42b678a53613de8c1b3d98",
       "game_path": "KoDp/_Text/LBQ5_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ5_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ5_mini_ni.html",
       "sha256": "2a40665dc68c7538c40202bdf7afb19195f010d663cec033d82e188c01cc6575",
       "game_path": "KoDp/Text/LBQ5_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ5_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ5_mini_ni.html",
       "sha256": "2a40665dc68c7538c40202bdf7afb19195f010d663cec033d82e188c01cc6575",
       "game_path": "KoDp/_Text/LBQ5_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ6_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ6_full.html",
       "sha256": "82344ba8430114ad9464b87d868cd2abbe5d376e07c3c1b58ae9582c9eadff27",
       "game_path": "KoDp/Text/LBQ6_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ6_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ6_full.html",
       "sha256": "82344ba8430114ad9464b87d868cd2abbe5d376e07c3c1b58ae9582c9eadff27",
       "game_path": "KoDp/_Text/LBQ6_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ6_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ6_full_ni.html",
       "sha256": "fca9f05df1bd195a0eed031de6869cba0aa53ae56fd85c6846551306e2e56ebc",
       "game_path": "KoDp/Text/LBQ6_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ6_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ6_full_ni.html",
       "sha256": "fca9f05df1bd195a0eed031de6869cba0aa53ae56fd85c6846551306e2e56ebc",
       "game_path": "KoDp/_Text/LBQ6_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ6_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ6_mini.html",
       "sha256": "08e358275ce3ee2948afd989613b3ca8e7462b3376d8ba873dd9e5cebac5c0e3",
       "game_path": "KoDp/Text/LBQ6_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ6_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ6_mini.html",
       "sha256": "08e358275ce3ee2948afd989613b3ca8e7462b3376d8ba873dd9e5cebac5c0e3",
       "game_path": "KoDp/_Text/LBQ6_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ6_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ6_mini_ni.html",
       "sha256": "5acdd838ad1e966d4d132edb7b1164362c187eebb872f5842fbd16ce2a46c499",
       "game_path": "KoDp/Text/LBQ6_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ6_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ6_mini_ni.html",
       "sha256": "5acdd838ad1e966d4d132edb7b1164362c187eebb872f5842fbd16ce2a46c499",
       "game_path": "KoDp/_Text/LBQ6_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ7_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ7_full.html",
       "sha256": "91992f2ffa6f02e96162eb6892f57df1906de0c9ec65c6fbfc6be68eb493f497",
       "game_path": "KoDp/Text/LBQ7_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ7_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ7_full.html",
       "sha256": "91992f2ffa6f02e96162eb6892f57df1906de0c9ec65c6fbfc6be68eb493f497",
       "game_path": "KoDp/_Text/LBQ7_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ7_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ7_full_ni.html",
       "sha256": "6d9a6e7e45dec2f35c892fd562883f725d858a180a6234fc981529e0ea96c337",
       "game_path": "KoDp/Text/LBQ7_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ7_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ7_full_ni.html",
       "sha256": "6d9a6e7e45dec2f35c892fd562883f725d858a180a6234fc981529e0ea96c337",
       "game_path": "KoDp/_Text/LBQ7_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ7_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ7_mini.html",
       "sha256": "0e269ee75bfc523b87dde198bbf86faa29285f34b9cc27b34639e301dea9afd3",
       "game_path": "KoDp/Text/LBQ7_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ7_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ7_mini.html",
       "sha256": "0e269ee75bfc523b87dde198bbf86faa29285f34b9cc27b34639e301dea9afd3",
       "game_path": "KoDp/_Text/LBQ7_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ7_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ7_mini_ni.html",
       "sha256": "1c247936a84bbc2f4c6f336e1ece68bfde4a4cad51168cb7aa3f78071d74f20f",
       "game_path": "KoDp/Text/LBQ7_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ7_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ7_mini_ni.html",
       "sha256": "1c247936a84bbc2f4c6f336e1ece68bfde4a4cad51168cb7aa3f78071d74f20f",
       "game_path": "KoDp/_Text/LBQ7_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ_mini.html",
       "sha256": "a636e591babb62a02310a3e1605243d3a30e54339ad683dbde33d860c9390fa1",
       "game_path": "KoDp/Text/LBQ_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ_mini.html",
       "sha256": "a636e591babb62a02310a3e1605243d3a30e54339ad683dbde33d860c9390fa1",
       "game_path": "KoDp/_Text/LBQ_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LBQ_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LBQ_mini_ni.html",
       "sha256": "505653146ffd6264d12f8c5fde24dc112fdc913266a1ff3c886ea8b4f2f6ab15",
       "game_path": "KoDp/Text/LBQ_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LBQ_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LBQ_mini_ni.html",
       "sha256": "505653146ffd6264d12f8c5fde24dc112fdc913266a1ff3c886ea8b4f2f6ab15",
       "game_path": "KoDp/_Text/LBQ_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/Law.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/Law.html",
       "sha256": "a843241093ad9b66286ae612fe721c4d6538c073d18da0d4f48801cf84a410fd",
       "game_path": "KoDp/Text/Law.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/Law.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/Law.html",
       "sha256": "a843241093ad9b66286ae612fe721c4d6538c073d18da0d4f48801cf84a410fd",
       "game_path": "KoDp/_Text/Law.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LhankorMhyTruth_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LhankorMhyTruth_full.html",
       "sha256": "8f8a20ef73d414f596daa26af9b7864b0d8708431a29d90211c2582003adcfcf",
       "game_path": "KoDp/Text/LhankorMhyTruth_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LhankorMhyTruth_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LhankorMhyTruth_full.html",
       "sha256": "8f8a20ef73d414f596daa26af9b7864b0d8708431a29d90211c2582003adcfcf",
       "game_path": "KoDp/_Text/LhankorMhyTruth_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LhankorMhyTruth_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LhankorMhyTruth_full_ni.html",
       "sha256": "9d9276b96e98e4f4b3198aa29f006cc5d89f2cadb2009c7621bc07af472c84eb",
       "game_path": "KoDp/Text/LhankorMhyTruth_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LhankorMhyTruth_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LhankorMhyTruth_full_ni.html",
       "sha256": "9d9276b96e98e4f4b3198aa29f006cc5d89f2cadb2009c7621bc07af472c84eb",
       "game_path": "KoDp/_Text/LhankorMhyTruth_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LhankorMhyTruth_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LhankorMhyTruth_mini.html",
       "sha256": "926ceb6c3beb5ded1b9e2106cd0e048bd3b064ce44f73c3f6836138f6afe47b7",
       "game_path": "KoDp/Text/LhankorMhyTruth_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LhankorMhyTruth_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LhankorMhyTruth_mini.html",
       "sha256": "926ceb6c3beb5ded1b9e2106cd0e048bd3b064ce44f73c3f6836138f6afe47b7",
       "game_path": "KoDp/_Text/LhankorMhyTruth_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/LhankorMhyTruth_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/LhankorMhyTruth_mini_ni.html",
       "sha256": "e8b18d2a0d7d56ca23f59f198b81921cee1da988d21690b67d36b135707998f1",
       "game_path": "KoDp/Text/LhankorMhyTruth_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/LhankorMhyTruth_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/LhankorMhyTruth_mini_ni.html",
       "sha256": "e8b18d2a0d7d56ca23f59f198b81921cee1da988d21690b67d36b135707998f1",
       "game_path": "KoDp/_Text/LhankorMhyTruth_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/OrlanthAroka_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/OrlanthAroka_full.html",
       "sha256": "1fccd743edd8543f99475a1beaf1203a8c7b03f6561238ccc1655b8c5cadc8bf",
       "game_path": "KoDp/Text/OrlanthAroka_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/OrlanthAroka_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/OrlanthAroka_full.html",
       "sha256": "1fccd743edd8543f99475a1beaf1203a8c7b03f6561238ccc1655b8c5cadc8bf",
       "game_path": "KoDp/_Text/OrlanthAroka_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/OrlanthAroka_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/OrlanthAroka_full_ni.html",
       "sha256": "7c56e2d86faecfe9de32738d96ff286a380ba656d72ce4a209a195c97b3b4a3b",
       "game_path": "KoDp/Text/OrlanthAroka_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/OrlanthAroka_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/OrlanthAroka_full_ni.html",
       "sha256": "7c56e2d86faecfe9de32738d96ff286a380ba656d72ce4a209a195c97b3b4a3b",
       "game_path": "KoDp/_Text/OrlanthAroka_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/OrlanthAroka_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/OrlanthAroka_mini.html",
       "sha256": "38deee20e9e390d2eca6be1e5efa53ce99eeefb4bc014543ef79dd66ebceb719",
       "game_path": "KoDp/Text/OrlanthAroka_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/OrlanthAroka_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/OrlanthAroka_mini.html",
       "sha256": "38deee20e9e390d2eca6be1e5efa53ce99eeefb4bc014543ef79dd66ebceb719",
       "game_path": "KoDp/_Text/OrlanthAroka_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/OrlanthAroka_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/OrlanthAroka_mini_ni.html",
       "sha256": "e4a90f6e5a7b530b855afe389fc93111dcbcf3fcf32483f87d53697d6d60ee6e",
       "game_path": "KoDp/Text/OrlanthAroka_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/OrlanthAroka_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/OrlanthAroka_mini_ni.html",
       "sha256": "e4a90f6e5a7b530b855afe389fc93111dcbcf3fcf32483f87d53697d6d60ee6e",
       "game_path": "KoDp/_Text/OrlanthAroka_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/OrlanthJustice_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/OrlanthJustice_full.html",
       "sha256": "86d1dca3b759944b5446a84e245235e37ab48b9351c007132fa63e2f9d2332ac",
       "game_path": "KoDp/Text/OrlanthJustice_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/OrlanthJustice_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/OrlanthJustice_full.html",
       "sha256": "86d1dca3b759944b5446a84e245235e37ab48b9351c007132fa63e2f9d2332ac",
       "game_path": "KoDp/_Text/OrlanthJustice_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/OrlanthJustice_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/OrlanthJustice_full_ni.html",
       "sha256": "2ba7e5e769fe60831a4f0fc090d3f3692a419cb27973d5fa47b6941577717d98",
       "game_path": "KoDp/Text/OrlanthJustice_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/OrlanthJustice_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/OrlanthJustice_full_ni.html",
       "sha256": "2ba7e5e769fe60831a4f0fc090d3f3692a419cb27973d5fa47b6941577717d98",
       "game_path": "KoDp/_Text/OrlanthJustice_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/OrlanthJustice_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/OrlanthJustice_mini.html",
       "sha256": "6078373a5cc54118636577fd707fd362b220337f61db1aafcb6b3be0cd5baff8",
       "game_path": "KoDp/Text/OrlanthJustice_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/OrlanthJustice_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/OrlanthJustice_mini.html",
       "sha256": "6078373a5cc54118636577fd707fd362b220337f61db1aafcb6b3be0cd5baff8",
       "game_path": "KoDp/_Text/OrlanthJustice_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/OrlanthJustice_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/OrlanthJustice_mini_ni.html",
       "sha256": "5688124f4607b7cdb27e43de0e986e97f88512a350e8552ebc83b999bdef525d",
       "game_path": "KoDp/Text/OrlanthJustice_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/OrlanthJustice_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/OrlanthJustice_mini_ni.html",
       "sha256": "5688124f4607b7cdb27e43de0e986e97f88512a350e8552ebc83b999bdef525d",
       "game_path": "KoDp/_Text/OrlanthJustice_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/Pharaoh_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/Pharaoh_full.html",
       "sha256": "a5a685736377c814c3c141e0b59f4e7e6d73a091a46ae2ba4cf89f3ebafe07ac",
       "game_path": "KoDp/Text/Pharaoh_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/Pharaoh_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/Pharaoh_full.html",
       "sha256": "a5a685736377c814c3c141e0b59f4e7e6d73a091a46ae2ba4cf89f3ebafe07ac",
       "game_path": "KoDp/_Text/Pharaoh_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/Pharaoh_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/Pharaoh_full_ni.html",
       "sha256": "cd29e7507536bd3b10b437bfaf827c0667303de53e5ae8578fc39ea506a258a3",
       "game_path": "KoDp/Text/Pharaoh_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/Pharaoh_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/Pharaoh_full_ni.html",
       "sha256": "cd29e7507536bd3b10b437bfaf827c0667303de53e5ae8578fc39ea506a258a3",
       "game_path": "KoDp/_Text/Pharaoh_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/Pharaoh_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/Pharaoh_mini.html",
       "sha256": "be991b3a5bf7d5f39300fb6de3e2dde11baf207e0f036f05284ed1f8b5e2b5ac",
       "game_path": "KoDp/Text/Pharaoh_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/Pharaoh_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/Pharaoh_mini.html",
       "sha256": "be991b3a5bf7d5f39300fb6de3e2dde11baf207e0f036f05284ed1f8b5e2b5ac",
       "game_path": "KoDp/_Text/Pharaoh_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/Pharaoh_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/Pharaoh_mini_ni.html",
       "sha256": "0886e06ae34bb96dd25cf890ca9e696e9686c9fdb1e68683458a1fd2540008e9",
       "game_path": "KoDp/Text/Pharaoh_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/Pharaoh_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/Pharaoh_mini_ni.html",
       "sha256": "0886e06ae34bb96dd25cf890ca9e696e9686c9fdb1e68683458a1fd2540008e9",
       "game_path": "KoDp/_Text/Pharaoh_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/Runes.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/Runes.html",
       "sha256": "43c7bb56e7f84eccedb8033b0d1cca3829d9dbbfe26417278d5f17ca626d5198",
       "game_path": "KoDp/Text/Runes.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/Runes.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/Runes.html",
       "sha256": "43c7bb56e7f84eccedb8033b0d1cca3829d9dbbfe26417278d5f17ca626d5198",
       "game_path": "KoDp/_Text/Runes.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/StormAge_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/StormAge_full.html",
       "sha256": "0b638e788b3bc55f5734845efc5c03145ad028bfb5f4b9aaf052708be7085238",
       "game_path": "KoDp/Text/StormAge_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/StormAge_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/StormAge_full.html",
       "sha256": "0b638e788b3bc55f5734845efc5c03145ad028bfb5f4b9aaf052708be7085238",
       "game_path": "KoDp/_Text/StormAge_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/StormAge_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/StormAge_full_ni.html",
       "sha256": "9d2e1fa363f0a8102f365c1610e0e73edf9cd8592aa131fe66e8171cd3a7e1ab",
       "game_path": "KoDp/Text/StormAge_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/StormAge_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/StormAge_full_ni.html",
       "sha256": "9d2e1fa363f0a8102f365c1610e0e73edf9cd8592aa131fe66e8171cd3a7e1ab",
       "game_path": "KoDp/_Text/StormAge_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/StormAge_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/StormAge_mini.html",
       "sha256": "c503baec951df82dbb189436a9c57f0a822167c71d7f30dbc5d3bbaa0681e827",
       "game_path": "KoDp/Text/StormAge_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/StormAge_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/StormAge_mini.html",
       "sha256": "c503baec951df82dbb189436a9c57f0a822167c71d7f30dbc5d3bbaa0681e827",
       "game_path": "KoDp/_Text/StormAge_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/StormAge_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/StormAge_mini_ni.html",
       "sha256": "309493cfc54cd71e133a0c97f98f50681252a75b1127917847fcda75d95ac3ed",
       "game_path": "KoDp/Text/StormAge_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/StormAge_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/StormAge_mini_ni.html",
       "sha256": "309493cfc54cd71e133a0c97f98f50681252a75b1127917847fcda75d95ac3ed",
       "game_path": "KoDp/_Text/StormAge_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/StormTribe_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/StormTribe_full.html",
       "sha256": "b29501257858467d14a654d99a6009fa4bdb0c2ac0caec933e8355ae62da5d14",
       "game_path": "KoDp/Text/StormTribe_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/StormTribe_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/StormTribe_full.html",
       "sha256": "b29501257858467d14a654d99a6009fa4bdb0c2ac0caec933e8355ae62da5d14",
       "game_path": "KoDp/_Text/StormTribe_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/StormTribe_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/StormTribe_full_ni.html",
       "sha256": "1ea25545358f86ebfc2e03f0f580a878a734a38fc64d80a1c60eed09fa9bd888",
       "game_path": "KoDp/Text/StormTribe_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/StormTribe_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/StormTribe_full_ni.html",
       "sha256": "1ea25545358f86ebfc2e03f0f580a878a734a38fc64d80a1c60eed09fa9bd888",
       "game_path": "KoDp/_Text/StormTribe_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/StormTribe_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/StormTribe_mini.html",
       "sha256": "8e02f06ebe1a4a415099f553e0af06115e1199fe98d9e052c3968d8aec718c84",
       "game_path": "KoDp/Text/StormTribe_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/StormTribe_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/StormTribe_mini.html",
       "sha256": "8e02f06ebe1a4a415099f553e0af06115e1199fe98d9e052c3968d8aec718c84",
       "game_path": "KoDp/_Text/StormTribe_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/StormTribe_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/StormTribe_mini_ni.html",
       "sha256": "8341bd04fde2a7f47e5d78bb02026b813589d78758636464ff375a9d46721886",
       "game_path": "KoDp/Text/StormTribe_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/StormTribe_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/StormTribe_mini_ni.html",
       "sha256": "8341bd04fde2a7f47e5d78bb02026b813589d78758636464ff375a9d46721886",
       "game_path": "KoDp/_Text/StormTribe_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/StormTribe_secret.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/StormTribe_secret.html",
       "sha256": "2b80c4c57936b6c846d324208754a8eaa4a03a03dc08434d94a3896782d73e3f",
       "game_path": "KoDp/Text/StormTribe_secret.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/StormTribe_secret.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/StormTribe_secret.html",
       "sha256": "2b80c4c57936b6c846d324208754a8eaa4a03a03dc08434d94a3896782d73e3f",
       "game_path": "KoDp/_Text/StormTribe_secret.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/StormTribe_secret_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/StormTribe_secret_ni.html",
       "sha256": "4631d1dc7e9eeeb6bb3842e37a988a7c73555ae6eb217e85107ef7ab351302c3",
       "game_path": "KoDp/Text/StormTribe_secret_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/StormTribe_secret_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/StormTribe_secret_ni.html",
       "sha256": "4631d1dc7e9eeeb6bb3842e37a988a7c73555ae6eb217e85107ef7ab351302c3",
       "game_path": "KoDp/_Text/StormTribe_secret_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/SwordStory_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/SwordStory_full.html",
       "sha256": "8262a642d9d27e7bd533a392f8bb2ef05ace77c2fd144bf2715e7daf2ba8a232",
       "game_path": "KoDp/Text/SwordStory_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/SwordStory_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/SwordStory_full.html",
       "sha256": "8262a642d9d27e7bd533a392f8bb2ef05ace77c2fd144bf2715e7daf2ba8a232",
       "game_path": "KoDp/_Text/SwordStory_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/SwordStory_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/SwordStory_full_ni.html",
       "sha256": "03ef5823f68837e76cdc6e640be18086a333dee06042a37b0da17b8fed6f839e",
       "game_path": "KoDp/Text/SwordStory_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/SwordStory_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/SwordStory_full_ni.html",
       "sha256": "03ef5823f68837e76cdc6e640be18086a333dee06042a37b0da17b8fed6f839e",
       "game_path": "KoDp/_Text/SwordStory_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/SwordStory_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/SwordStory_mini.html",
       "sha256": "eda25acfa96c477a939a83c8b5f3d38cd93ac26a77fec7ec3b4d1a5e6d721516",
       "game_path": "KoDp/Text/SwordStory_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/SwordStory_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/SwordStory_mini.html",
       "sha256": "eda25acfa96c477a939a83c8b5f3d38cd93ac26a77fec7ec3b4d1a5e6d721516",
       "game_path": "KoDp/_Text/SwordStory_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/SwordStory_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/SwordStory_mini_ni.html",
       "sha256": "787f731fb479e0aa8b8514231c06cb456b802108051348580c124e526e2344ea",
       "game_path": "KoDp/Text/SwordStory_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/SwordStory_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/SwordStory_mini_ni.html",
       "sha256": "787f731fb479e0aa8b8514231c06cb456b802108051348580c124e526e2344ea",
       "game_path": "KoDp/_Text/SwordStory_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/UraldasBlessing_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/UraldasBlessing_full.html",
       "sha256": "a3259539ca108c6798e4ad8fc8c17346f8f7a589d5641df215b8a7ed16807bff",
       "game_path": "KoDp/Text/UraldasBlessing_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/UraldasBlessing_full.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/UraldasBlessing_full.html",
       "sha256": "a3259539ca108c6798e4ad8fc8c17346f8f7a589d5641df215b8a7ed16807bff",
       "game_path": "KoDp/_Text/UraldasBlessing_full.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/UraldasBlessing_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/UraldasBlessing_full_ni.html",
       "sha256": "2018b2b6e6b9dc454e2cc219c1ca2de84630f9d3383059ce7a7ace8e9f2ce7f7",
       "game_path": "KoDp/Text/UraldasBlessing_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/UraldasBlessing_full_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/UraldasBlessing_full_ni.html",
       "sha256": "2018b2b6e6b9dc454e2cc219c1ca2de84630f9d3383059ce7a7ace8e9f2ce7f7",
       "game_path": "KoDp/_Text/UraldasBlessing_full_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/UraldasBlessing_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/UraldasBlessing_mini.html",
       "sha256": "577659807c16651a33c8c833f143fa82e190f38b60cca200130b33422cde93a0",
       "game_path": "KoDp/Text/UraldasBlessing_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/UraldasBlessing_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/UraldasBlessing_mini.html",
       "sha256": "577659807c16651a33c8c833f143fa82e190f38b60cca200130b33422cde93a0",
       "game_path": "KoDp/_Text/UraldasBlessing_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/UraldasBlessing_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/UraldasBlessing_mini_ni.html",
       "sha256": "c43e39075b79b8b778d9afeafdacf898d9462c95c132a702e75e4f7f90fcb24e",
       "game_path": "KoDp/Text/UraldasBlessing_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/UraldasBlessing_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/UraldasBlessing_mini_ni.html",
       "sha256": "c43e39075b79b8b778d9afeafdacf898d9462c95c132a702e75e4f7f90fcb24e",
       "game_path": "KoDp/_Text/UraldasBlessing_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/UraldasBlessing_secret.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/UraldasBlessing_secret.html",
       "sha256": "287eeb8c94b0d7a9071cc741ec7067cb40976a469a47d17523659e7fdb3c93b0",
       "game_path": "KoDp/Text/UraldasBlessing_secret.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/UraldasBlessing_secret.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/UraldasBlessing_secret.html",
       "sha256": "287eeb8c94b0d7a9071cc741ec7067cb40976a469a47d17523659e7fdb3c93b0",
       "game_path": "KoDp/_Text/UraldasBlessing_secret.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/UraldasBlessing_secret_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/UraldasBlessing_secret_ni.html",
       "sha256": "f8a9cdcef9f4ddbed127d81a8c401b545e4ee4a3b6141206a0607958383ea69c",
       "game_path": "KoDp/Text/UraldasBlessing_secret_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/_Text/UraldasBlessing_secret_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/_Text/UraldasBlessing_secret_ni.html",
       "sha256": "f8a9cdcef9f4ddbed127d81a8c401b545e4ee4a3b6141206a0607958383ea69c",
       "game_path": "KoDp/_Text/UraldasBlessing_secret_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/Beginning_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/Beginning_mini.html",
       "sha256": "f24d19361c1986997a8b0ed433da6670b62be33fb1eb2effb6d864df62a208e8",
       "game_path": "KoDp/Text/srcFull/Beginning_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/Beginning_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/Beginning_mini_ni.html",
       "sha256": "d3e657f04fd49175ced5320499d13f30aeb46cb19ffbf34025704b5ca98f7de7",
       "game_path": "KoDp/Text/srcFull/Beginning_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/ChalanaArroyScars_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/ChalanaArroyScars_mini.html",
       "sha256": "9b379f1c3d499223244ae9da4c374aca8abb33bd270ad71f5b53eec24bf1a76f",
       "game_path": "KoDp/Text/srcFull/ChalanaArroyScars_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/ChalanaArroyScars_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/ChalanaArroyScars_mini_ni.html",
       "sha256": "0c2b5deebb2691e8dffc18446aee2e3558e8c1f7943026e157b481afdbc58715",
       "game_path": "KoDp/Text/srcFull/ChalanaArroyScars_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/Contests_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/Contests_mini.html",
       "sha256": "7cf6788dc8a7e5a524b23099c607d524563ecf69425b33fad746bece91ff5ca8",
       "game_path": "KoDp/Text/srcFull/Contests_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/Contests_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/Contests_mini_ni.html",
       "sha256": "db9d69d2ca4735402761490497c1f1aec126af9a231e77f136414d999ecf09d4",
       "game_path": "KoDp/Text/srcFull/Contests_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/ElmalStead_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/ElmalStead_mini.html",
       "sha256": "c59b323f209a2509abd1d03ce40868cd58179958d3e82a4d5e4d850bd630aaab",
       "game_path": "KoDp/Text/srcFull/ElmalStead_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/ElmalStead_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/ElmalStead_mini_ni.html",
       "sha256": "8a42092ffb330583f5e34c4b98995f04e4de6382d30abf00c9a189c929e3db3f",
       "game_path": "KoDp/Text/srcFull/ElmalStead_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/ErnaldaFeeds_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/ErnaldaFeeds_mini.html",
       "sha256": "6c3d71c6363c85c8f7d534e34f94e7eb465e71a8a5b0cb991fdb999da51598d9",
       "game_path": "KoDp/Text/srcFull/ErnaldaFeeds_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/ErnaldaFeeds_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/ErnaldaFeeds_mini_ni.html",
       "sha256": "f197d3b217c09213e85736c1b0fb4e092352d312d95494c231de6cc96e18b238",
       "game_path": "KoDp/Text/srcFull/ErnaldaFeeds_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/GreatDarkness_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/GreatDarkness_mini.html",
       "sha256": "5232d2b3db167a843667a50d74a2b6dcefedfacabea360ea9de6e36511134079",
       "game_path": "KoDp/Text/srcFull/GreatDarkness_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/GreatDarkness_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/GreatDarkness_mini_ni.html",
       "sha256": "66327bdace925687e04f55254a4193143f80f8ad7e78b10f868cbb7273c432f9",
       "game_path": "KoDp/Text/srcFull/GreatDarkness_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/HumaktChampion_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/HumaktChampion_mini.html",
       "sha256": "b8e92512d9e34e04414b4f42315f375c65bdf7a3386ace89d48b939d60f8aa6a",
       "game_path": "KoDp/Text/srcFull/HumaktChampion_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/HumaktChampion_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/HumaktChampion_mini_ni.html",
       "sha256": "05ad70087eb12d5ac8f53fa0a0738302bbb4cdb00ada2501c5d46a7f1318e74f",
       "game_path": "KoDp/Text/srcFull/HumaktChampion_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/IssariesConciliator_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/IssariesConciliator_mini.html",
       "sha256": "948117500f997c51b5be5e652c34ebf95e0512f901b67183dab34cba90ff8068",
       "game_path": "KoDp/Text/srcFull/IssariesConciliator_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/IssariesConciliator_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/IssariesConciliator_mini_ni.html",
       "sha256": "58cbff75d55ae39c99692de31bef13a211f1a870e7aecced2cc3102258ff32da",
       "game_path": "KoDp/Text/srcFull/IssariesConciliator_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/LhankorMhyTruth_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/LhankorMhyTruth_mini.html",
       "sha256": "fc5355288975fd7c2715e6b0cad5c86300d07ad0e56228b819d7a90dfb26e376",
       "game_path": "KoDp/Text/srcFull/LhankorMhyTruth_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/LhankorMhyTruth_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/LhankorMhyTruth_mini_ni.html",
       "sha256": "e9441be80bcd12d761854b8e9b9ca1c7f17eaa6e17150885c6dc16986bbe5b80",
       "game_path": "KoDp/Text/srcFull/LhankorMhyTruth_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/OrlanthAroka_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/OrlanthAroka_mini.html",
       "sha256": "bd8b4fc037c04346398e76dc44b826071800cd1f3828075f74fc6b270a9a14a0",
       "game_path": "KoDp/Text/srcFull/OrlanthAroka_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/OrlanthAroka_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/OrlanthAroka_mini_ni.html",
       "sha256": "e6f433612eb777bd6926370c8e92870fdce52e3d3de2c002ca2084b3f609e5e9",
       "game_path": "KoDp/Text/srcFull/OrlanthAroka_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/OrlanthJustice_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/OrlanthJustice_mini.html",
       "sha256": "4f1364c972edba813bf1b7c5552f92f6c7b2af2ea822b4adc29c09fe9136a4d5",
       "game_path": "KoDp/Text/srcFull/OrlanthJustice_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/OrlanthJustice_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/OrlanthJustice_mini_ni.html",
       "sha256": "f94516a15533d4e03a8cd8c78c8ab21bd2a98985fa3ab810e6592015bf9b2fcd",
       "game_path": "KoDp/Text/srcFull/OrlanthJustice_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/StormAge_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/StormAge_mini.html",
       "sha256": "a873ad92a396ea5ba6b532277220cca88492c9c0bb22fe70b600fe39ef00d1cd",
       "game_path": "KoDp/Text/srcFull/StormAge_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/StormAge_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/StormAge_mini_ni.html",
       "sha256": "d3f2022794a8b4c5dc2e78f1956a96a7e16beabe131cf9673504152d7cdbc5dc",
       "game_path": "KoDp/Text/srcFull/StormAge_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/StormTribe_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/StormTribe_mini.html",
       "sha256": "25f56684b46816e1ca7d977af05f269b2ea07da059673ab1b2c9d09bd0652a07",
       "game_path": "KoDp/Text/srcFull/StormTribe_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/StormTribe_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/StormTribe_mini_ni.html",
       "sha256": "e2fa478ec327ade6613d3abe0c9669ad820dd0d0839c2f0a079da186c79bf235",
       "game_path": "KoDp/Text/srcFull/StormTribe_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/SwordStory_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/SwordStory_mini.html",
       "sha256": "5d86180353c1c6251577a52b1b2c962df40b4b2c5b796867c5f5784a40f00f52",
       "game_path": "KoDp/Text/srcFull/SwordStory_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/SwordStory_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/SwordStory_mini_ni.html",
       "sha256": "e22178e7a3fb960991067625642a20a7a1dbefc07dee48a5aa7d64f7c7c53cf8",
       "game_path": "KoDp/Text/srcFull/SwordStory_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/UraldasBlessing_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/UraldasBlessing_mini.html",
       "sha256": "fb18965485ea1c576d765f63d63b1c13499a32b8c70c9133f1e83183b381f923",
       "game_path": "KoDp/Text/srcFull/UraldasBlessing_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcFull/UraldasBlessing_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcFull/UraldasBlessing_mini_ni.html",
       "sha256": "db30905ec9bcb5fe2cc3b50523f0d20b3444e70702fb58cbf5db5febc327cac6",
       "game_path": "KoDp/Text/srcFull/UraldasBlessing_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/Beginning_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/Beginning_mini.html",
       "sha256": "8ffacf991925dd9c9d5c3195b01e5ecf2e091ad7e3f792730b92b339a3241a49",
       "game_path": "KoDp/Text/srcMini/Beginning_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/Beginning_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/Beginning_mini_ni.html",
       "sha256": "44441b11ec3898aafd47c37edf10fba2f2f2d1057d684637fd2d98efca706014",
       "game_path": "KoDp/Text/srcMini/Beginning_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/ChalanaArroyScars_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/ChalanaArroyScars_mini.html",
       "sha256": "89ea011eb5dfc86d0f3b72b7f56718a8486ac37529881a86dad5a958a840eff7",
       "game_path": "KoDp/Text/srcMini/ChalanaArroyScars_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/ChalanaArroyScars_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/ChalanaArroyScars_mini_ni.html",
       "sha256": "6e696a72d38836e27691fec850e4fa4b59ee4c43a9afbdc4d9a0a54971927668",
       "game_path": "KoDp/Text/srcMini/ChalanaArroyScars_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/Contests_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/Contests_mini.html",
       "sha256": "f4952c40228eb28aa3750c8592f549b39d6284b727d9c3dccf4f03e614eab2ba",
       "game_path": "KoDp/Text/srcMini/Contests_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/Contests_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/Contests_mini_ni.html",
       "sha256": "9376693852983a1df5af81a6deb9558327003e9c21a02135fbe94b14a7f6ef5a",
       "game_path": "KoDp/Text/srcMini/Contests_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/ElmalStead_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/ElmalStead_mini.html",
       "sha256": "afa686a49f45737c5518ee6b85d09df92bc79626672b69234ddc5184186d72f9",
       "game_path": "KoDp/Text/srcMini/ElmalStead_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/ElmalStead_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/ElmalStead_mini_ni.html",
       "sha256": "864c7951afda5e3d9b0c8ef5acb3709ddbbe9034bee547a960cb76e511a8937c",
       "game_path": "KoDp/Text/srcMini/ElmalStead_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/ErnaldaFeeds_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/ErnaldaFeeds_mini.html",
       "sha256": "6d28825a5931661af2ac23f1d9aa89ca74133d7be06a141283fd23f534c48cf6",
       "game_path": "KoDp/Text/srcMini/ErnaldaFeeds_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/ErnaldaFeeds_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/ErnaldaFeeds_mini_ni.html",
       "sha256": "b28c9b54f2772367a4d08300bc6f07b8951fd35830465183aca8bb10072592c4",
       "game_path": "KoDp/Text/srcMini/ErnaldaFeeds_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/GreatDarkness_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/GreatDarkness_mini.html",
       "sha256": "2b949bb1e99b3c2f08cdaec4a56e3f89490bd4b3fc122ed23ae29f51d12005be",
       "game_path": "KoDp/Text/srcMini/GreatDarkness_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/GreatDarkness_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/GreatDarkness_mini_ni.html",
       "sha256": "69e91e075214c3f7b48f555316914f2fd33424d04cc8b95082cee20553085773",
       "game_path": "KoDp/Text/srcMini/GreatDarkness_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/HumaktChampion_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/HumaktChampion_mini.html",
       "sha256": "98c102e30dce03ee35143b094efda2e3c87db8231814b695f0e65d438202f5b2",
       "game_path": "KoDp/Text/srcMini/HumaktChampion_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/HumaktChampion_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/HumaktChampion_mini_ni.html",
       "sha256": "4e11ae1f29727d7b1fd6cb4eb7f151f1b9ce27e0d8e5072574d08bc1c4a3579d",
       "game_path": "KoDp/Text/srcMini/HumaktChampion_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/IssariesConciliator_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/IssariesConciliator_mini.html",
       "sha256": "e9266a55c8022940ebc659455bd67eba9c7b50b8fa863656cba492a8edb17d92",
       "game_path": "KoDp/Text/srcMini/IssariesConciliator_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/IssariesConciliator_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/IssariesConciliator_mini_ni.html",
       "sha256": "fc3b7f0ff3db8e19ed8544efd7197dd655ea81270e11bdcc69a328ba1b9ee899",
       "game_path": "KoDp/Text/srcMini/IssariesConciliator_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/LhankorMhyTruth_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/LhankorMhyTruth_mini.html",
       "sha256": "926ceb6c3beb5ded1b9e2106cd0e048bd3b064ce44f73c3f6836138f6afe47b7",
       "game_path": "KoDp/Text/srcMini/LhankorMhyTruth_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/LhankorMhyTruth_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/LhankorMhyTruth_mini_ni.html",
       "sha256": "e8b18d2a0d7d56ca23f59f198b81921cee1da988d21690b67d36b135707998f1",
       "game_path": "KoDp/Text/srcMini/LhankorMhyTruth_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/OrlanthAroka_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/OrlanthAroka_mini.html",
       "sha256": "38deee20e9e390d2eca6be1e5efa53ce99eeefb4bc014543ef79dd66ebceb719",
       "game_path": "KoDp/Text/srcMini/OrlanthAroka_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/OrlanthAroka_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/OrlanthAroka_mini_ni.html",
       "sha256": "e4a90f6e5a7b530b855afe389fc93111dcbcf3fcf32483f87d53697d6d60ee6e",
       "game_path": "KoDp/Text/srcMini/OrlanthAroka_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/OrlanthJustice_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/OrlanthJustice_mini.html",
       "sha256": "6078373a5cc54118636577fd707fd362b220337f61db1aafcb6b3be0cd5baff8",
       "game_path": "KoDp/Text/srcMini/OrlanthJustice_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/OrlanthJustice_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/OrlanthJustice_mini_ni.html",
       "sha256": "5688124f4607b7cdb27e43de0e986e97f88512a350e8552ebc83b999bdef525d",
       "game_path": "KoDp/Text/srcMini/OrlanthJustice_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/StormAge_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/StormAge_mini.html",
       "sha256": "c503baec951df82dbb189436a9c57f0a822167c71d7f30dbc5d3bbaa0681e827",
       "game_path": "KoDp/Text/srcMini/StormAge_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/StormAge_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/StormAge_mini_ni.html",
       "sha256": "309493cfc54cd71e133a0c97f98f50681252a75b1127917847fcda75d95ac3ed",
       "game_path": "KoDp/Text/srcMini/StormAge_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/StormTribe_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/StormTribe_mini.html",
       "sha256": "8e02f06ebe1a4a415099f553e0af06115e1199fe98d9e052c3968d8aec718c84",
       "game_path": "KoDp/Text/srcMini/StormTribe_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/StormTribe_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/StormTribe_mini_ni.html",
       "sha256": "8341bd04fde2a7f47e5d78bb02026b813589d78758636464ff375a9d46721886",
       "game_path": "KoDp/Text/srcMini/StormTribe_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/SwordStory_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/SwordStory_mini.html",
       "sha256": "eda25acfa96c477a939a83c8b5f3d38cd93ac26a77fec7ec3b4d1a5e6d721516",
       "game_path": "KoDp/Text/srcMini/SwordStory_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/SwordStory_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/SwordStory_mini_ni.html",
       "sha256": "787f731fb479e0aa8b8514231c06cb456b802108051348580c124e526e2344ea",
       "game_path": "KoDp/Text/srcMini/SwordStory_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/UraldasBlessing_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/UraldasBlessing_mini.html",
       "sha256": "577659807c16651a33c8c833f143fa82e190f38b60cca200130b33422cde93a0",
       "game_path": "KoDp/Text/srcMini/UraldasBlessing_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcMini/UraldasBlessing_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcMini/UraldasBlessing_mini_ni.html",
       "sha256": "c43e39075b79b8b778d9afeafdacf898d9462c95c132a702e75e4f7f90fcb24e",
       "game_path": "KoDp/Text/srcMini/UraldasBlessing_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcSecret/ElmalStead_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcSecret/ElmalStead_mini.html",
       "sha256": "3ca13a4b1196167b3716c2ee9d5644eb126fc91212ac020b81fe097e829d86c0",
       "game_path": "KoDp/Text/srcSecret/ElmalStead_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcSecret/ElmalStead_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcSecret/ElmalStead_mini_ni.html",
       "sha256": "e55940b875a4041306b240c7acd3f61e862782370692fe7cf57839249e83080c",
       "game_path": "KoDp/Text/srcSecret/ElmalStead_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcSecret/ErnaldaFeeds_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcSecret/ErnaldaFeeds_mini.html",
       "sha256": "c4f5b2d3c22bc331efcb96df9f9a87d9957f4b05bff68d71589a3dec20c37019",
       "game_path": "KoDp/Text/srcSecret/ErnaldaFeeds_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcSecret/ErnaldaFeeds_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcSecret/ErnaldaFeeds_mini_ni.html",
       "sha256": "dae7569e44ab2f5fd00bfdf939523baf33dc356c115a98a113361e52f65788f6",
       "game_path": "KoDp/Text/srcSecret/ErnaldaFeeds_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcSecret/StormTribe_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcSecret/StormTribe_mini.html",
       "sha256": "70e7efe1fd0e8b27fd3a13d90ad5ca4bdbe1fbc9920777f9ffa4dfd651aaa418",
       "game_path": "KoDp/Text/srcSecret/StormTribe_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcSecret/StormTribe_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcSecret/StormTribe_mini_ni.html",
       "sha256": "7afc3a2c3c0a921a6a9450769d67aa6d0ba037f0d07fb9236f4aaa639cd01a8b",
       "game_path": "KoDp/Text/srcSecret/StormTribe_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcSecret/UraldasBlessing_mini.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcSecret/UraldasBlessing_mini.html",
       "sha256": "de261ee1559484ad412ac08a1d90da7d244e092e911cfafda32fc4a054240b56",
       "game_path": "KoDp/Text/srcSecret/UraldasBlessing_mini.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/Text/srcSecret/UraldasBlessing_mini_ni.html",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/Text/srcSecret/UraldasBlessing_mini_ni.html",
       "sha256": "4ec37e7eed615472bccf92b0dd97e9050ac46c4579e2d607e238fce06a6c0003",
       "game_path": "KoDp/Text/srcSecret/UraldasBlessing_mini_ni.html"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/textures/Lore/background-map.png",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/textures/Lore/background-map.png",
       "sha256": "4a675b78ab04517258bda47de1e0ece7068eb911df2233fb26f88ae67b63c6f1",
       "game_path": "KoDp/textures/Lore/background-map.png"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/textures/Lore/background-map1024.png",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/textures/Lore/background-map1024.png",
       "sha256": "cec98d729973446071d06ecfe9ecdf93bfc4a9fc8acad90ee42b904d5c75c354",
       "game_path": "KoDp/textures/Lore/background-map1024.png"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/textures/Lore/background-map1024@2x.png",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/textures/Lore/background-map1024@2x.png",
       "sha256": "c99df785d702badb9c70829a834658fd286d053dca24b9e57517a04aa169557c",
       "game_path": "KoDp/textures/Lore/background-map1024@2x.png"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/textures/Lore/background-map@2x.png",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/textures/Lore/background-map@2x.png",
       "sha256": "38c8ad0770a2b712181f428450b19aa95dc25f4f9afd59bc54835cb0cad18e80",
       "game_path": "KoDp/textures/Lore/background-map@2x.png"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/textures/M/ClanButton.png",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/textures/M/ClanButton.png",
       "sha256": "bde5942e996c620ca3d59a9e2b8a8789624d4f17bcf4c4e8557398bb6896326e",
       "game_path": "KoDp/textures/M/ClanButton.png"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/textures/M/MapArch.png",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/textures/M/MapArch.png",
       "sha256": "bb177af3901c623c230bc18084b765e52f6b7de1a38bde4c91bb233dce32bff8",
       "game_path": "KoDp/textures/M/MapArch.png"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/textures/Menu/Logo.png",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/textures/Menu/Logo.png",
       "sha256": "2fe361444c72b8289155f48f5416b004984ccaae42ce8e07ebe4ac3b56c4654f",
       "game_path": "KoDp/textures/Menu/Logo.png"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/textures/Menu/Logo@2x.png",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/textures/Menu/Logo@2x.png",
       "sha256": "19afa8e8d4c89a5db857ebaa925c1fbf09b29e2edc0f16261991aabab529dbbd",
       "game_path": "KoDp/textures/Menu/Logo@2x.png"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/textures/Menu/Logo~ipad.png",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/textures/Menu/Logo~ipad.png",
       "sha256": "79b955dce90560c9f88b463eded57a58ca19951fb4b6b18d3398b67d73f5177d",
       "game_path": "KoDp/textures/Menu/Logo~ipad.png"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/textures/Menu/Logo~ipad@2x.png",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/textures/Menu/Logo~ipad@2x.png",
       "sha256": "3b4ed8791a5b9fe7bde5f8f51eda62b01d10879b701e5385a69263221dfd48cd",
       "game_path": "KoDp/textures/Menu/Logo~ipad@2x.png"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/textures/Scenes/scene226.jpg",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/textures/Scenes/scene226.jpg",
       "sha256": "414aee8feccff7851918df3f675b41007f7fba9a1ef4e14d82af9d1889ccf979",
       "game_path": "KoDp/textures/Scenes/scene226.jpg"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/KoDp/textures/Scenes~ipad/scene226.jpg",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/KoDp/textures/Scenes~ipad/scene226.jpg",
       "sha256": "0c9f15df9d57b6a8704afe5c68385b22179a41e99b142fc23390fb523d0b14ea",
       "game_path": "KoDp/textures/Scenes~ipad/scene226.jpg"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化文件/资源/logo480.rgba",
+      "path": "ReleasePayload/v1.3/汉化文件/资源/logo480.rgba",
       "sha256": "ca2d6c1dd23bd9ca012adf7956555d28598a78152a3987a3200ba67214a5723c",
       "game_path": "KoDP480.group.bin"
     },
     {
-      "path": "ReleasePayload/v1.2/安装汉化.cmd",
-      "sha256": "f315dc515638becbbccc9919074a745327268a275163b8c9ffdd74ff61887879",
-      "game_path": "安装汉化.cmd"
-    },
-    {
-      "path": "ReleasePayload/v1.2/启动汉化.cmd",
-      "sha256": "92881ced1982acba7d3378a49c3de7f16e150fba87c8c0dbca25518df72d7a86",
-      "game_path": "启动汉化.cmd"
-    },
-    {
-      "path": "ReleasePayload/v1.2/卸载汉化.cmd",
+      "path": "ReleasePayload/v1.3/卸载汉化.cmd",
       "sha256": "1f538fc74d9fcbedd682e5f4003aee4a735551cdbbee8c301f569a147ffcc6bc",
       "game_path": "卸载汉化.cmd"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化工具/install.ps1",
+      "path": "ReleasePayload/v1.3/汉化工具/install.ps1",
       "sha256": "83b281434e3cd04ad1b96e9f5b53cc2b6d4e48bbd2329d40d1756edbadca5e34",
       "game_path": "汉化工具/install.ps1"
     },
     {
-      "path": "ReleasePayload/v1.2/汉化工具/launch.ps1",
-      "sha256": "18431245e9c3462cba47502ce19bc09c8fbfa642b4af1650cda7d775367f35aa",
+      "path": "ReleasePayload/v1.3/汉化工具/launch.ps1",
+      "sha256": "c091d2e1fd511b189c73a61b66a7b6bd956dab1a27335126607b63b999ee3fac",
       "game_path": "汉化工具/launch.ps1"
+    },
+    {
+      "path": "ReleasePayload/v1.3/龙城之王_中文版.exe",
+      "sha256": "0ef2555c84e5a7bba8bad8fa74c2395ac7b35e8adb83c0a28aa96a3b2ea2d4c0",
+      "game_path": "龙城之王_中文版.exe"
     }
   ],
   "evidence_files": [
     {
-      "path": "USER_RELEASE_AUTHORIZATION_v1.2.md",
-      "sha256": "2d1decc719a20f97d797a91ba2c241aa64bdffb4d8a56e1e269b7ffa45299a2b"
+      "path": "USER_RELEASE_AUTHORIZATION_v1.3.md",
+      "sha256": "33b589b1337c95def92001b99fdd9701dad6be5cef31a67fe4417f286b9423ea"
     }
   ],
   "status": "authorized",

@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "checks": [
+    "first launch installs before fake game",
+    "installed launch skips writes",
+    "old version installs",
+    "missing resource installs",
+    "install failure prevents game launch"
+  ],
+  "real_game_launched": false,
+  "scope": "production decision branch, isolated install and launch endpoints"
+}

@@ -1,10 +1,10 @@
 {
   "status": "passed",
-  "archive": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\Dispatch\\龙城之王_子非鱼汉化1.2.zip",
-  "sha256": "834910dab519c2fea7bfcd7c920f65bc7a3beec52fdbd75dab9ca473ba25f81c",
-  "bytes": 11282959,
-  "payload_files": 369,
-  "zip_files": 372,
+  "archive": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\Dispatch\\龙城之王_子非鱼汉化1.3.zip",
+  "sha256": "619788d768b84c81cd583d7a4fddcc60f00206f426ec3116c3ad91bc023a9777",
+  "bytes": 11285183,
+  "payload_files": 368,
+  "zip_files": 371,
   "crc_passed": true,
   "all_manifest_hashes_passed": true,
   "originals_backups_game_binaries_excluded": true
