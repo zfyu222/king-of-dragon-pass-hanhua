@@ -2,6 +2,8 @@
 
 ![龙城之王 子非鱼汉化](Dispatch/Artwork/title.png)
 
+**启动中文版：解压到原游戏EXE所在目录，双击“龙城之王_中文版.exe”。首次自动安装，以后直接启动；直接运行原游戏EXE不能启用本汉化。**
+
 > 本文档记录本项目的初始化与后续汉化方案；游戏原始文件只通过 `Game/` junction 引用，不纳入版本控制。
 
 ## 游戏信息
@@ -110,12 +112,12 @@
 - 当前版本：`Dispatch/龙城之王_子非鱼汉化1.3.zip`；中文名称统一为“龙城之王”。历史 v1.0、v1.1、v1.2 保留。
 - 支持：Steam v2.4.0，Windows。
 - 发布页：https://github.com/zfyu222/king-of-dragon-pass-hanhua/releases/tag/v1.3
-- v1.3本地校验通过，SHA-256：`619788d768b84c81cd583d7a4fddcc60f00206f426ec3116c3ad91bc023a9777`。GitHub下载资产使用 `King-of-Dragon-Pass_CN_1.3.zip`，显示名和本地ZIP保持中文名。
+- v1.3已发布为最新稳定版，匿名下载校验通过，SHA-256：`619788d768b84c81cd583d7a4fddcc60f00206f426ec3116c3ad91bc023a9777`。GitHub下载资产使用 `King-of-Dragon-Pass_CN_1.3.zip`，显示名和本地ZIP保持中文名。
 - 百度网盘分享 King-of-Dragon-Pass：https://pan.baidu.com/s/5xKG8bFszi_wB9yFgSxNV9g
 - 腾讯文档反馈：https://docs.qq.com/sheet/DTkxSTUVQS1Ntd1FR?tab=BB08J2
-- 载荷：3个原生运行文件、348个已译HTML目标、12张汉化贴图及一个等长Logo像素补丁；ZIP内共369个载荷/脚本文件，另附说明、清单与校验和。原始游戏文件、备份和开发日志不分发。
+- 载荷：3个原生运行文件、348个已译HTML目标、12张汉化贴图及一个等长Logo像素补丁；ZIP内共368个载荷/脚本文件，另附说明、清单与校验和。原始游戏文件、备份和开发日志不分发。
 - 安装适配器：`ReleaseConfig/install.ps1`。解压游戏根目录后双击启动；自动校验全部文件、保存原件并在异常时回滚。旧中文页面没有原件备份时，卸载调用Steam恢复。原生资源包只分发替换像素，严格校验版本、偏移、长度与最终哈希，不分发完整原资源包。
-- v1.2构建入口：`ReleaseConfig/build_v12.py`；发布启动适配器：`ReleaseConfig/launch.ps1`，无需本机工程目录或开发运行环境，等待旧启动器自然退出并用Toolhelp核验实际DLL。公开发布证据见 `ReleaseConfig/publication.json`，四份正式导出的发布检查见 `ReleaseConfig/release_checks_v1.2.json`。汉化封面位于 `Dispatch/Artwork/title.png`，以Steam官方主视觉为参考，主对话内置绘图制作并检查“龙城之王 子非鱼汉化”文字；来源和视觉检查见同目录sources.json。封面用于仓库首页与发布页，不进入补丁安装载荷。
+- v1.3构建入口：`ReleaseConfig/build_v13.py`；发布启动适配器：`ReleaseConfig/launch.ps1`，无需本机工程目录或开发运行环境，等待旧启动器自然退出并用Toolhelp核验实际DLL。公开发布证据见 `ReleaseConfig/publication.json`，四份正式导出的发布检查见 `ReleaseConfig/release_checks_v1.3.json`。汉化封面位于 `Dispatch/Artwork/title.png`，以Steam官方主视觉为参考，主对话内置绘图制作并检查“龙城之王 子非鱼汉化”文字；来源和视觉检查见同目录sources.json。封面用于仓库首页与发布页，不进入补丁安装载荷。
 - 验证：30个完整运行时样例及变量、完整性与边界断言通过；本次发布适配器在隔离副本完成全新安装、重复安装、恢复、旧版升级和异常内容拒绝。见 `ReleaseConfig/installation_validation.json`、`ReleaseConfig/zip_validation.json`。真实游戏目录未改动。
 - 真实限制：本次实机复测仍pending，按单独发布授权经共同release-check；不伪造实机通过。6972处遗漏资源字段及20条完整组合句已正式翻译；219个同源多译键与67个派生变体因显示Hook缺少资源身份未强行合入；地图Storm Mts.仍英文；部分图片底纹和其他分辨率引擎引用保留此前待验证记录。
 - 图片标题：人类提供的新名称作为产品标题覆盖，原正式图片CSV保持不变；仅四种Logo尺寸派生新载荷。使用新版清字→逐图检查→绘字→逐图检查，两阶段共用4个图片ID预算；记录位于ImagePatch/title-*-20261029。
