@@ -1,0 +1,14 @@
+{
+  "status": "candidate_ready",
+  "exe": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\Repack\\UnifiedEntry_20261030\\龙城之王_中文版.exe",
+  "checks": [
+    "EXE compilation",
+    "package check without launch",
+    "real EXE forwards adapter in path with spaces and Chinese",
+    "missing installation detected",
+    "installed current resource detected without write",
+    "changed version detected"
+  ],
+  "real_game_launched": false,
+  "published_zip_changed": false
+}

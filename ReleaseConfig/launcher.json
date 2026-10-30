@@ -1,0 +1,9 @@
+{
+  "launch_mode": "custom_launcher",
+  "launch_exe": "龙城之王_中文版.exe",
+  "adapter": "汉化工具/launch.ps1",
+  "candidate": "Repack/UnifiedEntry_20261030",
+  "status": "candidate_not_published",
+  "install_policy": "verify_current_resources_then_install_if_missing_or_outdated",
+  "player_notice": "请运行龙城之王_中文版.exe；直接运行原游戏EXE不能启用本汉化。"
+}

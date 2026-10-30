@@ -136,6 +136,7 @@ REA + Ghidra原生证据见 `Analysis/native_opal_control_evidence_20261030.json
 当前构建使用40313个无歧义源键及6549个随机分支变体。显示Hook没有场景/字段身份，219个同源多译键和67个冲突派生变体未强行选择译文，见 `Analysis/DICTIONARY_CONFLICTS_20261030.json`；因此不能承诺全游戏零漏翻。图片、标题和安装资源沿用v1.1已制作载荷；公开v1.1 ZIP哈希保持 `90f52db229051f14ab0248ffcec6b594a24e4baa346b687fa7a8a1d40ae2af8a`。
 
 ## 版本记录
+- 2026-10-30 - 按新发布规范生成统一入口候选 `Repack/UnifiedEntry_20261030/龙城之王_中文版.exe`，位于包根目录，与原游戏EXE同级。按当前资源哈希判定是否需要自动安装，已完整安装则跳过安装直接启动；候选说明突出必须使用中文版EXE。通用生成器位于发布技能scripts/build_chinese_launcher.ps1。编译、中文/空格路径调用及缺失/完整/变化资源状态的隔离检测通过，未启动真实游戏；候选没有重新发布，当前公开v1.2 ZIP保持原样。配置见ReleaseConfig/launcher.json，验证见Analysis/unified_entry_validation.json。
 - 2026-10-30 - 制作v1.2对外发布补丁，纳入6972处遗漏语料、20条组合句、动态匹配与截断修复；便携启动入口核验实际DLL，安装回放及ZIP校验通过。
 - 2026-10-30 - 新截图8032定位为旧补丁仍在运行：进程16888实载Feedback_20261029 DLL，非LeakFix_20261030。新增统一入口“开始汉化测试.cmd”，旧/新测试CMD均转向此入口；校验载荷、拒绝已有游戏、等待旧watcher自然退出，启动后按Toolhelp SNAPMODULE32核验DLL路径（兼容Windows PowerShell 5.1读取WOW64模块）。只执行CheckOnly诊断，没有关闭、注入或启动用户游戏。截图整段双段正文加入离线回归，30个正向样例通过，当前新版游戏实载仍待用户重启确认。
 - 2026-10-30 - 完成6972处遗漏字段与20条完整组合句正式翻译；修复Opal变量、代词、随机分支字节和printf截断，交付LeakFix_20261030本地测试包，29样例及隔离安装通过，实机待测。

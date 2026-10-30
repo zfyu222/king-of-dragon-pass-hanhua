@@ -1,5 +1,9 @@
 ﻿param([string]$GameRoot='', [switch]$CheckOnly)
 $ErrorActionPreference='Stop'
+function FileHash([string]$Path){
+    $sha=[Security.Cryptography.SHA256]::Create();$stream=[IO.File]::OpenRead($Path)
+    try{return [BitConverter]::ToString($sha.ComputeHash($stream)).Replace('-','').ToLowerInvariant()}finally{$stream.Dispose();$sha.Dispose()}
+}
 # Windows PowerShell 5.1's Process.Modules can omit WOW64 modules when
 # called from a 64-bit host. Toolhelp SNAPMODULE32 gives the real DLL path.
 Add-Type -TypeDefinition @'
@@ -42,12 +46,17 @@ $expected=Join-Path $package '汉化文件\KoDPCNHook\KoDPCNHook.dll'
 $manifest=Get-Content -LiteralPath (Join-Path $package 'PATCH_MANIFEST.json') -Raw -Encoding utf8 | ConvertFrom-Json
 foreach($entry in @($manifest.files | Where-Object {$_.role -eq 'runtime'})){
     $path=Join-Path $package $entry.archive_path
-    if((Get-FileHash -LiteralPath $path -Algorithm SHA256).Hash.ToLowerInvariant() -ne $entry.sha256){throw "测试载荷校验失败：$path"}
+    if((FileHash $path) -ne $entry.sha256){throw "测试载荷校验失败：$path"}
 }
 $running=@(Get-Process -Name 'King of Dragon Pass' -ErrorAction SilentlyContinue | Where-Object {$_.Path -eq (Join-Path $game 'King of Dragon Pass.exe')})
 $loaded=@(foreach($process in $running){[KoDPTestModules]::Paths($process.Id)})
+$installed=$true
+foreach($entry in @($manifest.files | Where-Object {$_.role -eq 'resource'})){
+    $target=Join-Path $game $entry.path
+    if(-not (Test-Path -LiteralPath $target -PathType Leaf) -or (FileHash $target) -ne $entry.installed_sha256){$installed=$false;break}
+}
 if($CheckOnly){
-    @{package=$package;expected_dll=$expected;running_game_ids=@($running.Id);loaded_dlls=$loaded;payload_hashes='passed';game_launched=$false} | ConvertTo-Json -Depth 4
+    @{package=$package;expected_dll=$expected;running_game_ids=@($running.Id);loaded_dlls=$loaded;payload_hashes='passed';installed=$installed;game_launched=$false} | ConvertTo-Json -Depth 4
     return
 }
 if($running.Count){throw '请先保存并退出当前游戏，再使用这个入口。此脚本不会关闭游戏。'}
@@ -60,7 +69,7 @@ foreach($watcher in @(Get-Process -Name 'KoDPCNLauncher' -ErrorAction SilentlyCo
     }
 }
 Write-Output ('当前汉化补丁：'+$package)
-& (Join-Path $package '汉化工具\install.ps1') -Action install -GameRoot $game
+if(-not $installed){& (Join-Path $package '汉化工具\install.ps1') -Action install -GameRoot $game}
 Start-Process -WindowStyle Hidden -FilePath (Join-Path $package '汉化文件/KoDPCNHook/KoDPCNLauncher.exe') -ArgumentList ('"'+(Join-Path $game 'King of Dragon Pass.exe')+'"')
 $deadline=[DateTime]::UtcNow.AddSeconds(30)
 do{
