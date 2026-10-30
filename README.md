@@ -1,4 +1,6 @@
-# King of Dragon Pass 汉化项目
+# 龙城之王（King of Dragon Pass）汉化项目
+
+![龙城之王 子非鱼汉化](Dispatch/Artwork/title.png)
 
 > 本文档记录本项目的初始化与后续汉化方案；游戏原始文件只通过 `Game/` junction 引用，不纳入版本控制。
 
@@ -113,7 +115,7 @@
 - 腾讯文档反馈：https://docs.qq.com/sheet/DTkxSTUVQS1Ntd1FR?tab=BB08J2
 - 载荷：3个原生运行文件、348个已译HTML目标、12张汉化贴图及一个等长Logo像素补丁；ZIP内共369个载荷/脚本文件，另附说明、清单与校验和。原始游戏文件、备份和开发日志不分发。
 - 安装适配器：`ReleaseConfig/install.ps1`。解压游戏根目录后双击启动；自动校验全部文件、保存原件并在异常时回滚。旧中文页面没有原件备份时，卸载调用Steam恢复。原生资源包只分发替换像素，严格校验版本、偏移、长度与最终哈希，不分发完整原资源包。
-- v1.2构建入口：`ReleaseConfig/build_v12.py`；发布启动适配器：`ReleaseConfig/launch.ps1`，无需本机工程目录或开发运行环境，等待旧启动器自然退出并用Toolhelp核验实际DLL。公开发布证据见 `ReleaseConfig/publication.json`，四份正式导出的发布检查见 `ReleaseConfig/release_checks_v1.2.json`。汉化封面沿用此前待制作状态，未将官方原图冒充成图或加入载荷。
+- v1.2构建入口：`ReleaseConfig/build_v12.py`；发布启动适配器：`ReleaseConfig/launch.ps1`，无需本机工程目录或开发运行环境，等待旧启动器自然退出并用Toolhelp核验实际DLL。公开发布证据见 `ReleaseConfig/publication.json`，四份正式导出的发布检查见 `ReleaseConfig/release_checks_v1.2.json`。汉化封面位于 `Dispatch/Artwork/title.png`，以Steam官方主视觉为参考，主对话内置绘图制作并检查“龙城之王 子非鱼汉化”文字；来源和视觉检查见同目录sources.json。封面用于仓库首页与发布页，不进入补丁安装载荷。
 - 验证：30个完整运行时样例及变量、完整性与边界断言通过；本次发布适配器在隔离副本完成全新安装、重复安装、恢复、旧版升级和异常内容拒绝。见 `ReleaseConfig/installation_validation.json`、`ReleaseConfig/zip_validation.json`。真实游戏目录未改动。
 - 真实限制：本次实机复测仍pending，按单独发布授权经共同release-check；不伪造实机通过。6972处遗漏资源字段及20条完整组合句已正式翻译；219个同源多译键与67个派生变体因显示Hook缺少资源身份未强行合入；地图Storm Mts.仍英文；部分图片底纹和其他分辨率引擎引用保留此前待验证记录。
 - 图片标题：人类提供的新名称作为产品标题覆盖，原正式图片CSV保持不变；仅四种Logo尺寸派生新载荷。使用新版清字→逐图检查→绘字→逐图检查，两阶段共用4个图片ID预算；记录位于ImagePatch/title-*-20261029。

@@ -1,3 +1,5 @@
+![龙城之王 子非鱼汉化](https://github.com/zfyu222/king-of-dragon-pass-hanhua/releases/download/v1.2/title.png)
+
 《龙城之王》子非鱼AI汉化补丁 v1.2
 ====================
 

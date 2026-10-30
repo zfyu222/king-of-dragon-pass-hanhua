@@ -14,6 +14,7 @@
     "v1.0",
     "v1.1"
   ],
-  "artwork_status": "pending_network_error",
-  "github_asset_name_note": "Local ZIP and asset label use the required Chinese title; GitHub asset URL uses an ASCII filename."
+  "artwork_status": "completed",
+  "github_asset_name_note": "Local ZIP and asset label use the required Chinese title; GitHub asset URL uses an ASCII filename.",
+  "cover_url": "https://github.com/zfyu222/king-of-dragon-pass-hanhua/releases/download/v1.2/title.png"
 }

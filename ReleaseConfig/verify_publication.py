@@ -22,7 +22,9 @@ def main():
             digest.update(chunk);count+=len(chunk)
     if digest.hexdigest()!=expected['sha256'] or count!=expected['bytes'] or count!=asset['size']:raise ValueError('Public download mismatch')
     previous=[api('repos/'+repo+'/releases/tags/'+t)['tag_name'] for t in ('v1.0','v1.1')]
-    report=dict(status='published',version=version,chinese_title='龙城之王',release_url=release['html_url'],download_url=asset['browser_download_url'],asset_display_label=asset['label'],sha256=digest.hexdigest(),bytes=count,public_anonymous_download_verified=True,latest_stable=True,previous_release_preserved=True,preserved_tags=previous,artwork_status='pending_network_error',github_asset_name_note='Local ZIP and asset label use the required Chinese title; GitHub asset URL uses an ASCII filename.')
+    artwork=json.loads((ROOT/'ReleaseConfig/artwork_status.json').read_text(encoding='utf-8'))
+    report=dict(status='published',version=version,chinese_title='龙城之王',release_url=release['html_url'],download_url=asset['browser_download_url'],asset_display_label=asset['label'],sha256=digest.hexdigest(),bytes=count,public_anonymous_download_verified=True,latest_stable=True,previous_release_preserved=True,preserved_tags=previous,artwork_status=artwork['status'],github_asset_name_note='Local ZIP and asset label use the required Chinese title; GitHub asset URL uses an ASCII filename.')
+    if artwork['status']=='completed':report['cover_url']=artwork['public_url']
     (ROOT/'ReleaseConfig/publication.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
     print(json.dumps(report,ensure_ascii=False,indent=2))
 if __name__=='__main__':main()
