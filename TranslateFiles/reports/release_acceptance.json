@@ -2,23 +2,24 @@
   "authorization": "explicit_user_release",
   "accept_pending_runtime": true,
   "in_game_validation": "pending",
-  "user_statement": "发布吧，另外中文名字改为\"龙城之王\"",
+  "user_statement": "可以，发布吧",
   "game_version": "Steam v2.4.0",
   "platform": "Steam（Windows）",
+  "translation_sha256": "cd90ffc6a0dc395535f244709bd99ef171ae0d0884c1c280d54f2be29d193e50",
   "payload_files": [
     {
       "path": "Dispatch/Files/汉化文件/KoDPCNHook/KoDPCNHook.dll",
-      "sha256": "7bedfb9550450146c0b37c556e9d0d3b6cc0c70c8f87bacd125cc84fbaeb6cd5",
+      "sha256": "8efc21327d8f670a43688ae93d6c93176de5b105cfa3a00ab1871a0f192449c8",
       "game_path": "汉化文件/KoDPCNHook/KoDPCNHook.dll"
     },
     {
       "path": "Dispatch/Files/汉化文件/KoDPCNHook/KoDPCNLauncher.exe",
-      "sha256": "a0e9b71c4636a30aed807bf2009672bef8abc66fb8a2d4531b3f0188db50eb31",
+      "sha256": "25494c38704c9dadce4ae3520cb5ab6bcdc47f7e1d2f40fb945f1d2c4d67a391",
       "game_path": "汉化文件/KoDPCNHook/KoDPCNLauncher.exe"
     },
     {
       "path": "Dispatch/Files/汉化文件/KoDPCNHook/translations.tsv",
-      "sha256": "d2b4924343006db61e3da3c1e71eda48c39625c684b08d1d78bea267c7563e70",
+      "sha256": "c15413a1eb984df66df6f8d7fbac67ecc4d8d9e43dfc64cfc37467db5b1f7058",
       "game_path": "汉化文件/KoDPCNHook/translations.tsv"
     },
     {
@@ -1843,17 +1844,21 @@
     },
     {
       "path": "Dispatch/Files/汉化工具/install.ps1",
-      "sha256": "b6fdd025ee586f91e32a99d3967a0a52a2626ad63df66c80cb0e01073c2be556",
+      "sha256": "83b281434e3cd04ad1b96e9f5b53cc2b6d4e48bbd2329d40d1756edbadca5e34",
       "game_path": "汉化工具/install.ps1"
+    },
+    {
+      "path": "Dispatch/Files/汉化工具/launch.ps1",
+      "sha256": "18431245e9c3462cba47502ce19bc09c8fbfa642b4af1650cda7d775367f35aa",
+      "game_path": "汉化工具/launch.ps1"
     }
   ],
   "evidence_files": [
     {
-      "path": "ReleaseConfig/USER_RELEASE_AUTHORIZATION_20261030.md",
-      "sha256": "256babffe39e4e84a81d2bf8199b8d34d2b3865dbef4617a2cd36f78264a19db"
+      "path": "ReleaseConfig/USER_RELEASE_AUTHORIZATION_v1.2.md",
+      "sha256": "2d1decc719a20f97d797a91ba2c241aa64bdffb4d8a56e1e269b7ffa45299a2b"
     }
   ],
-  "translation_sha256": "cd90ffc6a0dc395535f244709bd99ef171ae0d0884c1c280d54f2be29d193e50",
   "status": "authorized",
   "quality_report_hash": "eb4d6c6e4bfad64cb8c86b1a8587f0a1ef34f974335dd2c09867c4e09f3e11ea"
 }

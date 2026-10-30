@@ -1,4 +1,4 @@
-将生成：D:\StaticHanHua\Projects\king-of-dragon-pass\Dispatch\龙城之王_子非鱼汉化1.1.zip
+将生成：D:\StaticHanHua\Projects\king-of-dragon-pass\Dispatch\龙城之王_子非鱼汉化1.2.zip
   D:\StaticHanHua\Projects\king-of-dragon-pass\Dispatch\Files\汉化文件\KoDPCNHook\KoDPCNHook.dll -> 汉化文件/KoDPCNHook/KoDPCNHook.dll
   D:\StaticHanHua\Projects\king-of-dragon-pass\Dispatch\Files\汉化文件\KoDPCNHook\KoDPCNLauncher.exe -> 汉化文件/KoDPCNHook/KoDPCNLauncher.exe
   D:\StaticHanHua\Projects\king-of-dragon-pass\Dispatch\Files\汉化文件\KoDPCNHook\translations.tsv -> 汉化文件/KoDPCNHook/translations.tsv
@@ -367,3 +367,4 @@
   D:\StaticHanHua\Projects\king-of-dragon-pass\Dispatch\Files\启动汉化.cmd -> 启动汉化.cmd
   D:\StaticHanHua\Projects\king-of-dragon-pass\Dispatch\Files\卸载汉化.cmd -> 卸载汉化.cmd
   D:\StaticHanHua\Projects\king-of-dragon-pass\Dispatch\Files\汉化工具\install.ps1 -> 汉化工具/install.ps1
+  D:\StaticHanHua\Projects\king-of-dragon-pass\Dispatch\Files\汉化工具\launch.ps1 -> 汉化工具/launch.ps1

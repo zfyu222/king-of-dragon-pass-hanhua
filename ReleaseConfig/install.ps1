@@ -1,8 +1,9 @@
-param([ValidateSet('install','uninstall','launch')][string]$Action='install',[string]$GameRoot='', [string]$SteamRequestFile='')
+﻿param([ValidateSet('install','uninstall','launch')][string]$Action='install',[string]$GameRoot='', [string]$SteamRequestFile='')
 $ErrorActionPreference='Stop'
 $package=Split-Path -Parent $PSScriptRoot
 if(-not $GameRoot){$GameRoot=$package}
 $GameRoot=(Resolve-Path -LiteralPath $GameRoot).Path.TrimEnd('\','/')
+if($Action -eq 'launch'){& (Join-Path $PSScriptRoot 'launch.ps1') -GameRoot $GameRoot;return}
 $manifest=Get-Content -LiteralPath (Join-Path $package 'PATCH_MANIFEST.json') -Raw -Encoding utf8 | ConvertFrom-Json
 function Safe([string]$root,[string]$relative){
     $p=[IO.Path]::GetFullPath((Join-Path $root $relative))
@@ -81,7 +82,3 @@ try{
     }
 }
 Write-Output '《龙城之王》汉化安装完成。'
-if($Action -eq 'launch'){
-    $exe=Safe $GameRoot 'King of Dragon Pass.exe'
-    Start-Process -FilePath (Safe $package '汉化文件/KoDPCNHook/KoDPCNLauncher.exe') -ArgumentList ('"'+$exe+'"')
-}

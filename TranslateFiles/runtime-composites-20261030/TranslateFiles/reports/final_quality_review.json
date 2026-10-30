@@ -30,6 +30,9 @@
   "standard_scope_policy": "disputes_only_v1",
   "carried_findings": {},
   "selection_explanation": "Only explicit unresolved reviewer issues need standard-tier adjudication. Risk flags, corrections, ordinary samples, duplicate-source groups and speaker groups do not trigger standard-tier review. Known standard-tier repair findings are carried to cheap-tier repair without re-reading; exhausted or regressing repairs use the existing targeted standard-tier escalation route.",
-  "report_hash": "b0a060c72d9897d203a82539cbc8cd7114026b3b82d4cb0dd252332af3a667d6",
+  "resource_occurrence_binding": {
+    "feedback_text.mapping.json": "9a6233e9d96a66f8f9a6b898640dc4fab0ad2cd2f65ef5a05a97c5360e533b18"
+  },
+  "report_hash": "b5201eda3a73c55ee59f9836c61a4ec9120d86c80f35a42ee255aad0fd07a056",
   "round_scope": []
 }

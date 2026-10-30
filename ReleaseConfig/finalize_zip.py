@@ -16,7 +16,7 @@ def main():
     spec=importlib.util.spec_from_file_location('release_common',WORKSPACE/'.agents/skills/game-release-patch/scripts/create_release_patch.py')
     common=importlib.util.module_from_spec(spec);spec.loader.exec_module(common)
     c=json.loads((ROOT/'ReleaseConfig/release.json').read_text(encoding='utf-8'))
-    sys.argv=['create_release_patch.py','--project',str(ROOT),'--game-name','龙城之王','--version','1.1',
+    sys.argv=['create_release_patch.py','--project',str(ROOT),'--game-name','龙城之王','--version',c['version'],
         '--introduction','龙城之王汉化补丁','--coverage','界面与剧情等','--game-version','Steam v2.4.0','--platform','Steam（Windows）',
         '--install','解压后运行启动汉化.cmd。','--uninstall','运行卸载汉化.cmd。','--download-url',c['download_url'],'--changes','更新词库与标题。','--dry-run']
     payload=m['files']+m['auxiliary']

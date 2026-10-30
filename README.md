@@ -105,16 +105,16 @@
 
 ## 对外发布
 
-- 当前版本：`Dispatch/龙城之王_子非鱼汉化1.1.zip`；中文名称按本次指定统一为“龙城之王”。历史 v1.0 保留。
+- 当前版本：`Dispatch/龙城之王_子非鱼汉化1.2.zip`；中文名称统一为“龙城之王”。历史 v1.0、v1.1 保留。
 - 支持：Steam v2.4.0，Windows。
-- 发布页：https://github.com/zfyu222/king-of-dragon-pass-hanhua/releases/tag/v1.1
-- 公开下载已匿名校验，SHA-256：`90f52db229051f14ab0248ffcec6b594a24e4baa346b687fa7a8a1d40ae2af8a`。GitHub下载资产为 `King-of-Dragon-Pass_CN_1.1.zip`（服务端不保留中文文件名），显示名和本地ZIP保持中文名。
+- 发布页：https://github.com/zfyu222/king-of-dragon-pass-hanhua/releases/tag/v1.2
+- 本地v1.2校验通过，SHA-256：`834910dab519c2fea7bfcd7c920f65bc7a3beec52fdbd75dab9ca473ba25f81c`。GitHub下载资产使用 `King-of-Dragon-Pass_CN_1.2.zip`（服务端不保留中文文件名），显示名和本地ZIP保持中文名。
 - 百度网盘分享 King-of-Dragon-Pass：https://pan.baidu.com/s/5xKG8bFszi_wB9yFgSxNV9g
 - 腾讯文档反馈：https://docs.qq.com/sheet/DTkxSTUVQS1Ntd1FR?tab=BB08J2
-- 载荷：3个原生运行文件、348个已译HTML目标、12张汉化贴图及一个等长Logo像素补丁；ZIP内共368个载荷/脚本文件，另附说明、清单与校验和。原始游戏文件、备份和开发日志不分发。
+- 载荷：3个原生运行文件、348个已译HTML目标、12张汉化贴图及一个等长Logo像素补丁；ZIP内共369个载荷/脚本文件，另附说明、清单与校验和。原始游戏文件、备份和开发日志不分发。
 - 安装适配器：`ReleaseConfig/install.ps1`。解压游戏根目录后双击启动；自动校验全部文件、保存原件并在异常时回滚。旧中文页面没有原件备份时，卸载调用Steam恢复。原生资源包只分发替换像素，严格校验版本、偏移、长度与最终哈希，不分发完整原资源包。
-- 验证：22个运行时样例此前通过；本次发布适配器在隔离副本完成全新安装、重复安装、恢复、旧版升级和异常内容拒绝。见 `ReleaseConfig/installation_validation.json`、`ReleaseConfig/zip_validation.json`。真实游戏目录未改动。
-- 真实限制：本次实机复测仍pending，按单独发布授权经共同release-check；不伪造实机通过。6692处候选提取遗漏尚未全部核实/翻译；地图Storm Mts.仍英文；部分图片底纹和其他分辨率引擎引用保留此前待验证记录。
+- 验证：30个完整运行时样例及变量、完整性与边界断言通过；本次发布适配器在隔离副本完成全新安装、重复安装、恢复、旧版升级和异常内容拒绝。见 `ReleaseConfig/installation_validation.json`、`ReleaseConfig/zip_validation.json`。真实游戏目录未改动。
+- 真实限制：本次实机复测仍pending，按单独发布授权经共同release-check；不伪造实机通过。6972处遗漏资源字段及20条完整组合句已正式翻译；219个同源多译键与67个派生变体因显示Hook缺少资源身份未强行合入；地图Storm Mts.仍英文；部分图片底纹和其他分辨率引擎引用保留此前待验证记录。
 - 图片标题：人类提供的新名称作为产品标题覆盖，原正式图片CSV保持不变；仅四种Logo尺寸派生新载荷。使用新版清字→逐图检查→绘字→逐图检查，两阶段共用4个图片ID预算；记录位于ImagePatch/title-*-20261029。
 - 发布封面：待补。已找到Steam官方参考，内置图像生成因网络请求失败未得到成图；未切换付费接口，也未将官方原图冒充汉化封面。见 `ReleaseConfig/artwork_status.json`。
 
@@ -133,6 +133,7 @@ REA + Ghidra原生证据见 `Analysis/native_opal_control_evidence_20261030.json
 当前构建使用40313个无歧义源键及6549个随机分支变体。显示Hook没有场景/字段身份，219个同源多译键和67个冲突派生变体未强行选择译文，见 `Analysis/DICTIONARY_CONFLICTS_20261030.json`；因此不能承诺全游戏零漏翻。图片、标题和安装资源沿用v1.1已制作载荷；公开v1.1 ZIP哈希保持 `90f52db229051f14ab0248ffcec6b594a24e4baa346b687fa7a8a1d40ae2af8a`。
 
 ## 版本记录
+- 2026-10-30 - 制作v1.2对外发布补丁，纳入6972处遗漏语料、20条组合句、动态匹配与截断修复；便携启动入口核验实际DLL，安装回放及ZIP校验通过。
 - 2026-10-30 - 新截图8032定位为旧补丁仍在运行：进程16888实载Feedback_20261029 DLL，非LeakFix_20261030。新增统一入口“开始汉化测试.cmd”，旧/新测试CMD均转向此入口；校验载荷、拒绝已有游戏、等待旧watcher自然退出，启动后按Toolhelp SNAPMODULE32核验DLL路径（兼容Windows PowerShell 5.1读取WOW64模块）。只执行CheckOnly诊断，没有关闭、注入或启动用户游戏。截图整段双段正文加入离线回归，30个正向样例通过，当前新版游戏实载仍待用户重启确认。
 - 2026-10-30 - 完成6972处遗漏字段与20条完整组合句正式翻译；修复Opal变量、代词、随机分支字节和printf截断，交付LeakFix_20261030本地测试包，29样例及隔离安装通过，实机待测。
 - 2026-10-30 - 发布v1.1，名称改为龙城之王；更新四尺寸Logo、漏翻修复词库和可升级/卸载的玩家安装脚本。
