@@ -24,6 +24,9 @@ def main():
     for name,action in [('开始测试.cmd','launch'),('安装测试版.cmd','install'),('恢复英文.cmd','uninstall')]:
         script='@echo off\r\nchcp 65001 >nul\r\npowershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0汉化工具\\install.ps1" -Action '+action+' -GameRoot "'+str(game)+'"\r\npause\r\n'
         (package/name).write_bytes(script.encode('utf-8'))
+    # Stable project entry validates the package, rejects an active game and
+    # lets old watchers exit before launching, then checks the loaded DLL path.
+    (package/'开始测试.cmd').write_bytes('@echo off\r\nchcp 65001 >nul\r\ncall "%~dp0..\\..\\开始汉化测试.cmd"\r\n'.encode('utf-8'))
     guide='《龙城之王》2026-10-30 漏翻修复测试版\n\n退出游戏后，双击“开始测试.cmd”。脚本自动安装并启动汉化，读取现有存档。\n本测试包使用本机已记录的Steam游戏目录：'+str(game)+'\n需要恢复英文时，退出游戏后双击“恢复英文.cmd”。\n\n本次更新：补齐Opal遗漏字段，支持变量及代词展开、完整战报与史册句式，修复末尾占位符导致后半段文本截断。\n已通过离线匹配与隔离安装验证；游戏内字体、排版与存档场景仍待实测。\n同源多译的219个源键没有按顺序强行覆盖，已单列工程冲突报告；不能保证全游戏零漏翻。\n\n本补丁使用 AI 辅助翻译，请适当降低预期。\n'
     (package/'测试说明.txt').write_text(guide,encoding='utf-8-sig')
     sums=''.join(sha(p)+'  '+p.relative_to(package).as_posix()+'\n' for p in sorted(package.rglob('*')) if p.is_file() and p.name!='SHA256SUMS.txt')

@@ -1,0 +1,12 @@
+{
+    "running_game_ids":  [
+                             16888
+                         ],
+    "loaded_dlls":  [
+                        "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\Repack\\Feedback_20261029\\KoDPCNHook\\KoDPCNHook.dll"
+                    ],
+    "payload_hashes":  "passed",
+    "expected_dll":  "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\Repack\\LeakFix_20261030\\汉化文件\\KoDPCNHook\\KoDPCNHook.dll",
+    "package":  "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\Repack\\LeakFix_20261030",
+    "game_launched":  false
+}

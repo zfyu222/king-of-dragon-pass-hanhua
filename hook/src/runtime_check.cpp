@@ -30,6 +30,7 @@ int wmain(int argc, wchar_t** argv) {
     probes.push_back("The Horse Nomad charge hit us before we could shift our lines.");
     probes.push_back("As our forces engage with the Horse Nomads, Orlaront notices that a detachment of riders is trying to sneak completely around and get at us from behind. What should he do?");
     probes.push_back("Make sure Varsens knows about the threat.");
+    probes.push_back("The Gorinds charged right into the trap we had laid for them.\n\nAs our forces engage with the Horse Nomads, Orlaront notices that a detachment of riders is trying to sneak completely around and get at us from behind. What should he do?");
     int failed = 0;
     size_t probeIndex = 0;
     for (const char* probe : probes) {
