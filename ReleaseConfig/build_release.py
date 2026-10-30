@@ -156,6 +156,8 @@ def finalize(out, manifest, entries, auxiliary, cfg):
 
 
 if __name__=='__main__':
+    if json.loads((ROOT/'ReleaseConfig/release.json').read_text(encoding='utf-8'))['version']!='1.1':
+        raise ValueError('Historical v1.1 adapter; use build_v12.py for v1.2')
     if '--finalize' in sys.argv:
         out=ROOT/'Dispatch/Files'
         manifest=json.loads((out/'PATCH_MANIFEST.json').read_text(encoding='utf-8'))
