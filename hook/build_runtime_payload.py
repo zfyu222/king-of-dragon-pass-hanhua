@@ -64,21 +64,26 @@ def expanded_pairs(source, target):
         return found
     a,b=branches(source),branches(target)
     if not a or len(a) != len(b): return []
-    choices = []
-    for x, y in zip(a, b):
-        sx, sy = x[2],y[2]
-        if len(sy) != len(sx): return []
-        choices.append(list(zip(sx, sy)))
+    source_counts = [len(block[2]) for block in a]
+    target_counts = [len(block[2]) for block in b]
+    target_order = list(range(len(b)))
+    if source_counts != target_counts:
+        # A reordered block can be paired only when its branch count identifies it uniquely.
+        if len(set(source_counts)) != len(a) or sorted(source_counts) != sorted(target_counts):
+            return []
+        target_order = [source_counts.index(count) for count in target_counts]
     total = 1
-    for c in choices: total *= len(c)
+    for count in source_counts: total *= count
     if total > 64: return []
     result = []
-    for combination in itertools.product(*choices):
+    for selections in itertools.product(*(range(count) for count in source_counts)):
         values = []
-        for text, matches, side in ((source,a,0),(target,b,1)):
+        target_selections = [selections[index] for index in target_order]
+        for text, matches, indices in ((source, a, selections), (target, b, target_selections)):
             value, start = b'', 0
-            for match, option in zip(matches, combination):
-                value += text[start:match[0]] + option[side]; start = match[1]
+            for (begin, end, options), index in zip(matches, indices):
+                value += text[start:begin] + options[index]
+                start = end
             values.append(value + text[start:])
         result.append(tuple(values))
     return result

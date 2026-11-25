@@ -1,6 +1,6 @@
 # 龙城之王（King of Dragon Pass）汉化项目
 
-![龙城之王 子非鱼汉化](Dispatch/Artwork/title.png)
+![龙城之王 子非鱼汉化](Dispatch/Artwork/title.jpg)
 
 **启动中文版：解压到原游戏EXE所在目录，双击“龙城之王_中文版.exe”。首次自动安装，以后直接启动；直接运行原游戏EXE不能启用本汉化。**
 
@@ -66,6 +66,8 @@
 - 上述 4 条未经人工改判，`reports/review_round_status.json` 仍为 `needs_attention`；保留现译或调整术语条目需人工决定，程序不自动改写审校结论。
 
 ## 回填
+- **v1.4（2026-11-26）**。用 Python 3.12 和既有 MSVC x86 Hook 回填正式润色稿。按 226 个原始 HTML 的标签定位和哈希重建页面，再通过既有 `Text` 和 `_Text` 对照部署至 348 个目标，其中 171 个页面内容有变化。运行时词库保留 v1.3 的 46,862 个匹配键，新增 6 个。按唯一分支数恢复改过语序的 12 种随机短语展开。
+- 本机 Steam Windows 2.4.0 安装目录已同步。校验了 371 个补丁文件和 361 个资源目标，安装器保留原件备份。原生 Hook 的 30 条离线样例、4 项 Opal 回归测试及 12 项隔离安装检查全部通过。实机显示和存档场景待验证。见 [v1.4 验证报告](ReleaseConfig/validation_v1.4.json)。
 - **本次测试载荷（2026-10-29）**：已生成 `Repack/Test_20261029/KoDPCNHook/`。双击 `启动测试.cmd` 安装并启动，退出游戏后用 `恢复测试前状态.cmd` 恢复。含新词库、348 个 HTML 目标、12 张 v15 贴图和低分辨率 Logo 的等长 RGBA 资源包补丁；共 361 个目标。原生 Hook 自检及隔离安装/重复安装/恢复/损坏载荷拒绝通过；本次实机状态仍待用户测试。详见 `TEST_GUIDE_20261029.md`、`Analysis/repack_test_verification_20261029.json`。
 - 正文方案：采用外置启动器与注入 DLL，不改原始 EXE/.s86；HTML 与图片按测试清单备份回填。`KoDPCNLauncher.exe` 正常启动游戏，检测到可见窗口并等待 2.5 秒后注入 `KoDPCNHook.dll`，避免过早注入干扰 Marmalade 字体缓存。
 - 文字接管：DLL 在 `.s86` 映像稳定后 Hook `CIwUIDrawableText::Prepare/Draw`，并补充 Hook Marmalade 底层字体字符串准备入口；普通 UI caption 与绕过控件层的地图标签均在游戏计算字宽、换行和裁剪前替换，再交回原生 UI 流程绘制。
@@ -108,7 +110,16 @@
 - 已知问题：地图中文在深色森林地形上对比仍偏弱；`DAGORI`/`INKARTH`、`Spider Mt.` 等相邻标签存在挤压；少数标签残留淡英文痕迹；Logo 的宋体字形与原手绘衬线风格差异明显，属可读但不等同原设计。
 - 未完成：引擎侧导入（Marmalade 无通用贴图适配器，需运行时 PNG 替换或 overlay 方案）；视觉复核尚未逐图签收。
 
+## 开发与构建
+
+- 工程位于 [StaticHanHua 工作区](https://github.com/zfyu222/StaticHanHua) 的 `Projects/king-of-dragon-pass` 子目录。将本机 Steam Windows 2.4.0 安装目录联接为 `Game/`。共用脚本需要工作区的 Python 3.12 环境。提取使用 Node.js，重编译原生 Hook 或运行原生离线检查需要 Visual Studio 的 MSVC x86 工具链。
+- 原文、译文和资源定位见 [原文 CSV](king-of-dragon-pass_text.csv)、[正式译文 CSV](king-of-dragon-pass_text_translated.csv) 和 [文本目录表](king-of-dragon-pass_text_catalog.tsv)。提取入口为 [extract_text.js](extract_text.js)，译文结构验证见 [validate_translation_kodp.py](validate_translation_kodp.py)。
+- 运行时源码在 [hook/src](hook/src)。使用 [词库和 HTML 构建器](hook/build_runtime_payload.py) 读取正式导出、本机原始 HTML 和三份增量导出及其资源映射。指定 `--output Repack/PolishRuntime_v1.4`，再用三个 `--supplement` 参数指向 `TranslateFiles/` 下的 `feedback-20261029`、`opal-complete-20261030` 和 `runtime-composites-20261030`。运行验证见 [原生匹配检查](hook/build_runtime_check.ps1) 和 [Opal 字节测试](hook/test_opal_bytes.py)。
+- [v1.4 组包脚本](ReleaseConfig/build_v14.py) 使用解压到 `Dispatch/Files` 的 v1.3 ZIP、与清单匹配的本机原始 HTML 备份及重建词库。安装回放和 ZIP 校验分别由 [verify_release.py](ReleaseConfig/verify_release.py) 与 [finalize_zip.py](ReleaseConfig/finalize_zip.py) 执行。共用发布门禁需要本地工作流数据库和当前载荷的实机证据或对应发布授权。成品在 [GitHub Releases](https://github.com/zfyu222/king-of-dragon-pass-hanhua/releases/) 下载。
+
 ## 对外发布
+- **v1.4（2026-11-26）**。补丁为 `龙城之王_子非鱼汉化1.4.zip`，适用 Steam Windows 2.4.0。包含新版运行时词库、更新的 HTML 页面和沿用的贴图，使用同一个中文版 EXE 安装和启动。ZIP 共 371 个文件，CRC 和全部清单哈希通过。
+- [v1.4 发布页](https://github.com/zfyu222/king-of-dragon-pass-hanhua/releases/tag/v1.4)。SHA-256 为 `57f1962b69018ae2bd25bfb6ffd0778389eb3aa5019ff2abfe824f46cde15382`。沿用 [现有封面](Dispatch/Artwork/title.jpg) 与 [来源记录](Dispatch/Artwork/sources.json)。结果见 [发布检查摘要](ReleaseConfig/validation_v1.4.json)。
 
 - 当前版本：`Dispatch/龙城之王_子非鱼汉化1.3.zip`；中文名称统一为“龙城之王”。历史 v1.0、v1.1、v1.2 保留。
 - 支持：Steam v2.4.0，Windows。
@@ -118,7 +129,7 @@
 - 腾讯文档反馈：https://docs.qq.com/sheet/DTkxSTUVQS1Ntd1FR?tab=BB08J2
 - 载荷：3个原生运行文件、348个已译HTML目标、12张汉化贴图及一个等长Logo像素补丁；ZIP内共368个载荷/脚本文件，另附说明、清单与校验和。原始游戏文件、备份和开发日志不分发。
 - 安装适配器：`ReleaseConfig/install.ps1`。解压游戏根目录后双击启动；自动校验全部文件、保存原件并在异常时回滚。旧中文页面没有原件备份时，卸载调用Steam恢复。原生资源包只分发替换像素，严格校验版本、偏移、长度与最终哈希，不分发完整原资源包。
-- v1.3构建入口：`ReleaseConfig/build_v13.py`；发布启动适配器：`ReleaseConfig/launch.ps1`，无需本机工程目录或开发运行环境，等待旧启动器自然退出并用Toolhelp核验实际DLL。公开发布证据见 `ReleaseConfig/publication.json`，四份正式导出的发布检查见 `ReleaseConfig/release_checks_v1.3.json`。汉化封面位于 `Dispatch/Artwork/title.png`，以Steam官方主视觉为参考，主对话内置绘图制作并检查“龙城之王 子非鱼汉化”文字；来源和视觉检查见同目录sources.json。封面用于仓库首页与发布页，不进入补丁安装载荷。
+- v1.3构建入口：`ReleaseConfig/build_v13.py`；发布启动适配器：`ReleaseConfig/launch.ps1`，无需本机工程目录或开发运行环境，等待旧启动器自然退出并用Toolhelp核验实际DLL。公开发布证据见 `ReleaseConfig/publication.json`，四份正式导出的发布检查见 `ReleaseConfig/release_checks_v1.3.json`。汉化封面位于 `Dispatch/Artwork/title.jpg`，以Steam官方主视觉为参考，主对话内置绘图制作并检查“龙城之王 子非鱼汉化”文字；来源和视觉检查见同目录sources.json。封面用于仓库首页与发布页，不进入补丁安装载荷。
 - 验证：30个完整运行时样例及变量、完整性与边界断言通过；本次发布适配器在隔离副本完成全新安装、重复安装、恢复、旧版升级和异常内容拒绝。见 `ReleaseConfig/installation_validation.json`、`ReleaseConfig/zip_validation.json`。真实游戏目录未改动。
 - 真实限制：本次实机复测仍pending，按单独发布授权经共同release-check；不伪造实机通过。6972处遗漏资源字段及20条完整组合句已正式翻译；219个同源多译键与67个派生变体因显示Hook缺少资源身份未强行合入；地图Storm Mts.仍英文；部分图片底纹和其他分辨率引擎引用保留此前待验证记录。
 - 图片标题：人类提供的新名称作为产品标题覆盖，原正式图片CSV保持不变；仅四种Logo尺寸派生新载荷。使用新版清字→逐图检查→绘字→逐图检查，两阶段共用4个图片ID预算；记录位于ImagePatch/title-*-20261029。
@@ -139,6 +150,7 @@ REA + Ghidra原生证据见 `Analysis/native_opal_control_evidence_20261030.json
 当前构建使用40313个无歧义源键及6549个随机分支变体。显示Hook没有场景/字段身份，219个同源多译键和67个冲突派生变体未强行选择译文，见 `Analysis/DICTIONARY_CONFLICTS_20261030.json`；因此不能承诺全游戏零漏翻。图片、标题和安装资源沿用v1.1已制作载荷；公开v1.1 ZIP哈希保持 `90f52db229051f14ab0248ffcec6b594a24e4baa346b687fa7a8a1d40ae2af8a`。
 
 ## 版本记录
+- 2026-11-26 - v1.4 回填净修改的 2,570 条主译文，更新词库和 171 个 HTML，完成隔离升级回放并同步本机 Steam 安装。
 - 2026-10-30 - 制作v1.3发布包，根目录统一使用“龙城之王_中文版.exe”；首次自动安装，已完整安装则直接启动。安装/启动CMD不再作为玩家主入口，保留卸载CMD。368个载荷和脚本、371个ZIP条目校验通过；实际安装器8项隔离回放、生产安装判定分支5项假游戏回放通过。既有文本不改写；实机检查仍按真实记录保留pending，不把隔离回放当作游戏实测。
 - 2026-10-30 - 按新发布规范生成统一入口候选 `Repack/UnifiedEntry_20261030/龙城之王_中文版.exe`，位于包根目录，与原游戏EXE同级。按当前资源哈希判定是否需要自动安装，已完整安装则跳过安装直接启动；候选说明突出必须使用中文版EXE。通用生成器位于发布技能scripts/build_chinese_launcher.ps1。编译、中文/空格路径调用及缺失/完整/变化资源状态的隔离检测通过，未启动真实游戏；候选没有重新发布，当前公开v1.2 ZIP保持原样。配置见ReleaseConfig/launcher.json，验证见Analysis/unified_entry_validation.json。
 - 2026-10-30 - 制作v1.2对外发布补丁，纳入6972处遗漏语料、20条组合句、动态匹配与截断修复；便携启动入口核验实际DLL，安装回放及ZIP校验通过。

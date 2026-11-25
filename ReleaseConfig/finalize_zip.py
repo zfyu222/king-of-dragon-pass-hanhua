@@ -17,8 +17,12 @@ def main():
     common=importlib.util.module_from_spec(spec);spec.loader.exec_module(common)
     c=json.loads((ROOT/'ReleaseConfig/release.json').read_text(encoding='utf-8'))
     sys.argv=['create_release_patch.py','--project',str(ROOT),'--game-name','龙城之王','--version',c['version'],
+        '--chinese-name','龙城之王','--english-name','King of Dragon Pass',
         '--introduction','龙城之王汉化补丁','--coverage','界面与剧情等','--game-version','Steam v2.4.0','--platform','Steam（Windows）',
-        '--install','解压后运行启动汉化.cmd。','--uninstall','运行卸载汉化.cmd。','--download-url',c['download_url'],'--changes','更新词库与标题。','--dry-run']
+        '--install','解压到游戏目录并运行龙城之王_中文版.exe。','--uninstall','运行卸载汉化.cmd。',
+        '--steam-url',c.get('steam_url','https://store.steampowered.com/app/352220/'),
+        '--download-url',c['download_url'],'--mirror-url',c['mirror_url'],'--share-name',c['share_name'],
+        '--feedback-url',c['feedback_url'],'--feedback-name',c['feedback_name'],'--changes','更新主译文。','--dry-run']
     payload=m['files']+m['auxiliary']
     for e in payload:
         sys.argv+=['--include',str(files/e['archive_path'])+'='+e['path']]
@@ -39,6 +43,9 @@ def main():
         import hashlib
         for e in payload:assert hashlib.sha256(z.read(e['archive_path'])).hexdigest()==e['sha256']
         assert z.read('补丁说明.txt').startswith(b'\xef\xbb\xbf')
+        sums=dict(line.split('  ',1)[::-1] for line in z.read('SHA256SUMS.txt').decode('utf-8').splitlines())
+        assert sums.keys()==selected-{'SHA256SUMS.txt'}
+        assert all(hashlib.sha256(z.read(name)).hexdigest()==value for name,value in sums.items())
     report=dict(status='passed',archive=str(archive),sha256=sha(archive),bytes=archive.stat().st_size,
                 payload_files=len(payload),zip_files=len(selected),crc_passed=True,all_manifest_hashes_passed=True,
                 originals_backups_game_binaries_excluded=True)

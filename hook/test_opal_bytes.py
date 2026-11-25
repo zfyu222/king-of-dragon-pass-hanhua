@@ -27,5 +27,17 @@ class OpalByteTests(unittest.TestCase):
             (b'first \x01\xc3\x02.',b'A \x01\xc3\x02.'),
             (b'second \x01\x41/.',b'B \x01\x41/.')])
 
+    def test_reordered_blocks_pair_by_unique_branch_count(self):
+        source = b'\x02\x02first/second\x02 if \x02\x03a/b/c\x02'
+        target = b'if \x02\x03A/B/C\x02 then \x02\x02one/two\x02'
+        self.assertEqual(dict(expanded_pairs(source, target)), {
+            b'first if a': b'if A then one',
+            b'first if b': b'if B then one',
+            b'first if c': b'if C then one',
+            b'second if a': b'if A then two',
+            b'second if b': b'if B then two',
+            b'second if c': b'if C then two',
+        })
+
 
 if __name__=='__main__':unittest.main()

@@ -1,0 +1,44 @@
+{
+  "version": "1.4",
+  "patch": "龙城之王_子非鱼汉化1.4.zip",
+  "archive_sha256": "57f1962b69018ae2bd25bfb6ffd0778389eb3aa5019ff2abfe824f46cde15382",
+  "archive_bytes": 11286042,
+  "manifest_sha256": "24c6dd8e3fab177c3141ff7914e046754836660702cf5c71fec86cb45a8e4979",
+  "translation_sha256": "471dbacab3711c3dd7a8e1185352e41fc9ab9c099eb5ca3ede296dfde4cc77e3",
+  "resource_targets": 361,
+  "package_files": 371,
+  "dictionary_records": 46868,
+  "existing_dictionary_keys_retained": 46862,
+  "new_dictionary_keys": 6,
+  "expanded_reordered_variants": 12,
+  "html_targets": 348,
+  "changed_html_targets": 171,
+  "runtime_offline_probes": 30,
+  "opal_regression_checks": 4,
+  "installation_checks": [
+    "fresh_install",
+    "repeat_install",
+    "fresh_uninstall",
+    "reject_corrupt_payload",
+    "reject_unknown_game_content",
+    "legacy_upgrade",
+    "legacy_repeat",
+    "legacy_uninstall_steam_restore",
+    "previous_stable_install",
+    "previous_stable_upgrade",
+    "previous_stable_launcher_check_only",
+    "previous_stable_uninstall"
+  ],
+  "local_install": {
+    "status": "installed_verified",
+    "package_files": 371,
+    "resource_targets": 361
+  },
+  "release_checks": {
+    "king-of-dragon-pass": "passed",
+    "feedback-20261029": "passed",
+    "opal-complete-20261030": "passed",
+    "runtime-composites-20261030": "passed"
+  },
+  "in_game_validation": "pending"
+}

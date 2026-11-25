@@ -4,9 +4,9 @@
   "reference_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/352220/header.jpg",
   "reference_local": "Dispatch/Artwork/official_header.jpg",
   "requested_title": "龙城之王 子非鱼汉化",
-  "output": "Dispatch/Artwork/title.png",
+  "output": "Dispatch/Artwork/title.jpg",
   "method": "Built-in image generation with official Steam artwork as reference",
-  "sha256": "c2e02a64c2fda32e200a8ed51a3020a40bc3dca4c62ef7775fd1044083ac439b",
+  "sha256": "3917524a67d39513addfe9b9e0f37f6f2c4f2b18c83c2514f90d26ebdc6b75e0",
   "visual_review": {
     "title": "龙城之王",
     "branding": "子非鱼汉化",
@@ -15,5 +15,5 @@
     "style": "preserved painted fantasy reference",
     "decision": "pass"
   },
-  "public_url": "https://github.com/zfyu222/king-of-dragon-pass-hanhua/releases/download/v1.2/title.png"
+  "public_url": "https://raw.githubusercontent.com/zfyu222/king-of-dragon-pass-hanhua/main/Dispatch/Artwork/title.jpg"
 }

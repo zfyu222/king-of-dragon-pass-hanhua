@@ -4,6 +4,7 @@ import json
 import shutil
 import subprocess
 import uuid
+import argparse
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -11,7 +12,7 @@ FILES=ROOT/'Dispatch/Files'
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 
 
-def verify(files=None,report_path=None):
+def verify(files=None,report_path=None,previous=None):
     FILES=Path(files) if files else ROOT/'Dispatch/Files'
     manifest=json.loads((FILES/'PATCH_MANIFEST.json').read_text(encoding='utf-8'))
     resources=[e for e in manifest['files'] if e['role']=='resource']
@@ -53,6 +54,29 @@ def verify(files=None,report_path=None):
     run(legacy,'install','legacy_repeat');hashes(legacy,'installed_sha256')
     run(legacy,'uninstall','legacy_uninstall_steam_restore')
     assert (legacy/'steam-request.txt').read_text()=='steam://validate/352220'
+    if previous:
+        previous=Path(previous)
+        previous_manifest=json.loads((previous/'PATCH_MANIFEST.json').read_text(encoding='utf-8'))
+        upgrade=fixture('v1.3 升级检查')
+        save=upgrade/'fixture-save.dat';save.write_bytes(b'preserve saved game')
+        def overlay(package, items):
+            for name in ['PATCH_MANIFEST.json']+[e['archive_path'] for e in items['files']+items['auxiliary']]:
+                target=upgrade/name;target.parent.mkdir(parents=True,exist_ok=True)
+                shutil.copyfile(package/name,target)
+        overlay(previous,previous_manifest)
+        run(upgrade,'install','previous_stable_install')
+        for e in previous_manifest['files']:
+            if e['role']=='resource':assert sha(upgrade/e['path'])==e['installed_sha256']
+        overlay(FILES,manifest)
+        run(upgrade,'install','previous_stable_upgrade');hashes(upgrade,'installed_sha256')
+        launcher=upgrade/'汉化工具/launch.ps1'
+        check=subprocess.check_output(['powershell.exe','-NoProfile','-ExecutionPolicy','Bypass','-File',str(launcher),
+                                       '-GameRoot',str(upgrade),'-CheckOnly'])
+        state=json.loads(check)
+        assert state['installed'] and state['payload_hashes']=='passed' and not state['game_launched']
+        checks.append(dict(check='previous_stable_launcher_check_only',exit_code=0,expected_success=True))
+        run(upgrade,'uninstall','previous_stable_uninstall');hashes(upgrade,'original_sha256')
+        assert save.read_bytes()==b'preserve saved game'
     assert live=={e['path']:sha(ROOT/'Game'/e['path']) for e in resources}
     result=dict(status='passed',resource_targets=len(resources),checks=checks,real_game_untouched=True,
                 legacy_steam_uri_verified_without_launching_steam=True,fixture=str(area),manifest_sha256=sha(FILES/'PATCH_MANIFEST.json'))
@@ -60,4 +84,7 @@ def verify(files=None,report_path=None):
     print(json.dumps(result,ensure_ascii=False,indent=2))
 
 
-if __name__=='__main__':verify()
+if __name__=='__main__':
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--previous',type=Path)
+    verify(previous=parser.parse_args().previous)
