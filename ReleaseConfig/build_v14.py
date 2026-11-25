@@ -106,7 +106,7 @@ def stage():
     notice = f'【重要：启动中文版】\n{launch}\n\n'
     guide = guide.replace('\n游戏介绍\n', '\n' + notice + '游戏介绍\n', 1)
     (candidate / '补丁说明.txt').write_text(guide, encoding='utf-8-sig')
-    cover = f'https://raw.githubusercontent.com/{cfg["repository"]}/main/Dispatch/Artwork/title.jpg'
+    cover = f'https://github.com/{cfg["repository"]}/releases/download/v{VERSION}/title.jpg'
     body = guide.replace(notice, f'**【重要：启动中文版】{launch}**\n\n', 1)
     (CONFIG / 'release_body.md').write_text(f'![龙城之王 子非鱼汉化]({cover})\n\n{body}', encoding='utf-8')
     sums = ''.join(f'{sha(path)}  {path.relative_to(candidate).as_posix()}\n'

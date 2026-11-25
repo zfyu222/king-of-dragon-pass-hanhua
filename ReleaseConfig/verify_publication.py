@@ -1,5 +1,5 @@
 """Verify public stable release metadata and anonymous asset bytes."""
-import hashlib,json,subprocess,urllib.request,zipfile
+import base64,hashlib,json,subprocess,urllib.request,zipfile
 from decimal import Decimal
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
@@ -44,9 +44,8 @@ def main():
     checked_paths=('README.md','hook/build_runtime_payload.py','hook/src/hook.cpp','ReleaseConfig/build_v14.py',
                    'king-of-dragon-pass_text_translated.csv','king-of-dragon-pass_text_catalog.tsv','Dispatch/Artwork/title.jpg')
     if not set(checked_paths)<=names:raise ValueError('A public engineering file is missing')
-    base=f'https://raw.githubusercontent.com/{repo}/{branch}/'
-    with urllib.request.urlopen(base+'README.md',timeout=40) as response:
-        readme=response.read().decode('utf-8')
+    readme_file=api(f'repos/{repo}/contents/README.md?ref={branch}')
+    readme=base64.b64decode(readme_file['content']).decode('utf-8')
     if any(name not in readme for name in ('## 开发与构建','hook/build_runtime_payload.py','ReleaseConfig/build_v14.py',
                                            'king-of-dragon-pass_text_catalog.tsv')):
         raise ValueError('The default-branch README does not contain the engineering entry points')

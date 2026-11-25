@@ -1,4 +1,4 @@
-![龙城之王 子非鱼汉化](https://raw.githubusercontent.com/zfyu222/king-of-dragon-pass-hanhua/main/Dispatch/Artwork/title.jpg)
+![龙城之王 子非鱼汉化](https://github.com/zfyu222/king-of-dragon-pass-hanhua/releases/download/v1.4/title.jpg)
 
 [子非鱼Ai汉化]《龙城之王》/《King of Dragon Pass》
 =====================================

@@ -119,12 +119,12 @@
 
 ## 对外发布
 - **v1.4（2026-11-26）**。补丁为 `龙城之王_子非鱼汉化1.4.zip`，适用 Steam Windows 2.4.0。包含新版运行时词库、更新的 HTML 页面和沿用的贴图，使用同一个中文版 EXE 安装和启动。ZIP 共 371 个文件，CRC 和全部清单哈希通过。
-- [v1.4 发布页](https://github.com/zfyu222/king-of-dragon-pass-hanhua/releases/tag/v1.4)。SHA-256 为 `57f1962b69018ae2bd25bfb6ffd0778389eb3aa5019ff2abfe824f46cde15382`。沿用 [现有封面](Dispatch/Artwork/title.jpg) 与 [来源记录](Dispatch/Artwork/sources.json)。结果见 [发布检查摘要](ReleaseConfig/validation_v1.4.json)。
+- [v1.4 发布页](https://github.com/zfyu222/king-of-dragon-pass-hanhua/releases/tag/v1.4)。SHA-256 为 `57f1962b69018ae2bd25bfb6ffd0778389eb3aa5019ff2abfe824f46cde15382`。沿用 [现有封面](Dispatch/Artwork/title.jpg) 与 [来源记录](Dispatch/Artwork/sources.json)。结果见 [发布检查摘要](ReleaseConfig/validation_v1.4.json) 和 [公开下载核验](ReleaseConfig/publication.json)。
 
 - 当前版本：`Dispatch/龙城之王_子非鱼汉化1.3.zip`；中文名称统一为“龙城之王”。历史 v1.0、v1.1、v1.2 保留。
 - 支持：Steam v2.4.0，Windows。
 - 发布页：https://github.com/zfyu222/king-of-dragon-pass-hanhua/releases/tag/v1.3
-- v1.3已发布为最新稳定版，匿名下载校验通过，SHA-256：`619788d768b84c81cd583d7a4fddcc60f00206f426ec3116c3ad91bc023a9777`。GitHub下载资产使用 `King-of-Dragon-Pass_CN_1.3.zip`，显示名和本地ZIP保持中文名。
+- v1.3 发布时的匿名下载校验已通过。SHA-256 为 `619788d768b84c81cd583d7a4fddcc60f00206f426ec3116c3ad91bc023a9777`。GitHub 下载资产使用 `King-of-Dragon-Pass_CN_1.3.zip`，显示名和本地 ZIP 使用中文名。
 - 百度网盘分享 King-of-Dragon-Pass：https://pan.baidu.com/s/5xKG8bFszi_wB9yFgSxNV9g
 - 腾讯文档反馈：https://docs.qq.com/sheet/DTkxSTUVQS1Ntd1FR?tab=BB08J2
 - 载荷：3个原生运行文件、348个已译HTML目标、12张汉化贴图及一个等长Logo像素补丁；ZIP内共368个载荷/脚本文件，另附说明、清单与校验和。原始游戏文件、备份和开发日志不分发。
@@ -133,7 +133,6 @@
 - 验证：30个完整运行时样例及变量、完整性与边界断言通过；本次发布适配器在隔离副本完成全新安装、重复安装、恢复、旧版升级和异常内容拒绝。见 `ReleaseConfig/installation_validation.json`、`ReleaseConfig/zip_validation.json`。真实游戏目录未改动。
 - 真实限制：本次实机复测仍pending，按单独发布授权经共同release-check；不伪造实机通过。6972处遗漏资源字段及20条完整组合句已正式翻译；219个同源多译键与67个派生变体因显示Hook缺少资源身份未强行合入；地图Storm Mts.仍英文；部分图片底纹和其他分辨率引擎引用保留此前待验证记录。
 - 图片标题：人类提供的新名称作为产品标题覆盖，原正式图片CSV保持不变；仅四种Logo尺寸派生新载荷。使用新版清字→逐图检查→绘字→逐图检查，两阶段共用4个图片ID预算；记录位于ImagePatch/title-*-20261029。
-- 发布封面：待补。已找到Steam官方参考，内置图像生成因网络请求失败未得到成图；未切换付费接口，也未将官方原图冒充汉化封面。见 `ReleaseConfig/artwork_status.json`。
 
 ## 截图漏翻修复（2026-10-29）
 

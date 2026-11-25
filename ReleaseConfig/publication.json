@@ -1,21 +1,33 @@
 {
   "status": "published",
-  "version": "1.3",
+  "version": "1.4",
   "chinese_title": "龙城之王",
-  "release_url": "https://github.com/zfyu222/king-of-dragon-pass-hanhua/releases/tag/v1.3",
-  "download_url": "https://github.com/zfyu222/king-of-dragon-pass-hanhua/releases/download/v1.3/King-of-Dragon-Pass_CN_1.3.zip",
-  "asset_display_label": "龙城之王_子非鱼汉化1.3.zip",
-  "sha256": "619788d768b84c81cd583d7a4fddcc60f00206f426ec3116c3ad91bc023a9777",
-  "bytes": 11285183,
+  "release_url": "https://github.com/zfyu222/king-of-dragon-pass-hanhua/releases/tag/v1.4",
+  "download_url": "https://github.com/zfyu222/king-of-dragon-pass-hanhua/releases/download/v1.4/King-of-Dragon-Pass_CN_1.4.zip",
+  "asset_display_label": "龙城之王_子非鱼汉化1.4.zip",
+  "sha256": "57f1962b69018ae2bd25bfb6ffd0778389eb3aa5019ff2abfe824f46cde15382",
+  "bytes": 11286042,
   "public_anonymous_download_verified": true,
   "latest_stable": true,
   "previous_release_preserved": true,
   "preserved_tags": [
     "v1.0",
     "v1.1",
-    "v1.2"
+    "v1.2",
+    "v1.3"
   ],
   "artwork_status": "completed",
   "github_asset_name_note": "Local ZIP and asset label use the required Chinese title; GitHub asset URL uses an ASCII filename.",
-  "cover_url": "https://github.com/zfyu222/king-of-dragon-pass-hanhua/releases/download/v1.2/title.png"
+  "cover_url": "https://github.com/zfyu222/king-of-dragon-pass-hanhua/releases/download/v1.4/title.jpg",
+  "default_branch": "main",
+  "public_engineering_paths": [
+    "README.md",
+    "hook/build_runtime_payload.py",
+    "hook/src/hook.cpp",
+    "ReleaseConfig/build_v14.py",
+    "king-of-dragon-pass_text_translated.csv",
+    "king-of-dragon-pass_text_catalog.tsv",
+    "Dispatch/Artwork/title.jpg"
+  ],
+  "zip_guide_matches_release": true
 }
