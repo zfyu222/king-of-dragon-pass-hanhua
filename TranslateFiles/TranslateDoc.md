@@ -18,3 +18,10 @@
 由 game-translate 技能调用共用流程程序；路线为 SubAgent（codex）或 API（api）。正文前完成全文术语整理及冻结。
 试译：固定随机样本 → pilot_translate → pilot-report → 主 AI pilot-decide；按需 pilot-retry。
 试译用于校准流程和风格，不要求逐句零错误；正式译文仍须完整独立审校和导出验收。
+
+## 2026-11-26 主译文润色与增量复审
+
+- 沿用 custom/API 项目配置及既有选路。开启旧项目的 polish 后，使用 final_review 复审实际有改动的 2,573 条，保留 31,848 条未变化记录的独立审校证据。
+- 正式 CSV 保留净改 2,570 条。API 批次出现的格式故障从原始回复恢复，少数术语和 Opal 控制码难题由标准档定向复核。本次冻结术语仍为第 3 版，Opal、printf、控制字节、字面转义和内部键沿用既有保护规则。
+- 项目专用检查发现一条随机短语被误拆，按原文恢复为三个分支后重新复审及导出。重新导出后，项目专用检查报告 0 处问题。
+- 使用量及完整校验摘要见 [润色范围核验](reports/polish_scope_20261125.json)，正式导出和实机状态见 [导出报告](reports/final_validation.json)。

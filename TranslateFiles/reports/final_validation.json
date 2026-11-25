@@ -1,11 +1,11 @@
 {
   "status": "passed",
   "source_sha256": "dc925e1a2c6dc054bc6e10f0d08e2646894f00262d545a78f3c83c24073b420e",
-  "translation_sha256": "cd90ffc6a0dc395535f244709bd99ef171ae0d0884c1c280d54f2be29d193e50",
+  "translation_sha256": "471dbacab3711c3dd7a8e1185352e41fc9ab9c099eb5ca3ede296dfde4cc77e3",
   "records": 34421,
   "semantic_review": "full",
-  "polish": false,
-  "revision": 3,
+  "polish": true,
+  "revision": 4,
   "glossary": {
     "hash": "4822e7bd99ed60fc76fbb98300e2035b15fc52497be5653d066e3ce9a3d0e21e",
     "path": "glossary\\r3\\freeze_c04a1e8d\\built\\glossary_reviewed.json",
@@ -24,7 +24,7 @@
   },
   "path": "D:\\StaticHanHua\\Projects\\king-of-dragon-pass\\king-of-dragon-pass_text_translated.csv",
   "quality_review": {
-    "report_hash": "eb4d6c6e4bfad64cb8c86b1a8587f0a1ef34f974335dd2c09867c4e09f3e11ea",
+    "report_hash": "05a2464d7ef4b0099a4ccea7bc5aacf01af7e7d28d07668ef413b3603b3157e5",
     "reviewer": "workflow:no-disputes"
   },
   "in_game_check": "pending_repack",

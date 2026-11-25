@@ -78,7 +78,7 @@
   "pilot_ordinals": [],
   "pilot_records": 150,
   "placeholder_family_overrides": {},
-  "polish": false,
+  "polish": true,
   "protect_named_curly": null,
   "quality_version": 2,
   "record_constraints": {},
